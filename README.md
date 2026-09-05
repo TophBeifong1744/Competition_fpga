@@ -41,7 +41,7 @@ flowchart LR
     PL -->|统计与告警| LOG
 ```
 
-完整的数据流、控制流、时钟域和模块边界见 [系统架构](docs/architecture.md)。
+完整的数据流、控制流、时钟域和模块边界见 [系统架构](docs/architecture.md)；各算法板块为什么存在、如何衔接以及怎样形成验证闭环，见 [原理流程](docs/principles-flow.md)。
 
 ## 核心算法
 
