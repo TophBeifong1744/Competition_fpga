@@ -1,0 +1,56 @@
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python / MATLAB local artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.asv
+slprj/
+
+# Vivado generated projects and logs
+.Xil/
+*.jou
+*.log
+*.str
+*.xpr
+*.cache/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+vivado/build/
+vivado/.Xil/
+
+# Vitis / SDK generated workspaces
+.metadata/
+ps/workspace/
+ps/**/Debug/
+ps/**/Release/
+*.elf
+*.bit
+*.bin
+*.xsa
+
+# Simulation and coverage outputs
+sim/build/
+sim/out/
+*.wdb
+*.vcd
+*.fst
+*.ucdb
+
+# Temporary or bulky measurement data
+results/tmp/
+results/raw/
+*.wav
+*.zip
+
