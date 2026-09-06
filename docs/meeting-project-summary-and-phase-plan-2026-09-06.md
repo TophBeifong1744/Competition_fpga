@@ -197,11 +197,11 @@ SoundSight 是一套基于 Zynq-7020 的四麦克风实时声源定位与定向�
 
 ### 成员 A：拓芙
 
-- 整理并保存当前文档和模型的团队基线版本；
-- 建立工作包 Issue，指定负责人、复核人和截止日期；
-- 获取准确板卡资料，冻结时钟、复位、电平和 PL 引脚事实；
-- 写出四路样本接口契约，不提前写依赖未冻结接口的下游 RTL；
-- 搭建可复现 Vivado 工程入口和最小仿真入口。
+- **待复核：** 已建立[团队基线快照](project-baseline-2026-09-06.md)，记录 `main` 基线提交、现有证据和缺口；
+- **待复核：** 已建立[首轮工作包台账](work-packages-2026-09-06.md)，指定负责人、复核人、截止时间和完成定义；实际 GitHub Issue 尚未创建；
+- **进行中：** 已完成[M0 板卡与接口审计](../hardware/m0-board-interface-audit-2026-09-06.md)的资料候选表，时钟、复位、电平和 PL 引脚仍待实物证据冻结；
+- **进行中：** 已写出[四路样本接口契约草案](../hardware/four-channel-sample-interface-contract.md)，不提前写依赖未冻结接口的下游 RTL；
+- **阻塞：** 可复现 Vivado 工程入口和最小仿真入口需等待 FPGA 完整料号、团队 Vivado 版本和采集接口冻结。
 
 ### 成员 B：BryanZheng802
 
@@ -370,6 +370,10 @@ V1 封版后，按证据决定改进方向：
 
 - [国务院办公厅关于 2026 年部分节假日安排的通知](https://big5.www.gov.cn/gate/big5/www.gov.cn/zhengce/zhengceku/202511/content_7047091.htm)
 - [项目 README](../README.md)
+- [2026-09-06 团队基线快照](project-baseline-2026-09-06.md)
+- [首轮工作包台账](work-packages-2026-09-06.md)
+- [M0 板卡与接口审计](../hardware/m0-board-interface-audit-2026-09-06.md)
+- [四路同步样本接口契约草案](../hardware/four-channel-sample-interface-contract.md)
 - [系统架构](architecture.md)
 - [开发路线图与阶段门](roadmap.md)
 - [团队任务分解](team-tasks.md)
