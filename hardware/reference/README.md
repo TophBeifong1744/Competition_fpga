@@ -86,7 +86,7 @@
 
 ## 8. 竞赛平台与 PYNQ 资料边界
 
-AMD《2026 FPGA 赛道选题指南》第三赛道初级组允许 AMD 7 Series FPGA、Zynq-7000 SoC、UltraScale 或 UltraScale+ 系列器件。当前照片中的 `XC7Z020` 器件族处于允许范围内；赛题仍要求提交物声明具体器件型号，器件须由团队真实获得、完成板级验证，作品须在板上跑通并提供实测输出。对应项目台账见[竞赛验收文档](../../docs/competition-acceptance-2026-09-07.md)。
+AMD《2026 FPGA 赛道选题指南》第三赛道初级组允许 AMD 7 Series FPGA、Zynq-7000 SoC、UltraScale 或 UltraScale+ 系列器件。当前照片中的 `XC7Z020` 器件族处于允许范围内；赛题仍要求提交物声明具体器件型号，器件须由团队真实获得、完成板级验证，作品须在板上跑通并提供实测输出。对应项目台账见[竞赛验收文档](../../docs/competition-acceptance.md)。
 
 指南推荐初级组使用 PYNQ，但“推荐”不等于当前领航者板自动兼容 PYNQ-Z2 镜像。通用 PYNQ Skill 的板卡 profile 必须由真实板级资料和测试填写，至少覆盖：
 

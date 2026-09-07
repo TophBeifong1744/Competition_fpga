@@ -6,7 +6,11 @@
 
 SoundSight 面向 AMD FPGA 自主设计比赛，目标是在 Zynq-7020 平台上完成四路同步声音采集、可靠声源方向估计（DOA）与自动指向的 Delay-and-Sum 波束形成，输出增强后的目标方向音频并展示方向、置信度和运行状态。自动声源跟踪转台保留为后续扩展，只有核心声学链路通过且存在明确的朝向载荷时才进入闭环集成。
 
-当前仓库处于项目初始化阶段。文档中的数值是设计目标，不是已测结果；每个指标只有在 `results/` 中留下可复现实验记录后才能标记为通过。
+当前处于 M0 证据核验和模型预研阶段，尚无完整实板验收；六麦已有合成浮点结果，必须与设计目标和实测结果分开。最新入口：[文档目录](docs/README.md)、[当前状态](docs/current-status.md)、[工作包台账](docs/work-packages.md)、[六麦独立材料包](deliverables/six-mic-acoustic-review-v1/README.md)。旧文档集中于[历史备份](archive/README.md)。
+
+版本范围：2026-10-07 的 V1 用四麦先验收二维水平声源方向及音频改善；三维方向（方位角、俯仰角和单位向量，不含距离/位置）列为 V2。V2 六麦为首选候选、非共面四麦为低成本备选、八麦暂缓；当前已形成六麦指南和首轮软件基线，不扩大首版交付范围，不提前增加采集通道或采购。六麦须经过声学/资源评审和扩展采集准入，不能直接继承四麦验收结论。评估、阶段门与三人分工见[三维方向升级计划](docs/three-dimensional-doa-plan.md)。
+
+最新授权范围：麦克风沿用既定选择；仅执行六麦声学评审与离线软件模拟，不新增四麦模拟或四/六麦对比。第一轮2700帧合成浮点结果、波束图、同组六路数据的音频对照及失败边界见[六麦软件预评审](docs/six-mic-acoustic-software-review.md)；不代表3D-G0整体或板测通过。
 
 ### 设计原则
 
@@ -45,7 +49,7 @@ flowchart LR
     PL -->|AXI DMA / DDR| REC
 ```
 
-完整的数据流、控制流、时钟域和模块边界见 [系统架构](docs/architecture.md)；各算法板块为什么存在、如何衔接以及怎样形成验证闭环，见 [原理流程](docs/principles-flow.md)；模块职责、接口交接、Vivado 集成与分阶段实现方法见 [工程实施流程](docs/engineering-flow.md)；PYNQ 的采用条件、接口和替换边界见 [PYNQ 集成与控制面指南](docs/pynq-integration-guide.md)；定位与音频收益的实验矩阵、指标和算法升级门见 [声学性能验证计划](docs/acoustic-validation-plan.md)；第三赛道初级组的逐项状态和两个 Skill 工作包见 [赛题验收台账](docs/competition-acceptance-2026-09-07.md)。
+完整的数据流、控制流、时钟域和模块边界见 [系统架构](docs/architecture.md)；各算法板块为什么存在、如何衔接以及怎样形成验证闭环，见 [原理流程](docs/principles-flow.md)；模块职责、接口交接、Vivado 集成与分阶段实现方法见 [工程实施流程](docs/engineering-flow.md)；PYNQ 的采用条件、接口和替换边界见 [PYNQ 集成与控制面指南](docs/pynq-integration-guide.md)；定位与音频收益的实验矩阵、指标和算法升级门见 [声学性能验证计划](docs/acoustic-validation-plan.md)；第三赛道初级组的逐项状态和两个 Skill 工作包见 [赛题验收台账](docs/competition-acceptance.md)。
 
 ## 核心算法
 

@@ -1,10 +1,20 @@
-# SoundSight 工程实施流程（初稿）
+# SoundSight 工程实施流程（现行 V1）
 
 ## 1. 文档定位
 
 本文回答“SoundSight 在工程上怎样从硬件输入逐步实现为可验证系统”。重点是模块职责、接口衔接、数据流、控制流、开发顺序和阶段验收，不重复推导 GCC-PHAT、TDOA、DOA 与 Delay-and-Sum 的数学原理；算法原理见 [原理流程](principles-flow.md)，真实录音分层、指标口径和算法升级门见 [声学性能验证计划](acoustic-validation-plan.md)。
 
-当前仍处于 M0，目标板完整 FPGA part/速度等级、四路采集接口、有效位宽、阵列几何和 PS 运行环境尚未全部冻结。团队已把 Vivado `2025.2` 固定为工程基线，但版本输出、干净目录脚本重建、综合实现和板测尚未形成复现证据。因此本文中的模块划分和接口语义可以先作为工程骨架，具体端口宽度、时钟频率、IP 参数和 XDC 引脚只能在真实硬件证据确认后填写。
+本文仍是有效的四麦二维 V1 工程指南，目标 2026-10-07，不因新增六麦预研而废弃。M0 尚未整体通过，具体未满足项与证据见[当前状态](current-status.md)和[板级接口审计](../hardware/m0-board-interface-audit.md)。Vivado `2025.2` 是固定版本基线；版本输出、脚本重建、综合实现、资源/时序和实板测试必须分别提供记录，不能由版本决定推定工程已复现。
+
+麦克风沿用用户已选 IM73D122V01/PDM 路线，本轮不重新比较型号或更换接口；具体模块、时钟负载、电平、引脚和固定差异仍须实物证据。现有[四路样本合同](../hardware/four-channel-sample-interface-contract.md)保持原义，六麦不会自动扩大 V1 的 bundle、寄存器或 DMA 格式。
+
+当前工作分派以[项目计划](project-plan.md)、[工作包](work-packages.md)、[团队分工](team-tasks.md)和[竞赛验收台账](competition-acceptance.md)为入口。整理前版本集中保存在[归档说明](../archive/2026-09-07-before-materials-cleanup/README-ARCHIVE.md)所列快照；历史原文只用于追溯，当前阶段状态按现行台账判断。
+
+### 1.1 六麦软件预研与本工程的交接
+
+六麦当前只做声学软件预研，没有新增四麦模拟或四/六麦比较任务。主流程已完成[第一轮六麦软件评审](six-mic-acoustic-software-review.md)：2700 帧合成用例、21 个自检通过，独立复跑的 15 个产物哈希一致；同频带 0 dB 噪声下有效率 47%，等强竞争声源下有效率 26%，因此完整 3D-G0 尚未通过。材料统一从[六麦评审材料包](../deliverables/six-mic-acoustic-review-v1/README.md)进入。
+
+该模型使用理想麦克风传递函数，未覆盖实际 PDM 抽取、定点、PL 或 PYNQ 板测。六麦 6 次 FFT＋15 次 IFFT 仅是全 pair 运算计数；完整采集/抽取、缓存、PHAT、求解、搬运、资源和时序预算尚未完成。六麦采集须在 V1 保底门及 3D-G0 通过后再进入 3D-GA，详见[三维工程迁移指南](three-dimensional-doa-engineering-guide.md)。主流程已授权的离线模拟可继续进行，不受“先硬件后 RTL”的实现门限制。
 
 工程实施遵守五条主线：
 
@@ -167,6 +177,8 @@ audio_sample_bundle = {mic3_sample, mic2_sample, mic1_sample, mic0_sample}
 ## 4. 数据面模块职责与衔接
 
 ### 4.1 采集与同步层
+
+下表保留通用前端职责以解释模块边界；当前执行路线是已选的 PDM。I2S/TDM/ADC 等列举不构成重新选型任务，端口与采样边沿仍按真实模块资料冻结。
 
 | 模块 | 上游输入 | 核心职责 | 关键输出 | 下游模块 | 初步验收 |
 |---|---|---|---|---|---|
@@ -391,7 +403,7 @@ XDC 至少需要包含：主/生成时钟、外部接口输入输出延迟、异
   -> 板上测试与 results 归档
 ```
 
-本项目是 Zynq-7000，Block Design 应使用与实际器件和 Vivado 版本匹配的 Processing System 7 IP；不能照搬 Zynq UltraScale+ 的 `zynq_ultra_ps_e` 配置。具体 Tcl 属性名、PS preset 和导出命令在 Vivado 版本冻结后再根据该版本验证。
+本项目是 Zynq-7000，Block Design 应使用与实际器件和 Vivado 版本匹配的 Processing System 7 IP；不能照搬 Zynq UltraScale+ 的 `zynq_ultra_ps_e` 配置。具体 Tcl 属性名、PS preset 和导出命令需在已选 Vivado 2025.2 与实际板卡配置上验证。
 
 建议最终由以下受控入口组成：
 
