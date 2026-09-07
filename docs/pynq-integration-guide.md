@@ -2,6 +2,8 @@
 
 状态：架构角色与 Vivado `2025.2` 基线已确定；领航者板卡的 PYNQ 镜像、板级支持、Overlay 与 DMA 可用性仍待 M0 实证冻结。版本决策不是工程复现结果。
 
+适用范围：本指南的四路接口和 M0～M6 流程仍服务于 2026-10-07 四麦二维 V1，属于现行文档。六麦当前只做软件预研，沿用原 IM73D122V01/PDM 路线，不新增四麦模拟或重新选型；实际模块、六路扩展和 PYNQ 板级支持仍须核验。状态与证据分别见[当前状态](current-status.md)、[板级接口审计](../hardware/m0-board-interface-audit.md)和[竞赛验收台账](competition-acceptance.md)。
+
 ## 1. 架构决定
 
 SoundSight 将 PYNQ 作为首选的开发、验证和演示控制层。PL 独立承担四通道同步采集、连续音频、实时定位与波束形成；PYNQ 运行在 Zynq PS 上，负责配置、状态、日志、原始录音导出、实验编排、界面和低速控制。
@@ -155,7 +157,15 @@ ps/
 
 PYNQ 准入前只能接受并标记离线 v0 的静态与隔离样例结果。M0 准入后，必须在当前领航者板卡、当前 Overlay 和当前 Vivado 2025.2 构建上重新执行实板验证；通用 Skill 的成功记录不能替代 SoundSight 的 M1 板测。SKL-002 不是 PS 程序的运行时依赖，缺失或失败时不得改变 PL 核心接口。
 
-## 10. 完成定义
+## 10. 六麦软件材料与 PYNQ 验收的区别
+
+[六麦软件报告](six-mic-acoustic-software-review.md)记录了 2700 帧合成数据、21 个自检通过及独立复跑产物一致；同频带 0 dB 噪声与等强竞争声源用例有效率分别为 47% 和 26%，完整 3D-G0 未通过。复现入口集中在[六麦材料包](../deliverables/six-mic-acoustic-review-v1/README.md)。这些是 PC 浮点/合成证据，不是 PYNQ 安装、Overlay 加载、DMA 连续性、PL 周期或实板性能记录；材料包也不能标为可部署 Overlay 包。
+
+主流程获授权的离线软件模型可以继续改进。PYNQ 后续只通过版本化 AXI4-Lite、AXI DMA 和中断消费 PL 结果，Vitis/PetaLinux 备选边界保持不变。六路扩展必须先评审新格式；V1 四路客户端对六路/未知版本/错误长度明确拒绝，通道数与 2D/3D 维度独立声明，不能靠改 Python reshape 自动升级合同。
+
+六路完整预算及 3D-GA 尚未完成。V1 保底门与 3D-G0 通过后，GA 仍需验证新采集配置、DMA 缓冲所有权、全六路映射、复位/重锁定、超时恢复及一小时全路长录音；Python 停止不得反压物理采集。四路 V1 板测、离线 mock 或六麦声学软件自检均不能替代上述六路实测，细项见[三维工程指南](three-dimensional-doa-engineering-guide.md)。
+
+## 11. 完成定义
 
 PYNQ 集成只有同时满足以下条件才算完成：
 
