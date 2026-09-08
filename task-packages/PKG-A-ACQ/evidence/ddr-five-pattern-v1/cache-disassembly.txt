@@ -1,0 +1,41 @@
+
+F:/College/verilog_digital_system/Vitis/ddr_test/build/ddr_test.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+001019c0 <Xil_DCacheDisable>:
+  1019c0:	e3a02a02 	mov	r2, #8192	; 0x2000
+  1019c4:	e92d4010 	push	{r4, lr}
+  1019c8:	e34f28f0 	movt	r2, #63728	; 0xf8f0
+  1019cc:	e5923100 	ldr	r3, [r2, #256]	; 0x100
+  1019d0:	e3130001 	tst	r3, #1
+  1019d4:	1a000004 	bne	1019ec <Xil_DCacheDisable+0x2c>
+  1019d8:	ebffffb9 	bl	1018c4 <Xil_L1DCacheFlush>
+  1019dc:	ee113f10 	mrc	15, 0, r3, cr1, cr0, {0}
+  1019e0:	e3c33004 	bic	r3, r3, #4
+  1019e4:	ee013f10 	mcr	15, 0, r3, cr1, cr0, {0}
+  1019e8:	e8bd8010 	pop	{r4, pc}
+  1019ec:	e3a01003 	mov	r1, #3
+  1019f0:	e30f3fff 	movw	r3, #65535	; 0xffff
+  1019f4:	e5821f40 	str	r1, [r2, #3904]	; 0xf40
+  1019f8:	e58237fc 	str	r3, [r2, #2044]	; 0x7fc
+  1019fc:	e59237fc 	ldr	r3, [r2, #2044]	; 0x7fc
+  101a00:	e6ff3073 	uxth	r3, r3
+  101a04:	e3530000 	cmp	r3, #0
+  101a08:	1afffffb 	bne	1019fc <Xil_DCacheDisable+0x3c>
+  101a0c:	e3a03a02 	mov	r3, #8192	; 0x2000
+  101a10:	e3a02000 	mov	r2, #0
+  101a14:	e34f38f0 	movt	r3, #63728	; 0xf8f0
+  101a18:	e5832730 	str	r2, [r3, #1840]	; 0x730
+  101a1c:	e5832f40 	str	r2, [r3, #3904]	; 0xf40
+  101a20:	f57ff04f 	dsb	sy
+  101a24:	e5932100 	ldr	r2, [r3, #256]	; 0x100
+  101a28:	e3c22001 	bic	r2, r2, #1
+  101a2c:	e5832100 	str	r2, [r3, #256]	; 0x100
+  101a30:	f57ff04f 	dsb	sy
+  101a34:	eaffffe7 	b	1019d8 <Xil_DCacheDisable+0x18>
+
+Disassembly of section .init:
+
+Disassembly of section .fini:
