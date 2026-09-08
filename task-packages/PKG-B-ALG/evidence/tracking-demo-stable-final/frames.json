@@ -1,0 +1,6556 @@
+[
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 0,
+      "interval_index": 0,
+      "reset_before": true,
+      "row_start": 0,
+      "row_stop": 1024,
+      "first_sample_id": 1536,
+      "last_sample_id": 2559,
+      "start_seconds": 0.0,
+      "end_seconds_exclusive": 0.021333333333333333,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -2.9392661751890666e-17,
+        1.511079849171822e-20
+      ],
+      "azimuth_deg": -1.6840754670389356e-15,
+      "elevation_deg": 8.657849786481041e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.01351389975933317,
+      "raw_vector_norm": 1.0011872759853715,
+      "pair_delays_samples": [
+        5.603445063103831,
+        5.603445063103831,
+        -9.79100774285536e-16,
+        2.7845512904626855,
+        2.7845512904626855,
+        -9.79100774285536e-16,
+        -5.60344506310383,
+        -2.8214994278653327,
+        -2.8214994278653327,
+        -5.60344506310383,
+        -2.8214994278653327,
+        -2.8214994278653327,
+        2.7845512904626855,
+        2.7845512904626855,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "ACQUIRE",
+      "fresh_valid": false,
+      "direction": null,
+      "display_direction": null,
+      "stale": false,
+      "reason": "acquiring",
+      "acquire_count": 1,
+      "last_fresh_ms": null,
+      "display_expires_at_ms": null,
+      "timestamp_ms": 21.333333333333332,
+      "input_reset": true,
+      "angular_error_deg": null
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 1,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 512,
+      "row_stop": 1536,
+      "first_sample_id": 2048,
+      "last_sample_id": 3071,
+      "start_seconds": 0.010666666666666666,
+      "end_seconds_exclusive": 0.032,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -8.668680047654558e-17,
+        8.165891425952006e-17
+      ],
+      "azimuth_deg": -4.966787806798715e-15,
+      "elevation_deg": 4.678711146691156e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013605863135263458,
+      "raw_vector_norm": 1.0015558588808353,
+      "pair_delays_samples": [
+        5.605511839070723,
+        5.605511839070723,
+        -9.70992351527934e-16,
+        2.7854529384646174,
+        2.7854529384646174,
+        -1.941984703055864e-15,
+        -5.605511839070723,
+        -2.822653841567726,
+        -2.822653841567726,
+        -5.605511839070723,
+        -2.822653841567726,
+        -2.822653841567726,
+        2.7854529384646174,
+        2.7854529384646174,
+        -1.941984703055864e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "ACQUIRE",
+      "fresh_valid": false,
+      "direction": null,
+      "display_direction": null,
+      "stale": false,
+      "reason": "acquiring",
+      "acquire_count": 2,
+      "last_fresh_ms": null,
+      "display_expires_at_ms": null,
+      "timestamp_ms": 32.0,
+      "input_reset": false,
+      "angular_error_deg": null
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 2,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 1024,
+      "row_stop": 2048,
+      "first_sample_id": 2560,
+      "last_sample_id": 3583,
+      "start_seconds": 0.021333333333333333,
+      "end_seconds_exclusive": 0.042666666666666665,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -1.7446508951719926e-18,
+        4.3331255153850934e-17
+      ],
+      "azimuth_deg": -9.996113301707619e-17,
+      "elevation_deg": 2.482698041320155e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.01361889574518757,
+      "raw_vector_norm": 1.0009387871707593,
+      "pair_delays_samples": [
+        5.602055857426486,
+        5.602055857426486,
+        -1.0299732989906263e-15,
+        2.7837099289837046,
+        2.7837099289837046,
+        0.0,
+        -5.6020558574264845,
+        -2.8209463273107724,
+        -2.8209463273107724,
+        -5.6020558574264845,
+        -2.8209463273107724,
+        -2.8209463273107724,
+        2.7837099289837046,
+        2.7837099289837046,
+        -1.0299732989906263e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "ACQUIRE",
+      "fresh_valid": false,
+      "direction": null,
+      "display_direction": null,
+      "stale": false,
+      "reason": "acquiring",
+      "acquire_count": 3,
+      "last_fresh_ms": null,
+      "display_expires_at_ms": null,
+      "timestamp_ms": 42.666666666666664,
+      "input_reset": false,
+      "angular_error_deg": null
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 3,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 1536,
+      "row_stop": 2560,
+      "first_sample_id": 3072,
+      "last_sample_id": 4095,
+      "start_seconds": 0.032,
+      "end_seconds_exclusive": 0.05333333333333334,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        3.886801565141168e-20,
+        2.3855244606053837e-17
+      ],
+      "azimuth_deg": 2.2269732548743162e-18,
+      "elevation_deg": 1.366804835179107e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013072713872647064,
+      "raw_vector_norm": 1.0008865007606826,
+      "pair_delays_samples": [
+        5.602253298403711,
+        5.602253298403711,
+        0.0,
+        2.7837970592828074,
+        2.7837970592828074,
+        0.0,
+        -5.602253298403711,
+        -2.819586269220352,
+        -2.819586269220352,
+        -5.602253298403711,
+        -2.819586269220352,
+        -2.819586269220352,
+        2.7837970592828074,
+        2.7837970592828074,
+        -5.672097539754097e-16
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "ACQUIRE",
+      "fresh_valid": false,
+      "direction": null,
+      "display_direction": null,
+      "stale": false,
+      "reason": "acquiring",
+      "acquire_count": 4,
+      "last_fresh_ms": null,
+      "display_expires_at_ms": null,
+      "timestamp_ms": 53.333333333333336,
+      "input_reset": false,
+      "angular_error_deg": null
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 4,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 2048,
+      "row_stop": 3072,
+      "first_sample_id": 3584,
+      "last_sample_id": 4607,
+      "start_seconds": 0.042666666666666665,
+      "end_seconds_exclusive": 0.064,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        2.8564923424870445e-17,
+        -8.627279802135598e-21
+      ],
+      "azimuth_deg": 1.6366495543594573e-15,
+      "elevation_deg": -4.943067213408297e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.01349762600365972,
+      "raw_vector_norm": 1.0020532561072795,
+      "pair_delays_samples": [
+        5.608284624153275,
+        5.608284624153275,
+        0.0,
+        2.787005814384934,
+        2.787005814384934,
+        9.61136418888807e-16,
+        -5.608284624153275,
+        -2.823908188556121,
+        -2.823908188556121,
+        -5.608284624153275,
+        -2.823908188556121,
+        -2.823908188556121,
+        2.787005814384934,
+        2.787005814384934,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -1.7844064336617275e-17,
+        2.977037950762288e-17
+      ],
+      "display_direction": [
+        1.0,
+        -1.7844064336617275e-17,
+        2.977037950762288e-17
+      ],
+      "stale": false,
+      "reason": "acquired",
+      "acquire_count": 0,
+      "last_fresh_ms": 64.0,
+      "display_expires_at_ms": 264.0,
+      "timestamp_ms": 64.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 5,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 2560,
+      "row_stop": 3584,
+      "first_sample_id": 4096,
+      "last_sample_id": 5119,
+      "start_seconds": 0.05333333333333334,
+      "end_seconds_exclusive": 0.07466666666666667,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -1.5709558311961994e-17,
+        -1.7272741409523864e-20
+      ],
+      "azimuth_deg": -9.00091389290084e-16,
+      "elevation_deg": -9.896551833865661e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013505635726654737,
+      "raw_vector_norm": 1.00099846481945,
+      "pair_delays_samples": [
+        5.602360805928873,
+        5.602360805928873,
+        -5.284677548837406e-16,
+        2.7840634899718966,
+        2.7840634899718966,
+        0.0,
+        -5.602360805928872,
+        -2.8209850362462507,
+        -2.8209850362462507,
+        -5.602360805928872,
+        -2.8209850362462507,
+        -2.8209850362462507,
+        2.7840634899718966,
+        2.7840634899718966,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -1.5709558311961994e-17,
+        -1.7272741409523864e-20
+      ],
+      "display_direction": [
+        1.0,
+        -1.5709558311961994e-17,
+        -1.7272741409523864e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 74.66666666666667,
+      "display_expires_at_ms": 274.6666666666667,
+      "timestamp_ms": 74.66666666666667,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 6,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 3072,
+      "row_stop": 4096,
+      "first_sample_id": 4608,
+      "last_sample_id": 5631,
+      "start_seconds": 0.064,
+      "end_seconds_exclusive": 0.08533333333333333,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        4.31903658664617e-20,
+        -1.0797591466615431e-20
+      ],
+      "azimuth_deg": 2.4746256797741463e-18,
+      "elevation_deg": -6.18656419943537e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013594067363626013,
+      "raw_vector_norm": 1.000801179111036,
+      "pair_delays_samples": [
+        5.601286464062512,
+        5.601286464062512,
+        0.0,
+        2.7833578867672473,
+        2.7833578867672473,
+        0.0,
+        -5.601286464062512,
+        -2.820526303707046,
+        -2.820526303707046,
+        -5.601286464062512,
+        -2.820526303707046,
+        -2.820526303707046,
+        2.7833578867672473,
+        2.7833578867672473,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        4.31903658664617e-20,
+        -1.0797591466615431e-20
+      ],
+      "display_direction": [
+        1.0,
+        4.31903658664617e-20,
+        -1.0797591466615431e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 85.33333333333333,
+      "display_expires_at_ms": 285.3333333333333,
+      "timestamp_ms": 85.33333333333333,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 7,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 3584,
+      "row_stop": 4608,
+      "first_sample_id": 5120,
+      "last_sample_id": 6143,
+      "start_seconds": 0.07466666666666667,
+      "end_seconds_exclusive": 0.096,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -2.8794087354864304e-17,
+        -1.946715641479706e-20
+      ],
+      "azimuth_deg": -1.649779680364737e-15,
+      "elevation_deg": -1.1153859016888985e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013546330806511088,
+      "raw_vector_norm": 0.9991821955897678,
+      "pair_delays_samples": [
+        5.592149807695275,
+        5.592149807695275,
+        0.0,
+        2.778971640591586,
+        2.778971640591586,
+        0.0,
+        -5.592149807695277,
+        -2.8159982676244515,
+        -2.8159982676244515,
+        -5.592149807695277,
+        -2.8159982676244515,
+        -2.8159982676244515,
+        2.778971640591586,
+        2.778971640591586,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -2.8794087354864304e-17,
+        -1.946715641479706e-20
+      ],
+      "display_direction": [
+        1.0,
+        -2.8794087354864304e-17,
+        -1.946715641479706e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 96.0,
+      "display_expires_at_ms": 296.0,
+      "timestamp_ms": 96.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 8,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 4096,
+      "row_stop": 5120,
+      "first_sample_id": 5632,
+      "last_sample_id": 6655,
+      "start_seconds": 0.08533333333333333,
+      "end_seconds_exclusive": 0.10666666666666667,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -3.2414508830290726e-17,
+        2.1598153538308397e-21
+      ],
+      "azimuth_deg": -1.8572145509651974e-15,
+      "elevation_deg": 1.2374830430206168e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013633239549070482,
+      "raw_vector_norm": 1.0006635291467776,
+      "pair_delays_samples": [
+        5.600525992785639,
+        5.600525992785639,
+        -1.0933896907652103e-15,
+        2.7829081580550996,
+        2.7829081580550996,
+        0.0,
+        -5.60052599278564,
+        -2.820185418721838,
+        -2.820185418721838,
+        -5.60052599278564,
+        -2.820185418721838,
+        -2.820185418721838,
+        2.7829081580550996,
+        2.7829081580550996,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -3.2414508830290726e-17,
+        2.1598153538308397e-21
+      ],
+      "display_direction": [
+        1.0,
+        -3.2414508830290726e-17,
+        2.1598153538308397e-21
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 106.66666666666667,
+      "display_expires_at_ms": 306.6666666666667,
+      "timestamp_ms": 106.66666666666667,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 9,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 4608,
+      "row_stop": 5632,
+      "first_sample_id": 6144,
+      "last_sample_id": 7167,
+      "start_seconds": 0.096,
+      "end_seconds_exclusive": 0.11733333333333333,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        5.788914546018104e-17,
+        -2.3792430132341852e-20
+      ],
+      "azimuth_deg": 3.3168037144872837e-15,
+      "elevation_deg": -1.3632058309430749e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.01351197881403501,
+      "raw_vector_norm": 0.9992141561298247,
+      "pair_delays_samples": [
+        5.59236065224309,
+        5.59236065224309,
+        0.0,
+        2.779073884961623,
+        2.779073884961623,
+        0.0,
+        -5.592360652243088,
+        -2.8160110476011453,
+        -2.8160110476011453,
+        -5.592360652243088,
+        -2.8160110476011453,
+        -2.8160110476011453,
+        2.779073884961623,
+        2.779073884961623,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        5.788914546018104e-17,
+        -2.3792430132341852e-20
+      ],
+      "display_direction": [
+        1.0,
+        5.788914546018104e-17,
+        -2.3792430132341852e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 117.33333333333333,
+      "display_expires_at_ms": 317.3333333333333,
+      "timestamp_ms": 117.33333333333333,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 10,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 5120,
+      "row_stop": 6144,
+      "first_sample_id": 6656,
+      "last_sample_id": 7679,
+      "start_seconds": 0.10666666666666667,
+      "end_seconds_exclusive": 0.128,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        8.633805746351738e-21,
+        -1.7267611492703478e-20
+      ],
+      "azimuth_deg": 4.946806304017523e-19,
+      "elevation_deg": -9.893612608035047e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013573841406861326,
+      "raw_vector_norm": 1.0012958446200133,
+      "pair_delays_samples": [
+        5.604045037917011,
+        5.604045037917011,
+        0.0,
+        2.784781245520558,
+        2.784781245520558,
+        0.0,
+        -5.604045037917011,
+        -2.8218927165791676,
+        -2.8218927165791676,
+        -5.604045037917011,
+        -2.8218927165791676,
+        -2.8218927165791676,
+        2.784781245520558,
+        2.784781245520558,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        8.633805746351738e-21,
+        -1.7267611492703478e-20
+      ],
+      "display_direction": [
+        1.0,
+        8.633805746351738e-21,
+        -1.7267611492703478e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 128.0,
+      "display_expires_at_ms": 328.0,
+      "timestamp_ms": 128.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 11,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 5632,
+      "row_stop": 6656,
+      "first_sample_id": 7168,
+      "last_sample_id": 8191,
+      "start_seconds": 0.11733333333333333,
+      "end_seconds_exclusive": 0.13866666666666666,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -6.051590462999266e-20,
+        -6.483846924642073e-21
+      ],
+      "azimuth_deg": -3.467305928714777e-18,
+      "elevation_deg": -3.714970637908691e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013489025283304798,
+      "raw_vector_norm": 0.9999843361765842,
+      "pair_delays_samples": [
+        5.596651920093421,
+        5.596651920093421,
+        0.0,
+        2.781282412166744,
+        2.781282412166744,
+        0.0,
+        -5.596651920093421,
+        -2.8181536204660094,
+        -2.8181536204660094,
+        -5.596651920093421,
+        -2.8181536204660094,
+        -2.8181536204660094,
+        2.781282412166744,
+        2.781282412166744,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -6.051590462999266e-20,
+        -6.483846924642073e-21
+      ],
+      "display_direction": [
+        1.0,
+        -6.051590462999266e-20,
+        -6.483846924642073e-21
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 138.66666666666666,
+      "display_expires_at_ms": 338.66666666666663,
+      "timestamp_ms": 138.66666666666666,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 12,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 6144,
+      "row_stop": 7168,
+      "first_sample_id": 7680,
+      "last_sample_id": 8703,
+      "start_seconds": 0.128,
+      "end_seconds_exclusive": 0.14933333333333335,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -3.4222591704937976e-17,
+        4.83947759467516e-17
+      ],
+      "azimuth_deg": -1.9608100686923664e-15,
+      "elevation_deg": 2.7728164122300993e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013492026289991613,
+      "raw_vector_norm": 0.9993280414068533,
+      "pair_delays_samples": [
+        5.593013865763986,
+        5.593013865763986,
+        -1.1484884777962742e-15,
+        2.779403128852178,
+        2.779403128852178,
+        0.0,
+        -5.593013865763986,
+        -2.816287852457966,
+        -2.816287852457966,
+        -5.593013865763986,
+        -2.816287852457966,
+        -2.816287852457966,
+        2.779403128852178,
+        2.779403128852178,
+        -1.1484884777962742e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -3.4222591704937976e-17,
+        4.83947759467516e-17
+      ],
+      "display_direction": [
+        1.0,
+        -3.4222591704937976e-17,
+        4.83947759467516e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 149.33333333333334,
+      "display_expires_at_ms": 349.33333333333337,
+      "timestamp_ms": 149.33333333333334,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 13,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 6656,
+      "row_stop": 7680,
+      "first_sample_id": 8192,
+      "last_sample_id": 9215,
+      "start_seconds": 0.13866666666666666,
+      "end_seconds_exclusive": 0.16,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        9.294904961634912e-17,
+        -4.5432601512484425e-17
+      ],
+      "azimuth_deg": 5.3255882527688885e-15,
+      "elevation_deg": -2.603096318965038e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013582176946087151,
+      "raw_vector_norm": 1.0018808560382368,
+      "pair_delays_samples": [
+        5.607380233814448,
+        5.607380233814448,
+        1.080393020192963e-15,
+        2.7863425313303662,
+        2.7863425313303662,
+        1.080393020192963e-15,
+        -5.607380233814447,
+        -2.8234851374262897,
+        -2.8234851374262897,
+        -5.607380233814447,
+        -2.8234851374262897,
+        -2.8234851374262897,
+        2.7863425313303662,
+        2.7863425313303662,
+        1.080393020192963e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        9.294904961634912e-17,
+        -4.5432601512484425e-17
+      ],
+      "display_direction": [
+        1.0,
+        9.294904961634912e-17,
+        -4.5432601512484425e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 160.0,
+      "display_expires_at_ms": 360.0,
+      "timestamp_ms": 160.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 14,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 7168,
+      "row_stop": 8192,
+      "first_sample_id": 8704,
+      "last_sample_id": 9727,
+      "start_seconds": 0.14933333333333335,
+      "end_seconds_exclusive": 0.17066666666666666,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        2.782543936806176e-17,
+        -3.933509221632964e-17
+      ],
+      "azimuth_deg": 1.5942802388871073e-15,
+      "elevation_deg": -2.253734770753584e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013437783460938357,
+      "raw_vector_norm": 1.0001004738533175,
+      "pair_delays_samples": [
+        5.597240393277666,
+        5.597240393277666,
+        0.0,
+        2.7817442155849275,
+        2.7817442155849275,
+        9.336126374204019e-16,
+        -5.597240393277666,
+        -2.818465171023319,
+        -2.818465171023319,
+        -5.597240393277666,
+        -2.818465171023319,
+        -2.818465171023319,
+        2.7817442155849275,
+        2.7817442155849275,
+        9.336126374204019e-16
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        2.782543936806176e-17,
+        -3.933509221632964e-17
+      ],
+      "display_direction": [
+        1.0,
+        2.782543936806176e-17,
+        -3.933509221632964e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 170.66666666666666,
+      "display_expires_at_ms": 370.66666666666663,
+      "timestamp_ms": 170.66666666666666,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 15,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 7680,
+      "row_stop": 8704,
+      "first_sample_id": 9216,
+      "last_sample_id": 10239,
+      "start_seconds": 0.16,
+      "end_seconds_exclusive": 0.18133333333333335,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -3.8752887640444175e-18,
+        4.363159938803583e-17
+      ],
+      "azimuth_deg": -2.2203769057421425e-16,
+      "elevation_deg": 2.4999064983400385e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013560231384403905,
+      "raw_vector_norm": 0.9993983586423459,
+      "pair_delays_samples": [
+        5.593378568047902,
+        5.593378568047902,
+        -1.0361259949545595e-15,
+        2.779537410309861,
+        2.779537410309861,
+        -1.0361259949545595e-15,
+        -5.5933785680479,
+        -2.8166050039730863,
+        -2.8166050039730863,
+        -5.5933785680479,
+        -2.8166050039730863,
+        -2.8166050039730863,
+        2.779537410309861,
+        2.779537410309861,
+        -1.0361259949545595e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -3.8752887640444175e-18,
+        4.363159938803583e-17
+      ],
+      "display_direction": [
+        1.0,
+        -3.8752887640444175e-18,
+        4.363159938803583e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 181.33333333333334,
+      "display_expires_at_ms": 381.33333333333337,
+      "timestamp_ms": 181.33333333333334,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 16,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 8192,
+      "row_stop": 9216,
+      "first_sample_id": 9728,
+      "last_sample_id": 10751,
+      "start_seconds": 0.17066666666666666,
+      "end_seconds_exclusive": 0.192,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        5.776109183696505e-17,
+        -3.9796164052392376e-17
+      ],
+      "azimuth_deg": 3.3094667823256486e-15,
+      "elevation_deg": -2.2801522410123264e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013653121856815135,
+      "raw_vector_norm": 0.9994836813923156,
+      "pair_delays_samples": [
+        5.593826053805185,
+        5.593826053805185,
+        0.0,
+        2.779681175020186,
+        2.779681175020186,
+        0.0,
+        -5.593826053805183,
+        -2.816999092937188,
+        -2.816999092937188,
+        -5.593826053805183,
+        -2.816999092937188,
+        -2.816999092937188,
+        2.779681175020186,
+        2.779681175020186,
+        9.438360495434707e-16
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        5.776109183696505e-17,
+        -3.9796164052392376e-17
+      ],
+      "display_direction": [
+        1.0,
+        5.776109183696505e-17,
+        -3.9796164052392376e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 192.0,
+      "display_expires_at_ms": 392.0,
+      "timestamp_ms": 192.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 17,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 8704,
+      "row_stop": 9728,
+      "first_sample_id": 10240,
+      "last_sample_id": 11263,
+      "start_seconds": 0.18133333333333335,
+      "end_seconds_exclusive": 0.20266666666666666,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -9.511233334206258e-20,
+        4.23552513523722e-17
+      ],
+      "azimuth_deg": -5.449535280141606e-18,
+      "elevation_deg": 2.4267771427066994e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013544690541786012,
+      "raw_vector_norm": 0.9998170441877623,
+      "pair_delays_samples": [
+        5.5957474104481735,
+        5.5957474104481735,
+        0.0,
+        2.7807035274691407,
+        2.7807035274691407,
+        0.0,
+        -5.5957474104481735,
+        -2.8177321895980945,
+        -2.8177321895980945,
+        -5.5957474104481735,
+        -2.8177321895980945,
+        -2.8177321895980945,
+        2.7807035274691407,
+        2.7807035274691407,
+        -1.0061239027865211e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -9.511233334206258e-20,
+        4.23552513523722e-17
+      ],
+      "display_direction": [
+        1.0,
+        -9.511233334206258e-20,
+        4.23552513523722e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 202.66666666666666,
+      "display_expires_at_ms": 402.66666666666663,
+      "timestamp_ms": 202.66666666666666,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 18,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 9216,
+      "row_stop": 10240,
+      "first_sample_id": 10752,
+      "last_sample_id": 11775,
+      "start_seconds": 0.192,
+      "end_seconds_exclusive": 0.21333333333333335,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        5.783695734909859e-17,
+        2.8147665676036035e-20
+      ],
+      "azimuth_deg": 3.313813555981499e-15,
+      "elevation_deg": 1.6127424463821159e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013575878938096298,
+      "raw_vector_norm": 0.9981726452515267,
+      "pair_delays_samples": [
+        5.586503061727232,
+        5.586503061727232,
+        0.0,
+        2.7761008250478216,
+        2.7761008250478216,
+        0.0,
+        -5.58650306172723,
+        -2.8132091933309304,
+        -2.8132091933309304,
+        -5.58650306172723,
+        -2.8132091933309304,
+        -2.8132091933309304,
+        2.7761008250478216,
+        2.7761008250478216,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        5.783695734909859e-17,
+        2.8147665676036035e-20
+      ],
+      "display_direction": [
+        1.0,
+        5.783695734909859e-17,
+        2.8147665676036035e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 213.33333333333334,
+      "display_expires_at_ms": 413.33333333333337,
+      "timestamp_ms": 213.33333333333334,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 19,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 9728,
+      "row_stop": 10752,
+      "first_sample_id": 11264,
+      "last_sample_id": 12287,
+      "start_seconds": 0.20266666666666666,
+      "end_seconds_exclusive": 0.224,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        2.8929556322644175e-17,
+        4.323006025499664e-21
+      ],
+      "azimuth_deg": 1.6575414804735173e-15,
+      "elevation_deg": 2.4769000007075506e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.01344189391236075,
+      "raw_vector_norm": 0.9998822308001586,
+      "pair_delays_samples": [
+        5.596109000732451,
+        5.596109000732451,
+        0.0,
+        2.7810305278053855,
+        2.7810305278053855,
+        0.0,
+        -5.59610900073245,
+        -2.8177766876653116,
+        -2.8177766876653116,
+        -5.59610900073245,
+        -2.8177766876653116,
+        -2.8177766876653116,
+        2.7810305278053855,
+        2.7810305278053855,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        2.8929556322644175e-17,
+        4.323006025499664e-21
+      ],
+      "display_direction": [
+        1.0,
+        2.8929556322644175e-17,
+        4.323006025499664e-21
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 224.0,
+      "display_expires_at_ms": 424.0,
+      "timestamp_ms": 224.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 20,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 10240,
+      "row_stop": 11264,
+      "first_sample_id": 11776,
+      "last_sample_id": 12799,
+      "start_seconds": 0.21333333333333335,
+      "end_seconds_exclusive": 0.23466666666666666,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -2.9949760099612245e-17,
+        4.3979267208828147e-17
+      ],
+      "azimuth_deg": -1.7159948511370937e-15,
+      "elevation_deg": 2.519826397143949e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013633979526011362,
+      "raw_vector_norm": 1.0013263362277545,
+      "pair_delays_samples": [
+        5.6042417846178525,
+        5.6042417846178525,
+        -1.0105589288972462e-15,
+        2.784756226320837,
+        2.784756226320837,
+        0.0,
+        -5.6042417846178525,
+        -2.8220362880348944,
+        -2.8220362880348944,
+        -5.6042417846178525,
+        -2.8220362880348944,
+        -2.8220362880348944,
+        2.784756226320837,
+        2.784756226320837,
+        -1.0456803497090687e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -2.9949760099612245e-17,
+        4.3979267208828147e-17
+      ],
+      "display_direction": [
+        1.0,
+        -2.9949760099612245e-17,
+        4.3979267208828147e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 234.66666666666666,
+      "display_expires_at_ms": 434.66666666666663,
+      "timestamp_ms": 234.66666666666666,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 21,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 10752,
+      "row_stop": 11776,
+      "first_sample_id": 12288,
+      "last_sample_id": 13311,
+      "start_seconds": 0.224,
+      "end_seconds_exclusive": 0.24533333333333332,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -1.0385171923337142e-19,
+        -1.0817887420142857e-20
+      ],
+      "azimuth_deg": -5.95026520724978e-18,
+      "elevation_deg": -6.198192924218521e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013509765057115264,
+      "raw_vector_norm": 0.998923528380117,
+      "pair_delays_samples": [
+        5.590689575469614,
+        5.590689575469614,
+        0.0,
+        2.7783110853843738,
+        2.7783110853843738,
+        0.0,
+        -5.590689575469614,
+        -2.8152354880771875,
+        -2.8152354880771875,
+        -5.590689575469614,
+        -2.8152354880771875,
+        -2.8152354880771875,
+        2.7783110853843738,
+        2.7783110853843738,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -1.0385171923337142e-19,
+        -1.0817887420142857e-20
+      ],
+      "display_direction": [
+        1.0,
+        -1.0385171923337142e-19,
+        -1.0817887420142857e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 245.33333333333331,
+      "display_expires_at_ms": 445.3333333333333,
+      "timestamp_ms": 245.33333333333331,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 22,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 11264,
+      "row_stop": 12288,
+      "first_sample_id": 12800,
+      "last_sample_id": 13823,
+      "start_seconds": 0.23466666666666666,
+      "end_seconds_exclusive": 0.256,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        1.7281409574696386e-20,
+        4.37630095717214e-17
+      ],
+      "azimuth_deg": 9.901518326670739e-19,
+      "elevation_deg": 2.5074357472502608e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013579790702206636,
+      "raw_vector_norm": 1.0004963749874372,
+      "pair_delays_samples": [
+        5.599566593367224,
+        5.599566593367224,
+        0.0,
+        2.782539014749618,
+        2.782539014749618,
+        0.0,
+        -5.599566593367224,
+        -2.8196663405790128,
+        -2.8196663405790128,
+        -5.599566593367224,
+        -2.8196663405790128,
+        -2.8196663405790128,
+        2.782539014749618,
+        2.782539014749618,
+        -1.039868814084251e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        1.7281409574696386e-20,
+        4.37630095717214e-17
+      ],
+      "display_direction": [
+        1.0,
+        1.7281409574696386e-20,
+        4.37630095717214e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 256.0,
+      "display_expires_at_ms": 456.0,
+      "timestamp_ms": 256.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 23,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 11776,
+      "row_stop": 12800,
+      "first_sample_id": 13312,
+      "last_sample_id": 14335,
+      "start_seconds": 0.24533333333333332,
+      "end_seconds_exclusive": 0.26666666666666666,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        8.744782550969136e-17,
+        -4.1797140193966216e-17
+      ],
+      "azimuth_deg": 5.010391329301772e-15,
+      "elevation_deg": -2.394799728830879e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013568111609877477,
+      "raw_vector_norm": 1.000550693086744,
+      "pair_delays_samples": [
+        5.599861874586688,
+        5.599861874586688,
+        1.98517005797286e-15,
+        2.7827164619340192,
+        2.7827164619340192,
+        -9.92585028986432e-16,
+        -5.599861874586686,
+        -2.819810494955711,
+        -2.819810494955711,
+        -5.599861874586686,
+        -2.819810494955711,
+        -2.819810494955711,
+        2.7827164619340192,
+        2.7827164619340192,
+        9.92585028986432e-16
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        8.744782550969136e-17,
+        -4.1797140193966216e-17
+      ],
+      "display_direction": [
+        1.0,
+        8.744782550969136e-17,
+        -4.1797140193966216e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 266.6666666666667,
+      "display_expires_at_ms": 466.6666666666667,
+      "timestamp_ms": 266.6666666666667,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 24,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 12288,
+      "row_stop": 13312,
+      "first_sample_id": 13824,
+      "last_sample_id": 14847,
+      "start_seconds": 0.256,
+      "end_seconds_exclusive": 0.2773333333333333,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        4.7014965650780004e-38,
+        1.728821950853393e-20
+      ],
+      "azimuth_deg": 2.69375910574223e-36,
+      "elevation_deg": 9.905420131347285e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013546830130859736,
+      "raw_vector_norm": 1.0001022734366587,
+      "pair_delays_samples": [
+        5.597347201095752,
+        5.597347201095752,
+        0.0,
+        2.781495499878576,
+        2.781495499878576,
+        0.0,
+        -5.597347201095752,
+        -2.8185304915017935,
+        -2.8185304915017935,
+        -5.597347201095752,
+        -2.8185304915017935,
+        -2.8185304915017935,
+        2.781495499878576,
+        2.781495499878576,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        4.7014965650780004e-38,
+        1.728821950853393e-20
+      ],
+      "display_direction": [
+        1.0,
+        4.7014965650780004e-38,
+        1.728821950853393e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 277.3333333333333,
+      "display_expires_at_ms": 477.3333333333333,
+      "timestamp_ms": 277.3333333333333,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 25,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 12800,
+      "row_stop": 13824,
+      "first_sample_id": 14336,
+      "last_sample_id": 15359,
+      "start_seconds": 0.26666666666666666,
+      "end_seconds_exclusive": 0.288,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -5.781658132641592e-17,
+        -1.2959484756369209e-20
+      ],
+      "azimuth_deg": -3.312646095878519e-15,
+      "elevation_deg": -7.425237812040816e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013497961403322743,
+      "raw_vector_norm": 1.000617769101065,
+      "pair_delays_samples": [
+        5.600230457264182,
+        5.600230457264182,
+        0.0,
+        2.783007805524815,
+        2.783007805524815,
+        0.0,
+        -5.600230457264184,
+        -2.819908393713973,
+        -2.819908393713973,
+        -5.600230457264184,
+        -2.819908393713973,
+        -2.819908393713973,
+        2.783007805524815,
+        2.783007805524815,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -5.781658132641592e-17,
+        -1.2959484756369209e-20
+      ],
+      "display_direction": [
+        1.0,
+        -5.781658132641592e-17,
+        -1.2959484756369209e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 288.0,
+      "display_expires_at_ms": 488.0,
+      "timestamp_ms": 288.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 26,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 13312,
+      "row_stop": 14336,
+      "first_sample_id": 14848,
+      "last_sample_id": 15871,
+      "start_seconds": 0.2773333333333333,
+      "end_seconds_exclusive": 0.2986666666666667,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        7.766573275491019e-20,
+        3.2360721981212576e-20
+      ],
+      "azimuth_deg": 4.44991869964731e-18,
+      "elevation_deg": 1.854132791519712e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013519841124147329,
+      "raw_vector_norm": 1.0017924455722915,
+      "pair_delays_samples": [
+        5.6068493187402275,
+        5.6068493187402275,
+        9.64788366297175e-16,
+        2.7862190260782764,
+        2.7862190260782764,
+        -9.64788366297175e-16,
+        -5.6068493187402275,
+        -2.823185795614437,
+        -2.823185795614437,
+        -5.6068493187402275,
+        -2.823185795614437,
+        -2.823185795614437,
+        2.7862190260782764,
+        2.7862190260782764,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        7.766573275491019e-20,
+        3.2360721981212576e-20
+      ],
+      "display_direction": [
+        1.0,
+        7.766573275491019e-20,
+        3.2360721981212576e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 298.6666666666667,
+      "display_expires_at_ms": 498.6666666666667,
+      "timestamp_ms": 298.6666666666667,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 27,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 13824,
+      "row_stop": 14848,
+      "first_sample_id": 15360,
+      "last_sample_id": 16383,
+      "start_seconds": 0.288,
+      "end_seconds_exclusive": 0.30933333333333335,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        8.640804761508585e-21,
+        4.451094552772023e-17
+      ],
+      "azimuth_deg": 4.950816444309877e-19,
+      "elevation_deg": 2.550289320875076e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013585168238510274,
+      "raw_vector_norm": 1.0004847992386812,
+      "pair_delays_samples": [
+        5.599512091517351,
+        5.599512091517351,
+        0.0,
+        2.782488217791262,
+        2.782488217791262,
+        0.0,
+        -5.599512091517351,
+        -2.819631749654509,
+        -2.819631749654509,
+        -5.599512091517351,
+        -2.819631749654509,
+        -2.819631749654509,
+        2.782488217791262,
+        2.782488217791262,
+        -1.0575646814989723e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        8.640804761508585e-21,
+        4.451094552772023e-17
+      ],
+      "display_direction": [
+        1.0,
+        8.640804761508585e-21,
+        4.451094552772023e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 309.33333333333337,
+      "display_expires_at_ms": 509.33333333333337,
+      "timestamp_ms": 309.33333333333337,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 28,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 14336,
+      "row_stop": 15360,
+      "first_sample_id": 15872,
+      "last_sample_id": 16895,
+      "start_seconds": 0.2986666666666667,
+      "end_seconds_exclusive": 0.32,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -2.891237455723468e-17,
+        -3.0256633562661455e-20
+      ],
+      "azimuth_deg": -1.6565570378309693e-15,
+      "elevation_deg": -1.7335774054143772e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.012899336887381058,
+      "raw_vector_norm": 1.0000279210544394,
+      "pair_delays_samples": [
+        5.597478448077257,
+        5.597478448077257,
+        0.0,
+        2.7815993731973703,
+        2.7815993731973703,
+        0.0,
+        -5.597478448077259,
+        -2.81691552444861,
+        -2.81691552444861,
+        -5.597478448077259,
+        -2.81691552444861,
+        -2.81691552444861,
+        2.7815993731973703,
+        2.7815993731973703,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -2.891237455723468e-17,
+        -3.0256633562661455e-20
+      ],
+      "display_direction": [
+        1.0,
+        -2.891237455723468e-17,
+        -3.0256633562661455e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 320.0,
+      "display_expires_at_ms": 520.0,
+      "timestamp_ms": 320.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 29,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 14848,
+      "row_stop": 15872,
+      "first_sample_id": 16384,
+      "last_sample_id": 17407,
+      "start_seconds": 0.30933333333333335,
+      "end_seconds_exclusive": 0.33066666666666666,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -3.086639857275016e-17,
+        4.3812393661615067e-17
+      ],
+      "azimuth_deg": -1.7685143669872118e-15,
+      "elevation_deg": 2.5102652471762623e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013500959942940816,
+      "raw_vector_norm": 1.0001579176146926,
+      "pair_delays_samples": [
+        5.597620191540046,
+        5.597620191540046,
+        0.0,
+        2.781755499752112,
+        2.781755499752112,
+        -1.040396413145694e-15,
+        -5.597620191540046,
+        -2.8186589435836154,
+        -2.8186589435836154,
+        -5.597620191540046,
+        -2.8186589435836154,
+        -2.8186589435836154,
+        2.781755499752112,
+        2.781755499752112,
+        -1.040396413145694e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -3.086639857275016e-17,
+        4.3812393661615067e-17
+      ],
+      "display_direction": [
+        1.0,
+        -3.086639857275016e-17,
+        4.3812393661615067e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 330.6666666666667,
+      "display_expires_at_ms": 530.6666666666667,
+      "timestamp_ms": 330.6666666666667,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 30,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 15360,
+      "row_stop": 16384,
+      "first_sample_id": 16896,
+      "last_sample_id": 17919,
+      "start_seconds": 0.32,
+      "end_seconds_exclusive": 0.3413333333333333,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -1.1334917200845611e-18,
+        8.652608550263823e-21
+      ],
+      "azimuth_deg": -6.494429167386944e-17,
+      "elevation_deg": 4.957579517089269e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013716594649561075,
+      "raw_vector_norm": 0.9991199494185826,
+      "pair_delays_samples": [
+        5.591989592712391,
+        5.591989592712391,
+        0.0,
+        2.778362882099824,
+        2.778362882099824,
+        -1.0130039070246515e-15,
+        -5.591989592712389,
+        -2.815882155947798,
+        -2.815882155947798,
+        -5.591989592712389,
+        -2.815882155947798,
+        -2.815882155947798,
+        2.778362882099824,
+        2.778362882099824,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -1.1334917200845611e-18,
+        8.652608550263823e-21
+      ],
+      "display_direction": [
+        1.0,
+        -1.1334917200845611e-18,
+        8.652608550263823e-21
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 341.3333333333333,
+      "display_expires_at_ms": 541.3333333333333,
+      "timestamp_ms": 341.3333333333333,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 31,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 15872,
+      "row_stop": 16896,
+      "first_sample_id": 17408,
+      "last_sample_id": 18431,
+      "start_seconds": 0.33066666666666666,
+      "end_seconds_exclusive": 0.352,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -2.893761023089112e-17,
+        4.321626378568011e-21
+      ],
+      "azimuth_deg": -1.6580029354246529e-15,
+      "elevation_deg": 2.4761095212435316e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013605130492460737,
+      "raw_vector_norm": 1.00020143573159,
+      "pair_delays_samples": [
+        5.597909301830327,
+        5.597909301830327,
+        0.0,
+        2.781685542123714,
+        2.781685542123714,
+        0.0,
+        -5.597909301830328,
+        -2.8188814804953863,
+        -2.8188814804953863,
+        -5.597909301830328,
+        -2.8188814804953863,
+        -2.8188814804953863,
+        2.781685542123714,
+        2.781685542123714,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -2.893761023089112e-17,
+        4.321626378568011e-21
+      ],
+      "display_direction": [
+        1.0,
+        -2.893761023089112e-17,
+        4.321626378568011e-21
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 352.0,
+      "display_expires_at_ms": 552.0,
+      "timestamp_ms": 352.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 32,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 16384,
+      "row_stop": 17408,
+      "first_sample_id": 17920,
+      "last_sample_id": 18943,
+      "start_seconds": 0.3413333333333333,
+      "end_seconds_exclusive": 0.3626666666666667,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -1.158186877032633e-16,
+        -6.4877149732947865e-21
+      ],
+      "azimuth_deg": -6.635921994140712e-15,
+      "elevation_deg": -3.7171868665362085e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013574651521340804,
+      "raw_vector_norm": 0.9993881342656693,
+      "pair_delays_samples": [
+        5.593280312939479,
+        5.593280312939479,
+        0.0,
+        2.779533158076779,
+        2.779533158076779,
+        0.0,
+        -5.593280312939482,
+        -2.816634068435672,
+        -2.816634068435672,
+        -5.593280312939482,
+        -2.816634068435672,
+        -2.816634068435672,
+        2.779533158076779,
+        2.779533158076779,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -1.158186877032633e-16,
+        -6.4877149732947865e-21
+      ],
+      "display_direction": [
+        1.0,
+        -1.158186877032633e-16,
+        -6.4877149732947865e-21
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 362.6666666666667,
+      "display_expires_at_ms": 562.6666666666667,
+      "timestamp_ms": 362.6666666666667,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 33,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 16896,
+      "row_stop": 17920,
+      "first_sample_id": 18432,
+      "last_sample_id": 19455,
+      "start_seconds": 0.352,
+      "end_seconds_exclusive": 0.37333333333333335,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        8.644151097511555e-17,
+        2.588327506990147e-20
+      ],
+      "azimuth_deg": 4.952733753607906e-15,
+      "elevation_deg": 1.483002421481535e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013673204579899708,
+      "raw_vector_norm": 1.0019976753789333,
+      "pair_delays_samples": [
+        5.60813883859045,
+        5.60813883859045,
+        9.69648040866691e-16,
+        2.786433565082898,
+        2.786433565082898,
+        0.0,
+        -5.608138838590448,
+        -2.8238386416506462,
+        -2.8238386416506462,
+        -5.608138838590448,
+        -2.8238386416506462,
+        -2.8238386416506462,
+        2.786433565082898,
+        2.786433565082898,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        8.644151097511555e-17,
+        2.588327506990147e-20
+      ],
+      "display_direction": [
+        1.0,
+        8.644151097511555e-17,
+        2.588327506990147e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 373.33333333333337,
+      "display_expires_at_ms": 573.3333333333334,
+      "timestamp_ms": 373.33333333333337,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 34,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 17408,
+      "row_stop": 18432,
+      "first_sample_id": 18944,
+      "last_sample_id": 19967,
+      "start_seconds": 0.3626666666666667,
+      "end_seconds_exclusive": 0.384,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        2.900717404188041e-17,
+        -1.9424446903045032e-20
+      ],
+      "azimuth_deg": 1.6619886482011848e-15,
+      "elevation_deg": -1.112938826920443e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013597594375904302,
+      "raw_vector_norm": 1.0013791479116583,
+      "pair_delays_samples": [
+        5.604527387950823,
+        5.604527387950823,
+        0.0,
+        2.784964648086096,
+        2.784964648086096,
+        0.0,
+        -5.604527387950822,
+        -2.8221435263654664,
+        -2.8221435263654664,
+        -5.604527387950822,
+        -2.8221435263654664,
+        -2.8221435263654664,
+        2.784964648086096,
+        2.784964648086096,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        2.900717404188041e-17,
+        -1.9424446903045032e-20
+      ],
+      "display_direction": [
+        1.0,
+        2.900717404188041e-17,
+        -1.9424446903045032e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 384.0,
+      "display_expires_at_ms": 584.0,
+      "timestamp_ms": 384.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 35,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 17920,
+      "row_stop": 18944,
+      "first_sample_id": 19456,
+      "last_sample_id": 20479,
+      "start_seconds": 0.37333333333333335,
+      "end_seconds_exclusive": 0.39466666666666667,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        1.3826475342441882e-19,
+        -2.376425449482199e-20
+      ],
+      "azimuth_deg": 7.921986826636194e-18,
+      "elevation_deg": -1.3615914858280964e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.01351281239527883,
+      "raw_vector_norm": 1.0003988554383494,
+      "pair_delays_samples": [
+        5.598990980828903,
+        5.598990980828903,
+        0.0,
+        2.782389832711076,
+        2.782389832711076,
+        0.0,
+        -5.598990980828903,
+        -2.8193291016220536,
+        -2.8193291016220536,
+        -5.598990980828903,
+        -2.8193291016220536,
+        -2.8193291016220536,
+        2.782389832711076,
+        2.782389832711076,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        1.3826475342441882e-19,
+        -2.376425449482199e-20
+      ],
+      "display_direction": [
+        1.0,
+        1.3826475342441882e-19,
+        -2.376425449482199e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 394.6666666666667,
+      "display_expires_at_ms": 594.6666666666667,
+      "timestamp_ms": 394.6666666666667,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 36,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 18432,
+      "row_stop": 19456,
+      "first_sample_id": 19968,
+      "last_sample_id": 20991,
+      "start_seconds": 0.384,
+      "end_seconds_exclusive": 0.4053333333333333,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -5.787205411810118e-17,
+        -1.2971918884810317e-20
+      ],
+      "azimuth_deg": -3.315824452719893e-15,
+      "elevation_deg": -7.432362042856806e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013551236046827864,
+      "raw_vector_norm": 0.9996586349920762,
+      "pair_delays_samples": [
+        5.594845015664386,
+        5.594845015664386,
+        0.0,
+        2.780268007965323,
+        2.780268007965323,
+        0.0,
+        -5.594845015664387,
+        -2.817312332584493,
+        -2.817312332584493,
+        -5.594845015664387,
+        -2.817312332584493,
+        -2.817312332584493,
+        2.780268007965323,
+        2.780268007965323,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -5.787205411810118e-17,
+        -1.2971918884810317e-20
+      ],
+      "display_direction": [
+        1.0,
+        -5.787205411810118e-17,
+        -1.2971918884810317e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 405.3333333333333,
+      "display_expires_at_ms": 605.3333333333333,
+      "timestamp_ms": 405.3333333333333,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 37,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 18944,
+      "row_stop": 19968,
+      "first_sample_id": 20480,
+      "last_sample_id": 21503,
+      "start_seconds": 0.39466666666666667,
+      "end_seconds_exclusive": 0.416,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        8.661468233998189e-17,
+        -3.997368204313554e-17
+      ],
+      "azimuth_deg": 4.962655741947268e-15,
+      "elevation_deg": -2.290323272669552e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013664330488182075,
+      "raw_vector_norm": 1.0009924489610182,
+      "pair_delays_samples": [
+        5.602461553443425,
+        5.602461553443425,
+        0.0,
+        2.7836856058984947,
+        2.7836856058984947,
+        0.0,
+        -5.602461553443423,
+        -2.821060400962361,
+        -2.821060400962361,
+        -5.602461553443423,
+        -2.821060400962361,
+        -2.821060400962361,
+        2.7836856058984947,
+        2.7836856058984947,
+        9.508000822769787e-16
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        8.661468233998189e-17,
+        -3.997368204313554e-17
+      ],
+      "display_direction": [
+        1.0,
+        8.661468233998189e-17,
+        -3.997368204313554e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 416.0,
+      "display_expires_at_ms": 616.0,
+      "timestamp_ms": 416.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 38,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 19456,
+      "row_stop": 20480,
+      "first_sample_id": 20992,
+      "last_sample_id": 22015,
+      "start_seconds": 0.4053333333333333,
+      "end_seconds_exclusive": 0.4266666666666667,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        6.138971540947698e-17,
+        -4.276589342890002e-17
+      ],
+      "azimuth_deg": 3.517371598472265e-15,
+      "elevation_deg": -2.4503052005822317e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013566113834756302,
+      "raw_vector_norm": 1.0006778114934152,
+      "pair_delays_samples": [
+        5.600588096366934,
+        5.600588096366934,
+        2.0638793283056554e-15,
+        2.783059285944288,
+        2.783059285944288,
+        0.0,
+        -5.600588096366934,
+        -2.8201499271587793,
+        -2.8201499271587793,
+        -5.600588096366934,
+        -2.8201499271587793,
+        -2.8201499271587793,
+        2.783059285944288,
+        2.783059285944288,
+        1.0170296968117243e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        6.138971540947698e-17,
+        -4.276589342890002e-17
+      ],
+      "display_direction": [
+        1.0,
+        6.138971540947698e-17,
+        -4.276589342890002e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 426.6666666666667,
+      "display_expires_at_ms": 626.6666666666667,
+      "timestamp_ms": 426.6666666666667,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 39,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 19968,
+      "row_stop": 20992,
+      "first_sample_id": 21504,
+      "last_sample_id": 22527,
+      "start_seconds": 0.416,
+      "end_seconds_exclusive": 0.43733333333333335,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        2.841742998089862e-17,
+        4.166405151870796e-17
+      ],
+      "azimuth_deg": 1.6281988025140227e-15,
+      "elevation_deg": 2.387174309437594e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.01349603559160311,
+      "raw_vector_norm": 0.9996487966017422,
+      "pair_delays_samples": [
+        5.5947684227638055,
+        5.5947684227638055,
+        0.0,
+        2.7803393314620126,
+        2.7803393314620126,
+        -9.883800759703538e-16,
+        -5.594768422763804,
+        -2.817228978771413,
+        -2.817228978771413,
+        -5.594768422763804,
+        -2.817228978771413,
+        -2.817228978771413,
+        2.7803393314620126,
+        2.7803393314620126,
+        -9.883800759703538e-16
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        2.841742998089862e-17,
+        4.166405151870796e-17
+      ],
+      "display_direction": [
+        1.0,
+        2.841742998089862e-17,
+        4.166405151870796e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 437.33333333333337,
+      "display_expires_at_ms": 637.3333333333334,
+      "timestamp_ms": 437.33333333333337,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 40,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 20480,
+      "row_stop": 21504,
+      "first_sample_id": 22016,
+      "last_sample_id": 23039,
+      "start_seconds": 0.4266666666666667,
+      "end_seconds_exclusive": 0.448,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -2.8690439235121106e-17,
+        4.045274250457398e-17
+      ],
+      "azimuth_deg": -1.6438410805489852e-15,
+      "elevation_deg": 2.317771415241564e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013494313397181847,
+      "raw_vector_norm": 1.0015865986740182,
+      "pair_delays_samples": [
+        5.605682166751377,
+        5.605682166751377,
+        -9.615430063225222e-16,
+        2.7856938356100422,
+        2.7856938356100422,
+        0.0,
+        -5.605682166751377,
+        -2.822588502497536,
+        -2.822588502497536,
+        -5.605682166751377,
+        -2.822588502497536,
+        -2.822588502497536,
+        2.7856938356100422,
+        2.7856938356100422,
+        -9.615430063225222e-16
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -2.8690439235121106e-17,
+        4.045274250457398e-17
+      ],
+      "display_direction": [
+        1.0,
+        -2.8690439235121106e-17,
+        4.045274250457398e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 448.0,
+      "display_expires_at_ms": 648.0,
+      "timestamp_ms": 448.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 41,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 20992,
+      "row_stop": 22016,
+      "first_sample_id": 22528,
+      "last_sample_id": 23551,
+      "start_seconds": 0.43733333333333335,
+      "end_seconds_exclusive": 0.45866666666666667,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -7.346885175102572e-19,
+        3.241272871368782e-20
+      ],
+      "azimuth_deg": -4.2094551310061013e-17,
+      "elevation_deg": 1.8571125577968098e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013560549391951093,
+      "raw_vector_norm": 1.000185053853661,
+      "pair_delays_samples": [
+        5.597791522956497,
+        5.597791522956497,
+        0.0,
+        2.7817288169854373,
+        2.7817288169854373,
+        -9.92244141650332e-16,
+        -5.597791522956496,
+        -2.8187986624575023,
+        -2.8187986624575023,
+        -5.597791522956496,
+        -2.8187986624575023,
+        -2.8187986624575023,
+        2.7817288169854373,
+        2.7817288169854373,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -7.346885175102572e-19,
+        3.241272871368782e-20
+      ],
+      "display_direction": [
+        1.0,
+        -7.346885175102572e-19,
+        3.241272871368782e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 458.6666666666667,
+      "display_expires_at_ms": 658.6666666666667,
+      "timestamp_ms": 458.6666666666667,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 42,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 21504,
+      "row_stop": 22528,
+      "first_sample_id": 23040,
+      "last_sample_id": 24063,
+      "start_seconds": 0.448,
+      "end_seconds_exclusive": 0.4693333333333333,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        5.779921328772722e-17,
+        -2.3762570868777263e-20
+      ],
+      "azimuth_deg": 3.3116509805632367e-15,
+      "elevation_deg": -1.3614950211614551e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013532449588766475,
+      "raw_vector_norm": 1.0004697357137882,
+      "pair_delays_samples": [
+        5.599416193328523,
+        5.599416193328523,
+        0.0,
+        2.782530763539909,
+        2.782530763539909,
+        0.0,
+        -5.599416193328521,
+        -2.8195280384660752,
+        -2.8195280384660752,
+        -5.599416193328521,
+        -2.8195280384660752,
+        -2.8195280384660752,
+        2.782530763539909,
+        2.782530763539909,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        5.779921328772722e-17,
+        -2.3762570868777263e-20
+      ],
+      "display_direction": [
+        1.0,
+        5.779921328772722e-17,
+        -2.3762570868777263e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 469.3333333333333,
+      "display_expires_at_ms": 669.3333333333333,
+      "timestamp_ms": 469.3333333333333,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 43,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 22016,
+      "row_stop": 23040,
+      "first_sample_id": 23552,
+      "last_sample_id": 24575,
+      "start_seconds": 0.45866666666666667,
+      "end_seconds_exclusive": 0.48,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        5.779322689574603e-17,
+        -2.8084328261240406e-20
+      ],
+      "azimuth_deg": 3.3113079855682036e-15,
+      "elevation_deg": -1.609113479829057e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013549867821045525,
+      "raw_vector_norm": 1.0004237824082465,
+      "pair_delays_samples": [
+        5.599153814416688,
+        5.599153814416688,
+        0.0,
+        2.7823837723626736,
+        2.7823837723626736,
+        0.0,
+        -5.599153814416686,
+        -2.8194280934730376,
+        -2.8194280934730376,
+        -5.599153814416686,
+        -2.8194280934730376,
+        -2.8194280934730376,
+        2.7823837723626736,
+        2.7823837723626736,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        5.779322689574603e-17,
+        -2.8084328261240406e-20
+      ],
+      "display_direction": [
+        1.0,
+        5.779322689574603e-17,
+        -2.8084328261240406e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 480.0,
+      "display_expires_at_ms": 680.0,
+      "timestamp_ms": 480.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 44,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 22528,
+      "row_stop": 23552,
+      "first_sample_id": 24064,
+      "last_sample_id": 25087,
+      "start_seconds": 0.4693333333333333,
+      "end_seconds_exclusive": 0.49066666666666664,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        1.1230681840058023e-19,
+        -2.591695809244161e-20
+      ],
+      "azimuth_deg": 6.434706704895422e-18,
+      "elevation_deg": -1.484932316514329e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013544873141376167,
+      "raw_vector_norm": 1.0006954272461017,
+      "pair_delays_samples": [
+        5.600665553823072,
+        5.600665553823072,
+        0.0,
+        2.7831603877849647,
+        2.7831603877849647,
+        0.0,
+        -5.600665553823072,
+        -2.820189731792049,
+        -2.820189731792049,
+        -5.600665553823072,
+        -2.820189731792049,
+        -2.820189731792049,
+        2.7831603877849647,
+        2.7831603877849647,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        1.1230681840058023e-19,
+        -2.591695809244161e-20
+      ],
+      "display_direction": [
+        1.0,
+        1.1230681840058023e-19,
+        -2.591695809244161e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 490.66666666666663,
+      "display_expires_at_ms": 690.6666666666666,
+      "timestamp_ms": 490.66666666666663,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 45,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 23040,
+      "row_stop": 24064,
+      "first_sample_id": 24576,
+      "last_sample_id": 25599,
+      "start_seconds": 0.48,
+      "end_seconds_exclusive": 0.5013333333333333,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -3.3212146620152824e-17,
+        4.37922052848259e-17
+      ],
+      "azimuth_deg": -1.9029158299044383e-15,
+      "elevation_deg": 2.5091085383910233e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013535510932252784,
+      "raw_vector_norm": 1.0013592796233273,
+      "pair_delays_samples": [
+        5.604457267515507,
+        5.604457267515507,
+        -1.043585896822589e-15,
+        2.7849502955915812,
+        2.7849502955915812,
+        -1.0422042365482402e-15,
+        -5.604457267515505,
+        -2.8219644715067465,
+        -2.8219644715067465,
+        -5.604457267515505,
+        -2.8219644715067465,
+        -2.8219644715067465,
+        2.7849502955915812,
+        2.7849502955915812,
+        -1.0422042365482402e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -3.3212146620152824e-17,
+        4.37922052848259e-17
+      ],
+      "display_direction": [
+        1.0,
+        -3.3212146620152824e-17,
+        4.37922052848259e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 501.3333333333333,
+      "display_expires_at_ms": 701.3333333333333,
+      "timestamp_ms": 501.3333333333333,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 46,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 23552,
+      "row_stop": 24576,
+      "first_sample_id": 25088,
+      "last_sample_id": 26111,
+      "start_seconds": 0.49066666666666664,
+      "end_seconds_exclusive": 0.512,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        3.760905101330572e-18,
+        -2.3775836847492142e-20
+      ],
+      "azimuth_deg": 2.1548398945546297e-16,
+      "elevation_deg": -1.3622551057529281e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013367172724122457,
+      "raw_vector_norm": 0.9999115130819558,
+      "pair_delays_samples": [
+        5.596300048386417,
+        5.596300048386417,
+        0.0,
+        2.7811858764857145,
+        2.7811858764857145,
+        1.0924191293167363e-15,
+        -5.596300048386418,
+        -2.8177309811206475,
+        -2.8177309811206475,
+        -5.596300048386418,
+        -2.8177309811206475,
+        -2.8177309811206475,
+        2.7811858764857145,
+        2.7811858764857145,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        3.760905101330572e-18,
+        -2.3775836847492142e-20
+      ],
+      "display_direction": [
+        1.0,
+        3.760905101330572e-18,
+        -2.3775836847492142e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 512.0,
+      "display_expires_at_ms": 712.0,
+      "timestamp_ms": 512.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 47,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 24064,
+      "row_stop": 25088,
+      "first_sample_id": 25600,
+      "last_sample_id": 26623,
+      "start_seconds": 0.5013333333333333,
+      "end_seconds_exclusive": 0.5226666666666666,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -3.4578251632363236e-20,
+        4.5048978454788607e-17
+      ],
+      "azimuth_deg": -1.981187881475763e-18,
+      "elevation_deg": 2.581116336835164e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013597428595138333,
+      "raw_vector_norm": 1.000049847400278,
+      "pair_delays_samples": [
+        5.597106185693981,
+        5.597106185693981,
+        0.0,
+        2.7812232467985103,
+        2.7812232467985103,
+        0.0,
+        -5.597106185693981,
+        -2.818404384803607,
+        -2.818404384803607,
+        -5.597106185693981,
+        -2.818404384803607,
+        -2.818404384803607,
+        2.7812232467985103,
+        2.7812232467985103,
+        -1.0693714526710375e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -3.4578251632363236e-20,
+        4.5048978454788607e-17
+      ],
+      "display_direction": [
+        1.0,
+        -3.4578251632363236e-20,
+        4.5048978454788607e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 522.6666666666666,
+      "display_expires_at_ms": 722.6666666666666,
+      "timestamp_ms": 522.6666666666666,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 48,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 24576,
+      "row_stop": 25600,
+      "first_sample_id": 26112,
+      "last_sample_id": 27135,
+      "start_seconds": 0.512,
+      "end_seconds_exclusive": 0.5333333333333333,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -2.967303249475526e-17,
+        4.21825491848042e-17
+      ],
+      "azimuth_deg": -1.7001395273040244e-15,
+      "elevation_deg": 2.416882037392292e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013593251956554716,
+      "raw_vector_norm": 0.9984282468050452,
+      "pair_delays_samples": [
+        5.587978047725012,
+        5.587978047725012,
+        0.0,
+        2.7767449027046682,
+        2.7767449027046682,
+        -9.994490451229419e-16,
+        -5.587978047725012,
+        -2.8139074613119477,
+        -2.8139074613119477,
+        -5.587978047725012,
+        -2.8139074613119477,
+        -2.8139074613119477,
+        2.7767449027046682,
+        2.7767449027046682,
+        -9.994490451229419e-16
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -2.967303249475526e-17,
+        4.21825491848042e-17
+      ],
+      "display_direction": [
+        1.0,
+        -2.967303249475526e-17,
+        4.21825491848042e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 533.3333333333334,
+      "display_expires_at_ms": 733.3333333333334,
+      "timestamp_ms": 533.3333333333334,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 49,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 25088,
+      "row_stop": 26112,
+      "first_sample_id": 26624,
+      "last_sample_id": 27647,
+      "start_seconds": 0.5226666666666666,
+      "end_seconds_exclusive": 0.544,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        1.554572435477556e-19,
+        2.806866897390032e-20
+      ],
+      "azimuth_deg": 8.907043950023744e-18,
+      "elevation_deg": 1.6082162687542875e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013572405685157414,
+      "raw_vector_norm": 1.0009819108854099,
+      "pair_delays_samples": [
+        5.602270835907773,
+        5.602270835907773,
+        0.0,
+        2.7839226809652433,
+        2.7839226809652433,
+        0.0,
+        -5.602270835907773,
+        -2.8210277950325007,
+        -2.8210277950325007,
+        -5.602270835907773,
+        -2.8210277950325007,
+        -2.8210277950325007,
+        2.7839226809652433,
+        2.7839226809652433,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        1.554572435477556e-19,
+        2.806866897390032e-20
+      ],
+      "display_direction": [
+        1.0,
+        1.554572435477556e-19,
+        2.806866897390032e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 544.0,
+      "display_expires_at_ms": 744.0,
+      "timestamp_ms": 544.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 50,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 25600,
+      "row_stop": 26624,
+      "first_sample_id": 27136,
+      "last_sample_id": 28159,
+      "start_seconds": 0.5333333333333333,
+      "end_seconds_exclusive": 0.5546666666666666,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        5.776976629408988e-17,
+        -4.8399359790604416e-17
+      ],
+      "azimuth_deg": 3.309963792108469e-15,
+      "elevation_deg": -2.7730790471368126e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013549295588266109,
+      "raw_vector_norm": 1.0000818314794786,
+      "pair_delays_samples": [
+        5.597279159591422,
+        5.597279159591422,
+        5.750208325660768e-16,
+        2.7813852514977926,
+        2.7813852514977926,
+        -5.770425877021016e-16,
+        -5.59727915959142,
+        -2.8184335410447123,
+        -2.8184335410447123,
+        -5.59727915959142,
+        -2.8184335410447123,
+        -2.8184335410447123,
+        2.7813852514977926,
+        2.7813852514977926,
+        1.150041665132155e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        5.776976629408988e-17,
+        -4.8399359790604416e-17
+      ],
+      "display_direction": [
+        1.0,
+        5.776976629408988e-17,
+        -4.8399359790604416e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 554.6666666666666,
+      "display_expires_at_ms": 754.6666666666666,
+      "timestamp_ms": 554.6666666666666,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 51,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 26112,
+      "row_stop": 27136,
+      "first_sample_id": 27648,
+      "last_sample_id": 28671,
+      "start_seconds": 0.544,
+      "end_seconds_exclusive": 0.5653333333333334,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        2.8970362881397665e-17,
+        1.2933197714909513e-20
+      ],
+      "azimuth_deg": 1.659879524066545e-15,
+      "elevation_deg": 7.410176446725556e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013639437903613084,
+      "raw_vector_norm": 1.0026515492505286,
+      "pair_delays_samples": [
+        5.611688106726346,
+        5.611688106726346,
+        0.0,
+        2.788427673513269,
+        2.788427673513269,
+        0.0,
+        -5.611688106726344,
+        -2.8257265027805247,
+        -2.8257265027805247,
+        -5.611688106726344,
+        -2.8257265027805247,
+        -2.8257265027805247,
+        2.788427673513269,
+        2.788427673513269,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        2.8970362881397665e-17,
+        1.2933197714909513e-20
+      ],
+      "display_direction": [
+        1.0,
+        2.8970362881397665e-17,
+        1.2933197714909513e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 565.3333333333334,
+      "display_expires_at_ms": 765.3333333333334,
+      "timestamp_ms": 565.3333333333334,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 52,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 26624,
+      "row_stop": 27648,
+      "first_sample_id": 28160,
+      "last_sample_id": 29183,
+      "start_seconds": 0.5546666666666666,
+      "end_seconds_exclusive": 0.576,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        3.4569958576659357e-20,
+        4.3212448220824196e-21
+      ],
+      "azimuth_deg": 1.980712724384664e-18,
+      "elevation_deg": 2.47589090548083e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013545774275427186,
+      "raw_vector_norm": 1.0002897513351654,
+      "pair_delays_samples": [
+        5.598479053421368,
+        5.598479053421368,
+        0.0,
+        2.7819335687596918,
+        2.7819335687596918,
+        0.0,
+        -5.598479053421368,
+        -2.8189770348656493,
+        -2.8189770348656493,
+        -5.598479053421368,
+        -2.8189770348656493,
+        -2.8189770348656493,
+        2.7819335687596918,
+        2.7819335687596918,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        3.4569958576659357e-20,
+        4.3212448220824196e-21
+      ],
+      "display_direction": [
+        1.0,
+        3.4569958576659357e-20,
+        4.3212448220824196e-21
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 576.0,
+      "display_expires_at_ms": 776.0,
+      "timestamp_ms": 576.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 53,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 27136,
+      "row_stop": 28160,
+      "first_sample_id": 28672,
+      "last_sample_id": 29695,
+      "start_seconds": 0.5653333333333334,
+      "end_seconds_exclusive": 0.5866666666666667,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        5.764638910224642e-17,
+        -2.5904608643909566e-20
+      ],
+      "azimuth_deg": 3.3028947997276626e-15,
+      "elevation_deg": -1.484224745234129e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013638916528473351,
+      "raw_vector_norm": 1.0011724866313658,
+      "pair_delays_samples": [
+        5.603348803099301,
+        5.603348803099301,
+        0.0,
+        2.7843528532338513,
+        2.7843528532338513,
+        0.0,
+        -5.6033488030992995,
+        -2.82164202743829,
+        -2.82164202743829,
+        -5.6033488030992995,
+        -2.82164202743829,
+        -2.82164202743829,
+        2.7843528532338513,
+        2.7843528532338513,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        5.764638910224642e-17,
+        -2.5904608643909566e-20
+      ],
+      "display_direction": [
+        1.0,
+        5.764638910224642e-17,
+        -2.5904608643909566e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 586.6666666666666,
+      "display_expires_at_ms": 786.6666666666666,
+      "timestamp_ms": 586.6666666666666,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 54,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 27648,
+      "row_stop": 28672,
+      "first_sample_id": 29184,
+      "last_sample_id": 30207,
+      "start_seconds": 0.576,
+      "end_seconds_exclusive": 0.5973333333333334,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        2.701843961052789e-17,
+        -8.637608571140729e-21
+      ],
+      "azimuth_deg": 1.5480425587123358e-15,
+      "elevation_deg": -4.948985162123892e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013569339934628478,
+      "raw_vector_norm": 1.0008550104901062,
+      "pair_delays_samples": [
+        5.601539829329506,
+        5.601539829329506,
+        0.0,
+        2.7835938831328657,
+        2.7835938831328657,
+        -1.033042044892089e-15,
+        -5.6015398293295044,
+        -2.8206875673131107,
+        -2.8206875673131107,
+        -5.6015398293295044,
+        -2.8206875673131107,
+        -2.8206875673131107,
+        2.7835938831328657,
+        2.7835938831328657,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        2.701843961052789e-17,
+        -8.637608571140729e-21
+      ],
+      "display_direction": [
+        1.0,
+        2.701843961052789e-17,
+        -8.637608571140729e-21
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 597.3333333333334,
+      "display_expires_at_ms": 797.3333333333334,
+      "timestamp_ms": 597.3333333333334,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 55,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 28160,
+      "row_stop": 29184,
+      "first_sample_id": 29696,
+      "last_sample_id": 30719,
+      "start_seconds": 0.5866666666666667,
+      "end_seconds_exclusive": 0.608,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        8.641989708085527e-20,
+        -2.376547169723521e-20
+      ],
+      "azimuth_deg": 4.95149536868795e-18,
+      "elevation_deg": -1.361661226389187e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013540556062323324,
+      "raw_vector_norm": 1.0003476177471085,
+      "pair_delays_samples": [
+        5.598710883726531,
+        5.598710883726531,
+        0.0,
+        2.782201161017923,
+        2.782201161017923,
+        0.0,
+        -5.598710883726531,
+        -2.8192175328215594,
+        -2.8192175328215594,
+        -5.598710883726531,
+        -2.8192175328215594,
+        -2.8192175328215594,
+        2.782201161017923,
+        2.782201161017923,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        8.641989708085527e-20,
+        -2.376547169723521e-20
+      ],
+      "display_direction": [
+        1.0,
+        8.641989708085527e-20,
+        -2.376547169723521e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 608.0,
+      "display_expires_at_ms": 808.0,
+      "timestamp_ms": 608.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 56,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 28672,
+      "row_stop": 29696,
+      "first_sample_id": 30208,
+      "last_sample_id": 31231,
+      "start_seconds": 0.5973333333333334,
+      "end_seconds_exclusive": 0.6186666666666667,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -5.18691011573039e-20,
+        -2.5934550578651946e-20
+      ],
+      "azimuth_deg": -2.971880583450647e-18,
+      "elevation_deg": -1.4859402917253234e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.01359747222703538,
+      "raw_vector_norm": 1.0000166138442195,
+      "pair_delays_samples": [
+        5.5969241942983325,
+        5.5969241942983325,
+        0.0,
+        2.781125859510417,
+        2.781125859510417,
+        0.0,
+        -5.5969241942983325,
+        -2.8183076636792257,
+        -2.8183076636792257,
+        -5.5969241942983325,
+        -2.8183076636792257,
+        -2.8183076636792257,
+        2.781125859510417,
+        2.781125859510417,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -5.18691011573039e-20,
+        -2.5934550578651946e-20
+      ],
+      "display_direction": [
+        1.0,
+        -5.18691011573039e-20,
+        -2.5934550578651946e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 618.6666666666667,
+      "display_expires_at_ms": 818.6666666666667,
+      "timestamp_ms": 618.6666666666667,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 57,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 29184,
+      "row_stop": 30208,
+      "first_sample_id": 30720,
+      "last_sample_id": 31743,
+      "start_seconds": 0.608,
+      "end_seconds_exclusive": 0.6293333333333333,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -2.643597789669342e-18,
+        4.2729525057858065e-17
+      ],
+      "azimuth_deg": -1.514669960781664e-16,
+      "elevation_deg": 2.4482214464137617e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013524179755219579,
+      "raw_vector_norm": 1.0006696625196019,
+      "pair_delays_samples": [
+        5.600524354298428,
+        5.600524354298428,
+        -1.0157183194974609e-15,
+        2.783113419892524,
+        2.783113419892524,
+        -1.0157183194974609e-15,
+        -5.600524354298426,
+        -2.820086431606553,
+        -2.820086431606553,
+        -5.600524354298426,
+        -2.820086431606553,
+        -2.820086431606553,
+        2.783113419892524,
+        2.783113419892524,
+        -1.0157183194974609e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -2.643597789669342e-18,
+        4.2729525057858065e-17
+      ],
+      "display_direction": [
+        1.0,
+        -2.643597789669342e-18,
+        4.2729525057858065e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 629.3333333333333,
+      "display_expires_at_ms": 829.3333333333333,
+      "timestamp_ms": 629.3333333333333,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 58,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 29696,
+      "row_stop": 30720,
+      "first_sample_id": 31232,
+      "last_sample_id": 32255,
+      "start_seconds": 0.6186666666666667,
+      "end_seconds_exclusive": 0.64,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -5.791076923883372e-17,
+        -6.4815813951834334e-21
+      ],
+      "azimuth_deg": -3.318042665741207e-15,
+      "elevation_deg": -3.713672585145265e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.01351740471065275,
+      "raw_vector_norm": 1.0003338641441424,
+      "pair_delays_samples": [
+        5.598648027244478,
+        5.598648027244478,
+        0.0,
+        2.7821792658460076,
+        2.7821792658460076,
+        0.0,
+        -5.598648027244479,
+        -2.8191341766628715,
+        -2.8191341766628715,
+        -5.598648027244479,
+        -2.8191341766628715,
+        -2.8191341766628715,
+        2.7821792658460076,
+        2.7821792658460076,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -5.791076923883372e-17,
+        -6.4815813951834334e-21
+      ],
+      "display_direction": [
+        1.0,
+        -5.791076923883372e-17,
+        -6.4815813951834334e-21
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 640.0,
+      "display_expires_at_ms": 840.0,
+      "timestamp_ms": 640.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 59,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 30208,
+      "row_stop": 31232,
+      "first_sample_id": 31744,
+      "last_sample_id": 32767,
+      "start_seconds": 0.6293333333333333,
+      "end_seconds_exclusive": 0.6506666666666666,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -5.761957717694014e-17,
+        1.5115314054811265e-20
+      ],
+      "azimuth_deg": -3.3013585895669926e-15,
+      "elevation_deg": 8.660437013554606e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013568444078040946,
+      "raw_vector_norm": 1.0008881803598215,
+      "pair_delays_samples": [
+        5.601751636532944,
+        5.601751636532944,
+        0.0,
+        2.7836599117806666,
+        2.7836599117806666,
+        0.0,
+        -5.601751636532946,
+        -2.8207549459772605,
+        -2.8207549459772605,
+        -5.601751636532946,
+        -2.8207549459772605,
+        -2.8207549459772605,
+        2.7836599117806666,
+        2.7836599117806666,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -5.761957717694014e-17,
+        1.5115314054811265e-20
+      ],
+      "display_direction": [
+        1.0,
+        -5.761957717694014e-17,
+        1.5115314054811265e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 650.6666666666666,
+      "display_expires_at_ms": 850.6666666666666,
+      "timestamp_ms": 650.6666666666666,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 60,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 30720,
+      "row_stop": 31744,
+      "first_sample_id": 32256,
+      "last_sample_id": 33279,
+      "start_seconds": 0.64,
+      "end_seconds_exclusive": 0.6613333333333333,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -5.747328324273676e-17,
+        1.5135928619231184e-20
+      ],
+      "azimuth_deg": -3.2929765645687747e-15,
+      "elevation_deg": 8.672248288932225e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.01349947054326592,
+      "raw_vector_norm": 0.9995250083741415,
+      "pair_delays_samples": [
+        5.594093209594687,
+        5.594093209594687,
+        -1.9258568442557877e-15,
+        2.779969112882883,
+        2.779969112882883,
+        0.0,
+        -5.594093209594687,
+        -2.8168708476217743,
+        -2.8168708476217743,
+        -5.594093209594687,
+        -2.8168708476217743,
+        -2.8168708476217743,
+        2.779969112882883,
+        2.779969112882883,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -5.747328324273676e-17,
+        1.5135928619231184e-20
+      ],
+      "display_direction": [
+        1.0,
+        -5.747328324273676e-17,
+        1.5135928619231184e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 661.3333333333334,
+      "display_expires_at_ms": 861.3333333333334,
+      "timestamp_ms": 661.3333333333334,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 61,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 31232,
+      "row_stop": 32256,
+      "first_sample_id": 32768,
+      "last_sample_id": 33791,
+      "start_seconds": 0.6506666666666666,
+      "end_seconds_exclusive": 0.672,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -5.778821498217849e-17,
+        1.2978338444867362e-20
+      ],
+      "azimuth_deg": -3.3110208240734988e-15,
+      "elevation_deg": 7.4360401798328015e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.01349730102119999,
+      "raw_vector_norm": 0.9991641673319234,
+      "pair_delays_samples": [
+        5.592069774831996,
+        5.592069774831996,
+        0.0,
+        2.7789659875655324,
+        2.7789659875655324,
+        0.0,
+        -5.592069774831998,
+        -2.815861237790526,
+        -2.815861237790526,
+        -5.592069774831998,
+        -2.815861237790526,
+        -2.815861237790526,
+        2.7789659875655324,
+        2.7789659875655324,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -5.778821498217849e-17,
+        1.2978338444867362e-20
+      ],
+      "display_direction": [
+        1.0,
+        -5.778821498217849e-17,
+        1.2978338444867362e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 672.0,
+      "display_expires_at_ms": 872.0,
+      "timestamp_ms": 672.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 62,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 31744,
+      "row_stop": 32768,
+      "first_sample_id": 33280,
+      "last_sample_id": 34303,
+      "start_seconds": 0.6613333333333333,
+      "end_seconds_exclusive": 0.6826666666666666,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -2.930901511556561e-17,
+        4.159605649220765e-17
+      ],
+      "azimuth_deg": -1.6792828678070442e-15,
+      "elevation_deg": 2.383278481391246e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.01354212280016098,
+      "raw_vector_norm": 0.9996202168703701,
+      "pair_delays_samples": [
+        5.5946377181199205,
+        5.5946377181199205,
+        -9.880006284239695e-16,
+        2.7801646586801647,
+        2.7801646586801647,
+        0.0,
+        -5.5946377181199205,
+        -2.8171851213287673,
+        -2.8171851213287673,
+        -5.5946377181199205,
+        -2.8171851213287673,
+        -2.8171851213287673,
+        2.7801646586801647,
+        2.7801646586801647,
+        -9.880006284239695e-16
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -2.930901511556561e-17,
+        4.159605649220765e-17
+      ],
+      "display_direction": [
+        1.0,
+        -2.930901511556561e-17,
+        4.159605649220765e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 682.6666666666666,
+      "display_expires_at_ms": 882.6666666666666,
+      "timestamp_ms": 682.6666666666666,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 63,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 32256,
+      "row_stop": 33280,
+      "first_sample_id": 33792,
+      "last_sample_id": 34815,
+      "start_seconds": 0.672,
+      "end_seconds_exclusive": 0.6933333333333334,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        5.797858099878959e-17,
+        -2.3793627480476675e-20
+      ],
+      "azimuth_deg": 3.321927993388033e-15,
+      "elevation_deg": -1.363274433937808e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013548936789238028,
+      "raw_vector_norm": 0.9991638734561585,
+      "pair_delays_samples": [
+        5.592053623514394,
+        5.592053623514394,
+        0.0,
+        2.778909923716139,
+        2.778909923716139,
+        0.0,
+        -5.592053623514392,
+        -2.8159446692185517,
+        -2.8159446692185517,
+        -5.592053623514392,
+        -2.8159446692185517,
+        -2.8159446692185517,
+        2.778909923716139,
+        2.778909923716139,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        5.797858099878959e-17,
+        -2.3793627480476675e-20
+      ],
+      "display_direction": [
+        1.0,
+        5.797858099878959e-17,
+        -2.3793627480476675e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 693.3333333333334,
+      "display_expires_at_ms": 893.3333333333334,
+      "timestamp_ms": 693.3333333333334,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 64,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 32768,
+      "row_stop": 33792,
+      "first_sample_id": 34304,
+      "last_sample_id": 35327,
+      "start_seconds": 0.6826666666666666,
+      "end_seconds_exclusive": 0.704,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        6.475632229009975e-20,
+        -1.0792720381683292e-21
+      ],
+      "azimuth_deg": 3.710263964011653e-18,
+      "elevation_deg": -6.183773273352756e-20,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013918813472898459,
+      "raw_vector_norm": 1.0012528713045918,
+      "pair_delays_samples": [
+        5.604164339204225,
+        5.604164339204225,
+        0.0,
+        2.7838082329146037,
+        2.7838082329146037,
+        0.0,
+        -5.604164339204225,
+        -2.8219054755995328,
+        -2.8219054755995328,
+        -5.604164339204225,
+        -2.8219054755995328,
+        -2.8219054755995328,
+        2.7838082329146037,
+        2.7838082329146037,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        6.475632229009975e-20,
+        -1.0792720381683292e-21
+      ],
+      "display_direction": [
+        1.0,
+        6.475632229009975e-20,
+        -1.0792720381683292e-21
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 704.0,
+      "display_expires_at_ms": 904.0,
+      "timestamp_ms": 704.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 65,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 33280,
+      "row_stop": 34304,
+      "first_sample_id": 34816,
+      "last_sample_id": 35839,
+      "start_seconds": 0.6933333333333334,
+      "end_seconds_exclusive": 0.7146666666666667,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -2.8835477503307285e-17,
+        -1.0794952644244945e-20
+      ],
+      "azimuth_deg": -1.6521511611839398e-15,
+      "elevation_deg": -6.185052265588234e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013553059306548163,
+      "raw_vector_norm": 1.0010458246066494,
+      "pair_delays_samples": [
+        5.602660902482877,
+        5.602660902482877,
+        0.0,
+        2.784093509736644,
+        2.784093509736644,
+        0.0,
+        -5.602660902482878,
+        -2.8211501364180043,
+        -2.8211501364180043,
+        -5.602660902482878,
+        -2.8211501364180043,
+        -2.8211501364180043,
+        2.784093509736644,
+        2.784093509736644,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -2.8835477503307285e-17,
+        -1.0794952644244945e-20
+      ],
+      "display_direction": [
+        1.0,
+        -2.8835477503307285e-17,
+        -1.0794952644244945e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 714.6666666666666,
+      "display_expires_at_ms": 914.6666666666666,
+      "timestamp_ms": 714.6666666666666,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 66,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 33792,
+      "row_stop": 34816,
+      "first_sample_id": 35328,
+      "last_sample_id": 36351,
+      "start_seconds": 0.704,
+      "end_seconds_exclusive": 0.7253333333333334,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -8.938493322660253e-17,
+        -2.2324628130873156e-17
+      ],
+      "azimuth_deg": -5.121379425943005e-15,
+      "elevation_deg": -1.2791069710980636e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013541809589623859,
+      "raw_vector_norm": 1.0003382876995899,
+      "pair_delays_samples": [
+        5.598665329794916,
+        5.598665329794916,
+        -5.30545136108156e-16,
+        2.782166169416058,
+        2.782166169416058,
+        -5.30545136108156e-16,
+        -5.598665329794918,
+        -2.8191869527714704,
+        -2.8191869527714704,
+        -5.598665329794918,
+        -2.8191869527714704,
+        -2.8191869527714704,
+        2.782166169416058,
+        2.782166169416058,
+        5.305451361081554e-16
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -8.938493322660253e-17,
+        -2.2324628130873156e-17
+      ],
+      "display_direction": [
+        1.0,
+        -8.938493322660253e-17,
+        -2.2324628130873156e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 725.3333333333334,
+      "display_expires_at_ms": 925.3333333333334,
+      "timestamp_ms": 725.3333333333334,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 67,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 34304,
+      "row_stop": 35328,
+      "first_sample_id": 35840,
+      "last_sample_id": 36863,
+      "start_seconds": 0.7146666666666667,
+      "end_seconds_exclusive": 0.736,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -2.9964834122670436e-17,
+        4.2260704096983216e-17
+      ],
+      "azimuth_deg": -1.7168585290386108e-15,
+      "elevation_deg": 2.421359984008365e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013425921420143492,
+      "raw_vector_norm": 0.9999570979545057,
+      "pair_delays_samples": [
+        5.596611652653499,
+        5.596611652653499,
+        -1.0033391549233267e-15,
+        2.781172551197743,
+        2.781172551197743,
+        0.0,
+        -5.596611652653499,
+        -2.8178866047720903,
+        -2.8178866047720903,
+        -5.596611652653499,
+        -2.8178866047720903,
+        -2.8178866047720903,
+        2.781172551197743,
+        2.781172551197743,
+        -1.0033391549233267e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -2.9964834122670436e-17,
+        4.2260704096983216e-17
+      ],
+      "display_direction": [
+        1.0,
+        -2.9964834122670436e-17,
+        4.2260704096983216e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 736.0,
+      "display_expires_at_ms": 936.0,
+      "timestamp_ms": 736.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 68,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 34816,
+      "row_stop": 35840,
+      "first_sample_id": 36352,
+      "last_sample_id": 37375,
+      "start_seconds": 0.7253333333333334,
+      "end_seconds_exclusive": 0.7466666666666667,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        5.787942154482422e-17,
+        1.082586816265584e-20
+      ],
+      "azimuth_deg": 3.3162465751769956e-15,
+      "elevation_deg": 6.202765552852266e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013561574757983723,
+      "raw_vector_norm": 0.9981871300284488,
+      "pair_delays_samples": [
+        5.586549704643429,
+        5.586549704643429,
+        0.0,
+        2.7761980836552986,
+        2.7761980836552986,
+        0.0,
+        -5.586549704643427,
+        -2.8132618917921377,
+        -2.8132618917921377,
+        -5.586549704643427,
+        -2.8132618917921377,
+        -2.8132618917921377,
+        2.7761980836552986,
+        2.7761980836552986,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        5.787942154482422e-17,
+        1.082586816265584e-20
+      ],
+      "display_direction": [
+        1.0,
+        5.787942154482422e-17,
+        1.082586816265584e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 746.6666666666667,
+      "display_expires_at_ms": 946.6666666666667,
+      "timestamp_ms": 746.6666666666667,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 69,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 35328,
+      "row_stop": 36352,
+      "first_sample_id": 36864,
+      "last_sample_id": 37887,
+      "start_seconds": 0.736,
+      "end_seconds_exclusive": 0.7573333333333333,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -2.5055223971756532e-19,
+        2.8079130313175444e-20
+      ],
+      "azimuth_deg": -1.4355585883366572e-17,
+      "elevation_deg": 1.6088156593428064e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013553192409045008,
+      "raw_vector_norm": 1.0006089787019259,
+      "pair_delays_samples": [
+        5.600181558771748,
+        5.600181558771748,
+        9.648113840842066e-16,
+        2.78290711210102,
+        2.78290711210102,
+        9.648113840842066e-16,
+        -5.60018155877175,
+        -2.819959266924259,
+        -2.819959266924259,
+        -5.60018155877175,
+        -2.819959266924259,
+        -2.819959266924259,
+        2.78290711210102,
+        2.78290711210102,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -2.5055223971756532e-19,
+        2.8079130313175444e-20
+      ],
+      "display_direction": [
+        1.0,
+        -2.5055223971756532e-19,
+        2.8079130313175444e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 757.3333333333333,
+      "display_expires_at_ms": 957.3333333333333,
+      "timestamp_ms": 757.3333333333333,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 70,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 35840,
+      "row_stop": 36864,
+      "first_sample_id": 37376,
+      "last_sample_id": 38399,
+      "start_seconds": 0.7466666666666667,
+      "end_seconds_exclusive": 0.768,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -1.9099192879851975e-16,
+        2.2283544190920708e-17
+      ],
+      "azimuth_deg": -1.0943031441218306e-14,
+      "elevation_deg": 1.2767530347330192e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.014146078100280698,
+      "raw_vector_norm": 1.0001458416793816,
+      "pair_delays_samples": [
+        5.597077465724205,
+        5.597077465724205,
+        -5.288927342629033e-16,
+        2.781354989399038,
+        2.781354989399038,
+        -1.0287203629552871e-15,
+        -5.59707746572421,
+        -2.8199421143514827,
+        -2.8199421143514827,
+        -5.59707746572421,
+        -2.8199421143514827,
+        -2.8199421143514827,
+        2.781354989399038,
+        2.781354989399038,
+        -5.288927342629033e-16
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -1.9099192879851975e-16,
+        2.2283544190920708e-17
+      ],
+      "display_direction": [
+        1.0,
+        -1.9099192879851975e-16,
+        2.2283544190920708e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 768.0,
+      "display_expires_at_ms": 968.0,
+      "timestamp_ms": 768.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 71,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 36352,
+      "row_stop": 37376,
+      "first_sample_id": 37888,
+      "last_sample_id": 38911,
+      "start_seconds": 0.7573333333333333,
+      "end_seconds_exclusive": 0.7786666666666666,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        3.1723108145167527e-17,
+        -1.94646832087885e-20
+      ],
+      "azimuth_deg": 1.8176002097551847e-15,
+      "elevation_deg": -1.1152441974227417e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013560620957250668,
+      "raw_vector_norm": 0.9993091528786903,
+      "pair_delays_samples": [
+        5.592874187387194,
+        5.592874187387194,
+        5.322251968640804e-16,
+        2.779292616762249,
+        2.779292616762249,
+        5.322251968640804e-16,
+        -5.592874187387194,
+        -2.8163605261929683,
+        -2.8163605261929683,
+        -5.592874187387194,
+        -2.8163605261929683,
+        -2.8163605261929683,
+        2.779292616762249,
+        2.779292616762249,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        3.1723108145167527e-17,
+        -1.94646832087885e-20
+      ],
+      "display_direction": [
+        1.0,
+        3.1723108145167527e-17,
+        -1.94646832087885e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 778.6666666666666,
+      "display_expires_at_ms": 978.6666666666666,
+      "timestamp_ms": 778.6666666666666,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 72,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 36864,
+      "row_stop": 37888,
+      "first_sample_id": 38400,
+      "last_sample_id": 39423,
+      "start_seconds": 0.768,
+      "end_seconds_exclusive": 0.7893333333333333,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        1.1533775146296592e-16,
+        -2.8044866994960535e-20
+      ],
+      "azimuth_deg": 6.608366377356784e-15,
+      "elevation_deg": -1.6068525158169783e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013522651450772876,
+      "raw_vector_norm": 1.0018314549522982,
+      "pair_delays_samples": [
+        5.607080783548995,
+        5.607080783548995,
+        0.0,
+        2.7863103506143805,
+        2.7863103506143805,
+        0.0,
+        -5.607080783548992,
+        -2.8232866260929854,
+        -2.8232866260929854,
+        -5.607080783548992,
+        -2.8232866260929854,
+        -2.8232866260929854,
+        2.7863103506143805,
+        2.7863103506143805,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        1.1533775146296592e-16,
+        -2.8044866994960535e-20
+      ],
+      "display_direction": [
+        1.0,
+        1.1533775146296592e-16,
+        -2.8044866994960535e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 789.3333333333334,
+      "display_expires_at_ms": 989.3333333333334,
+      "timestamp_ms": 789.3333333333334,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 73,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 37376,
+      "row_stop": 38400,
+      "first_sample_id": 38912,
+      "last_sample_id": 39935,
+      "start_seconds": 0.7786666666666666,
+      "end_seconds_exclusive": 0.8,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -9.165347818631919e-17,
+        4.962513133220834e-17
+      ],
+      "azimuth_deg": -5.251357477770445e-15,
+      "elevation_deg": 2.8433105831179624e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013493726025710947,
+      "raw_vector_norm": 1.0014229811261162,
+      "pair_delays_samples": [
+        5.604837736658263,
+        5.604837736658263,
+        -1.1391656518117361e-15,
+        2.7851604290665577,
+        2.7851604290665577,
+        0.0,
+        -5.604837736658265,
+        -2.8220631392683084,
+        -2.8220631392683084,
+        -5.604837736658265,
+        -2.8220631392683084,
+        -2.8220631392683084,
+        2.7851604290665577,
+        2.7851604290665577,
+        -1.1795502284993694e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -9.165347818631919e-17,
+        4.962513133220834e-17
+      ],
+      "display_direction": [
+        1.0,
+        -9.165347818631919e-17,
+        4.962513133220834e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 800.0,
+      "display_expires_at_ms": 1000.0,
+      "timestamp_ms": 800.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 74,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 37888,
+      "row_stop": 38912,
+      "first_sample_id": 39424,
+      "last_sample_id": 40447,
+      "start_seconds": 0.7893333333333333,
+      "end_seconds_exclusive": 0.8106666666666666,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -2.970299331218855e-17,
+        4.183085161992117e-17
+      ],
+      "azimuth_deg": -1.701856155693714e-15,
+      "elevation_deg": 2.3967312512594657e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013575780315723124,
+      "raw_vector_norm": 1.0006226790253947,
+      "pair_delays_samples": [
+        5.6002767530838895,
+        5.6002767530838895,
+        -9.9395159862919e-16,
+        2.782894644096413,
+        2.782894644096413,
+        0.0,
+        -5.6002767530838895,
+        -2.820011415876538,
+        -2.820011415876538,
+        -5.6002767530838895,
+        -2.820011415876538,
+        -2.820011415876538,
+        2.782894644096413,
+        2.782894644096413,
+        -9.9395159862919e-16
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -2.970299331218855e-17,
+        4.183085161992117e-17
+      ],
+      "display_direction": [
+        1.0,
+        -2.970299331218855e-17,
+        4.183085161992117e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 810.6666666666666,
+      "display_expires_at_ms": 1010.6666666666666,
+      "timestamp_ms": 810.6666666666666,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 75,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 38400,
+      "row_stop": 39424,
+      "first_sample_id": 39936,
+      "last_sample_id": 40959,
+      "start_seconds": 0.8,
+      "end_seconds_exclusive": 0.8213333333333334,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -2.883455173337736e-17,
+        -1.5112448497577103e-20
+      ],
+      "azimuth_deg": -1.652098118474155e-15,
+      "elevation_deg": -8.658795170199899e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013227841707667385,
+      "raw_vector_norm": 1.0010779644551016,
+      "pair_delays_samples": [
+        5.602577191687825,
+        5.602577191687825,
+        0.0,
+        2.784914865864831,
+        2.784914865864831,
+        0.0,
+        -5.602577191687826,
+        -2.8210359264486815,
+        -2.8210359264486815,
+        -5.602577191687826,
+        -2.8210359264486815,
+        -2.8210359264486815,
+        2.784914865864831,
+        2.784914865864831,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -2.883455173337736e-17,
+        -1.5112448497577103e-20
+      ],
+      "display_direction": [
+        1.0,
+        -2.883455173337736e-17,
+        -1.5112448497577103e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 821.3333333333334,
+      "display_expires_at_ms": 1021.3333333333334,
+      "timestamp_ms": 821.3333333333334,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 76,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 38912,
+      "row_stop": 39936,
+      "first_sample_id": 40448,
+      "last_sample_id": 41471,
+      "start_seconds": 0.8106666666666666,
+      "end_seconds_exclusive": 0.832,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        1.121735879882059e-19,
+        -2.157184384388577e-21
+      ],
+      "azimuth_deg": 6.427073164563586e-18,
+      "elevation_deg": -1.2359756085699215e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013565591599827675,
+      "raw_vector_norm": 1.0018839696367323,
+      "pair_delays_samples": [
+        5.607376486352135,
+        5.607376486352135,
+        0.0,
+        2.786396580701774,
+        2.786396580701774,
+        0.0,
+        -5.607376486352135,
+        -2.8234908696481136,
+        -2.8234908696481136,
+        -5.607376486352135,
+        -2.8234908696481136,
+        -2.8234908696481136,
+        2.786396580701774,
+        2.786396580701774,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        1.121735879882059e-19,
+        -2.157184384388577e-21
+      ],
+      "display_direction": [
+        1.0,
+        1.121735879882059e-19,
+        -2.157184384388577e-21
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 832.0,
+      "display_expires_at_ms": 1032.0,
+      "timestamp_ms": 832.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 77,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 39424,
+      "row_stop": 40448,
+      "first_sample_id": 40960,
+      "last_sample_id": 41983,
+      "start_seconds": 0.8213333333333334,
+      "end_seconds_exclusive": 0.8426666666666667,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        2.8867888093973977e-17,
+        4.0360225422054975e-17
+      ],
+      "azimuth_deg": 1.6540081512406673e-15,
+      "elevation_deg": 2.3124705768803618e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013495171375050154,
+      "raw_vector_norm": 1.0014192666329724,
+      "pair_delays_samples": [
+        5.604747945771951,
+        5.604747945771951,
+        0.0,
+        2.7852217038042615,
+        2.7852217038042615,
+        0.0,
+        -5.604747945771949,
+        -2.822119068809033,
+        -2.822119068809033,
+        -5.604747945771949,
+        -2.822119068809033,
+        -2.822119068809033,
+        2.7852217038042615,
+        2.7852217038042615,
+        -9.60134626332769e-16
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        2.8867888093973977e-17,
+        4.0360225422054975e-17
+      ],
+      "display_direction": [
+        1.0,
+        2.8867888093973977e-17,
+        4.0360225422054975e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 842.6666666666666,
+      "display_expires_at_ms": 1042.6666666666665,
+      "timestamp_ms": 842.6666666666666,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 78,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 39936,
+      "row_stop": 40960,
+      "first_sample_id": 41472,
+      "last_sample_id": 42495,
+      "start_seconds": 0.832,
+      "end_seconds_exclusive": 0.8533333333333334,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -6.281779328683354e-17,
+        -6.478732805985205e-21
+      ],
+      "azimuth_deg": -3.599194433660797e-15,
+      "elevation_deg": -3.7120404637590144e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013535767941190605,
+      "raw_vector_norm": 1.0007736940191225,
+      "pair_delays_samples": [
+        5.601122279357446,
+        5.601122279357446,
+        -1.0558894825602094e-15,
+        2.783371982659836,
+        2.783371982659836,
+        -1.0558894825602094e-15,
+        -5.601122279357446,
+        -2.820379019995957,
+        -2.820379019995957,
+        -5.601122279357446,
+        -2.820379019995957,
+        -2.820379019995957,
+        2.783371982659836,
+        2.783371982659836,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -6.281779328683354e-17,
+        -6.478732805985205e-21
+      ],
+      "display_direction": [
+        1.0,
+        -6.281779328683354e-17,
+        -6.478732805985205e-21
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 853.3333333333334,
+      "display_expires_at_ms": 1053.3333333333335,
+      "timestamp_ms": 853.3333333333334,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 79,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 40448,
+      "row_stop": 41472,
+      "first_sample_id": 41984,
+      "last_sample_id": 43007,
+      "start_seconds": 0.8426666666666667,
+      "end_seconds_exclusive": 0.864,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        1.7287537418985195e-20,
+        3.0253190483224114e-20
+      ],
+      "azimuth_deg": 9.90502932282336e-19,
+      "elevation_deg": 1.7333801314940892e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013448131730577807,
+      "raw_vector_norm": 1.0001417330364752,
+      "pair_delays_samples": [
+        5.597561810511845,
+        5.597561810511845,
+        0.0,
+        2.781748057255556,
+        2.781748057255556,
+        0.0,
+        -5.597561810511845,
+        -2.818511360467392,
+        -2.818511360467392,
+        -5.597561810511845,
+        -2.818511360467392,
+        -2.818511360467392,
+        2.781748057255556,
+        2.781748057255556,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        1.7287537418985195e-20,
+        3.0253190483224114e-20
+      ],
+      "display_direction": [
+        1.0,
+        1.7287537418985195e-20,
+        3.0253190483224114e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 864.0,
+      "display_expires_at_ms": 1064.0,
+      "timestamp_ms": 864.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 80,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 40960,
+      "row_stop": 41984,
+      "first_sample_id": 42496,
+      "last_sample_id": 43519,
+      "start_seconds": 0.8533333333333334,
+      "end_seconds_exclusive": 0.8746666666666667,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        7.796497767086211e-20,
+        -2.382263206609676e-20
+      ],
+      "azimuth_deg": 4.467064170372102e-18,
+      "elevation_deg": -1.3649362742803646e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013578625959933158,
+      "raw_vector_norm": 0.9979473691657782,
+      "pair_delays_samples": [
+        5.585174649860513,
+        5.585174649860513,
+        0.0,
+        2.775539218126825,
+        2.775539218126825,
+        0.0,
+        -5.585174649860513,
+        -2.812644562020607,
+        -2.812644562020607,
+        -5.585174649860513,
+        -2.812644562020607,
+        -2.812644562020607,
+        2.775539218126825,
+        2.775539218126825,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        7.796497767086211e-20,
+        -2.382263206609676e-20
+      ],
+      "display_direction": [
+        1.0,
+        7.796497767086211e-20,
+        -2.382263206609676e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 874.6666666666667,
+      "display_expires_at_ms": 1074.6666666666667,
+      "timestamp_ms": 874.6666666666667,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 81,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 41472,
+      "row_stop": 42496,
+      "first_sample_id": 43008,
+      "last_sample_id": 44031,
+      "start_seconds": 0.864,
+      "end_seconds_exclusive": 0.8853333333333333,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -8.673765118576686e-17,
+        3.4584390424947373e-20
+      ],
+      "azimuth_deg": -4.969701337822342e-15,
+      "elevation_deg": 1.98153960838214e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013476072340607277,
+      "raw_vector_norm": 0.99987233672246,
+      "pair_delays_samples": [
+        5.596050144184961,
+        5.596050144184961,
+        0.0,
+        2.780959678996761,
+        2.780959678996761,
+        0.0,
+        -5.596050144184964,
+        -2.817799098293275,
+        -2.817799098293275,
+        -5.596050144184964,
+        -2.817799098293275,
+        -2.817799098293275,
+        2.780959678996761,
+        2.780959678996761,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -8.673765118576686e-17,
+        3.4584390424947373e-20
+      ],
+      "display_direction": [
+        1.0,
+        -8.673765118576686e-17,
+        3.4584390424947373e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 885.3333333333333,
+      "display_expires_at_ms": 1085.3333333333333,
+      "timestamp_ms": 885.3333333333333,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 82,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 41984,
+      "row_stop": 43008,
+      "first_sample_id": 43520,
+      "last_sample_id": 44543,
+      "start_seconds": 0.8746666666666667,
+      "end_seconds_exclusive": 0.896,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        1.1861258770581156e-16,
+        -4.2939086854980145e-17
+      ],
+      "azimuth_deg": 6.796000672668319e-15,
+      "elevation_deg": -2.460228452936034e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.01355244100933497,
+      "raw_vector_norm": 1.000919905603919,
+      "pair_delays_samples": [
+        5.601969839673615,
+        5.601969839673615,
+        1.0202908642062356e-15,
+        2.783727188023658,
+        2.783727188023658,
+        1.0202908642062356e-15,
+        -5.601969839673613,
+        -2.820784025569561,
+        -2.820784025569561,
+        -5.601969839673613,
+        -2.820784025569561,
+        -2.820784025569561,
+        2.783727188023658,
+        2.783727188023658,
+        1.0202908642062356e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        1.1861258770581156e-16,
+        -4.2939086854980145e-17
+      ],
+      "display_direction": [
+        1.0,
+        1.1861258770581156e-16,
+        -4.2939086854980145e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 896.0,
+      "display_expires_at_ms": 1096.0,
+      "timestamp_ms": 896.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 83,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 42496,
+      "row_stop": 43520,
+      "first_sample_id": 44032,
+      "last_sample_id": 45055,
+      "start_seconds": 0.8853333333333333,
+      "end_seconds_exclusive": 0.9066666666666666,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -6.01920644743051e-17,
+        4.26443205311253e-17
+      ],
+      "azimuth_deg": -3.4487512545570203e-15,
+      "elevation_deg": 2.443339586636565e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013570986542433938,
+      "raw_vector_norm": 1.0011992847425781,
+      "pair_delays_samples": [
+        5.603509815277792,
+        5.603509815277792,
+        -1.013580679386e-15,
+        2.784509245225676,
+        2.784509245225676,
+        -1.013580679386e-15,
+        -5.603509815277792,
+        -2.821613631849205,
+        -2.821613631849205,
+        -5.603509815277792,
+        -2.821613631849205,
+        -2.821613631849205,
+        2.784509245225676,
+        2.784509245225676,
+        -1.013580679386e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -6.01920644743051e-17,
+        4.26443205311253e-17
+      ],
+      "display_direction": [
+        1.0,
+        -6.01920644743051e-17,
+        4.26443205311253e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 906.6666666666666,
+      "display_expires_at_ms": 1106.6666666666665,
+      "timestamp_ms": 906.6666666666666,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 84,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 43008,
+      "row_stop": 44032,
+      "first_sample_id": 44544,
+      "last_sample_id": 45567,
+      "start_seconds": 0.896,
+      "end_seconds_exclusive": 0.9173333333333333,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -8.676216632711631e-17,
+        -1.5131930543397323e-20
+      ],
+      "azimuth_deg": -4.971105951955832e-15,
+      "elevation_deg": -8.66995756021769e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013683603447200472,
+      "raw_vector_norm": 0.9997890973989422,
+      "pair_delays_samples": [
+        5.595691936582603,
+        5.595691936582603,
+        0.0,
+        2.780326955911031,
+        2.780326955911031,
+        0.0,
+        -5.595691936582606,
+        -2.81775039838121,
+        -2.81775039838121,
+        -5.595691936582606,
+        -2.81775039838121,
+        -2.81775039838121,
+        2.780326955911031,
+        2.780326955911031,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -8.676216632711631e-17,
+        -1.5131930543397323e-20
+      ],
+      "display_direction": [
+        1.0,
+        -8.676216632711631e-17,
+        -1.5131930543397323e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 917.3333333333334,
+      "display_expires_at_ms": 1117.3333333333335,
+      "timestamp_ms": 917.3333333333334,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 85,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 43520,
+      "row_stop": 44544,
+      "first_sample_id": 45056,
+      "last_sample_id": 46079,
+      "start_seconds": 0.9066666666666666,
+      "end_seconds_exclusive": 0.928,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -3.020699341433905e-17,
+        -1.0809831596886176e-20
+      ],
+      "azimuth_deg": -1.7307332344211e-15,
+      "elevation_deg": -6.193577277487409e-19,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013640650653094853,
+      "raw_vector_norm": 0.9996679573121803,
+      "pair_delays_samples": [
+        5.594865686829221,
+        5.594865686829221,
+        0.0,
+        2.780205306443306,
+        2.780205306443306,
+        -1.0104981615538606e-15,
+        -5.594865686829221,
+        -2.8174902415255256,
+        -2.8174902415255256,
+        -5.594865686829221,
+        -2.8174902415255256,
+        -2.8174902415255256,
+        2.780205306443306,
+        2.780205306443306,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -3.020699341433905e-17,
+        -1.0809831596886176e-20
+      ],
+      "display_direction": [
+        1.0,
+        -3.020699341433905e-17,
+        -1.0809831596886176e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 928.0,
+      "display_expires_at_ms": 1128.0,
+      "timestamp_ms": 928.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 86,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 44032,
+      "row_stop": 45056,
+      "first_sample_id": 45568,
+      "last_sample_id": 46591,
+      "start_seconds": 0.9173333333333333,
+      "end_seconds_exclusive": 0.9386666666666666,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -3.1215125741396126e-17,
+        4.374784963036869e-17
+      ],
+      "azimuth_deg": -1.7884949619521727e-15,
+      "elevation_deg": 2.5065671465930846e-15,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013624409177845341,
+      "raw_vector_norm": 1.0002008458666611,
+      "pair_delays_samples": [
+        5.5980639903630225,
+        5.5980639903630225,
+        -1.0476160063427588e-15,
+        2.7814891928515397,
+        2.7814891928515397,
+        0.0,
+        -5.5980639903630225,
+        -2.818758547098701,
+        -2.818758547098701,
+        -5.5980639903630225,
+        -2.818758547098701,
+        -2.818758547098701,
+        2.7814891928515397,
+        2.7814891928515397,
+        -1.038439199858723e-15
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -3.1215125741396126e-17,
+        4.374784963036869e-17
+      ],
+      "display_direction": [
+        1.0,
+        -3.1215125741396126e-17,
+        4.374784963036869e-17
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 938.6666666666666,
+      "display_expires_at_ms": 1138.6666666666665,
+      "timestamp_ms": 938.6666666666666,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 87,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 44544,
+      "row_stop": 45568,
+      "first_sample_id": 46080,
+      "last_sample_id": 47103,
+      "start_seconds": 0.928,
+      "end_seconds_exclusive": 0.9493333333333334,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        -1.1401667836214037e-16,
+        6.462853515653165e-34
+      ],
+      "azimuth_deg": -6.532674464251219e-15,
+      "elevation_deg": 3.7029423005821265e-32,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013377077954381781,
+      "raw_vector_norm": 1.000625391327544,
+      "pair_delays_samples": [
+        5.600396798039087,
+        5.600396798039087,
+        -9.428080323363094e-16,
+        2.783062832256193,
+        2.783062832256193,
+        -9.507501312227917e-16,
+        -5.600396798039089,
+        -2.8196486855042684,
+        -2.8196486855042684,
+        -5.600396798039089,
+        -2.8196486855042684,
+        -2.8196486855042684,
+        2.783062832256193,
+        2.783062832256193,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        -1.1401667836214037e-16,
+        6.462853515653165e-34
+      ],
+      "display_direction": [
+        1.0,
+        -1.1401667836214037e-16,
+        6.462853515653165e-34
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 949.3333333333334,
+      "display_expires_at_ms": 1149.3333333333335,
+      "timestamp_ms": 949.3333333333334,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  },
+  {
+    "baseline": {
+      "profile": "six-mic-baseline-synthetic-v1",
+      "index": 88,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 45056,
+      "row_stop": 46080,
+      "first_sample_id": 46592,
+      "last_sample_id": 47615,
+      "start_seconds": 0.9386666666666666,
+      "end_seconds_exclusive": 0.96,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "synthetic_only_requires_algorithm_validation",
+      "shape": [
+        6,
+        1024
+      ],
+      "dtype": "float64",
+      "valid": true,
+      "rejection_reasons": [],
+      "unit_vector": [
+        1.0,
+        8.640636289516589e-20,
+        -2.1601590723791484e-20
+      ],
+      "azimuth_deg": 4.9507199169688025e-18,
+      "elevation_deg": -1.2376799792422012e-18,
+      "finite_pairs": 15,
+      "geometry_rank": 3,
+      "residual_samples": 0.013540312758014945,
+      "raw_vector_norm": 1.0005043063283523,
+      "pair_delays_samples": [
+        5.599651817895697,
+        5.599651817895697,
+        0.0,
+        2.7825716918737617,
+        2.7825716918737617,
+        0.0,
+        -5.599651817895697,
+        -2.8195964054290354,
+        -2.8195964054290354,
+        -5.599651817895697,
+        -2.8195964054290354,
+        -2.8195964054290354,
+        2.7825716918737617,
+        2.7825716918737617,
+        0.0
+      ],
+      "angular_error_deg": 0.0
+    },
+    "tracking": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "direction": [
+        1.0,
+        8.640636289516589e-20,
+        -2.1601590723791484e-20
+      ],
+      "display_direction": [
+        1.0,
+        8.640636289516589e-20,
+        -2.1601590723791484e-20
+      ],
+      "stale": false,
+      "reason": "track_update",
+      "acquire_count": 0,
+      "last_fresh_ms": 960.0,
+      "display_expires_at_ms": 1160.0,
+      "timestamp_ms": 960.0,
+      "input_reset": false,
+      "angular_error_deg": 0.0
+    }
+  }
+]

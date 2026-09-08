@@ -1,0 +1,148 @@
+{
+  "status": "PASS_FRAMING_ONLY",
+  "scope": "Four-channel fixed code; no acoustic inference or hardware evidence",
+  "expected_row_ranges": [
+    [
+      0,
+      1024,
+      true
+    ],
+    [
+      512,
+      1536,
+      false
+    ],
+    [
+      1537,
+      2561,
+      true
+    ],
+    [
+      2049,
+      3073,
+      false
+    ]
+  ],
+  "summary": {
+    "profile": "h1-four-channel-0.3",
+    "sample_rate_hz": 48000.0,
+    "frame_length": 1024,
+    "hop": 512,
+    "frame_duration_seconds": 0.021333333333333333,
+    "hop_seconds": 0.010666666666666666,
+    "frames": 4,
+    "input_rows": 3073,
+    "error_rows": 1,
+    "missing_samples": 1,
+    "unused_clean_rows": 0,
+    "intervals": [
+      {
+        "row_start": 0,
+        "row_stop": 1536,
+        "frames": 2,
+        "covered_unique_rows": 1536,
+        "unused_tail_rows": 0
+      },
+      {
+        "row_start": 1537,
+        "row_stop": 3073,
+        "frames": 2,
+        "covered_unique_rows": 1536,
+        "unused_tail_rows": 0
+      }
+    ],
+    "direction_policy": "forbidden_non_acoustic_input",
+    "provenance": {
+      "file_sha256": {
+        "metadata.json": "36bd59734d2dd3057e73705cc940480ef864c8b8803575f3aaa6601b65e1c91e",
+        "samples.csv": "a56a129662d1a544f95f6419e16a5ea9b50fd69cdd4aa5c61a4b66abad861f12"
+      },
+      "conversion": "float64(pcm) / 8388608; common fixed gain",
+      "error_rows": 1,
+      "missing_samples": 1
+    }
+  },
+  "frames": [
+    {
+      "profile": "h1-four-channel-0.3",
+      "index": 0,
+      "interval_index": 0,
+      "reset_before": true,
+      "row_start": 0,
+      "row_stop": 1024,
+      "first_sample_id": 9007199254740993,
+      "last_sample_id": 9007199254742016,
+      "start_seconds": 0.0,
+      "end_seconds_exclusive": 0.021333333333333333,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "forbidden_non_acoustic_input",
+      "shape": [
+        4,
+        1024
+      ],
+      "dtype": "float64"
+    },
+    {
+      "profile": "h1-four-channel-0.3",
+      "index": 1,
+      "interval_index": 0,
+      "reset_before": false,
+      "row_start": 512,
+      "row_stop": 1536,
+      "first_sample_id": 9007199254741505,
+      "last_sample_id": 9007199254742528,
+      "start_seconds": 0.010666666666666666,
+      "end_seconds_exclusive": 0.032,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "forbidden_non_acoustic_input",
+      "shape": [
+        4,
+        1024
+      ],
+      "dtype": "float64"
+    },
+    {
+      "profile": "h1-four-channel-0.3",
+      "index": 2,
+      "interval_index": 1,
+      "reset_before": true,
+      "row_start": 1537,
+      "row_stop": 2561,
+      "first_sample_id": 9007199254742531,
+      "last_sample_id": 9007199254743554,
+      "start_seconds": 0.03204166666666667,
+      "end_seconds_exclusive": 0.053375,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "forbidden_non_acoustic_input",
+      "shape": [
+        4,
+        1024
+      ],
+      "dtype": "float64"
+    },
+    {
+      "profile": "h1-four-channel-0.3",
+      "index": 3,
+      "interval_index": 1,
+      "reset_before": false,
+      "row_start": 2049,
+      "row_stop": 3073,
+      "first_sample_id": 9007199254743043,
+      "last_sample_id": 9007199254744066,
+      "start_seconds": 0.042708333333333334,
+      "end_seconds_exclusive": 0.06404166666666666,
+      "sample_rate_hz": 48000.0,
+      "direction_policy": "forbidden_non_acoustic_input",
+      "shape": [
+        4,
+        1024
+      ],
+      "dtype": "float64"
+    }
+  ],
+  "source_sha256": {
+    "run_framing_demo.py": "2b54cab3af5b679d3f7e533020f2bd62248dc5d216c445372575da212935fc4b",
+    "payload/model/python/audio_frames.py": "0ed77ea8db8834576c21206358a8d945b612a176cad742bb266d077ee2a79408",
+    "payload/model/python/h1_reader.py": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9"
+  }
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "profile": "six-mic-baseline-synthetic-v1",
+    "index": 0,
+    "interval_index": 0,
+    "reset_before": true,
+    "row_start": 0,
+    "row_stop": 1024,
+    "first_sample_id": 1536,
+    "last_sample_id": 2559,
+    "start_seconds": 0.0,
+    "end_seconds_exclusive": 0.021333333333333333,
+    "sample_rate_hz": 48000.0,
+    "direction_policy": "synthetic_only_requires_algorithm_validation",
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "float64",
+    "valid": true,
+    "rejection_reasons": [],
+    "unit_vector": [
+      0.7423408633436293,
+      0.5201907304374781,
+      0.4222933181772573
+    ],
+    "azimuth_deg": 35.02061055113501,
+    "elevation_deg": 24.97945914252618,
+    "finite_pairs": 15,
+    "geometry_rank": 3,
+    "residual_samples": 0.01918044609003122,
+    "raw_vector_norm": 1.0011851374403997,
+    "pair_delays_samples": [
+      4.131360145789386,
+      7.075406840846198,
+      2.8870304448729787,
+      5.1879457426747795,
+      1.8419189717484121,
+      2.944160710186442,
+      -1.2449636315197465,
+      1.0563474265306412,
+      -2.2904928533634297,
+      -4.188674600193017,
+      -1.8877535658576903,
+      -5.233989456619236,
+      2.302035210205107,
+      -1.0449733606608071,
+      -3.3478285922408038
+    ],
+    "angular_error_deg": 0.027765247574263865
+  },
+  {
+    "profile": "six-mic-baseline-synthetic-v1",
+    "index": 1,
+    "interval_index": 0,
+    "reset_before": false,
+    "row_start": 512,
+    "row_stop": 1536,
+    "first_sample_id": 2048,
+    "last_sample_id": 3071,
+    "start_seconds": 0.010666666666666666,
+    "end_seconds_exclusive": 0.032,
+    "sample_rate_hz": 48000.0,
+    "direction_policy": "synthetic_only_requires_algorithm_validation",
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "float64",
+    "valid": true,
+    "rejection_reasons": [],
+    "unit_vector": [
+      0.7423446456984903,
+      0.5201761898038434,
+      0.42230458032554985
+    ],
+    "azimuth_deg": 35.0197206628302,
+    "elevation_deg": 24.980171006231213,
+    "finite_pairs": 15,
+    "geometry_rank": 3,
+    "residual_samples": 0.01910699863887177,
+    "raw_vector_norm": 1.000037158362478,
+    "pair_delays_samples": [
+      4.126743357896343,
+      7.067278025749279,
+      2.8836810986166137,
+      5.18209794500112,
+      1.8397341215945033,
+      2.9406161488393545,
+      -1.2436487346987195,
+      1.0551472752123243,
+      -2.28796336663949,
+      -4.183829702297636,
+      -1.8854072820586774,
+      -5.227942062254644,
+      2.2994522701372926,
+      -1.043813322128986,
+      -3.3440013225187473
+    ],
+    "angular_error_deg": 0.0266961479235639
+  }
+]

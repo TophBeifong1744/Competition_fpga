@@ -1,0 +1,47 @@
+{
+  "status": "COMPLETE_RESEARCH",
+  "phase": "validate",
+  "seeds": [
+    2026090900,
+    2026090901,
+    2026090902,
+    2026090903,
+    2026090904,
+    2026090905,
+    2026090906,
+    2026090907,
+    2026090908,
+    2026090909
+  ],
+  "selected_from_sha256": "62e9fd3e417d2c194e4057c1a99d0bf00273b2b86f9fd87a8707d750a4cc7d33",
+  "source_sha256": {
+    "capture_research.py": "808279e3da0360f68c369b2bd187fa0342e5a3a6715b2b0328dda1e285289e2c",
+    "quorum_tracker.py": "e5240daec7553c6b4034d41f2299fda26881bad852751b0f7ce8401a4a6fe005",
+    "batch_presence.py": "d38f18e2d5d750ef84de8b22ed4b733aef3ecbab8fb6156ff52bacda244378bf",
+    "sector_tracker.py": "2297aa7f94058e3e4faf3da792c6f1beef6c68fa72121100ec672d60ade5ec50",
+    "six_mic_track.py": "ffb84602192a52fff8eafdff547a690bea25ca740a4298d6b31d4e874b6a66c0",
+    "six_mic_localize.py": "f78439c83138bea387664050ba68c05f8299baaa532f9b63585254c2b616992c",
+    "six_mic_baseline_core.py": "23184058f08fa54af4c61b9681f2fbe40341430f0ba48f8574676f27ce4964b0",
+    "audio_frames.py": "0ed77ea8db8834576c21206358a8d945b612a176cad742bb266d077ee2a79408",
+    "h1_reader.py": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9"
+  },
+  "protocol_sha256": "76cfeb736d3cee35a73c981ff821c754d5070b8956c0e39b89e9882b60e6f672",
+  "fixed_reference_manifest_sha256": "815468ab04374580a9785a14c328f11f878dbdbefcf8df35b1671e87a0128e20",
+  "method_rows": 93400,
+  "acoustic_frames": 23350,
+  "artifact_sha256": {
+    "frames.csv": "99cfa9c9872aa6e4f1b099eb335112623b5ab7487c9f4c582e67dc86960348b1",
+    "gates.json": "979e54b444fd21249dd645bbdb7338f2dcb8fd13f8b147baae0207d26e7ab418",
+    "latencies.csv": "cadeaf17a3f7a3c306856024ac47dd23224a0bb738f1da7fe9819540d7e57d49",
+    "paired.csv": "c6ebf3baf3c7fd040d6bfda3180f3de89dda2c29578eba48fba331901ba272cf",
+    "per-seed.csv": "e7bf336463e462365084640ffca9dd17126f1fd7083c5564ab23facf751f7513",
+    "plan.json": "f649a1057b3e3eff9f9b3d4e679550453996df6b761b982b68b9e71b69606766",
+    "pooled.csv": "0fbbb0f678034dbc10edd9fc4860a406bcef67f5582f1676bb0cc757b176a78c",
+    "pooled.json": "05d6863e256ce85c476fbe6dadd99850e20b6411edd7d048642f95d40b9c4108",
+    "protocol.json": "76cfeb736d3cee35a73c981ff821c754d5070b8956c0e39b89e9882b60e6f672",
+    "validation-inputs.json": "418fa493f59e45f2a6e099e642aaf59b02eed5cdf0a2f7bb7eb6db730ed987e4"
+  },
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scope": "Capture-only synthetic research. No automatic replacement of production tracker. Same-cone identity limitation remains."
+}

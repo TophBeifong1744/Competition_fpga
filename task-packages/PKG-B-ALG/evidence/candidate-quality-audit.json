@@ -1,0 +1,368 @@
+{
+  "status": "PASS",
+  "reference_hash_entries_checked": 174,
+  "seed_splits_disjoint": true,
+  "frozen_selected_code_matches": true,
+  "phases": {
+    "develop": {
+      "method_rows": 140100,
+      "diagnostic_rows": 70050,
+      "per_seed_groups": 300,
+      "pooled_groups": 30
+    },
+    "validate": {
+      "method_rows": 93400,
+      "diagnostic_rows": 46700,
+      "per_seed_groups": 200,
+      "pooled_groups": 20
+    }
+  },
+  "heldout_noise_seed_gains": [
+    {
+      "seed": 2026091100,
+      "new_fresh_rate": 0.5017301038062284,
+      "correct_gain": 0.10726643598615915
+    },
+    {
+      "seed": 2026091101,
+      "new_fresh_rate": 0.5432525951557093,
+      "correct_gain": 0.1349480968858131
+    },
+    {
+      "seed": 2026091102,
+      "new_fresh_rate": 0.5640138408304498,
+      "correct_gain": 0.14532871972318345
+    },
+    {
+      "seed": 2026091103,
+      "new_fresh_rate": 0.5259515570934256,
+      "correct_gain": 0.1522491349480969
+    },
+    {
+      "seed": 2026091104,
+      "new_fresh_rate": 0.5605536332179931,
+      "correct_gain": 0.19377162629757783
+    },
+    {
+      "seed": 2026091105,
+      "new_fresh_rate": 0.532871972318339,
+      "correct_gain": 0.21453287197231835
+    },
+    {
+      "seed": 2026091106,
+      "new_fresh_rate": 0.5570934256055363,
+      "correct_gain": 0.12802768166089967
+    },
+    {
+      "seed": 2026091107,
+      "new_fresh_rate": 0.5397923875432526,
+      "correct_gain": 0.14878892733564014
+    },
+    {
+      "seed": 2026091108,
+      "new_fresh_rate": 0.5743944636678201,
+      "correct_gain": 0.12110726643598613
+    },
+    {
+      "seed": 2026091109,
+      "new_fresh_rate": 0.49480968858131485,
+      "correct_gain": 0.2802768166089965
+    }
+  ],
+  "diagnostic_summaries": [
+    {
+      "phase": "develop",
+      "scenario": "drop_return",
+      "method": "original",
+      "active_frames": 2890,
+      "rejected": 0,
+      "rejection_reasons": {},
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 0.02500440524878072,
+      "pair_rms_p95": 0.04086650102892178,
+      "rescued_from_old_rejection": 0,
+      "lost_old_valid": 0
+    },
+    {
+      "phase": "develop",
+      "scenario": "drop_return",
+      "method": "gcc_beta075",
+      "active_frames": 2890,
+      "rejected": 0,
+      "rejection_reasons": {},
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 0.02198569333355009,
+      "pair_rms_p95": 0.035978994805094804,
+      "rescued_from_old_rejection": 0,
+      "lost_old_valid": 0
+    },
+    {
+      "phase": "develop",
+      "scenario": "drop_return",
+      "method": "gcc_beta050",
+      "active_frames": 2890,
+      "rejected": 0,
+      "rejection_reasons": {},
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 0.020325072765839225,
+      "pair_rms_p95": 0.032803484517773734,
+      "rescued_from_old_rejection": 0,
+      "lost_old_valid": 0
+    },
+    {
+      "phase": "develop",
+      "scenario": "band_noise0",
+      "method": "original",
+      "active_frames": 2890,
+      "rejected": 1602,
+      "rejection_reasons": {
+        "residual_too_large": 1602,
+        "norm_out_of_range": 8
+      },
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 0.7023825249512291,
+      "pair_rms_p95": 1.1456776793667112,
+      "rescued_from_old_rejection": 0,
+      "lost_old_valid": 0
+    },
+    {
+      "phase": "develop",
+      "scenario": "band_noise0",
+      "method": "gcc_beta075",
+      "active_frames": 2890,
+      "rejected": 1233,
+      "rejection_reasons": {
+        "residual_too_large": 1232,
+        "norm_out_of_range": 5
+      },
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 0.6453376312148851,
+      "pair_rms_p95": 1.0454981369816005,
+      "rescued_from_old_rejection": 390,
+      "lost_old_valid": 21
+    },
+    {
+      "phase": "develop",
+      "scenario": "band_noise0",
+      "method": "gcc_beta050",
+      "active_frames": 2890,
+      "rejected": 1055,
+      "rejection_reasons": {
+        "residual_too_large": 1054,
+        "norm_out_of_range": 3
+      },
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 0.6156963188795468,
+      "pair_rms_p95": 0.9945720143985353,
+      "rescued_from_old_rejection": 586,
+      "lost_old_valid": 39
+    },
+    {
+      "phase": "develop",
+      "scenario": "equal_interferer",
+      "method": "original",
+      "active_frames": 2890,
+      "rejected": 2883,
+      "rejection_reasons": {
+        "residual_too_large": 2880,
+        "norm_out_of_range": 419
+      },
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 3.4568060080356915,
+      "pair_rms_p95": 4.597494771061954,
+      "rescued_from_old_rejection": 0,
+      "lost_old_valid": 0
+    },
+    {
+      "phase": "develop",
+      "scenario": "equal_interferer",
+      "method": "gcc_beta075",
+      "active_frames": 2890,
+      "rejected": 2884,
+      "rejection_reasons": {
+        "residual_too_large": 2879,
+        "norm_out_of_range": 407
+      },
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 3.4898041178217545,
+      "pair_rms_p95": 4.564107505000288,
+      "rescued_from_old_rejection": 2,
+      "lost_old_valid": 3
+    },
+    {
+      "phase": "develop",
+      "scenario": "equal_interferer",
+      "method": "gcc_beta050",
+      "active_frames": 2890,
+      "rejected": 2885,
+      "rejection_reasons": {
+        "residual_too_large": 2878,
+        "norm_out_of_range": 418
+      },
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 3.4934764115050605,
+      "pair_rms_p95": 4.532283562077756,
+      "rescued_from_old_rejection": 5,
+      "lost_old_valid": 7
+    },
+    {
+      "phase": "develop",
+      "scenario": "same_cone_competitor",
+      "method": "original",
+      "active_frames": 2890,
+      "rejected": 0,
+      "rejection_reasons": {},
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 0.8080633565188515,
+      "pair_rms_p95": 1.199039669874882,
+      "rescued_from_old_rejection": 0,
+      "lost_old_valid": 0
+    },
+    {
+      "phase": "develop",
+      "scenario": "same_cone_competitor",
+      "method": "gcc_beta075",
+      "active_frames": 2890,
+      "rejected": 0,
+      "rejection_reasons": {},
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 0.8098841469498381,
+      "pair_rms_p95": 1.179236602672621,
+      "rescued_from_old_rejection": 0,
+      "lost_old_valid": 0
+    },
+    {
+      "phase": "develop",
+      "scenario": "same_cone_competitor",
+      "method": "gcc_beta050",
+      "active_frames": 2890,
+      "rejected": 0,
+      "rejection_reasons": {},
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 0.809720725377403,
+      "pair_rms_p95": 1.163854519757587,
+      "rescued_from_old_rejection": 0,
+      "lost_old_valid": 0
+    },
+    {
+      "phase": "validate",
+      "scenario": "drop_return",
+      "method": "original",
+      "active_frames": 2890,
+      "rejected": 0,
+      "rejection_reasons": {},
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 0.024999992917400626,
+      "pair_rms_p95": 0.04065065899733506,
+      "rescued_from_old_rejection": 0,
+      "lost_old_valid": 0
+    },
+    {
+      "phase": "validate",
+      "scenario": "drop_return",
+      "method": "gcc_beta075",
+      "active_frames": 2890,
+      "rejected": 0,
+      "rejection_reasons": {},
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 0.021958321940108584,
+      "pair_rms_p95": 0.03590761152735872,
+      "rescued_from_old_rejection": 0,
+      "lost_old_valid": 0
+    },
+    {
+      "phase": "validate",
+      "scenario": "band_noise0",
+      "method": "original",
+      "active_frames": 2890,
+      "rejected": 1568,
+      "rejection_reasons": {
+        "residual_too_large": 1568,
+        "norm_out_of_range": 5
+      },
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 0.7035975596925388,
+      "pair_rms_p95": 1.1360116551925383,
+      "rescued_from_old_rejection": 0,
+      "lost_old_valid": 0
+    },
+    {
+      "phase": "validate",
+      "scenario": "band_noise0",
+      "method": "gcc_beta075",
+      "active_frames": 2890,
+      "rejected": 1207,
+      "rejection_reasons": {
+        "residual_too_large": 1206,
+        "norm_out_of_range": 2
+      },
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 0.64288214986679,
+      "pair_rms_p95": 1.0438316638049945,
+      "rescued_from_old_rejection": 375,
+      "lost_old_valid": 14
+    },
+    {
+      "phase": "validate",
+      "scenario": "equal_interferer",
+      "method": "original",
+      "active_frames": 2890,
+      "rejected": 2871,
+      "rejection_reasons": {
+        "residual_too_large": 2863,
+        "norm_out_of_range": 420
+      },
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 3.487268549107759,
+      "pair_rms_p95": 4.597191114537179,
+      "rescued_from_old_rejection": 0,
+      "lost_old_valid": 0
+    },
+    {
+      "phase": "validate",
+      "scenario": "equal_interferer",
+      "method": "gcc_beta075",
+      "active_frames": 2890,
+      "rejected": 2880,
+      "rejection_reasons": {
+        "residual_too_large": 2874,
+        "norm_out_of_range": 407
+      },
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 3.5069841261570356,
+      "pair_rms_p95": 4.56027258409945,
+      "rescued_from_old_rejection": 2,
+      "lost_old_valid": 11
+    },
+    {
+      "phase": "validate",
+      "scenario": "same_cone_competitor",
+      "method": "original",
+      "active_frames": 2890,
+      "rejected": 0,
+      "rejection_reasons": {},
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 0.8051555206249283,
+      "pair_rms_p95": 1.2094056213709314,
+      "rescued_from_old_rejection": 0,
+      "lost_old_valid": 0
+    },
+    {
+      "phase": "validate",
+      "scenario": "same_cone_competitor",
+      "method": "gcc_beta075",
+      "active_frames": 2890,
+      "rejected": 0,
+      "rejection_reasons": {},
+      "pair_rms_defined_frames": 2890,
+      "pair_rms_p50": 0.8028524129997541,
+      "pair_rms_p95": 1.1843287036694434,
+      "rescued_from_old_rejection": 0,
+      "lost_old_valid": 0
+    }
+  ],
+  "auditor_sha256": "5a5ee8ec1a104f8b0bd1506b9887d2975fe061f9cd8ca4f2439108a7bb5df5fc",
+  "helper_sha256": "5a3b4a52734135136d1b16f5814e4e1470fa4f7aeaf8c186cf8a5260373b11ca",
+  "selection_sha256": "fc8377ff667830ef369832e62d6c2966fe81513fa814f1b1e77dcc02cd2529bb",
+  "checks": "All result rows: labels, angles, unchanged acceptance limits, HOLD exclusion, summaries, paired gains and latencies. Diagnostics linked to raw output. No algorithm rerun/tuning."
+}

@@ -1,0 +1,79 @@
+{
+  "status": "COMPLETE_SYNTHETIC_ONLY",
+  "config": {
+    "cone_center": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "cone_half_angle_deg": 30.0,
+    "acquire_frames": 5,
+    "acquire_spread_deg": 8.0,
+    "track_step_deg": 20.0,
+    "hold_ms": 200.0,
+    "max_input_gap_ms": 30.0
+  },
+  "normalized_cone_center": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "config_file_sha256": "418a6b2d003b3c76bd54bcf640364964ea14aef8d87b06d799f8bc111515fb27",
+  "source_sha256": {
+    "six_mic_track.py": "ffb84602192a52fff8eafdff547a690bea25ca740a4298d6b31d4e874b6a66c0",
+    "sector_tracker.py": "2297aa7f94058e3e4faf3da792c6f1beef6c68fa72121100ec672d60ade5ec50",
+    "six_mic_localize.py": "f78439c83138bea387664050ba68c05f8299baaa532f9b63585254c2b616992c",
+    "six_mic_baseline_core.py": "23184058f08fa54af4c61b9681f2fbe40341430f0ba48f8574676f27ce4964b0",
+    "audio_frames.py": "0ed77ea8db8834576c21206358a8d945b612a176cad742bb266d077ee2a79408",
+    "h1_reader.py": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9"
+  },
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "framing": {
+    "profile": "six-mic-baseline-synthetic-v1",
+    "sample_rate_hz": 48000.0,
+    "frame_length": 1024,
+    "hop": 512,
+    "frame_duration_seconds": 0.021333333333333333,
+    "hop_seconds": 0.010666666666666666,
+    "frames": 89,
+    "input_rows": 46080,
+    "error_rows": 0,
+    "missing_samples": 0,
+    "unused_clean_rows": 0,
+    "intervals": [
+      {
+        "row_start": 0,
+        "row_stop": 46080,
+        "frames": 89,
+        "covered_unique_rows": 46080,
+        "unused_tail_rows": 0
+      }
+    ],
+    "direction_policy": "synthetic_only_requires_algorithm_validation",
+    "provenance": {
+      "source_id": "tracking-teaching:drop-return:seed=20260908",
+      "source_sha256": "ffb84602192a52fff8eafdff547a690bea25ca740a4298d6b31d4e874b6a66c0",
+      "samples_sha256": "cd6f8de7349876350ca5ce3dd6a5bf2057ac767e11c78731f47afbcedac7ed95",
+      "conversion": "channel x time to time x channel; float64; no gain change",
+      "error_rows": 0,
+      "missing_samples": 0,
+      "input_file_sha256": {
+        "metadata.json": "4807c9b2975630d31fbb7191dd73016890e404155baf252fd5483bffdb23ca5d",
+        "samples.npy": "dd21d92dc352574c35f83711c71b2125301e844b62cd8d5fbcc55f8ecf3a19af"
+      },
+      "crop": {
+        "start": 1536,
+        "stop": 47616,
+        "reason": "Interior continuous render; no old-trial concatenation"
+      }
+    }
+  },
+  "timestamp_convention": "frame end exclusive, milliseconds relative to segment first sample",
+  "limitations": [
+    "No speaker identity; same-cone competitor can be tracked.",
+    "Five reliable consecutive frames may prevent acquisition in noise.",
+    "HOLD display only; consumer must expire display when no further frames arrive.",
+    "Synthetic offline only; no H2/H3 approval or audio enhancement."
+  ]
+}

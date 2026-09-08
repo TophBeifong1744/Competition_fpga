@@ -1,0 +1,43 @@
+{
+  "selected": {
+    "name": "quorum5of12",
+    "required": 5,
+    "window_frames": 12,
+    "max_span_ms": 120
+  },
+  "gates": {
+    "quorum5of12": {
+      "passed": true,
+      "checks": {
+        "noise_correct_gain": true,
+        "noise_p95": true,
+        "absent_false_outputs": true,
+        "normal_correct": true,
+        "noise_wrong": true
+      }
+    },
+    "quorum4of10": {
+      "passed": false,
+      "checks": {
+        "noise_correct_gain": true,
+        "noise_p95": true,
+        "absent_false_outputs": false,
+        "normal_correct": true,
+        "noise_wrong": true
+      }
+    }
+  },
+  "protocol_sha256": "76cfeb736d3cee35a73c981ff821c754d5070b8956c0e39b89e9882b60e6f672",
+  "source_sha256": {
+    "capture_research.py": "808279e3da0360f68c369b2bd187fa0342e5a3a6715b2b0328dda1e285289e2c",
+    "quorum_tracker.py": "e5240daec7553c6b4034d41f2299fda26881bad852751b0f7ce8401a4a6fe005",
+    "batch_presence.py": "d38f18e2d5d750ef84de8b22ed4b733aef3ecbab8fb6156ff52bacda244378bf",
+    "sector_tracker.py": "2297aa7f94058e3e4faf3da792c6f1beef6c68fa72121100ec672d60ade5ec50",
+    "six_mic_track.py": "ffb84602192a52fff8eafdff547a690bea25ca740a4298d6b31d4e874b6a66c0",
+    "six_mic_localize.py": "f78439c83138bea387664050ba68c05f8299baaa532f9b63585254c2b616992c",
+    "six_mic_baseline_core.py": "23184058f08fa54af4c61b9681f2fbe40341430f0ba48f8574676f27ce4964b0",
+    "audio_frames.py": "0ed77ea8db8834576c21206358a8d945b612a176cad742bb266d077ee2a79408",
+    "h1_reader.py": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9"
+  },
+  "note": "Frozen before new-seed validation; prefer declared stricter quorum if both pass."
+}

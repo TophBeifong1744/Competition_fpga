@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "fixed_reference_files": 139,
+  "seed_splits_disjoint": true,
+  "selected_code_matches_heldout": true,
+  "phases": {
+    "capture-development-01": {
+      "rows": 116750,
+      "per_seed_groups": 250,
+      "pooled_groups": 25
+    },
+    "capture-heldout-01": {
+      "rows": 93400,
+      "per_seed_groups": 200,
+      "pooled_groups": 20
+    }
+  },
+  "heldout_seed_statistics": {
+    "noise_per_seed": [
+      {
+        "seed": 2026090900,
+        "old_fresh": 0.0,
+        "new_fresh": 0.356401384083045,
+        "correct_gain": 0.3391003460207612
+      },
+      {
+        "seed": 2026090901,
+        "old_fresh": 0.0,
+        "new_fresh": 0.39100346020761245,
+        "correct_gain": 0.3737024221453287
+      },
+      {
+        "seed": 2026090902,
+        "old_fresh": 0.0,
+        "new_fresh": 0.35986159169550175,
+        "correct_gain": 0.3460207612456747
+      },
+      {
+        "seed": 2026090903,
+        "old_fresh": 0.0,
+        "new_fresh": 0.356401384083045,
+        "correct_gain": 0.3217993079584775
+      },
+      {
+        "seed": 2026090904,
+        "old_fresh": 0.0,
+        "new_fresh": 0.38408304498269896,
+        "correct_gain": 0.356401384083045
+      },
+      {
+        "seed": 2026090905,
+        "old_fresh": 0.18339100346020762,
+        "new_fresh": 0.39100346020761245,
+        "correct_gain": 0.19031141868512114
+      },
+      {
+        "seed": 2026090906,
+        "old_fresh": 0.0,
+        "new_fresh": 0.4117647058823529,
+        "correct_gain": 0.38408304498269896
+      },
+      {
+        "seed": 2026090907,
+        "old_fresh": 0.0,
+        "new_fresh": 0.3217993079584775,
+        "correct_gain": 0.31141868512110726
+      },
+      {
+        "seed": 2026090908,
+        "old_fresh": 0.0,
+        "new_fresh": 0.31141868512110726,
+        "correct_gain": 0.28719723183391005
+      },
+      {
+        "seed": 2026090909,
+        "old_fresh": 0.0,
+        "new_fresh": 0.33217993079584773,
+        "correct_gain": 0.3217993079584775
+      }
+    ],
+    "improved_seeds": 10,
+    "new_fresh_min": 0.31141868512110726,
+    "new_fresh_max": 0.4117647058823529,
+    "correct_gain_min": 0.19031141868512114,
+    "correct_gain_max": 0.38408304498269896
+  },
+  "auditor_sha256": "5a3b4a52734135136d1b16f5814e4e1470fa4f7aeaf8c186cf8a5260373b11ca",
+  "selection_sha256": "62e9fd3e417d2c194e4057c1a99d0bf00273b2b86f9fd87a8707d750a4cc7d33",
+  "heldout_run_sha256": "89846e2ee55e65143544e390589fdb6a2321b9d49c465751e5c00b96fcbdc00d",
+  "checks": "All rows: presence, angles, fresh quality/range gates, HOLD exclusion; all summary denominators, paired gains and latencies; frozen files and provenance."
+}

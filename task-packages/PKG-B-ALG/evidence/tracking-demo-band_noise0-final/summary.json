@@ -1,0 +1,48 @@
+{
+  "baseline": {
+    "total_frames": 89,
+    "valid_frames": 36,
+    "rejected_frames": 53,
+    "valid_rate": 0.4044943820224719,
+    "truth_available": true,
+    "evaluated_valid_frames": 36,
+    "p50_error_deg": 4.760496670906708,
+    "p95_error_deg": 9.642394248343539,
+    "accepted_wrong_over_30deg": 0,
+    "wrong_rate_all_frames": 0.0,
+    "wrong_rate_valid_frames": 0.0,
+    "rejection_reason_counts": {
+      "norm_out_of_range": 1,
+      "residual_too_large": 53
+    },
+    "reason_counts_are_nonexclusive": true
+  },
+  "tracking": {
+    "total_frames": 89,
+    "valid_frames": 0,
+    "rejected_frames": 89,
+    "valid_rate": 0.0,
+    "truth_available": true,
+    "evaluated_valid_frames": 0,
+    "p50_error_deg": null,
+    "p95_error_deg": null,
+    "accepted_wrong_over_30deg": 0,
+    "wrong_rate_all_frames": 0.0,
+    "wrong_rate_valid_frames": null,
+    "rejection_reason_counts": {},
+    "reason_counts_are_nonexclusive": true,
+    "valid_means": "fresh_valid only; HOLD never counts",
+    "state_counts": {
+      "ACQUIRE": 36,
+      "SEARCH": 53
+    },
+    "hold_frames": 0,
+    "acquisitions": 0,
+    "first_lock_ready_ms": null,
+    "acquisition_ready_times_ms": [],
+    "reason_counts": {
+      "acquiring": 36,
+      "baseline_rejected": 53
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "compared_frames": 162,
+  "scenarios": [
+    "clean",
+    "noise20",
+    "noise10",
+    "noise0",
+    "band_noise0",
+    "reflection",
+    "interferer0",
+    "mismatch",
+    "one_channel_noise"
+  ],
+  "tolerance_absolute": 1e-12,
+  "maximum_delay_difference_samples": 0.0,
+  "valid_flags_all_match": true,
+  "axis_golden_count": 6,
+  "baseline_source_sha256": "b50cdf8eafad2b14998156e705e30f1a353ee6c4b8b3f87ce461fe8e4f086a8b",
+  "source_sha256": {
+    "run_baseline_regression.py": "c94290492d9ceb23948cb487a82d29fc7ead550ff699a71d6b912534e46f616e",
+    "payload/tb/python/test_six_mic_localize.py": "29f4e022ff89e1cbc9aca6da55d5b61c6d8882d9e5c3a6ca91058f705435666e",
+    "payload/model/python/six_mic_localize.py": "95f4f50993ca5289625c6f3580fdc1e63831dad1d7f0f5497342eb0ddfc7988c",
+    "payload/model/python/six_mic_baseline_core.py": "23184058f08fa54af4c61b9681f2fbe40341430f0ba48f8574676f27ce4964b0",
+    "payload/model/python/audio_frames.py": "0ed77ea8db8834576c21206358a8d945b612a176cad742bb266d077ee2a79408",
+    "payload/model/python/h1_reader.py": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9"
+  },
+  "artifact_sha256": {
+    "axis-waveforms.npz": "bf56ab2cde6482af685bad82ca3aa4ec44f897297e8ed2cc797866fc4cd2942c",
+    "axis-golden.json": "39f13060a76fc2041ac39fbeb54dbe1af640560b8c662b6f7f884cb05ce0ddc6",
+    "same-frame-comparison.json": "1986beff4eb1676b84be2e601f62d49f42881a744f0306c43a76b6867d04d50e"
+  },
+  "scope": "Integration equivalence and sign golden, not a new acoustic performance benchmark."
+}

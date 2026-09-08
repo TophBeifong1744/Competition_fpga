@@ -1,0 +1,45 @@
+{
+  "baseline": {
+    "total_frames": 89,
+    "valid_frames": 0,
+    "rejected_frames": 89,
+    "valid_rate": 0.0,
+    "truth_available": true,
+    "evaluated_valid_frames": 0,
+    "p50_error_deg": null,
+    "p95_error_deg": null,
+    "accepted_wrong_over_30deg": 0,
+    "wrong_rate_all_frames": 0.0,
+    "wrong_rate_valid_frames": null,
+    "rejection_reason_counts": {
+      "residual_too_large": 89
+    },
+    "reason_counts_are_nonexclusive": true
+  },
+  "tracking": {
+    "total_frames": 89,
+    "valid_frames": 0,
+    "rejected_frames": 89,
+    "valid_rate": 0.0,
+    "truth_available": true,
+    "evaluated_valid_frames": 0,
+    "p50_error_deg": null,
+    "p95_error_deg": null,
+    "accepted_wrong_over_30deg": 0,
+    "wrong_rate_all_frames": 0.0,
+    "wrong_rate_valid_frames": null,
+    "rejection_reason_counts": {},
+    "reason_counts_are_nonexclusive": true,
+    "valid_means": "fresh_valid only; HOLD never counts",
+    "state_counts": {
+      "SEARCH": 89
+    },
+    "hold_frames": 0,
+    "acquisitions": 0,
+    "first_lock_ready_ms": null,
+    "acquisition_ready_times_ms": [],
+    "reason_counts": {
+      "baseline_rejected": 89
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "seeds": [
+    2026090900,
+    2026090901,
+    2026090902,
+    2026090903,
+    2026090904,
+    2026090905,
+    2026090906,
+    2026090907,
+    2026090908,
+    2026090909
+  ],
+  "scenarios": [
+    "drop_return",
+    "band_noise0",
+    "equal_interferer",
+    "interferer_only",
+    "same_cone_competitor"
+  ],
+  "duration_samples": 240000,
+  "margin_samples": 1536,
+  "edge_samples": 960,
+  "episodes": [
+    {
+      "start": 24000,
+      "stop": 96000,
+      "azimuth_deg": 0,
+      "elevation_deg": 10
+    },
+    {
+      "start": 134400,
+      "stop": 216000,
+      "azimuth_deg": -10,
+      "elevation_deg": 10
+    }
+  ]
+}

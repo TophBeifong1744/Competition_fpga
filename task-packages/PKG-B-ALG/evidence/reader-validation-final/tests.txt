@@ -1,0 +1,52 @@
+test_duplicate_channel (test_h1_reader.H1Required.test_duplicate_channel) ... ok
+test_duplicate_id (test_h1_reader.H1Required.test_duplicate_id) ... ok
+test_error_inconsistency (test_h1_reader.H1Required.test_error_inconsistency) ... ok
+test_exact_uint64 (test_h1_reader.H1Required.test_exact_uint64) ... ok
+test_gap (test_h1_reader.H1Required.test_gap) ... ok
+test_pcm_boundaries (test_h1_reader.H1Required.test_pcm_boundaries) ... ok
+test_pcm_overflow (test_h1_reader.H1Required.test_pcm_overflow) ... ok
+test_restart (test_h1_reader.H1Required.test_restart) ... ok
+test_silent_gap (test_h1_reader.H1Required.test_silent_gap) ... ok
+test_swapped_header (test_h1_reader.H1Required.test_swapped_header) ... ok
+test_uint64_maximum (test_h1_reader.H1Required.test_uint64_maximum) ... ok
+test_uint64_overflow (test_h1_reader.H1Required.test_uint64_overflow) ... ok
+test_unknown_coordinates (test_h1_reader.H1Required.test_unknown_coordinates) ... ok
+test_unknown_error_token (test_h1_reader.H1Required.test_unknown_error_token) ... ok
+test_unknown_schema (test_h1_reader.H1Required.test_unknown_schema) ... ok
+test_acceptance_reference_is_not_approval (test_h1_reader.ReaderBoundaries.test_acceptance_reference_is_not_approval) ... ok
+test_acceptance_requires_reference (test_h1_reader.ReaderBoundaries.test_acceptance_requires_reference) ... ok
+test_all_error_rows_preserved (test_h1_reader.ReaderBoundaries.test_all_error_rows_preserved) ... ok
+test_bad_integer_forms (test_h1_reader.ReaderBoundaries.test_bad_integer_forms) ... ok
+test_bom_and_crlf (test_h1_reader.ReaderBoundaries.test_bom_and_crlf) ... ok
+test_bool_format_field (test_h1_reader.ReaderBoundaries.test_bool_format_field) ... ok
+test_bool_numeric_fields (test_h1_reader.ReaderBoundaries.test_bool_numeric_fields) ... ok
+test_calibration_requires_reference (test_h1_reader.ReaderBoundaries.test_calibration_requires_reference) ... ok
+test_cli_failure_is_structured_and_nonzero (test_h1_reader.ReaderBoundaries.test_cli_failure_is_structured_and_nonzero) ... ok
+test_cli_reads_both_segments (test_h1_reader.ReaderBoundaries.test_cli_reads_both_segments) ... ok
+test_config_conflict (test_h1_reader.ReaderBoundaries.test_config_conflict) ... ok
+test_coordinates_bad_shape_or_values (test_h1_reader.ReaderBoundaries.test_coordinates_bad_shape_or_values) ... ok
+test_duplicate_json_key (test_h1_reader.ReaderBoundaries.test_duplicate_json_key) ... ok
+test_empty_line_rejected (test_h1_reader.ReaderBoundaries.test_empty_line_rejected) ... ok
+test_error_flags_syntax (test_h1_reader.ReaderBoundaries.test_error_flags_syntax) ... ok
+test_error_without_flags (test_h1_reader.ReaderBoundaries.test_error_without_flags) ... ok
+test_extra_description_preserved (test_h1_reader.ReaderBoundaries.test_extra_description_preserved) ... ok
+test_failed_load_does_not_poison_registry (test_h1_reader.ReaderBoundaries.test_failed_load_does_not_poison_registry) ... ok
+test_format_code_cannot_be_used_as_acoustic_data (test_h1_reader.ReaderBoundaries.test_format_code_cannot_be_used_as_acoustic_data) ... ok
+test_geometry_conflict_across_configs (test_h1_reader.ReaderBoundaries.test_geometry_conflict_across_configs) ... ok
+test_header_only (test_h1_reader.ReaderBoundaries.test_header_only) ... ok
+test_missing_field (test_h1_reader.ReaderBoundaries.test_missing_field) ... ok
+test_negative_id (test_h1_reader.ReaderBoundaries.test_negative_id) ... ok
+test_negative_pcm_overflow (test_h1_reader.ReaderBoundaries.test_negative_pcm_overflow) ... ok
+test_new_config_is_supported_without_whitelist (test_h1_reader.ReaderBoundaries.test_new_config_is_supported_without_whitelist) ... ok
+test_nonfinite_json (test_h1_reader.ReaderBoundaries.test_nonfinite_json) ... ok
+test_overflow_alone_does_not_invent_missing_samples (test_h1_reader.ReaderBoundaries.test_overflow_alone_does_not_invent_missing_samples) ... ok
+test_same_acquisition_reset_rejected (test_h1_reader.ReaderBoundaries.test_same_acquisition_reset_rejected) ... ok
+test_synthetic_cannot_claim_hardware_acceptance (test_h1_reader.ReaderBoundaries.test_synthetic_cannot_claim_hardware_acceptance) ... ok
+test_unknown_capture_reason_required (test_h1_reader.ReaderBoundaries.test_unknown_capture_reason_required) ... ok
+test_unknown_coordinates_reason_required (test_h1_reader.ReaderBoundaries.test_unknown_coordinates_reason_required) ... ok
+test_wrap_rejected (test_h1_reader.ReaderBoundaries.test_wrap_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 2.004s
+
+OK

@@ -1,0 +1,70 @@
+{
+  "schema_version": "ss-six-synthetic-offline-0.1",
+  "source_kind": "synthetic-acoustic",
+  "evidence_level": "synthetic",
+  "channel_order": [
+    "mic0",
+    "mic1",
+    "mic2",
+    "mic3",
+    "mic4",
+    "mic5"
+  ],
+  "sample_rate_hz": 48000,
+  "coordinates_m": [
+    [
+      -0.02,
+      -0.02,
+      0.0
+    ],
+    [
+      0.02,
+      -0.02,
+      0.0
+    ],
+    [
+      0.02,
+      0.02,
+      0.0
+    ],
+    [
+      -0.02,
+      0.02,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.028284271247461905
+    ],
+    [
+      0.0,
+      0.0,
+      -0.028284271247461905
+    ]
+  ],
+  "coordinate_system": "x-forward_y-left_z-up",
+  "direction_convention": "array-to-source",
+  "angle_unit": "deg",
+  "source_id": "old-baseline:interferer0:az=35.0:el=25.0:repeat=0:crop=1536:3072",
+  "source_sha256": "23184058f08fa54af4c61b9681f2fbe40341430f0ba48f8574676f27ce4964b0",
+  "first_sample_id": 1536,
+  "crop": {
+    "start": 1536,
+    "stop": 3072,
+    "reason": "Interior of original 4096-sample periodic render; no concatenation"
+  },
+  "truth_unit_vector": [
+    0.7424038765061041,
+    0.5198367907256845,
+    0.42261826174069944
+  ],
+  "generator": {
+    "scenario": "interferer0",
+    "azimuth_deg": 35.0,
+    "elevation_deg": 25.0,
+    "repeat": 0,
+    "base_seed": 20260907,
+    "baseline_source_sha256": "b50cdf8eafad2b14998156e705e30f1a353ee6c4b8b3f87ce461fe8e4f086a8b"
+  }
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "profile": "six-mic-baseline-synthetic-v1",
+    "index": 0,
+    "interval_index": 0,
+    "reset_before": true,
+    "row_start": 0,
+    "row_stop": 1024,
+    "first_sample_id": 1536,
+    "last_sample_id": 2559,
+    "start_seconds": 0.0,
+    "end_seconds_exclusive": 0.021333333333333333,
+    "sample_rate_hz": 48000.0,
+    "direction_policy": "synthetic_only_requires_algorithm_validation",
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "float64",
+    "valid": true,
+    "rejection_reasons": [],
+    "unit_vector": [
+      0.7286629505637601,
+      0.5113224711436579,
+      0.45563102942979916
+    ],
+    "azimuth_deg": 35.05837585585727,
+    "elevation_deg": 27.10554312463268,
+    "finite_pairs": 15,
+    "geometry_rank": 3,
+    "residual_samples": 0.4405679910238479,
+    "raw_vector_norm": 0.9452160465870824,
+    "pair_delays_samples": [
+      4.628980615709788,
+      6.298325620085478,
+      2.3845378050459223,
+      5.2245554434075485,
+      1.7320325758161044,
+      3.2693627388794835,
+      -0.39175900327616375,
+      0.5556548827650589,
+      -2.6558617537474496,
+      -3.816845123669803,
+      -0.8854347848919476,
+      -4.826216118121304,
+      2.478497887909141,
+      -1.2544502219367335,
+      -3.0390453573919345
+    ],
+    "angular_error_deg": 2.1061960309148526
+  },
+  {
+    "profile": "six-mic-baseline-synthetic-v1",
+    "index": 1,
+    "interval_index": 0,
+    "reset_before": false,
+    "row_start": 512,
+    "row_stop": 1536,
+    "first_sample_id": 2048,
+    "last_sample_id": 3071,
+    "start_seconds": 0.010666666666666666,
+    "end_seconds_exclusive": 0.032,
+    "sample_rate_hz": 48000.0,
+    "direction_policy": "synthetic_only_requires_algorithm_validation",
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "float64",
+    "valid": false,
+    "rejection_reasons": [
+      "residual_too_large"
+    ],
+    "unit_vector": null,
+    "azimuth_deg": null,
+    "elevation_deg": null,
+    "finite_pairs": 14,
+    "geometry_rank": 3,
+    "residual_samples": 0.56981440594014,
+    "raw_vector_norm": 0.9638484156425017,
+    "pair_delays_samples": [
+      2.9236821170141902,
+      7.479078910579762,
+      2.7858122757363977,
+      4.356274991555931,
+      1.472843063255359,
+      4.189966549374757,
+      -0.9222462417887529,
+      0.8899759434223591,
+      -2.0527858244422656,
+      -4.678340394713883,
+      -2.918759994401269,
+      null,
+      1.4888332940064972,
+      -1.2294234318927724,
+      -2.2134154803176003
+    ],
+    "angular_error_deg": null
+  }
+]

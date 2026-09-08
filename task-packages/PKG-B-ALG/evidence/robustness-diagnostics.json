@@ -1,0 +1,333 @@
+{
+  "totals": {
+    "original_raw": {
+      "absent_fresh_false_outputs": 8,
+      "absent_frames": 20244,
+      "absent_hold_display_frames": 0,
+      "tail_after_emission_fresh": 0,
+      "tail_after_emission_frames": 3372,
+      "tail_after_emission_hold": 0
+    },
+    "gcc_beta075_raw": {
+      "absent_fresh_false_outputs": 16,
+      "absent_frames": 20244,
+      "absent_hold_display_frames": 0,
+      "tail_after_emission_fresh": 12,
+      "tail_after_emission_frames": 3372,
+      "tail_after_emission_hold": 0
+    },
+    "original_quorum": {
+      "absent_fresh_false_outputs": 0,
+      "absent_frames": 20244,
+      "absent_hold_display_frames": 2110,
+      "tail_after_emission_fresh": 0,
+      "tail_after_emission_frames": 3372,
+      "tail_after_emission_hold": 1060
+    },
+    "gcc_beta075_quorum": {
+      "absent_fresh_false_outputs": 0,
+      "absent_frames": 20244,
+      "absent_hold_display_frames": 2168,
+      "tail_after_emission_fresh": 0,
+      "tail_after_emission_frames": 3372,
+      "tail_after_emission_hold": 1194
+    }
+  },
+  "latency": [
+    {
+      "condition": "band__az_edge__dry",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": -208.0000000000001,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "band__az_edge__early",
+      "old_success": 4,
+      "new_success": 6,
+      "common": 4,
+      "median_delta_ms": -421.3333333333332,
+      "max_delta_ms": -10.666666666666742
+    },
+    {
+      "condition": "band__az_edge__early_late",
+      "old_success": 0,
+      "new_success": 3,
+      "common": 0,
+      "median_delta_ms": null,
+      "max_delta_ms": null
+    },
+    {
+      "condition": "band__el_edge__dry",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": -26.666666666666742,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "band__el_edge__early",
+      "old_success": 5,
+      "new_success": 6,
+      "common": 5,
+      "median_delta_ms": -522.6666666666665,
+      "max_delta_ms": -213.33333333333326
+    },
+    {
+      "condition": "band__el_edge__early_late",
+      "old_success": 3,
+      "new_success": 5,
+      "common": 3,
+      "median_delta_ms": -10.666666666666629,
+      "max_delta_ms": 736.0000000000005
+    },
+    {
+      "condition": "band__front__dry",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": -37.333333333333144,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "band__front__early",
+      "old_success": 5,
+      "new_success": 6,
+      "common": 5,
+      "median_delta_ms": -10.666666666666629,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "band__front__early_late",
+      "old_success": 3,
+      "new_success": 5,
+      "common": 2,
+      "median_delta_ms": -10.666666666666515,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "impulsive__az_edge__dry",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "impulsive__az_edge__early",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 31.999999999999886
+    },
+    {
+      "condition": "impulsive__az_edge__early_late",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "impulsive__el_edge__dry",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "impulsive__el_edge__early",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 10.666666666666515
+    },
+    {
+      "condition": "impulsive__el_edge__early_late",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "impulsive__front__dry",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "impulsive__front__early",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "impulsive__front__early_late",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "pink__az_edge__dry",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "pink__az_edge__early",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "pink__az_edge__early_late",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "pink__el_edge__dry",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 10.66666666666697
+    },
+    {
+      "condition": "pink__el_edge__early",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 21.33333333333337
+    },
+    {
+      "condition": "pink__el_edge__early_late",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "pink__front__dry",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "pink__front__early",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "pink__front__early_late",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "tonal__az_edge__dry",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 10.666666666666515
+    },
+    {
+      "condition": "tonal__az_edge__early",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 5.3333333333332575,
+      "max_delta_ms": 42.66666666666663
+    },
+    {
+      "condition": "tonal__az_edge__early_late",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "tonal__el_edge__dry",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 10.666666666666515
+    },
+    {
+      "condition": "tonal__el_edge__early",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 5.333333333333485,
+      "max_delta_ms": 85.33333333333348
+    },
+    {
+      "condition": "tonal__el_edge__early_late",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "tonal__front__dry",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 10.666666666666515
+    },
+    {
+      "condition": "tonal__front__early",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    },
+    {
+      "condition": "tonal__front__early_late",
+      "old_success": 6,
+      "new_success": 6,
+      "common": 6,
+      "median_delta_ms": 0.0,
+      "max_delta_ms": 0.0
+    }
+  ],
+  "adverse_conditions": [
+    "tonal__az_edge__early",
+    "tonal__el_edge__dry",
+    "tonal__el_edge__early",
+    "tonal__el_edge__early_late"
+  ],
+  "report_source_sha256": "c2a4de24335e64a4f81425219bea1f8b5ef35dcafa8cb05a5e6528f27467bbd8"
+}

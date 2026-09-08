@@ -1,0 +1,22 @@
+{
+  "quorum5of12": {
+    "passed": true,
+    "checks": {
+      "noise_correct_gain": true,
+      "noise_p95": true,
+      "absent_false_outputs": true,
+      "normal_correct": true,
+      "noise_wrong": true
+    }
+  },
+  "quorum4of10": {
+    "passed": false,
+    "checks": {
+      "noise_correct_gain": true,
+      "noise_p95": true,
+      "absent_false_outputs": false,
+      "normal_correct": true,
+      "noise_wrong": true
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "status": "COMPLETE_CANDIDATE_RESEARCH",
+  "phase": "validate",
+  "seeds": [
+    2026091100,
+    2026091101,
+    2026091102,
+    2026091103,
+    2026091104,
+    2026091105,
+    2026091106,
+    2026091107,
+    2026091108,
+    2026091109
+  ],
+  "source_sha256": {
+    "candidate_quality_research.py": "6d04401ed39c90b0c6aa47e2da9c036864f0efba9c580051c5dab33ea0ec4f5f",
+    "weighted_gcc.py": "0a6e47e38e2bdeca46d4710c9ecf23cc92d2b503ae6b9dc58c07c7fea8b96f21",
+    "batch_presence.py": "d38f18e2d5d750ef84de8b22ed4b733aef3ecbab8fb6156ff52bacda244378bf",
+    "quorum_tracker.py": "e5240daec7553c6b4034d41f2299fda26881bad852751b0f7ce8401a4a6fe005",
+    "sector_tracker.py": "2297aa7f94058e3e4faf3da792c6f1beef6c68fa72121100ec672d60ade5ec50",
+    "six_mic_track.py": "ffb84602192a52fff8eafdff547a690bea25ca740a4298d6b31d4e874b6a66c0",
+    "six_mic_localize.py": "f78439c83138bea387664050ba68c05f8299baaa532f9b63585254c2b616992c",
+    "six_mic_baseline_core.py": "23184058f08fa54af4c61b9681f2fbe40341430f0ba48f8574676f27ce4964b0",
+    "audio_frames.py": "0ed77ea8db8834576c21206358a8d945b612a176cad742bb266d077ee2a79408",
+    "h1_reader.py": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9"
+  },
+  "protocol_sha256": "4a6184ad4e142456bae44a14c7d1796c39ad20a4f2ba69b506370ac64a9108c9",
+  "selection_sha256": "fc8377ff667830ef369832e62d6c2966fe81513fa814f1b1e77dcc02cd2529bb",
+  "method_rows": 93400,
+  "diagnostic_rows": 46700,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "artifact_sha256": {
+    "candidate-diagnostics.csv": "83131971d6b917c19e5268e9f3a983276491b36886c973b66c4fcf28ff56bfdf",
+    "frames.csv": "d93c25edc6c5dddb9daae7ffea0b744dc61398870ea1151e7b66fb8d7d8975cf",
+    "gates.json": "39975045c8a7db8edb8507309c03076cfbeb910bf7634d6b72db54d5e0954186",
+    "inputs.json": "bc839fb2a1d36ad22719bd8e2d4cd6af96fd87f19ba665af16231026d944974c",
+    "latencies.csv": "2b21ff317564eb95e780303ddf191893adfb042c45e91c8001ddfa4c1456f3d8",
+    "paired.csv": "5b2fc02e2eea959708286027fb67504bbc9655602e1e2470fa120c85260cf6a4",
+    "per-seed.csv": "4a2f0cc8d905d466170c6c899a707c547e96283fd4166d3a5318e8ba4cd35443",
+    "plan.json": "08183ea4f3fd4019f07289f523b0262479b0d9c907e567e875f6ddb91db20adf",
+    "pooled.csv": "212f52d2b75252b3980f811670488cb86b11dd4bf9fbfa2ad6d24793544fee90",
+    "pooled.json": "9a21f9e194b5f0a37b631eae1f9945425e703ef7b5919ba0745da13f28bc0f51",
+    "protocol.json": "4a6184ad4e142456bae44a14c7d1796c39ad20a4f2ba69b506370ac64a9108c9"
+  },
+  "scope": "Exponent-only GCC candidate research, unchanged LS/quality gates and 5/12 capture. Synthetic only; no automatic replacement."
+}

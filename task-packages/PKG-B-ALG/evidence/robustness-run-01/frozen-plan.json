@@ -1,0 +1,91 @@
+{
+  "seeds": [
+    2026091200,
+    2026091201,
+    2026091202
+  ],
+  "noise_types": [
+    "band",
+    "pink",
+    "tonal",
+    "impulsive"
+  ],
+  "directions": [
+    {
+      "name": "front",
+      "az": 0,
+      "el": 10
+    },
+    {
+      "name": "az_edge",
+      "az": 28,
+      "el": 0
+    },
+    {
+      "name": "el_edge",
+      "az": 0,
+      "el": 28
+    },
+    {
+      "name": "outside",
+      "az": 45,
+      "el": 0
+    }
+  ],
+  "rooms": [
+    {
+      "name": "dry",
+      "wall_gain": 0.0,
+      "tail_relative_l2": 0.0
+    },
+    {
+      "name": "early",
+      "wall_gain": 0.55,
+      "tail_relative_l2": 0.0
+    },
+    {
+      "name": "early_late",
+      "wall_gain": 0.55,
+      "tail_relative_l2": 0.5
+    }
+  ],
+  "room_dimensions_m": [
+    5,
+    4,
+    3
+  ],
+  "array_center_m": [
+    2,
+    2,
+    1.5
+  ],
+  "distance_m": 1.5,
+  "tail_start_s": 0.04,
+  "tail_stop_s": 0.35,
+  "tail_decay_60db_s": 0.25,
+  "noise_nominal_rms": 1.0,
+  "duration_samples": 240000,
+  "edge_samples": 960,
+  "episodes": [
+    {
+      "start": 24000,
+      "stop": 96000
+    },
+    {
+      "start": 134400,
+      "stop": 216000
+    }
+  ],
+  "frozen_algorithms": {
+    "original_beta": 1.0,
+    "candidate_beta": 0.75,
+    "capture": "5/12,120ms; legacy cone and acceptance thresholds unchanged"
+  },
+  "side_effect_flags": {
+    "correct_rate_drop": 0.02,
+    "absent_false_increase": 0.005,
+    "outside_fresh_increase": 0.005,
+    "p95_error_increase_deg": 2.0
+  },
+  "note": "144 paired trials; all 4x4x3 conditions predeclared, no tuning/selection. 3 new seeds descriptive only. Synthetic causal image-source early RIR plus stochastic decaying tail; not calibrated room RT60."
+}

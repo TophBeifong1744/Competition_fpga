@@ -1,0 +1,99 @@
+[
+  {
+    "profile": "six-mic-baseline-synthetic-v1",
+    "index": 0,
+    "interval_index": 0,
+    "reset_before": true,
+    "row_start": 0,
+    "row_stop": 1024,
+    "first_sample_id": 1536,
+    "last_sample_id": 2559,
+    "start_seconds": 0.0,
+    "end_seconds_exclusive": 0.021333333333333333,
+    "sample_rate_hz": 48000.0,
+    "direction_policy": "synthetic_only_requires_algorithm_validation",
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "float64",
+    "valid": false,
+    "rejection_reasons": [
+      "residual_too_large"
+    ],
+    "unit_vector": null,
+    "azimuth_deg": null,
+    "elevation_deg": null,
+    "finite_pairs": 15,
+    "geometry_rank": 3,
+    "residual_samples": 0.8342097569216942,
+    "raw_vector_norm": 0.8391921188868577,
+    "pair_delays_samples": [
+      -0.09668915739938838,
+      4.206400411772653,
+      3.583734576388459,
+      2.907383373755351,
+      1.3233253663954816,
+      3.8309678559576237,
+      7.675849420240742,
+      2.7435221153893914,
+      1.1860348601208301,
+      0.4685759866985904,
+      -1.2379917899430473,
+      -2.889139813958075,
+      -1.0846759398110792,
+      -2.3743640231146186,
+      -1.6267403924113615
+    ],
+    "angular_error_deg": null
+  },
+  {
+    "profile": "six-mic-baseline-synthetic-v1",
+    "index": 1,
+    "interval_index": 0,
+    "reset_before": false,
+    "row_start": 512,
+    "row_stop": 1536,
+    "first_sample_id": 2048,
+    "last_sample_id": 3071,
+    "start_seconds": 0.010666666666666666,
+    "end_seconds_exclusive": 0.032,
+    "sample_rate_hz": 48000.0,
+    "direction_policy": "synthetic_only_requires_algorithm_validation",
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "float64",
+    "valid": false,
+    "rejection_reasons": [
+      "norm_out_of_range",
+      "residual_too_large"
+    ],
+    "unit_vector": null,
+    "azimuth_deg": null,
+    "elevation_deg": null,
+    "finite_pairs": 15,
+    "geometry_rank": 3,
+    "residual_samples": 1.5876481568062002,
+    "raw_vector_norm": 0.5607576873070127,
+    "pair_delays_samples": [
+      0.8927036719622925,
+      4.013064265630002,
+      3.893885164616619,
+      2.778125200267052,
+      1.231483192343327,
+      3.7456692182221576,
+      -3.7030908765097523,
+      2.594227561143759,
+      0.8001926756207899,
+      0.5742416856621255,
+      -1.2449850090431247,
+      -2.721105199678194,
+      -1.467376441005124,
+      -2.5992129056110684,
+      -1.5237801408552025
+    ],
+    "angular_error_deg": null
+  }
+]
