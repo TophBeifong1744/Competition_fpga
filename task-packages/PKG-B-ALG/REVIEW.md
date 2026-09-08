@@ -26,7 +26,7 @@
 
 ### 合入与清单说明
 
-批准目标为 main 的上述包目录及 A 复核记录，不允许覆盖其他总工程路径。合入前须确认目标基线及源提交未变化，非强制推送；完成记录另列。下方“待复核/未合入”文字保留为 B 交付时历史状态，由本节限定结论覆盖。
+批准目标为 main 的上述包目录及 A 复核记录，不允许覆盖其他总工程路径。已在隔离工作树无冲突合并目标基线，合并提交 `c76f42527099eedfa4e0d47f7945f7fc97035325`；相对 main 仅增加 PKG-B-ALG 目录。发布采用包含本记录的后续提交非强制推送到 main，远端完成以该合并提交在 origin/main 中可达为准。合并后回归见 `evidence/reviewer-integration-tests/`。下方“待复核/未合入”文字保留为 B 交付时历史状态，由本节限定结论覆盖。
 
 `evidence/package-files.json` 保留为 B 提交的原始清单，适用于上述 b3989e1 快照；本次修改 REVIEW.md 并新增 reviewer 文件，不回写或冒充作者原清单。A 的核查脚本为 `reviewer_check.py`、`reviewer_compare.py`。完整重复结果留在评审工作树 `evidence/reviewer-robustness-run/`，不重复提交大体积逐帧文件；原结果、再运行命令和全部新产物哈希已保留。
 

@@ -5,6 +5,7 @@ import json
 import math
 from pathlib import Path
 import sys
+import subprocess
 import numpy as np
 
 root = Path(sys.argv[1]).resolve()
@@ -15,7 +16,12 @@ new = json.loads((b/'run.json').read_text())
 assert old['source_sha256'] == new['source_sha256']
 assert old['plan_sha256'] == new['plan_sha256']
 m = json.loads((root/'evidence/package-files.json').read_text())
-assert all(hashlib.sha256((root/n).read_bytes()).hexdigest() == h for n,h in m['files'].items())
+for n,h in m['files'].items():
+    # REVIEW is amended by A; validate its original author snapshot instead.
+    data = (subprocess.check_output(['git', 'show',
+            'b3989e101babfe1bb96a717aa396ee4d231dcd79:task-packages/PKG-B-ALG/REVIEW.md'], cwd=root)
+            if n == 'REVIEW.md' else (root/n).read_bytes())
+    assert hashlib.sha256(data).hexdigest() == h, n
 different = [n for n,h in old['artifact_sha256'].items() if new['artifact_sha256'].get(n) != h]
 rir_max = 0.0
 for name in old['artifact_sha256']:
