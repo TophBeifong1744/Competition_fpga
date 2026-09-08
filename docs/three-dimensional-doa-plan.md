@@ -116,7 +116,7 @@ V1：M0 → M1 → M2/M3/M4/M5 → M6，目标 2026-10-07
 | 3D-PREP：现在 | 本计划和各任务指南完成，夹具/元数据预留项清楚；主流程依追加授权做六麦离线模拟，不改核心实现 | 与主链争用时暂停；当前建议每人本轮指南预研不超过 2 小时 |
 | V1 保底门 | 二维 M0～M6 的既定验收和可恢复发布副本完成；真实录音/模型/环境可复现 | 未通过则继续修复 V1，不用三维展示替代 |
 | 3D-G0 | 仅六麦：符号、秩/条件数、公差、异常通道、水平与俯仰覆盖、波束图、周期/缓存/接口预算评审；冻结六麦试验几何和场景。不增加四麦模拟或跨数量对比 | 不达标则调整六麦参数或登记待决策；回退数量须另行决定，不自动启动四麦模拟；不开始三维 RTL |
-| 3D-GA | V1 保底门及3D-G0通过后，审核实际板卡的扩展接口和版本化合同，再单独实施所选通道数采集；共享时基、重启/复位、映射、固定差异、DMA长录音与一小时无丢样/乱序实测通过；四麦备选也需验证重装后的链路 | 先修采集或回退四麦，不在同步未知的数据上评估三维算法；不得把准备指南当实现授权 |
+| 3D-GA | V1 保底门及3D-G0通过后，审核实际板卡的扩展接口和版本化合同，再单独实施所选通道数采集；共享时基、重启/复位、映射、固定差异、DMA长录音与一小时无丢样/乱序实测通过；四麦备选也需验证重装后的链路 | 先修采集或回退四麦，同步未知数据仅做明确标记的诊断，不能用于正式三维效果验收；不得把准备指南当实现授权 |
 | 3D-G1 | 所选4或6通道实录与标定可复现，浮点在冻结场景达到三维方向门槛，保存失败、上下镜像和异常通道对照 | 查标定、结构、选峰，必要时离线比较 SRP；不把合成通过当板测通过 |
 | 3D-G2 | 位精确模型、RTL 自检、Vivado 2025.2 时序/资源、实板方向输出分别验证；满足既定更新时限且水平用例不回退 | 优化系数/位宽/调度或保留 V1；不得把核心移给 Python 冒充实时 PL |
 | 3D-G3 | 同一组三维多通道录音完成单麦/手动真实方向/自动方向对照，记录所选通道数，验证三维指向音频收益与边界 | 手动无效先查阵列/波束；自动无效再查 DOA，不宣称增加维度或数量必然增强降噪 |
@@ -147,10 +147,10 @@ V1：M0 → M1 → M2/M3/M4/M5 → M6，目标 2026-10-07
 | 工作包 | 人类负责人 / 复核 | 对应 Codex 任务 | 指南交付边界 |
 |---|---|---|---|
 | 3D-P1 原理与实验指南 | BryanZheng802 / 拓芙 | SoundSight｜原理问题 | `docs/three-dimensional-doa-principles-guide.md`：可观测性、符号、求解、场景与指标，指出需纠正的假设 |
-| 3D-P2 工程迁移指南 | 拓芙 / hsc119 | SoundSight｜工程实现 | `docs/three-dimensional-doa-engineering-guide.md`：复用/变更矩阵、接口兼容、资源预算方法和验证门 |
-| 3D-P3 阵列与夹具指南 | hsc119 / BryanZheng802 | SoundSight｜硬件外设选型 | `hardware/three-dimensional-array-guide.md`：六麦首选/四麦备选、公差、声孔、遮挡、标定夹具与扩展预留，不采购 |
-| 3D-P4 工程 Skill 对齐 | 拓芙 / hsc119 | SoundSight｜工程协作 Skill | `docs/three-dimensional-doa-workflow-skill-guide.md`：复用现有阶段门/证据机制的清单，不另造专用 Skill |
-| 3D-P5 PYNQ Skill 对齐 | hsc119 / 拓芙 | SoundSight｜PYNQ 通用 Skill | `docs/three-dimensional-doa-pynq-skill-guide.md`：版本、坐标、有效性与 golden 兼容测试建议，不实现新驱动 |
+| 3D-P2 工程迁移指南 | 拓芙 / BryanZheng802 | SoundSight｜工程实现 | `docs/three-dimensional-doa-engineering-guide.md`：复用/变更矩阵、接口兼容、资源预算方法和验证门 |
+| 3D-P3 阵列与夹具指南 | 拓芙 / BryanZheng802；C 按操作单执行 | SoundSight｜硬件外设选型 | `hardware/three-dimensional-array-guide.md`：六麦首选/四麦备选、公差、声孔、遮挡、标定夹具与扩展预留，不采购 |
+| 3D-P4 工程 Skill 对齐 | 拓芙 / BryanZheng802 | SoundSight｜工程协作 Skill | `docs/three-dimensional-doa-workflow-skill-guide.md`：复用现有阶段门/证据机制的清单，不另造专用 Skill |
+| 3D-P5 PYNQ Skill 对齐 | 拓芙 / BryanZheng802；C 按操作单执行 | SoundSight｜PYNQ 通用 Skill | `docs/three-dimensional-doa-pynq-skill-guide.md`：版本、坐标、有效性与 golden 兼容测试建议，不实现新驱动 |
 
 各任务先读本文和自己的现有文档，独立检查推导与冲突，再写所分配的单份指南；依据不足标待验证。需要调整本文时只反馈主流程，避免同时编辑共享计划。不得因此修改 RTL、Vivado 工程、寄存器合同、Skill 实现或执行采购；不创建 Git 分支、不提交 Git，保留其他任务和用户的改动。
 

@@ -1,5 +1,7 @@
 # SoundSight V1 四麦水平原理流程
 
+执行规则更新（2026-09-08）：成员间仅 [H1 最小接口 → H2 首批诊断数据 → H3 算法包集成评审](three-handoff-workflow.md)。暂定接口可版本化用于工程框架、读取器、逻辑/TB和离线算法开发；短实录不等一小时长稳，但只作诊断。A/B 负责技术开发和判断，C 只[按操作单](member-c-operation-sheet.md)执行。以下冻结/阶段门用于对应接板、正式集成或验收声明，不禁止独立离线工作；完整包交付而非逐小动作审批。
+
 更新：2026-09-07。本文是现行 V1 四麦二维主线，不是被六麦方案替代的旧文档；V1 仍按 M0～M6 推进，目标交付日期为 2026-10-07。V2 当前仅做六麦软件预研，不新增四麦模拟、四/六麦对照或六路抽四路实验。
 
 项目入口：[当前状态](current-status.md)、[项目计划](project-plan.md)、[任务包](work-packages.md)、[比赛验收](competition-acceptance.md)。三维内容另见[六麦原理指南](three-dimensional-doa-principles-guide.md)、[六麦软件评审报告](six-mic-acoustic-software-review.md)及[独立材料包](../deliverables/six-mic-acoustic-review-v1/README.md)。历史快照由 `archive/` 保存；本文保留的四麦原理和待验收条件继续有效。

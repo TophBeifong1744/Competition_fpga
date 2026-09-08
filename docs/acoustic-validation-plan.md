@@ -1,5 +1,7 @@
 # 声学性能验证计划
 
+执行规则更新（2026-09-08）：成员间仅 [H1 最小接口 → H2 首批诊断数据 → H3 算法包集成评审](three-handoff-workflow.md)。暂定接口可版本化用于工程框架、读取器、逻辑/TB和离线算法开发；短实录不等一小时长稳，但只作诊断。A/B 负责技术开发和判断，C 只[按操作单](member-c-operation-sheet.md)执行。以下冻结/阶段门用于对应接板、正式集成或验收声明，不禁止独立离线工作；完整包交付而非逐小动作审批。
+
 更新：2026-09-07。本文主体是现行 V1 四麦水平验收计划，目标日期 2026-10-07，不是废弃的旧方案。V2 六麦软件预研的已知结果单列于 1.4 节；其三维指标、六路数据和阶段门见[六麦原理指南](three-dimensional-doa-principles-guide.md)，不覆盖 V1 验收。
 
 执行入口：[当前状态](current-status.md)、[项目计划](project-plan.md)、[任务包](work-packages.md)、[比赛验收](competition-acceptance.md)、[六麦独立材料包](../deliverables/six-mic-acoustic-review-v1/README.md)。历史记录保留于 `archive/`，不将历史日期改写成当前通过状态。

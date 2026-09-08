@@ -1,5 +1,7 @@
 # Competition_fpga
 
+当前分工（2026-09-08）：A/B 主攻工程和算法，C 按操作单执行；成员依赖仅最小接口、诊断数据、算法包集成评审三个交接点。见[最新工作包](docs/work-packages.md)及[执行规则](docs/three-handoff-workflow.md)。
+
 嵌入式比赛作品
 
 ## SoundSight：基于 Zynq FPGA 的实时声源定位与波束形成系统

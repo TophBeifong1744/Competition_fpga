@@ -34,8 +34,8 @@
 
 | 工作包 | 人类负责人 | 复核与协作 | Codex 任务 | 第一版完成定义 |
 |---|---|---|---|---|
-| `SKL-001` `soundsight-engineering-workflow` | 拓芙 | hsc119 复核证据门；BryanZheng802 提供算法/指标案例 | `SoundSight｜工程协作 Skill`，`01a07a4e-188d-74e2-929c-ce02a141d8cf` | 能复用到其他 FPGA/嵌入式项目；分离模型、仿真、时序和板测证据；提供阶段门、复现、AI 记录和失败登记模板；通过 Skill 静态验证和至少一个隔离样例测试 |
-| `SKL-002` `pynq-overlay-dma-validation` | hsc119 | 拓芙复核 PS/PL 合同；BryanZheng802 提供 golden-reference 数据 | `SoundSight｜PYNQ 通用 Skill`，`01a07a4e-2440-7d93-b7fb-b0ec9b7b383b` | 不绑定 SoundSight；支持 Overlay/寄存器/DMA/缓存/超时/loopback/golden/performance 验证；先通过离线测试，PYNQ 准入后再记录实板验证 |
+| `SKL-001` `soundsight-engineering-workflow` | 拓芙 | BryanZheng802 技术复核；hsc119 仅按操作单记录 | `SoundSight｜工程协作 Skill`，`01a07a4e-188d-74e2-929c-ce02a141d8cf` | 能复用到其他 FPGA/嵌入式项目；分离模型、仿真、时序和板测证据；提供阶段门、复现、AI 记录和失败登记模板；通过 Skill 静态验证和至少一个隔离样例测试 |
+| `SKL-002` `pynq-overlay-dma-validation` | 拓芙 | BryanZheng802 提供 golden 并技术复核；hsc119 仅执行给定测试 | `SoundSight｜PYNQ 通用 Skill`，`01a07a4e-2440-7d93-b7fb-b0ec9b7b383b` | 不绑定 SoundSight；支持 Overlay/寄存器/DMA/缓存/超时/loopback/golden/performance 验证；先通过离线测试，PYNQ 准入后再记录实板验证 |
 
 当前 Codex v0 状态：`SKL-001` 已通过系统 Skill 校验、路径/链接检查和一次真实 M0 门禁前向测试；`SKL-002` 已通过系统 Skill 校验及 5/5 mock/合成功能用例，能拒绝 artifact 哈希篡改、DMA 长度/对齐错误和 mock 冒充 hardware。两项均需人类负责人复核后才能在团队台账标为“已通过”，且这些结果不代表 FPGA 或 PYNQ 实板通过。
 
@@ -60,4 +60,4 @@ Skill 的统一制作流程为：
 
 范围补充：V1仍按四麦验收冻结场景内的二维水平DOA和音频改善。三维方向（方位、俯仰和单位向量，不含距离/高度数值）列为V2：六麦为首选候选，非共面四麦为低成本备选，八麦暂缓；数量尚待声学与资源评审。当前已形成指南、预留规划与六麦首轮合成软件证据，不增加赛题强制要求、不影响V1是否通过。三维能力按[三维方向升级计划](three-dimensional-doa-plan.md)的3D-G0、扩展采集准入3D-GA、3D-G1～G3另行验证；四路通过不等于六路通过，指南/Skill/模型不能替代实板证据。
 
-成员资格、板卡系列、底板版本、Zynq-7020 器件族和 Vivado 2025.2 已经从“待确认”推进为已确认或部分确认。M0 仍不能整体通过，剩余阻塞包括完整 FPGA part/速度等级、Codec 与四路采集外设、时钟树、电平与引脚、PYNQ 镜像及 DMA 路径，以及真实四通道录音。
+成员资格、板卡系列、底板版本、Zynq-7020 器件族和 Vivado 2025.2 已经从“待确认”推进为已确认或部分确认。M0 仍不能整体通过，完整 part 已按最新工作执行记录明确为 xc7z020clg400-2，单机 Vivado 2025.2 查询已有证据；剩余验收缺口包括 Codec 与四路采集外设、时钟树、电平与引脚、PYNQ 镜像及 DMA 路径，以及真实四通道录音。

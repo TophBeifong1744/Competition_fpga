@@ -1,5 +1,7 @@
 # PS 软件
 
+执行规则更新（2026-09-08）：成员间仅 [H1 最小接口 → H2 首批诊断数据 → H3 算法包集成评审](../docs/three-handoff-workflow.md)。暂定接口可版本化用于工程框架、读取器、逻辑/TB和离线算法开发；短实录不等一小时长稳，但只作诊断。A/B 负责技术开发和判断，C 只[按操作单](../docs/member-c-operation-sheet.md)执行。以下冻结/阶段门用于对应接板、正式集成或验收声明，不禁止独立离线工作；完整包交付而非逐小动作审批。
+
 PS 端只负责非实时控制面：AXI 寄存器配置、运行状态、UI/通信、实验日志和受控数据抓取。PYNQ 已确定为首选开发、验证和演示后端；实时 GCC-PHAT、TDOA/DOA 和波束形成不得移到 PS 或 Python 作为最终比赛实现。
 
 M0 仍需核实实际板卡的 PYNQ 镜像或板级支持、DDR、SD、网络、Overlay 加载和 Vivado 版本兼容性。若 PYNQ 无法可靠落地，可切换到 Vitis 裸机或 PetaLinux；AXI4-Lite 寄存器、AXI DMA 数据格式和中断语义不得随 Python 实现改变。

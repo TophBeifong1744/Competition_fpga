@@ -1,5 +1,7 @@
 # 当前文档入口
 
+2026-09-08 起优先读[三交接点协作规则](three-handoff-workflow.md)、[最小数据接口](minimal-data-interface.md)和[C 操作单](member-c-operation-sheet.md)。A/B 主开发，C 按步骤执行；独立代码不等全部硬件验收，任务按完整交付打包。
+
 本目录只保留当前有效计划和领域指南。日期快照与旧会议记录统一在 [历史备份](../archive/README.md)，不可用作当前任务状态。
 
 | 要查什么 | 当前入口 |

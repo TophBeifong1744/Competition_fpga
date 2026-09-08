@@ -1,5 +1,7 @@
 # Vivado 工程
 
+执行规则更新（2026-09-08）：成员间仅 [H1 最小接口 → H2 首批诊断数据 → H3 算法包集成评审](../docs/three-handoff-workflow.md)。暂定接口可版本化用于工程框架、读取器、逻辑/TB和离线算法开发；短实录不等一小时长稳，但只作诊断。A/B 负责技术开发和判断，C 只[按操作单](../docs/member-c-operation-sheet.md)执行。以下冻结/阶段门用于对应接板、正式集成或验收声明，不禁止独立离线工作；完整包交付而非逐小动作审批。
+
 本目录保存可复现工程所需的 Tcl、XDC、Block Design Tcl 和必要 IP 配置；本机生成的 `.xpr`、runs、cache、bitstream 和硬件导出文件不进入 Git。PYNQ 采用同一次构建生成的 `.bit` 与 `.hwh` 作为 Overlay，XSA 继续用于 Vitis/PetaLinux 后端和硬件平台复现。
 
 团队已固定使用 Vivado `2025.2`。当前只表示工具版本决策完成，不表示 SoundSight 已在该版本完成脚本重建、仿真、综合、实现、时序收敛或板上运行。
