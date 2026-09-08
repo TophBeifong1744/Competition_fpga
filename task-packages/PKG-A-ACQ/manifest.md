@@ -1,10 +1,12 @@
 # PKG-A-ACQ · H1 候选文件清单
 
+当前状态：H1 的 7 个 payload 文件已由 B 审核并随 `be74e0a` 合入目标路径；DDR 增量仍待复核，完整包未通过。H1 原始文件清单与哈希不变，审核依据见 [REVIEW.md](REVIEW.md)。
+
 ## DDR 五模式自检增量（2026-09-08）
 
 新增 payload/ps/ddr_test/src/ 与 evidence/ddr-five-pattern-v1/，准确文件/原始来源哈希见 [DDR 清单](evidence/ddr-five-pattern-v1/files.json)。源码文本副本仅规范换行/文件末尾空白；二进制与初始化文件保持原始字节。原 F 盘工程未修改；无删除、无自动覆盖总工程。该子项待 B 复核，完整包继续进行。
 
-XSA 内的 bitstream 和 ps7_init.tcl 与独立归档文件哈希核对结果记录在 DDR 清单中。H1 旧版本清单保持不变，以下为原 H1 记录。
+XSA 内的 bitstream 和 ps7_init.tcl 与独立归档文件哈希核对结果记录在 DDR 清单中。H1 旧版本清单保持不变，以下为原 H1 交付时的历史记录，其中“活动文件保持不变”“尚未授权”仅描述当时状态，不覆盖上方已合入结论。
 
 版本：ss-data-draft-0.3；状态：候选自检通过、A/B 确认待完成。只列本轮输入与文件，不代表完整采集包完成。
 
