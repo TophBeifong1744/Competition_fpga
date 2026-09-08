@@ -1,0 +1,134 @@
+{
+  "xsa_matches": [
+    {
+      "internal_sha256": "5d2e176edf9766cce2d32054ee4ea5ee74c8fb07fe2a099f19295ebb512f561e",
+      "name": "system_wrapper.bit",
+      "match": true,
+      "artifact_sha256": "5d2e176edf9766cce2d32054ee4ea5ee74c8fb07fe2a099f19295ebb512f561e"
+    },
+    {
+      "internal_sha256": "25c998077d40db364e120491555e42ff3227379de87a2a0d9d7bf2a6362d24a9",
+      "name": "ps7_init.tcl",
+      "match": true,
+      "artifact_sha256": "25c998077d40db364e120491555e42ff3227379de87a2a0d9d7bf2a6362d24a9"
+    }
+  ],
+  "files": [
+    {
+      "sha256": "1a315461e68b103c48a97dfe8ade47d03ade102dd1318c6af4a4882065e3ffa7",
+      "path": "evidence/ddr-five-pattern-v1/artifacts/ddr_test.elf",
+      "bytes": 184800
+    },
+    {
+      "sha256": "25c998077d40db364e120491555e42ff3227379de87a2a0d9d7bf2a6362d24a9",
+      "path": "evidence/ddr-five-pattern-v1/artifacts/ps7_init.tcl",
+      "bytes": 27602
+    },
+    {
+      "sha256": "5d2e176edf9766cce2d32054ee4ea5ee74c8fb07fe2a099f19295ebb512f561e",
+      "path": "evidence/ddr-five-pattern-v1/artifacts/system_wrapper.bit",
+      "bytes": 4045690
+    },
+    {
+      "sha256": "cad0716fcf2747c652d0783e1278aff538e5094c65a7d1c4ed9500de21dd2342",
+      "path": "evidence/ddr-five-pattern-v1/artifacts/system_wrapper.xsa",
+      "bytes": 258317
+    },
+    {
+      "sha256": "2b770d6403294f99b7a49799387300a68f8009cfa2e8eb963eed7330cb6020df",
+      "path": "evidence/ddr-five-pattern-v1/cache-disassembly.txt",
+      "bytes": 1490
+    },
+    {
+      "sha256": "d36105f216feb96c834f690e4ca8b9cd08c5353a49ea53cad9f448213dcdcf55",
+      "path": "evidence/ddr-five-pattern-v1/elf-layout.txt",
+      "bytes": 626
+    },
+    {
+      "sha256": "093252cf1ecefb2edfe76fc4799d6613ddee77290c759b5958df263f319c6b89",
+      "path": "evidence/ddr-five-pattern-v1/elf-symbols.txt",
+      "bytes": 7553
+    },
+    {
+      "sha256": "78eb3db2328bf35e32f309af5c7f177f1827463f15238222a3d064a522ee6ff2",
+      "path": "evidence/ddr-five-pattern-v1/README.md",
+      "bytes": 3552
+    },
+    {
+      "sha256": "9b353ffca4c91d95e8e3e2ef2bf43d71edc2794fdf9d8489798ced39c05718b2",
+      "path": "evidence/ddr-five-pattern-v1/user-reported-runs.md",
+      "bytes": 1860
+    },
+    {
+      "sha256": "30e3d90f596c51a6b9f3d3212488292095094388945bbc663d41fc6f74dc0139",
+      "path": "payload/ps/ddr_test/src/app.yaml",
+      "bytes": 228
+    },
+    {
+      "sha256": "5d3dd170c2ed12d61b6a72f64e5caf05059e947f0e5f3429062c3ad33b97355f",
+      "path": "payload/ps/ddr_test/src/CMakeLists.txt",
+      "bytes": 2891
+    },
+    {
+      "sha256": "5dcca1dc4d17b35d4cf1d13c1d85a0b4ccf4eadc979ae3bf5f6d525b34527dfa",
+      "path": "payload/ps/ddr_test/src/Empty_applicationExample.cmake",
+      "bytes": 621
+    },
+    {
+      "sha256": "dfe59571aba72a7ab7c61b71413dcc251ad3ff3cfad27204282d14201bc1091f",
+      "path": "payload/ps/ddr_test/src/lscript.ld",
+      "bytes": 6187
+    },
+    {
+      "sha256": "aeb713ca6872aa1fff701c73a0122cff310880eb9e4ba28f8f2285ca6a5ab7e5",
+      "path": "payload/ps/ddr_test/src/main.c",
+      "bytes": 4391
+    },
+    {
+      "sha256": "bc695478c2547e56e9b4a8b1766736f4bad6ce38393e43598820f04b0bf00753",
+      "path": "payload/ps/ddr_test/src/UserConfig.cmake",
+      "bytes": 7775
+    }
+  ],
+  "source_files": [
+    {
+      "path": "F:/College/verilog_digital_system/Vitis/ddr_test/src/main.c",
+      "sha256": "c74a387efbbea27e7bf779d0a4591ad40c846b41b5c77804a0ec43aa20c0f707",
+      "copy_rule": "UTF-8 LF text; final whitespace trimmed; original file unchanged"
+    },
+    {
+      "path": "F:/College/verilog_digital_system/Vitis/ddr_test/src/lscript.ld",
+      "sha256": "aa2ddc7dff2d617bfc6e6ad33fbbba595dcde561ba3fba43b645662b62957989",
+      "copy_rule": "UTF-8 LF text; final whitespace trimmed; original file unchanged"
+    },
+    {
+      "path": "F:/College/verilog_digital_system/Vitis/ddr_test/src/CMakeLists.txt",
+      "sha256": "af8b24d1112a5859bfb8252c1f58f4319ae31094ba6d55a1052c961c580bdfd5",
+      "copy_rule": "UTF-8 LF text; final whitespace trimmed; original file unchanged"
+    },
+    {
+      "path": "F:/College/verilog_digital_system/Vitis/ddr_test/src/Empty_applicationExample.cmake",
+      "sha256": "bca95562ac27da001b5192bb285cb59f11fe5f50474c1a7c19c7d4e4c2d8314e",
+      "copy_rule": "UTF-8 LF text; final whitespace trimmed; original file unchanged"
+    },
+    {
+      "path": "F:/College/verilog_digital_system/Vitis/ddr_test/src/UserConfig.cmake",
+      "sha256": "751914c368b48720396a82407ef95abf4b58ec5b57c34c6c288e8fe69fb0eae3",
+      "copy_rule": "UTF-8 LF text; final whitespace trimmed; original file unchanged"
+    },
+    {
+      "path": "F:/College/verilog_digital_system/Vitis/ddr_test/src/app.yaml",
+      "sha256": "3585e53a81216ab992eae04886ac48fcf475cf75611b885b2a1bcb90f2f278a2",
+      "copy_rule": "UTF-8 LF text; final whitespace trimmed; original file unchanged"
+    }
+  ],
+  "schema": "ddr-evidence-1",
+  "status": "user-reported-pass-author-static-check-complete-awaiting-B-review",
+  "runs": {
+    "reported_count": 3,
+    "patterns": 5,
+    "errors": 0,
+    "independent_raw_logs_available": false,
+    "per_run_elf_hash_available": false
+  }
+}
