@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "reviewed_commit": "b3989e101babfe1bb96a717aa396ee4d231dcd79",
+  "author_audit_rerun": {
+    "status": "PASS",
+    "method_rows": 268992,
+    "trials": 144,
+    "unique_rir_checked": 36,
+    "reconstructed_mixtures": 12,
+    "per_seed_groups": 576,
+    "pooled_groups": 192,
+    "frozen_references_unchanged": true,
+    "checks": "Saved artifact/source hashes; received/tail labels against RIR support; directions; fresh/HOLD; pooled and seed metrics; paired deltas; latencies. 12/144 mixtures reconstructed, no algorithm rerun.",
+    "auditor_sha256": "73e68de4e3d184b73fc30db5c19df681308a4878685f3980da6b396b7b106dc7",
+    "helper_sha256": {
+      "audit_candidate_quality.py": "5a5ee8ec1a104f8b0bd1506b9887d2975fe061f9cd8ca4f2439108a7bb5df5fc",
+      "audit_capture_research.py": "5a3b4a52734135136d1b16f5814e4e1470fa4f7aeaf8c186cf8a5260373b11ca"
+    }
+  },
+  "tonal_correct_rate_deltas": {
+    "tonal__front__dry": -0.0057670126874279125,
+    "tonal__front__early": -0.004645760743321719,
+    "tonal__front__early_late": -0.013392857142857142,
+    "tonal__az_edge__dry": -0.010380622837370242,
+    "tonal__az_edge__early": -0.05807200929152149,
+    "tonal__az_edge__early_late": -0.01488095238095238,
+    "tonal__el_edge__dry": -0.03690888119953864,
+    "tonal__el_edge__early": -0.06620209059233449,
+    "tonal__el_edge__early_late": -0.044642857142857144
+  },
+  "totals": {
+    "original_raw": {
+      "absent": 20244,
+      "false": 8,
+      "hold": 0,
+      "outside_fresh": 7736
+    },
+    "original_quorum": {
+      "absent": 20244,
+      "false": 0,
+      "hold": 2110,
+      "outside_fresh": 0
+    },
+    "gcc_beta075_raw": {
+      "absent": 20244,
+      "false": 16,
+      "hold": 0,
+      "outside_fresh": 8103
+    },
+    "gcc_beta075_quorum": {
+      "absent": 20244,
+      "false": 0,
+      "hold": 2168,
+      "outside_fresh": 0
+    }
+  },
+  "largest_paired_slowdown": {
+    "event": [
+      "band__el_edge__early_late",
+      "2026091200",
+      "1"
+    ],
+    "milliseconds": 736.0000000000005
+  },
+  "scope": "Independent frame-level claim checks, not real-room/hardware/H3 acceptance"
+}
