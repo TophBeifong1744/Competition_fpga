@@ -8,6 +8,7 @@
 | 三人目标、排期与已填写的演示场景 | [项目计划](project-plan.md) |
 | 负责人、复核人、期限与当前状态 | [工作包台账](work-packages.md) |
 | 模块责任与交接 | [团队分工](team-tasks.md) |
+| 拓芙 Git 分支、自动推送与合并条件 | [GitHub 工作规则](git-workflow.md) |
 | 比赛要求与验收证据 | [赛题验收台账](competition-acceptance.md) |
 | 板卡、选定麦克风与待确认接口 | [硬件入口](../hardware/README.md)、[M0 审计](../hardware/m0-board-interface-audit.md) |
 | V1 当前原理、实现与阶段门 | [原理](principles-flow.md)、[工程](engineering-flow.md)、[架构](architecture.md)、[路线图](roadmap.md) |

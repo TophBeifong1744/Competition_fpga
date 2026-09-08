@@ -1,0 +1,346 @@
+{
+  "schema_version": 1,
+  "package_id": "REL6-001",
+  "version": "2026-09-08-r1",
+  "owner": "拓芙",
+  "reviewer": "hsc119",
+  "status": "pending_review",
+  "source_local_head": "e21247b0a6f55efd2fc1095c6e65cac6ac259162",
+  "source_worktree_dirty": true,
+  "publication_base": "f0f397f5600f111df5c66dafa34090b260ad6e00",
+  "payload": [],
+  "references": [
+    {
+      "sha256": "ebba6c4cedfa8bcb7bf70eb0fa7fffb8629ae18de4eb098b5057a97cb32e7a8e",
+      "bytes": 1083,
+      "path": "deliverables/six-mic-acoustic-review-v1/LICENSE",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/LICENSE"
+    },
+    {
+      "sha256": "6b7da2c1e537adb3023ca79ad393df4623856d93a3c690847065fc60a1a74285",
+      "bytes": 2331,
+      "path": "deliverables/six-mic-acoustic-review-v1/package-manifest.json",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/package-manifest.json"
+    },
+    {
+      "sha256": "9d445e0b2eb249046a1faec409c3f3a00388e5ba6f60cab39f96195f80f78b70",
+      "bytes": 1247,
+      "path": "deliverables/six-mic-acoustic-review-v1/provenance.json",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/provenance.json"
+    },
+    {
+      "sha256": "8ca260f0fd4fda092141249a4cf88372be73c76a356d683f6cb182cbedf1dce9",
+      "bytes": 3379,
+      "path": "deliverables/six-mic-acoustic-review-v1/README.md",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/README.md"
+    },
+    {
+      "sha256": "cd116d92f384ccb1e6a3f9301e0971d2892e7f2eaa3ef356832e9f878ae779a2",
+      "bytes": 7883,
+      "path": "deliverables/six-mic-acoustic-review-v1/REPORT.md",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/REPORT.md"
+    },
+    {
+      "sha256": "e32056a5263b5972e789540468f3d3e1e8e2d1649d21ef65e814317727be4897",
+      "bytes": 28,
+      "path": "deliverables/six-mic-acoustic-review-v1/requirements.txt",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/requirements.txt"
+    },
+    {
+      "sha256": "4d4bb599d412bd73de8287d9ddee89adf8f2e5a7c4d785ff5b50007d296ced33",
+      "bytes": 240044,
+      "path": "deliverables/six-mic-acoustic-review-v1/results/A-single-reference.wav",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/results/A-single-reference.wav"
+    },
+    {
+      "sha256": "b0d09c0f20133f0cb22f6a3eed3a8a11a7516b44c14acf1a769662735a9374c9",
+      "bytes": 742,
+      "path": "deliverables/six-mic-acoustic-review-v1/results/audio-demo.json",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/results/audio-demo.json"
+    },
+    {
+      "sha256": "e38e27431510baf7853acc147a294e06c07c7316ea811ac850039f830954781a",
+      "bytes": 240044,
+      "path": "deliverables/six-mic-acoustic-review-v1/results/B-manual-direction.wav",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/results/B-manual-direction.wav"
+    },
+    {
+      "sha256": "9e5e46d0fadb0452bb3ce508b8ec3315936a41274a5277e8555044e3c65fcf3c",
+      "bytes": 83092,
+      "path": "deliverables/six-mic-acoustic-review-v1/results/beam-cuts.csv",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/results/beam-cuts.csv"
+    },
+    {
+      "sha256": "c0b3fd375cd9a3b151223ab53229f052aa3b72a583ffd236e793371c8e75502a",
+      "bytes": 240044,
+      "path": "deliverables/six-mic-acoustic-review-v1/results/C-auto-static-direction.wav",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/results/C-auto-static-direction.wav"
+    },
+    {
+      "sha256": "c1d7b076256e26be66bf80d2ec62ae8b8f7545d462722a1966a445bae710016e",
+      "bytes": 2671,
+      "path": "deliverables/six-mic-acoustic-review-v1/results/config.json",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/results/config.json"
+    },
+    {
+      "sha256": "1ff2714d95357fdb6ee367338149ed78e977ee427e46d47f833694388ec17846",
+      "bytes": 23750,
+      "path": "deliverables/six-mic-acoustic-review-v1/results/direction-bins.csv",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/results/direction-bins.csv"
+    },
+    {
+      "sha256": "cab66fbb976f5d791df763d1a8ca36d98be72b4299d1ed1731b0e55eac669695",
+      "bytes": 1153,
+      "path": "deliverables/six-mic-acoustic-review-v1/results/direction-summary.csv",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/results/direction-summary.csv"
+    },
+    {
+      "sha256": "4447e27a61ed31fa3ee21291e5828e7ca062e474d9ce909ad270fde77972a362",
+      "bytes": 329170,
+      "path": "deliverables/six-mic-acoustic-review-v1/results/direction-trials.csv",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/results/direction-trials.csv"
+    },
+    {
+      "sha256": "fed47b69c05aee2aced91a55bf0c1963eef427e7fded38531e30f189fed52a42",
+      "bytes": 1423,
+      "path": "deliverables/six-mic-acoustic-review-v1/results/manifest.json",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/results/manifest.json"
+    },
+    {
+      "sha256": "1e50be6e8cb560378a14e6880d92ef170293ffbf606a0d0ff9e5d71524d1bf9c",
+      "bytes": 2203,
+      "path": "deliverables/six-mic-acoustic-review-v1/results/self-tests.json",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/results/self-tests.json"
+    },
+    {
+      "sha256": "219cefb08536b53ab4e6dc639d84e9d7a2aaec3674092efecbce1c56d26a7390",
+      "bytes": 1440044,
+      "path": "deliverables/six-mic-acoustic-review-v1/results/six-channel-synthetic-input.wav",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/results/six-channel-synthetic-input.wav"
+    },
+    {
+      "sha256": "73f458305a54342128c000f144844f54af21a02241916fdd980abae5f080e3be",
+      "bytes": 51654,
+      "path": "deliverables/six-mic-acoustic-review-v1/results/six-mic-beam-cuts.png",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/results/six-mic-beam-cuts.png"
+    },
+    {
+      "sha256": "83192fb5b84e144264e6d457a220f8f09a0b17f9596716e9b89146ab762eab82",
+      "bytes": 52988,
+      "path": "deliverables/six-mic-acoustic-review-v1/results/six-mic-direction-summary.png",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/results/six-mic-direction-summary.png"
+    },
+    {
+      "sha256": "46d891416e40f91698a00d1585320b7c8691435a4202279df27e669aedb05e7a",
+      "bytes": 33445,
+      "path": "deliverables/six-mic-acoustic-review-v1/results/six-mic-geometry.png",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/results/six-mic-geometry.png"
+    },
+    {
+      "sha256": "621295f34cb8d8833cb727d9400bcc23ae0af67986039083140d3c7f2dfa7e1b",
+      "bytes": 1951,
+      "path": "deliverables/six-mic-acoustic-review-v1/results/SUMMARY.md",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/results/SUMMARY.md"
+    },
+    {
+      "sha256": "fef3cf3de90750f21003a7d23abd02e2b623bc71c597deb9480cf48defa6a4d1",
+      "bytes": 23232,
+      "path": "deliverables/six-mic-acoustic-review-v1/src/six_mic_acoustic_review.py",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/src/six_mic_acoustic_review.py"
+    },
+    {
+      "sha256": "b5a9492aaf5695a23ecdee73d9caf799e72cbf6d7c0ef3d6784d605707a818b7",
+      "bytes": 1113,
+      "path": "deliverables/six-mic-acoustic-review-v1/VALIDATION.md",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/VALIDATION.md"
+    },
+    {
+      "sha256": "1cbd1e4808455817a713d6376bf7fe00c05f6d145fca08ff2cc416767b9241db",
+      "bytes": 1496,
+      "path": "deliverables/six-mic-acoustic-review-v1/verify_package.py",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/deliverables/six-mic-acoustic-review-v1/verify_package.py"
+    },
+    {
+      "sha256": "4d4bb599d412bd73de8287d9ddee89adf8f2e5a7c4d785ff5b50007d296ced33",
+      "bytes": 240044,
+      "path": "archive/2026-09-07-six-mic-package-verification/A-single-reference.wav",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/archive/2026-09-07-six-mic-package-verification/A-single-reference.wav"
+    },
+    {
+      "sha256": "b0d09c0f20133f0cb22f6a3eed3a8a11a7516b44c14acf1a769662735a9374c9",
+      "bytes": 742,
+      "path": "archive/2026-09-07-six-mic-package-verification/audio-demo.json",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/archive/2026-09-07-six-mic-package-verification/audio-demo.json"
+    },
+    {
+      "sha256": "e38e27431510baf7853acc147a294e06c07c7316ea811ac850039f830954781a",
+      "bytes": 240044,
+      "path": "archive/2026-09-07-six-mic-package-verification/B-manual-direction.wav",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/archive/2026-09-07-six-mic-package-verification/B-manual-direction.wav"
+    },
+    {
+      "sha256": "9e5e46d0fadb0452bb3ce508b8ec3315936a41274a5277e8555044e3c65fcf3c",
+      "bytes": 83092,
+      "path": "archive/2026-09-07-six-mic-package-verification/beam-cuts.csv",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/archive/2026-09-07-six-mic-package-verification/beam-cuts.csv"
+    },
+    {
+      "sha256": "c0b3fd375cd9a3b151223ab53229f052aa3b72a583ffd236e793371c8e75502a",
+      "bytes": 240044,
+      "path": "archive/2026-09-07-six-mic-package-verification/C-auto-static-direction.wav",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/archive/2026-09-07-six-mic-package-verification/C-auto-static-direction.wav"
+    },
+    {
+      "sha256": "c1d7b076256e26be66bf80d2ec62ae8b8f7545d462722a1966a445bae710016e",
+      "bytes": 2671,
+      "path": "archive/2026-09-07-six-mic-package-verification/config.json",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/archive/2026-09-07-six-mic-package-verification/config.json"
+    },
+    {
+      "sha256": "1ff2714d95357fdb6ee367338149ed78e977ee427e46d47f833694388ec17846",
+      "bytes": 23750,
+      "path": "archive/2026-09-07-six-mic-package-verification/direction-bins.csv",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/archive/2026-09-07-six-mic-package-verification/direction-bins.csv"
+    },
+    {
+      "sha256": "cab66fbb976f5d791df763d1a8ca36d98be72b4299d1ed1731b0e55eac669695",
+      "bytes": 1153,
+      "path": "archive/2026-09-07-six-mic-package-verification/direction-summary.csv",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/archive/2026-09-07-six-mic-package-verification/direction-summary.csv"
+    },
+    {
+      "sha256": "4447e27a61ed31fa3ee21291e5828e7ca062e474d9ce909ad270fde77972a362",
+      "bytes": 329170,
+      "path": "archive/2026-09-07-six-mic-package-verification/direction-trials.csv",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/archive/2026-09-07-six-mic-package-verification/direction-trials.csv"
+    },
+    {
+      "sha256": "fed47b69c05aee2aced91a55bf0c1963eef427e7fded38531e30f189fed52a42",
+      "bytes": 1423,
+      "path": "archive/2026-09-07-six-mic-package-verification/manifest.json",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/archive/2026-09-07-six-mic-package-verification/manifest.json"
+    },
+    {
+      "sha256": "1e50be6e8cb560378a14e6880d92ef170293ffbf606a0d0ff9e5d71524d1bf9c",
+      "bytes": 2203,
+      "path": "archive/2026-09-07-six-mic-package-verification/self-tests.json",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/archive/2026-09-07-six-mic-package-verification/self-tests.json"
+    },
+    {
+      "sha256": "219cefb08536b53ab4e6dc639d84e9d7a2aaec3674092efecbce1c56d26a7390",
+      "bytes": 1440044,
+      "path": "archive/2026-09-07-six-mic-package-verification/six-channel-synthetic-input.wav",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/archive/2026-09-07-six-mic-package-verification/six-channel-synthetic-input.wav"
+    },
+    {
+      "sha256": "73f458305a54342128c000f144844f54af21a02241916fdd980abae5f080e3be",
+      "bytes": 51654,
+      "path": "archive/2026-09-07-six-mic-package-verification/six-mic-beam-cuts.png",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/archive/2026-09-07-six-mic-package-verification/six-mic-beam-cuts.png"
+    },
+    {
+      "sha256": "83192fb5b84e144264e6d457a220f8f09a0b17f9596716e9b89146ab762eab82",
+      "bytes": 52988,
+      "path": "archive/2026-09-07-six-mic-package-verification/six-mic-direction-summary.png",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/archive/2026-09-07-six-mic-package-verification/six-mic-direction-summary.png"
+    },
+    {
+      "sha256": "46d891416e40f91698a00d1585320b7c8691435a4202279df27e669aedb05e7a",
+      "bytes": 33445,
+      "path": "archive/2026-09-07-six-mic-package-verification/six-mic-geometry.png",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/archive/2026-09-07-six-mic-package-verification/six-mic-geometry.png"
+    },
+    {
+      "sha256": "621295f34cb8d8833cb727d9400bcc23ae0af67986039083140d3c7f2dfa7e1b",
+      "bytes": 1951,
+      "path": "archive/2026-09-07-six-mic-package-verification/SUMMARY.md",
+      "id": "REL6-001",
+      "operation": "reference_only_no_apply",
+      "snapshot_path": "evidence/reference-snapshots/archive/2026-09-07-six-mic-package-verification/SUMMARY.md"
+    }
+  ],
+  "notes": [
+    "payload 为现行文本的 LF 换行副本，源文件原始 SHA-256 与副本 SHA-256 分别记录；不宣称逐字节复制。",
+    "引用是采集时工作区内容；源 HEAD 并不覆盖未提交改动。远端较旧基线可能不同，须核对版本，不自动覆盖或重签。"
+  ]
+}
