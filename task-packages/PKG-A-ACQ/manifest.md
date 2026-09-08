@@ -1,5 +1,11 @@
 # PKG-A-ACQ · H1 候选文件清单
 
+## DDR 五模式自检增量（2026-09-08）
+
+新增 payload/ps/ddr_test/src/ 与 evidence/ddr-five-pattern-v1/，准确文件/原始来源哈希见 [DDR 清单](evidence/ddr-five-pattern-v1/files.json)。源码文本副本仅规范换行/文件末尾空白；二进制与初始化文件保持原始字节。原 F 盘工程未修改；无删除、无自动覆盖总工程。该子项待 B 复核，完整包继续进行。
+
+XSA 内的 bitstream 和 ps7_init.tcl 与独立归档文件哈希核对结果记录在 DDR 清单中。H1 旧版本清单保持不变，以下为原 H1 记录。
+
 版本：ss-data-draft-0.3；状态：候选自检通过、A/B 确认待完成。只列本轮输入与文件，不代表完整采集包完成。
 
 源 HEAD：e145b0c6f3d50136b5963db89fc75838c2fb5aff；活动 docs/minimal-data-interface.md 原始 SHA-256：f35b169813235e57dc20b2b5c194ce84270ffcb23cf3943b906b3e3b63579db5。活动文件保持不变。
