@@ -1,0 +1,92 @@
+[
+  {
+    "stage": "preflight",
+    "command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+      "--stage",
+      "preflight",
+      "--package",
+      "",
+      "--out",
+      "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\evidence\\avx2-live-01\\preflight"
+    ],
+    "returncode": 0
+  },
+  {
+    "stage": "audit-narrowband-guard-01",
+    "command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+      "--stage",
+      "audit",
+      "--package",
+      "narrowband-guard-01",
+      "--out",
+      "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\evidence\\avx2-live-01\\audit-narrowband-guard-01"
+    ],
+    "returncode": 0
+  },
+  {
+    "stage": "audit-subband-confidence-01",
+    "command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+      "--stage",
+      "audit",
+      "--package",
+      "subband-confidence-01",
+      "--out",
+      "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\evidence\\avx2-live-01\\audit-subband-confidence-01"
+    ],
+    "returncode": 0
+  },
+  {
+    "stage": "audit-leave-band-out-01",
+    "command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+      "--stage",
+      "audit",
+      "--package",
+      "leave-band-out-01",
+      "--out",
+      "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\evidence\\avx2-live-01\\audit-leave-band-out-01"
+    ],
+    "returncode": 0
+  },
+  {
+    "stage": "audit-effective-perturbation-01",
+    "command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+      "--stage",
+      "audit",
+      "--package",
+      "effective-perturbation-01",
+      "--out",
+      "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\evidence\\avx2-live-01\\audit-effective-perturbation-01"
+    ],
+    "returncode": 0
+  },
+  {
+    "stage": "stable",
+    "command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+      "--stage",
+      "stable",
+      "--package",
+      "",
+      "--out",
+      "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\evidence\\avx2-live-01\\stable"
+    ],
+    "returncode": 0
+  }
+]
