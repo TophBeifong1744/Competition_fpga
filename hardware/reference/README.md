@@ -1,5 +1,7 @@
 # Zynq 与领航者板级参考资料索引
 
+新增器件资料：[IM73D122V01 数据手册 v1.00](infineon/im73d122v01-datasheet-v1.00.pdf)，由成员 C 提交；来源和使用边界见[麦克风证据与复核记录](../evidence/microphone-c-2026-09-09/README.md)。此项不计入下述 ZYNQ.zip 的 11 个文件统计。
+
 ## 1. 来源与筛选范围
 
 来源压缩包：`F:\BaiduNetdiskDownload\ZYNQ.zip`  

@@ -9,6 +9,7 @@
 - [当前项目状态](../docs/current-status.md)、[项目计划](../docs/project-plan.md)、[任务包](../docs/work-packages.md)
 - [四路同步麦克风采集方案与接口核验](microphone-interface-selection.md)
 - [麦克风评审及用户模块照片文字证据](microphone-recommendation-review.md)
+- [C 提交的麦克风实物资料与 A 复核记录](evidence/microphone-c-2026-09-09/README.md)（资料归档通过，接线未验收）
 - [现行V1硬件采购指标](procurement-specifications.md)
 - [M0板卡与接口审计](m0-board-interface-audit.md)、[竞赛验收台账](../docs/competition-acceptance.md)
 - [六麦阵列与夹具指南](three-dimensional-array-guide.md)
