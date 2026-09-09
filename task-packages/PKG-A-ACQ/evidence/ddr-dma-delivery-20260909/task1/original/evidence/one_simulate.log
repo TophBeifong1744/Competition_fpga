@@ -1,0 +1,26 @@
+Time resolution is 1 ps
+FIRST_RUN_SIGN_COVERAGE_PASS CASE0
+FIRST_RUN_SIGN_COVERAGE_PASS CASE2
+COVER CASE1 CH0 positive=0 negative=0 zero=4
+COVER CASE1 CH1 positive=4 negative=0 zero=0
+COVER CASE1 CH2 positive=0 negative=3 zero=0
+COVER CASE1 CH3 positive=0 negative=3 zero=0
+PASS CASE1 S=1 P=1 full_runs=3 aborts=3 stalls=21 tail_stalls=10
+COVER CASE0 CH0 positive=3 negative=6 zero=4
+COVER CASE0 CH1 positive=4 negative=6 zero=3
+COVER CASE0 CH2 positive=3 negative=6 zero=3
+COVER CASE0 CH3 positive=3 negative=6 zero=3
+PASS CASE0 S=2 P=2 full_runs=3 aborts=3 stalls=34 tail_stalls=11
+COVER CASE2 CH0 positive=6 negative=12 zero=10
+COVER CASE2 CH1 positive=10 negative=12 zero=6
+COVER CASE2 CH2 positive=6 negative=15 zero=6
+COVER CASE2 CH3 positive=6 negative=15 zero=6
+PASS CASE2 S=3 P=3 full_runs=3 aborts=3 stalls=54 tail_stalls=13
+FIRST_RUN_SIGN_COVERAGE_PASS CASE3
+COVER CASE3 CH0 positive=49536 negative=99072 zero=49540
+COVER CASE3 CH1 positive=49540 negative=99072 zero=49536
+COVER CASE3 CH2 positive=49536 negative=99075 zero=49536
+COVER CASE3 CH3 positive=49536 negative=99075 zero=49536
+PASS CASE3 S=257 P=257 full_runs=3 aborts=3 stalls=264711 tail_stalls=341
+ALL TASK1 TESTS PASS
+$finish called at time : 8591786 ns : File "C:/Users/Toph Beifong/.codex/visualizations/2026/09/05/01a06ff9-0287-7e00-b73d-abf12e6b3035/one_task1/sim/tb_test_source.sv" Line 181
