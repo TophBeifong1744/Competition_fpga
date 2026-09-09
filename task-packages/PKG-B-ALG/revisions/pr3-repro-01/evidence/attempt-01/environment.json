@@ -1,0 +1,39 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable_sha256": "b7a12c3af0b4db44191eec14ea095eba731b7328917f570806183093d19ddca2",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "byteorder": "little",
+  "numpy_runtime": "WARNING: `threadpoolctl` not found in system! Install it by `pip install threadpoolctl`. Once installed, try `np.show_runtime` again for more detailed build information\n[{'numpy_version': '2.3.5',\n  'python': '3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]',\n  'uname': uname_result(system='Windows', node='Y9000P', release='11', version='10.0.26200', machine='AMD64')},\n {'simd_extensions': {'baseline': ['SSE', 'SSE2', 'SSE3'],\n                      'found': ['SSSE3',\n                                'SSE41',\n                                'POPCNT',\n                                'SSE42',\n                                'AVX',\n                                'F16C',\n                                'FMA3',\n                                'AVX2',\n                                'AVX512F',\n                                'AVX512CD',\n                                'AVX512_SKX',\n                                'AVX512_CLX',\n                                'AVX512_CNL',\n                                'AVX512_ICL'],\n                      'not_found': []}},\n {'ignore_floating_point_errors_in_matmul': False}]\n{\n  \"Compilers\": {\n    \"c\": {\n      \"name\": \"msvc\",\n      \"linker\": \"link\",\n      \"version\": \"19.44.35219\",\n      \"commands\": \"cl\"\n    },\n    \"cython\": {\n      \"name\": \"cython\",\n      \"linker\": \"cython\",\n      \"version\": \"3.2.1\",\n      \"commands\": \"cython\"\n    },\n    \"c++\": {\n      \"name\": \"msvc\",\n      \"linker\": \"link\",\n      \"version\": \"19.44.35219\",\n      \"commands\": \"cl\"\n    }\n  },\n  \"Machine Information\": {\n    \"host\": {\n      \"cpu\": \"x86_64\",\n      \"family\": \"x86_64\",\n      \"endian\": \"little\",\n      \"system\": \"windows\"\n    },\n    \"build\": {\n      \"cpu\": \"x86_64\",\n      \"family\": \"x86_64\",\n      \"endian\": \"little\",\n      \"system\": \"windows\"\n    }\n  },\n  \"Build Dependencies\": {\n    \"blas\": {\n      \"name\": \"scipy-openblas\",\n      \"found\": true,\n      \"version\": \"0.3.30\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"C:/Users/runneradmin/AppData/Local/Temp/cibw-run-q7k2ejt3/cp312-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\",\n      \"lib directory\": \"C:/Users/runneradmin/AppData/Local/Temp/cibw-run-q7k2ejt3/cp312-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\",\n      \"openblas configuration\": \"OpenBLAS 0.3.30  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=24\",\n      \"pc file directory\": \"D:/a/numpy-release/numpy-release/.openblas\"\n    },\n    \"lapack\": {\n      \"name\": \"scipy-openblas\",\n      \"found\": true,\n      \"version\": \"0.3.30\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"C:/Users/runneradmin/AppData/Local/Temp/cibw-run-q7k2ejt3/cp312-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\",\n      \"lib directory\": \"C:/Users/runneradmin/AppData/Local/Temp/cibw-run-q7k2ejt3/cp312-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\",\n      \"openblas configuration\": \"OpenBLAS 0.3.30  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=24\",\n      \"pc file directory\": \"D:/a/numpy-release/numpy-release/.openblas\"\n    }\n  },\n  \"Python Information\": {\n    \"path\": \"C:\\\\Users\\\\runneradmin\\\\AppData\\\\Local\\\\Temp\\\\build-env-fls87aak\\\\Scripts\\\\python.exe\",\n    \"version\": \"3.12\"\n  },\n  \"SIMD Extensions\": {\n    \"baseline\": [\n      \"SSE\",\n      \"SSE2\",\n      \"SSE3\"\n    ],\n    \"found\": [\n      \"SSSE3\",\n      \"SSE41\",\n      \"POPCNT\",\n      \"SSE42\",\n      \"AVX\",\n      \"F16C\",\n      \"FMA3\",\n      \"AVX2\",\n      \"AVX512F\",\n      \"AVX512CD\",\n      \"AVX512_SKX\",\n      \"AVX512_CLX\",\n      \"AVX512_CNL\",\n      \"AVX512_ICL\"\n    ]\n  }\n}\n",
+  "native_sha256": {
+    "_multiarray_tests.cp312-win_amd64.pyd": "fd8ead15a649e1e6f0d3b882df37eb9c05322275cab99cad8fc6350c9b286001",
+    "_multiarray_umath.cp312-win_amd64.pyd": "bcfffaf708f0832c17e2747e33d60a827fbba670d6e2bcb339d86df67875e3d1",
+    "_operand_flag_tests.cp312-win_amd64.pyd": "a34752b168889b33ffefa09d69936794c7241e50b7364d6b8b9ace98178d307e",
+    "_rational_tests.cp312-win_amd64.pyd": "ded2d71441f16cf9f3aae77bf5f4c03c6a8b87639774aaeff0cf36b257f7d71e",
+    "_simd.cp312-win_amd64.pyd": "e9e90d1013da9b18e90a255a9e027be8ff3be75651900560c50105268f7a11be",
+    "_struct_ufunc_tests.cp312-win_amd64.pyd": "47ec6da16f9bb88a4b6c0b4b5995dbe1750565a7e53753f8aaabe51043160f57",
+    "_umath_tests.cp312-win_amd64.pyd": "96069db92e67cbf14c46365a5ca38d5c3a6ce9395bef4b4b9406e8fd753120fc",
+    "_pocketfft_umath.cp312-win_amd64.pyd": "ed3154e7271496f4576c3362495429c26893d29b11803a3f865aaadf1163ae1f",
+    "_umath_linalg.cp312-win_amd64.pyd": "6305b0066a06c3bd204b2f0b4583e744b2a4e7b933ef5703d2ae4305bc1d38b1",
+    "lapack_lite.cp312-win_amd64.pyd": "19bbb42289a30cc975c23831af1c72a270d15d372c3cd40c3eb6b6d953f76fd4",
+    "_bounded_integers.cp312-win_amd64.pyd": "ef7fb5270a3014d72a4946383688b7f2c654ae6579e2782d20bc39a8510b685d",
+    "_common.cp312-win_amd64.pyd": "66a31a0ab96f4a3d22bfae9dd29caad34b1f13292e9e82234cf9601d67da54e9",
+    "_generator.cp312-win_amd64.pyd": "0cea62122a336708b09d33a9ac7ecaea22b5014ee6d8d6de5524e232ee066e83",
+    "_mt19937.cp312-win_amd64.pyd": "0f22686115f56073319a6663fc926694f96953376f2169eccf3460b70ed9b486",
+    "_pcg64.cp312-win_amd64.pyd": "8439fcb03938c89540c4dc86e85b8bf75b3ab7e9f57abba3411f6421af8dbafb",
+    "_philox.cp312-win_amd64.pyd": "d03a7fa76f831ca5911df623a3bc449039a28b50447dac05f2f93513a70db1d7",
+    "_sfc64.cp312-win_amd64.pyd": "cc291427bcd25ee55aed612a7b61a400b73786dc20ddc9668ad13afc03a8d312",
+    "bit_generator.cp312-win_amd64.pyd": "0bcabfd75c6db5783244881ca1903febb2735c83480abe65bdb1a48511397803",
+    "mtrand.cp312-win_amd64.pyd": "5f3f6292f69c85fa20c82054616537a1aa99cb00ee625539a27010633abfd945",
+    "libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll": "876182a71398b8ed9f9189194d3b10ab0a0b72925a1c0620c83ad2bc38a9e91f",
+    "msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll": "a4c2229bdc2a2a630acdc095b4d86008e5c3e3bc7773174354f3da4f5beb9cde"
+  },
+  "cpu_environment": {
+    "NPY_DISABLE_CPU_FEATURES": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null
+  },
+  "waveform_policy": "Exact historical hashes required. Different hashes fail; no claim of cross-environment sample equality without full historical waveforms."
+}
