@@ -1,0 +1,12 @@
+C:\Users\BryanZheng\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\numpy\__config__.py:155: UserWarning: Install `pyyaml` for better output
+  warnings.warn("Install `pyyaml` for better output", stacklevel=1)
+Traceback (most recent call last):
+  File "F:\NUEC\review-worktrees\pr3-repro-20260909\task-packages\PKG-B-ALG\revisions\pr3-repro-01\probe_input_environment.py", line 28, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "F:\NUEC\review-worktrees\pr3-repro-20260909\task-packages\PKG-B-ALG\revisions\pr3-repro-01\probe_input_environment.py", line 23, in main
+    DIFF.input(saved,rebuilt)
+  File "F:\NUEC\review-worktrees\pr3-repro-20260909\task-packages\PKG-B-ALG\revisions\pr3-repro-01\common.py", line 113, in input
+    assert all(v['equal'] for v in row['hashes'].values()), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('UNSUPPORTED_EXACT_INPUT_ENVIRONMENT: historical waveform not stored; hash mismatch does not establish equal input. See environment.json.', {'condition': 'tone900__front__early_late', 'seed': 2026091500, 'hashes': {'input_sha256': {'historical': '09e2518e2f8443a5530bca0ff0f29ca590d12f916f44e4460cce50901cc1faba', 'rebuilt': 'bd4ba6fc69fd12f75162e8c23c80885fcb4809770a25b738682c212835208a3d', 'equal': False}, 'target_sha256': {'historical': 'b2170e2223dc1700b3d0209b668b4db4427d6d31fdbbf4e052e62b0dba6a555f', 'rebuilt': 'a8a14df8816eeab65ab1e4b0e6f593c06b7d5e6fda1f5341f6c9de5c2db85459', 'equal': False}, 'noise_sha256': {'historical': 'ba05f2198c50514823ccb1b549f75ae2395ca1284f9e20eeb71fb12a18553b3c', 'rebuilt': 'ba05f2198c50514823ccb1b549f75ae2395ca1284f9e20eeb71fb12a18553b3c', 'equal': True}, 'rir_sha256': {'historical': '6a96b3b52e27726f9f5769e9c15778d031a152614ca5a10a24d9876eb229692e', 'rebuilt': '6a96b3b52e27726f9f5769e9c15778d031a152614ca5a10a24d9876eb229692e', 'equal': True}}})
