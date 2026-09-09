@@ -1,0 +1,12 @@
+{
+  "purpose": "Retrospective explanation of approved tonal regression; not a new heldout validation or protection mechanism",
+  "interventions": ["original_tone", "tone_removed", "equal_rms_band"],
+  "seeds": [2026091200, 2026091201, 2026091202],
+  "directions": ["front", "az_edge", "el_edge"],
+  "rooms": ["dry", "early", "early_late"],
+  "betas": [1, 0.75],
+  "cones": [30, 40],
+  "scope": "81 matched trials; same target and RIR per intervention. Remove pure sinusoid but retain original white component scaling; replacement broadband noise has original total full-band RMS. Cone 40 is diagnostic only, not a proposed setting.",
+  "diagnostics": ["direct-path pair delay RMSE", "candidate rejection", "valid candidate outside cone", "in-cone tracking failure", "900-1100Hz retained GCC weight share", "correct fresh output", "40deg counterfactual output"],
+  "limitations": "Same prior seeds intentionally reused for diagnosis. No retuning or generalization claim. Wider cone may allow forbidden directions; outside-source safety not evaluated. Pair RMSE references direct geometry, not unique mixed-field ground truth."
+}

@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "phases": {
+    "development": {
+      "trials": 96,
+      "method_rows": 179328,
+      "reconstructed_inputs": 4,
+      "per_seed_groups": 384,
+      "pooled_groups": 128,
+      "decisions": {
+        "fallback035": {
+          "passed": false,
+          "failures": [
+            "narrow_target__az_edge__early:control_drop",
+            "narrow_target__el_edge__dry:control_drop",
+            "narrow_target__el_edge__early:control_drop",
+            "narrow_target__front__early:control_drop"
+          ],
+          "tonal_mean_correct": 0.9115972548751685,
+          "band_mean_gain": 0.13239614353632415,
+          "band_required_gain": 0.09929710765224312
+        },
+        "cap150": {
+          "passed": true,
+          "failures": [],
+          "tonal_mean_correct": 0.9063734532550466,
+          "band_mean_gain": 0.13085291505411348,
+          "band_required_gain": 0.09929710765224312
+        }
+      }
+    },
+    "validation": {
+      "trials": 216,
+      "method_rows": 302616,
+      "reconstructed_inputs": 6,
+      "per_seed_groups": 648,
+      "pooled_groups": 216,
+      "decisions": {
+        "cap150": {
+          "passed": false,
+          "failures": [
+            "band__outside32__dry:outside_output",
+            "tone1600__az_edge__dry:tonal_vs_phat",
+            "tone1600__az_edge__early:tonal_vs_phat",
+            "tone1600__az_edge__early_late:tonal_vs_phat",
+            "tone1600__el_edge__dry:tonal_vs_phat",
+            "tone1600__el_edge__early:tonal_vs_phat",
+            "tone1600__el_edge__early_late:tonal_vs_phat",
+            "tone1600__front__dry:tonal_vs_phat",
+            "tone1600__front__early_late:tonal_vs_phat",
+            "tone2800__az_edge__dry:tonal_vs_phat",
+            "tone2800__az_edge__early:tonal_vs_phat",
+            "tone2800__az_edge__early_late:tonal_vs_phat",
+            "tone2800__el_edge__dry:tonal_vs_phat",
+            "tone2800__el_edge__early:tonal_vs_phat",
+            "tone2800__el_edge__early_late:tonal_vs_phat",
+            "tone2800__front__dry:tonal_vs_phat",
+            "tone2800__front__early:tonal_vs_phat",
+            "tone2800__front__early_late:tonal_vs_phat",
+            "tone2800__outside32__dry:outside_output",
+            "tone2800__outside32__early:outside_output",
+            "tone700__az_edge__early:tonal_vs_phat",
+            "tone700__el_edge__early:tonal_vs_phat"
+          ],
+          "tonal_mean_correct": 0.7487779099896508,
+          "band_mean_gain": 0.1177498876961912,
+          "band_required_gain": 0.09075325491267765
+        }
+      }
+    }
+  },
+  "checker_sha256": "097d65b4c0f081600de1369696e4ad09aa2186eecd5ec2f9f3cd2b4341c888ba",
+  "metric_helper_sha256": "5a5ee8ec1a104f8b0bd1506b9887d2975fe061f9cd8ca4f2439108a7bb5df5fc",
+  "checks": "All hashes, received labels, angles, fresh/HOLD, independent metric counts, latencies; saved gate/selection consistency and source lock; 10 complete input reconstructions. Gate formula reused from frozen runner, not a separate implementation. No retuning."
+}

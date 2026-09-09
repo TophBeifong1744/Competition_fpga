@@ -1,0 +1,12 @@
+{
+  "purpose": "Explain stable wrong candidates retrospectively; no tuning",
+  "selection": "Frozen effective-perturbation-01 target_active, outside truth, valid full in 30 degree cone, effective stable",
+  "controls": [
+    "original",
+    "no_noise",
+    "dry",
+    "dry_no_noise"
+  ],
+  "evaluation": "Identical selected frame indices only; verify hashes and active support in all controls. This is a selected-cohort mechanism study, not unbiased validation or tracker performance.",
+  "limits": "Effective removal means estimator spectral contribution, not proven useful target information. Shared pair error similarity is descriptive, not independent causal proof. Default unchanged. A review pending."
+}

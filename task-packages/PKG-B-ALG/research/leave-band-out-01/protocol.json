@@ -1,0 +1,14 @@
+{
+  "purpose":"Prespecified leave-one-band-out sensitivity diagnosis, no fitting or deployment",
+  "seeds":[2026091600,2026091601,2026091602],
+  "noises":["tone1200","tone2500","band","narrow_target"],
+  "rooms":["dry","early_late"],
+  "directions":[{"name":"front","az":0,"el":10},{"name":"az28","az":28,"el":0},{"name":"az30","az":30,"el":0},{"name":"az32","az":32,"el":0},{"name":"el28","az":0,"el":28},{"name":"el32","az":0,"el":32}],
+  "omitted_bands_hz":[[300,1500],[1500,2700],[2700,4000]],
+  "consistency":{"minimum_valid_subbands":2,"minimum_joint_finite_pairs":5,"maximum_direction_spread_deg":5.0,"maximum_median_delay_span_samples":0.5},
+  "loo":{"minimum_comparable_deletions":2,"minimum_joint_pairs_per_deletion":5,"max_angle_change_deg":5.0,"max_median_pair_delay_change_samples":0.5},
+  "mask":"Keep full cap150 frequency mask and weights frozen, zero one band at a time. No remasking, renormalizing or refitting cap. Subband legacy comparator uses previous frozen PHAT splitting.",
+  "methods":["cap150_quorum","split_strict_quorum","loo_strict_quorum","loo_known_only_quorum"],
+  "rules":"Full invalid remains invalid. With fewer than2 valid deletions sharing>=5 finite pairs with full, label unknown. Otherwise sensitive if max angle change>5deg or max deletion median absolute pair-delay change>0.5 samples; else stable. Strict keeps stable only. Known-only keeps stable and unknown, rejects sensitive only. Unknown pass-through is NOT a confidence endorsement. Cone-crossing perturbations reported, not used to widen or replace direction.",
+  "claim_boundary":"144 paired trials on3 fresh seeds,4 signals6 directions2 RIRs. No tuning/selection. Compare matched legacy split filter on same inputs. Coverage loss, false outside outputs, unknown pass-through risks and paired latency required."
+}

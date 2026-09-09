@@ -1,0 +1,14 @@
+{
+  "purpose":"Separate actual estimator-spectrum removal from trivial perturbations before evaluating stability; exploratory fixed diagnostic, not target-information proof",
+  "seeds":[2026091700,2026091701,2026091702],
+  "noises":["tone1200","tone2500","band","narrow_target"],
+  "rooms":["dry","early_late"],
+  "directions":[{"name":"front","az":0,"el":10},{"name":"az28","az":28,"el":0},{"name":"az30","az":30,"el":0},{"name":"az32","az":32,"el":0},{"name":"el28","az":0,"el":28},{"name":"el32","az":0,"el":32}],
+  "omitted_bands_hz":[[300,1500],[1500,2700],[2700,4000]],
+  "loo":{"minimum_comparable_deletions":2,"minimum_joint_pairs_per_deletion":5,"max_angle_change_deg":5.0,"max_median_pair_delay_change_samples":0.5},
+  "impact":{"minimum_removed_bins":3,"minimum_removed_mass":0.1,"maximum_removed_mass":0.8,"minimum_qualified_pairs":5},
+  "methods":["cap150_quorum","old_loo_known_only","effective_known_only"],
+  "semantics":"Measure removed absolute magnitude of actual cap150 GCC spectrum, not power or semantic target information. Effective deletion must yield valid LS and have>=5 shared finite pairs each removing>=3 retained bins and10%-80% spectrum magnitude. Require>=2 effective deletions for stable/sensitive; otherwise unknown. Both screening methods pass unknown, reject sensitive. Full-invalid never promoted. No new direction, widening, refit or tuning.",
+  "diagnostics":"Also record removed f^2-weighted magnitude fraction as an uncalibrated correlation-curvature proxy, not Fisher information. Classify no_change,uncomparable,weak_or_excessive,effective; deletion failure is not stability evidence.",
+  "scope":"144 matched new-seed trials; all thresholds fixed before runs, no fitting or model selection. Prior LOO compared on exact same inputs."
+}

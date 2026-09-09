@@ -1,0 +1,136 @@
+{
+  "status": "PASS_REFERENCE_EXACT",
+  "cases": [
+    {
+      "condition": "tone900__front__early_late",
+      "seed": 2026091500,
+      "native_hashes": {
+        "input_sha256": {
+          "historical": "09e2518e2f8443a5530bca0ff0f29ca590d12f916f44e4460cce50901cc1faba",
+          "native": "09e2518e2f8443a5530bca0ff0f29ca590d12f916f44e4460cce50901cc1faba",
+          "equal": true
+        },
+        "target_sha256": {
+          "historical": "b2170e2223dc1700b3d0209b668b4db4427d6d31fdbbf4e052e62b0dba6a555f",
+          "native": "b2170e2223dc1700b3d0209b668b4db4427d6d31fdbbf4e052e62b0dba6a555f",
+          "equal": true
+        },
+        "noise_sha256": {
+          "historical": "ba05f2198c50514823ccb1b549f75ae2395ca1284f9e20eeb71fb12a18553b3c",
+          "native": "ba05f2198c50514823ccb1b549f75ae2395ca1284f9e20eeb71fb12a18553b3c",
+          "equal": true
+        },
+        "rir_sha256": {
+          "historical": "6a96b3b52e27726f9f5769e9c15778d031a152614ca5a10a24d9876eb229692e",
+          "native": "6a96b3b52e27726f9f5769e9c15778d031a152614ca5a10a24d9876eb229692e",
+          "equal": true
+        }
+      },
+      "reference_four_hashes_exact": true,
+      "waveform_error": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "relative_l2": 0.0,
+        "max_abs_over_reference_peak": 0.0,
+        "nonidentical_values": 0,
+        "canonical_array_bytes_equal": true
+      },
+      "rir_error": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "relative_l2": 0.0,
+        "max_abs_over_reference_peak": 0.0,
+        "nonidentical_values": 0,
+        "canonical_array_bytes_equal": true
+      }
+    },
+    {
+      "condition": "tone1200__front__early_late",
+      "seed": 2026091700,
+      "native_hashes": {
+        "input_sha256": {
+          "historical": "68bd264bea6033e0de2773aabd3d71b6af47c535b5e55f8e77d3fca551c3e3ba",
+          "native": "68bd264bea6033e0de2773aabd3d71b6af47c535b5e55f8e77d3fca551c3e3ba",
+          "equal": true
+        },
+        "target_sha256": {
+          "historical": "99c57d981845cfaed34f1f58786d7c213b9550e12b919dee99bec8f5bc9ef1ae",
+          "native": "99c57d981845cfaed34f1f58786d7c213b9550e12b919dee99bec8f5bc9ef1ae",
+          "equal": true
+        },
+        "noise_sha256": {
+          "historical": "6d79acd78f4282819dcfba00dbec48d74faa0568e90ad074a105eacd8a8b5c50",
+          "native": "6d79acd78f4282819dcfba00dbec48d74faa0568e90ad074a105eacd8a8b5c50",
+          "equal": true
+        },
+        "rir_sha256": {
+          "historical": "9b7fba5e07098020fe50b45d64349a9a9cf8e91ad5ca0f70800918a6be5473c5",
+          "native": "9b7fba5e07098020fe50b45d64349a9a9cf8e91ad5ca0f70800918a6be5473c5",
+          "equal": true
+        }
+      },
+      "reference_four_hashes_exact": true,
+      "waveform_error": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "relative_l2": 0.0,
+        "max_abs_over_reference_peak": 0.0,
+        "nonidentical_values": 0,
+        "canonical_array_bytes_equal": true
+      },
+      "rir_error": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "relative_l2": 0.0,
+        "max_abs_over_reference_peak": 0.0,
+        "nonidentical_values": 0,
+        "canonical_array_bytes_equal": true
+      }
+    },
+    {
+      "condition": "band__az32__early_late",
+      "seed": 2026091700,
+      "native_hashes": {
+        "input_sha256": {
+          "historical": "5ed7dc0d0c0fed9b508751720a518ded4b0adee00a4d1c5b345877435e8bb1a3",
+          "native": "5ed7dc0d0c0fed9b508751720a518ded4b0adee00a4d1c5b345877435e8bb1a3",
+          "equal": true
+        },
+        "target_sha256": {
+          "historical": "415a1c10dff4900186a3a3fb3eb863c2be316ecd2c13c5ffe04d2d0dde61e762",
+          "native": "415a1c10dff4900186a3a3fb3eb863c2be316ecd2c13c5ffe04d2d0dde61e762",
+          "equal": true
+        },
+        "noise_sha256": {
+          "historical": "e27f48685d14e4644d2f07bfb1671fd6b861ebe5e3ddd4683073aec243d0a5f7",
+          "native": "e27f48685d14e4644d2f07bfb1671fd6b861ebe5e3ddd4683073aec243d0a5f7",
+          "equal": true
+        },
+        "rir_sha256": {
+          "historical": "b88b3300dfba6f6ef8a33734232a686dad0d12e3c571b27fd4d8fef904ebb601",
+          "native": "b88b3300dfba6f6ef8a33734232a686dad0d12e3c571b27fd4d8fef904ebb601",
+          "equal": true
+        }
+      },
+      "reference_four_hashes_exact": true,
+      "waveform_error": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "relative_l2": 0.0,
+        "max_abs_over_reference_peak": 0.0,
+        "nonidentical_values": 0,
+        "canonical_array_bytes_equal": true
+      },
+      "rir_error": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "relative_l2": 0.0,
+        "max_abs_over_reference_peak": 0.0,
+        "nonidentical_values": 0,
+        "canonical_array_bytes_equal": true
+      }
+    }
+  ],
+  "interpretation": "This CPU with recorded dispatch settings only, not A Intel hardware. Native mismatches remain mismatches. No numerical tolerance used for input acceptance.",
+  "file_bytes": "Reference NPZ container SHA and canonical little-endian float64 array SHA checked separately in References; generated waveforms are memory arrays, not preexisting files."
+}

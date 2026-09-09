@@ -1,0 +1,167 @@
+{
+  "protocol": {
+    "version": "narrowband-guard-0.1",
+    "candidates": [
+      "fallback035",
+      "cap150"
+    ],
+    "development_seeds": [
+      2026091300,
+      2026091301,
+      2026091302
+    ],
+    "validation_seeds": [
+      2026091400,
+      2026091401,
+      2026091402
+    ],
+    "development_noises": [
+      "tone1000",
+      "band",
+      "pink",
+      "narrow_target"
+    ],
+    "validation_noises": [
+      "tone700",
+      "tone1600",
+      "tone2800",
+      "band",
+      "pink",
+      "narrow_target"
+    ],
+    "development_rooms": [
+      "dry",
+      "early"
+    ],
+    "validation_rooms": [
+      "dry",
+      "early",
+      "early_late"
+    ],
+    "directions": [
+      {
+        "name": "front",
+        "az": 0,
+        "el": 10
+      },
+      {
+        "name": "az_edge",
+        "az": 28,
+        "el": 0
+      },
+      {
+        "name": "el_edge",
+        "az": 0,
+        "el": 28
+      },
+      {
+        "name": "outside32",
+        "az": 32,
+        "el": 0
+      }
+    ],
+    "selection": "Among candidates passing all development gates, maximize mean in-cone tonal correct rate; fixed candidate order breaks ties. If none pass, freeze highest-scoring candidate only for exploratory heldout diagnosis, not acceptance. No tuning after any results.",
+    "gates": {
+      "tonal_correct_drop_vs_phat_max": 0.02,
+      "band_gain_retention": 0.75,
+      "control_drop_vs_beta075_max": 0.02,
+      "absent_false_increase_max": 0.005,
+      "outside_output_increase_max": 0.005
+    },
+    "gate_semantics": "Pooled per-condition rates. Tonal >= PHAT-2pp each in-cone condition; average band gain >=75% of unprotected beta075 gain (negative reference gains require nonnegative guard gain); pink/narrow-target each >= unprotected-2pp. Each absent and outside-active false rate <= each of PHAT and beta075 +0.5pp. No p-value or hardware claim.",
+    "frozen": "5/12 capture,30deg cone, original LS acceptance and pair mask; fallback top3 cross-amplitude median>=0.35; cap relative retained amplitude^0.25 at1.5x median",
+    "source_control": "narrow_target is legitimate 800-1400Hz band-limited source plus band noise RMS0.1; all other target probes original broadband. Tonal noises independent per-mic random phase sine +0.05 white, total RMS1. Same target/RIR per trial across methods."
+  },
+  "acoustic_plan": {
+    "seeds": [
+      2026091200,
+      2026091201,
+      2026091202
+    ],
+    "noise_types": [
+      "band",
+      "pink",
+      "tonal",
+      "impulsive"
+    ],
+    "directions": [
+      {
+        "name": "front",
+        "az": 0,
+        "el": 10
+      },
+      {
+        "name": "az_edge",
+        "az": 28,
+        "el": 0
+      },
+      {
+        "name": "el_edge",
+        "az": 0,
+        "el": 28
+      },
+      {
+        "name": "outside",
+        "az": 45,
+        "el": 0
+      }
+    ],
+    "rooms": [
+      {
+        "name": "dry",
+        "wall_gain": 0.0,
+        "tail_relative_l2": 0.0
+      },
+      {
+        "name": "early",
+        "wall_gain": 0.55,
+        "tail_relative_l2": 0.0
+      },
+      {
+        "name": "early_late",
+        "wall_gain": 0.55,
+        "tail_relative_l2": 0.5
+      }
+    ],
+    "room_dimensions_m": [
+      5,
+      4,
+      3
+    ],
+    "array_center_m": [
+      2,
+      2,
+      1.5
+    ],
+    "distance_m": 1.5,
+    "tail_start_s": 0.04,
+    "tail_stop_s": 0.35,
+    "tail_decay_60db_s": 0.25,
+    "noise_nominal_rms": 1.0,
+    "duration_samples": 240000,
+    "edge_samples": 960,
+    "episodes": [
+      {
+        "start": 24000,
+        "stop": 96000
+      },
+      {
+        "start": 134400,
+        "stop": 216000
+      }
+    ],
+    "frozen_algorithms": {
+      "original_beta": 1.0,
+      "candidate_beta": 0.75,
+      "capture": "5/12,120ms; legacy cone and acceptance thresholds unchanged"
+    },
+    "side_effect_flags": {
+      "correct_rate_drop": 0.02,
+      "absent_false_increase": 0.005,
+      "outside_fresh_increase": 0.005,
+      "p95_error_increase_deg": 2.0
+    },
+    "note": "144 paired trials; all 4x4x3 conditions predeclared, no tuning/selection. 3 new seeds descriptive only. Synthetic causal image-source early RIR plus stochastic decaying tail; not calibrated room RT60."
+  },
+  "phase": "validation"
+}

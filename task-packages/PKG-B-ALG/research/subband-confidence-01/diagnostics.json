@@ -1,0 +1,48 @@
+{
+  "totals": {
+    "cap150_quorum": {
+      "inside_active": 24624,
+      "inside_correct": 12692,
+      "outside_active": 12312,
+      "outside_fresh": 127,
+      "absent_frames": 18792,
+      "absent_fresh": 0,
+      "absent_hold": 1429
+    },
+    "consistency_quorum": {
+      "inside_active": 24624,
+      "inside_correct": 86,
+      "outside_active": 12312,
+      "outside_fresh": 0,
+      "absent_frames": 18792,
+      "absent_fresh": 0,
+      "absent_hold": 30
+    },
+    "envelope_quorum": {
+      "inside_active": 24624,
+      "inside_correct": 78,
+      "outside_active": 12312,
+      "outside_fresh": 0,
+      "absent_frames": 18792,
+      "absent_fresh": 0,
+      "absent_hold": 30
+    }
+  },
+  "event_totals": {
+    "cap150_quorum": [
+      158,
+      192
+    ],
+    "consistency_quorum": [
+      9,
+      192
+    ],
+    "envelope_quorum": [
+      8,
+      192
+    ]
+  },
+  "common_latency_pairs": 8,
+  "median_latency_delta": 453.3333333333333,
+  "max_latency_delta": 693.3333333333335
+}

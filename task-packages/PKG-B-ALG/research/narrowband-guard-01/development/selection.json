@@ -1,0 +1,31 @@
+{
+  "selected": "cap150",
+  "development_passed": true,
+  "source_sha256": {
+    "guard.py": "a53eb39c23ef945fea23378162a46bfe382d3bff95ab71e7aaf60fb0c25d5566",
+    "study.py": "7c117984a1f463fb2c98850c6878a0ebd85fbafe935570b33ca9289924fb8358"
+  },
+  "protocol_sha256": "6ecf161ebc401448cc41c75a20b28edb249fc6049e9f280130ae609448104ae7",
+  "decisions": {
+    "fallback035": {
+      "passed": false,
+      "failures": [
+        "narrow_target__az_edge__early:control_drop",
+        "narrow_target__el_edge__dry:control_drop",
+        "narrow_target__el_edge__early:control_drop",
+        "narrow_target__front__early:control_drop"
+      ],
+      "tonal_mean_correct": 0.9115972548751685,
+      "band_mean_gain": 0.13239614353632415,
+      "band_required_gain": 0.09929710765224312
+    },
+    "cap150": {
+      "passed": true,
+      "failures": [],
+      "tonal_mean_correct": 0.9063734532550466,
+      "band_mean_gain": 0.13085291505411348,
+      "band_required_gain": 0.09929710765224312
+    }
+  },
+  "policy": "Among candidates passing all development gates, maximize mean in-cone tonal correct rate; fixed candidate order breaks ties. If none pass, freeze highest-scoring candidate only for exploratory heldout diagnosis, not acceptance. No tuning after any results."
+}

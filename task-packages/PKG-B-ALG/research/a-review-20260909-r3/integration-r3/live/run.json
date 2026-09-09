@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "stages": [
+    {
+      "stage": "preflight",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+        "--stage",
+        "preflight",
+        "--package",
+        "",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\live\\preflight"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "audit-narrowband-guard-01",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+        "--stage",
+        "audit",
+        "--package",
+        "narrowband-guard-01",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\live\\audit-narrowband-guard-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "audit-subband-confidence-01",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+        "--stage",
+        "audit",
+        "--package",
+        "subband-confidence-01",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\live\\audit-subband-confidence-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "audit-leave-band-out-01",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+        "--stage",
+        "audit",
+        "--package",
+        "leave-band-out-01",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\live\\audit-leave-band-out-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "audit-effective-perturbation-01",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+        "--stage",
+        "audit",
+        "--package",
+        "effective-perturbation-01",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\live\\audit-effective-perturbation-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "stable",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+        "--stage",
+        "stable",
+        "--package",
+        "",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\live\\stable"
+      ],
+      "returncode": 0
+    }
+  ],
+  "scope": "Remaining input blocker only: preflight, four live audits, stable full 2252 controls. Previously accepted tests/finals unchanged.",
+  "sources": {
+    "assess_minimum.py": "8a1ebdda68ceaf732bbcde086f35c496a432412e060d3935d105b18aed54fe15",
+    "export_reference.py": "c333d759372d4d5279c1dbda012034156fef685154f30a91033b1112a1ab8315",
+    "reference_inputs.py": "f2b77b2f8f5b8c5666f80c21705586b0ae293f26563d1726de0e9de46493fd6e",
+    "run_all.py": "018951ac71a73030d74f95994a88fb03e15f6923f294de9fbeffd84402293887",
+    "test_reference.py": "44d8f046f52cb82ea3f1d6783286c8503001af3c40c9ca2a075feb9e93f6bf1e",
+    "verify_release.py": "eaf1704ac81443eb40f48f4ed1f7fd05160fb1ed557f69ea9ed5ae3aac4b694c"
+  }
+}

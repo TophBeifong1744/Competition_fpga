@@ -1,0 +1,295 @@
+{
+  "status": "PASS",
+  "trials": 144,
+  "method_rows": 201744,
+  "diagnostic_frames": 67248,
+  "reconstructed_inputs": 8,
+  "category_risk_among_full_incone": {
+    "unsupported": {
+      "inside": 12121,
+      "outside": 792
+    },
+    "inside_supported": {
+      "inside": 651,
+      "outside": 5
+    },
+    "inconsistent": {
+      "inside": 1051,
+      "outside": 72
+    },
+    "boundary_uncertain": {
+      "inside": 118,
+      "outside": 13
+    }
+  },
+  "category_by_condition": {
+    "tone900__front__dry": {
+      "unsupported": 751,
+      "inside_supported": 100,
+      "inconsistent": 15,
+      "full_rejected": 1
+    },
+    "tone900__front__early_late": {
+      "unsupported": 370,
+      "inside_supported": 75,
+      "inconsistent": 213,
+      "full_rejected": 14
+    },
+    "tone900__az28__dry": {
+      "unsupported": 749,
+      "inside_supported": 112,
+      "full_rejected": 1,
+      "inconsistent": 5
+    },
+    "tone900__az28__early_late": {
+      "unsupported": 364,
+      "inconsistent": 232,
+      "full_rejected": 14,
+      "inside_supported": 32,
+      "boundary_uncertain": 30
+    },
+    "tone900__az30__dry": {
+      "unsupported": 747,
+      "boundary_uncertain": 98,
+      "inside_supported": 17,
+      "full_rejected": 1,
+      "inconsistent": 4
+    },
+    "tone900__az30__early_late": {
+      "inconsistent": 212,
+      "inside_supported": 19,
+      "unsupported": 350,
+      "full_rejected": 37,
+      "boundary_uncertain": 54
+    },
+    "tone900__az32__dry": {
+      "unsupported": 747,
+      "boundary_uncertain": 115,
+      "full_rejected": 1,
+      "inconsistent": 4
+    },
+    "tone900__az32__early_late": {
+      "unsupported": 375,
+      "inconsistent": 222,
+      "boundary_uncertain": 56,
+      "full_rejected": 18,
+      "inside_supported": 1
+    },
+    "tone900__el28__dry": {
+      "unsupported": 753,
+      "inside_supported": 97,
+      "inconsistent": 16,
+      "full_rejected": 1
+    },
+    "tone900__el28__early_late": {
+      "inconsistent": 239,
+      "boundary_uncertain": 39,
+      "inside_supported": 37,
+      "unsupported": 342,
+      "full_rejected": 15
+    },
+    "tone900__el32__dry": {
+      "unsupported": 755,
+      "boundary_uncertain": 97,
+      "inconsistent": 14,
+      "full_rejected": 1
+    },
+    "tone900__el32__early_late": {
+      "unsupported": 374,
+      "inconsistent": 211,
+      "boundary_uncertain": 74,
+      "full_rejected": 9,
+      "inside_supported": 4
+    },
+    "tone2200__front__dry": {
+      "unsupported": 644,
+      "inside_supported": 50,
+      "full_rejected": 145,
+      "inconsistent": 28
+    },
+    "tone2200__front__early_late": {
+      "unsupported": 434,
+      "full_rejected": 140,
+      "inconsistent": 94,
+      "inside_supported": 4
+    },
+    "tone2200__az28__dry": {
+      "unsupported": 690,
+      "inside_supported": 53,
+      "full_rejected": 91,
+      "inconsistent": 31,
+      "boundary_uncertain": 2
+    },
+    "tone2200__az28__early_late": {
+      "unsupported": 447,
+      "full_rejected": 138,
+      "inconsistent": 81,
+      "boundary_uncertain": 5,
+      "inside_supported": 1
+    },
+    "tone2200__az30__dry": {
+      "unsupported": 687,
+      "boundary_uncertain": 54,
+      "full_rejected": 87,
+      "inconsistent": 38,
+      "inside_supported": 1
+    },
+    "tone2200__az30__early_late": {
+      "unsupported": 385,
+      "full_rejected": 195,
+      "inconsistent": 87,
+      "inside_supported": 2,
+      "boundary_uncertain": 3
+    },
+    "tone2200__az32__dry": {
+      "unsupported": 688,
+      "boundary_uncertain": 58,
+      "full_rejected": 86,
+      "inconsistent": 35
+    },
+    "tone2200__az32__early_late": {
+      "unsupported": 456,
+      "full_rejected": 125,
+      "inconsistent": 85,
+      "boundary_uncertain": 6
+    },
+    "tone2200__el28__dry": {
+      "unsupported": 623,
+      "inside_supported": 49,
+      "full_rejected": 164,
+      "inconsistent": 31
+    },
+    "tone2200__el28__early_late": {
+      "unsupported": 453,
+      "full_rejected": 132,
+      "inconsistent": 84,
+      "boundary_uncertain": 2,
+      "inside_supported": 1
+    },
+    "tone2200__el32__dry": {
+      "unsupported": 630,
+      "boundary_uncertain": 47,
+      "full_rejected": 161,
+      "inconsistent": 29
+    },
+    "tone2200__el32__early_late": {
+      "unsupported": 463,
+      "inconsistent": 85,
+      "full_rejected": 121,
+      "boundary_uncertain": 3
+    },
+    "band__front__dry": {
+      "unsupported": 462,
+      "full_rejected": 396,
+      "inconsistent": 8,
+      "inside_supported": 1
+    },
+    "band__front__early_late": {
+      "full_rejected": 416,
+      "unsupported": 256
+    },
+    "band__az28__dry": {
+      "unsupported": 483,
+      "full_rejected": 372,
+      "inconsistent": 12
+    },
+    "band__az28__early_late": {
+      "unsupported": 238,
+      "full_rejected": 434
+    },
+    "band__az30__dry": {
+      "full_rejected": 372,
+      "unsupported": 484,
+      "inconsistent": 11
+    },
+    "band__az30__early_late": {
+      "full_rejected": 448,
+      "unsupported": 223,
+      "inconsistent": 1
+    },
+    "band__az32__dry": {
+      "full_rejected": 372,
+      "unsupported": 483,
+      "inconsistent": 11,
+      "boundary_uncertain": 1
+    },
+    "band__az32__early_late": {
+      "full_rejected": 445,
+      "unsupported": 224,
+      "boundary_uncertain": 1,
+      "inconsistent": 2
+    },
+    "band__el28__dry": {
+      "unsupported": 482,
+      "full_rejected": 374,
+      "inconsistent": 11
+    },
+    "band__el28__early_late": {
+      "full_rejected": 400,
+      "unsupported": 271,
+      "inconsistent": 1
+    },
+    "band__el32__dry": {
+      "unsupported": 479,
+      "full_rejected": 373,
+      "inconsistent": 14,
+      "boundary_uncertain": 1
+    },
+    "band__el32__early_late": {
+      "full_rejected": 391,
+      "unsupported": 276,
+      "inconsistent": 5
+    },
+    "narrow_target__front__dry": {
+      "unsupported": 823,
+      "full_rejected": 44
+    },
+    "narrow_target__front__early_late": {
+      "full_rejected": 541,
+      "unsupported": 131
+    },
+    "narrow_target__az28__dry": {
+      "unsupported": 824,
+      "full_rejected": 43
+    },
+    "narrow_target__az28__early_late": {
+      "full_rejected": 563,
+      "unsupported": 109
+    },
+    "narrow_target__az30__dry": {
+      "unsupported": 824,
+      "full_rejected": 43
+    },
+    "narrow_target__az30__early_late": {
+      "full_rejected": 571,
+      "unsupported": 101
+    },
+    "narrow_target__az32__dry": {
+      "unsupported": 824,
+      "full_rejected": 43
+    },
+    "narrow_target__az32__early_late": {
+      "full_rejected": 563,
+      "unsupported": 109
+    },
+    "narrow_target__el28__dry": {
+      "unsupported": 823,
+      "full_rejected": 44
+    },
+    "narrow_target__el28__early_late": {
+      "full_rejected": 543,
+      "unsupported": 129
+    },
+    "narrow_target__el32__dry": {
+      "unsupported": 824,
+      "full_rejected": 43
+    },
+    "narrow_target__el32__early_late": {
+      "unsupported": 144,
+      "full_rejected": 528
+    }
+  },
+  "auditor_sha256": "4fb296aa731ca0f050d27cadfde003c4c7368f7e349489ee2aade0c76aaedaf2",
+  "metric_helper_sha256": "5a5ee8ec1a104f8b0bd1506b9887d2975fe061f9cd8ca4f2439108a7bb5df5fc",
+  "checks": "All hashes, independent subband spread/span/envelope/category recomputation, candidate veto semantics, received labels, angles, metrics, latency.8 complete input reconstructions. Not confidence calibration or algorithm rerun."
+}

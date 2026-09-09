@@ -1,0 +1,177 @@
+{
+  "protocol": {
+    "purpose": "Separate actual estimator-spectrum removal from trivial perturbations before evaluating stability; exploratory fixed diagnostic, not target-information proof",
+    "seeds": [
+      2026091700,
+      2026091701,
+      2026091702
+    ],
+    "noises": [
+      "tone1200",
+      "tone2500",
+      "band",
+      "narrow_target"
+    ],
+    "rooms": [
+      "dry",
+      "early_late"
+    ],
+    "directions": [
+      {
+        "name": "front",
+        "az": 0,
+        "el": 10
+      },
+      {
+        "name": "az28",
+        "az": 28,
+        "el": 0
+      },
+      {
+        "name": "az30",
+        "az": 30,
+        "el": 0
+      },
+      {
+        "name": "az32",
+        "az": 32,
+        "el": 0
+      },
+      {
+        "name": "el28",
+        "az": 0,
+        "el": 28
+      },
+      {
+        "name": "el32",
+        "az": 0,
+        "el": 32
+      }
+    ],
+    "omitted_bands_hz": [
+      [
+        300,
+        1500
+      ],
+      [
+        1500,
+        2700
+      ],
+      [
+        2700,
+        4000
+      ]
+    ],
+    "loo": {
+      "minimum_comparable_deletions": 2,
+      "minimum_joint_pairs_per_deletion": 5,
+      "max_angle_change_deg": 5.0,
+      "max_median_pair_delay_change_samples": 0.5
+    },
+    "impact": {
+      "minimum_removed_bins": 3,
+      "minimum_removed_mass": 0.1,
+      "maximum_removed_mass": 0.8,
+      "minimum_qualified_pairs": 5
+    },
+    "methods": [
+      "cap150_quorum",
+      "old_loo_known_only",
+      "effective_known_only"
+    ],
+    "semantics": "Measure removed absolute magnitude of actual cap150 GCC spectrum, not power or semantic target information. Effective deletion must yield valid LS and have>=5 shared finite pairs each removing>=3 retained bins and10%-80% spectrum magnitude. Require>=2 effective deletions for stable/sensitive; otherwise unknown. Both screening methods pass unknown, reject sensitive. Full-invalid never promoted. No new direction, widening, refit or tuning.",
+    "diagnostics": "Also record removed f^2-weighted magnitude fraction as an uncalibrated correlation-curvature proxy, not Fisher information. Classify no_change,uncomparable,weak_or_excessive,effective; deletion failure is not stability evidence.",
+    "scope": "144 matched new-seed trials; all thresholds fixed before runs, no fitting or model selection. Prior LOO compared on exact same inputs."
+  },
+  "acoustic": {
+    "seeds": [
+      2026091200,
+      2026091201,
+      2026091202
+    ],
+    "noise_types": [
+      "band",
+      "pink",
+      "tonal",
+      "impulsive"
+    ],
+    "directions": [
+      {
+        "name": "front",
+        "az": 0,
+        "el": 10
+      },
+      {
+        "name": "az_edge",
+        "az": 28,
+        "el": 0
+      },
+      {
+        "name": "el_edge",
+        "az": 0,
+        "el": 28
+      },
+      {
+        "name": "outside",
+        "az": 45,
+        "el": 0
+      }
+    ],
+    "rooms": [
+      {
+        "name": "dry",
+        "wall_gain": 0.0,
+        "tail_relative_l2": 0.0
+      },
+      {
+        "name": "early",
+        "wall_gain": 0.55,
+        "tail_relative_l2": 0.0
+      },
+      {
+        "name": "early_late",
+        "wall_gain": 0.55,
+        "tail_relative_l2": 0.5
+      }
+    ],
+    "room_dimensions_m": [
+      5,
+      4,
+      3
+    ],
+    "array_center_m": [
+      2,
+      2,
+      1.5
+    ],
+    "distance_m": 1.5,
+    "tail_start_s": 0.04,
+    "tail_stop_s": 0.35,
+    "tail_decay_60db_s": 0.25,
+    "noise_nominal_rms": 1.0,
+    "duration_samples": 240000,
+    "edge_samples": 960,
+    "episodes": [
+      {
+        "start": 24000,
+        "stop": 96000
+      },
+      {
+        "start": 134400,
+        "stop": 216000
+      }
+    ],
+    "frozen_algorithms": {
+      "original_beta": 1.0,
+      "candidate_beta": 0.75,
+      "capture": "5/12,120ms; legacy cone and acceptance thresholds unchanged"
+    },
+    "side_effect_flags": {
+      "correct_rate_drop": 0.02,
+      "absent_false_increase": 0.005,
+      "outside_fresh_increase": 0.005,
+      "p95_error_increase_deg": 2.0
+    },
+    "note": "144 paired trials; all 4x4x3 conditions predeclared, no tuning/selection. 3 new seeds descriptive only. Synthetic causal image-source early RIR plus stochastic decaying tail; not calibrated room RT60."
+  }
+}

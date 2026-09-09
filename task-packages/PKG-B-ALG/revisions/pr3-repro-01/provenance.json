@@ -1,0 +1,27 @@
+{
+  "review_url": "https://github.com/TophBeifong1744/Competition_fpga/pull/3#pullrequestreview-5150301753",
+  "reviewed_commit": "25a6257fe3136b058cefa06e86fde0f3c8dd8dff",
+  "original_log": {
+    "source": "F:/NUEC/task-packages/PKG-B-ALG/research/stable-wrong-01/run.log",
+    "sha256": "fb1e82e7e76c53706568e19883ba46ffd61cae4b0ee1e3f163c75c66713121fb",
+    "disposition": "Recovered original bytes; existing historical manifest unchanged"
+  },
+  "independent_run": "evidence/attempt-01/run.json",
+  "integration_run": "evidence/integration-01/run.json",
+  "integration_baseline": {
+    "main_commit": "1ec105f609ac52d7b97d3245a90dc212591c1cfa",
+    "revision_commit": "018fd95694bf742057428e5af74078be06a54c6d",
+    "current_review_sha256": "ced3b345947ff9f41649eaeb3d4b4383899b29a7ac0f3dab19211ae7524df650",
+    "review_byte_equal_to_main": true,
+    "existing_main_files_modified_or_deleted": "",
+    "legacy_final_command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "final_check.py"
+    ],
+    "legacy_final_returncode": 1
+  },
+  "legacy_local_audits": "evidence/legacy-attempt-01/results.json",
+  "controlled_failure": "evidence/alternate-cpu-attempt-01/result.json",
+  "scope": "Synthetic six-microphone offline research only. No default PHAT/tracker or other member changes. No merge to main."
+}

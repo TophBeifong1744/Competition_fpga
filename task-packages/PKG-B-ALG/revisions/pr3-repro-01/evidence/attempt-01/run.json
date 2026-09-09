@@ -1,0 +1,276 @@
+{
+  "status": "PASS",
+  "stages": [
+    {
+      "stage": "unit",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "unit",
+        "--package",
+        "",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\evidence\\attempt-01\\unit"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "tests-tonal-edge-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "tests",
+        "--package",
+        "tonal-edge-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\evidence\\attempt-01\\tests-tonal-edge-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "tests-narrowband-guard-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "tests",
+        "--package",
+        "narrowband-guard-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\evidence\\attempt-01\\tests-narrowband-guard-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "tests-subband-confidence-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "tests",
+        "--package",
+        "subband-confidence-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\evidence\\attempt-01\\tests-subband-confidence-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "tests-leave-band-out-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "tests",
+        "--package",
+        "leave-band-out-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\evidence\\attempt-01\\tests-leave-band-out-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "tests-effective-perturbation-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "tests",
+        "--package",
+        "effective-perturbation-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\evidence\\attempt-01\\tests-effective-perturbation-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "tests-stable-wrong-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "tests",
+        "--package",
+        "stable-wrong-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\evidence\\attempt-01\\tests-stable-wrong-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "final-tonal-edge-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "final",
+        "--package",
+        "tonal-edge-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\evidence\\attempt-01\\final-tonal-edge-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "final-narrowband-guard-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "final",
+        "--package",
+        "narrowband-guard-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\evidence\\attempt-01\\final-narrowband-guard-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "final-subband-confidence-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "final",
+        "--package",
+        "subband-confidence-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\evidence\\attempt-01\\final-subband-confidence-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "final-leave-band-out-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "final",
+        "--package",
+        "leave-band-out-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\evidence\\attempt-01\\final-leave-band-out-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "final-effective-perturbation-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "final",
+        "--package",
+        "effective-perturbation-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\evidence\\attempt-01\\final-effective-perturbation-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "audit-narrowband-guard-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "audit",
+        "--package",
+        "narrowband-guard-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\evidence\\attempt-01\\audit-narrowband-guard-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "audit-subband-confidence-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "audit",
+        "--package",
+        "subband-confidence-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\evidence\\attempt-01\\audit-subband-confidence-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "audit-leave-band-out-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "audit",
+        "--package",
+        "leave-band-out-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\evidence\\attempt-01\\audit-leave-band-out-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "audit-effective-perturbation-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "audit",
+        "--package",
+        "effective-perturbation-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\evidence\\attempt-01\\audit-effective-perturbation-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "stable",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "stable",
+        "--package",
+        "",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\evidence\\attempt-01\\stable"
+      ],
+      "returncode": 0
+    }
+  ],
+  "sources": {
+    "audit_effective_perturbation_01.py": "c40a990476ecc7b1d9c159d7c15db022cf89d4fed051e34643966709d8ecf6c4",
+    "audit_leave_band_out_01.py": "917d432998a101f296374ff3093af4318f0e566e9868017c6d858daa99e5bd54",
+    "audit_narrowband_guard_01.py": "7c459200e3f7a51c21d1b7a282e9bae70b36864e34aaf3924e28e9234648ca6e",
+    "audit_subband_confidence_01.py": "5e7b1e8aafeba3144b90d4424de193c9cbee3d0e0087c34c87375264dbe3f92c",
+    "common.py": "3b7b80b9753ccf202b7bea6e0373e83076979f6070d2434441bd5a53b89ec18e",
+    "final_effective_perturbation_01.py": "9f58e393ba509245a79af453fc5c9618dac2dead90a5d0036c936c75e5510eb1",
+    "final_leave_band_out_01.py": "a09e1f2675ad34490d051aef50954328f33479bc2de2e8f2097179857f8ce4d8",
+    "final_narrowband_guard_01.py": "0150e55a7f0068c72d4ffefe8936233c6a11a7e298d61ee7a47206f2002d8223",
+    "final_subband_confidence_01.py": "853673be5bb2dc70f58aa7b3488d89d26ea505f839ec4fd6f0323bc63c35ee5f",
+    "final_tonal_edge_01.py": "d6d8c85476f5ce5834dc1aaf5283e06ce7089acf110c631af992c14e9eda7fef",
+    "run_all.py": "eab59b1e5a3de000fe231401bcab17f5d7c850c386d3e6e560f17d287fedfc58",
+    "stable_rerun.py": "47f890efe86cf03da0112e319b1539dc9fabe068d31f297966c4d03dfdff1be4",
+    "stable_tests.py": "6a239d081a84824ac3c4cbe1cee6ac0ac86fd2a2246715f2dcca7becf1419392",
+    "test_revision.py": "d8537e39f2325c977cc15b82d7916727f9bab138404ddecf1b402510a0dfac6f"
+  }
+}

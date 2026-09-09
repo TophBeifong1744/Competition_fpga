@@ -1,0 +1,173 @@
+{
+  "protocol": {
+    "purpose": "Frozen diagnostic test of cross-subband agreement and boundary evidence; no fitting or selection",
+    "seeds": [
+      2026091500,
+      2026091501,
+      2026091502
+    ],
+    "noises": [
+      "tone900",
+      "tone2200",
+      "band",
+      "narrow_target"
+    ],
+    "rooms": [
+      "dry",
+      "early_late"
+    ],
+    "directions": [
+      {
+        "name": "front",
+        "az": 0,
+        "el": 10
+      },
+      {
+        "name": "az28",
+        "az": 28,
+        "el": 0
+      },
+      {
+        "name": "az30",
+        "az": 30,
+        "el": 0
+      },
+      {
+        "name": "az32",
+        "az": 32,
+        "el": 0
+      },
+      {
+        "name": "el28",
+        "az": 0,
+        "el": 28
+      },
+      {
+        "name": "el32",
+        "az": 0,
+        "el": 32
+      }
+    ],
+    "subbands_hz": [
+      [
+        300,
+        1500
+      ],
+      [
+        1500,
+        2700
+      ],
+      [
+        2700,
+        4000
+      ]
+    ],
+    "mask": "Original full-band 2% peak amplitude mask intersected with disjoint subband. Lower inclusive, upper exclusive except last band upper inclusive. Each subband retains original >=12 bins per pair and LS validity thresholds.",
+    "full_candidate": "Frozen cap150 from prior failed narrowband-guard study; diagnostic subject only, not accepted default",
+    "consistency": {
+      "minimum_valid_subbands": 2,
+      "minimum_joint_finite_pairs": 5,
+      "maximum_direction_spread_deg": 5.0,
+      "maximum_median_delay_span_samples": 0.5
+    },
+    "boundary": "After consistency, require maximum cone angle across full candidate and every valid subband <=30deg+1e-10. This envelope is not a calibrated confidence interval or probability.",
+    "methods": [
+      "cap150_quorum",
+      "consistency_quorum",
+      "envelope_quorum"
+    ],
+    "scope": "144 paired trials,3 new seeds. Fixed screens only veto original candidates; no replacement, widening, retuning or confidence calibration. All rejected/absent/transition frames still update tracker.",
+    "reporting": "Report unsupported/inconsistent/boundary-uncertain separately. Check outside active fresh outputs, inside correct coverage, exactly-30deg boundary, legitimate narrowband availability, HOLD and paired latency. Lower false output with near-zero coverage is not success."
+  },
+  "acoustic": {
+    "seeds": [
+      2026091200,
+      2026091201,
+      2026091202
+    ],
+    "noise_types": [
+      "band",
+      "pink",
+      "tonal",
+      "impulsive"
+    ],
+    "directions": [
+      {
+        "name": "front",
+        "az": 0,
+        "el": 10
+      },
+      {
+        "name": "az_edge",
+        "az": 28,
+        "el": 0
+      },
+      {
+        "name": "el_edge",
+        "az": 0,
+        "el": 28
+      },
+      {
+        "name": "outside",
+        "az": 45,
+        "el": 0
+      }
+    ],
+    "rooms": [
+      {
+        "name": "dry",
+        "wall_gain": 0.0,
+        "tail_relative_l2": 0.0
+      },
+      {
+        "name": "early",
+        "wall_gain": 0.55,
+        "tail_relative_l2": 0.0
+      },
+      {
+        "name": "early_late",
+        "wall_gain": 0.55,
+        "tail_relative_l2": 0.5
+      }
+    ],
+    "room_dimensions_m": [
+      5,
+      4,
+      3
+    ],
+    "array_center_m": [
+      2,
+      2,
+      1.5
+    ],
+    "distance_m": 1.5,
+    "tail_start_s": 0.04,
+    "tail_stop_s": 0.35,
+    "tail_decay_60db_s": 0.25,
+    "noise_nominal_rms": 1.0,
+    "duration_samples": 240000,
+    "edge_samples": 960,
+    "episodes": [
+      {
+        "start": 24000,
+        "stop": 96000
+      },
+      {
+        "start": 134400,
+        "stop": 216000
+      }
+    ],
+    "frozen_algorithms": {
+      "original_beta": 1.0,
+      "candidate_beta": 0.75,
+      "capture": "5/12,120ms; legacy cone and acceptance thresholds unchanged"
+    },
+    "side_effect_flags": {
+      "correct_rate_drop": 0.02,
+      "absent_false_increase": 0.005,
+      "outside_fresh_increase": 0.005,
+      "p95_error_increase_deg": 2.0
+    },
+    "note": "144 paired trials; all 4x4x3 conditions predeclared, no tuning/selection. 3 new seeds descriptive only. Synthetic causal image-source early RIR plus stochastic decaying tail; not calibrated room RT60."
+  }
+}

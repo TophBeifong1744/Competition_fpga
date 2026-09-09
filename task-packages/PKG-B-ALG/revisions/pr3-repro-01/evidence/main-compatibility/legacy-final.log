@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "F:\NUEC\review-worktrees\pr3-main-20260909\task-packages\PKG-B-ALG\research\tonal-edge-01\final_check.py", line 41, in <module>
+    if __name__=='__main__':print(json.dumps(check()))
+                                             ^^^^^^^
+  File "F:\NUEC\review-worktrees\pr3-main-20260909\task-packages\PKG-B-ALG\research\tonal-edge-01\final_check.py", line 10, in check
+    for n,h in fixed.items():assert d.s.entry.sha256(d.ROOT/n)==h,n
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: REVIEW.md

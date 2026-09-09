@@ -1,0 +1,91 @@
+{
+  "totals": {
+    "cap150_quorum": {
+      "inside_frames": 24624,
+      "correct": 11781,
+      "outside_frames": 12312,
+      "outside_fresh": 119,
+      "absent_frames": 18792,
+      "absent_fresh": 0,
+      "absent_hold": 1369
+    },
+    "split_strict_quorum": {
+      "inside_frames": 24624,
+      "correct": 568,
+      "outside_frames": 12312,
+      "outside_fresh": 0,
+      "absent_frames": 18792,
+      "absent_fresh": 0,
+      "absent_hold": 286
+    },
+    "loo_strict_quorum": {
+      "inside_frames": 24624,
+      "correct": 9544,
+      "outside_frames": 12312,
+      "outside_fresh": 43,
+      "absent_frames": 18792,
+      "absent_fresh": 0,
+      "absent_hold": 1147
+    },
+    "loo_known_only_quorum": {
+      "inside_frames": 24624,
+      "correct": 10609,
+      "outside_frames": 12312,
+      "outside_fresh": 57,
+      "absent_frames": 18792,
+      "absent_fresh": 0,
+      "absent_hold": 1321
+    }
+  },
+  "events": {
+    "cap150_quorum": {
+      "success": 147,
+      "events": 192
+    },
+    "split_strict_quorum": {
+      "success": 31,
+      "events": 192
+    },
+    "loo_strict_quorum": {
+      "success": 128,
+      "events": 192
+    },
+    "loo_known_only_quorum": {
+      "success": 144,
+      "events": 192
+    }
+  },
+  "overview": [
+    {
+      "noise": "tone1200",
+      "cap150_quorum": 0.7020792722547109,
+      "split_strict_quorum": 0.08463287849252761,
+      "loo_strict_quorum": 0.6115984405458089,
+      "loo_known_only_quorum": 0.6283300844704354
+    },
+    {
+      "noise": "tone2500",
+      "cap150_quorum": 0.5558804418453541,
+      "split_strict_quorum": 0.007634827810266406,
+      "loo_strict_quorum": 0.4502923976608187,
+      "loo_known_only_quorum": 0.4948018193632229
+    },
+    {
+      "noise": "band",
+      "cap150_quorum": 0.20337881741390512,
+      "split_strict_quorum": 0.0,
+      "loo_strict_quorum": 0.036062378167641324,
+      "loo_known_only_quorum": 0.14782326185834957
+    },
+    {
+      "noise": "narrow_target",
+      "cap150_quorum": 0.45240415854450944,
+      "split_strict_quorum": 0.0,
+      "loo_strict_quorum": 0.45240415854450944,
+      "loo_known_only_quorum": 0.45240415854450944
+    }
+  ],
+  "latency_common_pairs": 144,
+  "latency_median_delta": 0.0,
+  "latency_max_delta": 1002.6666666666665
+}

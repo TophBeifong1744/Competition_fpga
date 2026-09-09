@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "stages": [
+    {
+      "stage": "preflight",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+        "--stage",
+        "preflight",
+        "--package",
+        "",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\evidence\\avx2-live-01\\preflight"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "audit-narrowband-guard-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+        "--stage",
+        "audit",
+        "--package",
+        "narrowband-guard-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\evidence\\avx2-live-01\\audit-narrowband-guard-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "audit-subband-confidence-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+        "--stage",
+        "audit",
+        "--package",
+        "subband-confidence-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\evidence\\avx2-live-01\\audit-subband-confidence-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "audit-leave-band-out-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+        "--stage",
+        "audit",
+        "--package",
+        "leave-band-out-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\evidence\\avx2-live-01\\audit-leave-band-out-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "audit-effective-perturbation-01",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+        "--stage",
+        "audit",
+        "--package",
+        "effective-perturbation-01",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\evidence\\avx2-live-01\\audit-effective-perturbation-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "stable",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+        "--stage",
+        "stable",
+        "--package",
+        "",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\pr3-repro-20260909\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\evidence\\avx2-live-01\\stable"
+      ],
+      "returncode": 0
+    }
+  ],
+  "scope": "Remaining input blocker only: preflight, four live audits, stable full 2252 controls. Previously accepted tests/finals unchanged.",
+  "sources": {
+    "assess_minimum.py": "8a1ebdda68ceaf732bbcde086f35c496a432412e060d3935d105b18aed54fe15",
+    "export_reference.py": "c333d759372d4d5279c1dbda012034156fef685154f30a91033b1112a1ab8315",
+    "reference_inputs.py": "f2b77b2f8f5b8c5666f80c21705586b0ae293f26563d1726de0e9de46493fd6e",
+    "run_all.py": "018951ac71a73030d74f95994a88fb03e15f6923f294de9fbeffd84402293887",
+    "test_reference.py": "44d8f046f52cb82ea3f1d6783286c8503001af3c40c9ca2a075feb9e93f6bf1e"
+  }
+}

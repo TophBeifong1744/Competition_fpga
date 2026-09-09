@@ -1,0 +1,218 @@
+{
+  "status": "PASS",
+  "reviewed_sha": "6491d1bab04038b71fdd8c22d45a58455aa58ade",
+  "main_sha": "6ea647d5a9b6d27b164fde4c78103d50e5d1e43e",
+  "existing_main_files_preserved": true,
+  "root_review_preserved": true,
+  "stages": [
+    {
+      "name": "release",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\verify_release.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "reference-tests",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\test_reference.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "unit",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "unit",
+        "--package",
+        "",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\unit"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "tests-tonal-edge-01",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "tests",
+        "--package",
+        "tonal-edge-01",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\tests-tonal-edge-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "tests-narrowband-guard-01",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "tests",
+        "--package",
+        "narrowband-guard-01",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\tests-narrowband-guard-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "tests-subband-confidence-01",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "tests",
+        "--package",
+        "subband-confidence-01",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\tests-subband-confidence-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "tests-leave-band-out-01",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "tests",
+        "--package",
+        "leave-band-out-01",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\tests-leave-band-out-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "tests-effective-perturbation-01",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "tests",
+        "--package",
+        "effective-perturbation-01",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\tests-effective-perturbation-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "tests-stable-wrong-01",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "tests",
+        "--package",
+        "stable-wrong-01",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\tests-stable-wrong-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "final-tonal-edge-01",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "final",
+        "--package",
+        "tonal-edge-01",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\final-tonal-edge-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "final-narrowband-guard-01",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "final",
+        "--package",
+        "narrowband-guard-01",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\final-narrowband-guard-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "final-subband-confidence-01",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "final",
+        "--package",
+        "subband-confidence-01",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\final-subband-confidence-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "final-leave-band-out-01",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "final",
+        "--package",
+        "leave-band-out-01",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\final-leave-band-out-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "final-effective-perturbation-01",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-repro-01\\run_all.py",
+        "--stage",
+        "final",
+        "--package",
+        "effective-perturbation-01",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\final-effective-perturbation-01"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "live",
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\ss-review-int-r3\\task-packages\\PKG-B-ALG\\revisions\\pr3-input-reference-02\\run_all.py",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a0854e-8b0a-77c3-8e6c-71c465950deb\\integration-r3\\live"
+      ],
+      "returncode": 0
+    }
+  ]
+}

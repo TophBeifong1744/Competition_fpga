@@ -1,0 +1,12 @@
+{
+  "command": [
+    "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "revisions/pr3-repro-01/probe_input_environment.py",
+    "--out",
+    "revisions\\pr3-repro-01\\evidence\\alternate-cpu-attempt-01\\probe"
+  ],
+  "disabled_features": "AVX512F,AVX512CD,AVX512_SKX,AVX512_CLX,AVX512_CNL,AVX512_ICL,AVX2,FMA3",
+  "returncode": 1,
+  "scope": "Controlled alternative SIMD profile; not A hardware. Hash mismatch must fail."
+}
