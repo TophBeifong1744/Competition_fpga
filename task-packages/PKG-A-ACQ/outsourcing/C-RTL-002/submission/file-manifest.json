@@ -1,0 +1,104 @@
+{
+  "task": "C-RTL-002",
+  "version": "1.0",
+  "date": "2026-09-09",
+  "baseline_commit": "896ce7ad983e3c4781af4fcdf7092cca5cad37f0",
+  "reference": {
+    "path": "reference/stream_error_stats.sv",
+    "source_commit": "ac8a7bb60d94c069f5f1b61e9fc38658b0742962",
+    "source_path": "task-packages/PKG-A-ACQ/outsourcing/C-RTL-001/submission/rtl/stream_error_stats.sv",
+    "sha256": "333dc4d193169982a6609c886a48968e87ef2631496d0c90137d24f228a94afe"
+  },
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 49,
+      "sha256": "90c3903a2e4fb2d949d2ef2281cc3d0e9de69b8b0e9918723bcd2d8076c409ba"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 444,
+      "sha256": "4c660ac980e91a053f501551c4421ec29e81f73c5bb092c97bd44514c2d2e579"
+    },
+    {
+      "path": "logs/attempt-01/compile_reference.log",
+      "bytes": 264,
+      "sha256": "d38dbf03a95e41600a990e684224f4e79b9ff8f1f572e194577d75e8f5c4d64d"
+    },
+    {
+      "path": "logs/attempt-01/compile_verilog.log",
+      "bytes": 859,
+      "sha256": "25e448515d358b96b5504adde38547f6ee3242bc4fdd169851397acfafd3c05a"
+    },
+    {
+      "path": "logs/attempt-01/tb_stream_error_snapshot-elaborate.log",
+      "bytes": 1110,
+      "sha256": "6b79f00923838bb99997afd2c7bea56d275cc19d691386f360933b707c0c2793"
+    },
+    {
+      "path": "logs/attempt-01/tb_stream_error_snapshot-simulate.log",
+      "bytes": 1846,
+      "sha256": "2755f09ad230efd48d2a2555e0a293f48b87d2543290ab95ac620b4a9a5ce2d4"
+    },
+    {
+      "path": "logs/compile_reference.log",
+      "bytes": 264,
+      "sha256": "d38dbf03a95e41600a990e684224f4e79b9ff8f1f572e194577d75e8f5c4d64d"
+    },
+    {
+      "path": "logs/compile_verilog.log",
+      "bytes": 859,
+      "sha256": "25e448515d358b96b5504adde38547f6ee3242bc4fdd169851397acfafd3c05a"
+    },
+    {
+      "path": "logs/tb_stream_error_snapshot_integration-elaborate.log",
+      "bytes": 886,
+      "sha256": "60d2f3ebe92552401c0d5a0eb8e8744036ae218aa93a7b09cdd3d8cc4ac52738"
+    },
+    {
+      "path": "logs/tb_stream_error_snapshot_integration-simulate.log",
+      "bytes": 2860,
+      "sha256": "54373f9670ad551b225ee73927043f888ecd09c6454dcaccf6e505e7df342be6"
+    },
+    {
+      "path": "logs/tb_stream_error_snapshot-elaborate.log",
+      "bytes": 1110,
+      "sha256": "6b79f00923838bb99997afd2c7bea56d275cc19d691386f360933b707c0c2793"
+    },
+    {
+      "path": "logs/tb_stream_error_snapshot-simulate.log",
+      "bytes": 1846,
+      "sha256": "c5b15e5eeec4d0e4e7042c0a39054618cb509465c44437e7485b93954687f3ca"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9589,
+      "sha256": "be29eb0342513549b93c58abf031c29d0df5fd95d293a091f810ada39585ecfa"
+    },
+    {
+      "path": "reference/stream_error_stats.sv",
+      "bytes": 2046,
+      "sha256": "333dc4d193169982a6609c886a48968e87ef2631496d0c90137d24f228a94afe"
+    },
+    {
+      "path": "rtl/stream_error_snapshot.v",
+      "bytes": 1317,
+      "sha256": "fe4b8bd5559ca8883044c23406f0dc637d72844bcc767c3320941ba025d6abe6"
+    },
+    {
+      "path": "run_tests.ps1",
+      "bytes": 2991,
+      "sha256": "30ae891759e61540d9e7fa0ae043f6dbb53ba8db77db5b256a4ba4b79d4e2404"
+    },
+    {
+      "path": "tb/tb_stream_error_snapshot_integration.v",
+      "bytes": 4160,
+      "sha256": "71604248b8feda2938cec7f8d7c9f81386d80c3d8a63a5e45c7181d1314c123b"
+    },
+    {
+      "path": "tb/tb_stream_error_snapshot.v",
+      "bytes": 6359,
+      "sha256": "4ba0ab32c859518ed3a50faf53a16785de8b5a4ed956d5000e3c8714eaa1b2d1"
+    }
+  ]
+}
