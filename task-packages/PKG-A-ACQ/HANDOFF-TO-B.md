@@ -1,5 +1,9 @@
 # H1 交给 B：确认接口并开发读取器
 
+## 输入标度与 PL/PS 分工增量（2026-09-09）
+
+请优先阅读 [A 确认表 a-input-boundary-0.1](payload/docs/input-scale-and-pl-ps-boundary.md) 及 [证据清单](evidence/input-boundary-v0.1/README.md)。已核对 H1 的 signed24/int32 标度与 B 的固定 `pcm/2^23` 适配器；当前 one 的 signed16 测试码型不得冒充真实24位PCM。真实PDM抽取增益、舍入/饱和仍待实现验证。PL/PS总体职责沿用现行架构，B 可先提交候选数制与运算/缓存预算，不等最终板测。此增量待 B 复核及正式合入，不修改旧 H1 哈希，不代签完整包或 H2/H3。
+
 当前状态：H1 已经 B 审核并由 `be74e0a` 合入 main，见 [REVIEW.md](REVIEW.md)。DDR 增量仍待 B 复核，H2/H3 与完整包未通过。
 
 ## 原 H1 交接说明（历史保留）
