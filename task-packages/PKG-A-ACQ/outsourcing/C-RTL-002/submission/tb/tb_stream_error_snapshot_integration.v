@@ -21,6 +21,7 @@ module tb_stream_error_snapshot_integration;
                 .snapshot_overflow_sticky(snapshot_overflow_sticky), .snapshot_drop_sticky(snapshot_drop_sticky),
                 .snapshot_valid(snapshot_valid));
     integer checks = 0;
+    integer i;
 
     // Explicit expected values, independent of DUT outputs.
     task step;
@@ -69,6 +70,20 @@ module tb_stream_error_snapshot_integration;
         step("recovery event req",      1,0,1,1,1, 0,0,0,0,1, 1,1,1,1);
         step("recovery next req",       1,0,0,0,1, 1,1,1,1,1, 1,1,1,1);
         step("final idle",              1,0,0,0,0, 1,1,1,1,0, 1,1,1,1);
+
+        // Reach and hold saturation via real 001 event inputs; never force state.
+        for (i = 2; i <= 7; i = i + 1)
+            step("count toward saturation plus req", 1,0,1,1,1, i-1,i-1,1,1,1, i,i,1,1);
+        for (i = 0; i < 4; i = i + 1)
+            step("saturated event plus req", 1,0,1,1,1, 7,7,1,1,1, 7,7,1,1);
+        step("clear saturated overflow event req",1,1,1,0,1, 7,7,1,1,1, 1,0,1,0);
+        step("next sees overflow clear event",    1,0,0,0,1, 1,0,1,0,1, 1,0,1,0);
+        step("drop-only event plus req",         1,0,0,1,1, 1,0,1,0,1, 1,1,1,1);
+        step("clear both events plus req",       1,1,1,1,1, 1,1,1,1,1, 1,1,1,1);
+        step("repeated clear both events req",   1,1,1,1,1, 1,1,1,1,1, 1,1,1,1);
+        step("clear without req snapshot holds", 1,1,0,0,0, 1,1,1,1,0, 0,0,0,0);
+        step("next request sees zero",           1,0,0,0,1, 0,0,0,0,1, 0,0,0,0);
+
         $display("ALL TESTS PASS: integration COUNT_WIDTH=3 checks=%0d", checks);
         $finish;
     end

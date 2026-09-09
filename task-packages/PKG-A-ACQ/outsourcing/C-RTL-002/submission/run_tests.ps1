@@ -40,7 +40,7 @@ try {
     # The pinned 001 reference remains byte-for-byte SystemVerilog.
     Invoke-Xilinx 'xvlog.bat' @('--sv', (Join-Path $package 'reference/stream_error_stats.sv'),
         '-log', 'compile_reference.log')
-    foreach ($top in @('tb_stream_error_snapshot', 'tb_stream_error_snapshot_integration')) {
+    foreach ($top in @('tb_stream_error_snapshot', 'tb_stream_error_snapshot_integration', 'tb_stream_error_snapshot_all_widths')) {
         Invoke-Xilinx 'xelab.bat' @("work.$top", '-s', $top, '-debug', 'typical',
             '-timescale', '1ns/1ps', '-log', "$top-elaborate.log")
         Invoke-Xilinx 'xsim.bat' @($top, '-runall', '-log', "$top-simulate.log")
@@ -49,7 +49,7 @@ try {
             throw "Missing success or failure marker in $top-simulate.log"
         }
     }
-    Write-Output "VERIFIED BOTH TEST TOPS: $resolvedRun"
+    Write-Output "VERIFIED ALL THREE TEST TOPS: $resolvedRun"
 } finally {
     Pop-Location
     $env:PROCESSOR_ARCHITECTURE = $previousArchitecture

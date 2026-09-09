@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Sep  9 20:38:40 2026
+# Process ID         : 32416
+# Current directory  : C:/Users/hsc/AppData/Local/Temp/c-rtl-002-mutations-ec8162a662134fe6a7b42bf5f4ba3c00/capture_without_request
+# Command line       : xsim.exe -log simulate.log -mode tcl -source {xsim.dir/mutation/xsim_script.tcl}
+# Log file           : C:/Users/hsc/AppData/Local/Temp/c-rtl-002-mutations-ec8162a662134fe6a7b42bf5f4ba3c00/capture_without_request/simulate.log
+# Journal file       : C:/Users/hsc/AppData/Local/Temp/c-rtl-002-mutations-ec8162a662134fe6a7b42bf5f4ba3c00/capture_without_request\xsim.jou
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36176 MB
+# Available Virtual  : 15116 MB
+#-----------------------------------------------------------
+source xsim.dir/mutation/xsim_script.tcl
+# xsim {mutation} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+FAIL W=3 case=initial idle changing live phase=after rising edge expected=000 actual=038
+Fatal: snapshot mismatch
+Time: 26 ns  Iteration: 0  Process: /tb_stream_error_snapshot/test3/compare_outputs  Scope: tb_stream_error_snapshot.test3.compare_outputs  File: C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/task-packages/PKG-A-ACQ/outsourcing/C-RTL-002/submission/tb/tb_stream_error_snapshot.v Line: 68
+$finish called at time : 26 ns
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep  9 20:38:42 2026...

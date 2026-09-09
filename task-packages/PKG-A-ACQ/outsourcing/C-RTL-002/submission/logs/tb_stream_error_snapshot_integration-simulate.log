@@ -3,12 +3,12 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Wed Sep  9 19:47:07 2026
-# Process ID         : 34952
-# Current directory  : C:/Users/hsc/AppData/Local/Temp/c-rtl-002-5c8c114e7f5044038ebc3f46ae3999dd
+# Start of session at: Wed Sep  9 20:36:39 2026
+# Process ID         : 18628
+# Current directory  : C:/Users/hsc/AppData/Local/Temp/c-rtl-002-1fffe3b49e8d4764b677416bdfdf38d4
 # Command line       : xsim.exe -log tb_stream_error_snapshot_integration-simulate.log -mode tcl -source {xsim.dir/tb_stream_error_snapshot_integration/xsim_script.tcl}
-# Log file           : C:/Users/hsc/AppData/Local/Temp/c-rtl-002-5c8c114e7f5044038ebc3f46ae3999dd/tb_stream_error_snapshot_integration-simulate.log
-# Journal file       : C:/Users/hsc/AppData/Local/Temp/c-rtl-002-5c8c114e7f5044038ebc3f46ae3999dd\xsim.jou
+# Log file           : C:/Users/hsc/AppData/Local/Temp/c-rtl-002-1fffe3b49e8d4764b677416bdfdf38d4/tb_stream_error_snapshot_integration-simulate.log
+# Journal file       : C:/Users/hsc/AppData/Local/Temp/c-rtl-002-1fffe3b49e8d4764b677416bdfdf38d4\xsim.jou
 # Running On         : DESKTOP-3FNSCB5
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26200
@@ -19,7 +19,7 @@
 # Host memory        : 34029 MB
 # Swap memory        : 2147 MB
 # Total Virtual      : 36176 MB
-# Available Virtual  : 16976 MB
+# Available Virtual  : 15073 MB
 #-----------------------------------------------------------
 source xsim.dir/tb_stream_error_snapshot_integration/xsim_script.tcl
 # xsim {tb_stream_error_snapshot_integration} -autoloadwcfg -runall
@@ -40,7 +40,24 @@ PASS integration case=joint reset snapshot=0/0 valid=0 live=0/0
 PASS integration case=recovery event req snapshot=0/0 valid=1 live=1/1
 PASS integration case=recovery next req snapshot=1/1 valid=1 live=1/1
 PASS integration case=final idle snapshot=1/1 valid=0 live=1/1
-ALL TESTS PASS: integration COUNT_WIDTH=3 checks=15
-$finish called at time : 156 ns : File "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/task-packages/PKG-A-ACQ/outsourcing/C-RTL-002/submission/tb/tb_stream_error_snapshot_integration.v" Line 73
+PASS integration case=count toward saturation plus req snapshot=1/1 valid=1 live=2/2
+PASS integration case=count toward saturation plus req snapshot=2/2 valid=1 live=3/3
+PASS integration case=count toward saturation plus req snapshot=3/3 valid=1 live=4/4
+PASS integration case=count toward saturation plus req snapshot=4/4 valid=1 live=5/5
+PASS integration case=count toward saturation plus req snapshot=5/5 valid=1 live=6/6
+PASS integration case=count toward saturation plus req snapshot=6/6 valid=1 live=7/7
+PASS integration case=saturated event plus req snapshot=7/7 valid=1 live=7/7
+PASS integration case=saturated event plus req snapshot=7/7 valid=1 live=7/7
+PASS integration case=saturated event plus req snapshot=7/7 valid=1 live=7/7
+PASS integration case=saturated event plus req snapshot=7/7 valid=1 live=7/7
+PASS integration case=clear saturated overflow event req snapshot=7/7 valid=1 live=1/0
+PASS integration case=next sees overflow clear event snapshot=1/0 valid=1 live=1/0
+PASS integration case=drop-only event plus req snapshot=1/0 valid=1 live=1/1
+PASS integration case=clear both events plus req snapshot=1/1 valid=1 live=1/1
+PASS integration case=repeated clear both events req snapshot=1/1 valid=1 live=1/1
+PASS integration case=clear without req snapshot holds snapshot=1/1 valid=0 live=0/0
+PASS integration case=next request sees zero snapshot=0/0 valid=1 live=0/0
+ALL TESTS PASS: integration COUNT_WIDTH=3 checks=32
+$finish called at time : 326 ns : File "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/task-packages/PKG-A-ACQ/outsourcing/C-RTL-002/submission/tb/tb_stream_error_snapshot_integration.v" Line 88
 exit
-INFO: [Common 17-206] Exiting xsim at Wed Sep  9 19:47:09 2026...
+INFO: [Common 17-206] Exiting xsim at Wed Sep  9 20:36:41 2026...

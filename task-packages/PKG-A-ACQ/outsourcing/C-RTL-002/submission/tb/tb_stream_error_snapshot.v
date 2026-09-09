@@ -34,7 +34,25 @@ module snapshot_checker #(parameter integer W = 3)(output reg done);
     localparam [W-1:0] MAX_VALUE = {W{1'b1}};
     localparam [W-1:0] MSB_VALUE = {1'b1, {(W-1){1'b0}}};
     reg [W-1:0] alternating;
-    integer b, i, s;
+    integer b, i, s, ov_i, dr_i;
+    reg [W-1:0] walking;
+    reg [63:0] rng, random_ov;
+
+
+    // Also reject any output transition outside the sampling edge, including
+    // short glitches that periodic #1 comparisons alone could miss.
+    realtime last_rising_edge = -1.0;
+    always @(posedge clk) last_rising_edge = $realtime;
+    always @(snapshot_overflow_count or snapshot_drop_count or
+             snapshot_overflow_sticky or snapshot_drop_sticky or snapshot_valid) begin
+        if (initialized && $realtime != last_rising_edge) begin
+            $display("FAIL W=%0d case=%0s asynchronous output transition expected=%h actual=%h",
+                     W, case_name, {saved, expected_valid},
+                     {snapshot_overflow_count, snapshot_drop_count,
+                      snapshot_overflow_sticky, snapshot_drop_sticky, snapshot_valid});
+            $fatal(1, "output changed outside rising edge");
+        end
+    end
 
     task compare_outputs;
         input [8*64-1:0] phase_name;
@@ -124,6 +142,69 @@ module snapshot_checker #(parameter integer W = 3)(output reg done);
         snapshot_req = 0;
         #1; compare_outputs("pulse removed");
         @(posedge clk); #2;
+
+        // Each individual data bit on each lane, with no relation to sticky.
+        for (b = 0; b < W; b = b + 1) begin
+            walking = {{(W-1){1'b0}}, 1'b1} << b;
+            step("walking one overflow only", 1, 1, walking, 0, 0, 1);
+            step("walking one drop only", 1, 1, 0, walking, 1, 0);
+            step("walking zero overflow only", 1, 1, ~walking, MAX_VALUE, 0, 0);
+            step("walking zero drop only", 1, 1, MAX_VALUE, ~walking, 1, 1);
+        end
+        // Exhaust all live data and sticky combinations for small widths.
+        // This is an input sweep, not an exhaustive sequential-state proof.
+        if (W <= 3) begin
+            for (ov_i = 0; ov_i < (1 << W); ov_i = ov_i + 1)
+                for (dr_i = 0; dr_i < (1 << W); dr_i = dr_i + 1)
+                    for (s = 0; s < 4; s = s + 1) begin
+                        step("small-width exhaustive capture", 1, 1, ov_i, dr_i, s[1], s[0]);
+                        step("small-width exhaustive hold", 1, 0, ~ov_i, ~dr_i, ~s[1], ~s[0]);
+                    end
+        end
+        // Fixed-seed xorshift64 stimulus fills upper bits as well as lower bits.
+        rng = 64'hd1b54a32d192ed03;
+        for (i = 0; i < 256; i = i + 1) begin
+            rng = rng ^ (rng << 13);
+            rng = rng ^ (rng >> 7);
+            rng = rng ^ (rng << 17);
+            random_ov = rng;
+            rng = rng ^ (rng << 13);
+            rng = rng ^ (rng >> 7);
+            rng = rng ^ (rng << 17);
+            step("fixed-seed reset request live mix", (i % 17 != 0),
+                 rng[2], random_ov, rng, rng[4], rng[5]);
+        end
+        step("prepare reset without request", 1, 1, MAX_VALUE, MAX_VALUE, 1, 1);
+        step("reset without request", 0, 0, MSB_VALUE, MAX_VALUE, 1, 1);
+        step("prepare standalone request pulse", 1, 0, 0, 0, 0, 0);
+        @(negedge clk);
+        case_name = "request-only pulse between rising edges";
+        snapshot_req = 1;
+        live_overflow_count = MAX_VALUE;
+        live_drop_count = MAX_VALUE;
+        #1; compare_outputs("request pulse high");
+        snapshot_req = 0;
+        #1; compare_outputs("request pulse low");
+        @(posedge clk); #2;
+        step("prepare data-only pulse", 1, 1, MSB_VALUE, MAX_VALUE, 1, 0);
+        @(negedge clk);
+        case_name = "data-only pulse while request stays high";
+        live_overflow_count = 0; live_drop_count = 0;
+        live_overflow_sticky = 0; live_drop_sticky = 1;
+        #1; compare_outputs("data pulse changed");
+        live_overflow_count = MSB_VALUE; live_drop_count = MAX_VALUE;
+        live_overflow_sticky = 1; live_drop_sticky = 0;
+        #1; compare_outputs("data pulse restored");
+        @(posedge clk); #2;
+        step("prepare reset-only pulse", 1, 0, 0, 0, 0, 0);
+        @(negedge clk);
+        case_name = "reset-only pulse between rising edges";
+        rst_n = 0;
+        #1; compare_outputs("reset pulse asserted");
+        rst_n = 1;
+        #1; compare_outputs("reset pulse released");
+        @(posedge clk); #2;
+
         step("final request", 1, 1, MAX_VALUE, MSB_VALUE, 1, 0);
         step("final hold", 1, 0, 0, 0, 0, 0);
         $display("PASS COUNT_WIDTH=%0d checks=%0d", W, checks);
@@ -143,4 +224,20 @@ module tb_stream_error_snapshot;
         $finish;
     end
     initial begin #100000; $fatal(1, "TIMEOUT: snapshot unit tests"); end
+endmodule
+
+module tb_stream_error_snapshot_all_widths;
+    wire [64:1] done;
+    genvar width_index;
+    generate
+        for (width_index = 1; width_index <= 64; width_index = width_index + 1) begin : widths
+            snapshot_checker #(.W(width_index)) check_width(.done(done[width_index]));
+        end
+    endgenerate
+    initial begin
+        wait (&done);
+        $display("ALL TESTS PASS: every COUNT_WIDTH from 1 through 64");
+        $finish;
+    end
+    initial begin #100000; $fatal(1, "TIMEOUT: all-width sweep"); end
 endmodule

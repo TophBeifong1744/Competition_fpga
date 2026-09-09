@@ -3,12 +3,12 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Wed Sep  9 19:47:01 2026
-# Process ID         : 32112
-# Current directory  : C:/Users/hsc/AppData/Local/Temp/c-rtl-002-5c8c114e7f5044038ebc3f46ae3999dd
+# Start of session at: Wed Sep  9 20:36:34 2026
+# Process ID         : 38676
+# Current directory  : C:/Users/hsc/AppData/Local/Temp/c-rtl-002-1fffe3b49e8d4764b677416bdfdf38d4
 # Command line       : xsim.exe -log tb_stream_error_snapshot-simulate.log -mode tcl -source {xsim.dir/tb_stream_error_snapshot/xsim_script.tcl}
-# Log file           : C:/Users/hsc/AppData/Local/Temp/c-rtl-002-5c8c114e7f5044038ebc3f46ae3999dd/tb_stream_error_snapshot-simulate.log
-# Journal file       : C:/Users/hsc/AppData/Local/Temp/c-rtl-002-5c8c114e7f5044038ebc3f46ae3999dd\xsim.jou
+# Log file           : C:/Users/hsc/AppData/Local/Temp/c-rtl-002-1fffe3b49e8d4764b677416bdfdf38d4/tb_stream_error_snapshot-simulate.log
+# Journal file       : C:/Users/hsc/AppData/Local/Temp/c-rtl-002-1fffe3b49e8d4764b677416bdfdf38d4\xsim.jou
 # Running On         : DESKTOP-3FNSCB5
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26200
@@ -19,17 +19,17 @@
 # Host memory        : 34029 MB
 # Swap memory        : 2147 MB
 # Total Virtual      : 36176 MB
-# Available Virtual  : 16995 MB
+# Available Virtual  : 15100 MB
 #-----------------------------------------------------------
 source xsim.dir/tb_stream_error_snapshot/xsim_script.tcl
 # xsim {tb_stream_error_snapshot} -autoloadwcfg -runall
 Time resolution is 1 ps
 run -all
-PASS COUNT_WIDTH=3 checks=166
-PASS COUNT_WIDTH=1 checks=166
-PASS COUNT_WIDTH=32 checks=166
-PASS COUNT_WIDTH=64 checks=166
+PASS COUNT_WIDTH=1 checks=769
+PASS COUNT_WIDTH=32 checks=953
+PASS COUNT_WIDTH=64 checks=1209
+PASS COUNT_WIDTH=3 checks=1745
 ALL TESTS PASS: COUNT_WIDTH=1,3,default32,64
-$finish called at time : 827 ns : File "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/task-packages/PKG-A-ACQ/outsourcing/C-RTL-002/submission/tb/tb_stream_error_snapshot.v" Line 143
+$finish called at time : 8707 ns : File "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/task-packages/PKG-A-ACQ/outsourcing/C-RTL-002/submission/tb/tb_stream_error_snapshot.v" Line 224
 exit
-INFO: [Common 17-206] Exiting xsim at Wed Sep  9 19:47:03 2026...
+INFO: [Common 17-206] Exiting xsim at Wed Sep  9 20:36:36 2026...
