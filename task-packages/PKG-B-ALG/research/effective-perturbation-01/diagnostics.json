@@ -1,0 +1,48 @@
+{
+  "totals": {
+    "cap150_quorum": {
+      "inside_frames": 24624,
+      "correct": 12496,
+      "outside_frames": 12312,
+      "outside_fresh": 251,
+      "absent_frames": 18792,
+      "absent_fresh": 0,
+      "absent_hold": 1477
+    },
+    "old_loo_known_only": {
+      "inside_frames": 24624,
+      "correct": 11801,
+      "outside_frames": 12312,
+      "outside_fresh": 205,
+      "absent_frames": 18792,
+      "absent_fresh": 0,
+      "absent_hold": 1427
+    },
+    "effective_known_only": {
+      "inside_frames": 24624,
+      "correct": 11801,
+      "outside_frames": 12312,
+      "outside_fresh": 205,
+      "absent_frames": 18792,
+      "absent_fresh": 0,
+      "absent_hold": 1427
+    }
+  },
+  "events": {
+    "cap150_quorum": {
+      "success": 153,
+      "total": 192
+    },
+    "old_loo_known_only": {
+      "success": 148,
+      "total": 192
+    },
+    "effective_known_only": {
+      "success": 148,
+      "total": 192
+    }
+  },
+  "common_latency_pairs": 148,
+  "median_latency_delta": 0.0,
+  "max_latency_delta": 0.0
+}

@@ -1,0 +1,119 @@
+{
+  "selected": "cap150",
+  "development_passed": true,
+  "validation_passed": false,
+  "overview": [
+    {
+      "noise": "tone700",
+      "phat": 0.8449404231643239,
+      "beta075": 0.8243368744755992,
+      "cap150": 0.833067895578445
+    },
+    {
+      "noise": "tone1600",
+      "phat": 0.8196005785543932,
+      "beta075": 0.7095832574222101,
+      "cap150": 0.7737110905258007
+    },
+    {
+      "noise": "tone2800",
+      "phat": 0.7736201227661478,
+      "beta075": 0.446840110187228,
+      "cap150": 0.6395547438647067
+    },
+    {
+      "noise": "band",
+      "phat": 0.11371189038344494,
+      "beta075": 0.23471623026701513,
+      "cap150": 0.23146177807963614
+    },
+    {
+      "noise": "pink",
+      "phat": 0.7966717214544035,
+      "beta075": 0.8107896972753712,
+      "cap150": 0.8115057456905925
+    },
+    {
+      "noise": "narrow_target",
+      "phat": 0.546949913394339,
+      "beta075": 0.5588825558917971,
+      "cap150": 0.5591415467829088
+    }
+  ],
+  "totals": {
+    "phat": {
+      "absent_frames": 30366,
+      "absent_fresh_false_outputs": 0,
+      "absent_hold_display_frames": 3205,
+      "hold_frames": 14858
+    },
+    "beta075": {
+      "absent_frames": 30366,
+      "absent_fresh_false_outputs": 0,
+      "absent_hold_display_frames": 3157,
+      "hold_frames": 18122
+    },
+    "cap150": {
+      "absent_frames": 30366,
+      "absent_fresh_false_outputs": 0,
+      "absent_hold_display_frames": 3247,
+      "hold_frames": 17017
+    }
+  },
+  "latency": [
+    {
+      "noise": "tone700",
+      "events": 54,
+      "old_success": 54,
+      "new_success": 54,
+      "common": 54,
+      "median_delta": 0.0,
+      "max_delta": 10.666666666666742
+    },
+    {
+      "noise": "tone1600",
+      "events": 54,
+      "old_success": 54,
+      "new_success": 54,
+      "common": 54,
+      "median_delta": 0.0,
+      "max_delta": 10.666666666666629
+    },
+    {
+      "noise": "tone2800",
+      "events": 54,
+      "old_success": 52,
+      "new_success": 54,
+      "common": 52,
+      "median_delta": -21.333333333333485,
+      "max_delta": 0.0
+    },
+    {
+      "noise": "band",
+      "events": 54,
+      "old_success": 45,
+      "new_success": 44,
+      "common": 44,
+      "median_delta": 0.0,
+      "max_delta": 0.0
+    },
+    {
+      "noise": "pink",
+      "events": 54,
+      "old_success": 54,
+      "new_success": 54,
+      "common": 54,
+      "median_delta": 0.0,
+      "max_delta": 0.0
+    },
+    {
+      "noise": "narrow_target",
+      "events": 54,
+      "old_success": 37,
+      "new_success": 37,
+      "common": 37,
+      "median_delta": 0.0,
+      "max_delta": 0.0
+    }
+  ]
+}

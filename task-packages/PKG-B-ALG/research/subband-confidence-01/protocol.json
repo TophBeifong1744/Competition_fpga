@@ -1,0 +1,15 @@
+{
+  "purpose":"Frozen diagnostic test of cross-subband agreement and boundary evidence; no fitting or selection",
+  "seeds":[2026091500,2026091501,2026091502],
+  "noises":["tone900","tone2200","band","narrow_target"],
+  "rooms":["dry","early_late"],
+  "directions":[{"name":"front","az":0,"el":10},{"name":"az28","az":28,"el":0},{"name":"az30","az":30,"el":0},{"name":"az32","az":32,"el":0},{"name":"el28","az":0,"el":28},{"name":"el32","az":0,"el":32}],
+  "subbands_hz":[[300,1500],[1500,2700],[2700,4000]],
+  "mask":"Original full-band 2% peak amplitude mask intersected with disjoint subband. Lower inclusive, upper exclusive except last band upper inclusive. Each subband retains original >=12 bins per pair and LS validity thresholds.",
+  "full_candidate":"Frozen cap150 from prior failed narrowband-guard study; diagnostic subject only, not accepted default",
+  "consistency":{"minimum_valid_subbands":2,"minimum_joint_finite_pairs":5,"maximum_direction_spread_deg":5.0,"maximum_median_delay_span_samples":0.5},
+  "boundary":"After consistency, require maximum cone angle across full candidate and every valid subband <=30deg+1e-10. This envelope is not a calibrated confidence interval or probability.",
+  "methods":["cap150_quorum","consistency_quorum","envelope_quorum"],
+  "scope":"144 paired trials,3 new seeds. Fixed screens only veto original candidates; no replacement, widening, retuning or confidence calibration. All rejected/absent/transition frames still update tracker.",
+  "reporting":"Report unsupported/inconsistent/boundary-uncertain separately. Check outside active fresh outputs, inside correct coverage, exactly-30deg boundary, legitimate narrowband availability, HOLD and paired latency. Lower false output with near-zero coverage is not success."
+}

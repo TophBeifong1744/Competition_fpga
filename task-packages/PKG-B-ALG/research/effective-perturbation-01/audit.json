@@ -1,0 +1,362 @@
+{
+  "status": "PASS",
+  "trials": 144,
+  "method_rows": 201744,
+  "diagnostic_frames": 67248,
+  "reconstructed_inputs": 8,
+  "transitions": {
+    "tone1200": {
+      "stable->stable": 8104,
+      "unknown->unknown": 433,
+      "sensitive->sensitive": 532,
+      "stable->unknown": 22,
+      "full_rejected->full_rejected": 143
+    },
+    "tone2500": {
+      "stable->stable": 7055,
+      "full_rejected->full_rejected": 1281,
+      "sensitive->sensitive": 300,
+      "unknown->unknown": 579,
+      "stable->unknown": 19
+    },
+    "band": {
+      "full_rejected->full_rejected": 4919,
+      "stable->stable": 1880,
+      "unknown->unknown": 1812,
+      "sensitive->sensitive": 623
+    },
+    "narrow_target": {
+      "stable->unknown": 5443,
+      "full_rejected->full_rejected": 3791
+    }
+  },
+  "impact_status_counts": {
+    "tone1200": {
+      "effective": 21335,
+      "uncomparable": 5913,
+      "weak_or_excessive": 25
+    },
+    "tone2500": {
+      "effective": 15299,
+      "uncomparable": 8522,
+      "weak_or_excessive": 38
+    },
+    "band": {
+      "effective": 6766,
+      "uncomparable": 6179
+    },
+    "narrow_target": {
+      "uncomparable": 5443,
+      "no_change": 10886
+    }
+  },
+  "category_risk_among_full_incone": {
+    "stable": {
+      "inside": 8720,
+      "outside": 563
+    },
+    "unknown": {
+      "inside": 4346,
+      "outside": 306
+    },
+    "sensitive": {
+      "inside": 630,
+      "outside": 107
+    }
+  },
+  "crossing_risk_among_full_incone": {
+    "stable_no_crossing": {
+      "inside": 7776,
+      "outside": 246
+    },
+    "unknown_no_crossing": {
+      "inside": 4277,
+      "outside": 262
+    },
+    "sensitive_no_crossing": {
+      "inside": 418,
+      "outside": 29
+    },
+    "stable_crosses": {
+      "inside": 944,
+      "outside": 317
+    },
+    "sensitive_crosses": {
+      "inside": 212,
+      "outside": 78
+    },
+    "unknown_crosses": {
+      "inside": 69,
+      "outside": 44
+    }
+  },
+  "category_by_condition": {
+    "tone1200__front__dry": {
+      "stable": 841,
+      "unknown": 23,
+      "sensitive": 1,
+      "full_rejected": 2
+    },
+    "tone1200__front__early_late": {
+      "stable": 527,
+      "sensitive": 76,
+      "unknown": 48,
+      "full_rejected": 21
+    },
+    "tone1200__az28__dry": {
+      "stable": 844,
+      "unknown": 20,
+      "sensitive": 2,
+      "full_rejected": 1
+    },
+    "tone1200__az28__early_late": {
+      "stable": 498,
+      "sensitive": 88,
+      "unknown": 65,
+      "full_rejected": 21
+    },
+    "tone1200__az30__dry": {
+      "stable": 843,
+      "unknown": 21,
+      "sensitive": 2,
+      "full_rejected": 1
+    },
+    "tone1200__az30__early_late": {
+      "stable": 471,
+      "full_rejected": 37,
+      "unknown": 82,
+      "sensitive": 82
+    },
+    "tone1200__az32__dry": {
+      "stable": 843,
+      "unknown": 21,
+      "sensitive": 2,
+      "full_rejected": 1
+    },
+    "tone1200__az32__early_late": {
+      "stable": 491,
+      "sensitive": 90,
+      "full_rejected": 34,
+      "unknown": 57
+    },
+    "tone1200__el28__dry": {
+      "stable": 842,
+      "unknown": 20,
+      "sensitive": 3,
+      "full_rejected": 2
+    },
+    "tone1200__el28__early_late": {
+      "stable": 542,
+      "sensitive": 84,
+      "unknown": 35,
+      "full_rejected": 11
+    },
+    "tone1200__el32__dry": {
+      "stable": 842,
+      "sensitive": 4,
+      "unknown": 20,
+      "full_rejected": 1
+    },
+    "tone1200__el32__early_late": {
+      "stable": 520,
+      "sensitive": 98,
+      "unknown": 43,
+      "full_rejected": 11
+    },
+    "tone2500__front__dry": {
+      "stable": 694,
+      "full_rejected": 112,
+      "sensitive": 9,
+      "unknown": 52
+    },
+    "tone2500__front__early_late": {
+      "stable": 473,
+      "full_rejected": 126,
+      "unknown": 57,
+      "sensitive": 16
+    },
+    "tone2500__az28__dry": {
+      "stable": 710,
+      "sensitive": 10,
+      "full_rejected": 100,
+      "unknown": 47
+    },
+    "tone2500__az28__early_late": {
+      "stable": 469,
+      "full_rejected": 130,
+      "unknown": 59,
+      "sensitive": 14
+    },
+    "tone2500__az30__dry": {
+      "stable": 718,
+      "sensitive": 8,
+      "full_rejected": 97,
+      "unknown": 44
+    },
+    "tone2500__az30__early_late": {
+      "stable": 438,
+      "full_rejected": 145,
+      "sensitive": 18,
+      "unknown": 71
+    },
+    "tone2500__az32__dry": {
+      "stable": 717,
+      "full_rejected": 99,
+      "unknown": 44,
+      "sensitive": 7
+    },
+    "tone2500__az32__early_late": {
+      "full_rejected": 137,
+      "stable": 452,
+      "unknown": 58,
+      "sensitive": 25
+    },
+    "tone2500__el28__dry": {
+      "stable": 700,
+      "unknown": 43,
+      "full_rejected": 86,
+      "sensitive": 38
+    },
+    "tone2500__el28__early_late": {
+      "stable": 488,
+      "unknown": 45,
+      "full_rejected": 94,
+      "sensitive": 45
+    },
+    "tone2500__el32__dry": {
+      "stable": 693,
+      "sensitive": 56,
+      "full_rejected": 78,
+      "unknown": 40
+    },
+    "tone2500__el32__early_late": {
+      "stable": 503,
+      "sensitive": 54,
+      "unknown": 38,
+      "full_rejected": 77
+    },
+    "band__front__dry": {
+      "full_rejected": 400,
+      "stable": 226,
+      "unknown": 164,
+      "sensitive": 77
+    },
+    "band__front__early_late": {
+      "full_rejected": 423,
+      "stable": 80,
+      "unknown": 129,
+      "sensitive": 40
+    },
+    "band__az28__dry": {
+      "full_rejected": 388,
+      "sensitive": 68,
+      "unknown": 181,
+      "stable": 230
+    },
+    "band__az28__early_late": {
+      "stable": 72,
+      "unknown": 128,
+      "full_rejected": 445,
+      "sensitive": 27
+    },
+    "band__az30__dry": {
+      "full_rejected": 387,
+      "sensitive": 60,
+      "unknown": 188,
+      "stable": 232
+    },
+    "band__az30__early_late": {
+      "full_rejected": 474,
+      "stable": 63,
+      "unknown": 105,
+      "sensitive": 30
+    },
+    "band__az32__dry": {
+      "full_rejected": 385,
+      "sensitive": 61,
+      "unknown": 182,
+      "stable": 239
+    },
+    "band__az32__early_late": {
+      "full_rejected": 449,
+      "stable": 70,
+      "sensitive": 27,
+      "unknown": 126
+    },
+    "band__el28__dry": {
+      "unknown": 170,
+      "stable": 228,
+      "full_rejected": 390,
+      "sensitive": 79
+    },
+    "band__el28__early_late": {
+      "full_rejected": 404,
+      "unknown": 130,
+      "stable": 95,
+      "sensitive": 43
+    },
+    "band__el32__dry": {
+      "unknown": 176,
+      "stable": 235,
+      "full_rejected": 380,
+      "sensitive": 76
+    },
+    "band__el32__early_late": {
+      "full_rejected": 394,
+      "stable": 110,
+      "unknown": 133,
+      "sensitive": 35
+    },
+    "narrow_target__front__dry": {
+      "unknown": 825,
+      "full_rejected": 42
+    },
+    "narrow_target__front__early_late": {
+      "unknown": 95,
+      "full_rejected": 577
+    },
+    "narrow_target__az28__dry": {
+      "unknown": 825,
+      "full_rejected": 42
+    },
+    "narrow_target__az28__early_late": {
+      "full_rejected": 602,
+      "unknown": 70
+    },
+    "narrow_target__az30__dry": {
+      "unknown": 825,
+      "full_rejected": 42
+    },
+    "narrow_target__az30__early_late": {
+      "full_rejected": 593,
+      "unknown": 79
+    },
+    "narrow_target__az32__dry": {
+      "unknown": 825,
+      "full_rejected": 42
+    },
+    "narrow_target__az32__early_late": {
+      "full_rejected": 599,
+      "unknown": 73
+    },
+    "narrow_target__el28__dry": {
+      "unknown": 825,
+      "full_rejected": 42
+    },
+    "narrow_target__el28__early_late": {
+      "full_rejected": 600,
+      "unknown": 72
+    },
+    "narrow_target__el32__dry": {
+      "unknown": 825,
+      "full_rejected": 42
+    },
+    "narrow_target__el32__early_late": {
+      "unknown": 104,
+      "full_rejected": 568
+    }
+  },
+  "auditor_sha256": "804ed8964f5021e1fd7a1098bf75541ef09502a700aa59e7b08839eae34c6ea2",
+  "metric_helper_sha256": "5a5ee8ec1a104f8b0bd1506b9887d2975fe061f9cd8ca4f2439108a7bb5df5fc",
+  "checks": "All hashes, independent old/new deletion changes, impact eligibility and category recomputation, candidate veto semantics, received labels, angles, metrics, latency.8 complete input reconstructions and40 frame spectrum-removal checks. Not confidence calibration or complete algorithm rerun."
+}

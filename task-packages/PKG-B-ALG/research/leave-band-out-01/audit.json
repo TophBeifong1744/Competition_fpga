@@ -1,0 +1,313 @@
+{
+  "status": "PASS",
+  "trials": 144,
+  "method_rows": 268992,
+  "diagnostic_frames": 67248,
+  "reconstructed_inputs": 8,
+  "category_risk_among_full_incone": {
+    "stable": {
+      "inside": 10833,
+      "outside": 540
+    },
+    "unknown": {
+      "inside": 1067,
+      "outside": 203
+    },
+    "sensitive": {
+      "inside": 1089,
+      "outside": 107
+    }
+  },
+  "crossing_risk_among_full_incone": {
+    "stable_no_crossing": {
+      "inside": 10009,
+      "outside": 337
+    },
+    "unknown_no_crossing": {
+      "inside": 1009,
+      "outside": 164
+    },
+    "sensitive_crosses": {
+      "inside": 271,
+      "outside": 73
+    },
+    "sensitive_no_crossing": {
+      "inside": 818,
+      "outside": 34
+    },
+    "stable_crosses": {
+      "inside": 824,
+      "outside": 203
+    },
+    "unknown_crosses": {
+      "inside": 58,
+      "outside": 39
+    }
+  },
+  "category_by_condition": {
+    "tone1200__front__dry": {
+      "stable": 807,
+      "unknown": 8,
+      "sensitive": 52
+    },
+    "tone1200__front__early_late": {
+      "stable": 506,
+      "sensitive": 135,
+      "unknown": 19,
+      "full_rejected": 12
+    },
+    "tone1200__az28__dry": {
+      "stable": 820,
+      "full_rejected": 1,
+      "unknown": 7,
+      "sensitive": 39
+    },
+    "tone1200__az28__early_late": {
+      "stable": 496,
+      "sensitive": 114,
+      "unknown": 42,
+      "full_rejected": 20
+    },
+    "tone1200__az30__dry": {
+      "stable": 821,
+      "full_rejected": 1,
+      "unknown": 7,
+      "sensitive": 38
+    },
+    "tone1200__az30__early_late": {
+      "stable": 467,
+      "sensitive": 119,
+      "full_rejected": 35,
+      "unknown": 51
+    },
+    "tone1200__az32__dry": {
+      "stable": 823,
+      "full_rejected": 1,
+      "unknown": 7,
+      "sensitive": 36
+    },
+    "tone1200__az32__early_late": {
+      "stable": 475,
+      "sensitive": 140,
+      "unknown": 41,
+      "full_rejected": 16
+    },
+    "tone1200__el28__dry": {
+      "stable": 837,
+      "unknown": 5,
+      "sensitive": 25
+    },
+    "tone1200__el28__early_late": {
+      "stable": 525,
+      "sensitive": 116,
+      "unknown": 19,
+      "full_rejected": 12
+    },
+    "tone1200__el32__dry": {
+      "stable": 841,
+      "unknown": 5,
+      "sensitive": 21
+    },
+    "tone1200__el32__early_late": {
+      "stable": 527,
+      "sensitive": 114,
+      "unknown": 27,
+      "full_rejected": 4
+    },
+    "tone2500__front__dry": {
+      "stable": 646,
+      "unknown": 48,
+      "full_rejected": 65,
+      "sensitive": 108
+    },
+    "tone2500__front__early_late": {
+      "stable": 448,
+      "full_rejected": 82,
+      "sensitive": 85,
+      "unknown": 57
+    },
+    "tone2500__az28__dry": {
+      "stable": 692,
+      "unknown": 35,
+      "full_rejected": 39,
+      "sensitive": 101
+    },
+    "tone2500__az28__early_late": {
+      "stable": 425,
+      "sensitive": 73,
+      "full_rejected": 114,
+      "unknown": 60
+    },
+    "tone2500__az30__dry": {
+      "stable": 691,
+      "unknown": 34,
+      "full_rejected": 43,
+      "sensitive": 99
+    },
+    "tone2500__az30__early_late": {
+      "stable": 420,
+      "unknown": 63,
+      "full_rejected": 114,
+      "sensitive": 75
+    },
+    "tone2500__az32__dry": {
+      "stable": 686,
+      "unknown": 33,
+      "full_rejected": 52,
+      "sensitive": 96
+    },
+    "tone2500__az32__early_late": {
+      "stable": 425,
+      "unknown": 63,
+      "full_rejected": 103,
+      "sensitive": 81
+    },
+    "tone2500__el28__dry": {
+      "stable": 640,
+      "sensitive": 131,
+      "unknown": 28,
+      "full_rejected": 68
+    },
+    "tone2500__el28__early_late": {
+      "stable": 480,
+      "unknown": 51,
+      "full_rejected": 74,
+      "sensitive": 67
+    },
+    "tone2500__el32__dry": {
+      "stable": 657,
+      "sensitive": 115,
+      "full_rejected": 62,
+      "unknown": 33
+    },
+    "tone2500__el32__early_late": {
+      "stable": 495,
+      "full_rejected": 55,
+      "sensitive": 75,
+      "unknown": 47
+    },
+    "band__front__dry": {
+      "full_rejected": 393,
+      "stable": 246,
+      "sensitive": 63,
+      "unknown": 165
+    },
+    "band__front__early_late": {
+      "unknown": 107,
+      "full_rejected": 425,
+      "sensitive": 37,
+      "stable": 103
+    },
+    "band__az28__dry": {
+      "full_rejected": 384,
+      "stable": 234,
+      "unknown": 178,
+      "sensitive": 71
+    },
+    "band__az28__early_late": {
+      "sensitive": 18,
+      "unknown": 134,
+      "full_rejected": 452,
+      "stable": 68
+    },
+    "band__az30__dry": {
+      "full_rejected": 386,
+      "stable": 244,
+      "unknown": 170,
+      "sensitive": 67
+    },
+    "band__az30__early_late": {
+      "stable": 76,
+      "unknown": 110,
+      "full_rejected": 462,
+      "sensitive": 24
+    },
+    "band__az32__dry": {
+      "full_rejected": 394,
+      "stable": 241,
+      "unknown": 167,
+      "sensitive": 65
+    },
+    "band__az32__early_late": {
+      "unknown": 126,
+      "full_rejected": 448,
+      "stable": 67,
+      "sensitive": 31
+    },
+    "band__el28__dry": {
+      "full_rejected": 377,
+      "sensitive": 65,
+      "stable": 254,
+      "unknown": 171
+    },
+    "band__el28__early_late": {
+      "unknown": 110,
+      "full_rejected": 421,
+      "stable": 112,
+      "sensitive": 29
+    },
+    "band__el32__dry": {
+      "full_rejected": 386,
+      "unknown": 162,
+      "stable": 262,
+      "sensitive": 57
+    },
+    "band__el32__early_late": {
+      "full_rejected": 411,
+      "unknown": 119,
+      "stable": 107,
+      "sensitive": 35
+    },
+    "narrow_target__front__dry": {
+      "stable": 824,
+      "full_rejected": 43
+    },
+    "narrow_target__front__early_late": {
+      "full_rejected": 542,
+      "stable": 130
+    },
+    "narrow_target__az28__dry": {
+      "stable": 822,
+      "full_rejected": 45
+    },
+    "narrow_target__az28__early_late": {
+      "full_rejected": 581,
+      "stable": 91
+    },
+    "narrow_target__az30__dry": {
+      "stable": 822,
+      "full_rejected": 45
+    },
+    "narrow_target__az30__early_late": {
+      "full_rejected": 580,
+      "stable": 92
+    },
+    "narrow_target__az32__dry": {
+      "stable": 822,
+      "full_rejected": 45
+    },
+    "narrow_target__az32__early_late": {
+      "full_rejected": 581,
+      "stable": 91
+    },
+    "narrow_target__el28__dry": {
+      "stable": 826,
+      "full_rejected": 41
+    },
+    "narrow_target__el28__early_late": {
+      "full_rejected": 543,
+      "stable": 129
+    },
+    "narrow_target__el32__dry": {
+      "stable": 826,
+      "full_rejected": 41
+    },
+    "narrow_target__el32__early_late": {
+      "full_rejected": 525,
+      "stable": 147
+    }
+  },
+  "auditor_sha256": "7613795d3c02c87a41a289b9e1b5a60c82236d53cc1ce8798543be5e6634fc91",
+  "metric_helper_sha256": "5a5ee8ec1a104f8b0bd1506b9887d2975fe061f9cd8ca4f2439108a7bb5df5fc",
+  "checks": "All hashes, independent deletion angle/delay changes and category recomputation; legacy split decision linked to recorded trace, candidate veto semantics, received labels, angles, metrics, latency.8 complete input reconstructions. Not confidence calibration or complete algorithm rerun."
+}
