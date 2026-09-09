@@ -1,0 +1,69 @@
+{
+  "schema_version": "ss-six-synthetic-offline-0.1",
+  "source_kind": "synthetic-acoustic",
+  "evidence_level": "synthetic",
+  "channel_order": [
+    "mic0",
+    "mic1",
+    "mic2",
+    "mic3",
+    "mic4",
+    "mic5"
+  ],
+  "sample_rate_hz": 48000,
+  "coordinates_m": [
+    [
+      -0.02,
+      -0.02,
+      0.0
+    ],
+    [
+      0.02,
+      -0.02,
+      0.0
+    ],
+    [
+      0.02,
+      0.02,
+      0.0
+    ],
+    [
+      -0.02,
+      0.02,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.028284271247461905
+    ],
+    [
+      0.0,
+      0.0,
+      -0.028284271247461905
+    ]
+  ],
+  "coordinate_system": "x-forward_y-left_z-up",
+  "direction_convention": "array-to-source",
+  "angle_unit": "deg",
+  "source_id": "tracking-teaching:outside:seed=20260908",
+  "source_sha256": "ffb84602192a52fff8eafdff547a690bea25ca740a4298d6b31d4e874b6a66c0",
+  "first_sample_id": 1536,
+  "crop": {
+    "start": 1536,
+    "stop": 47616,
+    "reason": "Interior continuous render; no old-trial concatenation"
+  },
+  "truth_unit_vector": [
+    6.123233995736766e-17,
+    1.0,
+    0.0
+  ],
+  "generator": {
+    "scenario": "outside",
+    "seed": 20260908,
+    "length": 49152,
+    "source_mute_rows": null,
+    "note": "Teaching synthetic example; not a replacement for SIM6-002 performance evidence"
+  }
+}

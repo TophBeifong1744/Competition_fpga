@@ -1,0 +1,5 @@
+{
+  "status": "FAIL_INTEGRATION_CLOCK_MAPPING",
+  "detail": "Initial 8 unit tests passed. First stable integration stopped at frame-ready assertion: original tracker timestamps are relative to segment origin, while input sample IDs begin at 1536. No complete run or audition claim for this attempt.",
+  "fix": "Explicit sample_origin conversion in audio adapter; original tracker clock unchanged. Added regression for nonzero origin. Retry in a new output directory."
+}

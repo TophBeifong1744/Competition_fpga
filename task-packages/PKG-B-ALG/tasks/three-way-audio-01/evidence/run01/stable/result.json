@@ -1,0 +1,58 @@
+{
+  "case": "stable",
+  "source": {
+    "kind": "unchanged previous teaching input",
+    "path": "tasks/tracked-audio-01/evidence/run03/stable/input",
+    "files": {
+      "metadata.json": "61b643335e47bc52ebc47e106f5550dd39ce4fad860324e3e7434a521f8d122c",
+      "samples.npy": "fbf9aae8024015cbaea032ec724738f914a4c2844f3138120e8c01a51ab2f0ca"
+    },
+    "truth_note": "fixed generator geometry; drop-return truth only applicable when source active; no truth inferred from audio"
+  },
+  "manual_direction": [
+    1.0,
+    0,
+    0
+  ],
+  "input_float64_sha256": "38c4cb4018b74d40bc463afb16fe0b8db3e4cfdc6a943535ebe1e02fbc7ee286",
+  "samples": 46080,
+  "sample_origin": 1536,
+  "evaluation_samples": 45568,
+  "common_delay_samples": 4,
+  "common_wav_gain": 0.18360200293612502,
+  "metrics": {
+    "single": {
+      "rms": 0.9891310379374606,
+      "peak": 4.291556897078613,
+      "rms_difference_from_manual": 0.8298553453395195,
+      "normalized_error_to_manual": 0.6927009602766837
+    },
+    "manual": {
+      "rms": 0.9970788426402338,
+      "peak": 4.357250940657327,
+      "rms_difference_from_manual": 0.0,
+      "normalized_error_to_manual": 0.0
+    },
+    "auto": {
+      "rms": 0.9959363037130773,
+      "peak": 4.357250940657327,
+      "rms_difference_from_manual": 0.21172854104494068,
+      "normalized_error_to_manual": 0.0450920321586939
+    }
+  },
+  "tracker_states": {
+    "ACQUIRE": 4,
+    "LOCKED": 85
+  },
+  "audio_mode_samples": {
+    "FALLBACK": 3072,
+    "BEAM": 43008
+  },
+  "float_output_sha256": {
+    "single": "4f1630de8931140b1153b1bb583c68e235d71d9e1333e27992de81168e8f1e77",
+    "manual": "d639bcfb4af71f8c49490a4ed4ae3441fa4cd284b01b10c23baffebebe05ebff",
+    "auto": "a7219d7cb17d6fe6c92500b9a46b49490ed3b1784378c752dfedb5c714376863"
+  },
+  "limitations": "common 4-point processing delay, no cross-correlation alignment or separate normalization; manual reference is not an upper bound; error-to-manual is not speech quality",
+  "truth_policy": "manual only; automatic unchanged; component replay uses mixture-derived control including fallback/fades"
+}

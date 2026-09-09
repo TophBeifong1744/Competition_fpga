@@ -1,0 +1,141 @@
+{
+  "sample_rate": 48000,
+  "frame": 1024,
+  "hop": 512,
+  "channels": 6,
+  "pairs": 15,
+  "frames_per_second": 93.75,
+  "frame_ms": 21.333333333333332,
+  "hop_ms": 10.666666666666666,
+  "fft_bins": 513,
+  "band_bins": 79,
+  "band_bin_indices": [
+    7,
+    85
+  ],
+  "worst_per_frame": {
+    "rfft_real_1024": 6,
+    "irfft_real_1024": 15,
+    "hann_real_mult": 6144,
+    "cross_complex_mult": 7695,
+    "cross_equivalent_real_mult": 30780,
+    "cross_equivalent_real_add": 15390,
+    "complex_magnitudes": 7695,
+    "complex_by_real_divisions": 7695,
+    "physical_lag_peak_candidates": 207
+  },
+  "fft_equivalent": {
+    "transforms_per_second": 1968.75,
+    "transform_input_points_per_second": 2016000.0,
+    "radix2_full_complex_butterflies_per_frame": 107520,
+    "warning": "Full complex radix-2 surrogate only; NumPy real FFT and selected FPGA IP have different arithmetic and cycle counts."
+  },
+  "pair_delay_bounds_samples": [
+    5.597667638483965,
+    7.916297492000999,
+    5.597667638483965,
+    5.597667638483965,
+    5.597667638483965,
+    5.597667638483965,
+    7.916297492000999,
+    5.597667638483965,
+    5.597667638483965,
+    5.597667638483965,
+    5.597667638483965,
+    5.597667638483965,
+    5.597667638483965,
+    5.597667638483965,
+    7.916297492001
+  ],
+  "pair_lag_counts": [
+    13,
+    17,
+    13,
+    13,
+    13,
+    13,
+    17,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    17
+  ],
+  "transport_bytes_per_second": {
+    "24": {
+      "six_channel_input": 864000,
+      "mono_output": 144000,
+      "analysis_frame_reads": 1728000.0
+    },
+    "32": {
+      "six_channel_input": 1152000,
+      "mono_output": 192000,
+      "analysis_frame_reads": 2304000.0
+    },
+    "64": {
+      "six_channel_input": 2304000,
+      "mono_output": 384000,
+      "analysis_frame_reads": 4608000.0
+    }
+  },
+  "buffer_inventory_bytes": {
+    "float64_current": {
+      "input_ring": 49152,
+      "new_hop_pingpong": 49152,
+      "six_fft_spectra": 49248,
+      "pair_cross_and_normalized": 16416,
+      "pair_magnitude": 4104,
+      "pair_mask": 513,
+      "pair_correlation": 8192,
+      "pair_delays": 120,
+      "hann": 8192,
+      "audio_history": 384,
+      "audio_four_weight_arrays": 1728,
+      "output_hop_pingpong": 8192
+    },
+    "illustrative_32bit_components": {
+      "input_ring": 24576,
+      "new_hop_pingpong": 24576,
+      "six_fft_spectra": 24624,
+      "pair_cross_and_normalized": 8208,
+      "pair_magnitude": 2052,
+      "pair_mask": 513,
+      "pair_correlation": 4096,
+      "pair_delays": 60,
+      "hann": 4096,
+      "audio_history": 192,
+      "audio_four_weight_arrays": 864,
+      "output_hop_pingpong": 4096
+    }
+  },
+  "inventory_totals_bytes": {
+    "float64_current": 195393,
+    "illustrative_32bit_components": 97953
+  },
+  "memory_warning": "Explicit engineering inventory, not measured Python RSS or synthesized BRAM. Pingpong and ring separate allocations assumed. Excludes FFT IP internal RAM, DMA alignment, caches, metadata, NumPy temporaries and traces.",
+  "audio": {
+    "history_samples": 8,
+    "common_delay_samples": 4,
+    "common_delay_ms": 0.08333333333333333,
+    "fade_samples": 480,
+    "fade_ms": 10,
+    "fixed_das_nonzero_taps_max": 12,
+    "ramp_from_taps_upper_bound": 54,
+    "goal_taps_upper_bound": 12,
+    "current_audio_filter_mac_upper_bound_per_output": 66,
+    "blend_real_mult_per_output": 2,
+    "blend_real_add_per_output": 1,
+    "filter_mac_upper_bound_per_second": 3168000,
+    "per_block_weight_tests": 108,
+    "warning": "Current Python computes both filters even after alpha reaches 1. Interrupted fades may densify old weights. Count excludes alpha division, per-block weight updates and direction-to-delay geometry."
+  },
+  "latency": {
+    "earliest_five_frame_capture_ms": 64.0,
+    "hold_ms": 200,
+    "fade_ms": 10,
+    "note": "64 ms is best-case capture from segment start with five consecutive accepted frames; not a worst-case bound. Fallback audio need not wait for lock. Current runner first waits for 1024 points, then hops512. Compute/DMA/PDM delay not included."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "case": "directional-interference",
+  "source": {
+    "kind": "new synthetic diagnostic, not heldout performance",
+    "seed": 2026092001,
+    "source_length": 147456,
+    "crop": [
+      1536,
+      145920
+    ],
+    "target": [
+      1,
+      0,
+      0
+    ],
+    "interferer": [
+      0,
+      1,
+      0
+    ],
+    "interferer_scale": 0.5,
+    "propagation": "original spherical periodic renderer, interior crop, no room reverberation"
+  },
+  "manual_direction": [
+    1.0,
+    0,
+    0
+  ],
+  "input_float64_sha256": "2809ca7ab69f2d439c7b1306a1d33c5d75ddd021ae6e9437a5f8472130687f5e",
+  "samples": 144384,
+  "sample_origin": 1536,
+  "evaluation_samples": 143872,
+  "common_delay_samples": 4,
+  "common_wav_gain": 0.1692058883234392,
+  "metrics": {
+    "single": {
+      "rms": 1.1019913402605397,
+      "peak": 4.727967849858688,
+      "rms_difference_from_manual": 0.8955823259039869,
+      "normalized_error_to_manual": 0.7233335915593937,
+      "target_to_interferer_db": 6.022954479804326,
+      "improvement_vs_single_db": 0.0
+    },
+    "manual": {
+      "rms": 1.05301897532885,
+      "peak": 4.684647859937774,
+      "rms_difference_from_manual": 0.0,
+      "normalized_error_to_manual": 0.0,
+      "target_to_interferer_db": 9.095550471672958,
+      "improvement_vs_single_db": 3.0725959918686314
+    },
+    "auto": {
+      "rms": 1.0570916934098766,
+      "peak": 4.673463557533484,
+      "rms_difference_from_manual": 0.2206494196119051,
+      "normalized_error_to_manual": 0.04390694136519624,
+      "target_to_interferer_db": 8.700652758366825,
+      "improvement_vs_single_db": 2.6776982785624988
+    }
+  },
+  "tracker_states": {
+    "ACQUIRE": 13,
+    "SEARCH": 3,
+    "LOCKED": 209,
+    "HOLD": 56
+  },
+  "audio_mode_samples": {
+    "FALLBACK": 9216,
+    "BEAM": 106496,
+    "HOLD": 28672
+  },
+  "float_output_sha256": {
+    "single": "436b7eab36913b2e8013e65b0f7e95932be677d33b2a823e9c58ca10586a1db9",
+    "manual": "8e1ec9881d935161cf2ba16c7885a8d5f6e758a9c45080297bd7045efd4f24ae",
+    "auto": "22e76f3aac041e2b21af9d81f40cf83234999561b3fe6e836fbc2f0472fc44b8"
+  },
+  "limitations": "common 4-point processing delay, no cross-correlation alignment or separate normalization; manual reference is not an upper bound; error-to-manual is not speech quality",
+  "truth_policy": "manual only; automatic unchanged; component replay uses mixture-derived control including fallback/fades"
+}

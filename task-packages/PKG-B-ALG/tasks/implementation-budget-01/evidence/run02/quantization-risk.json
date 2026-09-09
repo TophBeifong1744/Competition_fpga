@@ -1,0 +1,48 @@
+{
+  "delay_only": [
+    {
+      "delay_fraction_bits": 8,
+      "frames": 548,
+      "candidate_valid_flips": 0,
+      "max_delay_error_samples": 0.0019528884067563368,
+      "comparable_valid_frames": 464,
+      "max_direction_change_deg": 0.015382728496688584,
+      "p95_direction_change_deg": 0.009014462369217668
+    },
+    {
+      "delay_fraction_bits": 12,
+      "frames": 548,
+      "candidate_valid_flips": 0,
+      "max_delay_error_samples": 0.00012205817352128889,
+      "comparable_valid_frames": 464,
+      "max_direction_change_deg": 0.0011233889844216546,
+      "p95_direction_change_deg": 0.0005618530551923224
+    },
+    {
+      "delay_fraction_bits": 16,
+      "frames": 548,
+      "candidate_valid_flips": 0,
+      "max_delay_error_samples": 7.627955062261549e-06,
+      "comparable_valid_frames": 464,
+      "max_direction_change_deg": 6.023047807113099e-05,
+      "p95_direction_change_deg": 3.6249846505170144e-05
+    }
+  ],
+  "coefficient_only": [
+    {
+      "coefficient_fraction_bits": 15,
+      "weight_sets": 191,
+      "max_dc_sum_error": 0.0001220703125,
+      "max_output_error_bound_for_abs_input_le1": 0.00021173322320352378,
+      "universal_54_tap_rounding_bound": 0.000823974609375
+    },
+    {
+      "coefficient_fraction_bits": 23,
+      "weight_sets": 191,
+      "max_dc_sum_error": 4.76837158203125e-07,
+      "max_output_error_bound_for_abs_input_le1": 8.632744246776791e-07,
+      "universal_54_tap_rounding_bound": 3.2186508178710938e-06
+    }
+  ],
+  "scope": "Offline sensitivity on existing diagnostic frames and geometry samples only. No FFT/PHAT quantization, tracker replay or end-to-end fixed-point acceptance. Never modifies defaults."
+}

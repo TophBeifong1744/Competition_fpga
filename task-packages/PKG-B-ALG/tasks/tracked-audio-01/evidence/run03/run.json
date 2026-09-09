@@ -1,0 +1,118 @@
+{
+  "status": "PASS_SYNTHETIC_TRACKED_AUDIO",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "tests": 10,
+  "cases": [
+    {
+      "case": "stable",
+      "samples": 46080,
+      "invalid_startup_samples": 8,
+      "tracker_states": {
+        "ACQUIRE": 4,
+        "LOCKED": 85
+      },
+      "audio_mode_samples": {
+        "FALLBACK": 3072,
+        "BEAM": 43008
+      },
+      "first_fresh_ready_ms": 64.0,
+      "common_wav_gain": 0.18360200293612502,
+      "output_sha256": "a7219d7cb17d6fe6c92500b9a46b49490ed3b1784378c752dfedb5c714376863",
+      "input_hash": "38c4cb4018b74d40bc463afb16fe0b8db3e4cfdc6a943535ebe1e02fbc7ee286",
+      "original_tracker_identical": true,
+      "scope": "synthetic teaching input, no SNR claim; drop-return input itself contains silence"
+    },
+    {
+      "case": "drop-return",
+      "samples": 46080,
+      "invalid_startup_samples": 8,
+      "tracker_states": {
+        "ACQUIRE": 8,
+        "LOCKED": 56,
+        "HOLD": 18,
+        "SEARCH": 7
+      },
+      "audio_mode_samples": {
+        "FALLBACK": 8831,
+        "BEAM": 28160,
+        "HOLD": 9089
+      },
+      "first_fresh_ready_ms": 64.0,
+      "common_wav_gain": 0.19187122440688453,
+      "output_sha256": "ad20c975d2b1c71df9d64ade0e0e5cd276c182a1d151a1f9b76fb50de2294929",
+      "input_hash": "cd6f8de7349876350ca5ce3dd6a5bf2057ac767e11c78731f47afbcedac7ed95",
+      "original_tracker_identical": true,
+      "scope": "synthetic teaching input, no SNR claim; drop-return input itself contains silence"
+    },
+    {
+      "case": "outside",
+      "samples": 46080,
+      "invalid_startup_samples": 8,
+      "tracker_states": {
+        "SEARCH": 89
+      },
+      "audio_mode_samples": {
+        "FALLBACK": 46080
+      },
+      "first_fresh_ready_ms": null,
+      "common_wav_gain": 0.1864125349344857,
+      "output_sha256": "4f1630de8931140b1153b1bb583c68e235d71d9e1333e27992de81168e8f1e77",
+      "input_hash": "6cf952c539fdbca55614ba2e5af81969c32efb4f48c1e930e0d56e384948e09d",
+      "original_tracker_identical": true,
+      "scope": "synthetic teaching input, no SNR claim; drop-return input itself contains silence"
+    }
+  ],
+  "policy": "SEARCH/ACQUIRE: delayed mic0; fresh LOCKED: beam; HOLD: display_direction until original expiry; then fade to mic0",
+  "fade_samples": 480,
+  "fade_ms": 10,
+  "unchanged_fixed_task": {
+    "tasks/fixed-das-01/files.json": "f0753087a9aa94108bdcfbb60bac5f455ed9367f7cd554fdb4fe7fc0fe7b084f",
+    "tasks/fixed-das-01/fixed_das.py": "d87056befbde3630e8f9f42ae5dc5440ca0ab27e477bc566f418fa5618cadab7",
+    "tasks/fixed-das-01/README.md": "587760a14d0ae487fe86d9335c7e9c0149877b546f3336b3e3bcb3d02c31dc30",
+    "tasks/fixed-das-01/run_task.py": "0de7bebb66d5f2c5e4ca03c8657d74cb18edfe09d85fceb73d374565c39facf2",
+    "tasks/fixed-das-01/test_fixed_das.py": "8b8b78200c7cbe89fc4e0556bdb5142d187104103325fe45deeee81f862cfbac",
+    "tasks/fixed-das-01/evidence/run01/fixed-direction-das.wav": "6aa292a92e6e332828c41719961ab6c4d66af03c11a4905c9de10a0cb9958619",
+    "tasks/fixed-das-01/evidence/run01/metrics.json": "2f2e83d5e01ddd3fb3d900f58cd77d2ca1d38cb4001cd19a63267b2b16efd966",
+    "tasks/fixed-das-01/evidence/run01/run.json": "cdce49b918476bb467d154be32ac5b57866c122b713b3b179d5a6e467ddf7bad",
+    "tasks/fixed-das-01/evidence/run01/single-reference-delayed.wav": "aa788831b94f71f79d4ff9cd8e4bb54378748f5dc1c1415d2619a7587a0f923c",
+    "tasks/fixed-das-01/evidence/run01/six-channel-input.wav": "b2656a8978eb62be13f868bb41c60f4b406c5037992a131d31d4d9bc30b8239b",
+    "tasks/fixed-das-01/evidence/run01/test-result.json": "b644d557e189d6512ccf7fa3238a38fec804d99e3f182ed28cbec3610cdeccdf",
+    "tasks/fixed-das-01/evidence/run01/tests.txt": "7bcdbb7681fef48c96d913fdc2f53746b48d8247ab53aac8cf993df8018c07ab"
+  },
+  "unchanged_defaults": {
+    "six_mic_baseline_core.py": "23184058f08fa54af4c61b9681f2fbe40341430f0ba48f8574676f27ce4964b0",
+    "six_mic_localize.py": "f78439c83138bea387664050ba68c05f8299baaa532f9b63585254c2b616992c",
+    "six_mic_track.py": "ffb84602192a52fff8eafdff547a690bea25ca740a4298d6b31d4e874b6a66c0",
+    "sector_tracker.py": "2297aa7f94058e3e4faf3da792c6f1beef6c68fa72121100ec672d60ade5ec50"
+  },
+  "source_hashes": {
+    "run_task.py": "840733340603c3727a6022e7ccfc1938781467a9b21236bf326cee530812f334",
+    "test_tracked_audio.py": "5c5eb6348f45a3bc5dbf4ec1049497ea1ba1ed0af5b1bc032823569e030b1a78",
+    "tracked_audio.py": "fd5dd241f80b125a7c85675c8815604a562095715448e826ae04e01b4b967e3c"
+  },
+  "artifacts": {
+    "tests.txt": "ccbe108c88b4cda73b60c7d487e1517ddbdb3866ff42712fe36a345581b26702",
+    "drop-return/audio-events.json": "a351df0a3a7b136a9b1706afe3c43c46277f0df63f0eba751e3beb54b86f6498",
+    "drop-return/auto-tracked.wav": "49bcd76ab44bd4cf3e63394031eb86a54a7273bd8fcbd4a8b57121c65d42b905",
+    "drop-return/result.json": "501771a7275d78874038e18adacf118ab3af50c3b6b553c89e980812c477dc0e",
+    "drop-return/single-reference.wav": "1eb96b1465fd620c99a5c6bfbc9c19df84d908f1c50ee52e9b1daf1d707b91d2",
+    "drop-return/tracking.json": "fed92fe94cfac0fa4c652abf661da1b09ad633103847100803f7d7df5ba87afd",
+    "outside/audio-events.json": "a7b56c04d08eb3c234b15182a222654e586c4afd7fde9f9fb8786bfae14cbd36",
+    "outside/auto-tracked.wav": "6c3e9c7eb390fd3f383c887487db21eb4a93f8a2d03cb6b7076309bb1c436b36",
+    "outside/result.json": "401913ac0805a54df1e8757d2c3cfda622e4e009daf07d930caa03da6e5888fa",
+    "outside/single-reference.wav": "6c3e9c7eb390fd3f383c887487db21eb4a93f8a2d03cb6b7076309bb1c436b36",
+    "outside/tracking.json": "0c4582d61e6c2b9e2f1d019d393c89e0a2fac9ae9a94258c0b92a4576d07bb52",
+    "stable/audio-events.json": "b9baa7397b093d713e9cb4ad21f92d2100a02971a8f52dc875c9fb27cad2ddbd",
+    "stable/auto-tracked.wav": "ca7513b0af35cd1f403329d8d3fb8951b3b189d00cd4a59815766cd2fdda1a69",
+    "stable/result.json": "f7c26229c040117ccd94dd0c45ee818b69a50b65a54d467cc84de49f6572498e",
+    "stable/single-reference.wav": "883208f45ffcc60c820a0e0b3085d4cf0a227bd5ef6773a79f01767c78ee0a42",
+    "stable/tracking.json": "c78ab3a0a80f7afcb3ad7a98d2d5012baae057a76fd261eb4a7d8fcf32084eb5",
+    "drop-return/input/metadata.json": "4807c9b2975630d31fbb7191dd73016890e404155baf252fd5483bffdb23ca5d",
+    "drop-return/input/samples.npy": "dd21d92dc352574c35f83711c71b2125301e844b62cd8d5fbcc55f8ecf3a19af",
+    "outside/input/metadata.json": "48f45c765f1a5264b7c2fa038f9521838a16d92b24cb84a04d573b2de8151922",
+    "outside/input/samples.npy": "cd68e79633363f3e21d9f11d5a1ad33de7fd77c32692c443e7ae20e12d0335f4",
+    "stable/input/metadata.json": "61b643335e47bc52ebc47e106f5550dd39ce4fad860324e3e7434a521f8d122c",
+    "stable/input/samples.npy": "fbf9aae8024015cbaea032ec724738f914a4c2844f3138120e8c01a51ab2f0ca"
+  }
+}
