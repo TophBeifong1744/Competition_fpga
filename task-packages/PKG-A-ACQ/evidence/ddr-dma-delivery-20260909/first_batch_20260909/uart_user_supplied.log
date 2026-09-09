@@ -1,0 +1,30 @@
+DMA two-packet test v1
+Build: Sep  9 2026 21:38:16
+Program end=0x00112220 RX=[0x01000000,0x01100000)
+INIT packet=0 CR=0x00010002 SR=0x00000001 errors=0x00000000
+Cache ON: full-slot flush/invalidate before DMA; invalidate after
+ARMED packet=0 CR=0x00010003 SR=0x00000000 errors=0x00000000
+DONE packet=0 CR=0x00010003 SR=0x00001002 errors=0x00000000
+packet=0 actual_bytes=24
+packet=0 word=0 got=00000000 expected=00000000
+packet=0 word=1 got=01010000 expected=01010000
+packet=0 word=2 got=8003FDFF expected=8003FDFF
+packet=0 word=3 got=00000001 expected=00000001
+packet=0 word=4 got=FEFF0001 expected=FEFF0001
+packet=0 word=5 got=00008002 expected=00008002
+sample=0 ch0=0 ch1=257 ch2=-513 ch3=-32765
+sample=1 ch0=1 ch1=-257 ch2=-32766 ch3=0
+packet=0 compare_errors=0
+ARMED packet=1 CR=0x00010003 SR=0x00000000 errors=0x00000000
+DONE packet=1 CR=0x00010003 SR=0x00001002 errors=0x00000000
+packet=1 actual_bytes=24
+packet=1 word=0 got=00000002 expected=00000002
+packet=1 word=1 got=8001FFFF expected=8001FFFF
+packet=1 word=2 got=03010000 expected=03010000
+packet=1 word=3 got=00000003 expected=00000003
+packet=1 word=4 got=00008000 expected=00008000
+packet=1 word=5 got=FCFF0201 expected=FCFF0201
+sample=2 ch0=-1 ch1=-32767 ch2=0 ch3=769
+sample=3 ch0=-32768 ch1=0 ch2=513 ch3=-769
+packet=1 compare_errors=0
+TWO PACKETS PASS: packets=2 bytes=48 samples=4 errors=0

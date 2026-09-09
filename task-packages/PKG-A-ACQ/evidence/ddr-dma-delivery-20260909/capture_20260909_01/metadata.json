@@ -1,0 +1,45 @@
+{
+  "schema_version": "ss-data-draft-0.3",
+  "acquisition_id": "one-dma-uart-20260909-capture-01",
+  "config_version": "one-pattern2x2-uart-export-v1-nominal48k-unknown-geometry",
+  "channel_order": [
+    "mic0",
+    "mic1",
+    "mic2",
+    "mic3"
+  ],
+  "coordinates_m": null,
+  "geometry_version": "no-microphones-unknown-v1",
+  "coordinate_system": "x-forward_y-left_z-up",
+  "direction_convention": "array-to-source",
+  "angle_unit": "deg",
+  "sample_rate_hz": 48000,
+  "sample_format": {
+    "encoding": "signed-pcm",
+    "storage_dtype": "int32",
+    "valid_bits": 24,
+    "alignment": "right",
+    "fractional_bits": 0
+  },
+  "source_kind": "hardware-test-pattern",
+  "evidence_level": "diagnostic",
+  "capture_point": "PS DDR S2MM receive slots after completion and cache invalidation; UART text export",
+  "provisional_fields": {
+    "coordinates_m": "No microphones attached; test channels have no measured acoustic geometry.",
+    "sample_rate_hz": "Nominal interface placeholder only, not measured. This handshake-paced source pauses under backpressure and has no fixed physical sample period. Do not infer duration or DOA."
+  },
+  "calibration_status": "not-calibrated",
+  "export_description": {
+    "source_bits": 16,
+    "conversion": "Sign-extend signed 16-bit values; no scaling; preserve original sample IDs.",
+    "packets": 2,
+    "bytes_per_packet": 24,
+    "samples": 4,
+    "samples_per_packet": 2,
+    "id_resets_on_start": true,
+    "uart_provenance": "User-pasted board output; markdown underscore escapes removed and line endings normalized to LF. Not a direct byte-for-byte UART recording.",
+    "reported_software_build": "Sep 9 2026 22:40:05",
+    "capture_time": "unknown",
+    "stream_error_scope": "No errors observed by DMA status, length, sample ID, payload and guard checks for this acquisition. Not independent hardware error-counter qualification."
+  }
+}

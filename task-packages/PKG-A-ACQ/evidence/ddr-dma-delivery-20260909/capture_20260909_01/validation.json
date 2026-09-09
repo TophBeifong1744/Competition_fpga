@@ -1,0 +1,77 @@
+{
+  "status": "PASS_FORMAT_AND_PATTERN",
+  "checks": {
+    "csv_matches_user_log": true,
+    "raw_words_match_csv": true,
+    "independent_golden_match": true,
+    "raw_words": 12,
+    "samples": 4,
+    "packets": 2,
+    "bytes": 48
+  },
+  "reader_sha256": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9",
+  "reader_summary": {
+    "schema_version": "ss-data-draft-0.3",
+    "acquisition_id": "one-dma-uart-20260909-capture-01",
+    "config_version": "one-pattern2x2-uart-export-v1-nominal48k-unknown-geometry",
+    "samples": 4,
+    "sample_id_dtype": "uint64",
+    "pcm_dtype": "int32",
+    "first_sample_id": 0,
+    "last_sample_id": 3,
+    "clean_intervals": [
+      {
+        "row_start": 0,
+        "row_stop": 4,
+        "first_sample_id": 0,
+        "last_sample_id": 3
+      }
+    ],
+    "missing_intervals": [],
+    "error_rows": 0,
+    "direction_policy": "forbidden_non_acoustic_input",
+    "declared_evidence": "diagnostic",
+    "acceptance_verified": false,
+    "calibration_verified": false,
+    "file_sha256": {
+      "metadata.json": "874e4ee5d75c9b6b927d771aa284c374aab3a71533c1e0c4833bd507c8bc45ab",
+      "samples.csv": "43388f2b151fc581b22654ec68da9b771b939448b06993e631a5deda800f14d4"
+    },
+    "amplitude_all_rows": {
+      "minimum": [
+        -32768,
+        -32767,
+        -32766,
+        -32765
+      ],
+      "maximum": [
+        1,
+        257,
+        513,
+        769
+      ],
+      "mean": [
+        -8192.0,
+        -8191.75,
+        -8191.5,
+        -8191.25
+      ],
+      "full_scale_code_count": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "notes": [
+      "Amplitude statistics include error rows; full-scale codes alone do not prove clipping.",
+      "Clean intervals are format-clean only, not verified acoustically clean.",
+      "JSON sample IDs are exact decimal integers; JS consumers must use lossless/BigInt parsing."
+    ]
+  },
+  "limits": [
+    "User-pasted output, not direct UART byte capture.",
+    "No acoustic acceptance; nominal rate must not be used as measured timing.",
+    "Current file snapshots do not prove loaded hardware/software identity."
+  ]
+}
