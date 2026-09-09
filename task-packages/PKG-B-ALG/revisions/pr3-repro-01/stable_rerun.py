@@ -120,4 +120,3 @@ def run():
     write(OUT/'cohort.json',selected);write(OUT/'controls.json',controls);write(OUT/'summary.json',summary)
     write(OUT/'verification.json',dict(prior_files_unchanged=verify(),regenerated_trials=checks,controls_rows=len(controls),selected_count_and_crossing_assertions=True,all_control_frames_target_active=True))
     print(json.dumps(summary,ensure_ascii=False),flush=True)
-

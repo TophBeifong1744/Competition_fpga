@@ -86,4 +86,3 @@ def audit():
         phases[phase]=dict(trials=len(inputs),method_rows=len(rows),reconstructed_inputs=rebuilt,per_seed_groups=len(per),pooled_groups=len(pooled),decisions=decisions)
     return dict(status='PASS',phases=phases,checker_sha256=s.s.entry.sha256(__file__),metric_helper_sha256=s.s.entry.sha256(s.ROOT/'audit_candidate_quality.py'),
         checks='All hashes, received labels, angles, fresh/HOLD, independent metric counts, latencies; saved gate/selection consistency and source lock; 10 complete input reconstructions. Gate formula reused from frozen runner, not a separate implementation. No retuning.')
-

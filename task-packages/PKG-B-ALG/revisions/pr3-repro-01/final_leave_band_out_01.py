@@ -28,4 +28,3 @@ def check():
         for n,h in s.s.read(s.HERE/'files.json')['files'].items():assert s.s.entry.sha256(s.HERE/n)==h,n
     return dict(status='PASS',trials=144,tests=173,frozen_prior_files=len(s.s.read(s.HERE/'fixed-files.json')),report_reproducible=True,
         source_lock=True,checker_sha256=s.s.entry.sha256(__file__))
-

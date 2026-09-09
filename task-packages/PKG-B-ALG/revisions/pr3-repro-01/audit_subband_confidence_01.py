@@ -97,4 +97,3 @@ def run():
         category_risk_among_full_incone={k:dict(v) for k,v in risk.items()},category_by_condition={k:dict(v) for k,v in category_by_case.items()},
         auditor_sha256=s.s.entry.sha256(__file__),metric_helper_sha256=s.s.entry.sha256(s.ROOT/'audit_candidate_quality.py'),
         checks='All hashes, independent subband spread/span/envelope/category recomputation, candidate veto semantics, received labels, angles, metrics, latency.8 complete input reconstructions. Not confidence calibration or algorithm rerun.')
-

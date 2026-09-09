@@ -33,4 +33,3 @@ def check():
         for n,h in s.s.read(s.HERE/'files.json')['files'].items():assert s.s.entry.sha256(s.HERE/n)==h,n
     return dict(status='PASS',tests=173,main_trials=144,post_result_controls=12,fixed_prior_files=len(s.s.read(s.HERE/'fixed-files.json')),
         research_decision='Do not use these fixed screens as general candidate gates; diagnostic only',report_reproducible=True,checker_sha256=s.s.entry.sha256(__file__))
-

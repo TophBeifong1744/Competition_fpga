@@ -41,4 +41,3 @@ def check():
         for n,h in d.s.read(d.HERE/'files.json')['files'].items():assert d.s.entry.sha256(d.HERE/n)==h,n
     return dict(status='PASS',prior_files_unchanged=len(fixed),tests=170,trials=81,active_rows=43200,prior_rows_matched=28800,edge_totals=totals,
         checks='Frozen files; trial artifacts and source hashes; test sources; recomputed pooled statistics; headline numerical claims; report reproducibility; incremental manifest when present.',checker_sha256=d.s.entry.sha256(__file__))
-

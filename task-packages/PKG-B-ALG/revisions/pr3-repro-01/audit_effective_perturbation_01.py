@@ -135,4 +135,3 @@ def run():
         transitions={k:dict(v) for k,v in transitions.items()},impact_status_counts={k:dict(v) for k,v in impact_counts.items()},category_risk_among_full_incone={k:dict(v) for k,v in risk.items()},crossing_risk_among_full_incone={k:dict(v) for k,v in cross_risk.items()},category_by_condition={k:dict(v) for k,v in category_by_case.items()},
         auditor_sha256=s.s.entry.sha256(__file__),metric_helper_sha256=s.s.entry.sha256(s.ROOT/'audit_candidate_quality.py'),
         checks='All hashes, independent old/new deletion changes, impact eligibility and category recomputation, candidate veto semantics, received labels, angles, metrics, latency.8 complete input reconstructions and40 frame spectrum-removal checks. Not confidence calibration or complete algorithm rerun.')
-

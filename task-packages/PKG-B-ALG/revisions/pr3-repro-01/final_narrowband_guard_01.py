@@ -27,4 +27,3 @@ def check():
     return dict(status='PASS',tests=172,frozen_prior_files=len(s.s.read(s.HERE/'fixed-files.json')),development_trials=96,validation_trials=216,
         selected=selection['selected'],development_passed=selection['development_passed'],validation_passed=diagnostics['validation_passed'],
         report_reproducible=True,source_lock=True,checker_sha256=s.s.entry.sha256(__file__))
-
