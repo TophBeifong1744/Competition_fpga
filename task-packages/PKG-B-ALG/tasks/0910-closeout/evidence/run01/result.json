@@ -1,0 +1,95 @@
+{
+  "status": "PASS_FILE_RECEIPT_AND_H3_ARITHMETIC_NOT_HARDWARE_ACCEPTANCE",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "commands": [
+    {
+      "cwd": "F:\\NUEC\\review-worktrees\\member-b-0910-closeout\\task-packages\\PKG-A-H2-MONO-DIAGNOSTIC",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "source/file_manifest.py",
+        "verify"
+      ],
+      "exit_code": 0
+    },
+    {
+      "cwd": "F:\\NUEC\\review-worktrees\\member-b-0910-closeout\\task-packages\\PKG-A-H2-MONO-DIAGNOSTIC",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "source/mono_delivery.py",
+        "verify"
+      ],
+      "exit_code": 0
+    },
+    {
+      "cwd": "F:\\NUEC\\review-worktrees\\member-b-0910-closeout\\task-packages\\PKG-A-H2-MONO-DIAGNOSTIC",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "source/test_delivery.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "cwd": "F:\\NUEC\\review-worktrees\\member-b-0910-closeout",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\member-b-0910-closeout\\task-packages\\PKG-A-H3-INTEGRATION\\source\\verify.py",
+        "--out",
+        "F:\\NUEC\\review-worktrees\\member-b-0910-closeout\\task-packages\\PKG-B-ALG\\tasks\\0910-closeout\\evidence\\run01\\h3"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "mono_records": [
+    {
+      "name": "quiet_03",
+      "samples": 48000,
+      "first_id": 14223,
+      "last_id": 62222,
+      "gaps": 0,
+      "nonzero_flags": 0,
+      "outside_signed24": 0,
+      "clipped_endpoints": 0,
+      "non_multiple_of_32": 0,
+      "minimum": -23616,
+      "maximum": 26176,
+      "mean_pcm": 1048.9213333333332,
+      "rms_pcm": 8215.301251688827,
+      "ac_rms_pcm": 8148.0634934000245,
+      "peak_fullscale": 0.00312042236328125,
+      "first_4800_mean_pcm": 9676.2,
+      "last_4800_mean_pcm": -954.24,
+      "raw_sha256": "72c4dacb70618d0cae19c634db22d569782286f32131af2bdeb56c1a1f535c5a",
+      "source_kind": "user-reported-hardware-audio",
+      "sample_rate_status": "configured, not measured",
+      "loaded_identity_verified": false
+    },
+    {
+      "name": "music_04",
+      "samples": 48000,
+      "first_id": 13352,
+      "last_id": 61351,
+      "gaps": 0,
+      "nonzero_flags": 0,
+      "outside_signed24": 0,
+      "clipped_endpoints": 0,
+      "non_multiple_of_32": 0,
+      "minimum": -18816,
+      "maximum": 28288,
+      "mean_pcm": 1353.4546666666668,
+      "rms_pcm": 7702.573807760624,
+      "ac_rms_pcm": 7582.730624865835,
+      "peak_fullscale": 0.0033721923828125,
+      "first_4800_mean_pcm": 10311.493333333334,
+      "last_4800_mean_pcm": -1748.1733333333334,
+      "raw_sha256": "cd1345f14c8ad18f9f555eded2aa07c4d81193bd14965738306c7d451405c17f",
+      "source_kind": "user-reported-hardware-audio",
+      "sample_rate_status": "configured, not measured",
+      "loaded_identity_verified": false
+    }
+  ]
+}
