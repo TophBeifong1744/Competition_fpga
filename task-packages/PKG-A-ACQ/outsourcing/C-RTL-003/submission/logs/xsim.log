@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Sep 10 11:22:05 2026
+# Process ID         : 11564
+# Current directory  : C:/Users/hsc/AppData/Local/Temp/pcm4-xsim-d7a2257f131644ca9ca0108c7a337c4e
+# Command line       : xsim.exe -log C:\Users\hsc\Desktop\fpga_clone\Competition_fpga\task-packages\PKG-A-ACQ\outsourcing\C-RTL-003\submission\logs\xsim.log -mode tcl -source {xsim.dir/pcm4_test/xsim_script.tcl}
+# Log file           : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/task-packages/PKG-A-ACQ/outsourcing/C-RTL-003/submission/logs/xsim.log
+# Journal file       : C:/Users/hsc/AppData/Local/Temp/pcm4-xsim-d7a2257f131644ca9ca0108c7a337c4e\xsim.jou
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36176 MB
+# Available Virtual  : 10904 MB
+#-----------------------------------------------------------
+source xsim.dir/pcm4_test/xsim_script.tcl
+# xsim {pcm4_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+COVER W=24 README examples=2 PASS
+COVER W=2 boundaries=24 channel_order isolation PASS
+COVER W=3 boundaries=24 channel_order isolation PASS
+COVER W=16 boundaries=24 channel_order isolation PASS
+COVER W=32 boundaries=24 channel_order isolation PASS
+COVER W=24 boundaries=24 channel_order isolation PASS
+COVER W=2 sign_combinations=16 PASS
+COVER W=3 sign_combinations=16 PASS
+COVER W=16 sign_combinations=16 PASS
+COVER W=32 sign_combinations=16 PASS
+COVER W=24 sign_combinations=16 PASS
+COVER W=2 walking_one_zero=16 combinational_updates PASS
+COVER W=3 walking_one_zero=24 combinational_updates PASS
+WIDTH PASS W=3 comparisons=73 time=73000
+COVER W=16 walking_one_zero=128 combinational_updates PASS
+RANDOM W=16 seed=13579bcf groups=256
+COVER W=24 walking_one_zero=192 combinational_updates PASS
+RANDOM W=24 seed=13579bc7 groups=256
+COVER W=32 walking_one_zero=256 combinational_updates PASS
+RANDOM W=32 seed=13579bff groups=256
+COVER W=2 exhaustive=256 PASS
+WIDTH PASS W=2 comparisons=321 time=321000
+COVER W=16 random=256 PASS
+WIDTH PASS W=16 comparisons=433 time=433000
+COVER W=24 random=256 PASS
+WIDTH PASS W=24 comparisons=499 time=499000
+COVER W=32 random=256 PASS
+WIDTH PASS W=32 comparisons=561 time=561000
+ALL TESTS PASS time=561000
+$finish called at time : 561 ns : File "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/task-packages/PKG-A-ACQ/outsourcing/C-RTL-003/submission/tb/tb_pcm4_signext_pack.v" Line 184
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 10 11:22:09 2026...

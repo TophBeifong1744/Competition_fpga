@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Sep  9 21:31:49 2026
+# Process ID         : 53684
+# Current directory  : C:/Users/Toph Beifong/.codex/visualizations/2026/09/08/01a0811f-97d1-7e00-baba-38cf26de948d/c002-author-rerun-48af341
+# Command line       : xsim.exe -log tb_stream_error_snapshot-simulate.log -mode tcl -source {xsim.dir/tb_stream_error_snapshot/xsim_script.tcl}
+# Log file           : C:/Users/Toph Beifong/.codex/visualizations/2026/09/08/01a0811f-97d1-7e00-baba-38cf26de948d/c002-author-rerun-48af341/tb_stream_error_snapshot-simulate.log
+# Journal file       : C:/Users/Toph Beifong/.codex/visualizations/2026/09/08/01a0811f-97d1-7e00-baba-38cf26de948d/c002-author-rerun-48af341\xsim.jou
+# Running On         : Toph
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 15587 MB
+# Total Virtual      : 32477 MB
+# Available Virtual  : 1069 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_stream_error_snapshot/xsim_script.tcl
+# xsim {tb_stream_error_snapshot} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS COUNT_WIDTH=1 checks=769
+PASS COUNT_WIDTH=32 checks=953
+PASS COUNT_WIDTH=64 checks=1209
+PASS COUNT_WIDTH=3 checks=1745
+ALL TESTS PASS: COUNT_WIDTH=1,3,default32,64
+$finish called at time : 8707 ns : File "C:/Users/Toph Beifong/.codex/visualizations/2026/09/08/01a0811f-97d1-7e00-baba-38cf26de948d/c-review-002/task-packages/PKG-A-ACQ/outsourcing/C-RTL-002/submission/tb/tb_stream_error_snapshot.v" Line 224
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep  9 21:31:51 2026...

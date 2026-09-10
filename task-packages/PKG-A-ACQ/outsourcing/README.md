@@ -2,10 +2,20 @@
 
 本目录只管理 A 的采集工程包中的临时外包，不改变项目正式分工。A 保留任务所有权，C 按规格实现；本聊天进行技术检查和独立测试，B 保留父包复核与合入职责。
 
-每批只安排 **1～2 项**，本批只有 **C-RTL-001 错误统计模块**，不同时启动其他候选。收到该项提交并检查后，再决定下一批。
+每批只安排 **1～2 项**。本目录汇总已完成成果：001 已在 main；002/003 经独立功能验收和用户转交的 B 技术复核通过，本次按用户授权合入 main。代码归档不等于接入实际 BD、通过时序或板测。
 
 | 编号 | 中文任务说明 | C 成果目录 | 状态 |
 |---|---|---|---|
-| C-RTL-001 | [错误统计 RTL 外包说明](C-RTL-001/instructions/README.md) | [submission](C-RTL-001/submission/README.md) | 说明已形成，尚未收到实现或验证结果 |
+| C-RTL-001 | [错误统计 RTL 外包说明](C-RTL-001/instructions/README.md) | [submission](C-RTL-001/submission/README.md) | 已合入 main，本次不修改 |
+| C-RTL-002 | [错误统计快照操作单](C-RTL-002/instructions/README.md) | [submission](C-RTL-002/submission/README.md) | 技术复核通过，无需返工；本次合入，待 A 工程集成 |
+| C-RTL-003 | [PCM 打包操作单](C-RTL-003/instructions/README.md) | [submission](C-RTL-003/submission/README.md) | 技术复核通过，无需返工；本次合入，待 A 工程集成 |
 
 说明与成果分目录保存，C 不改 instructions。修订实现沿用同一成果目录和版本记录，不为每个小动作开新任务。文件生成不代表 C 本人已收到通知，更不代表验收通过。
+
+## 合入记录（2026-09-10）
+
+来源分支 codex/c-rtl-001-outsourcing-docs，固定来源提交 0bcae278335e8029f6c7c3dc8e20a9bbadc8ff85。仅导入 C-RTL-002、C-RTL-003 完整任务目录及 [B 结论登记](review-status/b-c002003-20260910.md)，保留原始交付、清单和日志；不改历史报告中的当时状态。
+
+002 独立验收绑定 48af341，003 绑定 d41ee30。B 原始报告在本机不可访问，B 结论按用户转交登记，不冒充重新核验。用户已明确授权将完成任务合入 main。
+
+004 仍在 C 外包分支执行，未完成，不在本次合入范围。未修改正式成员分工、生产 RTL 目录、共享 one 工程或 BD；后续实际工程接入仍由 A 安排，板测和时序尚未验收。

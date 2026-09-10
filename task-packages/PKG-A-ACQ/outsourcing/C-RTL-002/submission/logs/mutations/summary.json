@@ -1,0 +1,38 @@
+[
+  {
+    "mutation": "async_reset",
+    "result": "DETECTED",
+    "simulation_exit": 0,
+    "failure": "FAIL W=3 case=assert reset between edges asynchronous output transition expected=1ff actual=000"
+  },
+  {
+    "mutation": "capture_without_request",
+    "result": "DETECTED",
+    "simulation_exit": 0,
+    "failure": "FAIL W=3 case=initial idle changing live phase=after rising edge expected=000 actual=038"
+  },
+  {
+    "mutation": "sticky_valid",
+    "result": "DETECTED",
+    "simulation_exit": 0,
+    "failure": "FAIL W=3 case=valid deasserts data holds phase=after rising edge expected=13c actual=13d"
+  },
+  {
+    "mutation": "crossed_counter_lanes",
+    "result": "DETECTED",
+    "simulation_exit": 0,
+    "failure": "FAIL W=3 case=single request phase=after rising edge expected=13d actual=1fd"
+  },
+  {
+    "mutation": "bit17_copied_from_bit19",
+    "result": "DETECTED",
+    "simulation_exit": 0,
+    "failure": "FAIL W=32 case=walking one overflow only phase=after rising edge expected=00010000000000003 actual=00000000000000003"
+  },
+  {
+    "mutation": "reset_loses_to_request",
+    "result": "DETECTED",
+    "simulation_exit": 0,
+    "failure": "FAIL W=3 case=reset wins over request phase=after rising edge expected=000 actual=1ff"
+  }
+]
