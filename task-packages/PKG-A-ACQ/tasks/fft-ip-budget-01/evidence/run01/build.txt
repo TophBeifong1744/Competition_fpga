@@ -1,0 +1,484 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Sep 10 12:34:34 2026
+# Process ID         : 15696
+# Current directory  : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga
+# Command line       : vivado.exe -mode batch -nojournal -log E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/vivado/build/fft-build-01.log -source E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/build.tcl -tclargs E:/ss-fft-build-01
+# Log file           : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/vivado/build/fft-build-01.log
+# Journal file       : 
+# Running On         : Toph
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 13421 MB
+# Total Virtual      : 30312 MB
+# Available Virtual  : 5157 MB
+#-----------------------------------------------------------
+source {E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/build.tcl}
+# set out [file normalize [lindex $argv 0]]
+# if {[file exists $out]} {error "Output already exists: $out"}
+# if {[version -short] ne "2025.2"} {error "Vivado 2025.2 required"}
+# file mkdir $out
+# create_project fft_budget $out -part xc7z020clg400-2
+# set_property target_language Verilog [current_project]
+# set_property simulator_language Mixed [current_project]
+# set_param general.maxThreads 2
+# create_ip -name xfft -vendor xilinx.com -library ip -version 9.1 -module_name ss_fft
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/AMD/2025.2/Vivado/data/ip'.
+# set_property -dict [list \
+#  CONFIG.transform_length {1024} \
+#  CONFIG.implementation_options {radix_2_burst_io} \
+#  CONFIG.data_format {fixed_point} \
+#  CONFIG.input_width {25} \
+#  CONFIG.phase_factor_width {24} \
+#  CONFIG.scaling_options {scaled} \
+#  CONFIG.rounding_modes {convergent_rounding} \
+#  CONFIG.output_ordering {natural_order} \
+#  CONFIG.throttle_scheme {nonrealtime} \
+#  CONFIG.aresetn {true} CONFIG.ovflo {true} CONFIG.xk_index {true} \
+#  CONFIG.target_clock_frequency {100} \
+#  CONFIG.ACLK_INTF.FREQ_HZ {100000000}] [get_ips ss_fft]
+# report_property -all [get_ips ss_fft] -file $out/ip-properties.txt
+# generate_target all [get_ips ss_fft]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ss_fft'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ss_fft'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ss_fft'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'ss_fft'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'ss_fft'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ss_fft'...
+# create_ip_run [get_ips ss_fft]
+# launch_runs ss_fft_synth_1 -jobs 2
+[Thu Sep 10 12:34:45 2026] Launched ss_fft_synth_1...
+Run output will be captured here: E:/ss-fft-build-01/fft_budget.runs/ss_fft_synth_1/runme.log
+# wait_on_run ss_fft_synth_1
+[Thu Sep 10 12:34:45 2026] Waiting for ss_fft_synth_1 to finish...
+
+*** Running vivado
+    with args -log ss_fft.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ss_fft.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Thu Sep 10 12:34:47 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source ss_fft.tcl -notrace
+Command: synth_design -top ss_fft -part xc7z020clg400-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4092
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1320.004 ; gain = 540.734
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ss_fft' [e:/ss-fft-build-01/fft_budget.gen/sources_1/ip/ss_fft/synth/ss_fft.vhd:88]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg400-2 - type: string 
+	Parameter C_S_AXIS_CONFIG_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_S_AXIS_DATA_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXIS_DATA_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXIS_DATA_TUSER_WIDTH bound to: 24 - type: integer 
+	Parameter C_M_AXIS_STATUS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 1 - type: integer 
+	Parameter C_NSSR bound to: 1 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_NFFT_MAX bound to: 10 - type: integer 
+	Parameter C_ARCH bound to: 2 - type: integer 
+	Parameter C_HAS_NFFT bound to: 0 - type: integer 
+	Parameter C_USE_FLT_PT bound to: 0 - type: integer 
+	Parameter C_INPUT_WIDTH bound to: 25 - type: integer 
+	Parameter C_TWIDDLE_WIDTH bound to: 24 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 25 - type: integer 
+	Parameter C_HAS_SCALING bound to: 1 - type: integer 
+	Parameter C_HAS_BFP bound to: 0 - type: integer 
+	Parameter C_HAS_ROUNDING bound to: 1 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 1 - type: integer 
+	Parameter C_HAS_OVFLO bound to: 1 - type: integer 
+	Parameter C_HAS_NATURAL_INPUT bound to: 1 - type: integer 
+	Parameter C_HAS_NATURAL_OUTPUT bound to: 1 - type: integer 
+	Parameter C_HAS_CYCLIC_PREFIX bound to: 0 - type: integer 
+	Parameter C_HAS_XK_INDEX bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_TWIDDLE_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BRAM_STAGES bound to: 0 - type: integer 
+	Parameter C_REORDER_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_USE_HYBRID_RAM bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 0 - type: integer 
+	Parameter C_CMPY_TYPE bound to: 1 - type: integer 
+	Parameter C_BFLY_TYPE bound to: 0 - type: integer 
+	Parameter C_SYSTOLICFFT_INV bound to: 0 - type: integer 
+	Parameter C_IS_BLOCKING_RUNTIME_CONF bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xfft_v9_1_15' declared at 'e:/ss-fft-build-01/fft_budget.gen/sources_1/ip/ss_fft/hdl/xfft_v9_1_vh_rfs.vhd:103927' bound to instance 'U0' of component 'xfft_v9_1_15' [e:/ss-fft-build-01/fft_budget.gen/sources_1/ip/ss_fft/synth/ss_fft.vhd:220]
+INFO: [Synth 8-256] done synthesizing module 'ss_fft' (0#1) [e:/ss-fft-build-01/fft_budget.gen/sources_1/ip/ss_fft/synth/ss_fft.vhd:88]
+INFO: [Synth 8-7129] Port clk in module c_addsub_v12_0_21_lut6_legacy__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port add in module c_addsub_v12_0_21_lut6_legacy__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port c_in in module c_addsub_v12_0_21_lut6_legacy__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port ce in module c_addsub_v12_0_21_lut6_legacy__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port bypass in module c_addsub_v12_0_21_lut6_legacy__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclr in module c_addsub_v12_0_21_lut6_legacy__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port aset in module c_addsub_v12_0_21_lut6_legacy__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port ainit in module c_addsub_v12_0_21_lut6_legacy__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sclr in module c_addsub_v12_0_21_lut6_legacy__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sset in module c_addsub_v12_0_21_lut6_legacy__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sinit in module c_addsub_v12_0_21_lut6_legacy__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port c_in in module c_addsub_v12_0_21_legacy__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port b_in in module c_addsub_v12_0_21_legacy__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port a_signed in module c_addsub_v12_0_21_legacy__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port b_signed in module c_addsub_v12_0_21_legacy__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port C_IN in module c_addsub_v12_0_21_viv__parameterized5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Q1 in module shift_ram__parameterized18 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D1 in module shift_ram__parameterized18 is either unconnected or has no load
+INFO: [Synth 8-7129] Port COMBI_SCLR in module shift_ram__parameterized18 is either unconnected or has no load
+INFO: [Synth 8-7129] Port DEPTHx2 in module shift_ram__parameterized18 is either unconnected or has no load
+INFO: [Synth 8-7129] Port clk in module logic_gate__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port ce in module logic_gate__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port clk in module logic_gate__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port ce in module logic_gate__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port LUT_SCLR in module mux_bus4__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port AINIT in module c_reg_fd_v12_0_11_viv__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port ACLR in module c_reg_fd_v12_0_11_viv__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port ASET in module c_reg_fd_v12_0_11_viv__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module c_reg_fd_v12_0_11_viv__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module c_reg_fd_v12_0_11_viv__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module c_reg_fd_v12_0_11_viv__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port add in module c_addsub_v12_0_21_lut6_legacy__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port c_in in module c_addsub_v12_0_21_lut6_legacy__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port bypass in module c_addsub_v12_0_21_lut6_legacy__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sclr in module c_addsub_v12_0_21_lut6_legacy__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sset in module c_addsub_v12_0_21_lut6_legacy__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sinit in module c_addsub_v12_0_21_lut6_legacy__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port c_in in module c_addsub_v12_0_21_legacy__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port b_in in module c_addsub_v12_0_21_legacy__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port a_signed in module c_addsub_v12_0_21_legacy__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port b_signed in module c_addsub_v12_0_21_legacy__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port C_IN in module c_addsub_v12_0_21_viv__parameterized4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port add in module c_addsub_v12_0_21_lut6_legacy__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port c_in in module c_addsub_v12_0_21_lut6_legacy__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port bypass in module c_addsub_v12_0_21_lut6_legacy__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sclr in module c_addsub_v12_0_21_lut6_legacy__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sset in module c_addsub_v12_0_21_lut6_legacy__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sinit in module c_addsub_v12_0_21_lut6_legacy__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port c_in in module c_addsub_v12_0_21_legacy__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port b_in in module c_addsub_v12_0_21_legacy__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port a_signed in module c_addsub_v12_0_21_legacy__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port b_signed in module c_addsub_v12_0_21_legacy__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port C_IN in module c_addsub_v12_0_21_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module cmpy_v6_0_27_delay_line__parameterized4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module cmpy_v6_0_27_delay_line__parameterized4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module cmpy_v6_0_27_delay_line__parameterized4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module cmpy_v6_0_27_delay_line__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module cmpy_v6_0_27_delay_line__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module mult_gen_v12_0_24_delay_line__parameterized4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module mult_gen_v12_0_24_delay_line__parameterized4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module mult_gen_v12_0_24_delay_line__parameterized4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module mult_gen_v12_0_24_delay_line__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module mult_gen_v12_0_24_delay_line__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module mult_gen_v12_0_24_delay_line__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module mult_gen_v12_0_24_delay_line is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[24] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[23] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[22] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[21] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[20] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[19] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[18] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[17] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[16] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[15] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[14] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[13] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[12] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[11] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[10] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[9] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[8] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[7] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[6] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[5] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[4] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[3] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[2] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[1] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port D_PORT[0] in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SUBTRACT in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CARRY_IN in module dsp__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module cmpy_v6_0_27_delay_line__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module cmpy_v6_0_27_delay_line__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module cmpy_v6_0_27_delay_line__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module cmpy_v6_0_27_delay_line__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module cmpy_v6_0_27_delay_line__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module cmpy_v6_0_27_delay_line__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module mult_gen_v12_0_24_delay_line__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module mult_gen_v12_0_24_delay_line__parameterized7 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 2364.082 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 731 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/ss-fft-build-01/fft_budget.gen/sources_1/ip/ss_fft/ss_fft_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/ss-fft-build-01/fft_budget.gen/sources_1/ip/ss_fft/ss_fft_ooc.xdc] for cell 'U0'
+Parsing XDC File [E:/ss-fft-build-01/fft_budget.runs/ss_fft_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/ss-fft-build-01/fft_budget.runs/ss_fft_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2364.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 114 instances were transformed.
+  FDE => FDRE: 114 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 2364.082 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6040] Register sin_addr_2s_comp/use_output_reg.D_OUT_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register cos_addr_2s_comp/use_output_reg.D_OUT_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/control/twiddle_address_generator/n1024.mux10/use_mux16.use_lut6.sixteen_to_one_mux[9].use_output_reg_and_pipe_reg.reg0) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/control/twiddle_address_generator/n1024.mux10/use_mux16.use_lut6.sixteen_to_one_mux[9].use_output_reg_and_pipe_reg.reg1) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/control/cntrl/max_rank_flops[2].max_rank_ff) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/control/cntrl/max_rank_flops[1].max_rank_ff) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/control/cntrl/max_rank_flops[0].max_rank_ff) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/single_channel.datapath/pe/round.rounder_0r/reg_gate.delay_d_2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/single_channel.datapath/pe/round.rounder_0i/reg_gate.delay_d_2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/single_channel.datapath/pe/round.rounder_1r/reg_gate.delay_d_2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/single_channel.datapath/pe/round.rounder_1i/reg_gate.delay_d_2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_15_viv.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:57 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping             | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp                 | (C'-((A''*B'')'))'      | 25     | 17     | 46     | -      | 17     | 2    | 2    | 1    | -    | -     | 1    | 1    | 
+|dsp                 | (PCIN>>17-((A'*B'')'))' | 0      | 18     | -      | -      | 43     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp__parameterized0 | (C+(A''*B')')'          | 25     | 17     | 19     | -      | 17     | 2    | 1    | 0    | -    | -     | 1    | 1    | 
+|dsp__parameterized0 | (PCIN>>17+(A'*B'')')'   | 0      | 18     | -      | -      | 43     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp__parameterized1 | (C'+(A''*B'')')'        | 25     | 17     | 46     | -      | 17     | 2    | 2    | 1    | -    | -     | 1    | 1    | 
+|dsp__parameterized1 | (PCIN>>17+(A'*B'')')'   | 0      | 18     | -      | -      | 43     | 1    | 2    | -    | -    | -     | 1    | 1    | 
++--------------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    35|
+|2     |DSP48E1  |     6|
+|5     |LUT1     |    35|
+|6     |LUT2     |   260|
+|7     |LUT3     |   282|
+|8     |LUT4     |    71|
+|9     |LUT5     |    56|
+|10    |LUT6     |   406|
+|11    |MUXCY    |   282|
+|12    |MUXF7    |    36|
+|13    |MUXF8    |    18|
+|14    |RAMB18E1 |     6|
+|16    |SRL16E   |   427|
+|17    |SRLC32E  |    23|
+|18    |XORCY    |   268|
+|19    |FDE      |   111|
+|20    |FDRE     |  2000|
+|21    |FDSE     |    37|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:58 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 2364.082 ; gain = 1584.812
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 2364.082 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 762 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2364.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 199 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 88 instances
+  FDE => FDRE: 111 instances
+
+Synth Design complete | Checksum: d0ce31b0
+INFO: [Common 17-83] Releasing license: Synthesis
+130 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 2364.082 ; gain = 1818.551
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2364.082 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/ss-fft-build-01/fft_budget.runs/ss_fft_synth_1/ss_fft.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ss_fft, cache-ID = 60352e632758ef8c
+INFO: [Coretcl 2-1174] Renamed 246 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2364.082 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/ss-fft-build-01/fft_budget.runs/ss_fft_synth_1/ss_fft.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file ss_fft_utilization_synth.rpt -pb ss_fft_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 10 12:36:07 2026...
+[Thu Sep 10 12:36:10 2026] ss_fft_synth_1 finished
+wait_on_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:01:25 . Memory (MB): peak = 597.000 ; gain = 0.000
+# if {[get_property PROGRESS [get_runs ss_fft_synth_1]] ne "100%"} {error "OOC synthesis failed"}
+# open_run ss_fft_synth_1
+Design is defaulting to impl run constrset: ss_fft
+Design is defaulting to synth run part: xc7z020clg400-2
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 850.113 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 189 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/ss-fft-build-01/fft_budget.gen/sources_1/ip/ss_fft/ss_fft_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/ss-fft-build-01/fft_budget.gen/sources_1/ip/ss_fft/ss_fft_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 995.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+# report_utilization -file $out/utilization.rpt
+# report_timing_summary -report_unconstrained -file $out/synth-timing.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "aclk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+# close_project
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 10 12:36:19 2026...
