@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Sep 10 22:11:28 2026
+# Process ID         : 30012
+# Current directory  : C:/Users/hsc/AppData/Local/Temp/c004-bd-run01
+# Command line       : vivado.exe -mode batch -source C:\Users\hsc\Desktop\fpga_clone\Competition_fpga\task-packages\PKG-A-ACQ\outsourcing\C-RTL-004\submission\scripts\rebuild_bd.tcl -log bd.log -nojournal -tclargs D:/vavido_project/c004_bd_probe
+# Log file           : C:/Users/hsc/AppData/Local/Temp/c004-bd-run01/bd.log
+# Journal file       : 
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36176 MB
+# Available Virtual  : 8915 MB
+#-----------------------------------------------------------
+source {C:\Users\hsc\Desktop\fpga_clone\Competition_fpga\task-packages\PKG-A-ACQ\outsourcing\C-RTL-004\submission\scripts\rebuild_bd.tcl}
+# if {$argc != 1} {error "Expected new external project directory"}
+# set package [file normalize [file join [file dirname [info script]] ..]]
+# set target [file normalize [lindex $argv 0]]
+# if {$target eq $package || [string first "$package/" "$target/"] == 0} {error "Project must be outside submission"}
+# if {[file exists $target]} {error "Use a new target directory"}
+# create_project c004_bd_probe $target -part xc7z020clg400-2
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 540.160 ; gain = 220.453
+# set_property target_language Verilog [current_project]
+# import_files -fileset sources_1 [list [file join $package reference stream_error_stats.sv] [file join $package rtl stream_error_stats_bd.v]]
+# import_files -fileset sim_1 [file join $package tb tb_stream_error_stats_bd.sv]
+# set_property top stream_error_stats_bd [get_filesets sources_1]
+# set_property top tb_stream_error_stats_bd [get_filesets sim_1]
+# set_property xsim.elaborate.xelab.more_options {-timescale 1ns/1ps} [get_filesets sim_1]
+ERROR: [Common 17-170] Unknown option '-timescale 1ns/1ps', please type 'set_property -help' for usage info.
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 10 22:11:42 2026...

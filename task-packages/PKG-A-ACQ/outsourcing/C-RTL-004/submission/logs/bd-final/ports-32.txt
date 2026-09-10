@@ -1,0 +1,19 @@
+COUNT_WIDTH=32
+/stats/clk direction=I width=1
+/clk direction=I width=1
+/stats/rst_n direction=I width=1
+/rst_n direction=I width=1
+/stats/clear direction=I width=1
+/clear direction=I width=1
+/stats/overflow_event direction=I width=1
+/overflow_event direction=I width=1
+/stats/drop_event direction=I width=1
+/drop_event direction=I width=1
+/stats/overflow_count direction=O width=32
+/overflow_count direction=O width=32
+/stats/drop_count direction=O width=32
+/drop_count direction=O width=32
+/stats/overflow_sticky direction=O width=1
+/overflow_sticky direction=O width=1
+/stats/drop_sticky direction=O width=1
+/drop_sticky direction=O width=1
