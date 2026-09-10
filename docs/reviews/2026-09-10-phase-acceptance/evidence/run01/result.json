@@ -1,0 +1,71 @@
+{
+  "status": "PASS_PHASE_ARTIFACT_CHECKS",
+  "baseline_commit": "7b1d28a228f7d6e57e768584086afbe1e037d718",
+  "commands": [
+    {
+      "label": "h1-fixtures",
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06fc1-b474-7a41-9b32-b2aa8386099b\\pub\\task-packages\\PKG-A-ACQ\\payload\\scripts\\check_h1_fixtures.py"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06fc1-b474-7a41-9b32-b2aa8386099b\\pub",
+      "exit_code": 0
+    },
+    {
+      "label": "mono-manifest",
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "source/file_manifest.py",
+        "verify"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06fc1-b474-7a41-9b32-b2aa8386099b\\pub\\task-packages\\PKG-A-H2-MONO-DIAGNOSTIC",
+      "exit_code": 0
+    },
+    {
+      "label": "mono-export",
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "source/mono_delivery.py",
+        "verify"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06fc1-b474-7a41-9b32-b2aa8386099b\\pub\\task-packages\\PKG-A-H2-MONO-DIAGNOSTIC",
+      "exit_code": 0
+    },
+    {
+      "label": "mono-tests",
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "source/test_delivery.py"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06fc1-b474-7a41-9b32-b2aa8386099b\\pub\\task-packages\\PKG-A-H2-MONO-DIAGNOSTIC",
+      "exit_code": 0
+    }
+  ],
+  "c_manifests": [
+    {
+      "folder": "task-packages/PKG-A-ACQ/outsourcing/C-RTL-002/submission",
+      "count": 53,
+      "errors": []
+    },
+    {
+      "folder": "task-packages/PKG-A-ACQ/outsourcing/C-RTL-003/submission",
+      "count": 18,
+      "errors": []
+    }
+  ],
+  "b_reviewed_commit": "146736bf692d10fcfe0a95e8ffd7e16a0d4b4120",
+  "b_original_file_count": 15,
+  "b_original_mismatches": [],
+  "not_run": [
+    "new HDL simulation",
+    "new synthesis/implementation",
+    "board measurements",
+    "full four-channel acquisition acceptance",
+    "complete H3 algorithm approval"
+  ],
+  "script_sha256": "659acacb6cd7c595dbd828b342c2058c4562f9a72f35a4caace3f33cea1a0ec2"
+}
