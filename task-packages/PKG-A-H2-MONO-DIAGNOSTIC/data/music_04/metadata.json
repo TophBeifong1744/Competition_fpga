@@ -1,0 +1,94 @@
+{
+  "schema_version": "ss-mono-diagnostic-0.2",
+  "acquisition_id": "music_04-cd1345f14c8ad18f",
+  "source_kind": "user-reported-hardware-audio",
+  "evidence_level": "diagnostic",
+  "source_provenance": {
+    "description": "User-labelled quiet/music capture, matched to user-pasted serial transcript; not independently observed on site.",
+    "recording_date": "2026-09-10",
+    "recording_time": null,
+    "serial_log_kind": "user-pasted transcript, Markdown escaping normalized",
+    "serial_log": "../../originals/mono_acceptance_20260910/serial-user-transcript.txt",
+    "serial_log_sha256": "77df746d3a509f4ed2395ba4efe02f8e274edc6eb7b786a58b7ade9ef91d62c3",
+    "condition_label": "music_04",
+    "fixed_position": "user-reported; unmeasured",
+    "latest_listening": "A relayed user report: song fairly clear, no obvious hum, interruptions or distortion; subjective, not instrument evidence.",
+    "capture_restart_relation": "unknown; recordings are separate intervals, do not concatenate IDs"
+  },
+  "raw_file": "../../originals/mono_acceptance_20260910/quiet_music/music_04.bin",
+  "raw_sha256": "cd1345f14c8ad18f9f555eded2aa07c4d81193bd14965738306c7d451405c17f",
+  "raw_bytes": 768000,
+  "fnv1a32": "C7762DD9",
+  "samples_sha256": "f6eb776a0ffd99191c9487f3fd2926c6099f362d4733d13241e277c19406e185",
+  "channel_count": 1,
+  "channel_order": [
+    "mic0"
+  ],
+  "channel_mapping_status": "logical single input; physical module serial number unknown",
+  "sample_rate_hz": 48000,
+  "sample_rate_status": "configured, not measured",
+  "measured_sample_rate_hz": null,
+  "nominal_duration_s": 1,
+  "pdm_clock_hz_configured": 3072000,
+  "pl_clock_hz_configured": 61440000,
+  "sample_format": {
+    "storage_dtype": "int32",
+    "encoding": "signed-pcm",
+    "code_bits": 24,
+    "measured_effective_bits": null,
+    "fractional_bits": 0
+  },
+  "scaling": "PDM 0=-1 / 1=+1; CIC3 R64 M1 gain 262144; multiply by 32 then signed24 saturation; divide PCM by 8388608 only for dimensionless full-scale normalization, not pascals.",
+  "processing_applied_to_csv": "none; no DC removal, gain, filtering or renumbering",
+  "filter_compensation": "none; CIC passband droop and alias rejection limitations remain",
+  "warmup_discard_samples_configured": 4096,
+  "id_origin": "PCM outputs since frontend reset, including warmup/idle outputs",
+  "sample_count": 48000,
+  "first_id": 13352,
+  "last_id": 61351,
+  "continuous_intervals": [
+    {
+      "first_id": 13352,
+      "last_id": 61351,
+      "sample_count": 48000
+    }
+  ],
+  "flags_encoding": {
+    "bit0": "reserved overflow; rejected by this clean-capture reader",
+    "bit1": "PCM saturation",
+    "bits2_31": "unknown/reserved; rejected"
+  },
+  "observed_errors": {
+    "id_gaps": 0,
+    "nonzero_flags": 0,
+    "clipped_samples": 0,
+    "reported_source_status_hex": "0000000A",
+    "reported_dma_status_hex": "00001002",
+    "unobserved_errors_excluded": false
+  },
+  "microphone_positions_m": null,
+  "source_azimuth_deg": null,
+  "source_elevation_deg": null,
+  "source_distance_m": null,
+  "calibration": "not measured / not calibrated",
+  "capture_point": "reported PS DDR after DMA S2MM and cache invalidation, then post-capture JTAG dump",
+  "raw_layout": "little endian: uint32 ID low, uint32 ID high, int32 PCM, uint32 flags; 16 bytes/record",
+  "configuration_version": "mono-capture-v1; serial build Sep 10 2026 14:48:35; snapshot-associated, not load-bound",
+  "post_capture_snapshot_sha256": {
+    "pdm_cic3.v": "a80c176053688662cd8bb47f98edcadeb9b758d514365724fd8b6ffd2120573d",
+    "pcm_capture_axis.v": "a057c119227e071230eaf2f157a5c9263e20a72acb55c4fe6faf54daeefeebc6",
+    "single_mic_top.v": "47cfa7f59ab3a1fa1c52ee502133ed03dd32da5f76d29faa5101a131d9f8448c",
+    "main_mono_capture.c": "c8dcf209829c45a3aeb27e4e2ef1f627a8419c15ec21a1777d76af65ac382034",
+    "system_single_mic.bit": "ef73331e9a699a5b65fe3ee04b0b0914df2c3f1fbaa37055c7e09681f37576c5",
+    "system_single_mic.xsa": "e1cf7b504d637860eee5c6b1a6cd8a5b5d022f6b09858d63c61500776dd15d46",
+    "single_mic_capture.elf": "2c4b0e0f17ae65c4ca586cb6c9e7d5baac25d0f325b06cf2a7001e11ab89fd6e"
+  },
+  "loaded_identity_verified": false,
+  "limitations": [
+    "Single channel only; not four-channel ss-data-draft-0.3 and not six-mic DOA input.",
+    "Full four-channel H2 remains missing.",
+    "VCCO/VDD, external CLOCK/DATA timing, actual clock and load identity are not verified.",
+    "Low-frequency bias/decay cause remains unresolved; no SNR, precision or final audio quality claim."
+  ],
+  "acoustic_acceptance": false
+}

@@ -10,6 +10,8 @@
 
 ## H1 审核与合入状态
 
+2026-09-10：A 已确认 ss-data-draft-0.3 同一审核清单，H1 软件约定完成；见 REVIEW.md 最新增量。单麦待审交付另见 [发布说明](../PKG-A-H2-MONO-DIAGNOSTIC/PUBLICATION.md)，不代表四路 H2。下方共同确认待补为历史状态。
+
 B 已审核 H1 提交 `5f0dc36`，通过范围及其记录的 112 项回归见 [REVIEW.md](REVIEW.md)；H1 已由 `be74e0a` 合入 main。A 的共同确认仍按独立记录管理，不能据此推定完整包、DDR、H2/H3 通过。
 
 ## H1 入口
