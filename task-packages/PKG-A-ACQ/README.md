@@ -2,7 +2,7 @@
 
 ## 2026-09-10 电气与时序补证
 
-[补证包](evidence/existing-electrical-timing-audit-2026-09-10/README.md)包含 DS187 来源、截图、布线检查点、只读报告导出脚本、计算自检与文件清单。内部时序通过，但 DATA 低电平规格边界和外部接口时序尚未闭合；按[处理单](evidence/existing-electrical-timing-audit-2026-09-10/CLOSURE.md)补有针对性的证据，不自动要求今晚重录。该补证不构成四路 H2 或完整包技术批准。
+[补证包](evidence/existing-electrical-timing-audit-2026-09-10/README.md)保留原始结果；按拓芙最新决定，[精细补证暂缓](../../docs/deferred-acquisition-risks.md)，处理单只作问题回查资料，不作为采集开发、扩通道或联调的前置任务。继续按已知安全接线依据推进功能，遇到难定位问题再针对性处理；不把暂缓写成已验收。
 
 负责人：A 拓芙。技术复核与合入：B BryanZheng802。完整包状态：进行中。
 

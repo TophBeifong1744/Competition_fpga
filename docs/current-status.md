@@ -1,10 +1,14 @@
 # SoundSight 当前状态
 
+## 最新执行决定：补证暂缓，先推进功能
+
+2026-09-10，拓芙决定将精细电气/外部时序/历史加载补证改为[暂缓风险记录](deferred-acquisition-risks.md)：不作为开发、通道扩展和功能联调的前置任务，不主动安排测量或重录；常规排查难以解决问题时再针对性回查。明确接线/供电安全风险仍立即处理。以下补证结果保留为事实，不表示当前必须处理，也不改写为已通过。
+
 ## 2026-09-10 电气与时序补证增量（优先于下方历史快照）
 
 - [集中补证包](../task-packages/PKG-A-ACQ/evidence/existing-electrical-timing-audit-2026-09-10/README.md)已补 AMD DS187、用户时序截图、布线 DCP、8 项算术/相位模型自检及 Vivado 2025.2 重导出报告；没有改 RTL/XDC 或板上配置。
 - 内部 WNS=5.319 ns、WHS=0.041 ns；未约束端口明确为 pdm_data / pdm_clk。按 3.3 V 代入双方规格，DATA 低电平边界裕量为 -0.19 V，不能保证最坏兼容，不代表当前实物必然误码。外部接口仍 NOT_CLOSED。
-- 下一步按[针对性处理单](../task-packages/PKG-A-ACQ/evidence/existing-electrical-timing-audit-2026-09-10/CLOSURE.md)补模块/负载、有效电平与时序窗口、准确加载身份；不要求为今晚阶段汇报全面重测或重录，不因录音可听批准扩通道。
+- 原[针对性处理单](../task-packages/PKG-A-ACQ/evidence/existing-electrical-timing-audit-2026-09-10/CLOSURE.md)改为问题回查资料，暂不执行；按最新决定推进功能，不以精细补证未完成阻塞通道扩展。
 - 本轮发布基线 origin/main 146736b 已包含 [B 的今晚接收/诊断记录](../task-packages/PKG-B-ALG/tasks/0910-closeout/RECAP.md)：单麦文件分析无接收阻断，FFT/H3 初查可作后续输入，正式限定复核仍待完成；因此下方旧快照的“未见 B 诊断/尚无实录/A 共同确认待补”等措辞不再描述当前状态。H1 软件确认已在 93a12aa 记录，完整四路 H2、H3 未通过。
 - 本增量不重新分工、不增加第四个交接点；未覆盖项目其他动态进度，保留历史记录。
 
