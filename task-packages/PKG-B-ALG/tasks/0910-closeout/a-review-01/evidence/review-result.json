@@ -1,0 +1,142 @@
+{
+  "status": "PASS_LIMITED_RECEIPT_AND_RECAP_NOT_H2_H3",
+  "reviewed_commit": "146736bf692d10fcfe0a95e8ffd7e16a0d4b4120",
+  "original_files": {
+    "task-packages/PKG-B-ALG/tasks/0910-closeout/.gitattributes": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d",
+    "task-packages/PKG-B-ALG/tasks/0910-closeout/RECAP.md": "144dc661a62357556384a79c2b4dcc4fabba0c069fa86d12df33f50c7b577b3d",
+    "task-packages/PKG-B-ALG/tasks/0910-closeout/check.py": "2c4dcb06c726bbad2ad1f939cfc3e9c5b1a8966038263454bbdd5ce99173c37a",
+    "task-packages/PKG-B-ALG/tasks/0910-closeout/evidence/run01/export.txt": "e6851f70cbbe871e032289c8238acf04f582b5c71bd1d30dbb1fc88ea17a90d2",
+    "task-packages/PKG-B-ALG/tasks/0910-closeout/evidence/run01/h3.txt": "cbc56733960c255487f41200b73aef0bd8148dab3c7b97e94242fae33f6b9ef0",
+    "task-packages/PKG-B-ALG/tasks/0910-closeout/evidence/run01/h3/calculations.json": "9c28f0f076c4fe20e450be6deffc811f60a653cd0fb79d7c0dbe4d935af5b733",
+    "task-packages/PKG-B-ALG/tasks/0910-closeout/evidence/run01/h3/fft.txt": "b92d8ef251931e7802387926b5f630598f4598a783025efa83d453f0b08452bd",
+    "task-packages/PKG-B-ALG/tasks/0910-closeout/evidence/run01/h3/fft/check.json": "6ece17791d45e2f8dd153c54c2a6b523b27700dc8e5fd781b969589b5c3dd7e6",
+    "task-packages/PKG-B-ALG/tasks/0910-closeout/evidence/run01/h3/fft/vectors/inputs.mem": "ff14339db6c3ec9652bf9521ab4dc4bd88b459bd6a98389db7eb124bacd1f773",
+    "task-packages/PKG-B-ALG/tasks/0910-closeout/evidence/run01/h3/fft/vectors/reference.json": "c78770498ef72a381d5e9fda8742c2f7939d28078528afb1bd42845e2652e1ce",
+    "task-packages/PKG-B-ALG/tasks/0910-closeout/evidence/run01/h3/result.json": "cbc56733960c255487f41200b73aef0bd8148dab3c7b97e94242fae33f6b9ef0",
+    "task-packages/PKG-B-ALG/tasks/0910-closeout/evidence/run01/h3/tests.txt": "1e5c08ef61c9f937e2bdc4ed55aac875415f7bf4c7f290207887c77646743fe5",
+    "task-packages/PKG-B-ALG/tasks/0910-closeout/evidence/run01/manifest.txt": "d76b5955a72b5b819fb549124bf47337dc8427045060d2ffe8a47d641ce9ca91",
+    "task-packages/PKG-B-ALG/tasks/0910-closeout/evidence/run01/result.json": "fc29eb4dca9ca7241218b52f91fd9843b21aa7e90eb97091fb8f06e367bfb0ee",
+    "task-packages/PKG-B-ALG/tasks/0910-closeout/evidence/run01/tests.txt": "46251e7c554161046b750dd5d2bb0f61c57a418cc06332c104b82238b76cf09e"
+  },
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "source/file_manifest.py",
+        "verify"
+      ],
+      "cwd": "E:\\ss-pr8-review-01\\task-packages\\PKG-A-H2-MONO-DIAGNOSTIC",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "source/mono_delivery.py",
+        "verify"
+      ],
+      "cwd": "E:\\ss-pr8-review-01\\task-packages\\PKG-A-H2-MONO-DIAGNOSTIC",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "source/test_delivery.py"
+      ],
+      "cwd": "E:\\ss-pr8-review-01\\task-packages\\PKG-A-H2-MONO-DIAGNOSTIC",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\ss-pr8-review-01\\task-packages\\PKG-A-H3-INTEGRATION\\source\\verify.py",
+        "--out",
+        "E:\\ss-pr8-repro-01\\h3"
+      ],
+      "cwd": "E:\\ss-pr8-review-01",
+      "exit_code": 0
+    }
+  ],
+  "mono_records": [
+    {
+      "name": "quiet_03",
+      "samples": 48000,
+      "first_id": 14223,
+      "last_id": 62222,
+      "gaps": 0,
+      "nonzero_flags": 0,
+      "outside_signed24": 0,
+      "clipped_endpoints": 0,
+      "non_multiple_of_32": 0,
+      "minimum": -23616,
+      "maximum": 26176,
+      "mean_pcm": 1048.9213333333332,
+      "rms_pcm": 8215.301251688827,
+      "ac_rms_pcm": 8148.063493400025,
+      "peak_fullscale": 0.00312042236328125,
+      "first_4800_mean_pcm": 9676.2,
+      "last_4800_mean_pcm": -954.24,
+      "raw_sha256": "72c4dacb70618d0cae19c634db22d569782286f32131af2bdeb56c1a1f535c5a",
+      "source_kind": "user-reported-hardware-audio",
+      "sample_rate_status": "configured, not measured",
+      "loaded_identity_verified": false
+    },
+    {
+      "name": "music_04",
+      "samples": 48000,
+      "first_id": 13352,
+      "last_id": 61351,
+      "gaps": 0,
+      "nonzero_flags": 0,
+      "outside_signed24": 0,
+      "clipped_endpoints": 0,
+      "non_multiple_of_32": 0,
+      "minimum": -18816,
+      "maximum": 28288,
+      "mean_pcm": 1353.4546666666668,
+      "rms_pcm": 7702.573807760624,
+      "ac_rms_pcm": 7582.730624865835,
+      "peak_fullscale": 0.0033721923828125,
+      "first_4800_mean_pcm": 10311.493333333334,
+      "last_4800_mean_pcm": -1748.1733333333334,
+      "raw_sha256": "cd1345f14c8ad18f9f555eded2aa07c4d81193bd14965738306c7d451405c17f",
+      "source_kind": "user-reported-hardware-audio",
+      "sample_rate_status": "configured, not measured",
+      "loaded_identity_verified": false
+    }
+  ],
+  "comparisons": {
+    "export.txt": {
+      "numeric_semantic_equal": true,
+      "bytes_equal": true
+    },
+    "h3/result.json": {
+      "numeric_semantic_equal": true,
+      "bytes_equal": true
+    },
+    "h3/calculations.json": {
+      "numeric_semantic_equal": true,
+      "bytes_equal": true
+    },
+    "h3/fft/check.json": {
+      "numeric_semantic_equal": true,
+      "bytes_equal": true
+    },
+    "h3/fft/vectors/reference.json": {
+      "numeric_semantic_equal": true,
+      "bytes_equal": true
+    }
+  },
+  "fft_input_bytes_equal": true,
+  "original_evidence_unchanged": true,
+  "not_verified": [
+    "B unpublished research",
+    "new XSim",
+    "new synthesis",
+    "board identity",
+    "full H2/H3"
+  ]
+}
