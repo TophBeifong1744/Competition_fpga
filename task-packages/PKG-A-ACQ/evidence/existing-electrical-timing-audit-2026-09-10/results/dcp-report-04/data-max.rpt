@@ -1,0 +1,57 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Thu Sep 10 21:19:38 2026
+| Host         : Toph running 64-bit major release  (build 9200)
+| Command      : report_timing -from [get_ports pdm_data] -to [get_pins -hier -filter {NAME =~ */pdm_meta_reg/D}] -delay_type max -max_paths 2 -path_type full_clock_expanded -file {E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/evidence/existing-electrical-timing-audit-2026-09-10/results/dcp-report-04/data-max.rpt}
+| Design       : system_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 pdm_data
+                            (input port)
+  Destination:            system_i/single_mic_top_0/inst/pdm_meta_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_system_clk_wiz_0_0  {rise@0.000ns fall@8.138ns period=16.276ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        5.597ns  (logic 1.447ns (25.855%)  route 4.150ns (74.145%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.270ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.270ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.453ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.299ns
+    Phase Error              (PE):    0.302ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W9                                                0.000     0.000 r  pdm_data (IN)
+                         net (fo=0)                   0.000     0.000    pdm_data
+    W9                   IBUF (Prop_ibuf_I_O)         1.447     1.447 r  pdm_data_IBUF_inst/O
+                         net (fo=1, routed)           4.150     5.597    system_i/single_mic_top_0/inst/pdm_data
+    SLICE_X63Y87         FDRE                                         r  system_i/single_mic_top_0/inst/pdm_meta_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_system_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.905     0.905    system_i/clk_wiz_0/inst/clk_in1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     0.982 r  system_i/clk_wiz_0/inst/clkin1_bufg/O
+                         net (fo=1, routed)           1.386     2.368    system_i/clk_wiz_0/inst/clk_in1_system_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.915    -0.547 r  system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.454     0.908    system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077     0.985 r  system_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=5748, routed)        1.285     2.270    system_i/single_mic_top_0/inst/aclk
+    SLICE_X63Y87         FDRE                                         r  system_i/single_mic_top_0/inst/pdm_meta_reg/C
+
+
+
+

@@ -1,0 +1,111 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Sep 10 21:19:18 2026
+# Process ID         : 51312
+# Current directory  : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga
+# Command line       : vivado.exe -mode batch -nojournal -log task-packages/PKG-A-ACQ/evidence/existing-electrical-timing-audit-2026-09-10/results/export-vivado-04.txt -source task-packages/PKG-A-ACQ/evidence/existing-electrical-timing-audit-2026-09-10/source/export_io_evidence.tcl -tclargs F:/College/verilog_digital_system/AMD/Competiton/one/one.runs/impl_1/system_wrapper_routed.dcp task-packages/PKG-A-ACQ/evidence/existing-electrical-timing-audit-2026-09-10/results/dcp-report-04
+# Log file           : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/evidence/existing-electrical-timing-audit-2026-09-10/results/export-vivado-04.txt
+# Journal file       : 
+# Running On         : Toph
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 14501 MB
+# Total Virtual      : 31392 MB
+# Available Virtual  : 3261 MB
+#-----------------------------------------------------------
+source task-packages/PKG-A-ACQ/evidence/existing-electrical-timing-audit-2026-09-10/source/export_io_evidence.tcl
+# if {$argc != 2} { error "Expected routed DCP and new output directory" }
+# if {![string match "2025.2*" [version -short]]} { error "Vivado 2025.2 required" }
+# set dcp [file normalize [lindex $argv 0]]
+# set out [file normalize [lindex $argv 1]]
+# if {![file isfile $dcp]} { error "DCP missing" }
+# if {[file exists $out]} { error "Output exists; preserve previous evidence" }
+# file mkdir $out
+# open_checkpoint $dcp
+Command: open_checkpoint F:/College/verilog_digital_system/AMD/Competiton/one/one.runs/impl_1/system_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 325.504 ; gain = 2.613
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.194 . Memory (MB): peak = 817.312 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 940 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 932.605 ; gain = 2.945
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1546.770 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1546.770 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1546.770 ; gain = 0.000
+Read placeStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.195 . Memory (MB): peak = 1546.770 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1546.770 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1546.770 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.294 . Memory (MB): peak = 1546.770 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.325 . Memory (MB): peak = 1546.770 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1546.770 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 507 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  RAM64M => RAM64M (RAMD64E(x4)): 480 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 16 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2025.2 (64-bit) build 6299465
+open_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1551.867 ; gain = 1239.371
+# if {[get_property PART [current_design]] ne "xc7z020clg400-2"} { error "Unexpected target" }
+# foreach name {pdm_clk pdm_data} {
+#     if {[llength [get_ports -quiet $name]] != 1} { error "Missing expected port $name" }
+# }
+# set sample [get_pins -hier -filter {NAME =~ */pdm_meta_reg/D}]
+# if {[llength $sample] != 1} { error "Expected exactly one archived mono sample register" }
+# report_timing_summary -delay_type min_max -report_unconstrained -max_paths 10 -file $out/timing-summary.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+# report_io -file $out/io.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1589.273 ; gain = 11.109
+# report_clocks -file $out/clocks.rpt
+# check_timing -verbose -file $out/check-timing.txt
+# foreach delay {max min} {
+#     report_timing -fall_to [get_ports pdm_clk] -delay_type $delay -max_paths 2 -path_type full_clock_expanded -file $out/clock-fall-$delay.rpt
+#     report_timing -rise_to [get_ports pdm_clk] -delay_type $delay -max_paths 2 -path_type full_clock_expanded -file $out/clock-rise-$delay.rpt
+#     report_timing -from [get_ports pdm_data] -to $sample -delay_type $delay -max_paths 2 -path_type full_clock_expanded -file $out/data-$delay.rpt
+# }
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 2 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 2 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -to_pins  -max_paths 2 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 2 -nworst 1 -delay_type min -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 2 -nworst 1 -delay_type min -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -to_pins  -max_paths 2 -nworst 1 -delay_type min -sort_by slack.
+# puts "AUDIT_EXPORT_COMPLETE: unconstrained paths remain diagnostic, NOT external STA PASS"
+AUDIT_EXPORT_COMPLETE: unconstrained paths remain diagnostic, NOT external STA PASS
+# close_design
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 10 21:19:38 2026...

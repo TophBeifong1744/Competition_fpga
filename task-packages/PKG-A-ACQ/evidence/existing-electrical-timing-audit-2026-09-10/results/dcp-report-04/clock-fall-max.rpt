@@ -1,0 +1,53 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Thu Sep 10 21:19:38 2026
+| Host         : Toph running 64-bit major release  (build 9200)
+| Command      : report_timing -fall_to [get_ports pdm_clk] -delay_type max -max_paths 2 -path_type full_clock_expanded -file {E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/evidence/existing-electrical-timing-audit-2026-09-10/results/dcp-report-04/clock-fall-max.rpt}
+| Design       : system_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 system_i/single_mic_top_0/inst/pdm_clk_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_system_clk_wiz_0_0  {rise@0.000ns fall@8.138ns period=16.276ns})
+  Destination:            pdm_clk
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.094ns  (logic 3.713ns (45.878%)  route 4.380ns (54.122%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.453ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.299ns
+    Phase Error              (PE):    0.302ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_system_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.994     0.994    system_i/clk_wiz_0/inst/clk_in1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  system_i/clk_wiz_0/inst/clkin1_bufg/O
+                         net (fo=1, routed)           1.552     2.631    system_i/clk_wiz_0/inst/clk_in1_system_clk_wiz_0_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.232    -0.601 r  system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.597     0.996    system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.085     1.081 r  system_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=5748, routed)        1.446     2.527    system_i/single_mic_top_0/inst/aclk
+    SLICE_X61Y98         FDRE                                         r  system_i/single_mic_top_0/inst/pdm_clk_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y98         FDRE (Prop_fdre_C_Q)         0.379     2.906 f  system_i/single_mic_top_0/inst/pdm_clk_reg/Q
+                         net (fo=1, routed)           4.380     7.286    pdm_clk_OBUF
+    W10                  OBUF (Prop_obuf_I_O)         3.334    10.621 f  pdm_clk_OBUF_inst/O
+                         net (fo=0)                   0.000    10.621    pdm_clk
+    W10                                                               f  pdm_clk (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

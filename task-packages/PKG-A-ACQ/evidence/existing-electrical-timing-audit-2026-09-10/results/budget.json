@@ -1,0 +1,85 @@
+{
+  "model": "nominal-analysis-not-hardware-acceptance",
+  "pl_period_ns": 16.276041666666668,
+  "pdm_frequency_hz": 3072000.0,
+  "nominal_duty_percent": 50,
+  "pin_sample_after_fall_ns": 130.20833333333334,
+  "pin_sample_before_rise_ns": 32.552083333333336,
+  "mic_tdv_reference_ns": 100,
+  "residual_before_fpga_board_setup_skew_ns": 30.208333333333343,
+  "dc_margins_at_nominal_3v3_v": {
+    "clock_high_v": 0.7549999999999999,
+    "clock_low_v": 0.7549999999999998,
+    "data_high_v": 0.3099999999999996,
+    "data_low_v": -0.18999999999999984
+  },
+  "dc_envelope": "NOT_PROVEN_NEGATIVE_DATA_LOW_MARGIN",
+  "phase_trace": [
+    {
+      "consume_tick": 29,
+      "pin_sample_tick": 27,
+      "fall_tick": 19,
+      "sample_after_fall_cycles": 8,
+      "sample_before_rise_cycles": 2
+    },
+    {
+      "consume_tick": 49,
+      "pin_sample_tick": 47,
+      "fall_tick": 39,
+      "sample_after_fall_cycles": 8,
+      "sample_before_rise_cycles": 2
+    },
+    {
+      "consume_tick": 69,
+      "pin_sample_tick": 67,
+      "fall_tick": 59,
+      "sample_after_fall_cycles": 8,
+      "sample_before_rise_cycles": 2
+    },
+    {
+      "consume_tick": 89,
+      "pin_sample_tick": 87,
+      "fall_tick": 79,
+      "sample_after_fall_cycles": 8,
+      "sample_before_rise_cycles": 2
+    },
+    {
+      "consume_tick": 109,
+      "pin_sample_tick": 107,
+      "fall_tick": 99,
+      "sample_after_fall_cycles": 8,
+      "sample_before_rise_cycles": 2
+    },
+    {
+      "consume_tick": 129,
+      "pin_sample_tick": 127,
+      "fall_tick": 119,
+      "sample_after_fall_cycles": 8,
+      "sample_before_rise_cycles": 2
+    },
+    {
+      "consume_tick": 149,
+      "pin_sample_tick": 147,
+      "fall_tick": 139,
+      "sample_after_fall_cycles": 8,
+      "sample_before_rise_cycles": 2
+    }
+  ],
+  "extra_setup_ns": null,
+  "hold_budget_ns": null,
+  "mic_timing_condition_confirmed": false,
+  "conditional_setup_margin_ns": null,
+  "external_interface_acceptance": "NOT_CLOSED",
+  "missing": [
+    "DC output guarantee applicable to actual module/load/VDD",
+    "actual supply and wiring evidence",
+    "bounded max/min external path and edge/phase constraints",
+    "clock slew/duty at microphone under actual load",
+    "loaded artifact identity"
+  ],
+  "self_tests": {
+    "run": 8,
+    "passed": 8
+  },
+  "script_sha256": "911696b5e267382dd10ddc27fd66be03d4bf3376c12a0fa7a3c4596ef3e85d64"
+}

@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Sep 10 21:18:03 2026
+# Process ID         : 59332
+# Current directory  : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga
+# Command line       : vivado.exe -mode batch -nojournal -log task-packages/PKG-A-ACQ/evidence/existing-electrical-timing-audit-2026-09-10/results/export-vivado.txt -source task-packages/PKG-A-ACQ/evidence/existing-electrical-timing-audit-2026-09-10/source/export_io_evidence.tcl -tclargs F:/College/verilog_digital_system/AMD/Competiton/one/one.runs/impl_1/system_wrapper_routed.dcp task-packages/PKG-A-ACQ/evidence/existing-electrical-timing-audit-2026-09-10/results/dcp-report-02
+# Log file           : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/evidence/existing-electrical-timing-audit-2026-09-10/results/export-vivado.txt
+# Journal file       : 
+# Running On         : Toph
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 14501 MB
+# Total Virtual      : 31392 MB
+# Available Virtual  : 3356 MB
+#-----------------------------------------------------------
+CRITICAL WARNING: [Common 17-1297] User repo 'C:/Users/Toph Beifong/AppData/Roaming/Xilinx/Vivado/2025.2/XilinxTclStore' catalog file is corrupted. XilinxTclStore has been reverted to the installation area and Tcl Store changes will not be saved. To use local Tcl Store, please run tclapp::reset_tclstore and reinstall the apps.
+source task-packages/PKG-A-ACQ/evidence/existing-electrical-timing-audit-2026-09-10/source/export_io_evidence.tcl
+# if {$argc != 2} { error "Expected routed DCP and new output directory" }
+# if {![string match "2025.2*" [version -short]]} { error "Vivado 2025.2 required" }
+# set dcp [file normalize [lindex $argv 0]]
+# set out [file normalize [lindex $argv 1]]
+# if {![file isfile $dcp]} { error "DCP missing" }
+# if {[file exists $out]} { error "Output exists; preserve previous evidence" }
+# file mkdir $out
+# open_checkpoint $dcp
+Command: open_checkpoint F:/College/verilog_digital_system/AMD/Competiton/one/one.runs/impl_1/system_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 319.504 ; gain = 0.000
+ERROR: [Common 17-539] Failed to load tclapp initializer can't find package ::tclapp::support::appinit 1.2 from 'F:/AMD/2025.2/Vivado/data/XilinxTclStore'
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-539] Failed to load tclapp initializer can't find package ::tclapp::support::appinit 1.2 from 'F:/AMD/2025.2/Vivado/data/XilinxTclStore'
+
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 10 21:18:08 2026...
