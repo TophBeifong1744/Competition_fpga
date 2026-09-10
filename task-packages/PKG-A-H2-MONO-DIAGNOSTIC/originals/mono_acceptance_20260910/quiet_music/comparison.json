@@ -1,0 +1,76 @@
+{
+  "validation": "PASS length/FNV/IDs/sign/flags/serial-statistics/WAV-round-trip",
+  "records": [
+    {
+      "label": "quiet_03",
+      "source": "F:\\College\\verilog_digital_system\\Vitis\\mono_quiet_03.bin",
+      "sha256": "72c4dacb70618d0cae19c634db22d569782286f32131af2bdeb56c1a1f535c5a",
+      "fnv1a32": "EFFF882A",
+      "samples": 48000,
+      "first_id": 14223,
+      "last_id": 62222,
+      "minimum": -23616,
+      "maximum": 26176,
+      "zeros": 168,
+      "clipped": 0,
+      "mean": 1048.9213333333332,
+      "rms_ac": 8148.0634934000245,
+      "band_mean_square": {
+        "0-100": 58927799.17367389,
+        "100-1000": 954602.546117082,
+        "1000-8000": 137521.30967497168,
+        "100-8000": 1092123.855792054,
+        "8000-24001": 145638.81897947553
+      },
+      "low_frequency_fraction": 0.979427389411082
+    },
+    {
+      "label": "music_04",
+      "source": "F:\\College\\verilog_digital_system\\Vitis\\mono_music_04.bin",
+      "sha256": "cd1345f14c8ad18f9f555eded2aa07c4d81193bd14965738306c7d451405c17f",
+      "fnv1a32": "C7762DD9",
+      "samples": 48000,
+      "first_id": 13352,
+      "last_id": 61351,
+      "minimum": -18816,
+      "maximum": 28288,
+      "zeros": 176,
+      "clipped": 0,
+      "mean": 1353.4546666666668,
+      "rms_ac": 7582.730624865835,
+      "band_mean_square": {
+        "0-100": 41810142.07149651,
+        "100-1000": 1512165.5745328267,
+        "1000-8000": 2449638.032613088,
+        "100-8000": 3961803.607145915,
+        "8000-24001": 159364.66307216894
+      },
+      "low_frequency_fraction": 0.9102754038681266
+    }
+  ],
+  "total_rms_change_db": -0.624575530657743,
+  "band_change_db": {
+    "0-100": -1.4903857814276233,
+    "100-1000": 1.9977675844998317,
+    "1000-8000": 12.50731916506792,
+    "100-8000": 5.596210493598087,
+    "8000-24001": 0.3911488041454593
+  },
+  "listen_gain_db": 48.455983542379215,
+  "processing": "Original WAV: exact signed24. Audition: remove each mean, SAME gain, signed16, quiet then 0.5s silence then music.",
+  "provenance": "User-labelled quiet/music hardware captures, checked against user serial logs. Position/control conditions not independently observed.",
+  "limitations": [
+    "Configured 48kHz, nominal 1s; actual clock unmeasured.",
+    "Band energy ratio is not SNR or frequency response.",
+    "No four-channel or external IO timing acceptance.",
+    "Loaded bitstream/XSA/ELF identities not yet archived with capture."
+  ],
+  "acoustic_acceptance": false,
+  "artifact_sha256": {
+    "music_04.bin": "cd1345f14c8ad18f9f555eded2aa07c4d81193bd14965738306c7d451405c17f",
+    "music_04_original24.wav": "ddaa9f5dd07250f9daf2c538d36fcf700f09901c059b8921910a5b36693a8e46",
+    "quiet_03.bin": "72c4dacb70618d0cae19c634db22d569782286f32131af2bdeb56c1a1f535c5a",
+    "quiet_03_original24.wav": "995d604b1bfe0863a63e58c269fc2961623004073346ec20ae1d945a03a4521f",
+    "quiet_then_music_same_gain.wav": "34e083c1ed902f88f4811de2be71db03a7a952049c616dab8c9a49c65734f4c1"
+  }
+}

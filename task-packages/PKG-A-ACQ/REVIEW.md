@@ -1,5 +1,24 @@
 # H1 共同确认与完整包复核
 
+## 2026-09-10 A 确认：H1 软件约定完成
+
+- 确认人：A 拓芙；依据：本任务 `01a07c21-b7f9-74d2-92c5-7f8d235d8379` 中用户明确指令“核对并确认 H1 ss-data-draft-0.3 的软件交接约定”；Codex 执行核对并记录，不代签 B 的新批准。
+- 确认对象：B 已审核提交 `5f0dc36fce2328ade672dd949778bc5a91f506dc` 对应的 `ss-data-draft-0.3` 七文件清单 `evidence/h1-files.json`；SHA-256：`ef09838face445cc4f2a87d56245ad64574fa3e9f4d12032e4b0723a7f1eca96`。本次工作区 HEAD 为 `797cdd09425c09c56ed4e0034fc1912b45b4b878`，不将未提交的其他增量纳入 H1 确认。
+- 本次核验：七文件 SHA-256 和字节数 7/7 一致；运行 `python -B task-packages/PKG-A-ACQ/payload/scripts/check_h1_fixtures.py`，固定码型 6 行和重启 2 行均通过。脚本保留历史文本“B reader tests NOT_RUN; H1 confirmation pending”，不作为当前确认状态；本次未重跑 B 读取器全套测试，历史 B 审核见下节。
+
+| 软件约定 | A 本次确认的范围 |
+|---|---|
+| 通道顺序 | 四路 CSV 固定 `mic0,mic1,mic2,mic3`，不等于实物映射已验证；底层 packed 顺序由导出器显式转换 |
+| 坐标 | 单位 m、右手系 x 前/y 左/z 上、方向指向声源；40 mm 正方形仅名义候选；完全未知可 null 并说明，禁止据未知坐标求方向 |
+| 采样格式 | signed PCM、int32 存储、24 bit 码值范围、右对齐、无小数位；符号扩展，不额外缩放；48 kHz 仍是配置值，不当实测或有效精度 |
+| 采样编号 | 精确 uint64，保留原始编号；跳号标记并切断连续区间，不补零或重编号；重启换 acquisition_id 与目录 |
+| 配置版本 | config_version 非空，变更映射/几何/格式/采样率须更新；未知项写 provisional_fields，不静默解释旧版本 |
+| 错误标志 | stream_error 与 drop/overflow/relock/unknown 一致；保留错误行，未知错误码拒绝；sticky 不当事件计数 |
+
+结合下节 B 对同一准确清单的既有审核，本次补齐 A 确认，**H1 软件交接约定完成**。A 后续按约定导出，B 负责读取与诊断。确认不改变冻结 payload/清单，不代表完整 PKG-A-ACQ、M0、H2/H3、四路同步、声学性能或实板时序通过。现有单麦 BIN/WAV 是独立 diagnostic 材料，不补造成四路 H1 数据；六麦也不使用本四路入口冒充兼容。
+
+下方待确认措辞属于历史记录，由本节覆盖当前 H1 状态；其他任务的待审状态不变。原确认时未提交或推送；本次随单麦待审分支上传，不代表合入 main。
+
 ## 2026-09-08 B 复核授权合入记录
 
 - 已审核并授权合入的提交：`5f0dc36fce2328ade672dd949778bc5a91f506dc`，接口 `ss-data-draft-0.3`。
