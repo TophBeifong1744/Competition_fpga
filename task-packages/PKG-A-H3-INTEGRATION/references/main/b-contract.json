@@ -1,0 +1,85 @@
+{
+  "status": "DRAFT_NOT_FROZEN",
+  "scope": "six-mic offline implementation candidates; not V1 acquisition or H3 acceptance",
+  "known": {
+    "channels": 6, "sample_rate_hz": 48000, "frame_samples": 1024, "hop_samples": 512,
+    "pair_count": 15, "band_hz": [300, 4000], "common_audio_delay_samples": 4,
+    "audio_history_samples": 8, "fade_samples": 480, "hold_ms": 200,
+    "input_normalized_abs_bound_for_analysis": 1.0
+  },
+  "pending_A": {
+    "input_pcm_effective_bits": null,
+    "input_container_bits": null,
+    "input_gain_and_full_scale_definition": null,
+    "processing_clock_hz": null,
+    "fft_ip_and_version": null,
+    "fft_cycles_per_transform": null,
+    "ifft_cycles_per_transform": null,
+    "fft_stage_scaling_schedule": null,
+    "ifft_stage_scaling_schedule": null,
+    "fft_block_exponent_width_and_range": null,
+    "ifft_block_exponent_width_and_range": null,
+    "fft_internal_ram_bytes": null,
+    "phat_magnitude_reciprocal_implementation": null,
+    "least_squares_pl_ps_partition": null,
+    "pair_missing_and_rank_check_implementation": null,
+    "dma_block_samples": null,
+    "axi_width_and_memory_layout": null,
+    "pdm_decimation_ratio_and_group_delay_samples": null,
+    "dsp_budget": null,
+    "bram_budget_bytes": null,
+    "end_to_end_latency_limit_ms": null,
+    "allowed_quantization_error_and_discrete_mismatch_policy": null
+  },
+  "arithmetic_candidates": {
+    "rounding": "round_to_nearest_ties_to_even",
+    "overflow": "saturate_and_count_never_wrap",
+    "invalid_pair": "explicit_valid_bit_not_zero_delay",
+    "coefficient_endpoint_rule": "0 and 1 exactly representable; ramp endpoint explicitly assigned",
+    "selected_candidate": null
+  },
+  "candidates": [
+    {
+      "name": "GROWTH_REFERENCE",
+      "purpose": "Wide intermediate reference; not a resource commitment",
+      "formats": {
+        "pcm": {"signed": true, "W": 24, "F": 23},
+        "hann": {"signed": false, "W": 18, "F": 17},
+        "fft_component": {"signed": true, "W": 34, "F": 23},
+        "cross_component": {"signed": true, "W": 69, "F": 46},
+        "phat_component": {"signed": true, "W": 25, "F": 23},
+        "ifft_internal_component": {"signed": true, "W": 35, "F": 23},
+        "correlation": {"signed": true, "W": 25, "F": 23},
+        "delay_samples": {"signed": true, "W": 18, "F": 12},
+        "direction_component": null,
+        "magnitude_workspace": null,
+        "audio_weight": {"signed": false, "W": 24, "F": 23},
+        "audio_accumulator": {"signed": true, "W": 54, "F": 46}
+      },
+      "fft_total_right_shift": 0,
+      "ifft_total_normalizing_right_shift": 10,
+      "per_stage_schedule": null
+    },
+    {
+      "name": "SCALED_STORAGE",
+      "purpose": "Reduce spectral storage; scaling schedule and error must be validated",
+      "formats": {
+        "pcm": {"signed": true, "W": 24, "F": 23},
+        "hann": {"signed": false, "W": 18, "F": 17},
+        "fft_component": {"signed": true, "W": 25, "F": 23},
+        "cross_component": {"signed": true, "W": 51, "F": 46},
+        "phat_component": {"signed": true, "W": 25, "F": 23},
+        "ifft_internal_component": null,
+        "correlation": {"signed": true, "W": 25, "F": 23},
+        "delay_samples": {"signed": true, "W": 18, "F": 12},
+        "direction_component": null,
+        "magnitude_workspace": null,
+        "audio_weight": {"signed": false, "W": 24, "F": 23},
+        "audio_accumulator": {"signed": true, "W": 54, "F": 46}
+      },
+      "fft_total_right_shift": 10,
+      "ifft_total_normalizing_right_shift": 10,
+      "per_stage_schedule": null
+    }
+  ]
+}

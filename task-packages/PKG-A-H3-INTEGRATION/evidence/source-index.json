@@ -1,0 +1,382 @@
+{
+  "base_main": "9878ccafdda6cd5a522cc9de95c1277bcee70f08",
+  "fft_candidate_commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+  "entries": [
+    {
+      "file": "references/main/architecture.md",
+      "source": "docs/architecture.md",
+      "kind": "git-blob",
+      "commit": "9878ccafdda6cd5a522cc9de95c1277bcee70f08",
+      "bytes": 10377,
+      "sha256": "319908ba9d73c89a4a1455f5529c3054ca0b92b81f69ed04ae29ff3f69988f83"
+    },
+    {
+      "file": "references/main/h1-interface.md",
+      "source": "docs/minimal-data-interface.md",
+      "kind": "git-blob",
+      "commit": "9878ccafdda6cd5a522cc9de95c1277bcee70f08",
+      "bytes": 6534,
+      "sha256": "5489c6945230d338e3836c8a5d3007ddaf2257190b4cad016615569ae2d0ca00"
+    },
+    {
+      "file": "references/main/input-boundary.md",
+      "source": "docs/input-scale-and-pl-ps-boundary.md",
+      "kind": "git-blob",
+      "commit": "9878ccafdda6cd5a522cc9de95c1277bcee70f08",
+      "bytes": 10244,
+      "sha256": "25543b5864ae6bf287115b09cf0018bff3f19c77a9ed2b1d77dd3bb9d5f7a639"
+    },
+    {
+      "file": "references/main/pynq-guide.md",
+      "source": "docs/pynq-integration-guide.md",
+      "kind": "git-blob",
+      "commit": "9878ccafdda6cd5a522cc9de95c1277bcee70f08",
+      "bytes": 12032,
+      "sha256": "6110263011be26b45de88e89a4510c449e9afd47c340650ca0deb91644a62cbc"
+    },
+    {
+      "file": "references/main/four-channel-contract.md",
+      "source": "hardware/four-channel-sample-interface-contract.md",
+      "kind": "git-blob",
+      "commit": "9878ccafdda6cd5a522cc9de95c1277bcee70f08",
+      "bytes": 7075,
+      "sha256": "2f65717ede7f0dcabdba710b3ec3e57534372b2b9abef98b306474f03d2f9209"
+    },
+    {
+      "file": "references/main/audio_frames.py",
+      "source": "task-packages/PKG-B-ALG/payload/model/python/audio_frames.py",
+      "kind": "git-blob",
+      "commit": "9878ccafdda6cd5a522cc9de95c1277bcee70f08",
+      "bytes": 8414,
+      "sha256": "0ed77ea8db8834576c21206358a8d945b612a176cad742bb266d077ee2a79408"
+    },
+    {
+      "file": "references/main/tracker-config.json",
+      "source": "task-packages/PKG-B-ALG/payload/config/sector-tracking.json",
+      "kind": "git-blob",
+      "commit": "9878ccafdda6cd5a522cc9de95c1277bcee70f08",
+      "bytes": 194,
+      "sha256": "418a6b2d003b3c76bd54bcf640364964ea14aef8d87b06d799f8bc111515fb27"
+    },
+    {
+      "file": "references/main/b-review.md",
+      "source": "task-packages/PKG-B-ALG/tasks/input-boundary-adoption-01/review.md",
+      "kind": "git-blob",
+      "commit": "9878ccafdda6cd5a522cc9de95c1277bcee70f08",
+      "bytes": 6926,
+      "sha256": "bf5e88f229702d7ae36a710e43ef064aa80da0d3389715394ef6ae861cb06a2c"
+    },
+    {
+      "file": "references/main/b-contract.json",
+      "source": "task-packages/PKG-B-ALG/tasks/input-boundary-adoption-01/source-snapshot/fixed-point-contract-01/contract.json",
+      "kind": "git-blob",
+      "commit": "9878ccafdda6cd5a522cc9de95c1277bcee70f08",
+      "bytes": 3596,
+      "sha256": "70c2fa9ab954034da50cc12c3615fe4dffa1a171abe1284bf765bbe585edbb39"
+    },
+    {
+      "file": "references/main/b-ledger.json",
+      "source": "task-packages/PKG-B-ALG/tasks/input-boundary-adoption-01/source-snapshot/implementation-budget-01/evidence/run02/ledger.json",
+      "kind": "git-blob",
+      "commit": "9878ccafdda6cd5a522cc9de95c1277bcee70f08",
+      "bytes": 4249,
+      "sha256": "b9f5cb5bc8e8f27877533abfe22f67e3ec1bea7b400e7024bd2dd6b3fe1fcc25"
+    },
+    {
+      "file": "references/fft/.gitattributes",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/.gitattributes",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 176,
+      "sha256": "dcf047b1273340a10fe1cc0d4000f96d80640dbd6f7ba2c6cd38eb822a227c60"
+    },
+    {
+      "file": "references/fft/README.md",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/README.md",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 8253,
+      "sha256": "3c0f0e19e37c0304bce70735b57a4212fb4d9d6a212a8e1cb288d6111ad7da9d"
+    },
+    {
+      "file": "references/fft/build.tcl",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/build.tcl",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 1528,
+      "sha256": "ec5430e0958daee3a8aaa0691fc4ffec6bd478db4f012bc93c736b465070b51c"
+    },
+    {
+      "file": "references/fft/check_results.py",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/check_results.py",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 2199,
+      "sha256": "6814784d72aa7d04263fd5af91a4c35d0123641bb813e6f87aea4b6b23215473"
+    },
+    {
+      "file": "references/fft/contract.json",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/contract.json",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 1808,
+      "sha256": "f0e9d5cf07c1a6ad36efa49289624c9f6cf0a8b5cd1de211eb4c3a67511c1b7a"
+    },
+    {
+      "file": "references/fft/evidence/run01/build.txt",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/evidence/run01/build.txt",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 39565,
+      "sha256": "d1684977e6f1c612cf0e4fe5732635dc926ba59e6705f4b892a27cf066c59dcc"
+    },
+    {
+      "file": "references/fft/evidence/run01/check.json",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/evidence/run01/check.json",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 662,
+      "sha256": "6ece17791d45e2f8dd153c54c2a6b523b27700dc8e5fd781b969589b5c3dd7e6"
+    },
+    {
+      "file": "references/fft/evidence/run01/cycles.csv",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/evidence/run01/cycles.csv",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 768,
+      "sha256": "90ca22528eab427a4bd9de390db21f426076acdc87117b03a3a014bc00029324"
+    },
+    {
+      "file": "references/fft/evidence/run01/inputs.mem",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/evidence/run01/inputs.mem",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 405504,
+      "sha256": "ff14339db6c3ec9652bf9521ab4dc4bd88b459bd6a98389db7eb124bacd1f773"
+    },
+    {
+      "file": "references/fft/evidence/run01/ip-properties.txt",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/evidence/run01/ip-properties.txt",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 6692,
+      "sha256": "981eea91ea2a3f13a5ddb2f62edde82f1523734f1700c1d7e02d1d521e2857ee"
+    },
+    {
+      "file": "references/fft/evidence/run01/outputs.csv",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/evidence/run01/outputs.csv",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 298270,
+      "sha256": "3fcf1d83bb0190d73b4b2fe459069e1e033ad6bbd304d78575fddd60fcc6bb29"
+    },
+    {
+      "file": "references/fft/evidence/run01/reference.json",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/evidence/run01/reference.json",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 373694,
+      "sha256": "c78770498ef72a381d5e9fda8742c2f7939d28078528afb1bd42845e2652e1ce"
+    },
+    {
+      "file": "references/fft/evidence/run01/simulation.txt",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/evidence/run01/simulation.txt",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 3066,
+      "sha256": "7ca935dc2e052945dd543c8b7eaf55daf7a4b8cf17bcd6b03e0bf8b3b0456453"
+    },
+    {
+      "file": "references/fft/evidence/run01/ss_fft.xci",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/evidence/run01/ss_fft.xci",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 28306,
+      "sha256": "0cc3549721df23822ab01071e1dbf4b8fc89b1bb43bae13cd6fe283db828d6d6"
+    },
+    {
+      "file": "references/fft/evidence/run01/synth-timing.rpt",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/evidence/run01/synth-timing.rpt",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 27351,
+      "sha256": "488e894e4b90a9de777ced780b72ed37a72a5999ec46a8007fab9334fe3e46fe"
+    },
+    {
+      "file": "references/fft/evidence/run01/utilization.rpt",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/evidence/run01/utilization.rpt",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 8815,
+      "sha256": "06d73402c635d8135dd852b52ddc85c875c7e15bbeb0b8c42aa57b84f85e3739"
+    },
+    {
+      "file": "references/fft/hashes.json",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/hashes.json",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 1989,
+      "sha256": "e4b6536da7a3fa6eeb6143d4c0d7a5bb53a89dd9ea851ad3d33dca5c1c976778"
+    },
+    {
+      "file": "references/fft/probe.tcl",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/probe.tcl",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 558,
+      "sha256": "d6552ab227af72e00d2d605aa55d7bcb7399e18bc55e0dc4da4738d6a6fc726f"
+    },
+    {
+      "file": "references/fft/simulate.tcl",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/simulate.tcl",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 453,
+      "sha256": "cb5e168cd78e2581d4d5a86f826db4143626c0d72fe8c0e6971a34451fd1faf5"
+    },
+    {
+      "file": "references/fft/tb_fft.sv",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/tb_fft.sv",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 3110,
+      "sha256": "e45393add6d24ad2067a78278affa0636bb40c6477a039cbaa70c447e5e6edd0"
+    },
+    {
+      "file": "references/fft/vectors.py",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/vectors.py",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 1542,
+      "sha256": "da76d6a9624cf531f96b5ae0923117d3a40646bde516d8f28506c8803c9a6e3e"
+    },
+    {
+      "file": "references/fft/verify.py",
+      "source": "task-packages/PKG-A-ACQ/tasks/fft-ip-budget-01/verify.py",
+      "kind": "git-blob-pending-B-review",
+      "commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+      "bytes": 3237,
+      "sha256": "c4c1b95d935ff6c3a57e2f4bb9e1c21777b80888366df649b0e39aa6d1eb97be"
+    },
+    {
+      "file": "references/mono/README.md",
+      "source": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff9-0287-7e00-b73d-abf12e6b3035\\mono_acceptance_20260910\\README.md",
+      "kind": "local-post-capture-archive-not-load-proof",
+      "commit": null,
+      "bytes": 3521,
+      "sha256": "43d58f54cff05c9dd6e14696cd1417f185ffb81c0f0877d419c5afccd9128969"
+    },
+    {
+      "file": "references/mono/serial-user-transcript.txt",
+      "source": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff9-0287-7e00-b73d-abf12e6b3035\\mono_acceptance_20260910\\serial-user-transcript.txt",
+      "kind": "local-post-capture-archive-not-load-proof",
+      "commit": null,
+      "bytes": 877,
+      "sha256": "77df746d3a509f4ed2395ba4efe02f8e274edc6eb7b786a58b7ade9ef91d62c3"
+    },
+    {
+      "file": "references/mono/snapshot-manifest.json",
+      "source": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff9-0287-7e00-b73d-abf12e6b3035\\mono_acceptance_20260910\\snapshot-manifest.json",
+      "kind": "local-post-capture-archive-not-load-proof",
+      "commit": null,
+      "bytes": 4540,
+      "sha256": "594f56ea3f9c1a04fbc4fff646d4295e80f866f76ebc09bf6b8c4481aff6770f"
+    },
+    {
+      "file": "references/mono/snapshot/system.bd",
+      "source": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff9-0287-7e00-b73d-abf12e6b3035\\mono_acceptance_20260910\\snapshot\\system.bd",
+      "kind": "local-post-capture-archive-not-load-proof",
+      "commit": null,
+      "bytes": 46977,
+      "sha256": "0f2e4af348e59adca01dc653efd9edcc5c2e0c2fab56a16368090e3e0c93f86f"
+    },
+    {
+      "file": "references/mono/snapshot/pcm_capture_axis.v",
+      "source": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff9-0287-7e00-b73d-abf12e6b3035\\mono_acceptance_20260910\\snapshot\\pcm_capture_axis.v",
+      "kind": "local-post-capture-archive-not-load-proof",
+      "commit": null,
+      "bytes": 2478,
+      "sha256": "a057c119227e071230eaf2f157a5c9263e20a72acb55c4fe6faf54daeefeebc6"
+    },
+    {
+      "file": "references/mono/snapshot/pdm_cic3.v",
+      "source": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff9-0287-7e00-b73d-abf12e6b3035\\mono_acceptance_20260910\\snapshot\\pdm_cic3.v",
+      "kind": "local-post-capture-archive-not-load-proof",
+      "commit": null,
+      "bytes": 1153,
+      "sha256": "a80c176053688662cd8bb47f98edcadeb9b758d514365724fd8b6ffd2120573d"
+    },
+    {
+      "file": "references/mono/snapshot/single_mic_top.v",
+      "source": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff9-0287-7e00-b73d-abf12e6b3035\\mono_acceptance_20260910\\snapshot\\single_mic_top.v",
+      "kind": "local-post-capture-archive-not-load-proof",
+      "commit": null,
+      "bytes": 2203,
+      "sha256": "47cfa7f59ab3a1fa1c52ee502133ed03dd32da5f76d29faa5101a131d9f8448c"
+    },
+    {
+      "file": "references/mono/snapshot/main_mono_capture.c",
+      "source": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff9-0287-7e00-b73d-abf12e6b3035\\mono_acceptance_20260910\\snapshot\\main_mono_capture.c",
+      "kind": "local-post-capture-archive-not-load-proof",
+      "commit": null,
+      "bytes": 4535,
+      "sha256": "c8dcf209829c45a3aeb27e4e2ef1f627a8419c15ec21a1777d76af65ac382034"
+    },
+    {
+      "file": "references/mono/snapshot/single_mic_io.xdc",
+      "source": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff9-0287-7e00-b73d-abf12e6b3035\\mono_acceptance_20260910\\snapshot\\single_mic_io.xdc",
+      "kind": "local-post-capture-archive-not-load-proof",
+      "commit": null,
+      "bytes": 270,
+      "sha256": "f2906937841e27514953cc9575b9fde1321b95c7bfb354ff838fd16ad313ecd9"
+    },
+    {
+      "file": "references/mono-closeout/ACCEPTANCE_STATUS.md",
+      "source": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff9-0287-7e00-b73d-abf12e6b3035\\mono_closeout_20260910\\ACCEPTANCE_STATUS.md",
+      "kind": "local-archive-not-new-measurement",
+      "commit": null,
+      "bytes": 5496,
+      "sha256": "6e7cd0409a10ed90de74847847f5be5d73430eda200138aa650067b180a05842"
+    },
+    {
+      "file": "references/mono-closeout/CLOSEOUT.md",
+      "source": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff9-0287-7e00-b73d-abf12e6b3035\\mono_closeout_20260910\\CLOSEOUT.md",
+      "kind": "local-archive-not-new-measurement",
+      "commit": null,
+      "bytes": 4559,
+      "sha256": "6117eac4c96a76059f7c26b752047a756e8b184c2ba484519fd81b8480e45097"
+    },
+    {
+      "file": "references/mono-closeout/system_wrapper_utilization_placed.rpt",
+      "source": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff9-0287-7e00-b73d-abf12e6b3035\\mono_closeout_20260910\\system_wrapper_utilization_placed.rpt",
+      "kind": "local-archive-not-new-measurement",
+      "commit": null,
+      "bytes": 11722,
+      "sha256": "31321a75d268e4a25e09cf0d6611b9e08b689d3fe79d427b69cf73c9e11a1cbd"
+    },
+    {
+      "file": "references/mono-closeout/system_wrapper_timing_summary_routed.rpt",
+      "source": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff9-0287-7e00-b73d-abf12e6b3035\\mono_closeout_20260910\\system_wrapper_timing_summary_routed.rpt",
+      "kind": "local-archive-not-new-measurement",
+      "commit": null,
+      "bytes": 535034,
+      "sha256": "fff2dd7f09349cbcc49a0202f7a5d4fe9d4881aa7b731c37de9ab7c7fb7cfb8c"
+    },
+    {
+      "file": "references/mono-closeout/manifest.json",
+      "source": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff9-0287-7e00-b73d-abf12e6b3035\\mono_closeout_20260910\\manifest.json",
+      "kind": "local-archive-not-new-measurement",
+      "commit": null,
+      "bytes": 3993,
+      "sha256": "984653116fd353aef12b0b1e5b18a59db0298f462a57b7fe53e33b79df18a5e7"
+    },
+    {
+      "file": "references/policy/rtl-language-and-bd-integration.md",
+      "source": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\docs\\rtl-language-and-bd-integration.md",
+      "kind": "user-approved-policy-uncommitted-at-snapshot",
+      "commit": null,
+      "bytes": 4241,
+      "sha256": "f6af7daa2880147e2c38f29e7ebcd3987b6ed5f79d982047b2d547de13eb6810"
+    }
+  ]
+}
