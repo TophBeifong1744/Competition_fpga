@@ -165,3 +165,14 @@
   说明：诊断重开工程时扫描其他开发板，安装中缺少其对应器件；本工程使用明确的xc7z020clg400-2，不使用这些Board Part。
 - `logs/diagnostic/diagnostic.log:102` — WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build
   说明：诊断工程没有选择Board Part，按具体器件创建；不影响本包器件选择。
+
+## 004-R2：2026-09-11 BD成功运行补充
+
+证据目录：logs/rework_01_20260911_194059。默认32位和修改3位的端口检查及Validate通过，退出码0。
+此前appinit初始化失败根因尚未确定；本次成功运行不代表已修复全局TclStore环境。
+历史警告保留。以下逐条登记本次日志中的警告原文及行号；通过不等于无警告，仍待B复核批准。
+
+- `logs/rework_01_20260911_194059/bd.log:55` — WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+- `logs/rework_01_20260911_194059/bd.log:56` — WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+- `logs/rework_01_20260911_194059/bd.log:99` — WARNING: [BD 41-2925] The design that will be created by this Tcl script contains the following module references: stream_error_stats_bd.
+- `logs/rework_01_20260911_194059/bd.log:114` — WARNING: [BD 41-2925] The design that will be created by this Tcl script contains the following module references: stream_error_stats_bd.

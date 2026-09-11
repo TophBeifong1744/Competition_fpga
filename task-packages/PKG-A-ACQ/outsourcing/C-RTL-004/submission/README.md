@@ -1,7 +1,6 @@
 # C-RTL-004：001核心Verilog包装与独立BD交付
 
-状态：R1 路径传参修复已完成。2026-09-11 使用不含空格的路径完成独立 BD 验证，默认 COUNT_WIDTH=32 和修改为 3 的端口检查及 Validate 均通过，Vivado 退出码为 0。证据见 logs/rework_01_20260911_194059/。原功能仿真证据保留，本次未重跑；尚待独立验收。
-
+状态：C-RTL-004 技术复核通过；004-R2 正在修正交付资料，尚未正式批准或合入。2026-09-11 使用无空格路径完成独立 BD 验证，COUNT_WIDTH 默认32和修改为3的端口检查、Validate均通过，Vivado退出码为0。成功证据见 logs/rework_01_20260911_194059/。原功能仿真证据保留，本次未重跑。
 ## 交付信息
 
 - 作者：hsc（Codex辅助）；版本1.1-R1（验证未完成）；2026-09-11。
@@ -138,4 +137,10 @@ ALL BD TESTS PASS
 
 ## R1 返工记录
 
-基线提交 0d737e3；仅修复 TB 导入的 Tcl 文件列表传参。当前修订的准确提交按上方 git log 命令查询。原清单已保存至 evidence-history/manifest-before-rework-01.json。本次失败日志、复现命令及后续步骤见 logs/rework-01/README.md。上文 bd-final 为历史证据，不代表 R1 通过。
+R1 已修复 rebuild_bd.tcl 中 TB 导入的文件列表参数，使用 [list [file join ...]]。历史失败过程保留在 logs/rework-01/，不作为当前验证结论。
+
+2026-09-11 的成功运行证据保存在 logs/rework_01_20260911_194059/：bd.log、exit_code.txt，以及 evidence/ 下的 ports-32.txt、ports-3.txt、bd-default32.tcl、bd-width3.tcl。默认32位和修改3位的端口检查及 Validate 均通过，ALL BD TESTS PASS，退出码0。
+
+本次成功运行使用无空格路径，不声明完成了含空格路径回归。此前 appinit 初始化失败的根因尚未确定，本次运行已不受该错误阻断。
+
+004-R2 仅修正交付资料并更新文件清单；不改RTL、不重跑已通过测试、不新增005。当前技术复核通过，正式批准和集成仍待B复核批准。
