@@ -1,0 +1,25 @@
+{
+  "status": "PASS_AUTHOR_TESTS_NOT_H2",
+  "tests": 15,
+  "commands": [
+    [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "task-packages\\PKG-B-ALG\\tasks\\four-channel-receipt-01\\test_diagnose.py"
+    ],
+    [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "task-packages\\PKG-B-ALG\\tasks\\four-channel-receipt-01\\diagnose.py",
+      "task-packages\\PKG-B-ALG\\reference\\h1-ss-data-draft-0.3\\payload\\examples\\h1\\code-pattern",
+      "task-packages\\PKG-B-ALG\\reference\\h1-ss-data-draft-0.3\\payload\\examples\\h1\\restart",
+      "--out",
+      "task-packages\\PKG-B-ALG\\tasks\\four-channel-receipt-01\\evidence\\run01\\fixture-diagnostics"
+    ]
+  ],
+  "source_sha256": {
+    "task-packages\\PKG-B-ALG\\tasks\\four-channel-receipt-01\\diagnose.py": "ff54a4ad47a9a07212b2d6b2dfe7525e5933d065c214fbee711cd4113517344f",
+    "task-packages\\PKG-B-ALG\\tasks\\four-channel-receipt-01\\test_diagnose.py": "cd711f88b312fabbf9ab8e87dd108b9f0d8941547b75202d593daf2b40c31047",
+    "task-packages\\PKG-B-ALG\\payload\\model\\python\\h1_reader.py": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9"
+  }
+}
