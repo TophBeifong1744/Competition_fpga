@@ -9,7 +9,7 @@ if {[file exists $target]} {error "Use a new target directory"}
 create_project c004_bd_probe $target -part xc7z020clg400-2
 set_property target_language Verilog [current_project]
 import_files -fileset sources_1 [list [file join $package reference stream_error_stats.sv] [file join $package rtl stream_error_stats_bd.v]]
-import_files -fileset sim_1 [file join $package tb tb_stream_error_stats_bd.sv]
+import_files -fileset sim_1 [list [file join $package tb tb_stream_error_stats_bd.sv]]
 set_property top stream_error_stats_bd [get_filesets sources_1]
 set_property top tb_stream_error_stats_bd [get_filesets sim_1]
 set_property -name xsim.elaborate.xelab.more_options -value { -timescale 1ns/1ps} -objects [get_filesets sim_1]

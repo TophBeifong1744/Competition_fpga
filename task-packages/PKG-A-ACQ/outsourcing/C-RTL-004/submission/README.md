@@ -1,10 +1,10 @@
 # C-RTL-004：001核心Verilog包装与独立BD交付
 
-状态：作者自检 PASS，独立 BD 默认32/3位检查及 Validate PASS。待独立验收及 B 正式复核，由 A 安排后续总工程集成。
+状态：R1 路径修复已完成，当前 BD 复跑因工程目录创建失败而阻断，暂未整体验收通过。原功能仿真证据保留。详见 logs/rework-01/README.md。
 
 ## 交付信息
 
-- 作者：hsc（Codex辅助）；版本1.0；2026-09-10。
+- 作者：hsc（Codex辅助）；版本1.1-R1（验证未完成）；2026-09-11。
 - 唯一本地交付分支：codex/c-rtl-001-outsourcing-docs；不合并 main，不推送远端。
 - 工作基线：0bcae278335e8029f6c7c3dc8e20a9bbadc8ff85。
 - 准确交付提交：仓库根目录执行 `git log -1 --format=%H -- task-packages/PKG-A-ACQ/outsourcing/C-RTL-004/submission`。精确文件字节另见 file-manifest.json。
@@ -131,7 +131,11 @@ ALL BD TESTS PASS
 
 1. 第一次BD脚本设置以减号开头的xelab选项时被Tcl解析为选项，提前失败；改用显式属性参数及前导空格后解决。原日志保留。
 2. 第二次默认32位已通过；额外update_module_reference返回空错误。诊断证实CONFIG设置后实际模块计数引脚LEFT已由31变2，自动刷新已完成，3位Validate也通过。最终移除该冗余调用，在新工程完整重跑两种参数通过。诊断错误没有隐藏或写成通过。
-3. GUI视觉检查、综合和板测未执行；不穷举64位计数，不添加额外随机框架。无未解决的必需功能或BD失败。
+3. GUI视觉检查、综合和板测未执行；不穷举64位计数，不添加额外随机框架。该结论仅属于历史自检；独立复核发现空格路径问题，本次 R1 仍待成功 BD 验证。
 4. 未改001核心、002/003、instructions快照或共享one工程。功能和BD通过不等于正式时钟合同、整板时序或总工程接入通过。
 
 复跑不会覆盖本包原始日志。需要更新交付证据时先保留旧版，再核对源码与日志版本并运行 `& .\scripts\update_manifest.ps1`。
+
+## R1 返工记录
+
+基线提交 0d737e3；仅修复 TB 导入的 Tcl 文件列表传参。当前修订的准确提交按上方 git log 命令查询。原清单已保存至 evidence-history/manifest-before-rework-01.json。本次失败日志、复现命令及后续步骤见 logs/rework-01/README.md。上文 bd-final 为历史证据，不代表 R1 通过。
