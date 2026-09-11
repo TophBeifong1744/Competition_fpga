@@ -1,0 +1,224 @@
+{
+  "status": "PARTIAL_OR_REJECTED",
+  "input_directories": 2,
+  "readable": 1,
+  "rejected": 1,
+  "segments": [
+    {
+      "directory": "E:\\ss-four-channel-review-01\\task-packages\\PKG-B-ALG\\tasks\\four-channel-receipt-01\\evidence\\a-review-run01\\cases\\multiple-errors",
+      "parse_status": "REJECTED",
+      "error": {
+        "directory": "E:\\ss-four-channel-review-01\\task-packages\\PKG-B-ALG\\tasks\\four-channel-receipt-01\\evidence\\a-review-run01\\cases\\multiple-errors",
+        "severity": "fatal_format_error",
+        "code": "integer_range",
+        "field": "mic0",
+        "csv_line": 2,
+        "message": "integer_range: mic0 at CSV physical line 2: expected -8388608..8388607",
+        "file_sha256": {
+          "metadata.json": "7a523a1d7813d3dae8aa1c79a83aac2c508c1b81defd143268643a97199e34bb",
+          "samples.csv": "388264dc1fd9575ffa93cf9d15c1a6af54e917d254251fdf5b573b6afce913a1"
+        }
+      },
+      "next_action": "修订导出器或元数据并交新版本；原始文件保持不变。"
+    },
+    {
+      "schema_version": "ss-data-draft-0.3",
+      "acquisition_id": "h1-code-002",
+      "config_version": "h1-code-config-0.1",
+      "samples": 2,
+      "sample_id_dtype": "uint64",
+      "pcm_dtype": "int32",
+      "first_sample_id": "0",
+      "last_sample_id": "1",
+      "clean_intervals": [
+        {
+          "row_start": 0,
+          "row_stop": 2,
+          "first_sample_id": "0",
+          "last_sample_id": "1"
+        }
+      ],
+      "missing_intervals": [],
+      "error_rows": 0,
+      "direction_policy": "forbidden_non_acoustic_input",
+      "declared_evidence": "synthetic",
+      "acceptance_verified": false,
+      "calibration_verified": false,
+      "file_sha256": {
+        "metadata.json": "c3ffc03e41ca5c8e9cee4dd050c51bcbd98d112dce299683c3b4873d019af9e3",
+        "samples.csv": "d95c743494822c2279647a770fceb8bbc4d4c222d1917c9c92a77ea2e2a15119"
+      },
+      "amplitude_all_rows": [
+        {
+          "channel": "mic0",
+          "samples": 2,
+          "minimum": -101,
+          "maximum": 101,
+          "mean_pcm": 0.0,
+          "rms_pcm": 101.0,
+          "ac_rms_pcm": 101.0,
+          "peak_fullscale": 1.2040138244628906e-05,
+          "full_scale_code_count": 0,
+          "zero_code_count": 0,
+          "constant": false
+        },
+        {
+          "channel": "mic1",
+          "samples": 2,
+          "minimum": -201,
+          "maximum": 201,
+          "mean_pcm": 0.0,
+          "rms_pcm": 201.0,
+          "ac_rms_pcm": 201.0,
+          "peak_fullscale": 2.396106719970703e-05,
+          "full_scale_code_count": 0,
+          "zero_code_count": 0,
+          "constant": false
+        },
+        {
+          "channel": "mic2",
+          "samples": 2,
+          "minimum": -301,
+          "maximum": 301,
+          "mean_pcm": 0.0,
+          "rms_pcm": 301.0,
+          "ac_rms_pcm": 301.0,
+          "peak_fullscale": 3.5881996154785156e-05,
+          "full_scale_code_count": 0,
+          "zero_code_count": 0,
+          "constant": false
+        },
+        {
+          "channel": "mic3",
+          "samples": 2,
+          "minimum": -401,
+          "maximum": 401,
+          "mean_pcm": 0.0,
+          "rms_pcm": 401.0,
+          "ac_rms_pcm": 401.0,
+          "peak_fullscale": 4.780292510986328e-05,
+          "full_scale_code_count": 0,
+          "zero_code_count": 0,
+          "constant": false
+        }
+      ],
+      "notes": [
+        "未排序、重编号、补样、滤波或改增益；文件之间不拼接。",
+        "均值/RMS包括直流；AC RMS只减均值作统计，不产生处理后音频。",
+        "relock标志行数不是已验证重启事件数；新acquisition由元数据声明。"
+      ],
+      "directory": "E:\\ss-four-channel-review-01\\task-packages\\PKG-B-ALG\\reference\\h1-ss-data-draft-0.3\\payload\\examples\\h1\\restart",
+      "parse_status": "READABLE_FORMAT_ONLY",
+      "channel_count": 4,
+      "channel_order": [
+        "mic0",
+        "mic1",
+        "mic2",
+        "mic3"
+      ],
+      "source_kind": "synthetic-code",
+      "sample_rate_hz_declared": 48000,
+      "sample_rate_measured_verified": false,
+      "provisional_fields": {
+        "channel_order": "Software mapping only; physical microphones not mapped.",
+        "coordinates_m": "Nominal square geometry, not measured.",
+        "sample_rate_hz": "Nominal software timebase, not measured.",
+        "sample_format": "Exchange representation only, not measured microphone resolution."
+      },
+      "nominal_duration_from_row_count_s": 4.1666666666666665e-05,
+      "flagged_rows": [],
+      "flag_row_counts": {},
+      "relock_flag_rows": 0,
+      "reset_events_verified": false,
+      "amplitude_format_clean_rows": [
+        {
+          "channel": "mic0",
+          "samples": 2,
+          "minimum": -101,
+          "maximum": 101,
+          "mean_pcm": 0.0,
+          "rms_pcm": 101.0,
+          "ac_rms_pcm": 101.0,
+          "peak_fullscale": 1.2040138244628906e-05,
+          "full_scale_code_count": 0,
+          "zero_code_count": 0,
+          "constant": false
+        },
+        {
+          "channel": "mic1",
+          "samples": 2,
+          "minimum": -201,
+          "maximum": 201,
+          "mean_pcm": 0.0,
+          "rms_pcm": 201.0,
+          "ac_rms_pcm": 201.0,
+          "peak_fullscale": 2.396106719970703e-05,
+          "full_scale_code_count": 0,
+          "zero_code_count": 0,
+          "constant": false
+        },
+        {
+          "channel": "mic2",
+          "samples": 2,
+          "minimum": -301,
+          "maximum": 301,
+          "mean_pcm": 0.0,
+          "rms_pcm": 301.0,
+          "ac_rms_pcm": 301.0,
+          "peak_fullscale": 3.5881996154785156e-05,
+          "full_scale_code_count": 0,
+          "zero_code_count": 0,
+          "constant": false
+        },
+        {
+          "channel": "mic3",
+          "samples": 2,
+          "minimum": -401,
+          "maximum": 401,
+          "mean_pcm": 0.0,
+          "rms_pcm": 401.0,
+          "ac_rms_pcm": 401.0,
+          "peak_fullscale": 4.780292510986328e-05,
+          "full_scale_code_count": 0,
+          "zero_code_count": 0,
+          "constant": false
+        }
+      ],
+      "pair_intervals": [],
+      "observations": [
+        {
+          "code": "INSUFFICIENT_CLEAN_PAIR_SAMPLES",
+          "message": "没有长度达到32的格式无错连续区间，相似度未评估。"
+        },
+        {
+          "code": "NOT_REAL_AUDIO_RECEIPT",
+          "message": "来源声明为码型或合成数据，不能记作真实四路H2。"
+        },
+        {
+          "code": "GEOMETRY_OR_CALIBRATION_UNVERIFIED",
+          "message": "可做通道诊断，不能据此宣称方向精度或SNR。"
+        }
+      ],
+      "h2_acceptance": false,
+      "next_action": "先核查错误/可疑通道及来源；可解析不等于采集验收通过。",
+      "sample_id_output": "decimal strings; original uint64 values retained",
+      "acquisition_change_from_previous_readable": false
+    }
+  ],
+  "h2_acceptance": false,
+  "four_channel_real_input_verified": false,
+  "diagnostic_settings": {
+    "correlation_threshold": 0.995,
+    "min_pair_samples": 32
+  },
+  "error_reporting": "Each rejected recording stops at first strict-reader failure; no partial salvage. Other directories continue.",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "sources": {
+    "E:\\ss-four-channel-review-01\\task-packages\\PKG-B-ALG\\payload\\model\\python\\h1_reader.py": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9",
+    "E:\\ss-four-channel-review-01\\task-packages\\PKG-B-ALG\\tasks\\four-channel-receipt-01\\diagnose.py": "ff54a4ad47a9a07212b2d6b2dfe7525e5933d065c214fbee711cd4113517344f"
+  }
+}

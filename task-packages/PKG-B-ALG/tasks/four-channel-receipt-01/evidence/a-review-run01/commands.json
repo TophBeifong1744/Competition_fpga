@@ -1,0 +1,69 @@
+[
+  {
+    "label": "author-tests",
+    "argv": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "task-packages\\PKG-B-ALG\\tasks\\four-channel-receipt-01\\test_diagnose.py"
+    ],
+    "cwd": "E:\\ss-four-channel-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "label": "reader-tests",
+    "argv": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "task-packages\\PKG-B-ALG\\payload\\tb\\python\\test_h1_reader.py"
+    ],
+    "cwd": "E:\\ss-four-channel-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "label": "demo",
+    "argv": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "task-packages\\PKG-B-ALG\\tasks\\four-channel-receipt-01\\diagnose.py",
+      "E:\\ss-four-channel-review-01\\task-packages\\PKG-B-ALG\\reference\\h1-ss-data-draft-0.3\\payload\\examples\\h1\\code-pattern",
+      "E:\\ss-four-channel-review-01\\task-packages\\PKG-B-ALG\\reference\\h1-ss-data-draft-0.3\\payload\\examples\\h1\\restart",
+      "--out",
+      "E:\\ss-four-channel-review-01\\task-packages\\PKG-B-ALG\\tasks\\four-channel-receipt-01\\evidence\\a-review-run01\\fixture-diagnostics"
+    ],
+    "cwd": "E:\\ss-four-channel-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "label": "existing-output-rejected",
+    "argv": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "task-packages\\PKG-B-ALG\\tasks\\four-channel-receipt-01\\diagnose.py",
+      "E:\\ss-four-channel-review-01\\task-packages\\PKG-B-ALG\\reference\\h1-ss-data-draft-0.3\\payload\\examples\\h1\\code-pattern",
+      "E:\\ss-four-channel-review-01\\task-packages\\PKG-B-ALG\\reference\\h1-ss-data-draft-0.3\\payload\\examples\\h1\\restart",
+      "--out",
+      "E:\\ss-four-channel-review-01\\task-packages\\PKG-B-ALG\\tasks\\four-channel-receipt-01\\evidence\\a-review-run01\\fixture-diagnostics"
+    ],
+    "cwd": "E:\\ss-four-channel-review-01",
+    "exit_code": 2,
+    "expected": 2
+  },
+  {
+    "label": "mixed-cli",
+    "argv": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "task-packages\\PKG-B-ALG\\tasks\\four-channel-receipt-01\\diagnose.py",
+      "E:\\ss-four-channel-review-01\\task-packages\\PKG-B-ALG\\tasks\\four-channel-receipt-01\\evidence\\a-review-run01\\cases\\multiple-errors",
+      "E:\\ss-four-channel-review-01\\task-packages\\PKG-B-ALG\\reference\\h1-ss-data-draft-0.3\\payload\\examples\\h1\\restart",
+      "--out",
+      "E:\\ss-four-channel-review-01\\task-packages\\PKG-B-ALG\\tasks\\four-channel-receipt-01\\evidence\\a-review-run01\\mixed-cli"
+    ],
+    "cwd": "E:\\ss-four-channel-review-01",
+    "exit_code": 2,
+    "expected": 2
+  }
+]

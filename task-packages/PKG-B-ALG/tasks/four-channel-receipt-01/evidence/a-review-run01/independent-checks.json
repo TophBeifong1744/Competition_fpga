@@ -1,0 +1,107 @@
+[
+  {
+    "case": "gap-separated",
+    "readable": 1,
+    "rejected": 0
+  },
+  {
+    "case": "geometry-conflict",
+    "readable": 1,
+    "rejected": 1
+  },
+  {
+    "case": "acquisition-overlap",
+    "readable": 1,
+    "rejected": 1
+  },
+  {
+    "case": "same-acquisition-unobserved-gap",
+    "readable": 2,
+    "rejected": 0
+  },
+  {
+    "case": "failed-load-no-registry-pollution",
+    "readable": 1,
+    "rejected": 1
+  },
+  {
+    "case": "3-channels-rejected",
+    "readable": 0,
+    "rejected": 1
+  },
+  {
+    "case": "6-channels-rejected",
+    "readable": 0,
+    "rejected": 1
+  },
+  {
+    "case": "format-valid_bits",
+    "readable": 0,
+    "rejected": 1
+  },
+  {
+    "case": "format-storage_dtype",
+    "readable": 0,
+    "rejected": 1
+  },
+  {
+    "case": "format-alignment",
+    "readable": 0,
+    "rejected": 1
+  },
+  {
+    "case": "pcm-negative-overflow",
+    "readable": 0,
+    "rejected": 1
+  },
+  {
+    "case": "id-overflow",
+    "readable": 0,
+    "rejected": 1
+  },
+  {
+    "case": "id-wrap",
+    "readable": 0,
+    "rejected": 1
+  },
+  {
+    "case": "zero-constant",
+    "readable": 1,
+    "rejected": 0
+  },
+  {
+    "case": "accepted-is-declaration",
+    "readable": 1,
+    "rejected": 0
+  },
+  {
+    "case": "missing-input-continue",
+    "readable": 1,
+    "rejected": 1
+  },
+  {
+    "case": "first-fatal-only",
+    "readable": 0,
+    "rejected": 1
+  },
+  {
+    "case": "output-same",
+    "result": "rejected"
+  },
+  {
+    "case": "output-child",
+    "result": "rejected"
+  },
+  {
+    "case": "threshold-nan",
+    "result": "rejected-before-output"
+  },
+  {
+    "case": "threshold-zero",
+    "result": "rejected-before-output"
+  },
+  {
+    "case": "min-one",
+    "result": "rejected-before-output"
+  }
+]
