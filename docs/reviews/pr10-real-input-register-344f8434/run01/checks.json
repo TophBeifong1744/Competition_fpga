@@ -1,0 +1,154 @@
+{
+  "status": "PASS_REGISTRATION_CHECKS_ONLY",
+  "review_sha": "344f8434c54187f7c5d412ee1ef38335a433beff",
+  "main_checked": "4957d18837f79eca7a6acc86a2757d10f41dd410",
+  "changed_files": 20,
+  "allowed_changes": [
+    "M\tdocs/phases/2026-09-11-to-09-16/B.md",
+    "M\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/README.md",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/.gitattributes",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/HANDOFF.md",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/PR-BODY.md",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/README.md",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/REGISTER.json",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/VALIDATION.md",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/01-manifest.txt",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/02-reader.txt",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/03-audit.txt",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/04-listening.txt",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/05-reader-tests.txt",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/06-export-tests.txt",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/07-gate-tests.txt",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/08-independent-summary.txt",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/08-independent.json",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/independent_review.py",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/replay_independent.py",
+    "A\ttask-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/verify_register.py"
+  ],
+  "historical_hash_count": 10,
+  "unique_original_blob_coverage": 76,
+  "unique_capture_index": 18,
+  "receipt_change": [
+    "A\ttask-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/B-REVIEW.md"
+  ],
+  "manifest_blob_hash": "6c1505533787558a204fa4ed303931b4006e7519c2416f632a4ec32bbf003c01",
+  "capture_metadata_crosscheck": [
+    {
+      "acquisition": "dupont-quiet-01",
+      "groups": 32000,
+      "first_id": 17544,
+      "last_id": 49543,
+      "coordinates_m": null,
+      "source_kind": "hardware-audio",
+      "evidence_level": "diagnostic"
+    },
+    {
+      "acquisition": "dupont-speech-01",
+      "groups": 32000,
+      "first_id": 15798,
+      "last_id": 47797,
+      "coordinates_m": null,
+      "source_kind": "hardware-audio",
+      "evidence_level": "diagnostic"
+    }
+  ],
+  "historical_tests": {
+    "05-reader-tests.txt": {
+      "historical_tests": 47,
+      "rerun_this_review": false
+    },
+    "06-export-tests.txt": {
+      "historical_tests": 8,
+      "rerun_this_review": false
+    },
+    "07-gate-tests.txt": {
+      "historical_tests": 9,
+      "rerun_this_review": false
+    }
+  },
+  "computational_region_equal": true,
+  "computational_ast_equal": true,
+  "computational_region_sha256": "b2abc57e2986ace96c15cdf055d9f52604f92ea524fcfc95b865d920b0d58bfa",
+  "numerical_replay_executed": false,
+  "replay_syntax_compiled": true,
+  "relative_links_checked": [
+    {
+      "source": "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/README.md",
+      "target": "REGISTER.json"
+    },
+    {
+      "source": "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/README.md",
+      "target": "historical-evidence/08-independent.json"
+    },
+    {
+      "source": "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/README.md",
+      "target": "VALIDATION.md"
+    },
+    {
+      "source": "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/README.md",
+      "target": "HANDOFF.md"
+    },
+    {
+      "source": "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/README.md",
+      "target": "PR-BODY.md"
+    },
+    {
+      "source": "docs/phases/2026-09-11-to-09-16/B.md",
+      "target": "../../../task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/README.md"
+    },
+    {
+      "source": "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/README.md",
+      "target": "real-input-20260911/README.md"
+    }
+  ],
+  "source_in_main": false,
+  "receipt_in_main": false,
+  "main_delivery_paths": [],
+  "checkout_files_unchanged": true,
+  "checkout_vs_blob_byte_equal": {
+    "docs/phases/2026-09-11-to-09-16/B.md": false,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/README.md": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/.gitattributes": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/HANDOFF.md": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/PR-BODY.md": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/README.md": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/REGISTER.json": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/VALIDATION.md": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/01-manifest.txt": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/02-reader.txt": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/03-audit.txt": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/04-listening.txt": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/05-reader-tests.txt": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/06-export-tests.txt": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/07-gate-tests.txt": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/08-independent-summary.txt": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/08-independent.json": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/independent_review.py": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/replay_independent.py": true,
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/verify_register.py": true
+  },
+  "protected_checkout_sha256": {
+    "docs/phases/2026-09-11-to-09-16/B.md": "e87b341b9d3de3ac507acfa7823063eefdf172c36220cb07bfbaee90b921c801",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/README.md": "24df76effbb121bfbf42c0e5af6bb5955054bed6ce3c5729468f60bc30d158c7",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/.gitattributes": "38d1b5a7d4b48aa52204d850c59c8c837b3c8b460e0bfc95ffd89e451f23865c",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/HANDOFF.md": "bfd5af942c2daa2781ccdd8809a55553b351c22e1b744c4e413514bb63204264",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/PR-BODY.md": "2639dbddc82846dbc99f8a5648f284b9def5bb27d985d0a12b9d25778581761d",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/README.md": "82ce20a99c60cf9997050e312c3b3abde30d734d40e59656a7868d1d390ecd58",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/REGISTER.json": "3026a5a7fe46d6b1e4333fc7dff53421aa48789950c8847b14d283c268a267e3",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/VALIDATION.md": "e51d958bc19d84d9d9bb6b267ad380be0ff291eec476a79e6b28a88d8eff8ee0",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/01-manifest.txt": "a047787f44fb537be0b6774d1849fd0a403143b254381a24e40870e6c3ac0352",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/02-reader.txt": "10e0481382a1e7488d49c8b33593a511792cd21a3f57989f6deb977089d71c16",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/03-audit.txt": "b137da125cb9832e56cb06799f23bf54a28cd3cb1ae0275a88e641cb642258f7",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/04-listening.txt": "bb21a453d92251d7fc07f8752be53cf5f186de188c6b8e0fb05e700941ff5780",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/05-reader-tests.txt": "b2882adaabd1002dce863cabe27fa7697b800c573faf42a4d12bb7a909ea0794",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/06-export-tests.txt": "f9c3b2f5697bf2393b7d81ba1a828e407a391020af2209a19a61c7bafe8e18bd",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/07-gate-tests.txt": "e9384174e800dc278f892aac15240c81e72c8afcacaeb0a8c93c372bf3935966",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/08-independent-summary.txt": "bb342a7de09d4411164264ad48c53d8de387292b94bdb52a09cbd5abba94ebd8",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/08-independent.json": "36a706e04ba186233c4dddbbde50b6352dc04b64e15dc1cda7777f2e92840fc3",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/independent_review.py": "c07d1d8cbc1292bfc9def462a9ad64201f1b515aca27581d283a1def4ae9a35e",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/replay_independent.py": "1c3d6f8e73f69612cabdd0d368ee9ab729d75987333d3136886b02632f78f813",
+    "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/verify_register.py": "7dc0ea67a3eb350d5834cbd75f29a0bf5727a7cd19ced1659fb3474f9c2b5471"
+  },
+  "python": "3.12.14",
+  "no_hardware_or_h2_h3_approval": true
+}
