@@ -1,0 +1,59 @@
+{
+  "status": "PASS_MODULE_REGRESSION",
+  "scope": "Module source integration regression only",
+  "source_commit": "1aab6b5370558c7e24fda97d26b73edc90a66fde",
+  "manifest_sha256": "9991AA195924EA54B07F37F4DC8491826BE6BC080DB9099B59E79EF8C0F88917",
+  "runner_sha256": "B1530FF9655665FF73C352DE685FE5A85CBA9F0DAD96E63CC58C5C88A92EB493",
+  "vivado_bin": "F:/AMD/2025.2/Vivado/bin",
+  "not_run": [
+    "synthesis",
+    "timing",
+    "board",
+    "four-channel capture",
+    "C004"
+  ],
+  "cases": [
+    {
+      "name": "stats",
+      "top": "tb_stream_error_stats",
+      "status": "PASS",
+      "marker": "ALL TESTS PASS",
+      "log_sha256": "6A736B5A181EF894D1A3FDDD2085E5924E4FA2CA91D17B4B243BC37402192E37"
+    },
+    {
+      "name": "snapshot",
+      "top": "tb_stream_error_snapshot_all_widths",
+      "status": "PASS",
+      "marker": "ALL TESTS PASS",
+      "log_sha256": "0FABE056204D8E0F77B68FEF1A2DDFFBD7482D68595837BBD39B1A698D2BC34E"
+    },
+    {
+      "name": "snapshot_joint",
+      "top": "tb_stream_error_snapshot_integration",
+      "status": "PASS",
+      "marker": "ALL TESTS PASS",
+      "log_sha256": "0CAD4C3E6A128D17D87CF275698C7E7E6F3AA0CDAA25403E80DDB0A2A9ACEA15"
+    },
+    {
+      "name": "snapshot_independent",
+      "top": "tb_independent",
+      "status": "PASS",
+      "marker": "REVIEW ALL PASS",
+      "log_sha256": "56489BFE7593397BCC487D0CCD5431D85A471D0A080D9077265B170A42534344"
+    },
+    {
+      "name": "pcm4",
+      "top": "tb_pcm4_signext_pack",
+      "status": "PASS",
+      "marker": "ALL TESTS PASS",
+      "log_sha256": "D07BE30DEC65D8CFA5639F98C092AA911EF8A99BC4A5D7DDBD6007DD1EB4FCC2"
+    },
+    {
+      "name": "pcm4_independent",
+      "top": "tb_review",
+      "status": "PASS",
+      "marker": "REVIEW ALL PASS",
+      "log_sha256": "E9F96DC25A48913BC709A3C422AFC5A7B732FB1B20CA0B4A4FE2D8FE14718D9E"
+    }
+  ]
+}

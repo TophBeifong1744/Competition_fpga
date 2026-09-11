@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri Sep 11 12:15:07 2026
+# Process ID         : 29628
+# Current directory  : C:/Users/Toph Beifong/.codex/visualizations/2026/09/05/01a06fc1-b474-7a41-9b32-b2aa8386099b/rtl-import-run02
+# Command line       : vivado.exe -mode batch -source C:/Users/Toph Beifong/.codex/visualizations/2026/09/05/01a06fc1-b474-7a41-9b32-b2aa8386099b/probe-module-import.tcl -log import.log -nojournal
+# Log file           : C:/Users/Toph Beifong/.codex/visualizations/2026/09/05/01a06fc1-b474-7a41-9b32-b2aa8386099b/rtl-import-run02/import.log
+# Journal file       : 
+# Running On         : Toph
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 13958 MB
+# Total Virtual      : 30848 MB
+# Available Virtual  : 4445 MB
+#-----------------------------------------------------------
+source {C:/Users/Toph Beifong/.codex/visualizations/2026/09/05/01a06fc1-b474-7a41-9b32-b2aa8386099b/probe-module-import.tcl}
+# create_project -in_memory -part xc7z020clg400-2
+# source {C:/Users/Toph Beifong/.codex/visualizations/2026/09/05/01a06fc1-b474-7a41-9b32-b2aa8386099b/pub/sim/add_sources.tcl}
+## if {[llength [get_projects -quiet]] != 1} {error "Open one project first"}
+## set ss_root [file normalize [file join [file dirname [info script]] ..]]
+## set ss_rtl [list rtl/common/stream_error_stats.sv rtl/common/stream_error_snapshot.v rtl/acquisition/pcm4_signext_pack.v]
+## foreach ss_rel $ss_rtl {
+##     set ss_path [file join $ss_root $ss_rel]
+##     if {![file exists $ss_path]} {error "Missing $ss_path"}
+##     add_files -norecurse -fileset sources_1 [list $ss_path]
+##     if {[file extension $ss_path] eq ".sv"} {
+##         set_property file_type SystemVerilog [get_files [list $ss_path]]
+##     } else {
+##         set_property file_type Verilog [get_files [list $ss_path]]
+##     }
+## }
+## update_compile_order -fileset sources_1
+## puts "SOUNDSIGHT_REVIEWED_LIBRARY_ADDED_NOT_BOARD_INTEGRATED"
+SOUNDSIGHT_REVIEWED_LIBRARY_ADDED_NOT_BOARD_INTEGRATED
+# set count [llength [get_files -of_objects [get_filesets sources_1]]]
+# if {$count != 3} {error "Expected three design sources, got $count"}
+# foreach f [get_files -of_objects [get_filesets sources_1]] {puts "SOURCE $f TYPE=[get_property FILE_TYPE $f]"}
+SOURCE C:/Users/Toph Beifong/.codex/visualizations/2026/09/05/01a06fc1-b474-7a41-9b32-b2aa8386099b/pub/rtl/common/stream_error_stats.sv TYPE=SystemVerilog
+SOURCE C:/Users/Toph Beifong/.codex/visualizations/2026/09/05/01a06fc1-b474-7a41-9b32-b2aa8386099b/pub/rtl/common/stream_error_snapshot.v TYPE=Verilog
+SOURCE C:/Users/Toph Beifong/.codex/visualizations/2026/09/05/01a06fc1-b474-7a41-9b32-b2aa8386099b/pub/rtl/acquisition/pcm4_signext_pack.v TYPE=Verilog
+# puts "PASS_MODULE_IMPORT_NOT_SYNTHESIS_OR_BOARD"
+PASS_MODULE_IMPORT_NOT_SYNTHESIS_OR_BOARD
+# close_project
+# exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 11 12:15:15 2026...

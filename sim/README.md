@@ -1,6 +1,20 @@
 # Simulation
 
-本目录保存仿真文件列表、统一回归入口和小型确定性测试向量。具体仿真器与命令在首个 RTL 模块接入时冻结。
+## 当前可运行入口
+
+Vivado/XSim 2025.2，PowerShell 7，仓库根目录执行，输出必须是仓库外的新目录：
+
+```powershell
+./sim/run_regression.ps1 -VivadoBin 'F:/AMD/2025.2/Vivado/bin' -OutputDirectory 'C:/temp/soundsight-regression-new'
+```
+
+脚本校验[modules.json](modules.json)中的活动源码哈希，按扩展名分别以Verilog/SystemVerilog编译，运行6组自检。预期6行PASS与输出result.json中的PASS_MODULE_REGRESSION；缺少PASS、错误或工具失败都不算通过。每组保存编译、展开、仿真输出；旧输出目录拒绝覆盖。原批准源码与活动源码仅允许记录过的CRLF→LF规范化。
+
+如需将三件基础RTL加入一个已打开的Vivado工程，在Tcl Console执行 `source /实际路径/sim/add_sources.tcl`。它只加入设计源，不选择系统顶层、不接BD、不修改约束。该脚本不等于可直接下载的整机工程，本轮自动回归不调用它修改one。
+
+本次结果见[9月10日补收尾](../deliverables/phase-2026-09-10/CLOSEOUT.md)。后续阶段按[固定收尾规则](../docs/phase-closeout.md)更新清单及入口，不能只把代码留在任务包。
+
+本目录保存仿真文件列表、统一回归入口和小型确定性测试向量；当前基础模块回归已固定使用上述工具和命令。
 
 仿真层级计划：
 

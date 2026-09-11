@@ -8,7 +8,7 @@
 
 SoundSight 面向 AMD FPGA 自主设计比赛，目标是在 Zynq-7020 平台上完成四路同步声音采集、可靠声源方向估计（DOA）与自动指向的 Delay-and-Sum 波束形成，输出增强后的目标方向音频并展示方向、置信度和运行状态。自动声源跟踪转台保留为后续扩展，只有核心声学链路通过且存在明确的朝向载荷时才进入闭环集成。
 
-当前处于 M0 证据核验和模型预研阶段，尚无完整实板验收；六麦已有合成浮点结果，必须与设计目标和实测结果分开。最新入口：[文档目录](docs/README.md)、[当前状态](docs/current-status.md)、[工作包台账](docs/work-packages.md)、[六麦独立材料包](deliverables/six-mic-acoustic-review-v1/README.md)。旧文档集中于[历史备份](archive/README.md)。
+当前已通过9月10日接口/开工阶段检查，正在推进9月16日四路诊断交接，尚无完整实板验收。C001～003基础模块已接入[rtl](rtl/README.md)、[tb](tb/README.md)及[统一仿真入口](sim/README.md)，六组功能回归通过，不等于one整机已接通。每次阶段验收后按[收尾规则](docs/phase-closeout.md)完成归位、回归、归档与说明；[10日补收尾](deliverables/phase-2026-09-10/CLOSEOUT.md)。最新入口：[文档目录](docs/README.md)、[当前状态](docs/current-status.md)、[工作包台账](docs/work-packages.md)、[六麦独立材料包](deliverables/six-mic-acoustic-review-v1/README.md)。旧文档集中于[历史备份](archive/README.md)。
 
 版本范围：2026-10-07 的 V1 用四麦先验收二维水平声源方向及音频改善；三维方向（方位角、俯仰角和单位向量，不含距离/位置）列为 V2。V2 六麦为首选候选、非共面四麦为低成本备选、八麦暂缓；当前已形成六麦指南和首轮软件基线，不扩大首版交付范围，不提前增加采集通道或采购。六麦须经过声学/资源评审和扩展采集准入，不能直接继承四麦验收结论。评估、阶段门与三人分工见[三维方向升级计划](docs/three-dimensional-doa-plan.md)。
 
