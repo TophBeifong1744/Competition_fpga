@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri Sep 11 14:18:41 2026
+# Process ID         : 39776
+# Current directory  : C:/Users/Toph Beifong/.codex/visualizations/2026/09/08/01a0811f-97d1-7e00-baba-38cf26de948d/c004-bd-review
+# Command line       : vivado.exe -mode batch -source C:/Users/Toph Beifong/.codex/visualizations/2026/09/08/01a0811f-97d1-7e00-baba-38cf26de948d/c004-review/task-packages/PKG-A-ACQ/outsourcing/C-RTL-004/submission/scripts/rebuild_bd.tcl -log bd.log -nojournal -tclargs C:/Users/Toph Beifong/.codex/visualizations/2026/09/08/01a0811f-97d1-7e00-baba-38cf26de948d/c004-bd-review/project
+# Log file           : C:/Users/Toph Beifong/.codex/visualizations/2026/09/08/01a0811f-97d1-7e00-baba-38cf26de948d/c004-bd-review/bd.log
+# Journal file       : 
+# Running On         : Toph
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 13958 MB
+# Total Virtual      : 30848 MB
+# Available Virtual  : 8344 MB
+#-----------------------------------------------------------
+CRITICAL WARNING: [Common 17-1297] User repo 'C:/Users/Toph Beifong/AppData/Roaming/Xilinx/Vivado/2025.2/XilinxTclStore' catalog file is corrupted. XilinxTclStore has been reverted to the installation area and Tcl Store changes will not be saved. To use local Tcl Store, please run tclapp::reset_tclstore and reinstall the apps.
+source {C:/Users/Toph Beifong/.codex/visualizations/2026/09/08/01a0811f-97d1-7e00-baba-38cf26de948d/c004-review/task-packages/PKG-A-ACQ/outsourcing/C-RTL-004/submission/scripts/rebuild_bd.tcl}
+# if {$argc != 1} {error "Expected new external project directory"}
+# set package [file normalize [file join [file dirname [info script]] ..]]
+# set target [file normalize [lindex $argv 0]]
+# if {$target eq $package || [string first "$package/" "$target/"] == 0} {error "Project must be outside submission"}
+# if {[file exists $target]} {error "Use a new target directory"}
+# create_project c004_bd_probe $target -part xc7z020clg400-2
+ERROR: [ProjectBase 2-116] Unable to create project directory: 'C:/Users/Toph Beifong/visualizations/2026/09/08/01a0811f-97d1-7e00-baba-38cf26de948d/c004-bd-review/project'.
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 11 14:18:44 2026...

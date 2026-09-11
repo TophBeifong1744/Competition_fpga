@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri Sep 11 14:19:28 2026
+# Process ID         : 3664
+# Current directory  : C:/Users/Toph Beifong/AppData/Local/Temp/ss-c004-review-8c33c5fdc0b7474f9769a54757fd1b91
+# Command line       : vivado.exe -mode batch -source submission/scripts/rebuild_bd.tcl -log bd-unsandboxed.log -nojournal -tclargs project-unsandboxed
+# Log file           : C:/Users/Toph Beifong/AppData/Local/Temp/ss-c004-review-8c33c5fdc0b7474f9769a54757fd1b91/bd-unsandboxed.log
+# Journal file       : 
+# Running On         : Toph
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 13958 MB
+# Total Virtual      : 30848 MB
+# Available Virtual  : 8723 MB
+#-----------------------------------------------------------
+source submission/scripts/rebuild_bd.tcl
+# if {$argc != 1} {error "Expected new external project directory"}
+# set package [file normalize [file join [file dirname [info script]] ..]]
+# set target [file normalize [lindex $argv 0]]
+# if {$target eq $package || [string first "$package/" "$target/"] == 0} {error "Project must be outside submission"}
+# if {[file exists $target]} {error "Use a new target directory"}
+# create_project c004_bd_probe $target -part xc7z020clg400-2
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Toph Beifong/AppData/Local/Temp/ss-c004-review-8c33c5fdc0b7474f9769a54757fd1b91/project-unsandboxed'
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 532.957 ; gain = 217.656
+# set_property target_language Verilog [current_project]
+# import_files -fileset sources_1 [list [file join $package reference stream_error_stats.sv] [file join $package rtl stream_error_stats_bd.v]]
+# import_files -fileset sim_1 [file join $package tb tb_stream_error_stats_bd.sv]
+ERROR: [Vivado 12-172] File or Directory 'Beifong/AppData/Local/Temp/ss-c004-review-8c33c5fdc0b7474f9769a54757fd1b91/submission/tb/tb_stream_error_stats_bd.sv' does not exist
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 11 14:19:37 2026...

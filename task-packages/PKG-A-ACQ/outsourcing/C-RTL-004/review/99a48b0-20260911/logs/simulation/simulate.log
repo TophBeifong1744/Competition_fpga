@@ -1,0 +1,147 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri Sep 11 14:18:42 2026
+# Process ID         : 18280
+# Current directory  : C:/Users/Toph Beifong/.codex/visualizations/2026/09/08/01a0811f-97d1-7e00-baba-38cf26de948d/c004-sim-review
+# Command line       : xsim.exe -log simulate.log -mode tcl -source {xsim.dir/c004_test/xsim_script.tcl}
+# Log file           : C:/Users/Toph Beifong/.codex/visualizations/2026/09/08/01a0811f-97d1-7e00-baba-38cf26de948d/c004-sim-review/simulate.log
+# Journal file       : C:/Users/Toph Beifong/.codex/visualizations/2026/09/08/01a0811f-97d1-7e00-baba-38cf26de948d/c004-sim-review\xsim.jou
+# Running On         : Toph
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 13958 MB
+# Total Virtual      : 30848 MB
+# Available Virtual  : 8111 MB
+#-----------------------------------------------------------
+source xsim.dir/c004_test/xsim_script.tcl
+# xsim {c004_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+CASE PASS W=3 idle counts=0/0 sticky=00
+CASE PASS W=3 overflow only counts=1/0 sticky=10
+CASE PASS W=3 overflow sticky hold counts=1/0 sticky=10
+CASE PASS W=3 drop only counts=1/1 sticky=11
+CASE PASS W=3 both events counts=2/2 sticky=11
+CASE PASS W=3 continuous events counts=3/3 sticky=11
+CASE PASS W=3 continuous events counts=4/4 sticky=11
+CASE PASS W=3 continuous events counts=5/5 sticky=11
+CASE PASS W=3 hold both counts=5/5 sticky=11
+CASE PASS W=3 synchronous reset overrides clear and both events counts=0/0 sticky=00
+CASE PASS W=3 resume after reset counts=1/0 sticky=10
+CASE PASS W=3 clear no event counts=0/0 sticky=00
+CASE PASS W=3 clear overflow counts=1/0 sticky=10
+CASE PASS W=3 clear drop counts=0/1 sticky=01
+CASE PASS W=3 continuous clear both keeps one counts=1/1 sticky=11
+CASE PASS W=3 continuous clear both keeps one counts=1/1 sticky=11
+CASE PASS W=3 continuous clear both keeps one counts=1/1 sticky=11
+CASE PASS W=3 sticky holds after clear event counts=1/1 sticky=11
+CASE PASS W=3 saturation setup counts=0/0 sticky=00
+CASE PASS W=3 overflow saturation independent counts=1/0 sticky=10
+CASE PASS W=3 overflow saturation independent counts=2/0 sticky=10
+CASE PASS W=3 overflow saturation independent counts=3/0 sticky=10
+CASE PASS W=3 overflow saturation independent counts=4/0 sticky=10
+CASE PASS W=3 overflow saturation independent counts=5/0 sticky=10
+CASE PASS W=3 overflow saturation independent counts=6/0 sticky=10
+CASE PASS W=3 overflow saturation independent counts=7/0 sticky=10
+CASE PASS W=3 overflow saturation independent counts=7/0 sticky=10
+CASE PASS W=3 overflow saturation independent counts=7/0 sticky=10
+CASE PASS W=3 overflow saturation independent counts=7/0 sticky=10
+CASE PASS W=3 drop saturation independent counts=7/1 sticky=11
+CASE PASS W=3 drop saturation independent counts=7/2 sticky=11
+CASE PASS W=3 drop saturation independent counts=7/3 sticky=11
+CASE PASS W=3 drop saturation independent counts=7/4 sticky=11
+CASE PASS W=3 drop saturation independent counts=7/5 sticky=11
+CASE PASS W=3 drop saturation independent counts=7/6 sticky=11
+CASE PASS W=3 drop saturation independent counts=7/7 sticky=11
+CASE PASS W=3 drop saturation independent counts=7/7 sticky=11
+CASE PASS W=3 drop saturation independent counts=7/7 sticky=11
+CASE PASS W=3 drop saturation independent counts=7/7 sticky=11
+CASE PASS W=3 both saturated no wrap counts=7/7 sticky=11
+CASE PASS W=3 clear saturated counters counts=0/0 sticky=00
+CASE PASS W=3 count after saturation clear counts=1/1 sticky=11
+CASE PASS W=3 final reset counts=0/0 sticky=00
+WIDTH PASS W=3 checks=87 time=436000
+CASE PASS W=1 idle counts=0/0 sticky=00
+CASE PASS W=1 overflow only counts=1/0 sticky=10
+CASE PASS W=1 overflow sticky hold counts=1/0 sticky=10
+CASE PASS W=1 drop only counts=1/1 sticky=11
+CASE PASS W=1 both events counts=1/1 sticky=11
+CASE PASS W=1 continuous events counts=1/1 sticky=11
+CASE PASS W=1 continuous events counts=1/1 sticky=11
+CASE PASS W=1 continuous events counts=1/1 sticky=11
+CASE PASS W=1 hold both counts=1/1 sticky=11
+CASE PASS W=1 synchronous reset overrides clear and both events counts=0/0 sticky=00
+CASE PASS W=1 resume after reset counts=1/0 sticky=10
+CASE PASS W=1 clear no event counts=0/0 sticky=00
+CASE PASS W=1 clear overflow counts=1/0 sticky=10
+CASE PASS W=1 clear drop counts=0/1 sticky=01
+CASE PASS W=1 continuous clear both keeps one counts=1/1 sticky=11
+CASE PASS W=1 continuous clear both keeps one counts=1/1 sticky=11
+CASE PASS W=1 continuous clear both keeps one counts=1/1 sticky=11
+CASE PASS W=1 sticky holds after clear event counts=1/1 sticky=11
+CASE PASS W=1 saturation setup counts=0/0 sticky=00
+CASE PASS W=1 overflow saturation independent counts=1/0 sticky=10
+CASE PASS W=1 overflow saturation independent counts=1/0 sticky=10
+CASE PASS W=1 overflow saturation independent counts=1/0 sticky=10
+CASE PASS W=1 overflow saturation independent counts=1/0 sticky=10
+CASE PASS W=1 drop saturation independent counts=1/1 sticky=11
+CASE PASS W=1 drop saturation independent counts=1/1 sticky=11
+CASE PASS W=1 drop saturation independent counts=1/1 sticky=11
+CASE PASS W=1 drop saturation independent counts=1/1 sticky=11
+CASE PASS W=1 both saturated no wrap counts=1/1 sticky=11
+CASE PASS W=1 clear saturated counters counts=0/0 sticky=00
+CASE PASS W=1 count after saturation clear counts=1/1 sticky=11
+CASE PASS W=1 final reset counts=0/0 sticky=00
+WIDTH PASS W=1 checks=63 time=756000
+CASE PASS W=32 idle counts=00000000/00000000 sticky=00
+CASE PASS W=32 overflow only counts=00000001/00000000 sticky=10
+CASE PASS W=32 overflow sticky hold counts=00000001/00000000 sticky=10
+CASE PASS W=32 drop only counts=00000001/00000001 sticky=11
+CASE PASS W=32 both events counts=00000002/00000002 sticky=11
+CASE PASS W=32 continuous events counts=00000003/00000003 sticky=11
+CASE PASS W=32 continuous events counts=00000004/00000004 sticky=11
+CASE PASS W=32 continuous events counts=00000005/00000005 sticky=11
+CASE PASS W=32 hold both counts=00000005/00000005 sticky=11
+CASE PASS W=32 synchronous reset overrides clear and both events counts=00000000/00000000 sticky=00
+CASE PASS W=32 resume after reset counts=00000001/00000000 sticky=10
+CASE PASS W=32 clear no event counts=00000000/00000000 sticky=00
+CASE PASS W=32 clear overflow counts=00000001/00000000 sticky=10
+CASE PASS W=32 clear drop counts=00000000/00000001 sticky=01
+CASE PASS W=32 continuous clear both keeps one counts=00000001/00000001 sticky=11
+CASE PASS W=32 continuous clear both keeps one counts=00000001/00000001 sticky=11
+CASE PASS W=32 continuous clear both keeps one counts=00000001/00000001 sticky=11
+CASE PASS W=32 sticky holds after clear event counts=00000001/00000001 sticky=11
+CASE PASS W=32 final reset counts=00000000/00000000 sticky=00
+WIDTH PASS W=32 checks=39 time=956000
+CASE PASS W=64 idle counts=0000000000000000/0000000000000000 sticky=00
+CASE PASS W=64 overflow only counts=0000000000000001/0000000000000000 sticky=10
+CASE PASS W=64 overflow sticky hold counts=0000000000000001/0000000000000000 sticky=10
+CASE PASS W=64 drop only counts=0000000000000001/0000000000000001 sticky=11
+CASE PASS W=64 both events counts=0000000000000002/0000000000000002 sticky=11
+CASE PASS W=64 continuous events counts=0000000000000003/0000000000000003 sticky=11
+CASE PASS W=64 continuous events counts=0000000000000004/0000000000000004 sticky=11
+CASE PASS W=64 continuous events counts=0000000000000005/0000000000000005 sticky=11
+CASE PASS W=64 hold both counts=0000000000000005/0000000000000005 sticky=11
+CASE PASS W=64 synchronous reset overrides clear and both events counts=0000000000000000/0000000000000000 sticky=00
+CASE PASS W=64 resume after reset counts=0000000000000001/0000000000000000 sticky=10
+CASE PASS W=64 clear no event counts=0000000000000000/0000000000000000 sticky=00
+CASE PASS W=64 clear overflow counts=0000000000000001/0000000000000000 sticky=10
+CASE PASS W=64 clear drop counts=0000000000000000/0000000000000001 sticky=01
+CASE PASS W=64 continuous clear both keeps one counts=0000000000000001/0000000000000001 sticky=11
+CASE PASS W=64 continuous clear both keeps one counts=0000000000000001/0000000000000001 sticky=11
+CASE PASS W=64 continuous clear both keeps one counts=0000000000000001/0000000000000001 sticky=11
+CASE PASS W=64 sticky holds after clear event counts=0000000000000001/0000000000000001 sticky=11
+CASE PASS W=64 final reset counts=0000000000000000/0000000000000000 sticky=00
+WIDTH PASS W=64 checks=39 time=1156000
+ALL TESTS PASS: W=3,1,default32,64 core oracle + wrapper oracle + equivalence
+$finish called at time : 1156 ns : File "C:/Users/Toph Beifong/.codex/visualizations/2026/09/08/01a0811f-97d1-7e00-baba-38cf26de948d/c004-review/task-packages/PKG-A-ACQ/outsourcing/C-RTL-004/submission/tb/tb_stream_error_stats_bd.sv" Line 88
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 11 14:18:45 2026...

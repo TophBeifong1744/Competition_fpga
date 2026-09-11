@@ -9,7 +9,7 @@
 | C-RTL-001 | [错误统计 RTL 外包说明](C-RTL-001/instructions/README.md) | [submission](C-RTL-001/submission/README.md) | ac8a7bb 功能独立复测通过；用户告知 B 已复核；GitHub PR #4 已合入 main，见下方证据边界 |
 | C-RTL-002 | [错误统计快照 RTL 外包说明](C-RTL-002/instructions/README.md) | [submission](C-RTL-002/submission/README.md) | 48af341 独立功能 PASS；用户确认 B 技术复核通过，无需返工，待 A 集成；[历史验收](C-RTL-002/review/48af341/README.md)、[B 结论登记](review-status/b-c002003-20260910.md) |
 | C-RTL-003 | [PCM 打包 RTL 操作单](C-RTL-003/instructions/README.md) | [submission](C-RTL-003/submission/README.md) | d41ee30 独立功能 PASS；用户确认 B 技术复核通过，无需返工，待 A 集成；[历史验收](C-RTL-003/review/d41ee30/README.md)、[B 结论登记](review-status/b-c002003-20260910.md) |
-| C-RTL-004 | [纯 Verilog 包装与隔离 BD 操作单](C-RTL-004/instructions/README.md) | [submission](C-RTL-004/submission/README.md) | 本批唯一新任务；待实现 |
+| C-RTL-004 | [原操作单](C-RTL-004/instructions/README.md)、[唯一返工004-R1](C-RTL-004/instructions/rework-01.md) | [submission](C-RTL-004/submission/README.md) | 99a48b0功能独立重跑PASS；BD空格路径复现失败，待修正；[复核记录](C-RTL-004/review/99a48b0-20260911/README.md) |
 
 说明与成果分目录保存，C 不改 instructions。修订实现沿用同一成果目录和版本记录，不为每个小动作开新任务。文件生成不代表 C 本人已收到通知，更不代表验收通过。
 
