@@ -1,0 +1,1 @@
+First run computed 36 NPZ cases, then failed serializing records: TypeError: Object of type bool is not JSON serializable (NumPy scalar). No summary was produced. These artifacts and pre-fix sources are retained. See run02 for rerun; do not treat run01 as passed.

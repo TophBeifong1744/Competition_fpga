@@ -1,0 +1,5 @@
+Initial invocation: compare_cmodel.py --dll D:/AMD/2025.2/win64/tools/fft_v9_1/libIp_xfft_v9_1_bitacc_cmodel.dll --out evidence/cmodel-run01
+FileNotFoundError at ctypes.CDLL: Could not find module (or one of its dependencies).
+Main DLL exists. objdump showed libgmp.dll and libIp_floating_point_v7_1_bitacc_cmodel.dll dependencies.
+No numerical model outputs were produced. Resolved on run02 by process-local --dependency-dir D:/AMD/2025.2/win64/tools/fpo_v7_1.
+This is a recorded failure summary, not a verbatim captured traceback.
