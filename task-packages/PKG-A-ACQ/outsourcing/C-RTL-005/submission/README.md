@@ -1,6 +1,6 @@
 # C-RTL-005成果目录
 
-状态：待C实现。唯一操作单见[四通道窗口峰值监测](../instructions/README.md)。
+状态：仅候选模板，用户要求暂不下发，C不要开始实现。候选操作单见[四通道窗口峰值监测](../instructions/README.md)。下方仅为未来恢复后的填写参考。
 
 完成后在此集中保存rtl、tb、scripts、logs，并简要填写：
 
