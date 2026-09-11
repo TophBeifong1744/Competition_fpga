@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\Toph Beifong\.codex\visualizations\2026\09\07\01a07c21-b7f9-74d2-92c5-7f8d235d8379\fft29\task-packages\PKG-A-ACQ\tasks\fft29-bitexact-budget-01\source\audit_reference.py", line 61, in <module>
+    main()
+  File "C:\Users\Toph Beifong\.codex\visualizations\2026\09\07\01a07c21-b7f9-74d2-92c5-7f8d235d8379\fft29\task-packages\PKG-A-ACQ\tasks\fft29-bitexact-budget-01\source\audit_reference.py", line 38, in main
+    changed=sum(v['peak_changed'] for f in subset for v in f['candidates'][candidate]['vs_float'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'

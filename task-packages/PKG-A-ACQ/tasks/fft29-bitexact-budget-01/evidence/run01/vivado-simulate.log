@@ -1,0 +1,403 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri Sep 11 21:41:57 2026
+# Process ID         : 31240
+# Current directory  : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga
+# Command line       : vivado.exe -mode batch -notrace -source C:/Users/Toph Beifong/.codex/visualizations/2026/09/07/01a07c21-b7f9-74d2-92c5-7f8d235d8379/fft29/task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/source/simulate.tcl -log C:/Users/Toph Beifong/.codex/visualizations/2026/09/07/01a07c21-b7f9-74d2-92c5-7f8d235d8379/fft29/task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/evidence/run01/vivado-simulate.log -journal C:/Users/Toph Beifong/.codex/visualizations/2026/09/07/01a07c21-b7f9-74d2-92c5-7f8d235d8379/fft29/task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/evidence/run01/vivado-simulate.jou -tclargs E:/ss-fft29-build-01 C:/Users/Toph Beifong/.codex/visualizations/2026/09/07/01a07c21-b7f9-74d2-92c5-7f8d235d8379/fft29/task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/evidence/run01/vectors
+# Log file           : C:/Users/Toph Beifong/.codex/visualizations/2026/09/07/01a07c21-b7f9-74d2-92c5-7f8d235d8379/fft29/task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/evidence/run01/vivado-simulate.log
+# Journal file       : C:/Users/Toph Beifong/.codex/visualizations/2026/09/07/01a07c21-b7f9-74d2-92c5-7f8d235d8379/fft29/task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/evidence/run01/vivado-simulate.jou
+# Running On         : Toph
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 14495 MB
+# Total Virtual      : 31385 MB
+# Available Virtual  : 11752 MB
+#-----------------------------------------------------------
+source {C:/Users/Toph Beifong/.codex/visualizations/2026/09/07/01a07c21-b7f9-74d2-92c5-7f8d235d8379/fft29/task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/source/simulate.tcl} -notrace
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.1 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24i\1.0\board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.2\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.3\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.4\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kc705\1.6\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.7 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kc705\1.7\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.4\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.5\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kd240_som\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.1 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kd240_som\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kr260_som\1.0\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kr260_som\1.1\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu35:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\scu35\1.0\board.xml as part xcsu35p-sbvb625-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc707\1.4\board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.5 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc707\1.5\board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc709\1.8\board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.0\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.3\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.4\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu1525\1.3\board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.1 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.1\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385_1:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385_2\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_mpsoc\1.0\board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_rfsoc\1.0\board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.3\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.0\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.1\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.2\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.1\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.2\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.0\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.1 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.1\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zc706\1.4\board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.5 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zc706\1.5\board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.3\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.4\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu104\1.1\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.4\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.5\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.6\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.2\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.3\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.4\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1275\1.0\board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1285\1.0\board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208\production\2.0\board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216\production\2.0\board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670\2.0\board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at F:/AMD/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/AMD/2025.2/Vivado/data/ip'.
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Fri Sep 11 21:42:04 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_fft29'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/ss-fft29-build-01/fft29_budget.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'F:/AMD/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'F:/AMD/2025.2/Vivado/data/xsim/xsim.ini' copied to run dir:'E:/ss-fft29-build-01/fft29_budget.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_fft29' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/ss-fft29-build-01/fft29_budget.sim/sim_1/behav/xsim/inputs.mem'
+INFO: [SIM-utils-43] Exported 'E:/ss-fft29-build-01/fft29_budget.sim/sim_1/behav/xsim/job-count.mem'
+INFO: [SIM-utils-43] Exported 'E:/ss-fft29-build-01/fft29_budget.sim/sim_1/behav/xsim/inputs.mem'
+INFO: [SIM-utils-43] Exported 'E:/ss-fft29-build-01/fft29_budget.sim/sim_1/behav/xsim/job-count.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/ss-fft29-build-01/fft29_budget.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_fft29_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Toph Beifong/.codex/visualizations/2026/09/07/01a07c21-b7f9-74d2-92c5-7f8d235d8379/fft29/task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/source/tb_fft29.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fft29
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ss-fft29-build-01/fft29_budget.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_fft29_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/ss-fft29-build-01/fft29_budget.gen/sources_1/ip/ss_fft29/sim/ss_fft29.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ss_fft29'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/ss-fft29-build-01/fft29_budget.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_15 -L axi_utils_v2_0_11 -L c_reg_fd_v12_0_11 -L xbip_dsp48_wrapper_v3_0_7 -L xbip_pipe_v3_0_11 -L c_addsub_v12_0_21 -L c_shift_ram_v12_0_20 -L mult_gen_v12_0_24 -L floating_point_v7_1_21 -L cmpy_v6_0_27 -L xfft_v9_1_15 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fft29_behav xil_defaultlib.tb_fft29 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/AMD/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_15 -L axi_utils_v2_0_11 -L c_reg_fd_v12_0_11 -L xbip_dsp48_wrapper_v3_0_7 -L xbip_pipe_v3_0_11 -L c_addsub_v12_0_21 -L c_shift_ram_v12_0_20 -L mult_gen_v12_0_24 -L floating_point_v7_1_21 -L cmpy_v6_0_27 -L xfft_v9_1_15 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fft29_behav xil_defaultlib.tb_fft29 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'event_frame_started' is not connected on this instance [C:/Users/Toph Beifong/.codex/visualizations/2026/09/07/01a07c21-b7f9-74d2-92c5-7f8d235d8379/fft29/task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/source/tb_fft29.sv:14]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_15.xbip_utils_v3_0_15_pkg
+Compiling package xfft_v9_1_15.xfft_v9_1_15_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_11.axi_utils_v2_0_11_pkg
+Compiling package mult_gen_v12_0_24.mult_gen_v12_0_24_pkg
+Compiling package ieee.std_logic_signed
+Compiling package cmpy_v6_0_27.cmpy_v6_0_27_pkg
+Compiling package floating_point_v7_1_21.floating_point_v7_1_21_consts
+Compiling package floating_point_v7_1_21.floating_point_v7_1_21_exp_table...
+Compiling package floating_point_v7_1_21.floating_point_v7_1_21_pkg
+Compiling package xfft_v9_1_15.pkg
+Compiling package xfft_v9_1_15.xfft_v9_1_15_axi_pkg
+Compiling package axi_utils_v2_0_11.global_util_pkg
+Compiling package axi_utils_v2_0_11.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package c_shift_ram_v12_0_20.c_shift_ram_v12_0_20_pkg
+Compiling package c_reg_fd_v12_0_11.c_reg_fd_v12_0_11_viv_comp
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xfft_v9_1_15.quarter_sin_tw_table
+Compiling package xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv_comp
+Compiling package c_addsub_v12_0_21.c_addsub_v12_0_21_pkg
+Compiling package c_addsub_v12_0_21.c_addsub_v12_0_21_pkg_legacy
+Compiling package xpm.vcomponents
+Compiling package ieee.std_logic_textio
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(doa_reg=1,dob_reg=1,ra...]
+Compiling architecture xilinx of entity xfft_v9_1_15.dpm [\dpm(c_xdevicefamily="zynq",widt...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_15.mux_bus4 [\mux_bus4(c_xdevicefamily="zynq"...]
+Compiling architecture xilinx of entity xfft_v9_1_15.mux_bus2 [\mux_bus2(c_xdevicefamily="zynq"...]
+Compiling architecture xilinx of entity xfft_v9_1_15.mux_bus4 [\mux_bus4(c_xdevicefamily="zynq"...]
+Compiling architecture xilinx of entity xfft_v9_1_15.arith_shift3 [\arith_shift3(c_xdevicefamily="z...]
+Compiling architecture xilinx of entity xfft_v9_1_15.r2_ovflo_gen [r2_ovflo_gen_default]
+Compiling architecture xilinx of entity xfft_v9_1_15.logic_gate [\logic_gate(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_15.logic_gate [\logic_gate(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity c_addsub_v12_0_21.c_addsub_v12_0_21_lut6_legacy [\c_addsub_v12_0_21_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_fabric_legacy [\c_addsub_v12_0_21_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_legacy [\c_addsub_v12_0_21_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_viv [\c_addsub_v12_0_21_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_1_15.unbiased_round [\unbiased_round(c_xdevicefamily=...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity cmpy_v6_0_27.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity cmpy_v6_0_27.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity cmpy_v6_0_27.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity cmpy_v6_0_27.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity cmpy_v6_0_27.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity cmpy_v6_0_27.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,carryinselreg=0...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=2,adreg=0,areg...]
+Compiling architecture xilinx of entity cmpy_v6_0_27.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,a_input="CASCAD...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=2,areg=2,bcasc...]
+Compiling architecture xilinx of entity cmpy_v6_0_27.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_24.op_resize [\op_resize(ai_width=29,bi_width=...]
+Compiling architecture xilinx of entity cmpy_v6_0_27.cmpy_4_dsp48_mult [\cmpy_4_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity cmpy_v6_0_27.cmpy_4_dsp48 [\cmpy_4_dsp48(c_xdevicefamily="z...]
+Compiling architecture xilinx of entity cmpy_v6_0_27.cmpy_v6_0_27_synth [\cmpy_v6_0_27_synth(c_xdevicefam...]
+Compiling architecture xilinx of entity xfft_v9_1_15.cmpy [\cmpy(c_xdevicefamily="zynq",a_w...]
+Compiling architecture structural of entity c_reg_fd_v12_0_11.c_reg_fd_v12_0_11_viv [\c_reg_fd_v12_0_11_viv(c_width=3...]
+Compiling architecture rtl of entity c_addsub_v12_0_21.c_addsub_v12_0_21_lut6_legacy [\c_addsub_v12_0_21_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_fabric_legacy [\c_addsub_v12_0_21_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_legacy [\c_addsub_v12_0_21_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_viv [\c_addsub_v12_0_21_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_1_15.adder [\adder(c_xdevicefamily="zynq",c_...]
+Compiling architecture rtl of entity c_addsub_v12_0_21.c_addsub_v12_0_21_lut6_legacy [\c_addsub_v12_0_21_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_fabric_legacy [\c_addsub_v12_0_21_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_legacy [\c_addsub_v12_0_21_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_viv [\c_addsub_v12_0_21_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_1_15.subtracter [\subtracter(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity xfft_v9_1_15.butterfly [\butterfly(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_15.r2_pe [\r2_pe(c_xdevicefamily="zynq",bt...]
+Compiling architecture xilinx of entity xfft_v9_1_15.r2_datapath [\r2_datapath(c_xdevicefamily="zy...]
+Compiling architecture struct of entity c_shift_ram_v12_0_20.c_shift_ram_v12_0_20_legacy [\c_shift_ram_v12_0_20_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_20.c_shift_ram_v12_0_20_viv [\c_shift_ram_v12_0_20_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture struct of entity c_shift_ram_v12_0_20.c_shift_ram_v12_0_20_legacy [\c_shift_ram_v12_0_20_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_20.c_shift_ram_v12_0_20_viv [\c_shift_ram_v12_0_20_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000000001111...]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture muxf8_v of entity unisim.MUXF8 [muxf8_default]
+Compiling architecture xilinx of entity xfft_v9_1_15.mux_bus16 [\mux_bus16(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_15.xor_bit_gate [\xor_bit_gate(c_inputs=10)\]
+Compiling architecture xilinx of entity xfft_v9_1_15.r2_in_addr [\r2_in_addr(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_15.mux_bus4 [\mux_bus4(c_xdevicefamily="zynq"...]
+Compiling architecture xilinx of entity xfft_v9_1_15.xor_bit_gate [\xor_bit_gate(c_inputs=9)\]
+Compiling architecture xilinx of entity xfft_v9_1_15.r2_rw_addr [\r2_rw_addr(c_xdevicefamily="zyn...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11001010")(0,7)\]
+Compiling architecture xilinx of entity xfft_v9_1_15.mux_bus2 [\mux_bus2(c_xdevicefamily="zynq"...]
+Compiling architecture structural of entity c_reg_fd_v12_0_11.c_reg_fd_v12_0_11_viv [\c_reg_fd_v12_0_11_viv(c_sync_pr...]
+Compiling architecture struct of entity c_shift_ram_v12_0_20.c_shift_ram_v12_0_20_legacy [\c_shift_ram_v12_0_20_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_20.c_shift_ram_v12_0_20_viv [\c_shift_ram_v12_0_20_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture struct of entity c_shift_ram_v12_0_20.c_shift_ram_v12_0_20_legacy [\c_shift_ram_v12_0_20_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_20.c_shift_ram_v12_0_20_viv [\c_shift_ram_v12_0_20_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_15.twos_comp [\twos_comp(c_data_width=8,c_has_...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000000000000...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture xilinx of entity xfft_v9_1_15.logic_gate [\logic_gate(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity xfft_v9_1_15.twgen_quarter_sin [\twgen_quarter_sin(c_xdevicefami...]
+Compiling architecture xilinx of entity xfft_v9_1_15.twiddle_gen [\twiddle_gen(c_xdevicefamily="zy...]
+Compiling architecture xilinx of entity xfft_v9_1_15.mux_bus16 [\mux_bus16(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_15.r2_tw_addr [\r2_tw_addr(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture struct of entity c_shift_ram_v12_0_20.c_shift_ram_v12_0_20_legacy [\c_shift_ram_v12_0_20_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_20.c_shift_ram_v12_0_20_viv [\c_shift_ram_v12_0_20_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture struct of entity c_shift_ram_v12_0_20.c_shift_ram_v12_0_20_legacy [\c_shift_ram_v12_0_20_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_20.c_shift_ram_v12_0_20_viv [\c_shift_ram_v12_0_20_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture rtl of entity c_addsub_v12_0_21.c_addsub_v12_0_21_lut6_legacy [\c_addsub_v12_0_21_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_fabric_legacy [\c_addsub_v12_0_21_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_legacy [\c_addsub_v12_0_21_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_viv [\c_addsub_v12_0_21_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_1_15.equ_rtl [\equ_rtl(c_xdevicefamily="zynq",...]
+Compiling architecture xilinx of entity xfft_v9_1_15.cnt_tc_rtl [\cnt_tc_rtl(c_xdevicefamily="zyn...]
+Compiling architecture struct of entity c_shift_ram_v12_0_20.c_shift_ram_v12_0_20_legacy [\c_shift_ram_v12_0_20_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_20.c_shift_ram_v12_0_20_viv [\c_shift_ram_v12_0_20_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_15.reg_rs_rtl [reg_rs_rtl_default]
+Compiling architecture rtl of entity c_addsub_v12_0_21.c_addsub_v12_0_21_lut6_legacy [\c_addsub_v12_0_21_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_fabric_legacy [\c_addsub_v12_0_21_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_legacy [\c_addsub_v12_0_21_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_viv [\c_addsub_v12_0_21_viv(c_xdevice...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010000000010010000...]
+Compiling architecture xilinx of entity xfft_v9_1_15.equ_rtl [\equ_rtl(c_xdevicefamily="zynq",...]
+Compiling architecture xilinx of entity xfft_v9_1_15.cnt_tc_rtl [\cnt_tc_rtl(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity c_addsub_v12_0_21.c_addsub_v12_0_21_lut6_legacy [\c_addsub_v12_0_21_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_fabric_legacy [\c_addsub_v12_0_21_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_legacy [\c_addsub_v12_0_21_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_viv [\c_addsub_v12_0_21_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_1_15.equ_rtl [\equ_rtl(c_xdevicefamily="zynq",...]
+Compiling architecture xilinx of entity xfft_v9_1_15.cnt_tc_rtl [\cnt_tc_rtl(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity c_addsub_v12_0_21.c_addsub_v12_0_21_lut6_legacy [\c_addsub_v12_0_21_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_fabric_legacy [\c_addsub_v12_0_21_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_legacy [\c_addsub_v12_0_21_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_21.c_addsub_v12_0_21_viv [\c_addsub_v12_0_21_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_1_15.equ_rtl [\equ_rtl(c_xdevicefamily="zynq")...]
+Compiling architecture xilinx of entity xfft_v9_1_15.cnt_tc_rtl [\cnt_tc_rtl(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity xfft_v9_1_15.flow_control_c [\flow_control_c(c_xdevicefamily=...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture struct of entity c_shift_ram_v12_0_20.c_shift_ram_v12_0_20_legacy [\c_shift_ram_v12_0_20_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_20.c_shift_ram_v12_0_20_viv [\c_shift_ram_v12_0_20_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_1_15.shift_ram [\shift_ram(c_xdevicefamily="zynq...]
+Compiling architecture xilinx of entity xfft_v9_1_15.r2_control [\r2_control(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity xfft_v9_1_15.xfft_v9_1_15_c [\xfft_v9_1_15_c(c_xdevicefamily=...]
+Compiling architecture synth of entity xfft_v9_1_15.xfft_v9_1_15_core [\xfft_v9_1_15_core(c_xdevicefami...]
+Compiling architecture xilinx of entity axi_utils_v2_0_11.glb_srl_fifo [\glb_srl_fifo(width=59,has_uvpro...]
+Compiling architecture xilinx of entity axi_utils_v2_0_11.glb_ifx_slave [\glb_ifx_slave(width=59,has_uvpr...]
+Compiling architecture synth of entity xfft_v9_1_15.axi_wrapper_input_fifo [\axi_wrapper_input_fifo(c_fifo_w...]
+Compiling architecture xilinx of entity axi_utils_v2_0_11.glb_srl_fifo [\glb_srl_fifo(width=1,has_uvprot...]
+Compiling architecture xilinx of entity axi_utils_v2_0_11.glb_ifx_master [\glb_ifx_master(width=1,afull_th...]
+Compiling architecture synth of entity xfft_v9_1_15.axi_wrapper_output_fifo [\axi_wrapper_output_fifo(c_fifo_...]
+Compiling architecture xilinx of entity axi_utils_v2_0_11.glb_srl_fifo [\glb_srl_fifo(width=21,has_uvpro...]
+Compiling architecture xilinx of entity axi_utils_v2_0_11.glb_ifx_slave [\glb_ifx_slave(width=21,has_uvpr...]
+Compiling architecture synth of entity xfft_v9_1_15.axi_wrapper_input_fifo [\axi_wrapper_input_fifo(c_fifo_w...]
+Compiling architecture xilinx of entity axi_utils_v2_0_11.glb_srl_fifo [\glb_srl_fifo(width=70,has_uvpro...]
+Compiling architecture xilinx of entity axi_utils_v2_0_11.glb_ifx_master [\glb_ifx_master(width=70,afull_t...]
+Compiling architecture synth of entity xfft_v9_1_15.axi_wrapper_output_fifo [\axi_wrapper_output_fifo(c_fifo_...]
+Compiling architecture synth of entity xfft_v9_1_15.axi_wrapper [\axi_wrapper(c_nfft_max=10,c_has...]
+Compiling architecture synth of entity xfft_v9_1_15.xfft_v9_1_15_viv [\xfft_v9_1_15_viv(c_xdevicefamil...]
+Compiling architecture xilinx of entity xfft_v9_1_15.xfft_v9_1_15 [\xfft_v9_1_15(c_xdevicefamily="z...]
+Compiling architecture ss_fft29_arch of entity xil_defaultlib.ss_fft29 [ss_fft29_default]
+Compiling module xil_defaultlib.tb_fft29
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fft29_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:20 . Memory (MB): peak = 557.195 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '20' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/ss-fft29-build-01/fft29_budget.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_fft29_behav -key {Behavioral:sim_1:Functional:tb_fft29} -tclbatch {tb_fft29.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_fft29.tcl
+WARNING: [Wavedata 42-489] Can't add object "/tb_fft29/mem" to the wave window because it has 23658496 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+Note:   - SCALING_SCH: in_ptr = 1, out_ptr = 1
+Time: 0 ps  Iteration: 0  Process: /tb_fft29/dut/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: F:/AMD/2025.2/Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - C_CHANNELS  = 1
+Time: 0 ps  Iteration: 0  Process: /tb_fft29/dut/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: F:/AMD/2025.2/Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - field_width = 20
+Time: 0 ps  Iteration: 0  Process: /tb_fft29/dut/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: F:/AMD/2025.2/Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:   - Copying SCALE_SCH from 20 downto 1 to 20 downto 1
+Time: 0 ps  Iteration: 0  Process: /tb_fft29/dut/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: F:/AMD/2025.2/Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_fft29_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:27 . Memory (MB): peak = 565.512 ; gain = 23.898
+Note:   - SCALING_SCH: in_ptr = 1, out_ptr = 1
+Time: 150 ns  Iteration: 0  Process: /tb_fft29/dut/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: F:/AMD/2025.2/Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - C_CHANNELS  = 1
+Time: 150 ns  Iteration: 0  Process: /tb_fft29/dut/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: F:/AMD/2025.2/Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - field_width = 20
+Time: 150 ns  Iteration: 0  Process: /tb_fft29/dut/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: F:/AMD/2025.2/Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:   - Copying SCALE_SCH from 20 downto 1 to 20 downto 1
+Time: 150 ns  Iteration: 0  Process: /tb_fft29/dut/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: F:/AMD/2025.2/Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+PROGRESS job=0 cycle=7377
+PROGRESS job=30 cycle=228357
+PROGRESS job=60 cycle=449337
+PROGRESS job=90 cycle=670317
+PROGRESS job=120 cycle=891297
+PROGRESS job=150 cycle=1112277
+PROGRESS job=180 cycle=1333257
+PROGRESS job=210 cycle=1554237
+PROGRESS job=240 cycle=1775217
+PROGRESS job=270 cycle=1996197
+PROGRESS job=300 cycle=2217177
+PROGRESS job=330 cycle=2438157
+PROGRESS job=360 cycle=2659375
+PASS FFT29 archive replay: 361 jobs; TLAST/index/status/backpressure checked
+$finish called at time : 26593790 ns : File "C:/Users/Toph Beifong/.codex/visualizations/2026/09/07/01a07c21-b7f9-74d2-92c5-7f8d235d8379/fft29/task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/source/tb_fft29.sv" Line 94
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:19:23 . Memory (MB): peak = 565.512 ; gain = 0.000
+INFO: xsimkernel Simulation Memory Usage: 38032 KB (Peak: 38032 KB), Simulation CPU Usage: 1135984 ms
+INFO: [Simtcl 6-16] Simulation closed
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 11 22:01:55 2026...

@@ -1,0 +1,23 @@
+{
+  "part": "xc7z020clg400-2",
+  "vivado": "2025.2 build 6299465",
+  "fft_ip": "9.1 revision 15",
+  "clock": {"name":"aclk","period_ns":10.0},
+  "OOC_synthesis": {
+    "LUT":1195,"FF":2043,"DSP48E1":8,"RAMB18E1":6,"RAMB36":0,"BRAM_tiles":3,
+    "WNS_ns":6.940,"WHS_ns":0.190
+  },
+  "OOC_placed_and_routed_core": {
+    "LUT":1045,"FF":2046,"DSP48E1":8,"RAMB18E1":6,"RAMB36":0,"BRAM_tiles":3,
+    "WNS_ns":5.248,"TNS_ns":0.0,"WHS_ns":0.037,"THS_ns":0.0,
+    "unrouted_nets":0,"partially_routed_nets":0,"unconstrained_internal_endpoints":0
+  },
+  "limitations": {
+    "no_input_delay_ports":85,"no_output_delay_ports":88,
+    "HD_CLK_SRC_set":false,"top_level_PS7_included":false,
+    "clock_buffer_and_system_IO_included":false,"full_board_timing_signoff":false,
+    "DRC":"ZPS7-1 warning and six AVAL-4 advisories; OOC connectivity checks limited"
+  },
+  "reports_are_authoritative":true,
+  "adapter_buffers_and_IFFT_not_in_resource_counts":true
+}
