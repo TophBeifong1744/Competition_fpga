@@ -1,0 +1,293 @@
+{
+  "status": "PASS_INDEPENDENT_ARCHIVE_ARRAY_AND_STATISTICAL_AUDIT_ONLY",
+  "frames": 196,
+  "configuration_results": 784,
+  "pair_results": 11760,
+  "amplitude_groups": 96,
+  "joint_strata": 1248,
+  "integer_checks": {
+    "PCM_window_components": 2408448,
+    "packing_components": 9633792
+  },
+  "archive": {
+    "original_name": "frames.json",
+    "original_bytes": 219818744,
+    "original_sha256": "8ca204725f6fb802fd9b2add8eeb74f245cffb4c3b44327e210a289acc409efa",
+    "compressed_name": "frames.json.gz",
+    "compressed_bytes": 1679402,
+    "compressed_sha256": "ef514321c591196260f281f5504becc0c965ad43019e188ae4c735ff6e80faa1",
+    "verification": "Decompressed bytes exactly equal original; all source and NPZ hashes checked before removing redundant uncompressed metadata."
+  },
+  "windows": {
+    "21": {
+      "total": 120,
+      "enough_bins": 120,
+      "valid": 120
+    },
+    "22": {
+      "total": 120,
+      "enough_bins": 120,
+      "valid": 119
+    },
+    "23": {
+      "total": 120,
+      "enough_bins": 120,
+      "valid": 119
+    },
+    "24": {
+      "total": 120,
+      "enough_bins": 0,
+      "valid": 0
+    }
+  },
+  "wide29_e20": {
+    "stratum": "candidate/peak_exponent",
+    "candidate": "wide29",
+    "peak_exponent": 20,
+    "frames": 8,
+    "pairs": 120,
+    "float_valid": 120,
+    "fixed_valid": 120,
+    "lost_valid": 0,
+    "newly_valid": 0,
+    "peak_changed": 26,
+    "mask_changed": 2605,
+    "n": 120,
+    "median": 0.1262737955580724,
+    "p95": 0.47710630016894967,
+    "p99": 0.8223754014540094,
+    "maximum": 0.8796478522085831,
+    "gt_0.001": 120,
+    "gt_0.01": 116,
+    "gt_0.1": 68,
+    "gt_0.5": 6,
+    "gt_1.0": 0
+  },
+  "stress": [
+    {
+      "case": 192,
+      "scenario": "zero",
+      "candidate": "reference25",
+      "float_valid": 0,
+      "fixed_valid": 0,
+      "overflow_channels": 0
+    },
+    {
+      "case": 192,
+      "scenario": "zero",
+      "candidate": "shift6_late",
+      "float_valid": 0,
+      "fixed_valid": 0,
+      "overflow_channels": 0
+    },
+    {
+      "case": 192,
+      "scenario": "zero",
+      "candidate": "shift6_early",
+      "float_valid": 0,
+      "fixed_valid": 0,
+      "overflow_channels": 0
+    },
+    {
+      "case": 192,
+      "scenario": "zero",
+      "candidate": "wide29",
+      "float_valid": 0,
+      "fixed_valid": 0,
+      "overflow_channels": 0
+    },
+    {
+      "case": 193,
+      "scenario": "dc095",
+      "candidate": "reference25",
+      "float_valid": 15,
+      "fixed_valid": 0,
+      "overflow_channels": 0
+    },
+    {
+      "case": 193,
+      "scenario": "dc095",
+      "candidate": "shift6_late",
+      "float_valid": 15,
+      "fixed_valid": 0,
+      "overflow_channels": 6
+    },
+    {
+      "case": 193,
+      "scenario": "dc095",
+      "candidate": "shift6_early",
+      "float_valid": 15,
+      "fixed_valid": 0,
+      "overflow_channels": 6
+    },
+    {
+      "case": 193,
+      "scenario": "dc095",
+      "candidate": "wide29",
+      "float_valid": 15,
+      "fixed_valid": 0,
+      "overflow_channels": 0
+    },
+    {
+      "case": 194,
+      "scenario": "alternating095",
+      "candidate": "reference25",
+      "float_valid": 15,
+      "fixed_valid": 15,
+      "overflow_channels": 0
+    },
+    {
+      "case": 194,
+      "scenario": "alternating095",
+      "candidate": "shift6_late",
+      "float_valid": 15,
+      "fixed_valid": 0,
+      "overflow_channels": 6
+    },
+    {
+      "case": 194,
+      "scenario": "alternating095",
+      "candidate": "shift6_early",
+      "float_valid": 15,
+      "fixed_valid": 0,
+      "overflow_channels": 6
+    },
+    {
+      "case": 194,
+      "scenario": "alternating095",
+      "candidate": "wide29",
+      "float_valid": 15,
+      "fixed_valid": 15,
+      "overflow_channels": 0
+    },
+    {
+      "case": 195,
+      "scenario": "tone900_095",
+      "candidate": "reference25",
+      "float_valid": 0,
+      "fixed_valid": 0,
+      "overflow_channels": 0
+    },
+    {
+      "case": 195,
+      "scenario": "tone900_095",
+      "candidate": "shift6_late",
+      "float_valid": 0,
+      "fixed_valid": 0,
+      "overflow_channels": 6
+    },
+    {
+      "case": 195,
+      "scenario": "tone900_095",
+      "candidate": "shift6_early",
+      "float_valid": 0,
+      "fixed_valid": 0,
+      "overflow_channels": 6
+    },
+    {
+      "case": 195,
+      "scenario": "tone900_095",
+      "candidate": "wide29",
+      "float_valid": 0,
+      "fixed_valid": 0,
+      "overflow_channels": 0
+    }
+  ],
+  "worst": {
+    "case": 186,
+    "seed": 2026091604,
+    "az": -47,
+    "el": -20,
+    "scenario": "noise0",
+    "peak_exponent": 19,
+    "candidate": "shift6_early",
+    "pair": 2,
+    "float_valid": true,
+    "fixed_valid": true,
+    "fft_overflow": false,
+    "ifft_overflow": false,
+    "valid_changed": false,
+    "newly_valid": false,
+    "lost_valid": false,
+    "mask_changed": 62,
+    "peak_changed": true,
+    "delta": 3.105176727729989
+  },
+  "budget": {
+    "external_memory_bytes": 165713,
+    "window_multiplies": 6144,
+    "transforms": 21,
+    "transform_samples": 21504,
+    "full_cross_bins": 7695,
+    "full_cross_real_multiplies": 30780,
+    "band_bins": 1185,
+    "peak_bins": 207,
+    "peak_comparisons": 192
+  },
+  "rerun_comparison": [
+    {
+      "file": "amplitude.csv",
+      "byte_equal": true,
+      "parsed_equal": true,
+      "historical_sha256": "a3ec5963d2f81daf812108b82dc0e4d991e83d84e2cea61b65d3562fe31a9a5b",
+      "rerun_sha256": "a3ec5963d2f81daf812108b82dc0e4d991e83d84e2cea61b65d3562fe31a9a5b"
+    },
+    {
+      "file": "numerical-loss.csv",
+      "byte_equal": true,
+      "parsed_equal": true,
+      "historical_sha256": "b249d7c58061ff3e37cd9076d9406707e661c9374e66d605b48720224968d5f8",
+      "rerun_sha256": "b249d7c58061ff3e37cd9076d9406707e661c9374e66d605b48720224968d5f8"
+    },
+    {
+      "file": "pairs.csv",
+      "byte_equal": true,
+      "parsed_equal": true,
+      "historical_sha256": "473b5fa12bd2614094e0fc0234dedfa6244a3baeafdb6d0915b55155b2b0e828",
+      "rerun_sha256": "473b5fa12bd2614094e0fc0234dedfa6244a3baeafdb6d0915b55155b2b0e828"
+    },
+    {
+      "file": "research-lines.json",
+      "byte_equal": true,
+      "parsed_equal": true,
+      "historical_sha256": "cdb07c55e216921202beb85d017ae8a063b424cc335ec28b2091338ec9b6ea98",
+      "rerun_sha256": "cdb07c55e216921202beb85d017ae8a063b424cc335ec28b2091338ec9b6ea98"
+    },
+    {
+      "file": "stage-amplitude.csv",
+      "byte_equal": true,
+      "parsed_equal": true,
+      "historical_sha256": "67f0cd34e4ecdfda1f358f7ec8b2cfce28cd9ead3f9129424d0cff1817fa9e29",
+      "rerun_sha256": "67f0cd34e4ecdfda1f358f7ec8b2cfce28cd9ead3f9129424d0cff1817fa9e29"
+    },
+    {
+      "file": "stage-pairs.csv",
+      "byte_equal": true,
+      "parsed_equal": true,
+      "historical_sha256": "32498518a3c34bee52dc33b3e02ceba9c84ce115d986bbbd1c578085ff62b40e",
+      "rerun_sha256": "32498518a3c34bee52dc33b3e02ceba9c84ce115d986bbbd1c578085ff62b40e"
+    },
+    {
+      "file": "strata.json",
+      "byte_equal": true,
+      "parsed_equal": true,
+      "historical_sha256": "8ae5a7f7fd291adb41c3c111839f0723d01f90900056244ff4d313bb85a2ea9d",
+      "rerun_sha256": "8ae5a7f7fd291adb41c3c111839f0723d01f90900056244ff4d313bb85a2ea9d"
+    },
+    {
+      "file": "tail-cases.json",
+      "byte_equal": true,
+      "parsed_equal": true,
+      "historical_sha256": "4f5041b7671b682876bb2e7d16f2ab48b5031b4a90b48c1a94cf357707f163c3",
+      "rerun_sha256": "4f5041b7671b682876bb2e7d16f2ab48b5031b4a90b48c1a94cf357707f163c3"
+    },
+    {
+      "file": "verification.json",
+      "byte_equal": true,
+      "parsed_equal": true,
+      "historical_sha256": "89fbf59f38c3497103d562839bbff27f7faaafde08695f5778a32292139876d8",
+      "rerun_sha256": "89fbf59f38c3497103d562839bbff27f7faaafde08695f5778a32292139876d8"
+    }
+  ],
+  "limits": "No vendor model/RTL rerun. Mask and Q12 derived from archived integer arrays; PHAT normalization and IFFT transform not recomputed. Research only."
+}
