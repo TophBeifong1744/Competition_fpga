@@ -1,0 +1,117 @@
+{
+  "date": "2026-09-11",
+  "base_main": "e811c399adaa083d520bfda998f15fe86b445b9a",
+  "source_commit": "d088e2c7deda9c505c094fd48d6f90bcd7f52807",
+  "receipt_commit": "2e2f685faf5520181cdd00cde2cd5030e75e67e2",
+  "source_branch": "codex/toph/four-channel-dupont-diagnostic-01",
+  "source_merged_into_main": false,
+  "receipt_path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/B-REVIEW.md",
+  "receipt_git_blob": "467fa64bdab26be490a1aacedd5e7d5391c6a201",
+  "receipt_sha256": "e2fd5b51cc1c845a8715f62c0ed66dc98ce70bc9f4326a34a4efa1e70a5dcfee",
+  "payload_manifest_sha256": "6c1505533787558a204fa4ed303931b4006e7519c2416f632a4ec32bbf003c01",
+  "historical_origin": "F:/NUEC/review-evidence/a-dupont-d088e2c",
+  "historical_files": {
+    "01-manifest.txt": "a047787f44fb537be0b6774d1849fd0a403143b254381a24e40870e6c3ac0352",
+    "02-reader.txt": "10e0481382a1e7488d49c8b33593a511792cd21a3f57989f6deb977089d71c16",
+    "03-audit.txt": "b137da125cb9832e56cb06799f23bf54a28cd3cb1ae0275a88e641cb642258f7",
+    "04-listening.txt": "bb21a453d92251d7fc07f8752be53cf5f186de188c6b8e0fb05e700941ff5780",
+    "05-reader-tests.txt": "b2882adaabd1002dce863cabe27fa7697b800c573faf42a4d12bb7a909ea0794",
+    "06-export-tests.txt": "f9c3b2f5697bf2393b7d81ba1a828e407a391020af2209a19a61c7bafe8e18bd",
+    "07-gate-tests.txt": "e9384174e800dc278f892aac15240c81e72c8afcacaeb0a8c93c372bf3935966",
+    "08-independent-summary.txt": "bb342a7de09d4411164264ad48c53d8de387292b94bdb52a09cbd5abba94ebd8",
+    "08-independent.json": "36a706e04ba186233c4dddbbde50b6352dc04b64e15dc1cda7777f2e92840fc3",
+    "independent_review.py": "c07d1d8cbc1292bfc9def462a9ad64201f1b515aca27581d283a1def4ae9a35e"
+  },
+  "input_files": [
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-quiet-01/metadata.json",
+      "git_blob": "9f8d99372a86075df75582e022bce850b2919037",
+      "sha256": "6384696a6a9c4677d403c6138179da444f3536ef43a40222410f72c9135164d5"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-quiet-01/raw.bin",
+      "git_blob": "dfb8fb8fb8fa560fd199b1b7238579a948cee7ed",
+      "sha256": "38d3a75b352efd25a23afd82c2838cd83685c9167351d8edb09c297f2e801d8a"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-quiet-01/samples.csv",
+      "git_blob": "932c9562d873c9d10deed04c5e0396d4c0892844",
+      "sha256": "a890f05d226e31b12318b56f4d883056d754a95a2e2aede29610391bdd4dc6f1"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-quiet-01/serial.log",
+      "git_blob": "9040052bfcce34cdd49ba878787bb1b444f2edda",
+      "sha256": "0ccf9d5dfa46c30b0c7068587ba5a804c0bd091a5235ba73e0f04a5d177b8b2c"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-reader-check-01.log",
+      "git_blob": "01b56e939f425c7504d26fae1dc5957d7ce83be2",
+      "sha256": "c482f3c7be021a569fa0dfeed9327631d2230006fbe33ae7755801591a6c2272"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-speech-01/metadata.json",
+      "git_blob": "4661f3d18d2b9cb129ad0370267b2f7038d4c0f0",
+      "sha256": "308ae31097ff3663d77ddd127889d3df4f285a74ef0b299cd32a67e87e0fb091"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-speech-01/raw.bin",
+      "git_blob": "b1e91cf935e0b261c078f2881d86720bde01d22c",
+      "sha256": "78db105ab1fa216bafbb06b7fe73d989e88e0cd0be95f419b967e61637af272c"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-speech-01/samples.csv",
+      "git_blob": "14270cde3a14a35198e4506a094cc187f21c3de1",
+      "sha256": "246f92b44871519e7fa92b018aa3fd42510731ccac430e087705b02404a71239"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-speech-01/serial.log",
+      "git_blob": "5d0c643a53df8ea95e4bfecdc362ba4603dab26c",
+      "sha256": "dc5bf4756d5997340fd24352d651263c73dad429fe1e336e935dfc3fec1a1135"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/listening-info.json",
+      "git_blob": "72559f42e3981bd9862023169e230b525293f325",
+      "sha256": "c3c4300ab5e746d49a4496aff2b2992afdd7d03b6fd1898324e6a7d54bf9dc85"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/quiet_mic0.wav",
+      "git_blob": "75ea4dc805029c18c72b9f0f7a6104114543f307",
+      "sha256": "1a0f7644b8fc58edfffd6cbdb36a979409bf26f92bd747a6ceffcaecd5787268"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/quiet_mic1.wav",
+      "git_blob": "508eea8b7c8075d332d607585f330690c632af51",
+      "sha256": "8f7fb085e1cd1dffc019918fd773f41afc124ef0088e6544fde9863cc90c046c"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/quiet_mic2.wav",
+      "git_blob": "36d85d64e8b454381e05456458997acb8735cb74",
+      "sha256": "a561a7a0b21d603e115b3d9acfbd88664e3cfc76a39d7229a9b1bd06fa2c2882"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/quiet_mic3.wav",
+      "git_blob": "0f8d9ee3289d83eea2f58c0481e4319a953a2069",
+      "sha256": "719df9ff97c4f68f7a659d763f096e235d6bf61139f809be9fcf213bceae6f6b"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/speech_mic0.wav",
+      "git_blob": "4f30891aad649b7f2775f5a0b747f7ee8db5139f",
+      "sha256": "333aea6676e2a45472f82a98e809d262e821f3f299dca7d351f04b627c8cc50e"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/speech_mic1.wav",
+      "git_blob": "ca326a5d9f1edc7111497859f09882c84b7b8dbd",
+      "sha256": "62f45bd3edfecb2de2f4bbd42c6509bbf93f98450a40bfc38979fea4bd195e27"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/speech_mic2.wav",
+      "git_blob": "38e810d2dee473db96088b72d66065a8e07914c3",
+      "sha256": "b00c02390f64eb6f2a8c3e66c4970d53782304eb85b7a2eb14b3751057633906"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/speech_mic3.wav",
+      "git_blob": "2cb3a7855021c319a9c76ad82f05796e9c1aa7cf",
+      "sha256": "6a8d924161297f15f928f692173cf32ca3182667c2bb96b19cc73fc73a990f90"
+    }
+  ]
+}

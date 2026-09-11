@@ -1,0 +1,707 @@
+{
+  "status": "PASS_B_INDEPENDENT_DIAGNOSTIC",
+  "review_sha": "d088e2c7deda9c505c094fd48d6f90bcd7f52807",
+  "git_blob_checks": [
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/.gitattributes",
+      "git_blob": "cd447950c79c5cec2a42c57689e49c08ea76699a",
+      "sha256": "cac50c51f4b0b13dbb65c0159f8ed2452824df343350cf56a33503b6b4c484ff"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/B-START.md",
+      "git_blob": "62ed6a31ed94d196a07eae8902f528038dc85c78",
+      "sha256": "6a2dbc374885dea8292e9eb48c5ea2abe974b43ffa09146f3ed76a01e8dc8727"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/README.md",
+      "git_blob": "ace0de2860d9755ba7d23b467077d3abc994000b",
+      "sha256": "94a4e565d3b49446482f3f1a3460ee017cbd7778d50776a515d2cabffb595b58"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/B-HANDOFF.md",
+      "git_blob": "8b299d12a4fa06a97b0e914c00a5bc241bb4b943",
+      "sha256": "cc8022ff19372d17eb2ec5241a770821ce7ec55257c75430414a8a215f47e399"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/MANIFEST.sha256.json",
+      "git_blob": "4efe267a8af1eac3e1beef8da3b2b4e20baf2758",
+      "sha256": "6c1505533787558a204fa4ed303931b4006e7519c2416f632a4ec32bbf003c01"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/REVIEW.md",
+      "git_blob": "45ce14146723494fd7bfd0c8e016ff3e415ce92c",
+      "sha256": "6d134c0a04e5571fc253d3a45bda6ff7b73ad9f641b3ba75eb9ecd38107bedc4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/audit_capture.py",
+      "git_blob": "62afa4827e1bd61fd7ee1712673594741a062648",
+      "sha256": "d89b8dad8d9f9ed06d2825e2a790e1ef87bf2f9717c9775a89f8d1ae59407986"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/audit_listening.py",
+      "git_blob": "2ad6e64d1c3b3c923b628c954129237f54d2a4aa",
+      "sha256": "a97226f788a53e23ae9ae293c7b7b44576667f25b75a364e5d48f00e760c4f60"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/b-reader/payload/docs/h1-reader.md",
+      "git_blob": "c3c63a1625c6d445bc719ee4836186c14d44042d",
+      "sha256": "1203a3daa7cdf5ffd7fd726f0b8d713187def1fa4fb75b91b5e3e9fbfbddaa2e"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/b-reader/payload/model/python/h1_reader.py",
+      "git_blob": "4831670d7a0e90b345e2a8647f62bc97b5071cc6",
+      "sha256": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/b-reader/payload/tb/python/test_h1_reader.py",
+      "git_blob": "10963a71481c8854abfe4050c2159063ca546d31",
+      "sha256": "e184ae5264546776c99a978c2525fb7063c1d261118c35cdeb237eb1fc803077"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/b-reader/reference/h1-ss-data-draft-0.3/payload/examples/h1/code-pattern/metadata.json",
+      "git_blob": "45177136a2fed756d71ca1b09e5752280c1c3eaa",
+      "sha256": "2f1aca137563cdecb72a59c87f73a20233e62ffcd4e9997a798dc3ee5df93964"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/b-reader/reference/h1-ss-data-draft-0.3/payload/examples/h1/code-pattern/samples.csv",
+      "git_blob": "445cce5f8f48b868b8fa3270a65a97f326053eab",
+      "sha256": "c02fdf3855e87a2d8c6e57ebbeb2b9304ab00cd7cd5c9afe022bad00574b9d0f"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/b-reader/reference/h1-ss-data-draft-0.3/payload/examples/h1/reader-test-plan.json",
+      "git_blob": "d1ee293965413b7b060446f73cf735a4bc72ad1e",
+      "sha256": "2a3de3dc33e0b500d62ffd97207b2f262b35e9a4c1c823b82985b793b7fd8afb"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/b-reader/reference/h1-ss-data-draft-0.3/payload/examples/h1/restart/metadata.json",
+      "git_blob": "ba5a028ae7ab348ae17ef538470a0662936fa5d4",
+      "sha256": "c3ffc03e41ca5c8e9cee4dd050c51bcbd98d112dce299683c3b4873d019af9e3"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/b-reader/reference/h1-ss-data-draft-0.3/payload/examples/h1/restart/samples.csv",
+      "git_blob": "67e4b8b9968aa72258738d46de2d201f5535ed41",
+      "sha256": "d95c743494822c2279647a770fceb8bbc4d4c222d1917c9c92a77ea2e2a15119"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/app/compile_commands.json",
+      "git_blob": "ffa27c1be6320724f8be7eb2b8a1d97af73d08f7",
+      "sha256": "ee5b655edff74801d2535a7a23daf17a35f3919f18831e8cd1881214aefcfea8"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/app/four_mic_capture.elf",
+      "git_blob": "49266154d6deaa09ad67212671be42f52822cc3d",
+      "sha256": "c0b430e77d4d0d53d4ca0b4399fe69e0cd7865e5815ac3549b5d209d39e7192a"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/app/launch.json",
+      "git_blob": "acc2f4626b32ce1a341fbf555a1c3b87c4518f80",
+      "sha256": "822b59518dbc8513bee12c465ca4d192adbeb28fc9946facaff0622b5862c17c"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/app/loaded_path.bit",
+      "git_blob": "7ce3955e495c495d42c6fdf7e84cba6c4a464c33",
+      "sha256": "37f6d55fbd1ce314245d189fbe2fa984477c6b61d26a2a23736b71305654605b"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/app/lscript.ld",
+      "git_blob": "4cad30623f97521dc4601be797d3b046b189b5be",
+      "sha256": "8872fb0af0f6bec969e63d2e5d170c1fc058c782c6924d70697b352aeab55dd4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/app/main_four_capture.c",
+      "git_blob": "20ab72dd3a47992201eb6890a35c33ecb0a864c4",
+      "sha256": "c7ea5352a172287aa4890a948b4aeb00c48cc11acaa044ec909b2ee24980b7de"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/app/memory.map",
+      "git_blob": "18410c5c33bca5f6c43e159474ae69227a0131a4",
+      "sha256": "789c0d6ea47e64b1b06b5a8ea4fe8f2c95c90e74dc8915bf42f6798fa184d068"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/app/ps7_init.tcl",
+      "git_blob": "ec96b869b1d7708b4b15d0ce3776f683238f7ca8",
+      "sha256": "a158fcc7d723b21003864159006e781ffaf5e8df24ec9b1d9279f9d14ff3ee5e"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/app/vitis-comp.json",
+      "git_blob": "2bddcf6e2931c2222c5d0403a6468a0fbf6d159e",
+      "sha256": "da57fd2ba29b0b9e52d04aafc49156f5a063aff348df0db40f5cea38ffc240e5"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/checks.json",
+      "git_blob": "1d00353e0fa0655e1520b40154e192b14c87fa70",
+      "sha256": "824aa6fc7668077f95bc5603d5ca252b7d1bd60420c75e050d5a96141aab1f87"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/manifest.json",
+      "git_blob": "a9942743a5d39ead3054f8cc089296263e930db3",
+      "sha256": "d50947e896646b05bcc7a4ae0dd398d68bf388ed9550932b18cf6bab4ef86484"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/one/effective_c_adapter_io.xdc",
+      "git_blob": "aee0e04ff29b8133c4b353b725a3cf8fcf22204d",
+      "sha256": "e7501d4dd297fc38922092024649c2d886a62ccc3670ba92805db5dcee2fc0d4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/one/four_mic_top.v",
+      "git_blob": "d80de7082bdc8d58f0f221c72ebebe9dda428388",
+      "sha256": "9f08e6d00771e7a028d418f011d567d7540f08fdefef9b8160fd4e9a2c97d128"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/one/one.xpr",
+      "git_blob": "8139f41b4b375053d828a0f8fec8153bc9e76c66",
+      "sha256": "53d2a067b89dc4b1842d04d4e9fc76bf4af225d3136242407543cc9480c323d3"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/one/pcm4_capture_axis.v",
+      "git_blob": "7925843110983960f8e90323afeac0a240e15bd3",
+      "sha256": "3d322891ce5feeaa945d14ece3891ebed043ce34713d46cf2cd67b883c7845a2"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/one/pdm_cic3.v",
+      "git_blob": "470c2edfc33556f04d67fb778fad8b1db5408030",
+      "sha256": "a80c176053688662cd8bb47f98edcadeb9b758d514365724fd8b6ffd2120573d"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/one/system.bd",
+      "git_blob": "62032c23ea8005b1706167acf0273690d0610b70",
+      "sha256": "0be89e6da3f914e4eb914e92c79f8fb774942723db5bf4cb02e123169dfcb181"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/one/system_c_adapter.xsa",
+      "git_blob": "3c4f8a1c41e29ec1b200e3c2b9860b3ceba69e44",
+      "sha256": "71e7bf6d4fcb769582e5485660515b8f615b2027aa2ff18c1f8d3f67f9457baa"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/one/system_wrapper.bit",
+      "git_blob": "7ce3955e495c495d42c6fdf7e84cba6c4a464c33",
+      "sha256": "37f6d55fbd1ce314245d189fbe2fa984477c6b61d26a2a23736b71305654605b"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/one/timing_summary.rpt",
+      "git_blob": "9ea8f00a2928e4ff7841aa15c6cbb1673a7b5be6",
+      "sha256": "5629d3d2f52d711aec7922244740e3a23b92be047004771e55498c02eabae3e6"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/platform/system_c_adapter.xsa",
+      "git_blob": "3c4f8a1c41e29ec1b200e3c2b9860b3ceba69e44",
+      "sha256": "71e7bf6d4fcb769582e5485660515b8f615b2027aa2ff18c1f8d3f67f9457baa"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/platform/vitis-comp.json",
+      "git_blob": "f0256eafc9c890a219f65c63bf7408012e0c8656",
+      "sha256": "616b9126f1798b6e13379f2c7c26d366f2464ddc5d54bbe78a0f8ff9dea668a4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/platform/xparameters.h",
+      "git_blob": "657363cc68e364980a989f3bdad0d94b2d835c3d",
+      "sha256": "7c212413cdbc30bc330d20c2d7a006cf2052dcdad9ed936fc01490c66daf3337"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-quiet-01/metadata.json",
+      "git_blob": "9f8d99372a86075df75582e022bce850b2919037",
+      "sha256": "6384696a6a9c4677d403c6138179da444f3536ef43a40222410f72c9135164d5"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-quiet-01/raw.bin",
+      "git_blob": "dfb8fb8fb8fa560fd199b1b7238579a948cee7ed",
+      "sha256": "38d3a75b352efd25a23afd82c2838cd83685c9167351d8edb09c297f2e801d8a"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-quiet-01/samples.csv",
+      "git_blob": "932c9562d873c9d10deed04c5e0396d4c0892844",
+      "sha256": "a890f05d226e31b12318b56f4d883056d754a95a2e2aede29610391bdd4dc6f1"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-quiet-01/serial.log",
+      "git_blob": "9040052bfcce34cdd49ba878787bb1b444f2edda",
+      "sha256": "0ccf9d5dfa46c30b0c7068587ba5a804c0bd091a5235ba73e0f04a5d177b8b2c"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-reader-check-01.log",
+      "git_blob": "01b56e939f425c7504d26fae1dc5957d7ce83be2",
+      "sha256": "c482f3c7be021a569fa0dfeed9327631d2230006fbe33ae7755801591a6c2272"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-speech-01/metadata.json",
+      "git_blob": "4661f3d18d2b9cb129ad0370267b2f7038d4c0f0",
+      "sha256": "308ae31097ff3663d77ddd127889d3df4f285a74ef0b299cd32a67e87e0fb091"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-speech-01/raw.bin",
+      "git_blob": "b1e91cf935e0b261c078f2881d86720bde01d22c",
+      "sha256": "78db105ab1fa216bafbb06b7fe73d989e88e0cd0be95f419b967e61637af272c"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-speech-01/samples.csv",
+      "git_blob": "14270cde3a14a35198e4506a094cc187f21c3de1",
+      "sha256": "246f92b44871519e7fa92b018aa3fd42510731ccac430e087705b02404a71239"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-speech-01/serial.log",
+      "git_blob": "5d0c643a53df8ea95e4bfecdc362ba4603dab26c",
+      "sha256": "dc5bf4756d5997340fd24352d651263c73dad429fe1e336e935dfc3fec1a1135"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/listening-info.json",
+      "git_blob": "72559f42e3981bd9862023169e230b525293f325",
+      "sha256": "c3c4300ab5e746d49a4496aff2b2992afdd7d03b6fd1898324e6a7d54bf9dc85"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/quiet_mic0.wav",
+      "git_blob": "75ea4dc805029c18c72b9f0f7a6104114543f307",
+      "sha256": "1a0f7644b8fc58edfffd6cbdb36a979409bf26f92bd747a6ceffcaecd5787268"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/quiet_mic1.wav",
+      "git_blob": "508eea8b7c8075d332d607585f330690c632af51",
+      "sha256": "8f7fb085e1cd1dffc019918fd773f41afc124ef0088e6544fde9863cc90c046c"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/quiet_mic2.wav",
+      "git_blob": "36d85d64e8b454381e05456458997acb8735cb74",
+      "sha256": "a561a7a0b21d603e115b3d9acfbd88664e3cfc76a39d7229a9b1bd06fa2c2882"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/quiet_mic3.wav",
+      "git_blob": "0f8d9ee3289d83eea2f58c0481e4319a953a2069",
+      "sha256": "719df9ff97c4f68f7a659d763f096e235d6bf61139f809be9fcf213bceae6f6b"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/speech_mic0.wav",
+      "git_blob": "4f30891aad649b7f2775f5a0b747f7ee8db5139f",
+      "sha256": "333aea6676e2a45472f82a98e809d262e821f3f299dca7d351f04b627c8cc50e"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/speech_mic1.wav",
+      "git_blob": "ca326a5d9f1edc7111497859f09882c84b7b8dbd",
+      "sha256": "62f45bd3edfecb2de2f4bbd42c6509bbf93f98450a40bfc38979fea4bd195e27"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/speech_mic2.wav",
+      "git_blob": "38e810d2dee473db96088b72d66065a8e07914c3",
+      "sha256": "b00c02390f64eb6f2a8c3e66c4970d53782304eb85b7a2eb14b3751057633906"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/listening-01/speech_mic3.wav",
+      "git_blob": "2cb3a7855021c319a9c76ad82f05796e9c1aa7cf",
+      "sha256": "6a8d924161297f15f928f692173cf32ca3182667c2bb96b19cc73fc73a990f90"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/make_handoff.py",
+      "git_blob": "f7552f4dd2f0557b7b521d6b01005fdc9c11ece7",
+      "sha256": "6d7205b49689eb2153fe02df4f3704873a441e8fed5b4fe597bcc0085530be67"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/run01/audit_capture-original.py",
+      "git_blob": "7141c6bde27672c75f2bd5e8f9fdebea1e0f1c62",
+      "sha256": "10e8494c5fe7bb5424c9f1f8915d358ef0b7c0f674924435c2262ad436eeff29"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/run01/integrity.json",
+      "git_blob": "1594dfb71f7295d6f1902d68ec16481993559648",
+      "sha256": "d7fb9f2fc4b5423e111d1f9fafa99d5cea32ff3005640887b770ce2ee9062b42"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/run01/reader.stderr.txt",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/run01/reader.stdout.json",
+      "git_blob": "a2d0a554b0cb9fd241d3bcdc41f9124964f9bed9",
+      "sha256": "10e0481382a1e7488d49c8b33593a511792cd21a3f57989f6deb977089d71c16"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/run02/capture-gate-tests.txt",
+      "git_blob": "3cf095fa3499ff18f344a06efa9e8f4e2deb57ea",
+      "sha256": "1c4879971a322b20a0e6931ea56629658d06ba49c0eb121aa825d5e84503b227"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/run02/export-tests.txt",
+      "git_blob": "e0386614c552fbe22bcfe183256a14106ba9cea4",
+      "sha256": "5c77b6f755e112126ebdef43e775f919f741308770d6056844777093f1d009df"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/run02/h1-tests.txt",
+      "git_blob": "42b2358f5c5be0ad45a0bfcfc6ebfe066654f03b",
+      "sha256": "73925cb8ee878180f02699948ba370c8a1c74d2ebaba6e07ffb2239315263869"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/run02/integrity.json",
+      "git_blob": "9d17fed7333b6bfc30a47551b97b07a9570a250b",
+      "sha256": "77a724d994adec34ffe09dfe3924810a2aa646886ab7416768232d17f28bedb2"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/run02/listening.json",
+      "git_blob": "2acea33bf48eca2c1017a4ae456c2c14db8b071c",
+      "sha256": "690774123edd96c21a05f6569defd35462ed655bed836683d99cb459ab05823b"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/run02/reader.stderr.txt",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/run02/reader.stdout.json",
+      "git_blob": "a2d0a554b0cb9fd241d3bcdc41f9124964f9bed9",
+      "sha256": "10e0481382a1e7488d49c8b33593a511792cd21a3f57989f6deb977089d71c16"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/snapshot_build.py",
+      "git_blob": "f03341b2654ab4c300d6b714b52dc302365e2778",
+      "sha256": "e7982728fa81ff5a90fc215495f6fbc0477082c157bf009f9e127b7aba9677c0"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/source/export_c_capture.py",
+      "git_blob": "2f4841d744a6d5370fffd7ff5d7c022ee72b2181",
+      "sha256": "c23b8d1adb2613a838f721664fd643aac032c61f27ebd103d84b3e42262014ee"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/source/export_four.py",
+      "git_blob": "6dea403629da581f1c243b5ae310d144b33cdbea",
+      "sha256": "e89c82945367ef3e06113d9c18edbb3276e1ba658b2594e3f79e28a960422526"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/source/test_c_capture_gate.py",
+      "git_blob": "db1e50304f54a542a20926dc46b4fe316cca4700",
+      "sha256": "132ac4ac4f0f505a8ceae6afc657c50bb7450d4c76d190ea49b50ec8bc182578"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/source/test_export.py",
+      "git_blob": "900e83ff35dd3af588a82a75811cb3e14d623f4c",
+      "sha256": "7efcec6c87b2d9831735009863c9b5e64c37076afd50672fb75ff3c91e141670"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/verify_manifest.py",
+      "git_blob": "54a5e58f30a0b20490ab21e5b23a8968e8a7578f",
+      "sha256": "a98a4e93b151bc87e13b773de9a6d08b65690815e4ededf27e3fac52bdb5ff77"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/soundsight-four-dupont-diagnostic-20260911.zip",
+      "git_blob": "ed38f27abc9e28ab00fa1368277693d046b8a740",
+      "sha256": "a5d9bb8388d0921c53d254340030ae0b584111d7381b8a2d88a5c49079324721"
+    }
+  ],
+  "snapshot_entries_verified": 21,
+  "bit_xsa_init_consistency": true,
+  "manifest_sha256": "6c1505533787558a204fa4ed303931b4006e7519c2416f632a4ec32bbf003c01",
+  "reader_sha256": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9",
+  "method": "raw <QiiiiII>; zero-lag Pearson on demeaned full segment; spectral estimate 4096-point Hann, hop2048, per-window mean removed, one-sided power; configured Fs48000; no acoustic calibration",
+  "segments": [
+    {
+      "acquisition": "dupont-quiet-01",
+      "first_id": 17544,
+      "last_id": 49543,
+      "groups": 32000,
+      "pcm_multiple32": true,
+      "lanes": [
+        {
+          "channel": 0,
+          "min": -19968,
+          "max": 23424,
+          "mean": 771.692,
+          "rms_raw": 6887.393682954387,
+          "rms_ac": 6844.025365319448,
+          "peak_fraction_full_scale": 0.0027923583984375,
+          "saturation": 0,
+          "zeros": 182,
+          "constant": false,
+          "dominant_nonDC_bin_hz": 46.875
+        },
+        {
+          "channel": 1,
+          "min": -24384,
+          "max": 25216,
+          "mean": -477.428,
+          "rms_raw": 7413.440024172314,
+          "rms_ac": 7398.050790364716,
+          "peak_fraction_full_scale": 0.0030059814453125,
+          "saturation": 0,
+          "zeros": 126,
+          "constant": false,
+          "dominant_nonDC_bin_hz": 46.875
+        },
+        {
+          "channel": 2,
+          "min": -24512,
+          "max": 23616,
+          "mean": -97.28,
+          "rms_raw": 7275.745024669295,
+          "rms_ac": 7275.0946568137515,
+          "peak_fraction_full_scale": 0.00292205810546875,
+          "saturation": 0,
+          "zeros": 129,
+          "constant": false,
+          "dominant_nonDC_bin_hz": 46.875
+        },
+        {
+          "channel": 3,
+          "min": -20864,
+          "max": 21952,
+          "mean": 842.622,
+          "rms_raw": 6650.291542481427,
+          "rms_ac": 6596.6935479159565,
+          "peak_fraction_full_scale": 0.00261688232421875,
+          "saturation": 0,
+          "zeros": 159,
+          "constant": false,
+          "dominant_nonDC_bin_hz": 46.875
+        }
+      ],
+      "pairs": [
+        {
+          "a": 0,
+          "b": 1,
+          "identical": false,
+          "pearson_zero_lag": 0.9548855622338657,
+          "normalized_difference_rms": 0.3003812170097666
+        },
+        {
+          "a": 0,
+          "b": 2,
+          "identical": false,
+          "pearson_zero_lag": 0.8900516394371663,
+          "normalized_difference_rms": 0.4689314674082644
+        },
+        {
+          "a": 0,
+          "b": 3,
+          "identical": false,
+          "pearson_zero_lag": 0.9674550855765967,
+          "normalized_difference_rms": 0.25512708371869536
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "identical": false,
+          "pearson_zero_lag": 0.9078575197371667,
+          "normalized_difference_rms": 0.4292842421119909
+        },
+        {
+          "a": 1,
+          "b": 3,
+          "identical": false,
+          "pearson_zero_lag": 0.924481719790917,
+          "normalized_difference_rms": 0.38863422445554785
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "identical": false,
+          "pearson_zero_lag": 0.9075828444769629,
+          "normalized_difference_rms": 0.42992361071017476
+        }
+      ],
+      "band_power_fractions": {
+        "0_to_100Hz": [
+          0.910445947811874,
+          0.909999140130572,
+          0.8326195911209339,
+          0.9153489992718132
+        ],
+        "100_to_300Hz": [
+          0.055679945425406496,
+          0.05815134084843606,
+          0.05392162028150311,
+          0.05731404325019443
+        ],
+        "300_to_4000Hz": [
+          0.01841208842419199,
+          0.01772509460230495,
+          0.018762745510409642,
+          0.021714946662406698
+        ],
+        "4000_to_24000Hz": [
+          0.01546201833852853,
+          0.014124424418688277,
+          0.09469604308715102,
+          0.0056220108155828445
+        ]
+      },
+      "pearson_matrix": [
+        [
+          1.0,
+          0.9548855622338657,
+          0.8900516394371663,
+          0.9674550855765967
+        ],
+        [
+          0.9548855622338657,
+          1.0,
+          0.9078575197371667,
+          0.924481719790917
+        ],
+        [
+          0.8900516394371664,
+          0.9078575197371667,
+          1.0,
+          0.9075828444769629
+        ],
+        [
+          0.9674550855765968,
+          0.9244817197909171,
+          0.9075828444769629,
+          1.0
+        ]
+      ]
+    },
+    {
+      "acquisition": "dupont-speech-01",
+      "first_id": 15798,
+      "last_id": 47797,
+      "groups": 32000,
+      "pcm_multiple32": true,
+      "lanes": [
+        {
+          "channel": 0,
+          "min": -456576,
+          "max": 382848,
+          "mean": 1005.842,
+          "rms_raw": 145623.83522574865,
+          "rms_ac": 145620.36144621755,
+          "peak_fraction_full_scale": 0.0544281005859375,
+          "saturation": 0,
+          "zeros": 8,
+          "constant": false,
+          "dominant_nonDC_bin_hz": 796.875
+        },
+        {
+          "channel": 1,
+          "min": -411392,
+          "max": 327488,
+          "mean": 1557.244,
+          "rms_raw": 138731.94462992292,
+          "rms_ac": 138723.20444656856,
+          "peak_fraction_full_scale": 0.049041748046875,
+          "saturation": 0,
+          "zeros": 7,
+          "constant": false,
+          "dominant_nonDC_bin_hz": 796.875
+        },
+        {
+          "channel": 2,
+          "min": -448192,
+          "max": 337536,
+          "mean": 910.596,
+          "rms_raw": 147405.18230151883,
+          "rms_ac": 147402.36966978782,
+          "peak_fraction_full_scale": 0.05342864990234375,
+          "saturation": 0,
+          "zeros": 6,
+          "constant": false,
+          "dominant_nonDC_bin_hz": 796.875
+        },
+        {
+          "channel": 3,
+          "min": -502400,
+          "max": 430656,
+          "mean": -289.502,
+          "rms_raw": 162701.05490460718,
+          "rms_ac": 162700.79734182006,
+          "peak_fraction_full_scale": 0.0598907470703125,
+          "saturation": 0,
+          "zeros": 8,
+          "constant": false,
+          "dominant_nonDC_bin_hz": 796.875
+        }
+      ],
+      "pairs": [
+        {
+          "a": 0,
+          "b": 1,
+          "identical": false,
+          "pearson_zero_lag": 0.8744152107653415,
+          "normalized_difference_rms": 0.5011682137459613
+        },
+        {
+          "a": 0,
+          "b": 2,
+          "identical": false,
+          "pearson_zero_lag": 0.8845332039285299,
+          "normalized_difference_rms": 0.4805555037068445
+        },
+        {
+          "a": 0,
+          "b": 3,
+          "identical": false,
+          "pearson_zero_lag": 0.9909077022630148,
+          "normalized_difference_rms": 0.1348502705743319
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "identical": false,
+          "pearson_zero_lag": 0.9960730383765538,
+          "normalized_difference_rms": 0.08862236313083105
+        },
+        {
+          "a": 1,
+          "b": 3,
+          "identical": false,
+          "pearson_zero_lag": 0.85230552073193,
+          "normalized_difference_rms": 0.5434969719659354
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "identical": false,
+          "pearson_zero_lag": 0.8720184705502836,
+          "normalized_difference_rms": 0.5059279186795612
+        }
+      ],
+      "band_power_fractions": {
+        "0_to_100Hz": [
+          0.0017638278413494373,
+          0.002073771263025284,
+          0.0018124285262844074,
+          0.0014143824648329888
+        ],
+        "100_to_300Hz": [
+          0.052952151726995036,
+          0.04903658403808611,
+          0.04172215319277823,
+          0.04286324490338486
+        ],
+        "300_to_4000Hz": [
+          0.9450331155011936,
+          0.948795039621268,
+          0.956362539468025,
+          0.9555446795552844
+        ],
+        "4000_to_24000Hz": [
+          0.0002509049304611995,
+          9.460507761840424e-05,
+          0.00010287881290940716,
+          0.00017769307649697028
+        ]
+      },
+      "pearson_matrix": [
+        [
+          0.9999999999999998,
+          0.8744152107653415,
+          0.8845332039285299,
+          0.9909077022630148
+        ],
+        [
+          0.8744152107653416,
+          0.9999999999999998,
+          0.9960730383765538,
+          0.85230552073193
+        ],
+        [
+          0.88453320392853,
+          0.9960730383765538,
+          0.9999999999999998,
+          0.8720184705502836
+        ],
+        [
+          0.9909077022630147,
+          0.8523055207319299,
+          0.8720184705502837,
+          1.0
+        ]
+      ]
+    }
+  ]
+}
