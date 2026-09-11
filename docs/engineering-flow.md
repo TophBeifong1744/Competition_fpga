@@ -22,6 +22,8 @@
 
 工程实施遵守五条主线：
 
+RTL 语言选择和 BD 接入统一按 [RTL 语言与 Block Design 接入约定](../task-packages/PKG-A-H3-INTEGRATION/references/policy/rtl-language-and-bd-integration.md)执行：简单模块优先 `.v`，复杂 `.sv` 核心使用 `.v` 包装层接入 Module Reference；不改既有数据接口和验收边界。
+
 1. 先证明四路样本同步且可追踪，再实现定位算法。
 2. 连续音频流、按帧定位流和低速机械控制流分开设计。
 3. 每个 RTL 模块先冻结接口与数值格式，再写实现和自检测试。

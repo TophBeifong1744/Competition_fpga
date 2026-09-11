@@ -1,5 +1,12 @@
 # PKG-A-ACQ · H1 候选文件清单
 
+2026-09-12：下方旧接线候选增量仅作历史，原件已集中到[旧硬件资料](../../archive/2026-09-12-local-materials/README.md)，不再作为当前接线待办。当前采用 C 板；H1 冻结清单未变。
+
+
+## 麦克风接线文档增量（2026-09-09）
+
+新增目标候选 payload/hardware/microphone-wiring-candidate.md，仅待审、不覆盖活动文件。输入来源、字节数与 SHA-256 见 [mic-wiring-draft-0.1 清单](../../archive/2026-09-12-local-materials/task-packages/PKG-A-ACQ/evidence/microphone-wiring-v0.1/manifest.md)，资料核验见同目录 README.md。未删除文件，不改下方 H1 原始批准清单；完整包仍进行中。
+
 当前状态：H1 的 7 个 payload 文件已由 B 审核并随 `be74e0a` 合入目标路径；DDR 增量仍待复核，完整包未通过。H1 原始文件清单与哈希不变，审核依据见 [REVIEW.md](REVIEW.md)。
 
 ## DDR 五模式自检增量（2026-09-08）

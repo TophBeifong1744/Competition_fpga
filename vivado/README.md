@@ -6,6 +6,8 @@
 
 团队已固定使用 Vivado `2025.2`。当前只表示工具版本决策完成，不表示 SoundSight 已在该版本完成脚本重建、仿真、综合、实现、时序收敛或板上运行。
 
+RTL 接入统一遵守 [语言与 BD 接入约定](../task-packages/PKG-A-H3-INTEGRATION/references/policy/rtl-language-and-bd-integration.md)：简单模块用 `.v`；复杂 `.sv` 核心通过 `.v` 实例化包装后作为 Module Reference 添加到 BD。不得仅修改文件扩展名，也不得将该模块设为整个 BD 工程顶层；仿真和综合通过不替代实际 BD 验证。
+
 预期入口：
 
 ```text

@@ -1,6 +1,5 @@
 # Hardware
 
-- [已选 C 转接板：接口基线与工程适配](microphone-adapter-decision.md)（2026-09-11用户决定采用；非阻塞风险集中在[暂缓清单](../docs/deferred-acquisition-risks.md#c-adapter-risks)，不沿用旧单CLOCK绘板草案）
 本目录保存真实硬件证据：板卡型号与原理图引用、麦克风/ADC 数据手册、阵列机械尺寸、时钟树、电源与 IO 电平、连接图、BOM、XDC 引脚映射和标定记录。
 
 硬件结论必须能追溯到实际板卡版本或测量结果。不得仅凭通用 Zynq-7020 能力假设某个引脚、电压、音频 Codec 或扩展口可用。
@@ -11,6 +10,7 @@
 - [四路同步麦克风采集方案与接口核验](microphone-interface-selection.md)
 - [麦克风评审及用户模块照片文字证据](microphone-recommendation-review.md)
 - [C 提交的麦克风实物资料与 A 复核记录](evidence/microphone-c-2026-09-09/README.md)（资料归档通过，接线未验收）
+- [已选 C 转接板：接口基线与工程适配](microphone-adapter-decision.md)（2026-09-11用户决定采用；非阻塞风险集中在[暂缓清单](../docs/deferred-acquisition-risks.md#c-adapter-risks)，不沿用旧单CLOCK绘板草案）
 - [现行V1硬件采购指标](procurement-specifications.md)
 - [M0板卡与接口审计](m0-board-interface-audit.md)、[竞赛验收台账](../docs/competition-acceptance.md)
 - [六麦阵列与夹具指南](three-dimensional-array-guide.md)

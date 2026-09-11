@@ -1,10 +1,23 @@
 # 四路诊断采集：首轮 RTL 与导出自检
 
-## 2026-09-11 后续决定：适配已选 C 转接板
+## 2026-09-12 当前入口（覆盖以下历史时点）
 
-拓芙已决定采用C板，执行[当前接口及15:50实际记录](../../../../hardware/microphone-adapter-decision.md)。四CLOCK候选顶层/XDC已修改，功能仿真及合成导出检查通过；有效BD/约束与构建仍在修正，未板测，不宣称适配整体验收通过。已有四路PS/导出器不重做，原“SoundSight｜工程实现”任务继续执行。下方[提示词](adapter-handoff-prompts.md)是历史交接文本，不重复派发。非阻塞风险只在[统一清单](../../../../docs/deferred-acquisition-risks.md#c-adapter-risks)记录。
+四路杜邦线实录已经 B 独立诊断接收：[主线交付及回执](../../deliveries/dupont-diagnostic-20260911/B-REVIEW.md)。本页历史实现材料已发布到 `codex/toph/four-channel-engineering-review-20260912`，主线不直接接入待审 RTL/BD/XDC；工作副本、完整包复核入口、旧恢复档案见[整理说明](../../../../docs/maintenance/local-materials-2026-09-12.md)。下列“未提交/未收到 B 回执/先录同一段”不再是当前动作。既有实际 one 工程未移动或改写。
 
-本次main仅发布文档；下列source、recovery、运行脚本和evidence是本机待审工作目录中的实现/历史记录，未随此次文档提交一并公开，不代表从main可直接复现完整四路工程。后续获准交付再按项目规则纳入源码与证据。
+
+## 2026-09-11 晚间最新：杜邦线四路实录完成，A检查通过，待B独立诊断
+
+`captures/dupont-quiet-01`、`dupont-speech-01`均为真实四路短录音，各32000组/1024000字节；原始BIN、串口校验、CSV逐值及H1读取复核通过，64项软件回归通过。实际连接为**杜邦线，不是C转接板实物**；大致共面约40mm正方形、两次未移动，坐标未测，保持null。拓芙已试听人声清晰；8份WAV与共同增益12的转换逐点一致。已有四路实板可听成果，不等于定位、波束或正式M1通过。
+
+当前ELF构建18:23:59，bit SHA为37f6d55f…，完整版本与[复核记录](https://github.com/TophBeifong1744/Competition_fpga/blob/codex/toph/four-channel-engineering-review-20260912/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/REVIEW.md)绑定，不套用下方build06旧哈希。当前下一步是[转交B独立诊断](https://github.com/TophBeifong1744/Competition_fpga/blob/codex/toph/four-channel-engineering-review-20260912/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/B-HANDOFF.md)，不是重新采同一批数据。B尚无回执，H2四路交接/阶段最终验收未关闭；未提交推送。以下早先“待录音”内容仅记录当时进度。
+
+## 2026-09-11 早先状态（历史）：C 板工程适配和构建完成，待实板短录音
+
+原 one 的顶层、BD、有效 XDC 已适配 C 板，Vivado 2025.2 综合/实现/bit/XSA 生成完成，配套 ELF 已编译。四 CLOCK 共用分频状态，DATA1～4→mic0～3；PS、DMA、GPIO、时钟/复位、地址、CIC、打包和原解码器保留。完整接口表、恢复办法、产物和上板/导出命令统一见 [C-ADAPTER-RUN.md](https://github.com/TophBeifong1744/Competition_fpga/blob/codex/toph/four-channel-engineering-review-20260912/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/C-ADAPTER-RUN.md)。
+
+功能仿真通过；RTL→BIN→H1 的57组/456字一致；17项软件检查与 [结构/BSP/IO核查](https://github.com/TophBeifong1744/Competition_fpga/blob/codex/toph/four-channel-engineering-review-20260912/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-closeout01/build-audit.json)通过。内部 WNS=4.640 ns、WHS=0.056 ns；外部4路输入/4路输出延迟未完整约束，实板未做，仍无本版真实四路录音。不宣称 B 复核、H2/H3或阶段验收通过。下一步由拓芙按运行单采一段真实四路数据，不再重做已有PS/打包/导出器。非阻塞风险只在[统一清单](../../../../docs/deferred-acquisition-risks.md#c-adapter-risks)记录。
+
+此前15:50的main发布只包含文档；本次适配源码、恢复副本和新证据仍是本机待交付工作，未在本轮提交/推送，不代表远端main已有完整四路工程。下方[旧提示词](adapter-handoff-prompts.md)和首轮记录仅保留历史，不重复派发或用于C板接线。
 
 ## 首轮交付记录（历史保留）
 

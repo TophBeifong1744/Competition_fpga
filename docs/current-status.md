@@ -1,5 +1,10 @@
 # SoundSight 当前状态
 
+## 2026-09-12 本地成果发布整理
+
+此前 454 项本地差异已逐项安排去向，见[整理清单](maintenance/local-materials-2026-09-12.md)。四路诊断 H2 的 B 接收保持完成；四路工程实现单独发布待审分支，不等于整机或 C 板实物验收。下方旧时点“未推送、待 B 回执、源码留在原处”不再作为当前待办。原 one 工程未改动。
+
+
 ## 2026-09-12 清理与合并更新（当前优先）
 
 - A四路杜邦线诊断交付已获B独立接收：作者d088e2c、含回执的发布头2e2f685；两段各32000组。**H2四路诊断交接已完成**，不是C转接板实物、定位/波束、正式M1或整机验收。见[已归位交付及B回执](../task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/B-REVIEW.md)。
@@ -10,9 +15,15 @@
 
 本轮合并、73项软件测试及清理边界见[清理记录](cleanup-2026-09-12.md)，成员流程见[统一工作流](team-workflow.md)。下方9月11日和9月10日为历史时点，不据其“待交付/待接收”重复开工；本次不是9月16日阶段验收。
 
+## 2026-09-11 晚间：四路杜邦线实录已到件
+
+拓芙完成安静/人声各32000组四路实录（各约0.667秒），保留BIN、完整串口及H1 metadata/CSV；A侧逐值/哈希检查、读取器及64项软件回归通过。拓芙试听人声清晰，8份共同增益12的WAV转换一致。**已有四路采集到文件的实板成果，实际是杜邦线，不是C转接板实物。** 坐标未测保持null，不宣称定位、波束、正式M1或C板通过。当前18:23:59 ELF及匹配one/XSA/bit已单独核查，不引用早先build06哈希。[复核与交接入口](https://github.com/TophBeifong1744/Competition_fpga/blob/codex/toph/four-channel-engineering-review-20260912/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/REVIEW.md)。
+
+下一步：将完整包转交B独立诊断；本机没有B本人执行任务连接，尚未通知B/获得回执。H2四路诊断交接与本阶段最终验收保持未关闭，不重做已完成录音。未提交推送、未迁入待审源码；B反馈后再按阶段收尾规则归位与归档。下方“无本版四路实录”为早先历史状态。
+
 ## 2026-09-11 转接板决定更新
 
-拓芙已决定[采用 C 的四麦转接板](../hardware/microphone-adapter-decision.md)，不再待选或要求C回退旧单CLOCK方案。15:50（UTC+8）只读核对：工程已改四CLOCK候选顶层/XDC，功能仿真与3次/57组/456字合成导出自检通过；有效BD/约束适配及构建尚未通过，无板测/四路实录，原任务继续执行。详细实际记录见决定页；不重做已有PS或重复派发。硬件与主流程本轮只核网和改文档，不改工程或运行构建，本次不是新阶段验收。[小风险唯一清单](deferred-acquisition-risks.md#c-adapter-risks)暂缓，不阻塞无关功能；明确针脚/供电冲突和短路仍处理。下方[提示词](../task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/adapter-handoff-prompts.md)保留交接历史，不重复发送。
+拓芙已决定[采用 C 的四麦转接板](../hardware/microphone-adapter-decision.md)，不再待选或要求C回退旧单CLOCK方案。2026-09-11后续工程结果：原one的顶层、BD和有效XDC已适配，Vivado2025.2综合/实现及bit/XSA生成完成，配套ELF已编译。四CLOCK同一分频状态、DATA1～4对应mic0～3；原PS/DMA/GPIO/时钟/复位/地址、CIC与打包保留。功能仿真、57组/456字合成导出、17项软件检查及实际IO/BSP兼容核查通过。内部WNS=4.640ns、WHS=0.056ns；外部4路输入/4路输出延迟仍未完整约束。**无本版板测或四路实录，H2四路交接仍待**；不是B独立复核或新阶段验收。本轮适配未提交/推送。下一步由拓芙按[唯一运行入口](https://github.com/TophBeifong1744/Competition_fpga/blob/codex/toph/four-channel-engineering-review-20260912/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/C-ADAPTER-RUN.md)加载本版bit/ELF并录一段，不重做PS/导出器。[小风险唯一清单](deferred-acquisition-risks.md#c-adapter-risks)继续暂缓；明确错电源、短路、相机争用或旧bit错加载立即处理。旧提示词只作历史，不重复派发。
 
 ## 2026-09-11 阶段收尾补齐
 

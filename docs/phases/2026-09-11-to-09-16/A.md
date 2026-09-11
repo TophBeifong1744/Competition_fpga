@@ -1,5 +1,10 @@
 # A 拓芙：把四路短录音交给B
 
+2026-09-12 当前覆盖状态：本批四路杜邦线数据已获 B 独立接收，见[准确回执](../../../task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/B-REVIEW.md)。不再重复转交或要求重录。待审工程源码与后续诊断准备另按[发布整理入口](../../maintenance/local-materials-2026-09-12.md)继续；H2 诊断交接完成不代表正式 M1、C 板实物或完整 H3。以下晚间回执未到的描述保留为历史。
+
+
+2026-09-11晚间进度：杜邦线四路安静/人声各32000组已录得，A交接前格式/原始数据复核通过；拓芙已试听人声清晰。当前任务转为[把完整包交B诊断](https://github.com/TophBeifong1744/Competition_fpga/blob/codex/toph/four-channel-engineering-review-20260912/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/B-HANDOFF.md)，不是重复扩路或重录。B本人任务不可直接连接，待用户转交及回执；H2四路交接尚未关闭。实际未用C板实物，未知坐标保持null，不改变后续采用C板的决定。下方开工清单保留历史，最新版本见[复核记录](https://github.com/TophBeifong1744/Competition_fpga/blob/codex/toph/four-channel-engineering-review-20260912/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/REVIEW.md)。
+
 期限：9月16日检查；有可用片段立即交接。主责A，技术复核B。沿用Vivado 2025.2、已确认领航者Zynq-7020与原定麦克风，不改选型。
 
 ## 今天先做什么

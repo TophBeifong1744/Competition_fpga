@@ -1,10 +1,21 @@
 # 拓芙开工单：从现有单麦链路扩为四路
 
-15:50主流程核对：四路RTL/PS已有，四CLOCK候选顶层/XDC已修改，功能自检通过；不能按以下历史单重复实现。C板适配仍在原任务进行，保存的BD/有效约束与构建尚未通过，无板测，详见当前决定页。本次只发布说明，不把待审源码、原epro2或旧运行产物一并提交。
+## 2026-09-12 当前动作
+
+本批杜邦线录音已交 B 并接收，不重新发起 H2 交接或重录。四路工程源码已单独发布待审分支，后续在[整理说明指定的工作副本和复核入口](../../../../docs/maintenance/local-materials-2026-09-12.md)继续。当前 main 的本目录是状态入口，不包含全部待审实现；以下旧开工单仅保留历史，不能按它再次从零扩路或加载旧产物。
+
+
+## 2026-09-11 晚间覆盖更新
+
+拓芙已完成杜邦线四路安静/人声实录并试听人声清晰，A交接前检查通过。下一步只需把[完整材料与提示](https://github.com/TophBeifong1744/Competition_fpga/blob/codex/toph/four-channel-engineering-review-20260912/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/B-HANDOFF.md)转交B，获得独立诊断反馈；不重复本批录音，也不要求先换C板实物或补精细测量。[复核报告](https://github.com/TophBeifong1744/Competition_fpga/blob/codex/toph/four-channel-engineering-review-20260912/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/REVIEW.md)记录当前18:23:59 ELF和匹配bit/XSA，原始数据与未知坐标未改。B本人任务目前不可直接连接，尚未通知/收到回执；不得标H2或阶段最终通过。
+
+以下为此前开工时记录，不再代表“尚未录得四路”。
+
+2026-09-11更新：原one的C板适配、综合实现、bit/XSA与配套ELF已完成，功能/软件/结构自检通过；实板尚未执行。当前唯一开工入口是 [C-ADAPTER-RUN.md](https://github.com/TophBeifong1744/Competition_fpga/blob/codex/toph/four-channel-engineering-review-20260912/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/C-ADAPTER-RUN.md)：断电按编号接板、JTAG加载本版bit/ELF、录制32,000组约0.667秒、导出原BIN及完整串口，再生成H1数据交B诊断。本轮不提交/推送，不自行批准H2。
 
 ## 2026-09-11 当前优先动作
 
-用户已决定采用 C 转接板，执行[当前接口与适配说明](../../../../hardware/microphone-adapter-decision.md)。不再讨论是否采用、不以旧 J4-19 CLOCK / J4-20～23 DATA 表接 C 板；在现有进度上适配四个同源 CLOCK 物理输出及新 DATA 针表。一个共同内部时基、采样使能、复位/预热与组编号的原则不变。先读最新实际源码/BD/XDC，避免把下面初始开工步骤重复实施。非阻塞风险只在[暂缓清单](../../../../docs/deferred-acquisition-risks.md#c-adapter-risks)跟踪，明确针脚/供电冲突不可暂缓。
+采用 C 转接板的决定不变；工程适配已完成，不再执行下面的首次扩路计划。已有2.0mm/声孔照片不重拍，未知坐标填null，不等待精细测量或长稳。非阻塞风险只在[暂缓清单](../../../../docs/deferred-acquisition-risks.md#c-adapter-risks)跟踪；错电源、短路、实际堵孔、相机争用或旧bit误加载仍立即处理。
 
 ## 以下为首次开工记录，不作为 C 板接线单
 
