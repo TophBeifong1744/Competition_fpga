@@ -1,0 +1,110 @@
+{
+  "status": "B_NEW_SELECTED_FFT29_REPLAY_AND_OOC_CORE_EVIDENCE",
+  "A_commit": "c0b5f8fb44643e81d8c4e6f0be457dddeae9758e",
+  "resources": {
+    "synth": {
+      "LUT": 1195.0,
+      "FF": 2043.0,
+      "DSP48E1": 8.0,
+      "RAMB18E1": 6.0,
+      "RAMB36": 0.0,
+      "BRAM_tiles": 3.0,
+      "WNS_ns": 6.94,
+      "TNS_ns": 0.0,
+      "WHS_ns": 0.19,
+      "THS_ns": 0.0,
+      "differences_from_A": {}
+    },
+    "route": {
+      "LUT": 1045.0,
+      "FF": 2046.0,
+      "DSP48E1": 8.0,
+      "RAMB18E1": 6.0,
+      "RAMB36": 0.0,
+      "BRAM_tiles": 3.0,
+      "WNS_ns": 5.248,
+      "TNS_ns": 0.0,
+      "WHS_ns": 0.037,
+      "THS_ns": 0.0,
+      "differences_from_A": {}
+    }
+  },
+  "XCI_component_parameters_equal": true,
+  "integer_and_cycle_records_equal": {
+    "outputs.csv": true,
+    "cycles.csv": true,
+    "status.csv": true
+  },
+  "clock_period_ns": 10,
+  "fully_routed_nets": 2701,
+  "internal_unconstrained_endpoints": 0,
+  "ports_without_input_delay": 85,
+  "ports_without_output_delay": 88,
+  "original_csv_bytes": {
+    "outputs.csv": {
+      "A_sha256": "426837bfdd7cb3ec4becbe9b04ad433de49847d5946b69434419eaef159c257c",
+      "B_sha256": "426837bfdd7cb3ec4becbe9b04ad433de49847d5946b69434419eaef159c257c",
+      "equal": true
+    },
+    "cycles.csv": {
+      "A_sha256": "c2fbf7e85ec7066fbb245775e88d7d40daf540bd76bd9c8fb0d00611c6791cc9",
+      "B_sha256": "c2fbf7e85ec7066fbb245775e88d7d40daf540bd76bd9c8fb0d00611c6791cc9",
+      "equal": true
+    },
+    "status.csv": {
+      "A_sha256": "95863df9a215356dcd797e3de07e25a25e3770409dbd24dde9e28070fe02770c",
+      "B_sha256": "95863df9a215356dcd797e3de07e25a25e3770409dbd24dde9e28070fe02770c",
+      "equal": true
+    }
+  },
+  "check_json_equal": true,
+  "covered_frames": 60,
+  "remaining_frames": 136,
+  "adapter_RTL_tested": false,
+  "IFFT29_tested": false,
+  "board_tested": false,
+  "files": {
+    "build-00-console.txt": "d61b251a6851c5a8852f405d009dff67575bad55328f1eb3002fd5a855d8d404",
+    "build-commands.json": "ae9b35a1cb221782636e781e9138f85f00a9a296bb502963523854003928dde7",
+    "build.jou": "6728fa253a1cd2a2195eef1483e597eba8d244cb043af79ea8f3ad826707aa28",
+    "build.log": "893c2ed766d827f646e95ded1a99b02eb42989202ee54d88ad6de380ec40eae5",
+    "check-00-console.txt": "65c4b5332f771d36bb3360f5656919ae615f7ae8dd1e71b67e69e3c9063173b7",
+    "check-01-console.txt": "1dd28bf2ce48bfcd607116b12792645acb9159e5fdc4634cfcbf03f4ce9c76e1",
+    "check-commands.json": "d80bd6a652d7870ee064caff79e93e84f0b1408043f2db60e1992e429f974cba",
+    "check.json": "65c4b5332f771d36bb3360f5656919ae615f7ae8dd1e71b67e69e3c9063173b7",
+    "prepare-00-console.txt": "012d1634a9f933438f48f8cf7e98339bf1050f06ba5400cf61bd0e0e31a33c4e",
+    "prepare-commands.json": "8a2275d574b7a7b74d56a638d34bf7e5cc098e31d962fa10f5bd6273abc40ee5",
+    "reports/ip-properties.txt": "af90c368ae8b2106c6676cbb9dc5469622768c0b8bd7033c8eea1a31f439b42e",
+    "reports/route-check-timing.rpt": "e5e1a1c03b0af0fd5921c16dbbf5c7d715bce32434209624c4286e4d1a352dae",
+    "reports/route-drc.rpt": "db4eef69468d799bfe09b6fb533f0fc9f1c9ad7442a7d20c9f9c0b9529dc358e",
+    "reports/route-status.rpt": "4aeec79bfa315e18e9342dc35c4ab427680dcb96e9cbfc6e585eecf49d6c3f75",
+    "reports/route-timing.rpt": "59aa546d2337d2c10088303b0c6e7403c5f4b0141ec37e43fbf107f1f29d593a",
+    "reports/route-utilization.rpt": "810e57182ae50d7e7b0c6b2d1c2b24c17441dbe0af48b003525c73137f3e4ce7",
+    "reports/ss_fft29.xci": "5fc8c28aeb9f4eff0a3b1d2e924aed85452c9e169d619b32b41ee9a6a0a9a26a",
+    "reports/synth-clocks.rpt": "85229d3710c6652bb028a998bbb5a4309557b1faaeb366aaaeb09dfe7d607e28",
+    "reports/synth-runme.log": "8901220bdacddd7ebcd5632df8b54ff27e678cc97548db7ba6e9da1ec6259d5c",
+    "reports/synth-timing.rpt": "aff2998814b232cda51bd49eecaa333e38becc399dc1302122f75196a3552e25",
+    "reports/synth-utilization.rpt": "139b6eafa94d41bc0ed75733300aa6c3e6f72dcff4aa40d007edebc43b1e97c9",
+    "reports/tool-version.txt": "2b107271e9f2603a280481c3f8425be0d5b4ebd07e52d1852abd0a0582c596e3",
+    "simulate-00-console.txt": "f1365f0d11b5f38fb0e9a2045503eed611098778d80b25fa79ac1022fa73fb7d",
+    "simulate-commands.json": "645fcd1b886b2c17c41f6f06e4e5580b964a7c54002485f353d65ffb6bc5b776",
+    "simulate.jou": "dd30325cba8cc3ed5b1bce5c0a04276baf23fa3a2047763fb74d5d23b59dbefd",
+    "simulate.log": "6b95e4664ed67bd1114a499dd3c1ea3e091cb8e38588011b8c2d25d1c18afbe7",
+    "simulation/compile.log": "a7c8ad5e4e8f2b602dec961239b11f2f55be41cf1868766a860d561debcdb184",
+    "simulation/cycles.csv.gz": "37f277ddf6d62e3eb76f7a3c34a107f8e9e8f22f7b4f687df6e036460c848c0e",
+    "simulation/elaborate.log": "d07276c6f7c1bc5e3ae98729cbdf2e0ac49d31d6186b14dfef2fb5a3a701645c",
+    "simulation/outputs.csv.gz": "ac3444e59f6086c7d496b269bae86a71a51efff9f0e6fb64c4e2b2ccabd73da3",
+    "simulation/packing.json": "876f797428f848d5d2c55c33ed0c77b102e1b60bc1bce9a1dc677078b82d67c5",
+    "simulation/simulate.log": "fe8f51f3ea0e93565dbd979600ed222ec0c1999b5bae5d6218a27396a22cd0e3",
+    "simulation/status.csv.gz": "658a3430a892d17165cca35d478b406ca394a82f1e14fafdd40164b2d91db4a7",
+    "simulation/tb_fft29.tcl": "d70c1e2829a81f9336c88abfb268b60df4012a05c09f3f051f6e30c7c4e26c5f",
+    "simulation/tb_fft29_vhdl.prj": "29aa4ca1fab7a24009726c1bd4896f78f9c05f13b69e6a9bc5be04c507c071ff",
+    "simulation/tb_fft29_vlog.prj": "684d4b37cf4b02fb248810557a9608c13ce3e3ed4f593710c62f74a6019442f2",
+    "simulation/xvhdl.log": "e238868bfdc29f8ea72666efe95153c1fd09e48c76e8accf4a6e342672904db5",
+    "simulation/xvlog.log": "9c9d710ec95c1134c31dd4e976bc09cc31eb306d7ffaed2804e686d988316c95",
+    "vectors/expected.npy": "c065122284e09f6695729815f7f18c708a2fc043841c4c98f271d5b6ad710a1e",
+    "vectors/inputs.mem": "171daac60b522c2f456c736480216e96aa7dc1c96e14db817213e52fcc3204bb",
+    "vectors/job-count.mem": "f746b88700c362f6e3bb6154f9205f437ffce42724c15a09b47d2b8d19dac279",
+    "vectors/selection.json": "f19e913ce030d313c805babb60970f177943614a9d49c7b5cc99c35ab0d324aa"
+  }
+}
