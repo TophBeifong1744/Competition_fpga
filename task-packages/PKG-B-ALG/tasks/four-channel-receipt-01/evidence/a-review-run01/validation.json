@@ -1,0 +1,35 @@
+{
+  "status": "PASS_LIMITED_DIAGNOSTIC_ONLY",
+  "reviewed_sha": "94e1ae9d2ed263de6160b6c14e97b3dc71392dd0",
+  "checkout_sha": "94e1ae9d2ed263de6160b6c14e97b3dc71392dd0",
+  "author_tests": 15,
+  "reader_tests": 47,
+  "additional_cases": 22,
+  "original_files_unchanged": true,
+  "author_source_hashes_match": true,
+  "fixture_structured_results_equal_after_path_normalization": true,
+  "numerical_comparison": "Python integer squares + math.fsum; rel_tol 1e-13 abs_tol 1e-9; correlations abs_tol 1e-14",
+  "byte_comparisons": {
+    "summary.json": {
+      "byte_equal": false,
+      "original_sha256": "f9bf6658876cd1353d039b374e00abac72784622fc36ca2e9dfe4cff923ff11a",
+      "rerun_sha256": "b481984377cb4f975ab954f867470f26c4885ee05dc9703885ace6ef11113d91"
+    },
+    "errors.json": {
+      "byte_equal": false,
+      "original_sha256": "28bc6da2a94c94218f9336c1c1e1b8a10b89ab56baac378d3aeeb82181b0f65e",
+      "rerun_sha256": "cd28121f1c88a9e4bbe8811b7859df1c1d9e1ad73a34c847e946f4cbdcd884d9"
+    },
+    "receipt.md": {
+      "byte_equal": false,
+      "original_sha256": "d7b8c8a92ba9b2f483d6435b4de7b7c1cf645438c352a0d41d1d9dfdd33250cf",
+      "rerun_sha256": "866e3a19572e47e04880a374843d85cdfcbe5743dea142befe54a230f229a072"
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.3.5"
+  },
+  "h2_acceptance": false
+}
