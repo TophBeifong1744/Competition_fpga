@@ -1,5 +1,9 @@
 # SoundSight 当前状态
 
+## 2026-09-11 转接板决定更新
+
+拓芙已决定[采用 C 的四麦转接板](../hardware/microphone-adapter-decision.md)，不再待选或要求C回退旧单CLOCK方案。15:50（UTC+8）只读核对：工程已改四CLOCK候选顶层/XDC，功能仿真与3次/57组/456字合成导出自检通过；有效BD/约束适配及构建尚未通过，无板测/四路实录，原任务继续执行。详细实际记录见决定页；不重做已有PS或重复派发。硬件与主流程本轮只核网和改文档，不改工程或运行构建，本次不是新阶段验收。[小风险唯一清单](deferred-acquisition-risks.md#c-adapter-risks)暂缓，不阻塞无关功能；明确针脚/供电冲突和短路仍处理。下方[提示词](../task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/adapter-handoff-prompts.md)保留交接历史，不重复发送。
+
 ## 2026-09-11 阶段收尾补齐
 
 C001～003已从历史任务包归入活动rtl/与tb/，sim/已有统一清单、六组回归及Vivado源文件导入入口。六组功能回归和独立内存工程源码导入通过；尚未接入one/BD/PS，不提升板测/H2/H3状态。[本次说明](../deliverables/phase-2026-09-10/CLOSEOUT.md)。以后每次阶段验收均执行[固定收尾](phase-closeout.md)，不再仅归档而无活动入口。

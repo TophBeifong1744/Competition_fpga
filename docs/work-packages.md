@@ -1,5 +1,7 @@
 # SoundSight 当前工作包台账
 
+转接板补充决定：拓芙已选 C 现有设计，A/工程实现按[当前接口基线](../hardware/microphone-adapter-decision.md)适配四路同源 CLOCK 输出及 DATA 映射，不再让 C 重新选方案。当前已见四CLOCK候选源码/XDC和功能自检通过，BD/有效约束及构建仍未通过、无板测（详见决定页15:50核对）；不重复派发同一实现任务。C 已提交原图；本次不另派开放研究，也不等同完整制造/板测验收。非阻塞未知项只在[统一暂缓记录](deferred-acquisition-risks.md#c-adapter-risks)管理，既有004任务及H1/H2/H3职责不变。
+
 2026-09-11补收尾：C001～003基础模块已归入rtl/、测试进入tb/，sim/统一回归六组通过；只是模块库集成，不是整机接线。详见[收尾说明](../deliverables/phase-2026-09-10/CLOSEOUT.md)。所有后续阶段按[固定收尾规则](phase-closeout.md)逐项记录接入/未接入范围。
 
 ## 2026-09-11 当前执行安排
