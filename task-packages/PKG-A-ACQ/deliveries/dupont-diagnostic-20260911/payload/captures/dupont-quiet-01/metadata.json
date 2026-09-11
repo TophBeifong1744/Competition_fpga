@@ -1,0 +1,45 @@
+{
+  "schema_version": "ss-data-draft-0.3",
+  "acquisition_id": "dupont-quiet-01",
+  "config_version": "four-channel-c-adapter-v1",
+  "channel_order": [
+    "mic0",
+    "mic1",
+    "mic2",
+    "mic3"
+  ],
+  "coordinates_m": null,
+  "geometry_version": "four-physical-unmeasured-v1",
+  "coordinate_system": "x-forward_y-left_z-up",
+  "direction_convention": "array-to-source",
+  "angle_unit": "deg",
+  "sample_rate_hz": 48000,
+  "sample_format": {
+    "encoding": "signed-pcm",
+    "storage_dtype": "int32",
+    "valid_bits": 24,
+    "alignment": "right",
+    "fractional_bits": 0
+  },
+  "source_kind": "hardware-audio",
+  "evidence_level": "diagnostic",
+  "capture_point": "four PDM -> CIC3 -> AXIS -> DMA -> DDR -> JTAG BIN",
+  "provisional_fields": {
+    "coordinates_m": "Not measured: no direction calculation permitted.",
+    "channel_order": "Logical lane order only; actual module-to-lane mapping requires recording notes.",
+    "sample_rate_hz": "Configured frequency, not instrument-measured.",
+    "sample_format": "24-bit exchange range, not measured effective precision."
+  },
+  "calibration_status": "not-calibrated",
+  "source_provenance": "Operator=Toph; Dupont wires, no adapter PCB; approximately coplanar square with 40 mm sides; coordinates not measured; microphones not moved between quiet and speech captures; scene=quiet",
+  "raw_file": "raw.bin",
+  "raw_sha256": "38d3a75b352efd25a23afd82c2838cd83685c9167351d8edb09c297f2e801d8a",
+  "raw_layout": "ss-four-record-0.1: little-endian id_lo,id_hi,mic0..3,flags,reserved; 32 bytes",
+  "raw_flags": "bits0..3 per-lane saturation -> H1 unknown; other bits unsupported; raw.bin retained",
+  "sample_count": 32000,
+  "first_id": 17544,
+  "last_id": 49543,
+  "processing": "none; preserve raw IDs/PCM; do not fill gaps or concatenate acquisitions",
+  "limits": "Caller source declaration is not verified acoustically by this converter; no H2/M1 approval.",
+  "samples_sha256": "a890f05d226e31b12318b56f4d883056d754a95a2e2aede29610391bdd4dc6f1"
+}
