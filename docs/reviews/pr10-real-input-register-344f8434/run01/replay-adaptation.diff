@@ -1,0 +1,54 @@
+--- historical independent_review.py
++++ replay_independent.py
+@@ -2,27 +2,25 @@
+ from pathlib import Path
+ import numpy as np
+ 
++import argparse
++parser=argparse.ArgumentParser(description="Optional replay of the historical B diagnostic; not a new acceptance.")
++parser.add_argument('--delivery',type=Path,required=True,help='A delivery root from fixed d088e2c commit')
++parser.add_argument('--output',type=Path,required=True,help='New JSON output; must not already exist')
++args=parser.parse_args()
++if args.output.exists(): parser.error('output already exists')
++P=args.delivery.resolve()/'payload'
+ E=Path(__file__).resolve().parent
+-P=Path('F:/NUEC/review-worktrees/a-dupont-d088e2c/soundsight-four-dupont-diagnostic-20260911')
+ prefix='task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/'
+ def sha(b): return hashlib.sha256(b).hexdigest()
+-tree=json.loads((E/'remote-tree.json').read_text(encoding='utf-8-sig'))
+-assert not tree['truncated']
+-branch=json.loads((E/'remote-branch.json').read_text(encoding='utf-8-sig'))
+-assert branch['commit']['sha']=='d088e2c7deda9c505c094fd48d6f90bcd7f52807'
+-assert tree['sha']==branch['commit']['commit']['tree']['sha']
++reference=json.loads((E/'historical-evidence/08-independent.json').read_text())
++branch={'commit':{'sha':reference['review_sha']}}
+ checked=[]
+-for entry in tree['tree']:
++for entry in reference['git_blob_checks']:
+     path=entry['path']
+-    if not path.startswith(prefix) or entry['type']!='blob': continue
+-    rel=path[len(prefix):]
+-    if rel.startswith('payload/'): f=P/rel[len('payload/'):]
+-    elif rel.endswith('.zip'): f=E/'verified-delivery.zip'
+-    else: f=E/'publication'/rel
+-    raw=f.read_bytes()
+-    assert len(raw)==entry['size']
+-    assert hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()==entry['sha'],path
+-    checked.append({'path':path,'git_blob':entry['sha'],'sha256':sha(raw)})
++    raw=(args.delivery/path[len(prefix):]).read_bytes()
++    assert sha(raw)==entry['sha256'],path
++    assert hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()==entry['git_blob'],path
++    checked.append(entry)
+ snapshot=json.loads((P/'build-snapshot/manifest.json').read_text())
+ for name,entry in snapshot.items():
+     raw=(P/'build-snapshot'/name).read_bytes()
+@@ -77,7 +75,8 @@
+         for b in range(a+1,4):
+             pairs.append(dict(a=a,b=b,identical=bool(np.array_equal(x[:,a],x[:,b])),pearson_zero_lag=float(corr[a,b]),normalized_difference_rms=float(np.std((x[:,a]-x[:,a].mean())/x[:,a].std()-(x[:,b]-x[:,b].mean())/x[:,b].std()))))
+     result['segments'].append(dict(acquisition=label,first_id=ids[0],last_id=ids[-1],groups=32000,pcm_multiple32=True,lanes=lanes,pairs=pairs,band_power_fractions=bands,pearson_matrix=corr.tolist()))
+-(E/'08-independent.json').write_text(json.dumps(result,indent=2)+'\n')
++with args.output.open('x',encoding='utf-8') as out:
++    out.write(json.dumps(result,indent=2)+'\n')
+ print('Git blobs',len(checked),'snapshot',len(snapshot))
+ for s in result['segments']:
+     print(s['acquisition'])

@@ -1,0 +1,416 @@
+[
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "diff",
+      "--name-status",
+      "4957d18837f79eca7a6acc86a2757d10f41dd410...344f8434c54187f7c5d412ee1ef38335a433beff"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:docs/phases/2026-09-11-to-09-16/B.md"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/README.md"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/.gitattributes"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/HANDOFF.md"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/PR-BODY.md"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/README.md"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/REGISTER.json"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/VALIDATION.md"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/01-manifest.txt"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/02-reader.txt"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/03-audit.txt"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/04-listening.txt"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/05-reader-tests.txt"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/06-export-tests.txt"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/07-gate-tests.txt"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/08-independent-summary.txt"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/08-independent.json"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/historical-evidence/independent_review.py"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/replay_independent.py"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "344f8434c54187f7c5d412ee1ef38335a433beff:task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/verify_register.py"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/verify_register.py"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "ls-tree",
+      "-r",
+      "--name-only",
+      "d088e2c7deda9c505c094fd48d6f90bcd7f52807",
+      "--",
+      "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "d088e2c7deda9c505c094fd48d6f90bcd7f52807:task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/MANIFEST.sha256.json"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "diff",
+      "--name-status",
+      "d088e2c7deda9c505c094fd48d6f90bcd7f52807",
+      "2e2f685faf5520181cdd00cde2cd5030e75e67e2"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "2e2f685faf5520181cdd00cde2cd5030e75e67e2:task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/B-REVIEW.md"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "d088e2c7deda9c505c094fd48d6f90bcd7f52807:task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-quiet-01/metadata.json"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "show",
+      "d088e2c7deda9c505c094fd48d6f90bcd7f52807:task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/captures/dupont-speech-01/metadata.json"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--check",
+      "4957d18837f79eca7a6acc86a2757d10f41dd410...344f8434c54187f7c5d412ee1ef38335a433beff"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "merge-base",
+      "--is-ancestor",
+      "d088e2c7deda9c505c094fd48d6f90bcd7f52807",
+      "4957d18837f79eca7a6acc86a2757d10f41dd410"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 1
+  },
+  {
+    "argv": [
+      "git",
+      "merge-base",
+      "--is-ancestor",
+      "2e2f685faf5520181cdd00cde2cd5030e75e67e2",
+      "4957d18837f79eca7a6acc86a2757d10f41dd410"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 1
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "ls-tree",
+      "-r",
+      "--name-only",
+      "4957d18837f79eca7a6acc86a2757d10f41dd410",
+      "--",
+      "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  },
+  {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-pr10-register-review-01",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "E:\\ss-pr10-register-review-01",
+    "exit_code": 0,
+    "expected": 0
+  }
+]
