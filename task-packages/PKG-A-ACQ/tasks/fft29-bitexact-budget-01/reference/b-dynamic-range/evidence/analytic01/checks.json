@@ -1,0 +1,189 @@
+{
+  "checks": [
+    {
+      "candidate": "reference25",
+      "input": "dc",
+      "exact": true,
+      "overflow": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "common_right_shift": 0,
+      "epsilon_codes": "2048/30517578125"
+    },
+    {
+      "candidate": "reference25",
+      "input": "impulse",
+      "exact": true,
+      "overflow": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "common_right_shift": 0,
+      "epsilon_codes": "2048/30517578125"
+    },
+    {
+      "candidate": "reference25",
+      "input": "zero",
+      "exact": true,
+      "overflow": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "common_right_shift": 0,
+      "epsilon_codes": "2048/30517578125"
+    },
+    {
+      "candidate": "shift6_late",
+      "input": "dc",
+      "exact": true,
+      "overflow": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "common_right_shift": 0,
+      "epsilon_codes": "524288/30517578125"
+    },
+    {
+      "candidate": "shift6_late",
+      "input": "impulse",
+      "exact": true,
+      "overflow": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "common_right_shift": 0,
+      "epsilon_codes": "524288/30517578125"
+    },
+    {
+      "candidate": "shift6_late",
+      "input": "zero",
+      "exact": true,
+      "overflow": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "common_right_shift": 0,
+      "epsilon_codes": "524288/30517578125"
+    },
+    {
+      "candidate": "shift6_early",
+      "input": "dc",
+      "exact": true,
+      "overflow": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "common_right_shift": 0,
+      "epsilon_codes": "524288/30517578125"
+    },
+    {
+      "candidate": "shift6_early",
+      "input": "impulse",
+      "exact": true,
+      "overflow": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "common_right_shift": 0,
+      "epsilon_codes": "524288/30517578125"
+    },
+    {
+      "candidate": "shift6_early",
+      "input": "zero",
+      "exact": true,
+      "overflow": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "common_right_shift": 0,
+      "epsilon_codes": "524288/30517578125"
+    },
+    {
+      "candidate": "wide29",
+      "input": "dc",
+      "exact": true,
+      "overflow": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "common_right_shift": 0,
+      "epsilon_codes": "524288/30517578125"
+    },
+    {
+      "candidate": "wide29",
+      "input": "impulse",
+      "exact": true,
+      "overflow": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "common_right_shift": 0,
+      "epsilon_codes": "524288/30517578125"
+    },
+    {
+      "candidate": "wide29",
+      "input": "zero",
+      "exact": true,
+      "overflow": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "common_right_shift": 0,
+      "epsilon_codes": "524288/30517578125"
+    }
+  ],
+  "complex_components": 147456,
+  "source_sha256": "b70ee05144992a25222b893b352498bafcadb058f39f7a6f19fe1c7b28d05372",
+  "scan_sha256": "17beb3d21c3f865036f551d01666ff6536111f113ab4ded5ec4d7ca4c46d3e46",
+  "model_sha256": "79ec8ccc56cd56c4277a3c8c46ed0fca8435f6e62107854414b1672eda5575ca",
+  "status": "PASS_ANALYTIC_CMODEL_SCALE_ONLY"
+}

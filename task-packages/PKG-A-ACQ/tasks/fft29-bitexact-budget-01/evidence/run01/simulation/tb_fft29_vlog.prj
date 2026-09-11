@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "F:/AMD/2025.2/Vivado/data/rsb/busdef" \
+"C:/Users/Toph Beifong/.codex/visualizations/2026/09/07/01a07c21-b7f9-74d2-92c5-7f8d235d8379/fft29/task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/source/tb_fft29.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

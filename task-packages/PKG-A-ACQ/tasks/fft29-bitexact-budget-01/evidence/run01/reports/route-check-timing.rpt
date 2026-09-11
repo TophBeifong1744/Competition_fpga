@@ -1,0 +1,273 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Fri Sep 11 21:27:08 2026
+| Host         : Toph running 64-bit major release  (build 9200)
+| Command      : check_timing -verbose -file E:/ss-fft29-build-01/route-check-timing.rpt
+| Design       : ss_fft29
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (85)
+6. checking no_output_delay (88)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (85)
+-------------------------------
+ There are 85 input ports with no input delay specified. (HIGH)
+
+aresetn
+m_axis_data_tready
+m_axis_status_tready
+s_axis_config_tdata[0]
+s_axis_config_tdata[10]
+s_axis_config_tdata[11]
+s_axis_config_tdata[12]
+s_axis_config_tdata[13]
+s_axis_config_tdata[14]
+s_axis_config_tdata[15]
+s_axis_config_tdata[16]
+s_axis_config_tdata[17]
+s_axis_config_tdata[18]
+s_axis_config_tdata[19]
+s_axis_config_tdata[1]
+s_axis_config_tdata[20]
+s_axis_config_tdata[2]
+s_axis_config_tdata[3]
+s_axis_config_tdata[4]
+s_axis_config_tdata[5]
+s_axis_config_tdata[6]
+s_axis_config_tdata[7]
+s_axis_config_tdata[8]
+s_axis_config_tdata[9]
+s_axis_config_tvalid
+s_axis_data_tdata[0]
+s_axis_data_tdata[10]
+s_axis_data_tdata[11]
+s_axis_data_tdata[12]
+s_axis_data_tdata[13]
+s_axis_data_tdata[14]
+s_axis_data_tdata[15]
+s_axis_data_tdata[16]
+s_axis_data_tdata[17]
+s_axis_data_tdata[18]
+s_axis_data_tdata[19]
+s_axis_data_tdata[1]
+s_axis_data_tdata[20]
+s_axis_data_tdata[21]
+s_axis_data_tdata[22]
+s_axis_data_tdata[23]
+s_axis_data_tdata[24]
+s_axis_data_tdata[25]
+s_axis_data_tdata[26]
+s_axis_data_tdata[27]
+s_axis_data_tdata[28]
+s_axis_data_tdata[2]
+s_axis_data_tdata[32]
+s_axis_data_tdata[33]
+s_axis_data_tdata[34]
+s_axis_data_tdata[35]
+s_axis_data_tdata[36]
+s_axis_data_tdata[37]
+s_axis_data_tdata[38]
+s_axis_data_tdata[39]
+s_axis_data_tdata[3]
+s_axis_data_tdata[40]
+s_axis_data_tdata[41]
+s_axis_data_tdata[42]
+s_axis_data_tdata[43]
+s_axis_data_tdata[44]
+s_axis_data_tdata[45]
+s_axis_data_tdata[46]
+s_axis_data_tdata[47]
+s_axis_data_tdata[48]
+s_axis_data_tdata[49]
+s_axis_data_tdata[4]
+s_axis_data_tdata[50]
+s_axis_data_tdata[51]
+s_axis_data_tdata[52]
+s_axis_data_tdata[53]
+s_axis_data_tdata[54]
+s_axis_data_tdata[55]
+s_axis_data_tdata[56]
+s_axis_data_tdata[57]
+s_axis_data_tdata[58]
+s_axis_data_tdata[59]
+s_axis_data_tdata[5]
+s_axis_data_tdata[60]
+s_axis_data_tdata[6]
+s_axis_data_tdata[7]
+s_axis_data_tdata[8]
+s_axis_data_tdata[9]
+s_axis_data_tlast
+s_axis_data_tvalid
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (88)
+--------------------------------
+ There are 88 ports with no output delay specified. (HIGH)
+
+event_data_in_channel_halt
+event_data_out_channel_halt
+event_fft_overflow
+event_frame_started
+event_status_channel_halt
+event_tlast_missing
+event_tlast_unexpected
+m_axis_data_tdata[0]
+m_axis_data_tdata[10]
+m_axis_data_tdata[11]
+m_axis_data_tdata[12]
+m_axis_data_tdata[13]
+m_axis_data_tdata[14]
+m_axis_data_tdata[15]
+m_axis_data_tdata[16]
+m_axis_data_tdata[17]
+m_axis_data_tdata[18]
+m_axis_data_tdata[19]
+m_axis_data_tdata[1]
+m_axis_data_tdata[20]
+m_axis_data_tdata[21]
+m_axis_data_tdata[22]
+m_axis_data_tdata[23]
+m_axis_data_tdata[24]
+m_axis_data_tdata[25]
+m_axis_data_tdata[26]
+m_axis_data_tdata[27]
+m_axis_data_tdata[28]
+m_axis_data_tdata[29]
+m_axis_data_tdata[2]
+m_axis_data_tdata[30]
+m_axis_data_tdata[31]
+m_axis_data_tdata[32]
+m_axis_data_tdata[33]
+m_axis_data_tdata[34]
+m_axis_data_tdata[35]
+m_axis_data_tdata[36]
+m_axis_data_tdata[37]
+m_axis_data_tdata[38]
+m_axis_data_tdata[39]
+m_axis_data_tdata[3]
+m_axis_data_tdata[40]
+m_axis_data_tdata[41]
+m_axis_data_tdata[42]
+m_axis_data_tdata[43]
+m_axis_data_tdata[44]
+m_axis_data_tdata[45]
+m_axis_data_tdata[46]
+m_axis_data_tdata[47]
+m_axis_data_tdata[48]
+m_axis_data_tdata[49]
+m_axis_data_tdata[4]
+m_axis_data_tdata[50]
+m_axis_data_tdata[51]
+m_axis_data_tdata[52]
+m_axis_data_tdata[53]
+m_axis_data_tdata[54]
+m_axis_data_tdata[55]
+m_axis_data_tdata[56]
+m_axis_data_tdata[57]
+m_axis_data_tdata[58]
+m_axis_data_tdata[59]
+m_axis_data_tdata[5]
+m_axis_data_tdata[60]
+m_axis_data_tdata[61]
+m_axis_data_tdata[62]
+m_axis_data_tdata[63]
+m_axis_data_tdata[6]
+m_axis_data_tdata[7]
+m_axis_data_tdata[8]
+m_axis_data_tdata[9]
+m_axis_data_tlast
+m_axis_data_tuser[0]
+m_axis_data_tuser[16]
+m_axis_data_tuser[1]
+m_axis_data_tuser[2]
+m_axis_data_tuser[3]
+m_axis_data_tuser[4]
+m_axis_data_tuser[5]
+m_axis_data_tuser[6]
+m_axis_data_tuser[7]
+m_axis_data_tuser[8]
+m_axis_data_tuser[9]
+m_axis_data_tvalid
+m_axis_status_tdata[0]
+m_axis_status_tvalid
+s_axis_config_tready
+s_axis_data_tready
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
