@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-09-12T00:18:17.9534718+08:00",
+  "result": "PASS_PREPARATION_STATIC_CHECKS",
+  "git_diff_check": "exit 0; new files are untracked, so separate direct content checks performed",
+  "checks": [
+    "UTF-8 text read",
+    "no trailing whitespace",
+    "final newline",
+    "balanced Markdown fences",
+    "relative Markdown links resolve",
+    "preflight JSON parses",
+    "14 preflight checks true",
+    "zero new board-run claim"
+  ],
+  "scope": "Operation documents only; no RTL/PS changes, no hardware commands or new captures executed",
+  "findings": [],
+  "files": [
+    {
+      "path": "channel-map.md",
+      "bytes": 3475,
+      "sha256": "a15e4490f7510a2377e1ec17ad5b7262dce8a0ece750169548d4eceb47bc7e13"
+    },
+    {
+      "path": "README.md",
+      "bytes": 15361,
+      "sha256": "cead7bde694387b33ed6e2101eb586d66d28a5129b7da02e7d73bdad97d658a7"
+    },
+    {
+      "path": "run-record.md",
+      "bytes": 4322,
+      "sha256": "ed033ce3595d35c8733fd6e5948f920ad9500a089318869663fce2d0295d1b55"
+    },
+    {
+      "path": "evidence/preflight.json",
+      "bytes": 7529,
+      "sha256": "8fe43673013288f1425b3588285af9b30b436111ca94eb91638dbb6666866e34"
+    },
+    {
+      "path": "raw/README.md",
+      "bytes": 1217,
+      "sha256": "da11c9f11c3dd3ac36194db6a7a10bcfdcd03f01e081a762c4d1feaa5ae799a4"
+    }
+  ],
+  "validator_notes": [
+    "Initial helper counted a PowerShell property collection without array materialization; corrected @(...).Count verified 14. This was a checker issue, not a project failure."
+  ]
+}
+

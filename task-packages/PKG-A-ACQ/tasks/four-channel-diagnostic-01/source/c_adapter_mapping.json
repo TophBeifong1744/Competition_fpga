@@ -1,0 +1,15 @@
+{
+  "config_version": "four-channel-c-adapter-v1",
+  "adapter_source_sha256": "80ec1919164c3c65ec7ab5e59674ca3a8f2cb67fa497b7656d67f9aea1a43f30",
+  "mating": "U1 or U2 numbered pin N to Navigator J4 numbered pin N; identify square pad 1, no mirror or 180-degree reversal",
+  "power": {"38": "3.3V", "37": "GND", "39": "GND", "40": "5V passthrough; not microphone VDD"},
+  "channels": [
+    {"mic": "mic0", "sockets": "U3/U4", "data_net": "DATA1", "data_port": "pdm_data[0]", "data_pin": 17, "data_ball": "Y9", "data_bank": 13, "clock_net": "CLK1", "clock_port": "pdm_clk1", "clock_pin": 21, "clock_ball": "V11", "clock_bank": 13},
+    {"mic": "mic1", "sockets": "U5/U6", "data_net": "DATA2", "data_port": "pdm_data[1]", "data_pin": 19, "data_ball": "W10", "data_bank": 13, "clock_net": "CLK2", "clock_port": "pdm_clk2", "clock_pin": 23, "clock_ball": "Y13", "clock_bank": 13},
+    {"mic": "mic2", "sockets": "U7/U8", "data_net": "DATA3", "data_port": "pdm_data[2]", "data_pin": 33, "data_ball": "W14", "data_bank": 34, "clock_net": "CLK3", "clock_port": "pdm_clk3", "clock_pin": 29, "clock_ball": "U14", "clock_bank": 34},
+    {"mic": "mic3", "sockets": "U9/U10", "data_net": "DATA4", "data_port": "pdm_data[3]", "data_pin": 35, "data_ball": "V15", "data_bank": 34, "clock_net": "CLK4", "clock_port": "pdm_clk4", "clock_pin": 31, "clock_ball": "V12", "clock_bank": 34}
+  ],
+  "shared_peripherals": "J4 29/31/33/35 share CMOS_D4/CMOS_D6/CMOS_PCLK/CMOS_PWDN; no simultaneously connected camera or other driver",
+  "geometry": "Unmeasured; 40 mm is nominal, not coordinates",
+  "evidence": "EPRO2 pad nets and footprint orientation; Navigator baseboard v3.9 sheet 5; coreboard v2.5 Bank13 sheet 6 and Bank34 sheet 3; nominal VCCIO supply sheets 7/10. Not an assembly measurement."
+}

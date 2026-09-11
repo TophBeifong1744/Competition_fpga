@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\source\audit_c_build.py", line 76, in <module>
+    result=audit(a.task,a.one,a.build,a.ps,a.bsp_xsa)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\source\audit_c_build.py", line 54, in audit
+    assert len(roots)==4 and len(set(roots))==1 and roots[0],roots
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ['system_i/four_mic_top_0/inst/pdm_clk_reg_lopt_replica/C', 'system_i/four_mic_top_0/inst/pdm_clk_reg_lopt_replica_2/C', 'system_i/four_mic_top_0/inst/pdm_clk_reg_lopt_replica_3/C', 'system_i/four_mic_top_0/inst/pdm_clk_reg/C']

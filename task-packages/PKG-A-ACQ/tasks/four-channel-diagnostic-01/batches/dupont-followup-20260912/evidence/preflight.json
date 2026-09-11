@@ -1,0 +1,156 @@
+{
+  "checked_at": "2026-09-12T00:08:27.393938+08:00",
+  "scope": "Read-only disk/config audit. No Vivado build, board connection or new capture.",
+  "result": "PASS_DISK_PREFLIGHT_NOT_BOARD_TEST",
+  "checks": {
+    "bit_one_launch_xsa_match": true,
+    "xsa_one_platform_match": true,
+    "ps7_init_matches_xsa": true,
+    "program_before_rx": true,
+    "guard_within_reserved_rx": true,
+    "same_top": true,
+    "same_packer": true,
+    "same_cic": true,
+    "launch_reset_and_program": true,
+    "ps7_initialization_enabled": true,
+    "one_bit_matches_B_received_snapshot": true,
+    "one_xsa_matches_B_received_snapshot": true,
+    "elf_matches_B_received_snapshot": true,
+    "old_single_mic_constraint_disabled": true
+  },
+  "program_end": "0x112630",
+  "rx_base": "0x01000000",
+  "rx_limit_exclusive": "0x01100000",
+  "data_guard_end_exclusive": "0x010FA040",
+  "capture_groups": 32000,
+  "capture_bytes": 1024000,
+  "packet_bytes": 8000,
+  "launch_name": "four_mic_capture_app_hw_1",
+  "configured_restart": "Vitis Run: PS system reset + PL reprogram + ps7_init/post_config + core reset + ELF reload; not power cycle or capture-only trigger",
+  "stop_semantics": "Fixed-count capture ends automatically; PS retains buffer in loop; explicit XSDB stop would halt only selected CPU, not PDM clock/CIC",
+  "new_board_runs_executed": 0,
+  "B_receipt": {
+    "git_commit": "2e2f685faf5520181cdd00cde2cd5030e75e67e2",
+    "path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/B-REVIEW.md",
+    "input_commit": "d088e2c7deda9c505c094fd48d6f90bcd7f52807",
+    "scope": "accepted diagnostic only"
+  },
+  "files": {
+    "one_project": {
+      "path": "F:\\College\\verilog_digital_system\\AMD\\Competiton\\one\\one.xpr",
+      "bytes": 18849,
+      "sha256": "53d2a067b89dc4b1842d04d4e9fc76bf4af225d3136242407543cc9480c323d3"
+    },
+    "bd": {
+      "path": "F:\\College\\verilog_digital_system\\AMD\\Competiton\\one\\one.srcs\\sources_1\\bd\\system\\system.bd",
+      "bytes": 50466,
+      "sha256": "0be89e6da3f914e4eb914e92c79f8fb774942723db5bf4cb02e123169dfcb181"
+    },
+    "active_top": {
+      "path": "F:\\College\\verilog_digital_system\\AMD\\Competiton\\one\\one.srcs\\sources_1\\imports\\c_adapter\\four_mic_top.v",
+      "bytes": 3180,
+      "sha256": "9f08e6d00771e7a028d418f011d567d7540f08fdefef9b8160fd4e9a2c97d128"
+    },
+    "active_packer": {
+      "path": "F:\\College\\verilog_digital_system\\AMD\\Competiton\\one\\one.srcs\\sources_1\\imports\\c_adapter\\pcm4_capture_axis.v",
+      "bytes": 3354,
+      "sha256": "3d322891ce5feeaa945d14ece3891ebed043ce34713d46cf2cd67b883c7845a2"
+    },
+    "active_cic": {
+      "path": "F:\\College\\verilog_digital_system\\AMD\\Competiton\\one\\one.srcs\\sources_1\\imports\\rtl\\pdm_cic3.v",
+      "bytes": 1153,
+      "sha256": "a80c176053688662cd8bb47f98edcadeb9b758d514365724fd8b6ffd2120573d"
+    },
+    "active_xdc": {
+      "path": "F:\\College\\verilog_digital_system\\AMD\\Competiton\\one\\one.srcs\\sources_1\\imports\\c_adapter\\c_adapter_io.xdc",
+      "bytes": 913,
+      "sha256": "e7501d4dd297fc38922092024649c2d886a62ccc3670ba92805db5dcee2fc0d4"
+    },
+    "one_bit": {
+      "path": "F:\\College\\verilog_digital_system\\AMD\\Competiton\\one\\one.runs\\impl_1\\system_wrapper.bit",
+      "bytes": 4045690,
+      "sha256": "37f6d55fbd1ce314245d189fbe2fa984477c6b61d26a2a23736b71305654605b"
+    },
+    "one_xsa": {
+      "path": "F:\\College\\verilog_digital_system\\AMD\\Competiton\\one\\system_c_adapter.xsa",
+      "bytes": 609171,
+      "sha256": "71e7bf6d4fcb769582e5485660515b8f615b2027aa2ff18c1f8d3f67f9457baa"
+    },
+    "platform_xsa": {
+      "path": "F:\\College\\verilog_digital_system\\Vitis\\c_adapter_platform\\export\\c_adapter_platform\\hw\\system_c_adapter.xsa",
+      "bytes": 609171,
+      "sha256": "71e7bf6d4fcb769582e5485660515b8f615b2027aa2ff18c1f8d3f67f9457baa"
+    },
+    "launch_bit": {
+      "path": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_capture\\_ide\\bitstream\\system_c_adapter.bit",
+      "bytes": 4045690,
+      "sha256": "37f6d55fbd1ce314245d189fbe2fa984477c6b61d26a2a23736b71305654605b"
+    },
+    "ps7_init": {
+      "path": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_capture\\_ide\\psinit\\ps7_init.tcl",
+      "bytes": 27896,
+      "sha256": "a158fcc7d723b21003864159006e781ffaf5e8df24ec9b1d9279f9d14ff3ee5e"
+    },
+    "launch_config": {
+      "path": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_capture\\_ide\\launch.json",
+      "bytes": 1953,
+      "sha256": "822b59518dbc8513bee12c465ca4d192adbeb28fc9946facaff0622b5862c17c"
+    },
+    "app_config": {
+      "path": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_capture\\vitis-comp.json",
+      "bytes": 444,
+      "sha256": "da57fd2ba29b0b9e52d04aafc49156f5a063aff348df0db40f5cea38ffc240e5"
+    },
+    "elf": {
+      "path": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_capture\\build\\four_mic_capture.elf",
+      "bytes": 285208,
+      "sha256": "c0b430e77d4d0d53d4ca0b4399fe69e0cd7865e5815ac3549b5d209d39e7192a"
+    },
+    "map": {
+      "path": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_capture\\build\\memory.map",
+      "bytes": 208597,
+      "sha256": "789c0d6ea47e64b1b06b5a8ea4fe8f2c95c90e74dc8915bf42f6798fa184d068"
+    },
+    "app_source": {
+      "path": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_capture\\src\\main_four_capture.c",
+      "bytes": 8381,
+      "sha256": "c7ea5352a172287aa4890a948b4aeb00c48cc11acaa044ec909b2ee24980b7de"
+    },
+    "linker": {
+      "path": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_capture\\src\\lscript.ld",
+      "bytes": 6306,
+      "sha256": "8872fb0af0f6bec969e63d2e5d170c1fc058c782c6924d70697b352aeab55dd4"
+    },
+    "rtl_top_reference": {
+      "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source\\rtl\\four_mic_top.v",
+      "bytes": 3180,
+      "sha256": "9f08e6d00771e7a028d418f011d567d7540f08fdefef9b8160fd4e9a2c97d128"
+    },
+    "rtl_packer_reference": {
+      "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source\\rtl\\pcm4_capture_axis.v",
+      "bytes": 3354,
+      "sha256": "3d322891ce5feeaa945d14ece3891ebed043ce34713d46cf2cd67b883c7845a2"
+    },
+    "rtl_cic_reference": {
+      "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source\\rtl\\pdm_cic3.v",
+      "bytes": 1153,
+      "sha256": "a80c176053688662cd8bb47f98edcadeb9b758d514365724fd8b6ffd2120573d"
+    },
+    "exporter": {
+      "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source\\export_four.py",
+      "bytes": 4958,
+      "sha256": "e89c82945367ef3e06113d9c18edbb3276e1ba658b2594e3f79e28a960422526"
+    },
+    "pair_gate": {
+      "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source\\export_c_capture.py",
+      "bytes": 3998,
+      "sha256": "c23b8d1adb2613a838f721664fd643aac032c61f27ebd103d84b3e42262014ee"
+    },
+    "h1_reader": {
+      "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-B-ALG\\payload\\model\\python\\h1_reader.py",
+      "bytes": 13506,
+      "sha256": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9"
+    }
+  }
+}
+

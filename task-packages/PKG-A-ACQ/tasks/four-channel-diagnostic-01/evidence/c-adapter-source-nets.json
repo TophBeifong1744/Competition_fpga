@@ -1,0 +1,183 @@
+{
+  "result": "SOURCE_NET_CHECK_PASS_NOT_ASSEMBLY_TEST",
+  "source_sha256": "80ec1919164c3c65ec7ab5e59674ca3a8f2cb67fa497b7656d67f9aea1a43f30",
+  "connectors": {
+    "U1": {
+      "layer": 1,
+      "angle": 270,
+      "footprint": "972e95afcdb7da25",
+      "selected_nets": {
+        "17": "DATA1",
+        "19": "DATA2",
+        "21": "CLK1",
+        "23": "CLK2",
+        "29": "CLK3",
+        "31": "CLK4",
+        "33": "DATA3",
+        "35": "DATA4",
+        "37": "GND",
+        "38": "3.3V",
+        "39": "GND",
+        "40": "5V"
+      },
+      "orientation_anchors": {
+        "40": {
+          "footprint_xy_native": [
+            950,
+            50
+          ],
+          "pcb_xy_native": [
+            4070.0,
+            -2775.0
+          ],
+          "shape": "ELLIPSE"
+        },
+        "39": {
+          "footprint_xy_native": [
+            950,
+            -50
+          ],
+          "pcb_xy_native": [
+            3970.0,
+            -2775.0
+          ],
+          "shape": "ELLIPSE"
+        },
+        "38": {
+          "footprint_xy_native": [
+            850,
+            50
+          ],
+          "pcb_xy_native": [
+            4070.0,
+            -2675.0
+          ],
+          "shape": "ELLIPSE"
+        },
+        "37": {
+          "footprint_xy_native": [
+            850,
+            -50
+          ],
+          "pcb_xy_native": [
+            3970.0,
+            -2675.0
+          ],
+          "shape": "ELLIPSE"
+        },
+        "2": {
+          "footprint_xy_native": [
+            -950,
+            50
+          ],
+          "pcb_xy_native": [
+            4070.0,
+            -875.0
+          ],
+          "shape": "ELLIPSE"
+        },
+        "1": {
+          "footprint_xy_native": [
+            -950,
+            -50
+          ],
+          "pcb_xy_native": [
+            3970.0,
+            -875.0
+          ],
+          "shape": "RECT"
+        }
+      }
+    },
+    "U2": {
+      "layer": 1,
+      "angle": 270,
+      "footprint": "908b87eb1e2b6868",
+      "selected_nets": {
+        "17": "DATA1",
+        "19": "DATA2",
+        "21": "CLK1",
+        "23": "CLK2",
+        "29": "CLK3",
+        "31": "CLK4",
+        "33": "DATA3",
+        "35": "DATA4",
+        "37": "GND",
+        "38": "3.3V",
+        "39": "GND",
+        "40": "5V"
+      },
+      "orientation_anchors": {
+        "1": {
+          "footprint_xy_native": [
+            -950,
+            -50
+          ],
+          "pcb_xy_native": [
+            3622.2125,
+            -872.2125
+          ],
+          "shape": "RECT"
+        },
+        "2": {
+          "footprint_xy_native": [
+            -950,
+            50
+          ],
+          "pcb_xy_native": [
+            3722.2125,
+            -872.2125
+          ],
+          "shape": "ELLIPSE"
+        },
+        "37": {
+          "footprint_xy_native": [
+            850,
+            -50
+          ],
+          "pcb_xy_native": [
+            3622.2125,
+            -2672.2125
+          ],
+          "shape": "ELLIPSE"
+        },
+        "38": {
+          "footprint_xy_native": [
+            850,
+            50
+          ],
+          "pcb_xy_native": [
+            3722.2125,
+            -2672.2125
+          ],
+          "shape": "ELLIPSE"
+        },
+        "39": {
+          "footprint_xy_native": [
+            950,
+            -50
+          ],
+          "pcb_xy_native": [
+            3622.2125,
+            -2772.2125
+          ],
+          "shape": "ELLIPSE"
+        },
+        "40": {
+          "footprint_xy_native": [
+            950,
+            50
+          ],
+          "pcb_xy_native": [
+            3722.2125,
+            -2772.2125
+          ],
+          "shape": "ELLIPSE"
+        }
+      }
+    }
+  },
+  "mating_contract": "C connector numbered pin N to baseboard J4 numbered pin N; never infer left/right from opposite-face views.",
+  "physical_installation": "Not observed. User must match pin1 and 37/38/39/40 power anchors before powering.",
+  "scope": "PCB net and footprint records only; not native ERC/DRC, manufactured connectivity or geometry measurement."
+}

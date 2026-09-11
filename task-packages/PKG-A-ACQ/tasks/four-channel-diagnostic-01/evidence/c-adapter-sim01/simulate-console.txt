@@ -1,0 +1,25 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Sep 11 15:48:06 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/four_test/xsim_script.tcl
+# xsim {four_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PACKET_PASS run=0 groups=19 words=152 channels/sign/IDcarry/stall/partialTLAST
+PACKET_PASS run=1 groups=19 words=152 channels/sign/IDcarry/stall/partialTLAST
+OVERFLOW_PASS abort sticky and reset-required
+SYNC_PASS partial valid abort/reset-required
+PACKET_PASS run=2 groups=19 words=152 channels/sign/IDcarry/stall/partialTLAST
+RESET_PASS mid-record discard and clean restart
+TOP_PASS DATA1..4 to mic0..3, four distinct densities delay100ns highphaseX shared IDs/warmup
+C_ADAPTER_CLOCK_RESET_PASS checks=25649 one divider/four outputs
+ALL_FOUR_TESTS_PASS
+$finish called at time : 417463124 ps : File "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/sim/tb_four_mic.sv" Line 158
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 11 15:48:08 2026...

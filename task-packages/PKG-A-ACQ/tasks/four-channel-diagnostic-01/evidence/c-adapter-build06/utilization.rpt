@@ -1,0 +1,108 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Fri Sep 11 16:00:52 2026
+| Host         : Toph running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file {E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build06/utilization.rpt}
+| Design       : system_wrapper
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Routed
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------------------------------------------------------------------+-----------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                                    Instance                                   |                                 Module                                | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++-------------------------------------------------------------------------------+-----------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| system_wrapper                                                                |                                                                 (top) |       8347 |       4439 |    3850 |   58 | 4390 |      1 |      1 |          0 |
+|   (system_wrapper)                                                            |                                                                 (top) |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|   system_i                                                                    |                                                                system |       8347 |       4439 |    3850 |   58 | 4390 |      1 |      1 |          0 |
+|     axi_dma_0                                                                 |                                                    system_axi_dma_0_0 |        923 |        859 |       8 |   56 | 1445 |      1 |      1 |          0 |
+|       U0                                                                      |                                                               axi_dma |        923 |        859 |       8 |   56 | 1445 |      1 |      1 |          0 |
+|         INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR                        |                                                     axi_dma_s2mm_mngr |         20 |         20 |       0 |    0 |   80 |      0 |      0 |          0 |
+|           GEN_S2MM_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_S2MM_SMPL_SM             |                                                      axi_dma_smple_sm |          5 |          5 |       0 |    0 |   53 |      0 |      0 |          0 |
+|         I_AXI_DMA_REG_MODULE                                                  |                                                    axi_dma_reg_module |         76 |         76 |       0 |    0 |  159 |      0 |      0 |          0 |
+|           GEN_AXI_LITE_IF.AXI_LITE_IF_I                                       |                                                       axi_dma_lite_if |         52 |         52 |       0 |    0 |   81 |      0 |      0 |          0 |
+|           GEN_S2MM_REGISTERS.I_S2MM_DMA_REGISTER                              |                                                 axi_dma_register_s2mm |         24 |         24 |       0 |    0 |   78 |      0 |      0 |          0 |
+|         I_PRMRY_DATAMOVER                                                     |                                                         axi_datamover |        820 |        756 |       8 |   56 | 1182 |      1 |      1 |          0 |
+|           GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER                                   |                                          axi_datamover_s2mm_full_wrap |        820 |        756 |       8 |   56 | 1182 |      1 |      1 |          0 |
+|             ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF                             |                                                axi_datamover_skid_buf |         41 |         41 |       0 |    0 |   74 |      0 |      0 |          0 |
+|             GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT                               |                                               axi_datamover_indet_btt |        217 |        209 |       8 |    0 |  349 |      1 |      1 |          0 |
+|               (GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT)                           |                                               axi_datamover_indet_btt |         12 |         12 |       0 |    0 |   94 |      0 |      0 |          0 |
+|               ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF                           |                                axi_datamover_skid_buf__parameterized0 |         88 |         88 |       0 |    0 |  160 |      0 |      0 |          0 |
+|               I_XD_FIFO                                                       |                                            axi_datamover_sfifo_autord |         59 |         51 |       8 |    0 |   56 |      0 |      0 |          0 |
+|                 NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO                               |                                                         xpm_fifo_sync |         44 |         36 |       8 |    0 |   56 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                                          |                                                         xpm_fifo_base |         44 |         36 |       8 |    0 |   56 |      0 |      0 |          0 |
+|             GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC                             |                                                  axi_datamover_ibttcc |        129 |        129 |       0 |    0 |  217 |      0 |      0 |          0 |
+|             GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER                            |                                            axi_datamover_s2mm_realign |        204 |        188 |       0 |   16 |  158 |      0 |      0 |          0 |
+|               GEN_INCLUDE_SCATTER.I_S2MM_SCATTER                              |                                            axi_datamover_s2mm_scatter |        182 |        177 |       0 |    5 |  144 |      0 |      0 |          0 |
+|                 I_MSSAI_SKID_BUF                                              |                                          axi_datamover_mssai_skid_buf |         95 |         95 |       0 |    0 |   75 |      0 |      0 |          0 |
+|             I_CMD_STATUS                                                      |                                              axi_datamover_cmd_status |         17 |         17 |       0 |    0 |   75 |      0 |      0 |          0 |
+|               I_CMD_FIFO                                                      |                                                    axi_datamover_fifo |          5 |          5 |       0 |    0 |   53 |      0 |      0 |          0 |
+|             I_S2MM_MMAP_SKID_BUF                                              |                                             axi_datamover_skid2mm_buf |         68 |         68 |       0 |    0 |  149 |      0 |      0 |          0 |
+|             I_WR_DATA_CNTL                                                    |                                             axi_datamover_wrdata_cntl |         74 |         66 |       0 |    8 |   55 |      0 |      0 |          0 |
+|     axi_gpio_0                                                                |                                                   system_axi_gpio_0_0 |        114 |        114 |       0 |    0 |  320 |      0 |      0 |          0 |
+|       U0                                                                      |                                                              axi_gpio |        114 |        114 |       0 |    0 |  320 |      0 |      0 |          0 |
+|         gpio_core_1                                                           |                                                             GPIO_Core |         35 |         35 |       0 |    0 |  228 |      0 |      0 |          0 |
+|           (gpio_core_1)                                                       |                                                             GPIO_Core |         35 |         35 |       0 |    0 |  100 |      0 |      0 |          0 |
+|           Dual.INPUT_DOUBLE_REGS5                                             |                                  xpm_cdc_array_single__parameterized1 |          0 |          0 |       0 |    0 |  128 |      0 |      0 |          0 |
+|         AXI_LITE_IPIF_I                                                       |                                                         axi_lite_ipif |         79 |         79 |       0 |    0 |   58 |      0 |      0 |          0 |
+|           I_SLAVE_ATTACHMENT                                                  |                                                      slave_attachment |         79 |         79 |       0 |    0 |   58 |      0 |      0 |          0 |
+|             (I_SLAVE_ATTACHMENT)                                              |                                                      slave_attachment |         19 |         19 |       0 |    0 |   52 |      0 |      0 |          0 |
+|             I_DECODER                                                         |                                                       address_decoder |         60 |         60 |       0 |    0 |    6 |      0 |      0 |          0 |
+|               (I_DECODER)                                                     |                                                       address_decoder |         58 |         58 |       0 |    0 |    6 |      0 |      0 |          0 |
+|     axi_mem_intercon                                                          |                                             system_axi_mem_intercon_1 |        459 |        425 |      34 |    0 |  564 |      0 |      0 |          0 |
+|       s00_couplers                                                            |                                              s00_couplers_imp_1P403ZT |        459 |        425 |      34 |    0 |  564 |      0 |      0 |          0 |
+|         auto_ds                                                               |                                 system_axi_mem_intercon_imp_auto_ds_0 |        410 |        380 |      30 |    0 |  465 |      0 |      0 |          0 |
+|           inst                                                                |                                      axi_dwidth_converter_v2_1_37_top |        410 |        380 |      30 |    0 |  465 |      0 |      0 |          0 |
+|             gen_downsizer.gen_cascaded_downsizer.first_downsizer_inst         |                            axi_dwidth_converter_v2_1_37_axi_downsizer |        244 |        222 |      22 |    0 |  255 |      0 |      0 |          0 |
+|               USE_WRITE.write_addr_inst                                       |                              axi_dwidth_converter_v2_1_37_a_downsizer |        191 |        169 |      22 |    0 |  232 |      0 |      0 |          0 |
+|                 (USE_WRITE.write_addr_inst)                                   |                              axi_dwidth_converter_v2_1_37_a_downsizer |         89 |         89 |       0 |    0 |  100 |      0 |      0 |          0 |
+|                 cmd_queue                                                     |                       axi_data_fifo_v2_1_36_axic_fifo__parameterized1 |         63 |         45 |      18 |    0 |   86 |      0 |      0 |          0 |
+|                   inst                                                        |                        axi_data_fifo_v2_1_36_fifo_gen__parameterized1 |         63 |         45 |      18 |    0 |   86 |      0 |      0 |          0 |
+|                     fifo_gen_inst                                             |                               fifo_generator_v13_2_14__parameterized1 |         44 |         26 |      18 |    0 |   86 |      0 |      0 |          0 |
+|                       inst_fifo_gen                                           |                         fifo_generator_v13_2_14_synth__parameterized1 |         44 |         26 |      18 |    0 |   86 |      0 |      0 |          0 |
+|                         gconvfifo.rf                                          |                                    fifo_generator_top__parameterized1 |         44 |         26 |      18 |    0 |   86 |      0 |      0 |          0 |
+|                           grf.rf                                              |                                fifo_generator_ramfifo__parameterized1 |         44 |         26 |      18 |    0 |   86 |      0 |      0 |          0 |
+|                             gntv_or_sync_fifo.mem                             |                                                memory__parameterized1 |         18 |          0 |      18 |    0 |   50 |      0 |      0 |          0 |
+|             gen_downsizer.gen_cascaded_downsizer.gen_axi3_conv.axi3_conv_inst |                 axi_protocol_converter_v2_1_37_axi_protocol_converter |        167 |        159 |       8 |    0 |  210 |      0 |      0 |          0 |
+|               gen_axi4_axi3.axi3_conv_inst                                    |                              axi_protocol_converter_v2_1_37_axi3_conv |        167 |        159 |       8 |    0 |  210 |      0 |      0 |          0 |
+|                 (USE_WRITE.write_addr_inst)                                   |                            axi_protocol_converter_v2_1_37_a_axi3_conv |         69 |         69 |       0 |    0 |  104 |      0 |      0 |          0 |
+|         auto_pc                                                               |                                 system_axi_mem_intercon_imp_auto_pc_0 |         49 |         45 |       4 |    0 |   99 |      0 |      0 |          0 |
+|           inst                                                                | axi_protocol_converter_v2_1_37_axi_protocol_converter__parameterized0 |         49 |         45 |       4 |    0 |   99 |      0 |      0 |          0 |
+|             gen_axi4_axi3.axi3_conv_inst                                      |              axi_protocol_converter_v2_1_37_axi3_conv__parameterized0 |         49 |         45 |       4 |    0 |   99 |      0 |      0 |          0 |
+|     axi_smc                                                                   |                                                      system_axi_smc_1 |        584 |        583 |       0 |    1 |  709 |      0 |      0 |          0 |
+|       inst                                                                    |                                                               bd_8422 |        584 |        583 |       0 |    1 |  709 |      0 |      0 |          0 |
+|         s00_entry_pipeline                                                    |                                         s00_entry_pipeline_imp_RL83TD |        392 |        392 |       0 |    0 |  422 |      0 |      0 |          0 |
+|           s00_mmu                                                             |                                                      bd_8422_s00mmu_0 |        176 |        176 |       0 |    0 |  208 |      0 |      0 |          0 |
+|             inst                                                              |                                                    sc_mmu_v1_0_16_top |        176 |        176 |       0 |    0 |  208 |      0 |      0 |          0 |
+|               gen_endpoint.decerr_slave_inst                                  |                                           sc_mmu_v1_0_16_decerr_slave |         61 |         61 |       0 |    0 |   41 |      0 |      0 |          0 |
+|               ar_reg_stall                                                    |                          sc_util_v1_0_4_axi_reg_stall__parameterized0 |         43 |         43 |       0 |    0 |   72 |      0 |      0 |          0 |
+|               aw_reg_stall                                                    |                       sc_util_v1_0_4_axi_reg_stall__parameterized0_15 |         37 |         37 |       0 |    0 |   72 |      0 |      0 |          0 |
+|           s00_si_converter                                                    |                                                      bd_8422_s00sic_0 |        209 |        209 |       0 |    0 |  182 |      0 |      0 |          0 |
+|             inst                                                              |                                           sc_si_converter_v1_0_16_top |        209 |        209 |       0 |    0 |  182 |      0 |      0 |          0 |
+|               gen_axilite_conv.axilite_conv_inst                              |                                  sc_si_converter_v1_0_16_axilite_conv |        207 |        207 |       0 |    0 |  178 |      0 |      0 |          0 |
+|         switchboards                                                          |                                               switchboards_imp_82ZBDR |         91 |         91 |       0 |    0 |  160 |      0 |      0 |          0 |
+|           i_nodes                                                             |                                                   i_nodes_imp_1O7TX7R |         75 |         75 |       0 |    0 |  160 |      0 |      0 |          0 |
+|             i_r_node                                                          |                                                         bd_8422_rni_0 |         22 |         22 |       0 |    0 |   54 |      0 |      0 |          0 |
+|               inst                                                            |                                  sc_node_v1_0_19_top__parameterized12 |         22 |         22 |       0 |    0 |   54 |      0 |      0 |          0 |
+|     four_mic_top_0                                                            |                                               system_four_mic_top_0_0 |       6253 |       2445 |    3808 |    0 | 1317 |      0 |      0 |          0 |
+|       inst                                                                    |                                                          four_mic_top |       6253 |       2445 |    3808 |    0 | 1317 |      0 |      0 |          0 |
+|         (inst)                                                                |                                                          four_mic_top |          7 |          7 |       0 |    0 |   94 |      0 |      0 |          0 |
+|         capture                                                               |                                                     pcm4_capture_axis |       4846 |       1038 |    3808 |    0 |  343 |      0 |      0 |          0 |
+|         channels[0].filter                                                    |                                                              pdm_cic3 |        342 |        342 |       0 |    0 |  220 |      0 |      0 |          0 |
+|         channels[1].filter                                                    |                                                            pdm_cic3_0 |        344 |        344 |       0 |    0 |  220 |      0 |      0 |          0 |
+|         channels[2].filter                                                    |                                                            pdm_cic3_1 |        344 |        344 |       0 |    0 |  220 |      0 |      0 |          0 |
+|         channels[3].filter                                                    |                                                            pdm_cic3_2 |        373 |        373 |       0 |    0 |  220 |      0 |      0 |          0 |
++-------------------------------------------------------------------------------+-----------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

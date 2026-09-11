@@ -1,0 +1,90 @@
+{
+  "preserved_components": {
+    "processing_system7_0": true,
+    "axi_dma_0": true,
+    "axi_smc": true,
+    "axi_mem_intercon": true,
+    "axi_gpio_0": true,
+    "start_pulse_0": true,
+    "clk_wiz_0": true,
+    "rst_ps7_0_61M": true
+  },
+  "addressing_unchanged": true,
+  "unchanged_sources": {
+    "rtl/pdm_cic3.v": true,
+    "rtl/pcm4_capture_axis.v": true,
+    "export_four.py": true,
+    "test_export.py": true
+  },
+  "implemented_io_matches_mapping": true,
+  "clock_registers_same_C_D_CE_reset_INIT": [
+    {
+      "port": "pdm_clk1",
+      "cell": "system_i/four_mic_top_0/inst/pdm_clk_reg_lopt_replica",
+      "primitive": "FDRE",
+      "INIT": "1'b0",
+      "C": "system_i/four_mic_top_0/inst/aclk",
+      "D": "system_i/four_mic_top_0/inst/channels[3].filter_n_3",
+      "CE": "system_i/four_mic_top_0/inst/channels[3].filter_n_3",
+      "R": "system_i/four_mic_top_0/inst/pdm_clk",
+      "S": "-"
+    },
+    {
+      "port": "pdm_clk2",
+      "cell": "system_i/four_mic_top_0/inst/pdm_clk_reg_lopt_replica_2",
+      "primitive": "FDRE",
+      "INIT": "1'b0",
+      "C": "system_i/four_mic_top_0/inst/aclk",
+      "D": "system_i/four_mic_top_0/inst/channels[3].filter_n_3",
+      "CE": "system_i/four_mic_top_0/inst/channels[3].filter_n_3",
+      "R": "system_i/four_mic_top_0/inst/pdm_clk",
+      "S": "-"
+    },
+    {
+      "port": "pdm_clk3",
+      "cell": "system_i/four_mic_top_0/inst/pdm_clk_reg_lopt_replica_3",
+      "primitive": "FDRE",
+      "INIT": "1'b0",
+      "C": "system_i/four_mic_top_0/inst/aclk",
+      "D": "system_i/four_mic_top_0/inst/channels[3].filter_n_3",
+      "CE": "system_i/four_mic_top_0/inst/channels[3].filter_n_3",
+      "R": "system_i/four_mic_top_0/inst/pdm_clk",
+      "S": "-"
+    },
+    {
+      "port": "pdm_clk4",
+      "cell": "system_i/four_mic_top_0/inst/pdm_clk_reg",
+      "primitive": "FDRE",
+      "INIT": "1'b0",
+      "C": "system_i/four_mic_top_0/inst/aclk",
+      "D": "system_i/four_mic_top_0/inst/channels[3].filter_n_3",
+      "CE": "system_i/four_mic_top_0/inst/channels[3].filter_n_3",
+      "R": "system_i/four_mic_top_0/inst/pdm_clk",
+      "S": "-"
+    }
+  ],
+  "clock_scope": "Vivado replicated output FFs, one logical divider/state. No physical zero-skew claim.",
+  "bsp_hardware_parameter_differences": {
+    "axi_dma_0": {},
+    "axi_gpio_0": {},
+    "processing_system7_0": {}
+  },
+  "program_end_hex": "00112630",
+  "rx_data_guard_end_hex": "010FA040",
+  "result": "STRUCTURAL_BSP_IO_AUDIT_PASS_NOT_BOARD_TEST",
+  "sha256": {
+    "task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\evidence\\c-adapter-build06\\system_c_adapter.xsa": "7722e966c2d20d37224870e1b2eff4ceaf1c8ae08d8ed835f0247de53c3e9920",
+    "task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\evidence\\c-adapter-build06\\system_c_adapter.bit": "9e1a84ce3a7fd4c599ef95bb6c0d7f30a90abddd6ac769e1a9587133e1408630",
+    "task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\evidence\\c-adapter-ps01\\four_mic_capture.elf": "285ca09e3d9045b7a44b5c7182685810426de8bc53fca027ce01b46c8991437d",
+    "task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\evidence\\c-adapter-ps01\\four_mic_capture.map": "2892e0fcfa5820c2f6cbb6b0caa6fac7f3b9881dc3a0200718d49e910f485e18",
+    "F:\\College\\verilog_digital_system\\AMD\\Competiton\\one\\one.srcs\\sources_1\\bd\\system\\system.bd": "0be89e6da3f914e4eb914e92c79f8fb774942723db5bf4cb02e123169dfcb181",
+    "F:\\College\\verilog_digital_system\\AMD\\Competiton\\one\\one.srcs\\sources_1\\imports\\c_adapter\\c_adapter_io.xdc": "e7501d4dd297fc38922092024649c2d886a62ccc3670ba92805db5dcee2fc0d4",
+    "F:\\College\\verilog_digital_system\\Vitis\\dma_platform\\export\\dma_platform\\hw\\system_single_mic.xsa": "e1cf7b504d637860eee5c6b1a6cd8a5b5d022f6b09858d63c61500776dd15d46",
+    "task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source\\rtl\\four_mic_top.v": "9f08e6d00771e7a028d418f011d567d7540f08fdefef9b8160fd4e9a2c97d128",
+    "task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source\\rtl\\pcm4_capture_axis.v": "3d322891ce5feeaa945d14ece3891ebed043ce34713d46cf2cd67b883c7845a2",
+    "task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source\\rtl\\pdm_cic3.v": "a80c176053688662cd8bb47f98edcadeb9b758d514365724fd8b6ffd2120573d",
+    "task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source\\ps\\main_four_capture.c": "c7ea5352a172287aa4890a948b4aeb00c48cc11acaa044ec909b2ee24980b7de",
+    "task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source\\export_four.py": "e89c82945367ef3e06113d9c18edbb3276e1ba658b2594e3f79e28a960422526",
+    "task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source\\c_adapter_mapping.json": "7227c33e1945daff14d4fe5a42d273980062656e33e510312e64839aeb097ff5"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "purpose": "Listening derivatives only; not original H1 samples",
+  "sources": {
+    "quiet": {
+      "acquisition_id": "dupont-quiet-01",
+      "raw_sha256": "38d3a75b352efd25a23afd82c2838cd83685c9167351d8edb09c297f2e801d8a"
+    },
+    "speech": {
+      "acquisition_id": "dupont-speech-01",
+      "raw_sha256": "78db105ab1fa216bafbb06b7fe73d989e88e0cd0be95f419b967e61637af272c"
+    }
+  },
+  "sample_rate_hz": 48000,
+  "output_format": "mono PCM16 little-endian",
+  "common_gain": 12,
+  "conversion": "round(PCM24 * 12 / 256), same gain for all files",
+  "processing": "No filtering, resampling, trimming or per-file normalization"
+}

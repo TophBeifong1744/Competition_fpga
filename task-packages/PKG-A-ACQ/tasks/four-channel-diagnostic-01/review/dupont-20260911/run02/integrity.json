@@ -1,0 +1,147 @@
+{
+  "status": "PASS_DIAGNOSTIC_INTEGRITY_NOT_B_REVIEW",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "segments": [
+    {
+      "acquisition_id": "dupont-quiet-01",
+      "groups": 32000,
+      "bytes": 1024000,
+      "duration_configured_seconds": 0.6666666666666666,
+      "first_id": 17544,
+      "last_id": 49543,
+      "build": "Sep 11 2026 18:23:59",
+      "fnv1a32": "A34F540B",
+      "raw_csv_exact_values": true,
+      "continuous_within_capture": true,
+      "error_rows": 0,
+      "packet_count": 128,
+      "raw_file_sha256": {
+        "raw.bin": "38d3a75b352efd25a23afd82c2838cd83685c9167351d8edb09c297f2e801d8a",
+        "serial.log": "0ccf9d5dfa46c30b0c7068587ba5a804c0bd091a5235ba73e0f04a5d177b8b2c",
+        "metadata.json": "6384696a6a9c4677d403c6138179da444f3536ef43a40222410f72c9135164d5",
+        "samples.csv": "a890f05d226e31b12318b56f4d883056d754a95a2e2aede29610391bdd4dc6f1"
+      },
+      "lanes": [
+        {
+          "channel": 0,
+          "min": -19968,
+          "max": 23424,
+          "zeros": 182,
+          "clipped_flags": 0,
+          "mean": 771.692,
+          "rms_ac_codes": 6844.025365319448,
+          "constant": false
+        },
+        {
+          "channel": 1,
+          "min": -24384,
+          "max": 25216,
+          "zeros": 126,
+          "clipped_flags": 0,
+          "mean": -477.428,
+          "rms_ac_codes": 7398.050790364716,
+          "constant": false
+        },
+        {
+          "channel": 2,
+          "min": -24512,
+          "max": 23616,
+          "zeros": 129,
+          "clipped_flags": 0,
+          "mean": -97.28,
+          "rms_ac_codes": 7275.0946568137515,
+          "constant": false
+        },
+        {
+          "channel": 3,
+          "min": -20864,
+          "max": 21952,
+          "zeros": 159,
+          "clipped_flags": 0,
+          "mean": 842.622,
+          "rms_ac_codes": 6596.6935479159565,
+          "constant": false
+        }
+      ],
+      "identical_lane_pairs": [],
+      "scope": "diagnostic file integrity only; not measured synchronization or acoustic acceptance"
+    },
+    {
+      "acquisition_id": "dupont-speech-01",
+      "groups": 32000,
+      "bytes": 1024000,
+      "duration_configured_seconds": 0.6666666666666666,
+      "first_id": 15798,
+      "last_id": 47797,
+      "build": "Sep 11 2026 18:23:59",
+      "fnv1a32": "7B1E2B16",
+      "raw_csv_exact_values": true,
+      "continuous_within_capture": true,
+      "error_rows": 0,
+      "packet_count": 128,
+      "raw_file_sha256": {
+        "raw.bin": "78db105ab1fa216bafbb06b7fe73d989e88e0cd0be95f419b967e61637af272c",
+        "serial.log": "dc5bf4756d5997340fd24352d651263c73dad429fe1e336e935dfc3fec1a1135",
+        "metadata.json": "308ae31097ff3663d77ddd127889d3df4f285a74ef0b299cd32a67e87e0fb091",
+        "samples.csv": "246f92b44871519e7fa92b018aa3fd42510731ccac430e087705b02404a71239"
+      },
+      "lanes": [
+        {
+          "channel": 0,
+          "min": -456576,
+          "max": 382848,
+          "zeros": 8,
+          "clipped_flags": 0,
+          "mean": 1005.842,
+          "rms_ac_codes": 145620.36144621755,
+          "constant": false
+        },
+        {
+          "channel": 1,
+          "min": -411392,
+          "max": 327488,
+          "zeros": 7,
+          "clipped_flags": 0,
+          "mean": 1557.244,
+          "rms_ac_codes": 138723.20444656856,
+          "constant": false
+        },
+        {
+          "channel": 2,
+          "min": -448192,
+          "max": 337536,
+          "zeros": 6,
+          "clipped_flags": 0,
+          "mean": 910.596,
+          "rms_ac_codes": 147402.36966978782,
+          "constant": false
+        },
+        {
+          "channel": 3,
+          "min": -502400,
+          "max": 430656,
+          "zeros": 8,
+          "clipped_flags": 0,
+          "mean": -289.502,
+          "rms_ac_codes": 162700.79734182006,
+          "constant": false
+        }
+      ],
+      "identical_lane_pairs": [],
+      "scope": "diagnostic file integrity only; not measured synchronization or acoustic acceptance"
+    }
+  ],
+  "reader_command": [
+    "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "task-packages\\PKG-B-ALG\\payload\\model\\python\\h1_reader.py",
+    "task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\captures\\dupont-quiet-01",
+    "task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\captures\\dupont-speech-01"
+  ],
+  "reader_sha256": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9",
+  "review_script_sha256": "d89b8dad8d9f9ed06d2825e2a790e1ef87bf2f9717c9775a89f8d1ae59407986",
+  "submitted_reader_log_encoding": "utf-16",
+  "reader_matches_original_json": true,
+  "submitted_reader_log_sha256": "c482f3c7be021a569fa0dfeed9327631d2230006fbe33ae7755801591a6c2272"
+}

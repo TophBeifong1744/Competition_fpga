@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\source\audit_c_build.py", line 81, in <module>
+    result=audit(a.task,a.one,a.build,a.ps,a.bsp_xsa)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\source\audit_c_build.py", line 62, in audit
+    oldhw,newhw=hardware(bsp_xsa),hardware(xsa)
+                ^^^^^^^^^^^^^^^^^
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\source\audit_c_build.py", line 16, in hardware
+    assert len(names)==1, names
+           ^^^^^^^^^^^^^
+AssertionError: ['system.hwh', 'system_axi_smc_1.hwh']

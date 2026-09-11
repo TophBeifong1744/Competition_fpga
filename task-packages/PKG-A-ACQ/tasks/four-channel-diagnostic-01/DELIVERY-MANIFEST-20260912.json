@@ -1,0 +1,953 @@
+{
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "scope": "Preserved original engineering sources, author checks and diagnosis preparation. Not active main RTL or board acceptance.",
+  "date": "2026-09-12",
+  "base": "a953b4c290142de3f42335aa378e0cdb6e37e461",
+  "files": [
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/adapt_c_one.tcl",
+      "bytes": 5246,
+      "sha256": "8C1464E7E2077991880A4E94ABBF8F7279401376531AE83BB4C3B7B9AC6B1A4C"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/dupont-followup-20260912/channel-map.md",
+      "bytes": 3475,
+      "sha256": "A15E4490F7510A2377E1EC17AD5B7262DCE8A0ECE750169548D4ECEB47BC7E13"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/dupont-followup-20260912/evidence/preflight.json",
+      "bytes": 7529,
+      "sha256": "8FE43673013288F1425B3588285AF9B30B436111CA94EB91638DBB6666866E34"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/dupont-followup-20260912/evidence/preparation-check.json",
+      "bytes": 1553,
+      "sha256": "AE493DFBA46697880209663EEAC070BD6BBD6900FA60B0C46469405405A155CD"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/dupont-followup-20260912/raw/README.md",
+      "bytes": 1217,
+      "sha256": "DA11C9F11C3DD3AC36194DB6A7A10BCFDCD03F01E081A762C4D1FEAA5AE799A4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/dupont-followup-20260912/README.md",
+      "bytes": 15361,
+      "sha256": "CEAD7BDE694387B33ED6E2101EB586D66D28A5129B7DA02E7D73BDAD97D658A7"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/dupont-followup-20260912/run-record.md",
+      "bytes": 4322,
+      "sha256": "ED033CE3595D35C8733FD6E5948F920AD9500A089318869663FCE2D0295D1B55"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/build_ps.ps1",
+      "bytes": 1679,
+      "sha256": "2EE5FDD4F95EE10D2A18A280328AA2A98F0A7C7C7AC7ABCEB3DED00660657FB9"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/C-ADAPTER-RUN.md",
+      "bytes": 13751,
+      "sha256": "658B52C5EC57280107A54F387E238C4009478088EFCFE94A98257817A27EAE02"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/dupont-quiet-01/metadata.json",
+      "bytes": 2054,
+      "sha256": "6384696A6A9C4677D403C6138179DA444F3536EF43A40222410F72C9135164D5"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/dupont-quiet-01/samples.csv",
+      "bytes": 994314,
+      "sha256": "A890F05D226E31B12318B56F4D883056D754A95A2E2AEDE29610391BDD4DC6F1"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/dupont-speech-01/metadata.json",
+      "bytes": 2062,
+      "sha256": "308AE31097FF3663D77DDD127889D3DF4F285A74EF0B299CD32A67E87E0FB091"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/dupont-speech-01/samples.csv",
+      "bytes": 1177665,
+      "sha256": "246F92B44871519E7FA92B018AA3FD42510731CCAC430E087705B02404A71239"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/listening-01/listening-info.json",
+      "bytes": 657,
+      "sha256": "C3C4300AB5E746D49A4496AFF2B2992AFDD7D03B6FD1898324E6A7D54BF9DC85"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/listening-01/quiet_mic0.wav",
+      "bytes": 64044,
+      "sha256": "1A0F7644B8FC58EDFFFD6CBDB36A979409BF26F92BD747A6CEFFCAECD5787268"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/listening-01/quiet_mic1.wav",
+      "bytes": 64044,
+      "sha256": "8F7FB085E1CD1DFFC019918FD773F41AFC124EF0088E6544FDE9863CC90C046C"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/listening-01/quiet_mic2.wav",
+      "bytes": 64044,
+      "sha256": "A561A7A0B21D603E115B3D9ACFBD88664E3CFC76A39D7229A9B1BD06FA2C2882"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/listening-01/quiet_mic3.wav",
+      "bytes": 64044,
+      "sha256": "719DF9FF97C4F68F7A659D763F096E235D6BF61139F809BE9FCF213BCEAE6F6B"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/listening-01/speech_mic0.wav",
+      "bytes": 64044,
+      "sha256": "333AEA6676E2A45472F82A98E809D262E821F3F299DCA7D351F04B627C8CC50E"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/listening-01/speech_mic1.wav",
+      "bytes": 64044,
+      "sha256": "62F45BD3EDFECB2DE2F4BBD42C6509BBF93F98450A40BFC38979FEA4BD195E27"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/listening-01/speech_mic2.wav",
+      "bytes": 64044,
+      "sha256": "B00C02390F64EB6F2A8C3E66C4970D53782304EB85B7A2EB14B3751057633906"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/listening-01/speech_mic3.wav",
+      "bytes": 64044,
+      "sha256": "6A8D924161297F15F928F692173CF32CA3182667C2BB96B19CC73FC73A990F90"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build-audit.json",
+      "bytes": 4874,
+      "sha256": "42F60DA0BCB809F3997733DC94D816459C6C51314BBE9D8B12866625A9333AD0"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build01/tool-version.txt",
+      "bytes": 340,
+      "sha256": "3D3C4CF6ED44F19E5FD632CDC8693D2CA5480D6D7F38813D048DAE3AB5401CF6"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build02/tool-version.txt",
+      "bytes": 340,
+      "sha256": "3D3C4CF6ED44F19E5FD632CDC8693D2CA5480D6D7F38813D048DAE3AB5401CF6"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build03/tool-version.txt",
+      "bytes": 340,
+      "sha256": "3D3C4CF6ED44F19E5FD632CDC8693D2CA5480D6D7F38813D048DAE3AB5401CF6"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build04/tool-version.txt",
+      "bytes": 340,
+      "sha256": "3D3C4CF6ED44F19E5FD632CDC8693D2CA5480D6D7F38813D048DAE3AB5401CF6"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build05/tool-version.txt",
+      "bytes": 340,
+      "sha256": "3D3C4CF6ED44F19E5FD632CDC8693D2CA5480D6D7F38813D048DAE3AB5401CF6"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build06/clock-drivers.txt",
+      "bytes": 267,
+      "sha256": "1AAE2081C543C5CF8233DE3D9706A18FC5FA200A2E18BEF2E5A09BC5A079E0EC"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build06/clock-registers-all-segments.tsv",
+      "bytes": 438648,
+      "sha256": "04B695E4A04A84622E764EE127B27E11ED600242B212156D0522A5688A224CAD"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build06/clock-registers.tsv",
+      "bytes": 1032,
+      "sha256": "662A14C72C5066BCD38E91DBB67456179F3FBC0F6255C8668A1358D90A6F1321"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build06/clocks.rpt",
+      "bytes": 2681,
+      "sha256": "263B2A1CFB9D5751AB99A28C8A1DF97BC1BD87A19D289C89AA5BEE403001C127"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build06/drc.rpt",
+      "bytes": 11426,
+      "sha256": "9F124E2A98B7E9C362E265604750505734012C1438664C75E35B5706785FC0DA"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build06/io.rpt",
+      "bytes": 124838,
+      "sha256": "1561E494117D115C896AE0F526881DBECA048E842F0D1FCC67F019D935A1EC61"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build06/methodology.rpt",
+      "bytes": 25200,
+      "sha256": "413FDCBF0F86C79EAB5FC1BBDB3FA8CA0FDE6D35BFC0A210A7D0A0AD1302D6A7"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build06/system_c_adapter_bd.tcl",
+      "bytes": 22696,
+      "sha256": "9DDE69034BB4F00D206ADA825BE32CE842D772628A607021AF2443DB67718DE3"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build06/timing_summary.rpt",
+      "bytes": 74420,
+      "sha256": "4953EC14DD34C40AEEE3C2711BC8036701B80E65814FC1F14CFAAA8E3099A4BC"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build06/tool-version.txt",
+      "bytes": 340,
+      "sha256": "3D3C4CF6ED44F19E5FD632CDC8693D2CA5480D6D7F38813D048DAE3AB5401CF6"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build06/utilization.rpt",
+      "bytes": 21084,
+      "sha256": "FD8AF0DBE42851746F3407D939B3AC7829254BE00244231FE459BEABEF83D7C8"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-closeout01/build-audit.json",
+      "bytes": 5494,
+      "sha256": "814EB9CA02A4F7CA7BACECAF19FADA0F90E4C45573C99AA02560B31ACC592D94"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-ps01/arguments.json",
+      "bytes": 1126,
+      "sha256": "B636C5A043ACD1FCF13CE695031B5BB4D08EEDCD60B03E5D72FA4BDCE53071F4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-ps01/compiler.txt",
+      "bytes": 244,
+      "sha256": "26615AA13A55A9F4F299118F7C03BE2504BAB2201DC2CE4F303E983EA50DC2F1"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-ps01/four_mic_capture.map",
+      "bytes": 200162,
+      "sha256": "2892E0FCFA5820C2F6CBB6B0CAA6FAC7F3B9881DC3A0200718D49E910F485E18"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim-export01/result.json",
+      "bytes": 169,
+      "sha256": "AD38C37710598A20AE452293C2B400CD2BBCFF8436F8161D6ACF618DBF69191E"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim-export01/run-0/metadata.json",
+      "bytes": 1907,
+      "sha256": "E8D002A7DB83B20E8269A8F209239477D60DA1456D729AC3AF30DF34C60F67D5"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim-export01/run-0/samples.csv",
+      "bytes": 910,
+      "sha256": "6804FF103EA3353666C0A25BB39E8587959C71AFDFCD4ABCD3E2EAD9FA9B87C8"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim-export01/run-1/metadata.json",
+      "bytes": 1907,
+      "sha256": "4F2C39C1C116A1F608B25F13F460CE1B2E59F0B5F58E743779FC1DDC7EB4223D"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim-export01/run-1/samples.csv",
+      "bytes": 910,
+      "sha256": "18A50A1379F8998DEC6303821C42537C2A00B6DA77196D3F12C0B6B523638F04"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim-export01/run-2/metadata.json",
+      "bytes": 1890,
+      "sha256": "4429D5541501CC932CE6BD148C5DC794E287B5FAF31416C802528912CFE98F50"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim-export01/run-2/samples.csv",
+      "bytes": 748,
+      "sha256": "9D799296E94A0EEC083D7595592B9BCF0F6C5BF0F0B80CB3ABC51CA02DB05A8A"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim01/accepted_words.csv",
+      "bytes": 7902,
+      "sha256": "50D6B891DAED6505BA50BD80B88B883757A8D6F386C97D3376C6DCB3EC27C700"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim01/compile-console.txt",
+      "bytes": 767,
+      "sha256": "730371982E0C78B58FEDA87AE61D717C86CA95BAC9B22A4DF482A4BE41158EBE"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim01/compile-tb-console.txt",
+      "bytes": 260,
+      "sha256": "96141466ED2471F230BADB267020E5BC74D5983D060DA05F1FA968C9499F65D4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim01/elaborate-console.txt",
+      "bytes": 783,
+      "sha256": "64FF3BF5792820FFA9A052CF5479916755578F6D361C71538E57D0A975FC53B0"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim01/simulate-console.txt",
+      "bytes": 1360,
+      "sha256": "F0A22DBAECA72152CC9567161F1E86B1C2A450E173FA4E7AE785990A7B16C2FA"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-source-nets.json",
+      "bytes": 4225,
+      "sha256": "7B07DD9C4FB645A86FAF9AF4871E22E531918B89EB8F5739BDCCF378D3D73653"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/files-run02.json",
+      "bytes": 5170,
+      "sha256": "CCACCE0B024B4DCD976F08E921FD40198996830479E89A69A6B9937614F68C9E"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/inspect_mref.tcl",
+      "bytes": 56,
+      "sha256": "45A74DC1424F16DDC9667EDE549E050F756BAC8D9F829DD01D2FABA74E915946"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/one-build-01/tool-version.txt",
+      "bytes": 340,
+      "sha256": "3D3C4CF6ED44F19E5FD632CDC8693D2CA5480D6D7F38813D048DAE3AB5401CF6"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/one-build-02/tool-version.txt",
+      "bytes": 340,
+      "sha256": "3D3C4CF6ED44F19E5FD632CDC8693D2CA5480D6D7F38813D048DAE3AB5401CF6"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/ps-preflight-01/arguments.json",
+      "bytes": 1324,
+      "sha256": "9157FB31A78D9115E1F01F543EC6DB5C4027EBDF8CC6CFCA8D77D37CDD88323A"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/ps-preflight-01/compiler.txt",
+      "bytes": 244,
+      "sha256": "26615AA13A55A9F4F299118F7C03BE2504BAB2201DC2CE4F303E983EA50DC2F1"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/ps-preflight-02/arguments.json",
+      "bytes": 1126,
+      "sha256": "09FEC616BD76B2CFCB788DE62D255B9E77BFEE4EA6AF3AAF40279D750DA63946"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/ps-preflight-02/compiler.txt",
+      "bytes": 244,
+      "sha256": "26615AA13A55A9F4F299118F7C03BE2504BAB2201DC2CE4F303E983EA50DC2F1"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/ps-preflight-02/four_mic_capture.map",
+      "bytes": 200122,
+      "sha256": "02C0E6F1C30BF8CC14DC6D5964F253F074E4A16B047B15729149406971E66E37"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/accepted_words.csv",
+      "bytes": 7902,
+      "sha256": "50D6B891DAED6505BA50BD80B88B883757A8D6F386C97D3376C6DCB3EC27C700"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/compile-console.txt",
+      "bytes": 767,
+      "sha256": "730371982E0C78B58FEDA87AE61D717C86CA95BAC9B22A4DF482A4BE41158EBE"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/compile-tb-console.txt",
+      "bytes": 260,
+      "sha256": "96141466ED2471F230BADB267020E5BC74D5983D060DA05F1FA968C9499F65D4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/elaborate-console.txt",
+      "bytes": 783,
+      "sha256": "64FF3BF5792820FFA9A052CF5479916755578F6D361C71538E57D0A975FC53B0"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/python-tests.txt",
+      "bytes": 573,
+      "sha256": "8B6BB66836D0D7DC82F00602BDE5DFEC8F405BCA9325C3ACC5948A5AD2D81774"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/simulate-console.txt",
+      "bytes": 1277,
+      "sha256": "401BA6F69B4E5DE477DA4EA93B64726A6788395ADC75665C92A77500C7732CB8"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/synthetic-export/result.json",
+      "bytes": 169,
+      "sha256": "AD38C37710598A20AE452293C2B400CD2BBCFF8436F8161D6ACF618DBF69191E"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/synthetic-export/run-0/metadata.json",
+      "bytes": 1907,
+      "sha256": "E8D002A7DB83B20E8269A8F209239477D60DA1456D729AC3AF30DF34C60F67D5"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/synthetic-export/run-0/samples.csv",
+      "bytes": 910,
+      "sha256": "6804FF103EA3353666C0A25BB39E8587959C71AFDFCD4ABCD3E2EAD9FA9B87C8"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/synthetic-export/run-1/metadata.json",
+      "bytes": 1907,
+      "sha256": "4F2C39C1C116A1F608B25F13F460CE1B2E59F0B5F58E743779FC1DDC7EB4223D"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/synthetic-export/run-1/samples.csv",
+      "bytes": 910,
+      "sha256": "18A50A1379F8998DEC6303821C42537C2A00B6DA77196D3F12C0B6B523638F04"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/synthetic-export/run-2/metadata.json",
+      "bytes": 1890,
+      "sha256": "4429D5541501CC932CE6BD148C5DC794E287B5FAF31416C802528912CFE98F50"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/synthetic-export/run-2/samples.csv",
+      "bytes": 748,
+      "sha256": "9D799296E94A0EEC083D7595592B9BCF0F6C5BF0F0B80CB3ABC51CA02DB05A8A"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/integrate_one.tcl",
+      "bytes": 3420,
+      "sha256": "857E5D234E3A9A58456C8E410943DD972018239B7C6335F3288CC6F455B81805"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/audit_capture.py",
+      "bytes": 8040,
+      "sha256": "D89B8DAD8D9F9ED06D2825E2A790E1EF87BF2F9717C9775A89F8D1AE59407986"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/audit_listening.py",
+      "bytes": 1996,
+      "sha256": "A97226F788A53E23AE9AE293C7B7B44576667F25B75A364E5D48F00E760C4F60"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/B-HANDOFF.md",
+      "bytes": 3443,
+      "sha256": "CC8022FF19372D17EB2EC5241A770821CE7EC55257C75430414A8A215F47E399"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/build-snapshot/app/compile_commands.json",
+      "bytes": 1381,
+      "sha256": "EE5B655EDFF74801D2535A7A23DAF17A35F3919F18831E8CD1881214AEFCFEA8"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/build-snapshot/app/launch.json",
+      "bytes": 1953,
+      "sha256": "822B59518DBC8513BEE12C465CA4D192ADBEB28FC9946FACAFF0622B5862C17C"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/build-snapshot/app/lscript.ld",
+      "bytes": 6306,
+      "sha256": "8872FB0AF0F6BEC969E63D2E5D170C1FC058C782C6924D70697B352AEAB55DD4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/build-snapshot/app/main_four_capture.c",
+      "bytes": 8381,
+      "sha256": "C7EA5352A172287AA4890A948B4AEB00C48CC11ACAA044EC909B2EE24980B7DE"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/build-snapshot/app/memory.map",
+      "bytes": 208597,
+      "sha256": "789C0D6EA47E64B1B06B5A8EA4FE8F2C95C90E74DC8915BF42F6798FA184D068"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/build-snapshot/app/ps7_init.tcl",
+      "bytes": 27896,
+      "sha256": "A158FCC7D723B21003864159006E781FFAF5E8DF24EC9B1D9279F9D14FF3EE5E"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/build-snapshot/app/vitis-comp.json",
+      "bytes": 444,
+      "sha256": "DA57FD2BA29B0B9E52D04AAFC49156F5A063AFF348DF0DB40F5CEA38FFC240E5"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/build-snapshot/checks.json",
+      "bytes": 27467,
+      "sha256": "824AA6FC7668077F95BC5603D5CA252B7D1BD60420C75E050D5A96141AAB1F87"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/build-snapshot/manifest.json",
+      "bytes": 6325,
+      "sha256": "D50947E896646B05BCC7A4AE0DD398D68BF388ED9550932B18CF6BAB4EF86484"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/build-snapshot/one/effective_c_adapter_io.xdc",
+      "bytes": 913,
+      "sha256": "E7501D4DD297FC38922092024649C2D886A62CCC3670BA92805DB5DCEE2FC0D4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/build-snapshot/one/four_mic_top.v",
+      "bytes": 3180,
+      "sha256": "9F08E6D00771E7A028D418F011D567D7540F08FDEFEF9B8160FD4E9A2C97D128"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/build-snapshot/one/pcm4_capture_axis.v",
+      "bytes": 3354,
+      "sha256": "3D322891CE5FEEAA945D14ECE3891EBED043CE34713D46CF2CD67B883C7845A2"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/build-snapshot/one/pdm_cic3.v",
+      "bytes": 1153,
+      "sha256": "A80C176053688662CD8BB47F98EDCADEB9B758D514365724FD8B6FFD2120573D"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/build-snapshot/one/system.bd",
+      "bytes": 50466,
+      "sha256": "0BE89E6DA3F914E4EB914E92C79F8FB774942723DB5BF4CB02E123169DFCB181"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/build-snapshot/one/timing_summary.rpt",
+      "bytes": 516552,
+      "sha256": "5629D3D2F52D711AEC7922244740E3A23B92BE047004771E55498C02EABAE3E6"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/build-snapshot/platform/vitis-comp.json",
+      "bytes": 2174,
+      "sha256": "616B9126F1798B6E13379F2C7C26D366F2464DDC5D54BBE78A0F8FF9DEA668A4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/build-snapshot/platform/xparameters.h",
+      "bytes": 11449,
+      "sha256": "7C212413CDBC30BC330D20C2D7A006CF2052DCDAD9ED936FC01490C66DAF3337"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/HANDOFF-STATUS.md",
+      "bytes": 2122,
+      "sha256": "8304EDC1616290500C590A71F81AEA7B729A3804CA272390EF03F185B3D74BC2"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/handoff/README.md",
+      "bytes": 830,
+      "sha256": "767C6DE6679E8A5A8326ABBD997C388C26769B0DA4EA9256420695CCC7EBB261"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/make_handoff.py",
+      "bytes": 3694,
+      "sha256": "6D7205B49689EB2153FE02DF4F3704873A441E8FED5B4FE597BCC0085530BE67"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/package-result.json",
+      "bytes": 385,
+      "sha256": "18A3BF2CCBC60F7ADD43E0F3BE49342943B8997E0C9D68C4B876E58C30019325"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/portable-check01/capture-tests.txt",
+      "bytes": 755,
+      "sha256": "EC210E6915515005466E096EB01E68FC11DDB906444786A9E8A7DD712448BDD4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/portable-check01/export-tests.txt",
+      "bytes": 573,
+      "sha256": "8B6BB66836D0D7DC82F00602BDE5DFEC8F405BCA9325C3ACC5948A5AD2D81774"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/portable-check01/h1-tests.txt",
+      "bytes": 151,
+      "sha256": "28C72C9FD0F466AB1C2487ED451FA838721401E4851878B14C1C56622593CAD7"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/portable-check01/integrity.json",
+      "bytes": 5292,
+      "sha256": "CFB2AF535A64BFB2BE1FC3EB4633624D4305F6DF5D660BBC632DD5C4B17E1A61"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/portable-check01/listening.json",
+      "bytes": 2494,
+      "sha256": "690774123EDD96C21A05F6569DEFD35462ED655BED836683D99CB459AB05823B"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/portable-check01/reader.stderr.txt",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/portable-check01/reader.stdout.json",
+      "bytes": 3540,
+      "sha256": "10E0481382A1E7488D49C8B33593A511792CD21A3F57989F6DEB977089D71C16"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/REVIEW.md",
+      "bytes": 7929,
+      "sha256": "6D134C0A04E5571FC253D3A45BDA6FF7B73AD9F641B3BA75EB9ECD38107BEDC4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/run01/audit_capture-original.py",
+      "bytes": 7832,
+      "sha256": "10E8494C5FE7BB5424C9F1F8915D358EF0B7C0F674924435C2262AD436EEFF29"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/run01/integrity.json",
+      "bytes": 26774,
+      "sha256": "D7FB9F2FC4B5423E111D1F9FAFA99D5CEA32FF3005640887B770CE2EE9062B42"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/run01/reader.stderr.txt",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/run01/reader.stdout.json",
+      "bytes": 3540,
+      "sha256": "10E0481382A1E7488D49C8B33593A511792CD21A3F57989F6DEB977089D71C16"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/run02/capture-gate-tests.txt",
+      "bytes": 755,
+      "sha256": "1C4879971A322B20A0E6931EA56629658D06BA49C0EB121AA825D5E84503B227"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/run02/export-tests.txt",
+      "bytes": 573,
+      "sha256": "5C77B6F755E112126EBDEF43E775F919F741308770D6056844777093F1D009DF"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/run02/h1-tests.txt",
+      "bytes": 151,
+      "sha256": "73925CB8EE878180F02699948BA370C8A1C74D2EBABA6E07FFB2239315263869"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/run02/integrity.json",
+      "bytes": 5013,
+      "sha256": "77A724D994ADEC34FFE09DFE3924810A2AA646886AB7416768232D17F28BEDB2"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/run02/listening.json",
+      "bytes": 2494,
+      "sha256": "690774123EDD96C21A05F6569DEFD35462ED655BED836683D99CB459AB05823B"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/run02/reader.stderr.txt",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/run02/reader.stdout.json",
+      "bytes": 3540,
+      "sha256": "10E0481382A1E7488D49C8B33593A511792CD21A3F57989F6DEB977089D71C16"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/snapshot_build.py",
+      "bytes": 5449,
+      "sha256": "E7982728FA81FF5A90FC215495F6FBC0477082C157BF009F9E127B7ABA9677C0"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/review/dupont-20260911/verify_manifest.py",
+      "bytes": 654,
+      "sha256": "A98A4E93B151BC87E13B773DE9A6D08B65690815E4EDEDF27E3FAC52BDB5FF77"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/run_sim.ps1",
+      "bytes": 1146,
+      "sha256": "B191282E2512ECDF7E75E67E13B1246CA987C7146A4CED2E69613C5534E29B8F"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/audit_c_build.py",
+      "bytes": 4696,
+      "sha256": "553541CD35D60317C2154FA2608779398C155412F48CE159AD1ADA2926B8517B"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/c_adapter_mapping.json",
+      "bytes": 1780,
+      "sha256": "7227C33E1945DAFF14D4FE5A42D273980062656E33E510312E64839AEB097FF5"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/check_sim_export.py",
+      "bytes": 1926,
+      "sha256": "D94143DB0C567060CEDC22F8B6DE21096A8895F320A61023EDFA8BEFC05773D5"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/export_c_capture.py",
+      "bytes": 3998,
+      "sha256": "C23B8D1ADB2613A838F721664FD643AAC032C61F27EBD103D84B3E42262014EE"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/export_four.py",
+      "bytes": 4958,
+      "sha256": "E89C82945367EF3E06113D9C18EDBB3276E1BA658B2594E3F79E28A960422526"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/four_mic_io.xdc",
+      "bytes": 913,
+      "sha256": "E7501D4DD297FC38922092024649C2D886A62CCC3670BA92805DB5DCEE2FC0D4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/inspect_c_adapter.py",
+      "bytes": 3892,
+      "sha256": "07BCD9A29A13FC43BA70B4AA72A8195C27A493EADBA89983B2C602C81D33325F"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/inspect_clock_netlist.tcl",
+      "bytes": 927,
+      "sha256": "88720340437097962864702026556B24F0E1B3FD0F5D35F48FFE4D6449EEA21F"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/ps/lscript.ld",
+      "bytes": 6306,
+      "sha256": "8872FB0AF0F6BEC969E63D2E5D170C1FC058C782C6924D70697B352AEAB55DD4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/ps/main_four_capture.c",
+      "bytes": 8381,
+      "sha256": "C7EA5352A172287AA4890A948B4AEB00C48CC11ACAA044EC909B2EE24980B7DE"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/rtl/four_mic_top.v",
+      "bytes": 3180,
+      "sha256": "9F08E6D00771E7A028D418F011D567D7540F08FDEFEF9B8160FD4E9A2C97D128"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/rtl/pcm4_capture_axis.v",
+      "bytes": 3354,
+      "sha256": "3D322891CE5FEEAA945D14ECE3891EBED043CE34713D46CF2CD67B883C7845A2"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/rtl/pdm_cic3.v",
+      "bytes": 1153,
+      "sha256": "A80C176053688662CD8BB47F98EDCADEB9B758D514365724FD8B6FFD2120573D"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/sim/tb_four_mic.sv",
+      "bytes": 7432,
+      "sha256": "3837CA60690B1F6D978A51D471DBDADB30C352BD0FFCA5C816B5F826E27B9820"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/test_c_capture_gate.py",
+      "bytes": 2133,
+      "sha256": "132AC4AC4F0F505A8CEAE6AFC657C50BB7450D4C76D190EA49B50EC8BC182578"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/test_export.py",
+      "bytes": 2058,
+      "sha256": "7EFCEC6C87B2D9831735009863C9B5E64C37076AFD50672FB75FF3C91E141670"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/dupont-quiet-01/raw.bin",
+      "bytes": 1024000,
+      "sha256": "38D3A75B352EFD25A23AFD82C2838CD83685C9167351D8EDB09C297F2E801D8A"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/dupont-quiet-01/serial.log",
+      "bytes": 7478,
+      "sha256": "0CCF9D5DFA46C30B0C7068587BA5A804C0BD091A5235BA73E0F04A5D177B8B2C"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/dupont-reader-check-01.log",
+      "bytes": 7082,
+      "sha256": "C482F3C7BE021A569FA0DFEED9327631D2230006FBE33AE7755801591A6C2272"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/dupont-speech-01/raw.bin",
+      "bytes": 1024000,
+      "sha256": "78DB105AB1FA216BAFBB06B7FE73D989E88E0CD0BE95F419B967E61637AF272C"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/captures/dupont-speech-01/serial.log",
+      "bytes": 7447,
+      "sha256": "DC5BF4756D5997340FD24352D651263C73DAD429FE1E336E935DFC3FEC1A1135"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build-audit-final.log",
+      "bytes": 45,
+      "sha256": "BB9D780299791BDD4F8C49966AFBEB36E74886F30D038E601AE496B8B0F55EBC"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build-audit-retry.log",
+      "bytes": 849,
+      "sha256": "ABC0B76AAFF63407C336015922B14970C03C49C78C410292A900B7B9657C4EE6"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build-audit.log",
+      "bytes": 856,
+      "sha256": "3B8DD05339EF580102EC38B095EBF8E43238337F470B831EFC59A8F60D9603E8"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build01/vivado.jou",
+      "bytes": 2099,
+      "sha256": "DB956E4D0841AA04C2C0E410654F01C25256B32283CAAF39A852ED01B71786D8"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build01/vivado.log",
+      "bytes": 33715,
+      "sha256": "01BD695BAE6F58C0D595695435D27A6E0C4C4899BE64034C0A308E618ADC0010"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build02/vivado.jou",
+      "bytes": 2099,
+      "sha256": "A47D68BA2F3E536ED4C11E6879E578BF306B4CD45D432C52C9C325B8A634158A"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build02/vivado.log",
+      "bytes": 33333,
+      "sha256": "B962DF7408D92C4E5B38D1A4E99C0B517F94F7ABC7145CB8797096DD6AE5FE1D"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build03/vivado.jou",
+      "bytes": 2099,
+      "sha256": "5F3553EEE7E588474970569D29C78CB4244E41F415236043CF655B9C6DECEB1E"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build03/vivado.log",
+      "bytes": 34197,
+      "sha256": "18DAFE1F8AFAF5CB41EB4BEEF32A0FDBC72373EFA541AEAB87AC50D315E59F39"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build04/vivado.jou",
+      "bytes": 2099,
+      "sha256": "C87C290641D3125A2D9DB798FFCD46431F3D9B055FB8DCDA22E84C2941C3E41C"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build04/vivado.log",
+      "bytes": 34938,
+      "sha256": "FD0CBE2A0E4C70733AF34995F7BACB0C984EC7E1CA9566335FD1ABFF4F4F971D"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build05/vivado.jou",
+      "bytes": 2098,
+      "sha256": "F9BCA13867AD3C6F7456C02293C11E58D67FAC4112DCFEDD642D28943BB0C5E5"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build05/vivado.log",
+      "bytes": 33895,
+      "sha256": "2AC20890953E22CECC90918BD297F4C8383C90F683F448B1EFDEDFE2BC583D96"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build06/clock-netlist-compact.log",
+      "bytes": 30997,
+      "sha256": "82034F8E3C18609DB5E5F4293AB5B20B220217ED4F33EC81581044FA7ADC7C00"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build06/clock-netlist-inspect.log",
+      "bytes": 31007,
+      "sha256": "86849A59B4F2D01F51239DF7746BFF1E4F158E831B13A0EA8796C30EAC1D76F0"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build06/vivado.jou",
+      "bytes": 2099,
+      "sha256": "2246775F904B1FC09053D45E8DD3742B9788E4BBF6EDB6D247D5A552CEC4BB0B"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-build06/vivado.log",
+      "bytes": 302232,
+      "sha256": "8F37ED2313EFC45EF5F03BF5CA76B8B1354D3E4DA868A6A6B103EFD0E79E2384"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-capture-gate.log",
+      "bytes": 755,
+      "sha256": "2965330059E2C97675DAD2DA6A29E792F46252E6629A9433643F5EC8F9C05741"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-closeout01/software-tests.log",
+      "bytes": 1349,
+      "sha256": "19DFE811E93140657BA1A32A26AC510BF62FA02E786FB6D01F68C96BCDBC2E6F"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-export-regression.log",
+      "bytes": 573,
+      "sha256": "5C77B6F755E112126EBDEF43E775F919F741308770D6056844777093F1D009DF"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-ps01/build.log",
+      "bytes": 203,
+      "sha256": "632FA25155685C0A9C0FA31805C8505C99570F27A48C613F4723F82302F1A96C"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim-export01/run-0.bin",
+      "bytes": 608,
+      "sha256": "B826AF9D052382AB1744D47C7098B4D202E6F7BF86C10B257658D0613CB7F2A4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim-export01/run-0/raw.bin",
+      "bytes": 608,
+      "sha256": "B826AF9D052382AB1744D47C7098B4D202E6F7BF86C10B257658D0613CB7F2A4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim-export01/run-1.bin",
+      "bytes": 608,
+      "sha256": "24BF8ED56EEFEFCE8FE6BC417FB9E114F414B692E83599E63D34B50FED0DFF5D"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim-export01/run-1/raw.bin",
+      "bytes": 608,
+      "sha256": "24BF8ED56EEFEFCE8FE6BC417FB9E114F414B692E83599E63D34B50FED0DFF5D"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim-export01/run-2.bin",
+      "bytes": 608,
+      "sha256": "8A240603ED1273445ABE95B8B10EA4EB18DD1F8EA05FE894D4D2799D7476E040"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim-export01/run-2/raw.bin",
+      "bytes": 608,
+      "sha256": "8A240603ED1273445ABE95B8B10EA4EB18DD1F8EA05FE894D4D2799D7476E040"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim01/xelab.log",
+      "bytes": 766,
+      "sha256": "F057266ED26D7BE29B963152751C3C7C01D28DB6E0CB427C576CB749E97A7E7E"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim01/xsim.jou",
+      "bytes": 1199,
+      "sha256": "A71831ED17027D65169C5BC30F47997953488A1A5ED702128BE6A585DEB9E631"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim01/xsim.log",
+      "bytes": 2085,
+      "sha256": "FA97FBAEC5BD94D6D89A8FF2F38FA78F9AC90B578FCB4C036568A99312B61F41"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/c-adapter-sim01/xvlog.log",
+      "bytes": 258,
+      "sha256": "4F8818DD3B82EE22274A1510AEEC5A407A0BE8894CE238079EEC129AFF9B6C03"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/one-build-01/vivado.jou",
+      "bytes": 2068,
+      "sha256": "425F06B2D7D8166D91ADF63CD3AD7BB06C50B8F0BEDFF024DBBC421B51C52C5A"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/one-build-01/vivado.log",
+      "bytes": 33085,
+      "sha256": "E49EDDE9869B75B0373D5A7078EA222109C9A5CC3447393D828CA0E8025D9194"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/one-build-02/vivado.jou",
+      "bytes": 2068,
+      "sha256": "2AD5D98F611D6D6AA95E3831C0E9B9FDEC1102EAD77A14A36A9AAC00DB9CE783"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/one-build-02/vivado.log",
+      "bytes": 31659,
+      "sha256": "1E4B21BD0F564A150C22B0AB8182296E2EFA5627260063E4DF42CCC122BA5D2A"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/ps-preflight-01/build.log",
+      "bytes": 118,
+      "sha256": "C5FA65E1FA66BDA8EC2573772ECEBC4221AF3283587BC9ECDCD4F8E34AB96265"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/ps-preflight-02/build.log",
+      "bytes": 203,
+      "sha256": "AC9B05A6FA5788522023B4CEA00F810615C5854FA6363C0C5F1E569CFE14E896"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/synthetic-export/run-0.bin",
+      "bytes": 608,
+      "sha256": "B826AF9D052382AB1744D47C7098B4D202E6F7BF86C10B257658D0613CB7F2A4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/synthetic-export/run-0/raw.bin",
+      "bytes": 608,
+      "sha256": "B826AF9D052382AB1744D47C7098B4D202E6F7BF86C10B257658D0613CB7F2A4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/synthetic-export/run-1.bin",
+      "bytes": 608,
+      "sha256": "24BF8ED56EEFEFCE8FE6BC417FB9E114F414B692E83599E63D34B50FED0DFF5D"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/synthetic-export/run-1/raw.bin",
+      "bytes": 608,
+      "sha256": "24BF8ED56EEFEFCE8FE6BC417FB9E114F414B692E83599E63D34B50FED0DFF5D"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/synthetic-export/run-2.bin",
+      "bytes": 608,
+      "sha256": "8A240603ED1273445ABE95B8B10EA4EB18DD1F8EA05FE894D4D2799D7476E040"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/evidence/run02/synthetic-export/run-2/raw.bin",
+      "bytes": 608,
+      "sha256": "8A240603ED1273445ABE95B8B10EA4EB18DD1F8EA05FE894D4D2799D7476E040"
+    }
+  ]
+}
