@@ -1,0 +1,12 @@
+{
+  "status": "RESEARCH_NOT_FROZEN_FOR_DEPLOYMENT",
+  "fft_candidate_commit": "ac0ff38e954dac094fd84e28b329dcb24dded7fb",
+  "seeds": [2026091601, 2026091602],
+  "directions_degrees": [[0, 0], [90, 0], [0, 90]],
+  "scenarios": ["clean", "noise0", "tone900", "zero", "weak", "missing_channel"],
+  "common_peak_target": 0.5,
+  "weak_common_peak_target": 0.00000095367431640625,
+  "tau_fraction_bits": 12,
+  "scope": "six-mic synthetic offline arithmetic chain through TDOA; original floating LS diagnostic only; no tracker, audio or PHAT RTL acceptance",
+  "comparison": "Report all mask, validity, peak and tau differences; no post-hoc acceptance threshold or filtering of failed cases."
+}

@@ -1,0 +1,119 @@
+{
+  "status": "COMPLETED_RESEARCH_COMPARISON_NOT_ACCEPTANCE",
+  "frames": 36,
+  "pairs": 540,
+  "interpolation_sign_checks": 5,
+  "upstream_invalid_injection_pass": true,
+  "positive_one_saturations": 6144,
+  "scenario_stats": {
+    "clean": {
+      "frames": 6,
+      "pairs": 90,
+      "float_valid_pairs": 90,
+      "fixed_valid_pairs": 90,
+      "valid_changes": 0,
+      "mask_changed_bins": 0,
+      "mask_changed_vs_pcm_float": 0,
+      "peak_changes": 0,
+      "max_abs_tau_delta_samples": 0.00011248958628851113,
+      "float_valid_directions": 6,
+      "fixed_tau_float_valid_directions": 6,
+      "max_direction_difference_degrees": 0.0
+    },
+    "noise0": {
+      "frames": 6,
+      "pairs": 90,
+      "float_valid_pairs": 85,
+      "fixed_valid_pairs": 85,
+      "valid_changes": 0,
+      "mask_changed_bins": 0,
+      "mask_changed_vs_pcm_float": 0,
+      "peak_changes": 0,
+      "max_abs_tau_delta_samples": 0.00011719849485238715,
+      "float_valid_directions": 6,
+      "fixed_tau_float_valid_directions": 6,
+      "max_direction_difference_degrees": 0.0004167762318842433
+    },
+    "tone900": {
+      "frames": 6,
+      "pairs": 90,
+      "float_valid_pairs": 0,
+      "fixed_valid_pairs": 0,
+      "valid_changes": 0,
+      "mask_changed_bins": 0,
+      "mask_changed_vs_pcm_float": 0,
+      "peak_changes": 0,
+      "max_abs_tau_delta_samples": null,
+      "float_valid_directions": 0,
+      "fixed_tau_float_valid_directions": 0,
+      "max_direction_difference_degrees": null
+    },
+    "zero": {
+      "frames": 6,
+      "pairs": 90,
+      "float_valid_pairs": 0,
+      "fixed_valid_pairs": 0,
+      "valid_changes": 0,
+      "mask_changed_bins": 0,
+      "mask_changed_vs_pcm_float": 0,
+      "peak_changes": 0,
+      "max_abs_tau_delta_samples": null,
+      "float_valid_directions": 0,
+      "fixed_tau_float_valid_directions": 0,
+      "max_direction_difference_degrees": null
+    },
+    "weak": {
+      "frames": 6,
+      "pairs": 90,
+      "float_valid_pairs": 90,
+      "fixed_valid_pairs": 0,
+      "valid_changes": 90,
+      "mask_changed_bins": 6390,
+      "mask_changed_vs_pcm_float": 6386,
+      "peak_changes": 0,
+      "max_abs_tau_delta_samples": null,
+      "float_valid_directions": 6,
+      "fixed_tau_float_valid_directions": 0,
+      "max_direction_difference_degrees": null
+    },
+    "missing_channel": {
+      "frames": 6,
+      "pairs": 90,
+      "float_valid_pairs": 60,
+      "fixed_valid_pairs": 60,
+      "valid_changes": 0,
+      "mask_changed_bins": 0,
+      "mask_changed_vs_pcm_float": 0,
+      "peak_changes": 0,
+      "max_abs_tau_delta_samples": 0.00011248958628851113,
+      "float_valid_directions": 6,
+      "fixed_tau_float_valid_directions": 6,
+      "max_direction_difference_degrees": 0.0008792297638437137
+    }
+  },
+  "model_dll_sha256": "79ec8ccc56cd56c4277a3c8c46ed0fca8435f6e62107854414b1672eda5575ca",
+  "source_sha256": {
+    "F:\\NUEC\\review-worktrees\\member-b-fft-bitexact-01\\task-packages\\PKG-B-ALG\\tasks\\phat-fixed-03\\integration\\chain.py": "eb5c19b1ff30ec5926170c2f1c216ac764f3aa855c0d165c9822c6d59e11a9a7",
+    "F:\\NUEC\\review-worktrees\\member-b-fft-bitexact-01\\task-packages\\PKG-B-ALG\\tasks\\phat-fixed-03\\integration\\validate_chain.py": "27041c91e730bec9e0aed3dba231d1e0d95f34a06c894e9dc2ce72f8bc8aa289",
+    "F:\\NUEC\\review-worktrees\\member-b-fft-bitexact-01\\task-packages\\PKG-B-ALG\\tasks\\phat-fixed-03\\integration\\protocol.json": "b4d4eb3e56c39f238ec4251b93e574d4bedf9e32b6e9189291d8c8ffa671c627",
+    "F:\\NUEC\\review-worktrees\\member-b-fft-bitexact-01\\task-packages\\PKG-B-ALG\\payload\\model\\python\\six_mic_baseline_core.py": "23184058f08fa54af4c61b9681f2fbe40341430f0ba48f8574676f27ce4964b0",
+    "F:\\NUEC\\review-worktrees\\member-b-fft-bitexact-01\\task-packages\\PKG-B-ALG\\tasks\\phat-fixed-03\\phat_model.py": "84eaa9691f62aba7164e3172aa94b2e361cb99672647477d98f8b3f3889f3144",
+    "F:\\NUEC\\review-worktrees\\member-b-fft-bitexact-01\\task-packages\\PKG-B-ALG\\tasks\\fft-window-02\\window_model.py": "3fd314bcf6c866b2a2ed8185ea1be2dd1079d38e38dc11f5caa883b748889bce",
+    "F:\\NUEC\\review-worktrees\\member-b-fft-bitexact-01\\task-packages\\PKG-B-ALG\\tasks\\fft-bitexact-01\\compare_cmodel.py": "d14e589b559a5afbf5e1e2d6e095d54896fef1f33ffd482c5a80ad293398b1d8"
+  },
+  "dependencies": {
+    "libgmp.dll": "6eacc4642bdc714e80433757f25d0a502cac381f58ffc77ab2e748cda10f9044",
+    "libIp_floating_point_v7_1_bitacc_cmodel.dll": "64fd4bd63d0282f68fb8ad3af12b554e1cf15991ca4969ba4fe55b4e9ee45a62",
+    "libmpfr.dll": "296d4a61885652cffec89024f8be9611c0edea914337a991d2859e02ecadde1a"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "limitations": [
+    "No new XSim for this combined chain",
+    "PHAT/window/interpolation are Python integer models",
+    "Geometry bounds and LS remain float; tracker and audio not run",
+    "Positive-one and forced-invalid are software tests, not induced IP overflow recovery",
+    "Synthetic six-mic study only; shared test gain is not frozen acquisition gain"
+  ]
+}
