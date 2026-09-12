@@ -1,65 +1,43 @@
-# 声源跟随转台：成品采购方案与仿真交付
+# 分体采购与自主适配：双轴三维主用、二维兼容方案 V2.1
 
-返工复核入口：先读 `rework_notes.md`，执行 `python check_delivery.py --root .`。当前门控示例为 **556项检查**；下文及 `report.html` 中15项是原始方案快照，旧结果保存为 `results/control_checks_original.json`。物理模型与历史数值结论保持不变。清单v2依据Git blob字节，不沿用旧清单的工作区换行哈希。
+**当前采购方向：不含电机/控制器的双轴机械机构，两台电机、两路驱动、传动与输出编码器分别选购；团队完成装配、部件匹配、输出位置闭环和双轴协调调试。前期二维只动Yaw，Pitch可靠保持0°；后期三维启用两轴。**
 
-日期：2026-09-12。范围：成品选购条件、控制方案、离线动力学验证。用户确认载荷在几十克到 1 kg 内；不包含机械加工图、自制电路、采购下单或实际板上固件。
+本轮仅本地修改，未提交、未推送。具体商品SKU未冻结，当前是分体采购规格、适配路线与选型预算；不能按“1 kg”“堵转扭矩”宣传直接认定适配。
 
-**建议采用带独立承重结构的成品单轴转台，配套步进电机、驱动器和输出位置反馈。现有仿真支持下述参数范围内的方案可行性，不能替代具体商品的性能证明。**
+## 当前文件入口
 
-## 先看这些文件
+- `motor_plan.md`：当前双轴主方案，包含机构/电机/驱动分体适配、二维兼容、停止策略及比赛展示证据计划。
+- `report.html`：当前方案的离线可读页面。
+- `size_dual_axis.py`：新增解析选型预算脚本；不是双轴动力学仿真。
+- `results/dual_axis_selection_budget.json`：本轮真实执行的27项Pitch与3项Yaw预算和反例。
+- `single_axis_reference.md` / `single_axis_report.html`：原单轴方案归档，不能作为当前必买清单。
+- `validate_control.py`：556项单目标门控/故障优先级检查；未实现双轴协调控制器。
+- `check_delivery.py` / `test_delivery.py`：文件完整性及损坏反例检查。
 
-- `motor_plan.md`：完整方案、选购条件、控制流程、结果和适用边界。
-- `report.html`：可离线打开的结果概览和曲线。
-- `results/verification.json`：数值验证汇总。
-- `results/cases.csv`：149 个正常参数工况的逐项结果。
-- `simulate.py`：实际运行的动力学模型与测试入口。
-- `validate_control.py`：15 项独立的上层控制逻辑示例检查。
-- `run_all.ps1`：复跑入口，默认写入新目录，保留本次结果。
+## 新方案与历史证据
 
-## 核心结果
-
-| 检查 | 实际结果 |
+| 内容 | 状态 |
 |---|---|
-| 正常参数工况 | 149/149 最终误差 ≤1°，149/149 按时稳定 |
-| 最差最终误差 | 0.564745°；指仿真最后 0.5 秒的最大绝对误差 |
-| 90°动作最慢稳定时间 | 3.135 秒；动作规划为 3 秒 |
-| 正反往返 | 轻载与重载两项通过 |
-| 受控停止 | 独立重载用例通过 |
-| 欠扭矩反例 | 按预期失败，最终误差约 89.93° |
-| 数值步长核验 | 0.2 ms 减为 0.1 ms，三个代表工况最大角度差 0.010186° |
-| 上层逻辑 | 15 项合成输入检查通过，不等于实际控制器已实现 |
+| 双轴硬件架构、二维兼容模式 | 已形成方案 |
+| 新增输出端扭矩与停止距离预算 | 已运行，假设范围内通过；不等于商品性能认证 |
+| 两轴连续输出扭矩筛选目标 | 各≥1 N·m，具体成品仍需核实 |
+| 完整双轴动力学、联合运动、实物保持与制动 | 未验证 |
+| 原149项物理工况、误差0.565°、90°约3.135秒 | 仅旧单轴基线；本轮未改模型、未重跑，也不承诺新双轴具有同样性能 |
+| 556项门控及故障组合测试 | 原逻辑参考，不能视为三维双轴软件已实现 |
 
-## 如何复跑
+## 本地复核与复跑
 
-实测环境：Windows，Python 3.13.5、NumPy 2.3.2、Matplotlib；本机 Python 为 `D:\Python\python.exe`。其他机器需要安装 Python、NumPy 和 Matplotlib。
-
-在本文件所在目录运行：
+Python检查器需要NumPy、Pillow；历史物理模型另需Matplotlib。新增预算脚本只用Python标准库。
 
 ```powershell
-.\run_all.ps1 -PythonPath 'D:\Python\python.exe'
+python check_delivery.py --root .
+python test_delivery.py --root .
+python size_dual_axis.py --out results-reproduced-dual-axis-review
+python validate_control.py --out results-reproduced-control-review
 ```
 
-也可以分别运行：
+所有复跑输出使用新目录，不覆盖历史证据。`run_all.ps1`仍是旧单轴物理模型与门控的复跑入口，不是三维验证入口；直接调用低层 `simulate.py` 时不得写入历史results目录。
 
-```powershell
-python simulate.py --out results-new
-python validate_control.py --out results-new
-```
+本地清单按实际字节重新生成，文本为LF，PNG/NPZ保持原字节，并核对Git clean规则不会转换它们。本轮没有暂存、提交或远端校验；今后获准提交前仍应用 `check_delivery.py --write-manifest-from-index` 按暂存Git字节重建清单。
 
-预计输出：参数 JSON、逐项结果 CSV、完整时序 NPZ、四个代表工况 CSV、两张 PNG 曲线、验证 JSON 和运行日志。当前机器一次动力学复跑约 80 秒，实际时间依电脑而变。
-
-`run_all.ps1` 还会检查正常用例、往返、受控停止、数值核验与预期失败反例；失败返回非零退出码。随机参数种子固定为 20260912。`report.html` 是本次结果的快照，复跑不会自动更新它。
-
-## 数据读取
-
-```python
-import numpy as np
-a = np.load('results/traces.npz')
-t = a['t']                  # 秒，保存间隔 1 ms
-q = a['state'][:, 2, :]      # 输出轴角度，弧度
-w = a['state'][:, 3, :]      # 输出轴角速度，弧度/秒
-```
-
-`state` 的轴顺序为 时间×状态×工况，状态依次是电机角度折算到输出轴后的 x、x 的角速度、实际输出角 q、q 的角速度。正常时序的工况顺序对应 `parameters.json` 删除 `full_range` 后的顺序。全行程、往返、受控停止和欠扭矩反例单独保存。`cases.csv` 的全行程行在最后。
-
-下一步：按报告向成品供应商核实动态扭矩、实际减速比、位置反馈和停止性能。商品结构或驱动控制方式不同，应替换模型参数再评估，不能直接继承本次通过结论。
+下一步按 `motor_plan.md` 的接口表联合核对机构尺寸、电机运行力矩、传动比、驱动电流及编码器安装。Yaw 4:1、Pitch 6:1仅为候选，未冻结SKU。团队依次完成单轴调试、回差辨识、输出反馈对比、Pitch重力保持、双轴协调及二维/三维演示；这些是待完成工作。
