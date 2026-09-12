@@ -1,0 +1,216 @@
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat Sep 12 13:51:52 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source {C:/Users/Toph Beifong/.codex/visualizations/2026/09/05/01a06ff9-0287-7e00-b73d-abf12e6b3035/current_build_help_20260912.tcl} -notrace
+The command 'validate_bd_design' is auto loaded by Tcl. To explicitly load the command type 'load_features ipintegrator'.
+reset_target
+
+Description: 
+Reset target data for the specified source
+
+Syntax: 
+reset_target  [-quiet] [-verbose] <name> <objects>
+
+Usage: 
+  Name        Description
+  -----------------------
+  [-quiet]    Ignore command errors
+  [-verbose]  Suspend message limits during command execution
+  <name>      List of targets to be reset, or 'all' to reset all generated 
+              targets
+  <objects>   The objects for which data needs to be reset
+
+Categories: 
+Project, IPFlow
+
+Description:
+
+  Remove the current target data for the specified IP core. This deletes any
+  files that were delivered during generation of the specified targets. This
+  does not remove the core from the current project, but does remove the
+  associated target data from its referenced location.
+
+Arguments:
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <name> - (Required) Specifies the name of the type of target to reset.
+  Valid values are:
+
+   *  all - Reset all targets for the specified core.
+
+   *  synthesis - Reset the synthesis netlist for the specified core. This
+      will remove the netlist files for the specified core.
+
+   *  simulation - Reset the simulation netlist for the specified core.
+
+   *  instantiation_template - Reset the instantiation template for the
+      specified core.
+
+  <objects> - (Required) The IP core objects to remove the target data from.
+
+Examples:
+
+  The following example resets the instantiation template for the specified
+  IP core:
+
+    reset_target instantiation_template [get_ips blk_mem*] 
+    
+
+See Also:
+
+   *  generate_target
+
+generate_target
+
+Description: 
+Generate target data for the specified source
+
+Syntax: 
+generate_target  [-force] [-quiet] [-verbose] <name> <objects>
+
+Usage: 
+  Name        Description
+  -----------------------
+  [-force]    Force target data regeneration
+  [-quiet]    Ignore command errors
+  [-verbose]  Suspend message limits during command execution
+  <name>      List of targets to be generated, or 'all' to generate all 
+              supported targets
+  <objects>   The objects for which data needs to be generated
+
+Categories: 
+Project, IPFlow, IPIntegrator
+
+Description:
+
+  This command generates target data for the specified IP objects (get_ips)
+  or source file for IP cores (.xci and .xco), DSP modules (.slx or .mdl), or
+  block designs (.bd). The target data that is generated are the files
+  necessary to support the IP or block design through the FPGA design flow.
+
+  The instantiation template, synthesis netlist, and simulation netlist are
+  standard targets. However, each IP in the catalog may also support its own
+  set of targets. You can view the available targets on an object by
+  examining the SUPPORTED_TARGETS property, or you can use the list_targets
+  command to list the targets for design source file.
+
+Arguments:
+
+  -force - (Optional) Force target data regeneration, and overwrite any
+  existing target data files. Without -force, the tool will not regenerate
+  any target data that is up-to-date.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <name> - (Required) The names of the types of target data to create for the
+  specified source. The specific targets supported by an IP core are listed
+  in the SUPPORTED_TARGETS property on the object. You can query this
+  property to see which targets a specific object supports. Standard values
+  are:
+
+   *  all - Generate all targets for the specified IP or file, except the
+      example project.
+
+      Note: You can generate an example project for an IP core using the
+      open_example_project command.
+
+   *  instantiation_template - Generate the Instantiation template used to
+      add the RTL module definition for the IP core into the current design.
+      The instantiation template can be copied into any desired level of the
+      design hierarchy.
+
+   *  synthesis - Synthesis targets deliver HDL files that are used during
+      synthesis for native IP, or deliver a synthesized netlist file (DCP)
+      generated by Vivado synthesis.
+
+   *  simulation - Simulation targets deliver HDL files that are used in
+      simulation.
+
+   *  implementation - Implementation generates the necessary data for
+      implementing the IP core, DSP module, or Embedded Processor in the
+      current design.
+
+  <objects> - (Required) The objects to generate the target from. Supported
+  objects can include IP core objects (get_ips), or the source files (.xci or
+  .xco), block design files (.bd) from IP integrator, and DSP modules (.slx
+  or .mdl) imported from System Generator.
+
+  Note: Use get_files to specify a file object, rather than specifying a file
+  name.
+
+Examples:
+
+  This example generates the change log for all of the IP cores in the
+  current project, forcing regeneration of any targets that are up-to-date:
+
+    generate_target changelog [get_ips] -force 
+    
+
+  The following example generates the instantiation template and synthesis
+  targets for all of the IP cores in the current project:
+
+    generate_target {instantiation_template synthesis} [get_ips] 
+    
+
+  Note: Note the use of the braces to pass the list of targets to the
+  command. The absence of the -force option means that only out-of-date
+  targets will be regenerated.
+
+  The following example generates all targets for the specified block design:
+
+    generate_target all \  
+    [get_files  C:/Data/project_mb/project_mb.srcs/sources_1/bd/base_mb/base_mb.bd] 
+    
+
+  Note: The use of get_ips is not supported to generate targets for
+  individual IP within block designs. The tool will return an error.
+
+  The following queries the SUPPORTED_TARGETS property of the specified IP
+  object, and then generates the example project for the IP:
+
+    get_property SUPPORTED_TARGETS [get_ips blk_mem*]  
+    open_example_project -dir C:/Data/examples -force [get_ips blk_mem*] 
+    
+
+See Also:
+
+   *  add_files
+   *  create_ip
+   *  import_ip
+   *  list_targets
+   *  open_example_project
+   *  read_ip
+   *  report_property
+   *  reset_target
+
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 12 13:51:55 2026...
+
