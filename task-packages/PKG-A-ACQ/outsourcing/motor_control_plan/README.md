@@ -1,6 +1,6 @@
 # 声源跟随转台：成品采购方案与仿真交付
 
-返工复核入口：先读 `rework_notes.md`，执行 `python check_delivery.py --root .`。当前门控示例为 **380项检查**；下文及 `report.html` 中15项是原始方案快照，旧结果保存为 `results/control_checks_original.json`。物理模型与历史数值结论保持不变。清单v2依据Git blob字节，不沿用旧清单的工作区换行哈希。
+返工复核入口：先读 `rework_notes.md`，执行 `python check_delivery.py --root .`。当前门控示例为 **556项检查**；下文及 `report.html` 中15项是原始方案快照，旧结果保存为 `results/control_checks_original.json`。物理模型与历史数值结论保持不变。清单v2依据Git blob字节，不沿用旧清单的工作区换行哈希。
 
 日期：2026-09-12。范围：成品选购条件、控制方案、离线动力学验证。用户确认载荷在几十克到 1 kg 内；不包含机械加工图、自制电路、采购下单或实际板上固件。
 

@@ -18,10 +18,15 @@ class Supervisor:
     def update(self,now,angle,confidence,frame_time,position,moving=False,
                encoder_age=0.,limit=False,estop=False,heartbeat_age=0.):
         if self.fault:return self.state
+        # Independently valid safety evidence wins over unrelated invalid input.
+        # Invalid age values alone are not confirmed timeouts; the ordinary
+        # validation below still handles them without unsafe comparisons.
+        def timed_out(age,threshold):
+            return not isinstance(age,bool) and isinstance(age,Real) and math.isfinite(age) and age>threshold
+        if estop is True or limit is True or timed_out(encoder_age,.02) or timed_out(heartbeat_age,.1):
+            self.stable=[];self.fault=True;self.state='BRAKE';return self.state
         if any(type(x) is not bool for x in (moving,limit,estop)):
             return self.reject(moving)
-        if limit or estop:
-            self.stable=[];self.fault=True;self.state='BRAKE';return self.state
         values=(now,angle,confidence,frame_time,position,encoder_age,heartbeat_age)
         if any(isinstance(x,bool) or not isinstance(x,Real) or not math.isfinite(x) for x in values):
             return self.reject(moving)
@@ -30,8 +35,6 @@ class Supervisor:
         if self.last_now is not None and now<self.last_now:
             return self.reject(moving)
         self.last_now=now
-        if encoder_age>.02 or heartbeat_age>.1:
-            self.stable=[];self.fault=True;self.state='BRAKE';return self.state
         if now-frame_time>.1+1e-12 or frame_time>now:
             return self.reject(moving)
         # Strictly increasing source timestamps. Replays/reordering clear votes,
@@ -140,6 +143,30 @@ def main():
     for field in ['moving','limit','estop']:
         kw=dict(now=0,angle=30,confidence=.9,frame_time=0,position=0);kw[field]=float('nan')
         check('invalid_flag_'+field,Supervisor().update(**kw)!='MOVE')
+    # Safety priority cross-tests: each independently confirmed fault must win
+    # over bad data/flags, both at rest and moving, then remain latched.
+    bad_combinations=[('angle_nan',{'angle':float('nan')}),
+        ('confidence_nan',{'confidence':float('nan')}),
+        ('frame_nan',{'frame_time':float('nan')}),('now_nan',{'now':float('nan')}),
+        ('position_nan',{'position':float('nan')}),
+        ('encoder_age_nan',{'encoder_age':float('nan')}),
+        ('heartbeat_age_nan',{'heartbeat_age':float('nan')}),
+        ('moving_invalid',{'moving':None}),('limit_invalid',{'limit':None}),
+        ('estop_invalid',{'estop':None}),('future_frame',{'frame_time':1.}),
+        ('clock_rollback',{'now':.01})]
+    faults=[('encoder_timeout',{'encoder_age':.021}),('heartbeat_timeout',{'heartbeat_age':.101}),
+            ('estop',{'estop':True}),('limit',{'limit':True})]
+    for fault_name,fault_input in faults:
+        for bad_name,bad_input in bad_combinations:
+            if set(fault_input)&set(bad_input):continue # Do not replace the fault itself.
+            for moving in [False,True]:
+                s=Supervisor();s.target=12.
+                for t in [0,.02]:s.update(t,30,.9,t,0)
+                kw=dict(now=.04,angle=30,confidence=.9,frame_time=.04,position=0,moving=moving)
+                kw.update(bad_input);kw.update(fault_input)
+                label=f'priority_{fault_name}_{bad_name}_{moving}'
+                check(label+'_brakes',s.update(**kw)=='BRAKE' and s.fault and not s.stable and s.target==12.)
+                check(label+'_latched_after_recovery',s.update(.06,30,.9,.06,0)=='BRAKE' and s.fault and s.target==12.)
     result={'scope':'synthetic supervisory tests only','started_utc':started,'finished_utc':datetime.now(timezone.utc).isoformat(),
             'environment':{'python':sys.version,'platform':platform.platform()},'checks':records,'pass_count':len(records)}
     (out/'control_checks.json').write_text(json.dumps(result,indent=2),encoding='utf-8')

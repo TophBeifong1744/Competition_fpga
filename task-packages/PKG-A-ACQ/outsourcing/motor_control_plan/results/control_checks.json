@@ -1,7 +1,7 @@
 {
   "scope": "synthetic supervisory tests only",
-  "started_utc": "2026-09-12T05:14:25.326575+00:00",
-  "finished_utc": "2026-09-12T05:14:25.330824+00:00",
+  "started_utc": "2026-09-12T10:30:52.256963+00:00",
+  "finished_utc": "2026-09-12T10:30:52.264235+00:00",
   "environment": {
     "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
     "platform": "Windows-11-10.0.26200-SP0"
@@ -1526,7 +1526,711 @@
     {
       "name": "invalid_flag_estop",
       "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_angle_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_angle_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_angle_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_angle_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_confidence_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_confidence_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_confidence_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_confidence_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_frame_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_frame_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_frame_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_frame_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_now_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_now_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_now_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_now_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_position_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_position_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_position_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_position_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_heartbeat_age_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_heartbeat_age_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_heartbeat_age_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_heartbeat_age_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_moving_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_moving_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_moving_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_moving_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_limit_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_limit_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_limit_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_limit_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_estop_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_estop_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_estop_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_estop_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_future_frame_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_future_frame_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_future_frame_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_future_frame_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_clock_rollback_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_clock_rollback_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_clock_rollback_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_clock_rollback_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_angle_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_angle_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_angle_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_angle_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_confidence_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_confidence_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_confidence_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_confidence_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_frame_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_frame_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_frame_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_frame_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_now_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_now_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_now_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_now_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_position_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_position_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_position_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_position_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_encoder_age_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_encoder_age_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_encoder_age_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_encoder_age_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_moving_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_moving_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_moving_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_moving_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_limit_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_limit_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_limit_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_limit_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_estop_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_estop_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_estop_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_estop_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_future_frame_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_future_frame_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_future_frame_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_future_frame_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_clock_rollback_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_clock_rollback_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_clock_rollback_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_clock_rollback_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_angle_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_angle_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_angle_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_angle_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_confidence_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_confidence_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_confidence_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_confidence_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_frame_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_frame_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_frame_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_frame_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_now_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_now_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_now_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_now_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_position_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_position_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_position_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_position_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_encoder_age_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_encoder_age_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_encoder_age_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_encoder_age_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_heartbeat_age_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_heartbeat_age_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_heartbeat_age_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_heartbeat_age_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_moving_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_moving_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_moving_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_moving_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_limit_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_limit_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_limit_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_limit_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_future_frame_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_future_frame_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_future_frame_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_future_frame_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_clock_rollback_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_clock_rollback_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_clock_rollback_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_clock_rollback_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_angle_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_angle_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_angle_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_angle_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_confidence_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_confidence_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_confidence_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_confidence_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_frame_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_frame_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_frame_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_frame_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_now_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_now_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_now_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_now_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_position_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_position_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_position_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_position_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_encoder_age_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_encoder_age_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_encoder_age_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_encoder_age_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_heartbeat_age_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_heartbeat_age_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_heartbeat_age_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_heartbeat_age_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_moving_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_moving_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_moving_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_moving_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_estop_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_estop_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_estop_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_estop_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_future_frame_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_future_frame_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_future_frame_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_future_frame_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_clock_rollback_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_clock_rollback_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_clock_rollback_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_clock_rollback_True_latched_after_recovery",
+      "pass": true
     }
   ],
-  "pass_count": 380
+  "pass_count": 556
 }
