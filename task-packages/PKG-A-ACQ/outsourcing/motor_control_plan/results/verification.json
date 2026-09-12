@@ -1,0 +1,120 @@
+{
+  "oscillator_error": 6.942194585857209e-08,
+  "constant_acceleration_error": 5.340172748447003e-14,
+  "dt_refinement_max_angle_difference_deg": 0.010185834904597834,
+  "dt_refinement_pass": true,
+  "reversal_cases": [
+    {
+      "name": "reversal_light",
+      "J": 0.00075,
+      "final_error_deg": 0.0025993691011281027,
+      "last_500ms_max_error_deg": 0.002710691674514589,
+      "last_500ms_ripple_deg": 0.00011132257338648636,
+      "settle_s": 13.918000000000001,
+      "peak_velocity_deg_s": 58.20359573211693,
+      "max_electrical_lag_deg": 19.431077009935443,
+      "max_belt_torque_Nm": 0.06463447671672443,
+      "max_motor_output_torque_Nm": 0.21557189879938016,
+      "model_sync_margin_ok": true,
+      "pass_position": true,
+      "pass_settle": true
+    },
+    {
+      "name": "reversal_heavy",
+      "J": 0.02,
+      "final_error_deg": -0.07242536680855256,
+      "last_500ms_max_error_deg": 0.07333061687614403,
+      "last_500ms_ripple_deg": 0.0009052500675914704,
+      "settle_s": 13.837000000000002,
+      "peak_velocity_deg_s": 59.075464290102,
+      "max_electrical_lag_deg": 17.640753909001745,
+      "max_belt_torque_Nm": 0.08184919482540091,
+      "max_motor_output_torque_Nm": 0.1963749802928593,
+      "model_sync_margin_ok": true,
+      "pass_position": true,
+      "pass_settle": true
+    }
+  ],
+  "controlled_stop_case": {
+    "name": "controlled_stop",
+    "J": 0.02,
+    "final_error_deg": 0.16437933166635332,
+    "last_500ms_max_error_deg": 0.17973235725544612,
+    "last_500ms_ripple_deg": 0.015353025589092795,
+    "settle_s": 2.148,
+    "peak_velocity_deg_s": 56.97133432205989,
+    "max_electrical_lag_deg": 12.548295457096955,
+    "max_belt_torque_Nm": 0.0661759938452256,
+    "max_motor_output_torque_Nm": 0.14078608136676996,
+    "model_sync_margin_ok": true,
+    "pass_position": true,
+    "pass_settle": true
+  },
+  "negative_control": {
+    "name": "negative_underpowered",
+    "J": 0.02,
+    "final_error_deg": -89.91918273120899,
+    "last_500ms_max_error_deg": 89.92879785705861,
+    "last_500ms_ripple_deg": 0.009615125849620196,
+    "settle_s": null,
+    "peak_velocity_deg_s": 1.8948066735300468,
+    "max_electrical_lag_deg": 18375.417560132555,
+    "max_belt_torque_Nm": 0.07999650006536399,
+    "max_motor_output_torque_Nm": 0.053999999610398315,
+    "model_sync_margin_ok": false,
+    "pass_position": false,
+    "pass_settle": false
+  },
+  "negative_control_detected": true,
+  "stopping": {
+    "J": 0.0201064,
+    "initial_speed_deg_s": 65,
+    "assist_Nm": 0.12,
+    "brake_min_Nm": 0.4,
+    "delay_s": 0.03,
+    "analytic_travel_deg": 5.653130610141354,
+    "analytic_stop_s": 0.12432138302497932,
+    "elastic_energy_bound_J": 0.006,
+    "elastic_extra_travel_deg": 1.227766703851764,
+    "total_with_elastic_and_1p5deg_tolerance": 8.380897313993119,
+    "controlled_stop_travel_deg": 24.122222222222224,
+    "cases": [
+      {
+        "brake_Nm": 0,
+        "stop_s": null,
+        "travel_deg": 813.9109479142202
+      },
+      {
+        "brake_Nm": 0.12,
+        "stop_s": null,
+        "travel_deg": 150.36344847417269
+      },
+      {
+        "brake_Nm": 0.24,
+        "stop_s": 0.2501,
+        "travel_deg": 10.385465044633728
+      },
+      {
+        "brake_Nm": 0.4,
+        "stop_s": 0.12440000000000001,
+        "travel_deg": 5.653131280800614
+      },
+      {
+        "brake_Nm": 0.5,
+        "stop_s": 0.0995,
+        "travel_deg": 4.719117283836679
+      }
+    ],
+    "numeric_vs_analytic_deg": 6.706592596827932e-07
+  },
+  "case_count": 149,
+  "position_pass_count": 149,
+  "settle_pass_count": 149,
+  "sync_margin_pass_count": 149,
+  "worst_final_error_deg": 0.5647445909543194,
+  "worst_settle_s_90deg": 3.1350000000000002,
+  "worst_electrical_lag_deg": 24.7992745314701,
+  "worst_belt_torque_Nm": 0.17062935469028173,
+  "model_parameters_are_unmeasured": true,
+  "script_sha256": "9b7d956b8a1b2808b847b12e7bc68dcd55fe6ef6f8488dd53e20612631a878da"
+}

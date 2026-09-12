@@ -1,0 +1,22 @@
+{
+  "started_utc": "2026-09-12T10:30:52.128003+00:00",
+  "finished_utc": "2026-09-12T10:30:52.416402+00:00",
+  "environment": {
+    "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "script_sha256": "66cf8acd18074b0bada9d8ab6b1db1a2e52c66ec680778622ed68a7facdd31ae",
+  "baseline_commit": "34164d557314bd25b65be6c4a35e70241f62e81f",
+  "baseline_reproduced_counterexamples": {
+    "encoder_timeout_plus_nan_angle": "DECEL",
+    "estop_plus_invalid_limit": "DECEL"
+  },
+  "command": [
+    "D:\\Python\\python.exe",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\outsourcing\\motor_control_plan\\validate_control.py",
+    "--out",
+    "C:\\Users\\hsc\\Documents\\Codex\\2026-09-12\\gen\\work\\motor_priority_20260912T103052127965"
+  ],
+  "exit_code": 0
+}
+556 supervisory checks PASS

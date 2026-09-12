@@ -1,0 +1,167 @@
+{
+  "reviewed_commit": "773a56cfacab51c9bb7c7e9f9a05c850c7c3e48b",
+  "prior_commit": "34164d557314bd25b65be6c4a35e70241f62e81f",
+  "checked_utc": "2026-09-12T10:41:24.565041+00:00",
+  "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+  "scope": "synthetic control only; no physical simulation, RTL or board approval",
+  "candidate": [
+    {
+      "name": "encoder_age_nan_angle_moving_False",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_nan_angle_moving_False_latches",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_nan_angle_moving_True",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_nan_angle_moving_True_latches",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_nan_angle_moving_False",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_nan_angle_moving_False_latches",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_nan_angle_moving_True",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_nan_angle_moving_True_latches",
+      "pass": true
+    },
+    {
+      "name": "estop_nan_angle_moving_False",
+      "pass": true
+    },
+    {
+      "name": "estop_nan_angle_moving_False_latches",
+      "pass": true
+    },
+    {
+      "name": "estop_nan_angle_moving_True",
+      "pass": true
+    },
+    {
+      "name": "estop_nan_angle_moving_True_latches",
+      "pass": true
+    },
+    {
+      "name": "limit_nan_angle_moving_False",
+      "pass": true
+    },
+    {
+      "name": "limit_nan_angle_moving_False_latches",
+      "pass": true
+    },
+    {
+      "name": "limit_nan_angle_moving_True",
+      "pass": true
+    },
+    {
+      "name": "limit_nan_angle_moving_True_latches",
+      "pass": true
+    },
+    {
+      "name": "estop_bad_moving",
+      "pass": true
+    },
+    {
+      "name": "limit_bad_moving",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_invalid_None_not_confirmed_fault",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_invalid_'invalid'_not_confirmed_fault",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_invalid_nan_not_confirmed_fault",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_invalid_inf_not_confirmed_fault",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_invalid_True_not_confirmed_fault",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_invalid_-1_not_confirmed_fault",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_exact_boundary_not_fault",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_invalid_None_not_confirmed_fault",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_invalid_'invalid'_not_confirmed_fault",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_invalid_nan_not_confirmed_fault",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_invalid_inf_not_confirmed_fault",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_invalid_True_not_confirmed_fault",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_invalid_-1_not_confirmed_fault",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_exact_boundary_not_fault",
+      "pass": true
+    },
+    {
+      "name": "invalid_acoustic_without_fault_False",
+      "pass": true
+    },
+    {
+      "name": "invalid_acoustic_without_fault_True",
+      "pass": true
+    },
+    {
+      "name": "old_votes_expire",
+      "pass": true
+    },
+    {
+      "name": "three_fresh_votes_recover",
+      "pass": true
+    }
+  ],
+  "prior_failed_checks": [
+    "encoder_age_nan_angle_moving_False",
+    "encoder_age_nan_angle_moving_False_latches",
+    "encoder_age_nan_angle_moving_True",
+    "encoder_age_nan_angle_moving_True_latches",
+    "heartbeat_age_nan_angle_moving_False",
+    "heartbeat_age_nan_angle_moving_False_latches",
+    "heartbeat_age_nan_angle_moving_True",
+    "heartbeat_age_nan_angle_moving_True_latches",
+    "estop_bad_moving",
+    "limit_bad_moving"
+  ],
+  "pass_count": 36,
+  "fail_count": 0
+}

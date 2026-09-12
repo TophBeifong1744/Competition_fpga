@@ -1,0 +1,3 @@
+# Override inherited '* text eol=lf' only for this package's binary formats.
+*.png -text -diff -merge
+*.npz -text -diff -merge
