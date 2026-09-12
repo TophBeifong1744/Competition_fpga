@@ -1,5 +1,7 @@
 # 四路诊断采集：首轮 RTL 与导出自检
 
+2026-09-12 B 限定复核已完成：作者版本 `2aed019` 的 195 个文件获工程材料与诊断辅助软件入库批准，见 [B 复核记录](b-review-20260912/README.md)。原件与历史证据保持不变；原构建脚本的 one/BSP/工具路径依赖未消除，不能直接当作本机可移植整机重建入口。以下“待审分支”是此前发布时点，最终合入与同步记录见 [PUBLICATION](b-review-20260912/PUBLICATION.md)。
+
 ## 2026-09-12 当前入口（覆盖以下历史时点）
 
 四路杜邦线实录已经 B 独立诊断接收：[主线交付及回执](../../deliveries/dupont-diagnostic-20260911/B-REVIEW.md)。本页历史实现材料已发布到 `codex/toph/four-channel-engineering-review-20260912`，主线不直接接入待审 RTL/BD/XDC；工作副本、完整包复核入口、旧恢复档案见[整理说明](../../../../docs/maintenance/local-materials-2026-09-12.md)。下列“未提交/未收到 B 回执/先录同一段”不再是当前动作。既有实际 one 工程未移动或改写。

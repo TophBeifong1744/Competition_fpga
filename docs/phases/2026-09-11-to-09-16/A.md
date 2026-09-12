@@ -1,5 +1,7 @@
 # A 拓芙：把四路短录音交给B
 
+2026-09-12 B 更新：工程整理交付 `2aed019` 已通过限定工程材料/诊断软件复核，[准确范围与复跑入口](../../../task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/b-review-20260912/README.md)。无需重复派发这批文件或原杜邦线录音；后续继续现有诊断准备，实际工程重建环境、外部时序和 C 板实物未获本次批准。
+
 2026-09-12 当前覆盖状态：本批四路杜邦线数据已获 B 独立接收，见[准确回执](../../../task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/B-REVIEW.md)。不再重复转交或要求重录。待审工程源码与后续诊断准备另按[发布整理入口](../../maintenance/local-materials-2026-09-12.md)继续；H2 诊断交接完成不代表正式 M1、C 板实物或完整 H3。以下晚间回执未到的描述保留为历史。
 
 
