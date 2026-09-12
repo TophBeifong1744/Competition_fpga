@@ -1,0 +1,45 @@
+{
+  "schema_version": "ss-data-draft-0.3",
+  "acquisition_id": "xsim-0",
+  "config_version": "four-record-0.1-test",
+  "channel_order": [
+    "mic0",
+    "mic1",
+    "mic2",
+    "mic3"
+  ],
+  "coordinates_m": null,
+  "geometry_version": "four-physical-unmeasured-v1",
+  "coordinate_system": "x-forward_y-left_z-up",
+  "direction_convention": "array-to-source",
+  "angle_unit": "deg",
+  "sample_rate_hz": 48000,
+  "sample_format": {
+    "encoding": "signed-pcm",
+    "storage_dtype": "int32",
+    "valid_bits": 24,
+    "alignment": "right",
+    "fractional_bits": 0
+  },
+  "source_kind": "synthetic-code",
+  "evidence_level": "synthetic",
+  "capture_point": "pcm4_capture_axis testbench handshake monitor",
+  "provisional_fields": {
+    "coordinates_m": "Not measured: no direction calculation permitted.",
+    "channel_order": "Logical lane order only; actual module-to-lane mapping requires recording notes.",
+    "sample_rate_hz": "Configured frequency, not instrument-measured.",
+    "sample_format": "24-bit exchange range, not measured effective precision."
+  },
+  "calibration_status": "not-calibrated",
+  "source_provenance": "Vivado XSim accepted AXIS words, not real microphones",
+  "raw_file": "raw.bin",
+  "raw_sha256": "b826af9d052382ab1744d47c7098b4d202e6f7bf86c10b257658d0613cb7f2a4",
+  "raw_layout": "ss-four-record-0.1: little-endian id_lo,id_hi,mic0..3,flags,reserved; 32 bytes",
+  "raw_flags": "bits0..3 per-lane saturation -> H1 unknown; other bits unsupported; raw.bin retained",
+  "sample_count": 19,
+  "first_id": 4294967288,
+  "last_id": 4294967306,
+  "processing": "none; preserve raw IDs/PCM; do not fill gaps or concatenate acquisitions",
+  "limits": "Caller source declaration is not verified acoustically by this converter; no H2/M1 approval.",
+  "samples_sha256": "6804ff103ea3353666c0a25bb39e8587959c71afdfcd4abcd3e2ead9fa9b87c8"
+}
