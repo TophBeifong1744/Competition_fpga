@@ -1,0 +1,31 @@
+{
+  "A_commit": "c0b5f8fb44643e81d8c4e6f0be457dddeae9758e",
+  "mode": "simulate",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "runner_sha256": "0abb41a6a86d521192a3a9d636eda04e54d6111271c2efa1d25661db81728282",
+  "commands": [
+    {
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\vivado.bat",
+        "-mode",
+        "batch",
+        "-notrace",
+        "-source",
+        "F:\\NUEC\\review-worktrees\\b-review-fft29-c0b5f8f\\task-packages\\PKG-A-ACQ\\tasks\\fft29-bitexact-budget-01\\source\\simulate.tcl",
+        "-log",
+        "F:\\NUEC\\b29-review-run02\\simulate.log",
+        "-journal",
+        "F:\\NUEC\\b29-review-run02\\simulate.jou",
+        "-tclargs",
+        "F:\\NUEC\\b29-review-run02\\project",
+        "F:\\NUEC\\b29-review-run02\\vectors"
+      ],
+      "cwd": "F:\\NUEC\\b29-review-run02",
+      "started_utc": "2026-09-11T14:45:10.443647+00:00",
+      "elapsed_seconds": 1342.5559422969818,
+      "exit_code": 0,
+      "console": "simulate-00-console.txt"
+    }
+  ]
+}
