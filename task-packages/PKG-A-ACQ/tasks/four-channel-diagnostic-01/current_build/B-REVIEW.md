@@ -84,3 +84,20 @@ B本机没有A实际one、AMD2025.2、匹配BSP/XSA、实际PS源及原构建目
 候选使用入口保持本current_build，不迁移到活动RTL，不覆盖实际one。合入以前直接远端main为228b8e3714e773712574b79f632a09d12be5eb4f；实际本地main位于 `F:/NUEC/review-worktrees/member-b-to-a-pkg-b-alg`，原add40fd落后4提交且工作区干净，已安全快进后按限定范围合并。
 
 本报告与b_review_evidence为B新增回执，不属于A清单；原记录保持原字节。最终main对齐、发布后验证、本批材料计数及清理结果在后续本节批次记录中追加，不以合并成功替代收尾。
+
+### batch-closeout 实际回执
+
+| 项目 | 结果 |
+|---|---|
+| 合入提交 | `9f0bd3724d2c986bdadc7b100270e0d46ab2afa9`，非强制推送main，包含准确批准d0ce1c2；相对合入前main只有current_build变化 |
+| 合并后验证 | main实际工作目录重跑63项测试、189原件验证、714个修复blob和713清单核对均通过；日志06/07及post-merge-evidence-verification.json已保存 |
+| 三方main对齐 | 发布后本地main、origin/main、直接ls-remote main均为9f0bd3724d2c986bdadc7b100270e0d46ab2afa9，领先/落后0/0；本记录补交后再次核对最终SHA，并在用户回报中给出 |
+| 实际main工作区 | F:/NUEC/review-worktrees/member-b-to-a-pkg-b-alg，发布后跟踪修改0、未跟踪0，本批忽略项0；全部批准材料已在此正常版本管理 |
+| 其他共享工作 | F:/NUEC/develop仍在feature/member-b-algorithm，52项已跟踪差异、146未跟踪；本批current_build差异/忽略项0。保留其他任务，不切换/重置、不混入本批，不声称整个共享目录干净 |
+| 本批有用材料 | 入口/修复/作者证据+B-REVIEW和b_review_evidence已入main；审计时的外部原始回执与API获取记录保留F:/NUEC/review-evidence/a-ps-repair-d0ce1c2供追溯，不是另一份活动工程。完整无关工作文件名清单只在本地留存，其哈希见batch-closeout.json |
+| 遗留数量 | B本批未提交/未跟踪/忽略的未处理有用内容0；未说明材料去向0。无关工作52/146不算本批遗留 |
+| 已清理 | 仅本轮新建、干净且无忽略独有文件的审核worktree F:/NUEC/review-worktrees/a-ps-repair-d0ce1c2；可由准确审核SHA重建。执行脚本中该路径是历史运行位置，重新运行前可恢复固定副本 |
+| 保留/责任 | A原分支头仍d0ce1c2；分支/pub仍可能关联采集准备，未确认任务结束故不删除。A实际one、旧四次构建、修复编译矩阵和原盘核对由A确认，不由B删除或代签。旧B阻断证据保留供追溯 |
+| 最终状态 | B侧本批批准、集成、相称验证和收尾完成；A侧继续任务及本机材料核对待A负责，未冒称跨机器同步/构建或阶段通过 |
+
+本次归档源码没有修改实际one、活动RTL或采集数据；原ENVELOPE、RESULTS及历史失败证据保持其原版本身份。
