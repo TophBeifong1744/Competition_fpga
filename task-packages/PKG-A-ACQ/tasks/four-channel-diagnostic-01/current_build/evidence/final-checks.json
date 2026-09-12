@@ -1,0 +1,64 @@
+{
+  "status": "AUTHOR_SELF_CHECK_PASS_NOT_APPROVAL",
+  "static_checks": {
+    "new_entry_files_checked": [
+      ".gitattributes",
+      ".gitignore",
+      "build_current.py",
+      "build_hw.tcl",
+      "README.md",
+      "RESULTS.md",
+      "test_build_current.py"
+    ],
+    "python_syntax": "PASS",
+    "json_parse": "PASS",
+    "errors": [],
+    "status": "PASS",
+    "note": "New untracked files checked with git diff --no-index --check; exit 1 with empty diagnostics means content differs from NUL, not a whitespace error."
+  },
+  "frozen_files": {
+    "count": 189,
+    "changed": []
+  },
+  "build_status": "BUILD_PASS_NOT_BOARD_TEST",
+  "safety_tests": 34,
+  "postbuild_refusal": {
+    "command": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06fc1-b474-7a41-9b32-b2aa8386099b\\pub\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\current_build\\build_current.py",
+      "build",
+      "--project",
+      "F:\\College\\verilog_digital_system\\AMD\\Competiton\\one\\one.xpr",
+      "--vivado",
+      "F:\\AMD\\2025.2\\Vivado\\bin\\vivado.bat",
+      "--gcc",
+      "F:\\AMD\\2025.2\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
+      "--bsp",
+      "F:\\College\\verilog_digital_system\\Vitis\\c_adapter_platform\\export\\c_adapter_platform\\sw\\standalone_ps7_cortexa9_0",
+      "--bsp-xsa",
+      "F:\\College\\verilog_digital_system\\Vitis\\c_adapter_platform\\export\\c_adapter_platform\\hw\\system_c_adapter.xsa",
+      "--ps-source",
+      "F:\\College\\verilog_digital_system\\Vitis\\four_mic_capture\\src",
+      "--output",
+      "F:\\College\\verilog_digital_system\\four_diagnostic_work\\current_rebuild_20260912_04"
+    ],
+    "native_exit_code": 2,
+    "stdout": "{\"status\": \"REFUSED_OR_FAILED\", \"error\": \"Output exists; never overwrite/reuse: F:\\\\College\\\\verilog_digital_system\\\\four_diagnostic_work\\\\current_rebuild_20260912_04\"}\n",
+    "stderr": "",
+    "output_files_compared": 594,
+    "output_unchanged": true,
+    "original_inputs_unchanged": true
+  },
+  "evidence_copy_checks": {
+    "run01": 7,
+    "run02": 13,
+    "run03": 22,
+    "run04": 29,
+    "note": "All copied files compared byte SHA-256 to corresponding source run"
+  },
+  "git_diff_check": "PASS",
+  "git_ignored_new_evidence_files": [],
+  "git_changes": "Only new current_build; no commit/push/merge",
+  "board_test": "NOT_RUN"
+}

@@ -1,0 +1,89 @@
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat Sep 12 13:52:19 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source {C:/Users/Toph Beifong/.codex/visualizations/2026/09/05/01a06ff9-0287-7e00-b73d-abf12e6b3035/current_build_help_20260912.tcl} -notrace
+validate_bd_design
+
+Description: 
+Run Parameter Propagation for specified design or for a specific cell.
+
+Syntax: 
+validate_bd_design  [-force] [-design <arg>] [-include_pfm] [-steps <args>]
+                    [-assign_dfx_addressing] [-limit <arg>] [-quiet] [-verbose]
+
+Returns: 
+TCL_OK,  TCL_ERROR if failed.
+
+Usage: 
+  Name                      Description
+  -------------------------------------
+  [-force]                  Force re-run validation on the design
+  [-design]                 Design name. If not specified, run parameter 
+                            propagation on current design
+  [-include_pfm]            including validate pfm attributes on the design
+  [-steps]                  List of steps to execute. This does not put the 
+                            design in a validated state. Choices: 
+                            addressing,noc-drc,noc-compile
+  [-assign_dfx_addressing]  Assign addressing for variants of DFX block 
+                            design containers
+  [-limit]                  Iteration limit for parameter propagation. If not
+                            specified, it uses the value of 
+                            bd.propagate.maxIteration.
+                            Default: -1
+  [-quiet]                  Ignore command errors
+  [-verbose]                Suspend message limits during command execution
+
+Categories: 
+IPIntegrator
+
+Description:
+
+  Validate an IP integrator subsystem design, or IP cell or hierarchical
+  module.
+
+Arguments:
+
+  -force - (Optional) Force validation on the block design.
+
+  -design <arg> - (Optional) The IP integrator subsystem design to validate.
+  If not specified, the current IP integrator subsystem design is validated.
+
+  -include_pfm - (Optional) Validate the required DSA and PFM attributes on a
+  block design created as the hardware portion of a Vitis platform. Errors
+  will be returned if the platform properties are not properly defined.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+Examples:
+
+  The following example validates the current IP integrator subsystem design,
+  forcing re-validation if needed:
+
+    validate_bd_design -force 
+    
+
+See Also:
+
+   *  create_bd_design
+   *  open_bd_design
+   *  save_bd_design
+
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 12 13:52:23 2026...
+

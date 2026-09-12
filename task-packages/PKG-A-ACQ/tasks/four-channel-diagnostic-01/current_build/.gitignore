@@ -1,0 +1,6 @@
+# These are intentionally retained build/rejection logs, not disposable caches.
+!evidence/**/*.log
+!repair_ps_contract/**/*.log
+# The retained legacy counterexample contains deliberately mocked build files.
+!repair_ps_contract/legacy-counterexample-01/**
+!repair_ps_contract/evidence/compiled-proof/**

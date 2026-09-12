@@ -1,0 +1,15 @@
+In file included from ../inputs/bsp/include/bspconfig.h:8,
+                 from ../inputs/bsp/include/xil_types.h:53,
+                 from ../inputs/bsp/include/xstatus.h:33,
+                 from ../inputs/bsp/include/xaxidma_bdring.h:62,
+                 from ../inputs/bsp/include/xaxidma.h:471,
+                 from ../inputs/ps/main_four_capture.c:6,
+                 from ps_build_unit.c:1:
+../inputs/bsp/include/xmem_config.h:5: error: "XPAR_PS7_DDR_0_HIGHADDRESS" redefined [-Werror]
+    5 | #define XPAR_PS7_DDR_0_HIGHADDRESS 0x3fffffff
+      | 
+In file included from ../inputs/ps/main_four_capture.c:5:
+../inputs/bsp/include/xparameters.h:294: note: this is the location of the previous definition
+  294 | #define XPAR_PS7_DDR_0_HIGHADDRESS 0x1fffffff
+      | 
+cc1.exe: all warnings being treated as errors

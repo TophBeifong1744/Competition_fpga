@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "F:\\AMD\\2025.2\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
+    "-DSDT",
+    "-mcpu=cortex-a9",
+    "-mfpu=vfpv3",
+    "-mfloat-abi=hard",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-O0",
+    "-g3",
+    "-specs=../../inputs/bsp/Xilinx.spec",
+    "-I../../inputs/bsp/include",
+    "../../inputs/ps/main_four_capture.c",
+    "-o",
+    "four_mic_capture.elf",
+    "-L../../inputs/bsp/lib",
+    "-Wl,-T,../../inputs/ps/lscript.ld",
+    "-Wl,-Map,four_mic_capture.map,--cref",
+    "-Wl,--start-group",
+    "-lxilstandalone",
+    "-lxiltimer",
+    "-lxil",
+    "-lgcc",
+    "-lc",
+    "-Wl,--end-group"
+  ],
+  "cwd": "F:\\College\\verilog_digital_system\\four_diagnostic_work\\current_rebuild_20260912_04\\artifacts\\ps"
+}

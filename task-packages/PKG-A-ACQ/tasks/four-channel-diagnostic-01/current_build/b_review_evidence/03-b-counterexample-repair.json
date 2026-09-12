@@ -1,0 +1,21 @@
+{
+  "result": {
+    "status": "BUILD_FAILED",
+    "started_at": "2026-09-12T18:05:48+0800",
+    "board_test": "NOT_RUN",
+    "bsp_rebuilt": false,
+    "error": "Unsupported changed fixed PS contract",
+    "protected_inputs_unchanged": true,
+    "changed_inputs": [],
+    "finished_at": "2026-09-12T18:05:48+0800"
+  },
+  "tools_simulated": [
+    "gcc-version",
+    "ps-preprocess",
+    "ps-compile"
+  ],
+  "source_sha256": "73aed5460f96c5e8851f8ccc5a2674182b3841f10922fb17827af2b2855da321",
+  "archived_object_sha256": "d045609e60f988c59bf4784a198dc83da8c09fb0b4a3e1cc20d013467df2cc4f",
+  "archived_object_BASE": 1048576,
+  "method": "Original B changed-source stimulus; real new compile_bound_ps + value validator; hardware shape supplied from archived legal report; compiler simulated by archived rejected real object. Not new compilation."
+}

@@ -1,0 +1,31 @@
+import sys,json,copy
+sys.path.insert(0,r'F:/NUEC/review-worktrees/a-current-build-050d06f/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/current_build')
+import build_current as bc
+names=['PCW_FTM_CTI_'+d+str(i) for d in ('IN','OUT') for i in range(4)]
+a='<EDKSYSTEM><MODULES><MODULE VLNV="xilinx.com:ip:processing_system7:5.5"><PARAMETERS><PARAMETER NAME="PCW_USE_CROSS_TRIGGER" VALUE="0"/><PARAMETER NAME="PCW_P2F_CTI_INTR" VALUE="0"/>'+''.join('<PARAMETER NAME="'+n+'" VALUE="DISABLED"/>' for n in names)+'</PARAMETERS><PORTS/><BUSINTERFACES/></MODULE></MODULES></EDKSYSTEM>'
+b=a.replace('VALUE="DISABLED"','VALUE="&lt;Select&gt;"')
+s=lambda x:bc.hwh_signature(x.encode(),True)
+assert s(a)==s(b)
+count=1
+for n in names:
+ assert s(a)!=s(b.replace('NAME="'+n+'" VALUE="&lt;Select&gt;"','NAME="'+n+'" VALUE="TRIGGER_IN_0"'));count+=1
+for attr in ['PCW_USE_CROSS_TRIGGER','PCW_P2F_CTI_INTR']:
+ aa=a.replace('NAME="'+attr+'" VALUE="0"','NAME="'+attr+'" VALUE="1"');bb=b.replace('NAME="'+attr+'" VALUE="0"','NAME="'+attr+'" VALUE="1"')
+ assert s(aa)!=s(bb);count+=1
+for tag,elem in [('PORTS','PORT'),('BUSINTERFACES','BUSINTERFACE')]:
+ aa=a.replace('<'+tag+'/>','<'+tag+'><'+elem+' NAME="FTMT_F2P_TRIG_0"/></'+tag+'>');bb=b.replace('<'+tag+'/>','<'+tag+'><'+elem+' NAME="FTMT_F2P_TRIG_0"/></'+tag+'>')
+ assert s(aa)!=s(bb);count+=1
+old={'design':{'components':{'ps':{'xci_name':'ps0','parameters':{'fixed':{'value':'1'}}}},'nets':{'n':['a','b']},'address':{'base':'0'}}}
+new=copy.deepcopy(old);new['design']['components']['ps']['parameters']['expanded']={'value':'2'}
+vals={'ps0':{'expanded':[{'value':'2'}]}}
+assert bc.bd_materialization(json.dumps(old),json.dumps(new),vals)==['ps/expanded'];count+=1
+for change in ['fixed','expanded','nets','address','cell']:
+ x=copy.deepcopy(new)
+ if change in ('fixed','expanded'):x['design']['components']['ps']['parameters'][change]['value']='3'
+ elif change=='cell':x['design']['components']['new']={}
+ elif change=='nets':x['design']['nets']['n']=['a','c']
+ else:x['design']['address']['base']='1'
+ assert bc.bd_materialization(json.dumps(old),json.dumps(x),vals) is None;count+=1
+assert bc.generated_wrapper_equal(b'//Date        : a\r\n//Host        : b\r\nmodule t;endmodule\r\n',b'//Date        : c\n//Host        : d\nmodule t;endmodule\n');count+=1
+assert not bc.generated_wrapper_equal(b'module t;endmodule\n',b'module x;endmodule\n');count+=1
+print(json.dumps({'independent_equivalence_assertions':count,'result':'PASS','scope':'miniature XML/BD/wrapper fixtures; no AMD tools'},indent=2))

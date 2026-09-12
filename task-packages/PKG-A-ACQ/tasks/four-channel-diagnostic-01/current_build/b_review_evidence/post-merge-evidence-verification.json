@@ -1,0 +1,411 @@
+{
+  "review_sha": "d0ce1c28aac3e101a262036b2321f4170d34f45c",
+  "old_sha": "050d06f5dc6fed4fa476e72fa416e9736bc7fef3",
+  "changed_files_verified": 714,
+  "repair_manifest_entries_verified": 713,
+  "old_manifest_unchanged_entries": 90,
+  "old_manifest_changed_entries": [
+    ".gitattributes",
+    ".gitignore",
+    "build_current.py",
+    "README.md"
+  ],
+  "frozen_unchanged": 189,
+  "old_evidence_unchanged": true,
+  "matrix_archive_audit": [
+    {
+      "name": "matrix01",
+      "case_count": 13,
+      "all_expectations": false,
+      "cases": [
+        {
+          "case": "legal-current",
+          "expected_pass": true,
+          "result": "PS_CONTRACT_PASS_NOT_HW_BUILD",
+          "error": null,
+          "expectation_met": true,
+          "native_exit_code": 0
+        },
+        {
+          "case": "base-overlaps-program",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Unsupported changed fixed PS contract",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "limit-cuts-data",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Data/guard exceeds RX reservation",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "limit-widened",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Unsupported changed fixed PS contract",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "groups-partial",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "ps-compile failed (exit 1); keep logs/output",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "word-layout",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Unsupported H1 group layout",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "bytes-overflow",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "ps-compile failed (exit 1); keep logs/output",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "guard-overflow",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "ps-compile failed (exit 1); keep logs/output",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "packet-disagrees-bd",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "PS packet/groups differ from BD",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "bsp-ddr-changed",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "ps-preprocess failed (exit 1); keep logs/output",
+          "expectation_met": false,
+          "native_exit_code": 1
+        },
+        {
+          "case": "linked-program-overlap",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Program allocation overlaps/escapes area before RX: .stack",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "lying-end-symbol",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Program end fails to cover linked allocations",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "unknown-source-body",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Unsupported PS source body; review required, no buffer contract assumed",
+          "expectation_met": true,
+          "native_exit_code": 1
+        }
+      ]
+    },
+    {
+      "name": "matrix02",
+      "case_count": 13,
+      "all_expectations": true,
+      "cases": [
+        {
+          "case": "legal-current",
+          "expected_pass": true,
+          "result": "PS_CONTRACT_PASS_NOT_HW_BUILD",
+          "error": null,
+          "expectation_met": true,
+          "native_exit_code": 0
+        },
+        {
+          "case": "base-overlaps-program",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Unsupported changed fixed PS contract",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "limit-cuts-data",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Data/guard exceeds RX reservation",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "limit-widened",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Unsupported changed fixed PS contract",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "groups-partial",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "ps-compile failed (exit 1); keep logs/output",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "word-layout",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Unsupported H1 group layout",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "bytes-overflow",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "ps-compile failed (exit 1); keep logs/output",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "guard-overflow",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "ps-compile failed (exit 1); keep logs/output",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "packet-disagrees-bd",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "PS packet/groups differ from BD",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "bsp-ddr-changed",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Compiled BSP DDR bounds differ from XSA",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "linked-program-overlap",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Program allocation overlaps/escapes area before RX: .stack",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "lying-end-symbol",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Program end fails to cover linked allocations",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "unknown-source-body",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Unsupported PS source body; review required, no buffer contract assumed",
+          "expectation_met": true,
+          "native_exit_code": 1
+        }
+      ]
+    },
+    {
+      "name": "matrix03",
+      "case_count": 14,
+      "all_expectations": true,
+      "cases": [
+        {
+          "case": "legal-current",
+          "expected_pass": true,
+          "result": "PS_CONTRACT_PASS_NOT_HW_BUILD",
+          "error": null,
+          "expectation_met": true,
+          "native_exit_code": 0
+        },
+        {
+          "case": "legal-program-end-at-base",
+          "expected_pass": true,
+          "result": "PS_CONTRACT_PASS_NOT_HW_BUILD",
+          "error": null,
+          "expectation_met": true,
+          "native_exit_code": 0
+        },
+        {
+          "case": "base-overlaps-program",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Unsupported changed fixed PS contract",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "limit-cuts-data",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Data/guard exceeds RX reservation",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "limit-widened",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Unsupported changed fixed PS contract",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "groups-partial",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "ps-compile failed (exit 1); keep logs/output",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "word-layout",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Unsupported H1 group layout",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "bytes-overflow",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "ps-compile failed (exit 1); keep logs/output",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "guard-overflow",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "ps-compile failed (exit 1); keep logs/output",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "packet-disagrees-bd",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "PS packet/groups differ from BD",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "bsp-ddr-changed",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Compiled BSP DDR bounds differ from XSA",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "linked-program-overlap",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Program allocation overlaps/escapes area before RX: .stack",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "lying-end-symbol",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Program end fails to cover linked allocations",
+          "expectation_met": true,
+          "native_exit_code": 1
+        },
+        {
+          "case": "unknown-source-body",
+          "expected_pass": false,
+          "result": "BUILD_FAILED",
+          "error": "Unsupported PS source body; review required, no buffer contract assumed",
+          "expectation_met": true,
+          "native_exit_code": 1
+        }
+      ]
+    }
+  ],
+  "compiled_proof_values": {
+    "rx_start": 16777216,
+    "rx_limit_exclusive": 17825792,
+    "rx_data_end_exclusive": 17801216,
+    "rx_guard_end_exclusive": 17801280,
+    "bytes": 1024000,
+    "packet_bytes": 8000,
+    "packets": 128,
+    "program_end": 1123888
+  },
+  "compiled_proof_contract": {
+    "BASE": 16777216,
+    "LIMIT": 17825792,
+    "GROUPS": 32000,
+    "WORDS_PER_GROUP": 8,
+    "BYTES": 1024000,
+    "PACKET": 8000,
+    "GUARD": 64,
+    "DDR_BASE": 1048576,
+    "DDR_HIGH": 1073741823,
+    "WORD_BYTES": 4,
+    "POINTER_BYTES": 4
+  },
+  "rejected_object_BASE": 1048576,
+  "exact_legacy_source_sha256": "5a21c65da0f29707fafe64e7d1fe4c7382ef6d23e09598464a52bd0b0d394c32",
+  "dependencies": {
+    "project": {
+      "path": "F:\\College\\verilog_digital_system\\AMD\\Competiton\\one\\one.xpr",
+      "exists": false
+    },
+    "vivado": {
+      "path": "F:\\AMD\\2025.2\\Vivado\\bin\\vivado.bat",
+      "exists": false
+    },
+    "gcc": {
+      "path": "F:\\AMD\\2025.2\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
+      "exists": false
+    },
+    "bsp": {
+      "path": "F:\\College\\verilog_digital_system\\Vitis\\c_adapter_platform\\export\\c_adapter_platform\\sw\\standalone_ps7_cortexa9_0",
+      "exists": false
+    },
+    "bsp_xsa": {
+      "path": "F:\\College\\verilog_digital_system\\Vitis\\c_adapter_platform\\export\\c_adapter_platform\\hw\\system_c_adapter.xsa",
+      "exists": false
+    },
+    "ps_source": {
+      "path": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_capture\\src",
+      "exists": false
+    }
+  },
+  "full_compile_or_hw_rerun": false,
+  "git_head": "228b8e3714e773712574b79f632a09d12be5eb4f"
+}

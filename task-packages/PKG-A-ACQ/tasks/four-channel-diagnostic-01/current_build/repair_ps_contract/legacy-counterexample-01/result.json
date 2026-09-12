@@ -1,0 +1,27 @@
+{
+  "status": "BUILD_PASS_NOT_BOARD_TEST",
+  "started_at": "2026-09-12T17:13:27+0800",
+  "board_test": "NOT_RUN",
+  "bsp_rebuilt": false,
+  "bsp_xsa_contract": "MATCH_HWH_AND_PS_INIT",
+  "program_end": "0x00112630",
+  "rx_guard_end_exclusive": "0x010FA040",
+  "timing": {
+    "setup_slack": "4.640",
+    "hold_slack": "0.056",
+    "WNS": 4.64,
+    "TNS": 0.0,
+    "WHS": 0.056,
+    "THS": 0.0,
+    "WPWS": 3.0,
+    "TPWS": 0.0
+  },
+  "limits": [
+    "external IO timing/physical clock skew remains deferred",
+    "bit/ELF hashes need not equal old build: timestamps and paths differ",
+    "supplied BSP reused, not regenerated; no new hardware acceptance"
+  ],
+  "protected_inputs_unchanged": true,
+  "changed_inputs": [],
+  "finished_at": "2026-09-12T17:13:27+0800"
+}

@@ -1,0 +1,51 @@
+{
+  "actual_archived_elf_validation": {
+    "rx_start": 16777216,
+    "rx_limit_exclusive": 17825792,
+    "rx_data_end_exclusive": 17801216,
+    "rx_guard_end_exclusive": 17801280,
+    "bytes": 1024000,
+    "packet_bytes": 8000,
+    "packets": 128,
+    "program_end": 1123888
+  },
+  "stack_heap_symbols": {
+    "_supervisor_stack_end": "0x111230",
+    "_ABORT_STACK_SIZE": "0x400",
+    "__supervisor_stack": "0x111a30",
+    "_undef_stack_end": "0x112230",
+    "__abort_stack": "0x111e30",
+    "__irq_stack": "0x111230",
+    "_SUPERVISOR_STACK_SIZE": "0x800",
+    "_heap_end": "0x10ee30",
+    "__fiq_stack": "0x112230",
+    "_heap_start": "0x10ce30",
+    "_IRQ_STACK_SIZE": "0x400",
+    "_FIQ_STACK_SIZE": "0x400",
+    "__undef_stack": "0x112630",
+    "HeapBase": "0x10ce30",
+    "_irq_stack_end": "0x110e30",
+    "_STACK_SIZE": "0x2000",
+    "_HEAP_SIZE": "0x2000",
+    "_stack_end": "0x10ee30",
+    "_abort_stack_end": "0x111a30",
+    "__stack": "0x110e30",
+    "HeapLimit": "0x10ee30",
+    "_heap": "0x10ce30",
+    "_stack": "0x110e30",
+    "_fiq_stack_end": "0x111e30",
+    "_UNDEF_STACK_SIZE": "0x400"
+  },
+  "heap_stack_sections": [
+    {
+      "name": ".heap",
+      "start": 1101348,
+      "end": 1109552
+    },
+    {
+      "name": ".stack",
+      "start": 1109552,
+      "end": 1123888
+    }
+  ]
+}
