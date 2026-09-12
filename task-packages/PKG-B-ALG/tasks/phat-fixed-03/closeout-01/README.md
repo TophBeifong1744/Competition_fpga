@@ -2,6 +2,8 @@
 
 2026-09-11；作者归档分析已复跑，稳定草稿交 A 包级复核。没有冻结数制或误差门限，没有完整定点链/H3/实板通过结论。9/16提供可复现进展；完整包/H3按9/22及成熟度评审。
 
+同日晚追加：已接收A的29位前向核固定提交`c0b5f8fb44643e81d8c4e6f0be457dddeae9758e`，独立复核证据与当前结论见[a29-review-01/README.md](a29-review-01/README.md)。预算已增加有来源的候选核输入；原分析及`evidence/run01`保持不变。新增材料仍交审，不自行合并。
+
 研究输入固定为已发布提交 `bff45e7bbedab321fc4815e1432f1575c750edc4`，本分支 `task/member-b-fixed-closeout-01`，专用工作树 `F:/NUEC/review-worktrees/member-b-fixed-closeout-01`。读取远端 main `e811c399adaa083d520bfda998f15fe86b445b9a` 的 AGENTS.md、docs/phase-closeout.md、docs/phases/2026-09-11-to-09-16/B.md，未混入其余主线改动。上游 README 中“未推送”及旧 HEAD 是历史记录；本次以固定发布 SHA 为来源，不改写原件。
 
 ## 本包入口
@@ -26,7 +28,7 @@ $py='C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencie
 & $py -B task-packages/PKG-B-ALG/tasks/phat-fixed-03/closeout-01/analyze.py --out task-packages/PKG-B-ALG/tasks/phat-fixed-03/closeout-01/evidence/reviewer-run01
 ```
 
-原交付完整性检查（实际已退出0：16个清单文件、12个本地链接、分析源码与输出哈希一致）：
+原交付完整性检查（首版实际退出0：16个清单文件、12个本地链接；追加版按当前manifest重新核验，首版清单保留在a29-review-01/previous-release-manifest.json）：
 
 ```powershell
 & $py -B task-packages/PKG-B-ALG/tasks/phat-fixed-03/closeout-01/verify_delivery.py
@@ -34,7 +36,7 @@ $py='C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencie
 
 完整性检查会拒绝本目录内新增但未列清单的文件，因此应在生成reviewer输出之前运行，或把reviewer输出放到本目录外的新路径。新增复核结果不得覆盖本次manifest。
 
-实际已运行同命令，输出为 `evidence/run01`；退出0，输出 `Verified 196 NPZ / 11760 candidate pairs / 96 archived amplitude groups`。重新解压219818744字节逐字节哈希核对，核验7个上游源文件、196个NPZ及每个归档比较字段；重算PCM、整数窗和公共指数舍入数组，并用归档整数窗新增浮点PHAT/IFFT/峰对照。96个幅值统计全部恢复一致。本轮未调用供应商模型、Vivado、板卡或更改历史证据；本结果不是独立评审人的验收。
+首版实际已运行同命令，输出为 `evidence/run01`；退出0，输出 `Verified 196 NPZ / 11760 candidate pairs / 96 archived amplitude groups`。重新解压219818744字节逐字节哈希核对，核验7个上游源文件、196个NPZ及每个归档比较字段；重算PCM、整数窗和公共指数舍入数组，并用归档整数窗新增浮点PHAT/IFFT/峰对照。96个幅值统计全部恢复一致。首版归档分析未调用供应商模型、Vivado、板卡或更改历史证据；该分析不是独立评审人的验收。A29追加输入的Vivado复跑另见a29-review-01。
 
 `verification.json` 记录输出文件哈希和源码SHA。跨机器先核对原件bytes/hash，再核对数组整数值及有效性/掩码/峰等离散结果；浮点统计允许环境差异必须明确报告，不能直接宣称字节一致。JSON/CSV容器哈希与数值结果是两种检查。本脚本不修改归档，也不重新打包原frames。
 

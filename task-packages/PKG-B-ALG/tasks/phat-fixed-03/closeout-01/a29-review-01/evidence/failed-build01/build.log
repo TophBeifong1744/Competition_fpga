@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri Sep 11 22:38:13 2026
+# Process ID         : 484904
+# Current directory  : F:/NUEC/b29-review-run01
+# Command line       : vivado.exe -mode batch -notrace -source F:\NUEC\review-worktrees\b-review-fft29-c0b5f8f\task-packages\PKG-A-ACQ\tasks\fft29-bitexact-budget-01\source\build.tcl -log F:\NUEC\b29-review-run01\build.log -journal F:\NUEC\b29-review-run01\build.jou -tclargs F:\NUEC\b29-review-run01\project
+# Log file           : F:/NUEC/b29-review-run01/build.log
+# Journal file       : F:\NUEC\b29-review-run01\build.jou
+# Running On         : Y9000P
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 9 7945HX with Radeon Graphics        
+# CPU Frequency      : 2495 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 32
+# Host memory        : 16308 MB
+# Swap memory        : 30064 MB
+# Total Virtual      : 46372 MB
+# Available Virtual  : 12653 MB
+#-----------------------------------------------------------
+CRITICAL WARNING: [Common 17-1297] User repo 'C:/Users/BryanZheng/AppData/Roaming/Xilinx/Vivado/2025.2/XilinxTclStore' catalog file is corrupted. XilinxTclStore has been reverted to the installation area and Tcl Store changes will not be saved. To use local Tcl Store, please run tclapp::reset_tclstore and reinstall the apps.
+source {F:\NUEC\review-worktrees\b-review-fft29-c0b5f8f\task-packages\PKG-A-ACQ\tasks\fft29-bitexact-budget-01\source\build.tcl} -notrace
+ERROR: [Common 17-539] Failed to load tclapp initializer can't find package ::tclapp::support::appinit 1.2 from 'D:/AMD/2025.2/Vivado/data/XilinxTclStore'
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 532.840 ; gain = 217.820
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-539] Failed to load tclapp initializer can't find package ::tclapp::support::appinit 1.2 from 'D:/AMD/2025.2/Vivado/data/XilinxTclStore'
+
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 11 22:38:34 2026...

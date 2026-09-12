@@ -1,0 +1,72 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Fri Sep 11 22:43:40 2026
+| Host         : Y9000P running 64-bit major release  (build 9200)
+| Command      : report_drc -file F:/NUEC/b29-review-run02/project/route-drc.rpt
+| Design       : ss_fft29
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 7
++--------+----------+-------------------------------------------------------------------+--------+
+| Rule   | Severity | Description                                                       | Checks |
++--------+----------+-------------------------------------------------------------------+--------+
+| ZPS7-1 | Warning  | PS7 block required                                                | 1      |
+| AVAL-4 | Advisory | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 6      |
++--------+----------+-------------------------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+U0/i_synth/non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/single_channel.datapath/pe/cmplx_mult/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[0].bppDSP[0].u_l[0].use_dsp48e1.dsp: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#2 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+U0/i_synth/non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/single_channel.datapath/pe/cmplx_mult/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[0].bppDSP[0].u_l[1].use_dsp48e1.dsp: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#3 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+U0/i_synth/non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/single_channel.datapath/pe/cmplx_mult/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[0].bppDSP[1].u_l[0].use_dsp48e1.dsp: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#4 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+U0/i_synth/non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/single_channel.datapath/pe/cmplx_mult/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[0].bppDSP[0].u_l[0].use_dsp48e1.dsp: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#5 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+U0/i_synth/non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/single_channel.datapath/pe/cmplx_mult/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[0].bppDSP[0].u_l[1].use_dsp48e1.dsp: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#6 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+U0/i_synth/non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/single_channel.datapath/pe/cmplx_mult/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[0].bppDSP[1].u_l[0].use_dsp48e1.dsp: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+

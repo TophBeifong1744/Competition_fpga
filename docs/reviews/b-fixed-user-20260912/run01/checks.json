@@ -1,0 +1,87 @@
+{
+  "status": "USER_AUTHORIZED_ARCHIVE_INTEGRATION_CHECK_NOT_NEW_A_APPROVAL",
+  "utc": "2026-09-12T04:01:42.904540+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "head": "fc5cffb84f5056b5ad0596a5b816777d432b4911",
+  "source": "fdc2d18f2d765cad3223720a85680fd102185039",
+  "source_files_git_bytes_equal": 416,
+  "sealed_manifests": [
+    {
+      "manifest": "task-packages\\PKG-B-ALG\\tasks\\fft-window-02\\hashes.json",
+      "entries": 26
+    },
+    {
+      "manifest": "task-packages\\PKG-B-ALG\\tasks\\phat-fixed-03\\integration\\manifest.json",
+      "entries": 83
+    },
+    {
+      "manifest": "task-packages\\PKG-B-ALG\\tasks\\phat-fixed-03\\dynamic-range\\manifest.json",
+      "entries": 206
+    }
+  ],
+  "recovered_original_logs": {
+    "task-packages/PKG-B-ALG/tasks/phat-fixed-03/dynamic-range/run01-console.log": "13824b8a0e456da83ffc38d2f82ee8e9e96ef656313547e33d539ad780112b2f",
+    "task-packages/PKG-B-ALG/tasks/phat-fixed-03/integration/evidence/run02-console.log": "e56632ce6dbd2680fae2f8a233b5cc0eb7b8b426d4b6d1ffa0d8cfcd1262332a"
+  },
+  "commands": [
+    {
+      "label": "closeout-manifest",
+      "argv": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\b-fixed-user-20260912\\task-packages\\PKG-B-ALG\\tasks\\phat-fixed-03\\closeout-01\\verify_delivery.py"
+      ],
+      "cwd": "F:\\NUEC\\review-worktrees\\b-fixed-user-20260912",
+      "exit_code": 0
+    },
+    {
+      "label": "window-archive",
+      "argv": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\b-fixed-user-20260912\\task-packages\\PKG-B-ALG\\tasks\\fft-window-02\\verify_archive.py",
+        "--out",
+        "F:\\NUEC\\b-fixed-postmerge-20260912-run01\\window-check.json"
+      ],
+      "cwd": "F:\\NUEC\\review-worktrees\\b-fixed-user-20260912",
+      "exit_code": 0
+    },
+    {
+      "label": "phat-arithmetic",
+      "argv": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\b-fixed-user-20260912\\task-packages\\PKG-B-ALG\\tasks\\phat-fixed-03\\validate.py",
+        "--seed-offset",
+        "10000",
+        "--out",
+        "F:\\NUEC\\b-fixed-postmerge-20260912-run01\\phat"
+      ],
+      "cwd": "F:\\NUEC\\review-worktrees\\b-fixed-user-20260912",
+      "exit_code": 0
+    },
+    {
+      "label": "closeout-analysis",
+      "argv": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\b-fixed-user-20260912\\task-packages\\PKG-B-ALG\\tasks\\phat-fixed-03\\closeout-01\\analyze.py",
+        "--out",
+        "F:\\NUEC\\b-fixed-postmerge-20260912-run01\\analysis"
+      ],
+      "cwd": "F:\\NUEC\\review-worktrees\\b-fixed-user-20260912",
+      "exit_code": 0
+    }
+  ],
+  "analysis_numeric_outputs_bytes_equal": {
+    "amplitude.csv": true,
+    "numerical-loss.csv": true,
+    "pairs.csv": true,
+    "research-lines.json": true,
+    "stage-amplitude.csv": true,
+    "stage-pairs.csv": true,
+    "strata.json": true,
+    "tail-cases.json": true
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "PASS_SOFTWARE_PHAT_CANDIDATE_NOT_RTL_OR_ALGORITHM_ACCEPTANCE",
+  "epsilon_cross_codes": "2048/30517578125",
+  "epsilon_cross_codes_float": 6.7108864e-08,
+  "seed_offset": 10000,
+  "normalization_seed": 2026101301,
+  "magnitude_fraction_bits": 24,
+  "paired_mag16_max_error_codes": 9,
+  "rounding_checks": 3001,
+  "normalization_vectors": 4253,
+  "max_error_vs_decimal_rounded_codes": 1,
+  "worst_normalization": {
+    "input": [
+      255,
+      1
+    ],
+    "actual": [
+      8388544,
+      32896
+    ],
+    "oracle": [
+      8388543,
+      32896
+    ]
+  },
+  "max_recip_error_vs_direct_division_codes": 1,
+  "mask_mismatch_bins": 0,
+  "pair_validity_mismatches": 0,
+  "max_pair_component_error_codes": 0.5089454110711813,
+  "prequantization_counterexample": {
+    "float_valid_bins": 79,
+    "quantized_valid_bins": 0,
+    "recoverable_by_epsilon": false
+  }
+}
