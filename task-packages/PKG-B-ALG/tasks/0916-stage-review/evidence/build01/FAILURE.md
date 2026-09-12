@@ -1,0 +1,1 @@
+First index build stopped before manifest publication: compared the old .gitattributes working-copy bytes against Git blob without accounting for normal Windows text checkout conversion. No old archive was changed. Corrected verification checks tracked old files against the pinned Git version and verifies binary archive bytes separately. This failed attempt is retained.

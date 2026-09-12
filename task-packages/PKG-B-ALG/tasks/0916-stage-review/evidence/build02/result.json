@@ -1,0 +1,28 @@
+{
+  "status": "PASS_PINNED_INDEX_NOT_STAGE_ACCEPTANCE",
+  "source_commit": "add40fd773eccdad80f26624ca899c331d6846c8",
+  "file_count": 1021,
+  "total_bytes": 179499429,
+  "group_counts": {
+    "phase_rules": 8,
+    "b_four_receipt": 53,
+    "a_real_recording": 77,
+    "a_engineering": 244,
+    "a_fft29": 156,
+    "b_fixed_research": 418,
+    "b_review_scope": 64,
+    "c004_status": 1
+  },
+  "prior_archive_files_unchanged": 31,
+  "prior_archive_check": "Git tracked diff against pinned source plus binary ZIP byte hashes; text checkout conversion is not byte identity",
+  "manifest_sha256": "58d1c6670157f25e66f6bdf8a21227ac38be08039943e140775d23ff34435844",
+  "runner_sha256": "c8f06f7c29ce2d062e9e66e84c68ccec74f247f841cd6b6a9abea4b0d5efa61c",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "command": [
+    "task-packages/PKG-B-ALG/tasks/0916-stage-review/archive_index.py",
+    "--build",
+    "--out",
+    "task-packages/PKG-B-ALG/tasks/0916-stage-review/evidence/build02"
+  ],
+  "exported": false
+}
