@@ -4,9 +4,14 @@
 历史 adapt_c_one.tcl、integrate_one.tcl、build_ps.ps1 和 189 份冻结原件保持不变。
 新增入口适用于已经适配完成的 one；不连接板卡、不下载、不提交或自行合入。
 
+2026-09-12 PS 合同阻断修复：见 [修复说明与验证](repair_ps_contract/README.md)。
+旧 RESULTS.md、evidence/run01～04 和 ENVELOPE-SHA256.json 保留为 050d06 的历史自检证据，
+不表示已经通过 B 独立复核。当前增量哈希以 repair_ps_contract/REPAIR-MANIFEST.json 为准。
+
 ## 入口与边界
 
-- build_current.py：Python 3.11+，仅标准库；check 和 build 两种明确模式。
+- build_current.py：Python 3.11+，仅标准库；check / ps-check / build 三种明确模式。
+- ps_contract.py：从同一编译单元的目标文件及最终 ELF 提取真实 PS 合同；未知源码形态拒绝。
 - build_hw.tcl：仅供 Python 入口在新建快照内调用，不作为对真实 one 的操作入口。
 - test_build_current.py：微型临时夹具测试，禁止启动 Vivado/GCC，不依赖真实板卡。
 - 本目录内 evidence/、RESULTS.md：本次真实命令、检查结果、构建记录和产物索引；以实际存在的结果为准。
@@ -37,7 +42,8 @@
 
 BSP 使用现成的驱动库，不创建/重建 Vitis 平台。记录所用 BSP 文件哈希；
 构建前验证其 ps7_init.c 与所提供 XSA 对应，
-构建后要求新 XSA 的 HWH 按下述受限等价规则匹配，且 PS 初始化逐字节一致，才允许链接 PS。
+先编译检查 PS 与该参考 XSA 的合同；完整构建结束后要求新 XSA 的 HWH 按下述受限等价规则匹配，
+且 PS 初始化逐字节一致，才允许把已校验 ELF 随新硬件一起标为构建完成。
 HWH 忽略 TIMESTAMP；针对 PS7 5.5，仅当 PCW_USE_CROSS_TRIGGER=0、PCW_P2F_CTI_INTR=0，
 且未出现 FTMT/TRIGGER 硬件端口或接口时，8 个 PCW_FTM_CTI_IN/OUT0～3 的
 DISABLED 与 &lt;Select&gt; 两种未启用 GUI 哨兵值视为等价。
@@ -69,6 +75,7 @@ if ($LASTEXITCODE -ne 0) { throw '检查未通过，先按错误说明修正参�
 
 check 只读文件并向控制台输出 JSON，不创建输出目录，不调用工具、不检查许可证、不构建。
 CHECK_PASS_NOT_BUILD 只表示检查通过，不能写成“工程复现成功”。
+此时 ps_contract_status=NOT_VERIFIED_IN_READ_ONLY_CHECK，不代表实际 PS 缓冲区安全。
 检查通过后，同样参数执行：
 
 ~~~powershell
@@ -77,6 +84,25 @@ if ($LASTEXITCODE -ne 0) { throw '安全测试未通过，不执行构建' }
 & $BuildPython -B current_build/build_current.py build @BuildArgs
 if ($LASTEXITCODE -ne 0) { throw '构建未通过，保留整个输出目录并查看 result.json 与 logs' }
 ~~~
+
+仅验证 PS 源码/编译/链接合同，可把 build 换成 ps-check。
+它仍使用全新输出目录，返回 PS_CONTRACT_PASS_NOT_HW_BUILD；不会启动 Vivado。
+随后若做完整 build，必须另换新目录，不能复用 ps-check 输出。
+完整 build 也强制先执行同一 PS 校验，没有跳过选项。
+
+## PS 合同如何绑定
+
+1. 仅识别现有采集函数正文；允许七个宏行的受限算术表达式，拒绝新增条件分支、宏重定义或未知正文。
+   这不是通用 C 解析器，也不以版本字符串或未绑定 JSON 推定地址。
+2. 独立构建包装单元包含原始 main_four_capture.c，再附加一份只读合同常量；
+   不改源文件或采集逻辑。GCC 对同一单元预处理一次，生成的 .i 是实际编译 .o 的输入，
+   随后只链接这个 .o，不另行编译一份主程序。
+3. 从实际 ARM ELF32 目标文件读取 BASE/LIMIT/GROUPS/WORDS_PER_GROUP/BYTES/PACKET/GUARD、
+   BSP DDR 上下界及实际 ABI 大小；与 BD 采集参数、XSA DDR/HP0 范围和 DMA 长度位数核对。
+4. 最终 ELF 中的合同必须与目标文件一致，并检查全部非空 SHF_ALLOC 区间、PT_LOAD、
+   堆/栈及真实 end 符号。报告地址由该校验结果生成，不再使用固定地址作为未经核实的报告值。
+5. 首版只放行既有固定合同；其他缓冲区搬迁即使数学上可行也拒绝，须另行审核。
+   源码、预处理输入、目标文件、链接脚本、ELF、map、参考 XSA/BD、编译参数均记录来源和哈希。
 
 再次复现必须换一个尚不存在的输出目录，不能删除失败目录来复用名字。
 已有目录、路径重叠、缺依赖、已改变输入、旧单麦 BD、未知外部引用或脚本钩子均应拒绝；
@@ -111,7 +137,9 @@ if ($LASTEXITCODE -ne 0) { throw '构建未通过，保留整个输出目录并�
 <fresh-output>/
   preflight.json             输入位置、116 项左右的实际依赖及保护哈希（以本次清单为准）
   build_current.py           本轮实际入口快照
+  ps_contract.py             本轮实际 PS 合同校验器
   build_hw.tcl               本轮实际 Tcl 快照
+  ps_check/                  实际包装单元/.i/.o/ELF/map、编译合同与链接范围结果
   inputs/project/            当前工程复制件；包含本轮生成的 Vivado 缓存/运行文件
   inputs/bsp/                本轮链接的 BSP 输入复制件
   inputs/ps/                 未修改的 PS 源文件复制件

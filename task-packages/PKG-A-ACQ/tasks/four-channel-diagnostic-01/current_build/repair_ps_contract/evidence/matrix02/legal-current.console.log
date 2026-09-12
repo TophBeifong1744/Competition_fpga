@@ -1,0 +1,175 @@
+{
+  "status": "PS_CONTRACT_PASS_NOT_HW_BUILD",
+  "started_at": "2026-09-12T17:24:07+0800",
+  "board_test": "NOT_RUN",
+  "bsp_rebuilt": false,
+  "ps_contract": {
+    "status": "PS_CONTRACT_PASS_NOT_BOARD_TEST",
+    "values": {
+      "rx_start": 16777216,
+      "rx_limit_exclusive": 17825792,
+      "rx_data_end_exclusive": 17801216,
+      "rx_guard_end_exclusive": 17801280,
+      "bytes": 1024000,
+      "packet_bytes": 8000,
+      "packets": 128,
+      "program_end": 1123888
+    },
+    "compiled_values": {
+      "BASE": 16777216,
+      "LIMIT": 17825792,
+      "GROUPS": 32000,
+      "WORDS_PER_GROUP": 8,
+      "BYTES": 1024000,
+      "PACKET": 8000,
+      "GUARD": 64,
+      "DDR_BASE": 1048576,
+      "DDR_HIGH": 1073741823,
+      "WORD_BYTES": 4,
+      "POINTER_BYTES": 4
+    },
+    "hardware": {
+      "groups": 32000,
+      "groups_per_packet": 250,
+      "ddr_base": 1048576,
+      "ddr_high": 1073741823,
+      "dma_length_bits": 14,
+      "dma_base": 0,
+      "dma_high": 1073741823
+    },
+    "allocated_ranges": [
+      {
+        "name": ".text",
+        "start": 1048576,
+        "end": 1074100
+      },
+      {
+        "name": ".init",
+        "start": 1074100,
+        "end": 1074112
+      },
+      {
+        "name": ".fini",
+        "start": 1074112,
+        "end": 1074124
+      },
+      {
+        "name": ".rodata",
+        "start": 1074124,
+        "end": 1076651
+      },
+      {
+        "name": ".data",
+        "start": 1076656,
+        "end": 1078076
+      },
+      {
+        "name": ".eh_frame",
+        "start": 1078076,
+        "end": 1078132
+      },
+      {
+        "name": ".mmu_tbl",
+        "start": 1081344,
+        "end": 1097728
+      },
+      {
+        "name": ".ARM.exidx",
+        "start": 1097728,
+        "end": 1097736
+      },
+      {
+        "name": ".init_array",
+        "start": 1097736,
+        "end": 1097744
+      },
+      {
+        "name": ".fini_array",
+        "start": 1097744,
+        "end": 1097748
+      },
+      {
+        "name": ".drvcfg_sec",
+        "start": 1097748,
+        "end": 1097964
+      },
+      {
+        "name": ".bss",
+        "start": 1097964,
+        "end": 1101348
+      },
+      {
+        "name": ".heap",
+        "start": 1101348,
+        "end": 1109552
+      },
+      {
+        "name": ".stack",
+        "start": 1109552,
+        "end": 1123888
+      },
+      {
+        "name": "PT_LOAD",
+        "start": 1048576,
+        "end": 1123888
+      }
+    ],
+    "bindings_sha256": {
+      "inputs/ps/main_four_capture.c": "c7ea5352a172287aa4890a948b4aeb00c48cc11acaa044ec909b2ee24980b7de",
+      "inputs/ps/lscript.ld": "8872fb0af0f6bec969e63d2e5d170c1fc058c782c6924d70697b352aeab55dd4",
+      "inputs/bsp-reference.xsa": "71e7bf6d4fcb769582e5485660515b8f615b2027aa2ff18c1f8d3f67f9457baa",
+      "ps_check/contract_input.bd": "0be89e6da3f914e4eb914e92c79f8fb774942723db5bf4cb02e123169dfcb181",
+      "ps_check/ps_build_unit.c": "661b6f959bb01d316883dd70ed44bafa774483931a50f092f2ac0cc5aa3d7b94",
+      "ps_check/ps_build_unit.i": "5f98bf7751cf02f66c6be1b741bb69f1037ec1cb5d833061cb699b6448788fdd",
+      "ps_check/ps_build_unit.o": "94d9d91d6bc5426b8eee94082a58f930e48ee09504cf4269f2bb06776ed8372d",
+      "ps_check/four_mic_capture.elf": "770c6132aeba91ef2ae9ec14a90b9c8682f885cdda713210b8ea063b1cb5a2a9",
+      "ps_check/four_mic_capture.map": "68da3435b70445ff9ddadcc5ff7fdc54360be372d1b5d97de3b50e89ec131ddb"
+    },
+    "source_shape": {
+      "body_sha256": "1b863f27c979e81ac5ee692bb499916af905664818eb4bba03857dc8ddbbe35f",
+      "macro_expressions": {
+        "BASE": "((UINTPTR)0x01000000U)",
+        "LIMIT": "((UINTPTR)0x01100000U)",
+        "GROUPS": "32000U",
+        "WORDS_PER_GROUP": "8U",
+        "BYTES": "(GROUPS * WORDS_PER_GROUP * 4U)",
+        "PACKET": "8000U",
+        "GUARD": "64U"
+      }
+    },
+    "compiler": "F:\\AMD\\2025.2\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
+    "compiler_sha256": "5564b16b151c1c8d626531440c538866aa938bdcecd7460be03ab6a43377a72f",
+    "common_argv": [
+      "F:\\AMD\\2025.2\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
+      "-DSDT",
+      "-mcpu=cortex-a9",
+      "-mfpu=vfpv3",
+      "-mfloat-abi=hard",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-O0",
+      "-g3",
+      "-specs=../inputs/bsp/Xilinx.spec",
+      "-I../inputs/bsp/include"
+    ],
+    "compile_commands": [
+      "logs/ps-preprocess.command.json",
+      "logs/ps-compile.command.json",
+      "logs/ps-build.command.json"
+    ],
+    "limits": [
+      "Known source body and fixed contract only; not a general C parser",
+      "Metadata constant only; capture source unchanged; no board execution"
+    ]
+  },
+  "program_end": "0x00112630",
+  "rx_start": "0x01000000",
+  "rx_limit_exclusive": "0x01100000",
+  "rx_guard_end_exclusive": "0x010FA040",
+  "hardware_build": "NOT_RUN",
+  "protected_inputs_unchanged": true,
+  "changed_inputs": [],
+  "finished_at": "2026-09-12T17:24:07+0800"
+}

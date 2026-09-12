@@ -1,0 +1,4 @@
+In file included from ps_build_unit.c:1:
+../inputs/ps/main_four_capture.c:29:1: error: static assertion failed: "Packet/cache alignment"
+   29 | _Static_assert(BYTES % PACKET == 0 && PACKET % 32 == 0, "Packet/cache alignment");
+      | ^~~~~~~~~~~~~~

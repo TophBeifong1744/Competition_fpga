@@ -1,0 +1,4 @@
+In file included from ps_build_unit.c:1:
+../inputs/ps/main_four_capture.c:28:1: error: static assertion failed: "RX region exceeded"
+   28 | _Static_assert(BYTES + GUARD <= 0x100000U, "RX region exceeded");
+      | ^~~~~~~~~~~~~~

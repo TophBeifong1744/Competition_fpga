@@ -1,0 +1,36 @@
+{
+  "source_shape": {
+    "body_sha256": "1b863f27c979e81ac5ee692bb499916af905664818eb4bba03857dc8ddbbe35f",
+    "macro_expressions": {
+      "BASE": "((UINTPTR)0x01000000U)",
+      "LIMIT": "((UINTPTR)0x01100000U)",
+      "GROUPS": "32000U",
+      "WORDS_PER_GROUP": "4U",
+      "BYTES": "(GROUPS * WORDS_PER_GROUP * 4U)",
+      "PACKET": "8000U",
+      "GUARD": "64U"
+    }
+  },
+  "compiled_values": {
+    "BASE": 16777216,
+    "LIMIT": 17825792,
+    "GROUPS": 32000,
+    "WORDS_PER_GROUP": 4,
+    "BYTES": 512000,
+    "PACKET": 8000,
+    "GUARD": 64,
+    "DDR_BASE": 1048576,
+    "DDR_HIGH": 1073741823,
+    "WORD_BYTES": 4,
+    "POINTER_BYTES": 4
+  },
+  "hardware": {
+    "groups": 32000,
+    "groups_per_packet": 250,
+    "ddr_base": 1048576,
+    "ddr_high": 1073741823,
+    "dma_length_bits": 14,
+    "dma_base": 0,
+    "dma_high": 1073741823
+  }
+}

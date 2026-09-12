@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "F:\\AMD\\2025.2\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
+    "-DSDT",
+    "-mcpu=cortex-a9",
+    "-mfpu=vfpv3",
+    "-mfloat-abi=hard",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-O0",
+    "-g3",
+    "-specs=../inputs/bsp/Xilinx.spec",
+    "-I../inputs/bsp/include",
+    "-x",
+    "cpp-output",
+    "-c",
+    "ps_build_unit.i",
+    "-o",
+    "ps_build_unit.o"
+  ],
+  "cwd": "F:\\College\\verilog_digital_system\\four_diagnostic_work\\ps_contract_matrix_20260912_02\\result-bytes-overflow\\ps_check"
+}

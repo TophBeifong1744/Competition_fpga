@@ -1,6 +1,7 @@
 """Snapshot/rebuild the CURRENT four-mic project, never run migration scripts.
 
-check: filesystem/contract checks only; no mkdir, tool launch, build or board IO.
+check: filesystem/hardware-shape checks only; PS contract is not yet verified.
+ps-check: exclusive snapshot, real compiler/linker, bound PS contract; no hardware build.
 build: exclusive new output, copied inputs, Vivado + existing BSP-linked PS build.
 Python >= 3.11, standard library only. Source/tool paths are explicit arguments.
 """
@@ -18,6 +19,7 @@ import sys
 import time
 import xml.etree.ElementTree as ET
 import zipfile
+from ps_contract import compile_bound_ps
 
 PART = "xc7z020clg400-2"
 VERSION = "2025.2"
@@ -281,6 +283,7 @@ def preflight(args):
             "bsp": str(bsp), "ps_source": str(ps), "bsp_xsa": str(bsp_xsa),
             "part": PART, "version_required": VERSION, "jobs": args.jobs,
             "input_files": files, "protected_sha256": hashes, "bsp_binding": xi,
+            "ps_contract_status": "NOT_VERIFIED_IN_READ_ONLY_CHECK",
             "checks": ["new output; no input overlap", "no links/external source/hook",
                        "already-adapted four-mic BD", "required inputs present",
                        "BSP PS init matches reference XSA"],
@@ -334,7 +337,7 @@ def run_command(argv, out, name, cwd=None):
     return (logs / (name + ".log")).read_text(encoding="utf-8", errors="replace")
 
 
-def build(plan):
+def build(plan, ps_only=False):
     out = Path(plan["output"])
     # Atomic claim: existence checked again, no recursive delete, no -force/reuse.
     out.mkdir(exist_ok=False)
@@ -343,11 +346,22 @@ def build(plan):
     write_json(out / "preflight.json", plan)
     try:
         shutil.copyfile(HERE / "build_current.py", out / "build_current.py")
+        shutil.copyfile(HERE / "ps_contract.py", out / "ps_contract.py")
         clone = stage(plan, out)
         shutil.copyfile(HERE / "build_hw.tcl", out / "build_hw.tcl")
         # Windows vivado.bat -version can print a valid version but return 1.
         # build_hw.tcl checks [version -short] and records [version] before open_project.
         run_command([plan["gcc"], "--version"], out, "gcc-version")
+        bound = compile_bound_ps(plan, out, run_command, write_json)
+        status["ps_contract"] = bound
+        status["program_end"] = f"0x{bound['values']['program_end']:08X}"
+        status["rx_start"] = f"0x{bound['values']['rx_start']:08X}"
+        status["rx_limit_exclusive"] = f"0x{bound['values']['rx_limit_exclusive']:08X}"
+        status["rx_guard_end_exclusive"] = f"0x{bound['values']['rx_guard_end_exclusive']:08X}"
+        if ps_only:
+            status["status"] = "PS_CONTRACT_PASS_NOT_HW_BUILD"
+            status["hardware_build"] = "NOT_RUN"
+            return status
         run_command([plan["vivado"], "-mode", "batch", "-notrace", "-nojournal",
                      "-log", "logs/vivado.log", "-source", "build_hw.tcl", "-tclargs",
                      str(out), str(clone), str(plan["jobs"])], out, "hardware")
@@ -390,20 +404,9 @@ def build(plan):
         require(not mutated, f"Copied RTL/BD/XDC changed: {mutated}")
         psout = out / "artifacts/ps"
         psout.mkdir()
-        argv = [plan["gcc"], "-DSDT", "-mcpu=cortex-a9", "-mfpu=vfpv3",
-                "-mfloat-abi=hard", "-std=c11", "-Wall", "-Wextra", "-Werror", "-O0", "-g3",
-                "-specs=../../inputs/bsp/Xilinx.spec", "-I../../inputs/bsp/include",
-                "../../inputs/ps/main_four_capture.c", "-o", "four_mic_capture.elf",
-                "-L../../inputs/bsp/lib", "-Wl,-T,../../inputs/ps/lscript.ld",
-                "-Wl,-Map,four_mic_capture.map,--cref", "-Wl,--start-group",
-                "-lxilstandalone", "-lxiltimer", "-lxil", "-lgcc", "-lc", "-Wl,--end-group"]
-        run_command(argv, out, "ps-build", psout)
-        run_command([plan["size"], "four_mic_capture.elf"], out, "ps-size", psout)
-        nm = run_command([plan["nm"], "-n", "four_mic_capture.elf"], out, "ps-symbols", psout)
-        ends = re.findall(r"(?m)^([0-9a-fA-F]+)\s+\w\s+end$", nm)
-        require(len(ends) == 1 and int(ends[0], 16) <= 0x01000000, "Program overlaps RX reservation")
-        status["program_end"] = "0x" + ends[0]
-        status["rx_guard_end_exclusive"] = "0x010FA040"
+        for name in ("four_mic_capture.elf", "four_mic_capture.map"):
+            shutil.copyfile(out / "ps_check" / name, psout / name)
+        write_json(out / "reports/ps-contract.json", bound)
         timing = (out / "reports/timing-values.txt").read_text()
         values = dict(line.split("=", 1) for line in timing.splitlines() if "=" in line)
         values.update(timing_summary_values((out / "reports/timing-summary.rpt").read_text()))
@@ -426,7 +429,7 @@ def build(plan):
             status["status"] = "INPUT_CHANGED_BUILD_INVALID"
         status["finished_at"] = time.strftime("%Y-%m-%dT%H:%M:%S%z")
         artifacts = {}
-        for directory in ("artifacts", "reports", "logs"):
+        for directory in ("artifacts", "reports", "logs", "ps_check"):
             if (out / directory).exists():
                 for p in tree_files(out / directory):
                     artifacts[p.relative_to(out).as_posix()] = {"bytes": p.stat().st_size, "sha256": sha(p)}
@@ -437,7 +440,7 @@ def build(plan):
 
 def parser():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("mode", choices=("check", "build"))
+    p.add_argument("mode", choices=("check", "ps-check", "build"))
     for option in ("project", "vivado", "gcc", "bsp", "bsp-xsa", "ps-source", "output"):
         p.add_argument("--" + option, required=True, type=Path)
     p.add_argument("--jobs", type=int, default=4)
@@ -448,9 +451,10 @@ def main():
     args = parser().parse_args()
     try:
         plan = preflight(args)
-        result = plan if args.mode == "check" else build(plan)
+        result = plan if args.mode == "check" else build(plan, ps_only=args.mode == "ps-check")
         print(json.dumps(result, ensure_ascii=False, indent=2))
-        return 0 if result["status"] in ("CHECK_PASS_NOT_BUILD", "BUILD_PASS_NOT_BOARD_TEST") else 1
+        return 0 if result["status"] in (
+            "CHECK_PASS_NOT_BUILD", "PS_CONTRACT_PASS_NOT_HW_BUILD", "BUILD_PASS_NOT_BOARD_TEST") else 1
     except (OSError, ValueError, ET.ParseError, BuildError, zipfile.BadZipFile) as error:
         print(json.dumps({"status": "REFUSED_OR_FAILED", "error": str(error)}, ensure_ascii=False))
         return 2
