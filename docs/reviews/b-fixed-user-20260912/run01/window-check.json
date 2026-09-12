@@ -1,0 +1,43 @@
+{
+  "status": "PASS_NEW_VECTORS_CMODEL_XSIM_BIT_EXACT",
+  "jobs": 22,
+  "complex_outputs": 22528,
+  "components": 45056,
+  "mismatch_samples": 0,
+  "first_mismatches": [],
+  "config_to_last_output_cycles": [
+    7402,
+    7402,
+    7402,
+    7402,
+    7402,
+    7402,
+    7402,
+    7402,
+    7402,
+    7402,
+    7402,
+    7402,
+    7402,
+    7402,
+    7402,
+    7402,
+    7402,
+    7402,
+    7402,
+    7402,
+    7402,
+    7641
+  ],
+  "protocol": "testbench TLAST/natural index/status/event/backpressure checks passed",
+  "output_bytes_equal": false,
+  "equal_after_crlf_normalization": true,
+  "hashes": {
+    "F:\\NUEC\\review-worktrees\\b-fixed-user-20260912\\task-packages\\PKG-B-ALG\\tasks\\fft-window-02\\evidence\\run01\\inputs.mem": "596ee67a06618245e4aa44531b22dc590fd020f40887e2eb296c60072952f92e",
+    "F:\\NUEC\\review-worktrees\\b-fixed-user-20260912\\task-packages\\PKG-B-ALG\\tasks\\fft-window-02\\evidence\\run01\\model-outputs.csv": "012a01ea3965e4285ffbc16c6331993581134fafe7c53fc6cf1c54c15387372d",
+    "F:\\NUEC\\review-worktrees\\b-fixed-user-20260912\\task-packages\\PKG-B-ALG\\tasks\\fft-window-02\\evidence\\run01\\outputs.csv": "40dceb82e196392d0ca7c95167f5763a197357ac9529d2cb4c83016098e5ea2f",
+    "F:\\NUEC\\review-worktrees\\b-fixed-user-20260912\\task-packages\\PKG-B-ALG\\tasks\\fft-window-02\\evidence\\run01\\cycles.csv": "90ca22528eab427a4bd9de390db21f426076acdc87117b03a3a014bc00029324",
+    "F:\\NUEC\\review-worktrees\\b-fixed-user-20260912\\task-packages\\PKG-B-ALG\\tasks\\fft-window-02\\evidence\\run01\\simulation.txt": "0d83e52d462e299acc5717fb7c7368f2192fa3ba214f2b2cbccc398dc9681b52"
+  },
+  "limitation": "Python integer window then new FFT RTL vs AMD model. No window RTL, actual PHAT computation, overflow recovery, full localization or hardware acceptance."
+}
