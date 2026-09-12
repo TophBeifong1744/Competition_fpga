@@ -1,0 +1,63 @@
+started_utc=2026-09-12T09:12:19.770363+00:00
+python=3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+platform=Windows-11-10.0.26200-SP0
+command=['D:\\Python\\python.exe', 'C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\outsourcing\\motor_control_plan\\test_delivery.py', '--root', 'C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\outsourcing\\motor_control_plan']
+exit_code=0
+{
+  "checks": [
+    {
+      "name": "intact_copy",
+      "expected_success": true,
+      "exit_code": 0
+    },
+    {
+      "name": "missing_log",
+      "expected_success": false,
+      "exit_code": 1
+    },
+    {
+      "name": "hash_mismatch",
+      "expected_success": false,
+      "exit_code": 1
+    },
+    {
+      "name": "bad_png_even_with_matching_hash",
+      "expected_success": false,
+      "exit_code": 1
+    },
+    {
+      "name": "truncated_npz_even_with_matching_hash",
+      "expected_success": false,
+      "exit_code": 1
+    },
+    {
+      "name": "valid_zip_invalid_array_even_with_matching_hash",
+      "expected_success": false,
+      "exit_code": 1
+    },
+    {
+      "name": "restored_copy",
+      "expected_success": true,
+      "exit_code": 0
+    }
+  ],
+  "pass_count": 7
+}
+
+
+command=['C:\\Users\\hsc\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe', '-NoProfile', '-File', 'C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\outsourcing\\motor_control_plan\\run_all.ps1', '-PythonPath', 'D:\\Python\\python.exe', '-OutputDirectory', 'C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\outsourcing\\motor_control_plan\\results']
+exit_code=1
+
+Exception: C:\Users\hsc\Desktop\fpga_clone\Competition_fpga\task-packages\PKG-A-ACQ\outsourcing\motor_control_plan\run_all.ps1:13
+Line |
+  13 |      throw 'Refusing to overwrite an existing evidence directory. Choo …
+     |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Refusing to overwrite an existing evidence directory. Choose a new OutputDirectory.
+
+command=['D:\\Python\\python.exe', 'C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\outsourcing\\motor_control_plan\\validate_control.py', '--out', 'C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\outsourcing\\motor_control_plan\\results']
+exit_code=1
+
+Refusing to overwrite existing control_checks.json; use a new --out directory
+
+evidence_hashes_unchanged_after_both_refusals=PASS
+finished_utc=2026-09-12T09:12:26.883702+00:00

@@ -1,0 +1,5 @@
+# Exact evidence logs only; keep the repository-wide *.log rule elsewhere.
+!/results/run.log
+!/results/control_run.log
+!/results/rework_checks.log
+/results-reproduced-*/

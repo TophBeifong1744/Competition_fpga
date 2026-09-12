@@ -1,0 +1,66 @@
+{
+  "scope": "synthetic supervisory tests only",
+  "checks": [
+    {
+      "name": "three_fresh_stable_frames_start",
+      "pass": true
+    },
+    {
+      "name": "low_confidence_decelerates",
+      "pass": true
+    },
+    {
+      "name": "stale_frame_decelerates",
+      "pass": true
+    },
+    {
+      "name": "two_degree_deadband",
+      "pass": true
+    },
+    {
+      "name": "repeated_frame_not_three_votes",
+      "pass": true
+    },
+    {
+      "name": "out_of_range_rejected",
+      "pass": true
+    },
+    {
+      "name": "encoder_timeout",
+      "pass": true
+    },
+    {
+      "name": "encoder_timeout_latched",
+      "pass": true
+    },
+    {
+      "name": "watchdog",
+      "pass": true
+    },
+    {
+      "name": "watchdog_latched",
+      "pass": true
+    },
+    {
+      "name": "limit",
+      "pass": true
+    },
+    {
+      "name": "limit_latched",
+      "pass": true
+    },
+    {
+      "name": "estop",
+      "pass": true
+    },
+    {
+      "name": "estop_latched",
+      "pass": true
+    },
+    {
+      "name": "timestamp_transform_3deg_counterexample",
+      "pass": true
+    }
+  ],
+  "pass_count": 15
+}

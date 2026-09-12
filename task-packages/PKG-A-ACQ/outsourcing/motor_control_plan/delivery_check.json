@@ -1,8 +1,11 @@
 {
-  "normal_cases": 149,
-  "supervisory_checks": 15,
-  "simulation_source_hash_matches": true,
-  "result_counts_consistent": true,
-  "embedded_chart_count": 2,
-  "report_scope": "purchased components; conditional reduced-order numerical validation"
+  "scope": "scoped rework; local checks, remote check reported separately by exact SHA",
+  "historical_physics_cases": 149,
+  "physics_rerun": false,
+  "supervisory_checks": 380,
+  "decoded_png": 2,
+  "decoded_npz": 5,
+  "read_npz_arrays": 35,
+  "delivery_positive_negative_checks": 7,
+  "overwrite_refusal_checks": 2
 }

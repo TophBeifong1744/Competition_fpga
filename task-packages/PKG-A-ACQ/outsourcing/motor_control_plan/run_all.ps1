@@ -9,6 +9,9 @@ $ErrorActionPreference = 'Stop'
 if ([string]::IsNullOrWhiteSpace($OutputDirectory)) {
     $OutputDirectory = Join-Path $PSScriptRoot ('results-reproduced-' + (Get-Date -Format 'yyyyMMdd-HHmmss'))
 }
+if (Test-Path -LiteralPath $OutputDirectory) {
+    throw 'Refusing to overwrite an existing evidence directory. Choose a new OutputDirectory.'
+}
 & $PythonPath (Join-Path $PSScriptRoot 'simulate.py') --out $OutputDirectory
 if ($LASTEXITCODE -ne 0) { throw 'Physical simulation execution failed.' }
 & $PythonPath (Join-Path $PSScriptRoot 'validate_control.py') --out $OutputDirectory
