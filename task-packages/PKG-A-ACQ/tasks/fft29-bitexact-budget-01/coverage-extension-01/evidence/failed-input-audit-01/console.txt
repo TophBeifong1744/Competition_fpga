@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\fft29-bitexact-budget-01\coverage-extension-01\source\prepare_extension.py", line 201, in <module>
+    main()
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\fft29-bitexact-budget-01\coverage-extension-01\source\prepare_extension.py", line 155, in main
+    report, tree = audit()
+                   ^^^^^^^
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\fft29-bitexact-budget-01\coverage-extension-01\source\prepare_extension.py", line 103, in audit
+    require(sha(gzip.decompress(data)) == manifest["evidence/run01/frames.json"],
+                                          ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'evidence/run01/frames.json'
