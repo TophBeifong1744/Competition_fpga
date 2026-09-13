@@ -51,3 +51,18 @@ PY实际为C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/depen
 ## 集成
 
 合入前最新main为99cf1dc2c1e7e2bd60ca843839d47906f9b84770。实际main工作树F:/NUEC/review-worktrees/member-b-to-a-pkg-b-alg原干净，已安全快进；仅合入批准extension及B本目录记录。归档使用入口保持原extension，因仅获研究覆盖批准，不替换默认算法或实际工程。
+
+## batch-closeout
+
+| 回报项 | 实际结果 |
+| --- | --- |
+| 合入与回归 | 合入提交023177cf19c7dd8b6914fea79cfd76b05b27b020，已非强制推送。合并位置再次13/13测试、归档检查和独立86份Git blob/清单/数值核对通过，见main-*回执 |
+| main对齐 | 发布后从实际共享F:/NUEC/develop及实际main工作树核对local main、origin/main均为023177c，直接远端同SHA，领先/落后0/0；补交本收尾记录后再次核对最终SHA，保存在外部回执并向用户返回 |
+| 本批材料 | 发布后main跟踪/暂存修改0、未跟踪0、本批忽略0。共享feature工作树本批路径状态及忽略0；B本批未处理有用材料0，未说明去向0 |
+| 其他工作 | F:/NUEC/develop仍在feature/member-b-algorithm，HEAD57b86e0，52项已跟踪差异及146项未跟踪属于其他工作，全部保留；未切换或重置脏共享目录 |
+| 唯一归档入口 | 批准材料原extension与B本目录已入main。外部本次原始回执保留F:/NUEC/review-evidence/fft29-extension-b8c5e87，非活动工程；完整无关文件名盘点仅在该目录batch-full.json，SHA256为46b8fd0e20b89122edde5f87eeeb678c927d61c52a10d2f487cc176aab7755a7，公开本目录batch-summary.json给出数量 |
+| 清理与恢复 | 只删除本次固定审核worktree F:/NUEC/review-worktrees/fft29-extension-b8c5e87；删除前已检查准确路径，跟踪、未跟踪及全目录忽略均0。可由审核b8c5e87重建；脚本中该路径为历史运行位置 |
+| 保留责任 | 作者分支仍为b8c5e87。未取得A侧后续任务/独有本地材料结束确认，保留作者分支、pub及E:/fft29-coverage-01，不代签A机检查。其他成员工作树与分支均保留 |
+| 状态 | B侧本批发布、回归和材料收尾完成。A侧材料检查及短期分支清理条件由A确认后处理；这不提升为跨机器仿真或实板批准 |
+
+本次没有覆盖任何作者清单、历史原件或失败记录。B首次补充脚本错误仅记录为B检查失误，不改写作者结果。
