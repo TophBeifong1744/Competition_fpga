@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "checks": [
+    "positive/negative interpolated edge acceptance and rejection in both chains",
+    "full scheduler zero/forward-overflow rejection with no IFFT calls",
+    "122 frame identities, continuous validity and 732 pair comparisons"
+  ],
+  "counts": [
+    {
+      "file": "c-adapter-quiet-20260913-01-frames.json",
+      "both": 366,
+      "changes": 23,
+      "max_delta": 0.5304042925151208
+    },
+    {
+      "file": "c-adapter-speech-20260913-01-frames.json",
+      "both": 343,
+      "changes": 3,
+      "max_delta": 0.2570502476726051
+    }
+  ],
+  "disagreements": [
+    {
+      "file": "c-adapter-speech-20260913-01-frames.json",
+      "frame": 2,
+      "pair": [
+        1,
+        3
+      ],
+      "floating": {
+        "valid": true,
+        "reason": "VALID",
+        "bins": 35,
+        "peak": -8,
+        "tau_samples": -7.964947691906318,
+        "bound_samples": 7.916297492000999,
+        "search_limit": 8,
+        "edge_peak": true,
+        "peak_height": 0.05735014999301177,
+        "separated_peak_margin": 0.1623806217369483,
+        "global_peak_lag": -8
+      },
+      "reference25": {
+        "valid": false,
+        "reason": "TAU_BOUND",
+        "bins": 35,
+        "peak": -8,
+        "tau_q12": -32632,
+        "tau_samples": -7.966796875,
+        "bound_samples": 7.916297492000999,
+        "search_limit": 8,
+        "edge_peak": true,
+        "peak_height": 481444.0,
+        "separated_peak_margin": 0.16271051254143784,
+        "global_peak_lag": -8
+      }
+    },
+    {
+      "file": "c-adapter-speech-20260913-01-frames.json",
+      "frame": 43,
+      "pair": [
+        1,
+        3
+      ],
+      "floating": {
+        "valid": false,
+        "reason": "TAU_BOUND",
+        "bins": 46,
+        "peak": -8,
+        "tau_samples": -8.020465212473857,
+        "bound_samples": 7.916297492000999,
+        "search_limit": 8,
+        "edge_peak": true,
+        "peak_height": 0.07871996771637196,
+        "separated_peak_margin": 0.1454776372798087,
+        "global_peak_lag": -8
+      },
+      "reference25": {
+        "valid": true,
+        "reason": "VALID",
+        "bins": 46,
+        "peak": -8,
+        "tau_q12": -32397,
+        "tau_samples": -7.909423828125,
+        "bound_samples": 7.916297492000999,
+        "search_limit": 8,
+        "edge_peak": true,
+        "peak_height": 675795.0,
+        "separated_peak_margin": 0.12978639972180914,
+        "global_peak_lag": -8
+      }
+    }
+  ]
+}
