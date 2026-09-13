@@ -1,0 +1,27 @@
+{
+  "review_sha": "f90d608fdb4aaaa9cfb0c528732f7e0b94530e3c",
+  "started_utc": "2026-09-13T05:59:41.584960+00:00",
+  "finished_utc": "2026-09-13T05:59:50.832842+00:00",
+  "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "candidate_file_count": 37,
+  "delivery": {
+    "pass": true,
+    "counts": {
+      "files": 36,
+      "png": 2,
+      "npz": 5,
+      "arrays": 35
+    },
+    "errors": []
+  },
+  "author_budget_reproduced": true,
+  "original_control_check_count": 556,
+  "independent_check_count": 118,
+  "safety_dominance_combinations": 24,
+  "pitch_stop_grid_fail_count": 1,
+  "historical_149_physics_rerun": false,
+  "all_invocations_expected": true,
+  "technical_approval": false,
+  "reason": "pitch stop envelope counterexample; see manual review for safety contract"
+}

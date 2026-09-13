@@ -1,0 +1,186 @@
+{
+  "review_sha": "f90d608fdb4aaaa9cfb0c528732f7e0b94530e3c",
+  "historical_sha": "773a56cfacab51c9bb7c7e9f9a05c850c7c3e48b",
+  "main_at_start": "e0ecf5eaded14288e967810248d042ff01e7ef52",
+  "files": {
+    ".gitattributes": {
+      "blob": "cb54853797bb2e2cb268d04f662bf8a94f0b69a9",
+      "sha256": "0b1cf2c7d6e4cfd646c6b0cb222fbacdac35d4c4b0ac6053a373b3328bc17a3a"
+    },
+    ".gitignore": {
+      "blob": "71266a6879127abdc71563423c3afe9ad014885e",
+      "sha256": "6c64bcba4615d13c32e4f66fb10e923613fa1d2f71a345cb6490cd5e41356816"
+    },
+    "README.md": {
+      "blob": "2dd6dbd8c6412016ac323de145940803b28bcd46",
+      "sha256": "e567235a142c3944720044063a0674d9c61dd0e86157576970865efe702a1ea2"
+    },
+    "check_delivery.py": {
+      "blob": "278a282ecd8919e2285b5314a2ba282789d5b67d",
+      "sha256": "e981a1b6079661d725ac458a1278936cedb3cfcfe1c36372717fbcfadfc4989e"
+    },
+    "delivery_check.json": {
+      "blob": "f1981e9a17ea871541168cf6be4ccbc8f208c4db",
+      "sha256": "d3938cfe39006f5d5e8e523ae6fe895a456bf255af5f1c65023d3dfea3d1112a"
+    },
+    "manifest.json": {
+      "blob": "85c2d79e9c867bb8017cd5db709bb4fb82247907",
+      "sha256": "49fd143bff75c183a6adeb0b3a7db3ae770d0ee15aae73ae51d84d392a3af607"
+    },
+    "motor_plan.md": {
+      "blob": "e138b41cb484e9b7fef1891f88d2f0c1f7f1e341",
+      "sha256": "349047009be90cde9a0239ecea7e09e0e9b6973180bb05126bd725e4567c5e3b"
+    },
+    "report.html": {
+      "blob": "317ae5b243f95360cedcd86847e7b4f6f6bbb649",
+      "sha256": "4dfcac5be434aff8149b40092bfa7730259a730ad42d3438b43dff196df85e65"
+    },
+    "results/cases.csv": {
+      "blob": "db281825801e1dd5d65a99123093ac6d33015e5e",
+      "sha256": "6ff016f03d8a1024a4c3b9ee28e9b0957af504a29ee0a1c1dd9e96e19cea86fc"
+    },
+    "results/control_checks.json": {
+      "blob": "b16d24db4bc8647c9371bc443416df1bae4a1b7e",
+      "sha256": "fed2e6da308565518d7178491c5173f877e2aef514c2fb4be10a5d55e1fb50db"
+    },
+    "results/control_checks_original.json": {
+      "blob": "2e702f13516ca5e7dad369eba32ddb997eb4c7fa",
+      "sha256": "800d88ed910075c47d156d33d9e90964bd573880b1b0a837e80daf9a2e69b349"
+    },
+    "results/control_run.log": {
+      "blob": "aff055306fc023b50abf8e016de517b4f6790700",
+      "sha256": "0947594656e2f25f6a7e61aad32f1accd73077295b9d8b9d020cf462b4841b60"
+    },
+    "results/controlled_stop.npz": {
+      "blob": "965ede0ad9f207d8e566e8a7ea66e9f2aebd25d1",
+      "sha256": "2949090b8d4d4903dcacfd6806ae4a0236f3caaf16c4f170c7b92534f16c7398"
+    },
+    "results/dual_axis_selection_budget.json": {
+      "blob": "57722121dfae5678ca8d577d99562f10bf02f040",
+      "sha256": "0058b25d3bb9ac47dbeac92fa448b09abb69afa4a4aa39cc49e4e9f213c5ad5c"
+    },
+    "results/full_range.npz": {
+      "blob": "9a4af7059cfb3c5193f8a2f4bd706191d60e171a",
+      "sha256": "e19731fc97d830012a9d8c148217e4762d21380930a3834771995623d435c1ee"
+    },
+    "results/motion.png": {
+      "blob": "d05607d16d0aca3e42626eeab4f80aa63345315e",
+      "sha256": "268d0997f62a22a20406c64b545a1b3f8fb5d625b127113f793741c703ae5dc9"
+    },
+    "results/negative_control.npz": {
+      "blob": "a351783b06a14cd67e1a4de2b7167ac27601ed8f",
+      "sha256": "bc958e33308b0ca8895199aad04873faf07abef047c2dedbe4e7e3b0b274d8ed"
+    },
+    "results/parameters.json": {
+      "blob": "3e2255c55d52d891fc7e7afcfcd9045f6a0552df",
+      "sha256": "0c14daa681a5e4c232633d137c9848bfc8136b317bd83bcfe683c2daad72e0ef"
+    },
+    "results/restoration.json": {
+      "blob": "37d57585d7917a8f7ea64f98734721c8a6339345",
+      "sha256": "ec4de638e629ba84746fcc2aaf16b115d23dde991462491feeb84cc492bc958e"
+    },
+    "results/reversal.npz": {
+      "blob": "44a99465c90d294672f24b5b2df08aea855585e7",
+      "sha256": "2baffeb8bb942b4087dcc078ae0df3d67f3e4b401fc3638a3803e5733754e0f2"
+    },
+    "results/rework_checks.log": {
+      "blob": "19ea0464911d852019762a40efb415f3a9497499",
+      "sha256": "57c7c97691642086e2d247645d4574508cab6eec7f7a30cf0a120849f8cfbfb9"
+    },
+    "results/robustness.png": {
+      "blob": "8e3d06179850d5a6ab9fc8db56c113fba9b1d185",
+      "sha256": "36b4c5813092b3ed3f0189c7c71a42ad2fcdc47d08acdc1c7e0e57fd4d8b91a4"
+    },
+    "results/run.log": {
+      "blob": "e240eae5ebd20962740bea38daa189113f30c8f7",
+      "sha256": "5d00fb068c89415d8311a8df7f18f7acac7f2e2a114236ab11477f4a080b88c0"
+    },
+    "results/trace_heavy_offset.csv": {
+      "blob": "b14078a12b1cb88d97eec6123d8554574d1f3df3",
+      "sha256": "d679a2dd23e47a9edef3ae645e06ec17a59aaee91e900a113fe3f44be6b90216"
+    },
+    "results/trace_light_50g.csv": {
+      "blob": "70b11665b327a1ff93acfbbc43f69d822a71516e",
+      "sha256": "961cc18f2a786798c02e62c9b4c0415dbd4e496e34c887ecdc2c1c9e066061d5"
+    },
+    "results/trace_nominal_1kg.csv": {
+      "blob": "faa3575c58d338e773d8e810023e90b9e8446e18",
+      "sha256": "ac7b4edb7bfc3fa047dcea6c71293c272a2d4e4520e44b8eafd403ae6b280fda"
+    },
+    "results/trace_reverse_heavy.csv": {
+      "blob": "c7c079718742b37c14a1e238c08c16c364893374",
+      "sha256": "d84a124d3a7a0b7500f26874f77f8245ed6268732000501d07520a8336cf4495"
+    },
+    "results/traces.npz": {
+      "blob": "e2464f142a5aeded4dcb55350d9a1160bc7455b0",
+      "sha256": "fc9f9deb3b38e1264e5a6e9fceb6b3723757aa1ba103af30079924d3fc10583d"
+    },
+    "results/verification.json": {
+      "blob": "3c63f2d34e44c8ca9ba443107042c96172ca2a47",
+      "sha256": "250d53729d275ccfbf6cdb23ceba9047cb293d2bae615b0e330c942cb6c7b1fb"
+    },
+    "rework_notes.md": {
+      "blob": "09b0bab1ac25c158e69ddba733527a4d3c8c31d8",
+      "sha256": "2f9484a64651a0992255f9f2db5691921896d24aac43fe2fd22fad7cdd44692b"
+    },
+    "run_all.ps1": {
+      "blob": "7a7c5a1878beb3b8dea39ba0d405f01c9b0f09ff",
+      "sha256": "f195828ce1ca1d88f2b51956a10d2519c9dff92448561776724882f28520b6fb"
+    },
+    "simulate.py": {
+      "blob": "19d2cd02762310795922cd69fc92323031ea9ead",
+      "sha256": "9b7d956b8a1b2808b847b12e7bc68dcd55fe6ef6f8488dd53e20612631a878da"
+    },
+    "single_axis_reference.md": {
+      "blob": "09c596ce396347211a84e917e2ffb05147881dfc",
+      "sha256": "d501a2e05072115c278f00c3f81c7eca3d3c0e57da0acee7c81565beff17a7fe"
+    },
+    "single_axis_report.html": {
+      "blob": "56c66db18f27a14b5c4b498f11eb8c8cc9bef104",
+      "sha256": "b7609efdbd12e38f1ffe4d9381e72c66e4f9a143bb95bc8c2603f6461b4a2d4a"
+    },
+    "size_dual_axis.py": {
+      "blob": "53ea93d72cf93f4501f64b257b911b925d446205",
+      "sha256": "0707468ef1e0910f18a206207f4efe9f79980801c8bf4e449164d4fd6efcf6ff"
+    },
+    "test_delivery.py": {
+      "blob": "032055e8d695275e4263c2ed563be4151c79b7b9",
+      "sha256": "d2eefbb827f32c5b920d637244bd8bdc27228e4597c2f5b449876b31bd36baaf"
+    },
+    "validate_control.py": {
+      "blob": "102935847e2f5825377fec89a60c661b653b85ae",
+      "sha256": "66cf8acd18074b0bada9d8ab6b1db1a2e52c66ec680778622ed68a7facdd31ae"
+    }
+  },
+  "unchanged_old_paths": [
+    ".gitattributes",
+    ".gitignore",
+    "results/cases.csv",
+    "results/control_checks.json",
+    "results/control_checks_original.json",
+    "results/control_run.log",
+    "results/controlled_stop.npz",
+    "results/full_range.npz",
+    "results/motion.png",
+    "results/negative_control.npz",
+    "results/parameters.json",
+    "results/restoration.json",
+    "results/reversal.npz",
+    "results/rework_checks.log",
+    "results/robustness.png",
+    "results/run.log",
+    "results/trace_heavy_offset.csv",
+    "results/trace_light_50g.csv",
+    "results/trace_nominal_1kg.csv",
+    "results/trace_reverse_heavy.csv",
+    "results/traces.npz",
+    "results/verification.json",
+    "rework_notes.md",
+    "run_all.ps1",
+    "simulate.py",
+    "test_delivery.py",
+    "validate_control.py"
+  ],
+  "historical_document_aliases_byte_identical": true,
+  "delta": "M\ttask-packages/PKG-A-ACQ/outsourcing/motor_control_plan/README.md\nM\ttask-packages/PKG-A-ACQ/outsourcing/motor_control_plan/check_delivery.py\nM\ttask-packages/PKG-A-ACQ/outsourcing/motor_control_plan/delivery_check.json\nM\ttask-packages/PKG-A-ACQ/outsourcing/motor_control_plan/manifest.json\nM\ttask-packages/PKG-A-ACQ/outsourcing/motor_control_plan/motor_plan.md\nM\ttask-packages/PKG-A-ACQ/outsourcing/motor_control_plan/report.html\nA\ttask-packages/PKG-A-ACQ/outsourcing/motor_control_plan/results/dual_axis_selection_budget.json\nA\ttask-packages/PKG-A-ACQ/outsourcing/motor_control_plan/single_axis_reference.md\nA\ttask-packages/PKG-A-ACQ/outsourcing/motor_control_plan/single_axis_report.html\nA\ttask-packages/PKG-A-ACQ/outsourcing/motor_control_plan/size_dual_axis.py\n"
+}

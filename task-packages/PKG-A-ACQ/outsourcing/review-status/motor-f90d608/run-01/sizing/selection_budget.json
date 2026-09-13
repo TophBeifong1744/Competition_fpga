@@ -1,0 +1,343 @@
+{
+  "scope": "analytical sizing and conservative energy budgets only; no coupled dynamics, product or hardware qualification",
+  "executed_utc": "2026-09-13T05:53:53.802439+00:00",
+  "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "pitch_cases": [
+    {
+      "payload_kg": 0.05,
+      "moving_mass_kg": 0.25,
+      "cg_offset_m": 0.005,
+      "inertia_kg_m2": 0.003,
+      "gravity_Nm": 0.0122625,
+      "demand_Nm": 0.1554040926535898,
+      "required_continuous_with_factor_2_Nm": 0.3108081853071796,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 0.05,
+      "moving_mass_kg": 0.25,
+      "cg_offset_m": 0.005,
+      "inertia_kg_m2": 0.006,
+      "gravity_Nm": 0.0122625,
+      "demand_Nm": 0.1585456853071796,
+      "required_continuous_with_factor_2_Nm": 0.3170913706143592,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 0.05,
+      "moving_mass_kg": 0.25,
+      "cg_offset_m": 0.005,
+      "inertia_kg_m2": 0.012,
+      "gravity_Nm": 0.0122625,
+      "demand_Nm": 0.1648288706143592,
+      "required_continuous_with_factor_2_Nm": 0.3296577412287184,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 0.05,
+      "moving_mass_kg": 0.25,
+      "cg_offset_m": 0.01,
+      "inertia_kg_m2": 0.003,
+      "gravity_Nm": 0.024525,
+      "demand_Nm": 0.1676665926535898,
+      "required_continuous_with_factor_2_Nm": 0.3353331853071796,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 0.05,
+      "moving_mass_kg": 0.25,
+      "cg_offset_m": 0.01,
+      "inertia_kg_m2": 0.006,
+      "gravity_Nm": 0.024525,
+      "demand_Nm": 0.1708081853071796,
+      "required_continuous_with_factor_2_Nm": 0.3416163706143592,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 0.05,
+      "moving_mass_kg": 0.25,
+      "cg_offset_m": 0.01,
+      "inertia_kg_m2": 0.012,
+      "gravity_Nm": 0.024525,
+      "demand_Nm": 0.17709137061435914,
+      "required_continuous_with_factor_2_Nm": 0.3541827412287183,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 0.05,
+      "moving_mass_kg": 0.25,
+      "cg_offset_m": 0.02,
+      "inertia_kg_m2": 0.003,
+      "gravity_Nm": 0.04905,
+      "demand_Nm": 0.19219159265358982,
+      "required_continuous_with_factor_2_Nm": 0.38438318530717963,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 0.05,
+      "moving_mass_kg": 0.25,
+      "cg_offset_m": 0.02,
+      "inertia_kg_m2": 0.006,
+      "gravity_Nm": 0.04905,
+      "demand_Nm": 0.19533318530717958,
+      "required_continuous_with_factor_2_Nm": 0.39066637061435916,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 0.05,
+      "moving_mass_kg": 0.25,
+      "cg_offset_m": 0.02,
+      "inertia_kg_m2": 0.012,
+      "gravity_Nm": 0.04905,
+      "demand_Nm": 0.20161637061435916,
+      "required_continuous_with_factor_2_Nm": 0.4032327412287183,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 0.5,
+      "moving_mass_kg": 0.7,
+      "cg_offset_m": 0.005,
+      "inertia_kg_m2": 0.003,
+      "gravity_Nm": 0.034335,
+      "demand_Nm": 0.17747659265358978,
+      "required_continuous_with_factor_2_Nm": 0.35495318530717956,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 0.5,
+      "moving_mass_kg": 0.7,
+      "cg_offset_m": 0.005,
+      "inertia_kg_m2": 0.006,
+      "gravity_Nm": 0.034335,
+      "demand_Nm": 0.1806181853071796,
+      "required_continuous_with_factor_2_Nm": 0.3612363706143592,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 0.5,
+      "moving_mass_kg": 0.7,
+      "cg_offset_m": 0.005,
+      "inertia_kg_m2": 0.012,
+      "gravity_Nm": 0.034335,
+      "demand_Nm": 0.18690137061435919,
+      "required_continuous_with_factor_2_Nm": 0.37380274122871837,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 0.5,
+      "moving_mass_kg": 0.7,
+      "cg_offset_m": 0.01,
+      "inertia_kg_m2": 0.003,
+      "gravity_Nm": 0.06867,
+      "demand_Nm": 0.2118115926535898,
+      "required_continuous_with_factor_2_Nm": 0.4236231853071796,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 0.5,
+      "moving_mass_kg": 0.7,
+      "cg_offset_m": 0.01,
+      "inertia_kg_m2": 0.006,
+      "gravity_Nm": 0.06867,
+      "demand_Nm": 0.2149531853071796,
+      "required_continuous_with_factor_2_Nm": 0.4299063706143592,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 0.5,
+      "moving_mass_kg": 0.7,
+      "cg_offset_m": 0.01,
+      "inertia_kg_m2": 0.012,
+      "gravity_Nm": 0.06867,
+      "demand_Nm": 0.2212363706143592,
+      "required_continuous_with_factor_2_Nm": 0.4424727412287184,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 0.5,
+      "moving_mass_kg": 0.7,
+      "cg_offset_m": 0.02,
+      "inertia_kg_m2": 0.003,
+      "gravity_Nm": 0.13734,
+      "demand_Nm": 0.2804815926535898,
+      "required_continuous_with_factor_2_Nm": 0.5609631853071796,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 0.5,
+      "moving_mass_kg": 0.7,
+      "cg_offset_m": 0.02,
+      "inertia_kg_m2": 0.006,
+      "gravity_Nm": 0.13734,
+      "demand_Nm": 0.28362318530717956,
+      "required_continuous_with_factor_2_Nm": 0.5672463706143591,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 0.5,
+      "moving_mass_kg": 0.7,
+      "cg_offset_m": 0.02,
+      "inertia_kg_m2": 0.012,
+      "gravity_Nm": 0.13734,
+      "demand_Nm": 0.28990637061435914,
+      "required_continuous_with_factor_2_Nm": 0.5798127412287183,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 1.0,
+      "moving_mass_kg": 1.2,
+      "cg_offset_m": 0.005,
+      "inertia_kg_m2": 0.003,
+      "gravity_Nm": 0.05886,
+      "demand_Nm": 0.2020015926535898,
+      "required_continuous_with_factor_2_Nm": 0.4040031853071796,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 1.0,
+      "moving_mass_kg": 1.2,
+      "cg_offset_m": 0.005,
+      "inertia_kg_m2": 0.006,
+      "gravity_Nm": 0.05886,
+      "demand_Nm": 0.20514318530717962,
+      "required_continuous_with_factor_2_Nm": 0.41028637061435924,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 1.0,
+      "moving_mass_kg": 1.2,
+      "cg_offset_m": 0.005,
+      "inertia_kg_m2": 0.012,
+      "gravity_Nm": 0.05886,
+      "demand_Nm": 0.2114263706143592,
+      "required_continuous_with_factor_2_Nm": 0.4228527412287184,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 1.0,
+      "moving_mass_kg": 1.2,
+      "cg_offset_m": 0.01,
+      "inertia_kg_m2": 0.003,
+      "gravity_Nm": 0.11772,
+      "demand_Nm": 0.2608615926535898,
+      "required_continuous_with_factor_2_Nm": 0.5217231853071796,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 1.0,
+      "moving_mass_kg": 1.2,
+      "cg_offset_m": 0.01,
+      "inertia_kg_m2": 0.006,
+      "gravity_Nm": 0.11772,
+      "demand_Nm": 0.2640031853071796,
+      "required_continuous_with_factor_2_Nm": 0.5280063706143592,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 1.0,
+      "moving_mass_kg": 1.2,
+      "cg_offset_m": 0.01,
+      "inertia_kg_m2": 0.012,
+      "gravity_Nm": 0.11772,
+      "demand_Nm": 0.2702863706143592,
+      "required_continuous_with_factor_2_Nm": 0.5405727412287183,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 1.0,
+      "moving_mass_kg": 1.2,
+      "cg_offset_m": 0.02,
+      "inertia_kg_m2": 0.003,
+      "gravity_Nm": 0.23544,
+      "demand_Nm": 0.37858159265358976,
+      "required_continuous_with_factor_2_Nm": 0.7571631853071795,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 1.0,
+      "moving_mass_kg": 1.2,
+      "cg_offset_m": 0.02,
+      "inertia_kg_m2": 0.006,
+      "gravity_Nm": 0.23544,
+      "demand_Nm": 0.3817231853071796,
+      "required_continuous_with_factor_2_Nm": 0.7634463706143592,
+      "passes_1Nm_candidate": true
+    },
+    {
+      "payload_kg": 1.0,
+      "moving_mass_kg": 1.2,
+      "cg_offset_m": 0.02,
+      "inertia_kg_m2": 0.012,
+      "gravity_Nm": 0.23544,
+      "demand_Nm": 0.3880063706143592,
+      "required_continuous_with_factor_2_Nm": 0.7760127412287184,
+      "passes_1Nm_candidate": true
+    }
+  ],
+  "yaw_cases": [
+    {
+      "inertia_kg_m2": 0.01,
+      "demand_Nm": 0.15570796326794895
+    },
+    {
+      "inertia_kg_m2": 0.025,
+      "demand_Nm": 0.17926990816987243
+    },
+    {
+      "inertia_kg_m2": 0.04,
+      "demand_Nm": 0.20283185307179585
+    }
+  ],
+  "worst_pitch": {
+    "payload_kg": 1.0,
+    "moving_mass_kg": 1.2,
+    "cg_offset_m": 0.02,
+    "inertia_kg_m2": 0.012,
+    "gravity_Nm": 0.23544,
+    "demand_Nm": 0.3880063706143592,
+    "required_continuous_with_factor_2_Nm": 0.7760127412287184,
+    "passes_1Nm_candidate": true
+  },
+  "stops": {
+    "yaw": {
+      "J_kg_m2": 0.04,
+      "initial_speed_deg_s": 65,
+      "assist_Nm": 0.14,
+      "brake_min_Nm": 0.6,
+      "total_delay_s": 0.03,
+      "stored_energy_J": 0.01,
+      "rigid_travel_deg": 5.867277672989286,
+      "travel_with_energy_and_tolerance_deg": 8.612838097186728,
+      "available_deg": 10,
+      "pass_budget": true
+    },
+    "pitch": {
+      "J_kg_m2": 0.012,
+      "initial_speed_deg_s": 35,
+      "assist_Nm": 0.37544000000000005,
+      "brake_min_Nm": 0.8,
+      "total_delay_s": 0.03,
+      "stored_energy_J": 0.01,
+      "rigid_travel_deg": 3.8006772277966174,
+      "travel_with_energy_and_tolerance_deg": 6.650210380073853,
+      "available_deg": 10,
+      "pass_budget": true
+    }
+  },
+  "negative_offset_100mm": {
+    "payload_kg": 1,
+    "moving_mass_kg": 1.2,
+    "cg_offset_m": 0.1,
+    "inertia_kg_m2": 0.012,
+    "gravity_Nm": 1.1772,
+    "demand_Nm": 1.3297663706143594,
+    "required_continuous_with_factor_2_Nm": 2.659532741228719,
+    "passes_1Nm_candidate": false
+  },
+  "negative_pitch_brake_0p2Nm": {
+    "pass_budget": false,
+    "reason": "brake cannot overcome worst assisting torque"
+  },
+  "budget_checks_pass": true
+}

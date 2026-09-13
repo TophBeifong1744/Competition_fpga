@@ -1,0 +1,119 @@
+[
+  {
+    "name": "delivery_integrity",
+    "command": [
+      "C:\\Python314\\python.exe",
+      "-B",
+      "check_delivery.py",
+      "--root",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff8-ecc4-7d11-a2ab-400ca768c388\\dual-f90d608-20260913\\source\\task-packages\\PKG-A-ACQ\\outsourcing\\motor_control_plan",
+      "--report",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\outsourcing\\review-status\\motor-f90d608\\run-01\\delivery.json"
+    ],
+    "started_utc": "2026-09-13T05:53:48.295592+00:00",
+    "finished_utc": "2026-09-13T05:53:49.225384+00:00",
+    "returncode": 0,
+    "stdout": "{\n  \"pass\": true,\n  \"counts\": {\n    \"files\": 36,\n    \"png\": 2,\n    \"npz\": 5,\n    \"arrays\": 35\n  },\n  \"errors\": []\n}\n",
+    "stderr": "",
+    "expected_success": true
+  },
+  {
+    "name": "delivery_positive_negative",
+    "command": [
+      "C:\\Python314\\python.exe",
+      "-B",
+      "test_delivery.py",
+      "--root",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff8-ecc4-7d11-a2ab-400ca768c388\\dual-f90d608-20260913\\source\\task-packages\\PKG-A-ACQ\\outsourcing\\motor_control_plan"
+    ],
+    "started_utc": "2026-09-13T05:53:49.226211+00:00",
+    "finished_utc": "2026-09-13T05:53:53.736398+00:00",
+    "returncode": 0,
+    "stdout": "{\n  \"checks\": [\n    {\n      \"name\": \"intact_copy\",\n      \"expected_success\": true,\n      \"exit_code\": 0\n    },\n    {\n      \"name\": \"missing_log\",\n      \"expected_success\": false,\n      \"exit_code\": 1\n    },\n    {\n      \"name\": \"hash_mismatch\",\n      \"expected_success\": false,\n      \"exit_code\": 1\n    },\n    {\n      \"name\": \"bad_png_even_with_matching_hash\",\n      \"expected_success\": false,\n      \"exit_code\": 1\n    },\n    {\n      \"name\": \"truncated_npz_even_with_matching_hash\",\n      \"expected_success\": false,\n      \"exit_code\": 1\n    },\n    {\n      \"name\": \"valid_zip_invalid_array_even_with_matching_hash\",\n      \"expected_success\": false,\n      \"exit_code\": 1\n    },\n    {\n      \"name\": \"restored_copy\",\n      \"expected_success\": true,\n      \"exit_code\": 0\n    }\n  ],\n  \"pass_count\": 7\n}\n",
+    "stderr": "",
+    "expected_success": true
+  },
+  {
+    "name": "dual_sizing",
+    "command": [
+      "C:\\Python314\\python.exe",
+      "-B",
+      "size_dual_axis.py",
+      "--out",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\outsourcing\\review-status\\motor-f90d608\\run-01\\sizing"
+    ],
+    "started_utc": "2026-09-13T05:53:53.737023+00:00",
+    "finished_utc": "2026-09-13T05:53:53.894707+00:00",
+    "returncode": 0,
+    "stdout": "{\n  \"worst_pitch\": {\n    \"payload_kg\": 1.0,\n    \"moving_mass_kg\": 1.2,\n    \"cg_offset_m\": 0.02,\n    \"inertia_kg_m2\": 0.012,\n    \"gravity_Nm\": 0.23544,\n    \"demand_Nm\": 0.3880063706143592,\n    \"required_continuous_with_factor_2_Nm\": 0.7760127412287184,\n    \"passes_1Nm_candidate\": true\n  },\n  \"stops\": {\n    \"yaw\": {\n      \"J_kg_m2\": 0.04,\n      \"initial_speed_deg_s\": 65,\n      \"assist_Nm\": 0.14,\n      \"brake_min_Nm\": 0.6,\n      \"total_delay_s\": 0.03,\n      \"stored_energy_J\": 0.01,\n      \"rigid_travel_deg\": 5.867277672989286,\n      \"travel_with_energy_and_tolerance_deg\": 8.612838097186728,\n      \"available_deg\": 10,\n      \"pass_budget\": true\n    },\n    \"pitch\": {\n      \"J_kg_m2\": 0.012,\n      \"initial_speed_deg_s\": 35,\n      \"assist_Nm\": 0.37544000000000005,\n      \"brake_min_Nm\": 0.8,\n      \"total_delay_s\": 0.03,\n      \"stored_energy_J\": 0.01,\n      \"rigid_travel_deg\": 3.8006772277966174,\n      \"travel_with_energy_and_tolerance_deg\": 6.650210380073853,\n      \"available_deg\": 10,\n      \"pass_budget\": true\n    }\n  },\n  \"budget_checks_pass\": true\n}\n",
+    "stderr": "",
+    "expected_success": true
+  },
+  {
+    "name": "single_supervisor",
+    "command": [
+      "C:\\Python314\\python.exe",
+      "-B",
+      "validate_control.py",
+      "--out",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\outsourcing\\review-status\\motor-f90d608\\run-01\\control"
+    ],
+    "started_utc": "2026-09-13T05:53:53.895309+00:00",
+    "finished_utc": "2026-09-13T05:53:54.036417+00:00",
+    "returncode": 0,
+    "stdout": "556 supervisory checks PASS\n",
+    "stderr": "",
+    "expected_success": true
+  },
+  {
+    "name": "sizing_overwrite_refusal",
+    "command": [
+      "C:\\Python314\\python.exe",
+      "-B",
+      "size_dual_axis.py",
+      "--out",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\outsourcing\\review-status\\motor-f90d608\\run-01\\sizing"
+    ],
+    "started_utc": "2026-09-13T05:53:54.037106+00:00",
+    "finished_utc": "2026-09-13T05:53:54.133462+00:00",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff8-ecc4-7d11-a2ab-400ca768c388\\dual-f90d608-20260913\\source\\task-packages\\PKG-A-ACQ\\outsourcing\\motor_control_plan\\size_dual_axis.py\", line 49, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff8-ecc4-7d11-a2ab-400ca768c388\\dual-f90d608-20260913\\source\\task-packages\\PKG-A-ACQ\\outsourcing\\motor_control_plan\\size_dual_axis.py\", line 31, in main\n    a.out.mkdir(parents=True,exist_ok=False)\n    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python314\\Lib\\pathlib\\__init__.py\", line 1011, in mkdir\n    os.mkdir(self, mode)\n    ~~~~~~~~^^^^^^^^^^^^\nFileExistsError: [WinError 183] 当文件已存在时，无法创建该文件。: 'E:\\\\Users\\\\Toph Beifong\\\\Documents\\\\GitHub\\\\Competition_fpga\\\\task-packages\\\\PKG-A-ACQ\\\\outsourcing\\\\review-status\\\\motor-f90d608\\\\run-01\\\\sizing'\n",
+    "expected_success": false
+  },
+  {
+    "name": "control_overwrite_refusal",
+    "command": [
+      "C:\\Python314\\python.exe",
+      "-B",
+      "validate_control.py",
+      "--out",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\outsourcing\\review-status\\motor-f90d608\\run-01\\control"
+    ],
+    "started_utc": "2026-09-13T05:53:54.134550+00:00",
+    "finished_utc": "2026-09-13T05:53:54.207004+00:00",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "Refusing to overwrite existing control_checks.json; use a new --out directory\n",
+    "expected_success": false
+  },
+  {
+    "name": "legacy_wrapper_overwrite_refusal",
+    "command": [
+      "powershell.exe",
+      "-NoProfile",
+      "-File",
+      "run_all.ps1",
+      "-PythonPath",
+      "C:\\Python314\\python.exe",
+      "-OutputDirectory",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\outsourcing\\review-status\\motor-f90d608\\run-01\\sizing"
+    ],
+    "started_utc": "2026-09-13T05:53:54.207767+00:00",
+    "finished_utc": "2026-09-13T05:53:54.409991+00:00",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "File C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\05\\01a06ff8-ecc4-7d11-a2ab-400ca768c388\\dual-f90d608-20260913\\\nsource\\task-packages\\PKG-A-ACQ\\outsourcing\\motor_control_plan\\run_all.ps1 cannot be loaded because running scripts is d\nisabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=13\n5170.\n    + CategoryInfo          : SecurityError: (:) [], ParentContainsErrorRecordException\n    + FullyQualifiedErrorId : UnauthorizedAccess\n",
+    "expected_success": false
+  }
+]
