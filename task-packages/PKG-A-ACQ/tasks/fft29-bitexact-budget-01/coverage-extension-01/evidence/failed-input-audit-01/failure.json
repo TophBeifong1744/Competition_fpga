@@ -1,0 +1,15 @@
+{
+  "kind": "AUTHOR_PREPARATION_FAILURE_NOT_FFT_FAILURE",
+  "command": [
+    "C:/Users/Toph Beifong/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "-B",
+    "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/coverage-extension-01/source/prepare_extension.py",
+    "--check-only",
+    "--report",
+    "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/coverage-extension-01/evidence/input-audit-01.json"
+  ],
+  "exit_code": 1,
+  "error": "KeyError: evidence/run01/frames.json",
+  "cause": "Archive stores uncompressed frame hash in packing.json; NPZ and golden unchanged",
+  "simulation_executed": false
+}

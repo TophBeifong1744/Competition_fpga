@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<stdin>", line 6, in <module>
+  File "C:\Users\Toph Beifong\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\tkinter\__init__.py", line 2459, in Tcl
+    return Tk(screenName, baseName, className, useTk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Toph Beifong\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\tkinter\__init__.py", line 2346, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: Can't find a usable init.tcl in the following directories: 
+    {C:\Users\Toph Beifong\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\tcl\tcl8.6}
+
+
+
+This probably means that Tcl wasn't installed properly.

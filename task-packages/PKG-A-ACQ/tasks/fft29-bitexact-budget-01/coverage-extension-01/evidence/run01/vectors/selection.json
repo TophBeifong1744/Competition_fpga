@@ -1,0 +1,8381 @@
+{
+  "source_commit": "bff45e7bbedab321fc4815e1432f1575c750edc4",
+  "selected_cases": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    18,
+    21,
+    22,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    42,
+    45,
+    46,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    66,
+    69,
+    70,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    90,
+    93,
+    94,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    114,
+    117,
+    118,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    138,
+    141,
+    142,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    162,
+    165,
+    166,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    186,
+    189,
+    190
+  ],
+  "unselected_cases": [
+    0,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24,
+    39,
+    40,
+    41,
+    43,
+    44,
+    47,
+    48,
+    63,
+    64,
+    65,
+    67,
+    68,
+    71,
+    72,
+    87,
+    88,
+    89,
+    91,
+    92,
+    95,
+    96,
+    111,
+    112,
+    113,
+    115,
+    116,
+    119,
+    120,
+    135,
+    136,
+    137,
+    139,
+    140,
+    143,
+    144,
+    159,
+    160,
+    161,
+    163,
+    164,
+    167,
+    168,
+    183,
+    184,
+    185,
+    187,
+    188,
+    191,
+    192,
+    193,
+    194,
+    195
+  ],
+  "acoustic_frames": 136,
+  "unique_transforms": 816,
+  "backpressure_repeats": 1,
+  "jobs": [
+    {
+      "job": 0,
+      "case": 1,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 1,
+      "case": 1,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 2,
+      "case": 1,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 3,
+      "case": 1,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 4,
+      "case": 1,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 5,
+      "case": 1,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 6,
+      "case": 2,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 7,
+      "case": 2,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 8,
+      "case": 2,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 9,
+      "case": 2,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 10,
+      "case": 2,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 11,
+      "case": 2,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 12,
+      "case": 3,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 13,
+      "case": 3,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 14,
+      "case": 3,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 15,
+      "case": 3,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 16,
+      "case": 3,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 17,
+      "case": 3,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 18,
+      "case": 4,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 19,
+      "case": 4,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 20,
+      "case": 4,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 21,
+      "case": 4,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 22,
+      "case": 4,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 23,
+      "case": 4,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 24,
+      "case": 5,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 25,
+      "case": 5,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 26,
+      "case": 5,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 27,
+      "case": 5,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 28,
+      "case": 5,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 29,
+      "case": 5,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 30,
+      "case": 6,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 31,
+      "case": 6,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 32,
+      "case": 6,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 33,
+      "case": 6,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 34,
+      "case": 6,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 35,
+      "case": 6,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 36,
+      "case": 7,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 37,
+      "case": 7,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 38,
+      "case": 7,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 39,
+      "case": 7,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 40,
+      "case": 7,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 41,
+      "case": 7,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 42,
+      "case": 8,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 43,
+      "case": 8,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 44,
+      "case": 8,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 45,
+      "case": 8,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 46,
+      "case": 8,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 47,
+      "case": 8,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 48,
+      "case": 9,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 49,
+      "case": 9,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 50,
+      "case": 9,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 51,
+      "case": 9,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 52,
+      "case": 9,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 53,
+      "case": 9,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 54,
+      "case": 10,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 55,
+      "case": 10,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 56,
+      "case": 10,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 57,
+      "case": 10,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 58,
+      "case": 10,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 59,
+      "case": 10,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 60,
+      "case": 11,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 61,
+      "case": 11,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 62,
+      "case": 11,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 63,
+      "case": 11,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 64,
+      "case": 11,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 65,
+      "case": 11,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 66,
+      "case": 12,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 67,
+      "case": 12,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 68,
+      "case": 12,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 69,
+      "case": 12,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 70,
+      "case": 12,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 71,
+      "case": 12,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 72,
+      "case": 13,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 73,
+      "case": 13,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 74,
+      "case": 13,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 75,
+      "case": 13,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 76,
+      "case": 13,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 77,
+      "case": 13,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 78,
+      "case": 14,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 79,
+      "case": 14,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 80,
+      "case": 14,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 81,
+      "case": 14,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 82,
+      "case": 14,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 83,
+      "case": 14,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 84,
+      "case": 18,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 85,
+      "case": 18,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 86,
+      "case": 18,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 87,
+      "case": 18,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 88,
+      "case": 18,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 89,
+      "case": 18,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 90,
+      "case": 21,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 91,
+      "case": 21,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 92,
+      "case": 21,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 93,
+      "case": 21,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 94,
+      "case": 21,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 95,
+      "case": 21,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 96,
+      "case": 22,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 97,
+      "case": 22,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 98,
+      "case": 22,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 99,
+      "case": 22,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 100,
+      "case": 22,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 101,
+      "case": 22,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 102,
+      "case": 25,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 103,
+      "case": 25,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 104,
+      "case": 25,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 105,
+      "case": 25,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 106,
+      "case": 25,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 107,
+      "case": 25,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 108,
+      "case": 26,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 109,
+      "case": 26,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 110,
+      "case": 26,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 111,
+      "case": 26,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 112,
+      "case": 26,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 113,
+      "case": 26,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 114,
+      "case": 27,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 115,
+      "case": 27,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 116,
+      "case": 27,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 117,
+      "case": 27,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 118,
+      "case": 27,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 119,
+      "case": 27,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 120,
+      "case": 28,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 121,
+      "case": 28,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 122,
+      "case": 28,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 123,
+      "case": 28,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 124,
+      "case": 28,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 125,
+      "case": 28,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 126,
+      "case": 29,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 127,
+      "case": 29,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 128,
+      "case": 29,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 129,
+      "case": 29,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 130,
+      "case": 29,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 131,
+      "case": 29,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 132,
+      "case": 30,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 133,
+      "case": 30,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 134,
+      "case": 30,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 135,
+      "case": 30,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 136,
+      "case": 30,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 137,
+      "case": 30,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 138,
+      "case": 31,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 139,
+      "case": 31,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 140,
+      "case": 31,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 141,
+      "case": 31,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 142,
+      "case": 31,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 143,
+      "case": 31,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 144,
+      "case": 32,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 145,
+      "case": 32,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 146,
+      "case": 32,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 147,
+      "case": 32,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 148,
+      "case": 32,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 149,
+      "case": 32,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 150,
+      "case": 33,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 151,
+      "case": 33,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 152,
+      "case": 33,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 153,
+      "case": 33,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 154,
+      "case": 33,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 155,
+      "case": 33,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 156,
+      "case": 34,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 157,
+      "case": 34,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 158,
+      "case": 34,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 159,
+      "case": 34,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 160,
+      "case": 34,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 161,
+      "case": 34,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 162,
+      "case": 35,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 163,
+      "case": 35,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 164,
+      "case": 35,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 165,
+      "case": 35,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 166,
+      "case": 35,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 167,
+      "case": 35,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 168,
+      "case": 36,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 169,
+      "case": 36,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 170,
+      "case": 36,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 171,
+      "case": 36,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 172,
+      "case": 36,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 173,
+      "case": 36,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 174,
+      "case": 37,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 175,
+      "case": 37,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 176,
+      "case": 37,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 177,
+      "case": 37,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 178,
+      "case": 37,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 179,
+      "case": 37,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 180,
+      "case": 38,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 181,
+      "case": 38,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 182,
+      "case": 38,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 183,
+      "case": 38,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 184,
+      "case": 38,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 185,
+      "case": 38,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 186,
+      "case": 42,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 187,
+      "case": 42,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 188,
+      "case": 42,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 189,
+      "case": 42,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 190,
+      "case": 42,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 191,
+      "case": 42,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 192,
+      "case": 45,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 193,
+      "case": 45,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 194,
+      "case": 45,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 195,
+      "case": 45,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 196,
+      "case": 45,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 197,
+      "case": 45,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 198,
+      "case": 46,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 199,
+      "case": 46,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 200,
+      "case": 46,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 201,
+      "case": 46,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 202,
+      "case": 46,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 203,
+      "case": 46,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 204,
+      "case": 49,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 205,
+      "case": 49,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 206,
+      "case": 49,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 207,
+      "case": 49,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 208,
+      "case": 49,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 209,
+      "case": 49,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 210,
+      "case": 50,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 211,
+      "case": 50,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 212,
+      "case": 50,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 213,
+      "case": 50,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 214,
+      "case": 50,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 215,
+      "case": 50,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 216,
+      "case": 51,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 217,
+      "case": 51,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 218,
+      "case": 51,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 219,
+      "case": 51,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 220,
+      "case": 51,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 221,
+      "case": 51,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 222,
+      "case": 52,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 223,
+      "case": 52,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 224,
+      "case": 52,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 225,
+      "case": 52,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 226,
+      "case": 52,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 227,
+      "case": 52,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 228,
+      "case": 53,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 229,
+      "case": 53,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 230,
+      "case": 53,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 231,
+      "case": 53,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 232,
+      "case": 53,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 233,
+      "case": 53,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 234,
+      "case": 54,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 235,
+      "case": 54,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 236,
+      "case": 54,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 237,
+      "case": 54,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 238,
+      "case": 54,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 239,
+      "case": 54,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 240,
+      "case": 55,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 241,
+      "case": 55,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 242,
+      "case": 55,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 243,
+      "case": 55,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 244,
+      "case": 55,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 245,
+      "case": 55,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 246,
+      "case": 56,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 247,
+      "case": 56,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 248,
+      "case": 56,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 249,
+      "case": 56,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 250,
+      "case": 56,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 251,
+      "case": 56,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 252,
+      "case": 57,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 253,
+      "case": 57,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 254,
+      "case": 57,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 255,
+      "case": 57,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 256,
+      "case": 57,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 257,
+      "case": 57,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 258,
+      "case": 58,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 259,
+      "case": 58,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 260,
+      "case": 58,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 261,
+      "case": 58,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 262,
+      "case": 58,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 263,
+      "case": 58,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 264,
+      "case": 59,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 265,
+      "case": 59,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 266,
+      "case": 59,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 267,
+      "case": 59,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 268,
+      "case": 59,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 269,
+      "case": 59,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 270,
+      "case": 60,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 271,
+      "case": 60,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 272,
+      "case": 60,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 273,
+      "case": 60,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 274,
+      "case": 60,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 275,
+      "case": 60,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 276,
+      "case": 61,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 277,
+      "case": 61,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 278,
+      "case": 61,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 279,
+      "case": 61,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 280,
+      "case": 61,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 281,
+      "case": 61,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 282,
+      "case": 62,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 283,
+      "case": 62,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 284,
+      "case": 62,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 285,
+      "case": 62,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 286,
+      "case": 62,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 287,
+      "case": 62,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 288,
+      "case": 66,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 289,
+      "case": 66,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 290,
+      "case": 66,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 291,
+      "case": 66,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 292,
+      "case": 66,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 293,
+      "case": 66,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 294,
+      "case": 69,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 295,
+      "case": 69,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 296,
+      "case": 69,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 297,
+      "case": 69,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 298,
+      "case": 69,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 299,
+      "case": 69,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 300,
+      "case": 70,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 301,
+      "case": 70,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 302,
+      "case": 70,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 303,
+      "case": 70,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 304,
+      "case": 70,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 305,
+      "case": 70,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 306,
+      "case": 73,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 307,
+      "case": 73,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 308,
+      "case": 73,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 309,
+      "case": 73,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 310,
+      "case": 73,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 311,
+      "case": 73,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 312,
+      "case": 74,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 313,
+      "case": 74,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 314,
+      "case": 74,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 315,
+      "case": 74,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 316,
+      "case": 74,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 317,
+      "case": 74,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 318,
+      "case": 75,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 319,
+      "case": 75,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 320,
+      "case": 75,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 321,
+      "case": 75,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 322,
+      "case": 75,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 323,
+      "case": 75,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 324,
+      "case": 76,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 325,
+      "case": 76,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 326,
+      "case": 76,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 327,
+      "case": 76,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 328,
+      "case": 76,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 329,
+      "case": 76,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 330,
+      "case": 77,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 331,
+      "case": 77,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 332,
+      "case": 77,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 333,
+      "case": 77,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 334,
+      "case": 77,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 335,
+      "case": 77,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 336,
+      "case": 78,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 337,
+      "case": 78,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 338,
+      "case": 78,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 339,
+      "case": 78,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 340,
+      "case": 78,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 341,
+      "case": 78,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 342,
+      "case": 79,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 343,
+      "case": 79,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 344,
+      "case": 79,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 345,
+      "case": 79,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 346,
+      "case": 79,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 347,
+      "case": 79,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 348,
+      "case": 80,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 349,
+      "case": 80,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 350,
+      "case": 80,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 351,
+      "case": 80,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 352,
+      "case": 80,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 353,
+      "case": 80,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 354,
+      "case": 81,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 355,
+      "case": 81,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 356,
+      "case": 81,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 357,
+      "case": 81,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 358,
+      "case": 81,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 359,
+      "case": 81,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 360,
+      "case": 82,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 361,
+      "case": 82,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 362,
+      "case": 82,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 363,
+      "case": 82,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 364,
+      "case": 82,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 365,
+      "case": 82,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 366,
+      "case": 83,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 367,
+      "case": 83,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 368,
+      "case": 83,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 369,
+      "case": 83,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 370,
+      "case": 83,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 371,
+      "case": 83,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 372,
+      "case": 84,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 373,
+      "case": 84,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 374,
+      "case": 84,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 375,
+      "case": 84,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 376,
+      "case": 84,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 377,
+      "case": 84,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 378,
+      "case": 85,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 379,
+      "case": 85,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 380,
+      "case": 85,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 381,
+      "case": 85,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 382,
+      "case": 85,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 383,
+      "case": 85,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 384,
+      "case": 86,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 385,
+      "case": 86,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 386,
+      "case": 86,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 387,
+      "case": 86,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 388,
+      "case": 86,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 389,
+      "case": 86,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 390,
+      "case": 90,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 391,
+      "case": 90,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 392,
+      "case": 90,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 393,
+      "case": 90,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 394,
+      "case": 90,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 395,
+      "case": 90,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 396,
+      "case": 93,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 397,
+      "case": 93,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 398,
+      "case": 93,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 399,
+      "case": 93,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 400,
+      "case": 93,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 401,
+      "case": 93,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 402,
+      "case": 94,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 403,
+      "case": 94,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 404,
+      "case": 94,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 405,
+      "case": 94,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 406,
+      "case": 94,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 407,
+      "case": 94,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 408,
+      "case": 97,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 409,
+      "case": 97,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 410,
+      "case": 97,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 411,
+      "case": 97,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 412,
+      "case": 97,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 413,
+      "case": 97,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 414,
+      "case": 98,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 415,
+      "case": 98,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 416,
+      "case": 98,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 417,
+      "case": 98,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 418,
+      "case": 98,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 419,
+      "case": 98,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 420,
+      "case": 99,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 421,
+      "case": 99,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 422,
+      "case": 99,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 423,
+      "case": 99,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 424,
+      "case": 99,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 425,
+      "case": 99,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 426,
+      "case": 100,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 427,
+      "case": 100,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 428,
+      "case": 100,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 429,
+      "case": 100,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 430,
+      "case": 100,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 431,
+      "case": 100,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 432,
+      "case": 101,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 433,
+      "case": 101,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 434,
+      "case": 101,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 435,
+      "case": 101,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 436,
+      "case": 101,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 437,
+      "case": 101,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 438,
+      "case": 102,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 439,
+      "case": 102,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 440,
+      "case": 102,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 441,
+      "case": 102,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 442,
+      "case": 102,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 443,
+      "case": 102,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 444,
+      "case": 103,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 445,
+      "case": 103,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 446,
+      "case": 103,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 447,
+      "case": 103,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 448,
+      "case": 103,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 449,
+      "case": 103,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 450,
+      "case": 104,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 451,
+      "case": 104,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 452,
+      "case": 104,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 453,
+      "case": 104,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 454,
+      "case": 104,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 455,
+      "case": 104,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 456,
+      "case": 105,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 457,
+      "case": 105,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 458,
+      "case": 105,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 459,
+      "case": 105,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 460,
+      "case": 105,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 461,
+      "case": 105,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 462,
+      "case": 106,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 463,
+      "case": 106,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 464,
+      "case": 106,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 465,
+      "case": 106,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 466,
+      "case": 106,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 467,
+      "case": 106,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 468,
+      "case": 107,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 469,
+      "case": 107,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 470,
+      "case": 107,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 471,
+      "case": 107,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 472,
+      "case": 107,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 473,
+      "case": 107,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 474,
+      "case": 108,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 475,
+      "case": 108,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 476,
+      "case": 108,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 477,
+      "case": 108,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 478,
+      "case": 108,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 479,
+      "case": 108,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 480,
+      "case": 109,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 481,
+      "case": 109,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 482,
+      "case": 109,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 483,
+      "case": 109,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 484,
+      "case": 109,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 485,
+      "case": 109,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 486,
+      "case": 110,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 487,
+      "case": 110,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 488,
+      "case": 110,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 489,
+      "case": 110,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 490,
+      "case": 110,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 491,
+      "case": 110,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 492,
+      "case": 114,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 493,
+      "case": 114,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 494,
+      "case": 114,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 495,
+      "case": 114,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 496,
+      "case": 114,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 497,
+      "case": 114,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 498,
+      "case": 117,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 499,
+      "case": 117,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 500,
+      "case": 117,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 501,
+      "case": 117,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 502,
+      "case": 117,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 503,
+      "case": 117,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 504,
+      "case": 118,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 505,
+      "case": 118,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 506,
+      "case": 118,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 507,
+      "case": 118,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 508,
+      "case": 118,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 509,
+      "case": 118,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 510,
+      "case": 121,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 511,
+      "case": 121,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 512,
+      "case": 121,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 513,
+      "case": 121,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 514,
+      "case": 121,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 515,
+      "case": 121,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 516,
+      "case": 122,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 517,
+      "case": 122,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 518,
+      "case": 122,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 519,
+      "case": 122,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 520,
+      "case": 122,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 521,
+      "case": 122,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 522,
+      "case": 123,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 523,
+      "case": 123,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 524,
+      "case": 123,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 525,
+      "case": 123,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 526,
+      "case": 123,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 527,
+      "case": 123,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 528,
+      "case": 124,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 529,
+      "case": 124,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 530,
+      "case": 124,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 531,
+      "case": 124,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 532,
+      "case": 124,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 533,
+      "case": 124,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 534,
+      "case": 125,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 535,
+      "case": 125,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 536,
+      "case": 125,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 537,
+      "case": 125,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 538,
+      "case": 125,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 539,
+      "case": 125,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 540,
+      "case": 126,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 541,
+      "case": 126,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 542,
+      "case": 126,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 543,
+      "case": 126,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 544,
+      "case": 126,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 545,
+      "case": 126,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 546,
+      "case": 127,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 547,
+      "case": 127,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 548,
+      "case": 127,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 549,
+      "case": 127,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 550,
+      "case": 127,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 551,
+      "case": 127,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 552,
+      "case": 128,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 553,
+      "case": 128,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 554,
+      "case": 128,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 555,
+      "case": 128,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 556,
+      "case": 128,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 557,
+      "case": 128,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 558,
+      "case": 129,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 559,
+      "case": 129,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 560,
+      "case": 129,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 561,
+      "case": 129,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 562,
+      "case": 129,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 563,
+      "case": 129,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 564,
+      "case": 130,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 565,
+      "case": 130,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 566,
+      "case": 130,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 567,
+      "case": 130,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 568,
+      "case": 130,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 569,
+      "case": 130,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 570,
+      "case": 131,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 571,
+      "case": 131,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 572,
+      "case": 131,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 573,
+      "case": 131,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 574,
+      "case": 131,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 575,
+      "case": 131,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 576,
+      "case": 132,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 577,
+      "case": 132,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 578,
+      "case": 132,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 579,
+      "case": 132,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 580,
+      "case": 132,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 581,
+      "case": 132,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 582,
+      "case": 133,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 583,
+      "case": 133,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 584,
+      "case": 133,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 585,
+      "case": 133,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 586,
+      "case": 133,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 587,
+      "case": 133,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 588,
+      "case": 134,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 589,
+      "case": 134,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 590,
+      "case": 134,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 591,
+      "case": 134,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 592,
+      "case": 134,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 593,
+      "case": 134,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 594,
+      "case": 138,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 595,
+      "case": 138,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 596,
+      "case": 138,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 597,
+      "case": 138,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 598,
+      "case": 138,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 599,
+      "case": 138,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 600,
+      "case": 141,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 601,
+      "case": 141,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 602,
+      "case": 141,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 603,
+      "case": 141,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 604,
+      "case": 141,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 605,
+      "case": 141,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 606,
+      "case": 142,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 607,
+      "case": 142,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 608,
+      "case": 142,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 609,
+      "case": 142,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 610,
+      "case": 142,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 611,
+      "case": 142,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 612,
+      "case": 145,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 613,
+      "case": 145,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 614,
+      "case": 145,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 615,
+      "case": 145,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 616,
+      "case": 145,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 617,
+      "case": 145,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    },
+    {
+      "job": 618,
+      "case": 146,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 619,
+      "case": 146,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 620,
+      "case": 146,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 621,
+      "case": 146,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 622,
+      "case": 146,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 623,
+      "case": 146,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 3
+    },
+    {
+      "job": 624,
+      "case": 147,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 625,
+      "case": 147,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 626,
+      "case": 147,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 627,
+      "case": 147,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 628,
+      "case": 147,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 629,
+      "case": 147,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 4
+    },
+    {
+      "job": 630,
+      "case": 148,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 631,
+      "case": 148,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 632,
+      "case": 148,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 633,
+      "case": 148,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 634,
+      "case": 148,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 635,
+      "case": 148,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 5
+    },
+    {
+      "job": 636,
+      "case": 149,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 637,
+      "case": 149,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 638,
+      "case": 149,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 639,
+      "case": 149,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 640,
+      "case": 149,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 641,
+      "case": 149,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 6
+    },
+    {
+      "job": 642,
+      "case": 150,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 643,
+      "case": 150,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 644,
+      "case": 150,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 645,
+      "case": 150,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 646,
+      "case": 150,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 647,
+      "case": 150,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 7
+    },
+    {
+      "job": 648,
+      "case": 151,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 649,
+      "case": 151,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 650,
+      "case": 151,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 651,
+      "case": 151,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 652,
+      "case": 151,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 653,
+      "case": 151,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 8
+    },
+    {
+      "job": 654,
+      "case": 152,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 655,
+      "case": 152,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 656,
+      "case": 152,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 657,
+      "case": 152,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 658,
+      "case": 152,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 659,
+      "case": 152,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 9
+    },
+    {
+      "job": 660,
+      "case": 153,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 661,
+      "case": 153,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 662,
+      "case": 153,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 663,
+      "case": 153,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 664,
+      "case": 153,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 665,
+      "case": 153,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 10
+    },
+    {
+      "job": 666,
+      "case": 154,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 667,
+      "case": 154,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 668,
+      "case": 154,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 669,
+      "case": 154,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 670,
+      "case": 154,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 671,
+      "case": 154,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 11
+    },
+    {
+      "job": 672,
+      "case": 155,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 673,
+      "case": 155,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 674,
+      "case": 155,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 675,
+      "case": 155,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 676,
+      "case": 155,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 677,
+      "case": 155,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 12
+    },
+    {
+      "job": 678,
+      "case": 156,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 679,
+      "case": 156,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 680,
+      "case": 156,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 681,
+      "case": 156,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 682,
+      "case": 156,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 683,
+      "case": 156,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 13
+    },
+    {
+      "job": 684,
+      "case": 157,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 685,
+      "case": 157,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 686,
+      "case": 157,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 687,
+      "case": 157,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 688,
+      "case": 157,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 689,
+      "case": 157,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 14
+    },
+    {
+      "job": 690,
+      "case": 158,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 691,
+      "case": 158,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 692,
+      "case": 158,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 693,
+      "case": 158,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 694,
+      "case": 158,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 695,
+      "case": 158,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 15
+    },
+    {
+      "job": 696,
+      "case": 162,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 697,
+      "case": 162,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 698,
+      "case": 162,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 699,
+      "case": 162,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 700,
+      "case": 162,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 701,
+      "case": 162,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 19
+    },
+    {
+      "job": 702,
+      "case": 165,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 703,
+      "case": 165,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 704,
+      "case": 165,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 705,
+      "case": 165,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 706,
+      "case": 165,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 707,
+      "case": 165,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 22
+    },
+    {
+      "job": 708,
+      "case": 166,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 709,
+      "case": 166,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 710,
+      "case": 166,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 711,
+      "case": 166,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 712,
+      "case": 166,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 713,
+      "case": 166,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 23
+    },
+    {
+      "job": 714,
+      "case": 169,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 715,
+      "case": 169,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 716,
+      "case": 169,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 717,
+      "case": 169,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 718,
+      "case": 169,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 719,
+      "case": 169,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 2
+    },
+    {
+      "job": 720,
+      "case": 170,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 721,
+      "case": 170,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 722,
+      "case": 170,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 723,
+      "case": 170,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 724,
+      "case": 170,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 725,
+      "case": 170,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 3
+    },
+    {
+      "job": 726,
+      "case": 171,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 727,
+      "case": 171,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 728,
+      "case": 171,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 729,
+      "case": 171,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 730,
+      "case": 171,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 731,
+      "case": 171,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 4
+    },
+    {
+      "job": 732,
+      "case": 172,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 733,
+      "case": 172,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 734,
+      "case": 172,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 735,
+      "case": 172,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 736,
+      "case": 172,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 737,
+      "case": 172,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 5
+    },
+    {
+      "job": 738,
+      "case": 173,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 739,
+      "case": 173,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 740,
+      "case": 173,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 741,
+      "case": 173,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 742,
+      "case": 173,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 743,
+      "case": 173,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 6
+    },
+    {
+      "job": 744,
+      "case": 174,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 745,
+      "case": 174,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 746,
+      "case": 174,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 747,
+      "case": 174,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 748,
+      "case": 174,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 749,
+      "case": 174,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 7
+    },
+    {
+      "job": 750,
+      "case": 175,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 751,
+      "case": 175,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 752,
+      "case": 175,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 753,
+      "case": 175,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 754,
+      "case": 175,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 755,
+      "case": 175,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 8
+    },
+    {
+      "job": 756,
+      "case": 176,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 757,
+      "case": 176,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 758,
+      "case": 176,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 759,
+      "case": 176,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 760,
+      "case": 176,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 761,
+      "case": 176,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 9
+    },
+    {
+      "job": 762,
+      "case": 177,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 763,
+      "case": 177,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 764,
+      "case": 177,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 765,
+      "case": 177,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 766,
+      "case": 177,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 767,
+      "case": 177,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 10
+    },
+    {
+      "job": 768,
+      "case": 178,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 769,
+      "case": 178,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 770,
+      "case": 178,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 771,
+      "case": 178,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 772,
+      "case": 178,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 773,
+      "case": 178,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 11
+    },
+    {
+      "job": 774,
+      "case": 179,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 775,
+      "case": 179,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 776,
+      "case": 179,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 777,
+      "case": 179,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 778,
+      "case": 179,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 779,
+      "case": 179,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 12
+    },
+    {
+      "job": 780,
+      "case": 180,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 781,
+      "case": 180,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 782,
+      "case": 180,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 783,
+      "case": 180,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 784,
+      "case": 180,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 785,
+      "case": 180,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 13
+    },
+    {
+      "job": 786,
+      "case": 181,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 787,
+      "case": 181,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 788,
+      "case": 181,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 789,
+      "case": 181,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 790,
+      "case": 181,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 791,
+      "case": 181,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 14
+    },
+    {
+      "job": 792,
+      "case": 182,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 793,
+      "case": 182,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 794,
+      "case": 182,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 795,
+      "case": 182,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 796,
+      "case": 182,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 797,
+      "case": 182,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 15
+    },
+    {
+      "job": 798,
+      "case": 186,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 799,
+      "case": 186,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 800,
+      "case": 186,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 801,
+      "case": 186,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 802,
+      "case": 186,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 803,
+      "case": 186,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 19
+    },
+    {
+      "job": 804,
+      "case": 189,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 805,
+      "case": 189,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 806,
+      "case": 189,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 807,
+      "case": 189,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 808,
+      "case": 189,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 809,
+      "case": 189,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 22
+    },
+    {
+      "job": 810,
+      "case": 190,
+      "channel": 0,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 811,
+      "case": 190,
+      "channel": 1,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 812,
+      "case": 190,
+      "channel": 2,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 813,
+      "case": 190,
+      "channel": 3,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 814,
+      "case": 190,
+      "channel": 4,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 815,
+      "case": 190,
+      "channel": 5,
+      "backpressure": false,
+      "expected_overflow": false,
+      "scenario": "noise0",
+      "peak_exponent": 23
+    },
+    {
+      "job": 816,
+      "case": 1,
+      "channel": 0,
+      "backpressure": true,
+      "expected_overflow": false,
+      "scenario": "clean",
+      "peak_exponent": 2
+    }
+  ],
+  "software_adapter_checks": [
+    {
+      "case": 1,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 2,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 3,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 4,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 5,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 6,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 7,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 8,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 9,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 10,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 11,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 12,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 13,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 14,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 18,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 21,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 22,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 25,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 26,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 27,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 28,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 29,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 30,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 31,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 32,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 33,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 34,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 35,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 36,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 37,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 38,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 42,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 45,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 46,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 49,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 50,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 51,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 52,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 53,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 54,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 55,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 56,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 57,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 58,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 59,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 60,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 61,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 62,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 66,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 69,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 70,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 73,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 74,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 75,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 76,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 77,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 78,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 79,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 80,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 81,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 82,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 83,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 84,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 85,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 86,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 90,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 93,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 94,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 97,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 98,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 99,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 100,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 101,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 102,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 103,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 104,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 105,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 106,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 107,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 108,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 109,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 110,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 114,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 117,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 118,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 121,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 122,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 123,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 124,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 125,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 126,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 127,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 128,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 129,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 130,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 131,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 132,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 133,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 134,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 138,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 141,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 142,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 145,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 146,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 147,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 148,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 149,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 150,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 151,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 152,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 153,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 154,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 155,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 156,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 157,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 158,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 162,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 165,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 166,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 169,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 170,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 171,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 172,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 173,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 174,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 175,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 176,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 177,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 178,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 179,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 180,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 181,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 182,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 186,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 189,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    },
+    {
+      "case": 190,
+      "shift": 0,
+      "packed_exact": true,
+      "evidence_level": "independent_software_only_not_RTL"
+    }
+  ],
+  "inputs_mem_sha256": "66ad830a228fbc0714076763a1918b71ea8960bbb2715c1d39c5675d62971ccb",
+  "expected_npy_sha256": "57b160ade500e0a31a74690c9d35c944b0bfc3e321bb7d9abdab406bcfd04378"
+}
