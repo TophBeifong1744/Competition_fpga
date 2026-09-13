@@ -1,0 +1,178 @@
+{
+  "status": "AUTHOR_DIAGNOSTIC_ONLY",
+  "config": {
+    "batch": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913",
+    "recordings": [
+      "c-adapter-quiet-20260913-01",
+      "c-adapter-speech-20260913-01"
+    ],
+    "positions_m": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0.04,
+        0,
+        0
+      ],
+      [
+        0.04,
+        0.04,
+        0
+      ],
+      [
+        0,
+        0.04,
+        0
+      ]
+    ],
+    "frame": 1024,
+    "hop": 512,
+    "sound_speed_m_s": 343,
+    "band_bins": [
+      7,
+      85
+    ],
+    "relative_mask": 0.02,
+    "minimum_bins": 12,
+    "candidate": "reference25",
+    "dll_sha256": "79ec8ccc56cd56c4277a3c8c46ed0fca8435f6e62107854414b1672eda5575ca"
+  },
+  "recordings": [
+    {
+      "recording": "c-adapter-quiet-20260913-01",
+      "frames": 61,
+      "analyzed_unique_rows": 31744,
+      "excluded_rows": 256,
+      "pair_order": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "bounds_samples": [
+        5.597667638483965,
+        7.916297492000999,
+        5.597667638483965,
+        5.597667638483965,
+        7.916297492000999,
+        5.597667638483965
+      ],
+      "floating_reasons": {
+        "VALID": 366
+      },
+      "reference25_reasons": {
+        "VALID": 366
+      },
+      "validity_disagreements": 0,
+      "both_valid_pairs": 366,
+      "peak_changes": 23,
+      "max_delay_difference_samples": 0.5304042925151208,
+      "floating_advisory_consistent": 35,
+      "reference25_advisory_consistent": 33,
+      "fft_overflows": 0,
+      "ifft_overflows": 0,
+      "forward_calls": 244,
+      "inverse_calls": 366,
+      "direction_accepted": false
+    },
+    {
+      "recording": "c-adapter-speech-20260913-01",
+      "frames": 61,
+      "analyzed_unique_rows": 31744,
+      "excluded_rows": 256,
+      "pair_order": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "bounds_samples": [
+        5.597667638483965,
+        7.916297492000999,
+        5.597667638483965,
+        5.597667638483965,
+        7.916297492000999,
+        5.597667638483965
+      ],
+      "floating_reasons": {
+        "VALID": 344,
+        "TAU_BOUND": 16,
+        "FEWER_THAN_12_BINS": 6
+      },
+      "reference25_reasons": {
+        "VALID": 344,
+        "TAU_BOUND": 16,
+        "FEWER_THAN_12_BINS": 6
+      },
+      "validity_disagreements": 2,
+      "both_valid_pairs": 343,
+      "peak_changes": 3,
+      "max_delay_difference_samples": 0.2570502476726051,
+      "floating_advisory_consistent": 54,
+      "reference25_advisory_consistent": 54,
+      "fft_overflows": 0,
+      "ifft_overflows": 0,
+      "forward_calls": 244,
+      "inverse_calls": 360,
+      "direction_accepted": false
+    }
+  ],
+  "inputs": {
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/GEOMETRY.md": "fdfe2b60ebed19c1ffbfca421d1964d91c564338949148b1bb6a56496904b8f7",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-quiet-20260913-01/samples.csv": "55cda506bdc906e80cc2e3fe9e23619f36e872e5eb3e8e78b73de63c340188e2",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-quiet-20260913-01/metadata.json": "58c710b72c508421661533af6b21e7ed085b92dcdff8c02e6c59c4bc5acdef31",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-speech-20260913-01/samples.csv": "2ac49776e00d78ce2d1a91b6b13449aa0da2f48f8df56f7a89396dea57e0d367",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-speech-20260913-01/metadata.json": "787882bb7f2cd61ae5dc58ba11ed003a7da83d050f563bec21bfc73f669b0e77"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dll_sha256": "79ec8ccc56cd56c4277a3c8c46ed0fca8435f6e62107854414b1672eda5575ca"
+  },
+  "elapsed_host_seconds": 5.825037700000394,
+  "note": "Host time is not FPGA cycle evidence; reference25 retained; no full H3 or acoustic acceptance."
+}
