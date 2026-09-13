@@ -1,0 +1,55 @@
+{
+  "record_version": "c-adapter-first-operator-20260913-v1",
+  "evidence": "User statements in this task, not independent measurements by the assistant",
+  "operator": "Toph Beifong",
+  "adapter": "C four-microphone adapter board shown in setup-original.jpg",
+  "confirmed": {
+    "same_array_position_between_captures": true,
+    "numbered_mating": true,
+    "correct_power_and_common_ground": true,
+    "no_camera_or_other_contending_driver": true,
+    "used_previously_checked_four_mic_run_configuration_both_times": true,
+    "sound_started_before_Run_and_continued": true,
+    "user_can_hear_recorded_sound_clearly": true
+  },
+  "geometry": {
+    "geometry_version": "c-adapter-user-square40-mic0-origin-20260913-v1",
+    "coordinate_system": "x-forward_y-left_z-up",
+    "origin": "mic0 acoustic port center",
+    "positive_x": "mic0 to mic1",
+    "positive_y": "mic0 to mic3",
+    "positive_z": "right-hand normal: +X cross +Y",
+    "positive_azimuth": "+X toward +Y, atan2(y,x)",
+    "axis_naming_note": "H1 forward/left refer to the newly defined +X/+Y axes, not the earlier colloquial front/right description.",
+    "channel_order": ["mic0", "mic1", "mic2", "mic3"],
+    "coordinates_m": [[0, 0, 0], [0.04, 0, 0], [0.04, 0.04, 0], [0, 0.04, 0]],
+    "coordinate_basis": "Derived from four user-reported measured edges of 40 mm and explicit user confirmation of a coplanar square with microphones at the four vertices; not imported nominal CAD coordinates.",
+    "measured_edges_mm": {"mic0-mic1": 40, "mic0-mic3": 40, "mic1-mic2": 40, "mic3-mic2": 40},
+    "diagonal_measurements_mm": null,
+    "measurement_instrument": null,
+    "measurement_method_detail": null,
+    "measurement_uncertainty_mm": null,
+    "squareness_independently_verified": false,
+    "coplanarity_independently_verified": false,
+    "independent_acoustic_channel_mapping_verified": false,
+    "photo_labels": {"top_left": "mic0", "bottom_left": "mic1", "bottom_right": "mic2", "top_right": "mic3"}
+  },
+  "speech_source": {
+    "reference_point": "mic1 acoustic port center, not mic0 or array center",
+    "distance_m_estimate": 0.10,
+    "azimuth_deg_estimate_in_new_axes": -45,
+    "relative_height_m_estimate": 0,
+    "basis": "User rough estimate: left-front of mic1 in the earlier colloquial frame, about 10 cm, almost 45 degrees, approximately level with microphones.",
+    "absolute_coordinates_m": null,
+    "azimuth_from_mic0_deg": null,
+    "source_type_detail": null,
+    "not_precision_ground_truth": true
+  },
+  "quiet_source": null,
+  "limitations": [
+    "No instrument or error estimate was supplied; do not assign a made-up tolerance.",
+    "Four equal sides alone do not prove a square; right angles and coplanarity rely on the user's explicit statement.",
+    "Separate acquisitions; no concatenation, ID rewriting, acoustic calibration or localization acceptance.",
+    "Boot switches at acquisition time were not separately logged; matching Run use and electrical checks were confirmed by the user."
+  ]
+}

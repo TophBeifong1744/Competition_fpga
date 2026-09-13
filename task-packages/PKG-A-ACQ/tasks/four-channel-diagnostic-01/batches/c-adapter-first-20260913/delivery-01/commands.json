@@ -1,0 +1,77 @@
+[
+  {
+    "argv": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "-v",
+      "test_export",
+      "test_c_capture_gate"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source\\export_c_capture.py",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\c-adapter-first-20260913\\received-01\\quiet\\raw.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\c-adapter-first-20260913\\received-01\\quiet\\serial.log",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\c-adapter-first-20260913\\delivery-01\\c-adapter-quiet-20260913-01",
+      "--acquisition-id",
+      "c-adapter-quiet-20260913-01",
+      "--operator",
+      "Toph Beifong",
+      "--scene",
+      "Quiet background",
+      "--numbered-mating-confirmed"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source\\export_c_capture.py",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\c-adapter-first-20260913\\received-01\\speech\\raw.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\c-adapter-first-20260913\\received-01\\speech\\serial.log",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\c-adapter-first-20260913\\delivery-01\\c-adapter-speech-20260913-01",
+      "--acquisition-id",
+      "c-adapter-speech-20260913-01",
+      "--operator",
+      "Toph Beifong",
+      "--scene",
+      "Audible source active before Run; user-described placement in operator-record.json",
+      "--numbered-mating-confirmed"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-B-ALG\\payload\\model\\python\\h1_reader.py",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\c-adapter-first-20260913\\delivery-01\\c-adapter-quiet-20260913-01",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\c-adapter-first-20260913\\delivery-01\\c-adapter-speech-20260913-01"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-B-ALG\\payload\\model\\python\\h1_reader.py",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\captures\\dupont-quiet-01",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\captures\\dupont-speech-01",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\c-adapter-first-20260913\\delivery-01\\c-adapter-quiet-20260913-01",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\c-adapter-first-20260913\\delivery-01\\c-adapter-speech-20260913-01"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "returncode": 0
+  }
+]

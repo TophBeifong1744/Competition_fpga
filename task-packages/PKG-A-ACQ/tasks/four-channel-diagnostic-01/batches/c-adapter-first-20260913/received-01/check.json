@@ -1,0 +1,107 @@
+{
+  "scope": "offline integrity and WAV derivation only",
+  "captures": {
+    "quiet": {
+      "bytes": 1024000,
+      "groups": 32000,
+      "first_id": 17238,
+      "last_id": 49237,
+      "fnv1a32": "890EA19D",
+      "error_rows": 0,
+      "identical_channel_pairs": [],
+      "channels": [
+        {
+          "channel": 0,
+          "min": -20608,
+          "max": 24064,
+          "mean": 2261.456,
+          "rms_without_mean": 7199.366153771039,
+          "unique_values": 641
+        },
+        {
+          "channel": 1,
+          "min": -24768,
+          "max": 23616,
+          "mean": 1916.72,
+          "rms_without_mean": 7394.964444106543,
+          "unique_values": 716
+        },
+        {
+          "channel": 2,
+          "min": -20672,
+          "max": 26240,
+          "mean": -146.426,
+          "rms_without_mean": 7866.228652824936,
+          "unique_values": 689
+        },
+        {
+          "channel": 3,
+          "min": -20800,
+          "max": 22016,
+          "mean": -428.82,
+          "rms_without_mean": 6874.526585562093,
+          "unique_values": 630
+        }
+      ],
+      "wav_common_gain": 12,
+      "wav_conversion": "round(PCM24*12/256), no filtering",
+      "wav_new_clipping": 0
+    },
+    "speech": {
+      "bytes": 1024000,
+      "groups": 32000,
+      "first_id": 16542,
+      "last_id": 48541,
+      "fnv1a32": "07739375",
+      "error_rows": 0,
+      "identical_channel_pairs": [],
+      "channels": [
+        {
+          "channel": 0,
+          "min": -24832,
+          "max": 29248,
+          "mean": 1671.546,
+          "rms_without_mean": 7952.587520667975,
+          "unique_values": 736
+        },
+        {
+          "channel": 1,
+          "min": -30080,
+          "max": 29696,
+          "mean": 1806.136,
+          "rms_without_mean": 8608.173268557273,
+          "unique_values": 814
+        },
+        {
+          "channel": 2,
+          "min": -27072,
+          "max": 26944,
+          "mean": 1463.382,
+          "rms_without_mean": 8098.364561939405,
+          "unique_values": 759
+        },
+        {
+          "channel": 3,
+          "min": -24448,
+          "max": 27840,
+          "mean": 1283.33,
+          "rms_without_mean": 7706.252998643375,
+          "unique_values": 713
+        }
+      ],
+      "wav_common_gain": 12,
+      "wav_conversion": "round(PCM24*12/256), no filtering",
+      "wav_new_clipping": 0
+    }
+  },
+  "geometry": {
+    "source": "user annotated setup photo",
+    "photo_top_left": "mic0",
+    "photo_bottom_left": "mic1",
+    "photo_bottom_right": "mic2",
+    "photo_top_right": "mic3",
+    "coordinates_m": null,
+    "source_position": null,
+    "independent_acoustic_mapping_verified": false
+  }
+}
