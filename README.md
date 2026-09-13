@@ -1,6 +1,6 @@
 # Competition_fpga
 
-当前安排（2026-09-13）：阶段检查改9/14，V1总验收改10/1 10:00；A/B主攻工程和算法，C只保留用户线下已安排的三维转台方案，本轮不追加派工。成员交接仍仅H1/H2/H3，见[统一日历](docs/project-plan.md#61-统一阶段验收日历)、[加速任务](docs/phases/2026-09-13-to-10-01/README.md)和[工作包台账](docs/work-packages.md)。
+当前安排（2026-09-13夜间）：原9/14检查已于9/13提前执行，阶段进展限定通过，见[阶段验收及收尾](deliverables/phase-2026-09-14/README.md)。下一正式检查9/18，V1总验收10/1 10:00；A/B继续工程和算法，C不追加派工。成员交接仍仅H1/H2/H3，见[统一日历](docs/project-plan.md#61-统一阶段验收日历)、[加速任务](docs/phases/2026-09-13-to-10-01/README.md)和[工作包台账](docs/work-packages.md)。
 
 嵌入式比赛作品
 
@@ -8,7 +8,7 @@
 
 SoundSight 面向 AMD FPGA 自主设计比赛，目标是在 Zynq-7020 平台上完成四路同步声音采集、可靠声源方向估计（DOA）与自动指向的 Delay-and-Sum 波束形成，输出增强后的目标方向音频并展示方向、置信度和运行状态。自动声源跟踪转台保留为后续扩展，只有核心声学链路通过且存在明确的朝向载荷时才进入闭环集成。
 
-当前已通过9月10日接口/开工阶段检查，首批四路诊断已获B接收，current_build的PS合同已获限定批准；A的FFT29新增覆盖b8c5e87已提交待B复核。9月14日检查新增实际输入及剩余项，尚无完整四路采集、二维定位和整机实板验收。C001～003基础模块已接入[rtl](rtl/README.md)、[tb](tb/README.md)及[统一仿真入口](sim/README.md)，六组功能回归通过，不等于one整机已接通。每次阶段验收后按[收尾规则](docs/phase-closeout.md)完成归位、回归、归档与说明；[10日补收尾](deliverables/phase-2026-09-10/CLOSEOUT.md)。最新入口：[文档目录](docs/README.md)、[当前状态](docs/current-status.md)、[工作包台账](docs/work-packages.md)、[六麦独立材料包](deliverables/six-mic-acoustic-review-v1/README.md)。旧文档集中于[历史备份](archive/README.md)。
+当前A FFT29新增覆盖、C板实录及B reference25算法诊断均已获限定独立批准并入main，阶段进展检查通过；正式M1、完整H3、二维定位精度/音频收益和整机实板仍未通过。C001～003基础模块已接入[rtl](rtl/README.md)、[tb](tb/README.md)及[统一仿真入口](sim/README.md)，原六组回归通过，不等于整机接通。本阶段新增材料仅获研究/诊断批准，保留可运行任务包，不强搬生产主链，见[本次归位与收尾](deliverables/phase-2026-09-14/CLOSEOUT.md)。最新入口：[文档目录](docs/README.md)、[当前状态](docs/current-status.md)、[工作包台账](docs/work-packages.md)、[六麦独立材料包](deliverables/six-mic-acoustic-review-v1/README.md)。旧文档集中于[历史备份](archive/README.md)。
 
 版本范围：2026-10-01 的 V1 用四麦先验收二维水平声源方向及音频改善；三维方向（方位角、俯仰角和单位向量，不含距离/位置）列为 V2。V2 六麦为首选候选、非共面四麦为低成本备选、八麦暂缓；当前已形成六麦指南和首轮软件基线，不扩大首版交付范围，不提前增加采集通道或采购。六麦须经过声学/资源评审和扩展采集准入，不能直接继承四麦验收结论。评估、阶段门与三人分工见[三维方向升级计划](docs/three-dimensional-doa-plan.md)。
 

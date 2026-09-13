@@ -1,0 +1,56 @@
+[
+  {
+    "name": "b-tests",
+    "command": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "task-packages/PKG-B-ALG/tasks/c-board-algorithm-01",
+      "-p",
+      "test_run.py",
+      "-v"
+    ],
+    "started": "2026-09-13T13:45:12.008854+00:00",
+    "ended": "2026-09-13T13:45:12.298838+00:00",
+    "exit_code": 0
+  },
+  {
+    "name": "b-manifest",
+    "command": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "task-packages/PKG-B-ALG/tasks/c-board-algorithm-01/verify_manifest.py"
+    ],
+    "started": "2026-09-13T13:45:12.298838+00:00",
+    "ended": "2026-09-13T13:45:12.471986+00:00",
+    "exit_code": 0
+  },
+  {
+    "name": "a-recordings",
+    "command": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/verify_delivery.py",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01",
+      "--report",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\deliverables\\phase-2026-09-14\\evidence\\check-2026-09-13-02\\recordings.json"
+    ],
+    "started": "2026-09-13T13:45:12.471986+00:00",
+    "ended": "2026-09-13T13:45:13.398117+00:00",
+    "exit_code": 0
+  },
+  {
+    "name": "fft-archive",
+    "command": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/coverage-extension-01/source/verify_archive.py"
+    ],
+    "started": "2026-09-13T13:45:13.398117+00:00",
+    "ended": "2026-09-13T13:45:15.693176+00:00",
+    "exit_code": 0
+  }
+]
