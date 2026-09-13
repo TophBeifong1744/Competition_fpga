@@ -1,0 +1,35 @@
+{
+  "review_sha": "407849e3d18e0a6e98a2716c7e5342afb1ea8581",
+  "started_utc": "2026-09-13T06:57:09.477Z",
+  "finished_utc": "2026-09-13T06:57:11.711Z",
+  "scope": "post-import package checks only",
+  "results": [
+    {
+      "name": "delivery",
+      "cmd": "python -B check_delivery.py --root . --report 'E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/outsourcing/review-status/motor-407849e/post-import/delivery.json'",
+      "chunk_id": "d78e8c",
+      "wall_time_seconds": 0.3168276,
+      "exit_code": 0,
+      "original_token_count": 32,
+      "output": "{\r\n  \"pass\": true,\r\n  \"counts\": {\r\n    \"files\": 42,\r\n    \"png\": 2,\r\n    \"npz\": 5,\r\n    \"arrays\": 35\r\n  },\r\n  \"errors\": []\r\n}\r\n"
+    },
+    {
+      "name": "budget_regression",
+      "cmd": "python -B test_stop_budget.py",
+      "chunk_id": "309ad8",
+      "wall_time_seconds": 0.2275285,
+      "exit_code": 0,
+      "original_token_count": 134,
+      "output": "test_continuous_interval_bound (__main__.BudgetTests.test_continuous_interval_bound) ... ok\r\ntest_invalid_numeric_inputs (__main__.BudgetTests.test_invalid_numeric_inputs) ... ok\r\ntest_piecewise_integration (__main__.BudgetTests.test_piecewise_integration) ... ok\r\ntest_retained_review_failure (__main__.BudgetTests.test_retained_review_failure) ... ok\r\ntest_weak_brake_reason (__main__.BudgetTests.test_weak_brake_reason) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 5 tests in 0.003s\r\n\r\nOK\r\n"
+    },
+    {
+      "name": "control",
+      "cmd": "python -B validate_control.py --out 'E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/outsourcing/review-status/motor-407849e/post-import/control'",
+      "chunk_id": "e913e1",
+      "wall_time_seconds": 0.2397051,
+      "exit_code": 0,
+      "original_token_count": 8,
+      "output": "556 supervisory checks PASS\r\n"
+    }
+  ]
+}

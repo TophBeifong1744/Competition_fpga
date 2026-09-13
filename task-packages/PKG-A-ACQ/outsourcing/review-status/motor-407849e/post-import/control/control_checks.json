@@ -1,0 +1,2236 @@
+{
+  "scope": "synthetic supervisory tests only",
+  "started_utc": "2026-09-13T06:57:11.621920+00:00",
+  "finished_utc": "2026-09-13T06:57:11.625258+00:00",
+  "environment": {
+    "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "checks": [
+    {
+      "name": "three_fresh_stable_frames_start",
+      "pass": true
+    },
+    {
+      "name": "low_confidence_decelerates",
+      "pass": true
+    },
+    {
+      "name": "stale_frame_decelerates",
+      "pass": true
+    },
+    {
+      "name": "two_degree_deadband",
+      "pass": true
+    },
+    {
+      "name": "repeated_frame_not_three_votes",
+      "pass": true
+    },
+    {
+      "name": "out_of_range_rejected",
+      "pass": true
+    },
+    {
+      "name": "encoder_timeout",
+      "pass": true
+    },
+    {
+      "name": "encoder_timeout_latched",
+      "pass": true
+    },
+    {
+      "name": "watchdog",
+      "pass": true
+    },
+    {
+      "name": "watchdog_latched",
+      "pass": true
+    },
+    {
+      "name": "limit",
+      "pass": true
+    },
+    {
+      "name": "limit_latched",
+      "pass": true
+    },
+    {
+      "name": "estop",
+      "pass": true
+    },
+    {
+      "name": "estop_latched",
+      "pass": true
+    },
+    {
+      "name": "timestamp_transform_3deg_counterexample",
+      "pass": true
+    },
+    {
+      "name": "long_gap_old_votes_expired",
+      "pass": true
+    },
+    {
+      "name": "long_gap_two_new_frames_insufficient",
+      "pass": true
+    },
+    {
+      "name": "long_gap_three_new_frames_recover",
+      "pass": true
+    },
+    {
+      "name": "whole_window_age_checked",
+      "pass": true
+    },
+    {
+      "name": "whole_window_fresh_recovery",
+      "pass": true
+    },
+    {
+      "name": "inclusive_100ms_boundary",
+      "pass": true
+    },
+    {
+      "name": "duplicate_clears_all_votes",
+      "pass": true
+    },
+    {
+      "name": "duplicate_recover_0.06",
+      "pass": true
+    },
+    {
+      "name": "duplicate_recover_0.08",
+      "pass": true
+    },
+    {
+      "name": "duplicate_third_new_frame_recovers",
+      "pass": true
+    },
+    {
+      "name": "reverse_clears_all_votes",
+      "pass": true
+    },
+    {
+      "name": "reverse_recover_0.06",
+      "pass": true
+    },
+    {
+      "name": "reverse_recover_0.08",
+      "pass": true
+    },
+    {
+      "name": "reverse_third_new_frame_recovers",
+      "pass": true
+    },
+    {
+      "name": "now_nan_False_reject",
+      "pass": true
+    },
+    {
+      "name": "now_nan_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "now_nan_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "now_nan_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "now_nan_True_reject",
+      "pass": true
+    },
+    {
+      "name": "now_nan_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "now_nan_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "now_nan_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "now_posinf_False_reject",
+      "pass": true
+    },
+    {
+      "name": "now_posinf_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "now_posinf_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "now_posinf_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "now_posinf_True_reject",
+      "pass": true
+    },
+    {
+      "name": "now_posinf_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "now_posinf_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "now_posinf_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "now_neginf_False_reject",
+      "pass": true
+    },
+    {
+      "name": "now_neginf_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "now_neginf_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "now_neginf_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "now_neginf_True_reject",
+      "pass": true
+    },
+    {
+      "name": "now_neginf_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "now_neginf_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "now_neginf_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "now_none_False_reject",
+      "pass": true
+    },
+    {
+      "name": "now_none_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "now_none_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "now_none_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "now_none_True_reject",
+      "pass": true
+    },
+    {
+      "name": "now_none_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "now_none_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "now_none_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "now_text_False_reject",
+      "pass": true
+    },
+    {
+      "name": "now_text_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "now_text_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "now_text_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "now_text_True_reject",
+      "pass": true
+    },
+    {
+      "name": "now_text_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "now_text_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "now_text_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "now_bool_False_reject",
+      "pass": true
+    },
+    {
+      "name": "now_bool_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "now_bool_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "now_bool_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "now_bool_True_reject",
+      "pass": true
+    },
+    {
+      "name": "now_bool_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "now_bool_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "now_bool_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "angle_nan_False_reject",
+      "pass": true
+    },
+    {
+      "name": "angle_nan_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "angle_nan_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "angle_nan_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "angle_nan_True_reject",
+      "pass": true
+    },
+    {
+      "name": "angle_nan_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "angle_nan_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "angle_nan_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "angle_posinf_False_reject",
+      "pass": true
+    },
+    {
+      "name": "angle_posinf_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "angle_posinf_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "angle_posinf_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "angle_posinf_True_reject",
+      "pass": true
+    },
+    {
+      "name": "angle_posinf_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "angle_posinf_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "angle_posinf_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "angle_neginf_False_reject",
+      "pass": true
+    },
+    {
+      "name": "angle_neginf_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "angle_neginf_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "angle_neginf_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "angle_neginf_True_reject",
+      "pass": true
+    },
+    {
+      "name": "angle_neginf_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "angle_neginf_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "angle_neginf_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "angle_none_False_reject",
+      "pass": true
+    },
+    {
+      "name": "angle_none_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "angle_none_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "angle_none_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "angle_none_True_reject",
+      "pass": true
+    },
+    {
+      "name": "angle_none_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "angle_none_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "angle_none_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "angle_text_False_reject",
+      "pass": true
+    },
+    {
+      "name": "angle_text_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "angle_text_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "angle_text_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "angle_text_True_reject",
+      "pass": true
+    },
+    {
+      "name": "angle_text_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "angle_text_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "angle_text_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "angle_bool_False_reject",
+      "pass": true
+    },
+    {
+      "name": "angle_bool_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "angle_bool_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "angle_bool_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "angle_bool_True_reject",
+      "pass": true
+    },
+    {
+      "name": "angle_bool_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "angle_bool_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "angle_bool_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "confidence_nan_False_reject",
+      "pass": true
+    },
+    {
+      "name": "confidence_nan_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "confidence_nan_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "confidence_nan_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "confidence_nan_True_reject",
+      "pass": true
+    },
+    {
+      "name": "confidence_nan_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "confidence_nan_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "confidence_nan_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "confidence_posinf_False_reject",
+      "pass": true
+    },
+    {
+      "name": "confidence_posinf_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "confidence_posinf_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "confidence_posinf_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "confidence_posinf_True_reject",
+      "pass": true
+    },
+    {
+      "name": "confidence_posinf_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "confidence_posinf_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "confidence_posinf_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "confidence_neginf_False_reject",
+      "pass": true
+    },
+    {
+      "name": "confidence_neginf_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "confidence_neginf_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "confidence_neginf_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "confidence_neginf_True_reject",
+      "pass": true
+    },
+    {
+      "name": "confidence_neginf_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "confidence_neginf_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "confidence_neginf_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "confidence_none_False_reject",
+      "pass": true
+    },
+    {
+      "name": "confidence_none_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "confidence_none_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "confidence_none_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "confidence_none_True_reject",
+      "pass": true
+    },
+    {
+      "name": "confidence_none_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "confidence_none_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "confidence_none_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "confidence_text_False_reject",
+      "pass": true
+    },
+    {
+      "name": "confidence_text_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "confidence_text_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "confidence_text_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "confidence_text_True_reject",
+      "pass": true
+    },
+    {
+      "name": "confidence_text_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "confidence_text_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "confidence_text_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "confidence_bool_False_reject",
+      "pass": true
+    },
+    {
+      "name": "confidence_bool_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "confidence_bool_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "confidence_bool_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "confidence_bool_True_reject",
+      "pass": true
+    },
+    {
+      "name": "confidence_bool_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "confidence_bool_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "confidence_bool_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "frame_time_nan_False_reject",
+      "pass": true
+    },
+    {
+      "name": "frame_time_nan_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "frame_time_nan_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "frame_time_nan_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "frame_time_nan_True_reject",
+      "pass": true
+    },
+    {
+      "name": "frame_time_nan_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "frame_time_nan_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "frame_time_nan_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "frame_time_posinf_False_reject",
+      "pass": true
+    },
+    {
+      "name": "frame_time_posinf_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "frame_time_posinf_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "frame_time_posinf_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "frame_time_posinf_True_reject",
+      "pass": true
+    },
+    {
+      "name": "frame_time_posinf_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "frame_time_posinf_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "frame_time_posinf_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "frame_time_neginf_False_reject",
+      "pass": true
+    },
+    {
+      "name": "frame_time_neginf_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "frame_time_neginf_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "frame_time_neginf_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "frame_time_neginf_True_reject",
+      "pass": true
+    },
+    {
+      "name": "frame_time_neginf_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "frame_time_neginf_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "frame_time_neginf_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "frame_time_none_False_reject",
+      "pass": true
+    },
+    {
+      "name": "frame_time_none_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "frame_time_none_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "frame_time_none_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "frame_time_none_True_reject",
+      "pass": true
+    },
+    {
+      "name": "frame_time_none_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "frame_time_none_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "frame_time_none_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "frame_time_text_False_reject",
+      "pass": true
+    },
+    {
+      "name": "frame_time_text_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "frame_time_text_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "frame_time_text_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "frame_time_text_True_reject",
+      "pass": true
+    },
+    {
+      "name": "frame_time_text_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "frame_time_text_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "frame_time_text_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "frame_time_bool_False_reject",
+      "pass": true
+    },
+    {
+      "name": "frame_time_bool_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "frame_time_bool_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "frame_time_bool_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "frame_time_bool_True_reject",
+      "pass": true
+    },
+    {
+      "name": "frame_time_bool_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "frame_time_bool_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "frame_time_bool_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "position_nan_False_reject",
+      "pass": true
+    },
+    {
+      "name": "position_nan_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "position_nan_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "position_nan_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "position_nan_True_reject",
+      "pass": true
+    },
+    {
+      "name": "position_nan_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "position_nan_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "position_nan_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "position_posinf_False_reject",
+      "pass": true
+    },
+    {
+      "name": "position_posinf_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "position_posinf_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "position_posinf_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "position_posinf_True_reject",
+      "pass": true
+    },
+    {
+      "name": "position_posinf_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "position_posinf_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "position_posinf_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "position_neginf_False_reject",
+      "pass": true
+    },
+    {
+      "name": "position_neginf_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "position_neginf_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "position_neginf_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "position_neginf_True_reject",
+      "pass": true
+    },
+    {
+      "name": "position_neginf_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "position_neginf_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "position_neginf_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "position_none_False_reject",
+      "pass": true
+    },
+    {
+      "name": "position_none_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "position_none_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "position_none_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "position_none_True_reject",
+      "pass": true
+    },
+    {
+      "name": "position_none_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "position_none_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "position_none_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "position_text_False_reject",
+      "pass": true
+    },
+    {
+      "name": "position_text_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "position_text_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "position_text_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "position_text_True_reject",
+      "pass": true
+    },
+    {
+      "name": "position_text_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "position_text_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "position_text_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "position_bool_False_reject",
+      "pass": true
+    },
+    {
+      "name": "position_bool_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "position_bool_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "position_bool_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "position_bool_True_reject",
+      "pass": true
+    },
+    {
+      "name": "position_bool_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "position_bool_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "position_bool_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_nan_False_reject",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_nan_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_nan_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_nan_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_nan_True_reject",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_nan_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_nan_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_nan_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_posinf_False_reject",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_posinf_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_posinf_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_posinf_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_posinf_True_reject",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_posinf_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_posinf_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_posinf_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_neginf_False_reject",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_neginf_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_neginf_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_neginf_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_neginf_True_reject",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_neginf_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_neginf_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_neginf_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_none_False_reject",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_none_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_none_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_none_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_none_True_reject",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_none_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_none_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_none_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_text_False_reject",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_text_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_text_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_text_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_text_True_reject",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_text_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_text_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_text_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_bool_False_reject",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_bool_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_bool_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_bool_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_bool_True_reject",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_bool_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_bool_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "encoder_age_bool_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_nan_False_reject",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_nan_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_nan_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_nan_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_nan_True_reject",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_nan_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_nan_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_nan_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_posinf_False_reject",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_posinf_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_posinf_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_posinf_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_posinf_True_reject",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_posinf_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_posinf_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_posinf_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_neginf_False_reject",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_neginf_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_neginf_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_neginf_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_neginf_True_reject",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_neginf_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_neginf_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_neginf_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_none_False_reject",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_none_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_none_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_none_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_none_True_reject",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_none_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_none_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_none_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_text_False_reject",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_text_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_text_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_text_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_text_True_reject",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_text_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_text_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_text_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_bool_False_reject",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_bool_False_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_bool_False_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_bool_False_recovery",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_bool_True_reject",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_bool_True_fresh_0.06",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_bool_True_fresh_0.08",
+      "pass": true
+    },
+    {
+      "name": "heartbeat_age_bool_True_recovery",
+      "pass": true
+    },
+    {
+      "name": "invalid_range_now_-1",
+      "pass": true
+    },
+    {
+      "name": "invalid_range_frame_time_-1",
+      "pass": true
+    },
+    {
+      "name": "invalid_range_frame_time_0.05",
+      "pass": true
+    },
+    {
+      "name": "invalid_range_confidence_1.1",
+      "pass": true
+    },
+    {
+      "name": "invalid_range_confidence_-0.1",
+      "pass": true
+    },
+    {
+      "name": "invalid_range_encoder_age_-1",
+      "pass": true
+    },
+    {
+      "name": "invalid_range_heartbeat_age_-1",
+      "pass": true
+    },
+    {
+      "name": "clock_rollback_rejected",
+      "pass": true
+    },
+    {
+      "name": "duplicate_during_motion_decelerates",
+      "pass": true
+    },
+    {
+      "name": "reverse_during_motion_decelerates",
+      "pass": true
+    },
+    {
+      "name": "out_of_range_during_motion_decelerates",
+      "pass": true
+    },
+    {
+      "name": "invalid_does_not_clear_fault_latch",
+      "pass": true
+    },
+    {
+      "name": "invalid_flag_moving",
+      "pass": true
+    },
+    {
+      "name": "invalid_flag_limit",
+      "pass": true
+    },
+    {
+      "name": "invalid_flag_estop",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_angle_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_angle_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_angle_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_angle_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_confidence_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_confidence_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_confidence_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_confidence_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_frame_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_frame_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_frame_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_frame_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_now_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_now_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_now_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_now_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_position_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_position_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_position_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_position_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_heartbeat_age_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_heartbeat_age_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_heartbeat_age_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_heartbeat_age_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_moving_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_moving_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_moving_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_moving_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_limit_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_limit_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_limit_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_limit_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_estop_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_estop_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_estop_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_estop_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_future_frame_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_future_frame_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_future_frame_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_future_frame_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_clock_rollback_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_clock_rollback_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_clock_rollback_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_encoder_timeout_clock_rollback_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_angle_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_angle_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_angle_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_angle_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_confidence_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_confidence_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_confidence_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_confidence_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_frame_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_frame_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_frame_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_frame_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_now_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_now_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_now_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_now_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_position_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_position_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_position_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_position_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_encoder_age_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_encoder_age_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_encoder_age_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_encoder_age_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_moving_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_moving_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_moving_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_moving_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_limit_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_limit_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_limit_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_limit_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_estop_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_estop_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_estop_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_estop_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_future_frame_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_future_frame_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_future_frame_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_future_frame_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_clock_rollback_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_clock_rollback_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_clock_rollback_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_heartbeat_timeout_clock_rollback_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_angle_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_angle_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_angle_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_angle_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_confidence_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_confidence_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_confidence_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_confidence_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_frame_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_frame_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_frame_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_frame_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_now_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_now_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_now_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_now_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_position_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_position_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_position_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_position_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_encoder_age_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_encoder_age_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_encoder_age_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_encoder_age_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_heartbeat_age_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_heartbeat_age_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_heartbeat_age_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_heartbeat_age_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_moving_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_moving_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_moving_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_moving_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_limit_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_limit_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_limit_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_limit_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_future_frame_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_future_frame_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_future_frame_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_future_frame_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_clock_rollback_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_clock_rollback_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_clock_rollback_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_estop_clock_rollback_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_angle_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_angle_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_angle_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_angle_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_confidence_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_confidence_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_confidence_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_confidence_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_frame_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_frame_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_frame_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_frame_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_now_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_now_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_now_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_now_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_position_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_position_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_position_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_position_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_encoder_age_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_encoder_age_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_encoder_age_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_encoder_age_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_heartbeat_age_nan_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_heartbeat_age_nan_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_heartbeat_age_nan_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_heartbeat_age_nan_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_moving_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_moving_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_moving_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_moving_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_estop_invalid_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_estop_invalid_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_estop_invalid_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_estop_invalid_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_future_frame_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_future_frame_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_future_frame_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_future_frame_True_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_clock_rollback_False_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_clock_rollback_False_latched_after_recovery",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_clock_rollback_True_brakes",
+      "pass": true
+    },
+    {
+      "name": "priority_limit_clock_rollback_True_latched_after_recovery",
+      "pass": true
+    }
+  ],
+  "pass_count": 556
+}

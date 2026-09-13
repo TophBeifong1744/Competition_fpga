@@ -8,5 +8,14 @@
   "read_npz_arrays": 35,
   "delivery_positive_negative_checks": 7,
   "overwrite_refusal_checks": 2,
-  "fault_priority_combination_checks": 176
+  "fault_priority_combination_checks": 176,
+  "current_plan": "V2.2 B1/B2 scoped revision",
+  "delivery_state": "submitted_for_independent_review",
+  "historical_physics_scope": "single axis only",
+  "dual_axis_coupled_dynamics_verified": false,
+  "dual_axis_analytical_budget_pass": true,
+  "procurement": "Separate mechanical assembly, motors, drivers, transmission and output encoders; team integration and tuning",
+  "hardware_adaptation_verified": false,
+  "analytical_pass_scope": "Yaw J 0.01..0.04; Pitch J 0.004..0.012 kg m2; conditional bounds in motor_plan section 10",
+  "historical_stop_envelope_pass": false
 }

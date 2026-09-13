@@ -14,11 +14,13 @@
 | B算法/定点 | 四路读取/实录登记、bff45e7/fdc2d18限定研究及预算已有入库记录；9/12阶段材料索引核验1021项通过 | 完整V1算法、四麦实际输入、位宽/IFFT/调度/几何/波束及资源预算仍待H3收口；reference25继续保留 |
 | PYNQ/两个Skill | 已有离线v0；本地PYNQ Skill迭代未提交、未获新批准 | A收口并交B复核；PYNQ板级支持未准入不阻塞已有PS出口与PL主线 |
 | C单轴转台 | 773a56c限定研究批准，d57ae47导入，367da9d收尾；556控制+36独立检查及完整性通过属既有复核 | 保留为单轴研究证据，不套用到新双轴方案 |
-| C三维转台 | 用户已在线下安排；远端f90d608fdb4aaaa9cfb0c528732f7e0b94530e3c出现Yaw/Pitch双轴V2.1候选 | **已提交待独立复核**；包内“未推送”是作者交付前文字。未验证完整双轴动力学/实物，未合入main；不追加C任务 |
+| C三维转台 | 407849e3d18e0a6e98a2716c7e5342afb1ea8581的B1停止包络与B2防下落原则获限定独立复核通过；保留原低惯量失败反例，材料归入既有研究包 | 仅条件性预算／方案原则，不是完整双轴动力学、控制器或实物通过；不接入主工程、不追加C任务 |
 | C004 | 完整交付及技术记录已有，正式批准未闭环 | 004-R2继续暂缓、005不启动，作为例外保留，不要求C返工 |
 | 六麦三维声学 | 六麦浮点、范围锁定/跟踪及噪声候选研究已有；完整3D-G0、六路硬件/实录、三维PL未通过 | V1前只复用既有预研；新扩展不抢首版关键路径，正式升级仍以V1保底和阶段门为前提 |
 
 主要证据：[四路B回执](../task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/B-REVIEW.md)、[current_build复核](../task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/current_build/B-REVIEW.md)、[9/12限定材料核验](../deliverables/phase-2026-09-16/REVIEW-2026-09-12.md)、[转台原批准](../task-packages/PKG-A-ACQ/outsourcing/review-status/motor-773a56c/README.md)。
+
+9/13补记：C三维转台一行按[407849e限定复核与发布记录](../task-packages/PKG-A-ACQ/outsourcing/review-status/motor-407849e/README.md)更新；采购准备使用[双轴采购指南](../task-packages/PKG-A-ACQ/payload/hardware/dual-axis-turntable-procurement-guide.md)，不再套用旧单轴成套采购路线。本次用户授权方案与指南合入main，不代表下单或硬件动作授权。其他方向保留原核对快照，最新main提交和本批保留材料以该记录为准。
 
 ## 当前未通过范围
 

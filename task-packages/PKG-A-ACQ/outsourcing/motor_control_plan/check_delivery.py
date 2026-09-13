@@ -15,7 +15,10 @@ REQUIRED={'README.md','motor_plan.md','report.html','simulate.py','validate_cont
           'results/rework_checks.log','results/verification.json','results/control_checks.json',
           'results/restoration.json','results/motion.png','results/robustness.png',
           'results/traces.npz','results/full_range.npz','results/reversal.npz',
-          'results/controlled_stop.npz','results/negative_control.npz'}
+          'results/controlled_stop.npz','results/negative_control.npz',
+          'single_axis_reference.md','single_axis_report.html','size_dual_axis.py',
+          'results/dual_axis_selection_budget.json','test_stop_budget.py','revision_b1_b2.md',
+          'results/revision_b1_b2/commands.json','results/revision_b1_b2/sizing/selection_budget.json'}
 
 def decode(name,data):
     if name.lower().endswith('.png'):

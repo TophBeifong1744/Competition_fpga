@@ -1,0 +1,68 @@
+{
+  "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "commands": [
+    {
+      "command": [
+        "D:\\Python\\python.exe",
+        "-B",
+        "size_dual_axis.py",
+        "--out",
+        "results/revision_b1_b2/sizing"
+      ],
+      "executed_utc": "2026-09-13T06:30:52.856004+00:00",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "expected_marker": null,
+      "matched": true,
+      "stdout": "{\n  \"worst_pitch\": {\n    \"payload_kg\": 1.0,\n    \"moving_mass_kg\": 1.2,\n    \"cg_offset_m\": 0.02,\n    \"inertia_kg_m2\": 0.012,\n    \"gravity_Nm\": 0.23544,\n    \"demand_Nm\": 0.3880063706143592,\n    \"required_continuous_with_factor_2_Nm\": 0.7760127412287184,\n    \"passes_1Nm_candidate\": true\n  },\n  \"stops\": {\n    \"yaw\": {\n      \"J_kg_m2\": 0.04,\n      \"initial_speed_deg_s\": 65,\n      \"assist_Nm\": 0.14,\n      \"brake_min_Nm\": 0.6,\n      \"total_delay_s\": 0.03,\n      \"stored_energy_J\": 0.01,\n      \"rigid_travel_deg\": 5.867277672989286,\n      \"travel_with_energy_and_tolerance_deg\": 8.612838097186728,\n      \"available_deg\": 10,\n      \"pass_budget\": true\n    },\n    \"pitch\": {\n      \"payload_kg\": 1.0,\n      \"cg_offset_m\": 0.02,\n      \"J_kg_m2\": 0.004,\n      \"initial_speed_deg_s\": 35,\n      \"assist_Nm\": 0.37544,\n      \"brake_min_Nm\": 0.8,\n      \"total_delay_s\": 0.03,\n      \"stored_energy_J\": 0.01,\n      \"rigid_travel_deg\": 6.639254847628385,\n      \"travel_with_energy_and_tolerance_deg\": 9.48878799990562,\n      \"available_deg\": 10,\n      \"pass_budget\": true\n    }\n  },\n  \"budget_checks_pass\": true\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\Python\\python.exe",
+        "-B",
+        "test_stop_budget.py"
+      ],
+      "executed_utc": "2026-09-13T06:30:53.223176+00:00",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "expected_marker": null,
+      "matched": true,
+      "stdout": "",
+      "stderr": "test_continuous_interval_bound (__main__.BudgetTests.test_continuous_interval_bound) ... ok\ntest_invalid_numeric_inputs (__main__.BudgetTests.test_invalid_numeric_inputs) ... ok\ntest_piecewise_integration (__main__.BudgetTests.test_piecewise_integration) ... ok\ntest_retained_review_failure (__main__.BudgetTests.test_retained_review_failure) ... ok\ntest_weak_brake_reason (__main__.BudgetTests.test_weak_brake_reason) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.006s\n\nOK\n"
+    },
+    {
+      "command": [
+        "D:\\Python\\python.exe",
+        "-B",
+        "validate_control.py",
+        "--out",
+        "results/revision_b1_b2/control"
+      ],
+      "executed_utc": "2026-09-13T06:30:53.394008+00:00",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "expected_marker": null,
+      "matched": true,
+      "stdout": "556 supervisory checks PASS\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:\\Python\\python.exe",
+        "-B",
+        "size_dual_axis.py",
+        "--out",
+        "results/revision_b1_b2/sizing"
+      ],
+      "executed_utc": "2026-09-13T06:30:53.590805+00:00",
+      "exit_code": 1,
+      "expected_exit": 1,
+      "expected_marker": "FileExistsError",
+      "matched": true,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\outsourcing\\motor_control_plan\\size_dual_axis.py\", line 69, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\outsourcing\\motor_control_plan\\size_dual_axis.py\", line 33, in main\n    a.out.mkdir(parents=True,exist_ok=False)\n    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Python\\Lib\\pathlib\\_local.py\", line 722, in mkdir\n    os.mkdir(self, mode)\n    ~~~~~~~~^^^^^^^^^^^^\nFileExistsError: [WinError 183] \ufffd\ufffd\ufffd\u013c\ufffd\ufffd\u0474\ufffd\ufffd\ufffd\u02b1\ufffd\ufffd\ufffd\u07b7\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u013c\ufffd\ufffd\ufffd: 'results\\\\revision_b1_b2\\\\sizing'\n"
+    }
+  ]
+}
