@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "comparisons": [
+    {
+      "file": "c-adapter-quiet-20260913-01-frames.json",
+      "bytes_equal": true,
+      "float_differences": [],
+      "discrete_equal": true
+    },
+    {
+      "file": "c-adapter-speech-20260913-01-frames.json",
+      "bytes_equal": true,
+      "float_differences": [],
+      "discrete_equal": true
+    },
+    {
+      "file": "c-adapter-quiet-20260913-01-stages.npz",
+      "bytes_equal": true,
+      "arrays": [
+        {
+          "key": "windowed",
+          "max_absolute_error": 0.0,
+          "exact": true
+        },
+        {
+          "key": "fft_codes",
+          "max_absolute_error": 0.0,
+          "exact": true
+        },
+        {
+          "key": "phat_codes",
+          "max_absolute_error": 0.0,
+          "exact": true
+        },
+        {
+          "key": "masks",
+          "max_absolute_error": 0.0,
+          "exact": true
+        },
+        {
+          "key": "ifft_codes",
+          "max_absolute_error": 0.0,
+          "exact": true
+        },
+        {
+          "key": "pcm",
+          "max_absolute_error": 0.0,
+          "exact": true
+        },
+        {
+          "key": "float_corr",
+          "max_absolute_error": 0.0,
+          "exact": true
+        }
+      ]
+    },
+    {
+      "file": "c-adapter-speech-20260913-01-stages.npz",
+      "bytes_equal": true,
+      "arrays": [
+        {
+          "key": "windowed",
+          "max_absolute_error": 0.0,
+          "exact": true
+        },
+        {
+          "key": "fft_codes",
+          "max_absolute_error": 0.0,
+          "exact": true
+        },
+        {
+          "key": "phat_codes",
+          "max_absolute_error": 0.0,
+          "exact": true
+        },
+        {
+          "key": "masks",
+          "max_absolute_error": 0.0,
+          "exact": true
+        },
+        {
+          "key": "ifft_codes",
+          "max_absolute_error": 0.0,
+          "exact": true
+        },
+        {
+          "key": "pcm",
+          "max_absolute_error": 0.0,
+          "exact": true
+        },
+        {
+          "key": "float_corr",
+          "max_absolute_error": 0.0,
+          "exact": true
+        }
+      ]
+    }
+  ],
+  "summary_float_differences": [],
+  "summary_bytes_equal": false,
+  "note": "Environment and elapsed time retained in each summary; excluded from numerical equality."
+}

@@ -1,0 +1,1208 @@
+[
+  {
+    "recording": "c-adapter-quiet-20260913-01-frames.json",
+    "pairs": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "floating": {
+          "valid": 61,
+          "delay_median": -0.44767952505073744,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.09101463004307331,
+          "global_peak_outside_bound": 0
+        },
+        "reference25": {
+          "valid": 61,
+          "delay_median": -0.4580078125,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.09207801714503985,
+          "global_peak_outside_bound": 0
+        }
+      },
+      {
+        "pair": [
+          0,
+          2
+        ],
+        "floating": {
+          "valid": 61,
+          "delay_median": -2.7479408809443147,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.06868917702044346,
+          "global_peak_outside_bound": 0
+        },
+        "reference25": {
+          "valid": 61,
+          "delay_median": -2.930419921875,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.06784728885562195,
+          "global_peak_outside_bound": 0
+        }
+      },
+      {
+        "pair": [
+          0,
+          3
+        ],
+        "floating": {
+          "valid": 61,
+          "delay_median": -1.2763124035932822,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.08732980607778668,
+          "global_peak_outside_bound": 0
+        },
+        "reference25": {
+          "valid": 61,
+          "delay_median": -1.295654296875,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.08959769971089947,
+          "global_peak_outside_bound": 0
+        }
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "floating": {
+          "valid": 61,
+          "delay_median": -1.5671639366925307,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.07901483439923235,
+          "global_peak_outside_bound": 0
+        },
+        "reference25": {
+          "valid": 61,
+          "delay_median": -1.59130859375,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.08008717130865634,
+          "global_peak_outside_bound": 0
+        }
+      },
+      {
+        "pair": [
+          1,
+          3
+        ],
+        "floating": {
+          "valid": 61,
+          "delay_median": -1.743300927817685,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.06447521031284684,
+          "global_peak_outside_bound": 0
+        },
+        "reference25": {
+          "valid": 61,
+          "delay_median": -1.718505859375,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.06413937214161873,
+          "global_peak_outside_bound": 0
+        }
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "floating": {
+          "valid": 61,
+          "delay_median": 0.6386254508566309,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.0863817034280043,
+          "global_peak_outside_bound": 0
+        },
+        "reference25": {
+          "valid": 61,
+          "delay_median": 0.653076171875,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.08864141616381989,
+          "global_peak_outside_bound": 0
+        }
+      }
+    ],
+    "disagreements": [
+      {
+        "row_start": 512,
+        "pair": [
+          0,
+          1
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 50,
+          "peak": 1,
+          "tau_samples": 0.5321321978203453,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 0.07654786000718787,
+          "separated_peak_margin": 0.06230466662035552,
+          "global_peak_lag": 1
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 51,
+          "peak": 0,
+          "tau_q12": 1942,
+          "tau_samples": 0.47412109375,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 656042.0,
+          "separated_peak_margin": 0.06485560375707652,
+          "global_peak_lag": 0
+        }
+      },
+      {
+        "row_start": 1024,
+        "pair": [
+          2,
+          3
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 33,
+          "peak": 0,
+          "tau_samples": 0.4596835080165221,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 0.059344910263098745,
+          "separated_peak_margin": 0.05780516895917424,
+          "global_peak_lag": 0
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 32,
+          "peak": 1,
+          "tau_q12": 2367,
+          "tau_samples": 0.577880859375,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 483087.0,
+          "separated_peak_margin": 0.05644324935260108,
+          "global_peak_lag": 1
+        }
+      },
+      {
+        "row_start": 3584,
+        "pair": [
+          0,
+          2
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 66,
+          "peak": -2,
+          "tau_samples": -2.446898362928582,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 0.04868710888273841,
+          "separated_peak_margin": 0.008335017411839184,
+          "global_peak_lag": -2
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 66,
+          "peak": -3,
+          "tau_q12": -12136,
+          "tau_samples": -2.962890625,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 406300.0,
+          "separated_peak_margin": 0.014024120108294364,
+          "global_peak_lag": -3
+        }
+      },
+      {
+        "row_start": 4096,
+        "pair": [
+          0,
+          2
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 24,
+          "peak": -4,
+          "tau_samples": -3.685477268052429,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 0.0320434593877158,
+          "separated_peak_margin": 0.027831487899106788,
+          "global_peak_lag": -4
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 25,
+          "peak": -3,
+          "tau_q12": -13572,
+          "tau_samples": -3.3134765625,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 279884.0,
+          "separated_peak_margin": 0.03021251661402581,
+          "global_peak_lag": -3
+        }
+      },
+      {
+        "row_start": 4096,
+        "pair": [
+          1,
+          2
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 25,
+          "peak": -1,
+          "tau_samples": -0.5043541096576836,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 0.04313298054827211,
+          "separated_peak_margin": 0.03091288582695874,
+          "global_peak_lag": -1
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 25,
+          "peak": 0,
+          "tau_q12": -2037,
+          "tau_samples": -0.497314453125,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 361235.0,
+          "separated_peak_margin": 0.03038188436890113,
+          "global_peak_lag": 0
+        }
+      },
+      {
+        "row_start": 5120,
+        "pair": [
+          0,
+          1
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 62,
+          "peak": 0,
+          "tau_samples": -0.4434138868064534,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 0.09813995506483253,
+          "separated_peak_margin": 0.08560465049023992,
+          "global_peak_lag": 0
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 63,
+          "peak": -1,
+          "tau_q12": -2097,
+          "tau_samples": -0.511962890625,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 814930.0,
+          "separated_peak_margin": 0.07558931441964341,
+          "global_peak_lag": -1
+        }
+      },
+      {
+        "row_start": 7168,
+        "pair": [
+          2,
+          3
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 42,
+          "peak": -1,
+          "tau_samples": -0.5029266076322374,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 0.07130494825301006,
+          "separated_peak_margin": 0.05521903024981206,
+          "global_peak_lag": -1
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 43,
+          "peak": 0,
+          "tau_q12": -1841,
+          "tau_samples": -0.449462890625,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 612395.0,
+          "separated_peak_margin": 0.06174936111496665,
+          "global_peak_lag": 0
+        }
+      },
+      {
+        "row_start": 8704,
+        "pair": [
+          0,
+          1
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 64,
+          "peak": -1,
+          "tau_samples": -1.485462650056268,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 0.09419727993366281,
+          "separated_peak_margin": 0.06126425889195926,
+          "global_peak_lag": -1
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 64,
+          "peak": -2,
+          "tau_q12": -6171,
+          "tau_samples": -1.506591796875,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 788954.0,
+          "separated_peak_margin": 0.05789944660905452,
+          "global_peak_lag": -2
+        }
+      },
+      {
+        "row_start": 8704,
+        "pair": [
+          1,
+          3
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 59,
+          "peak": -1,
+          "tau_samples": -0.5144913687965889,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 0.07255535860368921,
+          "separated_peak_margin": 0.06314987795768996,
+          "global_peak_lag": -1
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 58,
+          "peak": 0,
+          "tau_q12": -1664,
+          "tau_samples": -0.40625,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 602654.0,
+          "separated_peak_margin": 0.07054130562478636,
+          "global_peak_lag": 0
+        }
+      },
+      {
+        "row_start": 13312,
+        "pair": [
+          0,
+          2
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 54,
+          "peak": -6,
+          "tau_samples": -5.722790241071809,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 0.05449980766365613,
+          "separated_peak_margin": 0.07701429231735042,
+          "global_peak_lag": -6
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 53,
+          "peak": -5,
+          "tau_q12": -22528,
+          "tau_samples": -5.5,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 448390.0,
+          "separated_peak_margin": 0.05127456009277638,
+          "global_peak_lag": -5
+        }
+      },
+      {
+        "row_start": 15360,
+        "pair": [
+          1,
+          2
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 39,
+          "peak": -1,
+          "tau_samples": -0.9886562456401208,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 0.06627628403924066,
+          "separated_peak_margin": 0.09742382357913772,
+          "global_peak_lag": -1
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 42,
+          "peak": 0,
+          "tau_q12": -1877,
+          "tau_samples": -0.458251953125,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 557862.0,
+          "separated_peak_margin": 0.05620565659607573,
+          "global_peak_lag": 0
+        }
+      },
+      {
+        "row_start": 15360,
+        "pair": [
+          1,
+          3
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 34,
+          "peak": -1,
+          "tau_samples": -0.68145603204758,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 0.05257101069057464,
+          "separated_peak_margin": 0.03376534452305538,
+          "global_peak_lag": -1
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 35,
+          "peak": 0,
+          "tau_q12": -677,
+          "tau_samples": -0.165283203125,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 441975.0,
+          "separated_peak_margin": 0.04141636970416879,
+          "global_peak_lag": 0
+        }
+      },
+      {
+        "row_start": 17920,
+        "pair": [
+          0,
+          3
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 51,
+          "peak": -4,
+          "tau_samples": -3.679852825084935,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 0.06385270623216036,
+          "separated_peak_margin": 0.07912796118608538,
+          "global_peak_lag": -4
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 51,
+          "peak": -3,
+          "tau_q12": -13826,
+          "tau_samples": -3.37548828125,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 557423.0,
+          "separated_peak_margin": 0.08211896531000694,
+          "global_peak_lag": -3
+        }
+      },
+      {
+        "row_start": 18944,
+        "pair": [
+          1,
+          3
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 51,
+          "peak": -1,
+          "tau_samples": -0.5261394755766041,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 0.05454498754021423,
+          "separated_peak_margin": 0.033057661441799994,
+          "global_peak_lag": -1
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 51,
+          "peak": 0,
+          "tau_q12": -962,
+          "tau_samples": -0.23486328125,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 484768.0,
+          "separated_peak_margin": 0.04995998085682223,
+          "global_peak_lag": 0
+        }
+      },
+      {
+        "row_start": 22016,
+        "pair": [
+          0,
+          2
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 54,
+          "peak": -3,
+          "tau_samples": -2.50446739211874,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 0.05904282522100293,
+          "separated_peak_margin": 0.0442443185736529,
+          "global_peak_lag": -3
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 53,
+          "peak": -2,
+          "tau_q12": -9678,
+          "tau_samples": -2.36279296875,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 487284.0,
+          "separated_peak_margin": 0.0532523128196288,
+          "global_peak_lag": -2
+        }
+      },
+      {
+        "row_start": 22016,
+        "pair": [
+          1,
+          3
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 48,
+          "peak": 0,
+          "tau_samples": -0.24803340583436173,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 0.06003080943235967,
+          "separated_peak_margin": 0.054322008119404144,
+          "global_peak_lag": 0
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 47,
+          "peak": -1,
+          "tau_q12": -2399,
+          "tau_samples": -0.585693359375,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 493173.0,
+          "separated_peak_margin": 0.04152498210567083,
+          "global_peak_lag": -1
+        }
+      },
+      {
+        "row_start": 22528,
+        "pair": [
+          0,
+          3
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 31,
+          "peak": -1,
+          "tau_samples": -1.0531134713757573,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 0.05212076130632956,
+          "separated_peak_margin": 0.06251626389243035,
+          "global_peak_lag": -1
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 33,
+          "peak": -2,
+          "tau_q12": -6325,
+          "tau_samples": -1.544189453125,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 440010.0,
+          "separated_peak_margin": 0.036692347901184065,
+          "global_peak_lag": -2
+        }
+      },
+      {
+        "row_start": 22528,
+        "pair": [
+          1,
+          3
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 32,
+          "peak": 0,
+          "tau_samples": -0.33560698676270534,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 0.044871899380475505,
+          "separated_peak_margin": 0.029515168107793255,
+          "global_peak_lag": 0
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 31,
+          "peak": -1,
+          "tau_q12": -2935,
+          "tau_samples": -0.716552734375,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 386708.0,
+          "separated_peak_margin": 0.03240688064379325,
+          "global_peak_lag": -1
+        }
+      },
+      {
+        "row_start": 25088,
+        "pair": [
+          0,
+          2
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 72,
+          "peak": -5,
+          "tau_samples": -4.581350409378482,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 0.05571649920965491,
+          "separated_peak_margin": 0.024242791210828292,
+          "global_peak_lag": -5
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 71,
+          "peak": -4,
+          "tau_q12": -17278,
+          "tau_samples": -4.21826171875,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 479408.0,
+          "separated_peak_margin": 0.048493141541234186,
+          "global_peak_lag": -4
+        }
+      },
+      {
+        "row_start": 27648,
+        "pair": [
+          1,
+          3
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 51,
+          "peak": -2,
+          "tau_samples": -2.4840709124567137,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 0.06844953408695587,
+          "separated_peak_margin": 0.06651775647597413,
+          "global_peak_lag": -2
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 51,
+          "peak": -3,
+          "tau_q12": -10244,
+          "tau_samples": -2.5009765625,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 573314.0,
+          "separated_peak_margin": 0.06413937214161873,
+          "global_peak_lag": -3
+        }
+      },
+      {
+        "row_start": 27648,
+        "pair": [
+          2,
+          3
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 61,
+          "peak": 1,
+          "tau_samples": 0.5617560972288573,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 0.09323734291904112,
+          "separated_peak_margin": 0.0750971175527924,
+          "global_peak_lag": 1
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 62,
+          "peak": 0,
+          "tau_q12": 1995,
+          "tau_samples": 0.487060546875,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 795720.0,
+          "separated_peak_margin": 0.07021942391796109,
+          "global_peak_lag": 0
+        }
+      },
+      {
+        "row_start": 28160,
+        "pair": [
+          1,
+          3
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 55,
+          "peak": -1,
+          "tau_samples": -1.413673086015663,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 0.07202421846443775,
+          "separated_peak_margin": 0.06447521031284684,
+          "global_peak_lag": -1
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 55,
+          "peak": -2,
+          "tau_q12": -6304,
+          "tau_samples": -1.5390625,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 601687.0,
+          "separated_peak_margin": 0.06267876819675346,
+          "global_peak_lag": -2
+        }
+      },
+      {
+        "row_start": 30208,
+        "pair": [
+          1,
+          2
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 72,
+          "peak": -1,
+          "tau_samples": -1.4535202389324227,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 0.07418455155726496,
+          "separated_peak_margin": 0.05050520463532116,
+          "global_peak_lag": -1
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 71,
+          "peak": -2,
+          "tau_q12": -6376,
+          "tau_samples": -1.556640625,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 637191.0,
+          "separated_peak_margin": 0.0532885743835051,
+          "global_peak_lag": -2
+        }
+      }
+    ]
+  },
+  {
+    "recording": "c-adapter-speech-20260913-01-frames.json",
+    "pairs": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "floating": {
+          "valid": 60,
+          "delay_median": 3.6546479948698654,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.1100874590397305,
+          "global_peak_outside_bound": 0
+        },
+        "reference25": {
+          "valid": 60,
+          "delay_median": 3.63525390625,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.11041089964307559,
+          "global_peak_outside_bound": 0
+        }
+      },
+      {
+        "pair": [
+          0,
+          2
+        ],
+        "floating": {
+          "valid": 60,
+          "delay_median": -0.7297695092126795,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.10903658842619249,
+          "global_peak_outside_bound": 0
+        },
+        "reference25": {
+          "valid": 60,
+          "delay_median": -0.7347412109375,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.10891451299584069,
+          "global_peak_outside_bound": 0
+        }
+      },
+      {
+        "pair": [
+          0,
+          3
+        ],
+        "floating": {
+          "valid": 61,
+          "delay_median": -3.5345109181258554,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.10770210441158597,
+          "global_peak_outside_bound": 0
+        },
+        "reference25": {
+          "valid": 61,
+          "delay_median": -3.534912109375,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.10784028473218393,
+          "global_peak_outside_bound": 0
+        }
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "floating": {
+          "valid": 58,
+          "delay_median": -3.983207761908467,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.11357424458198137,
+          "global_peak_outside_bound": 0
+        },
+        "reference25": {
+          "valid": 58,
+          "delay_median": -3.9825439453125,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.11363809739369274,
+          "global_peak_outside_bound": 0
+        }
+      },
+      {
+        "pair": [
+          1,
+          3
+        ],
+        "floating": {
+          "valid": 44,
+          "delay_median": -7.602636735540758,
+          "edge_peaks": 48,
+          "median_peak_margin": 0.13008179516934337,
+          "global_peak_outside_bound": 48
+        },
+        "reference25": {
+          "valid": 44,
+          "delay_median": -7.6033935546875,
+          "edge_peaks": 49,
+          "median_peak_margin": 0.12259662607883379,
+          "global_peak_outside_bound": 49
+        }
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "floating": {
+          "valid": 61,
+          "delay_median": -3.19171758054397,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.10367444974470504,
+          "global_peak_outside_bound": 0
+        },
+        "reference25": {
+          "valid": 61,
+          "delay_median": -3.186767578125,
+          "edge_peaks": 0,
+          "median_peak_margin": 0.102710633641699,
+          "global_peak_outside_bound": 0
+        }
+      }
+    ],
+    "disagreements": [
+      {
+        "row_start": 1024,
+        "pair": [
+          1,
+          3
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 35,
+          "peak": -8,
+          "tau_samples": -7.964947691906318,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": true,
+          "peak_height": 0.05735014999301177,
+          "separated_peak_margin": 0.1623806217369483,
+          "global_peak_lag": -8
+        },
+        "reference25": {
+          "valid": false,
+          "reason": "TAU_BOUND",
+          "bins": 35,
+          "peak": -8,
+          "tau_q12": -32632,
+          "tau_samples": -7.966796875,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": true,
+          "peak_height": 481444.0,
+          "separated_peak_margin": 0.16271051254143784,
+          "global_peak_lag": -8
+        }
+      },
+      {
+        "row_start": 3584,
+        "pair": [
+          1,
+          2
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 37,
+          "peak": -4,
+          "tau_samples": -4.47669976849108,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 0.057135836737442776,
+          "separated_peak_margin": 0.09509841650219293,
+          "global_peak_lag": -4
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 36,
+          "peak": -5,
+          "tau_q12": -18459,
+          "tau_samples": -4.506591796875,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 463314.0,
+          "separated_peak_margin": 0.08421502479959596,
+          "global_peak_lag": -5
+        }
+      },
+      {
+        "row_start": 9728,
+        "pair": [
+          1,
+          3
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 48,
+          "peak": -7,
+          "tau_samples": -7.486840091837353,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": false,
+          "peak_height": 0.07149796854657062,
+          "separated_peak_margin": 0.2401269525741566,
+          "global_peak_lag": -7
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 48,
+          "peak": -8,
+          "tau_q12": -30877,
+          "tau_samples": -7.538330078125,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": true,
+          "peak_height": 598656.0,
+          "separated_peak_margin": 0.08708172974128715,
+          "global_peak_lag": -8
+        }
+      },
+      {
+        "row_start": 22016,
+        "pair": [
+          1,
+          3
+        ],
+        "floating": {
+          "valid": false,
+          "reason": "TAU_BOUND",
+          "bins": 46,
+          "peak": -8,
+          "tau_samples": -8.020465212473857,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": true,
+          "peak_height": 0.07871996771637196,
+          "separated_peak_margin": 0.1454776372798087,
+          "global_peak_lag": -8
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 46,
+          "peak": -8,
+          "tau_q12": -32397,
+          "tau_samples": -7.909423828125,
+          "bound_samples": 7.916297492000999,
+          "search_limit": 8,
+          "edge_peak": true,
+          "peak_height": 675795.0,
+          "separated_peak_margin": 0.12978639972180914,
+          "global_peak_lag": -8
+        }
+      },
+      {
+        "row_start": 29696,
+        "pair": [
+          0,
+          1
+        ],
+        "floating": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 34,
+          "peak": 4,
+          "tau_samples": 3.755585403922605,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 0.05483506395083205,
+          "separated_peak_margin": 0.0860373875796059,
+          "global_peak_lag": 4
+        },
+        "reference25": {
+          "valid": true,
+          "reason": "VALID",
+          "bins": 35,
+          "peak": 3,
+          "tau_q12": 14330,
+          "tau_samples": 3.49853515625,
+          "bound_samples": 5.597667638483965,
+          "search_limit": 6,
+          "edge_peak": false,
+          "peak_height": 456713.0,
+          "separated_peak_margin": 0.06055881921469282,
+          "global_peak_lag": 3
+        }
+      }
+    ]
+  }
+]
