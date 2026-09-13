@@ -1,0 +1,28 @@
+[
+  {
+    "command": [
+      "D:\\Python\\python.exe",
+      "-B",
+      "check_delivery.py",
+      "--root",
+      "."
+    ],
+    "executed_utc": "2026-09-13T06:32:17.512925+00:00",
+    "exit_code": 0,
+    "stdout": "{\n  \"pass\": true,\n  \"counts\": {\n    \"files\": 41,\n    \"png\": 2,\n    \"npz\": 5,\n    \"arrays\": 35\n  },\n  \"errors\": []\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "D:\\Python\\python.exe",
+      "-B",
+      "test_delivery.py",
+      "--root",
+      "."
+    ],
+    "executed_utc": "2026-09-13T06:32:23.458188+00:00",
+    "exit_code": 0,
+    "stdout": "{\n  \"checks\": [\n    {\n      \"name\": \"intact_copy\",\n      \"expected_success\": true,\n      \"exit_code\": 0\n    },\n    {\n      \"name\": \"missing_log\",\n      \"expected_success\": false,\n      \"exit_code\": 1\n    },\n    {\n      \"name\": \"hash_mismatch\",\n      \"expected_success\": false,\n      \"exit_code\": 1\n    },\n    {\n      \"name\": \"bad_png_even_with_matching_hash\",\n      \"expected_success\": false,\n      \"exit_code\": 1\n    },\n    {\n      \"name\": \"truncated_npz_even_with_matching_hash\",\n      \"expected_success\": false,\n      \"exit_code\": 1\n    },\n    {\n      \"name\": \"valid_zip_invalid_array_even_with_matching_hash\",\n      \"expected_success\": false,\n      \"exit_code\": 1\n    },\n    {\n      \"name\": \"restored_copy\",\n      \"expected_success\": true,\n      \"exit_code\": 0\n    }\n  ],\n  \"pass_count\": 7\n}\n",
+    "stderr": ""
+  }
+]
