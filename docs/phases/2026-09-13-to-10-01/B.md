@@ -4,8 +4,8 @@
 
 ## 立即执行到9/14
 
-1. 优先独立复核A已推送的FFT覆盖扩展：远端分支 `codex/toph/fft29-coverage-extension-01`，准确SHA `b8c5e87f6cb1054c2684719310f02f36c83ac731`，目录 `task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/coverage-extension-01/`。作者报告新增136帧、817次FFT、1673216个实虚整数码一致，旧60+新136为196/196；这些目前是作者自检，不是B已通过。核对向量版本/覆盖去重/原证据保留并按风险独立验证，给限定结论或具体问题；不要泛化为完整H3或实际DOA通过。
-2. 复用已接收的四路quiet/speech及读取器。A提供新已知方向/几何片段即解析；若真值暂缺，先检查格式、通道、符号、削顶、连续性和相关峰，不写实际精度结论。
+1. FFT29新增覆盖b8c5e87已由B独立复核通过、023177c入main；C板实录df4b756也已完成B诊断复核并随2c76526入main。两项不重复派审。现在优先交本人可运行算法增量及H3缺项清单，批准范围不扩为定位或整机。
+2. 复用已接收的C板quiet/speech、实际几何说明及读取器，推进相关峰/时延符号/拒绝判断等算法诊断，保留失败和可复现命令，不重复做已经通过的格式复核。声源约10cm、约−45°以mic1为参考，不作为阵列中心准确远场真值；暂不据此报角度精度或音频收益达标。真实对照还缺的输入一次明确给A，不追加精细电气补证或给C派工。
 3. 继续本人的完整定点收口：在既有FFT/PHAT研究上补V1缺项清单、一个能复现的最新结果及下一动作。reference25保留，FFT29通过不自动批准所有级的位宽。9/14检查不要求一天写完整定位/波束RTL。
 
 既有入口：[FFT](../../../task-packages/PKG-B-ALG/tasks/fft-bitexact-01/README.md)、[PHAT定点收口](../../../task-packages/PKG-B-ALG/tasks/phat-fixed-03/closeout-01/README.md)、[真实输入登记](../../../task-packages/PKG-B-ALG/tasks/four-channel-receipt-01/real-input-20260911/README.md)。
