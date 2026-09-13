@@ -80,3 +80,16 @@ PY -B F:/NUEC/review-evidence/c-adapter-df4b756/independent_audit.py F:/NUEC/rev
 | 遗留与下一步 | 技术阻断0、本批未说明材料0；待完成1项发布收尾：网络恢复后由B非强制push main，核对直接远端与本地/跟踪一致，再按授权检查清理本次短期分支/干净副本。最终main号以成功发布后的回报为准 |
 
 此记录截至本地收尾快照，明确不是“已发布并收尾完成”。后续若网络恢复，以后续实际发布回执补记，不将本次失败覆盖为成功。
+
+## 发布恢复与最终收尾
+
+用户通过GitHub Desktop推送后，B再次fetch成功，并直接ls-remote确认main为004dfb8ab251a5efdfa0b74dd292237f251ec41c；实际共享仓库的local main、origin/main同SHA，领先/落后0/0。此前网络失败保留为历史，本节更新最终状态：**已发布，B侧批次收尾完成**。
+
+- 批准df4b756已是main祖先，原66文件与批准提交无差异。之前在合并位置完成的17项测试、H1读取、归档及独立逐值/清单验证仍适用；此次仅补文档，无新构建或上板。
+- 本批修改/暂存/未跟踪/忽略的未处理有用材料0；main工作树干净。共享feature工作树仍有其他任务52项已跟踪差异和146项未跟踪，全部保留，本批路径差异及忽略0。
+- 删除前确认F:/NUEC/review-worktrees/c-adapter-df4b756准确路径、无跟踪/未跟踪及全目录忽略文件；已用git worktree remove清理。可按准确df4b756重建，脚本中该路径为历史运行位置。
+- 本次获授权短期分支codex/toph/c-adapter-first-20260913仍为df4b756，全部提交已入main、无独有提交，本次诊断交付已结束；已用指定SHA的lease条件删除远端分支，防止删除并发新增内容。B本地没有同名分支。需要恢复可由main历史中的df4b756创建引用。
+- A的F盘原件、实际one、pub、其他任务及共享目录材料未删除；A侧同步未代签。实际main工作树是当前使用仓库，保留，不作为临时副本删除。
+- 新盘点见published-summary.json；完整无关文件名仍只保留外部published-full.json，SHA256为4f7645a8a9e25a88f39d6251abb9939d23a0c2b01e729bd3bc355c3fb3590630。
+
+本收尾记录补提交后再次核对直接远端、共享local main与origin/main，最终SHA在用户回报与外部final-alignment.json记录，避免为记录自身SHA循环提交。
