@@ -153,7 +153,7 @@ PYNQ 是首选控制层实现，但 AXI4-Lite 寄存器、AXI DMA 数据格式�
 ├─ vivado/          可复现工程脚本、约束、IP 配置与 BD 脚本
 ├─ ps/              PYNQ 优先的 PS 配置、DMA、UI、通信和日志程序
 ├─ scripts/         跨模块构建、检查与结果归档脚本
-├─ skill/           工程协作与 PYNQ 通用验证 Skill 包
+├─ skill/           FPGA模块开发/仿真与PYNQ接口验证Skill
 └─ results/         经过确认的测试报告、资源/时序摘要和图表
 ```
 

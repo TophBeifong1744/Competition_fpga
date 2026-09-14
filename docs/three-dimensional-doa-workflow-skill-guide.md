@@ -8,7 +8,7 @@
 
 ## 1. 定位与范围
 
-本指南说明如何用现有 [`soundsight-engineering-workflow`](../skill/soundsight-engineering-workflow/SKILL.md) 承接三维方向升级，不创建三维专用 Skill，也不修改现有 Skill、RTL、Vivado 工程、接口合同或硬件结论。记录格式继续复用现有[工程记录模板](../skill/soundsight-engineering-workflow/references/record-templates.md)。
+SKL-001已升级为[`fpga-module-verification`待审候选](maintenance/skills-publication-2026-09-14.md#skl-001)，用于将来获准的三维RTL模块合同、自检TB、仿真与首错复测，不负责三维算法研究或另造专用Skill。旧工程协作Skill及其记录模板已[归档](../archive/2026-09-13-before-skl001-technical-upgrade/README.md)，不再是活动依赖。本指南保留三维专用阶段映射和证据边界，当前不启动三维RTL、Vivado、接口或硬件变更。
 
 主线保持不变：V1 的目标交付日期为 2026-10-01，范围为四麦二维与 M0～M6 验收；日期是目标，不是已通过证明。本 3D-P4 任务只修订这份指南；用户已授权主流程开展六麦声学评审和离线软件模拟，属于可提前进行的 3D-G0 预研，不受本任务“仅指南”的范围限制。V2 输出是方位角、俯仰角和指向声源的单位向量，不输出距离、三维位置或离地高度；三维不是赛题强制项。
 
@@ -16,7 +16,7 @@ V2 本轮评审与模拟只研究水平正方形四麦加中心上、下各一�
 
 麦克风沿用用户原先选好的 IM73D122V01/PDM 路线，本轮不重新选型、不更换采集接口。具体模块型号/版本、实物一致性、声孔位置、电平、时钟负载和同步行为仍需相应资料与测量证据；用户选定路线不等于模块或采集链已验收。该路线仅为项目背景，不写入通用 Skill 的硬编码要求。
 
-本指南只把项目专用的 `3D-PREP`、`3D-G0`、`3D-GA`、`3D-G1`～`3D-G3` 映射到通用阶段门。其他 FPGA/嵌入式项目仍使用通用 Skill 的 G0～G7；通道数、pair 集和维度作为项目记录，不把四麦、六麦或 SoundSight 阶段名硬编码进 Skill。
+下文把项目专用的`3D-PREP`、`3D-G0`、`3D-GA`、`3D-G1`～`3D-G3`与原G0～G7证据分类作历史项目映射；这些标签不再要求由通用Skill提供。实际协作执行现行三交接点，技术模块复用新版Skill；通道数、pair集、维度作为模块合同，不硬编码进通用工具。
 
 ## 2. 独立核查结论
 

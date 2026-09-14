@@ -1,0 +1,46 @@
+{
+  "recorded_utc": "2026-09-13 14:32:41 UTC",
+  "scope": "Author-side execution only; not B approval or hardware validation",
+  "commands": [
+    {
+      "command": "$env:PYTHONUTF8='1'\n& 'C:/Python314/python.exe' -B -m unittest discover -s task-packages/PKG-A-SKILLS/evidence -p test_verify_package.py -v",
+      "chunk_id": "45cf2a",
+      "wall_time_seconds": 0.508878,
+      "exit_code": 0,
+      "original_token_count": 270,
+      "output": "test_bad_json (test_verify_package.ManifestTests.test_bad_json) ... ok\r\ntest_cli_success_failure_and_repair (test_verify_package.ManifestTests.test_cli_success_failure_and_repair) ... ok\r\ntest_duplicate_casefold (test_verify_package.ManifestTests.test_duplicate_casefold) ... ok\r\ntest_empty_manifest (test_verify_package.ManifestTests.test_empty_manifest) ... ok\r\ntest_invalid_hash (test_verify_package.ManifestTests.test_invalid_hash) ... ok\r\ntest_line_endings_are_not_silently_normalized (test_verify_package.ManifestTests.test_line_endings_are_not_silently_normalized) ... ok\r\ntest_missing_file (test_verify_package.ManifestTests.test_missing_file) ... ok\r\ntest_tamper_then_restore (test_verify_package.ManifestTests.test_tamper_then_restore) ... ok\r\ntest_traversal (test_verify_package.ManifestTests.test_traversal) ... ok\r\ntest_unlisted_file (test_verify_package.ManifestTests.test_unlisted_file) ... ok\r\ntest_valid (test_verify_package.ManifestTests.test_valid) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 11 tests in 0.326s\r\n\r\nOK\r\n"
+    },
+    {
+      "command": "$env:PYTHONUTF8='1'\n& 'C:/Python314/python.exe' -B 'C:/Users/Toph Beifong/.codex/skills/.system/skill-creator/scripts/quick_validate.py' task-packages/PKG-A-SKILLS/payload/skill/soundsight-engineering-workflow",
+      "chunk_id": "a2139f",
+      "wall_time_seconds": 0.1247383,
+      "exit_code": 0,
+      "original_token_count": 5,
+      "output": "Skill is valid!\r\n"
+    },
+    {
+      "command": "& 'C:/Python314/python.exe' -B -c \"import sys, yaml; print(sys.version); print('PyYAML', yaml.__version__)\"",
+      "chunk_id": "6fc1de",
+      "wall_time_seconds": 0.1197341,
+      "exit_code": 0,
+      "original_token_count": 24,
+      "output": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]\r\nPyYAML 6.0.3\r\n"
+    }
+  ],
+  "pre_manifest_qa": {
+    "command": "$ErrorActionPreference='Stop'\n$packageRoot=(Resolve-Path task-packages/PKG-A-SKILLS).Path\n$repoRoot=(Get-Location).Path\n$issues=@()\n$pending=@()\n$projection=@()\n$linkCount=0\nforeach($item in Get-ChildItem -LiteralPath $packageRoot -Recurse) {\n  $relative=[IO.Path]::GetRelativePath($packageRoot,$item.FullName).Replace('\\','/')\n  if($relative -notmatch '^[A-Za-z0-9_./-]+$') { $issues+=\"Non-ASCII path: $relative\" }\n  if($item.PSIsContainer) {\n    if(@(Get-ChildItem -LiteralPath $item.FullName -Force).Count -eq 0) { $issues+=\"Empty directory: $relative\" }\n    continue\n  }\n  $raw=[IO.File]::ReadAllText($item.FullName)\n  if($raw -match '(?m)[ \\t]+\\r?$') { $issues+=\"Trailing whitespace: $relative\" }\n  if(-not $raw.EndsWith(\"`n\")) { $issues+=\"Missing final newline: $relative\" }\n  if($item.Extension -ne '.md') { continue }\n  foreach($match in [regex]::Matches($raw,'\\[[^\\]]+\\]\\(([^)]+)\\)')) {\n    $target=$match.Groups[1].Value.Split('#')[0]\n    if(-not $target -or $target -match '^https?://') {continue}\n    $linkCount++\n    $resolved=[IO.Path]::GetFullPath((Join-Path $item.DirectoryName $target))\n    if(Test-Path -LiteralPath $resolved) {continue}\n    if($relative -eq 'payload/skill/README.md') {\n      $installed=[IO.Path]::GetFullPath((Join-Path \"$repoRoot/skill\" $target))\n      if(Test-Path -LiteralPath $installed) { $projection+=$target; continue }\n    }\n    if($resolved -in @(\"$packageRoot\\MANIFEST.json\",\"$packageRoot\\evidence\\validation-commands.json\")) {\n      $pending+=$relative+': '+$target; continue\n    }\n    $issues+=\"Broken link: $relative -> $target\"\n  }\n}\n$snapshot=Get-Content -Raw \"$packageRoot/evidence/source-snapshot.json\" | ConvertFrom-Json\n$changed=@()\n$unchanged=@()\nforeach($row in $snapshot.files) {\n  if((Test-Path -LiteralPath $row.path) -and (Get-FileHash -LiteralPath $row.path -Algorithm SHA256).Hash.ToLowerInvariant() -eq $row.sha256) { $unchanged+=$row.path } else { $changed+=$row.path }\n}\n[pscustomobject]@{issues=$issues;markdown_links=$linkCount;installed_target_dependency_links=$projection;pending_generated_links=$pending;unchanged_snapshot_count=$unchanged.Count;changed_snapshot_paths=$changed;active_workflow_unchanged=(@($changed | Where-Object {$_ -eq 'skill/README.md' -or $_ -like 'skill/soundsight-engineering-workflow/*'}).Count -eq 0)} | ConvertTo-Json -Depth 5\nif($issues.Count -gt 0) {exit 1}",
+    "chunk_id": "011fca",
+    "wall_time_seconds": 0.2577334,
+    "exit_code": 0,
+    "original_token_count": 195,
+    "output": "{\r\n  \"issues\": [],\r\n  \"markdown_links\": 26,\r\n  \"installed_target_dependency_links\": [\r\n    \"pynq-overlay-dma-validation/README.md\",\r\n    \"pynq-overlay-dma-validation/SKILL.md\",\r\n    \"../docs/current-status.md\",\r\n    \"../docs/work-packages.md\"\r\n  ],\r\n  \"pending_generated_links\": [\r\n    \"README.md: MANIFEST.json\",\r\n    \"evidence/validation-summary.md: validation-commands.json\"\r\n  ],\r\n  \"unchanged_snapshot_count\": 22,\r\n  \"changed_snapshot_paths\": [\r\n    \"skill/pynq-overlay-dma-validation/references/example-profile.json\",\r\n    \"skill/pynq-overlay-dma-validation/scripts/pynq_probe.py\",\r\n    \"skill/pynq-overlay-dma-validation/scripts/validate_profile.py\",\r\n    \"skill/pynq-overlay-dma-validation/tests/test_validate_profile.py\"\r\n  ],\r\n  \"active_workflow_unchanged\": true\r\n}\r\n"
+  },
+  "final_preseal_qa": {
+    "command": "$ErrorActionPreference='Stop'\n$packageRoot=(Resolve-Path task-packages/PKG-A-SKILLS).Path\n$repoRoot=(Get-Location).Path\n$issues=@()\n$pending=@()\n$projection=@()\n$linkCount=0\nforeach($item in Get-ChildItem -LiteralPath $packageRoot -Recurse) {\n  $relative=[IO.Path]::GetRelativePath($packageRoot,$item.FullName).Replace('\\','/')\n  if($relative -notmatch '^[A-Za-z0-9_./-]+$') { $issues+=\"Non-ASCII path: $relative\" }\n  if($item.PSIsContainer) {\n    if(@(Get-ChildItem -LiteralPath $item.FullName -Force).Count -eq 0) { $issues+=\"Empty directory: $relative\" }\n    continue\n  }\n  $raw=[IO.File]::ReadAllText($item.FullName)\n  if($raw -match '(?m)[ \\t]+\\r?$') { $issues+=\"Trailing whitespace: $relative\" }\n  if(-not $raw.EndsWith(\"`n\")) { $issues+=\"Missing final newline: $relative\" }\n  if($item.Extension -ne '.md') { continue }\n  foreach($match in [regex]::Matches($raw,'\\[[^\\]]+\\]\\(([^)]+)\\)')) {\n    $target=$match.Groups[1].Value.Split('#')[0]\n    if(-not $target -or $target -match '^https?://') {continue}\n    $linkCount++\n    $resolved=[IO.Path]::GetFullPath((Join-Path $item.DirectoryName $target))\n    if(Test-Path -LiteralPath $resolved) {continue}\n    if($relative -eq 'payload/skill/README.md') {\n      $installed=[IO.Path]::GetFullPath((Join-Path \"$repoRoot/skill\" $target))\n      if(Test-Path -LiteralPath $installed) { $projection+=$target; continue }\n    }\n    if($resolved -in @(\"$packageRoot\\MANIFEST.json\",\"$packageRoot\\evidence\\validation-commands.json\")) {\n      $pending+=$relative+': '+$target; continue\n    }\n    $issues+=\"Broken link: $relative -> $target\"\n  }\n}\n$snapshot=Get-Content -Raw \"$packageRoot/evidence/source-snapshot.json\" | ConvertFrom-Json\n$changed=@()\n$unchanged=@()\nforeach($row in $snapshot.files) {\n  if((Test-Path -LiteralPath $row.path) -and (Get-FileHash -LiteralPath $row.path -Algorithm SHA256).Hash.ToLowerInvariant() -eq $row.sha256) { $unchanged+=$row.path } else { $changed+=$row.path }\n}\n[pscustomobject]@{issues=$issues;markdown_links=$linkCount;installed_target_dependency_links=$projection;pending_generated_links=$pending;unchanged_snapshot_count=$unchanged.Count;changed_snapshot_paths=$changed;active_workflow_unchanged=(@($changed | Where-Object {$_ -eq 'skill/README.md' -or $_ -like 'skill/soundsight-engineering-workflow/*'}).Count -eq 0)} | ConvertTo-Json -Depth 5\nif($issues.Count -gt 0) {exit 1}",
+    "chunk_id": "df6b1b",
+    "wall_time_seconds": 0.2492441,
+    "exit_code": 0,
+    "original_token_count": 195,
+    "output": "{\r\n  \"issues\": [],\r\n  \"markdown_links\": 26,\r\n  \"installed_target_dependency_links\": [\r\n    \"pynq-overlay-dma-validation/README.md\",\r\n    \"pynq-overlay-dma-validation/SKILL.md\",\r\n    \"../docs/current-status.md\",\r\n    \"../docs/work-packages.md\"\r\n  ],\r\n  \"pending_generated_links\": [],\r\n  \"unchanged_snapshot_count\": 20,\r\n  \"changed_snapshot_paths\": [\r\n    \"skill/pynq-overlay-dma-validation/README.md\",\r\n    \"skill/pynq-overlay-dma-validation/SKILL.md\",\r\n    \"skill/pynq-overlay-dma-validation/references/example-profile.json\",\r\n    \"skill/pynq-overlay-dma-validation/scripts/pynq_probe.py\",\r\n    \"skill/pynq-overlay-dma-validation/scripts/validate_profile.py\",\r\n    \"skill/pynq-overlay-dma-validation/tests/test_validate_profile.py\"\r\n  ],\r\n  \"active_workflow_unchanged\": true\r\n}\r\n"
+  }
+}

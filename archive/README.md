@@ -2,6 +2,8 @@
 
 此目录不作为当前任务或实现依据，也不进入比赛提交包。
 
+- [SKL-001技术化升级前原件](2026-09-13-before-skl001-technical-upgrade/README.md)：旧活动协作Skill、旧0.2.0待审包及相关计划/指南，41份原件哈希保留；当前只用fpga-module-verification技术候选，不恢复旧交付入口。
+
 - [2026-09-13 加速排期前快照](2026-09-13-before-accelerated-plan/README-ARCHIVE.md)：31份原计划/分工/指南，旧9/16和10/7安排已失效；当前按9/14与10/1执行。
 - [2026-09-13 活动目录历史稿归档](2026-09-13-active-docs-cleanup/README.md)：旧阶段入口删除、4份历史报告移出docs顶层，以及原路径到归档路径映射。原阶段快照、原始证据和旧SHA不改写。
 

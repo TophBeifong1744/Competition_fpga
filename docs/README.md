@@ -14,6 +14,7 @@
 | 模块责任与交接 | [团队分工](team-tasks.md) |
 | Git分支、准确范围发布与本地/远端核对 | [GitHub 工作规则](git-workflow.md) |
 | 比赛要求与验收证据 | [赛题验收台账](competition-acceptance.md) |
+| 两项Skill的制作分工、必交要求、加分证据与独立验收 | [Skill交付计划](skills-delivery-plan.md) |
 | 板卡、选定麦克风与待确认接口 | [硬件入口](../hardware/README.md)、[M0 审计](../hardware/m0-board-interface-audit.md) |
 | V1 当前原理、实现与阶段门 | [原理](principles-flow.md)、[工程](engineering-flow.md)、[架构](architecture.md)、[路线图](roadmap.md) |
 | 定位和音频怎样测 | [声学验证计划](acoustic-validation-plan.md) |

@@ -151,7 +151,7 @@ V1：M0 → M1 → M2/M3/M4/M5 → M6，目标 2026-10-01
 | 3D-P1 原理与实验指南 | BryanZheng802 / 拓芙 | SoundSight｜原理问题 | `docs/three-dimensional-doa-principles-guide.md`：可观测性、符号、求解、场景与指标，指出需纠正的假设 |
 | 3D-P2 工程迁移指南 | 拓芙 / BryanZheng802 | SoundSight｜工程实现 | `docs/three-dimensional-doa-engineering-guide.md`：复用/变更矩阵、接口兼容、资源预算方法和验证门 |
 | 3D-P3 阵列与夹具指南 | 拓芙 / BryanZheng802；C本轮不新增派工 | SoundSight｜硬件外设选型 | `hardware/three-dimensional-array-guide.md`：六麦首选/四麦备选、公差、声孔、遮挡、标定夹具与扩展预留，不采购 |
-| 3D-P4 工程 Skill 对齐 | 拓芙 / BryanZheng802 | SoundSight｜工程协作 Skill | `docs/three-dimensional-doa-workflow-skill-guide.md`：复用现有阶段门/证据机制的清单，不另造专用 Skill |
+| 3D-P4 工程 Skill 对齐 | 拓芙 / BryanZheng802 | 复用原工程协作Skill任务，现改做模块开发与仿真 | `docs/three-dimensional-doa-workflow-skill-guide.md`：保留项目证据边界，将来获准RTL使用fpga-module-verification；不另造三维Skill、不现在启动三维实现 |
 | 3D-P5 PYNQ Skill 对齐 | 拓芙 / BryanZheng802；C本轮不新增派工 | SoundSight｜PYNQ 通用 Skill | `docs/three-dimensional-doa-pynq-skill-guide.md`：版本、坐标、有效性与 golden 兼容测试建议，不实现新驱动 |
 
 各任务先读本文和自己的现有文档，独立检查推导与冲突，再写所分配的单份指南；依据不足标待验证。需要调整本文时只反馈主流程，避免同时编辑共享计划。不得因此修改 RTL、Vivado 工程、寄存器合同、Skill 实现或执行采购；不创建 Git 分支、不提交 Git，保留其他任务和用户的改动。
