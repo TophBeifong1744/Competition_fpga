@@ -1,0 +1,57 @@
+{
+  "status": "PASS_DEMONSTRATION",
+  "scope": "author demonstration, not independent B review",
+  "script_sha256": "d13cf0a2e92758e6e15a4a8dc7884d791de723ab7a0dd765906e76ba3e680c61",
+  "runs": [
+    {
+      "name": "pcm4",
+      "expected": "PASS_SIMULATION",
+      "actual": "PASS_SIMULATION",
+      "matched": true,
+      "checks": 792,
+      "first_failure": null,
+      "result": "pcm4/result.json",
+      "result_sha256": "96f318ce7d80f4424100559cfa463c63e194921ef7621c127fe68e1452492a93"
+    },
+    {
+      "name": "elastic",
+      "expected": "PASS_SIMULATION",
+      "actual": "PASS_SIMULATION",
+      "matched": true,
+      "checks": 1125,
+      "first_failure": null,
+      "result": "elastic/result.json",
+      "result_sha256": "8374435b4f612d7d405cc19ce3e7328123eb0af7fc89b063f2f78a607ce935a6"
+    },
+    {
+      "name": "bad_data",
+      "expected": "FAIL_SIMULATION",
+      "actual": "FAIL_SIMULATION",
+      "matched": true,
+      "checks": null,
+      "first_failure": "Fatal: SKILL_FAIL data width=1 cycle=9 transaction=0 expected=0 actual=1",
+      "result": "bad_data/result.json",
+      "result_sha256": "53be65bf2e068789c1ab93f72f1082a6879f00a3376d115d2e3e99b15fa78032"
+    },
+    {
+      "name": "bad_ready",
+      "expected": "FAIL_SIMULATION",
+      "actual": "FAIL_SIMULATION",
+      "matched": true,
+      "checks": null,
+      "first_failure": "Fatal: SKILL_FAIL empty acceptance width=1",
+      "result": "bad_ready/result.json",
+      "result_sha256": "704408417f019e8201b885abaf66f73a14f26065398aebf46f127fe0ccca4143"
+    },
+    {
+      "name": "restored",
+      "expected": "PASS_SIMULATION",
+      "actual": "PASS_SIMULATION",
+      "matched": true,
+      "checks": 1125,
+      "first_failure": null,
+      "result": "restored/result.json",
+      "result_sha256": "0c040857ac0809a5e14719288de3bb8689031383feb77f30150a89f0295a656d"
+    }
+  ]
+}

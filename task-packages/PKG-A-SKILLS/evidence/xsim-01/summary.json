@@ -1,0 +1,57 @@
+{
+  "status": "PASS_DEMONSTRATION",
+  "scope": "author demonstration, not independent B review",
+  "script_sha256": "d13cf0a2e92758e6e15a4a8dc7884d791de723ab7a0dd765906e76ba3e680c61",
+  "runs": [
+    {
+      "name": "pcm4",
+      "expected": "PASS_SIMULATION",
+      "actual": "PASS_SIMULATION",
+      "matched": true,
+      "checks": 792,
+      "first_failure": null,
+      "result": "pcm4/result.json",
+      "result_sha256": "15fd7a857ebc829564b68d9fd630958ab6a753d35a18183410cd709af8b7962c"
+    },
+    {
+      "name": "elastic",
+      "expected": "PASS_SIMULATION",
+      "actual": "PASS_SIMULATION",
+      "matched": true,
+      "checks": 1125,
+      "first_failure": null,
+      "result": "elastic/result.json",
+      "result_sha256": "869a51575ae25845e4b0487c58356c7516c333af71119b72cbf4869ff2c07343"
+    },
+    {
+      "name": "bad_data",
+      "expected": "FAIL_SIMULATION",
+      "actual": "FAIL_SIMULATION",
+      "matched": true,
+      "checks": null,
+      "first_failure": "Fatal: SKILL_FAIL data width=1 cycle=9 transaction=0 expected=0 actual=1",
+      "result": "bad_data/result.json",
+      "result_sha256": "7dd1e335d7ea7dc7a1cfc7f0c0728686d09c4deb8a1b9e1ccb81dcf293fbb42f"
+    },
+    {
+      "name": "bad_ready",
+      "expected": "FAIL_SIMULATION",
+      "actual": "FAIL_SIMULATION",
+      "matched": true,
+      "checks": null,
+      "first_failure": "Fatal: SKILL_FAIL empty acceptance width=1",
+      "result": "bad_ready/result.json",
+      "result_sha256": "764ffaf14c44392f6fd74e904d32c940d9a96ad756ad1b722095d57cdebfef81"
+    },
+    {
+      "name": "restored",
+      "expected": "PASS_SIMULATION",
+      "actual": "PASS_SIMULATION",
+      "matched": true,
+      "checks": 1125,
+      "first_failure": null,
+      "result": "restored/result.json",
+      "result_sha256": "721f56ba9b62b7dafbc0241ad2b6dc9c8d943acbe56a78ba94a897d7cfaf4d46"
+    }
+  ]
+}
