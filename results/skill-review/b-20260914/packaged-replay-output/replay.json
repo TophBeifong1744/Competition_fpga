@@ -1,0 +1,121 @@
+{
+  "meaning": "Reproduces observed results, including false PASS. NOT approval.",
+  "records": [
+    {
+      "label": "candidate-tb-two-stages",
+      "command": [
+        "D:\\Python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\b-skl001-c562466\\skill\\fpga-module-verification\\scripts\\run_xsim.py",
+        "--case",
+        "F:\\NUEC\\review-worktrees\\b-skills-main-20260914\\results\\skill-review\\b-20260914\\latency-mutant\\case.json",
+        "--vivado-bin",
+        "D:\\AMD\\2025.2\\Vivado\\bin",
+        "--output",
+        "F:\\NUEC\\review-evidence\\skills-b-20260914\\packaged-replay-output\\candidate-tb-two-stages"
+      ],
+      "cwd": "F:\\NUEC\\review-worktrees\\b-skl001-c562466",
+      "exit_code": 0,
+      "status": "PASS_SIMULATION",
+      "expected_observation": "PASS_SIMULATION",
+      "matched": true
+    },
+    {
+      "label": "b-tb-original",
+      "command": [
+        "D:\\Python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\b-skl001-c562466\\skill\\fpga-module-verification\\scripts\\run_xsim.py",
+        "--case",
+        "F:\\NUEC\\review-worktrees\\b-skills-main-20260914\\results\\skill-review\\b-20260914\\b-latency-original\\case.json",
+        "--vivado-bin",
+        "D:\\AMD\\2025.2\\Vivado\\bin",
+        "--output",
+        "F:\\NUEC\\review-evidence\\skills-b-20260914\\packaged-replay-output\\b-tb-original"
+      ],
+      "cwd": "F:\\NUEC\\review-worktrees\\b-skl001-c562466",
+      "exit_code": 0,
+      "status": "PASS_SIMULATION",
+      "expected_observation": "PASS_SIMULATION",
+      "matched": true
+    },
+    {
+      "label": "b-tb-two-stages",
+      "command": [
+        "D:\\Python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\b-skl001-c562466\\skill\\fpga-module-verification\\scripts\\run_xsim.py",
+        "--case",
+        "F:\\NUEC\\review-worktrees\\b-skills-main-20260914\\results\\skill-review\\b-20260914\\b-latency-two-stage\\case.json",
+        "--vivado-bin",
+        "D:\\AMD\\2025.2\\Vivado\\bin",
+        "--output",
+        "F:\\NUEC\\review-evidence\\skills-b-20260914\\packaged-replay-output\\b-tb-two-stages"
+      ],
+      "cwd": "F:\\NUEC\\review-worktrees\\b-skl001-c562466",
+      "exit_code": 1,
+      "status": "FAIL_SIMULATION",
+      "expected_observation": "FAIL_SIMULATION",
+      "matched": true
+    },
+    {
+      "label": "missing-dma-ip",
+      "command": [
+        "D:\\Python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\b-skl002-55039cf\\skill\\pynq-overlay-dma-validation\\scripts\\validate_profile.py",
+        "--profile",
+        "F:\\NUEC\\review-worktrees\\b-skills-main-20260914\\results\\skill-review\\b-20260914\\skl002-independent\\thermal\\missing-dma-ip.json",
+        "--mode",
+        "offline",
+        "--output",
+        "F:\\NUEC\\review-evidence\\skills-b-20260914\\packaged-replay-output\\missing-dma-ip.json"
+      ],
+      "cwd": "F:\\NUEC\\review-worktrees\\b-skl002-55039cf",
+      "exit_code": 0,
+      "status": "PASS",
+      "expected_observation": "PASS",
+      "matched": true
+    },
+    {
+      "label": "missing-control-ip",
+      "command": [
+        "D:\\Python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\b-skl002-55039cf\\skill\\pynq-overlay-dma-validation\\scripts\\validate_profile.py",
+        "--profile",
+        "F:\\NUEC\\review-worktrees\\b-skills-main-20260914\\results\\skill-review\\b-20260914\\skl002-independent\\thermal\\missing-control-ip.json",
+        "--mode",
+        "offline",
+        "--output",
+        "F:\\NUEC\\review-evidence\\skills-b-20260914\\packaged-replay-output\\missing-control-ip.json"
+      ],
+      "cwd": "F:\\NUEC\\review-worktrees\\b-skl002-55039cf",
+      "exit_code": 0,
+      "status": "PASS",
+      "expected_observation": "PASS",
+      "matched": true
+    },
+    {
+      "label": "duplicate-run",
+      "command": [
+        "D:\\Python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\b-skl002-55039cf\\skill\\pynq-overlay-dma-validation\\scripts\\validate_profile.py",
+        "--profile",
+        "F:\\NUEC\\review-worktrees\\b-skills-main-20260914\\results\\skill-review\\b-20260914\\skl002-independent\\thermal\\profile.json",
+        "--mode",
+        "offline",
+        "--output",
+        "F:\\NUEC\\review-evidence\\skills-b-20260914\\packaged-replay-output\\duplicate-run.json",
+        "--evidence",
+        "F:\\NUEC\\review-worktrees\\b-skills-main-20260914\\results\\skill-review\\b-20260914\\skl002-independent\\thermal\\duplicate-evidence.json"
+      ],
+      "cwd": "F:\\NUEC\\review-worktrees\\b-skl002-55039cf",
+      "exit_code": 0,
+      "status": "PASS",
+      "expected_observation": "PASS",
+      "matched": true
+    }
+  ]
+}

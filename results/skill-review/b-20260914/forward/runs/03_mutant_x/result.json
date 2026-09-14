@@ -1,0 +1,91 @@
+{
+  "status": "FAIL_SIMULATION",
+  "stage": "simulate",
+  "evidence_class": "rtl_simulation",
+  "not_run": [
+    "synthesis",
+    "timing",
+    "cdc",
+    "board",
+    "system"
+  ],
+  "runner_sha256": "80eabf73d614898636fcc599844c714480987cea66ee9e0bdbbc710f36a144e6",
+  "commands": [
+    {
+      "stage": "version",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "--version"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-20260914\\forward\\runs\\03_mutant_x\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2"
+    },
+    {
+      "stage": "compile_sv",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "--sv",
+        "sat_add.sv",
+        "tb_sat_add.sv"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-20260914\\forward\\runs\\03_mutant_x\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "256bd83f75de5c8a80001f341e034d0d355413e772dc2c41315450bfefcf958d"
+    },
+    {
+      "stage": "elaborate",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xelab.bat",
+        "work.tb_sat_add",
+        "-s",
+        "module_test",
+        "-timescale",
+        "1ns/1ps"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-20260914\\forward\\runs\\03_mutant_x\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "32342934628ebf10d7d501ee024843b3e7ad323f98e6d490a88c7c6a84040d3a"
+    },
+    {
+      "stage": "simulate",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xsim.bat",
+        "module_test",
+        "-runall",
+        "-log",
+        "xsim.log"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-20260914\\forward\\runs\\03_mutant_x\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "a761beeca5517974fff0e0afc708a715c35fab0dffa11e47a473c56d9162d460"
+    }
+  ],
+  "sources": [
+    {
+      "path": "F:\\NUEC\\review-evidence\\skills-b-20260914\\forward\\mutants\\x\\sat_add.sv",
+      "snapshot": "inputs/sat_add.sv",
+      "sha256": "6c7c3e86dfaf14351a54f9f940f9dc2c272dd893e6ce04fb9f730a1d7d3696dd"
+    },
+    {
+      "path": "F:\\NUEC\\review-evidence\\skills-b-20260914\\forward\\mutants\\x\\tb_sat_add.sv",
+      "snapshot": "inputs/tb_sat_add.sv",
+      "sha256": "93de8a5ef812f215888519ffef0ae7dca301a286e2c691ae5a538a5ed8fc21ac"
+    }
+  ],
+  "started_utc": "2026-09-14T05:02:53.629605+00:00",
+  "python_version": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+  "platform": "win32",
+  "name": "sat_add_contract",
+  "top": "tb_sat_add",
+  "expected_tool_version": "2025.2",
+  "manifest_sha256": "fca79d59b8fc5030259e0cdd63df6947c0e87d4168eef225dfa625f169227a5f",
+  "vivado_bin": "D:\\AMD\\2025.2\\Vivado\\bin",
+  "contract_sha256": "20ca308455886e3a725368a7a9f17a03485c6bed7f1c693f035efbbc42e80e67",
+  "first_failure": "SKILL_FAIL cycle=3 id=1 expected=-128 actual=x bits=xxxxxxxx pending=1 a=-128 b=-1: post-edge numeric/hold",
+  "elapsed_seconds": 19.77388299999984
+}

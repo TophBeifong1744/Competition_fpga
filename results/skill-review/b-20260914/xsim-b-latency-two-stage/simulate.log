@@ -1,0 +1,19 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Sep 14 13:09:10 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/module_test/xsim_script.tcl
+# xsim {module_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+B_LATENCY first_accept_post_edge valid=0 data=00 expected_valid=1 expected_data=5a
+Fatal: SKILL_FAIL one-edge latency
+Time: 16 ns  Iteration: 0  Process: /tb_b_latency/Initial7_3  Scope: tb_b_latency  File: F:/NUEC/review-evidence/skills-b-20260914/xsim-b-latency-two-stage/work/tb_b_latency.sv Line: 12
+$finish called at time : 16 ns
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 14 13:09:13 2026...

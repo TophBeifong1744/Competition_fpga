@@ -1,0 +1,484 @@
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:1: trailing whitespace.
++{
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:2: trailing whitespace.
++  "schema_version": 1,
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:3: trailing whitespace.
++  "status": "PASS",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:4: trailing whitespace.
++  "evidence_level": "mock",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:5: trailing whitespace.
++  "board_execution": false,
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:6: trailing whitespace.
++  "review_status": "AUTHOR_SELF_TEST_NOT_B_ACCEPTANCE",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:7: trailing whitespace.
++  "generated_at_utc": "2026-09-13T14:44:07.490391+00:00",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:8: trailing whitespace.
++  "environment": {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:9: trailing whitespace.
++    "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:10: trailing whitespace.
++    "platform": "Windows-11-10.0.26200-SP0"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:11: trailing whitespace.
++  },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:12: trailing whitespace.
++  "reproduce": "python -B scripts/run_offline_tests.py --output <new-report.json>",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:13: trailing whitespace.
++  "tests_run": 50,
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:14: trailing whitespace.
++  "subtests_run": 39,
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:15: trailing whitespace.
++  "failures": 0,
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:16: trailing whitespace.
++  "errors": 0,
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:17: trailing whitespace.
++  "skipped": 0,
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:18: trailing whitespace.
++  "tests": [
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:19: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:20: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_abort_timeout_or_exception_retains",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:21: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:22: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:23: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:24: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_actual_length_not_capacity",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:25: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:26: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:27: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:28: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_aliased_object_released_only_once",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:29: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:30: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:31: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:32: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_boolean_transaction_id_and_actual_count_rejected",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:33: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:34: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:35: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:36: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_cli_report_is_mock_and_existing_evidence_not_overwritten",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:37: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:38: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:39: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:40: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_coherent_policy_requires_allocator_confirmation",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:41: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:42: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:43: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:44: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_completed_without_quiescence_never_reads_or_frees",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:45: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:46: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:47: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:48: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_confirmed_coherent_path_needs_no_flush_or_invalidate",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:49: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:50: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:51: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:52: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_error_register_prevents_read_and_performance_claim",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:53: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:54: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:55: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:56: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_flush_failure_is_before_submission",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:57: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:58: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:59: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:60: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_golden_mismatch_stops_session",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:61: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:62: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:63: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:64: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_hardware_adapter_not_accepted",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:65: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:66: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:67: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:68: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_invalid_contract_fails_before_allocations",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:69: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:70: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:71: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:72: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_length_granularity_independent_of_buffer_alignment",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:73: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:74: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:75: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:76: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_misaligned_allocation_rejected_before_dma",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:77: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:78: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:79: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:80: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_missing_cache_operations_produce_real_byte_mismatch",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:81: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:82: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:83: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:84: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_missing_or_stale_status_is_not_default_success",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:85: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:86: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:87: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:88: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_no_abort_authority_retains_and_blocks_next_run",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:89: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:90: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:91: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:92: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_overlapping_allocations_rejected",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:93: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:94: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:95: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:96: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_payload_contract_errors_do_not_allocate",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:97: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:98: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:99: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:100: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_poll_budget_bounds_a_nonadvancing_clock",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:101: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:102: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:103: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:104: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_post_dma_invalidate_failure_prevents_cpu_read",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:105: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:106: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:107: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:108: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_pre_abort_snapshot_survives_reused_adapter_dictionary",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:109: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:110: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:111: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:112: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_receive_only_never_allocates_or_submits_tx",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:113: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:114: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:115: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:116: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_release_exception_not_retried",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:117: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:118: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:119: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:120: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_repeated_success_rearms_fresh_transaction",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:121: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:122: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:123: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:124: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_second_allocation_failure_releases_first",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:125: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:126: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:127: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:128: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_submission_can_start_then_raise_or_cancel",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:129: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:130: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:131: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:132: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_success_cache_and_ownership_order",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:133: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:134: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:135: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:136: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:137: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:138: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:139: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:140: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_transfer_timeout_is_failure_even_after_successful_abort",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:141: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:142: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:143: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:144: trailing whitespace.
++      "id": "test_dma_session.DmaSessionTests.test_unreadable_status_does_not_mask_primary_error",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:145: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:146: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:147: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:148: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_explicit_transfer_granularity_and_boolean_rejected",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:149: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:150: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:151: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:152: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_golden_comparison_detects_first_mismatch",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:153: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:154: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:155: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:156: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_hwh_in_different_directory_is_rejected",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:157: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:158: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:159: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:160: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_integer_tolerance_and_mixed_float_are_compared_exactly",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:161: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:162: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:163: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:164: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_json_integer_golden_preserves_large_integer_difference",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:165: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:166: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:167: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:168: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_malformed_nested_evidence_returns_failure_report",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:169: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:170: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:171: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:172: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_manifest_hash_tamper_fails",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:173: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:174: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:175: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:176: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_mock_cannot_claim_hardware",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:177: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:178: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:179: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:180: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_nonfinite_golden_tolerance_is_rejected",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:181: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:182: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:183: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:184: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_nonfinite_profile_is_rejected",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:185: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:186: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:187: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:188: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_numeric_tolerances_do_not_overflow_to_false_pass",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:189: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:190: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:191: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:192: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_packet_length_does_not_inherit_buffer_address_alignment",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:193: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:194: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:195: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:196: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_second_synthetic_board_and_overlay_reuse",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:197: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:198: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:199: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:200: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_side_effect_identity_is_rejected",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:201: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:202: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:203: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:204: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_unaligned_dma_length_fails",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:205: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:206: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:207: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:208: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_unqualified_board_runner_stops_before_hardware_access",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:209: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:210: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:211: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:212: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_valid_profile_and_mock_evidence_pass_offline",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:213: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:214: trailing whitespace.
++    },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:215: trailing whitespace.
++    {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:216: trailing whitespace.
++      "id": "test_validate_profile.ValidationTests.test_wide_register_and_zero_mask_are_rejected",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:217: trailing whitespace.
++      "status": "PASS"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:218: trailing whitespace.
++    }
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:219: trailing whitespace.
++  ],
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:220: trailing whitespace.
++  "failure_details": [],
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:221: trailing whitespace.
++  "source_sha256": {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:222: trailing whitespace.
++    "scripts/compare_golden.py": "7ff7883414f27ba5e94c4c3f5dde395b801efe7c43d9431605a7ef845cc71c70",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:223: trailing whitespace.
++    "scripts/dma_session.py": "61f8c3996973184470e4473e474793854d4e91046147fab551de848e34f1c03e",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:224: trailing whitespace.
++    "scripts/pynq_probe.py": "2ac2101c8dd1e5f72faa9b2ff107f3546c9c15e74a0372e6f0d567de59be1907",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:225: trailing whitespace.
++    "scripts/run_offline_tests.py": "b22abefb050a32f9a30fb05fe96883f5564d8215fbe52c6fb205ac849bbb7700",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:226: trailing whitespace.
++    "scripts/simulate_dma.py": "45afbe11746a297fb04e353b272c2483de467aec88ff2946eef3274b780e1117",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:227: trailing whitespace.
++    "scripts/validate_profile.py": "2b6299b8c43a3fcff6d18f7f6f914180a81110b832508f648de8807812129482",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:228: trailing whitespace.
++    "tests/test_dma_session.py": "5b3b591fbc385c4eb84d9e70d263e1c0277a1cc9fda43cc13f7ae9ce2eeb88e8",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:229: trailing whitespace.
++    "tests/test_validate_profile.py": "1108cfdee9364f56df9eb9e259791f16b32f2604c49fefbe0d51ee253f03c01a",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:230: trailing whitespace.
++    "references/example-profile.json": "f9722abb54fa1ba67afc783619b2d8b96786231a06f1a0815153be09d4a30a8e",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:231: trailing whitespace.
++    "references/example-session.json": "a2edb87387dfa94158bcf9f7d548e28a23b0bfef56808ecf931bec04753b6e5a"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:232: trailing whitespace.
++  },
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:233: trailing whitespace.
++  "sources_unchanged_during_run": true,
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:234: trailing whitespace.
++  "claims": {
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:235: trailing whitespace.
++    "pynq_driver": "NOT_RUN",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:236: trailing whitespace.
++    "overlay_download": "NOT_RUN",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:237: trailing whitespace.
++    "physical_dma": "NOT_RUN",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:238: trailing whitespace.
++    "tlast_waveform": "NOT_RUN",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:239: trailing whitespace.
++    "hardware_performance": "NOT_RUN",
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:240: trailing whitespace.
++    "vivado_resources": "NOT_RUN"
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:241: trailing whitespace.
++  }
+skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json:242: trailing whitespace.
++}

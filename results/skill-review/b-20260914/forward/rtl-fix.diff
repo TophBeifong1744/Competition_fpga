@@ -1,0 +1,11 @@
+--- original/sat_add.sv
++++ fixed/sat_add.sv
+@@ -11,7 +11,7 @@
+    out_valid<=in_valid;
+    if(in_valid) begin
+     if(wide_sum > 9'sd127) y<=8'sd127;
+-    else if(wide_sum < -9'sd128) y<=-8'sd127;
++    else if(wide_sum < -9'sd128) y<=8'sh80;
+     else y<=wide_sum[7:0];
+    end
+   end

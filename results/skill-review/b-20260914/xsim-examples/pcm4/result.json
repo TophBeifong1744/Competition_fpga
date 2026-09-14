@@ -1,0 +1,102 @@
+{
+  "status": "PASS_SIMULATION",
+  "stage": "simulate",
+  "evidence_class": "rtl_simulation",
+  "not_run": [
+    "synthesis",
+    "timing",
+    "cdc",
+    "board",
+    "system"
+  ],
+  "runner_sha256": "80eabf73d614898636fcc599844c714480987cea66ee9e0bdbbc710f36a144e6",
+  "commands": [
+    {
+      "stage": "version",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "--version"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-20260914\\xsim-examples\\pcm4\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2"
+    },
+    {
+      "stage": "compile_v",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "pcm4_signext_pack.v"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-20260914\\xsim-examples\\pcm4\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "1e42a44ffb0388a393c366611da2fe9d707ddfcb953e3b5b5edb479e754eff15"
+    },
+    {
+      "stage": "compile_sv",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "--sv",
+        "tb_pcm4_skill.sv"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-20260914\\xsim-examples\\pcm4\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "d6bf46a0d27bcbfced8e5757ca076ce6bf6636e1a27d9ba124e4c45341287aff"
+    },
+    {
+      "stage": "elaborate",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xelab.bat",
+        "work.tb_pcm4_skill",
+        "-s",
+        "module_test",
+        "-timescale",
+        "1ns/1ps"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-20260914\\xsim-examples\\pcm4\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "a755334a19e2d26c409e2e81778556e449d8049fd004c85bee4abf5e87b22a30"
+    },
+    {
+      "stage": "simulate",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xsim.bat",
+        "module_test",
+        "-runall",
+        "-log",
+        "xsim.log"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-20260914\\xsim-examples\\pcm4\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "9e9526d83407334f9bd1bae62568db2c102b96eb578b439e3704eba1bd4ea394"
+    }
+  ],
+  "sources": [
+    {
+      "path": "F:\\NUEC\\review-worktrees\\b-skl001-c562466\\rtl\\acquisition\\pcm4_signext_pack.v",
+      "snapshot": "inputs/pcm4_signext_pack.v",
+      "sha256": "85269ccd9991c80a2dbd507d342cc19d6e58517b9cc525520dce03b710df215a"
+    },
+    {
+      "path": "F:\\NUEC\\review-worktrees\\b-skl001-c562466\\skill\\fpga-module-verification\\examples\\pcm4\\tb_pcm4_skill.sv",
+      "snapshot": "inputs/tb_pcm4_skill.sv",
+      "sha256": "e35fcf8526373193977e1e7a261edb4e2b1e681a0c00efff732c8f2241be70b6"
+    }
+  ],
+  "started_utc": "2026-09-14T04:59:44.247053+00:00",
+  "python_version": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+  "platform": "win32",
+  "name": "pcm4",
+  "top": "tb_pcm4_skill",
+  "expected_tool_version": "2025.2",
+  "manifest_sha256": "3c3762d080e9bfc2ad496c4ad490d74c5f95d4e9401b3c4d8bd245fb1d33fc1a",
+  "vivado_bin": "D:\\AMD\\2025.2\\Vivado\\bin",
+  "contract_sha256": "54c975e57bd17484e3d175960a4c1431f9e017d8541539a75a0ca70eef50dc79",
+  "cases": 3,
+  "checks": 792,
+  "elapsed_seconds": 34.624282899998434
+}

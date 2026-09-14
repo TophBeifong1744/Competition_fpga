@@ -1,0 +1,1 @@
+B independent arithmetic trace: fixed 8-bit signed saturating adder; reset synchronously; ready high; output after each accepting edge must be valid. Print all 65536 ordered operand pairs for external Python golden comparison. No hardware scope.

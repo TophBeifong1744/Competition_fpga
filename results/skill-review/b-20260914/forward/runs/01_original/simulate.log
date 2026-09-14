@@ -1,0 +1,19 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Sep 14 13:01:28 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/module_test/xsim_script.tcl
+# xsim {module_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+SKILL_FAIL cycle=3 id=1 expected=-128 actual=-127 bits=10000001 pending=1 a=-128 b=-1: post-edge numeric/hold
+Fatal: first mismatch
+Time: 36 ns  Iteration: 0  Process: /tb_sat_add/fail  Scope: tb_sat_add.fail  File: F:/NUEC/review-evidence/skills-b-20260914/forward/runs/01_original/work/tb_sat_add.sv Line: 21
+$finish called at time : 36 ns
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 14 13:01:31 2026...

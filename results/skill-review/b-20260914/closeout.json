@@ -1,0 +1,125 @@
+{
+  "recorded_utc": "2026-09-14T05:31:15.800928+00:00",
+  "status": "NEEDS_FIX for both; no implementation approval or main publication",
+  "main": {
+    "local_main": "57c50e6c99731cd57e7738ac91b02f985ad229b1",
+    "origin_main": "57c50e6c99731cd57e7738ac91b02f985ad229b1",
+    "direct_remote": "57c50e6c99731cd57e7738ac91b02f985ad229b1",
+    "ahead_behind": "0\t0",
+    "actual_main_worktree": "F:/NUEC/review-worktrees/member-b-to-a-pkg-b-alg",
+    "actual_main_status": "",
+    "direct_remote_verified_after_upload_rejection": true,
+    "new_remote_main_commit": null
+  },
+  "review_publication": {
+    "branch": "review/member-b-skills-20260914",
+    "remote_sha_at_recording": null,
+    "scope": [
+      "docs/maintenance/skills-review-b-2026-09-14.md",
+      "results/skill-review/b-20260914/"
+    ],
+    "note": "Final closeout commit may supersede the SHA observed here. See final user report.",
+    "status": "BLOCKED_APPROVAL",
+    "remote_ref_observation": "Direct gh api GET returned 404 after rejected upload; branch not created.",
+    "approval_rejection": "Automatic approval review rejected upload of review reports, source snapshots, logs and test evidence to GitHub feedback branch because explicit authorization for this data/destination was not established.",
+    "next_action": "Ask user to explicitly authorize pushing prepared review/member-b-skills-20260914; do not bypass rejection.",
+    "main_was_not_written": true
+  },
+  "candidates": {
+    "codex/toph/skl001-module-verification-20260914": "c562466805aff08201cd457cc2e6ee7464a3566f",
+    "codex/toph/skl002-pynq-validation-20260914": "55039cf8bfab2bd6112192c8bd646d427a52a642"
+  },
+  "other_shared_work": {
+    "path": "F:\\NUEC\\develop",
+    "branch": "feature/member-b-algorithm",
+    "status_entries": 198,
+    "preserved_unchanged": true,
+    "old_pynq_baseline": [
+      {
+        "path": "skill/pynq-overlay-dma-validation/README.md",
+        "sha256": "cfa6bf85782b2712d010db9694be703d8aaf302b7d09c16c45f352064629e750",
+        "matches_main_after_crlf_normalization": true
+      },
+      {
+        "path": "skill/pynq-overlay-dma-validation/SKILL.md",
+        "sha256": "5ca5f76ffacf215b21a70fdf257a63619db89f71ffe5e1a8f6581c42e6ce569e",
+        "matches_main_after_crlf_normalization": true
+      },
+      {
+        "path": "skill/pynq-overlay-dma-validation/references/example-profile.json",
+        "sha256": "5b6fa563c8c10ee2e2d9a3a79b615490f7ca0b6a8a0df862197ebd504df7627c",
+        "matches_main_after_crlf_normalization": true
+      },
+      {
+        "path": "skill/pynq-overlay-dma-validation/references/hardware-runbook.md",
+        "sha256": "0b339384c4c72ef70c272e5cffe344d6dec9004b8810f28b3eb1d85b9d93e705",
+        "matches_main_after_crlf_normalization": true
+      },
+      {
+        "path": "skill/pynq-overlay-dma-validation/references/profile-contract.md",
+        "sha256": "0fa2f948364c32107ba83f06f958378d65d71ce3c80a54b6b2f64b41b872d79f",
+        "matches_main_after_crlf_normalization": true
+      },
+      {
+        "path": "skill/pynq-overlay-dma-validation/scripts/compare_golden.py",
+        "sha256": "c1868119807ee58f893c52630ac0c2890d3d65e513c55f41431e28901c70d932",
+        "matches_main_after_crlf_normalization": true
+      },
+      {
+        "path": "skill/pynq-overlay-dma-validation/scripts/pynq_probe.py",
+        "sha256": "f3b6552c65b41b5475d4ae2a02812deeb488fe03fcb5cf0604fea11fd53cd4ce",
+        "matches_main_after_crlf_normalization": true
+      },
+      {
+        "path": "skill/pynq-overlay-dma-validation/scripts/validate_profile.py",
+        "sha256": "ce622a51f13b17cda054eb9000ce7a319d8a95cc7ba3d0f3d8b2aa0e6eab7b20",
+        "matches_main_after_crlf_normalization": true
+      },
+      {
+        "path": "skill/pynq-overlay-dma-validation/tests/test_validate_profile.py",
+        "sha256": "9c67ba10a0caeeb520065844ab85627434e33da7e31962dcb17c60322d5c736b",
+        "matches_main_after_crlf_normalization": true
+      }
+    ]
+  },
+  "A_device": {
+    "accessed": false,
+    "local_162_differences": "NOT_HANDLED; no cleanup or synchronization claimed"
+  },
+  "materials": {
+    "canonical_evidence": "results/skill-review/b-20260914",
+    "useful_required_outputs": "skl002-required/b-*.json",
+    "tracked_evidence_force_add": "Exact evidence directory includes useful .log/.bin previously ignored by root patterns",
+    "candidate_branches_retained": true,
+    "review_branch_retained": true,
+    "main_merge_commit": null,
+    "cleanup": {
+      "deleted_objects": [],
+      "retained": [
+        "both candidate remote branches at exact reviewed SHAs",
+        "both detached candidate review worktrees",
+        "local review feedback branch/worktree",
+        "F:/NUEC/review-evidence/skills-b-20260914 raw runs, acquisition metadata and reproducible caches"
+      ],
+      "reason": "Neither candidate approved; feedback upload blocked. Retain source/evidence until delivery is confirmed.",
+      "useful_evidence_local_commit": "All 325 evidence/metadata files plus hash manifest and review report are committed on local feedback branch; final SHA in user reply.",
+      "related_untracked_ignored_useful_omissions_in_feedback_worktree": 0
+    }
+  },
+  "candidate_review_worktrees": {
+    "b-skl001-c562466": {
+      "status": [],
+      "ignored": [],
+      "note": "PYNQ b-*.json originals are byte-copied into committed skl002-required; no author implementation modified."
+    },
+    "b-skl002-55039cf": {
+      "status": [
+        "?? skill/pynq-overlay-dma-validation/results/b-receive.json",
+        "?? skill/pynq-overlay-dma-validation/results/b-review-tests.json",
+        "?? skill/pynq-overlay-dma-validation/results/b-timeout.json"
+      ],
+      "ignored": [],
+      "note": "PYNQ b-*.json originals are byte-copied into committed skl002-required; no author implementation modified."
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "status": "FAIL_SIMULATION",
+  "stage": "simulate",
+  "evidence_class": "rtl_simulation",
+  "not_run": [
+    "synthesis",
+    "timing",
+    "cdc",
+    "board",
+    "system"
+  ],
+  "runner_sha256": "80eabf73d614898636fcc599844c714480987cea66ee9e0bdbbc710f36a144e6",
+  "commands": [
+    {
+      "stage": "version",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "--version"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-20260914\\xsim-b-latency-two-stage\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2"
+    },
+    {
+      "stage": "compile_v",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "elastic_stage.v"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-20260914\\xsim-b-latency-two-stage\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "efefdf85db093316933160ebf2e5048fceacd33a4ff50bca269ac95156ca7842"
+    },
+    {
+      "stage": "compile_sv",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "--sv",
+        "tb_b_latency.sv"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-20260914\\xsim-b-latency-two-stage\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "f8f129910cada4da6c68f938650ddc16aed107c9eb5e4b210438609959c3054f"
+    },
+    {
+      "stage": "elaborate",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xelab.bat",
+        "work.tb_b_latency",
+        "-s",
+        "module_test",
+        "-timescale",
+        "1ns/1ps"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-20260914\\xsim-b-latency-two-stage\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "fc188b2d26efba94939591a1d32a3187e71e562108706533eb2102b3798cb646"
+    },
+    {
+      "stage": "simulate",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xsim.bat",
+        "module_test",
+        "-runall",
+        "-log",
+        "xsim.log"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-20260914\\xsim-b-latency-two-stage\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "119738cfcc7e17349bc59e7ae063a6f9f7917dfe6b306de4e047da65b9409cf8"
+    }
+  ],
+  "sources": [
+    {
+      "path": "F:\\NUEC\\review-evidence\\skills-b-20260914\\b-latency-two-stage\\elastic_stage.v",
+      "snapshot": "inputs/elastic_stage.v",
+      "sha256": "0c940023de1b899cb859b9a81f0a2e0258f6caaa1980bea33bf18a5f0a982a38"
+    },
+    {
+      "path": "F:\\NUEC\\review-evidence\\skills-b-20260914\\b-latency-two-stage\\tb_b_latency.sv",
+      "snapshot": "inputs/tb_b_latency.sv",
+      "sha256": "7cbbbe11b7f64320071f20e6309331593cf4911b764b1645c80ae1c17ab16d82"
+    }
+  ],
+  "started_utc": "2026-09-14T05:08:51.586599+00:00",
+  "python_version": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+  "platform": "win32",
+  "name": "b_latency",
+  "top": "tb_b_latency",
+  "expected_tool_version": "2025.2",
+  "manifest_sha256": "7329e2f2aab7cb5b48c94c9538192cc77433336e2fe682db2b0789c204b6406c",
+  "vivado_bin": "D:\\AMD\\2025.2\\Vivado\\bin",
+  "contract_sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+  "first_failure": "Fatal: SKILL_FAIL one-edge latency",
+  "elapsed_seconds": 21.739975100001175
+}
