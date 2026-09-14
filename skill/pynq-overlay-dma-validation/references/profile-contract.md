@@ -1,5 +1,13 @@
 # Validation profile contract
 
+The actual `register_contract.ip_name` and `dma_contract.ip_name` must resolve
+to MODULE instances in the same hash-validated HWH, independently of
+`overlay.required_ip`. Prefer HWH FULLNAME (without its leading slash), otherwise
+INSTANCE/NAME; hierarchical paths must be complete. A port, parameter name,
+module type or mere suffix match is not an instance binding. In run evidence,
+`dma_runs` IDs must be unique non-empty strings: any duplicate is an error,
+regardless of order or whether one or both records indicate success.
+
 ## Purpose
 
 This full JSON profile supplies artifact/board identity and loopback acceptance

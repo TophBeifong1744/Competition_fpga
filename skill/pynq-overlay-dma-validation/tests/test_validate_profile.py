@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import copy
 import importlib.util
 import json
 import subprocess
@@ -157,6 +158,63 @@ class ValidationTests(unittest.TestCase):
         self.assertEqual(0, code, report)
         self.assertEqual("PASS", report["status"])
         self.assertEqual("mock", report["evidence_level"])
+
+    def test_contract_ip_must_exist_in_hwh(self) -> None:
+        for scope in ("register_contract", "dma_contract"):
+            with self.subTest(scope=scope):
+                original = self.profile[scope]["ip_name"]
+                self.profile[scope]["ip_name"] = "not_in_hwh"
+                self.write_profile()
+                report, code = VALIDATOR.validate(self.profile_path, None, "offline")
+                self.assertEqual(1, code, report)
+                self.assertIn("HWH_CONTRACT_IP", {x["code"] for x in report["issues"]})
+                self.profile[scope]["ip_name"] = original
+
+    def test_parameter_or_module_type_is_not_contract_instance(self) -> None:
+        for decoy in ("<PARAMETER NAME='not_in_hwh'/>",
+                      "<PORT NAME='not_in_hwh'/>",
+                      "<MODULE INSTANCE='other_ip' MODULENAME='not_in_hwh'/>"):
+            with self.subTest(decoy=decoy):
+                self.hwh.write_text("<HW PART='xc7z020clg400-1'><MODULE INSTANCE='control_regs'/>"
+                                    "<MODULE INSTANCE='axi_dma_0'/>" + decoy + "</HW>", encoding="utf-8")
+                self.write_manifest()
+                self.profile["dma_contract"]["ip_name"] = "not_in_hwh"
+                self.write_profile()
+                report, code = VALIDATOR.validate(self.profile_path, None, "offline")
+                self.assertEqual(1, code, report)
+                self.assertIn("HWH_CONTRACT_IP", {x["code"] for x in report["issues"]})
+
+    def test_hierarchical_contract_requires_full_instance_path(self) -> None:
+        self.hwh.write_text("<HW PART='xc7z020clg400-1'><MODULE INSTANCE='control_regs'/>"
+                            "<MODULE INSTANCE='axi_dma_0' FULLNAME='/sub/axi_dma_0'/></HW>", encoding="utf-8")
+        self.write_manifest()
+        for name, expected in (("sub/axi_dma_0", 0), ("/sub/axi_dma_0", 0), ("axi_dma_0", 1)):
+            with self.subTest(name=name):
+                self.profile["dma_contract"]["ip_name"] = name
+                self.write_profile()
+                report, code = VALIDATOR.validate(self.profile_path, None, "offline")
+                self.assertEqual(expected, code, report)
+
+    def test_duplicate_dma_ids_fail_in_every_order(self) -> None:
+        good = copy.deepcopy(self.evidence["dma_runs"][0])
+        bad = dict(good, timed_out=True, mismatch_count=4)
+        for records in ((bad, good), (good, bad), (good, good), (bad, bad), (good, bad, good)):
+            with self.subTest(records=records):
+                self.evidence["dma_runs"] = records
+                self.write_evidence()
+                report, code = VALIDATOR.validate(self.profile_path, self.evidence_path, "offline")
+                self.assertEqual(1, code, report)
+                self.assertEqual("FAIL", report["status"])
+                self.assertIn("DMA_RUN_DUPLICATE", {x["code"] for x in report["issues"]})
+
+    def test_malformed_dma_records_fail_closed(self) -> None:
+        for value in (None, {}, [None], [{"id": []}], [{"id": ""}]):
+            with self.subTest(value=value):
+                self.evidence["dma_runs"] = value
+                self.write_evidence()
+                report, code = VALIDATOR.validate(self.profile_path, self.evidence_path, "offline")
+                self.assertNotEqual(0, code, report)
+                self.assertEqual("FAIL", report["status"])
 
     def test_manifest_hash_tamper_fails(self) -> None:
         manifest = json.loads(self.manifest.read_text(encoding="utf-8"))

@@ -117,8 +117,13 @@ def hwh_inventory(path: Path, result: Result) -> tuple[set[str], set[str]]:
         for key, value in element.attrib.items():
             if value:
                 values.add(value.strip())
-            if key.upper() in {"INSTANCE", "FULLNAME", "NAME", "MODULENAME"} and value:
-                names.add(value.strip().lstrip("/"))
+        # Only MODULE instances are IPs. A port/parameter NAME or MODULENAME
+        # (IP type) must not accidentally satisfy a contract's instance name.
+        if element.tag.rsplit("}", 1)[-1].upper() == "MODULE":
+            attrs = {key.upper(): value for key, value in element.attrib.items()}
+            name = attrs.get("FULLNAME") or attrs.get("INSTANCE") or attrs.get("NAME")
+            if name and name.strip():
+                names.add(name.strip().lstrip("/"))
     return names, values
 
 
@@ -198,6 +203,14 @@ def validate_overlay(profile_path: Path, profile: dict[str, Any], result: Result
                     item == name or item.endswith("/" + name) for item in inventory
                 )
                 result.check("HWH_IP", ok, f"HWH must expose required IP {name!r}")
+        for scope in ("register_contract", "dma_contract"):
+            contract = profile.get(scope)
+            name = contract.get("ip_name") if isinstance(contract, dict) else None
+            # Bind the actual consumer, not just a separate required_ip list.
+            # A hierarchical instance uses its full HWH path, not a suffix alias.
+            ok = isinstance(name, str) and bool(name.strip()) and name.lstrip("/") in inventory
+            result.check("HWH_CONTRACT_IP", ok,
+                         f"{scope}.ip_name {name!r} must resolve to a MODULE instance in the validated HWH")
         required_interrupts = overlay.get("required_interrupts", [])
         if not isinstance(required_interrupts, list) or not all(isinstance(name, str) and name for name in required_interrupts):
             result.error("HWH_INTERRUPTS", "overlay.required_interrupts must be a string list when present")
@@ -433,7 +446,24 @@ def validate_run_evidence(profile: dict[str, Any], evidence: dict[str, Any], mod
             result.check("IDENTITY_READ", ok, f"identity register {name!r} must match expected value")
 
     runs = evidence.get("dma_runs")
-    by_id = {item.get("id"): item for item in runs if isinstance(item, dict)} if isinstance(runs, list) else {}
+    by_id: dict[str, dict[str, Any]] = {}
+    first_index: dict[str, int] = {}
+    if not isinstance(runs, list):
+        result.error("DMA_RUN_LIST", "dma_runs must be a list")
+        runs = []
+    for index, item in enumerate(runs):
+        if not isinstance(item, dict):
+            result.error("DMA_RUN_ENTRY", f"dma_runs[{index}] must be an object")
+            continue
+        run_id = item.get("id")
+        if not isinstance(run_id, str) or not run_id.strip():
+            result.error("DMA_RUN_ID", f"dma_runs[{index}] needs a non-empty string id")
+        elif run_id in by_id:
+            result.error("DMA_RUN_DUPLICATE",
+                         f"duplicate DMA run id {run_id!r} at indexes {first_index[run_id]} and {index}; no record may overwrite another")
+        else:
+            first_index[run_id] = index
+            by_id[run_id] = item
     dma = profile.get("dma_contract", {})
     for test in profile.get("self_tests", []):
         test_id = test.get("id")

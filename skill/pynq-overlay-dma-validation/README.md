@@ -1,5 +1,7 @@
 # PYNQ Overlay 与 DMA 通用验收 Skill
 
+2026-09-14：B 反馈 D1/D2/D3 的修复与新自检见[修复回交](references/repair-d1-d3.md)。当前为新待审候选，历史验证页保留原样；作者自检不等于 B 批准。
+
 本轮交付是**可执行、可测试的离线 v0 收口**：新增 DMA 生命周期核心与 CPU/设备分离内存模型，修复异常、缓存所有权及释放时机；不具备真实 PYNQ 板测能力。
 
 ## 适用场景与赛题定位
@@ -65,3 +67,24 @@ python -B scripts/compare_golden.py --expected <golden.bin> --actual <capture.bi
 报告可写：“完成 profile 驱动的 Overlay 静态验收与 DMA 生命周期故障注入工具；通过所附离线回归，明确分离 static/mock/hardware 证据。真实 PYNQ 驱动、回环和性能验证待板测。”附实际测试报告、故障案例、第二套合成输入及上板缺项。不要写成“已完成 PYNQ 移植”或“已测得硬件吞吐”。
 
 交给 B 的范围、复跑命令和判定口径见 [复核说明](references/review-handoff.md)。
+
+## 来源、许可与独立分发
+
+本目录自有 Python 源码、测试、说明和本队生成的合成输入按 MIT 分发，完整许可及原署名随包保存在 [LICENSE.txt](LICENSE.txt)，与仓库根 LICENSE 一致。派生/再分发时保留版权声明和许可文本，不是仅凭仓库首页推定许可。
+
+- 本队原创部分：profile 检查、精确 golden 比较、DMA 生命周期及模拟后端；经验来源和实际工程输入见 [输入审计](references/input-audit.md)。
+- 本轮 B 原始测试输入来自反馈提交 `0ef0355642ea8719d5e4cdde0a38c531550218d4`，属于团队 MIT 材料；复制件逐字节保留并另附 Git 路径与 SHA-256，不改 B 的冻结记录。
+- PYNQ、NumPy、Python、AMD Vivado/IP、板厂文件和官方赛题资料不是本队原创。本目录不重新授权这些依赖/资料；复制或导出时分别核对上游许可与 NOTICE。合成 `.bit`/`.hwh` 是不可部署的测试数据，不是 AMD 生成的可烧录产品。
+- skill-creator 与 xilinx-suite 仅为制作/结构检查辅助，未复制其脚本为本队成果，不是独立使用时的隐式依赖。核心离线工具使用 Python 标准库，无需联网或安装第三方子 Skill。
+
+提交路径和导出规则以项目 [skills-delivery-plan.md 第 1 节](../../docs/skills-delivery-plan.md#1-赛题原文与完成标准)为准；独立阅读可查[固定 main 版本规则](https://github.com/TophBeifong1744/Competition_fpga/blob/57c50e6c99731cd57e7738ac91b02f985ad229b1/docs/skills-delivery-plan.md)。
+
+| 开发原件 | 竞赛导出映射 |
+| --- | --- |
+| `skill/pynq-overlay-dma-validation/` | `skill/pynq-overlay-dma-validation/` |
+| `SKILL.md` | `skill.md`；安装到支持 Skill 的工具时恢复 `SKILL.md` |
+| `README.md` | 指南示例入口 `README.md`；是否豁免按最终提交检查单核实 |
+| `LICENSE.txt` | `license.txt`，原署名和许可正文不变 |
+| `scripts/`、`tests/`、`references/`、选定 `evidence/` | 同名小写路径；保留脚本依赖、输入、命令、结果和哈希 |
+
+导出不是覆盖开发原件：在新目录制作，检查路径/依赖/许可，复跑离线测试与正常/失败模拟。不复制官方中文 PDF、真实板厂二进制、个人绝对路径依赖或整个仓库；来源不明材料先排除并登记。历史证据不改字节或旧清单，路径变化另建映射，提交包用新清单绑定。本节是独立分发方案，不代表真实 PYNQ 或 10/1 最终提交包已验收。
