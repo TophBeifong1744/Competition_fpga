@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import math
 import os
 import re
 import sys
@@ -59,8 +60,10 @@ class Result:
 
 
 def read_json(path: Path) -> dict[str, Any]:
+    def reject_constant(value: str) -> None:
+        raise ValueError(f"non-finite JSON value is forbidden: {value}")
     with path.open("r", encoding="utf-8") as stream:
-        value = json.load(stream)
+        value = json.load(stream, parse_constant=reject_constant)
     if not isinstance(value, dict):
         raise ValueError(f"{path} must contain a JSON object")
     return value
@@ -145,6 +148,8 @@ def validate_overlay(profile_path: Path, profile: dict[str, Any], result: Result
 
     if "bit" in paths and "hwh" in paths:
         result.check("OVERLAY_STEM", paths["bit"].stem == paths["hwh"].stem, ".bit and .hwh must share a basename for PYNQ")
+        result.check("OVERLAY_DIRECTORY", paths["bit"].parent == paths["hwh"].parent,
+                     ".bit and .hwh must be adjacent so PYNQ loads the validated HWH")
 
     if "manifest" not in paths or not paths["manifest"].is_file():
         return
@@ -223,6 +228,8 @@ def validate_registers(profile: dict[str, Any], result: Result) -> None:
         offset = reg.get("offset")
         width = reg.get("width_bits")
         access = reg.get("access")
+        if type(width) is not int or width != 32:
+            result.error("REGISTER_WIDTH", "v0 supports only 32-bit registers; wider access needs a reviewed adapter")
         if not isinstance(name, str) or not name:
             result.error("REGISTER_NAME", f"register {index} has no name")
         elif name in names:
@@ -247,8 +254,13 @@ def validate_registers(profile: dict[str, Any], result: Result) -> None:
             if not isinstance(item, dict) or item.get("register") not in names:
                 result.error("IDENTITY_REGISTER", "identity entry must reference a declared register")
                 continue
+            register = next(reg for reg in registers if isinstance(reg, dict) and reg.get("name") == item["register"])
+            if register.get("access") != "ro":
+                result.error("IDENTITY_ACCESS", "identity registers must be side-effect-free read-only registers")
             if not isinstance(item.get("expected"), int) or not isinstance(item.get("mask", 0xFFFFFFFF), int):
                 result.error("IDENTITY_VALUE", f"identity {item.get('register')!r} needs integer expected/mask")
+            elif not (0 <= item["expected"] <= 0xFFFFFFFF and 0 < item.get("mask", 0xFFFFFFFF) <= 0xFFFFFFFF):
+                result.error("IDENTITY_VALUE", "identity expected/mask must fit 32 bits and mask must not be zero")
 
 
 def validate_dma(profile: dict[str, Any], result: Result) -> None:
@@ -260,15 +272,20 @@ def validate_dma(profile: dict[str, Any], result: Result) -> None:
     width = dma.get("stream_data_width_bits")
     alignment = dma.get("buffer_alignment_bytes")
     maximum = dma.get("max_transfer_bytes")
-    if not isinstance(width, int) or width <= 0 or width % 8:
+    if type(width) is not int or width <= 0 or width % 8:
         result.error("DMA_WIDTH", "stream_data_width_bits must be a positive multiple of 8")
         width = 0
-    if not isinstance(alignment, int) or alignment <= 0:
+    if type(alignment) is not int or alignment <= 0:
         result.error("DMA_ALIGNMENT", "buffer_alignment_bytes must be positive")
         alignment = 0
-    if not isinstance(maximum, int) or maximum <= 0:
+    if type(maximum) is not int or maximum <= 0:
         result.error("DMA_MAX", "max_transfer_bytes must be positive")
         maximum = 0
+    # Buffer-address alignment does not impose a packet-length multiple.
+    granularity = dma.get("length_granularity_bytes", width // 8 if width else 0)
+    if type(granularity) is not int or granularity <= 0:
+        result.error("DMA_GRANULARITY", "length_granularity_bytes must be positive")
+        granularity = 0
     cache = dma.get("cache_policy")
     if not isinstance(cache, dict) or cache.get("tx") not in {"flush", "coherent"} or cache.get("rx") not in {"invalidate", "coherent"}:
         result.error("DMA_CACHE", "cache_policy must declare tx flush/coherent and rx invalidate/coherent")
@@ -293,19 +310,19 @@ def validate_dma(profile: dict[str, Any], result: Result) -> None:
         if test.get("kind") != "loopback":
             result.error("SELF_TEST_KIND", f"self test {test_id!r} kind must be loopback")
         length = test.get("length_bytes")
-        if not isinstance(length, int) or length <= 0:
+        if type(length) is not int or length <= 0:
             result.error("DMA_LENGTH", f"self test {test_id!r} length must be positive")
         else:
             if beat and length % beat:
                 result.error("DMA_LENGTH_BEAT", f"self test {test_id!r} length is not a stream-beat multiple")
-            if alignment and length % alignment:
-                result.error("DMA_LENGTH_ALIGNMENT", f"self test {test_id!r} length is not an alignment multiple")
+            if granularity and length % granularity:
+                result.error("DMA_LENGTH_GRANULARITY", f"self test {test_id!r} length violates transfer granularity")
             if maximum and length > maximum:
                 result.error("DMA_LENGTH_MAX", f"self test {test_id!r} exceeds max_transfer_bytes")
         if test.get("pattern") not in PATTERNS:
             result.error("SELF_TEST_PATTERN", f"self test {test_id!r} uses an unsupported pattern")
         timeout = test.get("timeout_seconds")
-        if not isinstance(timeout, (int, float)) or timeout <= 0 or timeout > 60:
+        if type(timeout) not in (int, float) or not math.isfinite(timeout) or timeout <= 0 or timeout > 60:
             result.error("SELF_TEST_TIMEOUT", f"self test {test_id!r} timeout must be in (0, 60]")
         if test.get("golden") != "exact":
             result.error("SELF_TEST_GOLDEN", f"self test {test_id!r} currently requires golden=exact")
@@ -440,6 +457,16 @@ def validate_run_evidence(profile: dict[str, Any], evidence: dict[str, Any], mod
 
 
 def validate(profile_path: Path, evidence_path: Path | None, mode: str) -> tuple[dict[str, Any], int]:
+    # Malformed nested contracts must produce a failure report, not a traceback.
+    try:
+        return _validate(profile_path, evidence_path, mode)
+    except (TypeError, ValueError, KeyError, AttributeError, OSError, OverflowError) as exc:
+        result = Result(mode)
+        result.error("INVALID_INPUT", f"{type(exc).__name__}: {exc}")
+        return result.report("static"), 2
+
+
+def _validate(profile_path: Path, evidence_path: Path | None, mode: str) -> tuple[dict[str, Any], int]:
     result = Result(mode)
     evidence: dict[str, Any] | None = None
     try:

@@ -1,118 +1,67 @@
 # PYNQ Overlay 与 DMA 通用验收 Skill
 
-## 结论
+本轮交付是**可执行、可测试的离线 v0 收口**：新增 DMA 生命周期核心与 CPU/设备分离内存模型，修复异常、缓存所有权及释放时机；不具备真实 PYNQ 板测能力。
 
-本 Skill 把 PYNQ 工程验收拆成“离线合同检查”和“真实上板检查”两条证据链，所有板卡、寄存器、DMA 长度和数据格式都由外部 profile 提供，因此能从 SoundSight 迁移到其他 Overlay、其他算法和其他受支持 PYNQ 板。
+## 适用场景与赛题定位
 
-它对应 2026 AMD FPGA 自主选题赛道中单独加分的通用 PYNQ Skill 场景：Overlay 加载与校验、寄存器映射、DMA 与缓存一致性、常见故障定位、黄金参考比对，以及性能和资源证据生成。它不替代作品必须提交的 RTL/仿真、Vivado 时序、板上实测和复现材料。
+对应仓库 AMD 选题指南的通用 PYNQ Skill 方向：Overlay/寄存器/DMA 验收、典型故障定位、golden 对比和性能/资源证据整理。具体映射见 [验证状态](references/validation-status.md)。不承诺固定加分，不替代 RTL、时序和真实上板结果。
 
-## 适用场景
+PYNQ 是首选但可替换的控制、调试、展示与验收层，不是实时声学算法的执行基础。本项目现有 Vitis standalone 路径继续有效；PYNQ 准入不满足时不阻塞 PL 核心，用同一 AXI 合同接入 Vitis/PetaLinux。
 
-- PYNQ Overlay 发布前核对 `.bit`、`.hwh`、构建清单和接口版本。
-- 检查 AXI4-Lite 地址、访问权限、身份寄存器和原子配置合同。
-- 验收 AXI DMA MM2S/S2MM loopback、自定义流核或采集路径。
-- 排查缓存未 flush/invalidate、长度或对齐错误、TLAST 缺失、DMA 超时和错误状态。
-- 用同一 profile 生成 golden-reference、吞吐、延迟、时序和资源的可追溯证据。
-- 将 PYNQ 控制层替换为 Vitis/PetaLinux 时，复用同一硬件接口与验收口径。
+## 当前输入与缺项
 
-不适合用它证明算法本身正确、CDC 正确、时序收敛或物理传感器连续采集；这些需要各自独立的模型、RTL、Vivado 和实板证据。
+只读核对发现：当前 XSA 配置为 **simple S2MM-only，无 MM2S、无 DRE**，不能直接套双向 loopback。已有 compiled PS 合同、HWH 参数和 DDR 范围可提取；但它们不是 PYNQ 分配器或驱动的上板证明。
 
-## 文件
+[输入审计](references/input-audit.md)列出了来源、哈希、可复用项与缺项。实际工程常量只出现在这份案例审计，不进入通用逻辑。完整部署 profile 尚不能从这些材料自动生成。
 
-```text
-pynq-overlay-dma-validation/
-├── SKILL.md
-├── README.md
-├── scripts/
-│   ├── validate_profile.py
-│   ├── pynq_probe.py
-│   └── compare_golden.py
-├── references/
-│   ├── profile-contract.md
-│   ├── hardware-runbook.md
-│   └── example-profile.json
-└── tests/
-    └── test_validate_profile.py
+## 用法
+
+在本 Skill 目录运行；所有输出使用新的文件名：
+
+```sh
+python -B scripts/simulate_dma.py --contract references/example-session.json --output results/receive.json
+python -B scripts/simulate_dma.py --contract references/example-session.json --fault timeout --fault abort-timeout --output results/timeout.json
+python -B scripts/run_offline_tests.py --output results/tests.json
 ```
 
-## 快速使用
+第一条执行纯内存单向接收并对比合成参考；第二条应退出 1，报告 FAIL/retained，证明超时不误释放；第三条运行全部回归并记录源码哈希。要测试双向回环，把你自己的合同中 `transfer.mode` 改为 `loopback`，无需改脚本。
 
-先复制并修改示例 profile。示例值只是结构说明，不能直接当作板卡合同：
+现有工具继续用于项目提供的材料：
 
-```bash
-cp references/example-profile.json validation-profile.json
-python scripts/validate_profile.py \
-  --profile validation-profile.json \
-  --mode offline \
-  --output results/offline-validation.json
+```sh
+python -B scripts/validate_profile.py --profile <profile.json> --mode offline --output <new-static-report.json>
+python -B scripts/compare_golden.py --expected <golden.bin> --actual <capture.bin> --format bytes --output <new-golden-report.json>
 ```
 
-在已确认支持的 PYNQ 板上安装 `numpy` 和 `pynq` 后运行：
+完整 profile 与离线生命周期合同不是同一种输入：
+[profile 合同](references/profile-contract.md)针对构建身份与 loopback 证据结构；
+[生命周期合同](references/lifecycle-contract.md)针对独立的单向/双向 DMA 软件行为。
+示例 profile 的 bit/HWH 只是待填写路径；示例 session 可直接离线运行。
 
-```bash
-python scripts/pynq_probe.py \
-  --profile validation-profile.json \
-  --download \
-  --supplemental-evidence results/vivado-evidence.json \
-  --output results/hardware-evidence.json
+## 实际实现与验证
 
-python scripts/validate_profile.py \
-  --profile validation-profile.json \
-  --evidence results/hardware-evidence.json \
-  --mode hardware \
-  --output results/hardware-validation.json
-```
+- `scripts/dma_session.py`：分配即持有；部分启动即按 DMA 可能持有处理；异常先留状态；有授权才请求 abort；确认静止后释放，否则保留。
+- `scripts/simulate_dma.py`：CPU/设备独立字节数组、可注入故障、单向接收/回环；可复现漏 flush/invalidate 导致的真实字节差异。
+- `scripts/run_offline_tests.py`：逐测试结果、源码哈希、环境和证据等级。
+- 测试覆盖分配/提交/缓存/状态/超时/取消/实际包长/重试阻断/重复传输/释放异常；另保留原有 profile 与 golden 回归。
+- 地址对齐与传输长度粒度已分离，允许如 64 字节地址对齐、96 字节传输、8 字节长度粒度的合法组合。
+- golden 数值对比保留 JSON 整数精度，避免大整数转浮点及容差溢出造成误判；JSON 小数仍按 Python 的 binary64 浮点解析，不是任意精度十进制模型。
+- `pynq_probe.py` 保留拒绝上板入口，已移除保护后面的不安全旧原型；真正的离线修复位于上述可运行核心，不以“禁用”代替测试。
 
-对经过自定义计算核的输出另做黄金参考比对：
+最新实际结果见 [验证状态](references/validation-status.md)和随附的离线测试报告。报告只证明 static/mock，不是任何板卡通过、B 复核或整机验收。
 
-```bash
-python scripts/compare_golden.py \
-  --expected data/golden.bin \
-  --actual results/capture.bin \
-  --format bytes \
-  --output results/golden-comparison.json
-```
+## 失败条件与当前边界
 
-浮点或量化后允许误差的数据可改用 `--format json-numbers --atol <绝对容差> --rtol <相对容差>`；容差必须来自项目数据合同，不能为通过测试临时放宽。
+合同错误、状态不可读/过期、部分启动异常、DMA 错误、超时、缓存操作失败、实际长度错误、golden 不符或释放不确定均为 FAIL；失败会阻断同一 session 的下一次执行。无法确认静止时不读、不释放，保留对象也不代表真实硬件进程退出安全。
 
-`pynq_probe.py` 默认只读取身份寄存器并执行 profile 明确列出的有界 loopback，不会猜测寄存器地址、写控制寄存器或自动复位整个 PL。运行前必须阅读 [上板清单与故障映射](references/hardware-runbook.md)。
+还没有：真实 PYNQ 驱动适配器、Overlay 下载/寄存器实读写、真实 TLAST/中断、SG/cyclic、长稳、实测吞吐延迟或新 Vivado 资源/时序证明。静态 full profile 目前仍要求 loopback 与 RO 身份合同；不能伪造 MM2S/身份寄存器让实际采集工程通过。
 
-## 失败条件
+上板准入、故障定位与待测矩阵见 [板测清单](references/hardware-runbook.md)。本轮未改 RTL、Vivado、XDC、现有 Vitis 程序，未连接板卡、未提交 Git。
 
-以下任一项出现时，报告必须为 `FAIL`，不能降级为“基本通过”：
+## 可复用性与比赛报告
 
-- `.bit/.hwh/manifest` 缺失、哈希不一致，或 device/build/interface/Vivado 信息冲突；
-- HWH 不含 profile 要求的 AXI-Lite/DMA IP，寄存器偏移重复、越界或未对齐；
-- DMA 长度不满足 stream beat、buffer alignment 或最大长度约束；
-- flush/invalidate 责任不明确，或上板证据没有记录实际执行的缓存操作；
-- 身份寄存器不匹配、TLAST 缺失、超时、DMA error、输出长度错误或 golden mismatch；
-- 性能低于门槛、时序 WNS 为负、资源超过 profile 上限，或证据源报告不可追溯；
-- mock/static 结果被标成 `hardware`，或没有真实 board observation/Overlay download 记录。
+脱离 SoundSight 的复用证据是：两套不同器件/IP/寄存器/流宽的合成 profile，以及两种传输方向、多种长度和缓存策略，均由输入驱动同一代码。它证明参数化软件复用，**不证明第二块实板已通过**。任意算法的 golden 模型和 payload schema 由项目另行提供。
 
-## 已验证效果
+报告可写：“完成 profile 驱动的 Overlay 静态验收与 DMA 生命周期故障注入工具；通过所附离线回归，明确分离 static/mock/hardware 证据。真实 PYNQ 驱动、回环和性能验证待板测。”附实际测试报告、故障案例、第二套合成输入及上板缺项。不要写成“已完成 PYNQ 移植”或“已测得硬件吞吐”。
 
-当前 v0 已完成离线验证：
-
-- 使用临时生成的 mock `.bit/.hwh/manifest` 和合成 loopback 证据，通过合法 profile；
-- 对 manifest 哈希篡改、DMA 长度未按 stream beat 对齐、以及把 mock 证据冒充 hardware 三类错误均能确定性拒绝；
-- 全部脚本只使用 profile 输入的板型、器件、IP、寄存器、长度和数据格式；未写入 SoundSight 专用地址或 payload 规则。
-
-这些结果只证明静态门禁和合成数据逻辑有效，不是任何开发板的上板通过证明。
-
-## 当前边界
-
-SoundSight 当前只有以下候选证据：ATK-DF7010P_7020P 系列、底板 V3.9、Zynq XC7Z020 器件族，工程工具为 Vivado 2025.2。完整器件料号/速度等级、可复现的板级 PYNQ 镜像、Overlay、DDR/DMA 路径和最大安全块长仍待 M0 实物核实，因此目前只能交付“可离线验证的 v0 + 上板验收清单”。
-
-PYNQ 是 SoundSight 首选控制层；PL 实时声学核心不得依赖 Python。若该板无法满足 PYNQ 准入条件，应切换为 Vitis 或 PetaLinux 控制层，同时保持 AXI4-Lite、AXI DMA、中断合同和本 Skill 的证据格式不变。
-
-## 比赛报告写法
-
-报告中应分别给出：
-
-1. 从哪些真实失败或工程观察提炼出 profile 字段和停止条件；
-2. 一张 Overlay 构建身份表和一张 AXI/DMA 合同表；
-3. 离线测试、上板 loopback、golden 比对、吞吐/延迟、时序/资源的独立结果与证据路径；
-4. 在另一题目或另一受支持板卡上只替换 profile、无需修改脚本的复用演示；
-5. 未验证边界，特别是不得把 mock、HWH 静态解析或 Notebook 显示称为“板上通过”。
-
-加分说明可概括为：该 Skill 将板卡和算法特定信息外置为版本化合同，提供 fail-closed 的 Overlay/DMA 验收与证据分级；陌生队伍只需填写自己的 profile 和黄金向量，就能复用同一离线门禁、PYNQ loopback 与报告格式。
+交给 B 的范围、复跑命令和判定口径见 [复核说明](references/review-handoff.md)。

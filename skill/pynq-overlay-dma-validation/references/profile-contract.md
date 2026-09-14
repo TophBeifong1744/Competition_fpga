@@ -2,7 +2,11 @@
 
 ## Purpose
 
-The JSON profile is the only project-specific input. Scripts must not derive a board, address, transfer size, or payload layout from filenames or from the SoundSight example.
+This full JSON profile supplies artifact/board identity and loopback acceptance
+inputs. Scripts must not derive a board, address, transfer size or payload layout
+from filenames. The separate [lifecycle contract](lifecycle-contract.md) exercises
+receive-only or loopback mocks without pretending a deployable profile exists.
+Do not feed its reports to this profile's evidence validator.
 
 ## Required top-level fields
 
@@ -91,7 +95,12 @@ List only interrupts the design contract actually uses. An empty `required_inter
 }
 ```
 
-Offsets are byte offsets, must be unique and word-aligned, and must fit the declared address span. `access` is one of `ro`, `rw`, `wo`, `w1c`, or `rc`. The supplied PYNQ probe only reads registers referenced by `identity`; it does not exercise writes.
+Offsets are byte offsets, must be unique and word-aligned, and must fit the declared address span. v0 supports only 32-bit registers. `access` is one of `ro`, `rw`, `wo`, `w1c`, or `rc`, but identity entries must reference side-effect-free `ro` registers with a nonzero 32-bit mask. Wider or side-effecting identity access requires a separately reviewed adapter. The bundled PYNQ probe is currently disabled; it does not prove register writes, atomic commit or interrupt delivery.
+
+The `.bit` and `.hwh` must share both basename and parent directory. Hash matching
+proves file consistency with the supplied manifest, not that a mock bitstream is
+deployable or that the manifest is authentic. HWH checks are inventory-level;
+address windows, IP parameters and real device identity need independent review.
 
 ## DMA contract
 
@@ -104,6 +113,7 @@ Offsets are byte offsets, must be unique and word-aligned, and must fit the decl
     "s2mm_channel": "recvchannel",
     "stream_data_width_bits": 32,
     "buffer_alignment_bytes": 64,
+    "length_granularity_bytes": 4,
     "max_transfer_bytes": 1048576,
     "cache_policy": {"tx": "flush", "rx": "invalidate"},
     "tlast_required": true,
@@ -112,13 +122,27 @@ Offsets are byte offsets, must be unique and word-aligned, and must fit the decl
 }
 ```
 
-The stream width must be byte-addressable. Each test length must be a multiple of both the stream beat and the declared buffer alignment unless the design contract explicitly uses a different alignment and encodes it here. `cache_policy` is mandatory even on a coherent platform: use `coherent` only when the platform documentation and the actual allocation path prove coherency.
+The stream width must be byte-addressable. Test lengths must be multiples of the
+stream beat and `length_granularity_bytes` (defaults to stream beat for older
+profiles). Buffer alignment constrains addresses, not packet lengths: a 96-byte
+transfer may use a 64-byte-aligned buffer. This profile still restricts transfers
+to whole stream beats; partial TKEEP/DRE packets need a reviewed extension.
+`cache_policy` is mandatory even on a coherent platform: use `coherent` only when
+the documentation and actual allocation path prove coherency. RX CPU initialization
+must be flushed/invalidated before arm, then RX invalidated after completion.
 
-`status_offsets` is optional and applies to standard AXI DMA register layouts only when confirmed for the instantiated IP. It lets `pynq_probe.py` capture status words without interpreting them.
+`status_offsets` is optional metadata for a future reviewed adapter, valid only
+when confirmed for the instantiated IP. No supplied script reads these offsets.
+
+`simple` and `sg` are accepted contract labels, not claims of driver support.
+The old unqualified probe was removed; the board entrypoint only refuses access.
+This full profile still requires MM2S/S2MM and loopback, while the independent
+offline lifecycle contract supports receive-only tests. Do not invent a channel
+to fit this profile. Never silently round requested lengths to make a test pass.
 
 ## Self-tests
 
-The current board probe supports exact byte loopback tests:
+The full-profile validator accepts exact byte loopback test declarations:
 
 ```json
 {
@@ -150,7 +174,8 @@ Supported patterns are `counter8`, `alternating`, and `xorshift32`. A loopback i
 }
 ```
 
-Pass Vivado evidence to `pynq_probe.py --supplemental-evidence <file>` in this form:
+For externally supplied evidence, timing/resource sections have this form (the
+protected board entrypoint does not collect them):
 
 ```json
 {
