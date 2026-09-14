@@ -1,5 +1,5 @@
 {
-  "recorded_utc": "2026-09-14T05:31:15.800928+00:00",
+  "recorded_utc": "2026-09-14T08:48:19.928532+00:00",
   "status": "NEEDS_FIX for both; no implementation approval or main publication",
   "main": {
     "local_main": "57c50e6c99731cd57e7738ac91b02f985ad229b1",
@@ -9,21 +9,23 @@
     "actual_main_worktree": "F:/NUEC/review-worktrees/member-b-to-a-pkg-b-alg",
     "actual_main_status": "",
     "direct_remote_verified_after_upload_rejection": true,
-    "new_remote_main_commit": null
+    "new_remote_main_commit": null,
+    "direct_remote_verified_after_feedback_publication": true
   },
   "review_publication": {
     "branch": "review/member-b-skills-20260914",
-    "remote_sha_at_recording": null,
+    "remote_sha_at_recording": "f37f4be0052ceb38ec909803943e36554c62b18e",
     "scope": [
       "docs/maintenance/skills-review-b-2026-09-14.md",
       "results/skill-review/b-20260914/"
     ],
     "note": "Final closeout commit may supersede the SHA observed here. See final user report.",
-    "status": "BLOCKED_APPROVAL",
-    "remote_ref_observation": "Direct gh api GET returned 404 after rejected upload; branch not created.",
+    "status": "PUBLISHED_REVIEW_ONLY",
+    "remote_ref_observation": "Direct API GET equals exact local commit; all uploaded blob/tree/commit SHAs matched.",
     "approval_rejection": "Automatic approval review rejected upload of review reports, source snapshots, logs and test evidence to GitHub feedback branch because explicit authorization for this data/destination was not established.",
-    "next_action": "Ask user to explicitly authorize pushing prepared review/member-b-skills-20260914; do not bypass rejection.",
-    "main_was_not_written": true
+    "next_action": "A repairs each candidate and supplies new pinned SHA; neither candidate approved. Final metadata-only closeout commit follows this recorded receipt.",
+    "main_was_not_written": true,
+    "user_authorization": "允许将复核报告、源码快照和日志推送到 review/member-b-skills-20260914"
   },
   "candidates": {
     "codex/toph/skl001-module-verification-20260914": "c562466805aff08201cd457cc2e6ee7464a3566f",
@@ -101,8 +103,8 @@
         "local review feedback branch/worktree",
         "F:/NUEC/review-evidence/skills-b-20260914 raw runs, acquisition metadata and reproducible caches"
       ],
-      "reason": "Neither candidate approved; feedback upload blocked. Retain source/evidence until delivery is confirmed.",
-      "useful_evidence_local_commit": "All 325 evidence/metadata files plus hash manifest and review report are committed on local feedback branch; final SHA in user reply.",
+      "reason": "Both candidates NEEDS_FIX; candidate branches and review contexts retained for repair comparison. Feedback evidence is now published. No branch deletion is appropriate.",
+      "useful_evidence_local_commit": "All useful review evidence is committed and published in the feedback branch; final closeout SHA in user reply.",
       "related_untracked_ignored_useful_omissions_in_feedback_worktree": 0
     }
   },
