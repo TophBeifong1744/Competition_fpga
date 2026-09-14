@@ -1,65 +1,96 @@
 ---
 name: pynq-overlay-dma-validation
-description: Validate a PYNQ Overlay and its versioned AXI4-Lite/AXI DMA contract, from portable offline artifact checks through real-board loopback, golden-reference, performance, and resource evidence. Use for PYNQ/Zynq project acceptance or DMA failure diagnosis; do not use mock or static results as proof of board operation.
+description: Audit PYNQ Overlay artifacts and AXI4-Lite/DMA contracts, exercise DMA ownership and failure paths with offline mocks, compare golden data, and prepare evidence-gated board acceptance. Use for Overlay/DMA validation or diagnosis; the bundled release does not execute real hardware.
 ---
 
 # PYNQ Overlay DMA Validation
 
-Use a project-supplied JSON profile as the single source of board identity, Overlay artifacts, register semantics, DMA geometry, self-tests, golden-reference rules, and acceptance limits. Never infer these values from a project name or hard-code a particular board, address, transfer length, or payload format.
+Current capability: offline artifact checks and executable mock DMA lifecycle
+tests. Board execution is protected; no PYNQ hardware adapter is delivered.
+Do not remove the protection to produce a demonstration.
 
-## Select the mode
+Keep board identity, IP names, registers, lengths, payload semantics and limits
+in project inputs. Do not infer them from a board/project name. PYNQ is a
+replaceable control/validation backend; the real-time PL algorithm must not depend
+on Python. AXI4-Lite, AXI DMA and interrupt contracts also serve Vitis/PetaLinux.
 
-- **Offline mode:** validate the profile, `.bit`/`.hwh`/manifest relationship, HWH-visible IP, register layout, DMA length/alignment/cache/TLAST contract, supplied evidence, golden results, and resource/performance limits. Static or mock evidence can establish only offline readiness.
-- **Board mode:** first pass offline mode, then load the matching Overlay on the declared PYNQ board, read identity registers, run bounded DMA loopback/self-tests, execute required cache operations, capture timeouts/status, compare golden output, and validate the resulting hardware evidence.
+## Choose the task and inputs
 
-Read [references/profile-contract.md](references/profile-contract.md) before creating or changing a profile. Read [references/hardware-runbook.md](references/hardware-runbook.md) before board mode or when diagnosing a failed transfer.
+- **Existing-project audit:** read the current build, exported hardware metadata
+  and compiled PS contract without rebuilding. Separate software declarations
+  from physical observations. For the SoundSight input snapshot only, see
+  [input-audit.md](references/input-audit.md); do not copy its constants into code.
+- **Artifact/profile checks:** read [profile-contract.md](references/profile-contract.md).
+  Supply the board profile, same-build bit/HWH/manifest, register contract,
+  self-test and acceptance limits. This v1 full profile describes loopback,
+  not arbitrary receive-only hardware; missing identity or MM2S is a gap, not
+  permission to invent an IP or channel.
+- **Offline DMA lifecycle:** read [lifecycle-contract.md](references/lifecycle-contract.md).
+  Supply a transfer contract and exact expected bytes; loopback also takes TX
+  bytes. This mode needs no board, PYNQ image or deployable bitstream. It supports
+  receive-only and loopback mocks, not SG/cyclic or physical capture.
+- **Board acceptance planning:** read [hardware-runbook.md](references/hardware-runbook.md).
+  A separately reviewed, version-pinned adapter and explicit authorization are
+  required before hardware mutation. The bundled board entrypoint always stops.
 
-## Required inputs
+## Offline execution
 
-1. A version-controlled profile conforming to `references/profile-contract.md`.
-2. A `.bit`, `.hwh`, and build manifest produced by the same build; the manifest records hashes, device/board identity, Vivado version, build ID, and interface version.
-3. The authoritative AXI4-Lite register contract and DMA stream contract.
-4. For board mode, a supported PYNQ image, reachable board, valid DDR path, and a deliberately bounded loopback/self-test design.
-5. Golden vectors or an exact loopback rule, acceptance thresholds, and Vivado timing/resource reports when those claims are requested.
+Paths below are relative to the Skill directory. Runtime uses Python standard
+library only (tested Python 3.14; Python 3.8 syntax checked, not runtime-tested).
 
-Do not guess absent contract values. Mark them unresolved and stop before downloading or writing hardware.
+```sh
+python -B scripts/simulate_dma.py --contract references/example-session.json --output results/mock-receive.json
+python -B scripts/simulate_dma.py --contract references/example-session.json --fault timeout --fault abort-timeout --output results/mock-timeout.json
+python -B scripts/run_offline_tests.py --output results/offline-tests.json
+python -B scripts/validate_profile.py --profile <project-profile.json> --mode offline --output <static-report.json>
+python -B scripts/compare_golden.py --expected <golden.bin> --actual <capture.bin> --format bytes --output <comparison.json>
+```
 
-## Workflow
+The injected timeout command should exit 1 with FAIL and retained buffers.
+Use new report filenames. The session simulator and test runner refuse overwrite;
+the older profile/golden tools require the caller to select fresh output paths.
 
-1. Copy `references/example-profile.json` and replace every example value with project evidence.
-2. Run `python scripts/validate_profile.py --profile <profile.json> --mode offline --output <offline-report.json>`. Resolve every `ERROR`; retain warnings and report hashes.
-3. Confirm the board profile against physical/device-tree evidence and confirm that `.bit`, `.hwh`, manifest, PYNQ image, and Vivado/PYNQ compatibility belong together.
-4. On the board, run `python scripts/pynq_probe.py --profile <profile.json> --download --output <hardware-evidence.json>`. This performs read-only identity checks and only the self-tests explicitly declared in the profile.
-5. For a transformed data path, run `python scripts/compare_golden.py --expected <golden> --actual <capture> --format bytes --output <golden-report.json>`; use `json-numbers` plus explicit `--atol/--rtol` only when the payload contract permits tolerance.
-6. Validate board evidence with `python scripts/validate_profile.py --profile <profile.json> --evidence <hardware-evidence.json> --mode hardware --output <hardware-report.json>`.
-7. Archive the profile, manifest, reports, evidence JSON, raw/golden hashes, commands, and environment versions together. State the strongest evidence level actually reached.
+Do not feed lifecycle reports to the full-profile evidence validator: they are
+different schemas. A mock duration is a synthetic clock value, never measured
+throughput. For transformed payloads use an external golden model/schema;
+`compare_golden.py` compares files, it does not invent an algorithm reference.
+Numeric tolerance must come from that schema, not be enlarged after failure.
+JSON integers retain exact precision; decimal/exponent literals use binary64
+parsing. Use an external exact-decimal model if that distinction matters.
 
-## Evidence levels
+## Ownership and stopping rules
 
-- `static`: schemas, hashes, HWH metadata, contracts, and reports inspected without executing transfers.
-- `mock`: deterministic synthetic data exercised host-side logic without a PYNQ board.
-- `hardware`: the declared physical board loaded the declared Overlay and produced recorded register/DMA observations.
+The executable mock core owns each allocation immediately, marks a transfer
+possibly active **before** RX submission, and does not read or release DMA-owned
+buffers. Prepare dirty RX cache lines before arm; flush TX after fill; invalidate
+RX after validated completion and before CPU comparison. Coherent policies
+require allocator confirmation.
 
-Higher levels do not erase lower-level failures. PYNQ display output does not prove RTL simulation, timing closure, CDC correctness, or sustained physical-input continuity.
+On timeout, partial start, status/cache/length error, cancellation or golden
+mismatch: fail the session and do not start another test. Preserve the primary
+failure and pre-abort raw status. Request abort only when the transfer contract
+authorizes it; release only after fresh, transaction-bound quiescence proof.
+Otherwise retain ownership. Failed release is indeterminate and must not be
+retried blindly. Strong references alone do not make hardware process exit safe.
 
-## Outputs
+Stop before board access if board/image/DDR support, exact device/build identity,
+register side effects, DMA geometry/cache/TLAST, safe source/sink, or recovery
+scope is unresolved. Never reset the whole PL as an inferred recovery step.
+An admission gap blocks board execution, not unrelated offline development.
 
-- Machine-readable validation report with `PASS`/`FAIL`, evidence level, artifact hashes, checks, warnings, and stop reasons.
-- Board evidence JSON containing observed board identity, Overlay load state, register reads, cache operations, DMA completion/TLAST/error/timeout data, mismatch counts, and measured transfer timing.
-- A concise acceptance summary separating offline checks, real-board results, golden comparison, performance, timing/resources, and unresolved boundaries.
+## Evidence and outputs
 
-## Stop conditions
+- `static`: schema/hash/inventory checks; does not prove bitstream deployability.
+- `mock`: executable synthetic memory/transfer tests; no board observation.
+- `hardware`: requires actual named board/image/build, raw logs and measurements.
+  A supplied JSON label or `validate_profile.py --mode hardware` cannot
+  authenticate that provenance. Review original logs/reports independently.
 
-Stop without Overlay download or register writes when any of these holds:
+Deliver PASS/FAIL reports with sources/hashes, errors, actual lengths, cache
+events, snapshots, ownership disposition and unresolved items. Report real
+DMA timing, PL cycle latency, resource/timing closure and system continuity
+separately; missing measurements remain NOT_RUN, not zero or PASS.
 
-- `.bit`, `.hwh`, or manifest is missing, mismatched, unhashed, or names a different device/build/interface.
-- Board identity, full device part, PYNQ image/support, DDR/DMA path, register semantics, or safe self-test route is unresolved.
-- Register offsets overlap, violate alignment/range, or identity expectations are absent.
-- DMA length violates beat/alignment/max-transfer limits, cache ownership is undefined, or required TLAST has no producer.
-- The planned test could drive an unverified physical output, overwrite live buffers, or disturb a real-time acquisition path.
-
-During board mode, stop the current test on timeout, DMA error, missing TLAST, identity mismatch, cache-operation failure, or golden mismatch. Capture status before any reset. Do not escalate to a whole-PL reset automatically; recovery must be authorized by the project contract.
-
-## Backend boundary
-
-PYNQ is a control and validation backend, not part of the real-time PL algorithm. Keep AXI4-Lite, AXI DMA, interrupts, vectors, and evidence formats backend-neutral so the same contract can be driven by Vitis or PetaLinux when PYNQ does not pass the board admission gate.
+Read [validation-status.md](references/validation-status.md) for the checked
+release and [review-handoff.md](references/review-handoff.md) when handing it
+to a reviewer. Author tests are not B acceptance or permission to merge.

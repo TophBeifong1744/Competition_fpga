@@ -1,0 +1,941 @@
+{
+  "skill": "002",
+  "sha": "3ac597d1d16982e0a5c5a114202ca8568dc28d8f",
+  "old_sha": "55039cf8bfab2bd6112192c8bd646d427a52a642",
+  "manifest": "skill/pynq-overlay-dma-validation/repair-manifest.json",
+  "files": [
+    {
+      "path": "skill/pynq-overlay-dma-validation/.gitattributes",
+      "bytes": 161,
+      "sha256": "d052b87a4c344b024f875b0f80b52dadec73ab1a0afac6f9f52b2ccf044dd8ca",
+      "git_blob": "83d3f35bafdeee156f7536b02b411764a2349d4e",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/pixel-session-input.json",
+      "bytes": 989,
+      "sha256": "28253dba9e91008555c4cf718f31a2ec688ae4c3c0e40a7e895abca5cd4e1699",
+      "git_blob": "d2b8f3c7b9449a8e74df074bd187e511d192073c",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/pixel/design.bit",
+      "bytes": 30,
+      "sha256": "34346be99fb76ac631d8ee548d6d13e92599dc414e8037bb1fa126f3c9722e7f",
+      "git_blob": "0e6288b0d585dd4218e0a3124735a4708288fdce",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/pixel/design.hwh",
+      "bytes": 100,
+      "sha256": "62104ece71c5d00d0b1b03928a1a3a10fc2cabfa5393a2f5ca9063f838781bbd",
+      "git_blob": "f16e32686f05f4274c2b9f71fa0334b95d73a3d6",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/pixel/golden.bin",
+      "bytes": 128,
+      "sha256": "b3c87588b17afe4d09f6c97a055dedd6f5fef53de648237bf488afb6111d218d",
+      "git_blob": "5ed59010e21a00f5038bbf6184c6096b1fb3d7d4",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/pixel/manifest.json",
+      "bytes": 277,
+      "sha256": "28765657e632ae0fc4b42bef371f67ca343b32589cb8dfada7ab36b4d5722bed",
+      "git_blob": "20d1f9fff6195d4a382b2350727f875d4aeff793",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/pixel/profile.json",
+      "bytes": 1653,
+      "sha256": "d10aec11ff282e966bd297ae8bbe1a86dfde43e36cf02b893de2fa0f324d667d",
+      "git_blob": "011a429aefbcdf8c7510e922e71eaa44bba2dc0e",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal-session-input.json",
+      "bytes": 1012,
+      "sha256": "63adf7dc2bd6e6ed6f35eaef174c9d6417369192e91cd4b23ad064f58e45c446",
+      "git_blob": "c8af4c41419d71d4c398a779105cb550c4923a41",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal/design.bit",
+      "bytes": 32,
+      "sha256": "c03bb7637b9430aab4ec6a1cdd637af1d6b5f8f154ed098957ab7b44f9ce8718",
+      "git_blob": "537218eac95de12c3445f50e005a8987f1b343a8",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal/design.hwh",
+      "bytes": 104,
+      "sha256": "1f1e05cca1113b746daed84e486d3d9b105af86c246e702fa686b9ff034feeec",
+      "git_blob": "d097a92fd089e119453c426d485784f6ceccdef5",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal/duplicate-evidence.json",
+      "bytes": 1098,
+      "sha256": "6b951cd01a018caafcfed1b966e19d7074584acfcad594df22132d77e59ade4e",
+      "git_blob": "d6b8c911f1bec6e461d283e24f7e50fd52021f16",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal/golden.bin",
+      "bytes": 96,
+      "sha256": "b2decedfbcf9d1ab45a1f49c0447821f2a2079063c781fba7b3c1a626bbe1dfe",
+      "git_blob": "7f9e546e9892b4321cf5e0f81f9edf34e003115b",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal/manifest.json",
+      "bytes": 275,
+      "sha256": "03da6d52e98c646b9669d84f24030a3bef15ec0993e7b9487cd5213f6b52630f",
+      "git_blob": "dd8abe71ad53403adbb2c7b0129f3596cbb05d99",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal/missing-control-ip.json",
+      "bytes": 1667,
+      "sha256": "9aa7db8e88bb14f942e0042efed1b4f3b501813bbc0b6b7a28e798999ccc0272",
+      "git_blob": "8201603e42749672caf842258efb309ab8977cac",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal/missing-dma-ip.json",
+      "bytes": 1667,
+      "sha256": "7faaf7fef557b423fc7738ea21f44bc0fbd4f1fc3623bbdfb4ea02de7b0c0423",
+      "git_blob": "8f9788c2e1a6a7d7fe68ce30c04a2674a0179008",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal/profile.json",
+      "bytes": 1672,
+      "sha256": "b65eb911fecbb5e514e21f04004ca74a248a36c3b2e2d2df59a1e8302652348c",
+      "git_blob": "3490a8036ce4c2eaa6b0f02bfb051d27ab3358ab",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/board-guard/command.json",
+      "bytes": 624,
+      "sha256": "615491c1f8f5cae96364b1eada90d8e1a1ab635d2db414495a50ba3cd5daad9d",
+      "git_blob": "6083bd1b6f1b67727bf552d6a76ee57550418125",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/board-guard/stderr.log",
+      "bytes": 247,
+      "sha256": "27b249a03bc025ce2d49dc5815bef6b90dccf7043cc46155b88d9c06c7891731",
+      "git_blob": "7f12febf533eeddf1f072a0ee41ed3504787a60c",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/board-guard/stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/duplicate-fixed.json",
+      "bytes": 4811,
+      "sha256": "53648234555a3d138ba6c14aba25958b08b235c651866d6d23b24401755175ac",
+      "git_blob": "216bf4c07a49abb7e743476faefb5936fe4a8aa4",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/duplicate-fixed/command.json",
+      "bytes": 1476,
+      "sha256": "976834e90e4efb69e516eb917519a1255353ccddee62208250c2f82ee46fce38",
+      "git_blob": "0e68e1c013c3d51e12f122edebd8256a192e3ea2",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/duplicate-fixed/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/duplicate-fixed/stdout.log",
+      "bytes": 4811,
+      "sha256": "53648234555a3d138ba6c14aba25958b08b235c651866d6d23b24401755175ac",
+      "git_blob": "216bf4c07a49abb7e743476faefb5936fe4a8aa4",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/duplicate-old.json",
+      "bytes": 3951,
+      "sha256": "05beec682c7f72e0ac396d7a2ac411785ad241648e875983262afd3a52932e40",
+      "git_blob": "86ff04cee5bd38eff8f6a2bea79767e5b55cc649",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/duplicate-old/command.json",
+      "bytes": 1494,
+      "sha256": "8179e367a178044559583f6114402ce0b17e3ce317af6d1805a7f9f900f04339",
+      "git_blob": "2f6423666fe42eeec77d99933562805f836b6cb7",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/duplicate-old/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/duplicate-old/stdout.log",
+      "bytes": 3951,
+      "sha256": "05beec682c7f72e0ac396d7a2ac411785ad241648e875983262afd3a52932e40",
+      "git_blob": "86ff04cee5bd38eff8f6a2bea79767e5b55cc649",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-control-fixed.json",
+      "bytes": 2850,
+      "sha256": "787611550db7d96226d5ca711afab54c6cf2b46731c927f103d107c90b49fc2a",
+      "git_blob": "2ed423ad640bed1a074ee16db2bab603e06b1a69",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-control-fixed/command.json",
+      "bytes": 1281,
+      "sha256": "51792a139d562a9602ddd84a5feed0a7ee25d3af862c2d7989274e569b5f27ae",
+      "git_blob": "5f7ed304573007a9486878f43b7eab80dea5a560",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-control-fixed/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-control-fixed/stdout.log",
+      "bytes": 2850,
+      "sha256": "787611550db7d96226d5ca711afab54c6cf2b46731c927f103d107c90b49fc2a",
+      "git_blob": "2ed423ad640bed1a074ee16db2bab603e06b1a69",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-control-old.json",
+      "bytes": 2283,
+      "sha256": "8234e9cd2d66348a6881516a32e5be80952bfa3d75bdfba572b9bd8e0d979f2d",
+      "git_blob": "313d97b22893cd5b8f98f2789ad4b3ae9598d213",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-control-old/command.json",
+      "bytes": 1299,
+      "sha256": "12fda56d5aabf3a005d3100d110002acbaae59215030dba8623a876cb16fe1ca",
+      "git_blob": "77f87acd4ed7466177ed6a0c9b23a89349f52ad4",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-control-old/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-control-old/stdout.log",
+      "bytes": 2283,
+      "sha256": "8234e9cd2d66348a6881516a32e5be80952bfa3d75bdfba572b9bd8e0d979f2d",
+      "git_blob": "313d97b22893cd5b8f98f2789ad4b3ae9598d213",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-dma-fixed.json",
+      "bytes": 2845,
+      "sha256": "474ae6e639d2018f265be97a5439e22a957c294064de76d72b4bef78d23477ad",
+      "git_blob": "df49e2efb441fff5abb7dacf7ee4d3d405d82811",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-dma-fixed/command.json",
+      "bytes": 1273,
+      "sha256": "94095c482137e7ce0c083b46e6e5618f74eb934f7cfadc3c1c0aa02546a6273c",
+      "git_blob": "8711b004e2274fd3298b5ddcd46b86aea64d0813",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-dma-fixed/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-dma-fixed/stdout.log",
+      "bytes": 2845,
+      "sha256": "474ae6e639d2018f265be97a5439e22a957c294064de76d72b4bef78d23477ad",
+      "git_blob": "df49e2efb441fff5abb7dacf7ee4d3d405d82811",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-dma-old.json",
+      "bytes": 2283,
+      "sha256": "ae6673071b2b076a0c650e0bd26d83a03dedae427d971a27acbfbb0d3551305f",
+      "git_blob": "b61f245bd76f91ae786f2557f5f6ee7e4ca379f0",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-dma-old/command.json",
+      "bytes": 1291,
+      "sha256": "cd334911780b0294b9aacc805a34a97dcfc9fa1834d096fe18f023f9622f56c2",
+      "git_blob": "a12fe6c9f154eeec0990112e258d2f4e1d6d76b8",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-dma-old/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-dma-old/stdout.log",
+      "bytes": 2283,
+      "sha256": "ae6673071b2b076a0c650e0bd26d83a03dedae427d971a27acbfbb0d3551305f",
+      "git_blob": "b61f245bd76f91ae786f2557f5f6ee7e4ca379f0",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/old-input/validate_profile.py",
+      "bytes": 25769,
+      "sha256": "2b6299b8c43a3fcff6d18f7f6f914180a81110b832508f648de8807812129482",
+      "git_blob": "2d3d217e0d16e87a551e6f017f23ee83b78550b8",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-cache-stale.json",
+      "bytes": 2596,
+      "sha256": "d3acc8ad88ef33f4ba78cbca88dd5c54309daa6d0c23f28db51ec3e7ea1b4418",
+      "git_blob": "b4d14104b4cb4dddaed37c2009c0c94292a07dde",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-normal.json",
+      "bytes": 1946,
+      "sha256": "945a293a09a9481fc3ab895d147d80fb0b1fc4c46e8329a0cf075e9f3a8c6a79",
+      "git_blob": "caab873bcd1d045afd2cba6013d0710dd3942100",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-partial-stop-fail.json",
+      "bytes": 5750,
+      "sha256": "7ab93bdcc0c2c2071353fef4e4679c4a7729033c1d14cd924182964d8741abf5",
+      "git_blob": "25bbc3d3a159c19e0944ab9ca30e9c93f50e6bdd",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-release-fail.json",
+      "bytes": 2614,
+      "sha256": "82d6fbaa233883598776289bb23386149f098ae9051e6961d7de96621965df50",
+      "git_blob": "f119f08549a4fcd149606e5c9418ef00b24b3812",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-short.json",
+      "bytes": 2373,
+      "sha256": "d17e84fa7fa3d727556633a763e30c853569096cc4fe0b2911ab1787841ad13b",
+      "git_blob": "f17a7ffc20f5ccc0934e9af003b6f73a49bf8959",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-static.json",
+      "bytes": 2646,
+      "sha256": "dcfa83539bdfe9ea9901bf3985b50ac519a7df5bf105f3f5fb7c83cc72108537",
+      "git_blob": "1191f717df19c0661e6853411245f402f789377b",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-static/command.json",
+      "bytes": 1103,
+      "sha256": "b873af31515e676bc86cd329ade7a40f4bb1d1310018059064ea165cde1790f3",
+      "git_blob": "09a93a2f880919991b9cf7a7b6c43505fdb38991",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-static/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-static/stdout.log",
+      "bytes": 2646,
+      "sha256": "dcfa83539bdfe9ea9901bf3985b50ac519a7df5bf105f3f5fb7c83cc72108537",
+      "git_blob": "1191f717df19c0661e6853411245f402f789377b",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-status-unreadable.json",
+      "bytes": 1785,
+      "sha256": "2a9a936f4603e89373ea427d2aa2247db4aa081c5cfba2d22d85cb6652ae1de2",
+      "git_blob": "1906a18a60dd32cbb3670e0df649f20087301016",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-timeout-stop-fail.json",
+      "bytes": 13139,
+      "sha256": "1629877ab4dbdcc656ad6ae31a546b97921396fcf764ea41c967f961c7c05174",
+      "git_blob": "6ff277e08fcdceb14572031154e1b7cd139a03e9",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/receive.json",
+      "bytes": 1935,
+      "sha256": "d2540a37d09c082dfe4da4af2b7e0003e3bc6e92d3405926de9958eabcc4359b",
+      "git_blob": "0a0032af0cfcfc3b576398f5b97a05ec2514343d",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/receive/command.json",
+      "bytes": 955,
+      "sha256": "2ce72c1ae339f551da26d6a805e429472c03c356206144292dd91765c1132f64",
+      "git_blob": "aa49079e1508a2a3ad4b02c2091fddea34554a8b",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/receive/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/receive/stdout.log",
+      "bytes": 1935,
+      "sha256": "d2540a37d09c082dfe4da4af2b7e0003e3bc6e92d3405926de9958eabcc4359b",
+      "git_blob": "0a0032af0cfcfc3b576398f5b97a05ec2514343d",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/structure/command.json",
+      "bytes": 738,
+      "sha256": "c7622dd2eb7f0a6a6ffad22b3e11016bb8890a092fb6792af05ba9739fd363e4",
+      "git_blob": "464cc3ee9ab8babaaa45d9cdc4280a7125c954a5",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/structure/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/structure/stdout.log",
+      "bytes": 17,
+      "sha256": "6cf9e7f0d34ccd36dbd28f270cd28dd04277b2e1516bd4333ce7bb501d7b18d4",
+      "git_blob": "8eb91f3a757956ecd6daff2c84ede33be7aee54a",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/summary.json",
+      "bytes": 23709,
+      "sha256": "4cd5a724ff4b6b91387971b707c0a8e73434f9bf2819499d1b849e40c47aefe0",
+      "git_blob": "67b2b65501df038f6586ffbcdac758e3ecf4b218",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-cache-stale.json",
+      "bytes": 2591,
+      "sha256": "4c636f5a64e00e8c0d851cf4d0e777ffc49948bba15f8a88608bfde5776f33e1",
+      "git_blob": "7a4394fad5740954fbaf5cc3093a51a5d4ec99ff",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-normal.json",
+      "bytes": 1942,
+      "sha256": "1b8293267d92b15a1a6607c6126faa5a98473c7069a4b356b18801524314b4f9",
+      "git_blob": "4c167b3a12243400d673e10faff1983961c2d8c2",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-partial-stop-fail.json",
+      "bytes": 5748,
+      "sha256": "db8635fe338d1db5f55f3c4d564e8600b9fad1e8eb7542d511833d3a35e58799",
+      "git_blob": "c116a893132f0b997fc53554086cac11875be29b",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-release-fail.json",
+      "bytes": 2610,
+      "sha256": "2b7c2c08fe0bcd59846e10bcf76c98092194949950cd20cd2125f664ed1a33c7",
+      "git_blob": "658f97948fb789ea09fb923d00c2e78406b3032b",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-short.json",
+      "bytes": 2369,
+      "sha256": "f833b75e634aa94c9c64aaa9a0ef9dbf017fe81a87bc48a6f402a44dd3d5bd4b",
+      "git_blob": "614cfb38e1b43eb8cc0567a7a4e53258080507dc",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-static.json",
+      "bytes": 2664,
+      "sha256": "f2b9baf88bdf6bb11734c426f315a0df5243efa2bf45664eb483d08e8f1881b2",
+      "git_blob": "626f4e46582d1618466ad2a00c6012f6eebcfea9",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-static/command.json",
+      "bytes": 1107,
+      "sha256": "4fc5b4382561a48aba9c92a760f5837d56591d9c2e5535be501ec6890a76ab44",
+      "git_blob": "e296a1ddeec7da384234ec5597d100c852d4968a",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-static/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-static/stdout.log",
+      "bytes": 2664,
+      "sha256": "f2b9baf88bdf6bb11734c426f315a0df5243efa2bf45664eb483d08e8f1881b2",
+      "git_blob": "626f4e46582d1618466ad2a00c6012f6eebcfea9",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-status-unreadable.json",
+      "bytes": 1783,
+      "sha256": "c1a7e0273937687621c385be37b77693d3ae9b330bf1c5d9ec3f2259662e7c0e",
+      "git_blob": "142b2b8bd1e2674a92e7fc23dc89675c783177bf",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-timeout-stop-fail.json",
+      "bytes": 13137,
+      "sha256": "ae681cd4e161eb0a4c07ae511b124af3d8cda77525dff088b49c51902129f0db",
+      "git_blob": "3eee28e57a2cc15c5dfcd8e7591b0b8c46ca0c44",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/timeout.json",
+      "bytes": 12562,
+      "sha256": "0f82748bca794113917e5606b003957e3da49dccfeab925ac59e9eb8d248f3af",
+      "git_blob": "768b85ac6da214bbdba9f584b77369d8bd5046d1",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/timeout/command.json",
+      "bytes": 1025,
+      "sha256": "e2b0b74cf0dd1776c954b37aca9f8b2bd20e8e6ae506113b6abbab642789b67f",
+      "git_blob": "d7afda9737d53d9009ec112de85365e78fdc5d2f",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/timeout/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/timeout/stdout.log",
+      "bytes": 12562,
+      "sha256": "0f82748bca794113917e5606b003957e3da49dccfeab925ac59e9eb8d248f3af",
+      "git_blob": "768b85ac6da214bbdba9f584b77369d8bd5046d1",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/unit.json",
+      "bytes": 9492,
+      "sha256": "4d052748ddb6bd9948f414fbdbf48dcaf7e59c8ab4f6d1bdc9f7c63cb0354a15",
+      "git_blob": "c67ab42369a722d02c4565d4a4ccbf4c23e7d2fe",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/unit/command.json",
+      "bytes": 898,
+      "sha256": "b0ba0705e26314581b51df598145581f51c229f80958463a3ed88876cee421dd",
+      "git_blob": "0b5da742c843f627cba1533e20c844f51cd56512",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/unit/stderr.log",
+      "bytes": 7792,
+      "sha256": "878b215799ba5a8c4302eea4fef175d25c2e6581ee498d52e52b8d8b8d5de428",
+      "git_blob": "dcda30da2f65d4b6baab26f1a9df5b1efa968680",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/fix-r1/unit/stdout.log",
+      "bytes": 9492,
+      "sha256": "4d052748ddb6bd9948f414fbdbf48dcaf7e59c8ab4f6d1bdc9f7c63cb0354a15",
+      "git_blob": "c67ab42369a722d02c4565d4a4ccbf4c23e7d2fe",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/forward-test-2026-09-13.json",
+      "bytes": 6375,
+      "sha256": "445e17daa02bffd06a6efc61fe34945b9ea991081b702158494b928ae1c65b3e",
+      "git_blob": "4aa9fee6a88abab9d4d5330766ececfa7b9adb34",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/offline-2026-09-13.json",
+      "bytes": 8815,
+      "sha256": "3915208d711d0e9a9f964388521537ac738de5d2fa9310da82f315b91080d1be",
+      "git_blob": "af0088abdee56b7a0ca9ceb8c4cb4e80387706cd",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/evidence/replay_d_fixes.py",
+      "bytes": 8043,
+      "sha256": "6bf5bbc73874e8b2be0b62b30656aa3d5bd170e5cd1d1b5737a2a9d576602317",
+      "git_blob": "efee7c34c9a5b5fb89a393403e962aa4ee648ecb",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/LICENSE.txt",
+      "bytes": 1062,
+      "sha256": "1666ea3991b92ca212581cdab88223bb7978ac5294f0e09b7154dd7f4b0cad4d",
+      "git_blob": "dbc6cf17181fdc362de679aa8834d11fc73e8337",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/README.md",
+      "bytes": 8401,
+      "sha256": "ac972cd7fe783e403c2697e257deebf5f120235924f432c90bb25754e6d9f80f",
+      "git_blob": "60bfc6d7d6d7ea34c95c1ab5ebd7444cc429ce02",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/references/example-profile.json",
+      "bytes": 2022,
+      "sha256": "f9722abb54fa1ba67afc783619b2d8b96786231a06f1a0815153be09d4a30a8e",
+      "git_blob": "c9b6d6c7689717310025898f0877900672768a25",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/references/example-session.json",
+      "bytes": 451,
+      "sha256": "a2edb87387dfa94158bcf9f7d548e28a23b0bfef56808ecf931bec04753b6e5a",
+      "git_blob": "797ccc093ec761bebef23e70cfb43eb9cd308370",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/references/hardware-runbook.md",
+      "bytes": 7420,
+      "sha256": "5753f89ae29cdc95940f969c1dda3420efb76c4d96ee370e4c3b410ee3ed9f8b",
+      "git_blob": "c498eb51854eb5d30c46c8f43ec4306f04d6322b",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/references/input-audit.md",
+      "bytes": 6367,
+      "sha256": "25ca8fd7375f4aa8348a9e18226f2a74b3e352a3ee8b44f3069f8f5a6618112d",
+      "git_blob": "d4115fd792a291ee767ecf15bc34d9243667a907",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/references/lifecycle-contract.md",
+      "bytes": 6481,
+      "sha256": "24bd97b22f00659658d12d4ad8948f9c28cb3041cb8a102564c5fe382d07bb15",
+      "git_blob": "b93712293cd743fe1f0262eef3ed3a89c6e23d55",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/references/profile-contract.md",
+      "bytes": 8047,
+      "sha256": "14c9e2d29ca5ba8946c73bee8e700c869d5378a8a59d6ecca3da8a9f3b8fcbeb",
+      "git_blob": "f3b6e358663e738de2dcca947f024e652ffd2bc5",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/references/repair-d1-d3.md",
+      "bytes": 4540,
+      "sha256": "5314ff7e5fff70d4a831da9198ebbc1c487efe6d14395bdb6d912226ca20f4fd",
+      "git_blob": "b6f3f29bbe822d785c3c3fccc952856c4717b038",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/references/review-handoff.md",
+      "bytes": 5070,
+      "sha256": "549d9cfe65dd24b3a3eb0a8c5c39718607ae42369f7d4f4526f6ff36e674ab5f",
+      "git_blob": "8e9885c041594999d5a044ac312ddd8792e1953d",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/references/validation-status.md",
+      "bytes": 6488,
+      "sha256": "79915e17f9caffd66d6bd66fe664dee2cb24b727e2f81ff9722a2993884f3619",
+      "git_blob": "41338c63371f0dfbd5c9aec79f56e442055bf1a8",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/scripts/compare_golden.py",
+      "bytes": 4975,
+      "sha256": "7ff7883414f27ba5e94c4c3f5dde395b801efe7c43d9431605a7ef845cc71c70",
+      "git_blob": "6ba6615acb791ed5bd8c6e7d4fd1f6a1172645c4",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/scripts/dma_session.py",
+      "bytes": 13200,
+      "sha256": "61f8c3996973184470e4473e474793854d4e91046147fab551de848e34f1c03e",
+      "git_blob": "341f44cff8d1a6587f55a211b4a81fb5b4c421a4",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/scripts/pynq_probe.py",
+      "bytes": 1001,
+      "sha256": "2ac2101c8dd1e5f72faa9b2ff107f3546c9c15e74a0372e6f0d567de59be1907",
+      "git_blob": "0cc72c27dc92ea0e78caed20a0714a51822fc510",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/scripts/run_offline_tests.py",
+      "bytes": 3733,
+      "sha256": "b22abefb050a32f9a30fb05fe96883f5564d8215fbe52c6fb205ac849bbb7700",
+      "git_blob": "3da5457864fccac4e73e0bcd3de70cfd33ae45d0",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/scripts/simulate_dma.py",
+      "bytes": 9634,
+      "sha256": "45afbe11746a297fb04e353b272c2483de467aec88ff2946eef3274b780e1117",
+      "git_blob": "cc729bc000b8647c9ae069a5e111d7d4f8b06dc8",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/scripts/validate_profile.py",
+      "bytes": 27454,
+      "sha256": "136ab79b7e3219dc9b9787bada5b58b2c359ac3838ba7a3840b69f0c32ed1350",
+      "git_blob": "387d87d3d0dba67445b966520e9166014029f949",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/SKILL.md",
+      "bytes": 5840,
+      "sha256": "9471b7a7f669fddba186816079d174d9e9a4a4262aaa159ed0f4a31d44e81636",
+      "git_blob": "d17faa108de31bc74248746898c11d5f26248bd8",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/tests/test_dma_session.py",
+      "bytes": 15925,
+      "sha256": "5b3b591fbc385c4eb84d9e70d263e1c0277a1cc9fda43cc13f7ae9ce2eeb88e8",
+      "git_blob": "64deb0a6ad5677a05fba1c91db905d706b30e586",
+      "matches_manifest": true,
+      "worktree_exact": true
+    },
+    {
+      "path": "skill/pynq-overlay-dma-validation/tests/test_validate_profile.py",
+      "bytes": 17932,
+      "sha256": "38aef9f9df626d78df23b944795125eee6922c2789740a8c0a7b89e8b7b6155d",
+      "git_blob": "93b1fd062eb8c72079176c65930bf2438b4873dc",
+      "matches_manifest": true,
+      "worktree_exact": true
+    }
+  ],
+  "changed_paths": [
+    "skill/pynq-overlay-dma-validation/LICENSE.txt",
+    "skill/pynq-overlay-dma-validation/README.md",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/pixel-session-input.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/pixel/design.bit",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/pixel/design.hwh",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/pixel/golden.bin",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/pixel/manifest.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/pixel/profile.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal-session-input.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal/design.bit",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal/design.hwh",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal/duplicate-evidence.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal/golden.bin",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal/manifest.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal/missing-control-ip.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal/missing-dma-ip.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/b-inputs/thermal/profile.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/board-guard/command.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/board-guard/stderr.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/board-guard/stdout.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/duplicate-fixed.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/duplicate-fixed/command.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/duplicate-fixed/stderr.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/duplicate-fixed/stdout.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/duplicate-old.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/duplicate-old/command.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/duplicate-old/stderr.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/duplicate-old/stdout.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-control-fixed.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-control-fixed/command.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-control-fixed/stderr.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-control-fixed/stdout.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-control-old.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-control-old/command.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-control-old/stderr.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-control-old/stdout.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-dma-fixed.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-dma-fixed/command.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-dma-fixed/stderr.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-dma-fixed/stdout.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-dma-old.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-dma-old/command.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-dma-old/stderr.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/missing-dma-old/stdout.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/old-input/validate_profile.py",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-cache-stale.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-normal.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-partial-stop-fail.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-release-fail.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-short.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-static.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-static/command.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-static/stderr.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-static/stdout.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-status-unreadable.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/pixel-timeout-stop-fail.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/receive.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/receive/command.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/receive/stderr.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/receive/stdout.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/structure/command.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/structure/stderr.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/structure/stdout.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/summary.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-cache-stale.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-normal.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-partial-stop-fail.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-release-fail.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-short.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-static.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-static/command.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-static/stderr.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-static/stdout.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-status-unreadable.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/thermal-timeout-stop-fail.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/timeout.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/timeout/command.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/timeout/stderr.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/timeout/stdout.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/unit.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/unit/command.json",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/unit/stderr.log",
+    "skill/pynq-overlay-dma-validation/evidence/fix-r1/unit/stdout.log",
+    "skill/pynq-overlay-dma-validation/evidence/replay_d_fixes.py",
+    "skill/pynq-overlay-dma-validation/references/profile-contract.md",
+    "skill/pynq-overlay-dma-validation/references/repair-d1-d3.md",
+    "skill/pynq-overlay-dma-validation/repair-manifest.json",
+    "skill/pynq-overlay-dma-validation/scripts/validate_profile.py",
+    "skill/pynq-overlay-dma-validation/tests/test_validate_profile.py"
+  ],
+  "outside_scope": [],
+  "license_exact": true
+}

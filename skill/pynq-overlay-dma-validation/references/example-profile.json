@@ -37,6 +37,7 @@
     "s2mm_channel": "recvchannel",
     "stream_data_width_bits": 32,
     "buffer_alignment_bytes": 64,
+    "length_granularity_bytes": 4,
     "max_transfer_bytes": 1048576,
     "cache_policy": {"tx": "flush", "rx": "invalidate"},
     "tlast_required": true,

@@ -9,6 +9,7 @@ import json
 import math
 import sys
 from datetime import datetime, timezone
+from fractions import Fraction
 from pathlib import Path
 from typing import Any
 
@@ -31,24 +32,36 @@ def compare_bytes(expected: bytes, actual: bytes) -> dict[str, Any]:
     }
 
 
-def numeric_list(path: Path) -> list[float]:
+def valid_number(value: Any) -> bool:
+    return type(value) is int or (type(value) is float and math.isfinite(value))
+
+
+def numeric_list(path: Path) -> list[int | float]:
     value = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(value, list) or not all(isinstance(item, (int, float)) and not isinstance(item, bool) for item in value):
         raise ValueError(f"{path} must contain a flat JSON array of numbers")
-    numbers = [float(item) for item in value]
-    if not all(math.isfinite(item) for item in numbers):
+    if not all(valid_number(item) for item in value):
         raise ValueError(f"{path} contains NaN or infinity")
-    return numbers
+    # Preserve JSON integers, including values above binary64's exact range.
+    return value
 
 
-def compare_numbers(expected: list[float], actual: list[float], atol: float, rtol: float) -> dict[str, Any]:
+def compare_numbers(expected: list[int | float], actual: list[int | float], atol: float, rtol: float) -> dict[str, Any]:
+    if not all(math.isfinite(value) and value >= 0 for value in (atol, rtol)):
+        raise ValueError("atol and rtol must be finite and non-negative")
+    if not all(valid_number(value) for value in expected + actual):
+        raise ValueError("golden and actual values must be finite")
     common = min(len(expected), len(actual))
     mismatch_indexes: list[int] = []
-    maximum = 0.0
+    maximum = Fraction(0)
+    absolute_tolerance, relative_tolerance = Fraction(atol), Fraction(rtol)
     for index in range(common):
-        error = abs(actual[index] - expected[index])
+        # Exact arithmetic over integers and the parsed binary64 float values
+        # avoids both integer rounding and inf <= inf tolerance false passes.
+        reference = Fraction(expected[index])
+        error = abs(Fraction(actual[index]) - reference)
         maximum = max(maximum, error)
-        if error > atol + rtol * abs(expected[index]):
+        if error > absolute_tolerance + relative_tolerance * abs(reference):
             mismatch_indexes.append(index)
     mismatch_count = len(mismatch_indexes) + abs(len(expected) - len(actual))
     first = mismatch_indexes[0] if mismatch_indexes else (common if len(expected) != len(actual) else None)
@@ -57,7 +70,7 @@ def compare_numbers(expected: list[float], actual: list[float], atol: float, rto
         "actual_count": len(actual),
         "mismatch_count": mismatch_count,
         "first_mismatch": first,
-        "max_absolute_error": maximum,
+        "max_absolute_error": maximum.numerator if maximum.denominator == 1 else float(maximum),
     }
 
 
@@ -70,8 +83,8 @@ def main() -> int:
     parser.add_argument("--rtol", type=float, default=0.0)
     parser.add_argument("--output", required=True, type=Path)
     args = parser.parse_args()
-    if args.atol < 0 or args.rtol < 0:
-        raise SystemExit("atol and rtol must be non-negative")
+    if not all(math.isfinite(value) and value >= 0 for value in (args.atol, args.rtol)):
+        raise SystemExit("atol and rtol must be finite and non-negative")
     expected_path = args.expected.resolve()
     actual_path = args.actual.resolve()
     if args.format == "bytes":

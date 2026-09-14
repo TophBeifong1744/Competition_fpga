@@ -1,0 +1,87 @@
+{
+  "tool": "pynq-overlay-dma-validation/validate_profile.py",
+  "generated_at_utc": "2026-09-14T10:40:50.056591+00:00",
+  "mode": "offline",
+  "profile_id": "b-thermal",
+  "evidence_level": "static",
+  "status": "PASS",
+  "artifact_hashes": {
+    "bit": "c03bb7637b9430aab4ec6a1cdd637af1d6b5f8f154ed098957ab7b44f9ce8718",
+    "hwh": "316a34379f0ec0ce9642bad6ea661fe0a1c34da24dcdffb87e28aaf7b2784c84",
+    "manifest": "0026c0c233c25ab15df13720aac74b040bbcfdb320f985dd0b94c3bc480520dc"
+  },
+  "checks": [
+    {
+      "code": "OVERLAY_STEM",
+      "status": "PASS",
+      "message": ".bit and .hwh must share a basename for PYNQ"
+    },
+    {
+      "code": "OVERLAY_DIRECTORY",
+      "status": "PASS",
+      "message": ".bit and .hwh must be adjacent so PYNQ loads the validated HWH"
+    },
+    {
+      "code": "MANIFEST_BUILD_ID",
+      "status": "PASS",
+      "message": "manifest build_id must equal profile overlay build_id"
+    },
+    {
+      "code": "MANIFEST_INTERFACE_VERSION",
+      "status": "PASS",
+      "message": "manifest interface_version must equal profile overlay interface_version"
+    },
+    {
+      "code": "MANIFEST_VIVADO_VERSION",
+      "status": "PASS",
+      "message": "manifest vivado_version must equal profile overlay vivado_version"
+    },
+    {
+      "code": "MANIFEST_DEVICE_PART",
+      "status": "PASS",
+      "message": "manifest device_part must equal board.device_part"
+    },
+    {
+      "code": "BIT_HASH",
+      "status": "PASS",
+      "message": "actual bit SHA-256 must match manifest"
+    },
+    {
+      "code": "HWH_HASH",
+      "status": "PASS",
+      "message": "actual hwh SHA-256 must match manifest"
+    },
+    {
+      "code": "HWH_DEVICE_PART",
+      "status": "PASS",
+      "message": "HWH metadata must contain board.device_part"
+    },
+    {
+      "code": "HWH_IP",
+      "status": "PASS",
+      "message": "HWH must expose required IP 'sub/thermal_control'"
+    },
+    {
+      "code": "HWH_IP",
+      "status": "PASS",
+      "message": "HWH must expose required IP 'sub/temperature_dma'"
+    },
+    {
+      "code": "HWH_CONTRACT_IP",
+      "status": "PASS",
+      "message": "register_contract.ip_name 'sub/thermal_control' must resolve to a MODULE instance in the validated HWH"
+    },
+    {
+      "code": "HWH_CONTRACT_IP",
+      "status": "PASS",
+      "message": "dma_contract.ip_name 'sub/temperature_dma' must resolve to a MODULE instance in the validated HWH"
+    }
+  ],
+  "issues": [
+    {
+      "severity": "WARNING",
+      "code": "NO_RUN_EVIDENCE",
+      "message": "profile/artifacts validated without run evidence"
+    }
+  ]
+}

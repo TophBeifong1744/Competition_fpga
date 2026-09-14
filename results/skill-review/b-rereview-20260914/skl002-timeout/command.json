@@ -1,0 +1,19 @@
+{
+  "command": [
+    "D:/Python/python.exe",
+    "-B",
+    "scripts/simulate_dma.py",
+    "--contract",
+    "references/example-session.json",
+    "--fault",
+    "timeout",
+    "--fault",
+    "abort-timeout",
+    "--output",
+    "results/b-rereview-timeout-new.json"
+  ],
+  "cwd": "F:/NUEC/review-worktrees/b-skl002-3ac597d/skill/pynq-overlay-dma-validation",
+  "exit_code": 1,
+  "started_utc": "2026-09-14T10:37:55.854326+00:00",
+  "elapsed_seconds": 0.35022401809692383
+}
