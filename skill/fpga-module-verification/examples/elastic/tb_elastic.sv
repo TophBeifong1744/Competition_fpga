@@ -6,11 +6,41 @@ module elastic_trial #(parameter W=8) (output reg done, output integer checks);
     wire [W-1:0] out_data;
     reg [W-1:0] expected [0:2047];
     integer head=0, tail=0, cycle=0, i;
+    integer sent=0, consumed=0, discarded=0;
     reg accepted=0, was_stalled=0;
     reg [W-1:0] held;
     reg [31:0] rng=32'h12345678;
     always #5 clk=~clk;
     elastic_stage #(.WIDTH(W)) dut(.*);
+
+    // Accepted-transaction occupancy is independent of the DUT's valid state.
+    // Check BOTH the old slot at the sampling edge and the new slot after NBA.
+    task check_slot(input reg after_edge);
+        integer occupancy;
+        begin
+            occupancy=tail-head;
+            checks=checks+1;
+            if (occupancy<0 || occupancy>1)
+                $fatal(1,"SKILL_FAIL capacity width=%0d cycle=%0d after_edge=%0d occupancy=%0d",W,cycle,after_edge,occupancy);
+            checks=checks+1;
+            if (out_valid !== (occupancy==1))
+                $fatal(1,"SKILL_FAIL one_edge_valid width=%0d cycle=%0d after_edge=%0d expected=%0d actual=%b",W,cycle,after_edge,occupancy==1,out_valid);
+            // Reset specifies valid/data, not ready. Do not invent a reset-ready rule.
+            if (rst_n) begin
+                checks=checks+1;
+                if (in_ready !== ((occupancy==0) || out_ready))
+                    $fatal(1,"SKILL_FAIL slot_ready width=%0d cycle=%0d after_edge=%0d occupancy=%0d actual=%b",W,cycle,after_edge,occupancy,in_ready);
+            end
+            if (occupancy==1) begin
+                checks=checks+1;
+                if (out_data !== expected[head])
+                    $fatal(1,"SKILL_FAIL one_edge_data width=%0d cycle=%0d after_edge=%0d transaction=%0d expected=%h actual=%h",W,cycle,after_edge,head,expected[head],out_data);
+            end
+            checks=checks+1;
+            if (sent != consumed+discarded+occupancy)
+                $fatal(1,"SKILL_FAIL accounting width=%0d cycle=%0d sent=%0d consumed=%0d discarded=%0d pending=%0d",W,cycle,sent,consumed,discarded,occupancy);
+        end
+    endtask
 
     task tick(input reg reset_ok, input reg valid_value,
               input reg [W-1:0] data_value, input reg ready_value);
@@ -22,8 +52,10 @@ module elastic_trial #(parameter W=8) (output reg done, output integer checks);
             cycle=cycle+1;
             accepted=0;
             if (!rst_n) begin
+                discarded=discarded+tail-head;
                 head=0; tail=0; was_stalled=0;
             end else begin
+                check_slot(0);
                 if (was_stalled) begin
                     checks=checks+1;
                     if (out_valid !== 1'b1 || out_data !== held)
@@ -39,14 +71,18 @@ module elastic_trial #(parameter W=8) (output reg done, output integer checks);
                     if (out_data !== expected[head])
                         $fatal(1,"SKILL_FAIL data width=%0d cycle=%0d transaction=%0d expected=%h actual=%h",W,cycle,head,expected[head],out_data);
                     head=head+1;
+                    consumed=consumed+1;
                 end
                 if (in_valid && in_ready) begin
+                    if (tail>=2048) $fatal(1,"SKILL_FAIL scoreboard overflow");
                     expected[tail]=in_data; tail=tail+1; accepted=1;
+                    sent=sent+1;
                 end
                 was_stalled=out_valid && !out_ready;
                 held=out_data;
             end
             #1;
+            check_slot(1);
             if (!rst_n) begin
                 checks=checks+1;
                 if (out_valid !== 1'b0 || out_data !== {W{1'b0}})
@@ -78,6 +114,7 @@ module elastic_trial #(parameter W=8) (output reg done, output integer checks);
         repeat(4) tick(1,0,0,1);
         checks=checks+1;
         if(head!=tail) $fatal(1,"SKILL_FAIL undrained width=%0d sent=%0d received=%0d",W,tail,head);
+        $display("ACCOUNTING width=%0d sent=%0d consumed=%0d discarded=%0d pending=%0d",W,sent,consumed,discarded,tail-head);
         $display("CASE_PASS width=%0d checks=%0d",W,checks);
         done=1;
     end

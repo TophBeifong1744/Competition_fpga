@@ -1,5 +1,16 @@
 # FPGA module development and verification Skill
 
+2026-09-14 S1 repair candidate (on top of 0.3.0): B found that ordered
+transaction comparisons did not enforce the one-edge/one-slot contract.
+The TB now checks occupancy, valid, ready and valid payload before/after each
+edge, plus reset-discard accounting. The original two-stage mutant still
+reproduces the old false PASS (1149 checks); the repaired TB rejects it at
+cycle 2 after the first accepted edge. Correct/restored elastic runs pass
+13800 actual checks, not the historical 1125 below. The runner retains data
+and ready faults and adds a two-stage fault. See the [S1 repair handoff](../../task-packages/PKG-A-SKILLS/REPAIR-S1.md)
+for commands, fresh logs and scope. Author regression is not B approval;
+historical source manifests/logs remain unchanged and refer to their old SHA.
+
 SKL-001, technical candidate 0.3.0; author A, independent reviewer B pending. Supersedes the workflow-only `soundsight-engineering-workflow`; its original v0 and unreviewed 0.2.0 package remain in the [upgrade archive](../../archive/2026-09-13-before-skl001-technical-upgrade/README.md), not as a second active Skill. This source directory is a working candidate, not approved production RTL or a published main release.
 
 ## Purpose and use

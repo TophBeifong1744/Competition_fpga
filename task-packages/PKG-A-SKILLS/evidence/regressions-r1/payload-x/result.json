@@ -1,0 +1,101 @@
+{
+  "status": "FAIL_SIMULATION",
+  "stage": "simulate",
+  "evidence_class": "rtl_simulation",
+  "not_run": [
+    "synthesis",
+    "timing",
+    "cdc",
+    "board",
+    "system"
+  ],
+  "runner_sha256": "80eabf73d614898636fcc599844c714480987cea66ee9e0bdbbc710f36a144e6",
+  "commands": [
+    {
+      "stage": "version",
+      "argv": [
+        "F:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "--version"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix\\task-packages\\PKG-A-SKILLS\\evidence\\regressions-r1\\payload-x\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2"
+    },
+    {
+      "stage": "compile_v",
+      "argv": [
+        "F:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "elastic_stage.v"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix\\task-packages\\PKG-A-SKILLS\\evidence\\regressions-r1\\payload-x\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "5bc9922debc16aa045fcda7585b3a02d0a3c206736cab9bd622801daa2f4c15a"
+    },
+    {
+      "stage": "compile_sv",
+      "argv": [
+        "F:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "--sv",
+        "tb_elastic.sv"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix\\task-packages\\PKG-A-SKILLS\\evidence\\regressions-r1\\payload-x\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "a7fb3cace66634dbe695a84bffed93b5648b74cb284ee59901624224ea033d00"
+    },
+    {
+      "stage": "elaborate",
+      "argv": [
+        "F:\\AMD\\2025.2\\Vivado\\bin\\xelab.bat",
+        "work.tb_elastic",
+        "-s",
+        "module_test",
+        "-timescale",
+        "1ns/1ps"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix\\task-packages\\PKG-A-SKILLS\\evidence\\regressions-r1\\payload-x\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6"
+    },
+    {
+      "stage": "simulate",
+      "argv": [
+        "F:\\AMD\\2025.2\\Vivado\\bin\\xsim.bat",
+        "module_test",
+        "-runall",
+        "-log",
+        "xsim.log"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix\\task-packages\\PKG-A-SKILLS\\evidence\\regressions-r1\\payload-x\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "7b229dd1dfd9be1106e09ac4473ba1519eb2967fe9fd666b9e6c1bf7c69d0d12"
+    }
+  ],
+  "sources": [
+    {
+      "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix\\task-packages\\PKG-A-SKILLS\\evidence\\regressions-r1\\fixtures\\payload-x\\elastic_stage.v",
+      "snapshot": "inputs/elastic_stage.v",
+      "sha256": "3f97cee64d77b19782b071e6a4c0bff29bece066dfa9d40ab00989eb048ffb2b"
+    },
+    {
+      "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix\\task-packages\\PKG-A-SKILLS\\evidence\\regressions-r1\\fixtures\\payload-x\\tb_elastic.sv",
+      "snapshot": "inputs/tb_elastic.sv",
+      "sha256": "14316172b257faf88ea6a5b4d5447e38ad909d1bf99315a60a3db8610f32c569"
+    }
+  ],
+  "started_utc": "2026-09-14T09:39:06.714287+00:00",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "win32",
+  "name": "elastic",
+  "top": "tb_elastic",
+  "expected_tool_version": "2025.2",
+  "manifest_sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+  "vivado_bin": "F:\\AMD\\2025.2\\Vivado\\bin",
+  "contract_sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+  "first_failure": "Fatal: SKILL_FAIL one_edge_data width=1 cycle=2 after_edge=1 transaction=0 expected=1 actual=x",
+  "elapsed_seconds": 7.125
+}

@@ -1,0 +1,2534 @@
+{
+  "schema_version": 1,
+  "old_candidate": "c562466805aff08201cd457cc2e6ee7464a3566f",
+  "reviewer_commit": "0ef0355642ea8719d5e4cdde0a38c531550218d4",
+  "status": "AUTHOR_SELF_TEST_NOT_B_ACCEPTANCE",
+  "root": "repository",
+  "files": [
+    {
+      "path": "skill/fpga-module-verification/.gitattributes",
+      "sha256": "5b9e3419f96fdceeb46fccb70a491205c396ce9ee16229c330ce78febc1a8edd",
+      "bytes": 113
+    },
+    {
+      "path": "skill/fpga-module-verification/assets/module-contract.md",
+      "sha256": "b2d6067459c4be09ae749f036a657547d1ba8e487930f16754aa531f19d522fb",
+      "bytes": 873
+    },
+    {
+      "path": "skill/fpga-module-verification/examples/elastic/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "skill/fpga-module-verification/examples/elastic/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "skill/fpga-module-verification/examples/elastic/elastic_stage.v",
+      "sha256": "b96f113a3dd5da3a6ddbb388adc44828fdb20cffd856a9f20fbcba5181d2a633",
+      "bytes": 756
+    },
+    {
+      "path": "skill/fpga-module-verification/examples/elastic/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+      "bytes": 6019
+    },
+    {
+      "path": "skill/fpga-module-verification/examples/pcm4/case.json",
+      "sha256": "3c3762d080e9bfc2ad496c4ad490d74c5f95d4e9401b3c4d8bd245fb1d33fc1a",
+      "bytes": 238
+    },
+    {
+      "path": "skill/fpga-module-verification/examples/pcm4/contract.md",
+      "sha256": "54c975e57bd17484e3d175960a4c1431f9e017d8541539a75a0ca70eef50dc79",
+      "bytes": 1347
+    },
+    {
+      "path": "skill/fpga-module-verification/examples/pcm4/tb_pcm4_skill.sv",
+      "sha256": "e35fcf8526373193977e1e7a261edb4e2b1e681a0c00efff732c8f2241be70b6",
+      "bytes": 1874
+    },
+    {
+      "path": "skill/fpga-module-verification/README.md",
+      "sha256": "b68a0b4773c1ba668bb08a27cfff2feadf744a8a83b09d832de1bead487fc8d3",
+      "bytes": 6486
+    },
+    {
+      "path": "skill/fpga-module-verification/references/rtl-and-tb.md",
+      "sha256": "b4f6428c63b5884e40369d7a6c053658fba7eceb32e909eb458fc4e5479b6a28",
+      "bytes": 3593
+    },
+    {
+      "path": "skill/fpga-module-verification/references/xsim-and-debug.md",
+      "sha256": "414b285f153b3139910a8c79ac01292f3ee630345fc1b4a3cb5f587cb385d709",
+      "bytes": 3338
+    },
+    {
+      "path": "skill/fpga-module-verification/scripts/run_examples.py",
+      "sha256": "75a1a6858a8e6bacff9985b709ef1c346de98bee87ef93b1f7db198453c2f201",
+      "bytes": 4183
+    },
+    {
+      "path": "skill/fpga-module-verification/scripts/run_xsim.py",
+      "sha256": "80eabf73d614898636fcc599844c714480987cea66ee9e0bdbbc710f36a144e6",
+      "bytes": 9519
+    },
+    {
+      "path": "skill/fpga-module-verification/SKILL.md",
+      "sha256": "a7329aef37d00d0e2ad43710b3e5e365ab029df3cf5e464d5dd10fe947ebfe07",
+      "bytes": 4286
+    },
+    {
+      "path": "skill/fpga-module-verification/tests/test_runner.py",
+      "sha256": "53dde1b4e2be35b3d6aea6fb3b83c8aea5d4c93382f6ffbb0a451e38dfb92db4",
+      "bytes": 3731
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/.gitattributes",
+      "sha256": "0a811ef5f42cfd3f94bac466586336e88475394e7684fb3e0926adf0c3850a12",
+      "bytes": 181
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/.gitignore",
+      "sha256": "a950b3843e3235d4c0ea39dd1228c6550b7065705624b45e9361da4854b6a82f",
+      "bytes": 101
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/check_s1_regressions.py",
+      "sha256": "50f4426eb8f7644d7ad7a6a1a4d31d0efde05d6d47964df0fc30d1edbdca7b90",
+      "bytes": 3121
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_data/compile_sv.log",
+      "sha256": "e037c51eb398c6d01a4071726cc7cc0e443345b18f93bf6d323a2cc148bb6738",
+      "bytes": 330
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_data/compile_v.log",
+      "sha256": "5eaf24805d7a4f8b23be6ab2563fa8318bcef1a0a8ae2d11ba19437092fae14c",
+      "bytes": 276
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_data/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_data/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_data/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_data/inputs/elastic_stage.v",
+      "sha256": "d72fd8091e28ed8fe32874fce8b35c6ab4b6bbd2c941e6ca2507a44344be9ab9",
+      "bytes": 784
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_data/inputs/tb_elastic.sv",
+      "sha256": "14316172b257faf88ea6a5b4d5447e38ad909d1bf99315a60a3db8610f32c569",
+      "bytes": 5874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_data/result.json",
+      "sha256": "3ddd789117126a7b9a6d84f95ac68f479a944f73d18c4126ecca0917ef7ad666",
+      "bytes": 4084
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_data/simulate.log",
+      "sha256": "e549eec2dd267be7915feff83e0a653b98898edc629a2e3625769a6bd02e447c",
+      "bytes": 1015
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_data/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_ready/compile_sv.log",
+      "sha256": "0a92a8a7ef54ddfaff94591a79c5102589b1991b73759f16637e90d71d5665dc",
+      "bytes": 331
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_ready/compile_v.log",
+      "sha256": "1d96bfa44fa905886e541924d645474d1da7e03b5c989ab42c59cdcf4c819131",
+      "bytes": 277
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_ready/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_ready/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_ready/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_ready/inputs/elastic_stage.v",
+      "sha256": "f30d64e5c19b2ed4ec33dcaa045258204d1b257c8ad8f9a10638feca3c3f1252",
+      "bytes": 763
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_ready/inputs/tb_elastic.sv",
+      "sha256": "14316172b257faf88ea6a5b4d5447e38ad909d1bf99315a60a3db8610f32c569",
+      "bytes": 5874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_ready/result.json",
+      "sha256": "4eead480e6e5b084b46ce54959ce06d733b5aba6ced5e26c5e11f41ee96f904c",
+      "bytes": 4075
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_ready/simulate.log",
+      "sha256": "cfc6c5b6431d8eabbf0623d4ab75c2ed0a36e6d2dfe063f7257815a5077b4a4c",
+      "bytes": 1000
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/bad_ready/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/elastic/compile_sv.log",
+      "sha256": "9635d98f138148d3416377f89340f77badadade38f1b6253abfd378005121c7d",
+      "bytes": 329
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/elastic/compile_v.log",
+      "sha256": "8177b135f06beb904e0be369b422343a21943c042d149f6b9435a8463580e298",
+      "bytes": 275
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/elastic/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/elastic/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/elastic/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/elastic/inputs/elastic_stage.v",
+      "sha256": "b96f113a3dd5da3a6ddbb388adc44828fdb20cffd856a9f20fbcba5181d2a633",
+      "bytes": 756
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/elastic/inputs/tb_elastic.sv",
+      "sha256": "14316172b257faf88ea6a5b4d5447e38ad909d1bf99315a60a3db8610f32c569",
+      "bytes": 5874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/elastic/result.json",
+      "sha256": "034b77819ba6b5d14736c5e65072a2d9478a1ed31d37db36020e15b199b8be54",
+      "bytes": 3957
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/elastic/simulate.log",
+      "sha256": "e0d5d2bcb478f47225fdd4d67af23afd720b6f4573f5792743726ca39e4dad78",
+      "bytes": 1153
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/elastic/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/fixtures/bad_data/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/fixtures/bad_data/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/fixtures/bad_data/elastic_stage.v",
+      "sha256": "d72fd8091e28ed8fe32874fce8b35c6ab4b6bbd2c941e6ca2507a44344be9ab9",
+      "bytes": 784
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/fixtures/bad_data/tb_elastic.sv",
+      "sha256": "14316172b257faf88ea6a5b4d5447e38ad909d1bf99315a60a3db8610f32c569",
+      "bytes": 5874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/fixtures/bad_ready/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/fixtures/bad_ready/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/fixtures/bad_ready/elastic_stage.v",
+      "sha256": "f30d64e5c19b2ed4ec33dcaa045258204d1b257c8ad8f9a10638feca3c3f1252",
+      "bytes": 763
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/fixtures/bad_ready/tb_elastic.sv",
+      "sha256": "14316172b257faf88ea6a5b4d5447e38ad909d1bf99315a60a3db8610f32c569",
+      "bytes": 5874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/fixtures/two_stage/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/fixtures/two_stage/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/fixtures/two_stage/elastic_stage.v",
+      "sha256": "a3e70dfe02200e91e411f8f6d41a38f54cd4ff1e839c20ab38b21b9388498b96",
+      "bytes": 1508
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/fixtures/two_stage/tb_elastic.sv",
+      "sha256": "14316172b257faf88ea6a5b4d5447e38ad909d1bf99315a60a3db8610f32c569",
+      "bytes": 5874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/pcm4/compile_sv.log",
+      "sha256": "6a64fb2e48e860a85a1713090edba70afd67deb21f6fe7a706706bf1109e7204",
+      "bytes": 328
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/pcm4/compile_v.log",
+      "sha256": "2590fee22b6a87452531674a9cf86c147f0142d2e99eb91cc78aae8b06b802c0",
+      "bytes": 280
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/pcm4/elaborate.log",
+      "sha256": "ebd90cf67c325474ef8524b82fb2a12daf08dd37e9ad5f991f3cbe367a7ed584",
+      "bytes": 902
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/pcm4/inputs/case.json",
+      "sha256": "3c3762d080e9bfc2ad496c4ad490d74c5f95d4e9401b3c4d8bd245fb1d33fc1a",
+      "bytes": 238
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/pcm4/inputs/contract.md",
+      "sha256": "54c975e57bd17484e3d175960a4c1431f9e017d8541539a75a0ca70eef50dc79",
+      "bytes": 1347
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/pcm4/inputs/pcm4_signext_pack.v",
+      "sha256": "85269ccd9991c80a2dbd507d342cc19d6e58517b9cc525520dce03b710df215a",
+      "bytes": 931
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/pcm4/inputs/tb_pcm4_skill.sv",
+      "sha256": "e35fcf8526373193977e1e7a261edb4e2b1e681a0c00efff732c8f2241be70b6",
+      "bytes": 1874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/pcm4/result.json",
+      "sha256": "d4a0fe9b62525614b0659e5e1b14b72a4a799dfc7d00eb4e1849277c0620e5e9",
+      "bytes": 3913
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/pcm4/simulate.log",
+      "sha256": "4b202f03d22aaec1549b917f5a4e2be0da32124396e8ee983e2998d6548a0eba",
+      "bytes": 855
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/pcm4/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/restored/compile_sv.log",
+      "sha256": "dd5fa46aef712e7a64bc6810aaf7456e16c37ea91f55754caa74c7c55c23f663",
+      "bytes": 330
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/restored/compile_v.log",
+      "sha256": "04e0dfe075618326903cf3e3d3faf39c1801da05248805c61c1a24305bbc25fe",
+      "bytes": 276
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/restored/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/restored/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/restored/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/restored/inputs/elastic_stage.v",
+      "sha256": "b96f113a3dd5da3a6ddbb388adc44828fdb20cffd856a9f20fbcba5181d2a633",
+      "bytes": 756
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/restored/inputs/tb_elastic.sv",
+      "sha256": "14316172b257faf88ea6a5b4d5447e38ad909d1bf99315a60a3db8610f32c569",
+      "bytes": 5874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/restored/result.json",
+      "sha256": "0f8c92c2a6d5943952881da0f85374b4c18b9230f54f9ff188ae43830a0ade22",
+      "bytes": 3963
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/restored/simulate.log",
+      "sha256": "cea8a3ec618b25274f3a054c10e7516ee8f1d24c60bfd445e9facc659bad1eec",
+      "bytes": 1154
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/restored/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/summary.json",
+      "sha256": "a8ae223b1f7bc1a7c1b935e75b2b494017e108687cd300205a4b186aa17dc0be",
+      "bytes": 2400
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/two_stage/compile_sv.log",
+      "sha256": "4d3dbf6576cd11d578d0742ce6b0882f66f9fa92c1c66ff363e3e36e5ed82d4c",
+      "bytes": 331
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/two_stage/compile_v.log",
+      "sha256": "d07a3ac03b638bed1e04dafb9da90cdcb9498bb9f45763a812a66ee1035f2d65",
+      "bytes": 328
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/two_stage/elaborate.log",
+      "sha256": "b45646c5bb57ffd5d09dc2b31c00d0f1df91913c6a62fc67e45ac21a6d056100",
+      "bytes": 1006
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/two_stage/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/two_stage/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/two_stage/inputs/elastic_stage.v",
+      "sha256": "a3e70dfe02200e91e411f8f6d41a38f54cd4ff1e839c20ab38b21b9388498b96",
+      "bytes": 1508
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/two_stage/inputs/tb_elastic.sv",
+      "sha256": "14316172b257faf88ea6a5b4d5447e38ad909d1bf99315a60a3db8610f32c569",
+      "bytes": 5874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/two_stage/result.json",
+      "sha256": "96a3430cdcb9a250e426a463a181e8cb11c0559182bbcb389f5613d6b22dd01f",
+      "bytes": 4078
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/two_stage/simulate.log",
+      "sha256": "4c3e6c1a872f43716f79767a39c06d04e55b84e8ef932bdf3714c68c5897cad1",
+      "bytes": 1003
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r1/two_stage/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_data/compile_sv.log",
+      "sha256": "21d25f99ff3f476a7d036ffa8c79f575b0357957be98a529c833d3d273c4a449",
+      "bytes": 330
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_data/compile_v.log",
+      "sha256": "b93fb7d81ed9f7ea81a7ac1b64cb51f3deadbad4dcd81b3863c8713f41cf354e",
+      "bytes": 276
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_data/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_data/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_data/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_data/inputs/elastic_stage.v",
+      "sha256": "d72fd8091e28ed8fe32874fce8b35c6ab4b6bbd2c941e6ca2507a44344be9ab9",
+      "bytes": 784
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_data/inputs/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+      "bytes": 6019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_data/result.json",
+      "sha256": "4cdca8225d8ad95d6d27be2d603b9f4e9a755073f8c80d784706101d57a2cdd4",
+      "bytes": 4085
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_data/simulate.log",
+      "sha256": "7c51ac25a78e1cf0cd3b9eb9985f648836d9caf128d5424c943fdba4b7eb8714",
+      "bytes": 1015
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_data/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_ready/compile_sv.log",
+      "sha256": "8a18ce522a908cb1a6a696e26cf8df6073dfe1f94f018a4e8afeb07fb6aa0612",
+      "bytes": 331
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_ready/compile_v.log",
+      "sha256": "49a9c68f04f574268f585793aae028d7e0dddacf0fa4e0a0679727fda8c288fc",
+      "bytes": 277
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_ready/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_ready/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_ready/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_ready/inputs/elastic_stage.v",
+      "sha256": "f30d64e5c19b2ed4ec33dcaa045258204d1b257c8ad8f9a10638feca3c3f1252",
+      "bytes": 763
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_ready/inputs/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+      "bytes": 6019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_ready/result.json",
+      "sha256": "eaa489bb94c070891dfee5f9ef9b551ce18c10bb3a3c603d861cd52741fbc309",
+      "bytes": 4076
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_ready/simulate.log",
+      "sha256": "c4ee2b6540d2007efadb1af81c006867a7531bd3e3179e40001768a7b681a777",
+      "bytes": 1000
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/bad_ready/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/elastic/compile_sv.log",
+      "sha256": "483c71c0d677258637698d95f9a53ae482a95cc95ad8d698d25ccf026fb4757e",
+      "bytes": 329
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/elastic/compile_v.log",
+      "sha256": "0be7c8b975b3840d81535484d95bc5f3665e5cc89b2ac9b649f21c4bbc11726f",
+      "bytes": 275
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/elastic/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/elastic/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/elastic/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/elastic/inputs/elastic_stage.v",
+      "sha256": "b96f113a3dd5da3a6ddbb388adc44828fdb20cffd856a9f20fbcba5181d2a633",
+      "bytes": 756
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/elastic/inputs/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+      "bytes": 6019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/elastic/result.json",
+      "sha256": "961afe057115eb6c3559a1212213ced9fdce014d4b79644c0add92dbe3288a7a",
+      "bytes": 3957
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/elastic/simulate.log",
+      "sha256": "c25f64e9201b9e79b6ec1cc6fd57cca3036144b04440a66d42c00a94a437c9ef",
+      "bytes": 1153
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/elastic/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/fixtures/bad_data/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/fixtures/bad_data/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/fixtures/bad_data/elastic_stage.v",
+      "sha256": "d72fd8091e28ed8fe32874fce8b35c6ab4b6bbd2c941e6ca2507a44344be9ab9",
+      "bytes": 784
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/fixtures/bad_data/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+      "bytes": 6019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/fixtures/bad_ready/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/fixtures/bad_ready/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/fixtures/bad_ready/elastic_stage.v",
+      "sha256": "f30d64e5c19b2ed4ec33dcaa045258204d1b257c8ad8f9a10638feca3c3f1252",
+      "bytes": 763
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/fixtures/bad_ready/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+      "bytes": 6019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/fixtures/two_stage/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/fixtures/two_stage/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/fixtures/two_stage/elastic_stage.v",
+      "sha256": "a3e70dfe02200e91e411f8f6d41a38f54cd4ff1e839c20ab38b21b9388498b96",
+      "bytes": 1508
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/fixtures/two_stage/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+      "bytes": 6019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/pcm4/compile_sv.log",
+      "sha256": "c50950fe72d3e0ad33e15e8304e52ccf1273aaceb42ad3101a0a76903650de0d",
+      "bytes": 328
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/pcm4/compile_v.log",
+      "sha256": "4600e78ebdbfa3c8017d36db9bdd9133de8c266e01572d0afdc82160e1185e81",
+      "bytes": 280
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/pcm4/elaborate.log",
+      "sha256": "ebd90cf67c325474ef8524b82fb2a12daf08dd37e9ad5f991f3cbe367a7ed584",
+      "bytes": 902
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/pcm4/inputs/case.json",
+      "sha256": "3c3762d080e9bfc2ad496c4ad490d74c5f95d4e9401b3c4d8bd245fb1d33fc1a",
+      "bytes": 238
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/pcm4/inputs/contract.md",
+      "sha256": "54c975e57bd17484e3d175960a4c1431f9e017d8541539a75a0ca70eef50dc79",
+      "bytes": 1347
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/pcm4/inputs/pcm4_signext_pack.v",
+      "sha256": "85269ccd9991c80a2dbd507d342cc19d6e58517b9cc525520dce03b710df215a",
+      "bytes": 931
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/pcm4/inputs/tb_pcm4_skill.sv",
+      "sha256": "e35fcf8526373193977e1e7a261edb4e2b1e681a0c00efff732c8f2241be70b6",
+      "bytes": 1874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/pcm4/result.json",
+      "sha256": "e97307121a87dc2162a9fbb8355f67637b0c8089e14860d69d66fc7acfe5895b",
+      "bytes": 3914
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/pcm4/simulate.log",
+      "sha256": "321e2d7598d064f964ec27522352436a35ca81a570d239dc5bbd10396af223d3",
+      "bytes": 855
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/pcm4/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/restored/compile_sv.log",
+      "sha256": "38b31e92cbdf42f0154f5c762bc7368455666c85a4f7f4c005e55dbac88b546d",
+      "bytes": 330
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/restored/compile_v.log",
+      "sha256": "daac727825d4256277c4fd5bb7cc269197ec1285ac2efb709eabda4241021c0f",
+      "bytes": 276
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/restored/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/restored/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/restored/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/restored/inputs/elastic_stage.v",
+      "sha256": "b96f113a3dd5da3a6ddbb388adc44828fdb20cffd856a9f20fbcba5181d2a633",
+      "bytes": 756
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/restored/inputs/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+      "bytes": 6019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/restored/result.json",
+      "sha256": "b229fd49f56657000ec509cf9b519ee6332fe7364f526ecadcdb13b224077ca2",
+      "bytes": 3962
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/restored/simulate.log",
+      "sha256": "056415198e2fa3aca61dd18b4ae0000c3a515d90dc644686fa73d51a7c050ba0",
+      "bytes": 1154
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/restored/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/summary.json",
+      "sha256": "b53493d42d11c67749d724eb9fdb83724b5a16171cef0cd29789620b826328d7",
+      "bytes": 2400
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/two_stage/compile_sv.log",
+      "sha256": "766ed7fd2b9fd7bb397ed45a6e66b1de3c1db8c02e0f84acb5026749c6816f54",
+      "bytes": 331
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/two_stage/compile_v.log",
+      "sha256": "16d282407ecebada31410975e3fccd7bcd4632d2a8f87366c2a91408e27df1f7",
+      "bytes": 328
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/two_stage/elaborate.log",
+      "sha256": "b45646c5bb57ffd5d09dc2b31c00d0f1df91913c6a62fc67e45ac21a6d056100",
+      "bytes": 1006
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/two_stage/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/two_stage/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/two_stage/inputs/elastic_stage.v",
+      "sha256": "a3e70dfe02200e91e411f8f6d41a38f54cd4ff1e839c20ab38b21b9388498b96",
+      "bytes": 1508
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/two_stage/inputs/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+      "bytes": 6019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/two_stage/result.json",
+      "sha256": "b2bbb92bc4e854e569cab61e6cb1f534d87437cb43c64f6db7d2896d56cb81d4",
+      "bytes": 4080
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/two_stage/simulate.log",
+      "sha256": "1c36e2a0874808d31692dd7aea86ab1969bdf9fe66c3deece3c2655af969469c",
+      "bytes": 1003
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/examples-r2/two_stage/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-bad/compile_sv.log",
+      "sha256": "f822a34aa86cc81a85b2ff009b68d2a8f65c41b478c9d37117b2955e169e4a4d",
+      "bytes": 273
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-bad/compile_v.log",
+      "sha256": "7c34e69f21af8e5a4c0d2ea7dce319172c5040374d8c0b5f626484b846510f2c",
+      "bytes": 319
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-bad/elaborate.log",
+      "sha256": "7caa8d0a0c623070921f3f902f8ef507e4c2cdab66852cf76568e00b94a501bd",
+      "bytes": 691
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-bad/inputs/case.json",
+      "sha256": "7329e2f2aab7cb5b48c94c9538192cc77433336e2fe682db2b0789c204b6406c",
+      "bytes": 229
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-bad/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-bad/inputs/elastic_stage.v",
+      "sha256": "0c940023de1b899cb859b9a81f0a2e0258f6caaa1980bea33bf18a5f0a982a38",
+      "bytes": 1416
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-bad/inputs/tb_b_latency.sv",
+      "sha256": "7cbbbe11b7f64320071f20e6309331593cf4911b764b1645c80ae1c17ab16d82",
+      "bytes": 700
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-bad/result.json",
+      "sha256": "6dce274fac2d66315a4b07f2ee7a7e2e9aabff01596cb6b1677289fc3eea1652",
+      "bytes": 4009
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-bad/simulate.log",
+      "sha256": "7a518dd8f6e6d96dccc552ff423deb28d80f99c328047dc6d0c5cce31e1bc0e5",
+      "bytes": 1023
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-bad/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-good/compile_sv.log",
+      "sha256": "75fa8bc8347286767ae48481380dfe9d88d580123e8447103e5d1557342e460d",
+      "bytes": 274
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-good/compile_v.log",
+      "sha256": "7b5ea5c2f5063c72362e34e395a3d0eb36a66f2bfa3a5b947f9fb2c0e008cc41",
+      "bytes": 269
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-good/elaborate.log",
+      "sha256": "e533a25919dd75d9dfe275bae93208f67cba77d7efa66791f67ac03419baec48",
+      "bytes": 655
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-good/inputs/case.json",
+      "sha256": "7329e2f2aab7cb5b48c94c9538192cc77433336e2fe682db2b0789c204b6406c",
+      "bytes": 229
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-good/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-good/inputs/elastic_stage.v",
+      "sha256": "b96f113a3dd5da3a6ddbb388adc44828fdb20cffd856a9f20fbcba5181d2a633",
+      "bytes": 756
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-good/inputs/tb_b_latency.sv",
+      "sha256": "7cbbbe11b7f64320071f20e6309331593cf4911b764b1645c80ae1c17ab16d82",
+      "bytes": 700
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-good/result.json",
+      "sha256": "49ad00fc06b6fffee8911efb33be2fbd539b2d34709d36160cb2d5e6f8fee11a",
+      "bytes": 3985
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-good/simulate.log",
+      "sha256": "f78a369152e3f5c46ca62ebd7a411843c11408cc16fff5683d44ce8acd5ff087",
+      "bytes": 934
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-good/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-inputs.json",
+      "sha256": "19ceded4ae21dd5c494095f9f7168300d6e01ecfa9de7197ba33e108a30d886c",
+      "bytes": 3505
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-inputs/b-latency-original/case.json",
+      "sha256": "7329e2f2aab7cb5b48c94c9538192cc77433336e2fe682db2b0789c204b6406c",
+      "bytes": 229
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-inputs/b-latency-original/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-inputs/b-latency-original/elastic_stage.v",
+      "sha256": "b96f113a3dd5da3a6ddbb388adc44828fdb20cffd856a9f20fbcba5181d2a633",
+      "bytes": 756
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-inputs/b-latency-original/tb_b_latency.sv",
+      "sha256": "7cbbbe11b7f64320071f20e6309331593cf4911b764b1645c80ae1c17ab16d82",
+      "bytes": 700
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-inputs/b-latency-two-stage/case.json",
+      "sha256": "7329e2f2aab7cb5b48c94c9538192cc77433336e2fe682db2b0789c204b6406c",
+      "bytes": 229
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-inputs/b-latency-two-stage/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-inputs/b-latency-two-stage/elastic_stage.v",
+      "sha256": "0c940023de1b899cb859b9a81f0a2e0258f6caaa1980bea33bf18a5f0a982a38",
+      "bytes": 1416
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-inputs/b-latency-two-stage/tb_b_latency.sv",
+      "sha256": "7cbbbe11b7f64320071f20e6309331593cf4911b764b1645c80ae1c17ab16d82",
+      "bytes": 700
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-inputs/latency-mutant/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-inputs/latency-mutant/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-inputs/latency-mutant/elastic_stage.v",
+      "sha256": "0c940023de1b899cb859b9a81f0a2e0258f6caaa1980bea33bf18a5f0a982a38",
+      "bytes": 1416
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/b-inputs/latency-mutant/tb_elastic.sv",
+      "sha256": "3ce9f1752452442fb60d39417e283d3370b7ee59cba1a7bfa8cec01a3cc91f68",
+      "bytes": 3919
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/fixed-mutant/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/fixed-mutant/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/fixed-mutant/elastic_stage.v",
+      "sha256": "0c940023de1b899cb859b9a81f0a2e0258f6caaa1980bea33bf18a5f0a982a38",
+      "bytes": 1416
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/fixed-mutant/tb_elastic.sv",
+      "sha256": "14316172b257faf88ea6a5b4d5447e38ad909d1bf99315a60a3db8610f32c569",
+      "bytes": 5874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/new-tb/compile_sv.log",
+      "sha256": "ab8dab185278380caada0eb9a7f086bb131913aba88a9b0825544bba82919d7e",
+      "bytes": 323
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/new-tb/compile_v.log",
+      "sha256": "3b3a90d7fc227541b5f4b692d26fe066062bc47e6c448a04346f173063e3eebe",
+      "bytes": 320
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/new-tb/elaborate.log",
+      "sha256": "b45646c5bb57ffd5d09dc2b31c00d0f1df91913c6a62fc67e45ac21a6d056100",
+      "bytes": 1006
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/new-tb/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/new-tb/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/new-tb/inputs/elastic_stage.v",
+      "sha256": "0c940023de1b899cb859b9a81f0a2e0258f6caaa1980bea33bf18a5f0a982a38",
+      "bytes": 1416
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/new-tb/inputs/tb_elastic.sv",
+      "sha256": "14316172b257faf88ea6a5b4d5447e38ad909d1bf99315a60a3db8610f32c569",
+      "bytes": 5874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/new-tb/result.json",
+      "sha256": "fa41d5763c4064128930b599857ae8330d4263940e9a3fc2489ff2a143b9c8ec",
+      "bytes": 4016
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/new-tb/simulate.log",
+      "sha256": "79910cbe9a8103ae9a99e064e3c71efb0de9a8a8b58b139d72e5451a8c9b22bc",
+      "bytes": 995
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/new-tb/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/old-tb/compile_sv.log",
+      "sha256": "71437d63b40889369502ff044d6dcfe437935dc1599088ec49eca08e86b1911f",
+      "bytes": 323
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/old-tb/compile_v.log",
+      "sha256": "eb2781dc7b2cafe53f9dc542c2ed0fd6cb5ee63d9a20cb2ddf5b4fcb30c88913",
+      "bytes": 320
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/old-tb/elaborate.log",
+      "sha256": "b45646c5bb57ffd5d09dc2b31c00d0f1df91913c6a62fc67e45ac21a6d056100",
+      "bytes": 1006
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/old-tb/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/old-tb/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/old-tb/inputs/elastic_stage.v",
+      "sha256": "0c940023de1b899cb859b9a81f0a2e0258f6caaa1980bea33bf18a5f0a982a38",
+      "bytes": 1416
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/old-tb/inputs/tb_elastic.sv",
+      "sha256": "3ce9f1752452442fb60d39417e283d3370b7ee59cba1a7bfa8cec01a3cc91f68",
+      "bytes": 3919
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/old-tb/result.json",
+      "sha256": "4bfedf950aaf2fd73b293c242fbc354ef06afdf920a114de5542cf9db3983b6e",
+      "bytes": 3969
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/old-tb/simulate.log",
+      "sha256": "83f417c078fc42c98da024899fd6b3146d8f7b512af0825cca0c175275e6ded5",
+      "bytes": 946
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/old-tb/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r1/summary.json",
+      "sha256": "0aee9237c4d4eb8e0fefc757e0b1369d5fcfce658e186901c535bdff8f730ce9",
+      "bytes": 1551
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-bad/compile_sv.log",
+      "sha256": "3ebf2ef40165b0185d08f7f37241f5f0614ca01b79c2970f3fc817de8adcbf93",
+      "bytes": 273
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-bad/compile_v.log",
+      "sha256": "fdd33550d363f02d5bf5071764ec31eeaecc4376c3ef002fc77f0f892ba9b547",
+      "bytes": 319
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-bad/elaborate.log",
+      "sha256": "7caa8d0a0c623070921f3f902f8ef507e4c2cdab66852cf76568e00b94a501bd",
+      "bytes": 691
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-bad/inputs/case.json",
+      "sha256": "7329e2f2aab7cb5b48c94c9538192cc77433336e2fe682db2b0789c204b6406c",
+      "bytes": 229
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-bad/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-bad/inputs/elastic_stage.v",
+      "sha256": "0c940023de1b899cb859b9a81f0a2e0258f6caaa1980bea33bf18a5f0a982a38",
+      "bytes": 1416
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-bad/inputs/tb_b_latency.sv",
+      "sha256": "7cbbbe11b7f64320071f20e6309331593cf4911b764b1645c80ae1c17ab16d82",
+      "bytes": 700
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-bad/result.json",
+      "sha256": "7c126d8ff8698846cc6c6b24101f719c490db23d4fcf41a31e2be365f20c7d24",
+      "bytes": 4009
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-bad/simulate.log",
+      "sha256": "4d9011f01fd9c5101f1f18243d68fb7814995d11517f505f7de1b510f5fdc7db",
+      "bytes": 1023
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-bad/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-good/compile_sv.log",
+      "sha256": "aca5149c755ccc34820eece0a60f5cd43983b0e2ecbfd8f4933a1c352982f575",
+      "bytes": 274
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-good/compile_v.log",
+      "sha256": "4e80f31cbc974a655c28697d4ba9bb69a9c0a2a98723e201eea1946db7be4e51",
+      "bytes": 269
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-good/elaborate.log",
+      "sha256": "e533a25919dd75d9dfe275bae93208f67cba77d7efa66791f67ac03419baec48",
+      "bytes": 655
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-good/inputs/case.json",
+      "sha256": "7329e2f2aab7cb5b48c94c9538192cc77433336e2fe682db2b0789c204b6406c",
+      "bytes": 229
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-good/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-good/inputs/elastic_stage.v",
+      "sha256": "b96f113a3dd5da3a6ddbb388adc44828fdb20cffd856a9f20fbcba5181d2a633",
+      "bytes": 756
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-good/inputs/tb_b_latency.sv",
+      "sha256": "7cbbbe11b7f64320071f20e6309331593cf4911b764b1645c80ae1c17ab16d82",
+      "bytes": 700
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-good/result.json",
+      "sha256": "044b3c856a6c1d099803b77bb2e1cbcc3db1def8877fb080d7f2574c005e41b5",
+      "bytes": 3985
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-good/simulate.log",
+      "sha256": "e403c5f0b247b0dec2184a28750a6dd1b1fda0f7f1e44904820ece5200e0e6df",
+      "bytes": 934
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-good/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-inputs.json",
+      "sha256": "19ceded4ae21dd5c494095f9f7168300d6e01ecfa9de7197ba33e108a30d886c",
+      "bytes": 3505
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-inputs/b-latency-original/case.json",
+      "sha256": "7329e2f2aab7cb5b48c94c9538192cc77433336e2fe682db2b0789c204b6406c",
+      "bytes": 229
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-inputs/b-latency-original/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-inputs/b-latency-original/elastic_stage.v",
+      "sha256": "b96f113a3dd5da3a6ddbb388adc44828fdb20cffd856a9f20fbcba5181d2a633",
+      "bytes": 756
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-inputs/b-latency-original/tb_b_latency.sv",
+      "sha256": "7cbbbe11b7f64320071f20e6309331593cf4911b764b1645c80ae1c17ab16d82",
+      "bytes": 700
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-inputs/b-latency-two-stage/case.json",
+      "sha256": "7329e2f2aab7cb5b48c94c9538192cc77433336e2fe682db2b0789c204b6406c",
+      "bytes": 229
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-inputs/b-latency-two-stage/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-inputs/b-latency-two-stage/elastic_stage.v",
+      "sha256": "0c940023de1b899cb859b9a81f0a2e0258f6caaa1980bea33bf18a5f0a982a38",
+      "bytes": 1416
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-inputs/b-latency-two-stage/tb_b_latency.sv",
+      "sha256": "7cbbbe11b7f64320071f20e6309331593cf4911b764b1645c80ae1c17ab16d82",
+      "bytes": 700
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-inputs/latency-mutant/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-inputs/latency-mutant/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-inputs/latency-mutant/elastic_stage.v",
+      "sha256": "0c940023de1b899cb859b9a81f0a2e0258f6caaa1980bea33bf18a5f0a982a38",
+      "bytes": 1416
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/b-inputs/latency-mutant/tb_elastic.sv",
+      "sha256": "3ce9f1752452442fb60d39417e283d3370b7ee59cba1a7bfa8cec01a3cc91f68",
+      "bytes": 3919
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/fixed-mutant/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/fixed-mutant/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/fixed-mutant/elastic_stage.v",
+      "sha256": "0c940023de1b899cb859b9a81f0a2e0258f6caaa1980bea33bf18a5f0a982a38",
+      "bytes": 1416
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/fixed-mutant/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+      "bytes": 6019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/new-tb/compile_sv.log",
+      "sha256": "7bea67155a1865d80c64636d25fafc2430681015a46f11c0d942952adba463b5",
+      "bytes": 323
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/new-tb/compile_v.log",
+      "sha256": "5cf4565327c7199b761ff0ffe845afc57f33d0cf05660a52136f9e080f306807",
+      "bytes": 320
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/new-tb/elaborate.log",
+      "sha256": "b45646c5bb57ffd5d09dc2b31c00d0f1df91913c6a62fc67e45ac21a6d056100",
+      "bytes": 1006
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/new-tb/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/new-tb/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/new-tb/inputs/elastic_stage.v",
+      "sha256": "0c940023de1b899cb859b9a81f0a2e0258f6caaa1980bea33bf18a5f0a982a38",
+      "bytes": 1416
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/new-tb/inputs/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+      "bytes": 6019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/new-tb/result.json",
+      "sha256": "dda8e1b41fc0c391ab7873c6e7161e9cae86bcf7ab2735def0c1e4b8b13bca05",
+      "bytes": 4003
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/new-tb/simulate.log",
+      "sha256": "b6a2f27733235df479db9ba3241d37f41cfe90198d40695516f0026fba9ee39f",
+      "bytes": 995
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/new-tb/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/old-tb/compile_sv.log",
+      "sha256": "bbc0ae54ee0a175b3f4aefd7f4cfc9f22e17dd49c03d522f7778a4b51b32895a",
+      "bytes": 323
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/old-tb/compile_v.log",
+      "sha256": "a219ec3df6f189948990f568b6e98108f9659ea15bc01e9dc97048ba91af64c2",
+      "bytes": 320
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/old-tb/elaborate.log",
+      "sha256": "b45646c5bb57ffd5d09dc2b31c00d0f1df91913c6a62fc67e45ac21a6d056100",
+      "bytes": 1006
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/old-tb/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/old-tb/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/old-tb/inputs/elastic_stage.v",
+      "sha256": "0c940023de1b899cb859b9a81f0a2e0258f6caaa1980bea33bf18a5f0a982a38",
+      "bytes": 1416
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/old-tb/inputs/tb_elastic.sv",
+      "sha256": "3ce9f1752452442fb60d39417e283d3370b7ee59cba1a7bfa8cec01a3cc91f68",
+      "bytes": 3919
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/old-tb/result.json",
+      "sha256": "ff6fa5526e782fc78e1ae93947b083f17b3b7cd1c098c25d008d5583a3c5cab3",
+      "bytes": 3968
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/old-tb/simulate.log",
+      "sha256": "e2f1fa17e497f6e8d98a3b17dae7a2ce36fc7a03a8914d16ea73c727b1746c82",
+      "bytes": 946
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/old-tb/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/fix-r2/summary.json",
+      "sha256": "d75b3e81c990e96dbd52bad3174a103421efea96a9cb30c89de8b6c29856fdd7",
+      "bytes": 1551
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/capacity/compile_sv.log",
+      "sha256": "a765776ea0d1ae3632e2df592a67bf7adc752f5c11797de03f7a81ef22f8a779",
+      "bytes": 333
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/capacity/compile_v.log",
+      "sha256": "4059670f94fe168715072a1c79a679106970e1046d4a8218cd31ba5e7398ed5e",
+      "bytes": 279
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/capacity/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/capacity/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/capacity/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/capacity/inputs/elastic_stage.v",
+      "sha256": "1ec3ddd5d2da1ce1ceaab0f071061278f5aab5fccde883c1c1126ecc25988106",
+      "bytes": 758
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/capacity/inputs/tb_elastic.sv",
+      "sha256": "14316172b257faf88ea6a5b4d5447e38ad909d1bf99315a60a3db8610f32c569",
+      "bytes": 5874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/capacity/result.json",
+      "sha256": "93fb377bfff75724d1c9a71c10edf83357117c9e7a17e38537ac518cc0a3aba8",
+      "bytes": 4091
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/capacity/simulate.log",
+      "sha256": "3f18feebf50aab222cb0121477e430a5c698e59f3952a196061a1624dc3ed0c9",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/capacity/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/fixtures/capacity/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/fixtures/capacity/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/fixtures/capacity/elastic_stage.v",
+      "sha256": "1ec3ddd5d2da1ce1ceaab0f071061278f5aab5fccde883c1c1126ecc25988106",
+      "bytes": 758
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/fixtures/capacity/tb_elastic.sv",
+      "sha256": "14316172b257faf88ea6a5b4d5447e38ad909d1bf99315a60a3db8610f32c569",
+      "bytes": 5874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/fixtures/payload-x/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/fixtures/payload-x/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/fixtures/payload-x/elastic_stage.v",
+      "sha256": "3f97cee64d77b19782b071e6a4c0bff29bece066dfa9d40ab00989eb048ffb2b",
+      "bytes": 783
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/fixtures/payload-x/tb_elastic.sv",
+      "sha256": "14316172b257faf88ea6a5b4d5447e38ad909d1bf99315a60a3db8610f32c569",
+      "bytes": 5874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/fixtures/payload-z/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/fixtures/payload-z/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/fixtures/payload-z/elastic_stage.v",
+      "sha256": "d31214da51b620449f66598c47ce721067ee17fcd2ae6b7e687f1ffae647b245",
+      "bytes": 783
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/fixtures/payload-z/tb_elastic.sv",
+      "sha256": "14316172b257faf88ea6a5b4d5447e38ad909d1bf99315a60a3db8610f32c569",
+      "bytes": 5874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-x/compile_sv.log",
+      "sha256": "a7fb3cace66634dbe695a84bffed93b5648b74cb284ee59901624224ea033d00",
+      "bytes": 334
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-x/compile_v.log",
+      "sha256": "5bc9922debc16aa045fcda7585b3a02d0a3c206736cab9bd622801daa2f4c15a",
+      "bytes": 280
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-x/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-x/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-x/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-x/inputs/elastic_stage.v",
+      "sha256": "3f97cee64d77b19782b071e6a4c0bff29bece066dfa9d40ab00989eb048ffb2b",
+      "bytes": 783
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-x/inputs/tb_elastic.sv",
+      "sha256": "14316172b257faf88ea6a5b4d5447e38ad909d1bf99315a60a3db8610f32c569",
+      "bytes": 5874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-x/result.json",
+      "sha256": "1e994a2aa5c8addb3922e8966c9d242cfc77d95645463bf00411cb76df4e1314",
+      "bytes": 4101
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-x/simulate.log",
+      "sha256": "7b229dd1dfd9be1106e09ac4473ba1519eb2967fe9fd666b9e6c1bf7c69d0d12",
+      "bytes": 1019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-x/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-z/compile_sv.log",
+      "sha256": "d0b89e1dfcb701347d37ec5456cd16dac985e1070841e89c135ef1bc1aa78b51",
+      "bytes": 334
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-z/compile_v.log",
+      "sha256": "ce146abd87597a5459a1e569f518ebbcec38819891e00eb80cded91cce8bc2ed",
+      "bytes": 280
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-z/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-z/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-z/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-z/inputs/elastic_stage.v",
+      "sha256": "d31214da51b620449f66598c47ce721067ee17fcd2ae6b7e687f1ffae647b245",
+      "bytes": 783
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-z/inputs/tb_elastic.sv",
+      "sha256": "14316172b257faf88ea6a5b4d5447e38ad909d1bf99315a60a3db8610f32c569",
+      "bytes": 5874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-z/result.json",
+      "sha256": "3e6d54935d954d81aff4b9dcffa45fb72b9580772072f704585619280211f9f1",
+      "bytes": 4113
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-z/simulate.log",
+      "sha256": "1f4d7470036e0a0663e7c13563144f61d3f311dbfa50cf340d2e14d2ebc3dd06",
+      "bytes": 1019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/payload-z/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/structure/command.json",
+      "sha256": "af143deeac641a71f59cc3ab8f391379e415f208e09534add4aa1b21ff38fb13",
+      "bytes": 681
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/structure/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/structure/stdout.log",
+      "sha256": "6cf9e7f0d34ccd36dbd28f270cd28dd04277b2e1516bd4333ce7bb501d7b18d4",
+      "bytes": 17
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/summary.json",
+      "sha256": "a3461ed61713c427d2aa92e5a653841c8a48c014301d2105317887e268b462c7",
+      "bytes": 2708
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/unit/command.json",
+      "sha256": "175c6266ef1099fa4d926e809056d057addb3123739a8d7555bf8c9c1551e9af",
+      "bytes": 718
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/unit/stderr.log",
+      "sha256": "fed74e6981b466c497a3e80eb4b80ade82573e86eca2ed7b3a7b9aa95c0f5246",
+      "bytes": 648
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r1/unit/stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/capacity/compile_sv.log",
+      "sha256": "3fcdd818686ed094ea69494812325e99598a2234ef99bc78cf667ab635bb1edd",
+      "bytes": 333
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/capacity/compile_v.log",
+      "sha256": "54635d16c98a7ea2cff4b7f019dafd52b1ef00d46a1aa52d43363496960c02cd",
+      "bytes": 279
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/capacity/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/capacity/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/capacity/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/capacity/inputs/elastic_stage.v",
+      "sha256": "1ec3ddd5d2da1ce1ceaab0f071061278f5aab5fccde883c1c1126ecc25988106",
+      "bytes": 758
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/capacity/inputs/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+      "bytes": 6019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/capacity/result.json",
+      "sha256": "777c3d47d1d8a0c3e0785b2dbd8ce81a6a208eb9ceb46fa60cb9e42907d2d665",
+      "bytes": 4090
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/capacity/simulate.log",
+      "sha256": "28c6d21ccc51cc3d9af64ebd608adc033e27435f0db43fda84d13972b9bb385f",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/capacity/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/fixtures/capacity/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/fixtures/capacity/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/fixtures/capacity/elastic_stage.v",
+      "sha256": "1ec3ddd5d2da1ce1ceaab0f071061278f5aab5fccde883c1c1126ecc25988106",
+      "bytes": 758
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/fixtures/capacity/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+      "bytes": 6019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/fixtures/payload-x/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/fixtures/payload-x/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/fixtures/payload-x/elastic_stage.v",
+      "sha256": "3f97cee64d77b19782b071e6a4c0bff29bece066dfa9d40ab00989eb048ffb2b",
+      "bytes": 783
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/fixtures/payload-x/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+      "bytes": 6019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/fixtures/payload-z/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/fixtures/payload-z/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/fixtures/payload-z/elastic_stage.v",
+      "sha256": "d31214da51b620449f66598c47ce721067ee17fcd2ae6b7e687f1ffae647b245",
+      "bytes": 783
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/fixtures/payload-z/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+      "bytes": 6019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-x/compile_sv.log",
+      "sha256": "b0ffe53160771179d1b79961373b2518af9d501f8a315023b56c089c028d9f5d",
+      "bytes": 334
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-x/compile_v.log",
+      "sha256": "d1645f73e3af2f25e381472979e4fa5c684c1035ccf928a07dd865c8aa1094ef",
+      "bytes": 280
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-x/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-x/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-x/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-x/inputs/elastic_stage.v",
+      "sha256": "3f97cee64d77b19782b071e6a4c0bff29bece066dfa9d40ab00989eb048ffb2b",
+      "bytes": 783
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-x/inputs/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+      "bytes": 6019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-x/result.json",
+      "sha256": "d68066688d642b89aac1671712432658bdc12ed0213ac7d65562f3d0416e284f",
+      "bytes": 4099
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-x/simulate.log",
+      "sha256": "099bfccdd6c06043ff85f9a6248a8f13ac0fb3f863d4325442d20eae3d2e66c0",
+      "bytes": 1019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-x/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-z/compile_sv.log",
+      "sha256": "af72b9cbda148d82282035fd048f4848057e60f41792d402955eb4128896d472",
+      "bytes": 334
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-z/compile_v.log",
+      "sha256": "b0714421d876ba5fdb2b5594e5bb55e7a1fcf9f764a7b126a2779a4ab950e904",
+      "bytes": 280
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-z/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-z/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-z/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-z/inputs/elastic_stage.v",
+      "sha256": "d31214da51b620449f66598c47ce721067ee17fcd2ae6b7e687f1ffae647b245",
+      "bytes": 783
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-z/inputs/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+      "bytes": 6019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-z/result.json",
+      "sha256": "c128737a1ba306d587be49b9ae93de444d3a665e10bd0aa62a98e87d810a9d14",
+      "bytes": 4113
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-z/simulate.log",
+      "sha256": "4286e0720adb7206b4853acf84d852c38be3329f6cba50a7f9b969d871731dfc",
+      "bytes": 1019
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/payload-z/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/structure/command.json",
+      "sha256": "19b3202cec1308fa232cd8b96a92ad7449367292f3079af46d12850962cbc874",
+      "bytes": 681
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/structure/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/structure/stdout.log",
+      "sha256": "6cf9e7f0d34ccd36dbd28f270cd28dd04277b2e1516bd4333ce7bb501d7b18d4",
+      "bytes": 17
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/summary.json",
+      "sha256": "f425af7cc9db9787b6a3e3bcc31a5191e0ad0ae5974a237abd468fd2103776a9",
+      "bytes": 2708
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/unit/command.json",
+      "sha256": "c15261ce53fe996784c0e7a66ff345e24b8ebd4710aaaa362fad21340508616c",
+      "bytes": 718
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/unit/stderr.log",
+      "sha256": "d684f91868aab4c5d938f8828d88547d320f9575bae3c6df6c67f2b4a1f2ee8d",
+      "bytes": 648
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/regressions-r2/unit/stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/unit-tests.log",
+      "sha256": "59293b1b59e54fc575e2119d9e01ae1908d8972ac3fe3b773de5dc787e585cb2",
+      "bytes": 648
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_data/compile_sv.log",
+      "sha256": "3c9aa0f8fcda2ba83259fadafc024cc7d59e3b4a0de2f10b10c646941836dc2e",
+      "bytes": 303
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_data/compile_v.log",
+      "sha256": "3325a90ce767b08df1741dc489e15f1e4fb83641e0179a85925599e42cf89146",
+      "bytes": 249
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_data/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_data/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_data/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_data/inputs/elastic_stage.v",
+      "sha256": "d72fd8091e28ed8fe32874fce8b35c6ab4b6bbd2c941e6ca2507a44344be9ab9",
+      "bytes": 784
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_data/inputs/tb_elastic.sv",
+      "sha256": "81919f30d32f932859dd58566d84fa839a29c046844181b4b23196436e7fbe2a",
+      "bytes": 3852
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_data/result.json",
+      "sha256": "7dd1e335d7ea7dc7a1cfc7f0c0728686d09c4deb8a1b9e1ccb81dcf293fbb42f",
+      "bytes": 3685
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_data/simulate.log",
+      "sha256": "4062c95901215f4eff0ea241b57a73a927e7c1b1d2ba7379a92556704fdb3392",
+      "bytes": 954
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_data/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_ready/compile_sv.log",
+      "sha256": "21894100318cb55a4810dfeff75c139a8422e158be69abf617289df7f0401660",
+      "bytes": 304
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_ready/compile_v.log",
+      "sha256": "064c02b288bb4125662d4b56f25045778578b4b66c78f2a7d59671a5d6199246",
+      "bytes": 250
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_ready/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_ready/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_ready/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_ready/inputs/elastic_stage.v",
+      "sha256": "f30d64e5c19b2ed4ec33dcaa045258204d1b257c8ad8f9a10638feca3c3f1252",
+      "bytes": 763
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_ready/inputs/tb_elastic.sv",
+      "sha256": "81919f30d32f932859dd58566d84fa839a29c046844181b4b23196436e7fbe2a",
+      "bytes": 3852
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_ready/result.json",
+      "sha256": "764ffaf14c44392f6fd74e904d32c940d9a96ad756ad1b722095d57cdebfef81",
+      "bytes": 3650
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_ready/simulate.log",
+      "sha256": "5622b6d5edcac48b3e3a9d3e8a30273e6501206e2a4d1f34a74116121ec101ab",
+      "bytes": 927
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/bad_ready/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/elastic/compile_sv.log",
+      "sha256": "43b29b42fb8338b6866edcb8b4ca928cb4fa99c3e2e12014ae475bef565ab228",
+      "bytes": 302
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/elastic/compile_v.log",
+      "sha256": "4ca598a56be022e52bb69f5e39f3cb20cff70bb3d53e57b15489cf503ea727d7",
+      "bytes": 248
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/elastic/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/elastic/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/elastic/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/elastic/inputs/elastic_stage.v",
+      "sha256": "b96f113a3dd5da3a6ddbb388adc44828fdb20cffd856a9f20fbcba5181d2a633",
+      "bytes": 756
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/elastic/inputs/tb_elastic.sv",
+      "sha256": "81919f30d32f932859dd58566d84fa839a29c046844181b4b23196436e7fbe2a",
+      "bytes": 3852
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/elastic/result.json",
+      "sha256": "869a51575ae25845e4b0487c58356c7516c333af71119b72cbf4869ff2c07343",
+      "bytes": 3586
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/elastic/simulate.log",
+      "sha256": "0d0fffaabb295b3f9ba684b3eb2e7b7851bdc2e0ca6889899f68e4bdd7b4c7b1",
+      "bytes": 925
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/elastic/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/fixtures/bad_data/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/fixtures/bad_data/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/fixtures/bad_data/elastic_stage.v",
+      "sha256": "d72fd8091e28ed8fe32874fce8b35c6ab4b6bbd2c941e6ca2507a44344be9ab9",
+      "bytes": 784
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/fixtures/bad_data/tb_elastic.sv",
+      "sha256": "81919f30d32f932859dd58566d84fa839a29c046844181b4b23196436e7fbe2a",
+      "bytes": 3852
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/fixtures/bad_ready/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/fixtures/bad_ready/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/fixtures/bad_ready/elastic_stage.v",
+      "sha256": "f30d64e5c19b2ed4ec33dcaa045258204d1b257c8ad8f9a10638feca3c3f1252",
+      "bytes": 763
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/fixtures/bad_ready/tb_elastic.sv",
+      "sha256": "81919f30d32f932859dd58566d84fa839a29c046844181b4b23196436e7fbe2a",
+      "bytes": 3852
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/pcm4/compile_sv.log",
+      "sha256": "791a2011ead14fdc662a6d7c5e733d511bf1c4540e36a130df8a42f17a400cb5",
+      "bytes": 301
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/pcm4/compile_v.log",
+      "sha256": "d125e0d8612568004a9b9ae6e5deaa1c80d78fe49d97f1e49ccd3d8e21205bd5",
+      "bytes": 253
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/pcm4/elaborate.log",
+      "sha256": "ebd90cf67c325474ef8524b82fb2a12daf08dd37e9ad5f991f3cbe367a7ed584",
+      "bytes": 902
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/pcm4/inputs/case.json",
+      "sha256": "3c3762d080e9bfc2ad496c4ad490d74c5f95d4e9401b3c4d8bd245fb1d33fc1a",
+      "bytes": 238
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/pcm4/inputs/contract.md",
+      "sha256": "54c975e57bd17484e3d175960a4c1431f9e017d8541539a75a0ca70eef50dc79",
+      "bytes": 1347
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/pcm4/inputs/pcm4_signext_pack.v",
+      "sha256": "85269ccd9991c80a2dbd507d342cc19d6e58517b9cc525520dce03b710df215a",
+      "bytes": 931
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/pcm4/inputs/tb_pcm4_skill.sv",
+      "sha256": "e35fcf8526373193977e1e7a261edb4e2b1e681a0c00efff732c8f2241be70b6",
+      "bytes": 1874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/pcm4/result.json",
+      "sha256": "15fd7a857ebc829564b68d9fd630958ab6a753d35a18183410cd709af8b7962c",
+      "bytes": 3558
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/pcm4/simulate.log",
+      "sha256": "ab6578bd98cf747b87584179b87338e412650a680ddf1d0376804449a1fcee0b",
+      "bytes": 828
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/pcm4/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/restored/compile_sv.log",
+      "sha256": "f0ca4e271b231909912b1c6999fdd7daa4fbc83fc55169102ac8b7253b5e8859",
+      "bytes": 303
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/restored/compile_v.log",
+      "sha256": "dd0b9becbf8d1b2cdeba7cf28068ffe28517ef1ad6ffb31b3bdb6b80bcf1c042",
+      "bytes": 249
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/restored/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/restored/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/restored/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/restored/inputs/elastic_stage.v",
+      "sha256": "b96f113a3dd5da3a6ddbb388adc44828fdb20cffd856a9f20fbcba5181d2a633",
+      "bytes": 756
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/restored/inputs/tb_elastic.sv",
+      "sha256": "81919f30d32f932859dd58566d84fa839a29c046844181b4b23196436e7fbe2a",
+      "bytes": 3852
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/restored/result.json",
+      "sha256": "721f56ba9b62b7dafbc0241ad2b6dc9c8d943acbe56a78ba94a897d7cfaf4d46",
+      "bytes": 3591
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/restored/simulate.log",
+      "sha256": "60dbd97f532b2fa3ff78afa5a22b1c0364191a1d4a028b5e7216de210678d746",
+      "bytes": 926
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/restored/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-01/summary.json",
+      "sha256": "73a07496941b26bceeb334f42c846bb94d7e4ce468f7db0eeb2bfcdab79f7e18",
+      "bytes": 1934
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_data/compile_sv.log",
+      "sha256": "f50c23ed383d6587a45c635d66dc57ae9e8cccfa0e45f86664aefe296d5688a2",
+      "bytes": 303
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_data/compile_v.log",
+      "sha256": "ae928b291039303077b3fca9d2ebc3d7d7e76361d8b6298ee51de611ec4ce55c",
+      "bytes": 249
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_data/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_data/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_data/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_data/inputs/elastic_stage.v",
+      "sha256": "d72fd8091e28ed8fe32874fce8b35c6ab4b6bbd2c941e6ca2507a44344be9ab9",
+      "bytes": 784
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_data/inputs/tb_elastic.sv",
+      "sha256": "3ce9f1752452442fb60d39417e283d3370b7ee59cba1a7bfa8cec01a3cc91f68",
+      "bytes": 3919
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_data/result.json",
+      "sha256": "53be65bf2e068789c1ab93f72f1082a6879f00a3376d115d2e3e99b15fa78032",
+      "bytes": 3854
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_data/simulate.log",
+      "sha256": "a20f7e56178ae4113e7a04ce470d542f8e2329522c2406569de1593c9202ec49",
+      "bytes": 954
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_data/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_ready/compile_sv.log",
+      "sha256": "be95df4fdd7b006b800f8a28de3cb423adf4182bdd2bab24c7df08d7dd1ebc66",
+      "bytes": 304
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_ready/compile_v.log",
+      "sha256": "3b4393f44b477b5931a861aa7b1c1d03e57c9bb8fccb49e0d6edf382e18d86d5",
+      "bytes": 250
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_ready/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_ready/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_ready/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_ready/inputs/elastic_stage.v",
+      "sha256": "f30d64e5c19b2ed4ec33dcaa045258204d1b257c8ad8f9a10638feca3c3f1252",
+      "bytes": 763
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_ready/inputs/tb_elastic.sv",
+      "sha256": "3ce9f1752452442fb60d39417e283d3370b7ee59cba1a7bfa8cec01a3cc91f68",
+      "bytes": 3919
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_ready/result.json",
+      "sha256": "704408417f019e8201b885abaf66f73a14f26065398aebf46f127fe0ccca4143",
+      "bytes": 3831
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_ready/simulate.log",
+      "sha256": "9f777f5b9caf03b557fdcd1aa3432be219d6d0e23175d315b5517a825247ac5c",
+      "bytes": 927
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/bad_ready/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/elastic/compile_sv.log",
+      "sha256": "1341b2132c5255a1a9e534bc30da8ea08e6de08b6de5c6b428b2c5887e65cc08",
+      "bytes": 302
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/elastic/compile_v.log",
+      "sha256": "104017d0c0959cdb621cdb8c2a4c503d7601364c8aec6e925b71e70e787ecb1d",
+      "bytes": 248
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/elastic/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/elastic/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/elastic/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/elastic/inputs/elastic_stage.v",
+      "sha256": "b96f113a3dd5da3a6ddbb388adc44828fdb20cffd856a9f20fbcba5181d2a633",
+      "bytes": 756
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/elastic/inputs/tb_elastic.sv",
+      "sha256": "3ce9f1752452442fb60d39417e283d3370b7ee59cba1a7bfa8cec01a3cc91f68",
+      "bytes": 3919
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/elastic/result.json",
+      "sha256": "8374435b4f612d7d405cc19ce3e7328123eb0af7fc89b063f2f78a607ce935a6",
+      "bytes": 3743
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/elastic/simulate.log",
+      "sha256": "545d88a8932d71d7b70f331134b1297916bb23d571106661b4bf671286bb4696",
+      "bytes": 925
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/elastic/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/fixtures/bad_data/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/fixtures/bad_data/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/fixtures/bad_data/elastic_stage.v",
+      "sha256": "d72fd8091e28ed8fe32874fce8b35c6ab4b6bbd2c941e6ca2507a44344be9ab9",
+      "bytes": 784
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/fixtures/bad_data/tb_elastic.sv",
+      "sha256": "3ce9f1752452442fb60d39417e283d3370b7ee59cba1a7bfa8cec01a3cc91f68",
+      "bytes": 3919
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/fixtures/bad_ready/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/fixtures/bad_ready/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/fixtures/bad_ready/elastic_stage.v",
+      "sha256": "f30d64e5c19b2ed4ec33dcaa045258204d1b257c8ad8f9a10638feca3c3f1252",
+      "bytes": 763
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/fixtures/bad_ready/tb_elastic.sv",
+      "sha256": "3ce9f1752452442fb60d39417e283d3370b7ee59cba1a7bfa8cec01a3cc91f68",
+      "bytes": 3919
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/pcm4/compile_sv.log",
+      "sha256": "1250b6b6113be5410bda3015fb10bad7617376b8383ae349361e1b7c75e5a6a9",
+      "bytes": 301
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/pcm4/compile_v.log",
+      "sha256": "3ebc00e9e1207f50ef1dd97a8d824f2ab0f5cb650631d91ee15b93d01aeeb1b3",
+      "bytes": 253
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/pcm4/elaborate.log",
+      "sha256": "ebd90cf67c325474ef8524b82fb2a12daf08dd37e9ad5f991f3cbe367a7ed584",
+      "bytes": 902
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/pcm4/inputs/case.json",
+      "sha256": "3c3762d080e9bfc2ad496c4ad490d74c5f95d4e9401b3c4d8bd245fb1d33fc1a",
+      "bytes": 238
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/pcm4/inputs/contract.md",
+      "sha256": "54c975e57bd17484e3d175960a4c1431f9e017d8541539a75a0ca70eef50dc79",
+      "bytes": 1347
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/pcm4/inputs/pcm4_signext_pack.v",
+      "sha256": "85269ccd9991c80a2dbd507d342cc19d6e58517b9cc525520dce03b710df215a",
+      "bytes": 931
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/pcm4/inputs/tb_pcm4_skill.sv",
+      "sha256": "e35fcf8526373193977e1e7a261edb4e2b1e681a0c00efff732c8f2241be70b6",
+      "bytes": 1874
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/pcm4/result.json",
+      "sha256": "96f318ce7d80f4424100559cfa463c63e194921ef7621c127fe68e1452492a93",
+      "bytes": 3725
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/pcm4/simulate.log",
+      "sha256": "1434bd48a596b7b13622a748decb1a0aad18b997b21b0249989342aa93dfbaf7",
+      "bytes": 828
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/pcm4/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/restored/compile_sv.log",
+      "sha256": "44ac59bc9ff875762b60045491c67f630deb22f0342e4f1e5decb24266f24249",
+      "bytes": 303
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/restored/compile_v.log",
+      "sha256": "fb9edc9f56d208be2aef422daddea98a56a240f5183513613585edf720d054af",
+      "bytes": 249
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/restored/elaborate.log",
+      "sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6",
+      "bytes": 879
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/restored/inputs/case.json",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "bytes": 203
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/restored/inputs/contract.md",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "bytes": 1002
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/restored/inputs/elastic_stage.v",
+      "sha256": "b96f113a3dd5da3a6ddbb388adc44828fdb20cffd856a9f20fbcba5181d2a633",
+      "bytes": 756
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/restored/inputs/tb_elastic.sv",
+      "sha256": "3ce9f1752452442fb60d39417e283d3370b7ee59cba1a7bfa8cec01a3cc91f68",
+      "bytes": 3919
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/restored/result.json",
+      "sha256": "0c040857ac0809a5e14719288de3bb8689031383feb77f30150a89f0295a656d",
+      "bytes": 3759
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/restored/simulate.log",
+      "sha256": "8b5e896549f13f490e3e6d18b8e79e98aa4d9f22b2543ba87da646d1185722b0",
+      "bytes": 926
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/restored/version.log",
+      "sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2",
+      "bytes": 27
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/evidence/xsim-02/summary.json",
+      "sha256": "f09aff8d82a05a655726bb40656f5018c31690f103a975b00db63de67a51c227",
+      "bytes": 1934
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/manifest.json",
+      "sha256": "3616a97dcea37793e0e2e0017c6874ae0d57fa213ff99240b9f15791b2a6bb22",
+      "bytes": 25894
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/README.md",
+      "sha256": "2505c401b1f376f949d9b05136551aee20d79fb12d9dac0c6b590c6ca612fbd4",
+      "bytes": 2129
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/REPAIR-S1.md",
+      "sha256": "47efa30ca12ece902fa113a9977c1e30881b83be51ab4d5b7fa9fc250c3addc8",
+      "bytes": 5102
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/replay_s1.py",
+      "sha256": "fb1e16c83cf706e4cb2b18ccb44b6b7aac9f1f83bff110369c5997690ed77ce2",
+      "bytes": 3350
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/report-material.md",
+      "sha256": "cc1e0ce38bb857c36e61abc52536aa208f554da9cb167ebc1f62fb1341ab25e0",
+      "bytes": 1940
+    },
+    {
+      "path": "task-packages/PKG-A-SKILLS/REVIEW.md",
+      "sha256": "175f8cc06774f11bb34ad07739e3a8ec247012f2150dc0aae2fde7ec226070bc",
+      "bytes": 1912
+    }
+  ],
+  "excludes": [
+    "task-packages/PKG-A-SKILLS/repair-manifest.json",
+    "__pycache__/",
+    "26 newly generated reproducible work caches removed; inputs/logs retained"
+  ]
+}

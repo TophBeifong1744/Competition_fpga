@@ -1,0 +1,47 @@
+{
+  "review_commit": "0ef0355642ea8719d5e4cdde0a38c531550218d4",
+  "scope": "AUTHOR_SELF_TEST_NOT_B_ACCEPTANCE",
+  "script_sha256": "fb1e16c83cf706e4cb2b18ccb44b6b7aac9f1f83bff110369c5997690ed77ce2",
+  "runs": [
+    {
+      "name": "old-tb",
+      "expected": "PASS_SIMULATION",
+      "status": "PASS_SIMULATION",
+      "exit_code": 0,
+      "matched": true,
+      "checks": 1149,
+      "first_failure": null,
+      "result_sha256": "4bfedf950aaf2fd73b293c242fbc354ef06afdf920a114de5542cf9db3983b6e"
+    },
+    {
+      "name": "new-tb",
+      "expected": "FAIL_SIMULATION",
+      "status": "FAIL_SIMULATION",
+      "exit_code": 1,
+      "matched": true,
+      "checks": null,
+      "first_failure": "Fatal: SKILL_FAIL one_edge_valid width=1 cycle=2 after_edge=1 expected=1 actual=0",
+      "result_sha256": "fa41d5763c4064128930b599857ae8330d4263940e9a3fc2489ff2a143b9c8ec"
+    },
+    {
+      "name": "b-good",
+      "expected": "PASS_SIMULATION",
+      "status": "PASS_SIMULATION",
+      "exit_code": 0,
+      "matched": true,
+      "checks": 2,
+      "first_failure": null,
+      "result_sha256": "49ad00fc06b6fffee8911efb33be2fbd539b2d34709d36160cb2d5e6f8fee11a"
+    },
+    {
+      "name": "b-bad",
+      "expected": "FAIL_SIMULATION",
+      "status": "FAIL_SIMULATION",
+      "exit_code": 1,
+      "matched": true,
+      "checks": null,
+      "first_failure": "Fatal: SKILL_FAIL one-edge latency",
+      "result_sha256": "6dce274fac2d66315a4b07f2ee7a7e2e9aabff01596cb6b1677289fc3eea1652"
+    }
+  ]
+}
