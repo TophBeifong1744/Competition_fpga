@@ -1,0 +1,102 @@
+{
+  "status": "PASS_SIMULATION",
+  "stage": "simulate",
+  "evidence_class": "rtl_simulation",
+  "not_run": [
+    "synthesis",
+    "timing",
+    "cdc",
+    "board",
+    "system"
+  ],
+  "runner_sha256": "80eabf73d614898636fcc599844c714480987cea66ee9e0bdbbc710f36a144e6",
+  "commands": [
+    {
+      "stage": "version",
+      "argv": [
+        "F:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "--version"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix\\task-packages\\PKG-A-SKILLS\\evidence\\fix-r1\\b-good\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2"
+    },
+    {
+      "stage": "compile_v",
+      "argv": [
+        "F:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "elastic_stage.v"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix\\task-packages\\PKG-A-SKILLS\\evidence\\fix-r1\\b-good\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "7b5ea5c2f5063c72362e34e395a3d0eb36a66f2bfa3a5b947f9fb2c0e008cc41"
+    },
+    {
+      "stage": "compile_sv",
+      "argv": [
+        "F:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "--sv",
+        "tb_b_latency.sv"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix\\task-packages\\PKG-A-SKILLS\\evidence\\fix-r1\\b-good\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "75fa8bc8347286767ae48481380dfe9d88d580123e8447103e5d1557342e460d"
+    },
+    {
+      "stage": "elaborate",
+      "argv": [
+        "F:\\AMD\\2025.2\\Vivado\\bin\\xelab.bat",
+        "work.tb_b_latency",
+        "-s",
+        "module_test",
+        "-timescale",
+        "1ns/1ps"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix\\task-packages\\PKG-A-SKILLS\\evidence\\fix-r1\\b-good\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "e533a25919dd75d9dfe275bae93208f67cba77d7efa66791f67ac03419baec48"
+    },
+    {
+      "stage": "simulate",
+      "argv": [
+        "F:\\AMD\\2025.2\\Vivado\\bin\\xsim.bat",
+        "module_test",
+        "-runall",
+        "-log",
+        "xsim.log"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix\\task-packages\\PKG-A-SKILLS\\evidence\\fix-r1\\b-good\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "f78a369152e3f5c46ca62ebd7a411843c11408cc16fff5683d44ce8acd5ff087"
+    }
+  ],
+  "sources": [
+    {
+      "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix\\task-packages\\PKG-A-SKILLS\\evidence\\fix-r1\\b-inputs\\b-latency-original\\elastic_stage.v",
+      "snapshot": "inputs/elastic_stage.v",
+      "sha256": "b96f113a3dd5da3a6ddbb388adc44828fdb20cffd856a9f20fbcba5181d2a633"
+    },
+    {
+      "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix\\task-packages\\PKG-A-SKILLS\\evidence\\fix-r1\\b-inputs\\b-latency-original\\tb_b_latency.sv",
+      "snapshot": "inputs/tb_b_latency.sv",
+      "sha256": "7cbbbe11b7f64320071f20e6309331593cf4911b764b1645c80ae1c17ab16d82"
+    }
+  ],
+  "started_utc": "2026-09-14T09:32:34.215408+00:00",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "win32",
+  "name": "b_latency",
+  "top": "tb_b_latency",
+  "expected_tool_version": "2025.2",
+  "manifest_sha256": "7329e2f2aab7cb5b48c94c9538192cc77433336e2fe682db2b0789c204b6406c",
+  "vivado_bin": "F:\\AMD\\2025.2\\Vivado\\bin",
+  "contract_sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+  "cases": 1,
+  "checks": 2,
+  "elapsed_seconds": 7.203000000001339
+}

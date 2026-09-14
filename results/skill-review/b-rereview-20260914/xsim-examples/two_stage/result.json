@@ -1,0 +1,101 @@
+{
+  "status": "FAIL_SIMULATION",
+  "stage": "simulate",
+  "evidence_class": "rtl_simulation",
+  "not_run": [
+    "synthesis",
+    "timing",
+    "cdc",
+    "board",
+    "system"
+  ],
+  "runner_sha256": "80eabf73d614898636fcc599844c714480987cea66ee9e0bdbbc710f36a144e6",
+  "commands": [
+    {
+      "stage": "version",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "--version"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-rereview-20260914\\xsim-examples\\two_stage\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2"
+    },
+    {
+      "stage": "compile_v",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "elastic_stage.v"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-rereview-20260914\\xsim-examples\\two_stage\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "2297d99d9b5162961f290321bd5d6615c66a201e227b3f158fb578b7c8627bc4"
+    },
+    {
+      "stage": "compile_sv",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "--sv",
+        "tb_elastic.sv"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-rereview-20260914\\xsim-examples\\two_stage\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "4e926e6d0b67e47171471f9847aafe197410d87720ca7e727d74341347006582"
+    },
+    {
+      "stage": "elaborate",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xelab.bat",
+        "work.tb_elastic",
+        "-s",
+        "module_test",
+        "-timescale",
+        "1ns/1ps"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-rereview-20260914\\xsim-examples\\two_stage\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "dcd39b82245004788c950935225270dc5b37b3827efb7e2cb855394e805cf902"
+    },
+    {
+      "stage": "simulate",
+      "argv": [
+        "D:\\AMD\\2025.2\\Vivado\\bin\\xsim.bat",
+        "module_test",
+        "-runall",
+        "-log",
+        "xsim.log"
+      ],
+      "cwd": "F:\\NUEC\\review-evidence\\skills-b-rereview-20260914\\xsim-examples\\two_stage\\work",
+      "returncode": 0,
+      "timed_out": false,
+      "log_sha256": "2f8a9cf13599e2eaef38361698b3a9f999f7e0636fef17f536a8ed6af87cd1fc"
+    }
+  ],
+  "sources": [
+    {
+      "path": "F:\\NUEC\\review-evidence\\skills-b-rereview-20260914\\xsim-examples\\fixtures\\two_stage\\elastic_stage.v",
+      "snapshot": "inputs/elastic_stage.v",
+      "sha256": "a3e70dfe02200e91e411f8f6d41a38f54cd4ff1e839c20ab38b21b9388498b96"
+    },
+    {
+      "path": "F:\\NUEC\\review-evidence\\skills-b-rereview-20260914\\xsim-examples\\fixtures\\two_stage\\tb_elastic.sv",
+      "snapshot": "inputs/tb_elastic.sv",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7"
+    }
+  ],
+  "started_utc": "2026-09-14T10:38:42.292850+00:00",
+  "python_version": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]",
+  "platform": "win32",
+  "name": "elastic",
+  "top": "tb_elastic",
+  "expected_tool_version": "2025.2",
+  "manifest_sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+  "vivado_bin": "D:\\AMD\\2025.2\\Vivado\\bin",
+  "contract_sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+  "first_failure": "Fatal: SKILL_FAIL one_edge_valid width=1 cycle=2 after_edge=1 expected=1 actual=0",
+  "elapsed_seconds": 21.68613650000043
+}

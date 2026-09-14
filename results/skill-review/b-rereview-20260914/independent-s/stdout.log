@@ -1,0 +1,66 @@
+[
+  {
+    "name": "b-two-stage-new-tb",
+    "passed": true,
+    "exit_code": 1,
+    "status": "FAIL_SIMULATION",
+    "checks": null,
+    "first_failure": "Fatal: SKILL_FAIL one_edge_valid width=1 cycle=2 after_edge=1 expected=1 actual=0"
+  },
+  {
+    "name": "b-witness-correct",
+    "passed": true,
+    "exit_code": 0,
+    "status": "PASS_SIMULATION",
+    "checks": 2,
+    "first_failure": null
+  },
+  {
+    "name": "b-witness-two-stage",
+    "passed": true,
+    "exit_code": 1,
+    "status": "FAIL_SIMULATION",
+    "checks": null,
+    "first_failure": "Fatal: SKILL_FAIL one-edge latency"
+  },
+  {
+    "name": "reset-ready-low",
+    "passed": true,
+    "exit_code": 0,
+    "status": "PASS_SIMULATION",
+    "checks": 13800,
+    "first_failure": null
+  },
+  {
+    "name": "full-slot-ready",
+    "passed": true,
+    "exit_code": 1,
+    "status": "FAIL_SIMULATION",
+    "checks": null,
+    "first_failure": "Fatal: SKILL_FAIL slot_ready width=1 cycle=2 after_edge=1 occupancy=1 actual=1"
+  },
+  {
+    "name": "payload-x",
+    "passed": true,
+    "exit_code": 1,
+    "status": "FAIL_SIMULATION",
+    "checks": null,
+    "first_failure": "Fatal: SKILL_FAIL one_edge_data width=1 cycle=2 after_edge=1 transaction=0 expected=1 actual=x"
+  },
+  {
+    "name": "payload-z",
+    "passed": true,
+    "exit_code": 1,
+    "status": "FAIL_SIMULATION",
+    "checks": null,
+    "first_failure": "Fatal: SKILL_FAIL one_edge_data width=1 cycle=2 after_edge=1 transaction=0 expected=1 actual=z"
+  },
+  {
+    "name": "valid-x",
+    "passed": true,
+    "exit_code": 1,
+    "status": "FAIL_SIMULATION",
+    "checks": null,
+    "first_failure": "Fatal: SKILL_FAIL one_edge_valid width=1 cycle=2 after_edge=1 expected=1 actual=x"
+  }
+]

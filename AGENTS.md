@@ -1,6 +1,6 @@
 # SoundSight 协作约定
 
-2026-09-14 B 修复复核更新：SKL-002 准确 3ac597d 获限定离线 PASS 并接入活动目录；真实 PYNQ 未准入。SKL-001 修复仍在独立复核。下文关于 main 旧 PYNQ 基线的文字属于此前发布记录，当前以 docs/maintenance/skills-rereview-b-2026-09-14.md 与 skill/README.md 为准。
+2026-09-14 B 修复复核更新：SKL-002 准确 3ac597d 获限定离线 PASS 并接入活动目录；真实 PYNQ 未准入。SKL-001 准确 a7e1ea9 也已获得限定模块仿真 PASS，按准确范围单独接入。下文关于 main 旧 PYNQ 基线的文字属于此前发布记录，当前以 docs/maintenance/skills-rereview-b-2026-09-14.md 与 skill/README.md 为准。
 
 使用中文沟通，保留用户及其他任务未提交工作。不要切换/重置脏共享工作区，不把作者自检当独立验收，不把归档合并当整机通过。
 

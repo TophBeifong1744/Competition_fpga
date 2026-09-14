@@ -1,0 +1,61 @@
+{
+  "scope": "AUTHOR_SELF_TEST_NOT_B_ACCEPTANCE",
+  "script_sha256": "50f4426eb8f7644d7ad7a6a1a4d31d0efde05d6d47964df0fc30d1edbdca7b90",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "checks": [
+    {
+      "name": "unit",
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix\\skill\\fpga-module-verification\\tests",
+        "-v"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix",
+      "exit_code": 0,
+      "recorded_utc": "2026-09-14T09:42:41.154346+00:00",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "d684f91868aab4c5d938f8828d88547d320f9575bae3c6df6c67f2b4a1f2ee8d"
+    },
+    {
+      "name": "structure",
+      "argv": [
+        "C:/Python314/python.exe",
+        "-X",
+        "utf8",
+        "C:\\Users\\Toph Beifong\\.codex\\skills\\.system\\skill-creator\\scripts\\quick_validate.py",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix\\skill\\fpga-module-verification"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\skl001-fix",
+      "exit_code": 0,
+      "recorded_utc": "2026-09-14T09:42:41.238574+00:00",
+      "stdout_sha256": "6cf9e7f0d34ccd36dbd28f270cd28dd04277b2e1516bd4333ce7bb501d7b18d4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "payload-x",
+      "matched": true,
+      "status": "FAIL_SIMULATION",
+      "first_failure": "Fatal: SKILL_FAIL one_edge_data width=1 cycle=2 after_edge=1 transaction=0 expected=1 actual=x",
+      "result_sha256": "d68066688d642b89aac1671712432658bdc12ed0213ac7d65562f3d0416e284f"
+    },
+    {
+      "name": "payload-z",
+      "matched": true,
+      "status": "FAIL_SIMULATION",
+      "first_failure": "Fatal: SKILL_FAIL one_edge_data width=1 cycle=2 after_edge=1 transaction=0 expected=1 actual=z",
+      "result_sha256": "c128737a1ba306d587be49b9ae93de444d3a665e10bd0aa62a98e87d810a9d14"
+    },
+    {
+      "name": "capacity",
+      "matched": true,
+      "status": "FAIL_SIMULATION",
+      "first_failure": "Fatal: SKILL_FAIL slot_ready width=1 cycle=2 after_edge=1 occupancy=1 actual=1",
+      "result_sha256": "777c3d47d1d8a0c3e0785b2dbd8ce81a6a208eb9ceb46fa60cb9e42907d2d665"
+    }
+  ]
+}

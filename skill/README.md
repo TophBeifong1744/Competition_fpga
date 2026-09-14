@@ -1,13 +1,13 @@
 # Competition Skills Index
 
-SKL-002 has independent B approval for its offline implementation; SKL-001 repair review is in progress. Skill execution, author tests, B approval and main publication are separate; neither Skill proves full FPGA-system or board acceptance.
+Both Skills have independent B approval at the limited scopes below. Skill execution, author tests, B approval and main publication are separate; neither Skill proves full FPGA-system or board acceptance.
 
 | ID / Skill | Actual purpose | Current status |
 | --- | --- | --- |
-| SKL-001 [fpga-module-verification candidate](../docs/maintenance/skills-publication-2026-09-14.md#skl-001) | Module contract, RTL/self-checking TB development, real XSim execution, first failure and repair/retest | 0.3.0 author candidate: 792/1125 normal checks, two rejected DUT faults and restored PASS; B held-out use/review pending |
+| SKL-001 [fpga-module-verification](fpga-module-verification/README.md) | Module contract, RTL/self-checking TB development, real XSim execution, first failure and repair/retest | B PASS (module simulation), exact a7e1ea9; PCM 792 / elastic 13800 checks; S1 timing/capacity fault independently rejected |
 | SKL-002 [pynq-overlay-dma-validation](pynq-overlay-dma-validation/README.md) | Profile-driven Overlay checks and mock DMA lifecycle validation | B PASS (offline only), exact 3ac597d; 55 tests / 57 subtests and 14 independent sessions; real PYNQ NOT_RUN |
 
-Approval and evidence: [B repair review](../docs/maintenance/skills-rereview-b-2026-09-14.md). SKL-002 is active at its approved offline scope. SKL-001 remains on its exact repaired candidate until its separate decision. Historical candidate publication records remain unchanged below their current-status notice.
+Approval and evidence: [B repair review](../docs/maintenance/skills-rereview-b-2026-09-14.md). SKL-002 is active at its approved offline scope. SKL-001 is active at its approved module simulation scope. Historical candidate publication records remain unchanged below their current-status notice.
 
 Use the [delivery/acceptance plan](../docs/skills-delivery-plan.md) for requirements, dates, ownership, limitations, licensing and submission export. A develops, B independently reviews; C has no additional Skill task. Full source/test/effect/provenance and visible AI correction records are needed, not just README files. Generic PYNQ bonus is explicitly in the guide; no fixed score is guaranteed.
 

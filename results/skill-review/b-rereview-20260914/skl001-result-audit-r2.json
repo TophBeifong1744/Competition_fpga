@@ -1,0 +1,1142 @@
+[
+  {
+    "path": "s-independent/b-two-stage-new-tb/run/result.json",
+    "status": "FAIL_SIMULATION",
+    "stage": "simulate",
+    "checks_count": null,
+    "accounting": [],
+    "checks": [
+      {
+        "kind": "log",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "simulate",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/elastic_stage.v",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/tb_elastic.sv",
+        "passed": true
+      },
+      {
+        "kind": "runner",
+        "passed": true
+      },
+      {
+        "kind": "tool_version",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "path": "s-independent/b-witness-correct/run/result.json",
+    "status": "PASS_SIMULATION",
+    "stage": "simulate",
+    "checks_count": 2,
+    "accounting": [],
+    "checks": [
+      {
+        "kind": "log",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "simulate",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/elastic_stage.v",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/tb_b_latency.sv",
+        "passed": true
+      },
+      {
+        "kind": "runner",
+        "passed": true
+      },
+      {
+        "kind": "tool_version",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "path": "s-independent/b-witness-two-stage/run/result.json",
+    "status": "FAIL_SIMULATION",
+    "stage": "simulate",
+    "checks_count": null,
+    "accounting": [],
+    "checks": [
+      {
+        "kind": "log",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "simulate",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/elastic_stage.v",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/tb_b_latency.sv",
+        "passed": true
+      },
+      {
+        "kind": "runner",
+        "passed": true
+      },
+      {
+        "kind": "tool_version",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "path": "s-independent/full-slot-ready/run/result.json",
+    "status": "FAIL_SIMULATION",
+    "stage": "simulate",
+    "checks_count": null,
+    "accounting": [],
+    "checks": [
+      {
+        "kind": "log",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "simulate",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/elastic_stage.v",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/tb_elastic.sv",
+        "passed": true
+      },
+      {
+        "kind": "runner",
+        "passed": true
+      },
+      {
+        "kind": "tool_version",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "path": "s-independent/payload-x/run/result.json",
+    "status": "FAIL_SIMULATION",
+    "stage": "simulate",
+    "checks_count": null,
+    "accounting": [],
+    "checks": [
+      {
+        "kind": "log",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "simulate",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/elastic_stage.v",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/tb_elastic.sv",
+        "passed": true
+      },
+      {
+        "kind": "runner",
+        "passed": true
+      },
+      {
+        "kind": "tool_version",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "path": "s-independent/payload-z/run/result.json",
+    "status": "FAIL_SIMULATION",
+    "stage": "simulate",
+    "checks_count": null,
+    "accounting": [],
+    "checks": [
+      {
+        "kind": "log",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "simulate",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/elastic_stage.v",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/tb_elastic.sv",
+        "passed": true
+      },
+      {
+        "kind": "runner",
+        "passed": true
+      },
+      {
+        "kind": "tool_version",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "path": "s-independent/reset-ready-low/run/result.json",
+    "status": "PASS_SIMULATION",
+    "stage": "simulate",
+    "checks_count": 13800,
+    "accounting": [
+      [
+        "1",
+        "177",
+        "176",
+        "1",
+        "0"
+      ],
+      [
+        "8",
+        "177",
+        "176",
+        "1",
+        "0"
+      ],
+      [
+        "16",
+        "177",
+        "176",
+        "1",
+        "0"
+      ]
+    ],
+    "checks": [
+      {
+        "kind": "log",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "simulate",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/elastic_stage.v",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/tb_elastic.sv",
+        "passed": true
+      },
+      {
+        "kind": "runner",
+        "passed": true
+      },
+      {
+        "kind": "tool_version",
+        "passed": true
+      },
+      {
+        "kind": "actual_accounting",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "path": "s-independent/valid-x/run/result.json",
+    "status": "FAIL_SIMULATION",
+    "stage": "simulate",
+    "checks_count": null,
+    "accounting": [],
+    "checks": [
+      {
+        "kind": "log",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "simulate",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/elastic_stage.v",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/tb_elastic.sv",
+        "passed": true
+      },
+      {
+        "kind": "runner",
+        "passed": true
+      },
+      {
+        "kind": "tool_version",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "path": "xsim-examples/bad_data/result.json",
+    "status": "FAIL_SIMULATION",
+    "stage": "simulate",
+    "checks_count": null,
+    "accounting": [],
+    "checks": [
+      {
+        "kind": "log",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "simulate",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/elastic_stage.v",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/tb_elastic.sv",
+        "passed": true
+      },
+      {
+        "kind": "runner",
+        "passed": true
+      },
+      {
+        "kind": "tool_version",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "path": "xsim-examples/bad_ready/result.json",
+    "status": "FAIL_SIMULATION",
+    "stage": "simulate",
+    "checks_count": null,
+    "accounting": [],
+    "checks": [
+      {
+        "kind": "log",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "simulate",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/elastic_stage.v",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/tb_elastic.sv",
+        "passed": true
+      },
+      {
+        "kind": "runner",
+        "passed": true
+      },
+      {
+        "kind": "tool_version",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "path": "xsim-examples/elastic/result.json",
+    "status": "PASS_SIMULATION",
+    "stage": "simulate",
+    "checks_count": 13800,
+    "accounting": [
+      [
+        "1",
+        "177",
+        "176",
+        "1",
+        "0"
+      ],
+      [
+        "8",
+        "177",
+        "176",
+        "1",
+        "0"
+      ],
+      [
+        "16",
+        "177",
+        "176",
+        "1",
+        "0"
+      ]
+    ],
+    "checks": [
+      {
+        "kind": "log",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "simulate",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/elastic_stage.v",
+        "passed": true
+      },
+      {
+        "kind": "candidate_git_source",
+        "path": "skill/fpga-module-verification/examples/elastic/elastic_stage.v",
+        "exact_bytes": true,
+        "checkout_crlf_only": true,
+        "canonical_oid": "b2b4079e115a1128a0e38416ce12b48543c654cb",
+        "expected_oid": "b2b4079e115a1128a0e38416ce12b48543c654cb",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/tb_elastic.sv",
+        "passed": true
+      },
+      {
+        "kind": "candidate_git_source",
+        "path": "skill/fpga-module-verification/examples/elastic/tb_elastic.sv",
+        "exact_bytes": true,
+        "checkout_crlf_only": true,
+        "canonical_oid": "337d94305c94e78c8c07d2cd2c46a535f0ea459f",
+        "expected_oid": "337d94305c94e78c8c07d2cd2c46a535f0ea459f",
+        "passed": true
+      },
+      {
+        "kind": "runner",
+        "passed": true
+      },
+      {
+        "kind": "tool_version",
+        "passed": true
+      },
+      {
+        "kind": "actual_accounting",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "path": "xsim-examples/pcm4/result.json",
+    "status": "PASS_SIMULATION",
+    "stage": "simulate",
+    "checks_count": 792,
+    "accounting": [],
+    "checks": [
+      {
+        "kind": "log",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "simulate",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/pcm4_signext_pack.v",
+        "passed": true
+      },
+      {
+        "kind": "candidate_git_source",
+        "path": "rtl/acquisition/pcm4_signext_pack.v",
+        "exact_bytes": false,
+        "checkout_crlf_only": true,
+        "canonical_oid": "a300f74c48fe68eb34247d7a6f1cf97a28778f58",
+        "expected_oid": "a300f74c48fe68eb34247d7a6f1cf97a28778f58",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/tb_pcm4_skill.sv",
+        "passed": true
+      },
+      {
+        "kind": "candidate_git_source",
+        "path": "skill/fpga-module-verification/examples/pcm4/tb_pcm4_skill.sv",
+        "exact_bytes": true,
+        "checkout_crlf_only": true,
+        "canonical_oid": "7feaa4a530162621ffe75faa651972e58c94cb2b",
+        "expected_oid": "7feaa4a530162621ffe75faa651972e58c94cb2b",
+        "passed": true
+      },
+      {
+        "kind": "runner",
+        "passed": true
+      },
+      {
+        "kind": "tool_version",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "path": "xsim-examples/restored/result.json",
+    "status": "PASS_SIMULATION",
+    "stage": "simulate",
+    "checks_count": 13800,
+    "accounting": [
+      [
+        "1",
+        "177",
+        "176",
+        "1",
+        "0"
+      ],
+      [
+        "8",
+        "177",
+        "176",
+        "1",
+        "0"
+      ],
+      [
+        "16",
+        "177",
+        "176",
+        "1",
+        "0"
+      ]
+    ],
+    "checks": [
+      {
+        "kind": "log",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "simulate",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/elastic_stage.v",
+        "passed": true
+      },
+      {
+        "kind": "candidate_git_source",
+        "path": "skill/fpga-module-verification/examples/elastic/elastic_stage.v",
+        "exact_bytes": true,
+        "checkout_crlf_only": true,
+        "canonical_oid": "b2b4079e115a1128a0e38416ce12b48543c654cb",
+        "expected_oid": "b2b4079e115a1128a0e38416ce12b48543c654cb",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/tb_elastic.sv",
+        "passed": true
+      },
+      {
+        "kind": "candidate_git_source",
+        "path": "skill/fpga-module-verification/examples/elastic/tb_elastic.sv",
+        "exact_bytes": true,
+        "checkout_crlf_only": true,
+        "canonical_oid": "337d94305c94e78c8c07d2cd2c46a535f0ea459f",
+        "expected_oid": "337d94305c94e78c8c07d2cd2c46a535f0ea459f",
+        "passed": true
+      },
+      {
+        "kind": "runner",
+        "passed": true
+      },
+      {
+        "kind": "tool_version",
+        "passed": true
+      },
+      {
+        "kind": "actual_accounting",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "path": "xsim-examples/two_stage/result.json",
+    "status": "FAIL_SIMULATION",
+    "stage": "simulate",
+    "checks_count": null,
+    "accounting": [],
+    "checks": [
+      {
+        "kind": "log",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "version",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_v",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "compile_sv",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "tool_stage",
+        "path": "elaborate",
+        "passed": true
+      },
+      {
+        "kind": "log",
+        "path": "simulate",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/elastic_stage.v",
+        "passed": true
+      },
+      {
+        "kind": "snapshot",
+        "path": "inputs/tb_elastic.sv",
+        "passed": true
+      },
+      {
+        "kind": "runner",
+        "passed": true
+      },
+      {
+        "kind": "tool_version",
+        "passed": true
+      }
+    ]
+  }
+]

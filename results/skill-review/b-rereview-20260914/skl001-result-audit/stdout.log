@@ -1,0 +1,88 @@
+{
+  "runs": 14,
+  "checks": 191,
+  "bad": [
+    {
+      "path": "xsim-examples/pcm4/result.json",
+      "status": "PASS_SIMULATION",
+      "stage": "simulate",
+      "checks_count": 792,
+      "accounting": [],
+      "checks": [
+        {
+          "kind": "log",
+          "path": "version",
+          "passed": true
+        },
+        {
+          "kind": "tool_stage",
+          "path": "version",
+          "passed": true
+        },
+        {
+          "kind": "log",
+          "path": "compile_v",
+          "passed": true
+        },
+        {
+          "kind": "tool_stage",
+          "path": "compile_v",
+          "passed": true
+        },
+        {
+          "kind": "log",
+          "path": "compile_sv",
+          "passed": true
+        },
+        {
+          "kind": "tool_stage",
+          "path": "compile_sv",
+          "passed": true
+        },
+        {
+          "kind": "log",
+          "path": "elaborate",
+          "passed": true
+        },
+        {
+          "kind": "tool_stage",
+          "path": "elaborate",
+          "passed": true
+        },
+        {
+          "kind": "log",
+          "path": "simulate",
+          "passed": true
+        },
+        {
+          "kind": "snapshot",
+          "path": "inputs/pcm4_signext_pack.v",
+          "passed": true
+        },
+        {
+          "kind": "candidate_git_source",
+          "path": "rtl/acquisition/pcm4_signext_pack.v",
+          "passed": false
+        },
+        {
+          "kind": "snapshot",
+          "path": "inputs/tb_pcm4_skill.sv",
+          "passed": true
+        },
+        {
+          "kind": "candidate_git_source",
+          "path": "skill/fpga-module-verification/examples/pcm4/tb_pcm4_skill.sv",
+          "passed": true
+        },
+        {
+          "kind": "runner",
+          "passed": true
+        },
+        {
+          "kind": "tool_version",
+          "passed": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "F:\NUEC\review-evidence\skills-b-rereview-20260914\audit_s_runs.py", line 27, in <module>
+    assert all(all(c['passed'] for c in i['checks']) for i in items)
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
