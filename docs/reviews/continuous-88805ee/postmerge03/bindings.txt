@@ -1,0 +1,31 @@
+{
+  "result": "PASS_ARCHIVED_BINDINGS_WITH_TWO_UNAVAILABLE_MD5_INPUTS",
+  "matched_build_md5": [
+    "Empty_applicationExample.cmake",
+    "lscript.ld",
+    "main.c",
+    "UserConfig.cmake",
+    "continuous/continuous_core.c",
+    "continuous/main_continuous.c",
+    "continuous/continuous_core.h"
+  ],
+  "not_archived_md5_inputs": [
+    "vitis-comp.json",
+    "README.txt"
+  ],
+  "actual_object_macro_strings": [
+    "COUNTS_PER_SECOND XSLEEPTIMER_FREQ",
+    "XSLEEPTIMER_FREQ XPAR_CPU_CORE_CLOCK_FREQ_HZ/2",
+    "XPAR_CPU_CORE_CLOCK_FREQ_HZ 666666687"
+  ],
+  "xsa_ps7_init_equal": true,
+  "unchanged_archived_source_pairs": {
+    "rtl/four_mic_top.v": "delivery-01/evidence/simulation/four_mic_top.v",
+    "rtl/pcm4_continuous_axis.v": "delivery-01/evidence/simulation/pcm4_continuous_axis.v",
+    "sim/tb_continuous.sv": "delivery-01/evidence/simulation/tb_continuous.sv",
+    "sim/tb_frontend.sv": "delivery-01/evidence/simulation/tb_frontend.sv",
+    "ps/continuous_core.c": "publication/checks/host/continuous_core.c",
+    "tests/test_core.c": "publication/checks/host/test_core.c"
+  },
+  "early_host_test_diff_not_final_coverage": "--- ss-cont-host-01.zip!test_core.c\n+++ tests/test_core.c\n@@ -14,7 +14,7 @@\n static void insist(int ok,const char *msg){if(!ok){fprintf(stderr,\"MODEL FAILURE %s\\n\",msg);exit(2);}}\n static void advance(struct fake *f){\n     f->time+=20;\n-    if((f->running || f->draining) && f->time>=f->next_packet){f->queued++;f->next_packet+=5209;if(f->draining)f->draining=0;}\n+    while((f->running || f->draining) && f->time>=f->next_packet){f->queued++;f->next_packet+=5209;if(f->draining && f->mode!=10)f->draining=0;}\n     if(f->active && f->time>=f->done_at && f->mode!=1){\n         uint32_t *p=f->buffers[f->slot];\n         insist(f->session->owner[f->slot]==DMA_OWNED,\"DMA wrote a CPU owned slot\");\n@@ -38,6 +38,7 @@\n     if(!f->running&&!f->draining&&!f->queued)v|=8;\n     if(f->draining)v|=0x80;\n     if(f->mode==9&&f->completed>3)v|=0x124;\n+    if(f->mode==14&&f->queued>4)v|=0x104;\n     if(f->mode==10&&f->draining)v&=~8U;\n     if(f->mode==11&&f->running)v&=~0x40U;\n     return v;\n@@ -62,13 +63,16 @@\n }\n static const uint32_t *acquire(void *p,unsigned s){struct fake *f=p;\n     insist(f->session->owner[s]==CPU_OWNED && (!f->active || f->slot!=s),\"acquire before DMA complete\");\n-    f->acquires[s]++;return f->buffers[s];\n+    f->acquires[s]++;\n+    if(f->mode==14 && f->completed==5)f->time+=50000; // deliberate slow consumer exceeds FIFO budget\n+    return f->buffers[s];\n }\n int main(void){\n     const enum failure expect[]={OK,DMA_TIMEOUT,ID_ERROR,GUARD_ERROR,RANGE_ERROR,FLAGS_ERROR,FLAGS_ERROR,\n-        LENGTH_ERROR,ABI,SOURCE_ERROR,OK,PACKET_TIMEOUT,DMA_ERROR,ARM_ERROR};\n+        LENGTH_ERROR,ABI,SOURCE_ERROR,STOP_TIMEOUT,PACKET_TIMEOUT,DMA_ERROR,ARM_ERROR,SOURCE_ERROR,OWNERSHIP};\n     for(unsigned m=0;m<sizeof(expect)/sizeof(expect[0]);m++){\n         struct fake f={0};struct session s;session_init(&s);f.session=&s;f.mode=m;f.id=0xfffffff0ULL;\n+        if(m==15)s.owner[0]=CPU_OWNED;\n         struct io io={&f,time_us,source,sr,length,run,arm,prepare,acquire};\n         enum failure got=session_run(&s,&io);\n         insist(got==expect[m],failure_name(got));\n"
+}

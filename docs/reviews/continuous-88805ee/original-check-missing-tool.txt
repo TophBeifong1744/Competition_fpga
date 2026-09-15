@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "F:\NUEC\review-worktrees\continuous-88805ee\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\continuous-prototype-01\board-run-20260915-02\check_evidence.py", line 128, in <module>
+    print(json.dumps(check(), indent=2))
+                     ^^^^^^^
+  File "F:\NUEC\review-worktrees\continuous-88805ee\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\continuous-prototype-01\board-run-20260915-02\check_evidence.py", line 104, in check
+    disassembly = subprocess.run([str(objdump), "-d", "--disassemble=now_us",
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BryanZheng\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BryanZheng\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\BryanZheng\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] ϵͳ�Ҳ���ָ�����ļ���

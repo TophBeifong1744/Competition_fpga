@@ -1,0 +1,56 @@
+Opened with baud rate: 115200
+
+FOUR CONTINUOUS C1 prototype build Sep 15 2026 20:13:41
+RX=[01000000,01100000) slot_stride=8064 packet=8000 guard=64 used=16128 end=00112640
+Two >=10s segments; clean stop/drain/restart WITHOUT PS/PL/DMA reset between; no full audio archive
+START session=0 operator_keep_sound_optional no_UART_until_stop
+SESSION 0 result=OK groups=1920250 packets=7681 bytes_checked=61448000 stop_sent=1
+first=0000000000003B80 last=00000000001D8879 capture_command_us=10000009 drain_us=1325 max_check_us=14 max_arm_gap_us=1312
+SOURCE=C100000A DMA_SR=00001002 length=8000 active=-1 owners=0,0 bad_group=249 bad_lane=3 bad_value=00001540
+TRACE packet=7665 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7666 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7667 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7668 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7669 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7670 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7671 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7672 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7673 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7674 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7675 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7676 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7677 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7678 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7679 slot=1 SR=00001002 SOURCE=C1000083 length=8000
+TRACE packet=7680 slot=0 SR=00001002 SOURCE=C100000A length=8000
+mic0 min=-164224 max=127104 zeros=7117 clip_flags=0
+mic1 min=-165376 max=132224 zeros=6970 clip_flags=0
+mic2 min=-150848 max=123840 zeros=6906 clip_flags=0
+mic3 min=-156864 max=123840 zeros=7426 clip_flags=0
+DRAINED; restart acquisition only in 1s; IDs may gap across this intentional stop
+START session=1 operator_keep_sound_optional no_UART_until_stop
+SESSION 1 result=OK groups=1920250 packets=7681 bytes_checked=61448000 stop_sent=1
+first=00000000001E5DEC last=00000000003BAAE5 capture_command_us=10000008 drain_us=1325 max_check_us=14 max_arm_gap_us=1310
+SOURCE=C100000A DMA_SR=00001002 length=8000 active=-1 owners=0,0 bad_group=249 bad_lane=3 bad_value=00006D00
+TRACE packet=7665 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7666 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7667 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7668 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7669 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7670 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7671 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7672 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7673 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7674 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7675 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7676 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7677 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7678 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=7679 slot=1 SR=00001002 SOURCE=C1000083 length=8000
+TRACE packet=7680 slot=0 SR=00001002 SOURCE=C100000A length=8000
+mic0 min=-440320 max=326528 zeros=6783 clip_flags=0
+mic1 min=-453888 max=360064 zeros=6381 clip_flags=0
+mic2 min=-439232 max=372736 zeros=6621 clip_flags=0
+mic3 min=-364032 max=383744 zeros=6636 clip_flags=0
+CONTINUOUS_TWO_SESSIONS_PASS_NOT_ACCEPTANCE; online checked/recycled, NOT a saved continuous BIN
+RUN level LOW; retain logs; no board acceptance or hour-long claim

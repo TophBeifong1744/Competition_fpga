@@ -1,0 +1,118 @@
+{
+  "status": "COMPILED_PS_CONTRACT_PASS_NOT_BOARD",
+  "known_source_sha256": {
+    "main_continuous.c": "b9fffdf20c5704d75505890148f0c2b758b77fd94f5848503d4f3080880cf88f",
+    "continuous_core.c": "29feb369f255c31dce423f5301996ecb52f95124a9705978a95c2ddd6eb2e9e3",
+    "continuous_core.h": "2b2a8e0034970403ea693181950a6cec99b51802579e5693f1fdaa110fddbbc3"
+  },
+  "compiled_values": [
+    1129270833,
+    16777216,
+    17825792,
+    250,
+    8,
+    8000,
+    64,
+    8064,
+    2,
+    16128,
+    1048576,
+    1073741823,
+    1077936128,
+    1092616192,
+    10000000,
+    480000
+  ],
+  "slot_ranges": [
+    {
+      "data_start": "0x1000000",
+      "data_end": "0x1001f40",
+      "guard_end": "0x1001f80"
+    },
+    {
+      "data_start": "0x1001f80",
+      "data_end": "0x1003ec0",
+      "guard_end": "0x1003f00"
+    }
+  ],
+  "allocated_ranges": [
+    {
+      "name": ".text",
+      "start": 1048576,
+      "end": 1074332
+    },
+    {
+      "name": ".init",
+      "start": 1074332,
+      "end": 1074344
+    },
+    {
+      "name": ".fini",
+      "start": 1074344,
+      "end": 1074356
+    },
+    {
+      "name": ".rodata",
+      "start": 1074356,
+      "end": 1076792
+    },
+    {
+      "name": ".data",
+      "start": 1076792,
+      "end": 1078212
+    },
+    {
+      "name": ".eh_frame",
+      "start": 1078212,
+      "end": 1078268
+    },
+    {
+      "name": ".mmu_tbl",
+      "start": 1081344,
+      "end": 1097728
+    },
+    {
+      "name": ".ARM.exidx",
+      "start": 1097728,
+      "end": 1097736
+    },
+    {
+      "name": ".init_array",
+      "start": 1097736,
+      "end": 1097744
+    },
+    {
+      "name": ".fini_array",
+      "start": 1097744,
+      "end": 1097748
+    },
+    {
+      "name": ".drvcfg_sec",
+      "start": 1097748,
+      "end": 1097964
+    },
+    {
+      "name": ".bss",
+      "start": 1097968,
+      "end": 1101372
+    },
+    {
+      "name": ".heap",
+      "start": 1101372,
+      "end": 1109568
+    },
+    {
+      "name": ".stack",
+      "start": 1109568,
+      "end": 1123904
+    },
+    {
+      "name": "PT_LOAD",
+      "start": 1048576,
+      "end": 1123904
+    }
+  ],
+  "end": "0x112640",
+  "optimization": "-O2",
+  "same_preprocessed_TU": true
+}

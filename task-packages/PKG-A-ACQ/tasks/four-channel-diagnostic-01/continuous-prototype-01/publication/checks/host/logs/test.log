@@ -1,0 +1,17 @@
+CASE 0 PASS expected=OK packets=1921 groups=480250 trace=1921
+CASE 1 PASS expected=DMA_TIMEOUT packets=0 groups=0 trace=0
+CASE 2 PASS expected=ID_ERROR packets=2 groups=500 trace=3
+CASE 3 PASS expected=GUARD_ERROR packets=2 groups=500 trace=3
+CASE 4 PASS expected=RANGE_ERROR packets=2 groups=500 trace=3
+CASE 5 PASS expected=FLAGS_ERROR packets=2 groups=500 trace=3
+CASE 6 PASS expected=FLAGS_ERROR packets=2 groups=500 trace=3
+CASE 7 PASS expected=LENGTH_ERROR packets=0 groups=0 trace=0
+CASE 8 PASS expected=ABI packets=0 groups=0 trace=0
+CASE 9 PASS expected=SOURCE_ERROR packets=3 groups=750 trace=3
+CASE 10 PASS expected=STOP_TIMEOUT packets=2303 groups=575750 trace=2303
+CASE 11 PASS expected=PACKET_TIMEOUT packets=0 groups=0 trace=0
+CASE 12 PASS expected=DMA_ERROR packets=3 groups=750 trace=3
+CASE 13 PASS expected=ARM_ERROR packets=0 groups=0 trace=0
+CASE 14 PASS expected=SOURCE_ERROR packets=5 groups=1250 trace=5
+CASE 15 PASS expected=OWNERSHIP packets=0 groups=0 trace=0
+PS_CORE_MODEL_PASS (actual C loop; simulated IO/time/cache callbacks)

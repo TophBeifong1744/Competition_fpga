@@ -1,0 +1,101 @@
+[
+  {
+    "name": "package",
+    "argv": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\develop\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\publication\\verify_package.py"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "started_utc": "2026-09-15T13:57:08.689392+00:00",
+    "exit_code": 0
+  },
+  {
+    "name": "git-package",
+    "argv": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\review-evidence\\continuous-88805ee\\audit_package.py",
+      "F:\\NUEC\\develop"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "started_utc": "2026-09-15T13:57:09.404715+00:00",
+    "exit_code": 0
+  },
+  {
+    "name": "check-capstone",
+    "argv": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\review-evidence\\continuous-88805ee\\check_with_capstone.py",
+      "F:\\NUEC\\develop\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\board-run-20260915-02"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "started_utc": "2026-09-15T13:57:11.472687+00:00",
+    "exit_code": 0
+  },
+  {
+    "name": "bindings",
+    "argv": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\review-evidence\\continuous-88805ee\\audit_bindings.py",
+      "F:\\NUEC\\develop"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "started_utc": "2026-09-15T13:57:11.894226+00:00",
+    "exit_code": 0
+  },
+  {
+    "name": "entry-tests",
+    "argv": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "F:\\NUEC\\develop\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\tests",
+      "-p",
+      "test_entry.py",
+      "-v"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "started_utc": "2026-09-15T13:57:12.098334+00:00",
+    "exit_code": 0
+  },
+  {
+    "name": "safety-tests",
+    "argv": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "F:\\NUEC\\develop\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\current_build",
+      "-p",
+      "test_build_current.py",
+      "-v"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "started_utc": "2026-09-15T13:57:12.596137+00:00",
+    "exit_code": 0
+  },
+  {
+    "name": "host",
+    "argv": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\develop\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\run.py",
+      "host",
+      "--host-gcc",
+      "F:/STUDY/IT/C/develop/mingw64/bin/gcc.exe",
+      "--output",
+      "F:\\NUEC\\review-evidence\\continuous-88805ee\\postmerge03\\host-run01"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "started_utc": "2026-09-15T13:57:19.687244+00:00",
+    "exit_code": 0
+  }
+]

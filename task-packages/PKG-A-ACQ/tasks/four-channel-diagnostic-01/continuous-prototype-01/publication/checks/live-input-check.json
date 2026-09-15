@@ -1,0 +1,25 @@
+{
+  "live_artifacts_match_archive": 20,
+  "source_build_md5_matches": 9,
+  "actual_rtl": [
+    {
+      "file": "F:\\College\\verilog_digital_system\\AMD\\Competiton\\one\\one.srcs\\sources_1\\imports\\c_adapter\\four_mic_top.v",
+      "sha256": "08b39fd3de26566d98d92e545121621d3f539b861b4ca80fd82b3e3024ff27e5",
+      "matches_candidate_text": true
+    },
+    {
+      "file": "F:\\College\\verilog_digital_system\\AMD\\Competiton\\one\\one.srcs\\sources_1\\imports\\c_adapter\\pcm4_continuous_axis.v",
+      "sha256": "06772cd7bb97ca2a6a69099d22a294c1d3994cb2496787d44ee0d79664a85a06",
+      "matches_candidate_text": true
+    }
+  ],
+  "start_connection": {
+    "ports": [
+      "axi_gpio_0/gpio_io_o",
+      "four_mic_top_0/start",
+      "start_pulse_0/start_level"
+    ]
+  },
+  "bd_sha256": "ae755fd9d3638b34a9785ce6ad38635ef0df9d8f98a198e5fefda14a442b9dd9",
+  "not_board_readback": true
+}

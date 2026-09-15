@@ -1,0 +1,62 @@
+{
+  "result": "PASS_ARCHIVED_EVIDENCE_CHECK_NOT_ACCEPTANCE",
+  "sessions": [
+    {
+      "session": 0,
+      "groups": 480250,
+      "packets": 1921,
+      "bytes_checked": 15368000,
+      "first_id": 14881,
+      "last_id": 495130,
+      "gap_from_previous": null,
+      "configured_rate_seconds": 10.005208333333334,
+      "capture_command_us": 10000129,
+      "drain_us": 5209,
+      "max_check_us": 56,
+      "max_arm_gap_us": 5249
+    },
+    {
+      "session": 1,
+      "groups": 480250,
+      "packets": 1921,
+      "bytes_checked": 15368000,
+      "first_id": 549769,
+      "last_id": 1030018,
+      "gap_from_previous": 54638,
+      "configured_rate_seconds": 10.005208333333334,
+      "capture_command_us": 10000133,
+      "drain_us": 5208,
+      "max_check_us": 56,
+      "max_arm_gap_us": 5251
+    }
+  ],
+  "files_sha256_verified": 20,
+  "object_elf_contract_match": true,
+  "program_end": "0x00112640",
+  "rx_used_bytes": 16128,
+  "timer_divisor_in_elf": 333333343,
+  "timer_arithmetic_vectors": [
+    {
+      "seconds": 1,
+      "old_us": 249999,
+      "fixed_us": 1000000
+    },
+    {
+      "seconds": 10,
+      "old_us": 2499999,
+      "fixed_us": 10000000
+    },
+    {
+      "seconds": 40,
+      "old_us": 9999999,
+      "fixed_us": 40000000
+    }
+  ],
+  "limitations": [
+    "No full raw continuous audio retained; per-group correctness relies on PS online checks.",
+    "Two sessions with one acquisition restart, not one continuous 20-second recording.",
+    "No independent wall-clock calibration, board fault injection or new RTL simulation.",
+    "No independent reviewer acceptance, one-hour or acoustic performance claim."
+  ],
+  "timer_disassembly": "00100738: 04e02de5 str lr, [sp, #-4]!\n0010073c: 0cd04de2 sub sp, sp, #0xc\n00100740: 0d00a0e1 mov r0, sp\n00100744: 200800eb bl #0x1027cc\n00100748: 04409de8 ldm sp, {r2, lr}\n0010074c: 8e32a0e1 lsl r3, lr, #5\n00100750: 8212a0e1 lsl r1, r2, #5\n00100754: a23d83e1 orr r3, r3, r2, lsr #27\n00100758: 021051e0 subs r1, r1, r2\n0010075c: 81c4a0e1 lsl ip, r1, #9\n00100760: 0e30c3e0 sbc r3, r3, lr\n00100764: 8334a0e1 lsl r3, r3, #9\n00100768: 02c09ce0 adds ip, ip, r2\n0010076c: 0c03a0e1 lsl r0, ip, #6\n00100770: a13b83e1 orr r3, r3, r1, lsr #23\n00100774: 0330aee0 adc r3, lr, r3\n00100778: 0c0050e0 subs r0, r0, ip\n0010077c: 0313a0e1 lsl r1, r3, #6\n00100780: 2c1d81e1 orr r1, r1, ip, lsr #26\n00100784: 0310c1e0 sbc r1, r1, r3\n00100788: 020090e0 adds r0, r0, r2\n0010078c: 0110aee0 adc r1, lr, r1\n00100790: 10308fe2 add r3, pc, #0x10\n00100794: d020c3e1 ldrd r2, r3, [r3]\n00100798: 811000fa blx #0x1049a4\n0010079c: 0cd08de2 add sp, sp, #0xc\n001007a0: 04f09de4 pop {pc}\n001007a4: 00f020e3 nop \n001007a8: literal uint64 divisor=333333343 (0x13de435f); real division target=#0x1049a4"
+}

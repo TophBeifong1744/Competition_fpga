@@ -1,0 +1,37 @@
+[
+  {
+    "command": "git diff --cached --check",
+    "exit_code": 2,
+    "output": "diff-check.txt.gz",
+    "uncompressed_sha256": "012a945d62a60eced15638e0ce2240fa1162f4ef43493eec6f930699d28843df",
+    "diagnostics": 22662,
+    "diagnostic_kinds": {
+      "new blank line at EOF.": 12,
+      "trailing whitespace, space before tab in indent.": 3,
+      "trailing whitespace.": 22647
+    }
+  },
+  {
+    "argv": [
+      "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/git.exe",
+      "-c",
+      "safe.directory=F:/NUEC/develop",
+      "-c",
+      "core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol",
+      "-C",
+      "F:/NUEC/develop",
+      "diff",
+      "--cached",
+      "--check"
+    ],
+    "exit_code": 2,
+    "output": "diff-check-cr-at-eol.txt.gz",
+    "uncompressed_sha256": "fa08a3a439dde24e427abebeee2ed97ac99dd2805fe1b1b9f41c37febc76990b",
+    "diagnostics": 839,
+    "diagnostic_kinds": {
+      "new blank line at EOF.": 12,
+      "trailing whitespace, space before tab in indent.": 3,
+      "trailing whitespace.": 824
+    }
+  }
+]

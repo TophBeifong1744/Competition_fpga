@@ -1,0 +1,32 @@
+00100738: 04e02de5 str lr, [sp, #-4]!
+0010073c: 0cd04de2 sub sp, sp, #0xc
+00100740: 0d00a0e1 mov r0, sp
+00100744: 200800eb bl #0x1027cc
+00100748: 04409de8 ldm sp, {r2, lr}
+0010074c: 8e32a0e1 lsl r3, lr, #5
+00100750: 8212a0e1 lsl r1, r2, #5
+00100754: a23d83e1 orr r3, r3, r2, lsr #27
+00100758: 021051e0 subs r1, r1, r2
+0010075c: 81c4a0e1 lsl ip, r1, #9
+00100760: 0e30c3e0 sbc r3, r3, lr
+00100764: 8334a0e1 lsl r3, r3, #9
+00100768: 02c09ce0 adds ip, ip, r2
+0010076c: 0c03a0e1 lsl r0, ip, #6
+00100770: a13b83e1 orr r3, r3, r1, lsr #23
+00100774: 0330aee0 adc r3, lr, r3
+00100778: 0c0050e0 subs r0, r0, ip
+0010077c: 0313a0e1 lsl r1, r3, #6
+00100780: 2c1d81e1 orr r1, r1, ip, lsr #26
+00100784: 0310c1e0 sbc r1, r1, r3
+00100788: 020090e0 adds r0, r0, r2
+0010078c: 0110aee0 adc r1, lr, r1
+00100790: 10308fe2 add r3, pc, #0x10
+00100794: d020c3e1 ldrd r2, r3, [r3]
+00100798: 811000fa blx #0x1049a4
+0010079c: 0cd08de2 add sp, sp, #0xc
+001007a0: 04f09de4 pop {pc}
+001007a4: 00f020e3 nop 
+001007a8: 5f43de13 bicsne r4, lr, #0x7c000001
+001007ac: 00000000 andeq r0, r0, r0
+division symbol 0x1049a5
+timer function size 120

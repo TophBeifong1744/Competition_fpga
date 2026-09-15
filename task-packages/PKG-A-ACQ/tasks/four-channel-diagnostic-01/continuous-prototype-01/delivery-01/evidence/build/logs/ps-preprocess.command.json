@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "F:\\AMD\\2025.2\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
+    "-DSDT",
+    "-mcpu=cortex-a9",
+    "-mfpu=vfpv3",
+    "-mfloat-abi=hard",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-O2",
+    "-g3",
+    "-specs=../inputs/bsp/Xilinx.spec",
+    "-I../inputs/bsp/include",
+    "-E",
+    "unit.c",
+    "-o",
+    "unit.i"
+  ],
+  "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\continuous-work12\\ps"
+}

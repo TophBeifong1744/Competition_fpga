@@ -1,0 +1,63 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "tcf-debug",
+			"request": "launch",
+			"name": "four_mic_continuous_app_hw_1",
+			"debugType": "baremetal-zynq",
+			"attachToRunningTargetOptions": {
+				"targetSetupMode": "standalone",
+				"executeScript": true,
+				"scriptPath": ""
+			},
+			"autoAttachProcessChildren": false,
+			"target": {
+				"targetConnectionId": "Local",
+				"peersIniPath": "../../_ide/.peers.ini",
+				"context": "zynq"
+			},
+			"pathMap": [],
+			"targetSetup": {
+				"resetSystem": true,
+				"programDevice": true,
+				"partialBitstream": false,
+				"skipRevisionCheck": false,
+				"device": {
+					"plDevice": "Auto Detect",
+					"psDevice": "Auto Detect"
+				},
+				"resetAPU": false,
+				"bitstreamFile": "${workspaceFolder}\\four_mic_continuous\\_ide\\bitstream\\system_continuous_20260915.bit",
+				"zynqInitialization": {
+					"isFsbl": false,
+					"usingFSBL": {
+						"initWithFSBL": true,
+						"fsblFile": "${workspaceFolder}\\continuous_platform\\export\\continuous_platform\\sw\\boot\\fsbl.elf",
+						"fsblExitSymbol": "FsblHandoffJtagExit"
+					},
+					"usingPs7Init": {
+						"runPs7Init": true,
+						"runPs7PostInit": true,
+						"ps7InitTclFile": "${workspaceFolder}\\four_mic_continuous\\_ide\\psinit\\ps7_init.tcl"
+					}
+				},
+				"downloadElf": [
+					{
+						"core": "ps7_cortexa9_0",
+						"resetProcessor": true,
+						"elfFile": "${workspaceFolder}\\four_mic_continuous\\build\\four_mic_continuous.elf",
+						"stopAtEntry": false,
+						"isSelfRelocatingApp": false,
+						"relativeAddress": ""
+					}
+				],
+				"crossTriggerBreakpoints": {
+					"isSelected": false,
+					"breakpoints": []
+				}
+			},
+			"internalConsoleOptions": "openOnSessionStart"
+		}
+	]
+}
