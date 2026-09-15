@@ -1,0 +1,61 @@
+[
+  {
+    "label": "audio-tests",
+    "command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\develop\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\audio-01\\test_audio.py",
+      "-v"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "returncode": 0
+  },
+  {
+    "label": "tracker-adapter-tests",
+    "command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\develop\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\test_tracking.py",
+      "-v"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "returncode": 0
+  },
+  {
+    "label": "manual-render-tests",
+    "command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\develop\\task-packages\\PKG-B-ALG\\tasks\\real-audio-compare-01\\test_render_audio.py",
+      "-v"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "returncode": 0
+  },
+  {
+    "label": "render",
+    "command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\develop\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\audio-01\\render_three.py",
+      "--out",
+      "F:\\NUEC\\develop\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\audio-01\\evidence\\run01\\audio"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "returncode": 0
+  },
+  {
+    "label": "audit",
+    "command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\develop\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\audio-01\\audit.py",
+      "--directory",
+      "F:\\NUEC\\develop\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\audio-01\\evidence\\run01\\audio",
+      "--out",
+      "F:\\NUEC\\develop\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\audio-01\\evidence\\run01\\audit.json"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "returncode": 0
+  }
+]

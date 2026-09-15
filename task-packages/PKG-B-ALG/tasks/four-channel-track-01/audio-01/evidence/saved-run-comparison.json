@@ -1,0 +1,76 @@
+{
+  "status": "SAVED_RECORDINGS_UNCHANGED_BY_EXPIRY_FIX",
+  "values": {
+    "float_values": 480,
+    "discrete_values": 991,
+    "max_abs_error": 0.0
+  },
+  "wav_files": [
+    {
+      "file": "center-interval00-automatic-preview.wav",
+      "bytes_equal": true
+    },
+    {
+      "file": "center-interval00-automatic-raw.wav",
+      "bytes_equal": true
+    },
+    {
+      "file": "center-interval00-manual-preview.wav",
+      "bytes_equal": true
+    },
+    {
+      "file": "center-interval00-manual-raw.wav",
+      "bytes_equal": true
+    },
+    {
+      "file": "center-interval00-single-preview.wav",
+      "bytes_equal": true
+    },
+    {
+      "file": "center-interval00-single-raw.wav",
+      "bytes_equal": true
+    },
+    {
+      "file": "quiet-interval00-automatic-preview.wav",
+      "bytes_equal": true
+    },
+    {
+      "file": "quiet-interval00-automatic-raw.wav",
+      "bytes_equal": true
+    },
+    {
+      "file": "quiet-interval00-manual-preview.wav",
+      "bytes_equal": true
+    },
+    {
+      "file": "quiet-interval00-manual-raw.wav",
+      "bytes_equal": true
+    },
+    {
+      "file": "quiet-interval00-single-preview.wav",
+      "bytes_equal": true
+    },
+    {
+      "file": "quiet-interval00-single-raw.wav",
+      "bytes_equal": true
+    }
+  ],
+  "mix_files": [
+    {
+      "file": "center-interval00-mix.npz",
+      "arrays_exact": true,
+      "bytes_equal": true
+    },
+    {
+      "file": "quiet-interval00-mix.npz",
+      "arrays_exact": true,
+      "bytes_equal": true
+    }
+  ],
+  "result_json_bytes_equal": false,
+  "changed_source_paths": [
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/mixer.py",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/test_audio.py"
+  ],
+  "interpretation": "These short real captures do not exercise expiry retargeting. The two added regression tests do; preserved failure is not erased."
+}

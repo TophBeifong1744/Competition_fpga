@@ -1,0 +1,8 @@
+{
+  "method": "Reconstructed after pause by reversing the documented two-function mixer fix and two added tests; bytes strictly checked against the already saved run01 source hashes.",
+  "source_hashes": {
+    "mixer.py": "ffd46fb9b81419650d9d3f74668788357a984d7d341a6dafb4498a7206800d0c",
+    "test_audio.py": "6e8c6d786e8f9783a4f3e72ca58433ccb1885d3ab5c7fd55a9ccdb14a55eabe2"
+  },
+  "failure_test_source": "The two later regression tests are retained in current test_audio.py; only the mixer implementation changed after the failing regression."
+}
