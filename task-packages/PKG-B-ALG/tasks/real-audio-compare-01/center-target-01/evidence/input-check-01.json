@@ -1,0 +1,52 @@
+{
+  "status": "STEP1_2_INPUT_BOUND_ONLY",
+  "config_sha256": "53c11ab80b78fa85bccbb44f1694e11708033a578754b0f19016eba05ff15111",
+  "binding_source_sha256": "d5ad6079fb0c5d3f8107e28fb8de90e0b200837c261c0378098ce6c7ed767135",
+  "pins": {
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/delivery-01/SHA256.json": "f694f234a9dbd7a7661741627cd43ed76cad40ec99d07b41103855ea2eb98111",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/actual-record-20260915.json": "a9ef548557ceeb3a191e52d65c52f33034a4b1bfc75e8f0922f1cac90627585f",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/INPUT-RECEIPT.md": "eb0e4af87c2922b19690c64c1772b5357c658277022c3bcbe7b6a33975a04688",
+    "docs/reviews/center-target-f9768b8/B-REVIEW.md": "b48a5c12e8c283ba208515ad431e98b27a540b300bc8a0350f3dd7fbf31db376",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/delivery-01/c-center-target-20260914-01/samples.csv": "5779f700e11442446b0884d81270e507fd88bcf39610a7a674889c136939e9da",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/delivery-01/c-center-target-20260914-01/metadata.json": "a08e7268d2bd6df0cebc0e8066a2d53139c48a0b6bf51a0717e98c448fa4c541",
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/render_audio.py": "150478f12144be489e5ea2418d24a024cbeb1a837fbbe70059ba171d81e5384a",
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/check_inputs.py": "4f7cc3dc96c0f1b0966e5d38bdd89390a017606141a2da01514336e1bbe8a3d9",
+    "task-packages/PKG-B-ALG/payload/model/python/h1_reader.py": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9",
+    "task-packages/PKG-B-ALG/payload/model/python/audio_frames.py": "0ed77ea8db8834576c21206358a8d945b612a176cad742bb266d077ee2a79408"
+  },
+  "recording": "c-center-target-20260914-01",
+  "samples": 32000,
+  "duration_s": 0.6666666666666666,
+  "clean_intervals": [
+    {
+      "row_start": 0,
+      "row_stop": 32000,
+      "first_sample_id": "17413",
+      "last_sample_id": "49412",
+      "samples": 32000
+    }
+  ],
+  "error_rows": 0,
+  "reference_channel": "mic0",
+  "compensation_delays_samples": [
+    0.0,
+    5.597667638483965,
+    5.597667638483965,
+    0.0
+  ],
+  "full_scale_peak_by_channel": [
+    0.00749969482421875,
+    0.0070953369140625,
+    0.0069122314453125,
+    0.007843017578125
+  ],
+  "geometry_version": "c-adapter-user-square40-mic0-origin-20260913-v1",
+  "calibration_status": "not-calibrated",
+  "audio_generated": false,
+  "acoustic_acceptance": false,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Windows-11-10.0.26200-SP0"
+  }
+}

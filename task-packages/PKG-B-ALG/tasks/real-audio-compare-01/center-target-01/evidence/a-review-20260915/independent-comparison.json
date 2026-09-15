@@ -1,0 +1,59 @@
+{
+  "status": "A_INDEPENDENT_PASS",
+  "reviewed_sha": "6c70cbcac0b24c993a49a0e69efc969dccde5a2a",
+  "pins_git_baseline_checked": 10,
+  "input_git_commit": "f9768b80e5718dcf29baf48015305780f4b9b8e8",
+  "all_author_files_unchanged": true,
+  "crop": [
+    6,
+    32000
+  ],
+  "reference_ids": [
+    17419,
+    49412
+  ],
+  "frames": 31994,
+  "preview_gain": 32.0,
+  "peak_basis": 0.007843017578125,
+  "wavs": [
+    {
+      "file": "interval00-single-raw.wav",
+      "sha256": "16ee7ba0baca981845bda34647c849b72481065d62dbc00a5c1430709c831040",
+      "bytes_equal": true,
+      "decoded_equal": true,
+      "rational_golden_max_code_difference": 0,
+      "rational_max_error": 0.0
+    },
+    {
+      "file": "interval00-single-preview.wav",
+      "sha256": "f0ae44478da28a6632aca76605f5448ddccf93df81103930452ce835d41a6638",
+      "bytes_equal": true,
+      "decoded_equal": true,
+      "rational_golden_max_code_difference": 0,
+      "rational_max_error": 0.0
+    },
+    {
+      "file": "interval00-manual-raw.wav",
+      "sha256": "306818add64f8dbccdced17fb25628702c62c4b46c019520d94fbb6d6c658190",
+      "bytes_equal": true,
+      "decoded_equal": true,
+      "rational_golden_max_code_difference": 0,
+      "rational_max_error": 5.9430870300826805e-08
+    },
+    {
+      "file": "interval00-manual-preview.wav",
+      "sha256": "71fd2c12f79a39ba12039d55272855ea2efc210bef37843f754ebc1e9df88799",
+      "bytes_equal": true,
+      "decoded_equal": true,
+      "rational_golden_max_code_difference": 0,
+      "rational_max_error": 5.9430870300826805e-08
+    }
+  ],
+  "float_differences": [],
+  "json_bytes_equal": {
+    "result": true,
+    "input": true,
+    "audit": true
+  },
+  "note": "Exact rational code oracle; no borrowed acoustic truth and no independent listening claim."
+}
