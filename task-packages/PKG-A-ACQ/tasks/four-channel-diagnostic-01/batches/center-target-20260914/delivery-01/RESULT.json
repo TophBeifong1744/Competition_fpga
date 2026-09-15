@@ -1,0 +1,123 @@
+{
+  "status": "PASS_MINIMAL_DIAGNOSTIC_INPUT_SELF_CHECK_NOT_B_REVIEW",
+  "checked_utc": "2026-09-15T08:27:34.277405+00:00",
+  "capture": {
+    "groups": 32000,
+    "bytes": 1024000,
+    "duration_s_configured": 0.6666666666666666,
+    "first_id": 17413,
+    "last_id": 49412,
+    "fnv1a32": "F55CC8CE",
+    "error_rows": 0,
+    "channels": [
+      {
+        "channel": 0,
+        "min": -62336,
+        "max": 62912,
+        "zeros": 76,
+        "clip_flags": 0,
+        "mean": 769.162,
+        "rms_without_mean": 14317.522075895535,
+        "unique_values": 1576
+      },
+      {
+        "channel": 1,
+        "min": -51264,
+        "max": 59520,
+        "zeros": 67,
+        "clip_flags": 0,
+        "mean": 1067.022,
+        "rms_without_mean": 14139.551539830249,
+        "unique_values": 1499
+      },
+      {
+        "channel": 2,
+        "min": -49408,
+        "max": 57984,
+        "zeros": 87,
+        "clip_flags": 0,
+        "mean": 247.024,
+        "rms_without_mean": 13701.134283241809,
+        "unique_values": 1453
+      },
+      {
+        "channel": 3,
+        "min": -55040,
+        "max": 65792,
+        "zeros": 68,
+        "clip_flags": 0,
+        "mean": 1081.346,
+        "rms_without_mean": 14127.213428142297,
+        "unique_values": 1583
+      }
+    ],
+    "identical_channel_pairs": [],
+    "csv_bin_exact": true,
+    "wav_exact_common_gain": 12,
+    "wav_extra_clipping": 0,
+    "reader": {
+      "schema_version": "ss-data-draft-0.3",
+      "acquisition_id": "c-center-target-20260914-01",
+      "config_version": "four-channel-c-adapter-v1-usergeom-20260913-v1",
+      "samples": 32000,
+      "sample_id_dtype": "uint64",
+      "pcm_dtype": "int32",
+      "first_sample_id": 17413,
+      "last_sample_id": 49412,
+      "clean_intervals": [
+        {
+          "row_start": 0,
+          "row_stop": 32000,
+          "first_sample_id": 17413,
+          "last_sample_id": 49412
+        }
+      ],
+      "missing_intervals": [],
+      "error_rows": 0,
+      "direction_policy": "diagnostic_only_requires_geometry_and_algorithm_validation",
+      "declared_evidence": "diagnostic",
+      "acceptance_verified": false,
+      "calibration_verified": false,
+      "file_sha256": {
+        "metadata.json": "a08e7268d2bd6df0cebc0e8066a2d53139c48a0b6bf51a0717e98c448fa4c541",
+        "samples.csv": "5779f700e11442446b0884d81270e507fd88bcf39610a7a674889c136939e9da"
+      },
+      "amplitude_all_rows": {
+        "minimum": [
+          -62336,
+          -51264,
+          -49408,
+          -55040
+        ],
+        "maximum": [
+          62912,
+          59520,
+          57984,
+          65792
+        ],
+        "mean": [
+          769.162,
+          1067.022,
+          247.024,
+          1081.346
+        ],
+        "full_scale_code_count": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "notes": [
+        "Amplitude statistics include error rows; full-scale codes alone do not prove clipping.",
+        "Clean intervals are format-clean only, not verified acoustically clean.",
+        "JSON sample IDs are exact decimal integers; JS consumers must use lossless/BigInt parsing."
+      ]
+    }
+  },
+  "new_synthesis_or_timing": false,
+  "new_continuous_capture_test": false,
+  "raw_data_unchanged": true,
+  "source_position_precision_verified": false,
+  "independent_clean_or_noise_reference_supplied": false
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "argv": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source\\export_c_capture.py",
+      "F:\\College\\verilog_digital_system\\Vitis\\c_center_target_20260914_01.bin",
+      "F:\\College\\verilog_digital_system\\Vitis\\c_center_target_20260914_01.log",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\center-target-20260914\\delivery-01\\c-center-target-20260914-01",
+      "--acquisition-id",
+      "c-center-target-20260914-01",
+      "--operator",
+      "Toph Beifong",
+      "--scene",
+      "Reported live voice, mouth on array-center +X at 1.5m and approximately level; see actual-record.json",
+      "--numbered-mating-confirmed"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "-v",
+      "test_export",
+      "test_c_capture_gate"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-B-ALG\\payload\\model\\python\\h1_reader.py",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\center-target-20260914\\delivery-01\\c-center-target-20260914-01"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-B-ALG\\payload\\model\\python\\h1_reader.py",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\c-adapter-first-20260913\\delivery-01\\c-adapter-quiet-20260913-01",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\c-adapter-first-20260913\\delivery-01\\c-adapter-speech-20260913-01",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\center-target-20260914\\delivery-01\\c-center-target-20260914-01"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "returncode": 0
+  }
+]
