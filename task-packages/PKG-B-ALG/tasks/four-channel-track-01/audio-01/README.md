@@ -1,6 +1,6 @@
 # 四路单麦／手动／自动音频对照增量
 
-2026-09-15。状态：**工程实现与作者自测完成，待 B 本轮试听、A 独立复核**。沿 `task/member-b-four-track-01` 的 `e93169d526e9e94a98947c86d2c92bcab3c46a2e` 继续；新内容全部在本目录，旧源码、哈希清单、录音、复核及失败记录保留原件。未合入 main，不扩大原批准范围。
+2026-09-15。状态：**工程实现、作者自测与 B 本轮试听已完成，待 A 独立复核**。沿 `task/member-b-four-track-01` 的 `e93169d526e9e94a98947c86d2c92bcab3c46a2e` 继续；新内容全部在本目录，旧源码、哈希清单、录音、复核及失败记录保留原件。未合入 main，不扩大原批准范围。
 
 ## 已完成与入口
 
@@ -9,6 +9,7 @@
 - `audit.py`：以原整数 PCM、保存的时延和混合系数重算全部 WAV 码值，并检查未到齐／过期方向的非零权重。属于作者另一路数值核对，不能冒充 A 独立复核。
 - `reproduce.py`：有实际命令和日志的单命令测试／生成／数值核对入口；已有输出目录拒绝覆盖。
 - [试听操作](LISTEN.md)、[交付校验](verify_package.py)、[最终运行结果](evidence/run02/audio/result.json)、[最终数值核对](evidence/run02/audit.json)。当前有效产物固定为 **run02**。
+- [B 本轮试听记录](evidence/listening-01.json)：绑定音频提交 `5d905b29c4f77c63b4d4a205b6a74a6ed7a48a91` 和三个实际呈现的 preview WAV 哈希；[A 复核清单](REVIEW-CHECKLIST.md)。
 
 旧父包 `verify.py` 绑定的是 e93169d 时的完整文件集合，新增本目录后它会报告目录新增；不要改写旧清单消除差异。本轮从 `audio-01/verify_package.py` 进入：逐个核对原父包全部文件及原依赖，再检查明确新增的 audio-01 完整清单，父目录其他意外新增仍会失败。原版本命令仍适用于原版本检出。
 
@@ -62,6 +63,8 @@ python -B task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/audit.py 
 python -B task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/verify_package.py --compare-saved
 ```
 
-## 当前待办
+## 本轮试听与当前待办
 
-B 尚未试听本次自动输出，旧两路的“无失真／断音／爆音”反馈不能代签本轮。按 LISTEN.md 回报后另记试听记录，不改写冻结运行结果。随后整理本批任务分支交 A 复核；本轮未合入 main。现阶段只申请离线诊断音频实现与证据，不申请默认算法替换、定位精度／音频收益达标、定点 DAS、完整 H2/H3 或实板实时通过。
+B 已对本轮呈现的 center 单麦／手动／自动三路反馈：**“无差别、无发闷、失真、断音、爆音或音量突变”**。结论仅为此次短录音主观试听未发现所列异常，未听出明显改善；不推断客观降噪收益。播放设备、系统音量是否保持一致及试听次数未另行确认，记录为未知。
+
+反馈另存 `evidence/listening-01.json`；运行文件中的 `listening_completed=false` 是生成当时的冻结状态，保留原字节，不回填旧证据。当前人工状态以新记录为准。后续将完整任务分支交 A 复核；现阶段只申请离线诊断音频实现与证据，不申请默认算法替换、定位精度／音频收益达标、定点 DAS、完整 H2/H3 或实板实时通过。

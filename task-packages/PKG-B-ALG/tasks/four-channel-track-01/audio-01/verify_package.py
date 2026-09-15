@@ -34,10 +34,17 @@ def verify():
         if path.name in ('mixer.py','test_audio.py'):
             path=HERE/'history/before-expiry-fix'/path.name
         if sha(path)!=want: raise ValueError('HISTORICAL_SOURCE_CHANGED: '+p)
+    listening=load(HERE/'evidence/listening-01.json')
+    if len(listening['presented_files'])!=3: raise ValueError('LISTENING_FILE_SET_CHANGED')
+    for p,want in listening['presented_files'].items():
+        if sha(HERE/p)!=want: raise ValueError('LISTENING_AUDIO_CHANGED: '+p)
+    if sha(HERE/'evidence/run02/audio/result.json')!=listening['render_result_sha256']:
+        raise ValueError('LISTENING_RENDER_CHANGED')
     return dict(status='PACKAGE_AND_SOURCE_BINDINGS_PASS',revision_files=len(manifest),
                 parent_files=len(parent_files),pinned_inputs_and_dependencies=len(pins),
                 tested_sources=len(tested),historical_sources_bound=True,
-                scope='author integrity check; listening and A review pending')
+                listening_files_bound=3,
+                scope='author integrity check; B subjective feedback recorded; A review pending')
 
 
 def compare_saved():
