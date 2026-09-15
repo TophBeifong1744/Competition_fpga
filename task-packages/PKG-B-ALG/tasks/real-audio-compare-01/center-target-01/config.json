@@ -1,0 +1,69 @@
+{
+  "version": "center-target-audio-input-0.1",
+  "baseline": "058aa3095fd4df7392645004b164adb4eec52041",
+  "accepted_input_commit": "f9768b80e5718dcf29baf48015305780f4b9b8e8",
+  "previous_audio_commit": "1aa1f219ccdc9bd398d4493dfb44613d11174626",
+  "pins_sha256": "e157d98af49aebae0fac81fd939cb0c578d9c03257bce37b06228a9e56b16946",
+  "batch": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914",
+  "recording": "c-center-target-20260914-01",
+  "sample_rate_hz": 48000,
+  "channel_order": [
+    "mic0",
+    "mic1",
+    "mic2",
+    "mic3"
+  ],
+  "positions_m": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0.04,
+      0,
+      0
+    ],
+    [
+      0.04,
+      0.04,
+      0
+    ],
+    [
+      0,
+      0.04,
+      0
+    ]
+  ],
+  "reference_channel": "mic0",
+  "pcm_divisor": 8388608,
+  "input_selection": "all_clean_contiguous_intervals; no joining recordings or errors",
+  "manual_steering": {
+    "model": "plane_wave_trial",
+    "azimuth_deg": 0,
+    "elevation_deg": 0,
+    "sound_speed_m_s": 343,
+    "reference_center_m": [
+      0.02,
+      0.02,
+      0
+    ],
+    "metadata_origin": "mic0",
+    "reported_distance_m": 1.5,
+    "distance_used_in_delay_model": false,
+    "precision_ground_truth": false,
+    "source": "operator-reported live human voice; approximate center +X placement; not measured acoustic truth"
+  },
+  "output_policy": {
+    "independent_normalization": false,
+    "preview_gain": null,
+    "preview_gain_status": "choose one common gain for this recording pair after peak/saturation check in step3; do not inherit old 64x blindly",
+    "audio_generated": false
+  },
+  "missing_evidence": [
+    "precise voice activity intervals",
+    "independent clean/noise reference",
+    "precision geometry and channel calibration",
+    "new-recording listening feedback"
+  ]
+}

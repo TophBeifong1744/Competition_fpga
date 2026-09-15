@@ -1,0 +1,197 @@
+{
+  "status": "AUTHOR_OFFLINE_RENDER_ONLY",
+  "recording": "c-center-target-20260914-01",
+  "config": {
+    "version": "center-target-audio-input-0.1",
+    "baseline": "058aa3095fd4df7392645004b164adb4eec52041",
+    "accepted_input_commit": "f9768b80e5718dcf29baf48015305780f4b9b8e8",
+    "previous_audio_commit": "1aa1f219ccdc9bd398d4493dfb44613d11174626",
+    "pins_sha256": "e157d98af49aebae0fac81fd939cb0c578d9c03257bce37b06228a9e56b16946",
+    "batch": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914",
+    "recording": "c-center-target-20260914-01",
+    "sample_rate_hz": 48000,
+    "channel_order": [
+      "mic0",
+      "mic1",
+      "mic2",
+      "mic3"
+    ],
+    "positions_m": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0.04,
+        0,
+        0
+      ],
+      [
+        0.04,
+        0.04,
+        0
+      ],
+      [
+        0,
+        0.04,
+        0
+      ]
+    ],
+    "reference_channel": "mic0",
+    "pcm_divisor": 8388608,
+    "input_selection": "all_clean_contiguous_intervals; no joining recordings or errors",
+    "manual_steering": {
+      "model": "plane_wave_trial",
+      "azimuth_deg": 0,
+      "elevation_deg": 0,
+      "sound_speed_m_s": 343,
+      "reference_center_m": [
+        0.02,
+        0.02,
+        0
+      ],
+      "metadata_origin": "mic0",
+      "reported_distance_m": 1.5,
+      "distance_used_in_delay_model": false,
+      "precision_ground_truth": false,
+      "source": "operator-reported live human voice; approximate center +X placement; not measured acoustic truth"
+    },
+    "output_policy": {
+      "independent_normalization": false,
+      "preview_gain": null,
+      "preview_gain_status": "choose one common gain for this recording pair after peak/saturation check in step3; do not inherit old 64x blindly",
+      "audio_generated": false
+    },
+    "missing_evidence": [
+      "precise voice activity intervals",
+      "independent clean/noise reference",
+      "precision geometry and channel calibration",
+      "new-recording listening feedback"
+    ]
+  },
+  "render_config": {
+    "version": "center-manual-linear-0.1",
+    "input_config_sha256": "53c11ab80b78fa85bccbb44f1694e11708033a578754b0f19016eba05ff15111",
+    "interpolation": "reuse_approved_linear_render_interval",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "pcm_bits": 24,
+    "preview_gain_rule": "power_of_two_at_most_128_keep_peak_at_most_0.5",
+    "gain_peak_scope": "all_clean_four_channel_input_and_both_output_branches",
+    "common_preview_gain": true,
+    "preview_gain_for_all_zero_input": 1,
+    "raw_gain": 1,
+    "streaming": false
+  },
+  "pins": {
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/delivery-01/SHA256.json": "f694f234a9dbd7a7661741627cd43ed76cad40ec99d07b41103855ea2eb98111",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/actual-record-20260915.json": "a9ef548557ceeb3a191e52d65c52f33034a4b1bfc75e8f0922f1cac90627585f",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/INPUT-RECEIPT.md": "eb0e4af87c2922b19690c64c1772b5357c658277022c3bcbe7b6a33975a04688",
+    "docs/reviews/center-target-f9768b8/B-REVIEW.md": "b48a5c12e8c283ba208515ad431e98b27a540b300bc8a0350f3dd7fbf31db376",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/delivery-01/c-center-target-20260914-01/samples.csv": "5779f700e11442446b0884d81270e507fd88bcf39610a7a674889c136939e9da",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/delivery-01/c-center-target-20260914-01/metadata.json": "a08e7268d2bd6df0cebc0e8066a2d53139c48a0b6bf51a0717e98c448fa4c541",
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/render_audio.py": "150478f12144be489e5ea2418d24a024cbeb1a837fbbe70059ba171d81e5384a",
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/check_inputs.py": "4f7cc3dc96c0f1b0966e5d38bdd89390a017606141a2da01514336e1bbe8a3d9",
+    "task-packages/PKG-B-ALG/payload/model/python/h1_reader.py": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9",
+    "task-packages/PKG-B-ALG/payload/model/python/audio_frames.py": "0ed77ea8db8834576c21206358a8d945b612a176cad742bb266d077ee2a79408"
+  },
+  "compensation_delays_samples": [
+    0.0,
+    5.597667638483965,
+    5.597667638483965,
+    0.0
+  ],
+  "preview_peak_basis": 0.007843017578125,
+  "preview_common_gain": 32.0,
+  "records": [
+    {
+      "interval": 0,
+      "input_row_start": 0,
+      "input_row_stop": 32000,
+      "output_reference_row_start": 6,
+      "output_reference_row_stop": 32000,
+      "first_reference_sample_id": "17419",
+      "last_reference_sample_id": "49412",
+      "discarded_left": 6,
+      "discarded_right": 0,
+      "duration_s": 0.6665416666666667,
+      "files": [
+        {
+          "file": "interval00-single-raw.wav",
+          "sha256": "16ee7ba0baca981845bda34647c849b72481065d62dbc00a5c1430709c831040",
+          "frames": 31994,
+          "saturation_samples": 0,
+          "peak_abs": 0.00749969482421875,
+          "rms": 0.0017093904978613922,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 0.0,
+          "branch": "single",
+          "mode": "raw",
+          "gain": 1.0
+        },
+        {
+          "file": "interval00-single-preview.wav",
+          "sha256": "f0ae44478da28a6632aca76605f5448ddccf93df81103930452ce835d41a6638",
+          "frames": 31994,
+          "saturation_samples": 0,
+          "peak_abs": 0.239990234375,
+          "rms": 0.05470049593156455,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 0.0,
+          "branch": "single",
+          "mode": "preview",
+          "gain": 32.0
+        },
+        {
+          "file": "interval00-manual-raw.wav",
+          "sha256": "306818add64f8dbccdced17fb25628702c62c4b46c019520d94fbb6d6c658190",
+          "frames": 31994,
+          "saturation_samples": 0,
+          "peak_abs": 0.00701141357421875,
+          "rms": 0.0016301027446174478,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 5.943087114795853e-08,
+          "branch": "manual",
+          "mode": "raw",
+          "gain": 1.0
+        },
+        {
+          "file": "interval00-manual-preview.wav",
+          "sha256": "71fd2c12f79a39ba12039d55272855ea2efc210bef37843f754ebc1e9df88799",
+          "frames": 31994,
+          "saturation_samples": 0,
+          "peak_abs": 0.224365234375,
+          "rms": 0.05216328782775833,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 5.9430891097278504e-08,
+          "branch": "manual",
+          "mode": "preview",
+          "gain": 32.0
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/center-target-01/render_center.py": "2f84df723a6d094b069e6cf430cf80a194c9e3a3696081ace4257fa4bd707b3d",
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/center-target-01/config.json": "53c11ab80b78fa85bccbb44f1694e11708033a578754b0f19016eba05ff15111",
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/center-target-01/render-config.json": "5eb996a9cbf477f523374aba73b69c4fa0e5e658514c41d661b3319ec7b7efc1",
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/center-target-01/pins.json": "e157d98af49aebae0fac81fd939cb0c578d9c03257bce37b06228a9e56b16946"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "new_recording_listening_completed": false,
+  "acoustic_gain_verified": false,
+  "limits": [
+    "Offline linear interpolation; frequency-dependent attenuation remains.",
+    "Operator-reported center +X at 1.5m; no precise truth or clean/noise reference.",
+    "No streaming, automatic steering, fixed-point DAS or board audio verification."
+  ]
+}
