@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "float_differences": [],
+  "wavs": [
+    {
+      "file": "c-adapter-speech-20260913-01-interval00-single-raw.wav",
+      "sha256": "2429cca56d02e5cc66bab3d772f1fdc6d12c8f7959120755c1b43c0dcc1b879c",
+      "bytes_equal": true,
+      "decoded_exact": true,
+      "frames": 31992,
+      "oracle_max_error": 0.0,
+      "saturation": 0
+    },
+    {
+      "file": "c-adapter-speech-20260913-01-interval00-single-preview.wav",
+      "sha256": "56df7762f1a92fb3dbdb3b7d7ea2949fd01987ba4853e45ac8050c0f84fbd0e4",
+      "bytes_equal": true,
+      "decoded_exact": true,
+      "frames": 31992,
+      "oracle_max_error": 0.0,
+      "saturation": 0
+    },
+    {
+      "file": "c-adapter-speech-20260913-01-interval00-manual-raw.wav",
+      "sha256": "fef24a9da932d7c10a036e88d40f86866db9612d478145e6c00477d08553bb94",
+      "bytes_equal": true,
+      "decoded_exact": true,
+      "frames": 31992,
+      "oracle_max_error": 5.945248413019577e-08,
+      "saturation": 0
+    },
+    {
+      "file": "c-adapter-speech-20260913-01-interval00-manual-preview.wav",
+      "sha256": "253397b502f70233f6c3852c7622fb495db26b7867684b94e895465fd5d87ef8",
+      "bytes_equal": true,
+      "decoded_exact": true,
+      "frames": 31992,
+      "oracle_max_error": 5.923870838309142e-08,
+      "saturation": 0
+    },
+    {
+      "file": "c-adapter-quiet-20260913-01-interval00-single-raw.wav",
+      "sha256": "9105629a3e203d07e3ca01b1b5e2c217a76bddd29a6617b9d9658a635388e84e",
+      "bytes_equal": true,
+      "decoded_exact": true,
+      "frames": 31992,
+      "oracle_max_error": 0.0,
+      "saturation": 0
+    },
+    {
+      "file": "c-adapter-quiet-20260913-01-interval00-single-preview.wav",
+      "sha256": "f40a09b25f8bb4e2e8c217a3152db6da31767089d98ee421cb2fd2b06b5c54e8",
+      "bytes_equal": true,
+      "decoded_exact": true,
+      "frames": 31992,
+      "oracle_max_error": 0.0,
+      "saturation": 0
+    },
+    {
+      "file": "c-adapter-quiet-20260913-01-interval00-manual-raw.wav",
+      "sha256": "2854dcfa5d95e088039dc0d3dcc372f1bd5752d3779912c4915341e666d93e25",
+      "bytes_equal": true,
+      "decoded_exact": true,
+      "frames": 31992,
+      "oracle_max_error": 5.945248413019577e-08,
+      "saturation": 0
+    },
+    {
+      "file": "c-adapter-quiet-20260913-01-interval00-manual-preview.wav",
+      "sha256": "7345d61c86921d257f4dd03b16b47a212b7c15dd0099af80ce374e6f44905d9f",
+      "bytes_equal": true,
+      "decoded_exact": true,
+      "frames": 31992,
+      "oracle_max_error": 5.923870838309142e-08,
+      "saturation": 0
+    }
+  ],
+  "result_bytes_equal": true,
+  "input_check_bytes_equal": true,
+  "note": "Independent CSV + numpy.interp oracle; same prerecorded input is not acoustic ground truth. Listening record not independently reenacted."
+}
