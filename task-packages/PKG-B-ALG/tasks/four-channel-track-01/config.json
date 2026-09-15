@@ -1,0 +1,59 @@
+{
+  "version": "four-channel-track-0.1",
+  "base_commit": "8371f014711e04553749e6c2ffc29f34b9d5ccc9",
+  "accepted_center_input_commit": "f9768b80e5718dcf29baf48015305780f4b9b8e8",
+  "sample_rate_hz": 48000,
+  "frame": {
+    "length": 1024,
+    "hop": 512
+  },
+  "positions_m": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0.04,
+      0,
+      0
+    ],
+    [
+      0.04,
+      0.04,
+      0
+    ],
+    [
+      0,
+      0.04,
+      0
+    ]
+  ],
+  "sound_speed_m_s": 343,
+  "tracker": {
+    "cone_center": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "cone_half_angle_deg": 30.0,
+    "acquire_frames": 5,
+    "acquire_spread_deg": 8.0,
+    "track_step_deg": 20.0,
+    "hold_ms": 200.0,
+    "max_input_gap_ms": 30.0
+  },
+  "candidate_policy": "frozen floating diagnostic advisory consistency; horizontal assumption; target presence unknown; no production acceptance",
+  "recordings": [
+    {
+      "label": "center",
+      "directory": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/delivery-01/c-center-target-20260914-01",
+      "scene_context": "Operator reported array-center +X, approx 1.5 m live voice; no precision direction or speech activity truth. Context is not passed to tracker."
+    },
+    {
+      "label": "quiet",
+      "directory": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-quiet-20260913-01",
+      "scene_context": "Older quiet scene, unmatched background probe; not synchronized same-scene noise truth. Context is not passed to tracker."
+    }
+  ]
+}

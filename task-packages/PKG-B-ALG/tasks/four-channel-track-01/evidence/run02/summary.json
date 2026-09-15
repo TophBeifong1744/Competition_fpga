@@ -1,0 +1,331 @@
+{
+  "status": "AUTHOR_DIAGNOSTIC_ONLY",
+  "base_commit": "8371f014711e04553749e6c2ffc29f34b9d5ccc9",
+  "checkout_head": "8371f014711e04553749e6c2ffc29f34b9d5ccc9",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64"
+  },
+  "config": {
+    "version": "four-channel-track-0.1",
+    "base_commit": "8371f014711e04553749e6c2ffc29f34b9d5ccc9",
+    "accepted_center_input_commit": "f9768b80e5718dcf29baf48015305780f4b9b8e8",
+    "sample_rate_hz": 48000,
+    "frame": {
+      "length": 1024,
+      "hop": 512
+    },
+    "positions_m": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0.04,
+        0,
+        0
+      ],
+      [
+        0.04,
+        0.04,
+        0
+      ],
+      [
+        0,
+        0.04,
+        0
+      ]
+    ],
+    "sound_speed_m_s": 343,
+    "tracker": {
+      "cone_center": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "cone_half_angle_deg": 30.0,
+      "acquire_frames": 5,
+      "acquire_spread_deg": 8.0,
+      "track_step_deg": 20.0,
+      "hold_ms": 200.0,
+      "max_input_gap_ms": 30.0
+    },
+    "candidate_policy": "frozen floating diagnostic advisory consistency; horizontal assumption; target presence unknown; no production acceptance",
+    "recordings": [
+      {
+        "label": "center",
+        "directory": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/delivery-01/c-center-target-20260914-01",
+        "scene_context": "Operator reported array-center +X, approx 1.5 m live voice; no precision direction or speech activity truth. Context is not passed to tracker."
+      },
+      {
+        "label": "quiet",
+        "directory": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-quiet-20260913-01",
+        "scene_context": "Older quiet scene, unmatched background probe; not synchronized same-scene noise truth. Context is not passed to tracker."
+      }
+    ]
+  },
+  "effective_tracker": {
+    "cone_center": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "cone_half_angle_deg": 30.0,
+    "acquire_frames": 5,
+    "acquire_spread_deg": 8.0,
+    "track_step_deg": 20.0,
+    "hold_ms": 200.0,
+    "max_input_gap_ms": 30.0
+  },
+  "pins": {
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/delivery-01/SHA256.json": "f694f234a9dbd7a7661741627cd43ed76cad40ec99d07b41103855ea2eb98111",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/actual-record-20260915.json": "a9ef548557ceeb3a191e52d65c52f33034a4b1bfc75e8f0922f1cac90627585f",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/INPUT-RECEIPT.md": "eb0e4af87c2922b19690c64c1772b5357c658277022c3bcbe7b6a33975a04688",
+    "docs/reviews/center-target-f9768b8/B-REVIEW.md": "b48a5c12e8c283ba208515ad431e98b27a540b300bc8a0350f3dd7fbf31db376",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/delivery-01/c-center-target-20260914-01/samples.csv": "5779f700e11442446b0884d81270e507fd88bcf39610a7a674889c136939e9da",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/delivery-01/c-center-target-20260914-01/metadata.json": "a08e7268d2bd6df0cebc0e8066a2d53139c48a0b6bf51a0717e98c448fa4c541",
+    "task-packages/PKG-B-ALG/payload/model/python/h1_reader.py": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9",
+    "task-packages/PKG-B-ALG/payload/model/python/audio_frames.py": "0ed77ea8db8834576c21206358a8d945b612a176cad742bb266d077ee2a79408",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/GEOMETRY.md": "fdfe2b60ebed19c1ffbfca421d1964d91c564338949148b1bb6a56496904b8f7",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-quiet-20260913-01/samples.csv": "55cda506bdc906e80cc2e3fe9e23619f36e872e5eb3e8e78b73de63c340188e2",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-quiet-20260913-01/metadata.json": "58c710b72c508421661533af6b21e7ed085b92dcdff8c02e6c59c4bc5acdef31",
+    "task-packages/PKG-B-ALG/tasks/c-board-algorithm-01/run.py": "7acd56bd7742baf174b0273f0aee2e54bacfe730840c7cb8019c07e3b2b675de",
+    "task-packages/PKG-B-ALG/tasks/phat-fixed-03/integration/chain.py": "eb5c19b1ff30ec5926170c2f1c216ac764f3aa855c0d165c9822c6d59e11a9a7",
+    "task-packages/PKG-B-ALG/tasks/phat-fixed-03/phat_model.py": "84eaa9691f62aba7164e3172aa94b2e361cb99672647477d98f8b3f3889f3144",
+    "task-packages/PKG-B-ALG/tasks/fft-window-02/window_model.py": "3fd314bcf6c866b2a2ed8185ea1be2dd1079d38e38dc11f5caa883b748889bce",
+    "task-packages/PKG-B-ALG/tasks/fft-bitexact-01/compare_cmodel.py": "d14e589b559a5afbf5e1e2d6e095d54896fef1f33ffd482c5a80ad293398b1d8",
+    "task-packages/PKG-B-ALG/payload/model/python/six_mic_baseline_core.py": "23184058f08fa54af4c61b9681f2fbe40341430f0ba48f8574676f27ce4964b0",
+    "task-packages/PKG-B-ALG/payload/model/python/sector_tracker.py": "2297aa7f94058e3e4faf3da792c6f1beef6c68fa72121100ec672d60ade5ec50",
+    "task-packages/PKG-B-ALG/payload/tb/python/test_sector_tracker.py": "09a2d994e48cd8eb84adfe8261acff908248550e5390ed810d0a9fc953744d32",
+    "task-packages/PKG-B-ALG/payload/tb/python/test_audio_frames.py": "ebb78647115398de4971ba261a92b33ab2c14beb305e2b72c6a82d648db28db9"
+  },
+  "sources": {
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/reproduce.py": "fcd9c1d7d94bb1467fc67f5e7427b915fff45f423415aa9596bb5c261cc94218",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/run.py": "1fbe2f9791be1b1bf5e968a196316d59dcd10edb97603da71243e05f08f4e33d",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/test_tracking.py": "dd743b7e4ffe8e4d8e6c22e0e5bdee284b30f13c3424db96910c40fe66c86b3e",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/tracking.py": "08e3bb674ebe33ac74c1b38ccf869351d6ec3ddded50d55b170a6f36596e4d58",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/verify.py": "4845ee7c735d3cccc44bf1beee2afb921ece236eb729a0d1328260625811195f",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/config.json": "096ebc0fd396fa4f4c07c650e4ce98c4253ee579d26d0416cbfe7c0e33f5f6ce",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/pins.json": "bb7da0fff5899a961fec86d980221d03277e5acd9b829d66faaeb73fa17090dc"
+  },
+  "recordings": [
+    {
+      "acquisition_id": "c-center-target-20260914-01",
+      "framing": {
+        "profile": "h1-four-channel-0.3",
+        "sample_rate_hz": 48000.0,
+        "frame_length": 1024,
+        "hop": 512,
+        "frame_duration_seconds": 0.021333333333333333,
+        "hop_seconds": 0.010666666666666666,
+        "frames": 61,
+        "input_rows": 32000,
+        "error_rows": 0,
+        "missing_samples": 0,
+        "unused_clean_rows": 256,
+        "intervals": [
+          {
+            "row_start": 0,
+            "row_stop": 32000,
+            "frames": 61,
+            "covered_unique_rows": 31744,
+            "unused_tail_rows": 256
+          }
+        ],
+        "direction_policy": "diagnostic_only_requires_geometry_and_algorithm_validation",
+        "provenance": {
+          "file_sha256": {
+            "metadata.json": "a08e7268d2bd6df0cebc0e8066a2d53139c48a0b6bf51a0717e98c448fa4c541",
+            "samples.csv": "5779f700e11442446b0884d81270e507fd88bcf39610a7a674889c136939e9da"
+          },
+          "conversion": "float64(pcm) / 8388608; common fixed gain",
+          "error_rows": 0,
+          "missing_samples": 0
+        }
+      },
+      "pair_order": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "bounds_samples": [
+        5.597667638483965,
+        7.916297492000999,
+        5.597667638483965,
+        5.597667638483965,
+        7.916297492000999,
+        5.597667638483965
+      ],
+      "states": {
+        "SEARCH": 14,
+        "ACQUIRE": 8,
+        "LOCKED": 21,
+        "HOLD": 18
+      },
+      "numeric_consistent_frames": 36,
+      "fresh_frames": 21,
+      "first_lock_ready_ms": 256.0,
+      "consistent_azimuth_range_deg": [
+        -166.00806472378127,
+        110.21560100064323
+      ],
+      "tracker_reasons": {
+        "baseline_rejected": 25,
+        "acquiring": 8,
+        "acquired": 1,
+        "track_update": 20,
+        "track_jump": 3,
+        "outside_cone": 4
+      },
+      "pair_reasons": {
+        "FEWER_THAN_12_BINS": 41,
+        "VALID": 294,
+        "TAU_BOUND": 31
+      },
+      "diagnostic_routes": {
+        "single": 22,
+        "tracked": 21,
+        "hold": 18
+      },
+      "target_presence": "unknown",
+      "direction_accepted": false,
+      "accuracy_deg": null,
+      "wrong_target_rate": null,
+      "audio_benefit": null,
+      "count_unit": "overlapping frames; not independent observations or audio-duration shares",
+      "label": "center",
+      "scene_context": "Operator reported array-center +X, approx 1.5 m live voice; no precision direction or speech activity truth. Context is not passed to tracker."
+    },
+    {
+      "acquisition_id": "c-adapter-quiet-20260913-01",
+      "framing": {
+        "profile": "h1-four-channel-0.3",
+        "sample_rate_hz": 48000.0,
+        "frame_length": 1024,
+        "hop": 512,
+        "frame_duration_seconds": 0.021333333333333333,
+        "hop_seconds": 0.010666666666666666,
+        "frames": 61,
+        "input_rows": 32000,
+        "error_rows": 0,
+        "missing_samples": 0,
+        "unused_clean_rows": 256,
+        "intervals": [
+          {
+            "row_start": 0,
+            "row_stop": 32000,
+            "frames": 61,
+            "covered_unique_rows": 31744,
+            "unused_tail_rows": 256
+          }
+        ],
+        "direction_policy": "diagnostic_only_requires_geometry_and_algorithm_validation",
+        "provenance": {
+          "file_sha256": {
+            "metadata.json": "58c710b72c508421661533af6b21e7ed085b92dcdff8c02e6c59c4bc5acdef31",
+            "samples.csv": "55cda506bdc906e80cc2e3fe9e23619f36e872e5eb3e8e78b73de63c340188e2"
+          },
+          "conversion": "float64(pcm) / 8388608; common fixed gain",
+          "error_rows": 0,
+          "missing_samples": 0
+        }
+      },
+      "pair_order": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "bounds_samples": [
+        5.597667638483965,
+        7.916297492000999,
+        5.597667638483965,
+        5.597667638483965,
+        7.916297492000999,
+        5.597667638483965
+      ],
+      "states": {
+        "SEARCH": 61,
+        "ACQUIRE": 0,
+        "LOCKED": 0,
+        "HOLD": 0
+      },
+      "numeric_consistent_frames": 35,
+      "fresh_frames": 0,
+      "first_lock_ready_ms": null,
+      "consistent_azimuth_range_deg": [
+        -139.11770009343536,
+        -73.37655640433029
+      ],
+      "tracker_reasons": {
+        "baseline_rejected": 26,
+        "outside_cone": 35
+      },
+      "pair_reasons": {
+        "VALID": 366
+      },
+      "diagnostic_routes": {
+        "single": 61
+      },
+      "target_presence": "unknown",
+      "direction_accepted": false,
+      "accuracy_deg": null,
+      "wrong_target_rate": null,
+      "audio_benefit": null,
+      "count_unit": "overlapping frames; not independent observations or audio-duration shares",
+      "label": "quiet",
+      "scene_context": "Older quiet scene, unmatched background probe; not synchronized same-scene noise truth. Context is not passed to tracker."
+    }
+  ],
+  "timing": "sample-ID relative frame-end time; idealized zero compute delay, not measured real-time latency",
+  "limits": [
+    "No presence gate, precision truth, direction acceptance, automatic WAV, RTL or H3 approval.",
+    "Existing floating diagnostic only; no AMD DLL, no fixed-chain revalidation.",
+    "Quiet is an unmatched background probe; candidate consistency is not speech presence."
+  ],
+  "elapsed_host_seconds": 1.6599423000006936
+}

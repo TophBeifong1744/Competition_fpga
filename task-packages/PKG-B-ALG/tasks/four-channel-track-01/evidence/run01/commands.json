@@ -1,0 +1,59 @@
+[
+  {
+    "label": "adapter-tests",
+    "command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\develop\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\test_tracking.py",
+      "-v"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "returncode": 0
+  },
+  {
+    "label": "tracker-regression",
+    "command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "F:\\NUEC\\develop\\task-packages\\PKG-B-ALG\\payload\\tb\\python",
+      "-p",
+      "test_sector_tracker.py",
+      "-v"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "returncode": 0
+  },
+  {
+    "label": "framing-regression",
+    "command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "F:\\NUEC\\develop\\task-packages\\PKG-B-ALG\\payload\\tb\\python",
+      "-p",
+      "test_audio_frames.py",
+      "-v"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "returncode": 0
+  },
+  {
+    "label": "real-replay",
+    "command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\develop\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\run.py",
+      "--out",
+      "F:\\NUEC\\develop\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\evidence\\run01\\replay"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "returncode": 0
+  }
+]
