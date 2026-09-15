@@ -1,0 +1,1715 @@
+Archive member included to satisfy reference by file (symbol)
+
+../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+                              unit.o (xil_printf)
+../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj)
+                              (_vector_table)
+../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+                              ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj) (_boot)
+../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+                              ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj) (_start)
+../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+                              unit.o (Xil_DCacheInvalidateRange)
+../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+                              ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj) (FIQInterrupt)
+../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+                              ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj) (UndefinedExceptionAddr)
+../inputs/bsp/lib\libxilstandalone.a(translation_table.S.obj)
+                              ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj) (MMUTable)
+../inputs/bsp/lib\libxilstandalone.a(cpu_init.S.obj)
+                              ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj) (__cpu_init)
+../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+                              unit.o (XTime_GetTime)
+../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+                              unit.o (usleep)
+../inputs/bsp/lib\libxil.a(xaxidma_sinit.c.obj)
+                              unit.o (XAxiDma_LookupConfig)
+../inputs/bsp/lib\libxil.a(xaxidma_g.c.obj)
+                              ../inputs/bsp/lib\libxil.a(xaxidma_sinit.c.obj) (XAxiDma_ConfigTable)
+../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+                              unit.o (XAxiDma_Reset)
+../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+                              unit.o (XGpio_Initialize)
+../inputs/bsp/lib\libxil.a(xgpio_g.c.obj)
+                              ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj) (XGpio_ConfigTable)
+../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+                              ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj) (XGpio_CfgInitialize)
+../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+                              ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj) (outbyte)
+../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+                              ../inputs/bsp/lib\libxil.a(xaxidma.c.obj) (XAxiDma_BdRingStart)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+                              ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj) (__aeabi_uidiv)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+                              ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj) (__aeabi_idiv)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_dvmd_tls.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+                              unit.o (__aeabi_uldivmod)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivmoddi4.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_aeabi_uldivmod.o) (__udivmoddi4)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-exit.o)
+                              ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj) (exit)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-malloc.o)
+                              ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj) (malloc)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-malloc.o) (_malloc_r)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mlock.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o) (__malloc_lock)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-ctype_.o)
+                              ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj) (_ctype_)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-exit.o) (__stdio_exit_handler)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fwalk.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o) (_fwalk_sglue)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o) (__sread)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-memset.o)
+                              unit.o (memset)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-closer.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o) (_close_r)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-reent.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-closer.o) (errno)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-impure.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-malloc.o) (_impure_ptr)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-lseekr.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o) (_lseek_r)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-readr.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o) (_read_r)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-sbrkr.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o) (_sbrk_r)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-writer.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o) (_write_r)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-init.o)
+                              ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj) (__libc_init_array)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fini.o)
+                              ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj) (__libc_fini_array)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-sysconf.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o) (sysconf)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-strlen.o)
+                              ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj) (strlen)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-__call_atexit.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-exit.o) (__call_exitprocs)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-freer.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-malloc.o) (_free_r)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fclose.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o) (_fclose_r)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fflush.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fclose.o) (__sflush_r)
+F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-errno.o)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-sysconf.o) (__errno)
+../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+                              ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj) (Xil_Assert)
+../inputs/bsp/lib\libxilstandalone.a(xcortexa9_g.c.obj)
+                              ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj) (XCortexa9_ConfigTable)
+../inputs/bsp/lib\libxilstandalone.a(read.c.obj)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-readr.o) (_read)
+../inputs/bsp/lib\libxilstandalone.a(_sbrk.c.obj)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-sbrkr.o) (_sbrk)
+../inputs/bsp/lib\libxilstandalone.a(_exit.c.obj)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-exit.o) (_exit)
+../inputs/bsp/lib\libxilstandalone.a(close.c.obj)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-closer.o) (_close)
+../inputs/bsp/lib\libxilstandalone.a(write.c.obj)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-writer.o) (_write)
+../inputs/bsp/lib\libxilstandalone.a(lseek.c.obj)
+                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-lseekr.o) (_lseek)
+
+Discarded input sections
+
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+ .group         0x00000000        0xc unit.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ps7_ddr_0_memory_0 0x00100000         0x00f00000
+ps7_qspi_linear_0_memory_0 0xfc000000         0x01000000
+ps7_ram_0_memory_0 0x00000000         0x00030000
+ps7_ram_1_memory_1 0xffff0000         0x0000fe00
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crti.o
+LOAD F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+LOAD unit.o
+                0x00002000                        _STACK_SIZE = DEFINED (_STACK_SIZE)?_STACK_SIZE:0x2000
+                0x00002000                        _HEAP_SIZE = DEFINED (_HEAP_SIZE)?_HEAP_SIZE:0x2000
+                0x00000400                        _ABORT_STACK_SIZE = DEFINED (_ABORT_STACK_SIZE)?_ABORT_STACK_SIZE:0x400
+                0x00000800                        _SUPERVISOR_STACK_SIZE = DEFINED (_SUPERVISOR_STACK_SIZE)?_SUPERVISOR_STACK_SIZE:0x800
+                0x00000400                        _IRQ_STACK_SIZE = DEFINED (_IRQ_STACK_SIZE)?_IRQ_STACK_SIZE:0x400
+                0x00000400                        _FIQ_STACK_SIZE = DEFINED (_FIQ_STACK_SIZE)?_FIQ_STACK_SIZE:0x400
+                0x00000400                        _UNDEF_STACK_SIZE = DEFINED (_UNDEF_STACK_SIZE)?_UNDEF_STACK_SIZE:0x400
+
+.text           0x00100000     0x649c
+ *(.vectors)
+ .vectors       0x00100000       0xcc ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj)
+                0x00100000                _vector_table
+ *(.boot)
+ .boot          0x001000cc      0x38c ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+                0x001000cc                _prestart
+                0x001000cc                _boot
+ *(.text)
+ .text          0x00100458        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crti.o
+ .text          0x00100458       0x50 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+ .text          0x001004a8      0xa3c unit.o
+                0x001007b0                failure_name
+                0x001007cc                session_init
+                0x00100818                session_run
+ *fill*         0x00100ee4        0x4 
+ .text          0x00100ee8      0x994 ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+                0x00101264                xil_vprintf
+                0x00101850                xil_printf
+ .text          0x0010187c        0x0 ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj)
+ .text          0x0010187c        0x0 ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+ .text          0x0010187c       0x74 ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+                0x00101890                _start
+ .text          0x001018f0      0xcfc ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+                0x001018f0                Xil_DCacheInvalidateLine
+                0x00101928                Xil_DCacheInvalidateRange
+                0x00101aa0                Xil_DCacheFlushLine
+                0x00101ae8                Xil_DCacheFlushRange
+                0x00101c24                Xil_DCacheStoreLine
+                0x00101c5c                Xil_ICacheDisable
+                0x00101cd8                Xil_ICacheInvalidateLine
+                0x00101d10                Xil_ICacheInvalidateRange
+                0x00101d90                Xil_L1DCacheInvalidate
+                0x00101e40                Xil_L1DCacheEnable
+                0x00101e60                Xil_L1DCacheInvalidateLine
+                0x00101e78                Xil_L1DCacheInvalidateRange
+                0x00101edc                Xil_L1DCacheFlush
+                0x00101f64                Xil_L1DCacheDisable
+                0x00101f7c                Xil_DCacheFlush
+                0x00101fd8                Xil_DCacheDisable
+                0x00102050                Xil_L1DCacheFlushLine
+                0x00102068                Xil_L1DCacheFlushRange
+                0x001020cc                Xil_L1DCacheStoreLine
+                0x001020e4                Xil_L1ICacheEnable
+                0x00102100                Xil_L1ICacheDisable
+                0x0010211c                Xil_L1ICacheInvalidate
+                0x00102134                Xil_L1ICacheInvalidateLine
+                0x0010214c                Xil_L1ICacheInvalidateRange
+                0x001021b0                Xil_L2CacheDisable
+                0x00102210                Xil_L2CacheInvalidate
+                0x0010227c                Xil_DCacheInvalidate
+                0x0010229c                Xil_ICacheInvalidate
+                0x001022cc                Xil_L2CacheEnable
+                0x0010232c                Xil_ICacheEnable
+                0x001023a4                Xil_DCacheEnable
+                0x0010241c                Xil_L2CacheInvalidateLine
+                0x00102430                Xil_L2CacheInvalidateRange
+                0x001024d4                Xil_L2CacheFlush
+                0x00102518                Xil_L2CacheFlushLine
+                0x00102534                Xil_L2CacheFlushRange
+                0x001025d4                Xil_L2CacheStoreLine
+ .text          0x001025ec       0x78 ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+                0x001025ec                FIQInterrupt
+                0x00102600                IRQInterrupt
+                0x00102614                UndefinedException
+                0x00102628                SWInterrupt
+                0x0010263c                DataAbortInterrupt
+                0x00102650                PrefetchAbortInterrupt
+ .text          0x00102664       0x70 ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+                0x00102674                Xil_ExceptionInit
+                0x00102678                Xil_ExceptionRegisterHandler
+                0x00102690                Xil_GetExceptionRegisterHandler
+                0x001026b0                Xil_ExceptionRemoveHandler
+ .text          0x001026d4        0x0 ../inputs/bsp/lib\libxilstandalone.a(translation_table.S.obj)
+ .text          0x001026d4       0x3c ../inputs/bsp/lib\libxilstandalone.a(cpu_init.S.obj)
+                0x001026d4                __cpu_init
+ .text          0x00102710      0x104 ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+                0x001027b0                XilSleepTimer_Init
+                0x001027cc                XTime_GetTime
+                0x001027f4                XilTickTimer_Init
+ .text          0x00102814      0x12c ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+                0x00102814                sleep
+                0x00102844                msleep
+                0x00102874                usleep
+                0x001028a8                XilTimer_Sleep
+                0x001028d8                XTimer_SetHandler
+                0x00102908                XTimer_SetInterval
+                0x00102928                XTimer_ClearTickInterrupt
+ .text          0x00102940       0x64 ../inputs/bsp/lib\libxil.a(xaxidma_sinit.c.obj)
+                0x00102940                XAxiDma_LookupConfig
+ .text          0x001029a4        0x0 ../inputs/bsp/lib\libxil.a(xaxidma_g.c.obj)
+ .text          0x001029a4      0x8c4 ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+                0x001029a4                XAxiDma_Reset
+                0x00102ab8                XAxiDma_CfgInitialize
+                0x00102d7c                XAxiDma_ResetIsDone
+                0x00102dc8                XAxiDma_Pause
+                0x00102e9c                XAxiDma_Resume
+                0x00103090                XAxiDma_Busy
+                0x001030ac                XAxiDma_SelectKeyHole
+                0x001030d4                XAxiDma_SelectCyclicMode
+                0x001030fc                XAxiDma_SimpleTransfer
+ .text          0x00103268      0x118 ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+                0x00103268                XGpio_LookupConfig
+                0x001032cc                XGpio_Initialize
+ .text          0x00103380        0x0 ../inputs/bsp/lib\libxil.a(xgpio_g.c.obj)
+ .text          0x00103380      0x344 ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+                0x00103380                XGpio_CfgInitialize
+                0x001033ec                XGpio_SetDataDirection
+                0x001034a0                XGpio_GetDataDirection
+                0x0010355c                XGpio_DiscreteRead
+                0x00103614                XGpio_DiscreteWrite
+ .text          0x001036c4       0xd8 ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+                0x001036c4                XUartPs_SendByte
+                0x001036dc                XUartPs_RecvByte
+                0x001036f8                XUartPs_ResetHw
+                0x00103748                XUartPs_WaitTransmitDone
+                0x00103768                outbyte
+                0x00103780                inbyte
+ .text          0x0010379c      0xcdc ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+                0x0010379c                XAxiDma_UpdateBdRingCDesc
+                0x00103904                XAxiDma_BdRingCreate
+                0x00103aa8                XAxiDma_BdRingClone
+                0x00103ba4                XAxiDma_StartBdRingHw
+                0x00103cb4                XAxiDma_BdRingStart
+                0x00103cd4                XAxiDma_BdRingSetCoalesce
+                0x00103d20                XAxiDma_BdRingGetCoalesce
+                0x00103d3c                XAxiDma_BdRingAlloc
+                0x00103dbc                XAxiDma_BdRingUnAlloc
+                0x00103e6c                XAxiDma_BdRingToHw
+                0x00104064                XAxiDma_BdRingFromHw
+                0x001041bc                XAxiDma_BdRingFree
+                0x00104248                XAxiDma_BdRingCheck
+                0x001043c0                XAxiDma_BdRingDumpRegs
+ .text          0x00104478      0x278 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+                0x00104478                __aeabi_uidiv
+                0x00104478                __udivsi3
+                0x001046d4                __aeabi_uidivmod
+ .text          0x001046f0      0x2b0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+                0x001046f0                __divsi3
+                0x001046f0                __aeabi_idiv
+                0x00104984                __aeabi_idivmod
+ .text          0x001049a0        0x4 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_dvmd_tls.o)
+                0x001049a0                __aeabi_idiv0
+                0x001049a0                __aeabi_ldiv0
+ .text          0x001049a4       0x30 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+                0x001049a4                __aeabi_uldivmod
+ .text          0x001049d4      0x108 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x001049d4                __udivmoddi4
+ .text          0x00104adc       0x20 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-exit.o)
+                0x00104adc                exit
+ .text          0x00104afc       0x20 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-malloc.o)
+                0x00104afc                malloc
+                0x00104b0c                free
+ .text          0x00104b1c      0x56c F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+                0x00104b1c                _malloc_r
+ .text          0x00105088        0x8 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mlock.o)
+                0x00105088                __malloc_lock
+                0x0010508c                __malloc_unlock
+ .text          0x00105090        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-ctype_.o)
+ .text          0x00105090      0x23c F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+                0x001051cc                __sfp
+                0x00105270                __sinit
+                0x00105294                __sfp_lock_acquire
+                0x00105298                __sfp_lock_release
+                0x0010529c                __fp_lock_all
+                0x001052b4                __fp_unlock_all
+ .text          0x001052cc       0x44 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fwalk.o)
+                0x001052cc                _fwalk_sglue
+ .text          0x00105310       0x94 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o)
+                0x00105310                __sread
+                0x00105334                __seofread
+                0x00105338                __swrite
+                0x00105378                __sseek
+                0x0010539c                __sclose
+ .text          0x001053a4       0xa8 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-memset.o)
+                0x001053a4                memset
+ .text          0x0010544c       0x28 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-closer.o)
+                0x0010544c                _close_r
+ .text          0x00105474       0x70 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-reent.o)
+                0x00105474                _reclaim_reent
+ .text          0x001054e4        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-impure.o)
+ .text          0x001054e4       0x30 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-lseekr.o)
+                0x001054e4                _lseek_r
+ .text          0x00105514       0x30 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-readr.o)
+                0x00105514                _read_r
+ .text          0x00105544       0x28 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-sbrkr.o)
+                0x00105544                _sbrk_r
+ .text          0x0010556c       0x30 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-writer.o)
+                0x0010556c                _write_r
+ .text          0x0010559c       0x58 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-init.o)
+                0x0010559c                __libc_init_array
+ .text          0x001055f4       0x2c F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fini.o)
+                0x001055f4                __libc_fini_array
+ .text          0x00105620       0x1c F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-sysconf.o)
+                0x00105620                sysconf
+ *fill*         0x0010563c        0x4 
+ .text          0x00105640       0xd8 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-strlen.o)
+                0x00105640                strlen
+ .text          0x00105718       0xb0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-__call_atexit.o)
+                0x00105718                __call_exitprocs
+ .text          0x001057c8      0x2c8 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-freer.o)
+                0x001057c8                _malloc_trim_r
+                0x00105888                _free_r
+ .text          0x00105a90       0x90 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fclose.o)
+                0x00105a90                _fclose_r
+                0x00105b10                fclose
+ .text          0x00105b20      0x1b8 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fflush.o)
+                0x00105b20                __sflush_r
+                0x00105c5c                _fflush_r
+                0x00105c88                fflush
+ .text          0x00105cd8        0xc F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-errno.o)
+                0x00105cd8                __errno
+ .text          0x00105ce4       0x48 ../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+                0x00105ce4                Xil_Assert
+                0x00105d18                Xil_AssertSetCallback
+                0x00105d28                XNullHandler
+ .text          0x00105d2c        0x0 ../inputs/bsp/lib\libxilstandalone.a(xcortexa9_g.c.obj)
+ .text          0x00105d2c       0x88 ../inputs/bsp/lib\libxilstandalone.a(read.c.obj)
+                0x00105d2c                read
+                0x00105d70                _read
+ .text          0x00105db4       0x40 ../inputs/bsp/lib\libxilstandalone.a(_sbrk.c.obj)
+                0x00105db4                _sbrk
+ .text          0x00105df4        0x4 ../inputs/bsp/lib\libxilstandalone.a(_exit.c.obj)
+                0x00105df4                _exit
+ .text          0x00105df8        0x8 ../inputs/bsp/lib\libxilstandalone.a(close.c.obj)
+                0x00105df8                _close
+ .text          0x00105e00       0xb8 ../inputs/bsp/lib\libxilstandalone.a(write.c.obj)
+                0x00105e00                write
+                0x00105e5c                _write
+ .text          0x00105eb8       0x38 ../inputs/bsp/lib\libxilstandalone.a(lseek.c.obj)
+                0x00105eb8                lseek
+                0x00105ed4                _lseek
+ .text          0x00105ef0        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtend.o
+ .text          0x00105ef0        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtn.o
+ *(.text.*)
+ .text.startup  0x00105ef0      0x568 unit.o
+                0x00105ef0                main
+ .text.startup  0x00106458       0x20 ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+                0x00106458                xtimerinit
+ *(.gnu.linkonce.t.*)
+ *(.plt)
+ *(.gnu_warning)
+ *(.gcc_execpt_table)
+ *(.glue_7)
+ .glue_7        0x00106478        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x00106478        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00106478        0x0 linker stubs
+ *(.ARM.extab)
+ .ARM.extab     0x00106478        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.extab     0x00106478        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-strlen.o)
+ *(.gnu.linkonce.armextab.*)
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x00106478       0x24 linker stubs
+
+.v4_bx          0x0010649c        0x0
+ .v4_bx         0x0010649c        0x0 linker stubs
+
+.iplt           0x0010649c        0x0
+ .iplt          0x0010649c        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.init           0x0010649c        0xc
+ *(.init)
+ .init          0x0010649c        0x4 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crti.o
+                0x0010649c                _init
+ .init          0x001064a0        0x8 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtn.o
+
+.fini           0x001064a8        0xc
+ *(.fini)
+ .fini          0x001064a8        0x4 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crti.o
+                0x001064a8                _fini
+ .fini          0x001064ac        0x8 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtn.o
+
+.rodata         0x001064b4      0x984
+                0x001064b4                        __rodata_start = .
+ *(.rodata)
+ .rodata        0x001064b4       0x24 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+ .rodata        0x001064d8       0x64 unit.o
+ .rodata        0x0010653c      0x101 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-ctype_.o)
+                0x0010653c                _ctype_
+ *fill*         0x0010663d        0x3 
+ .rodata        0x00106640       0x24 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtend.o
+ *(.rodata.*)
+ .rodata.str1.4
+                0x00106664      0x793 unit.o
+                                0x5e4 (size before relaxing)
+ *fill*         0x00106df7        0x1 
+ .rodata.continuous_contract
+                0x00106df8       0x40 unit.o
+                0x00106df8                continuous_contract
+ .rodata.str1.4
+                0x00106e38       0x11 ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+ .rodata.str1.4
+                0x00106e38       0x11 ../inputs/bsp/lib\libxil.a(xaxidma_g.c.obj)
+ .rodata.str1.4
+                0x00106e38       0x86 ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+ .rodata.str1.4
+                0x00106e38       0x12 ../inputs/bsp/lib\libxil.a(xgpio_g.c.obj)
+ .rodata.str1.4
+                0x00106e38       0x80 ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+ .rodata.str1.4
+                0x00106e38       0x6b ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+ *(.gnu.linkonce.r.*)
+                0x00106e38                        __rodata_end = .
+
+.rodata1        0x00106e38        0x0
+                0x00106e38                        __rodata1_start = .
+ *(.rodata1)
+ *(.rodata1.*)
+                0x00106e38                        __rodata1_end = .
+
+.sdata2         0x00106e38        0x0
+                0x00106e38                        __sdata2_start = .
+ *(.sdata2)
+ *(.sdata2.*)
+ *(.gnu.linkonce.s2.*)
+                0x00106e38                        __sdata2_end = .
+
+.sbss2          0x00106e38        0x0
+                0x00106e38                        __sbss2_start = .
+ *(.sbss2)
+ *(.sbss2.*)
+ *(.gnu.linkonce.sb2.*)
+                0x00106e38                        __sbss2_end = .
+
+.data           0x00106e38      0x58c
+                0x00106e38                        __data_start = .
+ *(.data)
+ .data          0x00106e38        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crti.o
+ .data          0x00106e38        0x4 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+                0x00106e38                __dso_handle
+ .data          0x00106e3c        0x0 unit.o
+ .data          0x00106e3c        0x0 ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+ .data          0x00106e3c        0x0 ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj)
+ .data          0x00106e3c        0x0 ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+ .data          0x00106e3c        0x0 ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+ .data          0x00106e3c        0x0 ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+ .data          0x00106e3c        0x0 ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+ .data          0x00106e3c       0x38 ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+                0x00106e3c                XExc_VectorTable
+ .data          0x00106e74        0x0 ../inputs/bsp/lib\libxilstandalone.a(translation_table.S.obj)
+ .data          0x00106e74        0x0 ../inputs/bsp/lib\libxilstandalone.a(cpu_init.S.obj)
+ .data          0x00106e74        0x0 ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+ .data          0x00106e74        0x0 ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+ .data          0x00106e74        0x0 ../inputs/bsp/lib\libxil.a(xaxidma_sinit.c.obj)
+ .data          0x00106e74        0x0 ../inputs/bsp/lib\libxil.a(xaxidma_g.c.obj)
+ .data          0x00106e74        0x0 ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+ .data          0x00106e74        0x0 ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+ .data          0x00106e74        0x0 ../inputs/bsp/lib\libxil.a(xgpio_g.c.obj)
+ .data          0x00106e74        0x0 ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+ .data          0x00106e74        0x0 ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+ .data          0x00106e74        0x0 ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+ .data          0x00106e74        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+ .data          0x00106e74        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+ .data          0x00106e74        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_dvmd_tls.o)
+ .data          0x00106e74        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .data          0x00106e74        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivmoddi4.o)
+ .data          0x00106e74        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-exit.o)
+ .data          0x00106e74        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-malloc.o)
+ *fill*         0x00106e74        0x4 
+ .data          0x00106e78      0x410 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+                0x00106e78                __malloc_av_
+                0x00107280                __malloc_sbrk_base
+                0x00107284                __malloc_trim_threshold
+ .data          0x00107288        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mlock.o)
+ .data          0x00107288        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-ctype_.o)
+ .data          0x00107288        0xc F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+                0x00107288                __sglue
+ .data          0x00107294        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fwalk.o)
+ .data          0x00107294        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o)
+ .data          0x00107294        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-memset.o)
+ .data          0x00107294        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-closer.o)
+ .data          0x00107294        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-reent.o)
+ *fill*         0x00107294        0x4 
+ .data          0x00107298      0x128 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-impure.o)
+                0x00107298                _impure_ptr
+                0x001072a0                _impure_data
+ .data          0x001073c0        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-lseekr.o)
+ .data          0x001073c0        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-readr.o)
+ .data          0x001073c0        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-sbrkr.o)
+ .data          0x001073c0        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-writer.o)
+ .data          0x001073c0        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-init.o)
+ .data          0x001073c0        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fini.o)
+ .data          0x001073c0        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-sysconf.o)
+ .data          0x001073c0        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-strlen.o)
+ .data          0x001073c0        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-__call_atexit.o)
+ .data          0x001073c0        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-freer.o)
+ .data          0x001073c0        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fclose.o)
+ .data          0x001073c0        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fflush.o)
+ .data          0x001073c0        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-errno.o)
+ .data          0x001073c0        0x4 ../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+                0x001073c0                Xil_AssertWait
+ .data          0x001073c4        0x0 ../inputs/bsp/lib\libxilstandalone.a(xcortexa9_g.c.obj)
+ .data          0x001073c4        0x0 ../inputs/bsp/lib\libxilstandalone.a(read.c.obj)
+ .data          0x001073c4        0x0 ../inputs/bsp/lib\libxilstandalone.a(_sbrk.c.obj)
+ .data          0x001073c4        0x0 ../inputs/bsp/lib\libxilstandalone.a(_exit.c.obj)
+ .data          0x001073c4        0x0 ../inputs/bsp/lib\libxilstandalone.a(close.c.obj)
+ .data          0x001073c4        0x0 ../inputs/bsp/lib\libxilstandalone.a(write.c.obj)
+ .data          0x001073c4        0x0 ../inputs/bsp/lib\libxilstandalone.a(lseek.c.obj)
+ .data          0x001073c4        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtend.o
+ .data          0x001073c4        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtn.o
+ *(.data.*)
+ *(.gnu.linkonce.d.*)
+ *(.jcr)
+ *(.got)
+ *(.got.plt)
+                0x001073c4                        __data_end = .
+
+.igot.plt       0x001073c4        0x0
+ .igot.plt      0x001073c4        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+
+.got2           0x001073c4        0x0
+ .got2          0x001073c4        0x0 ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+
+.data1          0x001073c4        0x0
+                0x001073c4                        __data1_start = .
+ *(.data1)
+ *(.data1.*)
+                0x001073c4                        __data1_end = .
+
+.got
+ *(.got)
+
+.ctors          0x001073c4        0x0
+                0x001073c4                        __CTOR_LIST__ = .
+                0x001073c4                        ___CTORS_LIST___ = .
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+                0x001073c4                        __CTOR_END__ = .
+                0x001073c4                        ___CTORS_END___ = .
+
+.dtors          0x001073c4        0x0
+                0x001073c4                        __DTOR_LIST__ = .
+                0x001073c4                        ___DTORS_LIST___ = .
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+                0x001073c4                        __DTOR_END__ = .
+                0x001073c4                        ___DTORS_END___ = .
+
+.fixup          0x001073c4        0x0
+                0x001073c4                        __fixup_start = .
+ *(.fixup)
+                0x001073c4                        __fixup_end = .
+
+.eh_frame       0x001073c4       0x38
+ *(.eh_frame)
+ .eh_frame      0x001073c4        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+ .eh_frame      0x001073c4       0x34 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-strlen.o)
+ .eh_frame      0x001073f8        0x4 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtend.o
+
+.eh_framehdr    0x001073fc        0x0
+                0x001073fc                        __eh_framehdr_start = .
+ *(.eh_framehdr)
+                0x001073fc                        __eh_framehdr_end = .
+
+.gcc_except_table
+ *(.gcc_except_table)
+
+.mmu_tbl        0x00108000     0x4000
+                0x00108000                        __mmu_tbl_start = .
+ *(.mmu_tbl)
+ .mmu_tbl       0x00108000     0x4000 ../inputs/bsp/lib\libxilstandalone.a(translation_table.S.obj)
+                0x00108000                MMUTable
+                0x0010c000                        __mmu_tbl_end = .
+
+.ARM.exidx      0x0010c000        0x8
+                0x0010c000                        __exidx_start = .
+ *(.ARM.exidx*)
+ .ARM.exidx     0x0010c000        0x8 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x0010c008        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-strlen.o)
+                                  0x8 (size before relaxing)
+ *(.gnu.linkonce.armexidix.*.*)
+                0x0010c008                        __exidx_end = .
+
+.rel.dyn        0x0010c008        0x0
+ .rel.iplt      0x0010c008        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+
+.preinit_array  0x0010c008        0x0
+                0x0010c008                        __preinit_array_start = .
+ *(SORT_BY_NAME(.preinit_array.*))
+ *(.preinit_array)
+                0x0010c008                        __preinit_array_end = .
+
+.init_array     0x0010c008        0x8
+                0x0010c008                        __init_array_start = .
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+ .init_array    0x0010c008        0x4 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+ .init_array    0x0010c00c        0x4 ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+                0x0010c010                        __init_array_end = .
+
+.fini_array     0x0010c010        0x4
+                0x0010c010                        __fini_array_start = .
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array)
+ .fini_array    0x0010c010        0x4 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+                0x0010c014                        __fini_array_end = .
+
+.drvcfg_sec     0x0010c014       0xd8
+                0x0010c018                        . = ALIGN (0x8)
+ *fill*         0x0010c014        0x4 
+                0x0010c018                        __drvcfgsecdata_start = .
+ *(.drvcfg_sec)
+ .drvcfg_sec    0x0010c018       0x98 ../inputs/bsp/lib\libxil.a(xaxidma_g.c.obj)
+                0x0010c018                XAxiDma_ConfigTable
+ .drvcfg_sec    0x0010c0b0       0x38 ../inputs/bsp/lib\libxil.a(xgpio_g.c.obj)
+                0x0010c0b0                XGpio_ConfigTable
+ .drvcfg_sec    0x0010c0e8        0x4 ../inputs/bsp/lib\libxilstandalone.a(xcortexa9_g.c.obj)
+                0x0010c0e8                XCortexa9_ConfigTable
+                0x0010c0ec                        __drvcfgsecdata_end = .
+                0x0010c0e8                        __drvcfgsecdata_size = (__drvcfgsecdata_end - __drvcfgsecdata_start)
+
+.ARM.attributes
+                0x0010c0ec       0x33
+                0x0010c0ec                        __ARM.attributes_start = .
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0010c0ec       0x21 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crti.o
+ .ARM.attributes
+                0x0010c10d       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+ .ARM.attributes
+                0x0010c140       0x37 unit.o
+ .ARM.attributes
+                0x0010c177       0x37 ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+ .ARM.attributes
+                0x0010c1ae       0x23 ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj)
+ .ARM.attributes
+                0x0010c1d1       0x23 ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+ .ARM.attributes
+                0x0010c1f4       0x23 ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+ .ARM.attributes
+                0x0010c217       0x37 ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+ .ARM.attributes
+                0x0010c24e       0x37 ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+ .ARM.attributes
+                0x0010c285       0x37 ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+ .ARM.attributes
+                0x0010c2bc       0x23 ../inputs/bsp/lib\libxilstandalone.a(translation_table.S.obj)
+ .ARM.attributes
+                0x0010c2df       0x23 ../inputs/bsp/lib\libxilstandalone.a(cpu_init.S.obj)
+ .ARM.attributes
+                0x0010c302       0x37 ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+ .ARM.attributes
+                0x0010c339       0x37 ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+ .ARM.attributes
+                0x0010c370       0x37 ../inputs/bsp/lib\libxil.a(xaxidma_sinit.c.obj)
+ .ARM.attributes
+                0x0010c3a7       0x37 ../inputs/bsp/lib\libxil.a(xaxidma_g.c.obj)
+ .ARM.attributes
+                0x0010c3de       0x37 ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+ .ARM.attributes
+                0x0010c415       0x37 ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+ .ARM.attributes
+                0x0010c44c       0x37 ../inputs/bsp/lib\libxil.a(xgpio_g.c.obj)
+ .ARM.attributes
+                0x0010c483       0x37 ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+ .ARM.attributes
+                0x0010c4ba       0x37 ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+ .ARM.attributes
+                0x0010c4f1       0x37 ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+ .ARM.attributes
+                0x0010c528       0x21 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x0010c549       0x21 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x0010c56a       0x21 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0010c58b       0x21 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x0010c5ac       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x0010c5df       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-exit.o)
+ .ARM.attributes
+                0x0010c612       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-malloc.o)
+ .ARM.attributes
+                0x0010c645       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+ .ARM.attributes
+                0x0010c678       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mlock.o)
+ .ARM.attributes
+                0x0010c6ab       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-ctype_.o)
+ .ARM.attributes
+                0x0010c6de       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+ .ARM.attributes
+                0x0010c711       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fwalk.o)
+ .ARM.attributes
+                0x0010c744       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o)
+ .ARM.attributes
+                0x0010c777       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-memset.o)
+ .ARM.attributes
+                0x0010c7aa       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-closer.o)
+ .ARM.attributes
+                0x0010c7dd       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-reent.o)
+ .ARM.attributes
+                0x0010c810       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-impure.o)
+ .ARM.attributes
+                0x0010c843       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-lseekr.o)
+ .ARM.attributes
+                0x0010c876       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-readr.o)
+ .ARM.attributes
+                0x0010c8a9       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-sbrkr.o)
+ .ARM.attributes
+                0x0010c8dc       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-writer.o)
+ .ARM.attributes
+                0x0010c90f       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-init.o)
+ .ARM.attributes
+                0x0010c942       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fini.o)
+ .ARM.attributes
+                0x0010c975       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-sysconf.o)
+ .ARM.attributes
+                0x0010c9a8       0x19 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-strlen.o)
+ .ARM.attributes
+                0x0010c9c1       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-__call_atexit.o)
+ .ARM.attributes
+                0x0010c9f4       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-freer.o)
+ .ARM.attributes
+                0x0010ca27       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fclose.o)
+ .ARM.attributes
+                0x0010ca5a       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fflush.o)
+ .ARM.attributes
+                0x0010ca8d       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-errno.o)
+ .ARM.attributes
+                0x0010cac0       0x37 ../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+ .ARM.attributes
+                0x0010caf7       0x37 ../inputs/bsp/lib\libxilstandalone.a(xcortexa9_g.c.obj)
+ .ARM.attributes
+                0x0010cb2e       0x37 ../inputs/bsp/lib\libxilstandalone.a(read.c.obj)
+ .ARM.attributes
+                0x0010cb65       0x37 ../inputs/bsp/lib\libxilstandalone.a(_sbrk.c.obj)
+ .ARM.attributes
+                0x0010cb9c       0x37 ../inputs/bsp/lib\libxilstandalone.a(_exit.c.obj)
+ .ARM.attributes
+                0x0010cbd3       0x37 ../inputs/bsp/lib\libxilstandalone.a(close.c.obj)
+ .ARM.attributes
+                0x0010cc0a       0x37 ../inputs/bsp/lib\libxilstandalone.a(write.c.obj)
+ .ARM.attributes
+                0x0010cc41       0x37 ../inputs/bsp/lib\libxilstandalone.a(lseek.c.obj)
+ .ARM.attributes
+                0x0010cc78       0x33 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtend.o
+ .ARM.attributes
+                0x0010ccab       0x21 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtn.o
+                0x0010cccc                        __ARM.attributes_end = .
+
+.sdata          0x0010c0ec        0x0
+                0x0010c0ec                        __sdata_start = .
+ *(.sdata)
+ *(.sdata.*)
+ *(.gnu.linkonce.s.*)
+                0x0010c0ec                        __sdata_end = .
+
+.sbss           0x0010c0ec        0x0
+                0x0010c0ec                        __sbss_start = .
+ *(.sbss)
+ *(.sbss.*)
+ *(.gnu.linkonce.sb.*)
+                0x0010c0ec                        __sbss_end = .
+
+.tdata          0x0010c0ec        0x0
+                0x0010c0ec                        __tdata_start = .
+ *(.tdata)
+ *(.tdata.*)
+ *(.gnu.linkonce.td.*)
+                0x0010c0ec                        __tdata_end = .
+
+.tbss           0x0010c0ec        0x0
+                0x0010c0ec                        __tbss_start = .
+ *(.tbss)
+ *(.tbss.*)
+ *(.gnu.linkonce.tb.*)
+                0x0010c0ec                        __tbss_end = .
+
+.bss            0x0010c0f0      0xd4c
+                0x0010c0f0                        __bss_start = .
+ *(.bss)
+ .bss           0x0010c0f0        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crti.o
+ .bss           0x0010c0f0       0x1c F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+ *fill*         0x0010c10c        0x4 
+ .bss           0x0010c110      0xb78 unit.o
+ .bss           0x0010cc88        0x0 ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+ .bss           0x0010cc88        0x0 ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj)
+ .bss           0x0010cc88        0x0 ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+ .bss           0x0010cc88        0x0 ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+ .bss           0x0010cc88        0x0 ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+ .bss           0x0010cc88        0x0 ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+ .bss           0x0010cc88        0xc ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+                0x0010cc88                UndefinedExceptionAddr
+                0x0010cc8c                PrefetchAbortAddr
+                0x0010cc90                DataAbortAddr
+ .bss           0x0010cc94        0x0 ../inputs/bsp/lib\libxilstandalone.a(translation_table.S.obj)
+ .bss           0x0010cc94        0x0 ../inputs/bsp/lib\libxilstandalone.a(cpu_init.S.obj)
+ .bss           0x0010cc94        0x1 ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+ *fill*         0x0010cc95        0x3 
+ .bss           0x0010cc98       0x20 ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+                0x0010cc98                TimerInst
+ .bss           0x0010ccb8        0x0 ../inputs/bsp/lib\libxil.a(xaxidma_sinit.c.obj)
+ .bss           0x0010ccb8        0x0 ../inputs/bsp/lib\libxil.a(xaxidma_g.c.obj)
+ .bss           0x0010ccb8        0x0 ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+ .bss           0x0010ccb8        0x0 ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+ .bss           0x0010ccb8        0x0 ../inputs/bsp/lib\libxil.a(xgpio_g.c.obj)
+ .bss           0x0010ccb8        0x0 ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+ .bss           0x0010ccb8        0x0 ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+ .bss           0x0010ccb8        0x0 ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+ .bss           0x0010ccb8        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+ .bss           0x0010ccb8        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+ .bss           0x0010ccb8        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_dvmd_tls.o)
+ .bss           0x0010ccb8        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x0010ccb8        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivmoddi4.o)
+ .bss           0x0010ccb8        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-exit.o)
+ .bss           0x0010ccb8        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-malloc.o)
+ .bss           0x0010ccb8       0x34 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+                0x0010ccb8                __malloc_top_pad
+                0x0010ccbc                __malloc_current_mallinfo
+                0x0010cce4                __malloc_max_sbrked_mem
+                0x0010cce8                __malloc_max_total_mem
+ .bss           0x0010ccec        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mlock.o)
+ .bss           0x0010ccec        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-ctype_.o)
+ .bss           0x0010ccec      0x13c F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+                0x0010ccec                __sf
+                0x0010ce24                __stdio_exit_handler
+ .bss           0x0010ce28        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fwalk.o)
+ .bss           0x0010ce28        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o)
+ .bss           0x0010ce28        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-memset.o)
+ .bss           0x0010ce28        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-closer.o)
+ .bss           0x0010ce28        0x4 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-reent.o)
+                0x0010ce28                errno
+ .bss           0x0010ce2c        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-impure.o)
+ .bss           0x0010ce2c        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-lseekr.o)
+ .bss           0x0010ce2c        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-readr.o)
+ .bss           0x0010ce2c        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-sbrkr.o)
+ .bss           0x0010ce2c        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-writer.o)
+ .bss           0x0010ce2c        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-init.o)
+ .bss           0x0010ce2c        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fini.o)
+ .bss           0x0010ce2c        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-sysconf.o)
+ .bss           0x0010ce2c        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-strlen.o)
+ .bss           0x0010ce2c        0x4 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-__call_atexit.o)
+                0x0010ce2c                __atexit
+ .bss           0x0010ce30        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-freer.o)
+ .bss           0x0010ce30        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fclose.o)
+ .bss           0x0010ce30        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fflush.o)
+ .bss           0x0010ce30        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-errno.o)
+ .bss           0x0010ce30        0x8 ../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+                0x0010ce34                Xil_AssertStatus
+ .bss           0x0010ce38        0x0 ../inputs/bsp/lib\libxilstandalone.a(xcortexa9_g.c.obj)
+ .bss           0x0010ce38        0x0 ../inputs/bsp/lib\libxilstandalone.a(read.c.obj)
+ .bss           0x0010ce38        0x4 ../inputs/bsp/lib\libxilstandalone.a(_sbrk.c.obj)
+ .bss           0x0010ce3c        0x0 ../inputs/bsp/lib\libxilstandalone.a(_exit.c.obj)
+ .bss           0x0010ce3c        0x0 ../inputs/bsp/lib\libxilstandalone.a(close.c.obj)
+ .bss           0x0010ce3c        0x0 ../inputs/bsp/lib\libxilstandalone.a(write.c.obj)
+ .bss           0x0010ce3c        0x0 ../inputs/bsp/lib\libxilstandalone.a(lseek.c.obj)
+ .bss           0x0010ce3c        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtend.o
+ .bss           0x0010ce3c        0x0 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtn.o
+ *(.bss.*)
+ *(.gnu.linkonce.b.*)
+ *(COMMON)
+                0x0010ce3c                        __bss_end = .
+                0x0010c0ec                        _SDA_BASE_ = (__sdata_start + ((__sbss_end - __sdata_start) / 0x2))
+                0x00106e38                        _SDA2_BASE_ = (__sdata2_start + ((__sbss2_end - __sdata2_start) / 0x2))
+
+.heap           0x0010ce3c     0x2004
+                0x0010ce40                        . = ALIGN (0x10)
+ *fill*         0x0010ce3c        0x4 
+                0x0010ce40                        _heap = .
+                0x0010ce40                        HeapBase = .
+                0x0010ce40                        _heap_start = .
+                0x0010ee40                        . = (. + _HEAP_SIZE)
+ *fill*         0x0010ce40     0x2000 
+                0x0010ee40                        _heap_end = .
+                0x0010ee40                        HeapLimit = .
+
+.stack          0x0010ee40     0x3800
+                0x0010ee40                        . = ALIGN (0x10)
+                0x0010ee40                        _stack_end = .
+                0x00110e40                        . = (. + _STACK_SIZE)
+ *fill*         0x0010ee40     0x2000 
+                0x00110e40                        . = ALIGN (0x10)
+                0x00110e40                        _stack = .
+                0x00110e40                        __stack = _stack
+                0x00110e40                        . = ALIGN (0x10)
+                0x00110e40                        _irq_stack_end = .
+                0x00111240                        . = (. + _IRQ_STACK_SIZE)
+ *fill*         0x00110e40      0x400 
+                0x00111240                        . = ALIGN (0x10)
+                0x00111240                        __irq_stack = .
+                0x00111240                        _supervisor_stack_end = .
+                0x00111a40                        . = (. + _SUPERVISOR_STACK_SIZE)
+ *fill*         0x00111240      0x800 
+                0x00111a40                        . = ALIGN (0x10)
+                0x00111a40                        __supervisor_stack = .
+                0x00111a40                        _abort_stack_end = .
+                0x00111e40                        . = (. + _ABORT_STACK_SIZE)
+ *fill*         0x00111a40      0x400 
+                0x00111e40                        . = ALIGN (0x10)
+                0x00111e40                        __abort_stack = .
+                0x00111e40                        _fiq_stack_end = .
+                0x00112240                        . = (. + _FIQ_STACK_SIZE)
+ *fill*         0x00111e40      0x400 
+                0x00112240                        . = ALIGN (0x10)
+                0x00112240                        __fiq_stack = .
+                0x00112240                        _undef_stack_end = .
+                0x00112640                        . = (. + _UNDEF_STACK_SIZE)
+ *fill*         0x00112240      0x400 
+                0x00112640                        . = ALIGN (0x10)
+                0x00112640                        __undef_stack = .
+                0x00112640                        end = .
+START GROUP
+LOAD ../inputs/bsp/lib\libxilstandalone.a
+LOAD ../inputs/bsp/lib\libxiltimer.a
+LOAD ../inputs/bsp/lib\libxil.a
+LOAD F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a
+LOAD F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a
+END GROUP
+START GROUP
+LOAD F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a
+LOAD F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libg.a
+LOAD F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a
+END GROUP
+LOAD F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtend.o
+LOAD F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtn.o
+OUTPUT(four_mic_continuous.elf elf32-littlearm)
+LOAD linker stubs
+
+.comment        0x00000000       0x12
+ .comment       0x00000000       0x12 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+                                 0x13 (size before relaxing)
+ .comment       0x00000012       0x13 unit.o
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxil.a(xaxidma_sinit.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxil.a(xaxidma_g.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxil.a(xgpio_g.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxilstandalone.a(xcortexa9_g.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxilstandalone.a(read.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxilstandalone.a(_sbrk.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxilstandalone.a(_exit.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxilstandalone.a(close.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxilstandalone.a(write.c.obj)
+ .comment       0x00000012       0x13 ../inputs/bsp/lib\libxilstandalone.a(lseek.c.obj)
+ .comment       0x00000012       0x13 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtend.o
+
+.debug_info     0x00000000     0xb395
+ .debug_info    0x00000000     0x1d43 unit.o
+ .debug_info    0x00001d43      0xb0a ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+ .debug_info    0x0000284d       0x25 ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+ .debug_info    0x00002872       0x24 ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+ .debug_info    0x00002896     0x32b0 ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+ .debug_info    0x00005b46      0x13d ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+ .debug_info    0x00005c83      0x314 ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+ .debug_info    0x00005f97       0x24 ../inputs/bsp/lib\libxilstandalone.a(cpu_init.S.obj)
+ .debug_info    0x00005fbb      0x735 ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+ .debug_info    0x000066f0      0x57b ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+ .debug_info    0x00006c6b      0x274 ../inputs/bsp/lib\libxil.a(xaxidma_sinit.c.obj)
+ .debug_info    0x00006edf      0x200 ../inputs/bsp/lib\libxil.a(xaxidma_g.c.obj)
+ .debug_info    0x000070df     0x1290 ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+ .debug_info    0x0000836f      0x36a ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+ .debug_info    0x000086d9      0x14d ../inputs/bsp/lib\libxil.a(xgpio_g.c.obj)
+ .debug_info    0x00008826      0x5e8 ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+ .debug_info    0x00008e0e      0x716 ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+ .debug_info    0x00009524     0x1449 ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+ .debug_info    0x0000a96d      0x1d5 ../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+ .debug_info    0x0000ab42       0xdc ../inputs/bsp/lib\libxilstandalone.a(xcortexa9_g.c.obj)
+ .debug_info    0x0000ac1e      0x19c ../inputs/bsp/lib\libxilstandalone.a(read.c.obj)
+ .debug_info    0x0000adba      0x161 ../inputs/bsp/lib\libxilstandalone.a(_sbrk.c.obj)
+ .debug_info    0x0000af1b       0xae ../inputs/bsp/lib\libxilstandalone.a(_exit.c.obj)
+ .debug_info    0x0000afc9       0xc9 ../inputs/bsp/lib\libxilstandalone.a(close.c.obj)
+ .debug_info    0x0000b092      0x1a7 ../inputs/bsp/lib\libxilstandalone.a(write.c.obj)
+ .debug_info    0x0000b239      0x15c ../inputs/bsp/lib\libxilstandalone.a(lseek.c.obj)
+
+.debug_abbrev   0x00000000     0x28e2
+ .debug_abbrev  0x00000000      0x546 unit.o
+ .debug_abbrev  0x00000546      0x37d ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+ .debug_abbrev  0x000008c3       0x14 ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+ .debug_abbrev  0x000008d7       0x14 ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+ .debug_abbrev  0x000008eb      0x371 ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+ .debug_abbrev  0x00000c5c       0xb5 ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+ .debug_abbrev  0x00000d11      0x1ed ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+ .debug_abbrev  0x00000efe       0x14 ../inputs/bsp/lib\libxilstandalone.a(cpu_init.S.obj)
+ .debug_abbrev  0x00000f12      0x26c ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+ .debug_abbrev  0x0000117e      0x20e ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+ .debug_abbrev  0x0000138c       0xfb ../inputs/bsp/lib\libxil.a(xaxidma_sinit.c.obj)
+ .debug_abbrev  0x00001487       0xa3 ../inputs/bsp/lib\libxil.a(xaxidma_g.c.obj)
+ .debug_abbrev  0x0000152a      0x3bd ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+ .debug_abbrev  0x000018e7      0x1b1 ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+ .debug_abbrev  0x00001a98       0x93 ../inputs/bsp/lib\libxil.a(xgpio_g.c.obj)
+ .debug_abbrev  0x00001b2b      0x19c ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+ .debug_abbrev  0x00001cc7      0x1e5 ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+ .debug_abbrev  0x00001eac      0x368 ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+ .debug_abbrev  0x00002214      0x115 ../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+ .debug_abbrev  0x00002329       0x89 ../inputs/bsp/lib\libxilstandalone.a(xcortexa9_g.c.obj)
+ .debug_abbrev  0x000023b2      0x131 ../inputs/bsp/lib\libxilstandalone.a(read.c.obj)
+ .debug_abbrev  0x000024e3       0xed ../inputs/bsp/lib\libxilstandalone.a(_sbrk.c.obj)
+ .debug_abbrev  0x000025d0       0x69 ../inputs/bsp/lib\libxilstandalone.a(_exit.c.obj)
+ .debug_abbrev  0x00002639       0x77 ../inputs/bsp/lib\libxilstandalone.a(close.c.obj)
+ .debug_abbrev  0x000026b0      0x149 ../inputs/bsp/lib\libxilstandalone.a(write.c.obj)
+ .debug_abbrev  0x000027f9       0xe9 ../inputs/bsp/lib\libxilstandalone.a(lseek.c.obj)
+
+.debug_loclists
+                0x00000000     0x5ffa
+ .debug_loclists
+                0x00000000      0x8b8 unit.o
+ .debug_loclists
+                0x000008b8      0x937 ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+ .debug_loclists
+                0x000011ef     0x2141 ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+ .debug_loclists
+                0x00003330       0x4a ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+ .debug_loclists
+                0x0000337a      0x228 ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+ .debug_loclists
+                0x000035a2      0x1bd ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+ .debug_loclists
+                0x0000375f       0x3b ../inputs/bsp/lib\libxil.a(xaxidma_sinit.c.obj)
+ .debug_loclists
+                0x0000379a      0xf4a ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+ .debug_loclists
+                0x000046e4      0x100 ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+ .debug_loclists
+                0x000047e4      0x52d ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+ .debug_loclists
+                0x00004d11      0x23c ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+ .debug_loclists
+                0x00004f4d      0xe42 ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+ .debug_loclists
+                0x00005d8f       0x3c ../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+ .debug_loclists
+                0x00005dcb       0xaa ../inputs/bsp/lib\libxilstandalone.a(read.c.obj)
+ .debug_loclists
+                0x00005e75       0x37 ../inputs/bsp/lib\libxilstandalone.a(_sbrk.c.obj)
+ .debug_loclists
+                0x00005eac       0x14 ../inputs/bsp/lib\libxilstandalone.a(_exit.c.obj)
+ .debug_loclists
+                0x00005ec0       0x24 ../inputs/bsp/lib\libxilstandalone.a(close.c.obj)
+ .debug_loclists
+                0x00005ee4       0xc2 ../inputs/bsp/lib\libxilstandalone.a(write.c.obj)
+ .debug_loclists
+                0x00005fa6       0x54 ../inputs/bsp/lib\libxilstandalone.a(lseek.c.obj)
+
+.debug_aranges  0x00000000      0x338
+ .debug_aranges
+                0x00000000       0x28 unit.o
+ .debug_aranges
+                0x00000028       0x20 ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+ .debug_aranges
+                0x00000048       0x20 ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+ .debug_aranges
+                0x00000068       0x20 ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+ .debug_aranges
+                0x00000088       0x20 ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+ .debug_aranges
+                0x000000a8       0x20 ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+ .debug_aranges
+                0x000000c8       0x20 ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+ .debug_aranges
+                0x000000e8       0x20 ../inputs/bsp/lib\libxilstandalone.a(cpu_init.S.obj)
+ .debug_aranges
+                0x00000108       0x20 ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+ .debug_aranges
+                0x00000128       0x28 ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+ .debug_aranges
+                0x00000150       0x20 ../inputs/bsp/lib\libxil.a(xaxidma_sinit.c.obj)
+ .debug_aranges
+                0x00000170       0x18 ../inputs/bsp/lib\libxil.a(xaxidma_g.c.obj)
+ .debug_aranges
+                0x00000188       0x20 ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+ .debug_aranges
+                0x000001a8       0x20 ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+ .debug_aranges
+                0x000001c8       0x18 ../inputs/bsp/lib\libxil.a(xgpio_g.c.obj)
+ .debug_aranges
+                0x000001e0       0x20 ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+ .debug_aranges
+                0x00000200       0x20 ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+ .debug_aranges
+                0x00000220       0x20 ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+ .debug_aranges
+                0x00000240       0x20 ../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+ .debug_aranges
+                0x00000260       0x18 ../inputs/bsp/lib\libxilstandalone.a(xcortexa9_g.c.obj)
+ .debug_aranges
+                0x00000278       0x20 ../inputs/bsp/lib\libxilstandalone.a(read.c.obj)
+ .debug_aranges
+                0x00000298       0x20 ../inputs/bsp/lib\libxilstandalone.a(_sbrk.c.obj)
+ .debug_aranges
+                0x000002b8       0x20 ../inputs/bsp/lib\libxilstandalone.a(_exit.c.obj)
+ .debug_aranges
+                0x000002d8       0x20 ../inputs/bsp/lib\libxilstandalone.a(close.c.obj)
+ .debug_aranges
+                0x000002f8       0x20 ../inputs/bsp/lib\libxilstandalone.a(write.c.obj)
+ .debug_aranges
+                0x00000318       0x20 ../inputs/bsp/lib\libxilstandalone.a(lseek.c.obj)
+
+.debug_rnglists
+                0x00000000      0xa29
+ .debug_rnglists
+                0x00000000      0x2ca unit.o
+ .debug_rnglists
+                0x000002ca       0x96 ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+ .debug_rnglists
+                0x00000360      0x2d6 ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+ .debug_rnglists
+                0x00000636       0x26 ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+ .debug_rnglists
+                0x0000065c       0x7d ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+ .debug_rnglists
+                0x000006d9      0x15a ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+ .debug_rnglists
+                0x00000833       0x24 ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+ .debug_rnglists
+                0x00000857       0x38 ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+ .debug_rnglists
+                0x0000088f       0x72 ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+ .debug_rnglists
+                0x00000901      0x128 ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+
+.debug_macro    0x00000000     0x395a
+ .debug_macro   0x00000000      0xd6b unit.o
+ .debug_macro   0x00000d6b       0x22 unit.o
+ .debug_macro   0x00000d8d       0x56 unit.o
+ .debug_macro   0x00000de3       0x51 unit.o
+ .debug_macro   0x00000e34      0x103 unit.o
+ .debug_macro   0x00000f37       0x6a unit.o
+ .debug_macro   0x00000fa1      0x1df unit.o
+ .debug_macro   0x00001180      0x190 unit.o
+ .debug_macro   0x00001310       0x70 unit.o
+ .debug_macro   0x00001380       0x6d unit.o
+ .debug_macro   0x000013ed       0x29 unit.o
+ .debug_macro   0x00001416       0x3c unit.o
+ .debug_macro   0x00001452       0x34 unit.o
+ .debug_macro   0x00001486      0x370 unit.o
+ .debug_macro   0x000017f6       0x16 unit.o
+ .debug_macro   0x0000180c       0x4a unit.o
+ .debug_macro   0x00001856       0x34 unit.o
+ .debug_macro   0x0000188a       0x10 unit.o
+ .debug_macro   0x0000189a       0x52 unit.o
+ .debug_macro   0x000018ec      0x1de unit.o
+ .debug_macro   0x00001aca       0x10 unit.o
+ .debug_macro   0x00001ada       0x3c unit.o
+ .debug_macro   0x00001b16      0x55b unit.o
+ .debug_macro   0x00002071       0x3a unit.o
+ .debug_macro   0x000020ab      0x5a7 unit.o
+ .debug_macro   0x00002652       0x28 unit.o
+ .debug_macro   0x0000267a       0x51 unit.o
+ .debug_macro   0x000026cb       0x3c unit.o
+ .debug_macro   0x00002707      0x41a unit.o
+ .debug_macro   0x00002b21       0xa2 unit.o
+ .debug_macro   0x00002bc3       0x58 unit.o
+ .debug_macro   0x00002c1b      0x69d unit.o
+ .debug_macro   0x000032b8       0x9b unit.o
+ .debug_macro   0x00003353       0x54 unit.o
+ .debug_macro   0x000033a7      0x2a4 unit.o
+ .debug_macro   0x0000364b       0x16 unit.o
+ .debug_macro   0x00003661       0x28 unit.o
+ .debug_macro   0x00003689       0xc7 unit.o
+ .debug_macro   0x00003750       0x16 unit.o
+ .debug_macro   0x00003766       0x22 unit.o
+ .debug_macro   0x00003788       0x9a unit.o
+ .debug_macro   0x00003822       0x43 unit.o
+ .debug_macro   0x00003865       0x6c unit.o
+ .debug_macro   0x000038d1       0x22 unit.o
+ .debug_macro   0x000038f3       0x31 unit.o
+ .debug_macro   0x00003924       0x16 unit.o
+ .debug_macro   0x0000393a       0x10 unit.o
+ .debug_macro   0x0000394a       0x10 unit.o
+
+.debug_line     0x00000000     0x9bbb
+ .debug_line    0x00000000     0x16b7 unit.o
+ .debug_line    0x000016b7      0xc0b ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+ .debug_line    0x000022c2      0x146 ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+ .debug_line    0x00002408       0x69 ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+ .debug_line    0x00002471     0x1e59 ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+ .debug_line    0x000042ca      0x102 ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+ .debug_line    0x000043cc      0x2fe ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+ .debug_line    0x000046ca       0x57 ../inputs/bsp/lib\libxilstandalone.a(cpu_init.S.obj)
+ .debug_line    0x00004721      0x4d8 ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+ .debug_line    0x00004bf9      0x3b2 ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+ .debug_line    0x00004fab      0x29f ../inputs/bsp/lib\libxil.a(xaxidma_sinit.c.obj)
+ .debug_line    0x0000524a      0x21a ../inputs/bsp/lib\libxil.a(xaxidma_g.c.obj)
+ .debug_line    0x00005464     0x1069 ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+ .debug_line    0x000064cd      0x3a8 ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+ .debug_line    0x00006875      0x214 ../inputs/bsp/lib\libxil.a(xgpio_g.c.obj)
+ .debug_line    0x00006a89      0x61d ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+ .debug_line    0x000070a6      0x50f ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+ .debug_line    0x000075b5     0x139c ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+ .debug_line    0x00008951      0x201 ../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+ .debug_line    0x00008b52      0x222 ../inputs/bsp/lib\libxilstandalone.a(xcortexa9_g.c.obj)
+ .debug_line    0x00008d74      0x282 ../inputs/bsp/lib\libxilstandalone.a(read.c.obj)
+ .debug_line    0x00008ff6      0x285 ../inputs/bsp/lib\libxilstandalone.a(_sbrk.c.obj)
+ .debug_line    0x0000927b      0x1cb ../inputs/bsp/lib\libxilstandalone.a(_exit.c.obj)
+ .debug_line    0x00009446      0x236 ../inputs/bsp/lib\libxilstandalone.a(close.c.obj)
+ .debug_line    0x0000967c      0x2c5 ../inputs/bsp/lib\libxilstandalone.a(write.c.obj)
+ .debug_line    0x00009941      0x27a ../inputs/bsp/lib\libxilstandalone.a(lseek.c.obj)
+
+.debug_str      0x00000000    0x144eb
+ .debug_str     0x00000000    0x144eb unit.o
+                              0x12aea (size before relaxing)
+ .debug_str     0x000144eb      0x417 ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+ .debug_str     0x000144eb      0x129 ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+ .debug_str     0x000144eb       0x9e ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+ .debug_str     0x000144eb      0x712 ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+ .debug_str     0x000144eb      0x2e1 ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+ .debug_str     0x000144eb      0x3bf ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+ .debug_str     0x000144eb      0x12d ../inputs/bsp/lib\libxilstandalone.a(cpu_init.S.obj)
+ .debug_str     0x000144eb      0x4c7 ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+ .debug_str     0x000144eb      0x42c ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+ .debug_str     0x000144eb      0x39c ../inputs/bsp/lib\libxil.a(xaxidma_sinit.c.obj)
+ .debug_str     0x000144eb      0x356 ../inputs/bsp/lib\libxil.a(xaxidma_g.c.obj)
+ .debug_str     0x000144eb      0x637 ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+ .debug_str     0x000144eb      0x36b ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+ .debug_str     0x000144eb      0x2b6 ../inputs/bsp/lib\libxil.a(xgpio_g.c.obj)
+ .debug_str     0x000144eb      0x3c5 ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+ .debug_str     0x000144eb      0x30d ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+ .debug_str     0x000144eb      0x645 ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+ .debug_str     0x000144eb      0x2fb ../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+ .debug_str     0x000144eb      0x271 ../inputs/bsp/lib\libxilstandalone.a(xcortexa9_g.c.obj)
+ .debug_str     0x000144eb      0x279 ../inputs/bsp/lib\libxilstandalone.a(read.c.obj)
+ .debug_str     0x000144eb      0x2a5 ../inputs/bsp/lib\libxilstandalone.a(_sbrk.c.obj)
+ .debug_str     0x000144eb      0x24b ../inputs/bsp/lib\libxilstandalone.a(_exit.c.obj)
+ .debug_str     0x000144eb      0x250 ../inputs/bsp/lib\libxilstandalone.a(close.c.obj)
+ .debug_str     0x000144eb      0x27b ../inputs/bsp/lib\libxilstandalone.a(write.c.obj)
+ .debug_str     0x000144eb      0x281 ../inputs/bsp/lib\libxilstandalone.a(lseek.c.obj)
+
+.debug_frame    0x00000000      0xd48
+ .debug_frame   0x00000000      0x16c unit.o
+ .debug_frame   0x0000016c       0xe4 ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+ .debug_frame   0x00000250      0x2dc ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+ .debug_frame   0x0000052c       0x70 ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+ .debug_frame   0x0000059c       0x90 ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+ .debug_frame   0x0000062c       0x5c ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+ .debug_frame   0x00000688       0xd8 ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+ .debug_frame   0x00000760       0x2c ../inputs/bsp/lib\libxil.a(xaxidma_sinit.c.obj)
+ .debug_frame   0x0000078c      0x110 ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+ .debug_frame   0x0000089c       0x54 ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+ .debug_frame   0x000008f0       0x88 ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+ .debug_frame   0x00000978       0x70 ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+ .debug_frame   0x000009e8      0x1e8 ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+ .debug_frame   0x00000bd0       0x48 ../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+ .debug_frame   0x00000c18       0x48 ../inputs/bsp/lib\libxilstandalone.a(read.c.obj)
+ .debug_frame   0x00000c60       0x20 ../inputs/bsp/lib\libxilstandalone.a(_sbrk.c.obj)
+ .debug_frame   0x00000c80       0x20 ../inputs/bsp/lib\libxilstandalone.a(_exit.c.obj)
+ .debug_frame   0x00000ca0       0x20 ../inputs/bsp/lib\libxilstandalone.a(close.c.obj)
+ .debug_frame   0x00000cc0       0x48 ../inputs/bsp/lib\libxilstandalone.a(write.c.obj)
+ .debug_frame   0x00000d08       0x40 ../inputs/bsp/lib\libxilstandalone.a(lseek.c.obj)
+
+.debug_line_str
+                0x00000000      0x131
+ .debug_line_str
+                0x00000000      0x131 ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+                                0x11b (size before relaxing)
+ .debug_line_str
+                0x00000131      0x12a ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+ .debug_line_str
+                0x00000131      0x11f ../inputs/bsp/lib\libxilstandalone.a(cpu_init.S.obj)
+
+Cross Reference Table
+
+Symbol                                            File
+DataAbortAddr                                     ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj)
+DataAbortInterrupt                                ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj)
+FIQInterrupt                                      ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj)
+IRQInterrupt                                      ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj)
+MMUTable                                          ../inputs/bsp/lib\libxilstandalone.a(translation_table.S.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+PrefetchAbortAddr                                 ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj)
+PrefetchAbortInterrupt                            ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj)
+SIM_MODE                                          ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+SWInterrupt                                       ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj)
+TimerInst                                         ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+UndefinedException                                ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj)
+UndefinedExceptionAddr                            ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj)
+XAxiDma_BdRingAlloc                               ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+XAxiDma_BdRingCheck                               ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+XAxiDma_BdRingClone                               ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+XAxiDma_BdRingCreate                              ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+XAxiDma_BdRingDumpRegs                            ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+XAxiDma_BdRingFree                                ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+XAxiDma_BdRingFromHw                              ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+XAxiDma_BdRingGetCoalesce                         ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+XAxiDma_BdRingSetCoalesce                         ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+XAxiDma_BdRingStart                               ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+                                                  ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+XAxiDma_BdRingToHw                                ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+XAxiDma_BdRingUnAlloc                             ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+XAxiDma_Busy                                      ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+XAxiDma_CfgInitialize                             ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+                                                  unit.o
+XAxiDma_ConfigTable                               ../inputs/bsp/lib\libxil.a(xaxidma_g.c.obj)
+                                                  ../inputs/bsp/lib\libxil.a(xaxidma_sinit.c.obj)
+XAxiDma_LookupConfig                              ../inputs/bsp/lib\libxil.a(xaxidma_sinit.c.obj)
+                                                  unit.o
+XAxiDma_Pause                                     ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+XAxiDma_Reset                                     ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+                                                  unit.o
+XAxiDma_ResetIsDone                               ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+                                                  unit.o
+XAxiDma_Resume                                    ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+XAxiDma_SelectCyclicMode                          ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+XAxiDma_SelectKeyHole                             ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+XAxiDma_SimpleTransfer                            ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+                                                  unit.o
+XAxiDma_StartBdRingHw                             ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+XAxiDma_UpdateBdRingCDesc                         ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+XCortexa9_ConfigTable                             ../inputs/bsp/lib\libxilstandalone.a(xcortexa9_g.c.obj)
+                                                  ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+XExc_VectorTable                                  ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(vectors.c.obj)
+XGpio_CfgInitialize                               ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+                                                  ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+XGpio_ConfigTable                                 ../inputs/bsp/lib\libxil.a(xgpio_g.c.obj)
+                                                  ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+XGpio_DiscreteRead                                ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+                                                  unit.o
+XGpio_DiscreteWrite                               ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+                                                  unit.o
+XGpio_GetDataDirection                            ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+XGpio_Initialize                                  ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+                                                  unit.o
+XGpio_LookupConfig                                ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+XGpio_SetDataDirection                            ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+                                                  unit.o
+XNullHandler                                      ../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+XTime_GetTime                                     ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+                                                  unit.o
+XTimer_ClearTickInterrupt                         ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+XTimer_SetHandler                                 ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+XTimer_SetInterval                                ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+XUartPs_RecvByte                                  ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+XUartPs_ResetHw                                   ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+XUartPs_SendByte                                  ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+XUartPs_WaitTransmitDone                          ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+XilSleepTimer_Init                                ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+                                                  ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+XilTickTimer_Init                                 ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+                                                  ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+XilTimer_Sleep                                    ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+Xil_Assert                                        ../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+                                                  ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+                                                  ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+Xil_AssertSetCallback                             ../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+Xil_AssertStatus                                  ../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+                                                  ../inputs/bsp/lib\libxil.a(xgpio.c.obj)
+                                                  ../inputs/bsp/lib\libxil.a(xgpio_sinit.c.obj)
+Xil_AssertWait                                    ../inputs/bsp/lib\libxilstandalone.a(xil_assert.c.obj)
+Xil_DCacheDisable                                 ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_DCacheEnable                                  ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+                                                  unit.o
+Xil_DCacheFlush                                   ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_DCacheFlushLine                               ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_DCacheFlushRange                              ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+                                                  ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+                                                  unit.o
+Xil_DCacheInvalidate                              ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_DCacheInvalidateLine                          ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_DCacheInvalidateRange                         ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+                                                  ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+                                                  unit.o
+Xil_DCacheStoreLine                               ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_ExceptionInit                                 ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+Xil_ExceptionRegisterHandler                      ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+Xil_ExceptionRemoveHandler                        ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+Xil_GetExceptionRegisterHandler                   ../inputs/bsp/lib\libxilstandalone.a(xil_exception.c.obj)
+Xil_ICacheDisable                                 ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_ICacheEnable                                  ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_ICacheInvalidate                              ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_ICacheInvalidateLine                          ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_ICacheInvalidateRange                         ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L1DCacheDisable                               ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L1DCacheEnable                                ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L1DCacheFlush                                 ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L1DCacheFlushLine                             ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L1DCacheFlushRange                            ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L1DCacheInvalidate                            ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L1DCacheInvalidateLine                        ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L1DCacheInvalidateRange                       ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L1DCacheStoreLine                             ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L1ICacheDisable                               ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L1ICacheEnable                                ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L1ICacheInvalidate                            ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L1ICacheInvalidateLine                        ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L1ICacheInvalidateRange                       ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L2CacheDisable                                ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L2CacheEnable                                 ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L2CacheFlush                                  ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L2CacheFlushLine                              ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L2CacheFlushRange                             ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L2CacheInvalidate                             ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L2CacheInvalidateLine                         ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L2CacheInvalidateRange                        ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+Xil_L2CacheStoreLine                              ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+__abort_stack                                     ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+__aeabi_idiv                                      F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+__aeabi_idiv0                                     F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_dvmd_tls.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+__aeabi_idivmod                                   F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+__aeabi_ldiv0                                     F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_dvmd_tls.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+__aeabi_uidiv                                     F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-freer.o)
+                                                  ../inputs/bsp/lib\libxiltimer.a(globaltimer_sleep_zynq.c.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+__aeabi_uidivmod                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+                                                  ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+__aeabi_uldivmod                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+                                                  unit.o
+__atexit                                          F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-__call_atexit.o)
+__bss_end                                         ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+__bss_start                                       ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+__call_exitprocs                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-__call_atexit.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-exit.o)
+__cpu_init                                        ../inputs/bsp/lib\libxilstandalone.a(cpu_init.S.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+__deregister_frame_info                           F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+__divsi3                                          F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_divsi3.o)
+__dso_handle                                      F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+__errno                                           F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-errno.o)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(lseek.c.obj)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-sysconf.o)
+__fini_array_end                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fini.o)
+__fini_array_start                                F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fini.o)
+__fiq_stack                                       ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+__fp_lock_all                                     F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+__fp_unlock_all                                   F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+__init_array_end                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-init.o)
+__init_array_start                                F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-init.o)
+__irq_stack                                       ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+__libc_fini_array                                 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fini.o)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+__libc_init_array                                 F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-init.o)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+__malloc_av_                                      F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-freer.o)
+__malloc_current_mallinfo                         F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-freer.o)
+__malloc_lock                                     F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mlock.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-freer.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+__malloc_max_sbrked_mem                           F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+__malloc_max_total_mem                            F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+__malloc_sbrk_base                                F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-freer.o)
+__malloc_top_pad                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-freer.o)
+__malloc_trim_threshold                           F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-freer.o)
+__malloc_unlock                                   F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mlock.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-freer.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+__preinit_array_end                               F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-init.o)
+__preinit_array_start                             F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-init.o)
+__register_frame_info                             F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crtbegin.o
+__sbss_end                                        ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+__sbss_start                                      ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+__sclose                                          F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+__seofread                                        F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o)
+__sf                                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-impure.o)
+__sflush_r                                        F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fflush.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fclose.o)
+__sfp                                             F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+__sfp_lock_acquire                                F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fclose.o)
+__sfp_lock_release                                F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fclose.o)
+__sglue                                           F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fflush.o)
+__sinit                                           F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fflush.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fclose.o)
+__sread                                           F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+__sseek                                           F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+__stack                                           ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+__stdio_exit_handler                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-exit.o)
+__supervisor_stack                                ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+__swrite                                          F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+__udivmoddi4                                      F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivmoddi4.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+__udivsi3                                         F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libgcc.a(_udivsi3.o)
+__undef_stack                                     ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+_boot                                             ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj)
+_close                                            ../inputs/bsp/lib\libxilstandalone.a(close.c.obj)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-closer.o)
+_close_r                                          F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-closer.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o)
+_ctype_                                           F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-ctype_.o)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+_exit                                             ../inputs/bsp/lib\libxilstandalone.a(_exit.c.obj)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-exit.o)
+_fclose_r                                         F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fclose.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+_fflush_r                                         F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fflush.o)
+_fini                                             F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crti.o
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fini.o)
+_free_r                                           F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-freer.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fflush.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fclose.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-reent.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-malloc.o)
+_fwalk_sglue                                      F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fwalk.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fflush.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+_heap_end                                         ../inputs/bsp/lib\libxilstandalone.a(_sbrk.c.obj)
+_heap_start                                       ../inputs/bsp/lib\libxilstandalone.a(_sbrk.c.obj)
+_impure_data                                      F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-impure.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fflush.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+_impure_ptr                                       F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-impure.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-errno.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fflush.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fclose.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-reent.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-malloc.o)
+_init                                             F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard/crti.o
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-init.o)
+_lseek                                            ../inputs/bsp/lib\libxilstandalone.a(lseek.c.obj)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-lseekr.o)
+_lseek_r                                          F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-lseekr.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o)
+_malloc_r                                         F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-malloc.o)
+_malloc_trim_r                                    F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-freer.o)
+_prestart                                         ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+_read                                             ../inputs/bsp/lib\libxilstandalone.a(read.c.obj)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-readr.o)
+_read_r                                           F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-readr.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o)
+_reclaim_reent                                    F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-reent.o)
+_sbrk                                             ../inputs/bsp/lib\libxilstandalone.a(_sbrk.c.obj)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-sbrkr.o)
+_sbrk_r                                           F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-sbrkr.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-freer.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+_stack_end                                        ../inputs/bsp/lib\libxilstandalone.a(xil_cache.c.obj)
+_start                                            ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+_vector_table                                     ../inputs/bsp/lib\libxilstandalone.a(asm_vectors.S.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(boot.S.obj)
+_write                                            ../inputs/bsp/lib\libxilstandalone.a(write.c.obj)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-writer.o)
+_write_r                                          F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-writer.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-stdio.o)
+continuous_contract                               unit.o
+end                                               unit.o
+errno                                             F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-reent.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-writer.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-sbrkr.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-readr.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-lseekr.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-closer.o)
+exit                                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-exit.o)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+failure_name                                      unit.o
+fclose                                            F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fclose.o)
+fflush                                            F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-fflush.o)
+free                                              F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-malloc.o)
+inbyte                                            ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(read.c.obj)
+lseek                                             ../inputs/bsp/lib\libxilstandalone.a(lseek.c.obj)
+main                                              unit.o
+                                                  ../inputs/bsp/lib\libxilstandalone.a(xil-crt0.S.obj)
+malloc                                            F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-malloc.o)
+                                                  ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+memset                                            F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-memset.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-findfp.o)
+                                                  ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+                                                  ../inputs/bsp/lib\libxil.a(xaxidma.c.obj)
+                                                  unit.o
+msleep                                            ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+outbyte                                           ../inputs/bsp/lib\libxil.a(xuartps_hw.c.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(write.c.obj)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+read                                              ../inputs/bsp/lib\libxilstandalone.a(read.c.obj)
+session_init                                      unit.o
+session_run                                       unit.o
+sleep                                             ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+strlen                                            F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-strlen.o)
+                                                  ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+sysconf                                           F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-sysconf.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-freer.o)
+                                                  F:/AMD/2025.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin//../aarch32-xilinx-eabi/usr/lib/thumb/v7-a+fp/hard\libc.a(libc_a-mallocr.o)
+usleep                                            ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)
+                                                  unit.o
+write                                             ../inputs/bsp/lib\libxilstandalone.a(write.c.obj)
+xil_printf                                        ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+                                                  ../inputs/bsp/lib\libxil.a(xaxidma_bdring.c.obj)
+                                                  unit.o
+xil_vprintf                                       ../inputs/bsp/lib\libxilstandalone.a(xil_printf.c.obj)
+xtimerinit                                        ../inputs/bsp/lib\libxiltimer.a(xiltimer.c.obj)

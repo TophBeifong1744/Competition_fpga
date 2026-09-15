@@ -1,0 +1,22 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Sep 15 17:20:59 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_continuous_sim/xsim_script.tcl
+# xsim {tb_continuous_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+CASE clean stop/restart random-backpressure PASS groups=68 packets=17
+CASE zero-group stop PASS
+CASE boundary stop with held final packet and premature restart PASS
+CASE overflow + refused restart PASS (expected injected fault)
+CASE channel valid mismatch PASS (expected injected fault)
+RTL_CONTINUOUS_PASS packet=4 fifo=16 checks=5894; protocol-only, not board/timing
+$finish called at time : 26340 ns : File "C:/Users/Toph Beifong/AppData/Local/Temp/ss-cont-sim-final-01/tb_continuous.sv" Line 108
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 15 17:21:01 2026...

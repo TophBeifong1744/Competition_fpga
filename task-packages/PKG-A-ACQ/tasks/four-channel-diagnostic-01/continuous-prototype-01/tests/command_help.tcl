@@ -1,0 +1,2 @@
+help update_module_reference
+help update_module_reference -verbose

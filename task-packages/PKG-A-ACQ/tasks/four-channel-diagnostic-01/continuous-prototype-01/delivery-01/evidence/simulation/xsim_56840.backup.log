@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Sep 15 17:21:04 2026
+# Process ID         : 56840
+# Current directory  : C:/Users/Toph Beifong/AppData/Local/Temp/ss-cont-sim-final-01
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/tb_production_sim/xsim_script.tcl}
+# Log file           : C:/Users/Toph Beifong/AppData/Local/Temp/ss-cont-sim-final-01/xsim.log
+# Journal file       : C:/Users/Toph Beifong/AppData/Local/Temp/ss-cont-sim-final-01\xsim.jou
+# Running On         : Toph
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 15569 MB
+# Total Virtual      : 32459 MB
+# Available Virtual  : 5863 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_production_sim/xsim_script.tcl
+# xsim {tb_production_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+CASE clean stop/restart random-backpressure PASS groups=4250 packets=17
+CASE zero-group stop PASS
+CASE boundary stop with held final packet and premature restart PASS
+CASE overflow + refused restart PASS (expected injected fault)
+CASE channel valid mismatch PASS (expected injected fault)
+RTL_CONTINUOUS_PASS packet=250 fifo=1024 checks=314127; protocol-only, not board/timing
+$finish called at time : 1298580 ns : File "C:/Users/Toph Beifong/AppData/Local/Temp/ss-cont-sim-final-01/tb_continuous.sv" Line 108
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 15 17:21:06 2026...
