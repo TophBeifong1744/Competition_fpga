@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "F:\NUEC\review-evidence\center-target-f9768b8\independent_audit.py", line 57, in <module>
+    assert len(warnings)==102 and all('/memory.map:' in x or '/ps7_init.tcl:' in x for x in warnings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

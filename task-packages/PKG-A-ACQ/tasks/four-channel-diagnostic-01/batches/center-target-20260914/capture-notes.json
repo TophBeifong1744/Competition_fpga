@@ -1,0 +1,18 @@
+{
+  "status": "planned_not_recorded",
+  "schema_note": "Acquisition notes, not H1 metadata; null means unknown, not measured zero",
+  "existing_geometry_record": "../c-adapter-first-20260913/operator-record.json",
+  "geometry_unchanged_intent": true,
+  "metadata_origin": "mic0",
+  "array_center_model_m": [0.02, 0.02, 0],
+  "center_basis": "Average of user-declared four-vertex 40mm square; not new measurement",
+  "planned_target": {"reference": "array center", "azimuth_deg": 0, "distance_m": 1.5, "relative_height_m": 0, "sound": "live human voice per user's updated plan; steady normal-volume speech recommended, not yet recorded", "deviation_from_preferred_task_scene": "Live voice instead of loudspeaker playback; no playback file or exactly repeatable source"},
+  "actual_target": {"device": null, "content_or_file": null, "source_mode": null, "player": null, "volume_setting": null, "agc": null, "limiter": null, "effects": null, "known_gain": null, "distance_m": null, "azimuth_deg": null, "relative_height_m": null, "measurement_method": null, "distance_error_m": null, "angle_error_deg": null, "height_error_m": null, "active_before_Run": null, "active_until_capture_completed": null, "playback_file_interval": null},
+  "old_recording_addendum": {"source_mode": "device playback", "device": "phone built-in loudspeaker; model unknown", "content_or_file": "song; exact title/file unknown", "playback_settings": "volume medium-low (user description, no numeric value)", "effect": "super bass (超重低音) enabled", "agc": null, "limiter": null, "loudness_equalization": null, "known_gain": null},
+  "missing_source_information": "Asked once and answered on 2026-09-14; remaining unspecified items are unknown, no repeated questionnaire",
+  "background_changed": null,
+  "new_board_run_performed": false,
+  "new_recording_received": false,
+  "independent_clean_noise_reference_available": null,
+  "evidence_level": "diagnostic"
+}
