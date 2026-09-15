@@ -1,0 +1,34 @@
+{
+  "version": "real-audio-compare-01-input-v1",
+  "baseline": "09ecf267813e1ac289dae9358d9e097a87906c86",
+  "input_manifest": "task-packages/PKG-B-ALG/tasks/c-board-algorithm-01/inputs.json",
+  "input_manifest_sha256": "b4858d7072690256a567a4413823fad1ba689f624e6a6704b7c858cbddd57aa5",
+  "batch": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913",
+  "recordings": ["c-adapter-speech-20260913-01", "c-adapter-quiet-20260913-01"],
+  "roles": ["primary_speech_comparison", "background_diagnostic_no_target_truth"],
+  "sample_rate_hz": 48000,
+  "channel_order": ["mic0", "mic1", "mic2", "mic3"],
+  "positions_m": [[0,0,0], [0.04,0,0], [0.04,0.04,0], [0,0.04,0]],
+  "reference_channel": "mic0",
+  "pcm_divisor": 8388608,
+  "input_selection": "all_format_clean_contiguous_intervals_no_concatenation",
+  "manual_steering": {
+    "model": "plane_wave_trial",
+    "azimuth_deg": -45,
+    "elevation_deg": 0,
+    "direction_convention": "array-to-source",
+    "azimuth_axes": "+X toward +Y",
+    "sound_speed_m_s": 343,
+    "ground_truth": false,
+    "basis": "Exploratory +X/-Y pointing selected before audio comparison; not a conversion of mic1-relative placement to array-center truth.",
+    "source_position_m": null,
+    "distance_used_in_delay_model": false
+  },
+  "comparison_policy": {
+    "independent_output_normalization": false,
+    "channel_calibration_applied": false,
+    "automatic_direction_estimation": false,
+    "audio_output_created": false,
+    "output_alignment_and_fractional_delay": "to_be_implemented_in_step3; compare identical valid source-time intervals"
+  }
+}

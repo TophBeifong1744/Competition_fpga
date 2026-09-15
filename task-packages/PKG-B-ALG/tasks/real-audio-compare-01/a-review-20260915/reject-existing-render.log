@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "E:\ss-real-audio-review-0915\task-packages\PKG-B-ALG\tasks\real-audio-compare-01\render_audio.py", line 145, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "E:\ss-real-audio-review-0915\task-packages\PKG-B-ALG\tasks\real-audio-compare-01\render_audio.py", line 105, in main
+    out.mkdir(parents=True,exist_ok=False)
+  File "C:\Users\Toph Beifong\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [WinError 183] ���ļ��Ѵ���ʱ���޷��������ļ���: 'E:\\ss-real-audio-review-0915-output\\audio'

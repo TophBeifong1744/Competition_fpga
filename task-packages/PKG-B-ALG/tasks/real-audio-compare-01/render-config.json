@@ -1,0 +1,12 @@
+{
+  "version": "offline-manual-linear-0.1",
+  "input_config_sha256": "1856dde64c0be9aec4cee6a9e5d550cefdb5fa4ad91dc55cd5a5e20a636d4a05",
+  "interpolation": "linear",
+  "weights": [0.25, 0.25, 0.25, 0.25],
+  "output_pcm_bits": 24,
+  "output_rounding": "nearest_even_then_saturate",
+  "preview_common_gain": 64,
+  "preview_gain_policy": "Fixed for both branches and both recordings; raw exports remain gain=1.",
+  "boundary_policy": "intersection_of_valid_source_indices_relative_to_mic0; no_padding_no_wrap",
+  "streaming": false
+}

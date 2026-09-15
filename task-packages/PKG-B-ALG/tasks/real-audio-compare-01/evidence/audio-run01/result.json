@@ -1,0 +1,252 @@
+{
+  "status": "AUTHOR_OFFLINE_RENDER_ONLY",
+  "input_hashes": {
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/GEOMETRY.md": "fdfe2b60ebed19c1ffbfca421d1964d91c564338949148b1bb6a56496904b8f7",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-quiet-20260913-01/samples.csv": "55cda506bdc906e80cc2e3fe9e23619f36e872e5eb3e8e78b73de63c340188e2",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-quiet-20260913-01/metadata.json": "58c710b72c508421661533af6b21e7ed085b92dcdff8c02e6c59c4bc5acdef31",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-speech-20260913-01/samples.csv": "2ac49776e00d78ce2d1a91b6b13449aa0da2f48f8df56f7a89396dea57e0d367",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-speech-20260913-01/metadata.json": "787882bb7f2cd61ae5dc58ba11ed003a7da83d050f563bec21bfc73f669b0e77"
+  },
+  "input_config": {
+    "version": "real-audio-compare-01-input-v1",
+    "baseline": "09ecf267813e1ac289dae9358d9e097a87906c86",
+    "input_manifest": "task-packages/PKG-B-ALG/tasks/c-board-algorithm-01/inputs.json",
+    "input_manifest_sha256": "b4858d7072690256a567a4413823fad1ba689f624e6a6704b7c858cbddd57aa5",
+    "batch": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913",
+    "recordings": [
+      "c-adapter-speech-20260913-01",
+      "c-adapter-quiet-20260913-01"
+    ],
+    "roles": [
+      "primary_speech_comparison",
+      "background_diagnostic_no_target_truth"
+    ],
+    "sample_rate_hz": 48000,
+    "channel_order": [
+      "mic0",
+      "mic1",
+      "mic2",
+      "mic3"
+    ],
+    "positions_m": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0.04,
+        0,
+        0
+      ],
+      [
+        0.04,
+        0.04,
+        0
+      ],
+      [
+        0,
+        0.04,
+        0
+      ]
+    ],
+    "reference_channel": "mic0",
+    "pcm_divisor": 8388608,
+    "input_selection": "all_format_clean_contiguous_intervals_no_concatenation",
+    "manual_steering": {
+      "model": "plane_wave_trial",
+      "azimuth_deg": -45,
+      "elevation_deg": 0,
+      "direction_convention": "array-to-source",
+      "azimuth_axes": "+X toward +Y",
+      "sound_speed_m_s": 343,
+      "ground_truth": false,
+      "basis": "Exploratory +X/-Y pointing selected before audio comparison; not a conversion of mic1-relative placement to array-center truth.",
+      "source_position_m": null,
+      "distance_used_in_delay_model": false
+    },
+    "comparison_policy": {
+      "independent_output_normalization": false,
+      "channel_calibration_applied": false,
+      "automatic_direction_estimation": false,
+      "audio_output_created": false,
+      "output_alignment_and_fractional_delay": "to_be_implemented_in_step3; compare identical valid source-time intervals"
+    }
+  },
+  "render_config": {
+    "version": "offline-manual-linear-0.1",
+    "input_config_sha256": "1856dde64c0be9aec4cee6a9e5d550cefdb5fa4ad91dc55cd5a5e20a636d4a05",
+    "interpolation": "linear",
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "output_pcm_bits": 24,
+    "output_rounding": "nearest_even_then_saturate",
+    "preview_common_gain": 64,
+    "preview_gain_policy": "Fixed for both branches and both recordings; raw exports remain gain=1.",
+    "boundary_policy": "intersection_of_valid_source_indices_relative_to_mic0; no_padding_no_wrap",
+    "streaming": false
+  },
+  "compensation_delays_samples": [
+    0.0,
+    3.9581487460005,
+    -1.8949583035628337e-16,
+    -3.9581487460005
+  ],
+  "delay_definition": "output_i[n]=input_i[n-delay_i]; relative to mic0, not an additional delay applied to single reference",
+  "records": [
+    {
+      "recording": "c-adapter-speech-20260913-01",
+      "interval": 0,
+      "source_row_start": 4,
+      "source_row_stop": 31996,
+      "first_reference_sample_id": "16546",
+      "last_reference_sample_id": "48537",
+      "discarded_left": 4,
+      "discarded_right": 4,
+      "output_duration_s": 0.6665,
+      "files": [
+        {
+          "file": "c-adapter-speech-20260913-01-interval00-single-raw.wav",
+          "sha256": "2429cca56d02e5cc66bab3d772f1fdc6d12c8f7959120755c1b43c0dcc1b879c",
+          "frames": 31992,
+          "saturation_samples": 0,
+          "peak_abs": 0.00348663330078125,
+          "rms": 0.0009687830056165868,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 0.0,
+          "branch": "single",
+          "mode": "raw",
+          "gain": 1.0
+        },
+        {
+          "file": "c-adapter-speech-20260913-01-interval00-single-preview.wav",
+          "sha256": "56df7762f1a92fb3dbdb3b7d7ea2949fd01987ba4853e45ac8050c0f84fbd0e4",
+          "frames": 31992,
+          "saturation_samples": 0,
+          "peak_abs": 0.22314453125,
+          "rms": 0.062002112359461556,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 0.0,
+          "branch": "single",
+          "mode": "preview",
+          "gain": 64
+        },
+        {
+          "file": "c-adapter-speech-20260913-01-interval00-manual-raw.wav",
+          "sha256": "fef24a9da932d7c10a036e88d40f86866db9612d478145e6c00477d08553bb94",
+          "frames": 31992,
+          "saturation_samples": 0,
+          "peak_abs": 0.00320768145079804,
+          "rms": 0.0009595549712798641,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 5.945248413019577e-08,
+          "branch": "manual",
+          "mode": "raw",
+          "gain": 1.0
+        },
+        {
+          "file": "c-adapter-speech-20260913-01-interval00-manual-preview.wav",
+          "sha256": "253397b502f70233f6c3852c7622fb495db26b7867684b94e895465fd5d87ef8",
+          "frames": 31992,
+          "saturation_samples": 0,
+          "peak_abs": 0.20529161285107456,
+          "rms": 0.0614115181619113,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 5.923870838309142e-08,
+          "branch": "manual",
+          "mode": "preview",
+          "gain": 64
+        }
+      ]
+    },
+    {
+      "recording": "c-adapter-quiet-20260913-01",
+      "interval": 0,
+      "source_row_start": 4,
+      "source_row_stop": 31996,
+      "first_reference_sample_id": "17242",
+      "last_reference_sample_id": "49233",
+      "discarded_left": 4,
+      "discarded_right": 4,
+      "output_duration_s": 0.6665,
+      "files": [
+        {
+          "file": "c-adapter-quiet-20260913-01-interval00-single-raw.wav",
+          "sha256": "9105629a3e203d07e3ca01b1b5e2c217a76bddd29a6617b9d9658a635388e84e",
+          "frames": 31992,
+          "saturation_samples": 0,
+          "peak_abs": 0.00286865234375,
+          "rms": 0.0008994695517937382,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 0.0,
+          "branch": "single",
+          "mode": "raw",
+          "gain": 1.0
+        },
+        {
+          "file": "c-adapter-quiet-20260913-01-interval00-single-preview.wav",
+          "sha256": "f40a09b25f8bb4e2e8c217a3152db6da31767089d98ee421cb2fd2b06b5c54e8",
+          "frames": 31992,
+          "saturation_samples": 0,
+          "peak_abs": 0.18359375,
+          "rms": 0.05756605131479924,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 0.0,
+          "branch": "single",
+          "mode": "preview",
+          "gain": 64
+        },
+        {
+          "file": "c-adapter-quiet-20260913-01-interval00-manual-raw.wav",
+          "sha256": "2854dcfa5d95e088039dc0d3dcc372f1bd5752d3779912c4915341e666d93e25",
+          "frames": 31992,
+          "saturation_samples": 0,
+          "peak_abs": 0.002754904500957599,
+          "rms": 0.000847719090343198,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 5.945248413019577e-08,
+          "branch": "manual",
+          "mode": "raw",
+          "gain": 1.0
+        },
+        {
+          "file": "c-adapter-quiet-20260913-01-interval00-manual-preview.wav",
+          "sha256": "7345d61c86921d257f4dd03b16b47a212b7c15dd0099af80ce374e6f44905d9f",
+          "frames": 31992,
+          "saturation_samples": 0,
+          "peak_abs": 0.17631388806128634,
+          "rms": 0.05425402178196467,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 5.923870838309142e-08,
+          "branch": "manual",
+          "mode": "preview",
+          "gain": 64
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "sources": {
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/render_audio.py": "150478f12144be489e5ea2418d24a024cbeb1a837fbbe70059ba171d81e5384a",
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/check_inputs.py": "4f7cc3dc96c0f1b0966e5d38bdd89390a017606141a2da01514336e1bbe8a3d9",
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/config.json": "1856dde64c0be9aec4cee6a9e5d550cefdb5fa4ad91dc55cd5a5e20a636d4a05",
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/render-config.json": "a60aee0e08b05f433fcdc4ca9d9d0df50510d2fda21c8ffe5eb7e2224f7038b0",
+    "task-packages/PKG-B-ALG/payload/model/python/h1_reader.py": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9",
+    "task-packages/PKG-B-ALG/payload/model/python/audio_frames.py": "0ed77ea8db8834576c21206358a8d945b612a176cad742bb266d077ee2a79408"
+  },
+  "listening_completed": false,
+  "acoustic_acceptance": false,
+  "limits": [
+    "Linear interpolation has fractional-delay-dependent frequency attenuation; no calibrated gain claim.",
+    "Finite offline valid crop; no streaming state, fixed-point DAS, tracker, or automatic beam.",
+    "0.667 second uncalibrated near-field recording; trial steering is not ground truth."
+  ]
+}
