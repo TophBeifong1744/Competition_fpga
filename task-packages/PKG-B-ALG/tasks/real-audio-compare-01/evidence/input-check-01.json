@@ -1,0 +1,79 @@
+{
+  "status": "INPUT_BINDING_VERIFIED_ONLY",
+  "config_sha256": "1856dde64c0be9aec4cee6a9e5d550cefdb5fa4ad91dc55cd5a5e20a636d4a05",
+  "historical_manifest_sha256": "b4858d7072690256a567a4413823fad1ba689f624e6a6704b7c858cbddd57aa5",
+  "inputs": {
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/GEOMETRY.md": "fdfe2b60ebed19c1ffbfca421d1964d91c564338949148b1bb6a56496904b8f7",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-quiet-20260913-01/samples.csv": "55cda506bdc906e80cc2e3fe9e23619f36e872e5eb3e8e78b73de63c340188e2",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-quiet-20260913-01/metadata.json": "58c710b72c508421661533af6b21e7ed085b92dcdff8c02e6c59c4bc5acdef31",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-speech-20260913-01/samples.csv": "2ac49776e00d78ce2d1a91b6b13449aa0da2f48f8df56f7a89396dea57e0d367",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-speech-20260913-01/metadata.json": "787882bb7f2cd61ae5dc58ba11ed003a7da83d050f563bec21bfc73f669b0e77"
+  },
+  "recordings": [
+    {
+      "recording": "c-adapter-speech-20260913-01",
+      "role": "primary_speech_comparison",
+      "rows": 32000,
+      "duration_s": 0.6666666666666666,
+      "clean_intervals": [
+        {
+          "row_start": 0,
+          "row_stop": 32000,
+          "sample_count": 32000,
+          "first_sample_id": "16542",
+          "last_sample_id": "48541"
+        }
+      ],
+      "excluded_error_rows": 0,
+      "calibration_status": "not-calibrated",
+      "peak_abs_normalized": [
+        0.00348663330078125,
+        0.0035858154296875,
+        0.00322723388671875,
+        0.00331878662109375
+      ],
+      "reference_channel": "mic0",
+      "usable_for_input_binding": true,
+      "acoustic_acceptance": false
+    },
+    {
+      "recording": "c-adapter-quiet-20260913-01",
+      "role": "background_diagnostic_no_target_truth",
+      "rows": 32000,
+      "duration_s": 0.6666666666666666,
+      "clean_intervals": [
+        {
+          "row_start": 0,
+          "row_stop": 32000,
+          "sample_count": 32000,
+          "first_sample_id": "17238",
+          "last_sample_id": "49237"
+        }
+      ],
+      "excluded_error_rows": 0,
+      "calibration_status": "not-calibrated",
+      "peak_abs_normalized": [
+        0.00286865234375,
+        0.00295257568359375,
+        0.0031280517578125,
+        0.00262451171875
+      ],
+      "reference_channel": "mic0",
+      "usable_for_input_binding": true,
+      "acoustic_acceptance": false
+    }
+  ],
+  "sources": {
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/check_inputs.py": "4f7cc3dc96c0f1b0966e5d38bdd89390a017606141a2da01514336e1bbe8a3d9",
+    "task-packages/PKG-B-ALG/payload/model/python/h1_reader.py": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9",
+    "task-packages/PKG-B-ALG/payload/model/python/audio_frames.py": "0ed77ea8db8834576c21206358a8d945b612a176cad742bb266d077ee2a79408"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "audio_generated": false,
+  "manual_steering_is_ground_truth": false,
+  "note": "Full clean intervals selected; output common crop and delay alignment will be defined in step3."
+}
