@@ -1,0 +1,195 @@
+{
+  "utc": "2026-09-16T15:05:31.827753+00:00",
+  "commands": [
+    {
+      "argv": [
+        "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "safe.directory=F:/NUEC/develop",
+        "-C",
+        "F:/NUEC/develop",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "f364a023830b105e6075d853da83cfd51127cf64\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "safe.directory=F:/NUEC/develop",
+        "-C",
+        "F:/NUEC/develop",
+        "branch",
+        "--show-current"
+      ],
+      "returncode": 0,
+      "stdout": "task/member-b-four-track-01\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "safe.directory=F:/NUEC/develop",
+        "-C",
+        "F:/NUEC/develop",
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=all"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "safe.directory=F:/NUEC/develop",
+        "-C",
+        "F:/NUEC/develop",
+        "ls-files",
+        "--others",
+        "--ignored",
+        "--exclude-standard"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "safe.directory=F:/NUEC/develop",
+        "-C",
+        "F:/NUEC/develop",
+        "rev-parse",
+        "main",
+        "origin/main"
+      ],
+      "returncode": 0,
+      "stdout": "96e54144cff2a76b54032310a4d56c34c2412ee6\n96e54144cff2a76b54032310a4d56c34c2412ee6\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "safe.directory=F:/NUEC/develop",
+        "-C",
+        "F:/NUEC/develop",
+        "rev-list",
+        "--left-right",
+        "--count",
+        "main...origin/main"
+      ],
+      "returncode": 0,
+      "stdout": "0\t0\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "safe.directory=F:/NUEC/review-worktrees/endurance-main-5606e1a",
+        "-C",
+        "F:/NUEC/review-worktrees/endurance-main-5606e1a",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "96e54144cff2a76b54032310a4d56c34c2412ee6\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "safe.directory=F:/NUEC/review-worktrees/endurance-main-5606e1a",
+        "-C",
+        "F:/NUEC/review-worktrees/endurance-main-5606e1a",
+        "branch",
+        "--show-current"
+      ],
+      "returncode": 0,
+      "stdout": "review/member-b-e1-5606e1a\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "safe.directory=F:/NUEC/review-worktrees/endurance-main-5606e1a",
+        "-C",
+        "F:/NUEC/review-worktrees/endurance-main-5606e1a",
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=all"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "safe.directory=F:/NUEC/review-worktrees/endurance-main-5606e1a",
+        "-C",
+        "F:/NUEC/review-worktrees/endurance-main-5606e1a",
+        "ls-files",
+        "--others",
+        "--ignored",
+        "--exclude-standard"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "safe.directory=F:/NUEC/review-worktrees/endurance-main-5606e1a",
+        "-C",
+        "F:/NUEC/review-worktrees/endurance-main-5606e1a",
+        "rev-parse",
+        "main",
+        "origin/main"
+      ],
+      "returncode": 0,
+      "stdout": "96e54144cff2a76b54032310a4d56c34c2412ee6\n96e54144cff2a76b54032310a4d56c34c2412ee6\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/git.exe",
+        "-c",
+        "safe.directory=F:/NUEC/review-worktrees/endurance-main-5606e1a",
+        "-C",
+        "F:/NUEC/review-worktrees/endurance-main-5606e1a",
+        "rev-list",
+        "--left-right",
+        "--count",
+        "main...origin/main"
+      ],
+      "returncode": 0,
+      "stdout": "0\t0\n",
+      "stderr": ""
+    }
+  ],
+  "backup": {
+    "utc": "2026-09-16T15:01:47.690324+00:00",
+    "archive": "F:\\NUEC\\review-evidence\\endurance-5606e1a-B-review.zip",
+    "sha256": "115742311f3d66984e52577c608ddb5e3b575a8fbbe49eaec66a61a5dea9f455",
+    "files": 151,
+    "bytes": 2489374,
+    "all_entries_sha256_verified": true
+  },
+  "review_tree_removed": true,
+  "raw_evidence_extraction_removed": true
+}
