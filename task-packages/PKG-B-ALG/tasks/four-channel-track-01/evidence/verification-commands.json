@@ -1,0 +1,26 @@
+[
+  {
+    "label": "repeat-real",
+    "command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\develop\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\run.py",
+      "--out",
+      "F:\\NUEC\\develop\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\evidence\\run02"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "returncode": 0
+  },
+  {
+    "label": "repeat-comparison",
+    "command": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\develop\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\verify.py",
+      "--compare",
+      "F:\\NUEC\\develop\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\evidence\\run02"
+    ],
+    "cwd": "F:\\NUEC\\develop",
+    "returncode": 0
+  }
+]
