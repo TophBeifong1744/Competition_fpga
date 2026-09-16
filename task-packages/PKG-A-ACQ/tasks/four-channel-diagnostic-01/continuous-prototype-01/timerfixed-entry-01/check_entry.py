@@ -11,6 +11,7 @@ import sys
 import time
 import uuid
 import zipfile
+from command_contract import command_argv, normalize_command, link_command
 
 HERE = Path(__file__).resolve().parent
 TASK = HERE.parent
@@ -97,6 +98,7 @@ def verify_elf(obj_path, elf_path):
     ref_obj = Elf32(pinned(REFERENCE / 'build/main.c.obj',
                           '8a376d38a7188af5884ce0e6c7eff868a0878d222634ec360cb35961c7cd11ff'), 1)
     ref_exe = Elf32(pinned(REFERENCE / 'runtime/four_mic_continuous.elf', POLICY['archive_elf_sha256']), 2)
+    entry_report = verify_startup(exe, ref_exe)
     need(symbol(obj, 'now_us')[1] == symbol(ref_obj, 'now_us')[1], 'Object timer code differs from fixed computation')
     actual, divisor = timer_code(exe)
     need(actual == timer_code(ref_exe)[0], 'ELF timer arithmetic differs beyond relocated calls')
@@ -105,7 +107,38 @@ def verify_elf(obj_path, elf_path):
     need(end <= CONTRACT[1] and all(CONTRACT[10] <= r['start'] < r['end'] <= CONTRACT[1] for r in ranges),
          'Program/stack/heap outside program DDR or overlapping RX')
     return dict(divisor=divisor, contract=list(CONTRACT), program_end=end, ranges=ranges,
-                elf_sha256=digest(elf_path), object_sha256=digest(obj_path))
+                startup=entry_report, elf_sha256=digest(elf_path), object_sha256=digest(obj_path))
+
+
+def verify_startup(exe, reference):
+    # lscript.ld is separately hash-pinned; its ENTRY is _vector_table (ARM).
+    script = pinned(REFERENCE/'ps/lscript.ld', POLICY['source_sha256']['lscript.ld'])
+    need(re.findall(r'ENTRY\s*\(\s*([\w]+)\s*\)', script.read_text()) == ['_vector_table'],
+         'Unsupported linker entry declaration')
+    need(exe.entry == reference.entry == 0x00100000 and exe.entry % 4 == 0,
+         'Unsupported ELF startup entry/mode')
+    need(exe.symbol_value('_vector_table') == exe.entry, 'Entry differs from _vector_table')
+    need(exe.symbol_value('_boot') == reference.symbol_value('_boot'), 'Startup _boot changed')
+    hdr = exe.unpack('<HHIIIIIHHHHHH', 16)
+    loads = [exe.unpack('<IIIIIIII', hdr[4]+32*i) for i in range(hdr[9])]
+    executable = [p for p in loads if p[0] == 1 and p[6] & 1
+                  and p[2] <= exe.entry and exe.entry+4 <= p[2]+p[4]]
+    need(len(executable) == 1, 'Entry not in exactly one executable file-backed PT_LOAD')
+    p = executable[0]
+    sym = exe.symbols['_vector_table']
+    sec = exe.sections[sym[5]]
+    need(sec[1] == 1 and sec[2] & 6 == 6 and sec[3] <= exe.entry < sec[3]+sec[5],
+         'Startup symbol not in allocated executable PROGBITS')
+    need(p[1] + exe.entry-p[2] == sec[4]+exe.entry-sec[3], 'Startup section/segment mapping mismatch')
+    need(sec[3]+sec[5] <= p[2]+p[4], 'Startup executable section not fully file-backed')
+    # Bound real vector table and reset handler to the approved startup bytes.
+    stop = exe.symbol_value('_boot') + 4
+    offset = p[1]+exe.entry-p[2]
+    ref_sec = reference.sections[reference.symbols['_vector_table'][5]]
+    ref_offset = ref_sec[4]+reference.entry-ref_sec[3]
+    need(exe.slice(offset,stop-exe.entry) == reference.slice(ref_offset,stop-reference.entry),
+         'Startup vector/reset bytes changed')
+    return dict(entry=exe.entry, symbol='_vector_table', executable_file_backed=True)
 
 
 def launch_paths(app, workspace):
@@ -137,12 +170,15 @@ def launch_paths(app, workspace):
     return {k:str(v) for k,v in actual.items()}
 
 
-def normalize_command(command, app, bsp):
-    value = command.replace('\\', '/').casefold()
-    for before, after in ((str(app).replace('\\','/').casefold(), '$app'),
-                          (str(bsp).replace('\\','/').casefold(), '$bsp')):
-        value = value.replace(before, after)
-    return ' '.join(value.split())
+def verify_link_output(output, app, bsp):
+    name = 'user-build-20260916-01/verification-01/ninja-commands.json'
+    old = json.loads((HERE/'DELIVERY-SHA256.json').read_text())['files']
+    archived = json.loads(pinned(HERE/name, old[name]).read_text())
+    expected = normalize_command(link_command(archived['stdout']), Path(POLICY['reference_app']),
+                                 Path(POLICY['reference_bsp']))
+    actual = normalize_command(link_command(output), app, bsp)
+    need(actual == expected, 'Actual expanded link command/configuration changed')
+    return list(actual)
 
 
 def verify(args, out):
@@ -193,9 +229,12 @@ def verify(args, out):
     entries = json.loads((build/'compile_commands.json').read_text(encoding='utf-8'))
     need(len(entries) == 1 and Path(entries[0]['file']).resolve() == app/'src/main.c', 'Wrong compiled translation unit')
     need(normalize_command(entries[0]['command'],app,bsp) == normalize_command(POLICY['compile_command'],Path(POLICY['reference_app']),Path(POLICY['reference_bsp'])), 'Compiler/options/includes/specs changed')
-    compiler = Path(entries[0]['command'].split(' ')[0]).resolve(strict=True)
+    compiler = Path(command_argv(entries[0]['command'])[0]).resolve(strict=True)
     need(compiler == (tools/'arm-none-eabi-gcc.exe').resolve(), 'Tool path mismatch')
     report['compiler_version_output'] = safe.run_command([compiler,'--version'],out,'gcc-version',app)
+    ninja = safe.need_tool(tools.parents[4]/'bin/ninja.exe')
+    output = safe.run_command([ninja,'-C',build,'-t','commands',f'{app.name}.elf'],out,'link-command',app)
+    report['link_argv'] = verify_link_output(output,app,bsp)
     report['compiled'] = verify_elf(build/'CMakeFiles'/f'{app.name}.elf.dir/main.c.obj',build/f'{app.name}.elf')
     map_text = (build/'memory.map').read_text(encoding='utf-8')
     found = re.findall(r'0x([0-9a-fA-F]+)\s+end\s*=\s*\.', map_text)
@@ -237,12 +276,7 @@ def hook_text():
     return '# BEGIN C1 TIMERFIX ENTRY\ninclude("' + HERE.as_posix() + '/vitis_gate.cmake")\n# END C1 TIMERFIX ENTRY'
 
 
-def main():
-    p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--stage', required=True, choices=('audit','pre','post','load'))
-    for name in ('app','platform','tools-bin','record-root'):
-        p.add_argument('--'+name, required=True)
-    args = p.parse_args()
+def record_directory(args, label=None):
     # A fresh child on EVERY invocation retains all rejected inputs/results.
     need(Path(args.record_root).is_absolute(), 'Record root must be absolute')
     root = safe.no_links(args.record_root)
@@ -256,9 +290,18 @@ def main():
         item = item.resolve()
         need(not safe.under(root,item) and not safe.under(item,root), 'Evidence overlaps protected input')
     root.mkdir(parents=True,exist_ok=True)
-    out = root/(time.strftime('%Y%m%d_%H%M%S')+'_'+args.stage+'_'+uuid.uuid4().hex[:10])
+    out = root/(time.strftime('%Y%m%d_%H%M%S')+'_'+(label or args.stage)+'_'+uuid.uuid4().hex[:10])
     out.mkdir(exist_ok=False)
     safe.write_json(out/'request.json',vars(args))
+    return out
+
+def main():
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--stage', required=True, choices=('audit','pre','post','load'))
+    for name in ('app','platform','tools-bin','record-root'):
+        p.add_argument('--'+name, required=True)
+    args = p.parse_args()
+    out = record_directory(args)
     try:
         report = verify(args,out)
         report['status'] = 'PRECHECK_ONLY' if args.stage=='pre' else ('HISTORICAL_ARTIFACT_AUDIT_ONLY' if args.stage=='audit' else 'ARTIFACT_CHECK_PASS_NOT_BOARD')
