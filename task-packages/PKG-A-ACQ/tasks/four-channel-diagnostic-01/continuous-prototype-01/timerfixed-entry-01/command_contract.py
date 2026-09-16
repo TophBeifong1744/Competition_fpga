@@ -27,6 +27,34 @@ def command_argv(command):
         kernel.LocalFree(ptr)
 
 
+def linker_argument(arg, normalize_path, script_operand=False):
+    """Parse GCC comma boundaries before interpreting any filesystem operand.
+
+    This verifier supports only the archived link layout, not arbitrary GNU ld
+    command lines. In that layout -Wl,-T is followed by ONE -Wl,<absolute path>.
+    Quotes have already been decoded by command_argv; they do not escape commas
+    from GCC's -Wl splitting. Extra/unknown subarguments are rejected, not folded
+    into a path or silently discarded.
+    """
+    parts = arg[4:].split(',')
+    if not all(parts):
+        raise ValueError('Empty -Wl subargument')
+    if script_operand:
+        if len(parts) != 1 or parts[0].startswith('-') or not ntpath.isabs(parts[0]):
+            raise ValueError('Expected one absolute -Wl script path, no extra subarguments')
+        return '-Wl,' + normalize_path(parts[0]), False
+    if parts == ['-T']:
+        return arg, True
+    supported = (
+        ['-Map=memory.map', '--cref'],
+        ['--start-group', '-lxilstandalone', '-lxiltimer', '-lxil', '-lgcc', '-lc'],
+        ['--end-group'],
+    )
+    if parts not in supported:
+        raise ValueError('Unsupported -Wl subargument layout')
+    return arg, False
+
+
 def normalize_command(command, app, bsp):
     """Only recognized filesystem operands use Windows path normalization."""
     def path(value):
@@ -37,8 +65,10 @@ def normalize_command(command, app, bsp):
                 return marker + result[len(base):]
         return result
     argv = command_argv(command)
-    result, next_path = [], False
+    result, next_path, script_operand = [], False, False
     for i, arg in enumerate(argv):
+        if script_operand and not arg.startswith('-Wl,'):
+            raise ValueError('Expected -Wl script operand immediately after -Wl,-T')
         if i == 0 or next_path:
             result.append(path(arg))
             next_path = False
@@ -49,14 +79,15 @@ def normalize_command(command, app, bsp):
             result.append(arg[:2] + path(arg[2:]))
         elif arg.startswith('-specs='):
             result.append('-specs=' + path(arg[7:]))
-        elif arg.startswith('-Wl,') and ntpath.isabs(arg[4:]):
-            result.append('-Wl,' + path(arg[4:]))
+        elif arg.startswith('-Wl,'):
+            normalized, script_operand = linker_argument(arg, path, script_operand)
+            result.append(normalized)
         elif not arg.startswith('-') and arg.endswith('.obj'):
             result.append(path(arg))
         else:
-            # -D/-U/-u/-Wl and macro/string operands remain case-sensitive.
+            # -D/-U/-u and macro/string operands remain case-sensitive.
             result.append(arg)
-    if next_path:
+    if next_path or script_operand:
         raise ValueError('Missing path operand')
     return tuple(result)
 

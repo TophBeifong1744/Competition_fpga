@@ -1,5 +1,7 @@
 # 计时修复版统一入口（增量候选，2026-09-16）
 
+> **最新待审：TF-B-02-R1**。17afe32 经 B 复核仍有一项链接参数比较阻断；本轮修复、94 项测试/14 次 Tcl 模拟、原件映射及复跑命令见 [repair-02/README.md](repair-02/README.md)。以 `repair-02/verify_repair.py` 核对新清单；下段 repair-01 的封闭清单检查仅适用于固定 17afe32 树，新脚本逐项核对其原件映射，不改旧清单。未获 B 对本轮批准，未部署到实际工程，不合入 main。
+
 > **B反馈修复候选**：check_entry.py、load_timerfixed.tcl已针对TF-B-01～03修改；最新入口、测试、限制及复跑方式见[repair-01/README.md](repair-01/README.md)。旧README原字节在repair-01/originals/README.md。以下正文及原OPERATOR/BUILD-RESULTS、87项旧清单属于bbe39c3历史记录，不代表修复已获批准或部署。新清单用repair-01/verify_repair.py核对；旧delivery_manifest.py仍是旧版封闭集合检查器。
 
 状态：**拓芙已于2026-09-16 18:23完成原应用的新编译、链接；实际对象/ELF/map及受检加载dry-run核对通过。未连接、下载或运行板卡，等待工作执行检查和B独立复核。** 本轮结果与回报见 `BUILD-RESULTS.md`，不沿用历史构建充当本轮结果。
