@@ -1,0 +1,10 @@
+{
+  "returncode": 2,
+  "trailing_whitespace": 5683,
+  "explanation": "Frozen B result JSON and copied scripts retain native CRLF bytes through -text; default diff --check reports CR at line end. Original A files were not staged or changed.",
+  "explicit_cr_at_eol_check": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

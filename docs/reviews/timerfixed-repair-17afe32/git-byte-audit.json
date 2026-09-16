@@ -1,0 +1,1788 @@
+{
+  "review_sha": "17afe32cebcff742bb2f9486388e91d9403f83dd",
+  "base": "bbe39c38dc36ccb4c0492f492b86f6c46d885fbe",
+  "feedback": "53018f9256cd209136183679d28b8949b04536f2",
+  "utc": "2026-09-16T13:47:54.261741+00:00",
+  "changes": [
+    [
+      "M",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/README.md"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/artifact_guard.py"
+    ],
+    [
+      "M",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/check_entry.py"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/command_contract.py"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/guarded_load.py"
+    ],
+    [
+      "M",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/load_timerfixed.tcl"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/README.md"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/REPAIR-SHA256.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/audit_live_link.py"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/fixed-b-negatives01/entry_in_reserved_rx.elf"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/fixed-b-negatives01/entry_outside_all_loads.elf"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/fixed-b-negatives01/result.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/live-link01/logs/ninja-commands.command.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/live-link01/logs/ninja-commands.log"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/live-link01/result.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-negative-run01/entry_in_reserved_rx.elf"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-negative-run01/entry_outside_all_loads.elf"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-negative-run01/result.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-race-run01/artifact-race-results.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-race-run01/race-old-timer-elf.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-race-run01/race-old-timer-elf.tcl"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-race-run01/race-old-timer-elf/four_mic_continuous/build/four_mic_continuous.elf"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-race-run01/race-other-valid-fixed-elf.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-race-run01/race-other-valid-fixed-elf.tcl"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-race-run01/race-other-valid-fixed-elf/four_mic_continuous/build/four_mic_continuous.elf"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-race-run01/reproduce_artifact_race.py"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run01/original18.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run01/parent10.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run01/repair.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run01/result.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run01/safety34.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run01/test_repair_before_fixture_fix.py"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-after-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-connect-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-dow-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-fpga-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-none-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-none-1.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-ps7_init-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-ps7_post_config-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-rst-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-source-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-targets-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/race-fixed-none-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/race-old-none-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/reject-old-none-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/original18.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/parent10.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/repair.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/result.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/safety34.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/test_loader_before_fixture_fix.py"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-after-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-connect-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-dow-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-fpga-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-none-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-none-1.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-ps7_init-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-ps7_post_config-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-rst-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-source-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-targets-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/race-fixed-none-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/race-old-none-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/reject-old-none-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/original18.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/parent10.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/repair.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/result.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/safety34.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-after-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-connect-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-dow-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-fpga-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-none-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-none-1.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-ps7_init-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-ps7_post_config-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-rst-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-source-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-targets-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/race-fixed-none-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/race-old-none-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/reject-old-none-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/original18.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/parent10.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/repair.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/result.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/safety34.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-after-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-connect-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-dow-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-fpga-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-none-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-none-default.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-ps7_init-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-ps7_post_config-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-rst-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-source-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-targets-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/race-fixed-none-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/race-old-none-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/reject-old-none-0.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/original18.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/parent10.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/repair.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/result.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/safety34.json"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/keeper_fixture.py"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/originals/README.md"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/originals/check_entry.py"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/originals/load_timerfixed.tcl"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/originals/test_load.tcl"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/reproduce_b_negatives.py"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/review-inputs/negative_contract_checks.py"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/review-inputs/reproduce_artifact_race.py"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/run_checks.py"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/test_loader.py"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/test_repair.py"
+    ],
+    [
+      "A",
+      "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/verify_repair.py"
+    ]
+  ],
+  "counts": {
+    "M": 3,
+    "A": 122
+  },
+  "package_files": 210,
+  "all_disk_bytes_match_git_blobs": true,
+  "originals_match_old_commit": [
+    "README.md",
+    "check_entry.py",
+    "load_timerfixed.tcl",
+    "test_load.tcl"
+  ],
+  "feedback_scripts_match_commit": {
+    "negative_contract_checks.py": "docs/reviews/timerfixed-bbe39c3/negative_contract_checks.py",
+    "reproduce_artifact_race.py": "docs/reviews/timerfixed-bbe39c3/standards/reproduce_artifact_race.py"
+  },
+  "old_manifest_unchanged": true,
+  "outside_package_changed_files": 0,
+  "files": [
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/BUILD-RESULTS.md",
+      "bytes": 6614,
+      "blob": "78558765a6177065353ae150164b1a1f67188503",
+      "sha256": "e6224d4ac1b6ac4fc974e0a38478855b247ad384aff5e460ca74b6bb01f794d7"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/DELIVERY-SHA256.json",
+      "bytes": 11393,
+      "blob": "ad17b67b50bc917138366f2d4b39504de14c8966",
+      "sha256": "2e27be4ae9677252d8b4b0a46fb52ce587103e1b8ce20c0b7b955e71fd49af93"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/OPERATOR.md",
+      "bytes": 3741,
+      "blob": "0387f053e8237f0c7b7e39e331c8cb38c8d1a1e9",
+      "sha256": "7a1b2f85ced25ad14637888cf83da479424d80aa3ed67689501ad76d249043e6"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/POLICY.json",
+      "bytes": 11518,
+      "blob": "50f2ad87e7f8dea53d7628c1e185daae67807f6f",
+      "sha256": "3312bcc4402c64d1ff4770963525d745111191cc70b5ae616a04a535d9efcf50"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/PREPARATION-SHA256.json",
+      "bytes": 3793,
+      "blob": "9b185df5a9a2da269294850d8c349677cc124e10",
+      "sha256": "4e7109c327f22bdcc1ef74a74323d5ad6e1aff54a8a10a6f39d8b7066ff40445"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/README.md",
+      "bytes": 8979,
+      "blob": "2559dda9f077e500e4c2b356609edc07e58f3cd1",
+      "sha256": "78861a284917c7e3e3484597c7dc3800e02fe98900d3adb6bb733307e967e87e"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/artifact_guard.py",
+      "bytes": 3533,
+      "blob": "7c06c7099e73d457ba4154692aad6b584c058abb",
+      "sha256": "b7a7267b8490902b6c3376ffd6ff48424b6a1121eb61abcd6937052216bb3d47"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/check_entry.py",
+      "bytes": 17907,
+      "blob": "706712200eaa59b1e706451e468ef5066e134698",
+      "sha256": "d2f5de34df23a6c1d47ea12078975bab8e72f84189b31c8cb7ab33b7bff1f888"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/command_contract.py",
+      "bytes": 3029,
+      "blob": "7f00bb8b61be699cfc3fcdefc8d1391aa5fe12bc",
+      "sha256": "3d6317b87b1620b76f28506ab9b8fa4d3f4757035370aff2ac79850bb9ab4791"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/delivery_manifest.py",
+      "bytes": 1047,
+      "blob": "020a5c055e24eccc449b2907681af50a97a2d6b8",
+      "sha256": "adeae1bcb997b4711b3ac2b0bc044cb60dbeea745bbf40ea2d2bb4583e1c9fb6"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/20260916_181137_audit_ec791a6417/logs/gcc-version.command.json",
+      "bytes": 200,
+      "blob": "97bc2f6ebc9d6aed6e6428d3e9c22b4c02152dd5",
+      "sha256": "a574b24e747c680a2c81ca65b4d4f211d7a122f93e8868772dc882c0a05b485d"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/20260916_181137_audit_ec791a6417/logs/gcc-version.log",
+      "bytes": 244,
+      "blob": "5bc514f85f6c6eb8c3dc17504326fe433ffa52e5",
+      "sha256": "26615aa13a55a9f4f299118f7c03be2504bab2201dc2ce4f303e983ea50dc2f1"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/20260916_181137_audit_ec791a6417/logs/timer-disassembly.command.json",
+      "bytes": 328,
+      "blob": "da7668e7bbe7cfd8a485aaf8b0e58a8607f8ba60",
+      "sha256": "65218b6fdf09e8aacaf1d7700753d284cda42ae077998ce8d06cdd2f36e89d9c"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/20260916_181137_audit_ec791a6417/logs/timer-disassembly.log",
+      "bytes": 1418,
+      "blob": "3d67d30cfee9db76a6fd73735254e05ec14fdbe4",
+      "sha256": "84de98a858b3747abfe6a27d7e2fbf17225ae6479c317b8b6b9fbefe816d9c61"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/20260916_181137_audit_ec791a6417/request.json",
+      "bytes": 433,
+      "blob": "b046fff3eef7992bd36b72e2bc71c6f2ad7017fa",
+      "sha256": "fb63cc23a5541ca4e5a88df54a3050fc968a1d450ca26c8dc1b7a8d998f74701"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/20260916_181137_audit_ec791a6417/result.json",
+      "bytes": 8242,
+      "blob": "4ecd7e212a61a1d62d339686a97f5128d3231e52",
+      "sha256": "211606e8e6f8b45efbf8caae8d05dcff9218798bf9cf520ce5758843d2b975e5"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/20260916_181541_audit_01a9f9e3af/logs/gcc-version.command.json",
+      "bytes": 200,
+      "blob": "97bc2f6ebc9d6aed6e6428d3e9c22b4c02152dd5",
+      "sha256": "a574b24e747c680a2c81ca65b4d4f211d7a122f93e8868772dc882c0a05b485d"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/20260916_181541_audit_01a9f9e3af/logs/gcc-version.log",
+      "bytes": 244,
+      "blob": "5bc514f85f6c6eb8c3dc17504326fe433ffa52e5",
+      "sha256": "26615aa13a55a9f4f299118f7c03be2504bab2201dc2ce4f303e983ea50dc2f1"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/20260916_181541_audit_01a9f9e3af/logs/timer-disassembly.command.json",
+      "bytes": 328,
+      "blob": "da7668e7bbe7cfd8a485aaf8b0e58a8607f8ba60",
+      "sha256": "65218b6fdf09e8aacaf1d7700753d284cda42ae077998ce8d06cdd2f36e89d9c"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/20260916_181541_audit_01a9f9e3af/logs/timer-disassembly.log",
+      "bytes": 1418,
+      "blob": "3d67d30cfee9db76a6fd73735254e05ec14fdbe4",
+      "sha256": "84de98a858b3747abfe6a27d7e2fbf17225ae6479c317b8b6b9fbefe816d9c61"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/20260916_181541_audit_01a9f9e3af/request.json",
+      "bytes": 433,
+      "blob": "b046fff3eef7992bd36b72e2bc71c6f2ad7017fa",
+      "sha256": "fb63cc23a5541ca4e5a88df54a3050fc968a1d450ca26c8dc1b7a8d998f74701"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/20260916_181541_audit_01a9f9e3af/result.json",
+      "bytes": 8242,
+      "blob": "5961c33ac5fecfdeb33fa5d0bfcab2d3b4804b05",
+      "sha256": "6348c905eedd2d6a17ad8bff528472abb6abf188cb35ab130ba50f1ac67a9ab5"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/20260916_181542_pre_beb8176bdc/failure.json",
+      "bytes": 96,
+      "blob": "762d19a314ecfe51905fe0e3080ae3b3dec58b62",
+      "sha256": "c9287c57e07386e1486becd219f61eed78db1c28fa94c05741ad6fcc43287460"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/20260916_181542_pre_beb8176bdc/request.json",
+      "bytes": 431,
+      "blob": "2ac117ef93c27524af0ff6214b76767d37eb61eb",
+      "sha256": "53b741f2ec81bd615a0774832f9d41afe78245a6e893099a3c5da262585cf387"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/entry-tests-01.log",
+      "bytes": 2531,
+      "blob": "70d0ed0dbf065b15c4ffa1f92544b809da53bc85",
+      "sha256": "0755713855ba7420702ef374a2fda6a55fdbee4fb4c1e863f4283004fab75732"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/entry-tests-02.log",
+      "bytes": 2140,
+      "blob": "1ca1c7d6458964bff97d4ff3937a58d34bfd7899",
+      "sha256": "8211f9f4195daa8fad4250fbf862587b0bcaf292319db407e3e59c17d0507b00"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/entry-tests-final.log",
+      "bytes": 1816,
+      "blob": "18805e71cbc4f4498e8be92f87cbc6016ca32e20",
+      "sha256": "8606b5ea399d1715b60ebdac960bde276d371400bc641189aef84d87c86cc4de"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/historical-entry-tests-01.log",
+      "bytes": 1171,
+      "blob": "bd18d114dfa594622e82967fa90f2cc49d5783c8",
+      "sha256": "e33f366db6b60b2982ad74449d1191383712698b317cc26e82f7a1baf16d0921"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/historical-safety-tests-01.log",
+      "bytes": 4130,
+      "blob": "43b7ba253197523261ed4c6675ad678cd36155ef",
+      "sha256": "d9de81b36170bd69f59f1d4a895065506c16711cb0b73759428301040fe3082a"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/live-audit-01.log",
+      "bytes": 934,
+      "blob": "15315a289b4437d0de8f1a0479283cb272ee7fe1",
+      "sha256": "540dbb6fe062441fe38720fea5958e9b639590bcb7e044d5e41ff1978dff1297"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/live-audit-02.log",
+      "bytes": 934,
+      "blob": "1617c10cb956f4e801be0b7fe417703498050cba",
+      "sha256": "0efd8eaab7d0356793306b4c41a6ecb55cd95357d13039ddad8a52298269dcd5"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/loader-mock-01.log",
+      "bytes": 455,
+      "blob": "81d570e02e9fe7613ebc9660aaaa44b2968feeed",
+      "sha256": "2bd41b68f29b0e7ac0156fe8634a93c76c8f71e71fc813ef3794d97592dd44fe"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/pre-hook-missing-negative-01.log",
+      "bytes": 972,
+      "blob": "34aa4cecf766d153ed09288e22a53687c220243e",
+      "sha256": "0687892dd1c0f3f7bc9b0edfcfe187cd1434eeca1780e449bff19d5414f16afc"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/evidence/preparation-notes.md",
+      "bytes": 1366,
+      "blob": "841db6934c9e26e2454a30e4417832806326d569",
+      "sha256": "87d31949e7bb2099eceb159b837d88d18f9f0d8faaf1bce6a848cb004fcc705d"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/explain_elf_difference.py",
+      "bytes": 2128,
+      "blob": "65b77880df4244c6936f26e776e0cab247bae1f8",
+      "sha256": "0a5a33da0ca6bebbcc66ae100a80d3c7bd3a4ceb177e7a82d87dcabec365d4d1"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/guarded_load.py",
+      "bytes": 2903,
+      "blob": "9e9756fb2ee10934ddb1347b6d96d14f509a3bcc",
+      "sha256": "c00b34ed6c78bf9227af39cb1ed3005f24d3ae0c2bef42411918ae3ffa137026"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/load_timerfixed.tcl",
+      "bytes": 2532,
+      "blob": "7bf526c19c636cd087502ceffa7a27fffa099142",
+      "sha256": "d8882b9fc9daa5f5db145f6a24e5a5928eb787de7de5013a81cf0fbdb2e5cabb"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/README.md",
+      "bytes": 6885,
+      "blob": "4db22012596d52a2fd7c496ff6b90d422ecbe2fa",
+      "sha256": "e1fc612a560a0bf23a47ba2c1443f879daccb132f59979c540facb8c2bb1f423"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/REPAIR-SHA256.json",
+      "bytes": 27208,
+      "blob": "c53d86914cd704313efaf65592a8706722e0b936",
+      "sha256": "c13f2f73a2cb9432e3fd26e16be5f772d50e3af310a4c305e679ccdbfe539544"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/audit_live_link.py",
+      "bytes": 925,
+      "blob": "58b2b9cd632ceae87e8989f76dad1e6dc4b379ca",
+      "sha256": "f3ee4e0380a7315c5d920d37c273ca8bbc915608455045c0f0968c757c895d12"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/fixed-b-negatives01/entry_in_reserved_rx.elf",
+      "bytes": 296612,
+      "blob": "4b1e59313adccfe8b90b1f08af2d02061d476710",
+      "sha256": "182dd83ce3ea97e8ae7e62b3172aac9f11ac2ac671716f2399d31eb281f86af8"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/fixed-b-negatives01/entry_outside_all_loads.elf",
+      "bytes": 296612,
+      "blob": "087bce7cee98844805c108927645ad3563fc30a7",
+      "sha256": "940a9f8002b814ea67289a673840b0a6816ee4bdcefcaa2e89f97777da47f278"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/fixed-b-negatives01/result.json",
+      "bytes": 3695,
+      "blob": "765833220f5ed8db64fd01bb46eb5c4354126cd7",
+      "sha256": "d3a1a0d507525363fe21c9ec47fbb7daf6d702d67ca57e2f4b66cfe016375387"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/live-link01/logs/ninja-commands.command.json",
+      "bytes": 286,
+      "blob": "5e62fcef1c6104d639a738556455bb1dc0444625",
+      "sha256": "709835f51fe5f76f978fd0f7d3799482e91e4472e2e9e8d50f0baadb0eab405a"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/live-link01/logs/ninja-commands.log",
+      "bytes": 5390,
+      "blob": "9309961c51e85c82bec0973eb0fc2915d219f372",
+      "sha256": "fa70d08b0a616a60deeba7ccb05afe6e888d69fbc6073a4a5f9a863541923993"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/live-link01/result.json",
+      "bytes": 2830,
+      "blob": "8da9e410a21cc7214d8809eb9c582de5ff347a8a",
+      "sha256": "e31d433812cc44aea92480338e4e631eff0fe416dc253414f9a22d24d8155b00"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-negative-run01/entry_in_reserved_rx.elf",
+      "bytes": 296612,
+      "blob": "4b1e59313adccfe8b90b1f08af2d02061d476710",
+      "sha256": "182dd83ce3ea97e8ae7e62b3172aac9f11ac2ac671716f2399d31eb281f86af8"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-negative-run01/entry_outside_all_loads.elf",
+      "bytes": 296612,
+      "blob": "087bce7cee98844805c108927645ad3563fc30a7",
+      "sha256": "940a9f8002b814ea67289a673840b0a6816ee4bdcefcaa2e89f97777da47f278"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-negative-run01/result.json",
+      "bytes": 8290,
+      "blob": "05962fcfac449d03b517c0cdbcfa213c8c6a313b",
+      "sha256": "f271377f64ae51c26e28e5b4b708a57f6bbf2af9136a088e5553ac105545fbd4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-race-run01/artifact-race-results.json",
+      "bytes": 2174,
+      "blob": "fde6ddfcda2a44737b2151439a7f54c8931db43a",
+      "sha256": "b28c23e5b7c6332a7ec9c894b59dc67f69113bc0e1683938e24566c6234116d5"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-race-run01/race-old-timer-elf.json",
+      "bytes": 1045,
+      "blob": "9945b36b4a59544f0ffc4fa61e281ed150b36244",
+      "sha256": "b6a1daa72882fffb88a38701e2e41e80496296ceba330043475770779ae70f86"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-race-run01/race-old-timer-elf.tcl",
+      "bytes": 2344,
+      "blob": "010ece386cb14e22f29e9a9add7420e00a2c82d4",
+      "sha256": "592ac8530e9b69fd63f3224c3ade4f4c01de85667a97e27c15c4e6e78e84841b"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-race-run01/race-old-timer-elf/four_mic_continuous/build/four_mic_continuous.elf",
+      "bytes": 296748,
+      "blob": "af3ecbd83465ae0edcb8089c1e4f4fde92ebcb2c",
+      "sha256": "7b5630de1b04882f8cda205f3b9bb4833201ca260d1abac6390b9a342a636181"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-race-run01/race-other-valid-fixed-elf.json",
+      "bytes": 1072,
+      "blob": "33a9edd8399c741fd373d0313980b784e5487e6b",
+      "sha256": "6e6e168535dedf829d8f408653ef23a3fc53d4a67d2445a9ed70c0d1a185dede"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-race-run01/race-other-valid-fixed-elf.tcl",
+      "bytes": 2361,
+      "blob": "a79281bba1ed74ee96fcc52fd94d5f7fd9cff6d2",
+      "sha256": "3c2e7335b46020472c54a731e033daaf44b3801ca920e1f37d6d4fa2326acae2"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-race-run01/race-other-valid-fixed-elf/four_mic_continuous/build/four_mic_continuous.elf",
+      "bytes": 296612,
+      "blob": "e8a911b7371c00eabec4af0391f370c7f862a88b",
+      "sha256": "ebc576e2bfe87ca45c06fb62359babc36f8d474505a97ff6d121336d2a3c3fa3"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/old-race-run01/reproduce_artifact_race.py",
+      "bytes": 4278,
+      "blob": "130a117f6308b8abbe3b3990932347b98d94205e",
+      "sha256": "d6232a6395088ba6a8414a54d87b8efb63255eba4c00f754b900431b8ba244fc"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run01/original18.json",
+      "bytes": 2419,
+      "blob": "8f12a2e7115432f8befc1eb5d173df3c7692d1a0",
+      "sha256": "a962921e7f0112eaaced986a9c7c26c5ae3a79d1b21ac01449cba6fb027e1908"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run01/parent10.json",
+      "bytes": 1466,
+      "blob": "2e26f7d0aa1a7008bf3c00c1740d14b28e7e44e1",
+      "sha256": "253601bf706596741e5399003cdb878104f3154a46981118ab08470a70d71016"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run01/repair.json",
+      "bytes": 4302,
+      "blob": "69129121a788942de99e7dc997ec16f8f0a98235",
+      "sha256": "9417a7739f24db4202fdfe9716b275d691e59bbe48cc8c4f52f7f22c8a846630"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run01/result.json",
+      "bytes": 231,
+      "blob": "5d8b05550f429f51d593655cc97cd0f9eda9cb00",
+      "sha256": "8f271685e96875cbf1e7e2b88c2fe25dce6e4482a1b1179ad518f9972abce45d"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run01/safety34.json",
+      "bytes": 4424,
+      "blob": "9a41aa136cdad9635fac62511f21f59026223d8d",
+      "sha256": "8a21f998bbf2f6fe08605dfa30c78a293ea827ce2469454b3567d47b6413b9d2"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run01/test_repair_before_fixture_fix.py",
+      "bytes": 6135,
+      "blob": "eda47fc8550d5c71d4a5470763560dfc46ceb6cc",
+      "sha256": "2e7fb5b96dbfd3c3e9fc4f35f867711ddf5210e02c8a22e5fbf5f2d21f7ca4f0"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-after-0.json",
+      "bytes": 5016,
+      "blob": "10c69644aca902c86658011b41d2118f060ae4fe",
+      "sha256": "03c2343ad35921e7b455e2f787af77038702879d92e8b5175e59dba171109156"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-connect-0.json",
+      "bytes": 5022,
+      "blob": "fd19fd88c630404e043a5cc349830fea588b070f",
+      "sha256": "8986e148735c32229212fd815bfba04be6a55abd1351c2bc99667186a588ddba"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-dow-0.json",
+      "bytes": 5010,
+      "blob": "f26120df570e30f861a8123ebc47153b1b10d461",
+      "sha256": "c3f85cae692093ffccbd32b5fdfba7a4b752d8efc642532984abfe578be756f1"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-fpga-0.json",
+      "bytes": 5015,
+      "blob": "fd17317086bc258f73d4d3d47a952b775dd405bb",
+      "sha256": "055b7567fd1cea396f924d84990534027ce9b026f2eafd339a1efe64bd87bd40"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-none-0.json",
+      "bytes": 5006,
+      "blob": "c37924babb77ea05866cdb2b65d09ddb3db10e4c",
+      "sha256": "9f6ec66c69eb432b6e0e27434828fd205031ad08be105023dff6f034eeacd5fa"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-none-1.json",
+      "bytes": 5006,
+      "blob": "13dcb1ab0fcf60693e8f3ecea80acb75e9609a9c",
+      "sha256": "35a4667b9f308059d34242cf4685ea413e017214b3979a03cfaf8bfdca8f9cb4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-ps7_init-0.json",
+      "bytes": 5023,
+      "blob": "6825ec718fcaf0ef4a0e793177cac7cd9d7dffcc",
+      "sha256": "ea2ceac83c0eaf40c6dd82809fc33c9c5d6e007ea552e081a501d3810ecfb117"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-ps7_post_config-0.json",
+      "bytes": 5038,
+      "blob": "d0b491343ed328b64d0d29c4af89ff7ec85b2662",
+      "sha256": "c27d364331405ab30cb0a478935ba0eecd1c3ff638b335cbba98e2004bb01154"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-rst-0.json",
+      "bytes": 5010,
+      "blob": "2e02ec90c162c3e7df653e0e429bd996a2d505dd",
+      "sha256": "1227ca4c96f9fa9a85946aab66766154ea6c9e720cbb96bb4ef9e5a4f4b82295"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-source-0.json",
+      "bytes": 5017,
+      "blob": "44519d325251f354d5c04ccad807d059929db334",
+      "sha256": "6739c5def6d4e850fa3487e1c9144830b73435deb328075f172d2c04a3591f96"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/load-old-targets-0.json",
+      "bytes": 5022,
+      "blob": "f1cabcf69d44aa524326b19cd04e66f35699c46b",
+      "sha256": "7a0089f7b80b12f9563ec0ede9310a406bc77424f806d46585331800cb420d5d"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/race-fixed-none-0.json",
+      "bytes": 5010,
+      "blob": "25497cfc581e0318460528b33c245153bed1a59c",
+      "sha256": "46138b6c945722d357d6d4be14749edc1b0d035feda62b02f4f04948f04874e0"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/race-old-none-0.json",
+      "bytes": 5006,
+      "blob": "01953ebd26b1e8d243b99c1a8f8666913ea60be1",
+      "sha256": "97cc9eae15d8e1224f55c802d5df1b935fb7ee28c39a8fd3b52e0e599c39e597"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader-cases/reject-old-none-0.json",
+      "bytes": 5006,
+      "blob": "d3bb413fc25c4bb140ea2ba63728c2131553a796",
+      "sha256": "33881ba4b185153c81cd850d5d30a059f27279e066eaa0dcc648ba29c5baa941"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/loader.json",
+      "bytes": 7425,
+      "blob": "646f3c5dd59c9f90b016758f2b49fbd978ae1d17",
+      "sha256": "8e8081d6b12ac342564abc9e45c8855489f1c17b11f6d8e8f8231480fcf020ce"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/original18.json",
+      "bytes": 2419,
+      "blob": "39696745cfe14e8ee8f3e1303b02d002e23f0c39",
+      "sha256": "9f7a9b5e5b44b464bf27067374d23f11ac3036117e0cab90322b5f87c15e6ff4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/parent10.json",
+      "bytes": 1466,
+      "blob": "62da947a4bc1594855f8f800191e09334fba3ed3",
+      "sha256": "8741e41e76de7fc819bdfa5f19b22d9e3ec9215130748d8e3c48318444db1756"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/repair.json",
+      "bytes": 2176,
+      "blob": "da59cd5307726f1a878eec039b09449af365217f",
+      "sha256": "7682f7c0e8fc4da08c8862e81bb424c9b43c185a6a6beb0d1e04c79352cce751"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/result.json",
+      "bytes": 286,
+      "blob": "dc72466c600d623c31fea371e835e441ab301fe9",
+      "sha256": "94a759d169f5c0fefd2863b885b0b5f726aa4d104506d720b265006f9656eff8"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/safety34.json",
+      "bytes": 4424,
+      "blob": "538d58cea63fb05ba0196519d6b9ef0480538c66",
+      "sha256": "dd68b606d87f2f78c3c587da040641c4a82a6d33a86a7ae67cbefd20f74efc5e"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run02/test_loader_before_fixture_fix.py",
+      "bytes": 6175,
+      "blob": "b562eced329f58a58dd28a13197630d2f30ddf9c",
+      "sha256": "3d0ce901c39317a1664a0ed7f034eed831ab72e6477f2d3f704f5177884093dd"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-after-0.json",
+      "bytes": 5263,
+      "blob": "a070715b8e350113c1807543ef26a5bfada4bdba",
+      "sha256": "434592c600f10ca67f96aa82cecca43432038dc1c5691a9b9f4296a4ee69a201"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-connect-0.json",
+      "bytes": 5267,
+      "blob": "a507986190901e9ffefcc5c039eb238ac2a7ad0d",
+      "sha256": "f129c2b667af2f6ff0384a958f48d8dde457755d550f9aa77f0ed0246a2a3e7c"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-dow-0.json",
+      "bytes": 5259,
+      "blob": "9d55eb2b5cd30a84d53ccf258dace73c0a28b8d5",
+      "sha256": "a2950a5fb4b49d50e5366d06154d0218cc85d61c9527083501fe6dfa21fa1b2e"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-fpga-0.json",
+      "bytes": 5263,
+      "blob": "0da7bef0404e6de25517b9f04a40e2fbc797adbe",
+      "sha256": "229c3f007d40bc53495011169b3d55f92bacded56b461bae6f7576d7dad2d74a"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-none-0.json",
+      "bytes": 5206,
+      "blob": "49467709228d4daa415185edefb98af275ba1bc5",
+      "sha256": "cc1d82985a8249d978d99cddd37085a62bc218ed5ba48c5712c341ce54792d62"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-none-1.json",
+      "bytes": 5206,
+      "blob": "6a309cd341f793c9711cbe9a60147cfd2cd76947",
+      "sha256": "6564a0dcc661c506246e795af8c526176b1f1f226d1bcb83d966fd48ea15f7c5"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-ps7_init-0.json",
+      "bytes": 5267,
+      "blob": "e081eba67be4e1ebe3d47678402687b7f43c324e",
+      "sha256": "19e8f6497a6ce16457e0bf8cfa85ce8b2de0a87b90655fb2c364995750c58a26"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-ps7_post_config-0.json",
+      "bytes": 5275,
+      "blob": "5918538281c6215689002ba4e6ec31b6f7130afa",
+      "sha256": "f3cbdce2ffcb222b89359ecb1cd512896a4b158a49118cf89aeece31d110af77"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-rst-0.json",
+      "bytes": 5259,
+      "blob": "a9c638724e179c8bbd8c3134ef59ecd5070867cf",
+      "sha256": "cada017bfae4eb0c3f7d3a36b3e12322b984a1c1fcee8d8aa9fd8d82b7472757"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-source-0.json",
+      "bytes": 5263,
+      "blob": "392aea206fe7054e2caa15b64d9ffe425ff6c5cb",
+      "sha256": "4774b7e3f1cd8bdd8ff7dc699d680e984cceeab9ee3a4ad61d1618cda71cdb45"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/load-old-targets-0.json",
+      "bytes": 5267,
+      "blob": "0512fc7b214eeb33277c55fe4384baae49af1ee7",
+      "sha256": "bcf82c79645e0de11e8df6cc71cc738862580f736cac37ee49389d096bd8a0e2"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/race-fixed-none-0.json",
+      "bytes": 5210,
+      "blob": "f885cd84a154bd2aade27e46559c1c7f5bfdc9aa",
+      "sha256": "ec2596c34b714164e17c7090c5eabe8cc9fa6604b8e2bf97ab2a5be60f81de25"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/race-old-none-0.json",
+      "bytes": 5206,
+      "blob": "01ffb74d40601197a561ff782aa750a329f27601",
+      "sha256": "ef89bbc99cfdc3fc2e16bf66e2b2b511978cc458913e80d09f10513fac6aba5c"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader-cases/reject-old-none-0.json",
+      "bytes": 5228,
+      "blob": "ea2af402a80848eaeb1ce4bd219c55c48ba61a31",
+      "sha256": "90ef618fc0ec713d284573f511a420d8f0f2c26178f933f84621d8239a981307"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/loader.json",
+      "bytes": 18132,
+      "blob": "1d28b18b1fc781e12190bc3d1e402fb42b678c74",
+      "sha256": "fc160bdebb8d03568dae13cfa46a3d2bfb01b3f215a307e2380d8f4a88ae7200"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/original18.json",
+      "bytes": 2419,
+      "blob": "45179ab96b17c1406e6f520a8e16cca365dfe84c",
+      "sha256": "841c7af2368589a903028af48f041b14a307793fffedb3d238fb63dfc660c490"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/parent10.json",
+      "bytes": 1466,
+      "blob": "d28b007a4b7b8b3b3afdf3923c0a3a1287bcf47d",
+      "sha256": "64c2b19fbf1f7f46d4ed5c896aa8fc1d40b479110e6552e09fb7dcf16d67199c"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/repair.json",
+      "bytes": 2176,
+      "blob": "17141b055661f576efaae4ed83cfcba5c2703e08",
+      "sha256": "1cf699d315973cb398003c8671174bc89f0512729391c42b168312da39e08577"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/result.json",
+      "bytes": 286,
+      "blob": "dc72466c600d623c31fea371e835e441ab301fe9",
+      "sha256": "94a759d169f5c0fefd2863b885b0b5f726aa4d104506d720b265006f9656eff8"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run03/safety34.json",
+      "bytes": 4424,
+      "blob": "67bc8a563cc61f3cf7f29411c808e9923c2e168a",
+      "sha256": "a46fdd225a396a21c6d2ba8f0c2c09f8dd5de1adbb864577948b04a05bd48607"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-after-0.json",
+      "bytes": 5264,
+      "blob": "75e80479ae30166e76dc685698adfbd468aca12c",
+      "sha256": "7749af71eba3bd0de9bc89dfd6808557af30b6aeb20ef5bd41b45ee096bd7249"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-connect-0.json",
+      "bytes": 5252,
+      "blob": "f231ee51683bd3070f78766e1d385431bd07526e",
+      "sha256": "36c8b1b26b8d68e52dce3d44657eb73dd3bde6ce4d6222f573dab9110e5bb1c1"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-dow-0.json",
+      "bytes": 5327,
+      "blob": "b68b3cd6e3dfa7d97aa5231ec0434447c5365549",
+      "sha256": "18a30b4d671daf109f9cbd628bf521781cb7103b32139e29cd8e44fc6a069f3e"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-fpga-0.json",
+      "bytes": 5276,
+      "blob": "a67945c4032d6c760865926447db1fd7b67c2aae",
+      "sha256": "773fe1ef6aca1e3ce2c025175841c8f627b195fe48bb51b81f73a0319c1b17e4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-none-0.json",
+      "bytes": 5324,
+      "blob": "88e5b5b032507d5ac0667dc30b08af1ff324ccca",
+      "sha256": "33bce1cd8d8ec21c0be2f730f4c11bf0693db05e785dd788765b9e4211a1db6a"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-none-1.json",
+      "bytes": 5296,
+      "blob": "17b786a541aa52c4e846dc343c5bc8542cc2a32d",
+      "sha256": "b1aa9928b765fadacb519b8cb155927eaccaa8948017703bca80f9acbe0cde0f"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-ps7_init-0.json",
+      "bytes": 5308,
+      "blob": "c77cf9bb3c1fda8ba48d3b8a18d49a510f6e5145",
+      "sha256": "cec963fe6afb3d9dca6b989a6be48376619e5bdd4b0542aea89d92ee742e0e86"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-ps7_post_config-0.json",
+      "bytes": 5339,
+      "blob": "da22c0f6ad60daddc1fe770652cb55ee6547939c",
+      "sha256": "58ec9a2e6556c8fbc6ce3a8ee433d31ebd1117d13b4cfaf7b909d6350434ea71"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-rst-0.json",
+      "bytes": 5252,
+      "blob": "b79720ee9628d78bc30cace89b07c6384c26acd8",
+      "sha256": "97d7a5bb3afba62e672667b7bf784c705547e7f679e4b0ffd101747789310f95"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-source-0.json",
+      "bytes": 5293,
+      "blob": "9dab90655275c3fe964bc13513d926691b90a694",
+      "sha256": "1800aa92f8069b9e787874aeb8baa46a980ea8e6ba0bd1489742f1846b6c5e00"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/load-old-targets-0.json",
+      "bytes": 5260,
+      "blob": "1707019650c371fdea2b4b493af1deb9e64ebb1b",
+      "sha256": "74df8a792a4ebcfaec7e5b837dd0e17a60c5d997e294f8778b114052d2282697"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/race-fixed-none-0.json",
+      "bytes": 5328,
+      "blob": "0a2016c2b772d854fb7bc93499073293acc95507",
+      "sha256": "a45dc70ba87759d9d5e83273ff75b20d9ad5e645eff590ca319a72330e43b360"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/race-old-none-0.json",
+      "bytes": 5324,
+      "blob": "2934403de6e17fb1f64921a8632c51b30e9415fe",
+      "sha256": "15204d05319b967abe187de42ff7fd623a480023666f6fd25afb3d646e64788a"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader-cases/reject-old-none-0.json",
+      "bytes": 5228,
+      "blob": "859851bd18252c1c8e64b6459c080d028f343a0c",
+      "sha256": "3457aa81e3ae03a6489645f52b05e15fcbbdd1406807985b3b9d7a82e0e5c77d"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/loader.json",
+      "bytes": 1369,
+      "blob": "f26d3b650d97da7f281c8a477392cadf56716372",
+      "sha256": "8134cecde4c5916a00a213c63290a1e1877ef934cef4e48560c9cd510ce13593"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/original18.json",
+      "bytes": 2419,
+      "blob": "0c0a726d33b87933c774e50bc1fca767f37ed862",
+      "sha256": "a7c407b67a442a5500ca662f208f765a87cc66a16f2eaab303973f2528cae745"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/parent10.json",
+      "bytes": 1466,
+      "blob": "95ee20e0bd60e473538905bbc4f999e8b2f69044",
+      "sha256": "a9c3f376da87c3bd93c9d8623540e3b77e70a277e6e99365e305535a9e8f37d9"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/repair.json",
+      "bytes": 2176,
+      "blob": "dc7c53a8e1e2ed384b73dd8c0b4b4198505fa307",
+      "sha256": "aabb3bbc61f20dc109e4731903f2ba72c8e4e7a60eddfc8bb2a29746825e3276"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/result.json",
+      "bytes": 286,
+      "blob": "cdc596444292e5bae141b23fbab75aedead770cc",
+      "sha256": "e5de2fe3096a8eba637951101a3c4f62fa44048b5575a8186fcde9740e1a6a34"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run04/safety34.json",
+      "bytes": 4424,
+      "blob": "9128da6da1e0f31d0376709d12d67a37600f3ab9",
+      "sha256": "4667c1e7adcbd5ed43cc21a7bb2dfbc941ed5d0bedbd42e91255fe7f528252aa"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-after-0.json",
+      "bytes": 5543,
+      "blob": "f9dcc52fc738c5a4bef5598e06c1d75be3eefe9b",
+      "sha256": "11b38ade6821c7049a79e851386771ba547938759ced79c8de6fcda68dd443d4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-connect-0.json",
+      "bytes": 5531,
+      "blob": "2d5938737c9fba131d4a9c0061557dbab67f331d",
+      "sha256": "e78b9dd72012058855ee39ee262b24c326c5d812612137afecf1f1c3f2653eda"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-dow-0.json",
+      "bytes": 5606,
+      "blob": "02558ee1b2b2a9c7d88984567909f899c2995425",
+      "sha256": "934bc4e9de29e95d50edb51b45497ce61afc58a36cc7921eb4075cf64ed6bd9b"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-fpga-0.json",
+      "bytes": 5555,
+      "blob": "c556fc247694ba593e7cd17d9b5825aae973dae5",
+      "sha256": "e6fe81008aaf6097e0bc33f827d0906f877ae8b14de6a5d743a9f0504f81d1b1"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-none-0.json",
+      "bytes": 5603,
+      "blob": "3b018d92a419460608021898e34d5080d4a1a041",
+      "sha256": "3cff25f65db68b95ac4d07ebba10b9ec853ca6abcbbd317384f2483aff0a61b6"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-none-default.json",
+      "bytes": 5574,
+      "blob": "51584600183973f038d5cb21062e8cbe7ffbd34b",
+      "sha256": "ecb16f632da731b3c40c3fc3bac6a05de796a9427957a8c79b5d7f9cdcca280a"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-ps7_init-0.json",
+      "bytes": 5587,
+      "blob": "353e0dfdb49750e6cde8c7f03b3028afd3521cba",
+      "sha256": "e19c0ccc0d4df9a5eb9c76c048b41470d91ca838fb5b0ee8264bac59568f0eff"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-ps7_post_config-0.json",
+      "bytes": 5618,
+      "blob": "c696366b75aa0ef4fc936c4163f74ce4883048d3",
+      "sha256": "03775b587c0dcbc5f2da0fbce23f7d9963a7526cc4c6747c47f9b85b3eb1944c"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-rst-0.json",
+      "bytes": 5531,
+      "blob": "3e173f776a72c091b6e7cf4d0f606af6493b3755",
+      "sha256": "62d33292d582f610418e3963d7b1d1da86fc9ce6fe840a66cd2880f5c61a0aa3"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-source-0.json",
+      "bytes": 5572,
+      "blob": "fb2e3f56d3c4ff551014fedf54c4f27bfff3b01d",
+      "sha256": "545b24cc60ebde481ab3cab8f47d24cd894f57c9a0eb60ceadb13595a5f46dee"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/load-old-targets-0.json",
+      "bytes": 5539,
+      "blob": "fb4756eb4ed828e6dc9aae2aae3483b816394ba1",
+      "sha256": "79397675556f49f77853a7b05883561a2ada8bd8d6bfc815982b0e03723a4a19"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/race-fixed-none-0.json",
+      "bytes": 5607,
+      "blob": "92d442bba9cffc62ee7dc4dd166517aaf14746af",
+      "sha256": "a3137586b4a293d64899fc19b7a502538fdd23e2ee794e4505d66e4579af529f"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/race-old-none-0.json",
+      "bytes": 5603,
+      "blob": "aded26678eb9265547e6c4f0ea138fb6880da9a7",
+      "sha256": "fd55420603ddc38d052fb06fc2ceef4146cc2393bc33abaa4287b0a28d986f91"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader-cases/reject-old-none-0.json",
+      "bytes": 5507,
+      "blob": "50c0ea9dfbab9486e75edf2015087d211700873c",
+      "sha256": "7ab10a1abc6c4cdbfc1758db7c2ab0c4710f34f2d41b40ce659077662c55c978"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/loader.json",
+      "bytes": 1369,
+      "blob": "4d25a1ef44cfa33f5fe2c152a263e1c2ff681fe1",
+      "sha256": "825b32ee6b76c374f3c51897fe382d9de0f40f71366cf87d9e2b44a17398e14f"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/original18.json",
+      "bytes": 2419,
+      "blob": "c0c4a0211ee52b5244dabf6945b8a4e1f96bca9f",
+      "sha256": "58c6b5dea31bf374754833b70bc4af4a776a32a4f44c9b53e70c012a2e7a557e"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/parent10.json",
+      "bytes": 1466,
+      "blob": "00b666c2322398616a5f1be1a09f8570d2906947",
+      "sha256": "ae0b42c46b1885bec78fd72ee819a9fa8553a0a003397912a64a0b21ee411fa4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/repair.json",
+      "bytes": 2176,
+      "blob": "5058a8f947297c186f17ddca642458587cd3ce5c",
+      "sha256": "83bfc43e5dbdf14e98bf5ca9aeb455ca326ebeabd338144728d9b259843c6361"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/result.json",
+      "bytes": 286,
+      "blob": "cdc596444292e5bae141b23fbab75aedead770cc",
+      "sha256": "e5de2fe3096a8eba637951101a3c4f62fa44048b5575a8186fcde9740e1a6a34"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/evidence/run05/safety34.json",
+      "bytes": 4424,
+      "blob": "0dbc3fff9d1a57f5f5af6622811db06d6ad46a8c",
+      "sha256": "195fa62a55b7cce337926196761c860579ddfb8d829c9097b3b4324967b3ed5d"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/keeper_fixture.py",
+      "bytes": 765,
+      "blob": "dafacd4226720df426ac642b2062e08ae7a1531a",
+      "sha256": "d368c3a4a1548f099382e0e6a45938be2b8a6e6ad11e30727d19057211ce0794"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/originals/README.md",
+      "bytes": 8507,
+      "blob": "eb7b4e61042c25ca31ce6bc673202e1f4856f03a",
+      "sha256": "30795d919a126154765d025fc2a9497d3c165aaf1c3075d2dba68851c6d6651a"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/originals/check_entry.py",
+      "bytes": 15235,
+      "blob": "d5567af8c53b31f0e5d819538e52b3f9a3f29b70",
+      "sha256": "f9572f048ab12f72aeb740e5175ccc2c3457396dfec99360834fc724962c1d59"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/originals/load_timerfixed.tcl",
+      "bytes": 1338,
+      "blob": "fc6802b60f29681b6e6c6f1ddc23a60aea7e5c2e",
+      "sha256": "2cd1eb758769ab11d70f09bfde794ef45bfc2dfc70ba6b5a51e7591a403fa231"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/originals/test_load.tcl",
+      "bytes": 1491,
+      "blob": "77e1f09e0c5f61c3f6e0e0a231c6448c9c6dc0af",
+      "sha256": "a10f5f351834f0ede041a55777354326bef9ffd72c810670468ca2df9d69576a"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/reproduce_b_negatives.py",
+      "bytes": 744,
+      "blob": "0b7d8a060a61e95a753edfec9959dfc38b34f7bf",
+      "sha256": "d1de76dcba04e00650a2058b96bf25a746324d62251d5be4dd27aed6346ed449"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/review-inputs/negative_contract_checks.py",
+      "bytes": 2631,
+      "blob": "bc46725bc3cc5800df16bf23dd8c08451db87868",
+      "sha256": "8bda88d215dffd723631781750a040fe350d91b09e47d3351856c4cb8393110f"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/review-inputs/reproduce_artifact_race.py",
+      "bytes": 4251,
+      "blob": "dbc004c4fc2a62683042c1c106ab6468d8ebe3e7",
+      "sha256": "6d4445395ca85f4000306e1570c0245203b492882ab99feb729e12139f1ab387"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/run_checks.py",
+      "bytes": 1680,
+      "blob": "fb25377dce0bf5f68d98706530271e84adf7af13",
+      "sha256": "4d6d9eb3371911beb275bec501c03dc44a18c928d9c6cef959f517a6afcb2695"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/test_loader.py",
+      "bytes": 6553,
+      "blob": "ddd7dee1e2a3a489fdfd157b121dde18b5f4f63f",
+      "sha256": "7606d5f293779a327dc5e37d03a1baed3e00ba20c18a8bea71e51f74297166c9"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/test_repair.py",
+      "bytes": 6304,
+      "blob": "2bb81ab4084cde273315924a55ca0a28f65593ee",
+      "sha256": "2f631d63a8921ada602c717d9455c510b9a81afc70eb1877abc2dc6b2a72dbc4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/repair-01/verify_repair.py",
+      "bytes": 1443,
+      "blob": "b176b732aa6162eb4ce29d0eaf8601bde75e4b0c",
+      "sha256": "5e576a52a497d9322108c23a8e222f53f1e25ae7dc8641c0992824be13b93bf6"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/test_entry.py",
+      "bytes": 6300,
+      "blob": "23858cb456c09ce6f6e34343facfe08ef12d3ccd",
+      "sha256": "532a50eeba5caad80f14c9138f8f20bd329acc8b918444cfcb27223a252a651f"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/test_load.tcl",
+      "bytes": 1491,
+      "blob": "77e1f09e0c5f61c3f6e0e0a231c6448c9c6dc0af",
+      "sha256": "a10f5f351834f0ede041a55777354326bef9ffd72c810670468ca2df9d69576a"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/_ide/launch.json",
+      "bytes": 1727,
+      "blob": "3241e9b404f7f0782c7acd937529cd900453d29d",
+      "sha256": "6db01433963886e3b193c08c1b4bf650286dc7bfa8d663ecaf7be9a4f065971f"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/build/.ninja_log",
+      "bytes": 928,
+      "blob": "3300cdb968d85af27b439b67cbab8c4481ebbfe9",
+      "sha256": "415213d8d47dad1040b7b817a98fc2dee638649ff5534546b7507d1cfa658524"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/build/CMakeCache.txt",
+      "bytes": 19248,
+      "blob": "a403a53543f14b3700a32881b849c7f48badb73f",
+      "sha256": "edef0917b4433ee445a04ca05dae23e82912136e2f6ccb8118c94a7604ed5dfd"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/build/CMakeFiles/four_mic_continuous.elf.dir/main.c.obj",
+      "bytes": 154852,
+      "blob": "ce5fa9d216e4238119587b53684352dbf7f36261",
+      "sha256": "0fc486cf671402f1d62041e94e8ec947ebc24961f852114f03ba4baed04f6469"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/build/CMakeFiles/rules.ninja",
+      "bytes": 2322,
+      "blob": "ce0fe89cd3f2932c4b599a063b6a287ba1a6b98a",
+      "sha256": "dd83124974081b95767305bfc75d547df9711418911c6a78519625601f8e56b4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/build/build.ninja",
+      "bytes": 15640,
+      "blob": "5ccc9717c499cddae96e1515bbb7f72d02449b0e",
+      "sha256": "e8ef264113f0871853e0dbd97a2044e4eddbc80de5ab5c9bed9e95d054a3a4e5"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/build/compile_commands.json",
+      "bytes": 1371,
+      "blob": "2aa1d898b0c33e11d11e6f35788da387ec4a472d",
+      "sha256": "d76f871b94fc969de485da342d48a05cde48a56744bbdc7fc010faec164c62a1"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/build/four_mic_continuous.elf",
+      "bytes": 296612,
+      "blob": "ed0f7e7da2979f4b42e4996102b8616339f0de0a",
+      "sha256": "726a91fe19fd9b9e67cca6f3c8668bf484df92d1bbb2ec2e5f2619cc0237324c"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/build/memory.map",
+      "bytes": 209508,
+      "blob": "9f40ab9cde06d018fbb43f1f52903c70ee935ff7",
+      "sha256": "fb21bbd52c9b5248c3cc29829956d168c43fecdc2eb8ca569829382e115cd619"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/src/.cache/clangd/index/continuous_core.c.06A45109F914F3F4.idx",
+      "bytes": 5146,
+      "blob": "d02bca63fdd0e876c12fee95c672dc0dc7ecc368",
+      "sha256": "e324f7fa5b97465b2dc22dc41eedb6bac10e49593551839f41e6a6f025285c7a"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/src/.cache/clangd/index/continuous_core.h.A86BEB643D1D8730.idx",
+      "bytes": 6296,
+      "blob": "2bd6bbb61b2c34a5ab63357859e1dd1c57314156",
+      "sha256": "9a1d0b90c3f713f3648bedb8d906537d52dc9a3d99a4e3dc9395bd33700946c3"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/src/.cache/clangd/index/main.c.E36355430DB682EF.idx",
+      "bytes": 386,
+      "blob": "0272ed83eac167bd7d550781ed67901f25f6506d",
+      "sha256": "94789fd3e14555d8c95c369c56814f5b51c88d11d724ba9e505fcc0336512438"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/src/.cache/clangd/index/main_continuous.c.305296B0353831E4.idx",
+      "bytes": 7750,
+      "blob": "5938a956c1c5712a84e2b9e1e988ebb97b13fb68",
+      "sha256": "9728958a2921f8593c8c2e3e77d90ed56ed4b9b188de4dda484daed16b74c99a"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/src/.clangd",
+      "bytes": 107,
+      "blob": "4e9a95ebd0f8ffc58fd1558fa2d09c0d1c98eaba",
+      "sha256": "cfa1ee2e8fe7c0b9ba60eda6325f1f2e6a6f10b6dce56750e47e33d110bfeeaa"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/src/CMakeLists.txt",
+      "bytes": 3211,
+      "blob": "018bbf812478ad33d040f9188d6ac38ed137b441",
+      "sha256": "24209e10b78544dcd3c1dd18da18d7720e7ee7a7864ffd7ae8f92844f5a71473"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/src/Empty_applicationExample.cmake",
+      "bytes": 637,
+      "blob": "1931c64b1896a9f16f796851ca8246debccfee84",
+      "sha256": "bca95562ac27da001b5192bb285cb59f11fe5f50474c1a7c19c7d4e4c2d8314e"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/src/README.txt",
+      "bytes": 41,
+      "blob": "c4d32efe3279f19e148b020b100625a33de5cc52",
+      "sha256": "265e6e74d7913c397b2e78997cb08682ffdae7c838f321a3f21f521f51e92dbc"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/src/UserConfig.cmake",
+      "bytes": 8026,
+      "blob": "7460c9f0018064f6fc3160323bd76d9dc2cd4b3a",
+      "sha256": "7d6f4fb42182a8ed48432d257807aa2193cab87fc0d8050385856aa7fdbb437e"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/src/app.yaml",
+      "bytes": 248,
+      "blob": "c95b982370e397ab3dd25b07fb135a3657939161",
+      "sha256": "ac45db9479e7349d8e13465d195fe0fd42872b71dc69e60a5e8d68b8d448e3d2"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/src/compile_commands.json",
+      "bytes": 1371,
+      "blob": "2aa1d898b0c33e11d11e6f35788da387ec4a472d",
+      "sha256": "d76f871b94fc969de485da342d48a05cde48a56744bbdc7fc010faec164c62a1"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/src/continuous/continuous_core.c",
+      "bytes": 5609,
+      "blob": "fcaab663440af534f57e2fb4edf19d7684e1cc7a",
+      "sha256": "29feb369f255c31dce423f5301996ecb52f95124a9705978a95c2ddd6eb2e9e3"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/src/continuous/continuous_core.h",
+      "bytes": 2192,
+      "blob": "c73422dd154eb4743a6014b63d2c139d7c4c0529",
+      "sha256": "2b2a8e0034970403ea693181950a6cec99b51802579e5693f1fdaa110fddbbc3"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/src/continuous/main_continuous.c",
+      "bytes": 6740,
+      "blob": "f9ef2f1d2ac75bb9971219469c3ee844aec8fa6b",
+      "sha256": "02400654bf19a7f427fa0026aaefcbe7492186f91b229651112efeff9d33d6f4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/src/lscript.ld",
+      "bytes": 6306,
+      "blob": "4cad30623f97521dc4601be797d3b046b189b5be",
+      "sha256": "8872fb0af0f6bec969e63d2e5d170c1fc058c782c6924d70697b352aeab55dd4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/src/main.c",
+      "bytes": 80,
+      "blob": "33b3cecd7fe771ad5cccc34bd5d739f19f3a9128",
+      "sha256": "629030b95bfbb7b96fd10c89a164860b4dd556dfb697f660cedece87cf61931a"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/app/vitis-comp.json",
+      "bytes": 448,
+      "blob": "48699a3a7d7a505e11d7205815cf1c272d4e1abc",
+      "sha256": "2fecac173f2f61b7ecbd2a836a9d7fe8b71c643be100c1807b46f5601de465e7"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/platform/vitis-comp.json",
+      "bytes": 2196,
+      "blob": "d5b7c959e3108b8d9b2bb03487df237eca262ee5",
+      "sha256": "ca4a79eca4a54761459a1d0fa619b8a8d726f7185eb79360a5a626586fb39974"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/preparation-docs/OPERATOR.md",
+      "bytes": 3548,
+      "blob": "a2e67d1834244e5f0b0d1eaebfcff9cf9aa63d13",
+      "sha256": "f73f2e280eb5c8b63df7cadb555cdab89e53f1b893191f43c78298bcf450db9e"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/preparation-docs/README.md",
+      "bytes": 7533,
+      "blob": "2bcd5aceaa74b1cd20488b505ecd5dfb3cb7c2ab",
+      "sha256": "baf7bd3df55f563f773ebaf4d8cf467e48077408cbdb95c9d7bdf21c5cad0bc4"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/records/20260916_182349_pre_c92deb3201/request.json",
+      "bytes": 358,
+      "blob": "4f4a0f828f3a1d13cccc09a25a7321c6e2045697",
+      "sha256": "2a311397dbf8b3ff3b93b877b207672cb5ad411c41df2ffcfda1dedf702b3789"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/records/20260916_182349_pre_c92deb3201/result.json",
+      "bytes": 1390,
+      "blob": "ce6e2ada7087653288ec9567918f1f5f47d0ccec",
+      "sha256": "e5611c88ef71efa8a5e88d2ace72c9f8a362618314a91412e94da699a5608039"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/records/20260916_182350_post_92bd309638/logs/gcc-version.command.json",
+      "bytes": 200,
+      "blob": "97bc2f6ebc9d6aed6e6428d3e9c22b4c02152dd5",
+      "sha256": "a574b24e747c680a2c81ca65b4d4f211d7a122f93e8868772dc882c0a05b485d"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/records/20260916_182350_post_92bd309638/logs/gcc-version.log",
+      "bytes": 244,
+      "blob": "5bc514f85f6c6eb8c3dc17504326fe433ffa52e5",
+      "sha256": "26615aa13a55a9f4f299118f7c03be2504bab2201dc2ce4f303e983ea50dc2f1"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/records/20260916_182350_post_92bd309638/logs/timer-disassembly.command.json",
+      "bytes": 328,
+      "blob": "da7668e7bbe7cfd8a485aaf8b0e58a8607f8ba60",
+      "sha256": "65218b6fdf09e8aacaf1d7700753d284cda42ae077998ce8d06cdd2f36e89d9c"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/records/20260916_182350_post_92bd309638/logs/timer-disassembly.log",
+      "bytes": 1418,
+      "blob": "3d67d30cfee9db76a6fd73735254e05ec14fdbe4",
+      "sha256": "84de98a858b3747abfe6a27d7e2fbf17225ae6479c317b8b6b9fbefe816d9c61"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/records/20260916_182350_post_92bd309638/request.json",
+      "bytes": 359,
+      "blob": "81d64ae0ee995ea1de8da27334a535ae5b281e1c",
+      "sha256": "379e05b4a9d2efa7d9d4e83785d81371cb8d9205c62884a070ac84a1c6544461"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/records/20260916_182350_post_92bd309638/result.json",
+      "bytes": 8383,
+      "blob": "cb6bd4cb009fc1f82c7afee543bfdeab86ea9a81",
+      "sha256": "bc270f48b2f1b7fd52324303cb8b2606347a29eb0e2be7c8fc156d32e972721c"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/records/20260916_183019_load_a85a38a914/logs/gcc-version.command.json",
+      "bytes": 200,
+      "blob": "97bc2f6ebc9d6aed6e6428d3e9c22b4c02152dd5",
+      "sha256": "a574b24e747c680a2c81ca65b4d4f211d7a122f93e8868772dc882c0a05b485d"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/records/20260916_183019_load_a85a38a914/logs/gcc-version.log",
+      "bytes": 244,
+      "blob": "5bc514f85f6c6eb8c3dc17504326fe433ffa52e5",
+      "sha256": "26615aa13a55a9f4f299118f7c03be2504bab2201dc2ce4f303e983ea50dc2f1"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/records/20260916_183019_load_a85a38a914/logs/timer-disassembly.command.json",
+      "bytes": 328,
+      "blob": "da7668e7bbe7cfd8a485aaf8b0e58a8607f8ba60",
+      "sha256": "65218b6fdf09e8aacaf1d7700753d284cda42ae077998ce8d06cdd2f36e89d9c"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/records/20260916_183019_load_a85a38a914/logs/timer-disassembly.log",
+      "bytes": 1418,
+      "blob": "3d67d30cfee9db76a6fd73735254e05ec14fdbe4",
+      "sha256": "84de98a858b3747abfe6a27d7e2fbf17225ae6479c317b8b6b9fbefe816d9c61"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/records/20260916_183019_load_a85a38a914/request.json",
+      "bytes": 454,
+      "blob": "ed0dc7175bf579f80e302761319ac7fececf1cb9",
+      "sha256": "7efb43c89d38cb14fb9b19e63800e4d93f74e77c5fc3f42f8bd1938eab124b4e"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/records/20260916_183019_load_a85a38a914/result.json",
+      "bytes": 8512,
+      "blob": "4393d602edbd32fc29486b01e9b57f6ee54236d9",
+      "sha256": "f3b50ec9a6c8fea89983271f033e289fe3aac66b87cee4a5abda16ac526a6c81"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/user-console-excerpt.txt",
+      "bytes": 566,
+      "blob": "5c2929c6f9b81368cdd5b2e0da0cd52fca6220c7",
+      "sha256": "705fb868f5e0b6cba0b49aae431ffef05d30c504ddf7ae93b870ffbfed58869f"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/verification-01/elf-difference-explained.json",
+      "bytes": 436,
+      "blob": "41ad1f6bd0d8b05393c5fac13096c1da62b062ee",
+      "sha256": "7d8c901a71e6281d12f9eab1b8aa87f0d148a1364689f1f4f1ed806cc0f1edb0"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/verification-01/elf-difference.json",
+      "bytes": 2674,
+      "blob": "5ec8bd25f0c4f377156ec58fb7a66cda0131bc3a",
+      "sha256": "72d0909697ae130be3b0619fd2a9cd329ec57fa4b3a88c77624fc2cd8ec16b9b"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/verification-01/loader-real-dry-run.json",
+      "bytes": 1587,
+      "blob": "a97e140b92be8fca91c4ed4eb5e2e2da4ac8e6ce",
+      "sha256": "5b19de3644f6734551ae9841c526c4374fe040804562daea7eb27fad5b18e302"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/verification-01/ninja-commands.json",
+      "bytes": 5850,
+      "blob": "2b45884ceb1f7698d0c1465ffdbe6f7a8614ea1f",
+      "sha256": "7d5d1bcd135ba7d11b5247cf785c4ca3b9eb45130df7d1f741369f20b61a191e"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/verification-01/result.json",
+      "bytes": 187,
+      "blob": "dcbdb0e723f98504b6cfe231de1c5c1cb6fc1948",
+      "sha256": "2886fb284c59d39875a9e4f39f27cddfec772457c17cd0e064da1dd6e6b28247"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/verification-01/snapshot-binding.json",
+      "bytes": 2685,
+      "blob": "50c55c0a6e41a51dea10a724929e02465737c2f3",
+      "sha256": "a8ce78349c343256112a29308f9847711e7e28bd2924614591d66910470e181d"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/verify_user_build.py",
+      "bytes": 4948,
+      "blob": "cd9b483d374c1fb216e5b88a92a2abe3c0159254",
+      "sha256": "f7c4a4a30b0dc939920b94986cdb9dfb8ebc5b5039173516e27cdbf803334151"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/vitis_gate.cmake",
+      "bytes": 1466,
+      "blob": "c0a9e2f0defc4cbaf124b5298ecb555993031fad",
+      "sha256": "c0fecaf987b542c5b0adbad723b3c060d8951ecdc97518ae3e4bdb11478a75e6"
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+[
+  {
+    "mode": "release",
+    "argv": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-u",
+      "-B",
+      "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper_probe.py",
+      "--app",
+      "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-release\\four_mic_continuous",
+      "--platform",
+      "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-release\\continuous_platform",
+      "--tools-bin",
+      "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-release\\tools",
+      "--record-root",
+      "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-release\\records"
+    ],
+    "ready": "GUARD_READY_V1 RjpcTlVFQ1xyZXZpZXctZXZpZGVuY2VcdGltZXJmaXhlZC1yZXBhaXItMTdhZmUzMlxzdGFuZGFyZHNca2VlcGVyLXJlbGVhc2VccmVjb3Jkc1wyMDI2MDkxNl8yMTQ1MzVfZ3VhcmRfNmFlMDdiYmVjMVxzZWFsZWRcZmlybXdhcmUuZWxm RjpcTlVFQ1xyZXZpZXctZXZpZGVuY2VcdGltZXJmaXhlZC1yZXBhaXItMTdhZmUzMlxzdGFuZGFyZHNca2VlcGVyLXJlbGVhc2VccmVjb3Jkc1wyMDI2MDkxNl8yMTQ1MzVfZ3VhcmRfNmFlMDdiYmVjMVxzZWFsZWRcc3lzdGVtLmJpdA== RjpcTlVFQ1xyZXZpZXctZXZpZGVuY2VcdGltZXJmaXhlZC1yZXBhaXItMTdhZmUzMlxzdGFuZGFyZHNca2VlcGVyLXJlbGVhc2VccmVjb3Jkc1wyMDI2MDkxNl8yMTQ1MzVfZ3VhcmRfNmFlMDdiYmVjMVxzZWFsZWRccHM3X2luaXQudGNs",
+    "rejected": [
+      {
+        "op": "write",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-release\\records\\20260916_214535_guard_6ae07bbec1\\sealed\\firmware.elf",
+        "error": "[Errno 13] Permission denied: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\records\\\\20260916_214535_guard_6ae07bbec1\\\\sealed\\\\firmware.elf'"
+      },
+      {
+        "op": "replace",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-release\\records\\20260916_214535_guard_6ae07bbec1\\sealed\\firmware.elf",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\replacement.bin' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\records\\\\20260916_214535_guard_6ae07bbec1\\\\sealed\\\\firmware.elf'"
+      },
+      {
+        "op": "delete",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-release\\records\\20260916_214535_guard_6ae07bbec1\\sealed\\firmware.elf",
+        "error": "[WinError 32] \u53e6\u4e00\u4e2a\u7a0b\u5e8f\u6b63\u5728\u4f7f\u7528\u6b64\u6587\u4ef6\uff0c\u8fdb\u7a0b\u65e0\u6cd5\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\records\\\\20260916_214535_guard_6ae07bbec1\\\\sealed\\\\firmware.elf'"
+      },
+      {
+        "op": "write",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-release\\records\\20260916_214535_guard_6ae07bbec1\\sealed\\system.bit",
+        "error": "[Errno 13] Permission denied: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\records\\\\20260916_214535_guard_6ae07bbec1\\\\sealed\\\\system.bit'"
+      },
+      {
+        "op": "replace",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-release\\records\\20260916_214535_guard_6ae07bbec1\\sealed\\system.bit",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\replacement.bin' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\records\\\\20260916_214535_guard_6ae07bbec1\\\\sealed\\\\system.bit'"
+      },
+      {
+        "op": "delete",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-release\\records\\20260916_214535_guard_6ae07bbec1\\sealed\\system.bit",
+        "error": "[WinError 32] \u53e6\u4e00\u4e2a\u7a0b\u5e8f\u6b63\u5728\u4f7f\u7528\u6b64\u6587\u4ef6\uff0c\u8fdb\u7a0b\u65e0\u6cd5\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\records\\\\20260916_214535_guard_6ae07bbec1\\\\sealed\\\\system.bit'"
+      },
+      {
+        "op": "write",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-release\\records\\20260916_214535_guard_6ae07bbec1\\sealed\\ps7_init.tcl",
+        "error": "[Errno 13] Permission denied: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\records\\\\20260916_214535_guard_6ae07bbec1\\\\sealed\\\\ps7_init.tcl'"
+      },
+      {
+        "op": "replace",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-release\\records\\20260916_214535_guard_6ae07bbec1\\sealed\\ps7_init.tcl",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\replacement.bin' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\records\\\\20260916_214535_guard_6ae07bbec1\\\\sealed\\\\ps7_init.tcl'"
+      },
+      {
+        "op": "delete",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-release\\records\\20260916_214535_guard_6ae07bbec1\\sealed\\ps7_init.tcl",
+        "error": "[WinError 32] \u53e6\u4e00\u4e2a\u7a0b\u5e8f\u6b63\u5728\u4f7f\u7528\u6b64\u6587\u4ef6\uff0c\u8fdb\u7a0b\u65e0\u6cd5\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\records\\\\20260916_214535_guard_6ae07bbec1\\\\sealed\\\\ps7_init.tcl'"
+      },
+      {
+        "op": "ancestor-rename",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-release\\records\\20260916_214535_guard_6ae07bbec1\\sealed",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\records\\\\20260916_214535_guard_6ae07bbec1\\\\sealed' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\renamed-sealed'"
+      },
+      {
+        "op": "ancestor-rename",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-release\\records\\20260916_214535_guard_6ae07bbec1",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\records\\\\20260916_214535_guard_6ae07bbec1' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\renamed-20260916_214535_guard_6ae07bbec1'"
+      },
+      {
+        "op": "ancestor-rename",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-release\\records",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\records' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-release\\\\renamed-records'"
+      }
+    ],
+    "returncode": 0,
+    "stdout": "GUARD_RELEASED\n",
+    "stderr": "",
+    "active_project_rename_after_ready": "PASS",
+    "final_bytes_unchanged": true,
+    "all_sealed_locks_released": true,
+    "board_test": "NOT_RUN"
+  },
+  {
+    "mode": "eof",
+    "argv": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-u",
+      "-B",
+      "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper_probe.py",
+      "--app",
+      "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-eof\\four_mic_continuous",
+      "--platform",
+      "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-eof\\continuous_platform",
+      "--tools-bin",
+      "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-eof\\tools",
+      "--record-root",
+      "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-eof\\records"
+    ],
+    "ready": "GUARD_READY_V1 RjpcTlVFQ1xyZXZpZXctZXZpZGVuY2VcdGltZXJmaXhlZC1yZXBhaXItMTdhZmUzMlxzdGFuZGFyZHNca2VlcGVyLWVvZlxyZWNvcmRzXDIwMjYwOTE2XzIxNDUzN19ndWFyZF9kZjIzNmFiNGU4XHNlYWxlZFxmaXJtd2FyZS5lbGY= RjpcTlVFQ1xyZXZpZXctZXZpZGVuY2VcdGltZXJmaXhlZC1yZXBhaXItMTdhZmUzMlxzdGFuZGFyZHNca2VlcGVyLWVvZlxyZWNvcmRzXDIwMjYwOTE2XzIxNDUzN19ndWFyZF9kZjIzNmFiNGU4XHNlYWxlZFxzeXN0ZW0uYml0 RjpcTlVFQ1xyZXZpZXctZXZpZGVuY2VcdGltZXJmaXhlZC1yZXBhaXItMTdhZmUzMlxzdGFuZGFyZHNca2VlcGVyLWVvZlxyZWNvcmRzXDIwMjYwOTE2XzIxNDUzN19ndWFyZF9kZjIzNmFiNGU4XHNlYWxlZFxwczdfaW5pdC50Y2w=",
+    "rejected": [
+      {
+        "op": "write",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-eof\\records\\20260916_214537_guard_df236ab4e8\\sealed\\firmware.elf",
+        "error": "[Errno 13] Permission denied: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\records\\\\20260916_214537_guard_df236ab4e8\\\\sealed\\\\firmware.elf'"
+      },
+      {
+        "op": "replace",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-eof\\records\\20260916_214537_guard_df236ab4e8\\sealed\\firmware.elf",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\replacement.bin' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\records\\\\20260916_214537_guard_df236ab4e8\\\\sealed\\\\firmware.elf'"
+      },
+      {
+        "op": "delete",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-eof\\records\\20260916_214537_guard_df236ab4e8\\sealed\\firmware.elf",
+        "error": "[WinError 32] \u53e6\u4e00\u4e2a\u7a0b\u5e8f\u6b63\u5728\u4f7f\u7528\u6b64\u6587\u4ef6\uff0c\u8fdb\u7a0b\u65e0\u6cd5\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\records\\\\20260916_214537_guard_df236ab4e8\\\\sealed\\\\firmware.elf'"
+      },
+      {
+        "op": "write",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-eof\\records\\20260916_214537_guard_df236ab4e8\\sealed\\system.bit",
+        "error": "[Errno 13] Permission denied: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\records\\\\20260916_214537_guard_df236ab4e8\\\\sealed\\\\system.bit'"
+      },
+      {
+        "op": "replace",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-eof\\records\\20260916_214537_guard_df236ab4e8\\sealed\\system.bit",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\replacement.bin' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\records\\\\20260916_214537_guard_df236ab4e8\\\\sealed\\\\system.bit'"
+      },
+      {
+        "op": "delete",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-eof\\records\\20260916_214537_guard_df236ab4e8\\sealed\\system.bit",
+        "error": "[WinError 32] \u53e6\u4e00\u4e2a\u7a0b\u5e8f\u6b63\u5728\u4f7f\u7528\u6b64\u6587\u4ef6\uff0c\u8fdb\u7a0b\u65e0\u6cd5\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\records\\\\20260916_214537_guard_df236ab4e8\\\\sealed\\\\system.bit'"
+      },
+      {
+        "op": "write",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-eof\\records\\20260916_214537_guard_df236ab4e8\\sealed\\ps7_init.tcl",
+        "error": "[Errno 13] Permission denied: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\records\\\\20260916_214537_guard_df236ab4e8\\\\sealed\\\\ps7_init.tcl'"
+      },
+      {
+        "op": "replace",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-eof\\records\\20260916_214537_guard_df236ab4e8\\sealed\\ps7_init.tcl",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\replacement.bin' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\records\\\\20260916_214537_guard_df236ab4e8\\\\sealed\\\\ps7_init.tcl'"
+      },
+      {
+        "op": "delete",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-eof\\records\\20260916_214537_guard_df236ab4e8\\sealed\\ps7_init.tcl",
+        "error": "[WinError 32] \u53e6\u4e00\u4e2a\u7a0b\u5e8f\u6b63\u5728\u4f7f\u7528\u6b64\u6587\u4ef6\uff0c\u8fdb\u7a0b\u65e0\u6cd5\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\records\\\\20260916_214537_guard_df236ab4e8\\\\sealed\\\\ps7_init.tcl'"
+      },
+      {
+        "op": "ancestor-rename",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-eof\\records\\20260916_214537_guard_df236ab4e8\\sealed",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\records\\\\20260916_214537_guard_df236ab4e8\\\\sealed' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\renamed-sealed'"
+      },
+      {
+        "op": "ancestor-rename",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-eof\\records\\20260916_214537_guard_df236ab4e8",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\records\\\\20260916_214537_guard_df236ab4e8' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\renamed-20260916_214537_guard_df236ab4e8'"
+      },
+      {
+        "op": "ancestor-rename",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-eof\\records",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\records' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-eof\\\\renamed-records'"
+      }
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "GUARD_REJECTED: Loader pipe closed without release; no completion attested\n",
+    "active_project_rename_after_ready": "PASS",
+    "final_bytes_unchanged": true,
+    "all_sealed_locks_released": true,
+    "board_test": "NOT_RUN"
+  },
+  {
+    "mode": "unknown-command",
+    "argv": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-u",
+      "-B",
+      "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper_probe.py",
+      "--app",
+      "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-unknown-command\\four_mic_continuous",
+      "--platform",
+      "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-unknown-command\\continuous_platform",
+      "--tools-bin",
+      "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-unknown-command\\tools",
+      "--record-root",
+      "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-unknown-command\\records"
+    ],
+    "ready": "GUARD_READY_V1 RjpcTlVFQ1xyZXZpZXctZXZpZGVuY2VcdGltZXJmaXhlZC1yZXBhaXItMTdhZmUzMlxzdGFuZGFyZHNca2VlcGVyLXVua25vd24tY29tbWFuZFxyZWNvcmRzXDIwMjYwOTE2XzIxNDUzOF9ndWFyZF8yYTc4M2MyMTA1XHNlYWxlZFxmaXJtd2FyZS5lbGY= RjpcTlVFQ1xyZXZpZXctZXZpZGVuY2VcdGltZXJmaXhlZC1yZXBhaXItMTdhZmUzMlxzdGFuZGFyZHNca2VlcGVyLXVua25vd24tY29tbWFuZFxyZWNvcmRzXDIwMjYwOTE2XzIxNDUzOF9ndWFyZF8yYTc4M2MyMTA1XHNlYWxlZFxzeXN0ZW0uYml0 RjpcTlVFQ1xyZXZpZXctZXZpZGVuY2VcdGltZXJmaXhlZC1yZXBhaXItMTdhZmUzMlxzdGFuZGFyZHNca2VlcGVyLXVua25vd24tY29tbWFuZFxyZWNvcmRzXDIwMjYwOTE2XzIxNDUzOF9ndWFyZF8yYTc4M2MyMTA1XHNlYWxlZFxwczdfaW5pdC50Y2w=",
+    "rejected": [
+      {
+        "op": "write",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-unknown-command\\records\\20260916_214538_guard_2a783c2105\\sealed\\firmware.elf",
+        "error": "[Errno 13] Permission denied: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\records\\\\20260916_214538_guard_2a783c2105\\\\sealed\\\\firmware.elf'"
+      },
+      {
+        "op": "replace",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-unknown-command\\records\\20260916_214538_guard_2a783c2105\\sealed\\firmware.elf",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\replacement.bin' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\records\\\\20260916_214538_guard_2a783c2105\\\\sealed\\\\firmware.elf'"
+      },
+      {
+        "op": "delete",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-unknown-command\\records\\20260916_214538_guard_2a783c2105\\sealed\\firmware.elf",
+        "error": "[WinError 32] \u53e6\u4e00\u4e2a\u7a0b\u5e8f\u6b63\u5728\u4f7f\u7528\u6b64\u6587\u4ef6\uff0c\u8fdb\u7a0b\u65e0\u6cd5\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\records\\\\20260916_214538_guard_2a783c2105\\\\sealed\\\\firmware.elf'"
+      },
+      {
+        "op": "write",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-unknown-command\\records\\20260916_214538_guard_2a783c2105\\sealed\\system.bit",
+        "error": "[Errno 13] Permission denied: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\records\\\\20260916_214538_guard_2a783c2105\\\\sealed\\\\system.bit'"
+      },
+      {
+        "op": "replace",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-unknown-command\\records\\20260916_214538_guard_2a783c2105\\sealed\\system.bit",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\replacement.bin' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\records\\\\20260916_214538_guard_2a783c2105\\\\sealed\\\\system.bit'"
+      },
+      {
+        "op": "delete",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-unknown-command\\records\\20260916_214538_guard_2a783c2105\\sealed\\system.bit",
+        "error": "[WinError 32] \u53e6\u4e00\u4e2a\u7a0b\u5e8f\u6b63\u5728\u4f7f\u7528\u6b64\u6587\u4ef6\uff0c\u8fdb\u7a0b\u65e0\u6cd5\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\records\\\\20260916_214538_guard_2a783c2105\\\\sealed\\\\system.bit'"
+      },
+      {
+        "op": "write",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-unknown-command\\records\\20260916_214538_guard_2a783c2105\\sealed\\ps7_init.tcl",
+        "error": "[Errno 13] Permission denied: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\records\\\\20260916_214538_guard_2a783c2105\\\\sealed\\\\ps7_init.tcl'"
+      },
+      {
+        "op": "replace",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-unknown-command\\records\\20260916_214538_guard_2a783c2105\\sealed\\ps7_init.tcl",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\replacement.bin' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\records\\\\20260916_214538_guard_2a783c2105\\\\sealed\\\\ps7_init.tcl'"
+      },
+      {
+        "op": "delete",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-unknown-command\\records\\20260916_214538_guard_2a783c2105\\sealed\\ps7_init.tcl",
+        "error": "[WinError 32] \u53e6\u4e00\u4e2a\u7a0b\u5e8f\u6b63\u5728\u4f7f\u7528\u6b64\u6587\u4ef6\uff0c\u8fdb\u7a0b\u65e0\u6cd5\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\records\\\\20260916_214538_guard_2a783c2105\\\\sealed\\\\ps7_init.tcl'"
+      },
+      {
+        "op": "ancestor-rename",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-unknown-command\\records\\20260916_214538_guard_2a783c2105\\sealed",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\records\\\\20260916_214538_guard_2a783c2105\\\\sealed' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\renamed-sealed'"
+      },
+      {
+        "op": "ancestor-rename",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-unknown-command\\records\\20260916_214538_guard_2a783c2105",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\records\\\\20260916_214538_guard_2a783c2105' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\renamed-20260916_214538_guard_2a783c2105'"
+      },
+      {
+        "op": "ancestor-rename",
+        "path": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\keeper-unknown-command\\records",
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\records' -> 'F:\\\\NUEC\\\\review-evidence\\\\timerfixed-repair-17afe32\\\\standards\\\\keeper-unknown-command\\\\renamed-records'"
+      }
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "GUARD_REJECTED: Unknown guard command\n",
+    "active_project_rename_after_ready": "PASS",
+    "final_bytes_unchanged": true,
+    "all_sealed_locks_released": true,
+    "board_test": "NOT_RUN"
+  },
+  {
+    "mode": "tcl-con-failure",
+    "returncode": 0,
+    "stdout": "CON_FAILURE_RELEASE_PASS paths={F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\tcl-con-failure\\records\\20260916_214539_guard_4aeb59e5fd\\sealed\\system.bit} {F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\tcl-con-failure\\records\\20260916_214539_guard_4aeb59e5fd\\sealed\\ps7_init.tcl} {F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\tcl-con-failure\\records\\20260916_214539_guard_4aeb59e5fd\\sealed\\firmware.elf} events=connect targets rst after targets fpga targets source ps7_init ps7_post_config targets rst dow con; NO_BOARD\n",
+    "stderr": "",
+    "board_test": "NOT_RUN"
+  }
+]

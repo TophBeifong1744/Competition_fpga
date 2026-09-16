@@ -1,0 +1,132 @@
+{
+  "status": "SEALED_NOT_BOARD_TEST",
+  "original_paths": {
+    "elf": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\tcl-con-failure\\four_mic_continuous\\build\\four_mic_continuous.elf",
+    "bit": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\tcl-con-failure\\four_mic_continuous\\_ide\\bitstream\\system_continuous_20260915.bit",
+    "init": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\tcl-con-failure\\four_mic_continuous\\_ide\\psinit\\ps7_init.tcl"
+  },
+  "snapshot": {
+    "elf": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\tcl-con-failure\\records\\20260916_214539_guard_4aeb59e5fd\\sealed\\firmware.elf",
+    "bit": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\tcl-con-failure\\records\\20260916_214539_guard_4aeb59e5fd\\sealed\\system.bit",
+    "init": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\tcl-con-failure\\records\\20260916_214539_guard_4aeb59e5fd\\sealed\\ps7_init.tcl"
+  },
+  "sha256": {
+    "elf": "726a91fe19fd9b9e67cca6f3c8668bf484df92d1bbb2ec2e5f2619cc0237324c",
+    "bit": "b15991bc0f8595970361be553b542e334dbb7dca268c01864ecd80fcffbbffaf",
+    "init": "a158fcc7d723b21003864159006e781ffaf5e8df24ec9b1d9279f9d14ff3ee5e"
+  },
+  "gate": {
+    "compiled": {
+      "divisor": 333333343,
+      "contract": [
+        1129270833,
+        16777216,
+        17825792,
+        250,
+        8,
+        8000,
+        64,
+        8064,
+        2,
+        16128,
+        1048576,
+        1073741823,
+        1077936128,
+        1092616192,
+        10000000,
+        480000
+      ],
+      "program_end": 1123904,
+      "ranges": [
+        {
+          "name": "PT_LOAD",
+          "start": 1048576,
+          "end": 1123904
+        },
+        {
+          "name": ".text",
+          "start": 1048576,
+          "end": 1074332
+        },
+        {
+          "name": ".init",
+          "start": 1074332,
+          "end": 1074344
+        },
+        {
+          "name": ".fini",
+          "start": 1074344,
+          "end": 1074356
+        },
+        {
+          "name": ".rodata",
+          "start": 1074356,
+          "end": 1076796
+        },
+        {
+          "name": ".data",
+          "start": 1076800,
+          "end": 1078220
+        },
+        {
+          "name": ".eh_frame",
+          "start": 1078220,
+          "end": 1078276
+        },
+        {
+          "name": ".mmu_tbl",
+          "start": 1081344,
+          "end": 1097728
+        },
+        {
+          "name": ".ARM.exidx",
+          "start": 1097728,
+          "end": 1097736
+        },
+        {
+          "name": ".init_array",
+          "start": 1097736,
+          "end": 1097744
+        },
+        {
+          "name": ".fini_array",
+          "start": 1097744,
+          "end": 1097748
+        },
+        {
+          "name": ".drvcfg_sec",
+          "start": 1097748,
+          "end": 1097964
+        },
+        {
+          "name": ".bss",
+          "start": 1097968,
+          "end": 1101372
+        },
+        {
+          "name": ".heap",
+          "start": 1101372,
+          "end": 1109568
+        },
+        {
+          "name": ".stack",
+          "start": 1109568,
+          "end": 1123904
+        }
+      ],
+      "startup": {
+        "entry": 1048576,
+        "symbol": "_vector_table",
+        "executable_file_backed": true
+      },
+      "elf_sha256": "726a91fe19fd9b9e67cca6f3c8668bf484df92d1bbb2ec2e5f2619cc0237324c",
+      "object_sha256": "0fc486cf671402f1d62041e94e8ec947ebc24961f852114f03ba4baed04f6469"
+    },
+    "load_paths": {
+      "elf": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\tcl-con-failure\\four_mic_continuous\\build\\four_mic_continuous.elf",
+      "bit": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\tcl-con-failure\\four_mic_continuous\\_ide\\bitstream\\system_continuous_20260915.bit",
+      "init": "F:\\NUEC\\review-evidence\\timerfixed-repair-17afe32\\standards\\tcl-con-failure\\four_mic_continuous\\_ide\\psinit\\ps7_init.tcl"
+    },
+    "scope": "TEST ONLY: real ELF/locks; other Vitis prerequisites mocked"
+  }
+}
