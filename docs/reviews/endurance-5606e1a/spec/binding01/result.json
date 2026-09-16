@@ -1,0 +1,244 @@
+{
+  "scope": "Independent archive reads only; no checker gate, ARM build or board execution",
+  "source_bindings": {
+    "main.c": {
+      "raw_sha256": "629030b95bfbb7b96fd10c89a164860b4dd556dfb697f660cedece87cf61931a",
+      "policy_text_sha256": "cbc92238e86dd7459fc2112bd59e14d7456f13b200b664cd9cad403b3b19a751"
+    },
+    "continuous/main_continuous.c": {
+      "raw_sha256": "5f8ee4ac32dee1eabdf675227f73f0859c1c63dadaf0743c838fad528839f716",
+      "policy_text_sha256": "5f8ee4ac32dee1eabdf675227f73f0859c1c63dadaf0743c838fad528839f716"
+    },
+    "continuous/continuous_core.c": {
+      "raw_sha256": "eb31b75147e25d6d01b95b412700775493b80427279479d31c27331234049325",
+      "policy_text_sha256": "eb31b75147e25d6d01b95b412700775493b80427279479d31c27331234049325"
+    },
+    "continuous/continuous_core.h": {
+      "raw_sha256": "510ee0574c7b54a8c41aab96066dd3a772faa25155e8b761bb38dc15b18bd04a",
+      "policy_text_sha256": "510ee0574c7b54a8c41aab96066dd3a772faa25155e8b761bb38dc15b18bd04a"
+    },
+    "UserConfig.cmake": {
+      "raw_sha256": "f46cdae7660d1385a26c1d5af539588ab17474f5aa4a0f6f3228a0100042d4c9",
+      "policy_text_sha256": "f46cdae7660d1385a26c1d5af539588ab17474f5aa4a0f6f3228a0100042d4c9"
+    },
+    "lscript.ld": {
+      "raw_sha256": "8872fb0af0f6bec969e63d2e5d170c1fc058c782c6924d70697b352aeab55dd4",
+      "policy_text_sha256": "9b42b13290700364a579870b21c022159701b0b78f987b26b44be84bb5baa4ff"
+    },
+    "Empty_applicationExample.cmake": {
+      "raw_sha256": "bca95562ac27da001b5192bb285cb59f11fe5f50474c1a7c19c7d4e4c2d8314e",
+      "policy_text_sha256": "5dcca1dc4d17b35d4cf1d13c1d85a0b4ccf4eadc979ae3bf5f6d525b34527dfa"
+    }
+  },
+  "proposed_vs_actual": {
+    "continuous/main_continuous.c": {
+      "raw_equal": true,
+      "sha256": "5f8ee4ac32dee1eabdf675227f73f0859c1c63dadaf0743c838fad528839f716"
+    },
+    "continuous/continuous_core.c": {
+      "raw_equal": true,
+      "sha256": "eb31b75147e25d6d01b95b412700775493b80427279479d31c27331234049325"
+    },
+    "continuous/continuous_core.h": {
+      "raw_equal": true,
+      "sha256": "510ee0574c7b54a8c41aab96066dd3a772faa25155e8b761bb38dc15b18bd04a"
+    },
+    "UserConfig.cmake": {
+      "raw_equal": true,
+      "sha256": "f46cdae7660d1385a26c1d5af539588ab17474f5aa4a0f6f3228a0100042d4c9"
+    }
+  },
+  "binaries": {
+    "object": {
+      "path": "F:\\NUEC\\review-worktrees\\endurance-5606e1a\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\evidence\\user-build-20260916-2052\\app\\build\\CMakeFiles\\four_mic_endurance.elf.dir\\main.c.obj",
+      "sha256": "4eeb96edabcb79b2b6df29bbdbe2c67ee3532b14a71bfbe08117f4df63a3dc15",
+      "profile": [
+        1162757169,
+        1,
+        300000000,
+        14400000,
+        10000000,
+        480000,
+        10,
+        11,
+        1000000,
+        2000000
+      ],
+      "schedule": [
+        300000000,
+        14400000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000
+      ],
+      "main_address": 0,
+      "main_size": 1548,
+      "schedule_address": 116,
+      "timer_address": 700,
+      "timer_size": 116,
+      "timer_words": [
+        "0xe52de004",
+        "0xe24dd00c",
+        "0xe1a0000d",
+        "0xebfffffe",
+        "0xe89d4004",
+        "0xe1a0328e",
+        "0xe1a01282",
+        "0xe1833da2",
+        "0xe0511002",
+        "0xe1a0c481",
+        "0xe0c3300e",
+        "0xe1a03483",
+        "0xe09cc002",
+        "0xe1a0030c",
+        "0xe1833ba1",
+        "0xe0ae3003",
+        "0xe050000c",
+        "0xe1a01303",
+        "0xe1811d2c",
+        "0xe0c11003",
+        "0xe0900002",
+        "0xe0ae1001",
+        "0xe28f300c",
+        "0xe1c320d0",
+        "0xebfffffe",
+        "0xe28dd00c",
+        "0xe49df004",
+        "0x13de435f",
+        "0x0"
+      ],
+      "main_schedule_and_call_relocations": [
+        {
+          "offset_in_main": 652,
+          "type": 28,
+          "symbol": "usleep"
+        },
+        {
+          "offset_in_main": 836,
+          "type": 28,
+          "symbol": "usleep"
+        },
+        {
+          "offset_in_main": 1228,
+          "type": 28,
+          "symbol": "session_init"
+        },
+        {
+          "offset_in_main": 1264,
+          "type": 28,
+          "symbol": "session_run_config"
+        },
+        {
+          "offset_in_main": 1392,
+          "type": 28,
+          "symbol": "usleep"
+        },
+        {
+          "offset_in_main": 1480,
+          "type": 28,
+          "symbol": "usleep"
+        }
+      ]
+    },
+    "elf": {
+      "path": "F:\\NUEC\\review-worktrees\\endurance-5606e1a\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\evidence\\user-build-20260916-2052\\app\\build\\four_mic_endurance.elf",
+      "sha256": "75c7e5e2203ed1ba019c83a1123ef79eff0c877286d722eea5b8d9a275c76449",
+      "profile": [
+        1162757169,
+        1,
+        300000000,
+        14400000,
+        10000000,
+        480000,
+        10,
+        11,
+        1000000,
+        2000000
+      ],
+      "schedule": [
+        300000000,
+        14400000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000
+      ],
+      "main_address": 1073200,
+      "main_size": 1548,
+      "schedule_address": 1074992,
+      "timer_address": 1050468,
+      "timer_size": 116,
+      "timer_words": [
+        "0xe52de004",
+        "0xe24dd00c",
+        "0xe1a0000d",
+        "0xeb000861",
+        "0xe89d4004",
+        "0xe1a0328e",
+        "0xe1a01282",
+        "0xe1833da2",
+        "0xe0511002",
+        "0xe1a0c481",
+        "0xe0c3300e",
+        "0xe1a03483",
+        "0xe09cc002",
+        "0xe1a0030c",
+        "0xe1833ba1",
+        "0xe0ae3003",
+        "0xe050000c",
+        "0xe1a01303",
+        "0xe1811d2c",
+        "0xe0c11003",
+        "0xe0900002",
+        "0xe0ae1001",
+        "0xe28f300c",
+        "0xe1c320d0",
+        "0xfa0010c2",
+        "0xe28dd00c",
+        "0xe49df004",
+        "0x13de435f",
+        "0x0"
+      ],
+      "actual_main_calls_to_session_run_config": [
+        {
+          "offset_in_main": 1264,
+          "target": 1052568
+        }
+      ],
+      "main_literals_equal_schedule_address": []
+    }
+  }
+}

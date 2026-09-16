@@ -1,0 +1,20 @@
+F:\NUEC\review-worktrees\endurance-5606e1a\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\continuous-prototype-01\endurance-test-01\tests\test_endurance.c: In function 'main':
+F:\NUEC\review-worktrees\endurance-5606e1a\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\continuous-prototype-01\endurance-test-01\tests\test_endurance.c:30:75: error: unknown conversion type character 'l' in format [-Werror=format=]
+         printf("PROFILE session=%u PASS groups=%u packets=%u elapsed_us=%llu drain_us=%llu\n",n,
+                                                                           ^
+F:\NUEC\review-worktrees\endurance-5606e1a\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\continuous-prototype-01\endurance-test-01\tests\test_endurance.c:30:89: error: unknown conversion type character 'l' in format [-Werror=format=]
+         printf("PROFILE session=%u PASS groups=%u packets=%u elapsed_us=%llu drain_us=%llu\n",n,
+                                                                                         ^
+F:\NUEC\review-worktrees\endurance-5606e1a\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\continuous-prototype-01\endurance-test-01\tests\test_endurance.c:30:16: error: too many arguments for format [-Werror=format-extra-args]
+         printf("PROFILE session=%u PASS groups=%u packets=%u elapsed_us=%llu drain_us=%llu\n",n,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+F:\NUEC\review-worktrees\endurance-5606e1a\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\continuous-prototype-01\endurance-test-01\tests\test_endurance.c:30:75: error: unknown conversion type character 'l' in format [-Werror=format=]
+         printf("PROFILE session=%u PASS groups=%u packets=%u elapsed_us=%llu drain_us=%llu\n",n,
+                                                                           ^
+F:\NUEC\review-worktrees\endurance-5606e1a\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\continuous-prototype-01\endurance-test-01\tests\test_endurance.c:30:89: error: unknown conversion type character 'l' in format [-Werror=format=]
+         printf("PROFILE session=%u PASS groups=%u packets=%u elapsed_us=%llu drain_us=%llu\n",n,
+                                                                                         ^
+F:\NUEC\review-worktrees\endurance-5606e1a\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\continuous-prototype-01\endurance-test-01\tests\test_endurance.c:30:16: error: too many arguments for format [-Werror=format-extra-args]
+         printf("PROFILE session=%u PASS groups=%u packets=%u elapsed_us=%llu drain_us=%llu\n",n,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors

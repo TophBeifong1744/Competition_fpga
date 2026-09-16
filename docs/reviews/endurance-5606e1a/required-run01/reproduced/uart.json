@@ -1,0 +1,1470 @@
+{
+  "status": "UART_EVIDENCE_CONSISTENT_NOT_ACCEPTANCE",
+  "sessions": [
+    {
+      "session": 0,
+      "groups": 14400250,
+      "packets": 57601,
+      "bytes_checked": 460808000,
+      "first_id": 17448,
+      "last_id": 14417697,
+      "gap_from_previous_last": null,
+      "capture_command_us": 300000125,
+      "drain_us": 5209,
+      "max_check_us": 56,
+      "max_arm_gap_us": 5251,
+      "trace": [
+        {
+          "packet": 57585,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 57586,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 57587,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 57588,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 57589,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 57590,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 57591,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 57592,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 57593,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 57594,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 57595,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 57596,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 57597,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 57598,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 57599,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 57600,
+          "slot": 0,
+          "source": "C100000A"
+        }
+      ],
+      "channels": [
+        {
+          "channel": 0,
+          "min": -1764800,
+          "max": 2253568,
+          "zeros": 20764,
+          "clip_flags": 0
+        },
+        {
+          "channel": 1,
+          "min": -1906496,
+          "max": 2562112,
+          "zeros": 21396,
+          "clip_flags": 0
+        },
+        {
+          "channel": 2,
+          "min": -1817280,
+          "max": 2240640,
+          "zeros": 22420,
+          "clip_flags": 0
+        },
+        {
+          "channel": 3,
+          "min": -1789504,
+          "max": 2000064,
+          "zeros": 21394,
+          "clip_flags": 0
+        }
+      ],
+      "first_failure": "OK",
+      "both_slots_free": true,
+      "bad_cursor_not_error_count": [
+        249,
+        3,
+        "00000000"
+      ]
+    },
+    {
+      "session": 1,
+      "groups": 480250,
+      "packets": 1921,
+      "bytes_checked": 15368000,
+      "first_id": 14472956,
+      "last_id": 14953205,
+      "gap_from_previous_last": 55258,
+      "capture_command_us": 10000123,
+      "drain_us": 5209,
+      "max_check_us": 56,
+      "max_arm_gap_us": 5240,
+      "trace": [
+        {
+          "packet": 1905,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1906,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1907,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1908,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1909,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1910,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1911,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1912,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1913,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1914,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1915,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1916,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1917,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1918,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1919,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1920,
+          "slot": 0,
+          "source": "C100000A"
+        }
+      ],
+      "channels": [
+        {
+          "channel": 0,
+          "min": -200320,
+          "max": 204416,
+          "zeros": 337,
+          "clip_flags": 0
+        },
+        {
+          "channel": 1,
+          "min": -230016,
+          "max": 227264,
+          "zeros": 339,
+          "clip_flags": 0
+        },
+        {
+          "channel": 2,
+          "min": -241024,
+          "max": 277568,
+          "zeros": 330,
+          "clip_flags": 0
+        },
+        {
+          "channel": 3,
+          "min": -177984,
+          "max": 195392,
+          "zeros": 360,
+          "clip_flags": 0
+        }
+      ],
+      "first_failure": "OK",
+      "both_slots_free": true,
+      "bad_cursor_not_error_count": [
+        249,
+        3,
+        "00000B00"
+      ]
+    },
+    {
+      "session": 2,
+      "groups": 480250,
+      "packets": 1921,
+      "bytes_checked": 15368000,
+      "first_id": 15008298,
+      "last_id": 15488547,
+      "gap_from_previous_last": 55092,
+      "capture_command_us": 10000131,
+      "drain_us": 5209,
+      "max_check_us": 56,
+      "max_arm_gap_us": 5248,
+      "trace": [
+        {
+          "packet": 1905,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1906,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1907,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1908,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1909,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1910,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1911,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1912,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1913,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1914,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1915,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1916,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1917,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1918,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1919,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1920,
+          "slot": 0,
+          "source": "C100000A"
+        }
+      ],
+      "channels": [
+        {
+          "channel": 0,
+          "min": -259456,
+          "max": 267520,
+          "zeros": 318,
+          "clip_flags": 0
+        },
+        {
+          "channel": 1,
+          "min": -285952,
+          "max": 283072,
+          "zeros": 291,
+          "clip_flags": 0
+        },
+        {
+          "channel": 2,
+          "min": -276800,
+          "max": 329664,
+          "zeros": 296,
+          "clip_flags": 0
+        },
+        {
+          "channel": 3,
+          "min": -243264,
+          "max": 257088,
+          "zeros": 324,
+          "clip_flags": 0
+        }
+      ],
+      "first_failure": "OK",
+      "both_slots_free": true,
+      "bad_cursor_not_error_count": [
+        249,
+        3,
+        "FFFF04C0"
+      ]
+    },
+    {
+      "session": 3,
+      "groups": 480250,
+      "packets": 1921,
+      "bytes_checked": 15368000,
+      "first_id": 15543640,
+      "last_id": 16023889,
+      "gap_from_previous_last": 55092,
+      "capture_command_us": 10000131,
+      "drain_us": 5210,
+      "max_check_us": 56,
+      "max_arm_gap_us": 5250,
+      "trace": [
+        {
+          "packet": 1905,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1906,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1907,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1908,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1909,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1910,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1911,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1912,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1913,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1914,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1915,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1916,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1917,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1918,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1919,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1920,
+          "slot": 0,
+          "source": "C100000A"
+        }
+      ],
+      "channels": [
+        {
+          "channel": 0,
+          "min": -218368,
+          "max": 216064,
+          "zeros": 529,
+          "clip_flags": 0
+        },
+        {
+          "channel": 1,
+          "min": -254016,
+          "max": 269568,
+          "zeros": 544,
+          "clip_flags": 0
+        },
+        {
+          "channel": 2,
+          "min": -245184,
+          "max": 264448,
+          "zeros": 555,
+          "clip_flags": 0
+        },
+        {
+          "channel": 3,
+          "min": -217920,
+          "max": 229824,
+          "zeros": 513,
+          "clip_flags": 0
+        }
+      ],
+      "first_failure": "OK",
+      "both_slots_free": true,
+      "bad_cursor_not_error_count": [
+        249,
+        3,
+        "FFFF8D80"
+      ]
+    },
+    {
+      "session": 4,
+      "groups": 480250,
+      "packets": 1921,
+      "bytes_checked": 15368000,
+      "first_id": 16078982,
+      "last_id": 16559231,
+      "gap_from_previous_last": 55092,
+      "capture_command_us": 10000132,
+      "drain_us": 5209,
+      "max_check_us": 56,
+      "max_arm_gap_us": 5249,
+      "trace": [
+        {
+          "packet": 1905,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1906,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1907,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1908,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1909,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1910,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1911,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1912,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1913,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1914,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1915,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1916,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1917,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1918,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1919,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1920,
+          "slot": 0,
+          "source": "C100000A"
+        }
+      ],
+      "channels": [
+        {
+          "channel": 0,
+          "min": -167296,
+          "max": 174272,
+          "zeros": 449,
+          "clip_flags": 0
+        },
+        {
+          "channel": 1,
+          "min": -173376,
+          "max": 175360,
+          "zeros": 438,
+          "clip_flags": 0
+        },
+        {
+          "channel": 2,
+          "min": -186240,
+          "max": 151488,
+          "zeros": 480,
+          "clip_flags": 0
+        },
+        {
+          "channel": 3,
+          "min": -167296,
+          "max": 146240,
+          "zeros": 487,
+          "clip_flags": 0
+        }
+      ],
+      "first_failure": "OK",
+      "both_slots_free": true,
+      "bad_cursor_not_error_count": [
+        249,
+        3,
+        "FFFF5080"
+      ]
+    },
+    {
+      "session": 5,
+      "groups": 480250,
+      "packets": 1921,
+      "bytes_checked": 15368000,
+      "first_id": 16614324,
+      "last_id": 17094573,
+      "gap_from_previous_last": 55092,
+      "capture_command_us": 10000133,
+      "drain_us": 5207,
+      "max_check_us": 56,
+      "max_arm_gap_us": 5249,
+      "trace": [
+        {
+          "packet": 1905,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1906,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1907,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1908,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1909,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1910,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1911,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1912,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1913,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1914,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1915,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1916,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1917,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1918,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1919,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1920,
+          "slot": 0,
+          "source": "C100000A"
+        }
+      ],
+      "channels": [
+        {
+          "channel": 0,
+          "min": -129792,
+          "max": 111680,
+          "zeros": 570,
+          "clip_flags": 0
+        },
+        {
+          "channel": 1,
+          "min": -129024,
+          "max": 118592,
+          "zeros": 562,
+          "clip_flags": 0
+        },
+        {
+          "channel": 2,
+          "min": -128320,
+          "max": 121088,
+          "zeros": 558,
+          "clip_flags": 0
+        },
+        {
+          "channel": 3,
+          "min": -147840,
+          "max": 124288,
+          "zeros": 470,
+          "clip_flags": 0
+        }
+      ],
+      "first_failure": "OK",
+      "both_slots_free": true,
+      "bad_cursor_not_error_count": [
+        249,
+        3,
+        "FFFFE840"
+      ]
+    },
+    {
+      "session": 6,
+      "groups": 480250,
+      "packets": 1921,
+      "bytes_checked": 15368000,
+      "first_id": 17149666,
+      "last_id": 17629915,
+      "gap_from_previous_last": 55092,
+      "capture_command_us": 10000134,
+      "drain_us": 5207,
+      "max_check_us": 56,
+      "max_arm_gap_us": 5251,
+      "trace": [
+        {
+          "packet": 1905,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1906,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1907,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1908,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1909,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1910,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1911,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1912,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1913,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1914,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1915,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1916,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1917,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1918,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1919,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1920,
+          "slot": 0,
+          "source": "C100000A"
+        }
+      ],
+      "channels": [
+        {
+          "channel": 0,
+          "min": -118784,
+          "max": 129216,
+          "zeros": 592,
+          "clip_flags": 0
+        },
+        {
+          "channel": 1,
+          "min": -136064,
+          "max": 109824,
+          "zeros": 591,
+          "clip_flags": 0
+        },
+        {
+          "channel": 2,
+          "min": -137856,
+          "max": 141184,
+          "zeros": 581,
+          "clip_flags": 0
+        },
+        {
+          "channel": 3,
+          "min": -138496,
+          "max": 139904,
+          "zeros": 548,
+          "clip_flags": 0
+        }
+      ],
+      "first_failure": "OK",
+      "both_slots_free": true,
+      "bad_cursor_not_error_count": [
+        249,
+        3,
+        "FFFFFDC0"
+      ]
+    },
+    {
+      "session": 7,
+      "groups": 480250,
+      "packets": 1921,
+      "bytes_checked": 15368000,
+      "first_id": 17685008,
+      "last_id": 18165257,
+      "gap_from_previous_last": 55092,
+      "capture_command_us": 10000133,
+      "drain_us": 5210,
+      "max_check_us": 56,
+      "max_arm_gap_us": 5250,
+      "trace": [
+        {
+          "packet": 1905,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1906,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1907,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1908,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1909,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1910,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1911,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1912,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1913,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1914,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1915,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1916,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1917,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1918,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1919,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1920,
+          "slot": 0,
+          "source": "C100000A"
+        }
+      ],
+      "channels": [
+        {
+          "channel": 0,
+          "min": -187712,
+          "max": 177472,
+          "zeros": 562,
+          "clip_flags": 0
+        },
+        {
+          "channel": 1,
+          "min": -229184,
+          "max": 214528,
+          "zeros": 561,
+          "clip_flags": 0
+        },
+        {
+          "channel": 2,
+          "min": -181952,
+          "max": 191104,
+          "zeros": 545,
+          "clip_flags": 0
+        },
+        {
+          "channel": 3,
+          "min": -183744,
+          "max": 160448,
+          "zeros": 481,
+          "clip_flags": 0
+        }
+      ],
+      "first_failure": "OK",
+      "both_slots_free": true,
+      "bad_cursor_not_error_count": [
+        249,
+        3,
+        "00004F00"
+      ]
+    },
+    {
+      "session": 8,
+      "groups": 480250,
+      "packets": 1921,
+      "bytes_checked": 15368000,
+      "first_id": 18220350,
+      "last_id": 18700599,
+      "gap_from_previous_last": 55092,
+      "capture_command_us": 10000133,
+      "drain_us": 5210,
+      "max_check_us": 56,
+      "max_arm_gap_us": 5250,
+      "trace": [
+        {
+          "packet": 1905,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1906,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1907,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1908,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1909,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1910,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1911,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1912,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1913,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1914,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1915,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1916,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1917,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1918,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1919,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1920,
+          "slot": 0,
+          "source": "C100000A"
+        }
+      ],
+      "channels": [
+        {
+          "channel": 0,
+          "min": -159104,
+          "max": 168384,
+          "zeros": 554,
+          "clip_flags": 0
+        },
+        {
+          "channel": 1,
+          "min": -151680,
+          "max": 162752,
+          "zeros": 622,
+          "clip_flags": 0
+        },
+        {
+          "channel": 2,
+          "min": -153088,
+          "max": 151232,
+          "zeros": 602,
+          "clip_flags": 0
+        },
+        {
+          "channel": 3,
+          "min": -155456,
+          "max": 162688,
+          "zeros": 555,
+          "clip_flags": 0
+        }
+      ],
+      "first_failure": "OK",
+      "both_slots_free": true,
+      "bad_cursor_not_error_count": [
+        249,
+        3,
+        "FFFFED00"
+      ]
+    },
+    {
+      "session": 9,
+      "groups": 480250,
+      "packets": 1921,
+      "bytes_checked": 15368000,
+      "first_id": 18755692,
+      "last_id": 19235941,
+      "gap_from_previous_last": 55092,
+      "capture_command_us": 10000134,
+      "drain_us": 5209,
+      "max_check_us": 56,
+      "max_arm_gap_us": 5250,
+      "trace": [
+        {
+          "packet": 1905,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1906,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1907,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1908,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1909,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1910,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1911,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1912,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1913,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1914,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1915,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1916,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1917,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1918,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1919,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1920,
+          "slot": 0,
+          "source": "C100000A"
+        }
+      ],
+      "channels": [
+        {
+          "channel": 0,
+          "min": -158016,
+          "max": 164992,
+          "zeros": 532,
+          "clip_flags": 0
+        },
+        {
+          "channel": 1,
+          "min": -169920,
+          "max": 190016,
+          "zeros": 524,
+          "clip_flags": 0
+        },
+        {
+          "channel": 2,
+          "min": -202304,
+          "max": 164800,
+          "zeros": 545,
+          "clip_flags": 0
+        },
+        {
+          "channel": 3,
+          "min": -156032,
+          "max": 164096,
+          "zeros": 531,
+          "clip_flags": 0
+        }
+      ],
+      "first_failure": "OK",
+      "both_slots_free": true,
+      "bad_cursor_not_error_count": [
+        249,
+        3,
+        "FFFF1440"
+      ]
+    },
+    {
+      "session": 10,
+      "groups": 480250,
+      "packets": 1921,
+      "bytes_checked": 15368000,
+      "first_id": 19291038,
+      "last_id": 19771287,
+      "gap_from_previous_last": 55096,
+      "capture_command_us": 10000130,
+      "drain_us": 5210,
+      "max_check_us": 56,
+      "max_arm_gap_us": 5248,
+      "trace": [
+        {
+          "packet": 1905,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1906,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1907,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1908,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1909,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1910,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1911,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1912,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1913,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1914,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1915,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1916,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1917,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1918,
+          "slot": 0,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1919,
+          "slot": 1,
+          "source": "C1000003"
+        },
+        {
+          "packet": 1920,
+          "slot": 0,
+          "source": "C100000A"
+        }
+      ],
+      "channels": [
+        {
+          "channel": 0,
+          "min": -122112,
+          "max": 143104,
+          "zeros": 678,
+          "clip_flags": 0
+        },
+        {
+          "channel": 1,
+          "min": -163648,
+          "max": 163840,
+          "zeros": 721,
+          "clip_flags": 0
+        },
+        {
+          "channel": 2,
+          "min": -145536,
+          "max": 139456,
+          "zeros": 691,
+          "clip_flags": 0
+        },
+        {
+          "channel": 3,
+          "min": -129728,
+          "max": 134848,
+          "zeros": 686,
+          "clip_flags": 0
+        }
+      ],
+      "first_failure": "OK",
+      "both_slots_free": true,
+      "bad_cursor_not_error_count": [
+        249,
+        3,
+        "0000F340"
+      ]
+    }
+  ],
+  "totals": {
+    "groups": 19202750,
+    "packets": 76811,
+    "bytes_checked": 614488000
+  },
+  "clip_flags_total": 0,
+  "limitations": [
+    "UART summaries and last 16 traces per segment, not full PCM replay",
+    "Times are firmware timer readings, not independently calibrated wall time",
+    "Separate segments must not be concatenated into a continuous duration",
+    "Operator confirmation is separate from automated UART parsing"
+  ],
+  "log_sha256": "6920a852e43f2f6e4f47c2f1a4aefb8c3058ff5d108fc8ec5b4ea80e9cd41fd5"
+}

@@ -1,0 +1,820 @@
+{
+  "scope": "Independent archive reads only; no checker gate, ARM build or board execution",
+  "source_bindings": {
+    "main.c": {
+      "raw_sha256": "629030b95bfbb7b96fd10c89a164860b4dd556dfb697f660cedece87cf61931a",
+      "policy_text_sha256": "cbc92238e86dd7459fc2112bd59e14d7456f13b200b664cd9cad403b3b19a751"
+    },
+    "continuous/main_continuous.c": {
+      "raw_sha256": "5f8ee4ac32dee1eabdf675227f73f0859c1c63dadaf0743c838fad528839f716",
+      "policy_text_sha256": "5f8ee4ac32dee1eabdf675227f73f0859c1c63dadaf0743c838fad528839f716"
+    },
+    "continuous/continuous_core.c": {
+      "raw_sha256": "eb31b75147e25d6d01b95b412700775493b80427279479d31c27331234049325",
+      "policy_text_sha256": "eb31b75147e25d6d01b95b412700775493b80427279479d31c27331234049325"
+    },
+    "continuous/continuous_core.h": {
+      "raw_sha256": "510ee0574c7b54a8c41aab96066dd3a772faa25155e8b761bb38dc15b18bd04a",
+      "policy_text_sha256": "510ee0574c7b54a8c41aab96066dd3a772faa25155e8b761bb38dc15b18bd04a"
+    },
+    "UserConfig.cmake": {
+      "raw_sha256": "f46cdae7660d1385a26c1d5af539588ab17474f5aa4a0f6f3228a0100042d4c9",
+      "policy_text_sha256": "f46cdae7660d1385a26c1d5af539588ab17474f5aa4a0f6f3228a0100042d4c9"
+    },
+    "lscript.ld": {
+      "raw_sha256": "8872fb0af0f6bec969e63d2e5d170c1fc058c782c6924d70697b352aeab55dd4",
+      "policy_text_sha256": "9b42b13290700364a579870b21c022159701b0b78f987b26b44be84bb5baa4ff"
+    },
+    "Empty_applicationExample.cmake": {
+      "raw_sha256": "bca95562ac27da001b5192bb285cb59f11fe5f50474c1a7c19c7d4e4c2d8314e",
+      "policy_text_sha256": "5dcca1dc4d17b35d4cf1d13c1d85a0b4ccf4eadc979ae3bf5f6d525b34527dfa"
+    }
+  },
+  "proposed_vs_actual": {
+    "continuous/main_continuous.c": {
+      "raw_equal": true,
+      "sha256": "5f8ee4ac32dee1eabdf675227f73f0859c1c63dadaf0743c838fad528839f716"
+    },
+    "continuous/continuous_core.c": {
+      "raw_equal": true,
+      "sha256": "eb31b75147e25d6d01b95b412700775493b80427279479d31c27331234049325"
+    },
+    "continuous/continuous_core.h": {
+      "raw_equal": true,
+      "sha256": "510ee0574c7b54a8c41aab96066dd3a772faa25155e8b761bb38dc15b18bd04a"
+    },
+    "UserConfig.cmake": {
+      "raw_equal": true,
+      "sha256": "f46cdae7660d1385a26c1d5af539588ab17474f5aa4a0f6f3228a0100042d4c9"
+    }
+  },
+  "binaries": {
+    "object": {
+      "path": "F:\\NUEC\\review-worktrees\\endurance-5606e1a\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\evidence\\user-build-20260916-2052\\app\\build\\CMakeFiles\\four_mic_endurance.elf.dir\\main.c.obj",
+      "sha256": "4eeb96edabcb79b2b6df29bbdbe2c67ee3532b14a71bfbe08117f4df63a3dc15",
+      "profile": [
+        1162757169,
+        1,
+        300000000,
+        14400000,
+        10000000,
+        480000,
+        10,
+        11,
+        1000000,
+        2000000
+      ],
+      "schedule": [
+        300000000,
+        14400000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000
+      ],
+      "main_address": 0,
+      "main_size": 1548,
+      "schedule_address": 116,
+      "timer_address": 700,
+      "timer_size": 116,
+      "timer_words": [
+        "0xe52de004",
+        "0xe24dd00c",
+        "0xe1a0000d",
+        "0xebfffffe",
+        "0xe89d4004",
+        "0xe1a0328e",
+        "0xe1a01282",
+        "0xe1833da2",
+        "0xe0511002",
+        "0xe1a0c481",
+        "0xe0c3300e",
+        "0xe1a03483",
+        "0xe09cc002",
+        "0xe1a0030c",
+        "0xe1833ba1",
+        "0xe0ae3003",
+        "0xe050000c",
+        "0xe1a01303",
+        "0xe1811d2c",
+        "0xe0c11003",
+        "0xe0900002",
+        "0xe0ae1001",
+        "0xe28f300c",
+        "0xe1c320d0",
+        "0xebfffffe",
+        "0xe28dd00c",
+        "0xe49df004",
+        "0x13de435f",
+        "0x0"
+      ],
+      "main_schedule_and_call_relocations": [
+        {
+          "offset_in_main": 652,
+          "type": 28,
+          "symbol": "usleep"
+        },
+        {
+          "offset_in_main": 836,
+          "type": 28,
+          "symbol": "usleep"
+        },
+        {
+          "offset_in_main": 1228,
+          "type": 28,
+          "symbol": "session_init"
+        },
+        {
+          "offset_in_main": 1264,
+          "type": 28,
+          "symbol": "session_run_config"
+        },
+        {
+          "offset_in_main": 1392,
+          "type": 28,
+          "symbol": "usleep"
+        },
+        {
+          "offset_in_main": 1480,
+          "type": 28,
+          "symbol": "usleep"
+        }
+      ]
+    },
+    "elf": {
+      "path": "F:\\NUEC\\review-worktrees\\endurance-5606e1a\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\evidence\\user-build-20260916-2052\\app\\build\\four_mic_endurance.elf",
+      "sha256": "75c7e5e2203ed1ba019c83a1123ef79eff0c877286d722eea5b8d9a275c76449",
+      "profile": [
+        1162757169,
+        1,
+        300000000,
+        14400000,
+        10000000,
+        480000,
+        10,
+        11,
+        1000000,
+        2000000
+      ],
+      "schedule": [
+        300000000,
+        14400000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000,
+        10000000,
+        480000
+      ],
+      "main_address": 1073200,
+      "main_size": 1548,
+      "schedule_address": 1074992,
+      "timer_address": 1050468,
+      "timer_size": 116,
+      "timer_words": [
+        "0xe52de004",
+        "0xe24dd00c",
+        "0xe1a0000d",
+        "0xeb000861",
+        "0xe89d4004",
+        "0xe1a0328e",
+        "0xe1a01282",
+        "0xe1833da2",
+        "0xe0511002",
+        "0xe1a0c481",
+        "0xe0c3300e",
+        "0xe1a03483",
+        "0xe09cc002",
+        "0xe1a0030c",
+        "0xe1833ba1",
+        "0xe0ae3003",
+        "0xe050000c",
+        "0xe1a01303",
+        "0xe1811d2c",
+        "0xe0c11003",
+        "0xe0900002",
+        "0xe0ae1001",
+        "0xe28f300c",
+        "0xe1c320d0",
+        "0xfa0010c2",
+        "0xe28dd00c",
+        "0xe49df004",
+        "0x13de435f",
+        "0x0"
+      ],
+      "actual_main_calls_to_session_run_config": [
+        {
+          "offset_in_main": 1264,
+          "target": 1052568
+        }
+      ],
+      "main_literals_equal_schedule_address": [],
+      "main_movw_movt_addresses": [
+        {
+          "register": 2,
+          "movw_offset": 0,
+          "movt_offset": 16,
+          "movw_word": "0xe3062b0c",
+          "movt_word": "0xe3402010",
+          "assembled_address": 1075980
+        },
+        {
+          "register": 1,
+          "movw_offset": 4,
+          "movt_offset": 24,
+          "movw_word": "0xe3061b18",
+          "movt_word": "0xe3401010",
+          "assembled_address": 1075992
+        },
+        {
+          "register": 0,
+          "movw_offset": 8,
+          "movt_offset": 28,
+          "movw_word": "0xe3060b24",
+          "movt_word": "0xe3400010",
+          "assembled_address": 1076004
+        },
+        {
+          "register": 4,
+          "movw_offset": 36,
+          "movt_offset": 44,
+          "movw_word": "0xe3034890",
+          "movt_word": "0xe3404011",
+          "assembled_address": 1128592
+        },
+        {
+          "register": 0,
+          "movw_offset": 60,
+          "movt_offset": 68,
+          "movw_word": "0xe3060b50",
+          "movt_word": "0xe3400010",
+          "assembled_address": 1076048
+        },
+        {
+          "register": 3,
+          "movw_offset": 100,
+          "movt_offset": 108,
+          "movw_word": "0xe3083480",
+          "movt_word": "0xe340301e",
+          "assembled_address": 2000000
+        },
+        {
+          "register": 2,
+          "movw_offset": 0,
+          "movt_offset": 116,
+          "movw_word": "0xe3062b0c",
+          "movt_word": "0xe3402007",
+          "assembled_address": 486156
+        },
+        {
+          "register": 5,
+          "movw_offset": 96,
+          "movt_offset": 120,
+          "movw_word": "0xe3045240",
+          "movt_word": "0xe340500f",
+          "assembled_address": 1000000
+        },
+        {
+          "register": 3,
+          "movw_offset": 132,
+          "movt_offset": 152,
+          "movw_word": "0xe3093680",
+          "movt_word": "0xe3403098",
+          "assembled_address": 10000000
+        },
+        {
+          "register": 2,
+          "movw_offset": 0,
+          "movt_offset": 156,
+          "movw_word": "0xe3062b0c",
+          "movt_word": "0xe34020db",
+          "assembled_address": 14379788
+        },
+        {
+          "register": 1,
+          "movw_offset": 4,
+          "movt_offset": 160,
+          "movw_word": "0xe3061b18",
+          "movt_word": "0xe34111e1",
+          "assembled_address": 299985688
+        },
+        {
+          "register": 0,
+          "movw_offset": 148,
+          "movt_offset": 164,
+          "movw_word": "0xe3060b94",
+          "movt_word": "0xe3400010",
+          "assembled_address": 1076116
+        },
+        {
+          "register": 0,
+          "movw_offset": 172,
+          "movt_offset": 176,
+          "movw_word": "0xe3060c0c",
+          "movt_word": "0xe3400010",
+          "assembled_address": 1076236
+        },
+        {
+          "register": 4,
+          "movw_offset": 192,
+          "movt_offset": 200,
+          "movw_word": "0xe3064a98",
+          "movt_word": "0xe3404010",
+          "assembled_address": 1075864
+        },
+        {
+          "register": 6,
+          "movw_offset": 196,
+          "movt_offset": 204,
+          "movw_word": "0xe30c6110",
+          "movt_word": "0xe3406010",
+          "assembled_address": 1098000
+        },
+        {
+          "register": 0,
+          "movw_offset": 276,
+          "movt_offset": 292,
+          "movw_word": "0xe3060e00",
+          "movt_word": "0xe3400010",
+          "assembled_address": 1076736
+        },
+        {
+          "register": 0,
+          "movw_offset": 300,
+          "movt_offset": 312,
+          "movw_word": "0xe3060e48",
+          "movt_word": "0xe3400010",
+          "assembled_address": 1076808
+        },
+        {
+          "register": 5,
+          "movw_offset": 332,
+          "movt_offset": 340,
+          "movw_word": "0xe30c5880",
+          "movt_word": "0xe3405010",
+          "assembled_address": 1099904
+        },
+        {
+          "register": 0,
+          "movw_offset": 388,
+          "movt_offset": 396,
+          "movw_word": "0xe30c0110",
+          "movt_word": "0xe3400010",
+          "assembled_address": 1098000
+        },
+        {
+          "register": 2,
+          "movw_offset": 428,
+          "movt_offset": 432,
+          "movw_word": "0xe3042240",
+          "movt_word": "0xe340200f",
+          "assembled_address": 1000000
+        },
+        {
+          "register": 8,
+          "movw_offset": 392,
+          "movt_offset": 440,
+          "movw_word": "0xe30c8110",
+          "movt_word": "0xe3408010",
+          "assembled_address": 1098000
+        },
+        {
+          "register": 9,
+          "movw_offset": 400,
+          "movt_offset": 444,
+          "movw_word": "0xe3089480",
+          "movt_word": "0xe340901e",
+          "assembled_address": 2000000
+        },
+        {
+          "register": 4,
+          "movw_offset": 628,
+          "movt_offset": 636,
+          "movw_word": "0xe30846a0",
+          "movt_word": "0xe3404001",
+          "assembled_address": 100000
+        },
+        {
+          "register": 0,
+          "movw_offset": 632,
+          "movt_offset": 640,
+          "movw_word": "0xe3060ea8",
+          "movt_word": "0xe3400010",
+          "assembled_address": 1076904
+        },
+        {
+          "register": 6,
+          "movw_offset": 660,
+          "movt_offset": 668,
+          "movw_word": "0xe30c6110",
+          "movt_word": "0xe3406010",
+          "assembled_address": 1098000
+        },
+        {
+          "register": 1,
+          "movw_offset": 4,
+          "movt_offset": 672,
+          "movw_word": "0xe3061b18",
+          "movt_word": "0xe3441120",
+          "assembled_address": 1092643608
+        },
+        {
+          "register": 4,
+          "movw_offset": 688,
+          "movt_offset": 692,
+          "movw_word": "0x13064aa8",
+          "movt_word": "0x13404010",
+          "assembled_address": 1075880
+        },
+        {
+          "register": 4,
+          "movw_offset": 768,
+          "movt_offset": 772,
+          "movw_word": "0xe3064ab4",
+          "movt_word": "0xe3404010",
+          "assembled_address": 1075892
+        },
+        {
+          "register": 4,
+          "movw_offset": 812,
+          "movt_offset": 820,
+          "movw_word": "0xe30846a0",
+          "movt_word": "0xe3404001",
+          "assembled_address": 100000
+        },
+        {
+          "register": 0,
+          "movw_offset": 816,
+          "movt_offset": 824,
+          "movw_word": "0xe3060e88",
+          "movt_word": "0xe3400010",
+          "assembled_address": 1076872
+        },
+        {
+          "register": 0,
+          "movw_offset": 816,
+          "movt_offset": 872,
+          "movw_word": "0xe3060e88",
+          "movt_word": "0xe3440040",
+          "assembled_address": 1077964424
+        },
+        {
+          "register": 4,
+          "movw_offset": 936,
+          "movt_offset": 940,
+          "movw_word": "0x13064ad8",
+          "movt_word": "0x13404010",
+          "assembled_address": 1075928
+        },
+        {
+          "register": 1,
+          "movw_offset": 1092,
+          "movt_offset": 1096,
+          "movw_word": "0xe3081480",
+          "movt_word": "0xe340101e",
+          "assembled_address": 2000000
+        },
+        {
+          "register": 3,
+          "movw_offset": 1144,
+          "movt_offset": 1148,
+          "movw_word": "0xe3063dac",
+          "movt_word": "0xe3403010",
+          "assembled_address": 1076652
+        },
+        {
+          "register": 5,
+          "movw_offset": 1160,
+          "movt_offset": 1164,
+          "movw_word": "0xe30c5880",
+          "movt_word": "0xe3405010",
+          "assembled_address": 1099904
+        },
+        {
+          "register": 10,
+          "movw_offset": 1168,
+          "movt_offset": 1180,
+          "movw_word": "0xe306ac6c",
+          "movt_word": "0xe340a010",
+          "assembled_address": 1076332
+        },
+        {
+          "register": 11,
+          "movw_offset": 1176,
+          "movt_offset": 1184,
+          "movw_word": "0xe304b240",
+          "movt_word": "0xe340b00f",
+          "assembled_address": 1000000
+        },
+        {
+          "register": 0,
+          "movw_offset": 1336,
+          "movt_offset": 1344,
+          "movw_word": "0xe3060cb0",
+          "movt_word": "0xe3400010",
+          "assembled_address": 1076400
+        },
+        {
+          "register": 4,
+          "movw_offset": 1340,
+          "movt_offset": 1348,
+          "movw_word": "0xe30846a0",
+          "movt_word": "0xe3404001",
+          "assembled_address": 100000
+        },
+        {
+          "register": 0,
+          "movw_offset": 1356,
+          "movt_offset": 1368,
+          "movw_word": "0xe3060d14",
+          "movt_word": "0xe3400010",
+          "assembled_address": 1076500
+        },
+        {
+          "register": 0,
+          "movw_offset": 1376,
+          "movt_offset": 1380,
+          "movw_word": "0xe3060d64",
+          "movt_word": "0xe3400010",
+          "assembled_address": 1076580
+        },
+        {
+          "register": 4,
+          "movw_offset": 1400,
+          "movt_offset": 1404,
+          "movw_word": "0xe3064b00",
+          "movt_word": "0xe3404010",
+          "assembled_address": 1075968
+        },
+        {
+          "register": 4,
+          "movw_offset": 1412,
+          "movt_offset": 1416,
+          "movw_word": "0xe3064ad0",
+          "movt_word": "0xe3404010",
+          "assembled_address": 1075920
+        },
+        {
+          "register": 4,
+          "movw_offset": 1500,
+          "movt_offset": 1504,
+          "movw_word": "0xe3064ae4",
+          "movt_word": "0xe3404010",
+          "assembled_address": 1075940
+        },
+        {
+          "register": 2,
+          "movw_offset": 1520,
+          "movt_offset": 1524,
+          "movw_word": "0x930626bc",
+          "movt_word": "0x93402010",
+          "assembled_address": 1074876
+        },
+        {
+          "register": 4,
+          "movw_offset": 1536,
+          "movt_offset": 1540,
+          "movw_word": "0xe30648b0",
+          "movt_word": "0xe3404010",
+          "assembled_address": 1075376
+        }
+      ],
+      "schedule_callsite_words": [
+        {
+          "offset": 1100,
+          "word": "0xe1530001"
+        },
+        {
+          "offset": 1104,
+          "word": "0xe2d22000"
+        },
+        {
+          "offset": 1108,
+          "word": "0x2a00004a"
+        },
+        {
+          "offset": 1112,
+          "word": "0xe3a01002"
+        },
+        {
+          "offset": 1116,
+          "word": "0xe1a0000a"
+        },
+        {
+          "offset": 1120,
+          "word": "0xebfff47d"
+        },
+        {
+          "offset": 1124,
+          "word": "0xe3100002"
+        },
+        {
+          "offset": 1128,
+          "word": "0xe3a01002"
+        },
+        {
+          "offset": 1132,
+          "word": "0xaffffe5"
+        },
+        {
+          "offset": 1136,
+          "word": "0xebfff00b"
+        },
+        {
+          "offset": 1140,
+          "word": "0xe59fe120"
+        },
+        {
+          "offset": 1144,
+          "word": "0xe3063dac"
+        },
+        {
+          "offset": 1148,
+          "word": "0xe3403010"
+        },
+        {
+          "offset": 1152,
+          "word": "0xe28dc020"
+        },
+        {
+          "offset": 1156,
+          "word": "0xe58d3014"
+        },
+        {
+          "offset": 1160,
+          "word": "0xe30c5880"
+        },
+        {
+          "offset": 1164,
+          "word": "0xe3405010"
+        },
+        {
+          "offset": 1168,
+          "word": "0xe306ac6c"
+        },
+        {
+          "offset": 1172,
+          "word": "0xe8be000f"
+        },
+        {
+          "offset": 1176,
+          "word": "0xe304b240"
+        },
+        {
+          "offset": 1180,
+          "word": "0xe340a010"
+        },
+        {
+          "offset": 1184,
+          "word": "0xe340b00f"
+        },
+        {
+          "offset": 1188,
+          "word": "0xe1a04005"
+        },
+        {
+          "offset": 1192,
+          "word": "0xe3a07000"
+        },
+        {
+          "offset": 1196,
+          "word": "0xe8ac000f"
+        },
+        {
+          "offset": 1200,
+          "word": "0xe8be000f"
+        },
+        {
+          "offset": 1204,
+          "word": "0xe1a0900e"
+        },
+        {
+          "offset": 1208,
+          "word": "0xe8ac000f"
+        },
+        {
+          "offset": 1212,
+          "word": "0xe4993004"
+        },
+        {
+          "offset": 1216,
+          "word": "0xe58c3000"
+        },
+        {
+          "offset": 1220,
+          "word": "0xe1a00004"
+        },
+        {
+          "offset": 1224,
+          "word": "0xe2878001"
+        },
+        {
+          "offset": 1228,
+          "word": "0xebffea7f"
+        },
+        {
+          "offset": 1232,
+          "word": "0xe1c920d0"
+        },
+        {
+          "offset": 1236,
+          "word": "0xe1a01007"
+        },
+        {
+          "offset": 1240,
+          "word": "0xe1a0000a"
+        },
+        {
+          "offset": 1244,
+          "word": "0xe5868768"
+        },
+        {
+          "offset": 1248,
+          "word": "0xebffed1a"
+        },
+        {
+          "offset": 1252,
+          "word": "0xe1a02009"
+        },
+        {
+          "offset": 1256,
+          "word": "0xe28d1020"
+        },
+        {
+          "offset": 1260,
+          "word": "0xe1a00004"
+        },
+        {
+          "offset": 1264,
+          "word": "0xebffea9c"
+        },
+        {
+          "offset": 1268,
+          "word": "0xe2503000"
+        },
+        {
+          "offset": 1272,
+          "word": "0x1a00003b"
+        },
+        {
+          "offset": 1276,
+          "word": "0xe3570000"
+        },
+        {
+          "offset": 1280,
+          "word": "0xa000026"
+        },
+        {
+          "offset": 1284,
+          "word": "0xe5943068"
+        },
+        {
+          "offset": 1288,
+          "word": "0xe1a00007"
+        },
+        {
+          "offset": 1292,
+          "word": "0xe5142198"
+        },
+        {
+          "offset": 1296,
+          "word": "0xe1a01004"
+        },
+        {
+          "offset": 1300,
+          "word": "0xe1520003"
+        }
+      ]
+    }
+  }
+}
