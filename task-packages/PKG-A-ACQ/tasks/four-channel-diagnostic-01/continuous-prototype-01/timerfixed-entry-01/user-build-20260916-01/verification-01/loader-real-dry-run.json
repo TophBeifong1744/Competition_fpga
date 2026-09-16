@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "F:/AMD/2025.2/tps/win64/git-2.50.0/mingw64/bin/tclsh86.exe"
+  ],
+  "stdin": "proc connect {args} {error \"FORBIDDEN hardware command\"}\nproc targets {args} {error \"FORBIDDEN hardware command\"}\nproc rst {args} {error \"FORBIDDEN hardware command\"}\nproc fpga {args} {error \"FORBIDDEN hardware command\"}\nproc dow {args} {error \"FORBIDDEN hardware command\"}\nproc con {args} {error \"FORBIDDEN hardware command\"}\nif {[catch {\nsource {E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/load_timerfixed.tcl}\nc1_timerfixed_load {C:/Users/Toph Beifong/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe} {F:/College/verilog_digital_system/Vitis/four_mic_continuous} {F:/College/verilog_digital_system/Vitis/continuous_platform} {F:/AMD/2025.2/Vitis/gnu/aarch32/nt/gcc-arm-none-eabi/bin} {E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/user-build-20260916-01/records}\n} message]} {puts stderr $message; exit 1}\nexit 0\n",
+  "returncode": 0,
+  "stdout": "ARTIFACT_CHECK_PASS_NOT_BOARD E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\timerfixed-entry-01\\user-build-20260916-01\\records\\20260916_183019_load_a85a38a914\nDRY_RUN: no connect/reset/program/download\n",
+  "stderr": "",
+  "board_test": "NOT_RUN"
+}

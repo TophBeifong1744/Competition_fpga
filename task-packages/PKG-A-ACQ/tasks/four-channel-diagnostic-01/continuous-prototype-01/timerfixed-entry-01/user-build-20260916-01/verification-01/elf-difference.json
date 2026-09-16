@@ -1,0 +1,68 @@
+{
+  "old_sha256": "ebc576e2bfe87ca45c06fb62359babc36f8d474505a97ff6d121336d2a3c3fa3",
+  "new_sha256": "726a91fe19fd9b9e67cca6f3c8668bf484df92d1bbb2ec2e5f2619cc0237324c",
+  "sections": [
+    {
+      "section": ".rodata",
+      "old_size": 2440,
+      "new_size": 2440,
+      "contents_equal": false,
+      "old_sha256": "69c3eb817ce34016dad2fd90ce6b472ab4a28c62f022138157c165adadb83f10",
+      "new_sha256": "b124a3132193d49902f4688930e8f664416896befb8d0147d4380da41accc54a",
+      "changed_offsets": [
+        936,
+        937,
+        939,
+        940,
+        942,
+        943,
+        953
+      ],
+      "contexts": [
+        {
+          "offset": 936,
+          "old": "b'ce\\x00\\x00dma-config\\x00\\x0020:57:08\\x00\\x00\\x00\\x00Sep 15 2026\\x00'",
+          "new": "b'ce\\x00\\x00dma-config\\x00\\x0018:23:50\\x00\\x00\\x00\\x00Sep 16 2026\\x00'"
+        },
+        {
+          "offset": 937,
+          "old": "b'e\\x00\\x00dma-config\\x00\\x0020:57:08\\x00\\x00\\x00\\x00Sep 15 2026\\x00\\r'",
+          "new": "b'e\\x00\\x00dma-config\\x00\\x0018:23:50\\x00\\x00\\x00\\x00Sep 16 2026\\x00\\r'"
+        },
+        {
+          "offset": 939,
+          "old": "b'\\x00dma-config\\x00\\x0020:57:08\\x00\\x00\\x00\\x00Sep 15 2026\\x00\\r\\nF'",
+          "new": "b'\\x00dma-config\\x00\\x0018:23:50\\x00\\x00\\x00\\x00Sep 16 2026\\x00\\r\\nF'"
+        },
+        {
+          "offset": 940,
+          "old": "b'dma-config\\x00\\x0020:57:08\\x00\\x00\\x00\\x00Sep 15 2026\\x00\\r\\nFO'",
+          "new": "b'dma-config\\x00\\x0018:23:50\\x00\\x00\\x00\\x00Sep 16 2026\\x00\\r\\nFO'"
+        },
+        {
+          "offset": 942,
+          "old": "b'a-config\\x00\\x0020:57:08\\x00\\x00\\x00\\x00Sep 15 2026\\x00\\r\\nFOUR'",
+          "new": "b'a-config\\x00\\x0018:23:50\\x00\\x00\\x00\\x00Sep 16 2026\\x00\\r\\nFOUR'"
+        },
+        {
+          "offset": 943,
+          "old": "b'-config\\x00\\x0020:57:08\\x00\\x00\\x00\\x00Sep 15 2026\\x00\\r\\nFOUR '",
+          "new": "b'-config\\x00\\x0018:23:50\\x00\\x00\\x00\\x00Sep 16 2026\\x00\\r\\nFOUR '"
+        },
+        {
+          "offset": 953,
+          "old": "b'0:57:08\\x00\\x00\\x00\\x00Sep 15 2026\\x00\\r\\nFOUR CONTINUOUS'",
+          "new": "b'8:23:50\\x00\\x00\\x00\\x00Sep 16 2026\\x00\\r\\nFOUR CONTINUOUS'"
+        }
+      ]
+    },
+    {
+      "section": ".text",
+      "old_size": 25756,
+      "new_size": 25756,
+      "contents_equal": false,
+      "old_sha256": "096194ef408ee03835b5e4b80555a83cfbb2d6d0cd714ae464d5710192c2e9f6",
+      "new_sha256": "725b4dc56ae8d97712832067609283eded79500374d3868c97a978c3adec2c2a"
+    }
+  ]
+}

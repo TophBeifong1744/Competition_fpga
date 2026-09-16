@@ -1,0 +1,31 @@
+COMMAND: & 'C:/Users/Toph Beifong/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' -B -m unittest discover -s 'E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01' -p test_entry.py -v
+EXIT: 1
+test_changed_divisor_rejected (test_entry.EntryTests.test_changed_divisor_rejected) ... ok
+test_compiler_config_difference_detected (test_entry.EntryTests.test_compiler_config_difference_detected) ... ok
+test_cpu_frequency_math (test_entry.EntryTests.test_cpu_frequency_math) ... ok
+test_duplicate_download_rejected (test_entry.EntryTests.test_duplicate_download_rejected) ... ok
+test_fixed_real_object_elf (test_entry.EntryTests.test_fixed_real_object_elf) ... ok
+test_missing_init_rejected (test_entry.EntryTests.test_missing_init_rejected) ... ok
+test_missing_source_rejected (test_entry.EntryTests.test_missing_source_rejected) ... ok
+test_mutated_compiled_base_rejected (test_entry.EntryTests.test_mutated_compiled_base_rejected) ... ok
+test_old_elf_path_rejected (test_entry.EntryTests.test_old_elf_path_rejected) ... ok
+test_old_expression_rejected (test_entry.EntryTests.test_old_expression_rejected) ... ok
+test_old_real_elf_rejected (test_entry.EntryTests.test_old_real_elf_rejected) ... ok
+test_programming_disabled_rejected (test_entry.EntryTests.test_programming_disabled_rejected) ... ok
+test_valid_load_paths (test_entry.EntryTests.test_valid_load_paths) ... FAIL
+test_wrong_bit_path_rejected (test_entry.EntryTests.test_wrong_bit_path_rejected) ... ok
+test_wrong_core_rejected (test_entry.EntryTests.test_wrong_core_rejected) ... ok
+
+======================================================================
+FAIL: test_valid_load_paths (test_entry.EntryTests.test_valid_load_paths)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\continuous-prototype-01\timerfixed-entry-01\test_entry.py", line 72, in test_valid_load_paths
+    self.assertEqual(Path(c.launch_paths(app,self.root)['elf']),app/'build/four_mic_continuous.elf')
+AssertionError: Windo[13 chars]ers/Toph Beifong/AppData/Local/Temp/tmprdpp85d[48 chars]elf') != Windo[13 chars]ers/TOPHBE~1/AppData/Local/Temp/tmprdpp85do/fo[44 chars]elf')
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.171s
+
+FAILED (failures=1)
+
