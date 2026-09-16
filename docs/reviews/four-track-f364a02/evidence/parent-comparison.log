@@ -1,0 +1,36 @@
+{
+  "status": "NUMERIC_AND_DISCRETE_REPLAY_PASS",
+  "statistics": {
+    "float_values": 4580,
+    "discrete_values": 8972,
+    "max_abs_error": 2.842170943040401e-14
+  },
+  "tolerance": {
+    "atol": 1e-10,
+    "rtol": 1e-10
+  },
+  "file_bytes_equal": {
+    "center-frames.json": false,
+    "quiet-frames.json": false,
+    "summary.json": false
+  },
+  "reference_environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64"
+  },
+  "new_environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64"
+  },
+  "excluded_from_value_comparison": [
+    "elapsed_host_seconds",
+    "environment",
+    "checkout_head",
+    "additional verification-only source hashes"
+  ],
+  "note": "Input/source hashes exact; all frame/recording values checked, not only counts. No acoustic acceptance."
+}

@@ -1,0 +1,159 @@
+{
+  "status": "A_INDEPENDENT_LIMITED_NUMERICAL_CHECK_PASS",
+  "records": [
+    {
+      "label": "center",
+      "max_weight_error": 0.0,
+      "first_nonzero_beam_reference_row": 12289,
+      "files": [
+        {
+          "file": "center-interval00-single-raw.wav",
+          "codes": 31984,
+          "max_code_error": 0,
+          "author_bytes_equal": true
+        },
+        {
+          "file": "center-interval00-single-preview.wav",
+          "codes": 31984,
+          "max_code_error": 0,
+          "author_bytes_equal": true
+        },
+        {
+          "file": "center-interval00-manual-raw.wav",
+          "codes": 31984,
+          "max_code_error": 0,
+          "author_bytes_equal": true
+        },
+        {
+          "file": "center-interval00-manual-preview.wav",
+          "codes": 31984,
+          "max_code_error": 0,
+          "author_bytes_equal": true
+        },
+        {
+          "file": "center-interval00-automatic-raw.wav",
+          "codes": 31984,
+          "max_code_error": 0,
+          "author_bytes_equal": true
+        },
+        {
+          "file": "center-interval00-automatic-preview.wav",
+          "codes": 31984,
+          "max_code_error": 0,
+          "author_bytes_equal": true
+        }
+      ]
+    },
+    {
+      "label": "quiet",
+      "max_weight_error": 0.0,
+      "first_nonzero_beam_reference_row": null,
+      "files": [
+        {
+          "file": "quiet-interval00-single-raw.wav",
+          "codes": 31984,
+          "max_code_error": 0,
+          "author_bytes_equal": true
+        },
+        {
+          "file": "quiet-interval00-single-preview.wav",
+          "codes": 31984,
+          "max_code_error": 0,
+          "author_bytes_equal": true
+        },
+        {
+          "file": "quiet-interval00-manual-raw.wav",
+          "codes": 31984,
+          "max_code_error": 0,
+          "author_bytes_equal": true
+        },
+        {
+          "file": "quiet-interval00-manual-preview.wav",
+          "codes": 31984,
+          "max_code_error": 0,
+          "author_bytes_equal": true
+        },
+        {
+          "file": "quiet-interval00-automatic-raw.wav",
+          "codes": 31984,
+          "max_code_error": 0,
+          "author_bytes_equal": true
+        },
+        {
+          "file": "quiet-interval00-automatic-preview.wav",
+          "codes": 31984,
+          "max_code_error": 0,
+          "author_bytes_equal": true
+        }
+      ]
+    }
+  ],
+  "pcm_values": 383808,
+  "old_regressions": {
+    "tests": 2,
+    "expected_failures": 2,
+    "weight_jumps": [
+      0.25,
+      0.25
+    ]
+  },
+  "fresh_parent_bridge": [
+    {
+      "label": "center",
+      "max_delay_error": 8.881784197001252e-16,
+      "pcm_exact": true
+    },
+    {
+      "label": "quiet",
+      "max_delay_error": 0.0,
+      "pcm_exact": true
+    }
+  ],
+  "overwrite_refusals": [
+    {
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\ss-four-track-review-0916\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\audio-01\\reproduce.py",
+        "--out",
+        "E:\\ss-four-track-review-0916-output\\merged-path-run01\\audio-run01"
+      ],
+      "returncode": 1
+    },
+    {
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\ss-four-track-review-0916\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\audio-01\\render_three.py",
+        "--out",
+        "E:\\ss-four-track-review-0916-output\\merged-path-run01\\audio-run01\\audio"
+      ],
+      "returncode": 1
+    },
+    {
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\ss-four-track-review-0916\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\audio-01\\audit.py",
+        "--directory",
+        "E:\\ss-four-track-review-0916-output\\merged-path-run01\\audio-run01\\audio",
+        "--out",
+        "E:\\ss-four-track-review-0916-output\\merged-path-run01\\audio-run01\\audit.json"
+      ],
+      "returncode": 1
+    },
+    {
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\ss-four-track-review-0916\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\reproduce.py",
+        "--out",
+        "E:\\ss-four-track-review-0916-output\\merged-path-run01\\parent-run01"
+      ],
+      "returncode": 1
+    }
+  ],
+  "author_package_unchanged": true,
+  "original_outputs_unchanged": true,
+  "limits": "No target presence, subjective listening by A, acoustic benefit, real-time, board or H3 approval."
+}

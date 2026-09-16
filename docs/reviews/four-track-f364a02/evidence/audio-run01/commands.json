@@ -1,0 +1,61 @@
+[
+  {
+    "label": "audio-tests",
+    "command": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "E:\\ss-four-track-review-0916\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\audio-01\\test_audio.py",
+      "-v"
+    ],
+    "cwd": "E:\\ss-four-track-review-0916",
+    "returncode": 0
+  },
+  {
+    "label": "tracker-adapter-tests",
+    "command": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "E:\\ss-four-track-review-0916\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\test_tracking.py",
+      "-v"
+    ],
+    "cwd": "E:\\ss-four-track-review-0916",
+    "returncode": 0
+  },
+  {
+    "label": "manual-render-tests",
+    "command": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "E:\\ss-four-track-review-0916\\task-packages\\PKG-B-ALG\\tasks\\real-audio-compare-01\\test_render_audio.py",
+      "-v"
+    ],
+    "cwd": "E:\\ss-four-track-review-0916",
+    "returncode": 0
+  },
+  {
+    "label": "render",
+    "command": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "E:\\ss-four-track-review-0916\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\audio-01\\render_three.py",
+      "--out",
+      "E:\\ss-four-track-review-0916-output\\merged-path-run01\\audio-run01\\audio"
+    ],
+    "cwd": "E:\\ss-four-track-review-0916",
+    "returncode": 0
+  },
+  {
+    "label": "audit",
+    "command": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "E:\\ss-four-track-review-0916\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\audio-01\\audit.py",
+      "--directory",
+      "E:\\ss-four-track-review-0916-output\\merged-path-run01\\audio-run01\\audio",
+      "--out",
+      "E:\\ss-four-track-review-0916-output\\merged-path-run01\\audio-run01\\audit.json"
+    ],
+    "cwd": "E:\\ss-four-track-review-0916",
+    "returncode": 0
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "label": "integrity",
+    "command": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/verify_package.py"
+    ],
+    "cwd": "E:\\ss-four-track-review-0916",
+    "started_utc": "2026-09-16T13:40:52.991854+00:00",
+    "exit_code": 0
+  },
+  {
+    "label": "audio",
+    "command": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/reproduce.py",
+      "--out",
+      "E:\\ss-four-track-review-0916-output\\merged-path-run01\\audio-run01"
+    ],
+    "cwd": "E:\\ss-four-track-review-0916",
+    "started_utc": "2026-09-16T13:40:53.175578+00:00",
+    "exit_code": 0
+  },
+  {
+    "label": "parent",
+    "command": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "task-packages/PKG-B-ALG/tasks/four-channel-track-01/reproduce.py",
+      "--out",
+      "E:\\ss-four-track-review-0916-output\\merged-path-run01\\parent-run01"
+    ],
+    "cwd": "E:\\ss-four-track-review-0916",
+    "started_utc": "2026-09-16T13:40:58.752984+00:00",
+    "exit_code": 0
+  },
+  {
+    "label": "parent-comparison",
+    "command": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "task-packages/PKG-B-ALG/tasks/four-channel-track-01/verify.py",
+      "--compare",
+      "E:\\ss-four-track-review-0916-output\\merged-path-run01\\parent-run01\\replay"
+    ],
+    "cwd": "E:\\ss-four-track-review-0916",
+    "started_utc": "2026-09-16T13:41:01.371445+00:00",
+    "exit_code": 0
+  },
+  {
+    "label": "saved-comparison",
+    "command": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/verify_package.py",
+      "--compare-saved"
+    ],
+    "cwd": "E:\\ss-four-track-review-0916",
+    "started_utc": "2026-09-16T13:41:01.445323+00:00",
+    "exit_code": 0
+  },
+  {
+    "label": "independent",
+    "command": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "E:\\ss-four-track-review-0916\\docs\\reviews\\four-track-f364a02\\independent_check.py",
+      "--repo",
+      "E:\\ss-four-track-review-0916",
+      "--runs",
+      "E:\\ss-four-track-review-0916-output\\merged-path-run01",
+      "--out",
+      "E:\\ss-four-track-review-0916-output\\merged-path-run01\\independent01"
+    ],
+    "cwd": "E:\\ss-four-track-review-0916",
+    "started_utc": "2026-09-16T13:41:01.615796+00:00",
+    "exit_code": 0
+  },
+  {
+    "label": "integrity-after",
+    "command": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/verify_package.py"
+    ],
+    "cwd": "E:\\ss-four-track-review-0916",
+    "started_utc": "2026-09-16T13:41:07.376944+00:00",
+    "exit_code": 0
+  }
+]

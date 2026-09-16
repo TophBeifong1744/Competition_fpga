@@ -1,0 +1,26 @@
+test_actual_frames_and_ready_time (__main__.RealInputContract.test_actual_frames_and_ready_time) ... ok
+test_gap_and_large_ids_on_copy_of_real_pcm (__main__.RealInputContract.test_gap_and_large_ids_on_copy_of_real_pcm) ... ok
+test_non_acoustic_input_rejected (__main__.RealInputContract.test_non_acoustic_input_rejected) ... ok
+test_acquisition_drift_not_stable (__main__.TrackingContract.test_acquisition_drift_not_stable) ... ok
+test_acquisition_uses_five_frames (__main__.TrackingContract.test_acquisition_uses_five_frames) ... ok
+test_cone_inclusive_and_outside (__main__.TrackingContract.test_cone_inclusive_and_outside) ... ok
+test_default_contract_unchanged (__main__.TrackingContract.test_default_contract_unchanged) ... ok
+test_delay_sign_algebra_no_waveform_simulation (__main__.TrackingContract.test_delay_sign_algebra_no_waveform_simulation) ... ok
+test_direction_cannot_be_used_before_frame_ready (__main__.TrackingContract.test_direction_cannot_be_used_before_frame_ready) ... ok
+test_expiry_without_new_frames_for_locked_and_hold (__main__.TrackingContract.test_expiry_without_new_frames_for_locked_and_hold) ... ok
+test_gap_resets_tracker (__main__.TrackingContract.test_gap_resets_tracker) ... ok
+test_hold_is_not_fresh_and_preserves_old_direction (__main__.TrackingContract.test_hold_is_not_fresh_and_preserves_old_direction) ... ok
+test_horizontal_assumption_and_no_production_acceptance (__main__.TrackingContract.test_horizontal_assumption_and_no_production_acceptance) ... ok
+test_interval_reset_before_first_complete_frame (__main__.TrackingContract.test_interval_reset_before_first_complete_frame) ... ok
+test_invalid_candidates_fail_closed (__main__.TrackingContract.test_invalid_candidates_fail_closed) ... ok
+test_invalid_clock_does_not_reset_good_state (__main__.TrackingContract.test_invalid_clock_does_not_reset_good_state) ... ok
+test_jump_holds_without_chasing (__main__.TrackingContract.test_jump_holds_without_chasing) ... ok
+test_rejection_breaks_acquisition (__main__.TrackingContract.test_rejection_breaks_acquisition) ... ok
+test_returned_route_cannot_mutate_tracker (__main__.TrackingContract.test_returned_route_cannot_mutate_tracker) ... ok
+test_wrong_interval_and_explicit_reset (__main__.TrackingContract.test_wrong_interval_and_explicit_reset) ... ok
+test_zero_pcm_rejected_before_tracker (__main__.TrackingContract.test_zero_pcm_rejected_before_tracker) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.382s
+
+OK

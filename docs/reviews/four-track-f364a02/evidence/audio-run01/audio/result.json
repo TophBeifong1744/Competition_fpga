@@ -1,0 +1,1887 @@
+{
+  "status": "AUTHOR_DIAGNOSTIC_AUDIO_ONLY",
+  "parent_commit": "e93169d526e9e94a98947c86d2c92bcab3c46a2e",
+  "config": {
+    "version": "four-channel-auto-audio-0.1",
+    "manual_azimuth_deg": 0,
+    "fade_samples": 480,
+    "pcm_bits": 24,
+    "preview_common_gain": 32,
+    "reference_channel": 0,
+    "schedule": "reference_sample_clock_zero_compute_delay",
+    "crop": "all_horizontal_radius"
+  },
+  "input_pins": {
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/delivery-01/SHA256.json": "f694f234a9dbd7a7661741627cd43ed76cad40ec99d07b41103855ea2eb98111",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/actual-record-20260915.json": "a9ef548557ceeb3a191e52d65c52f33034a4b1bfc75e8f0922f1cac90627585f",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/INPUT-RECEIPT.md": "eb0e4af87c2922b19690c64c1772b5357c658277022c3bcbe7b6a33975a04688",
+    "docs/reviews/center-target-f9768b8/B-REVIEW.md": "b48a5c12e8c283ba208515ad431e98b27a540b300bc8a0350f3dd7fbf31db376",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/delivery-01/c-center-target-20260914-01/samples.csv": "5779f700e11442446b0884d81270e507fd88bcf39610a7a674889c136939e9da",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/center-target-20260914/delivery-01/c-center-target-20260914-01/metadata.json": "a08e7268d2bd6df0cebc0e8066a2d53139c48a0b6bf51a0717e98c448fa4c541",
+    "task-packages/PKG-B-ALG/payload/model/python/h1_reader.py": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9",
+    "task-packages/PKG-B-ALG/payload/model/python/audio_frames.py": "0ed77ea8db8834576c21206358a8d945b612a176cad742bb266d077ee2a79408",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/GEOMETRY.md": "fdfe2b60ebed19c1ffbfca421d1964d91c564338949148b1bb6a56496904b8f7",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-quiet-20260913-01/samples.csv": "55cda506bdc906e80cc2e3fe9e23619f36e872e5eb3e8e78b73de63c340188e2",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/delivery-01/c-adapter-quiet-20260913-01/metadata.json": "58c710b72c508421661533af6b21e7ed085b92dcdff8c02e6c59c4bc5acdef31",
+    "task-packages/PKG-B-ALG/tasks/c-board-algorithm-01/run.py": "7acd56bd7742baf174b0273f0aee2e54bacfe730840c7cb8019c07e3b2b675de",
+    "task-packages/PKG-B-ALG/tasks/phat-fixed-03/integration/chain.py": "eb5c19b1ff30ec5926170c2f1c216ac764f3aa855c0d165c9822c6d59e11a9a7",
+    "task-packages/PKG-B-ALG/tasks/phat-fixed-03/phat_model.py": "84eaa9691f62aba7164e3172aa94b2e361cb99672647477d98f8b3f3889f3144",
+    "task-packages/PKG-B-ALG/tasks/fft-window-02/window_model.py": "3fd314bcf6c866b2a2ed8185ea1be2dd1079d38e38dc11f5caa883b748889bce",
+    "task-packages/PKG-B-ALG/tasks/fft-bitexact-01/compare_cmodel.py": "d14e589b559a5afbf5e1e2d6e095d54896fef1f33ffd482c5a80ad293398b1d8",
+    "task-packages/PKG-B-ALG/payload/model/python/six_mic_baseline_core.py": "23184058f08fa54af4c61b9681f2fbe40341430f0ba48f8574676f27ce4964b0",
+    "task-packages/PKG-B-ALG/payload/model/python/sector_tracker.py": "2297aa7f94058e3e4faf3da792c6f1beef6c68fa72121100ec672d60ade5ec50",
+    "task-packages/PKG-B-ALG/payload/tb/python/test_sector_tracker.py": "09a2d994e48cd8eb84adfe8261acff908248550e5390ed810d0a9fc953744d32",
+    "task-packages/PKG-B-ALG/payload/tb/python/test_audio_frames.py": "ebb78647115398de4971ba261a92b33ab2c14beb305e2b72c6a82d648db28db9",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/MANIFEST.json": "076685bce19f4ea3894773cf5fa29714cbfd64dd2b20d2c7208c32af6423f2f6",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/evidence/run01/replay/center-frames.json": "1c70d7c0b2fb8c38d24e8cc49c1c702db1eab7ac2cef072fb5d12832b15230cc",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/evidence/run01/replay/quiet-frames.json": "8db3559fafadafcaf2f5eb690b8f343815bce05ff7da7f175e520f373146cb7e",
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/render_audio.py": "150478f12144be489e5ea2418d24a024cbeb1a837fbbe70059ba171d81e5384a",
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/check_inputs.py": "4f7cc3dc96c0f1b0966e5d38bdd89390a017606141a2da01514336e1bbe8a3d9",
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/center-target-01/evidence/audio-run01/interval00-manual-raw.wav": "306818add64f8dbccdced17fb25628702c62c4b46c019520d94fbb6d6c658190"
+  },
+  "source_sha256": {
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/audit.py": "0e448fb3df05f2bb5f1872841c1b58a8edeb9507a6ec6a66da89ec9bbebe0e86",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/mixer.py": "c22fa4d79dc581999f8c4a4e2013f1e0d6e3f13dbfa2345fd4bdb13f6754ebab",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/render_three.py": "9dcb196c5442b9103558d9a6ac2928c5d71bbec5c1291cb4f2397bc82207b547",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/reproduce.py": "94b5aa885c753a1d6a55500603654c7ae0f5831cbeb9e371d10ced35a5990502",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/test_audio.py": "ccc7aab3994cabf0fa46cdd1c747c2fb9b4e918d878cc6238e985fb3e0cdd72e",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/verify_package.py": "e1415993f5065f192a3f6fb816cfa0f3aa84723129863a2d371867ad60e7770f",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/config.json": "4b04859adee3de56ea458072f8bc67643c7a2420c1a98731449fb3cf07df335d",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/pins.json": "7b51a6a2ac8c8493618aef8a956f94f73a3d0113364a182d84b7b9bec5505641"
+  },
+  "records": [
+    {
+      "label": "center",
+      "interval": 0,
+      "input_rows": [
+        0,
+        32000
+      ],
+      "reference_rows": [
+        8,
+        31992
+      ],
+      "first_reference_sample_id": "17421",
+      "last_reference_sample_id": "49404",
+      "samples": 31984,
+      "duration_seconds": 0.6663333333333333,
+      "common_availability_delay_samples": 8,
+      "physical_emit_rows": [
+        16,
+        32000
+      ],
+      "bank_vectors": [
+        null,
+        [
+          0.9942178459037365,
+          0.10738191135630822,
+          0.0
+        ],
+        [
+          0.9958509383404325,
+          0.09099949783641725,
+          0.0
+        ],
+        [
+          0.9959313711237935,
+          0.09011494887908914,
+          0.0
+        ],
+        [
+          0.99941574922524,
+          0.034178358657962614,
+          0.0
+        ],
+        [
+          0.9991364699570094,
+          -0.04154893984021699,
+          0.0
+        ],
+        [
+          0.9999550821398314,
+          -0.009478064291984842,
+          0.0
+        ],
+        [
+          0.9973586363818975,
+          0.07263436125169695,
+          0.0
+        ],
+        [
+          0.9939228994250786,
+          0.11007847200268144,
+          0.0
+        ],
+        [
+          0.9927068810933795,
+          0.12055309299165674,
+          0.0
+        ],
+        [
+          0.9960520625622586,
+          0.08877098999938304,
+          0.0
+        ],
+        [
+          0.9944799427648867,
+          0.10492684803398865,
+          0.0
+        ],
+        [
+          0.9983898836818803,
+          0.05672424668236338,
+          0.0
+        ],
+        [
+          0.9968024286171318,
+          0.07990568379651151,
+          0.0
+        ],
+        [
+          0.9992081546627637,
+          0.0397877324741489,
+          0.0
+        ],
+        [
+          0.9947061644245982,
+          0.10276014040329133,
+          0.0
+        ],
+        [
+          0.9878802625310936,
+          0.15521786914365723,
+          0.0
+        ],
+        [
+          0.9921082101799412,
+          0.12538460548868643,
+          0.0
+        ],
+        [
+          0.9881794277755278,
+          0.15330172380384524,
+          0.0
+        ],
+        [
+          0.9913634429226972,
+          0.1311431433070609,
+          0.0
+        ],
+        [
+          0.9933328560551822,
+          0.11528155568543853,
+          0.0
+        ],
+        [
+          0.9938243678011874,
+          0.11096452570335325,
+          0.0
+        ]
+      ],
+      "bank_delays_samples": [
+        null,
+        [
+          0.0,
+          5.565301061618583,
+          6.166389311776344,
+          0.6010882501577604
+        ],
+        [
+          0.0,
+          5.574442570302129,
+          6.083827514459335,
+          0.5093849441572045
+        ],
+        [
+          0.0,
+          5.574892806290623,
+          6.079326339374735,
+          0.5044335330841141
+        ],
+        [
+          0.0,
+          5.594397196829332,
+          5.785716289025508,
+          0.19131909219617557
+        ],
+        [
+          0.0,
+          5.592833884307458,
+          5.360256728350558,
+          -0.2325771559568998
+        ],
+        [
+          0.0,
+          5.59741620323171,
+          5.544361149468996,
+          -0.05305505376271399
+        ],
+        [
+          0.0,
+          5.582882162837444,
+          5.9894651762580216,
+          0.40658301342057773
+        ],
+        [
+          0.0,
+          5.563650049259915,
+          6.179832749683089,
+          0.6161827004231731
+        ],
+        [
+          0.0,
+          5.55684318279676,
+          6.2316593301553045,
+          0.674816147358545
+        ],
+        [
+          0.0,
+          5.575568396849961,
+          6.072478894805691,
+          0.4969104979557301
+        ],
+        [
+          0.0,
+          5.566768192736392,
+          6.154113814384375,
+          0.5873456216479831
+        ],
+        [
+          0.0,
+          5.588654742475831,
+          5.906178222447079,
+          0.3175234799712469
+        ],
+        [
+          0.0,
+          5.579768696632342,
+          6.0270541569510065,
+          0.447285460318665
+        ],
+        [
+          0.0,
+          5.5932351514650325,
+          5.815953653944233,
+          0.22271850247920083
+        ],
+        [
+          0.0,
+          5.568034506400084,
+          6.143251618861656,
+          0.5752171124615725
+        ],
+        [
+          0.0,
+          5.529825376267346,
+          6.398683419287234,
+          0.868858043019889
+        ],
+        [
+          0.0,
+          5.553492021998505,
+          6.2553533705066044,
+          0.7018613485080991
+        ],
+        [
+          0.0,
+          5.531500003874675,
+          6.389632102135267,
+          0.8581320982605914
+        ],
+        [
+          0.0,
+          5.549323062424428,
+          6.283418791723427,
+          0.7340957292989998
+        ],
+        [
+          0.0,
+          5.560347182582944,
+          6.20565501615741,
+          0.6453078335744663
+        ],
+        [
+          0.0,
+          5.563098501977493,
+          6.184241036526875,
+          0.6211425345493826
+        ]
+      ],
+      "manual_delays_samples": [
+        0.0,
+        5.597667638483965,
+        5.597667638483965,
+        0.0
+      ],
+      "events": [
+        {
+          "frame_index": 0,
+          "ready": 1024,
+          "ready_ms": 21.333333333333332,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 1,
+          "ready": 1536,
+          "ready_ms": 32.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 2,
+          "ready": 2048,
+          "ready_ms": 42.666666666666664,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 3,
+          "ready": 2560,
+          "ready_ms": 53.333333333333336,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 4,
+          "ready": 3072,
+          "ready_ms": 64.0,
+          "target": 0,
+          "mode": "single",
+          "state": "ACQUIRE",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 5,
+          "ready": 3584,
+          "ready_ms": 74.66666666666667,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 6,
+          "ready": 4096,
+          "ready_ms": 85.33333333333333,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 7,
+          "ready": 4608,
+          "ready_ms": 96.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 8,
+          "ready": 5120,
+          "ready_ms": 106.66666666666667,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 9,
+          "ready": 5632,
+          "ready_ms": 117.33333333333333,
+          "target": 0,
+          "mode": "single",
+          "state": "ACQUIRE",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 10,
+          "ready": 6144,
+          "ready_ms": 128.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 11,
+          "ready": 6656,
+          "ready_ms": 138.66666666666666,
+          "target": 0,
+          "mode": "single",
+          "state": "ACQUIRE",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 12,
+          "ready": 7168,
+          "ready_ms": 149.33333333333334,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 13,
+          "ready": 7680,
+          "ready_ms": 160.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 14,
+          "ready": 8192,
+          "ready_ms": 170.66666666666666,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 15,
+          "ready": 8704,
+          "ready_ms": 181.33333333333334,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 16,
+          "ready": 9216,
+          "ready_ms": 192.0,
+          "target": 0,
+          "mode": "single",
+          "state": "ACQUIRE",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 17,
+          "ready": 9728,
+          "ready_ms": 202.66666666666666,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 18,
+          "ready": 10240,
+          "ready_ms": 213.33333333333334,
+          "target": 0,
+          "mode": "single",
+          "state": "ACQUIRE",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 19,
+          "ready": 10752,
+          "ready_ms": 224.0,
+          "target": 0,
+          "mode": "single",
+          "state": "ACQUIRE",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 20,
+          "ready": 11264,
+          "ready_ms": 234.66666666666666,
+          "target": 0,
+          "mode": "single",
+          "state": "ACQUIRE",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 21,
+          "ready": 11776,
+          "ready_ms": 245.33333333333331,
+          "target": 0,
+          "mode": "single",
+          "state": "ACQUIRE",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 22,
+          "ready": 12288,
+          "ready_ms": 256.0,
+          "target": 1,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 21888.0
+        },
+        {
+          "frame_index": 23,
+          "ready": 12800,
+          "ready_ms": 266.6666666666667,
+          "target": 2,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 22400.0
+        },
+        {
+          "frame_index": 24,
+          "ready": 13312,
+          "ready_ms": 277.3333333333333,
+          "target": 2,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 22400.0
+        },
+        {
+          "frame_index": 25,
+          "ready": 13824,
+          "ready_ms": 288.0,
+          "target": 2,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 22400.0
+        },
+        {
+          "frame_index": 26,
+          "ready": 14336,
+          "ready_ms": 298.6666666666667,
+          "target": 2,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 22400.0
+        },
+        {
+          "frame_index": 27,
+          "ready": 14848,
+          "ready_ms": 309.33333333333337,
+          "target": 2,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 22400.0
+        },
+        {
+          "frame_index": 28,
+          "ready": 15360,
+          "ready_ms": 320.0,
+          "target": 2,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 22400.0
+        },
+        {
+          "frame_index": 29,
+          "ready": 15872,
+          "ready_ms": 330.6666666666667,
+          "target": 2,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 22400.0
+        },
+        {
+          "frame_index": 30,
+          "ready": 16384,
+          "ready_ms": 341.3333333333333,
+          "target": 2,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 22400.0
+        },
+        {
+          "frame_index": 31,
+          "ready": 16896,
+          "ready_ms": 352.0,
+          "target": 2,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 22400.0
+        },
+        {
+          "frame_index": 32,
+          "ready": 17408,
+          "ready_ms": 362.6666666666667,
+          "target": 2,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 22400.0
+        },
+        {
+          "frame_index": 33,
+          "ready": 17920,
+          "ready_ms": 373.33333333333337,
+          "target": 3,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 27520.0
+        },
+        {
+          "frame_index": 34,
+          "ready": 18432,
+          "ready_ms": 384.0,
+          "target": 3,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 27520.0
+        },
+        {
+          "frame_index": 35,
+          "ready": 18944,
+          "ready_ms": 394.6666666666667,
+          "target": 4,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 28544.0
+        },
+        {
+          "frame_index": 36,
+          "ready": 19456,
+          "ready_ms": 405.3333333333333,
+          "target": 5,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 29056.0
+        },
+        {
+          "frame_index": 37,
+          "ready": 19968,
+          "ready_ms": 416.0,
+          "target": 6,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 29568.0
+        },
+        {
+          "frame_index": 38,
+          "ready": 20480,
+          "ready_ms": 426.6666666666667,
+          "target": 7,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 30080.0
+        },
+        {
+          "frame_index": 39,
+          "ready": 20992,
+          "ready_ms": 437.33333333333337,
+          "target": 8,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 30592.0
+        },
+        {
+          "frame_index": 40,
+          "ready": 21504,
+          "ready_ms": 448.0,
+          "target": 9,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 31104.0
+        },
+        {
+          "frame_index": 41,
+          "ready": 22016,
+          "ready_ms": 458.6666666666667,
+          "target": 10,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 31616.0
+        },
+        {
+          "frame_index": 42,
+          "ready": 22528,
+          "ready_ms": 469.3333333333333,
+          "target": 11,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 32128.0
+        },
+        {
+          "frame_index": 43,
+          "ready": 23040,
+          "ready_ms": 480.0,
+          "target": 12,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 32640.0
+        },
+        {
+          "frame_index": 44,
+          "ready": 23552,
+          "ready_ms": 490.66666666666663,
+          "target": 13,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 33152.0
+        },
+        {
+          "frame_index": 45,
+          "ready": 24064,
+          "ready_ms": 501.3333333333333,
+          "target": 14,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 33664.0
+        },
+        {
+          "frame_index": 46,
+          "ready": 24576,
+          "ready_ms": 512.0,
+          "target": 15,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 34176.0
+        },
+        {
+          "frame_index": 47,
+          "ready": 25088,
+          "ready_ms": 522.6666666666666,
+          "target": 16,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 34688.0
+        },
+        {
+          "frame_index": 48,
+          "ready": 25600,
+          "ready_ms": 533.3333333333334,
+          "target": 16,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 34688.0
+        },
+        {
+          "frame_index": 49,
+          "ready": 26112,
+          "ready_ms": 544.0,
+          "target": 16,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 34688.0
+        },
+        {
+          "frame_index": 50,
+          "ready": 26624,
+          "ready_ms": 554.6666666666666,
+          "target": 16,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 34688.0
+        },
+        {
+          "frame_index": 51,
+          "ready": 27136,
+          "ready_ms": 565.3333333333334,
+          "target": 16,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 34688.0
+        },
+        {
+          "frame_index": 52,
+          "ready": 27648,
+          "ready_ms": 576.0,
+          "target": 16,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 34688.0
+        },
+        {
+          "frame_index": 53,
+          "ready": 28160,
+          "ready_ms": 586.6666666666666,
+          "target": 16,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 34688.0
+        },
+        {
+          "frame_index": 54,
+          "ready": 28672,
+          "ready_ms": 597.3333333333334,
+          "target": 16,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 34688.0
+        },
+        {
+          "frame_index": 55,
+          "ready": 29184,
+          "ready_ms": 608.0,
+          "target": 16,
+          "mode": "hold",
+          "state": "HOLD",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 34688.0
+        },
+        {
+          "frame_index": 56,
+          "ready": 29696,
+          "ready_ms": 618.6666666666667,
+          "target": 17,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 1.1102230246251565e-16,
+          "valid_through": 39296.0
+        },
+        {
+          "frame_index": 57,
+          "ready": 30208,
+          "ready_ms": 629.3333333333333,
+          "target": 18,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 39808.0
+        },
+        {
+          "frame_index": 58,
+          "ready": 30720,
+          "ready_ms": 640.0,
+          "target": 19,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 40320.0
+        },
+        {
+          "frame_index": 59,
+          "ready": 31232,
+          "ready_ms": 650.6666666666666,
+          "target": 20,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 40832.0
+        },
+        {
+          "frame_index": 60,
+          "ready": 31744,
+          "ready_ms": 661.3333333333334,
+          "target": 21,
+          "mode": "tracked",
+          "state": "LOCKED",
+          "fresh": true,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": 41344.0
+        }
+      ],
+      "files": [
+        {
+          "file": "center-interval00-single-raw.wav",
+          "sha256": "06a80c9592c88351cb3591416ecb17a3cd5b72b76af96de9e5c915b26dfa38bd",
+          "frames": 31984,
+          "saturation_samples": 0,
+          "peak_abs": 0.00749969482421875,
+          "rms": 0.001709610559503995,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 0.0,
+          "branch": "single",
+          "mode": "raw",
+          "gain": 1
+        },
+        {
+          "file": "center-interval00-single-preview.wav",
+          "sha256": "4e3d3a2cccd5afbcbad52c2c727401a144a9df52d31fe1059eddf05e3e6a6399",
+          "frames": 31984,
+          "saturation_samples": 0,
+          "peak_abs": 0.239990234375,
+          "rms": 0.05470753790412784,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 0.0,
+          "branch": "single",
+          "mode": "preview",
+          "gain": 32
+        },
+        {
+          "file": "center-interval00-manual-raw.wav",
+          "sha256": "e942897880761eed23d05f3565f3a5130206314dfa6b6de8fac3ed898e374ed1",
+          "frames": 31984,
+          "saturation_samples": 0,
+          "peak_abs": 0.00701141357421875,
+          "rms": 0.0016302993202706197,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 5.943087114795853e-08,
+          "branch": "manual",
+          "mode": "raw",
+          "gain": 1
+        },
+        {
+          "file": "center-interval00-manual-preview.wav",
+          "sha256": "b377e6cb8de8f672ff071dd5acd291d121127c702977d57d256b91c8e3926734",
+          "frames": 31984,
+          "saturation_samples": 0,
+          "peak_abs": 0.224365234375,
+          "rms": 0.05216957824865983,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 5.9430891097278504e-08,
+          "branch": "manual",
+          "mode": "preview",
+          "gain": 32
+        },
+        {
+          "file": "center-interval00-automatic-raw.wav",
+          "sha256": "0d2e785f639640e4bb97e85e8cd17397806b888afcbdad0c39b31985cb5e0115",
+          "frames": 31984,
+          "saturation_samples": 0,
+          "peak_abs": 0.007018277168497144,
+          "rms": 0.001647243151642839,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 5.960335050416831e-08,
+          "branch": "automatic",
+          "mode": "raw",
+          "gain": 1
+        },
+        {
+          "file": "center-interval00-automatic-preview.wav",
+          "sha256": "826cd5929efbb37ca67dcd501d2f148722578144188efd83900024a77f4422ef",
+          "frames": 31984,
+          "saturation_samples": 0,
+          "peak_abs": 0.2245848693919086,
+          "rms": 0.05271178085257085,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 5.9600602772547084e-08,
+          "branch": "automatic",
+          "mode": "preview",
+          "gain": 32
+        }
+      ],
+      "sample_mix": {
+        "single_only": 12281,
+        "beam_only": 19224,
+        "single_beam_mixed": 479
+      },
+      "max_weight_step": 0.002083333333333437,
+      "automatic_vs_single_rms": 0.00036208733711178465,
+      "direction_accepted": false,
+      "listening_completed": false
+    },
+    {
+      "label": "quiet",
+      "interval": 0,
+      "input_rows": [
+        0,
+        32000
+      ],
+      "reference_rows": [
+        8,
+        31992
+      ],
+      "first_reference_sample_id": "17246",
+      "last_reference_sample_id": "49229",
+      "samples": 31984,
+      "duration_seconds": 0.6663333333333333,
+      "common_availability_delay_samples": 8,
+      "physical_emit_rows": [
+        16,
+        32000
+      ],
+      "bank_vectors": [
+        null
+      ],
+      "bank_delays_samples": [
+        null
+      ],
+      "manual_delays_samples": [
+        0.0,
+        5.597667638483965,
+        5.597667638483965,
+        0.0
+      ],
+      "events": [
+        {
+          "frame_index": 0,
+          "ready": 1024,
+          "ready_ms": 21.333333333333332,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 1,
+          "ready": 1536,
+          "ready_ms": 32.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 2,
+          "ready": 2048,
+          "ready_ms": 42.666666666666664,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 3,
+          "ready": 2560,
+          "ready_ms": 53.333333333333336,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 4,
+          "ready": 3072,
+          "ready_ms": 64.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 5,
+          "ready": 3584,
+          "ready_ms": 74.66666666666667,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 6,
+          "ready": 4096,
+          "ready_ms": 85.33333333333333,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 7,
+          "ready": 4608,
+          "ready_ms": 96.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 8,
+          "ready": 5120,
+          "ready_ms": 106.66666666666667,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 9,
+          "ready": 5632,
+          "ready_ms": 117.33333333333333,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 10,
+          "ready": 6144,
+          "ready_ms": 128.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 11,
+          "ready": 6656,
+          "ready_ms": 138.66666666666666,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 12,
+          "ready": 7168,
+          "ready_ms": 149.33333333333334,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 13,
+          "ready": 7680,
+          "ready_ms": 160.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 14,
+          "ready": 8192,
+          "ready_ms": 170.66666666666666,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 15,
+          "ready": 8704,
+          "ready_ms": 181.33333333333334,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 16,
+          "ready": 9216,
+          "ready_ms": 192.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 17,
+          "ready": 9728,
+          "ready_ms": 202.66666666666666,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 18,
+          "ready": 10240,
+          "ready_ms": 213.33333333333334,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 19,
+          "ready": 10752,
+          "ready_ms": 224.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 20,
+          "ready": 11264,
+          "ready_ms": 234.66666666666666,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 21,
+          "ready": 11776,
+          "ready_ms": 245.33333333333331,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 22,
+          "ready": 12288,
+          "ready_ms": 256.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 23,
+          "ready": 12800,
+          "ready_ms": 266.6666666666667,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 24,
+          "ready": 13312,
+          "ready_ms": 277.3333333333333,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 25,
+          "ready": 13824,
+          "ready_ms": 288.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 26,
+          "ready": 14336,
+          "ready_ms": 298.6666666666667,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 27,
+          "ready": 14848,
+          "ready_ms": 309.33333333333337,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 28,
+          "ready": 15360,
+          "ready_ms": 320.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 29,
+          "ready": 15872,
+          "ready_ms": 330.6666666666667,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 30,
+          "ready": 16384,
+          "ready_ms": 341.3333333333333,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 31,
+          "ready": 16896,
+          "ready_ms": 352.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 32,
+          "ready": 17408,
+          "ready_ms": 362.6666666666667,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 33,
+          "ready": 17920,
+          "ready_ms": 373.33333333333337,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 34,
+          "ready": 18432,
+          "ready_ms": 384.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 35,
+          "ready": 18944,
+          "ready_ms": 394.6666666666667,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 36,
+          "ready": 19456,
+          "ready_ms": 405.3333333333333,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 37,
+          "ready": 19968,
+          "ready_ms": 416.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 38,
+          "ready": 20480,
+          "ready_ms": 426.6666666666667,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 39,
+          "ready": 20992,
+          "ready_ms": 437.33333333333337,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 40,
+          "ready": 21504,
+          "ready_ms": 448.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 41,
+          "ready": 22016,
+          "ready_ms": 458.6666666666667,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 42,
+          "ready": 22528,
+          "ready_ms": 469.3333333333333,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 43,
+          "ready": 23040,
+          "ready_ms": 480.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 44,
+          "ready": 23552,
+          "ready_ms": 490.66666666666663,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 45,
+          "ready": 24064,
+          "ready_ms": 501.3333333333333,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 46,
+          "ready": 24576,
+          "ready_ms": 512.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 47,
+          "ready": 25088,
+          "ready_ms": 522.6666666666666,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 48,
+          "ready": 25600,
+          "ready_ms": 533.3333333333334,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 49,
+          "ready": 26112,
+          "ready_ms": 544.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 50,
+          "ready": 26624,
+          "ready_ms": 554.6666666666666,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 51,
+          "ready": 27136,
+          "ready_ms": 565.3333333333334,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 52,
+          "ready": 27648,
+          "ready_ms": 576.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 53,
+          "ready": 28160,
+          "ready_ms": 586.6666666666666,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 54,
+          "ready": 28672,
+          "ready_ms": 597.3333333333334,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 55,
+          "ready": 29184,
+          "ready_ms": 608.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 56,
+          "ready": 29696,
+          "ready_ms": 618.6666666666667,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 57,
+          "ready": 30208,
+          "ready_ms": 629.3333333333333,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 58,
+          "ready": 30720,
+          "ready_ms": 640.0,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 59,
+          "ready": 31232,
+          "ready_ms": 650.6666666666666,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        },
+        {
+          "frame_index": 60,
+          "ready": 31744,
+          "ready_ms": 661.3333333333334,
+          "target": 0,
+          "mode": "single",
+          "state": "SEARCH",
+          "fresh": false,
+          "tracker_replay_max_abs_error": 0.0,
+          "valid_through": null
+        }
+      ],
+      "files": [
+        {
+          "file": "quiet-interval00-single-raw.wav",
+          "sha256": "eb8ed710216784e5f9a69905183a9d49adb9601497efd1a8c42b026d87f54af2",
+          "frames": 31984,
+          "saturation_samples": 0,
+          "peak_abs": 0.00286865234375,
+          "rms": 0.0008993544188577022,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 0.0,
+          "branch": "single",
+          "mode": "raw",
+          "gain": 1
+        },
+        {
+          "file": "quiet-interval00-single-preview.wav",
+          "sha256": "6dc821011522d4ada8c7711d55201ebfb137145541768d3b4acbc5a9f7a3ed69",
+          "frames": 31984,
+          "saturation_samples": 0,
+          "peak_abs": 0.091796875,
+          "rms": 0.02877934140344647,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 0.0,
+          "branch": "single",
+          "mode": "preview",
+          "gain": 32
+        },
+        {
+          "file": "quiet-interval00-manual-raw.wav",
+          "sha256": "9b912390ecbf5ff7d56bb983e21f7b04515bea05fe22730d7741bc8b8aa63dca",
+          "frames": 31984,
+          "saturation_samples": 0,
+          "peak_abs": 0.00275300473582989,
+          "rms": 0.0008472457489155671,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 5.943087030835237e-08,
+          "branch": "manual",
+          "mode": "raw",
+          "gain": 1
+        },
+        {
+          "file": "quiet-interval00-manual-preview.wav",
+          "sha256": "19634717f3357ca5775600a2dacea278bfdc47cea5f0b24de9a001a30e78ce71",
+          "frames": 31984,
+          "saturation_samples": 0,
+          "peak_abs": 0.08809615154655648,
+          "rms": 0.027111863965298147,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 5.94308728896209e-08,
+          "branch": "manual",
+          "mode": "preview",
+          "gain": 32
+        },
+        {
+          "file": "quiet-interval00-automatic-raw.wav",
+          "sha256": "eb8ed710216784e5f9a69905183a9d49adb9601497efd1a8c42b026d87f54af2",
+          "frames": 31984,
+          "saturation_samples": 0,
+          "peak_abs": 0.00286865234375,
+          "rms": 0.0008993544188577022,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 0.0,
+          "branch": "automatic",
+          "mode": "raw",
+          "gain": 1
+        },
+        {
+          "file": "quiet-interval00-automatic-preview.wav",
+          "sha256": "6dc821011522d4ada8c7711d55201ebfb137145541768d3b4acbc5a9f7a3ed69",
+          "frames": 31984,
+          "saturation_samples": 0,
+          "peak_abs": 0.091796875,
+          "rms": 0.02877934140344647,
+          "pcm_roundtrip_exact": true,
+          "max_quantization_error": 0.0,
+          "branch": "automatic",
+          "mode": "preview",
+          "gain": 32
+        }
+      ],
+      "sample_mix": {
+        "single_only": 31984,
+        "beam_only": 0,
+        "single_beam_mixed": 0
+      },
+      "max_weight_step": 0.0,
+      "automatic_vs_single_rms": 0.0,
+      "direction_accepted": false,
+      "listening_completed": false
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "limits": [
+    "No target-presence gate or acoustic accuracy/benefit approval; quiet is an unmatched background probe.",
+    "Offline cached beam bank, floating linear interpolation; not real streaming or fixed-point/RTL budget.",
+    "Directions ready at reference n only; emit availability n+8 samples, zero compute-delay assumption.",
+    "Individual expired beams have zero weight; fade begins before expiry, even without new events.",
+    "Shared preview gain is 32; no per-branch normalization; future continuous playback pending."
+  ]
+}

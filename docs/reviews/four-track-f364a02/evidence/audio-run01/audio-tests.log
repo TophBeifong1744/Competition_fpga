@@ -1,0 +1,26 @@
+test_change_direction_during_expiry_fade_is_continuous (__main__.FadeContract.test_change_direction_during_expiry_fade_is_continuous) ... ok
+test_convex_bound_under_rapid_switches (__main__.FadeContract.test_convex_bound_under_rapid_switches) ... ok
+test_expiry_without_any_new_event (__main__.FadeContract.test_expiry_without_any_new_event) ... ok
+test_hold_event_does_not_refresh_ttl (__main__.FadeContract.test_hold_event_does_not_refresh_ttl) ... ok
+test_integer_endpoint_rounding_and_saturation (__main__.FadeContract.test_integer_endpoint_rounding_and_saturation) ... ok
+test_interrupted_crossfade_continuity (__main__.FadeContract.test_interrupted_crossfade_continuity) ... ok
+test_new_direction_does_not_extend_old_expiry (__main__.FadeContract.test_new_direction_does_not_extend_old_expiry) ... ok
+test_new_interval_cannot_retain_previous_mix (__main__.FadeContract.test_new_interval_cannot_retain_previous_mix) ... ok
+test_no_event_is_exact_single (__main__.FadeContract.test_no_event_is_exact_single) ... ok
+test_no_retroactive_direction (__main__.FadeContract.test_no_retroactive_direction) ... ok
+test_release_during_expiry_fade_is_continuous (__main__.FadeContract.test_release_during_expiry_fade_is_continuous) ... ok
+test_renewal_during_expiry_fade_has_no_jump (__main__.FadeContract.test_renewal_during_expiry_fade_has_no_jump) ... ok
+test_unordered_or_expired_events_fail (__main__.FadeContract.test_unordered_or_expired_events_fail) ... ok
+test_common_crop_and_availability (__main__.RealAudioContract.test_common_crop_and_availability) ... ok
+test_frame_id_and_ready_binding (__main__.RealAudioContract.test_frame_id_and_ready_binding) ... ok
+test_frozen_tracker_sequence_replayed (__main__.RealAudioContract.test_frozen_tracker_sequence_replayed) ... ok
+test_future_audio_cannot_affect_emitted_prefix (__main__.RealAudioContract.test_future_audio_cannot_affect_emitted_prefix) ... ok
+test_gap_frame_crossing_rejected (__main__.RealAudioContract.test_gap_frame_crossing_rejected) ... ok
+test_original_single_and_approved_manual_crop (__main__.RealAudioContract.test_original_single_and_approved_manual_crop) ... ok
+test_quiet_automatic_remains_bit_exact_single (__main__.RealAudioContract.test_quiet_automatic_remains_bit_exact_single) ... ok
+test_rational_sample_golden (__main__.RealAudioContract.test_rational_sample_golden) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 1.608s
+
+OK

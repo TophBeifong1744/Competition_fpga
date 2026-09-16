@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "E:\ss-four-track-review-0916\task-packages\PKG-B-ALG\tasks\four-channel-track-01\audio-01\render_three.py", line 197, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "E:\ss-four-track-review-0916\task-packages\PKG-B-ALG\tasks\four-channel-track-01\audio-01\render_three.py", line 190, in main
+    out.mkdir(parents=True,exist_ok=False)
+  File "C:\Users\Toph Beifong\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [WinError 183] 当文件已存在时，无法创建该文件。: 'E:\\ss-four-track-review-0916-output\\merged-path-run01\\audio-run01\\audio'
