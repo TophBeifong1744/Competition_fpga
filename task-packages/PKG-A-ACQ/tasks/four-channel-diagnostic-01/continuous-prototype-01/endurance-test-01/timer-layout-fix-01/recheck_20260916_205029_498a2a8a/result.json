@@ -1,0 +1,212 @@
+{
+  "status": "EXISTING_USER_ARTIFACT_RECHECK_PASS_NOT_NEW_BUILD_NOT_BOARD",
+  "record_root": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\evidence\\recheck_20260916_205029_498a2a8a",
+  "compiled": {
+    "divisor": 333333343,
+    "contract": [
+      1129270833,
+      16777216,
+      17825792,
+      250,
+      8,
+      8000,
+      64,
+      8064,
+      2,
+      16128,
+      1048576,
+      1073741823,
+      1077936128,
+      1092616192,
+      10000000,
+      480000
+    ],
+    "program_end": 1128592,
+    "ranges": [
+      {
+        "name": "PT_LOAD",
+        "start": 1048576,
+        "end": 1128592
+      },
+      {
+        "name": ".text",
+        "start": 1048576,
+        "end": 1074816
+      },
+      {
+        "name": ".init",
+        "start": 1074816,
+        "end": 1074828
+      },
+      {
+        "name": ".fini",
+        "start": 1074828,
+        "end": 1074840
+      },
+      {
+        "name": ".rodata",
+        "start": 1074840,
+        "end": 1077808
+      },
+      {
+        "name": ".data",
+        "start": 1077808,
+        "end": 1079228
+      },
+      {
+        "name": ".eh_frame",
+        "start": 1079228,
+        "end": 1079284
+      },
+      {
+        "name": ".mmu_tbl",
+        "start": 1081344,
+        "end": 1097728
+      },
+      {
+        "name": ".ARM.exidx",
+        "start": 1097728,
+        "end": 1097736
+      },
+      {
+        "name": ".init_array",
+        "start": 1097736,
+        "end": 1097744
+      },
+      {
+        "name": ".fini_array",
+        "start": 1097744,
+        "end": 1097748
+      },
+      {
+        "name": ".drvcfg_sec",
+        "start": 1097748,
+        "end": 1097964
+      },
+      {
+        "name": ".bss",
+        "start": 1097968,
+        "end": 1106060
+      },
+      {
+        "name": ".heap",
+        "start": 1106060,
+        "end": 1114256
+      },
+      {
+        "name": ".stack",
+        "start": 1114256,
+        "end": 1128592
+      }
+    ],
+    "elf_sha256": "f4ebe8462c103b5c32776917e88993cca3808b2775410170423487ea8d2c56f4",
+    "object_sha256": "546d631dec1de5119ac05574ede5b75c0f92ea77f3012a4e2cfa25fa7292831d",
+    "timer_layout": {
+      "object": {
+        "address": "0x2bc",
+        "pool_offset": 108,
+        "literal_immediate": 12,
+        "padding_nop": false,
+        "divisor": 333333343,
+        "calls": {
+          "XTime_GetTime": {
+            "relocation_type": 28,
+            "symbol": "XTime_GetTime"
+          },
+          "__aeabi_uldivmod": {
+            "relocation_type": 28,
+            "symbol": "__aeabi_uldivmod"
+          }
+        }
+      },
+      "elf": {
+        "address": "0x100764",
+        "pool_offset": 108,
+        "literal_immediate": 12,
+        "padding_nop": false,
+        "divisor": 333333343,
+        "calls": {
+          "XTime_GetTime": {
+            "target": "0x1028fc",
+            "thumb": false
+          },
+          "__aeabi_uldivmod": {
+            "target": "0x104ad4",
+            "thumb": true
+          }
+        }
+      },
+      "reference_object": {
+        "address": "0x290",
+        "pool_offset": 112,
+        "literal_immediate": 16,
+        "padding_nop": true,
+        "divisor": 333333343,
+        "calls": {
+          "XTime_GetTime": {
+            "relocation_type": 28,
+            "symbol": "XTime_GetTime"
+          },
+          "__aeabi_uldivmod": {
+            "relocation_type": 28,
+            "symbol": "__aeabi_uldivmod"
+          }
+        }
+      },
+      "reference_elf": {
+        "address": "0x100738",
+        "pool_offset": 112,
+        "literal_immediate": 16,
+        "padding_nop": true,
+        "divisor": 333333343,
+        "calls": {
+          "XTime_GetTime": {
+            "target": "0x1027cc",
+            "thumb": false
+          },
+          "__aeabi_uldivmod": {
+            "target": "0x1049a4",
+            "thumb": true
+          }
+        }
+      }
+    },
+    "profile": [
+      1162757169,
+      1,
+      300000000,
+      14400000,
+      10000000,
+      480000,
+      10,
+      11,
+      1000000,
+      2000000
+    ],
+    "schedule": [
+      300000000,
+      14400000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000
+    ]
+  },
+  "board_test": "NOT_RUN"
+}

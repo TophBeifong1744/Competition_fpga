@@ -1,0 +1,240 @@
+{
+  "stage": "load",
+  "app": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance",
+  "platform": "F:\\College\\verilog_digital_system\\Vitis\\continuous_platform",
+  "source_sha256": {
+    "main.c": "629030b95bfbb7b96fd10c89a164860b4dd556dfb697f660cedece87cf61931a",
+    "continuous/main_continuous.c": "5f8ee4ac32dee1eabdf675227f73f0859c1c63dadaf0743c838fad528839f716",
+    "continuous/continuous_core.c": "eb31b75147e25d6d01b95b412700775493b80427279479d31c27331234049325",
+    "continuous/continuous_core.h": "510ee0574c7b54a8c41aab96066dd3a772faa25155e8b761bb38dc15b18bd04a",
+    "UserConfig.cmake": "f46cdae7660d1385a26c1d5af539588ab17474f5aa4a0f6f3228a0100042d4c9",
+    "lscript.ld": "8872fb0af0f6bec969e63d2e5d170c1fc058c782c6924d70697b352aeab55dd4",
+    "Empty_applicationExample.cmake": "bca95562ac27da001b5192bb285cb59f11fe5f50474c1a7c19c7d4e4c2d8314e",
+    "CMakeLists.txt": "3e875b93f408a8f88a3145264fce722c49136af964cf36c8445c51728ec60dd4"
+  },
+  "policy_sha256": "877fede145114c70e38c79e3873b8830751782056687ff97abef992e16fa1219",
+  "board_test": "NOT_RUN",
+  "xsa_sha256": "b84e93631132a3838cc9dadc1ce9037f2685d4d10de0b1655c76291663a8f60b",
+  "bsp_files": 88,
+  "verifier_sha256": {
+    "check_endurance.py": "09de27122d493651800fa399a8441882aa9f85aa5a10039ea6f9e107ff99866b",
+    "timer_layout.py": "e70181352037fbda38be79f11ba1e0be5d714bdad679b31e11e0e23bbdd8c439",
+    "vitis_gate.cmake": "419374ffbc9981dcfb8b11683baf3b8322b9736cf8d56d1ddc38115c9060239c"
+  },
+  "compiler": "arm-xilinx-eabi-gcc.exe (GCC) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "compiled": {
+    "divisor": 333333343,
+    "contract": [
+      1129270833,
+      16777216,
+      17825792,
+      250,
+      8,
+      8000,
+      64,
+      8064,
+      2,
+      16128,
+      1048576,
+      1073741823,
+      1077936128,
+      1092616192,
+      10000000,
+      480000
+    ],
+    "program_end": 1128592,
+    "ranges": [
+      {
+        "name": "PT_LOAD",
+        "start": 1048576,
+        "end": 1128592
+      },
+      {
+        "name": ".text",
+        "start": 1048576,
+        "end": 1074816
+      },
+      {
+        "name": ".init",
+        "start": 1074816,
+        "end": 1074828
+      },
+      {
+        "name": ".fini",
+        "start": 1074828,
+        "end": 1074840
+      },
+      {
+        "name": ".rodata",
+        "start": 1074840,
+        "end": 1077808
+      },
+      {
+        "name": ".data",
+        "start": 1077808,
+        "end": 1079228
+      },
+      {
+        "name": ".eh_frame",
+        "start": 1079228,
+        "end": 1079284
+      },
+      {
+        "name": ".mmu_tbl",
+        "start": 1081344,
+        "end": 1097728
+      },
+      {
+        "name": ".ARM.exidx",
+        "start": 1097728,
+        "end": 1097736
+      },
+      {
+        "name": ".init_array",
+        "start": 1097736,
+        "end": 1097744
+      },
+      {
+        "name": ".fini_array",
+        "start": 1097744,
+        "end": 1097748
+      },
+      {
+        "name": ".drvcfg_sec",
+        "start": 1097748,
+        "end": 1097964
+      },
+      {
+        "name": ".bss",
+        "start": 1097968,
+        "end": 1106060
+      },
+      {
+        "name": ".heap",
+        "start": 1106060,
+        "end": 1114256
+      },
+      {
+        "name": ".stack",
+        "start": 1114256,
+        "end": 1128592
+      }
+    ],
+    "elf_sha256": "75c7e5e2203ed1ba019c83a1123ef79eff0c877286d722eea5b8d9a275c76449",
+    "object_sha256": "4eeb96edabcb79b2b6df29bbdbe2c67ee3532b14a71bfbe08117f4df63a3dc15",
+    "timer_layout": {
+      "object": {
+        "address": "0x2bc",
+        "pool_offset": 108,
+        "literal_immediate": 12,
+        "padding_nop": false,
+        "divisor": 333333343,
+        "calls": {
+          "XTime_GetTime": {
+            "relocation_type": 28,
+            "symbol": "XTime_GetTime"
+          },
+          "__aeabi_uldivmod": {
+            "relocation_type": 28,
+            "symbol": "__aeabi_uldivmod"
+          }
+        }
+      },
+      "elf": {
+        "address": "0x100764",
+        "pool_offset": 108,
+        "literal_immediate": 12,
+        "padding_nop": false,
+        "divisor": 333333343,
+        "calls": {
+          "XTime_GetTime": {
+            "target": "0x1028fc",
+            "thumb": false
+          },
+          "__aeabi_uldivmod": {
+            "target": "0x104ad4",
+            "thumb": true
+          }
+        }
+      },
+      "reference_object": {
+        "address": "0x290",
+        "pool_offset": 112,
+        "literal_immediate": 16,
+        "padding_nop": true,
+        "divisor": 333333343,
+        "calls": {
+          "XTime_GetTime": {
+            "relocation_type": 28,
+            "symbol": "XTime_GetTime"
+          },
+          "__aeabi_uldivmod": {
+            "relocation_type": 28,
+            "symbol": "__aeabi_uldivmod"
+          }
+        }
+      },
+      "reference_elf": {
+        "address": "0x100738",
+        "pool_offset": 112,
+        "literal_immediate": 16,
+        "padding_nop": true,
+        "divisor": 333333343,
+        "calls": {
+          "XTime_GetTime": {
+            "target": "0x1027cc",
+            "thumb": false
+          },
+          "__aeabi_uldivmod": {
+            "target": "0x1049a4",
+            "thumb": true
+          }
+        }
+      }
+    },
+    "profile": [
+      1162757169,
+      1,
+      300000000,
+      14400000,
+      10000000,
+      480000,
+      10,
+      11,
+      1000000,
+      2000000
+    ],
+    "schedule": [
+      300000000,
+      14400000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000
+    ]
+  },
+  "disassembly": "\nF:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance\\build\\four_mic_endurance.elf:     file format elf32-littlearm\n\n\nDisassembly of section .text:\n\n00100764 <now_us>:\n  100764:\te52de004 \tpush\t{lr}\t\t; (str lr, [sp, #-4]!)\n  100768:\te24dd00c \tsub\tsp, sp, #12\n  10076c:\te1a0000d \tmov\tr0, sp\n  100770:\teb000861 \tbl\t1028fc <XTime_GetTime>\n  100774:\te89d4004 \tldm\tsp, {r2, lr}\n  100778:\te1a0328e \tlsl\tr3, lr, #5\n  10077c:\te1a01282 \tlsl\tr1, r2, #5\n  100780:\te1833da2 \torr\tr3, r3, r2, lsr #27\n  100784:\te0511002 \tsubs\tr1, r1, r2\n  100788:\te1a0c481 \tlsl\tip, r1, #9\n  10078c:\te0c3300e \tsbc\tr3, r3, lr\n  100790:\te1a03483 \tlsl\tr3, r3, #9\n  100794:\te09cc002 \tadds\tip, ip, r2\n  100798:\te1a0030c \tlsl\tr0, ip, #6\n  10079c:\te1833ba1 \torr\tr3, r3, r1, lsr #23\n  1007a0:\te0ae3003 \tadc\tr3, lr, r3\n  1007a4:\te050000c \tsubs\tr0, r0, ip\n  1007a8:\te1a01303 \tlsl\tr1, r3, #6\n  1007ac:\te1811d2c \torr\tr1, r1, ip, lsr #26\n  1007b0:\te0c11003 \tsbc\tr1, r1, r3\n  1007b4:\te0900002 \tadds\tr0, r0, r2\n  1007b8:\te0ae1001 \tadc\tr1, lr, r1\n  1007bc:\te28f300c \tadd\tr3, pc, #12\n  1007c0:\te1c320d0 \tldrd\tr2, [r3]\n  1007c4:\tfa0010c2 \tblx\t104ad4 <__aeabi_uldivmod>\n  1007c8:\te28dd00c \tadd\tsp, sp, #12\n  1007cc:\te49df004 \tpop\t{pc}\t\t; (ldr pc, [sp], #4)\n  1007d0:\t13de435f \t.word\t0x13de435f\n  1007d4:\t00000000 \t.word\t0x00000000\n\nDisassembly of section .init:\n\nDisassembly of section .fini:\n",
+  "prior_record": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\evidence\\user-build-20260916-2052\\records\\20260916_205211_post_7c67339677\\result.json",
+  "load_paths": {
+    "elf": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance\\build\\four_mic_endurance.elf",
+    "bit": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance\\_ide\\bitstream\\system_continuous_20260915.bit",
+    "init": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance\\_ide\\psinit\\ps7_init.tcl"
+  },
+  "status": "E1_LOAD_PREFLIGHT_PASS_NOT_BOARD"
+}

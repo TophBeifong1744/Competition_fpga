@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "F:\\AMD\\2025.2\\Vitis\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-objdump.exe",
+    "-d",
+    "--disassemble=now_us",
+    "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\board-run-20260915-02\\runtime\\four_mic_continuous.elf"
+  ],
+  "returncode": 0,
+  "stdout": "\nE:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\board-run-20260915-02\\runtime\\four_mic_continuous.elf:     file format elf32-littlearm\n\n\nDisassembly of section .text:\n\n00100738 <now_us>:\n  100738:\te52de004 \tpush\t{lr}\t\t; (str lr, [sp, #-4]!)\n  10073c:\te24dd00c \tsub\tsp, sp, #12\n  100740:\te1a0000d \tmov\tr0, sp\n  100744:\teb000820 \tbl\t1027cc <XTime_GetTime>\n  100748:\te89d4004 \tldm\tsp, {r2, lr}\n  10074c:\te1a0328e \tlsl\tr3, lr, #5\n  100750:\te1a01282 \tlsl\tr1, r2, #5\n  100754:\te1833da2 \torr\tr3, r3, r2, lsr #27\n  100758:\te0511002 \tsubs\tr1, r1, r2\n  10075c:\te1a0c481 \tlsl\tip, r1, #9\n  100760:\te0c3300e \tsbc\tr3, r3, lr\n  100764:\te1a03483 \tlsl\tr3, r3, #9\n  100768:\te09cc002 \tadds\tip, ip, r2\n  10076c:\te1a0030c \tlsl\tr0, ip, #6\n  100770:\te1833ba1 \torr\tr3, r3, r1, lsr #23\n  100774:\te0ae3003 \tadc\tr3, lr, r3\n  100778:\te050000c \tsubs\tr0, r0, ip\n  10077c:\te1a01303 \tlsl\tr1, r3, #6\n  100780:\te1811d2c \torr\tr1, r1, ip, lsr #26\n  100784:\te0c11003 \tsbc\tr1, r1, r3\n  100788:\te0900002 \tadds\tr0, r0, r2\n  10078c:\te0ae1001 \tadc\tr1, lr, r1\n  100790:\te28f3010 \tadd\tr3, pc, #16\n  100794:\te1c320d0 \tldrd\tr2, [r3]\n  100798:\tfa001081 \tblx\t1049a4 <__aeabi_uldivmod>\n  10079c:\te28dd00c \tadd\tsp, sp, #12\n  1007a0:\te49df004 \tpop\t{pc}\t\t; (ldr pc, [sp], #4)\n  1007a4:\te320f000 \tnop\t{0}\n  1007a8:\t13de435f \t.word\t0x13de435f\n  1007ac:\t00000000 \t.word\t0x00000000\n\nDisassembly of section .init:\n\nDisassembly of section .fini:\n",
+  "stderr": ""
+}
