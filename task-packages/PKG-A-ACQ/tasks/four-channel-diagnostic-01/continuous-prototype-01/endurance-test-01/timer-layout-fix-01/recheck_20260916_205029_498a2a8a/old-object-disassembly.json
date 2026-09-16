@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "F:\\AMD\\2025.2\\Vitis\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-objdump.exe",
+    "-d",
+    "--disassemble=now_us",
+    "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\board-run-20260915-02\\build\\main.c.obj"
+  ],
+  "returncode": 0,
+  "stdout": "\nE:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\board-run-20260915-02\\build\\main.c.obj:     file format elf32-littlearm\n\n\nDisassembly of section .text:\n\n00000290 <now_us>:\n 290:\te52de004 \tpush\t{lr}\t\t; (str lr, [sp, #-4]!)\n 294:\te24dd00c \tsub\tsp, sp, #12\n 298:\te1a0000d \tmov\tr0, sp\n 29c:\tebfffffe \tbl\t0 <XTime_GetTime>\n 2a0:\te89d4004 \tldm\tsp, {r2, lr}\n 2a4:\te1a0328e \tlsl\tr3, lr, #5\n 2a8:\te1a01282 \tlsl\tr1, r2, #5\n 2ac:\te1833da2 \torr\tr3, r3, r2, lsr #27\n 2b0:\te0511002 \tsubs\tr1, r1, r2\n 2b4:\te1a0c481 \tlsl\tip, r1, #9\n 2b8:\te0c3300e \tsbc\tr3, r3, lr\n 2bc:\te1a03483 \tlsl\tr3, r3, #9\n 2c0:\te09cc002 \tadds\tip, ip, r2\n 2c4:\te1a0030c \tlsl\tr0, ip, #6\n 2c8:\te1833ba1 \torr\tr3, r3, r1, lsr #23\n 2cc:\te0ae3003 \tadc\tr3, lr, r3\n 2d0:\te050000c \tsubs\tr0, r0, ip\n 2d4:\te1a01303 \tlsl\tr1, r3, #6\n 2d8:\te1811d2c \torr\tr1, r1, ip, lsr #26\n 2dc:\te0c11003 \tsbc\tr1, r1, r3\n 2e0:\te0900002 \tadds\tr0, r0, r2\n 2e4:\te0ae1001 \tadc\tr1, lr, r1\n 2e8:\te28f3010 \tadd\tr3, pc, #16\n 2ec:\te1c320d0 \tldrd\tr2, [r3]\n 2f0:\tebfffffe \tbl\t0 <__aeabi_uldivmod>\n 2f4:\te28dd00c \tadd\tsp, sp, #12\n 2f8:\te49df004 \tpop\t{pc}\t\t; (ldr pc, [sp], #4)\n 2fc:\te320f000 \tnop\t{0}\n 300:\t13de435f \t.word\t0x13de435f\n 304:\t00000000 \t.word\t0x00000000\n\nDisassembly of section .text.startup:\n",
+  "stderr": ""
+}

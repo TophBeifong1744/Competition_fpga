@@ -1,0 +1,45 @@
+{
+  "scope": "post-run file/hash binding plus UART audit; NOT new ARM compilation or new board execution",
+  "recorded_at": "2026-09-16T22:04:47.495941+08:00",
+  "app": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance",
+  "platform": "F:\\College\\verilog_digital_system\\Vitis\\continuous_platform",
+  "status": "ARCHIVE_AND_UART_CHECK_PASS_NOT_ACCEPTANCE",
+  "prior_build_manifest_files_verified": 46,
+  "current_app_and_archive_files_verified": 23,
+  "build_binding": {
+    "build_id": "8f048ebb-713d-4ee6-aaea-11245ef94a6c",
+    "user_start": "2026-09-16 20:52:10",
+    "user_end": "2026-09-16 20:52:12",
+    "source_of_build_times": "user pasted console tail",
+    "source_of_artifact_check": "actual pre/post records and current files",
+    "new_compilation": true,
+    "elf_sha256": "75c7e5e2203ed1ba019c83a1123ef79eff0c877286d722eea5b8d9a275c76449",
+    "object_sha256": "4eeb96edabcb79b2b6df29bbdbe2c67ee3532b14a71bfbe08117f4df63a3dc15",
+    "program_end": "0x113890",
+    "board_test": "NOT_RUN"
+  },
+  "bsp_files_verified": 88,
+  "bsp_policy_sha256": "3312bcc4402c64d1ff4770963525d745111191cc70b5ae616a04a535d9efcf50",
+  "hardware": {
+    "system_continuous_20260915.bit": {
+      "sha256": "b15991bc0f8595970361be553b542e334dbb7dca268c01864ecd80fcffbbffaf",
+      "current": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance\\_ide\\bitstream\\system_continuous_20260915.bit",
+      "existing_archive": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\board-run-20260915-02\\runtime\\system_continuous_20260915.bit"
+    },
+    "system_continuous_20260915.xsa": {
+      "sha256": "b84e93631132a3838cc9dadc1ce9037f2685d4d10de0b1655c76291663a8f60b",
+      "current": "F:\\College\\verilog_digital_system\\Vitis\\continuous_platform\\export\\continuous_platform\\hw\\system_continuous_20260915.xsa",
+      "existing_archive": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\board-run-20260915-02\\runtime\\system_continuous_20260915.xsa"
+    },
+    "ps7_init.tcl": {
+      "sha256": "a158fcc7d723b21003864159006e781ffaf5e8df24ec9b1d9279f9d14ff3ee5e",
+      "current": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance\\_ide\\psinit\\ps7_init.tcl",
+      "existing_archive": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\board-run-20260915-02\\runtime\\ps7_init.tcl"
+    }
+  },
+  "totals": {
+    "groups": 19202750,
+    "packets": 76811,
+    "bytes_checked": 614488000
+  }
+}

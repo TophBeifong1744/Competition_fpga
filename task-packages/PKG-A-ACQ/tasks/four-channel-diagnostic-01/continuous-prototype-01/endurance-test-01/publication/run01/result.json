@@ -1,0 +1,325 @@
+{
+  "status": "PASS_PUBLICATION_CHECKS_NOT_B_ACCEPTANCE",
+  "dependency_commit": "bbe39c38dc36ccb4c0492f492b86f6c46d885fbe",
+  "scope": "A publication completeness / host rerun, NOT independent B approval",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\board-run-20260916-01\\record_checks.py",
+        "verify"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\board-run-20260916-01\\test_verify_log.py"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\board-run-20260916-01\\verify_log.py",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\board-run-20260916-01\\endurance_300s_10x10s_20260916_01.log",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-check-01\\uart.json"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-c",
+        "import sys,runpy;sys.path.insert(0,sys.argv[1]);import check_entry;target=sys.argv[2];sys.argv=[target];runpy.run_path(target,run_name=\"__main__\")",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-check-01\\historical-dependencies\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\timerfixed-entry-01",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\tests\\test_gate.py"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-c",
+        "import sys,runpy;sys.path.insert(0,sys.argv[1]);import check_entry;target=sys.argv[2];sys.argv=[target];runpy.run_path(target,run_name=\"__main__\")",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-check-01\\historical-dependencies\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\timerfixed-entry-01",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\tests\\test_timer_layout.py"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-c",
+        "import sys,json;sys.path.insert(0,sys.argv[1]);import check_entry;sys.path.insert(0,sys.argv[2]);import check_endurance as gate;print(json.dumps(gate.compiled(sys.argv[3],sys.argv[4]),indent=2))",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-check-01\\historical-dependencies\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\timerfixed-entry-01",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\evidence\\user-build-20260916-2052\\app\\build\\CMakeFiles\\four_mic_endurance.elf.dir\\main.c.obj",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\evidence\\user-build-20260916-2052\\app\\build\\four_mic_endurance.elf"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "F:\\Program\\env\\mingw64\\bin\\gcc.exe",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-misleading-indentation",
+        "-IC:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\proposed-src\\continuous",
+        "-IC:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-check-01\\historical-dependencies\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\tests",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\proposed-src\\continuous\\continuous_core.c",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\tests\\test_endurance.c",
+        "-o",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-check-01\\test_endurance.exe"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-check-01\\test_endurance.exe"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\endurance-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01",
+      "returncode": 0
+    }
+  ],
+  "new_arm_build": false,
+  "new_board_run": false,
+  "sealed_files": 138,
+  "sealed_manifest_sha256": "9cb4c1a3b82adf046380b8265793b471ffc2480ba191f337ffec1a5a078be6dd",
+  "build_manifest_files": 46,
+  "snapshot_files": 23,
+  "pinned_checker_files": 2,
+  "pinned_helpers": 2,
+  "historical_hardware_files": 3,
+  "totals": {
+    "groups": 19202750,
+    "packets": 76811,
+    "bytes_checked": 614488000
+  },
+  "compiled_archive": {
+    "divisor": 333333343,
+    "contract": [
+      1129270833,
+      16777216,
+      17825792,
+      250,
+      8,
+      8000,
+      64,
+      8064,
+      2,
+      16128,
+      1048576,
+      1073741823,
+      1077936128,
+      1092616192,
+      10000000,
+      480000
+    ],
+    "program_end": 1128592,
+    "ranges": [
+      {
+        "name": "PT_LOAD",
+        "start": 1048576,
+        "end": 1128592
+      },
+      {
+        "name": ".text",
+        "start": 1048576,
+        "end": 1074816
+      },
+      {
+        "name": ".init",
+        "start": 1074816,
+        "end": 1074828
+      },
+      {
+        "name": ".fini",
+        "start": 1074828,
+        "end": 1074840
+      },
+      {
+        "name": ".rodata",
+        "start": 1074840,
+        "end": 1077808
+      },
+      {
+        "name": ".data",
+        "start": 1077808,
+        "end": 1079228
+      },
+      {
+        "name": ".eh_frame",
+        "start": 1079228,
+        "end": 1079284
+      },
+      {
+        "name": ".mmu_tbl",
+        "start": 1081344,
+        "end": 1097728
+      },
+      {
+        "name": ".ARM.exidx",
+        "start": 1097728,
+        "end": 1097736
+      },
+      {
+        "name": ".init_array",
+        "start": 1097736,
+        "end": 1097744
+      },
+      {
+        "name": ".fini_array",
+        "start": 1097744,
+        "end": 1097748
+      },
+      {
+        "name": ".drvcfg_sec",
+        "start": 1097748,
+        "end": 1097964
+      },
+      {
+        "name": ".bss",
+        "start": 1097968,
+        "end": 1106060
+      },
+      {
+        "name": ".heap",
+        "start": 1106060,
+        "end": 1114256
+      },
+      {
+        "name": ".stack",
+        "start": 1114256,
+        "end": 1128592
+      }
+    ],
+    "elf_sha256": "75c7e5e2203ed1ba019c83a1123ef79eff0c877286d722eea5b8d9a275c76449",
+    "object_sha256": "4eeb96edabcb79b2b6df29bbdbe2c67ee3532b14a71bfbe08117f4df63a3dc15",
+    "timer_layout": {
+      "object": {
+        "address": "0x2bc",
+        "pool_offset": 108,
+        "literal_immediate": 12,
+        "padding_nop": false,
+        "divisor": 333333343,
+        "calls": {
+          "XTime_GetTime": {
+            "relocation_type": 28,
+            "symbol": "XTime_GetTime"
+          },
+          "__aeabi_uldivmod": {
+            "relocation_type": 28,
+            "symbol": "__aeabi_uldivmod"
+          }
+        }
+      },
+      "elf": {
+        "address": "0x100764",
+        "pool_offset": 108,
+        "literal_immediate": 12,
+        "padding_nop": false,
+        "divisor": 333333343,
+        "calls": {
+          "XTime_GetTime": {
+            "target": "0x1028fc",
+            "thumb": false
+          },
+          "__aeabi_uldivmod": {
+            "target": "0x104ad4",
+            "thumb": true
+          }
+        }
+      },
+      "reference_object": {
+        "address": "0x290",
+        "pool_offset": 112,
+        "literal_immediate": 16,
+        "padding_nop": true,
+        "divisor": 333333343,
+        "calls": {
+          "XTime_GetTime": {
+            "relocation_type": 28,
+            "symbol": "XTime_GetTime"
+          },
+          "__aeabi_uldivmod": {
+            "relocation_type": 28,
+            "symbol": "__aeabi_uldivmod"
+          }
+        }
+      },
+      "reference_elf": {
+        "address": "0x100738",
+        "pool_offset": 112,
+        "literal_immediate": 16,
+        "padding_nop": true,
+        "divisor": 333333343,
+        "calls": {
+          "XTime_GetTime": {
+            "target": "0x1027cc",
+            "thumb": false
+          },
+          "__aeabi_uldivmod": {
+            "target": "0x1049a4",
+            "thumb": true
+          }
+        }
+      }
+    },
+    "profile": [
+      1162757169,
+      1,
+      300000000,
+      14400000,
+      10000000,
+      480000,
+      10,
+      11,
+      1000000,
+      2000000
+    ],
+    "schedule": [
+      300000000,
+      14400000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000,
+      10000000,
+      480000
+    ]
+  },
+  "python_test_methods": 23,
+  "host_model": "old16 + schedule11 + invalid/retry/null/deadline; NOT board"
+}

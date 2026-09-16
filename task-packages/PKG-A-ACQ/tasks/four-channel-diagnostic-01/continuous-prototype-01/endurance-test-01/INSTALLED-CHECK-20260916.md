@@ -1,0 +1,13 @@
+# 用户接入后的只读检查
+
+2026-09-16 20:04，用户报告修改稿已接入four_mic_endurance；Codex只读核对并执行pre，没有修改F盘工程、调用构建或操作硬件。
+
+结果：E1_PRECHECK_ONLY，完整请求和结果在evidence/20260916_200439_pre_91508ff9cd。候选源码及UserConfig通过固定匹配，重复独立编译源问题已纠正；新应用CMake主体和E1 hook匹配。平台/域匹配continuous_platform及standalone_ps7_cortexa9_0，88项BSP文件及固定XSA验证通过。RX合同源码未扩大。
+
+这一步不是实际编译后的对象/ELF/map检查，也不是加载或实板通过。新ARM构建及11段实板尚未由本任务确认。
+
+本机已有Git引用与所查阅文档未取得本次计时修复版入口的B放行记录；共享目录存在落后和缺文件的已知情况，因此不能据此断言B没有批准。请求用户提供工作执行转发的准确回执、文件位置或提交SHA，再核对批准范围。
+
+在确认入口放行后，下一用户操作阶段是仅对four_mic_endurance Clean/Build，保存完整输出；不Clean平台，不动原应用或Vivado，不Run。成功预期E1_ARTIFACT_PASS_NOT_LOAD_NOT_BOARD，之后才核对新ELF/map和加载配置。
+
+本记录及此次pre是PREPARATION-SHA256.json生成之后追加的证据；旧准备清单不改写成安装后清单。准备时README/OPERATOR的“待安装”描述由本安装检查记录补充，不代表本批已批准。
