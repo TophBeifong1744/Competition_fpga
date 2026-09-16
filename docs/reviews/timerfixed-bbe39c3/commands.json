@@ -1,0 +1,63 @@
+[
+  {
+    "name": "manifest",
+    "argv": [
+      "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-B",
+      "delivery_manifest.py"
+    ],
+    "cwd": "F:\\NUEC\\review-worktrees\\timerfixed-bbe39c3\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\timerfixed-entry-01",
+    "exit_code": 0,
+    "finished_utc": "2026-09-16T12:26:11.463174+00:00"
+  },
+  {
+    "name": "entry-tests",
+    "argv": [
+      "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "-v",
+      "test_entry"
+    ],
+    "cwd": "F:\\NUEC\\review-worktrees\\timerfixed-bbe39c3\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\timerfixed-entry-01",
+    "exit_code": 0,
+    "finished_utc": "2026-09-16T12:26:14.273850+00:00"
+  },
+  {
+    "name": "parent-entry-tests",
+    "argv": [
+      "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "F:\\NUEC\\review-worktrees\\timerfixed-bbe39c3\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\tests",
+      "-p",
+      "test_entry.py",
+      "-v"
+    ],
+    "cwd": "F:\\NUEC\\review-worktrees\\timerfixed-bbe39c3",
+    "exit_code": 0,
+    "finished_utc": "2026-09-16T12:26:15.412995+00:00"
+  },
+  {
+    "name": "safety-tests",
+    "argv": [
+      "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "F:\\NUEC\\review-worktrees\\timerfixed-bbe39c3\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\current_build",
+      "-p",
+      "test_build_current.py",
+      "-v"
+    ],
+    "cwd": "F:\\NUEC\\review-worktrees\\timerfixed-bbe39c3",
+    "exit_code": 0,
+    "finished_utc": "2026-09-16T12:26:33.089385+00:00"
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "baseline": "PASS",
+  "cases": [
+    {
+      "case": "entry_in_reserved_rx",
+      "expected": "REJECTED",
+      "actual": "ACCEPTED",
+      "original_entry": "0x100000",
+      "changed_entry": "0x1000000",
+      "entry_in_any_load": false,
+      "byte_changes": [
+        26,
+        27
+      ],
+      "changed_elf_sha256": "182dd83ce3ea97e8ae7e62b3172aac9f11ac2ac671716f2399d31eb281f86af8"
+    },
+    {
+      "case": "entry_outside_all_loads",
+      "expected": "REJECTED",
+      "actual": "ACCEPTED",
+      "original_entry": "0x100000",
+      "changed_entry": "0x0",
+      "entry_in_any_load": false,
+      "byte_changes": [
+        26
+      ],
+      "changed_elf_sha256": "940a9f8002b814ea67289a673840b0a6816ee4bdcefcaa2e89f97777da47f278"
+    },
+    {
+      "case": "case_sensitive_gcc_option",
+      "before": "-DSDT",
+      "after": "-Dsdt",
+      "expected": "DIFFERENT",
+      "actual": "EQUAL"
+    },
+    {
+      "case": "case_sensitive_gcc_option",
+      "before": "-U__clang__",
+      "after": "-u__clang__",
+      "expected": "DIFFERENT",
+      "actual": "EQUAL"
+    }
+  ]
+}
