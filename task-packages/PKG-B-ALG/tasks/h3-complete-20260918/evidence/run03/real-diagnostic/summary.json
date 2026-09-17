@@ -1,0 +1,59 @@
+{
+  "status": "PASS_DIAGNOSTIC_EXECUTION_NOT_METRIC_ACCEPTANCE",
+  "thresholds": {
+    "frozen_before_label_scoring": true,
+    "rms_min_codes": 2048,
+    "peak_min_codes": 4096,
+    "minimum_active_channels": 3,
+    "reject_stream_error": true,
+    "reject_clip_flag": true,
+    "note": "format-scale engineering candidate; not fitted to a truth-labelled acoustic set"
+  },
+  "recordings": [
+    {
+      "recording": "center",
+      "frames": 61,
+      "counts": {
+        "presence_present": 61,
+        "numeric_candidate": 36,
+        "accepted_candidate": 36,
+        "fresh_direction": 21
+      },
+      "label_quality": "diagnostic_no_trustworthy_frame_truth",
+      "direction_p50_deg": null,
+      "direction_p95_deg": null,
+      "valid_output_ratio": null,
+      "wrong_direction_ratio": null,
+      "objective_audio_improvement": null
+    },
+    {
+      "recording": "quiet",
+      "frames": 61,
+      "counts": {
+        "presence_present": 61,
+        "numeric_candidate": 35,
+        "accepted_candidate": 35,
+        "fresh_direction": 0
+      },
+      "label_quality": "diagnostic_no_trustworthy_frame_truth",
+      "direction_p50_deg": null,
+      "direction_p95_deg": null,
+      "valid_output_ratio": null,
+      "wrong_direction_ratio": null,
+      "objective_audio_improvement": null
+    }
+  ],
+  "audio": {
+    "existing_three_way_source": "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/evidence/run02/audio",
+    "same_input_clock_and_common_gain": "previously limited-approved at f364a023; not rerun here",
+    "single_manual_auto": true,
+    "objective_metric": "NOT_RUN_NO_TARGET_INTERFERENCE_REFERENCE"
+  },
+  "not_run": [
+    "presence accuracy",
+    "direction P50/P95",
+    "valid output ratio against truth",
+    "wrong-direction rate against truth",
+    "SNR/SI-SDR/audio benefit"
+  ]
+}

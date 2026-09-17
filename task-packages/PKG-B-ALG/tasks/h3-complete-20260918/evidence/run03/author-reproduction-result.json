@@ -1,0 +1,151 @@
+{
+  "status": "PASS_AUTHOR_REPRODUCTION_NOT_INDEPENDENT_REVIEW",
+  "commands": 8,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "tests": {
+    "h3_candidate_unittest": 29,
+    "three_way_audio_existing_package": "50 tests reported by unchanged approved entry; inspect log"
+  },
+  "not_run": [
+    "new real-input truth metrics",
+    "presence accuracy",
+    "direction P50/P95",
+    "objective audio improvement",
+    "AMD full-chain bit-exact comparison",
+    "new RTL/XSim",
+    "integrated synthesis/timing",
+    "real-time board audio",
+    "real PYNQ"
+  ],
+  "commands_detail": [
+    {
+      "label": "package-manifest",
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918\\task-packages\\PKG-B-ALG\\tasks\\h3-complete-20260918\\source\\seal_package.py",
+        "--package",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918\\task-packages\\PKG-B-ALG\\tasks\\h3-complete-20260918",
+        "--verify"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918",
+      "exit_code": 0,
+      "started_unix": 1789657315.034234,
+      "elapsed_seconds": 0.09789609909057617
+    },
+    {
+      "label": "unit-tests",
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918\\task-packages\\PKG-B-ALG\\tasks\\h3-complete-20260918\\tests",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918",
+      "exit_code": 0,
+      "started_unix": 1789657315.2051933,
+      "elapsed_seconds": 0.176194429397583
+    },
+    {
+      "label": "golden",
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918\\task-packages\\PKG-B-ALG\\tasks\\h3-complete-20260918\\source\\run_golden.py",
+        "--repo",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-author-run02\\golden"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918",
+      "exit_code": 0,
+      "started_unix": 1789657315.3823872,
+      "elapsed_seconds": 0.48723387718200684
+    },
+    {
+      "label": "golden-check",
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918\\task-packages\\PKG-B-ALG\\tasks\\h3-complete-20260918\\source\\check_golden.py",
+        "--repo",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918",
+        "--golden",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-author-run02\\golden\\golden-stages.npz",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-author-run02\\golden-check.json"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918",
+      "exit_code": 0,
+      "started_unix": 1789657315.869621,
+      "elapsed_seconds": 0.35927844047546387
+    },
+    {
+      "label": "real-diagnostic",
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918\\task-packages\\PKG-B-ALG\\tasks\\h3-complete-20260918\\source\\evaluate_real.py",
+        "--repo",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-author-run02\\real-diagnostic"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918",
+      "exit_code": 0,
+      "started_unix": 1789657316.229907,
+      "elapsed_seconds": 0.6027438640594482
+    },
+    {
+      "label": "budget",
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918\\task-packages\\PKG-B-ALG\\tasks\\h3-complete-20260918\\source\\budget.py",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-author-run02\\budget.json"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918",
+      "exit_code": 0,
+      "started_unix": 1789657316.832651,
+      "elapsed_seconds": 0.0564119815826416
+    },
+    {
+      "label": "skill-scope",
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918\\task-packages\\PKG-B-ALG\\tasks\\h3-complete-20260918\\source\\scope_check.py",
+        "--repo",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-author-run02\\skill-scope.json"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918",
+      "exit_code": 0,
+      "started_unix": 1789657316.890617,
+      "elapsed_seconds": 0.3885788917541504
+    },
+    {
+      "label": "three-way-audio",
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918\\task-packages\\PKG-B-ALG\\tasks\\four-channel-track-01\\audio-01\\reproduce.py",
+        "--out",
+        "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-author-run02\\three-way-audio"
+      ],
+      "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\09\\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\\h3-closeout-0918",
+      "exit_code": 0,
+      "started_unix": 1789657317.2791958,
+      "elapsed_seconds": 5.202086925506592
+    }
+  ]
+}

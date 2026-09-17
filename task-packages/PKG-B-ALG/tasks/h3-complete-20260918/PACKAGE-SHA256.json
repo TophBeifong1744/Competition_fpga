@@ -1,0 +1,289 @@
+{
+  "schema": "soundsight-h3-package-sha256-1",
+  "root": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918",
+  "excludes": [
+    "PACKAGE-SHA256.json"
+  ],
+  "files": [
+    {
+      "path": "H3-ADMISSION.md",
+      "bytes": 3430,
+      "sha256": "b509e0602c4680f211bbb470512694044596ab9955c5a798464bcc0955e9d844"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 2465,
+      "sha256": "1992fe3313cfacc56c3ece0d2282e49a3a8959f355fd04079757805b79987c8c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5797,
+      "sha256": "1d5c6050213a38db88f81469d521c318c9a33b044dc805f31c0fb738d421ec61"
+    },
+    {
+      "path": "REAL-INPUT-STATUS.md",
+      "bytes": 1444,
+      "sha256": "17915b01b2e3740ebbeb9a6ca6054921b65bebd68bd99a84fc6fbb1b7214c06d"
+    },
+    {
+      "path": "REVIEW-PROMPT.md",
+      "bytes": 2802,
+      "sha256": "78fea63f18486b1c79f2c40c46789479912407839b17c45ec4639883171b592f"
+    },
+    {
+      "path": "SKILL-SCOPE-CHECK.md",
+      "bytes": 1945,
+      "sha256": "649b1d74f6cc47a083ae896707320b6c9bab3019ce089c26ea2f14aa6b215f42"
+    },
+    {
+      "path": "WORK-EXECUTION-REPORT.md",
+      "bytes": 3457,
+      "sha256": "45683ac7e618df32b4083a553244a424c83267d143187bb835cc0c8c4e85d5e5"
+    },
+    {
+      "path": "config.json",
+      "bytes": 2245,
+      "sha256": "57c950abc3253c963530a1387fb72f031e121afa5ed950427ace1a3c2fe59cb2"
+    },
+    {
+      "path": "evidence/run01/FAILURE.md",
+      "bytes": 940,
+      "sha256": "b3ced2e1f4e1d518d83c03339286ce44f76068bdff7a1f7bef26f06844a85e18"
+    },
+    {
+      "path": "evidence/run01/budget.json",
+      "bytes": 2888,
+      "sha256": "654448cebccde022ccde648e09fc16bdbb47768eb20cb9ccd5f4ccdf0d0c8be4"
+    },
+    {
+      "path": "evidence/run01/golden-check.json",
+      "bytes": 6320,
+      "sha256": "c81aee264667d01e6188029f9747a4b745162e760660f1e711c4a3e5f7c75968"
+    },
+    {
+      "path": "evidence/run01/golden/SHA256.json",
+      "bytes": 191,
+      "sha256": "fb916dc0603afb9000699c0df4057ea1da20f403d3c95a53e40f88c4cf73427f"
+    },
+    {
+      "path": "evidence/run01/golden/golden-stages.npz",
+      "bytes": 62079,
+      "sha256": "b8733ee94936d1c7c4a69f477e357a26740615d653bd534be9b4426f145b277d"
+    },
+    {
+      "path": "evidence/run01/golden/golden-summary.json",
+      "bytes": 20963,
+      "sha256": "1aaec9798d65b5b60604239495ff3af3187b8f161f01d96b8fc4c7ed4c82759b"
+    },
+    {
+      "path": "evidence/run01/real-diagnostic/SHA256.json",
+      "bytes": 178,
+      "sha256": "c6596f497d65bb5d057ca1ebe641940494793fd2392e90eb92decbdf49bd6bff"
+    },
+    {
+      "path": "evidence/run01/real-diagnostic/frames.json",
+      "bytes": 111997,
+      "sha256": "e5a0f2dc0ca1f43bd2790722fabed3323e3d6ce345296fbcec6cb10d14a7a9ee"
+    },
+    {
+      "path": "evidence/run01/real-diagnostic/summary.json",
+      "bytes": 1894,
+      "sha256": "9a3a52357c1cdeb50ed3c2e72b152e0a76c2c1b0b28b96385edbcb5ebfbe71af"
+    },
+    {
+      "path": "evidence/run01/skill-scope.json",
+      "bytes": 2798,
+      "sha256": "d859b0e5b07adf4ecbbc04d4234d88524e11ef8d64e1bba8b7bbd4f261d2f4af"
+    },
+    {
+      "path": "evidence/run02/SUPERSEDED.md",
+      "bytes": 647,
+      "sha256": "8f36621d33a9fda4683cb94ff45f0981e8e51d03fee21ffe738ff830499d4bb1"
+    },
+    {
+      "path": "evidence/run02/author-reproduction.json",
+      "bytes": 859,
+      "sha256": "bb6c8322bd0d7cf73f42845bd4efd84f2ed43e507240c6d04bb51e00311907f6"
+    },
+    {
+      "path": "evidence/run02/budget.json",
+      "bytes": 2888,
+      "sha256": "654448cebccde022ccde648e09fc16bdbb47768eb20cb9ccd5f4ccdf0d0c8be4"
+    },
+    {
+      "path": "evidence/run02/golden-check.json",
+      "bytes": 6263,
+      "sha256": "9e0dd1352e404f42540955d140485476a7b566ebeeb07461a964e65fe5b9ca07"
+    },
+    {
+      "path": "evidence/run02/golden/SHA256.json",
+      "bytes": 191,
+      "sha256": "f199bb7013c4cfa3b1c45b28ba067de0924b5ab6e5e2314c57824868ad37bcf3"
+    },
+    {
+      "path": "evidence/run02/golden/golden-stages.npz",
+      "bytes": 64672,
+      "sha256": "94b2d2ddb9d7dfdf429108c34cfcdeaa3296cac1db07ae24ed86efeab4683be4"
+    },
+    {
+      "path": "evidence/run02/golden/golden-summary.json",
+      "bytes": 20906,
+      "sha256": "25dcb6b656ce2c311bd595075f7d915b5d604e28db802a073ddff081fed40ef5"
+    },
+    {
+      "path": "evidence/run02/real-diagnostic/SHA256.json",
+      "bytes": 178,
+      "sha256": "c6596f497d65bb5d057ca1ebe641940494793fd2392e90eb92decbdf49bd6bff"
+    },
+    {
+      "path": "evidence/run02/real-diagnostic/frames.json",
+      "bytes": 111997,
+      "sha256": "e5a0f2dc0ca1f43bd2790722fabed3323e3d6ce345296fbcec6cb10d14a7a9ee"
+    },
+    {
+      "path": "evidence/run02/real-diagnostic/summary.json",
+      "bytes": 1894,
+      "sha256": "9a3a52357c1cdeb50ed3c2e72b152e0a76c2c1b0b28b96385edbcb5ebfbe71af"
+    },
+    {
+      "path": "evidence/run02/skill-scope.json",
+      "bytes": 2798,
+      "sha256": "d859b0e5b07adf4ecbbc04d4234d88524e11ef8d64e1bba8b7bbd4f261d2f4af"
+    },
+    {
+      "path": "evidence/run03/author-input-post.txt",
+      "bytes": 22,
+      "sha256": "de9fba67f1ea9ba598448824b4c05939c20a580e6efa798588bfa4ef22347e9c"
+    },
+    {
+      "path": "evidence/run03/author-input-pre.txt",
+      "bytes": 22,
+      "sha256": "de9fba67f1ea9ba598448824b4c05939c20a580e6efa798588bfa4ef22347e9c"
+    },
+    {
+      "path": "evidence/run03/author-package-manifest.txt",
+      "bytes": 33,
+      "sha256": "9cd11adbbde1d465abed97d4587987e374348067883432a9365d198e26264d10"
+    },
+    {
+      "path": "evidence/run03/author-reproduction-result.json",
+      "bytes": 7979,
+      "sha256": "97206dfd8e94c782cbc9c4d056870a484300bb411d7e3e07a66a95034fbfd43f"
+    },
+    {
+      "path": "evidence/run03/author-three-way-audio.txt",
+      "bytes": 97,
+      "sha256": "4c05980417b2ec599903b3df7f785c5bc6256593d2d2a10f6a2c9561ffba064f"
+    },
+    {
+      "path": "evidence/run03/author-unit-tests.txt",
+      "bytes": 2761,
+      "sha256": "3e4e2960f5b353576af1282ba340e66ec2a001dad658b852ee6af66b32b7daf3"
+    },
+    {
+      "path": "evidence/run03/budget.json",
+      "bytes": 2888,
+      "sha256": "654448cebccde022ccde648e09fc16bdbb47768eb20cb9ccd5f4ccdf0d0c8be4"
+    },
+    {
+      "path": "evidence/run03/golden-check.json",
+      "bytes": 6263,
+      "sha256": "9e0dd1352e404f42540955d140485476a7b566ebeeb07461a964e65fe5b9ca07"
+    },
+    {
+      "path": "evidence/run03/golden/SHA256.json",
+      "bytes": 191,
+      "sha256": "c1c9e75f08ddf86158ff8127b4ca10e099d9f384d77f37828eac4cfcad7b09b9"
+    },
+    {
+      "path": "evidence/run03/golden/golden-stages.npz",
+      "bytes": 64672,
+      "sha256": "94b2d2ddb9d7dfdf429108c34cfcdeaa3296cac1db07ae24ed86efeab4683be4"
+    },
+    {
+      "path": "evidence/run03/golden/golden-summary.json",
+      "bytes": 20758,
+      "sha256": "86e82f82c2df152fa1973912f3bccfac06bb863e9131db053378b1750b57eece"
+    },
+    {
+      "path": "evidence/run03/real-diagnostic/SHA256.json",
+      "bytes": 178,
+      "sha256": "c6596f497d65bb5d057ca1ebe641940494793fd2392e90eb92decbdf49bd6bff"
+    },
+    {
+      "path": "evidence/run03/real-diagnostic/frames.json",
+      "bytes": 111997,
+      "sha256": "e5a0f2dc0ca1f43bd2790722fabed3323e3d6ce345296fbcec6cb10d14a7a9ee"
+    },
+    {
+      "path": "evidence/run03/real-diagnostic/summary.json",
+      "bytes": 1894,
+      "sha256": "9a3a52357c1cdeb50ed3c2e72b152e0a76c2c1b0b28b96385edbcb5ebfbe71af"
+    },
+    {
+      "path": "evidence/run03/skill-scope.json",
+      "bytes": 2798,
+      "sha256": "d859b0e5b07adf4ecbbc04d4234d88524e11ef8d64e1bba8b7bbd4f261d2f4af"
+    },
+    {
+      "path": "inputs.json",
+      "bytes": 3700,
+      "sha256": "8bc2df5d83dbc3b413e59764ace340e11a58aca89f32d261ace64760bff0a0e2"
+    },
+    {
+      "path": "source/budget.py",
+      "bytes": 4324,
+      "sha256": "5d68ffbd9891ebd71b3f024f6727171d2bed47a8732e813ca9608d060719c56a"
+    },
+    {
+      "path": "source/check_golden.py",
+      "bytes": 1923,
+      "sha256": "fcf97140bb068dd8062785caf10710c8a292b7e75fbd7731dc7d2797ca80366b"
+    },
+    {
+      "path": "source/evaluate_real.py",
+      "bytes": 4942,
+      "sha256": "ef06636f066d0cf98685eb2f590be5dc6c89f5fca33d702b8c316033443bd542"
+    },
+    {
+      "path": "source/fixed_golden.py",
+      "bytes": 16891,
+      "sha256": "2431b154bf818f910c8298d98211f8f223f57aacfeab3f386f369ba8cfc9ede6"
+    },
+    {
+      "path": "source/presence.py",
+      "bytes": 1392,
+      "sha256": "ab207334e52c0c9b63742e98e36643990b3364f8820aa6a96df7a53d29da0c9e"
+    },
+    {
+      "path": "source/reproduce.py",
+      "bytes": 4825,
+      "sha256": "92b0e780e4610de5baa520564b8d281a5648b4bbb7b8c4c8ff8afd0335ed4727"
+    },
+    {
+      "path": "source/run_golden.py",
+      "bytes": 4246,
+      "sha256": "d81ae65898e6bb2ba804194115619a66065e9c58e26d7f92423d7db51818fd26"
+    },
+    {
+      "path": "source/scope_check.py",
+      "bytes": 3638,
+      "sha256": "b9b1a9309977bd02730f8cc617948905a5bc912a790086b5968b9bfea62e8ed9"
+    },
+    {
+      "path": "source/seal_inputs.py",
+      "bytes": 2902,
+      "sha256": "adbfcee5d90b7ab6f02beee071a1fd1ea94a1b8b808cabbed46602edab0d779d"
+    },
+    {
+      "path": "source/seal_package.py",
+      "bytes": 2119,
+      "sha256": "12b23c04192121c430eafab3e46aefecd5831e428e916177dce169cc5d9a0a91"
+    },
+    {
+      "path": "tests/test_h3_candidate.py",
+      "bytes": 6133,
+      "sha256": "5c38330fef24ad6417b28e9275f86af388dfcb443bddde1b1e61ef9c0fed8e0f"
+    }
+  ]
+}

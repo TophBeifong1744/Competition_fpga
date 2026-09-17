@@ -1,0 +1,230 @@
+{
+  "status": "PASS_ALL_STAGE_ARRAYS_EXACT",
+  "array_count": 11,
+  "arrays": [
+    {
+      "name": "automatic",
+      "shape": [
+        1024
+      ],
+      "equal": true,
+      "expected_sha256": "cd4b9366aacc46824cbd5c626d1ac34326a04f26a1864272be2d76ac8fae604a",
+      "actual_sha256": "cd4b9366aacc46824cbd5c626d1ac34326a04f26a1864272be2d76ac8fae604a"
+    },
+    {
+      "name": "fft25_half",
+      "shape": [
+        4,
+        513,
+        2
+      ],
+      "equal": true,
+      "expected_sha256": "b34b5e8abbeb0b3fc1971d8f12da674387e75894e2e2f518d8e84a180613bddc",
+      "actual_sha256": "b34b5e8abbeb0b3fc1971d8f12da674387e75894e2e2f518d8e84a180613bddc"
+    },
+    {
+      "name": "fft29",
+      "shape": [
+        4,
+        1024,
+        2
+      ],
+      "equal": true,
+      "expected_sha256": "e5a3b489152bf04b6dece722b6be27c8cbc0794b7d94c3d5d6896de1b540bc20",
+      "actual_sha256": "e5a3b489152bf04b6dece722b6be27c8cbc0794b7d94c3d5d6896de1b540bc20"
+    },
+    {
+      "name": "hann",
+      "shape": [
+        1024
+      ],
+      "equal": true,
+      "expected_sha256": "6735b0182229e76a47497382e6e9025f90bcb1c4a64bf3ae21b1eb6823bb6372",
+      "actual_sha256": "6735b0182229e76a47497382e6e9025f90bcb1c4a64bf3ae21b1eb6823bb6372"
+    },
+    {
+      "name": "ifft_real",
+      "shape": [
+        6,
+        1024
+      ],
+      "equal": true,
+      "expected_sha256": "d76584336e43894d539dcd53b36de9111dab4285cb2f8cfc32b0ce9a9fff71d0",
+      "actual_sha256": "d76584336e43894d539dcd53b36de9111dab4285cb2f8cfc32b0ce9a9fff71d0"
+    },
+    {
+      "name": "manual",
+      "shape": [
+        1024
+      ],
+      "equal": true,
+      "expected_sha256": "cd4b9366aacc46824cbd5c626d1ac34326a04f26a1864272be2d76ac8fae604a",
+      "actual_sha256": "cd4b9366aacc46824cbd5c626d1ac34326a04f26a1864272be2d76ac8fae604a"
+    },
+    {
+      "name": "pcm",
+      "shape": [
+        4,
+        1024
+      ],
+      "equal": true,
+      "expected_sha256": "0b98277bf724600be0efc384f6cabd2ed51f650c646ef9c2b4a85298b568d714",
+      "actual_sha256": "0b98277bf724600be0efc384f6cabd2ed51f650c646ef9c2b4a85298b568d714"
+    },
+    {
+      "name": "phat",
+      "shape": [
+        6,
+        513,
+        2
+      ],
+      "equal": true,
+      "expected_sha256": "fcd9ab4a6097fc891c692930b45772f8ccd99dfeda68554d033599dc7b83aab4",
+      "actual_sha256": "fcd9ab4a6097fc891c692930b45772f8ccd99dfeda68554d033599dc7b83aab4"
+    },
+    {
+      "name": "phat_mask",
+      "shape": [
+        6,
+        513
+      ],
+      "equal": true,
+      "expected_sha256": "1c41a9ad74511b627bc4a9520d8e42e3d9982842da1d4024bae3be06f0f85462",
+      "actual_sha256": "1c41a9ad74511b627bc4a9520d8e42e3d9982842da1d4024bae3be06f0f85462"
+    },
+    {
+      "name": "single",
+      "shape": [
+        1024
+      ],
+      "equal": true,
+      "expected_sha256": "02c8bf312a7b8bb85a74b9b81442d72ca6ac02a3baa9851e79ad5db5469f807c",
+      "actual_sha256": "02c8bf312a7b8bb85a74b9b81442d72ca6ac02a3baa9851e79ad5db5469f807c"
+    },
+    {
+      "name": "windowed",
+      "shape": [
+        4,
+        1024
+      ],
+      "equal": true,
+      "expected_sha256": "3b5864ae184108f1efc596446f8dff63844b56dfd597df66b799e2c9402af3d4",
+      "actual_sha256": "3b5864ae184108f1efc596446f8dff63844b56dfd597df66b799e2c9402af3d4"
+    }
+  ],
+  "chain_discrete": {
+    "pairs": [
+      {
+        "valid": false,
+        "reason": "TAU_BOUND",
+        "peak": 6,
+        "delta_q12": -9,
+        "tau_q12": 24567,
+        "peak_code": 1146690,
+        "separated_margin_q15": 6069
+      },
+      {
+        "valid": true,
+        "reason": "VALID",
+        "peak": 6,
+        "delta_q12": -9,
+        "tau_q12": 24567,
+        "peak_code": 1146690,
+        "separated_margin_q15": 6069
+      },
+      {
+        "valid": true,
+        "reason": "VALID",
+        "peak": 0,
+        "delta_q12": 0,
+        "tau_q12": 0,
+        "peak_code": 1146880,
+        "separated_margin_q15": 6081
+      },
+      {
+        "valid": true,
+        "reason": "VALID",
+        "peak": 0,
+        "delta_q12": 0,
+        "tau_q12": 0,
+        "peak_code": 1130496,
+        "separated_margin_q15": 6034
+      },
+      {
+        "valid": true,
+        "reason": "VALID",
+        "peak": -6,
+        "delta_q12": 9,
+        "tau_q12": -24567,
+        "peak_code": 1146690,
+        "separated_margin_q15": 6069
+      },
+      {
+        "valid": false,
+        "reason": "TAU_BOUND",
+        "peak": -6,
+        "delta_q12": 9,
+        "tau_q12": -24567,
+        "peak_code": 1146690,
+        "separated_margin_q15": 6069
+      }
+    ],
+    "doa": {
+      "valid": true,
+      "reason": "VALID",
+      "valid_pairs": 4,
+      "ux_q20": 1123531,
+      "uy_q20": 0,
+      "residual_sum_square_q24": 0,
+      "norm_square_q40": 1262321907961,
+      "azimuth_q8_deg": 0
+    },
+    "tracker": [
+      {
+        "state": "ACQUIRE",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "acquiring",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      },
+      {
+        "state": "ACQUIRE",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "acquiring",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      },
+      {
+        "state": "ACQUIRE",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "acquiring",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      },
+      {
+        "state": "ACQUIRE",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "acquiring",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      },
+      {
+        "state": "LOCKED",
+        "fresh_valid": true,
+        "angle_q8_deg": 0,
+        "display_angle_q8_deg": 0,
+        "reason": "acquired",
+        "last_fresh_sample": 3072,
+        "valid_through_sample": 12672
+      }
+    ]
+  }
+}
