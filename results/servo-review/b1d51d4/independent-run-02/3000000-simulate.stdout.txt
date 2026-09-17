@@ -1,0 +1,18 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Thu Sep 17 17:41:56 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/independent/xsim_script.tcl
+# xsim {independent} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS independent angles=512 frames=520 cycle_checks=31029021 CLK_FREQ_HZ=3000000
+$finish called at time : 10343032019356 ps : File "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/servo-review/b1d51d4/tb_independent.sv" Line 67
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 197.164 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 17:42:08 2026...

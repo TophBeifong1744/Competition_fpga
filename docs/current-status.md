@@ -1,5 +1,7 @@
 # SoundSight 当前状态
 
+2026-09-17外设局部覆盖：C候选`b1d51d44aa2c055a145b832b7c272fd33b7d0395`获[限定模块PASS](reviews/servo-b1d51d4/REVIEW.md)，活动库新入口搬迁仿真通过；机械、摄像头、综合时序、板测及整机未测。C现负责方案落实、全部相关驱动和最终效果测试，旧机械路线停止采用，见[操作单](member-c-operation-sheet.md)。下文9/14历史C安排被本条覆盖；本轮未重新验收A/B或旧阶段。
+
 更新：2026-09-14凌晨，补SKL-001技术升级进展。原定9/14检查已于9/13提前执行，**阶段进展限定通过**，见[验收与收尾](../deliverables/phase-2026-09-14/README.md)。本次Skill升级不是再做阶段验收；下一正式检查9/18，V1总验收10/1 10:00（UTC+8），9/16仅内部目标。日期以[统一日历](project-plan.md#61-统一阶段验收日历)为准。
 
 ## 本轮核对依据
@@ -17,14 +19,14 @@
 | B算法/定点 | e5b6753的C板reference25诊断及H3缺项表获A独立批准，52f3929合入、a91b470收尾；9/14进展要求已完成 | 9/16单麦/手动对照、9/18完整H3；direction_accepted仍为false，缺存在门/准确真值及正式DOA/DAS/资源时序，不提升为定位通过 |
 | SKL-001模块开发与仿真 | fpga-module-verification 0.3.0：合同/RTL/TB指导、XSim运行器、792/1125检查及故障/恢复实跑；待审候选，旧协作版已退出活动目录 | 按[准确候选与新包](maintenance/skills-publication-2026-09-14.md#skl-001)交B，B独立复跑并给陌生模块/故障；未批准、不当生产RTL接入或板测 |
 | SKL-002 PYNQ | 离线候选50项测试发布前复跑通过；待审版本见[入口](maintenance/skills-publication-2026-09-14.md#skl-002)，未获B批准。当前工程simple S2MM-only，无MM2S/DRE；真实PYNQ未准入 | A收口可配置验证/真实适配，B独立golden与故障复测；已有Vitis继续。通用PYNQ加分条文已核实，但mock不作为实板或已获加分证据 |
-| C单轴转台 | 773a56c限定研究批准，d57ae47导入，367da9d收尾；556控制+36独立检查及完整性通过属既有复核 | 保留为单轴研究证据，不套用到新双轴方案 |
-| C三维转台 | 407849e3d18e0a6e98a2716c7e5342afb1ea8581的B1停止包络与B2防下落原则获限定独立复核通过；保留原低惯量失败反例，材料归入既有研究包 | 仅条件性预算／方案原则，不是完整双轴动力学、控制器或实物通过；不接入主工程、不追加C任务 |
+| 旧机械路线 | 773a56c/407849e历史研究证据保留，现停止采用 | 不再实施，不将旧参数或性能套用新路线 |
+| C舵机与摄像头 | b1d51d4获限定PWM模块PASS及活动库搬迁验证 | C继续方案、全部相关驱动和效果测试；双轴联动、机械到位、摄像头及实板未通过 |
 | C004 | 完整交付及技术记录已有，正式批准未闭环 | 004-R2继续暂缓、005不启动，作为例外保留，不要求C返工 |
 | 六麦三维声学 | 六麦浮点、范围锁定/跟踪及噪声候选研究已有；完整3D-G0、六路硬件/实录、三维PL未通过 | V1前只复用既有预研；新扩展不抢首版关键路径，正式升级仍以V1保底和阶段门为前提 |
 
 主要证据：[四路B回执](../task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/B-REVIEW.md)、[current_build复核](../task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/current_build/B-REVIEW.md)、[9/12限定材料核验](../deliverables/phase-2026-09-16/REVIEW-2026-09-12.md)、[转台原批准](../task-packages/PKG-A-ACQ/outsourcing/review-status/motor-773a56c/README.md)。
 
-C三维转台依据[407849e限定复核](../task-packages/PKG-A-ACQ/outsourcing/review-status/motor-407849e/README.md)，[双轴采购指南](../task-packages/PKG-A-ACQ/payload/hardware/dual-axis-turntable-procurement-guide.md)只作未来准备。本次未采购或执行硬件动作，C不新增任务。
+C现行路线见[舵机与摄像头决定](../hardware/servo-camera-decision.md)，407849e和旧双轴采购指南仅保留历史，不再是实施指令。本次没有采购或执行硬件动作。
 
 ## 当前未通过范围
 

@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Sep 17 17:41:11 2026
+# Process ID         : 48428
+# Current directory  : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/servo-review/b1d51d4/author-run-02/build-1500000
+# Command line       : xsim.exe -log simulation.log -mode tcl -source {xsim.dir/servo_pwm_test/xsim_script.tcl}
+# Log file           : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/servo-review/b1d51d4/author-run-02/build-1500000/simulation.log
+# Journal file       : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/servo-review/b1d51d4/author-run-02/build-1500000\xsim.jou
+# Running On         : Toph
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 16642 MB
+# Total Virtual      : 33533 MB
+# Available Virtual  : 9158 MB
+#-----------------------------------------------------------
+source xsim.dir/servo_pwm_test/xsim_script.tcl
+# xsim {servo_pwm_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+Fatal: CLK_FREQ_HZ must be a positive multiple of 1 MHz
+Time: 0 ps  Iteration: 0  Process: /tb_motor_drive(CLK_FREQ_HZ=1500000)/dut/Initial49_0  Scope: tb_motor_drive(CLK_FREQ_HZ=1500000).dut  File: E:/ss-servo-review-0917/task-packages/PKG-SERVO-PWM/rtl/motor_drive.v Line: 52
+$finish called at time : 0 fs
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 17:41:13 2026...

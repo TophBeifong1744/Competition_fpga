@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Sep 17 17:42:28 2026
+# Process ID         : 41012
+# Current directory  : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/servo-review/b1d51d4/fault-run-01/width/build
+# Command line       : xsim.exe -log simulation.log -mode tcl -source {xsim.dir/servo_pwm_test/xsim_script.tcl}
+# Log file           : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/servo-review/b1d51d4/fault-run-01/width/build/simulation.log
+# Journal file       : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/servo-review/b1d51d4/fault-run-01/width/build\xsim.jou
+# Running On         : Toph
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 16642 MB
+# Total Virtual      : 33533 MB
+# Available Virtual  : 9096 MB
+#-----------------------------------------------------------
+source xsim.dir/servo_pwm_test/xsim_script.tcl
+# xsim {servo_pwm_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+FAIL pulse width actual=501000 expected=500000 ns
+Fatal: test failed
+Time: 506500 ns  Iteration: 1  Process: /tb_motor_drive(CLK_FREQ_HZ=1000000)/check_value  Scope: tb_motor_drive(CLK_FREQ_HZ=1000000).check_value  File: E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/servo-review/b1d51d4/fault-run-01/width/task-packages/PKG-SERVO-PWM/tb/tb_motor_drive.v Line: 25
+$finish called at time : 506500 ns
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 17:42:30 2026...

@@ -1,0 +1,84 @@
+[
+  {
+    "name": "identity",
+    "command": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-servo-review-0917",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "E:\\ss-servo-review-0917",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "elapsed_seconds": 0.078
+  },
+  {
+    "name": "clean-before",
+    "command": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-servo-review-0917",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "E:\\ss-servo-review-0917",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "elapsed_seconds": 0.357
+  },
+  {
+    "name": "version",
+    "command": [
+      "pwsh.exe",
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-Command",
+      "& 'F:\\AMD\\2025.2\\Vivado\\bin/vivado.bat' -version; exit $LASTEXITCODE"
+    ],
+    "cwd": "E:\\ss-servo-review-0917",
+    "exit_code": 1,
+    "expected_exit": 0,
+    "elapsed_seconds": 1.136
+  },
+  {
+    "name": "1000000-compile",
+    "command": [
+      "pwsh.exe",
+      "-NoProfile",
+      "-Command",
+      "& 'F:\\AMD\\2025.2\\Vivado\\bin/xvlog.bat' --sv 'E:\\ss-servo-review-0917\\task-packages\\PKG-SERVO-PWM\\rtl\\motor_drive.v' 'E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\servo-review\\b1d51d4\\tb_independent.sv'; exit $LASTEXITCODE"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\servo-review\\b1d51d4\\independent-run-01\\build-1000000",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "elapsed_seconds": 1.385
+  },
+  {
+    "name": "1000000-elaborate",
+    "command": [
+      "pwsh.exe",
+      "-NoProfile",
+      "-Command",
+      "& 'F:\\AMD\\2025.2\\Vivado\\bin/xelab.bat' tb_independent -generic_top '\"CLK_FREQ_HZ=1000000\"' -s independent; exit $LASTEXITCODE"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\servo-review\\b1d51d4\\independent-run-01\\build-1000000",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "elapsed_seconds": 2.12
+  },
+  {
+    "name": "1000000-simulate",
+    "command": [
+      "pwsh.exe",
+      "-NoProfile",
+      "-Command",
+      "& 'F:\\AMD\\2025.2\\Vivado\\bin/xsim.bat' independent -runall -log simulation.log; exit $LASTEXITCODE"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\servo-review\\b1d51d4\\independent-run-01\\build-1000000",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "elapsed_seconds": 3.828
+  }
+]

@@ -1,5 +1,7 @@
 # Simulation
 
+2026-09-17：新增获准舵机模块，统一清单为7组；下面“6组”是9/10历史结果。只验证本批搬迁入口可运行 `pwsh -File ./sim/run_servo.ps1 -OutputDirectory <全新目录> -ClockHz 1000000`，实际加载 `rtl/servo/`、`tb/servo/`，不加载任务包副本；默认100 MHz。原有6组本轮未重跑。来源与限定范围见[复核](../docs/reviews/servo-b1d51d4/REVIEW.md)。未修改或执行 one/BD。
+
 ## 当前可运行入口
 
 Vivado/XSim 2025.2，PowerShell 7，仓库根目录执行，输出必须是仓库外的新目录：

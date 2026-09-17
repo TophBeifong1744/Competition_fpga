@@ -1,0 +1,60 @@
+[
+  {
+    "name": "identity",
+    "command": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-servo-review-0917",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "E:\\ss-servo-review-0917",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "elapsed_seconds": 0.058
+  },
+  {
+    "name": "clean-before",
+    "command": [
+      "git",
+      "-c",
+      "safe.directory=E:/ss-servo-review-0917",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "E:\\ss-servo-review-0917",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "elapsed_seconds": 0.289
+  },
+  {
+    "name": "version",
+    "command": [
+      "powershell.exe",
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-Command",
+      "& 'F:\\AMD\\2025.2\\Vivado\\bin/vivado.bat' -version; exit $LASTEXITCODE"
+    ],
+    "cwd": "E:\\ss-servo-review-0917",
+    "exit_code": 1,
+    "expected_exit": 0,
+    "elapsed_seconds": 1.273
+  },
+  {
+    "name": "author-100000000",
+    "command": [
+      "powershell.exe",
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-Command",
+      "& './task-packages/PKG-SERVO-PWM/scripts/run_xsim.ps1' -VivadoBin 'F:\\AMD\\2025.2\\Vivado\\bin' -ClockHz 100000000 -OutputDirectory 'E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\servo-review\\b1d51d4\\author-run-01\\build-100000000'; if (-not $?) { exit 1 }"
+    ],
+    "cwd": "E:\\ss-servo-review-0917",
+    "exit_code": 1,
+    "expected_exit": 0,
+    "elapsed_seconds": 0.236
+  }
+]

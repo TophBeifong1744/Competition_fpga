@@ -1,0 +1,36 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/servo-review/b1d51d4/fault-run-01/no-output/task-packages/PKG-SERVO-PWM/rtl/motor_drive.v" into library work
+INFO: [VRFC 10-311] analyzing module motor_drive
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/servo-review/b1d51d4/fault-run-01/no-output/task-packages/PKG-SERVO-PWM/tb/tb_motor_drive.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_motor_drive
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/AMD/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_motor_drive -generic_top CLK_FREQ_HZ=1000000 -s servo_pwm_test 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.motor_drive(CLK_FREQ_HZ=1000000)
+Compiling module work.tb_motor_drive(CLK_FREQ_HZ=10000...
+Built simulation snapshot servo_pwm_test
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Thu Sep 17 17:42:35 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/servo_pwm_test/xsim_script.tcl
+# xsim {servo_pwm_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+Fatal: watchdog timeout
+Time: 400 ms  Iteration: 0  Process: /tb_motor_drive(CLK_FREQ_HZ=1000000)/Initial112_3  Scope: tb_motor_drive(CLK_FREQ_HZ=1000000)  File: E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/servo-review/b1d51d4/fault-run-01/no-output/task-packages/PKG-SERVO-PWM/tb/tb_motor_drive.v Line: 114
+$finish called at time : 400 ms
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 17:42:37 2026...

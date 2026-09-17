@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# xsim v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Sep 17 16:36:38 2026
+# Process ID: 31732
+# Current directory: C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/sim/build/servo-pwm-1000000
+# Command line: xsim.exe -log simulation.log -mode tcl -source {xsim.dir/servo_pwm_test/xsim_script.tcl}
+# Log file: C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/sim/build/servo-pwm-1000000/simulation.log
+# Journal file: C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/sim/build/servo-pwm-1000000\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/servo_pwm_test/xsim_script.tcl
+# xsim {servo_pwm_test} -autoloadwcfg -runall
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run -all
+PASS motor_drive checks=39 CLK_FREQ_HZ=1000000
+$finish called at time : 281572500 ns : File "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/task-packages/PKG-SERVO-PWM/tb/tb_motor_drive.v" Line 108
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 16:36:44 2026...

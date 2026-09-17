@@ -1,5 +1,7 @@
 # Competition_fpga
 
+2026-09-17职责覆盖：C负责[转台与摄像头方案落实、全部相关驱动和最终效果测试](docs/member-c-operation-sheet.md)，替代下文旧“不追加派工”。旧机械路线退役，舵机b1d51d4获[限定模块PASS](docs/reviews/servo-b1d51d4/REVIEW.md)，归入活动rtl/tb/sim；实板和摄像头未通过。A/B声学、H1/H2/H3与V1日历不变。
+
 当前安排（2026-09-13夜间）：原9/14检查已于9/13提前执行，阶段进展限定通过，见[阶段验收及收尾](deliverables/phase-2026-09-14/README.md)。下一正式检查9/18，V1总验收10/1 10:00；A/B继续工程和算法，C不追加派工。成员交接仍仅H1/H2/H3，见[统一日历](docs/project-plan.md#61-统一阶段验收日历)、[加速任务](docs/phases/2026-09-13-to-10-01/README.md)和[工作包台账](docs/work-packages.md)。
 
 嵌入式比赛作品
