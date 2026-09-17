@@ -1,0 +1,17 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Thu Sep 17 21:37:53 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_pcm4_overlap_framer_sim/xsim_script.tcl
+# xsim {tb_pcm4_overlap_framer_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS frame_adapter RTL: frames=6 events=7; 250-group boundaries, 512 overlap, channels, clip, backpressure, stop/restart, upstream fault
+$finish called at time : 201630 ns : File "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/sim/tb_pcm4_overlap_framer.sv" Line 174
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Sep 17 21:37:55 2026...
