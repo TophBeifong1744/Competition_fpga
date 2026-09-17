@@ -1,6 +1,7 @@
 param(
-    [string]$VivadoBin = 'D:\Vivado\2018.3\bin',
-    [int]$ClockHz = 100000000
+    [string]$VivadoBin = 'C:\AMDDesignTools\2025.2\Vivado\bin',
+    [int]$ClockHz = 100000000,
+    [string]$OutputDirectory = ''
 )
 $ErrorActionPreference = 'Stop'
 # 部分受限终端没有架构环境变量，旧版 Vivado 会误选 win32。
@@ -10,7 +11,14 @@ if (-not $savedArchitecture -and [Environment]::Is64BitOperatingSystem) {
 }
 $packageRoot = Split-Path $PSScriptRoot -Parent
 $repoRoot = Split-Path (Split-Path $packageRoot -Parent) -Parent
-$buildDir = Join-Path $repoRoot "sim/build/servo-pwm-$ClockHz"
+# 每轮使用新输出目录，保留历史证据；显式目录存在时拒绝覆盖。
+if ($OutputDirectory) {
+    $buildDir = [IO.Path]::GetFullPath($OutputDirectory)
+} else {
+    $runTag = Get-Date -Format 'yyyyMMdd-HHmmss-fff'
+    $buildDir = Join-Path $repoRoot "sim/build/servo-pwm-$ClockHz-$runTag"
+}
+if (Test-Path -LiteralPath $buildDir) { throw "Output already exists: $buildDir" }
 New-Item -ItemType Directory -Force -Path $buildDir | Out-Null
 Push-Location $buildDir
 try {

@@ -4,30 +4,30 @@
 
 本包为新增待复核模块，未修改既有已批准 RTL 库、one 工程或 BD。器件目标根据仓库环境记录为 `xc7z020clg400-2`；照片本身不证明完整速度等级。具体实测结果见 [VALIDATION.md](VALIDATION.md)。
 
-## 一页复核入口（2026-09-17 增量复核）
+## 一页复核入口（2026-09-17 补做 Vivado 2025.2）
 
 | 字段 | 本次交付 |
 |---|---|
-| 任务 / 作者 / 复核人 | PKG-SERVO-PWM；本任务用户与 Codex 实现；请交给非作者成员独立复核，若作者为 A 则由 B 复核；未代替其他成员确认接收 |
-| 固定版本 | 仓库 https://github.com/TophBeifong1744/Competition_fpga ，分支 `codex/servo-pwm-driver`；已直接查询远端的实现 SHA：`9b74815ba838ef1132e64105f8a228dcef164b7a`。本入口是随后仅 README 的补充提交，最终候选完整 SHA 由发布回执/提示词固定；该候选的其余 8 个文件必须与上述实现 SHA 相同 |
-| 基线 / 规则 | 首次交付，无旧独立复核结论；分支基线 `99cf1dc2c1e7e2bd60ca843839d47906f9b84770`。交付核查时远端 main 为 `02b578c730c539e7fb45e11386567f28ffe7ab71`，比共同基线领先 52 个提交。采用该 main 的 [统一规则](https://github.com/TophBeifong1744/Competition_fpga/blob/02b578c730c539e7fb45e11386567f28ffe7ab71/docs/team-workflow.md#review-efficiency) 和 [一页模板](https://github.com/TophBeifong1744/Competition_fpga/blob/02b578c730c539e7fb45e11386567f28ffe7ab71/docs/templates/review-brief.md)，不要只读取候选内旧规则 |
-| 申请范围 | 本包 9 个文件的模块级技术复核：PWM、角度映射/限幅/舍入、复位、周期更新、TB 判据、脚本与说明；不申请机械到位、2025.2 兼容、综合时序、板测或 one/BD 生产接入批准 |
-| 变化 | 相对共同基线新增独立包；实现提交后仅补本 README 的交付索引，RTL、TB、运行脚本、原测试证据不变；无其他模块依赖或主线源码修改 |
-| 输入 / 依赖 | 用户确认 20 ms 周期下 2.5%~12.5% 对应 0~360°；默认 100 MHz 是接口配置要求，不是实测晶振结论。Windows PowerShell、Vivado/XSim；作者验证工具为 2018.3。无外部数据输入、无第三方 RTL；9 位角度须同域稳定，复位须同步释放 |
-| 独立复核建议 | 首次完整审本包合同/实现/测试判据，独立验证端点、1 us 边界、舍入、上限、周期中更新、异步复位及重启；检查错误参数负例、测试超时/失败传播、脚本平台兼容性。由复核人决定实际检查范围，不将作者 PASS 直接视为批准 |
-| 运行入口 | 在固定最终候选 SHA 的独立干净 worktree，从仓库根执行下方两条命令。脚本输出目录固定，每轮使用新 worktree，运行前要求对应 sim/build 目录不存在；完整 stdout/stderr 和退出码另存本轮新日志目录。不要在作者原工作区复跑覆盖旧日志 |
-| 结果 / 未测 | 复用 [VALIDATION.md](VALIDATION.md) 的作者证据：100 MHz、1 MHz 各 39 项检查 PASS，同一组检查的两个配置，不算 78 个独立用例；工程创建成功。本次文档交付只核对 Git 身份、文件与链接，未重跑仿真；独立复核尚未执行。2025.2、综合/实现/时序、实板均未测 |
-| 已知问题 | 交付完整性核查未发现阻断，不代表技术无缺陷。非阻断观察：运行脚本会复用固定输出目录，须独立新工作树；工具路径需按复核机器修改。独立 home/enable、平滑运动、位置回读不在本版实现；回位由上层送安全目标角度，逻辑复位不等于回位 |
-| 集成 / 收尾 | 本轮先申请模块级批准。若批准活动库接入，建议源码 `rtl/servo/motor_drive.v`、TB `tb/servo/tb_motor_drive.v`，运行入口纳入 `sim`，更新已有清单；搬迁时核对真实加载路径并运行相称测试，不直接把依赖包布局的脚本挪走。板级接入由用户按最新 Vivado 操作约定决定，不自动生成/下载 bitstream。未准入部分保留本包说明原因。只有确认本批完整入库且无继续工作后，才能清理本任务短分支和仿真缓存，保留原证据；本轮不删除、不合入 main |
+| 任务 / 作者 / 复核人 | PKG-SERVO-PWM；本任务用户与 Codex 实现；由非作者成员独立复核，若作者为 A 则交 B；尚未收到独立复核结论 |
+| 固定版本 | 仓库 https://github.com/TophBeifong1744/Competition_fpga ，分支 `codex/servo-pwm-driver`。上一已发布候选 `34e9c9c961bd8501df2c540a09d6a894dfcae9c9`；本次最终 SHA 以发布回执固定，不再复核旧 SHA |
+| 基线 / 规则 | 实现源自 `9b74815ba838ef1132e64105f8a228dcef164b7a`，共同基线 `99cf1dc2c1e7e2bd60ca843839d47906f9b84770`。采用 main `02b578c730c539e7fb45e11386567f28ffe7ab71` 的 [六项规则](https://github.com/TophBeifong1744/Competition_fpga/blob/02b578c730c539e7fb45e11386567f28ffe7ab71/docs/team-workflow.md#review-efficiency)；候选内规则较旧，勿仅按旧规则执行 |
+| 申请范围 | 本包模块级技术复核：角度映射、PWM、限幅/舍入、复位和周期更新、TB 判据、运行脚本、2018.3/2025.2 功能仿真证据与文档；不申请综合时序、BD 集成或实板通过 |
+| 本次变化 | 相对上一候选仅更新运行脚本默认工具路径及新输出目录保护、README/VALIDATION，新增 2025.2 日志；RTL、TB、工程创建 Tcl 和旧证据保持原字节。脚本变更已实际执行测试，不当作纯文档免测 |
+| 输入 / 依赖 | 用户确认 20 ms 下 2.5%~12.5% 对应 0~360°；9 位无符号整数角度、同域稳定输入、同步释放复位。默认 100 MHz 是接口要求，非晶振实测；无外部数据与第三方 RTL。工具路径 `C:/AMDDesignTools/2025.2/Vivado/bin` |
+| 独立复核建议 | 若此前尚未开始独立复核，首次完整审本包；若已有绑定旧 SHA 的结论，再按差异和影响链复审。关注脉宽/周期边界、舍入/限幅、周期内更新、复位重启、脚本失败传播和新目录保护，必要负例由复核人决定 |
+| 运行入口 | 固定最终 SHA 的独立 worktree，从仓库根执行下方两条命令。脚本默认每轮生成唯一目录；可用 `-OutputDirectory` 指定不存在的新目录，已存在则报错。完整 stdout/stderr、退出码和工具版本另存本轮新证据目录 |
+| 结果 / 复用 / 未测 | 本次真实运行 2025.2：100 MHz、1 MHz 各 39 项检查 PASS；相同检查的两个配置，不累加为不同用例。已存在输出目录拒绝覆盖检查 PASS。2018.3 证据复用、未重跑。见 [VALIDATION.md](VALIDATION.md)。2025.2 工程创建/BD、综合/实现/时序、实板未测 |
+| 已知限制 | 作者自检不代替批准。回位由上层发送安全目标角度；不含独立 home/enable、平滑运动和位置反馈。电气兼容、实际时钟与针脚仍需核实。新路径保护不改变波形合同 |
+| 集成 / 收尾 | 若独立批准活动库接入，建议 `rtl/servo/motor_drive.v`、`tb/servo/tb_motor_drive.v`，运行入口纳入 sim 并更新已有清单；搬迁须验证实际加载位置并做相称测试，勿直接搬走依赖包布局的脚本。实际工程修改/综合实现按最新用户操作约定执行。未批准前保留原包，不自行合入 main；仅本批全部入库且无继续工作后可清理任务短分支及可重建缓存，保留原证据 |
 
-复跑示例（独立新 worktree 的仓库根目录；按本机修改 VivadoBin）：
+复跑命令（新候选独立 worktree 的根目录）：
 
 ```powershell
-& .\task-packages\PKG-SERVO-PWM\scripts\run_xsim.ps1 -VivadoBin 'D:\Vivado\2018.3\bin' -ClockHz 100000000
-& .\task-packages\PKG-SERVO-PWM\scripts\run_xsim.ps1 -VivadoBin 'D:\Vivado\2018.3\bin' -ClockHz 1000000
+& .\task-packages\PKG-SERVO-PWM\scripts\run_xsim.ps1 -ClockHz 100000000
+& .\task-packages\PKG-SERVO-PWM\scripts\run_xsim.ps1 -ClockHz 1000000
 ```
 
-复核回交请绑定最终候选完整 SHA，结论为限定范围 PASS / NEEDS_FIX / BLOCKED；分别记录本次运行、复用依据、未测、扩大检查原因及原始日志。集中反馈同类问题；返修才采用增量复审。批准后的合入/相称验证/推送/本地与远端核对按上述最新规则执行，不夹带未审提交。
+非默认安装位置用 `-VivadoBin` 指定真实工具目录。回交绑定最终完整 SHA 的限定 PASS / NEEDS_FIX / BLOCKED，并区分本次运行、复用、未测、扩大范围原因。批准后按最新规则完成相称验证和发布收尾。
 
 ## 文件入口
 
@@ -83,7 +83,7 @@
 
 ## 运行自检
 
-从仓库根目录，在 PowerShell 执行（默认本机已发现的 2018.3 安装位置）：
+从仓库根目录，在 PowerShell 执行（默认本机已确认的 Vivado 2025.2 安装位置）：
 
 ```powershell
 & .\task-packages\PKG-SERVO-PWM\scripts\run_xsim.ps1
@@ -92,12 +92,12 @@
 指定其他版本和时钟参数：
 
 ```powershell
-& .\task-packages\PKG-SERVO-PWM\scripts\run_xsim.ps1 -VivadoBin 'D:\Vivado\2018.3\bin' -ClockHz 1000000
+& .\task-packages\PKG-SERVO-PWM\scripts\run_xsim.ps1 -VivadoBin 'C:\AMDDesignTools\2025.2\Vivado\bin' -ClockHz 1000000
 ```
 
-`-VivadoBin` 应指向实际含 xvlog.bat、xelab.bat、xsim.bat 的目录，使用 2025.2 时同样指定其真实 bin 目录。测试时钟随 ClockHz 变化；单个测试默认最长 400 ms 仿真时间。
+`-VivadoBin` 应指向实际含 xvlog.bat、xelab.bat、xsim.bat 的目录，使用其他版本时同样指定其真实 bin 目录。测试时钟随 ClockHz 变化；单个测试默认最长 400 ms 仿真时间。
 
-预期：终端和 simulation.log 出现 `PASS motor_drive checks=39 CLK_FREQ_HZ=...`。异常波形、数值不符、工具失败或未出现 PASS 都视为失败。输出位于仓库 `sim/build/servo-pwm-<频率>/`，包含编译/展开/运行日志及 XSim 临时文件；本次验证仅在包内保存运行日志文本，不提交生成工程和二进制。
+预期：终端和 simulation.log 出现 `PASS motor_drive checks=39 CLK_FREQ_HZ=...`。异常波形、数值不符、工具失败或未出现 PASS 都视为失败。输出位于仓库 `sim/build/servo-pwm-<频率>-<运行时间>/`，包含编译/展开/运行日志及 XSim 临时文件；本次 2025.2 验证在包内保存编译、展开和运行日志文本，不提交生成工程和二进制。
 
 ## 在 Vivado 中使用
 
