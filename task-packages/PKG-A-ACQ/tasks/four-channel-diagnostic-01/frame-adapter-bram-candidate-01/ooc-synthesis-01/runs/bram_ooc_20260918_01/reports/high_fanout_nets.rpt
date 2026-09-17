@@ -1,0 +1,72 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Thu Sep 17 23:04:47 2026
+| Host         : Toph running 64-bit major release  (build 9200)
+| Command      : report_high_fanout_nets -max_nets 50 -file {E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-bram-candidate-01/ooc-synthesis-01/runs/bram_ooc_20260918_01/reports/high_fanout_nets.rpt}
+| Design       : pcm4_overlap_framer_bram
+| Device       : xc7z020
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+High Fan-out Nets Information
+
+1. Summary
+----------
+
++----------------------------+--------+-------------+
+| Net Name                   | Fanout | Driver Type |
++----------------------------+--------+-------------+
+| p_0_in                     |    468 | LUT1        |
+| e_session_id[31]_i_1_n_0   |    247 | LUT5        |
+| p_37_in                    |    152 | LUT5        |
+| have_prev                  |    131 | FDRE        |
+| groups_reg_3_i_1_n_0       |     70 | LUT4        |
+| frame_last_id[0]           |     65 | LUT6        |
+| interval_index[0]          |     64 | LUT6        |
+| frame_first_id[0]          |     64 | LUT4        |
+| start_fire                 |     40 | LUT5        |
+| rst_n                      |     36 | PORT        |
+| interval_index[31]_i_1_n_0 |     35 | LUT4        |
+| frame_index[0]             |     34 | LUT5        |
+| wr_ptr[9]_i_1_n_0          |     28 | LUT6        |
+| fill_count[10]_i_1_n_0     |     21 | LUT5        |
+| fetch_count[10]            |     20 | LUT5        |
+| emitting_reg_n_0           |     20 | FDRE        |
+| e_valid                    |     15 | FDRE        |
+| frame_start1               |     15 | LUT6        |
+| first_pending_reg_n_0      |     14 | FDRE        |
+| m_valid                    |     14 | FDRE        |
+| fetch_ptr[0]               |     13 | FDRE        |
+| wr_ptr_reg[0]              |     13 | FDRE        |
+| stop_pending               |     13 | FDRE        |
+| fetch_ptr[1]               |     12 | FDRE        |
+| have_frame_reg_n_0         |     12 | FDRE        |
+| wr_ptr_reg[1]              |     12 | FDRE        |
+| wr_ptr_reg[2]              |     11 | FDRE        |
+| fetch_ptr[2]               |     11 | FDRE        |
+| active_reg_n_0             |     10 | FDRE        |
+| fetch_ptr[3]               |     10 | FDRE        |
+| wr_ptr_reg[3]              |     10 | FDRE        |
+| m_ready                    |     10 | PORT        |
+| fetch_ptr[6]               |     10 | FDRE        |
+| out_index[9]_i_1_n_0       |     10 | LUT3        |
+| wr_ptr_reg[6]              |     10 | FDRE        |
+| fill_count_reg_n_0_[0]     |     10 | FDRE        |
+| fetch_ptr[9]_i_1_n_0       |     10 | LUT6        |
+| fetch_count[10]_i_1_n_0    |     10 | LUT5        |
+| fetch_count_reg_n_0_[0]    |      9 | FDRE        |
+| fetch_ptr[4]               |      9 | FDRE        |
+| wr_ptr_reg[4]              |      9 | FDRE        |
+| fetch_ptr[7]               |      9 | FDRE        |
+| fill_count_reg_n_0_[1]     |      9 | FDRE        |
+| wr_ptr_reg[7]              |      9 | FDRE        |
+| wr_ptr_reg[5]              |      8 | FDRE        |
+| new_count_reg[0]           |      8 | FDRE        |
+| fill_count_reg_n_0_[2]     |      8 | FDRE        |
+| wr_ptr_reg[8]              |      8 | FDRE        |
+| fill_count_reg_n_0_[6]     |      8 | FDRE        |
+| fetch_count_reg_n_0_[1]    |      8 | FDRE        |
++----------------------------+--------+-------------+
+
+

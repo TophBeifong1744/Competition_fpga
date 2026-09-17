@@ -1,0 +1,28 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Thu Sep 17 23:04:46 2026
+| Host         : Toph running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file {E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-bram-candidate-01/ooc-synthesis-01/runs/bram_ooc_20260918_01/reports/utilization_hierarchical.rpt}
+| Design       : pcm4_overlap_framer_bram
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Synthesized
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------+--------+------------+------------+---------+------+-----+--------+--------+------------+
+|         Instance         | Module | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------+--------+------------+------------+---------+------+-----+--------+--------+------------+
+| pcm4_overlap_framer_bram |  (top) |        261 |        261 |       0 |    0 | 608 |      5 |      1 |          0 |
++--------------------------+--------+------------+------------+---------+------+-----+--------+--------+------------+
+
+
