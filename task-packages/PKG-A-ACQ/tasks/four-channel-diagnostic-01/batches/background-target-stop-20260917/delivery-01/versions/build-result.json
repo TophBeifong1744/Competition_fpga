@@ -1,0 +1,197 @@
+{
+  "stage": "post",
+  "app": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance",
+  "platform": "F:\\College\\verilog_digital_system\\Vitis\\continuous_platform",
+  "source_sha256": {
+    "continuous/scene_store.h": "830c343ca1466ed85e9fedb874c4e93b94baa310e7d6f797fec629ef98e69ec5",
+    "Empty_applicationExample.cmake": "bca95562ac27da001b5192bb285cb59f11fe5f50474c1a7c19c7d4e4c2d8314e",
+    "continuous/scene_store.c": "3d687014613775eb2effbb86f3430d8db554d45cf9a1f7af869c0628575aada4",
+    "lscript.ld": "8872fb0af0f6bec969e63d2e5d170c1fc058c782c6924d70697b352aeab55dd4",
+    "continuous/main_continuous.c": "02bcef3d9abe62314123bb1ed678bf566e44beaa160459391159f272ce78528d",
+    "continuous/continuous_core.c": "346697ec817ffe0318b366f0ff8735da90fb534fb773e41545e93d94d05907f6",
+    "main.c": "51462ed4c2a7791d9b97eb528382a1e598cd4ab940759fa781f21894dbd19684",
+    "UserConfig.cmake": "f46cdae7660d1385a26c1d5af539588ab17474f5aa4a0f6f3228a0100042d4c9",
+    "continuous/continuous_core.h": "93135b855aa83da07684d1274fa5ad9c55b560eae0f5da1bba0716d4f2fdb92e",
+    "CMakeLists.txt": "58ad3d396dc1145999b1447ec5787c705fa827cd62a70fd7e1033df93729fc80"
+  },
+  "policy_sha256": "16d7266382b20dd613b29dc5556bbeb2fc7bafb0e0b5508c2a6ed5f590a480f1",
+  "board_test": "NOT_RUN",
+  "xsa_sha256": "b84e93631132a3838cc9dadc1ce9037f2685d4d10de0b1655c76291663a8f60b",
+  "bsp_files": 88,
+  "verifier_sha256": {
+    "check_scene.py": "950f83f1db8b42a0c4bad051b6229b9e49d7e8e33d5e4045d4c2d2104e66fa4a",
+    "vitis_gate.cmake": "c5844ba7cb2bcbe27cfb933bc029fe7eade98e6fd43d6c619730f7467b0b173b"
+  },
+  "build_graph": {
+    "source_guard_before_compile": true,
+    "source_guard_before_link": true,
+    "auxiliary_enumeration_order": "either; contents exact"
+  },
+  "compiler": "arm-xilinx-eabi-gcc.exe (GCC) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "compiled": {
+    "program_end": 10748096,
+    "ranges": [
+      {
+        "name": "PT_LOAD",
+        "start": 1048576,
+        "end": 1082252
+      },
+      {
+        "name": "PT_LOAD",
+        "start": 1097728,
+        "end": 10748096
+      },
+      {
+        "name": ".text",
+        "start": 1048576,
+        "end": 1077704
+      },
+      {
+        "name": ".init",
+        "start": 1077704,
+        "end": 1077716
+      },
+      {
+        "name": ".fini",
+        "start": 1077716,
+        "end": 1077728
+      },
+      {
+        "name": ".rodata",
+        "start": 1077728,
+        "end": 1080776
+      },
+      {
+        "name": ".data",
+        "start": 1080776,
+        "end": 1082196
+      },
+      {
+        "name": ".eh_frame",
+        "start": 1082196,
+        "end": 1082252
+      },
+      {
+        "name": ".mmu_tbl",
+        "start": 1097728,
+        "end": 1114112
+      },
+      {
+        "name": ".ARM.exidx",
+        "start": 1114112,
+        "end": 1114120
+      },
+      {
+        "name": ".init_array",
+        "start": 1114120,
+        "end": 1114128
+      },
+      {
+        "name": ".fini_array",
+        "start": 1114128,
+        "end": 1114132
+      },
+      {
+        "name": ".drvcfg_sec",
+        "start": 1114132,
+        "end": 1114348
+      },
+      {
+        "name": ".bss",
+        "start": 1114368,
+        "end": 10725556
+      },
+      {
+        "name": ".heap",
+        "start": 10725556,
+        "end": 10733760
+      },
+      {
+        "name": ".stack",
+        "start": 10733760,
+        "end": 10748096
+      }
+    ],
+    "archive_start": 1124992,
+    "archive_data": 1125056,
+    "archive_end": 10725120,
+    "capacity_bytes": 9600000,
+    "guard_each": 64,
+    "divisor": 333333343,
+    "contract": [
+      1129270833,
+      16777216,
+      17825792,
+      250,
+      8,
+      8000,
+      64,
+      8064,
+      2,
+      16128,
+      1048576,
+      1073741823,
+      1077936128,
+      1092616192,
+      6000000,
+      288000
+    ],
+    "scene": [
+      1396919857,
+      1,
+      6000000,
+      288000,
+      300000,
+      9600000,
+      64,
+      2,
+      32,
+      48000,
+      2000000
+    ],
+    "elf_sha256": "4b7823bdefa3776a910a3359b5851fa52c6f4ce89432cc3ee0072dee52ca06a6",
+    "object_sha256": "0cb797800bb2f9791d35fa4c81bd995db6696513b0540d959c2e5e2614cabdc2",
+    "timer_layout": {
+      "1": {
+        "address": "0x2bc",
+        "pool_offset": 108,
+        "literal_immediate": 12,
+        "padding_nop": false,
+        "divisor": 333333343,
+        "calls": {
+          "XTime_GetTime": {
+            "relocation_type": 28,
+            "symbol": "XTime_GetTime"
+          },
+          "__aeabi_uldivmod": {
+            "relocation_type": 28,
+            "symbol": "__aeabi_uldivmod"
+          }
+        }
+      },
+      "2": {
+        "address": "0x100764",
+        "pool_offset": 108,
+        "literal_immediate": 12,
+        "padding_nop": false,
+        "divisor": 333333343,
+        "calls": {
+          "XTime_GetTime": {
+            "target": "0x102b9c",
+            "thumb": false
+          },
+          "__aeabi_uldivmod": {
+            "target": "0x104d74",
+            "thumb": true
+          }
+        }
+      }
+    }
+  },
+  "map_sha256": "f0484b02c33af0455326bc37fa76543b191adc7740f3aa5f942ad7dd171ced73",
+  "disassembly": "\nF:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance\\build\\four_mic_endurance.elf:     file format elf32-littlearm\n\n\nDisassembly of section .text:\n\n00100764 <now_us>:\n  100764:\te52de004 \tpush\t{lr}\t\t; (str lr, [sp, #-4]!)\n  100768:\te24dd00c \tsub\tsp, sp, #12\n  10076c:\te1a0000d \tmov\tr0, sp\n  100770:\teb000909 \tbl\t102b9c <XTime_GetTime>\n  100774:\te89d4004 \tldm\tsp, {r2, lr}\n  100778:\te1a0328e \tlsl\tr3, lr, #5\n  10077c:\te1a01282 \tlsl\tr1, r2, #5\n  100780:\te1833da2 \torr\tr3, r3, r2, lsr #27\n  100784:\te0511002 \tsubs\tr1, r1, r2\n  100788:\te1a0c481 \tlsl\tip, r1, #9\n  10078c:\te0c3300e \tsbc\tr3, r3, lr\n  100790:\te1a03483 \tlsl\tr3, r3, #9\n  100794:\te09cc002 \tadds\tip, ip, r2\n  100798:\te1a0030c \tlsl\tr0, ip, #6\n  10079c:\te1833ba1 \torr\tr3, r3, r1, lsr #23\n  1007a0:\te0ae3003 \tadc\tr3, lr, r3\n  1007a4:\te050000c \tsubs\tr0, r0, ip\n  1007a8:\te1a01303 \tlsl\tr1, r3, #6\n  1007ac:\te1811d2c \torr\tr1, r1, ip, lsr #26\n  1007b0:\te0c11003 \tsbc\tr1, r1, r3\n  1007b4:\te0900002 \tadds\tr0, r0, r2\n  1007b8:\te0ae1001 \tadc\tr1, lr, r1\n  1007bc:\te28f300c \tadd\tr3, pc, #12\n  1007c0:\te1c320d0 \tldrd\tr2, [r3]\n  1007c4:\tfa00116a \tblx\t104d74 <__aeabi_uldivmod>\n  1007c8:\te28dd00c \tadd\tsp, sp, #12\n  1007cc:\te49df004 \tpop\t{pc}\t\t; (ldr pc, [sp], #4)\n  1007d0:\t13de435f \t.word\t0x13de435f\n  1007d4:\t00000000 \t.word\t0x00000000\n\nDisassembly of section .init:\n\nDisassembly of section .fini:\n",
+  "prior_record": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance\\scene_checks\\20260917_150929_pre_c615db4094\\result.json",
+  "fresh_compilation_observed": true,
+  "load_config": "NOT_CHECKED_USE_LOAD_STAGE",
+  "status": "S1_ARTIFACT_PASS_NOT_LOAD_NOT_BOARD"
+}

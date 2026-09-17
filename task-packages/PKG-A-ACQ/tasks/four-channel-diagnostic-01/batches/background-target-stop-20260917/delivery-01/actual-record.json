@@ -1,0 +1,58 @@
+{
+  "source_mode": "live human voice",
+  "spoken_words": "就让我忘了这一切",
+  "source_reference": "mic0",
+  "reported_direction": "+X",
+  "reported_distance_m_approx": 0.05,
+  "reported_relative_height_m_approx": 0,
+  "measurement_method": null,
+  "position_uncertainty_m": null,
+  "source_position_model_m": [
+    0.05,
+    0,
+    0
+  ],
+  "array_center_model_m": [
+    0.02,
+    0.02,
+    0
+  ],
+  "center_relative_vector_model_m": [
+    0.03,
+    -0.02,
+    0
+  ],
+  "center_distance_model_m": 0.03605551275463989,
+  "center_azimuth_model_deg": -33.69006752597979,
+  "model_note": "Derived ONLY from approximate user placement and prior declared square; NOT measured angle/distance truth or validated far-field.",
+  "reported_activity_seconds_approx": [
+    {
+      "label": "background",
+      "start": 0,
+      "end": 2
+    },
+    {
+      "label": "speech",
+      "start": 2,
+      "end": 5
+    },
+    {
+      "label": "post_speech_background",
+      "start": 5,
+      "end": 6.005208333333333
+    }
+  ],
+  "activity_basis": "Operator approximate 2s quiet / 3s speech / 1s after; no synchronized trigger or precision sample labels",
+  "precise_activity_sample_indices": null,
+  "activity_uncertainty_seconds": null,
+  "playback_device": "not applicable: live voice",
+  "playback_effects": "not applicable: live voice",
+  "acoustic_voice_level": null,
+  "independent_clean_reference": null,
+  "independent_noise_reference": null,
+  "microphone_internal_processing": "not independently verified",
+  "far_field_validated": false,
+  "precision_direction_ground_truth": false,
+  "recording_datetime": null,
+  "timestamp_note": "Filename and firmware build dates do not independently timestamp acoustic acquisition"
+}

@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-17",
+  "stage": "READ_ONLY_PREFLIGHT_AND_PROPOSAL_NOT_IMPLEMENTED",
+  "repository": "TophBeifong1744/Competition_fpga",
+  "local_main": "02b578c730c539e7fb45e11386567f28ffe7ab71",
+  "local_origin_main": "02b578c730c539e7fb45e11386567f28ffe7ab71",
+  "remote_main": "02b578c730c539e7fb45e11386567f28ffe7ab71",
+  "remote_candidate": "21c141b223936730c2ce5139624fcedb412adafb",
+  "remote_review_branch_tip": "d1fd9d1db2be7ed292c17faf9dc9d27d407c9009",
+  "reviewed_candidate_in_latest_available_timer_report": "17afe32cebcff742bb2f9486388e91d9403f83dd",
+  "review_result_for_that_older_candidate": "NEEDS_FIX: TF-B-02-R1",
+  "candidate_21c141b_approval": "NOT_FOUND_IN_REMOTE_MAIN_OR_EXISTING_TIMER_REVIEW_BRANCH; do not assume approval",
+  "remote_query_method": "gh api under normal user credentials; read-only; no checkout/fetch/merge",
+  "remote_queries": [
+    "gh api repos/TophBeifong1744/Competition_fpga/branches/main",
+    "gh api repos/TophBeifong1744/Competition_fpga/git/matching-refs/heads/",
+    "gh api repos/TophBeifong1744/Competition_fpga/git/trees/d1fd9d1db2be7ed292c17faf9dc9d27d407c9009?recursive=1",
+    "gh api -H Accept:application/vnd.github.raw+json repos/TophBeifong1744/Competition_fpga/contents/docs/reviews/timerfixed-repair-17afe32/B-REVIEW.md?ref=d1fd9d1db2be7ed292c17faf9dc9d27d407c9009",
+    "gh api repos/TophBeifong1744/Competition_fpga/git/trees/02b578c730c539e7fb45e11386567f28ffe7ab71?recursive=1"
+  ],
+  "remote_tree_responses_truncated": false,
+  "query_failures_retained": [
+    "git ls-remote: schannel AcquireCredentialsHandle SEC_E_NO_CREDENTIALS",
+    "alternate Git HTTPS invocation produced user-observed git-remote-https.exe read-memory application-error dialog; no further Git HTTPS retry",
+    "GitHub connector repository inaccessible (not evidence of repository absence)",
+    "restricted gh context returned 401/404 and invalid credential status even after user login; normal-user gh query succeeded as TophBeifong1744"
+  ],
+  "actual_project": "F:/College/verilog_digital_system/AMD/Competiton/one/one.xpr",
+  "actual_platform": "F:/College/verilog_digital_system/Vitis/continuous_platform",
+  "actual_application": "F:/College/verilog_digital_system/Vitis/four_mic_endurance",
+  "actual_hardware_sha256": {
+    "four_mic_top.v": "08b39fd3de26566d98d92e545121621d3f539b861b4ca80fd82b3e3024ff27e5",
+    "pcm4_continuous_axis.v": "06772cd7bb97ca2a6a69099d22a294c1d3994cb2496787d44ee0d79664a85a06",
+    "system_continuous_20260915.xsa": "b84e93631132a3838cc9dadc1ce9037f2685d4d10de0b1655c76291663a8f60b",
+    "system_continuous_20260915.bit": "b15991bc0f8595970361be553b542e334dbb7dca268c01864ecd80fcffbbffaf"
+  },
+  "actual_files_matching_e1_snapshot": [
+    "build/four_mic_endurance.elf", "build/memory.map", "_ide/launch.json",
+    "src/CMakeLists.txt", "src/lscript.ld", "src/continuous/main_continuous.c",
+    "src/continuous/continuous_core.c", "src/continuous/continuous_core.h"
+  ],
+  "actual_cmake_gate": "continuous-prototype-01/endurance-test-01/vitis_gate.cmake; unchanged",
+  "program_memory_region": {"base": "0x00100000", "end_exclusive": "0x01000000", "length": 15728640},
+  "dma_reserved_region": {"base": "0x01000000", "end_exclusive": "0x01100000", "used": 16128},
+  "proposal_only": {"target_seconds": 6, "target_groups": 288000, "target_raw_bytes": 9216000,
+    "saved_group_capacity": 300000, "saved_data_bytes": 9600000, "extra_guard_bytes": 128,
+    "buffer_location": "linker-owned static .bss in existing program region; exact symbols/map not yet built",
+    "recommended_app_copy_name": "four_mic_scene", "user_application_choice": "PENDING"},
+  "not_executed": ["application/project modification or copy", "firmware build", "new model or RTL simulation", "synthesis/implementation", "download or recording", "Git commit/push/merge"],
+  "note": "This is a structured observation/proposal record, not fabricated CLI stdout or independent approval. Historical logs and approved packages are unchanged."
+}

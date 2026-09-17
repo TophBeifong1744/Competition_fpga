@@ -1,0 +1,32 @@
+{
+  "scope": "Offline raw/UART/CSV converter checks, not independent B review",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_export"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\background-target-stop-20260917\\tests\\test_scene_export.py"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\background-target-stop-20260917",
+      "returncode": 0
+    }
+  ],
+  "files": {
+    "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\background-target-stop-20260917\\finish_scene.py": "afd26ca64637ebf0c19ff54631348947fc703723322348e8ce6b34ca0312bb5d",
+    "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\background-target-stop-20260917\\tests\\test_scene_export.py": "25ef0a8157ccce40e23af309ca46c499d0f70aefa419e3ed45a494ee11a11f47",
+    "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source\\export_four.py": "e89c82945367ef3e06113d9c18edbb3276e1ba658b2594e3f79e28a960422526",
+    "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\source\\test_export.py": "7efcec6c87b2d9831735009863c9b5e64c37076afd50672fb75ff3c91e141670"
+  }
+}

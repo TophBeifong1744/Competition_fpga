@@ -1,0 +1,79 @@
+test_01_current_contract (__main__.GuardTests.test_01_current_contract) ... ok
+test_02_old_duration (__main__.GuardTests.test_02_old_duration) ... ok
+test_03_each_buffer_field (__main__.GuardTests.test_03_each_buffer_field) ... ok
+test_04_each_scene_field (__main__.GuardTests.test_04_each_scene_field) ... ok
+test_05_valid_ranges (__main__.GuardTests.test_05_valid_ranges) ... ok
+test_06_exact_program_limit (__main__.GuardTests.test_06_exact_program_limit) ... ok
+test_07_overlap (__main__.GuardTests.test_07_overlap) ... ok
+test_08_wrong_allocation (__main__.GuardTests.test_08_wrong_allocation) ... ok
+test_09_unaligned (__main__.GuardTests.test_09_unaligned) ... ok
+test_10_non_bss (__main__.GuardTests.test_10_non_bss) ... ok
+test_11_commands (__main__.GuardTests.test_11_commands) ... ok
+test_12_linker_injections (__main__.GuardTests.test_12_linker_injections) ... ok
+test_13_options_case (__main__.GuardTests.test_13_options_case) ... ok
+test_14_old_gate (__main__.GuardTests.test_14_old_gate) ... ok
+test_15_wrong_elf_path (__main__.GuardTests.test_15_wrong_elf_path) ... ok
+test_16_old_object_elf (__main__.GuardTests.test_16_old_object_elf) ... ERROR
+test_17_candidate_sources_and_old_timer (__main__.GuardTests.test_17_candidate_sources_and_old_timer) ... ok
+test_18_actual_old_app_rejected (__main__.GuardTests.test_18_actual_old_app_rejected) ... ERROR
+test_19_reused_real_timer (__main__.GuardTests.test_19_reused_real_timer) ... ok
+test_20_wrong_divisor_real_object_mutation (__main__.GuardTests.test_20_wrong_divisor_real_object_mutation) ... FAIL
+
+======================================================================
+ERROR: test_16_old_object_elf (__main__.GuardTests.test_16_old_object_elf)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\batches\background-target-stop-20260917\tests\test_gate.py", line 56, in test_16_old_object_elf
+    self.rejects(g.compiled,old/'build/main.c.obj',old/'build/four_mic_endurance.elf')
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\batches\background-target-stop-20260917\tests\test_gate.py", line 16, in rejects
+    with self.assertRaises((ValueError,RuntimeError)):fn(*args)
+                                                      ^^^^^^^^^
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\batches\background-target-stop-20260917\check_scene.py", line 91, in compiled
+    parsed=base.Elf32(path,kind)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\current_build\ps_contract.py", line 68, in __init__
+    self.data = Path(path).read_bytes()
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Toph Beifong\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Toph Beifong\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\endurance-test-01\\evidence\\user-build-20260916-2052\\build\\main.c.obj'
+
+======================================================================
+ERROR: test_18_actual_old_app_rejected (__main__.GuardTests.test_18_actual_old_app_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\batches\background-target-stop-20260917\tests\test_gate.py", line 68, in test_18_actual_old_app_rejected
+    self.rejects(g.source_check,Path('F:/College/verilog_digital_system/Vitis/four_mic_endurance/src'))
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\batches\background-target-stop-20260917\tests\test_gate.py", line 16, in rejects
+    with self.assertRaises((ValueError,RuntimeError)):fn(*args)
+                                                      ^^^^^^^^^
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\batches\background-target-stop-20260917\check_scene.py", line 41, in source_check
+    need(text_hash(src/name)==sha,'Unsupported source/config: '+name)
+         ^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\batches\background-target-stop-20260917\check_scene.py", line 29, in text_hash
+    return hashlib.sha256(Path(path).read_text(encoding='utf-8').replace('\r\n','\n').encode()).hexdigest()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Toph Beifong\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Toph Beifong\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance\\src\\continuous\\scene_store.h'
+
+======================================================================
+FAIL: test_20_wrong_divisor_real_object_mutation (__main__.GuardTests.test_20_wrong_divisor_real_object_mutation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\batches\background-target-stop-20260917\tests\test_gate.py", line 78, in test_20_wrong_divisor_real_object_mutation
+    self.assertEqual(data.count(needle),1)
+AssertionError: 2 != 1
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.051s
+
+FAILED (failures=1, errors=2)
