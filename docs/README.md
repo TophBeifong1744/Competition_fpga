@@ -13,6 +13,7 @@
 | 负责人、复核人、期限与当前状态 | [工作包台账](work-packages.md) |
 | 模块责任与交接 | [团队分工](team-tasks.md) |
 | Git分支、准确范围发布与本地/远端核对 | [GitHub 工作规则](git-workflow.md) |
+| 增量复核、日志摘要、相称回归与一页交付 | [六项统一规则](team-workflow.md#review-efficiency)、[一页模板](templates/review-brief.md)、[当前通知](phases/2026-09-13-to-10-01/dispatch.md) |
 | 比赛要求与验收证据 | [赛题验收台账](competition-acceptance.md) |
 | 两项Skill的制作分工、必交要求、加分证据与独立验收 | [Skill交付计划](skills-delivery-plan.md) |
 | 板卡、选定麦克风与待确认接口 | [硬件入口](../hardware/README.md)、[M0 审计](../hardware/m0-board-interface-audit.md) |
