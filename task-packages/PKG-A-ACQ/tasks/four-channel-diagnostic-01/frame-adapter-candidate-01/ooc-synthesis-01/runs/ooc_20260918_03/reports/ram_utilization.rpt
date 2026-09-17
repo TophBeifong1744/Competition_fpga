@@ -1,0 +1,33 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Thu Sep 17 22:20:05 2026
+| Host         : Toph running 64-bit major release  (build 9200)
+| Command      : report_ram_utilization -file {E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01/runs/ooc_20260918_03/reports/ram_utilization.rpt}
+| Design       : pcm4_overlap_framer
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+RAM Usage Information
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++--------------------------+------------+-----------+-------+-----------+
+| Memory Type              | Total Used | Available | Util% | Inferred% |
++--------------------------+------------+-----------+-------+-----------+
+| BlockRAM                 |          0 |       140 |  0.00 |      0.00 |
+| LUTMs as Distributed RAM |       4364 |     17400 | 25.08 |    100.00 |
+|  LUTMs as RAM64X1D       |         36 |           |       |    100.00 |
+|  LUTMs as RAM64M         |       4328 |           |       |    100.00 |
++--------------------------+------------+-----------+-------+-----------+
+*  Each RAMB18 is calculated as 0.5 BlockRAM
+**  Tables 2, 3, 4 and 5 cover RAMs inferred by Vivado Synthesis using XPMs or RTL inference
+***  XRAMs are not reported for detailed tables
+
+

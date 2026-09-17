@@ -1,0 +1,112 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Sep 17 22:16:12 2026
+# Process ID         : 51724
+# Current directory  : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01
+# Command line       : vivado.exe -mode batch -log E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\frame-adapter-candidate-01\ooc-synthesis-01\launcher-logs\ooc_20260918_02\vivado.log -journal E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\frame-adapter-candidate-01\ooc-synthesis-01\launcher-logs\ooc_20260918_02\vivado.jou -source E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\frame-adapter-candidate-01\ooc-synthesis-01\run_ooc.tcl -tclargs ooc_20260918_02
+# Log file           : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01/launcher-logs/ooc_20260918_02/vivado.log
+# Journal file       : E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\frame-adapter-candidate-01\ooc-synthesis-01\launcher-logs\ooc_20260918_02\vivado.jou
+# Running On         : Toph
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 16642 MB
+# Total Virtual      : 33533 MB
+# Available Virtual  : 4222 MB
+#-----------------------------------------------------------
+source {E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\frame-adapter-candidate-01\ooc-synthesis-01\run_ooc.tcl}
+# set expected_commit "a7d944a2268fff6215b2c619d2d6440235ff5752"
+# set expected_branch "codex/toph/frame-adapter-candidate-20260917"
+# set expected_sha256 "f0da9259a2c5407f003e527dc097fb57ef514a2335c20a528655427294f77585"
+# set expected_blob "f4091c77e0f9b5f5bb163735a750b13b4d6db8eb"
+# set expected_xsim_line "PASS frame_adapter RTL: frames=7 events=9"
+# set part "xc7z020clg400-2"
+# set top "pcm4_overlap_framer"
+# set period_ns 10.000
+# proc fail {message} {
+#     puts stderr "OOC_SYNTH_REJECTED: $message"
+#     exit 2
+# }
+# proc write_text {path text} {
+#     set f [open $path w]
+#     puts -nonewline $f $text
+#     close $f
+# }
+# proc sha256_file {path} {
+#     if {[catch {exec certutil -hashfile $path SHA256} output]} {
+#         fail "certutil SHA-256 failed for $path: $output"
+#     }
+#     if {![regexp -nocase {(^|\n)[ \t]*([0-9a-f]{64})[ \t]*(\r?\n|$)} $output -> _ hash]} {
+#         fail "cannot parse SHA-256 for $path"
+#     }
+#     return [string tolower $hash]
+# }
+# if {[llength $argv] != 1} {
+#     fail "usage: -tclargs <new_run_name>; received argc=[llength $argv] argv=$argv"
+# }
+# set run_name [lindex $argv 0]
+# if {![regexp {^[A-Za-z0-9_-]+$} $run_name]} {
+#     fail "run name must match ^[A-Za-z0-9_-]+$"
+# }
+# set script_dir [file dirname [file normalize [info script]]]
+# set candidate_dir [file dirname $script_dir]
+# set rtl [file normalize [file join $candidate_dir rtl pcm4_overlap_framer.v]]
+# set xdc [file normalize [file join $script_dir constraints.xdc]]
+# set xsim_log [file normalize [file join $candidate_dir evidence run-20260917-03 xsim.log]]
+# set run_dir [file normalize [file join $script_dir runs $run_name]]
+# set reports_dir [file join $run_dir reports]
+# set checkpoint_dir [file join $run_dir checkpoint]
+# if {[file exists $run_dir]} {
+#     fail "output directory already exists: $run_dir"
+# }
+# foreach required [list $rtl $xdc $xsim_log] {
+#     if {![file isfile $required]} { fail "missing dependency: $required" }
+# }
+# if {[catch {exec git -C $candidate_dir rev-parse --show-toplevel} repo_root]} {
+#     fail "candidate is not inside the expected Git worktree: $repo_root"
+# }
+# set repo_root [string trim $repo_root]
+# foreach ref [list "refs/heads/$expected_branch" "refs/remotes/origin/$expected_branch"] {
+#     if {[catch {exec git -C $repo_root rev-parse --verify $ref} actual]} {
+#         fail "missing fixed candidate ref $ref"
+#     }
+#     if {[string trim $actual] ne $expected_commit} {
+#         fail "$ref points to [string trim $actual], expected $expected_commit"
+#     }
+# }
+# if {[catch {exec git -C $repo_root cat-file -e "$expected_commit^{commit}"} err]} {
+#     fail "fixed candidate commit is unavailable: $err"
+# }
+# set source_hash [sha256_file $rtl]
+# if {$source_hash ne $expected_sha256} {
+#     fail "RTL SHA-256 $source_hash does not match frozen candidate $expected_sha256"
+# }
+# if {[catch {exec git -C $repo_root hash-object $rtl} source_blob]} {
+#     fail "git hash-object failed: $source_blob"
+# }
+# if {[string trim $source_blob] ne $expected_blob} {
+#     fail "working RTL Git blob [string trim $source_blob] differs from frozen blob $expected_blob"
+# }
+# set xsim_text [read [set xf [open $xsim_log r]]]
+# close $xf
+# if {[string first $expected_xsim_line $xsim_text] < 0} {
+#     fail "frozen XSim PASS marker missing from $xsim_log"
+# }
+# file mkdir $reports_dir
+# file mkdir $checkpoint_dir
+# set tool_short [version -short]
+# set binding "candidate_commit=$expected_commit\nbranch=$expected_branch\nrtl=$rtl\nrtl_sha256=$source_hash\nrtl_git_blob=$expected_blob\nxsim_marker=$expected_xsim_line\ntop=$top\npart=$part\nclock_name=clk\nperiod_ns=$period_ns\nflow=Vivado_non_project_out_of_context_synthesis\n"
+# write_text [file join $run_dir source-binding.txt] $binding
+# write_text [file join $run_dir tool-version.txt] "[version]\n"
+# puts "OOC_PRECHECK_PASS commit=$expected_commit rtl_sha256=$source_hash tool=$tool_short"
+OOC_PRECHECK_PASS commit=a7d944a2268fff6215b2c619d2d6440235ff5752 rtl_sha256=f0da9259a2c5407f003e527dc097fb57ef514a2335c20a528655427294f77585 tool=2025.2
+# read_verilog $rtl
+ERROR: [Common 17-69] Command failed: File 'E:/Users/Toph' does not exist
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 22:16:19 2026...

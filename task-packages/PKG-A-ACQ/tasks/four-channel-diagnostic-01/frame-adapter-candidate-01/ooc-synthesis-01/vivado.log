@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Sep 17 22:11:57 2026
+# Process ID         : 58660
+# Current directory  : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01
+# Command line       : vivado.exe -mode batch -source E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\frame-adapter-candidate-01\ooc-synthesis-01\run_ooc.tcl -tclargs ooc_20260918_01 -log E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\frame-adapter-candidate-01\ooc-synthesis-01\launcher-logs\ooc_20260918_01\vivado.log -journal E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\frame-adapter-candidate-01\ooc-synthesis-01\launcher-logs\ooc_20260918_01\vivado.jou
+# Log file           : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01/vivado.log
+# Journal file       : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01\vivado.jou
+# Running On         : Toph
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 16642 MB
+# Total Virtual      : 33533 MB
+# Available Virtual  : 3966 MB
+#-----------------------------------------------------------
+source {E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\frame-adapter-candidate-01\ooc-synthesis-01\run_ooc.tcl}
+# set expected_commit "a7d944a2268fff6215b2c619d2d6440235ff5752"
+# set expected_branch "codex/toph/frame-adapter-candidate-20260917"
+# set expected_sha256 "f0da9259a2c5407f003e527dc097fb57ef514a2335c20a528655427294f77585"
+# set expected_blob "f4091c77e0f9b5f5bb163735a750b13b4d6db8eb"
+# set expected_xsim_line "PASS frame_adapter RTL: frames=7 events=9"
+# set part "xc7z020clg400-2"
+# set top "pcm4_overlap_framer"
+# set period_ns 10.000
+# proc fail {message} {
+#     puts stderr "OOC_SYNTH_REJECTED: $message"
+#     exit 2
+# }
+# proc write_text {path text} {
+#     set f [open $path w]
+#     puts -nonewline $f $text
+#     close $f
+# }
+# proc sha256_file {path} {
+#     if {[catch {exec certutil -hashfile $path SHA256} output]} {
+#         fail "certutil SHA-256 failed for $path: $output"
+#     }
+#     if {![regexp -nocase {(^|\n)[ \t]*([0-9a-f]{64})[ \t]*(\r?\n|$)} $output -> _ hash]} {
+#         fail "cannot parse SHA-256 for $path"
+#     }
+#     return [string tolower $hash]
+# }
+# if {[llength $argv] != 1} {
+#     fail "usage: -tclargs <new_run_name>"
+# }
+OOC_SYNTH_REJECTED: usage: -tclargs <new_run_name>
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 22:12:00 2026...

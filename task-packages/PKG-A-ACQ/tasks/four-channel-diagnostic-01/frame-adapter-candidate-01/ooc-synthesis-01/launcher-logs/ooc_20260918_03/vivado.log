@@ -1,0 +1,446 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Sep 17 22:19:13 2026
+# Process ID         : 26408
+# Current directory  : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01
+# Command line       : vivado.exe -mode batch -log E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\frame-adapter-candidate-01\ooc-synthesis-01\launcher-logs\ooc_20260918_03\vivado.log -journal E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\frame-adapter-candidate-01\ooc-synthesis-01\launcher-logs\ooc_20260918_03\vivado.jou -source E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\frame-adapter-candidate-01\ooc-synthesis-01\run_ooc.tcl -tclargs ooc_20260918_03
+# Log file           : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01/launcher-logs/ooc_20260918_03/vivado.log
+# Journal file       : E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\frame-adapter-candidate-01\ooc-synthesis-01\launcher-logs\ooc_20260918_03\vivado.jou
+# Running On         : Toph
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 16642 MB
+# Total Virtual      : 33533 MB
+# Available Virtual  : 4172 MB
+#-----------------------------------------------------------
+source {E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\frame-adapter-candidate-01\ooc-synthesis-01\run_ooc.tcl}
+# set expected_commit "a7d944a2268fff6215b2c619d2d6440235ff5752"
+# set expected_branch "codex/toph/frame-adapter-candidate-20260917"
+# set expected_sha256 "f0da9259a2c5407f003e527dc097fb57ef514a2335c20a528655427294f77585"
+# set expected_blob "f4091c77e0f9b5f5bb163735a750b13b4d6db8eb"
+# set expected_xsim_line "PASS frame_adapter RTL: frames=7 events=9"
+# set part "xc7z020clg400-2"
+# set top "pcm4_overlap_framer"
+# set period_ns 10.000
+# proc fail {message} {
+#     puts stderr "OOC_SYNTH_REJECTED: $message"
+#     exit 2
+# }
+# proc write_text {path text} {
+#     set f [open $path w]
+#     puts -nonewline $f $text
+#     close $f
+# }
+# proc sha256_file {path} {
+#     if {[catch {exec certutil -hashfile $path SHA256} output]} {
+#         fail "certutil SHA-256 failed for $path: $output"
+#     }
+#     if {![regexp -nocase {(^|\n)[ \t]*([0-9a-f]{64})[ \t]*(\r?\n|$)} $output -> _ hash]} {
+#         fail "cannot parse SHA-256 for $path"
+#     }
+#     return [string tolower $hash]
+# }
+# if {[llength $argv] != 1} {
+#     fail "usage: -tclargs <new_run_name>; received argc=[llength $argv] argv=$argv"
+# }
+# set run_name [lindex $argv 0]
+# if {![regexp {^[A-Za-z0-9_-]+$} $run_name]} {
+#     fail "run name must match ^[A-Za-z0-9_-]+$"
+# }
+# set script_dir [file dirname [file normalize [info script]]]
+# set candidate_dir [file dirname $script_dir]
+# set rtl [file normalize [file join $candidate_dir rtl pcm4_overlap_framer.v]]
+# set xdc [file normalize [file join $script_dir constraints.xdc]]
+# set xsim_log [file normalize [file join $candidate_dir evidence run-20260917-03 xsim.log]]
+# set run_dir [file normalize [file join $script_dir runs $run_name]]
+# set reports_dir [file join $run_dir reports]
+# set checkpoint_dir [file join $run_dir checkpoint]
+# if {[file exists $run_dir]} {
+#     fail "output directory already exists: $run_dir"
+# }
+# foreach required [list $rtl $xdc $xsim_log] {
+#     if {![file isfile $required]} { fail "missing dependency: $required" }
+# }
+# if {[catch {exec git -C $candidate_dir rev-parse --show-toplevel} repo_root]} {
+#     fail "candidate is not inside the expected Git worktree: $repo_root"
+# }
+# set repo_root [string trim $repo_root]
+# foreach ref [list "refs/heads/$expected_branch" "refs/remotes/origin/$expected_branch"] {
+#     if {[catch {exec git -C $repo_root rev-parse --verify $ref} actual]} {
+#         fail "missing fixed candidate ref $ref"
+#     }
+#     if {[string trim $actual] ne $expected_commit} {
+#         fail "$ref points to [string trim $actual], expected $expected_commit"
+#     }
+# }
+# if {[catch {exec git -C $repo_root cat-file -e "$expected_commit^{commit}"} err]} {
+#     fail "fixed candidate commit is unavailable: $err"
+# }
+# set source_hash [sha256_file $rtl]
+# if {$source_hash ne $expected_sha256} {
+#     fail "RTL SHA-256 $source_hash does not match frozen candidate $expected_sha256"
+# }
+# if {[catch {exec git -C $repo_root hash-object $rtl} source_blob]} {
+#     fail "git hash-object failed: $source_blob"
+# }
+# if {[string trim $source_blob] ne $expected_blob} {
+#     fail "working RTL Git blob [string trim $source_blob] differs from frozen blob $expected_blob"
+# }
+# set xsim_text [read [set xf [open $xsim_log r]]]
+# close $xf
+# if {[string first $expected_xsim_line $xsim_text] < 0} {
+#     fail "frozen XSim PASS marker missing from $xsim_log"
+# }
+# file mkdir $reports_dir
+# file mkdir $checkpoint_dir
+# set tool_short [version -short]
+# set binding "candidate_commit=$expected_commit\nbranch=$expected_branch\nrtl=$rtl\nrtl_sha256=$source_hash\nrtl_git_blob=$expected_blob\nxsim_marker=$expected_xsim_line\ntop=$top\npart=$part\nclock_name=clk\nperiod_ns=$period_ns\nflow=Vivado_non_project_out_of_context_synthesis\n"
+# write_text [file join $run_dir source-binding.txt] $binding
+# write_text [file join $run_dir tool-version.txt] "[version]\n"
+# puts "OOC_PRECHECK_PASS commit=$expected_commit rtl_sha256=$source_hash tool=$tool_short"
+OOC_PRECHECK_PASS commit=a7d944a2268fff6215b2c619d2d6440235ff5752 rtl_sha256=f0da9259a2c5407f003e527dc097fb57ef514a2335c20a528655427294f77585 tool=2025.2
+# read_verilog [list $rtl]
+# read_xdc [list $xdc]
+# synth_design -mode out_of_context -top $top -part $part
+Command: synth_design -mode out_of_context -top pcm4_overlap_framer -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12400
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1310.234 ; gain = 543.027
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pcm4_overlap_framer' [E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/rtl/pcm4_overlap_framer.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'pcm4_overlap_framer' (0#1) [E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/rtl/pcm4_overlap_framer.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1434.105 ; gain = 666.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1434.105 ; gain = 666.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1434.105 ; gain = 666.898
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1434.105 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01/constraints.xdc]
+Finished Parsing XDC File [E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01/constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1514.070 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1514.070 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1514.070 ; gain = 746.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1514.070 ; gain = 746.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1514.070 ; gain = 746.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1514.070 ; gain = 746.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 6     
++---Registers : 
+	               64 Bit    Registers := 5     
+	               32 Bit    Registers := 4     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	             196K Bit	(1024 X 196 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 4     
+	   3 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 26    
+	   6 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-12589] Found 4 bits of RAM  (i_13) with no load. RAM width may be reduced from 196 to 192 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1527.301 ; gain = 760.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------------+------------+-----------+----------------------+----------------+
+|Module Name         | RTL Object | Inference | Size (Depth x Width) | Primitives     | 
++--------------------+------------+-----------+----------------------+----------------+
+|pcm4_overlap_framer | groups_reg | Implied   | 1 K x 196            | RAM64M x 2112  | 
++--------------------+------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1648.574 ; gain = 881.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1693.113 ; gain = 925.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++--------------------+------------+-----------+----------------------+----------------+
+|Module Name         | RTL Object | Inference | Size (Depth x Width) | Primitives     | 
++--------------------+------------+-----------+----------------------+----------------+
+|pcm4_overlap_framer | groups_reg | Implied   | 1 K x 196            | RAM64M x 2112  | 
++--------------------+------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1700.312 ; gain = 933.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1927.301 ; gain = 1160.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1927.301 ; gain = 1160.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1927.301 ; gain = 1160.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1927.301 ; gain = 1160.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1927.301 ; gain = 1160.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1927.301 ; gain = 1160.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    44|
+|2     |LUT1     |    15|
+|3     |LUT2     |   147|
+|4     |LUT3     |   172|
+|5     |LUT4     |   145|
+|6     |LUT5     |    57|
+|7     |LUT6     |   879|
+|8     |MUXF7    |   392|
+|9     |MUXF8    |   196|
+|10    |RAM64M   |  1082|
+|11    |RAM64X1D |    18|
+|12    |FDRE     |   782|
+|13    |FDSE     |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1927.301 ; gain = 1160.094
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1927.301 ; gain = 1080.129
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1927.301 ; gain = 1160.094
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1931.832 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1732 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'pcm4_overlap_framer' is not ideal for floorplanning, since the cellview 'pcm4_overlap_framer' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01/constraints.xdc]
+Finished Parsing XDC File [E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01/constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1936.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1100 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 1082 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 18 instances
+
+Synth Design complete | Checksum: 6b0705b4
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1936.535 ; gain = 1404.488
+# if {[sha256_file $rtl] ne $expected_sha256} {
+#     fail "RTL changed while synthesis was running"
+# }
+# set clocks [get_clocks -quiet clk]
+# if {[llength $clocks] != 1} {
+#     fail "expected exactly one 10 ns clk constraint after synthesis"
+# }
+# set actual_period [get_property PERIOD [lindex $clocks 0]]
+# if {[expr {abs(double($actual_period) - $period_ns)}] > 0.0001} {
+#     fail "clock period is $actual_period ns, expected $period_ns ns"
+# }
+# write_checkpoint -force [file join $checkpoint_dir post_synth.dcp]
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1936.535 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01/runs/ooc_20260918_03/checkpoint/post_synth.dcp' has been generated.
+# report_utilization -file [file join $reports_dir utilization.rpt]
+# report_utilization -hierarchical -file [file join $reports_dir utilization_hierarchical.rpt]
+# report_timing_summary -delay_type max -report_unconstrained -max_paths 20 \
+#     -file [file join $reports_dir timing_summary.rpt]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+# report_timing -delay_type max -sort_by slack -max_paths 50 -input_pins \
+#     -file [file join $reports_dir critical_paths.rpt]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 50 -nworst 1 -delay_type max -sort_by slack.
+# check_timing -verbose -file [file join $reports_dir check_timing.rpt]
+# report_high_fanout_nets -max_nets 50 -file [file join $reports_dir high_fanout_nets.rpt]
+# report_methodology -file [file join $reports_dir methodology.rpt]
+Command: report_methodology -file {E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01/runs/ooc_20260918_03/reports/methodology.rpt}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01/runs/ooc_20260918_03/reports/methodology.rpt.
+report_methodology completed successfully
+# report_drc -file [file join $reports_dir drc.rpt]
+Command: report_drc -file {E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01/runs/ooc_20260918_03/reports/drc.rpt}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/AMD/2025.2/Vivado/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01/runs/ooc_20260918_03/reports/drc.rpt.
+report_drc completed successfully
+# set ram_report [file join $reports_dir ram_utilization.rpt]
+# if {[llength [info commands report_ram_utilization]] > 0} {
+#     if {[catch {report_ram_utilization -file $ram_report} ram_error]} {
+#         write_text $ram_report "report_ram_utilization failed: $ram_error\nSee utilization reports, inferred_memory_cells.txt, and Vivado log.\n"
+#     }
+# } else {
+#     write_text $ram_report "report_ram_utilization is unavailable in this Vivado session.\nSee utilization reports, inferred_memory_cells.txt, and Vivado log.\n"
+# }
+report_ram_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1936.535 ; gain = 0.000
+# array set memory_refs {}
+# set group_named 0
+# foreach cell [get_cells -hierarchical -quiet] {
+#     set ref [get_property REF_NAME $cell]
+#     set name [get_property NAME $cell]
+#     if {[regexp -nocase {groups} $name]} { incr group_named }
+#     if {[regexp {^(RAM|FIFO|SRL)} $ref]} {
+#         if {![info exists memory_refs($ref)]} { set memory_refs($ref) 0 }
+#         incr memory_refs($ref)
+#     }
+# }
+# set memory_text "Post-synthesis memory-related primitive inventory\n"
+# append memory_text "This inventory complements report_utilization; zero matches do not prove zero registers.\n"
+# append memory_text "cells_with_groups_in_name=$group_named\n"
+# foreach ref [lsort [array names memory_refs]] {
+#     append memory_text "$ref=$memory_refs($ref)\n"
+# }
+# write_text [file join $reports_dir inferred_memory_cells.txt] $memory_text
+# set status "OOC_SYNTH_COMPLETE_NOT_IMPL_NOT_BOARD\ncommit=$expected_commit\nrtl_sha256=$expected_sha256\npart=$part\nperiod_ns=$period_ns\ncheckpoint=checkpoint/post_synth.dcp\n"
+# write_text [file join $run_dir STATUS.txt] $status
+# puts "OOC_SYNTH_COMPLETE_NOT_IMPL_NOT_BOARD $run_dir"
+OOC_SYNTH_COMPLETE_NOT_IMPL_NOT_BOARD E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01/runs/ooc_20260918_03
+# exit 0
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 22:20:06 2026...

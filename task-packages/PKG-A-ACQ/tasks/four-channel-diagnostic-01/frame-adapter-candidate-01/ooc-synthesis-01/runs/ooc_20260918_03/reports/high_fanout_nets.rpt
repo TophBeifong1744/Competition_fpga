@@ -1,0 +1,72 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Thu Sep 17 22:19:59 2026
+| Host         : Toph running 64-bit major release  (build 9200)
+| Command      : report_high_fanout_nets -max_nets 50 -file {E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/frame-adapter-candidate-01/ooc-synthesis-01/runs/ooc_20260918_03/reports/high_fanout_nets.rpt}
+| Design       : pcm4_overlap_framer
+| Device       : xc7z020
+| Design State : Synthesized
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+High Fan-out Nets Information
+
+1. Summary
+----------
+
++--------------------------+--------+-------------+
+| Net Name                 | Fanout | Driver Type |
++--------------------------+--------+-------------+
+| wr_ptr_reg[5]            |    674 | FDRE        |
+| wr_ptr_reg[4]_rep__6_n_0 |    666 | FDRE        |
+| wr_ptr_reg[2]            |    654 | FDRE        |
+| wr_ptr_reg[1]            |    651 | FDRE        |
+| wr_ptr_reg[0]_rep__0_n_0 |    643 | FDRE        |
+| wr_ptr_reg[4]_rep__0_n_0 |    641 | FDRE        |
+| wr_ptr_reg[4]_rep__1_n_0 |    641 | FDRE        |
+| wr_ptr_reg[4]_rep__2_n_0 |    641 | FDRE        |
+| wr_ptr_reg[4]_rep__3_n_0 |    641 | FDRE        |
+| wr_ptr_reg[4]_rep__4_n_0 |    641 | FDRE        |
+| wr_ptr_reg[4]_rep__5_n_0 |    641 | FDRE        |
+| wr_ptr_reg[4]_rep_n_0    |    641 | FDRE        |
+| wr_ptr_reg[3]            |    640 | FDRE        |
+| wr_ptr_reg[5]_rep__0_n_0 |    640 | FDRE        |
+| wr_ptr_reg[5]_rep__1_n_0 |    640 | FDRE        |
+| wr_ptr_reg[5]_rep__2_n_0 |    640 | FDRE        |
+| wr_ptr_reg[5]_rep__3_n_0 |    640 | FDRE        |
+| wr_ptr_reg[5]_rep__4_n_0 |    640 | FDRE        |
+| wr_ptr_reg[5]_rep__5_n_0 |    640 | FDRE        |
+| wr_ptr_reg[5]_rep_n_0    |    640 | FDRE        |
+| wr_ptr_reg[0]_rep__2_n_0 |    627 | FDRE        |
+| wr_ptr_reg[0]_rep__3_n_0 |    627 | FDRE        |
+| wr_ptr_reg[0]_rep_n_0    |    623 | FDRE        |
+| wr_ptr_reg[1]_rep__0_n_0 |    622 | FDRE        |
+| wr_ptr_reg[1]_rep__3_n_0 |    622 | FDRE        |
+| wr_ptr_reg[1]_rep__4_n_0 |    622 | FDRE        |
+| wr_ptr_reg[1]_rep__5_n_0 |    618 | FDRE        |
+| wr_ptr_reg[2]_rep__1_n_0 |    617 | FDRE        |
+| wr_ptr_reg[2]_rep__2_n_0 |    617 | FDRE        |
+| wr_ptr_reg[2]_rep__3_n_0 |    617 | FDRE        |
+| wr_ptr_reg[2]_rep__4_n_0 |    617 | FDRE        |
+| wr_ptr_reg[2]_rep__5_n_0 |    617 | FDRE        |
+| wr_ptr_reg[0]_rep__4_n_0 |    615 | FDRE        |
+| wr_ptr_reg[1]_rep__1_n_0 |    610 | FDRE        |
+| wr_ptr_reg[1]_rep__2_n_0 |    610 | FDRE        |
+| wr_ptr_reg[2]_rep__0_n_0 |    609 | FDRE        |
+| wr_ptr_reg[0]_rep__1_n_0 |    607 | FDRE        |
+| wr_ptr_reg[0]_rep__5_n_0 |    607 | FDRE        |
+| wr_ptr_reg[3]_rep__1_n_0 |    607 | FDRE        |
+| wr_ptr_reg[3]_rep__2_n_0 |    607 | FDRE        |
+| wr_ptr_reg[3]_rep__3_n_0 |    607 | FDRE        |
+| wr_ptr_reg[3]_rep__4_n_0 |    607 | FDRE        |
+| wr_ptr_reg[3]_rep__5_n_0 |    607 | FDRE        |
+| wr_ptr_reg[3]_rep__6_n_0 |    603 | FDRE        |
+| wr_ptr_reg[3]_rep__0_n_0 |    599 | FDRE        |
+| wr_ptr_reg[0]_rep__6_n_0 |    587 | FDRE        |
+| wr_ptr_reg[2]_rep_n_0    |    585 | FDRE        |
+| wr_ptr_reg[0]            |    584 | FDRE        |
+| wr_ptr_reg[1]_rep_n_0    |    582 | FDRE        |
+| wr_ptr_reg[3]_rep_n_0    |    575 | FDRE        |
++--------------------------+--------+-------------+
+
+
