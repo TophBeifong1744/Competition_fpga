@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-17T11:10:39.837455+00:00",
+  "status": "PASS",
+  "evidence_level": "static",
+  "board_execution": false,
+  "source_profile_sha256": "f129388d06a00e776a6bd9b8c98bf5f42d54956257e7dd33226be43e0b870df5",
+  "cases": [
+    {
+      "case": "valid",
+      "expected_status": "PASS",
+      "expected_issue_codes": [],
+      "actual_status": "PASS",
+      "actual_return_code": 0,
+      "actual_issue_codes": [],
+      "expectation_met": true,
+      "input_sha256": {
+        "profile": "a03db4695750552b877311ccbf0a22e8669e770e8862dc5730c37f4dcd6dacfb",
+        "bit": "7a61da9f823718c099a57ee29ba7fe098e19f9400c69bbb3a86595e710838ee8",
+        "hwh": "2147f25c6d4748183d91c4747f528a0260a50554a54c140ae1b292990e6f4f65",
+        "manifest": "0773cdf28b4f9d0400717e201b241c06edc50e05c2ee6b3f3be91967b9b49b8b",
+        "payload_schema": "e2cf7d09e5aa7284d21137e71b113dbcd2de8c6eb7144af042f7e037e3074b43"
+      },
+      "report_sha256": "485517d4627c686b3b80eb3cc356c842c4ba10e18fc8b4a793bd32b51edbe5ec"
+    },
+    {
+      "case": "missing-s2mm",
+      "expected_status": "FAIL",
+      "expected_issue_codes": [
+        "HWH_S2MM_INSTANCE"
+      ],
+      "actual_status": "FAIL",
+      "actual_return_code": 1,
+      "actual_issue_codes": [
+        "HWH_C_INCLUDE_MM2S",
+        "HWH_C_INCLUDE_S2MM",
+        "HWH_C_INCLUDE_S2MM_DRE",
+        "HWH_C_INCLUDE_SG",
+        "HWH_C_M_AXI_S2MM_DATA_WIDTH",
+        "HWH_C_SG_LENGTH_WIDTH",
+        "HWH_C_S_AXIS_S2MM_TDATA_WIDTH",
+        "HWH_S2MM_INSTANCE",
+        "HWH_S2MM_IP_TYPE"
+      ],
+      "expectation_met": true,
+      "input_sha256": {
+        "profile": "a03db4695750552b877311ccbf0a22e8669e770e8862dc5730c37f4dcd6dacfb",
+        "bit": "7a61da9f823718c099a57ee29ba7fe098e19f9400c69bbb3a86595e710838ee8",
+        "hwh": "b56e2b3a76e68cc7b279cd6442e4ec423c4982b58ab1b134ff92a94e925dda7d",
+        "manifest": "3fe179bb7f45ceb64701672c8ee636f741c88178a1daa8e043418689168d1322",
+        "payload_schema": "e2cf7d09e5aa7284d21137e71b113dbcd2de8c6eb7144af042f7e037e3074b43"
+      },
+      "report_sha256": "2160e58a176b3eb16aaf2c671fc53f1142e15dbb1aa61777db8dc5e893ad3026"
+    },
+    {
+      "case": "mode-mismatch",
+      "expected_status": "FAIL",
+      "expected_issue_codes": [
+        "CONTRACT_MODE"
+      ],
+      "actual_status": "FAIL",
+      "actual_return_code": 1,
+      "actual_issue_codes": [
+        "CONTRACT_MODE"
+      ],
+      "expectation_met": true,
+      "input_sha256": {
+        "profile": "30841c1200a09567a6e226c842759bd7a98e4ad5b8db7a6078ffafbc7b8637f0",
+        "bit": "7a61da9f823718c099a57ee29ba7fe098e19f9400c69bbb3a86595e710838ee8",
+        "hwh": "2147f25c6d4748183d91c4747f528a0260a50554a54c140ae1b292990e6f4f65",
+        "manifest": "0773cdf28b4f9d0400717e201b241c06edc50e05c2ee6b3f3be91967b9b49b8b",
+        "payload_schema": "e2cf7d09e5aa7284d21137e71b113dbcd2de8c6eb7144af042f7e037e3074b43"
+      },
+      "report_sha256": "68f2cb82586561541b3ba9cdd173b76f248eb368a64c4d16905a16bfbcc9cdf6"
+    },
+    {
+      "case": "dre-mismatch",
+      "expected_status": "FAIL",
+      "expected_issue_codes": [
+        "CONTRACT_S2MM_DRE"
+      ],
+      "actual_status": "FAIL",
+      "actual_return_code": 1,
+      "actual_issue_codes": [
+        "CONTRACT_S2MM_DRE",
+        "HWH_C_INCLUDE_S2MM_DRE"
+      ],
+      "expectation_met": true,
+      "input_sha256": {
+        "profile": "8d371ed8d6e4cec81fd0309bf4b44b331cd98acb66cc446db3438e4d0e1aef1f",
+        "bit": "7a61da9f823718c099a57ee29ba7fe098e19f9400c69bbb3a86595e710838ee8",
+        "hwh": "2147f25c6d4748183d91c4747f528a0260a50554a54c140ae1b292990e6f4f65",
+        "manifest": "0773cdf28b4f9d0400717e201b241c06edc50e05c2ee6b3f3be91967b9b49b8b",
+        "payload_schema": "e2cf7d09e5aa7284d21137e71b113dbcd2de8c6eb7144af042f7e037e3074b43"
+      },
+      "report_sha256": "be17b62b0185e8df30b3772409dc6d2aaa530b5ff1c2788e5cd5edad6aa5908c"
+    },
+    {
+      "case": "axis-width-mismatch",
+      "expected_status": "FAIL",
+      "expected_issue_codes": [
+        "HWH_C_S_AXIS_S2MM_TDATA_WIDTH"
+      ],
+      "actual_status": "FAIL",
+      "actual_return_code": 1,
+      "actual_issue_codes": [
+        "HWH_C_S_AXIS_S2MM_TDATA_WIDTH"
+      ],
+      "expectation_met": true,
+      "input_sha256": {
+        "profile": "fdbda890d3542501407783e77ef27ce486be06e9082e14316c573d1b469ce8d7",
+        "bit": "7a61da9f823718c099a57ee29ba7fe098e19f9400c69bbb3a86595e710838ee8",
+        "hwh": "2147f25c6d4748183d91c4747f528a0260a50554a54c140ae1b292990e6f4f65",
+        "manifest": "0773cdf28b4f9d0400717e201b241c06edc50e05c2ee6b3f3be91967b9b49b8b",
+        "payload_schema": "e2cf7d09e5aa7284d21137e71b113dbcd2de8c6eb7144af042f7e037e3074b43"
+      },
+      "report_sha256": "d27dc6672c8830b096c02b16e42df83d06e389f9411f8b5c8003a8fb997e79cf"
+    },
+    {
+      "case": "length-mismatch",
+      "expected_status": "FAIL",
+      "expected_issue_codes": [
+        "HWH_C_SG_LENGTH_WIDTH",
+        "MAX_TRANSFER_LENGTH"
+      ],
+      "actual_status": "FAIL",
+      "actual_return_code": 1,
+      "actual_issue_codes": [
+        "HWH_C_SG_LENGTH_WIDTH",
+        "MAX_TRANSFER_LENGTH"
+      ],
+      "expectation_met": true,
+      "input_sha256": {
+        "profile": "5a135042a9336eb2cfaac8377f4efd4d9292cc781c2aa3931d04b2e92c99dbb7",
+        "bit": "7a61da9f823718c099a57ee29ba7fe098e19f9400c69bbb3a86595e710838ee8",
+        "hwh": "2147f25c6d4748183d91c4747f528a0260a50554a54c140ae1b292990e6f4f65",
+        "manifest": "0773cdf28b4f9d0400717e201b241c06edc50e05c2ee6b3f3be91967b9b49b8b",
+        "payload_schema": "e2cf7d09e5aa7284d21137e71b113dbcd2de8c6eb7144af042f7e037e3074b43"
+      },
+      "report_sha256": "bdfdffcd4a7cfa7de47922f0dc0a384c22d70ee7f05637f6f9de764ee55a3af2"
+    },
+    {
+      "case": "payload-hash-mismatch",
+      "expected_status": "FAIL",
+      "expected_issue_codes": [
+        "PAYLOAD_SCHEMA_HASH"
+      ],
+      "actual_status": "FAIL",
+      "actual_return_code": 1,
+      "actual_issue_codes": [
+        "MANIFEST_PAYLOAD_HASH",
+        "PAYLOAD_SCHEMA_HASH"
+      ],
+      "expectation_met": true,
+      "input_sha256": {
+        "profile": "ea3a3493efe37879c3ada19f220f6172c4187fa895354d9f62fb4fb5c3bf055a",
+        "bit": "7a61da9f823718c099a57ee29ba7fe098e19f9400c69bbb3a86595e710838ee8",
+        "hwh": "2147f25c6d4748183d91c4747f528a0260a50554a54c140ae1b292990e6f4f65",
+        "manifest": "0773cdf28b4f9d0400717e201b241c06edc50e05c2ee6b3f3be91967b9b49b8b",
+        "payload_schema": "e2cf7d09e5aa7284d21137e71b113dbcd2de8c6eb7144af042f7e037e3074b43"
+      },
+      "report_sha256": "91cdad35d451280e3e0fa6e25910d99bddc0c131da3f836a6c5249aaf5b5d2d0"
+    },
+    {
+      "case": "build-mismatch",
+      "expected_status": "FAIL",
+      "expected_issue_codes": [
+        "MANIFEST_BUILD_ID"
+      ],
+      "actual_status": "FAIL",
+      "actual_return_code": 1,
+      "actual_issue_codes": [
+        "MANIFEST_BUILD_ID"
+      ],
+      "expectation_met": true,
+      "input_sha256": {
+        "profile": "a03db4695750552b877311ccbf0a22e8669e770e8862dc5730c37f4dcd6dacfb",
+        "bit": "7a61da9f823718c099a57ee29ba7fe098e19f9400c69bbb3a86595e710838ee8",
+        "hwh": "2147f25c6d4748183d91c4747f528a0260a50554a54c140ae1b292990e6f4f65",
+        "manifest": "9f137077df9f05a24e9d3d3e3df0e7e256d1570fcab9faeebe37c26c38b6661a",
+        "payload_schema": "e2cf7d09e5aa7284d21137e71b113dbcd2de8c6eb7144af042f7e037e3074b43"
+      },
+      "report_sha256": "58f45493ce459f74eda0f0f7b1ff2782a310c8f10b36bcf649da2277fc645c90"
+    }
+  ]
+}

@@ -1,0 +1,704 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "evidence_level": "mock",
+  "board_execution": false,
+  "review_status": "AUTHOR_SELF_TEST_NOT_B_ACCEPTANCE",
+  "generated_at_utc": "2026-09-17T12:45:59.597197+00:00",
+  "environment": {
+    "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "reproduce": "python -B scripts/run_offline_tests.py --output <new-report.json>",
+  "tests_run": 69,
+  "subtests_run": 76,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "tests": [
+    {
+      "id": "test_dma_session.DmaSessionTests.test_abort_timeout_or_exception_retains",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_actual_length_not_capacity",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_aliased_object_released_only_once",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_boolean_transaction_id_and_actual_count_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_cli_report_is_mock_and_existing_evidence_not_overwritten",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_coherent_policy_requires_allocator_confirmation",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_completed_without_quiescence_never_reads_or_frees",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_confirmed_coherent_path_needs_no_flush_or_invalidate",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_error_register_prevents_read_and_performance_claim",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_flush_failure_is_before_submission",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_golden_mismatch_stops_session",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_hardware_adapter_not_accepted",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_invalid_contract_fails_before_allocations",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_length_granularity_independent_of_buffer_alignment",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_misaligned_allocation_rejected_before_dma",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_missing_cache_operations_produce_real_byte_mismatch",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_missing_or_stale_status_is_not_default_success",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_no_abort_authority_retains_and_blocks_next_run",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_overlapping_allocations_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_payload_contract_errors_do_not_allocate",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_poll_budget_bounds_a_nonadvancing_clock",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_post_dma_invalidate_failure_prevents_cpu_read",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_pre_abort_snapshot_survives_reused_adapter_dictionary",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_receive_only_never_allocates_or_submits_tx",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_release_exception_not_retried",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_repeated_success_rearms_fresh_transaction",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_second_allocation_failure_releases_first",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_submission_can_start_then_raise_or_cancel",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_success_cache_and_ownership_order",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_transfer_timeout_is_failure_even_after_successful_abort",
+      "status": "PASS"
+    },
+    {
+      "id": "test_dma_session.DmaSessionTests.test_unreadable_status_does_not_mask_primary_error",
+      "status": "PASS"
+    },
+    {
+      "id": "test_receive_profile.ReceiveProfileTests.test_absolute_artifact_path_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_receive_profile.ReceiveProfileTests.test_authoritative_part_accepts_case_and_edge_whitespace",
+      "status": "PASS"
+    },
+    {
+      "id": "test_receive_profile.ReceiveProfileTests.test_axis_memory_and_length_field_mismatches_are_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_receive_profile.ReceiveProfileTests.test_bit_hwh_manifest_build_mismatches_are_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_receive_profile.ReceiveProfileTests.test_missing_or_disabled_s2mm_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_receive_profile.ReceiveProfileTests.test_missing_part_with_unrelated_attribute_decoy_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_receive_profile.ReceiveProfileTests.test_mode_and_dre_mismatches_are_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_receive_profile.ReceiveProfileTests.test_named_parameter_decoy_is_not_axi_dma",
+      "status": "PASS"
+    },
+    {
+      "id": "test_receive_profile.ReceiveProfileTests.test_part_substring_and_superstring_are_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_receive_profile.ReceiveProfileTests.test_payload_schema_hash_mismatch_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_receive_profile.ReceiveProfileTests.test_receive_length_must_fit_limit_and_axis_beats",
+      "status": "PASS"
+    },
+    {
+      "id": "test_receive_profile.ReceiveProfileTests.test_tlast_control_and_cache_contract_fail_closed",
+      "status": "PASS"
+    },
+    {
+      "id": "test_receive_profile.ReceiveProfileTests.test_valid_s2mm_only_profile_passes_static_validation",
+      "status": "PASS"
+    },
+    {
+      "id": "test_receive_profile.ReceiveProfileTests.test_wrong_part_with_unrelated_attribute_decoy_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_contract_ip_must_exist_in_hwh",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_duplicate_dma_ids_fail_in_every_order",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_explicit_transfer_granularity_and_boolean_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_golden_comparison_detects_first_mismatch",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_hierarchical_contract_requires_full_instance_path",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_hwh_in_different_directory_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_integer_tolerance_and_mixed_float_are_compared_exactly",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_json_integer_golden_preserves_large_integer_difference",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_malformed_dma_records_fail_closed",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_malformed_nested_evidence_returns_failure_report",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_manifest_hash_tamper_fails",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_mock_cannot_claim_hardware",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_nonfinite_golden_tolerance_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_nonfinite_profile_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_numeric_tolerances_do_not_overflow_to_false_pass",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_packet_length_does_not_inherit_buffer_address_alignment",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_parameter_or_module_type_is_not_contract_instance",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_second_synthetic_board_and_overlay_reuse",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_side_effect_identity_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_unaligned_dma_length_fails",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_unqualified_board_runner_stops_before_hardware_access",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_valid_profile_and_mock_evidence_pass_offline",
+      "status": "PASS"
+    },
+    {
+      "id": "test_validate_profile.ValidationTests.test_wide_register_and_zero_mask_are_rejected",
+      "status": "PASS"
+    }
+  ],
+  "subtests": [
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_abort_timeout_or_exception_retains",
+      "label": "test_abort_timeout_or_exception_retains (test_dma_session.DmaSessionTests.test_abort_timeout_or_exception_retains) (fault='abort-timeout')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_abort_timeout_or_exception_retains",
+      "label": "test_abort_timeout_or_exception_retains (test_dma_session.DmaSessionTests.test_abort_timeout_or_exception_retains) (fault='abort-raises')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_boolean_transaction_id_and_actual_count_rejected",
+      "label": "test_boolean_transaction_id_and_actual_count_rejected (test_dma_session.DmaSessionTests.test_boolean_transaction_id_and_actual_count_rejected) (key='transaction_id')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_boolean_transaction_id_and_actual_count_rejected",
+      "label": "test_boolean_transaction_id_and_actual_count_rejected (test_dma_session.DmaSessionTests.test_boolean_transaction_id_and_actual_count_rejected) (key='actual_bytes')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_flush_failure_is_before_submission",
+      "label": "test_flush_failure_is_before_submission (test_dma_session.DmaSessionTests.test_flush_failure_is_before_submission) (fault='tx-flush')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_flush_failure_is_before_submission",
+      "label": "test_flush_failure_is_before_submission (test_dma_session.DmaSessionTests.test_flush_failure_is_before_submission) (fault='rx-flush')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_invalid_contract_fails_before_allocations",
+      "label": "test_invalid_contract_fails_before_allocations (test_dma_session.DmaSessionTests.test_invalid_contract_fails_before_allocations) (changes={'length_bytes': 95})",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_invalid_contract_fails_before_allocations",
+      "label": "test_invalid_contract_fails_before_allocations (test_dma_session.DmaSessionTests.test_invalid_contract_fails_before_allocations) (changes={'max_transfer_bytes': 80})",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_invalid_contract_fails_before_allocations",
+      "label": "test_invalid_contract_fails_before_allocations (test_dma_session.DmaSessionTests.test_invalid_contract_fails_before_allocations) (changes={'timeout_seconds': nan})",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_invalid_contract_fails_before_allocations",
+      "label": "test_invalid_contract_fails_before_allocations (test_dma_session.DmaSessionTests.test_invalid_contract_fails_before_allocations) (changes={'abort_timeout_seconds': inf})",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_invalid_contract_fails_before_allocations",
+      "label": "test_invalid_contract_fails_before_allocations (test_dma_session.DmaSessionTests.test_invalid_contract_fails_before_allocations) (changes={'max_polls': True})",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_invalid_contract_fails_before_allocations",
+      "label": "test_invalid_contract_fails_before_allocations (test_dma_session.DmaSessionTests.test_invalid_contract_fails_before_allocations) (changes={'allow_abort': 'yes'})",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_missing_cache_operations_produce_real_byte_mismatch",
+      "label": "test_missing_cache_operations_produce_real_byte_mismatch (test_dma_session.DmaSessionTests.test_missing_cache_operations_produce_real_byte_mismatch) (faults={'tx-flush-noop'})",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_missing_cache_operations_produce_real_byte_mismatch",
+      "label": "test_missing_cache_operations_produce_real_byte_mismatch (test_dma_session.DmaSessionTests.test_missing_cache_operations_produce_real_byte_mismatch) (faults={'rx-invalidate-noop'})",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_missing_cache_operations_produce_real_byte_mismatch",
+      "label": "test_missing_cache_operations_produce_real_byte_mismatch (test_dma_session.DmaSessionTests.test_missing_cache_operations_produce_real_byte_mismatch) (faults={'rx-invalidate-noop', 'rx-flush-noop'})",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_missing_or_stale_status_is_not_default_success",
+      "label": "test_missing_or_stale_status_is_not_default_success (test_dma_session.DmaSessionTests.test_missing_or_stale_status_is_not_default_success) (fault='missing-status')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_missing_or_stale_status_is_not_default_success",
+      "label": "test_missing_or_stale_status_is_not_default_success (test_dma_session.DmaSessionTests.test_missing_or_stale_status_is_not_default_success) (fault='stale-status')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_payload_contract_errors_do_not_allocate",
+      "label": "test_payload_contract_errors_do_not_allocate (test_dma_session.DmaSessionTests.test_payload_contract_errors_do_not_allocate) (mode='receive', expected_size=96, tx_size=96)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_payload_contract_errors_do_not_allocate",
+      "label": "test_payload_contract_errors_do_not_allocate (test_dma_session.DmaSessionTests.test_payload_contract_errors_do_not_allocate) (mode='loopback', expected_size=95, tx_size=96)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_payload_contract_errors_do_not_allocate",
+      "label": "test_payload_contract_errors_do_not_allocate (test_dma_session.DmaSessionTests.test_payload_contract_errors_do_not_allocate) (mode='loopback', expected_size=96, tx_size=95)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_payload_contract_errors_do_not_allocate",
+      "label": "test_payload_contract_errors_do_not_allocate (test_dma_session.DmaSessionTests.test_payload_contract_errors_do_not_allocate) (mode='loopback', expected_size=96, tx_size=None)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_submission_can_start_then_raise_or_cancel",
+      "label": "test_submission_can_start_then_raise_or_cancel (test_dma_session.DmaSessionTests.test_submission_can_start_then_raise_or_cancel) (fault='rx-arm-after')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_submission_can_start_then_raise_or_cancel",
+      "label": "test_submission_can_start_then_raise_or_cancel (test_dma_session.DmaSessionTests.test_submission_can_start_then_raise_or_cancel) (fault='tx-arm-after')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_submission_can_start_then_raise_or_cancel",
+      "label": "test_submission_can_start_then_raise_or_cancel (test_dma_session.DmaSessionTests.test_submission_can_start_then_raise_or_cancel) (fault='interrupt')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs",
+      "label": "test_transfer_sizes_and_directions_are_inputs (test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs) (mode='receive', length=8)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs",
+      "label": "test_transfer_sizes_and_directions_are_inputs (test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs) (mode='receive', length=96)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs",
+      "label": "test_transfer_sizes_and_directions_are_inputs (test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs) (mode='receive', length=512)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs",
+      "label": "test_transfer_sizes_and_directions_are_inputs (test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs) (mode='receive', length=4096)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs",
+      "label": "test_transfer_sizes_and_directions_are_inputs (test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs) (mode='loopback', length=8)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs",
+      "label": "test_transfer_sizes_and_directions_are_inputs (test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs) (mode='loopback', length=96)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs",
+      "label": "test_transfer_sizes_and_directions_are_inputs (test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs) (mode='loopback', length=512)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs",
+      "label": "test_transfer_sizes_and_directions_are_inputs (test_dma_session.DmaSessionTests.test_transfer_sizes_and_directions_are_inputs) (mode='loopback', length=4096)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_axis_memory_and_length_field_mismatches_are_rejected",
+      "label": "test_axis_memory_and_length_field_mismatches_are_rejected (test_receive_profile.ReceiveProfileTests.test_axis_memory_and_length_field_mismatches_are_rejected) (field='axis_data_width_bits')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_axis_memory_and_length_field_mismatches_are_rejected",
+      "label": "test_axis_memory_and_length_field_mismatches_are_rejected (test_receive_profile.ReceiveProfileTests.test_axis_memory_and_length_field_mismatches_are_rejected) (field='memory_data_width_bits')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_axis_memory_and_length_field_mismatches_are_rejected",
+      "label": "test_axis_memory_and_length_field_mismatches_are_rejected (test_receive_profile.ReceiveProfileTests.test_axis_memory_and_length_field_mismatches_are_rejected) (field='length_width_bits')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_axis_memory_and_length_field_mismatches_are_rejected",
+      "label": "test_axis_memory_and_length_field_mismatches_are_rejected (test_receive_profile.ReceiveProfileTests.test_axis_memory_and_length_field_mismatches_are_rejected) (field='max_transfer_bytes')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_bit_hwh_manifest_build_mismatches_are_rejected",
+      "label": "test_bit_hwh_manifest_build_mismatches_are_rejected (test_receive_profile.ReceiveProfileTests.test_bit_hwh_manifest_build_mismatches_are_rejected) (name='build_id')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_bit_hwh_manifest_build_mismatches_are_rejected",
+      "label": "test_bit_hwh_manifest_build_mismatches_are_rejected (test_receive_profile.ReceiveProfileTests.test_bit_hwh_manifest_build_mismatches_are_rejected) (name='bit_hash')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_bit_hwh_manifest_build_mismatches_are_rejected",
+      "label": "test_bit_hwh_manifest_build_mismatches_are_rejected (test_receive_profile.ReceiveProfileTests.test_bit_hwh_manifest_build_mismatches_are_rejected) (name='hwh_hash')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_missing_or_disabled_s2mm_is_rejected",
+      "label": "test_missing_or_disabled_s2mm_is_rejected (test_receive_profile.ReceiveProfileTests.test_missing_or_disabled_s2mm_is_rejected) (mode='missing')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_missing_or_disabled_s2mm_is_rejected",
+      "label": "test_missing_or_disabled_s2mm_is_rejected (test_receive_profile.ReceiveProfileTests.test_missing_or_disabled_s2mm_is_rejected) (mode='disabled')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_mode_and_dre_mismatches_are_rejected",
+      "label": "test_mode_and_dre_mismatches_are_rejected (test_receive_profile.ReceiveProfileTests.test_mode_and_dre_mismatches_are_rejected) (field='mode')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_mode_and_dre_mismatches_are_rejected",
+      "label": "test_mode_and_dre_mismatches_are_rejected (test_receive_profile.ReceiveProfileTests.test_mode_and_dre_mismatches_are_rejected) (field='s2mm_dre')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_mode_and_dre_mismatches_are_rejected",
+      "label": "test_mode_and_dre_mismatches_are_rejected (test_receive_profile.ReceiveProfileTests.test_mode_and_dre_mismatches_are_rejected) (field='scatter_gather')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_part_substring_and_superstring_are_rejected",
+      "label": "test_part_substring_and_superstring_are_rejected (test_receive_profile.ReceiveProfileTests.test_part_substring_and_superstring_are_rejected) (part='xc7z020clg400')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_part_substring_and_superstring_are_rejected",
+      "label": "test_part_substring_and_superstring_are_rejected (test_receive_profile.ReceiveProfileTests.test_part_substring_and_superstring_are_rejected) (part='xc7z020clg400-2-extra')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_receive_length_must_fit_limit_and_axis_beats",
+      "label": "test_receive_length_must_fit_limit_and_axis_beats (test_receive_profile.ReceiveProfileTests.test_receive_length_must_fit_limit_and_axis_beats) (length=16384)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_receive_length_must_fit_limit_and_axis_beats",
+      "label": "test_receive_length_must_fit_limit_and_axis_beats (test_receive_profile.ReceiveProfileTests.test_receive_length_must_fit_limit_and_axis_beats) (length=8002)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_tlast_control_and_cache_contract_fail_closed",
+      "label": "test_tlast_control_and_cache_contract_fail_closed (test_receive_profile.ReceiveProfileTests.test_tlast_control_and_cache_contract_fail_closed) (field='tlast_required')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_tlast_control_and_cache_contract_fail_closed",
+      "label": "test_tlast_control_and_cache_contract_fail_closed (test_receive_profile.ReceiveProfileTests.test_tlast_control_and_cache_contract_fail_closed) (field='cache_policy')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_receive_profile.ReceiveProfileTests.test_tlast_control_and_cache_contract_fail_closed",
+      "label": "test_tlast_control_and_cache_contract_fail_closed (test_receive_profile.ReceiveProfileTests.test_tlast_control_and_cache_contract_fail_closed) (field='stop_semantics')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_contract_ip_must_exist_in_hwh",
+      "label": "test_contract_ip_must_exist_in_hwh (test_validate_profile.ValidationTests.test_contract_ip_must_exist_in_hwh) (scope='register_contract')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_contract_ip_must_exist_in_hwh",
+      "label": "test_contract_ip_must_exist_in_hwh (test_validate_profile.ValidationTests.test_contract_ip_must_exist_in_hwh) (scope='dma_contract')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_duplicate_dma_ids_fail_in_every_order",
+      "label": "test_duplicate_dma_ids_fail_in_every_order (test_validate_profile.ValidationTests.test_duplicate_dma_ids_fail_in_every_order) (records=({'id': 'loopback-4k', 'length_bytes': 4096, 'timed_out': True, 'dma_error': False, 'mm2s_completed': True, 's2mm_completed': True, 'tlast_observed': True, 'cache_operations': ['tx.flush', 'rx.invalidate'], 'mismatch_count': 4}, {'id': 'loopback-4k', 'length_bytes': 4096, 'timed_out': False, 'dma_error': False, 'mm2s_completed': True, 's2mm_completed': True, 'tlast_observed': True, 'cache_operations': ['tx.flush', 'rx.invalidate'], 'mismatch_count': 0}))",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_duplicate_dma_ids_fail_in_every_order",
+      "label": "test_duplicate_dma_ids_fail_in_every_order (test_validate_profile.ValidationTests.test_duplicate_dma_ids_fail_in_every_order) (records=({'id': 'loopback-4k', 'length_bytes': 4096, 'timed_out': False, 'dma_error': False, 'mm2s_completed': True, 's2mm_completed': True, 'tlast_observed': True, 'cache_operations': ['tx.flush', 'rx.invalidate'], 'mismatch_count': 0}, {'id': 'loopback-4k', 'length_bytes': 4096, 'timed_out': True, 'dma_error': False, 'mm2s_completed': True, 's2mm_completed': True, 'tlast_observed': True, 'cache_operations': ['tx.flush', 'rx.invalidate'], 'mismatch_count': 4}))",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_duplicate_dma_ids_fail_in_every_order",
+      "label": "test_duplicate_dma_ids_fail_in_every_order (test_validate_profile.ValidationTests.test_duplicate_dma_ids_fail_in_every_order) (records=({'id': 'loopback-4k', 'length_bytes': 4096, 'timed_out': False, 'dma_error': False, 'mm2s_completed': True, 's2mm_completed': True, 'tlast_observed': True, 'cache_operations': ['tx.flush', 'rx.invalidate'], 'mismatch_count': 0}, {'id': 'loopback-4k', 'length_bytes': 4096, 'timed_out': False, 'dma_error': False, 'mm2s_completed': True, 's2mm_completed': True, 'tlast_observed': True, 'cache_operations': ['tx.flush', 'rx.invalidate'], 'mismatch_count': 0}))",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_duplicate_dma_ids_fail_in_every_order",
+      "label": "test_duplicate_dma_ids_fail_in_every_order (test_validate_profile.ValidationTests.test_duplicate_dma_ids_fail_in_every_order) (records=({'id': 'loopback-4k', 'length_bytes': 4096, 'timed_out': True, 'dma_error': False, 'mm2s_completed': True, 's2mm_completed': True, 'tlast_observed': True, 'cache_operations': ['tx.flush', 'rx.invalidate'], 'mismatch_count': 4}, {'id': 'loopback-4k', 'length_bytes': 4096, 'timed_out': True, 'dma_error': False, 'mm2s_completed': True, 's2mm_completed': True, 'tlast_observed': True, 'cache_operations': ['tx.flush', 'rx.invalidate'], 'mismatch_count': 4}))",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_duplicate_dma_ids_fail_in_every_order",
+      "label": "test_duplicate_dma_ids_fail_in_every_order (test_validate_profile.ValidationTests.test_duplicate_dma_ids_fail_in_every_order) (records=({'id': 'loopback-4k', 'length_bytes': 4096, 'timed_out': False, 'dma_error': False, 'mm2s_completed': True, 's2mm_completed': True, 'tlast_observed': True, 'cache_operations': ['tx.flush', 'rx.invalidate'], 'mismatch_count': 0}, {'id': 'loopback-4k', 'length_bytes': 4096, 'timed_out': True, 'dma_error': False, 'mm2s_completed': True, 's2mm_completed': True, 'tlast_observed': True, 'cache_operations': ['tx.flush', 'rx.invalidate'], 'mismatch_count': 4}, {'id': 'loopback-4k', 'length_bytes': 4096, 'timed_out': False, 'dma_error': False, 'mm2s_completed': True, 's2mm_completed': True, 'tlast_observed': True, 'cache_operations': ['tx.flush', 'rx.invalidate'], 'mismatch_count': 0}))",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_hierarchical_contract_requires_full_instance_path",
+      "label": "test_hierarchical_contract_requires_full_instance_path (test_validate_profile.ValidationTests.test_hierarchical_contract_requires_full_instance_path) (name='sub/axi_dma_0')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_hierarchical_contract_requires_full_instance_path",
+      "label": "test_hierarchical_contract_requires_full_instance_path (test_validate_profile.ValidationTests.test_hierarchical_contract_requires_full_instance_path) (name='/sub/axi_dma_0')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_hierarchical_contract_requires_full_instance_path",
+      "label": "test_hierarchical_contract_requires_full_instance_path (test_validate_profile.ValidationTests.test_hierarchical_contract_requires_full_instance_path) (name='axi_dma_0')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_malformed_dma_records_fail_closed",
+      "label": "test_malformed_dma_records_fail_closed (test_validate_profile.ValidationTests.test_malformed_dma_records_fail_closed) (value=None)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_malformed_dma_records_fail_closed",
+      "label": "test_malformed_dma_records_fail_closed (test_validate_profile.ValidationTests.test_malformed_dma_records_fail_closed) (value={})",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_malformed_dma_records_fail_closed",
+      "label": "test_malformed_dma_records_fail_closed (test_validate_profile.ValidationTests.test_malformed_dma_records_fail_closed) (value=[None])",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_malformed_dma_records_fail_closed",
+      "label": "test_malformed_dma_records_fail_closed (test_validate_profile.ValidationTests.test_malformed_dma_records_fail_closed) (value=[{'id': []}])",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_malformed_dma_records_fail_closed",
+      "label": "test_malformed_dma_records_fail_closed (test_validate_profile.ValidationTests.test_malformed_dma_records_fail_closed) (value=[{'id': ''}])",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_nonfinite_golden_tolerance_is_rejected",
+      "label": "test_nonfinite_golden_tolerance_is_rejected (test_validate_profile.ValidationTests.test_nonfinite_golden_tolerance_is_rejected) (tolerance=nan)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_nonfinite_golden_tolerance_is_rejected",
+      "label": "test_nonfinite_golden_tolerance_is_rejected (test_validate_profile.ValidationTests.test_nonfinite_golden_tolerance_is_rejected) (tolerance=inf)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_nonfinite_golden_tolerance_is_rejected",
+      "label": "test_nonfinite_golden_tolerance_is_rejected (test_validate_profile.ValidationTests.test_nonfinite_golden_tolerance_is_rejected) (tolerance=-1.0)",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_parameter_or_module_type_is_not_contract_instance",
+      "label": "test_parameter_or_module_type_is_not_contract_instance (test_validate_profile.ValidationTests.test_parameter_or_module_type_is_not_contract_instance) (decoy=\"<PARAMETER NAME='not_in_hwh'/>\")",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_parameter_or_module_type_is_not_contract_instance",
+      "label": "test_parameter_or_module_type_is_not_contract_instance (test_validate_profile.ValidationTests.test_parameter_or_module_type_is_not_contract_instance) (decoy=\"<PORT NAME='not_in_hwh'/>\")",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_parameter_or_module_type_is_not_contract_instance",
+      "label": "test_parameter_or_module_type_is_not_contract_instance (test_validate_profile.ValidationTests.test_parameter_or_module_type_is_not_contract_instance) (decoy=\"<MODULE INSTANCE='other_ip' MODULENAME='not_in_hwh'/>\")",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_side_effect_identity_is_rejected",
+      "label": "test_side_effect_identity_is_rejected (test_validate_profile.ValidationTests.test_side_effect_identity_is_rejected) (access='wo')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_side_effect_identity_is_rejected",
+      "label": "test_side_effect_identity_is_rejected (test_validate_profile.ValidationTests.test_side_effect_identity_is_rejected) (access='w1c')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_side_effect_identity_is_rejected",
+      "label": "test_side_effect_identity_is_rejected (test_validate_profile.ValidationTests.test_side_effect_identity_is_rejected) (access='rc')",
+      "status": "PASS"
+    },
+    {
+      "parent": "test_validate_profile.ValidationTests.test_side_effect_identity_is_rejected",
+      "label": "test_side_effect_identity_is_rejected (test_validate_profile.ValidationTests.test_side_effect_identity_is_rejected) (access='rw')",
+      "status": "PASS"
+    }
+  ],
+  "failure_details": [],
+  "source_sha256": {
+    "scripts/compare_golden.py": "7ff7883414f27ba5e94c4c3f5dde395b801efe7c43d9431605a7ef845cc71c70",
+    "scripts/dma_session.py": "61f8c3996973184470e4473e474793854d4e91046147fab551de848e34f1c03e",
+    "scripts/pynq_probe.py": "2ac2101c8dd1e5f72faa9b2ff107f3546c9c15e74a0372e6f0d567de59be1907",
+    "scripts/replay_receive_cases.py": "ee9f6d86fec142bcbd8f7b48654454eccc0c160ceab57981b50d5400b97c77da",
+    "scripts/run_offline_tests.py": "661a43f44905153cf9b76cfffeb85e54383babaec879a8f03b380ec6083ca80c",
+    "scripts/simulate_dma.py": "45afbe11746a297fb04e353b272c2483de467aec88ff2946eef3274b780e1117",
+    "scripts/validate_profile.py": "136ab79b7e3219dc9b9787bada5b58b2c359ac3838ba7a3840b69f0c32ed1350",
+    "scripts/validate_receive_profile.py": "623179d496b62ef01b6a644d2fd082f17159807cbda7fb7840ad119320568906",
+    "tests/test_dma_session.py": "5b3b591fbc385c4eb84d9e70d263e1c0277a1cc9fda43cc13f7ae9ce2eeb88e8",
+    "tests/test_receive_profile.py": "5756c5554f326017f6d91fd2d326157b40cfff4dcddd469ea4b7eb3431f51211",
+    "tests/test_validate_profile.py": "38aef9f9df626d78df23b944795125eee6922c2789740a8c0a7b89e8b7b6155d",
+    "references/example-profile.json": "f9722abb54fa1ba67afc783619b2d8b96786231a06f1a0815153be09d4a30a8e",
+    "references/example-session.json": "a2edb87387dfa94158bcf9f7d548e28a23b0bfef56808ecf931bec04753b6e5a",
+    "references/soundsight-record-v1.json": "e2cf7d09e5aa7284d21137e71b113dbcd2de8c6eb7144af042f7e037e3074b43"
+  },
+  "sources_unchanged_during_run": true,
+  "claims": {
+    "pynq_driver": "NOT_RUN",
+    "overlay_download": "NOT_RUN",
+    "physical_dma": "NOT_RUN",
+    "tlast_waveform": "NOT_RUN",
+    "hardware_performance": "NOT_RUN",
+    "vivado_resources": "NOT_RUN"
+  }
+}

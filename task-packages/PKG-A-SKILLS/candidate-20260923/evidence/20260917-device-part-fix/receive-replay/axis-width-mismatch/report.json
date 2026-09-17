@@ -1,0 +1,293 @@
+{
+  "tool": "pynq-overlay-dma-validation/validate_receive_profile.py",
+  "generated_at_utc": "2026-09-17T12:44:09.990013+00:00",
+  "profile_id": "synthetic-s2mm-receive-20260923",
+  "profile_kind": "receive-only-s2mm",
+  "evidence_level": "static",
+  "board_execution": false,
+  "status": "FAIL",
+  "artifact_hashes": {
+    "bit": "7a61da9f823718c099a57ee29ba7fe098e19f9400c69bbb3a86595e710838ee8",
+    "hwh": "2147f25c6d4748183d91c4747f528a0260a50554a54c140ae1b292990e6f4f65",
+    "manifest": "0773cdf28b4f9d0400717e201b241c06edc50e05c2ee6b3f3be91967b9b49b8b",
+    "payload_schema": "e2cf7d09e5aa7284d21137e71b113dbcd2de8c6eb7144af042f7e037e3074b43"
+  },
+  "contract_summary": {
+    "build_id": "synthetic-receive-20260923",
+    "dma_instance": "system_i/axi_dma_0",
+    "mode": "simple",
+    "s2mm_enabled": true,
+    "mm2s_enabled": false,
+    "axis_data_width_bits": 64,
+    "memory_data_width_bits": 64,
+    "length_width_bits": 14,
+    "max_transfer_bytes": 16383,
+    "tlast_required": true,
+    "completion_method": "polling",
+    "payload_schema_external": true
+  },
+  "checks": [
+    {
+      "code": "SCHEMA_VERSION",
+      "status": "PASS",
+      "message": "schema_version must be 1"
+    },
+    {
+      "code": "PROFILE_KIND",
+      "status": "PASS",
+      "message": "profile_kind must be receive-only-s2mm"
+    },
+    {
+      "code": "OVERLAY_STEM",
+      "status": "PASS",
+      "message": ".bit and .hwh must have one basename"
+    },
+    {
+      "code": "OVERLAY_DIRECTORY",
+      "status": "PASS",
+      "message": ".bit and .hwh must be adjacent"
+    },
+    {
+      "code": "MANIFEST_DIRECTORY",
+      "status": "PASS",
+      "message": "manifest must be adjacent to the bound bit/HWH pair"
+    },
+    {
+      "code": "MANIFEST_BUILD_ID",
+      "status": "PASS",
+      "message": "manifest build_id must match overlay build_id"
+    },
+    {
+      "code": "MANIFEST_INTERFACE_VERSION",
+      "status": "PASS",
+      "message": "manifest interface_version must match overlay interface_version"
+    },
+    {
+      "code": "MANIFEST_VIVADO_VERSION",
+      "status": "PASS",
+      "message": "manifest vivado_version must match overlay vivado_version"
+    },
+    {
+      "code": "MANIFEST_DEVICE_PART",
+      "status": "PASS",
+      "message": "manifest device_part must match board.device_part"
+    },
+    {
+      "code": "MANIFEST_BIT_ENTRY",
+      "status": "PASS",
+      "message": "manifest.bit must be an object"
+    },
+    {
+      "code": "MANIFEST_BIT_FILE",
+      "status": "PASS",
+      "message": "manifest.bit.file must name the selected artifact"
+    },
+    {
+      "code": "MANIFEST_BIT_HASH",
+      "status": "PASS",
+      "message": "manifest.bit.sha256 must match the selected artifact"
+    },
+    {
+      "code": "MANIFEST_HWH_ENTRY",
+      "status": "PASS",
+      "message": "manifest.hwh must be an object"
+    },
+    {
+      "code": "MANIFEST_HWH_FILE",
+      "status": "PASS",
+      "message": "manifest.hwh.file must name the selected artifact"
+    },
+    {
+      "code": "MANIFEST_HWH_HASH",
+      "status": "PASS",
+      "message": "manifest.hwh.sha256 must match the selected artifact"
+    },
+    {
+      "code": "HWH_DEVICE_PART",
+      "status": "PASS",
+      "message": "HWH root PART must exactly match board.device_part after case/edge-space normalization"
+    },
+    {
+      "code": "HWH_S2MM_INSTANCE",
+      "status": "PASS",
+      "message": "receive_contract.ip_name 'system_i/axi_dma_0' must be an exact HWH MODULE path"
+    },
+    {
+      "code": "HWH_S2MM_IP_TYPE",
+      "status": "PASS",
+      "message": "declared S2MM MODULE must be a Xilinx AXI DMA IP, not just a name/parameter decoy"
+    },
+    {
+      "code": "CONTRACT_MODE",
+      "status": "PASS",
+      "message": "receive_contract.mode must be 'simple'"
+    },
+    {
+      "code": "CONTRACT_S2MM_ENABLED",
+      "status": "PASS",
+      "message": "receive_contract.s2mm_enabled must be True"
+    },
+    {
+      "code": "CONTRACT_MM2S_ENABLED",
+      "status": "PASS",
+      "message": "receive_contract.mm2s_enabled must be False"
+    },
+    {
+      "code": "CONTRACT_SCATTER_GATHER",
+      "status": "PASS",
+      "message": "receive_contract.scatter_gather must be False"
+    },
+    {
+      "code": "CONTRACT_S2MM_DRE",
+      "status": "PASS",
+      "message": "receive_contract.s2mm_dre must be False"
+    },
+    {
+      "code": "CONTRACT_TLAST_REQUIRED",
+      "status": "PASS",
+      "message": "receive_contract.tlast_required must be True"
+    },
+    {
+      "code": "BYTE_WIDTH",
+      "status": "PASS",
+      "message": "receive_contract.axis_data_width_bits must be byte-addressable"
+    },
+    {
+      "code": "BYTE_WIDTH",
+      "status": "PASS",
+      "message": "receive_contract.memory_data_width_bits must be byte-addressable"
+    },
+    {
+      "code": "MAX_TRANSFER_LENGTH",
+      "status": "PASS",
+      "message": "max_transfer_bytes must equal the simple-DMA length-register limit"
+    },
+    {
+      "code": "HWH_C_INCLUDE_S2MM",
+      "status": "PASS",
+      "message": "HWH C_INCLUDE_S2MM=1 must match receive_contract.s2mm_enabled=1"
+    },
+    {
+      "code": "HWH_C_INCLUDE_MM2S",
+      "status": "PASS",
+      "message": "HWH C_INCLUDE_MM2S=0 must match receive_contract.mm2s_enabled=0"
+    },
+    {
+      "code": "HWH_C_INCLUDE_SG",
+      "status": "PASS",
+      "message": "HWH C_INCLUDE_SG=0 must match receive_contract.scatter_gather=0"
+    },
+    {
+      "code": "HWH_C_INCLUDE_S2MM_DRE",
+      "status": "PASS",
+      "message": "HWH C_INCLUDE_S2MM_DRE=0 must match receive_contract.s2mm_dre=0"
+    },
+    {
+      "code": "HWH_C_S_AXIS_S2MM_TDATA_WIDTH",
+      "status": "FAIL",
+      "message": "HWH C_S_AXIS_S2MM_TDATA_WIDTH=32 must match receive_contract.axis_data_width_bits=64"
+    },
+    {
+      "code": "HWH_C_M_AXI_S2MM_DATA_WIDTH",
+      "status": "PASS",
+      "message": "HWH C_M_AXI_S2MM_DATA_WIDTH=64 must match receive_contract.memory_data_width_bits=64"
+    },
+    {
+      "code": "HWH_C_SG_LENGTH_WIDTH",
+      "status": "PASS",
+      "message": "HWH C_SG_LENGTH_WIDTH=14 must match receive_contract.length_width_bits=14"
+    },
+    {
+      "code": "COMPLETION_METHOD",
+      "status": "PASS",
+      "message": "this candidate qualifies polling only; interrupt mode needs a separate adapter review"
+    },
+    {
+      "code": "RX_CACHE_POLICY",
+      "status": "PASS",
+      "message": "this candidate requires RX invalidation; coherent mode needs allocator proof and separate review"
+    },
+    {
+      "code": "HWH_CONTROL_INSTANCE",
+      "status": "PASS",
+      "message": "control_contract.ip_name 'system_i/axi_gpio_run' must be an exact HWH MODULE path"
+    },
+    {
+      "code": "CONTROL_START_SEMANTICS",
+      "status": "PASS",
+      "message": "control_contract.start_semantics must be 'level_high_run'"
+    },
+    {
+      "code": "CONTROL_STOP_SEMANTICS",
+      "status": "PASS",
+      "message": "control_contract.stop_semantics must be 'deassert_run_drain_full_packet'"
+    },
+    {
+      "code": "CONTROL_STATUS_SEMANTICS",
+      "status": "PASS",
+      "message": "control_contract.status_semantics must be 'sticky_error_and_drained'"
+    },
+    {
+      "code": "PAYLOAD_HASH_FORMAT",
+      "status": "PASS",
+      "message": "payload_schema.sha256 must be a lowercase SHA-256"
+    },
+    {
+      "code": "PAYLOAD_SCHEMA_HASH",
+      "status": "PASS",
+      "message": "external payload schema must match its declared SHA-256"
+    },
+    {
+      "code": "MANIFEST_PAYLOAD_ENTRY",
+      "status": "PASS",
+      "message": "manifest.payload_schema must bind the external schema"
+    },
+    {
+      "code": "MANIFEST_PAYLOAD_FILE",
+      "status": "PASS",
+      "message": "manifest payload schema filename must match"
+    },
+    {
+      "code": "MANIFEST_PAYLOAD_HASH",
+      "status": "PASS",
+      "message": "manifest payload schema hash must match the profile"
+    },
+    {
+      "code": "RECEIVE_TEST_KIND",
+      "status": "PASS",
+      "message": "receive_tests[0].kind must be receive"
+    },
+    {
+      "code": "RECEIVE_TEST_LENGTH",
+      "status": "PASS",
+      "message": "receive_tests[0].length_bytes must be positive"
+    },
+    {
+      "code": "RECEIVE_TEST_MAX",
+      "status": "PASS",
+      "message": "receive_tests[0] must not exceed max_transfer_bytes"
+    },
+    {
+      "code": "RECEIVE_TEST_GRANULARITY",
+      "status": "PASS",
+      "message": "receive_tests[0] length must meet transfer granularity"
+    },
+    {
+      "code": "RECEIVE_TEST_BEAT",
+      "status": "PASS",
+      "message": "receive_tests[0] length must contain full AXIS beats"
+    },
+    {
+      "code": "RECEIVE_TEST_TIMEOUT",
+      "status": "PASS",
+      "message": "receive_tests[0].timeout_seconds must be positive"
+    }
+  ],
+  "issues": [
+    {
+      "severity": "ERROR",
+      "code": "HWH_C_S_AXIS_S2MM_TDATA_WIDTH",
+      "message": "HWH C_S_AXIS_S2MM_TDATA_WIDTH=32 must match receive_contract.axis_data_width_bits=64"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "original_manifest_sha256": "9f43655abad38798c51671ec394071771c7857dcd34572346c27cca576fe5c1e",
+  "original_entries": 474,
+  "unchanged_original_entries": 471,
+  "missing_original_entries": [],
+  "changed_original_entries": [
+    {
+      "path": "exports/pynq-overlay-dma-validation/scripts/replay_receive_cases.py",
+      "before_sha256": "e78e320543215842fde5c4ef5170412e781e7302d5d4c01a152bd3d433bf1f7b",
+      "after_sha256": "ee9f6d86fec142bcbd8f7b48654454eccc0c160ceab57981b50d5400b97c77da",
+      "before_bytes": 6476,
+      "after_bytes": 6998,
+      "allowed_change": true
+    },
+    {
+      "path": "exports/pynq-overlay-dma-validation/scripts/validate_receive_profile.py",
+      "before_sha256": "5fa5d29bf9afe1caaa24b7f9ef02c9db89cd0d7b1e870ca36f2fec9896ad7a50",
+      "after_sha256": "623179d496b62ef01b6a644d2fd082f17159807cbda7fb7840ad119320568906",
+      "before_bytes": 20646,
+      "after_bytes": 20751,
+      "allowed_change": true
+    },
+    {
+      "path": "exports/pynq-overlay-dma-validation/tests/test_receive_profile.py",
+      "before_sha256": "396251ace8d05e2d108eec946f07be119f50e38a1b40d3e21737cb5a77d40781",
+      "after_sha256": "5756c5554f326017f6d91fd2d326157b40cfff4dcddd469ea4b7eb3431f51211",
+      "before_bytes": 11458,
+      "after_bytes": 13244,
+      "allowed_change": true
+    }
+  ],
+  "unexpected_changes": [],
+  "expected_changed_paths": [
+    "exports/pynq-overlay-dma-validation/scripts/replay_receive_cases.py",
+    "exports/pynq-overlay-dma-validation/scripts/validate_receive_profile.py",
+    "exports/pynq-overlay-dma-validation/tests/test_receive_profile.py"
+  ],
+  "original_manifest_modified": false
+}

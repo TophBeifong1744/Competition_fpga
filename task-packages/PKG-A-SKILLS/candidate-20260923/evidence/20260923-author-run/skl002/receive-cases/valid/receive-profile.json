@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "profile_id": "synthetic-s2mm-receive-20260923",
+  "profile_kind": "receive-only-s2mm",
+  "board": {
+    "board_name": "synthetic-zynq-board",
+    "board_revision": "mock-r1",
+    "device_part": "xc7z020clg400-2",
+    "pynq_image": "synthetic-image-0",
+    "compatibility_contains": [
+      "synthetic,zynq-board"
+    ]
+  },
+  "overlay": {
+    "bit": "design.bit",
+    "hwh": "design.hwh",
+    "manifest": "build-manifest.json",
+    "build_id": "synthetic-receive-20260923",
+    "interface_version": "receive-v1",
+    "vivado_version": "2025.2",
+    "required_interrupts": []
+  },
+  "receive_contract": {
+    "ip_name": "system_i/axi_dma_0",
+    "mode": "simple",
+    "s2mm_enabled": true,
+    "mm2s_enabled": false,
+    "scatter_gather": false,
+    "s2mm_dre": false,
+    "axis_data_width_bits": 32,
+    "memory_data_width_bits": 64,
+    "length_width_bits": 14,
+    "max_transfer_bytes": 16383,
+    "length_granularity_bytes": 4,
+    "buffer_alignment_bytes": 64,
+    "tlast_required": true,
+    "completion_method": "polling",
+    "cache_policy": {
+      "rx": "invalidate"
+    }
+  },
+  "control_contract": {
+    "ip_name": "system_i/axi_gpio_run",
+    "start_semantics": "level_high_run",
+    "stop_semantics": "deassert_run_drain_full_packet",
+    "status_semantics": "sticky_error_and_drained"
+  },
+  "payload_schema": {
+    "path": "payload-schema.json",
+    "sha256": "e2cf7d09e5aa7284d21137e71b113dbcd2de8c6eb7144af042f7e037e3074b43"
+  },
+  "receive_tests": [
+    {
+      "id": "packet-8000",
+      "kind": "receive",
+      "length_bytes": 8000,
+      "timeout_seconds": 2.0
+    }
+  ],
+  "fixture_notice": "Synthetic parser input only; a PASS is not board evidence."
+}

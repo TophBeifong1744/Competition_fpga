@@ -1,0 +1,135 @@
+{
+  "generated_at_utc": "2026-09-17T11:11:34.7458744Z",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "scripts/run_offline_tests.py",
+        "--output",
+        "E:\\skill_candidate_20260923_run02\\evidence\\skl002\\offline-tests.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "name": "offline-tests",
+      "expectation_met": true
+    },
+    {
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "scripts/validate_receive_profile.py",
+        "--profile",
+        "references/example-receive/receive-profile.json",
+        "--output",
+        "E:\\skill_candidate_20260923_run02\\evidence\\skl002\\receive-profile-pass.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "name": "receive-profile",
+      "expectation_met": true
+    },
+    {
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "scripts/replay_receive_cases.py",
+        "--profile",
+        "references/example-receive/receive-profile.json",
+        "--output",
+        "E:\\skill_candidate_20260923_run02\\evidence\\skl002\\receive-cases"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "name": "receive-cases",
+      "expectation_met": true
+    },
+    {
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "scripts/simulate_dma.py",
+        "--contract",
+        "references/example-session.json",
+        "--output",
+        "E:\\skill_candidate_20260923_run02\\evidence\\skl002\\mock-receive.json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "name": "mock-receive",
+      "expectation_met": true
+    },
+    {
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "scripts/simulate_dma.py",
+        "--contract",
+        "references/example-session.json",
+        "--fault",
+        "rx-invalidate-noop",
+        "--output",
+        "E:\\skill_candidate_20260923_run02\\evidence\\skl002\\mock-stale-cache.json"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "name": "mock-stale-cache",
+      "expectation_met": true
+    },
+    {
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "scripts/simulate_dma.py",
+        "--contract",
+        "references/example-session.json",
+        "--fault",
+        "short-output",
+        "--output",
+        "E:\\skill_candidate_20260923_run02\\evidence\\skl002\\mock-short-output.json"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "name": "mock-short-output",
+      "expectation_met": true
+    },
+    {
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "scripts/simulate_dma.py",
+        "--contract",
+        "references/example-session.json",
+        "--fault",
+        "timeout",
+        "--fault",
+        "abort-timeout",
+        "--output",
+        "E:\\skill_candidate_20260923_run02\\evidence\\skl002\\mock-timeout-retained.json"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "name": "mock-timeout-retained",
+      "expectation_met": true
+    },
+    {
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "scripts/pynq_probe.py",
+        "--profile",
+        "references/example-receive/receive-profile.json",
+        "--download",
+        "--output",
+        "E:\\skill_candidate_20260923_run02\\evidence\\skl002\\unexpected-board-output.json"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "name": "board-guard",
+      "expectation_met": true
+    }
+  ],
+  "cwd": "E:\\skill_candidate_20260923_run02\\pynq-overlay-dma-validation",
+  "python": "Python 3.12.14",
+  "note": "pynq_probe.py raises SystemExit with a string, so CPython returns 1; refusal and no-output are the contract"
+}

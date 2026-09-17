@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "schema_id": "soundsight-four-channel-record-v1",
+  "scope": "external-payload-example",
+  "endianness": "little",
+  "record_bytes": 32,
+  "word_bytes": 4,
+  "words_per_record": 8,
+  "words": [
+    {"index": 0, "name": "id_lo", "type": "uint32"},
+    {"index": 1, "name": "id_hi", "type": "uint32"},
+    {"index": 2, "name": "mic0", "type": "signed24-in-int32"},
+    {"index": 3, "name": "mic1", "type": "signed24-in-int32"},
+    {"index": 4, "name": "mic2", "type": "signed24-in-int32"},
+    {"index": 5, "name": "mic3", "type": "signed24-in-int32"},
+    {"index": 6, "name": "flags", "type": "uint32"},
+    {"index": 7, "name": "reserved", "type": "uint32"}
+  ],
+  "dma_core_note": "The generic receive validator binds this file by hash; it does not interpret channel count or fields."
+}

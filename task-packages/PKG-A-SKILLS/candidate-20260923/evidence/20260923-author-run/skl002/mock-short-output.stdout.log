@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "evidence_level": "mock",
+  "board_execution": false,
+  "transaction_id": 1,
+  "mode": "receive",
+  "status": "FAIL",
+  "requested_bytes": 96,
+  "actual_bytes": 95,
+  "events": [
+    "rx.allocate",
+    "rx.fill",
+    "rx.flush",
+    "rx.invalidate_before",
+    "rx.arm",
+    "dma.quiescent",
+    "rx.release"
+  ],
+  "errors": [
+    "length: RuntimeError: received byte count differs from requested length"
+  ],
+  "snapshots": [
+    {
+      "phase": "transfer",
+      "state": {
+        "transaction_id": 1,
+        "rx_completed": false,
+        "tx_completed": false,
+        "quiescent": false,
+        "actual_bytes": null,
+        "error": null,
+        "raw_status": {
+          "simulated_poll": 1,
+          "simulated_active": true
+        }
+      }
+    },
+    {
+      "phase": "transfer",
+      "state": {
+        "transaction_id": 1,
+        "rx_completed": true,
+        "tx_completed": false,
+        "quiescent": true,
+        "actual_bytes": 95,
+        "error": null,
+        "raw_status": {
+          "simulated_poll": 2,
+          "simulated_active": false
+        }
+      }
+    }
+  ],
+  "mismatch_count": null,
+  "first_mismatch": null,
+  "transfer_elapsed_seconds": 0.001,
+  "throughput_bytes_per_second": null,
+  "buffer_disposition": "released",
+  "tlast_observed": null,
+  "session_blocked": true,
+  "adapter_trace": [
+    "rx.allocate",
+    "rx.write",
+    "rx.flush",
+    "rx.invalidate",
+    "rx.arm",
+    "snapshot",
+    "snapshot",
+    "rx.release"
+  ],
+  "contract_sha256": "a2edb87387dfa94158bcf9f7d548e28a23b0bfef56808ecf931bec04753b6e5a",
+  "faults": [
+    "short-output"
+  ],
+  "timing_source": "synthetic mock clock; not measured performance"
+}

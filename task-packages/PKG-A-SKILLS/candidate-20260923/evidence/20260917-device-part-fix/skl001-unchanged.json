@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "check": "per-file SHA-256 and size against preserved original candidate manifest",
+  "original_manifest": "MANIFEST.sha256.json",
+  "original_manifest_sha256": "9f43655abad38798c51671ec394071771c7857dcd34572346c27cca576fe5c1e",
+  "prefixes": [
+    "exports/fpga-module-verification/",
+    "evidence/20260923-author-run/skl001/"
+  ],
+  "expected_files": 265,
+  "actual_files": 265,
+  "matched_files": 265,
+  "missing": [],
+  "mismatches": [],
+  "extra": [],
+  "xsim_rerun": false,
+  "note": "SKL-001 source and prior author evidence were hash-checked only, as required."
+}
