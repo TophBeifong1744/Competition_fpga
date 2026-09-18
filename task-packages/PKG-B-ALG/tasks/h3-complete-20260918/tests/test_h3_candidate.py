@@ -13,7 +13,7 @@ from fixed_golden import (FixedTracker, TrackerConfig, causal_audio, control_tim
                           das_block, doa_q20, lag_q12,
                           physical_limit_q12, physical_tau_legal_q12,
                           rne_div, rne_shift, saturate, window_pcm)
-from check_golden import compare_frozen_chain
+from check_golden import compare_frozen_arrays, compare_frozen_chain
 from run_golden import deterministic_pcm
 from presence import evaluate as presence
 from budget import calculate
@@ -100,8 +100,8 @@ class LagDoaTests(unittest.TestCase):
 class TrackerAndAudioTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.controls, cls.dropout = control_timeline(0)
-        cls.audio, cls.detail = causal_audio(np.tile(deterministic_pcm(), (1, 16)), cls.controls)
+        cls.controls = control_timeline(0)
+        cls.audio, cls.detail = causal_audio(np.tile(deterministic_pcm(), (1, 20)), cls.controls)
 
     def test_five_frame_acquisition(self):
         tracker = FixedTracker()
@@ -128,6 +128,30 @@ class TrackerAndAudioTests(unittest.TestCase):
         tracker.update(1024, 0, True)
         result = tracker.update(1024 + 1441, 0, True)
         self.assertEqual(result["reason"], "gap_reset_acquire")
+    def test_gap_enters_automatic_control(self):
+        gap = next(row for row in self.controls if row["ready_sample"] == 4513)
+        self.assertEqual(gap["reason"], "gap_reset_acquire")
+        self.assertFalse(gap["fresh_valid"])
+        self.assertEqual(gap["available_emit_sample"], 4521)
+        self.assertEqual(gap["input_gap_samples"], 1441)
+        self.assertTrue(gap["discontinuity"])
+        self.assertEqual(gap["state"], "ACQUIRE")
+        self.assertIn(gap, self.detail["control_rows"])
+        event = next(row for row in self.detail["events"] if row["kind"] == "DISCONTINUITY_TO_SINGLE")
+        self.assertEqual((event["ready_sample"], event["emit_sample"], event["target"]), (4513, 4521, 0))
+        self.assertEqual(event["previous_expiry_emit_sample"], 12680)
+        self.assertIsNone(event["new_expiry_emit_sample"])
+        self.assertEqual(int(self.audio["auto_target_bank"][4520]), 1)
+        self.assertEqual(int(self.audio["auto_target_bank"][4521]), 0)
+        weights = self.audio["auto_weights_q12"]
+        self.assertEqual(weights[4520].tolist(), [0, 4096, 0])
+        self.assertEqual(weights[4521].tolist(), [0, 4096, 0])
+        self.assertGreater(int(weights[4522, 0]), 0)
+        self.assertLess(int(weights[4522, 1]), 4096)
+        self.assertEqual(weights[5001].tolist(), [4096, 0, 0])
+        self.assertEqual(int(self.audio["automatic"][5001]), int(self.audio["single"][5001]))
+        self.assertTrue(np.any(self.audio["automatic"][4522:5001] !=
+                               self.audio["manual"][4522:5001]))
     def test_das_zero(self):
         output, info = das_block(np.zeros((4, 32), dtype=np.int64), [0, 0, 0, 0])
         self.assertTrue(np.array_equal(output, np.zeros(32, dtype=np.int64)))
@@ -145,31 +169,30 @@ class TrackerAndAudioTests(unittest.TestCase):
     def test_fresh_switch_has_finite_fade(self):
         selected = [row for row in self.detail["events"] if row["kind"] == "FRESH_SELECT"]
         self.assertEqual([(row["ready_sample"], row["target"]) for row in selected],
-                         [(3072, 1), (3584, 2)])
+                         [(3072, 1), (6561, 1), (7073, 2)])
         weights = self.audio["auto_weights_q12"]
-        self.assertEqual(int(weights[3592, 2]), 0)
-        self.assertGreater(int(weights[3593, 2]), 0)
-        self.assertEqual(int(weights[3592].sum()), 4096)
+        self.assertEqual(int(weights[7081, 2]), 0)
+        self.assertGreater(int(weights[7082, 2]), 0)
+        self.assertEqual(int(weights[7081].sum()), 4096)
         self.assertLessEqual(int(np.max(np.abs(np.diff(weights.astype(np.int64), axis=0)))), 20)
     def test_hold_expiry_and_discontinuity(self):
         hold = [row for row in self.controls if row["state"] == "HOLD"]
         self.assertGreater(len(hold), 1)
-        self.assertTrue(all(row["last_fresh_sample"] == 3584 for row in hold))
+        self.assertTrue(all(row["last_fresh_sample"] == 7073 for row in hold))
         expiry = [row for row in self.detail["events"] if row["kind"] == "EXPIRE_TO_SINGLE"]
-        self.assertEqual(expiry[0]["emit_sample"], 13193)
-        self.assertEqual(int(self.audio["auto_weights_q12"][13193, 0]), 0)
-        self.assertEqual(int(self.audio["auto_weights_q12"][13193 + 480, 0]), 4096)
-        self.assertEqual(self.dropout[0]["reason"], "gap_reset_acquire")
-        self.assertFalse(self.dropout[0]["fresh_valid"])
-        self.assertIsNone(self.dropout[0]["display_angle_q8_deg"])
+        self.assertEqual(expiry[0]["emit_sample"], 16682)
+        self.assertEqual(int(self.audio["auto_weights_q12"][16682, 0]), 0)
+        self.assertEqual(int(self.audio["auto_weights_q12"][16682 + 480, 0]), 4096)
+        gap = next(row for row in self.controls if row["discontinuity"])
+        self.assertIsNone(gap["display_angle_q8_deg"])
     def test_manual_auto_identity_guard(self):
         with self.assertRaisesRegex(RuntimeError, "MANUAL_AUTO_IDENTICAL"):
-            causal_audio(np.zeros((4, 16384), dtype=np.int64), self.controls)
+            causal_audio(np.zeros((4, 20480), dtype=np.int64), self.controls)
 
 
 class FrozenCheckerTests(unittest.TestCase):
     def test_lag_doa_tracker_event_mutations_are_rejected(self):
-        root = HERE / "evidence/run04/golden/golden-summary.json"
+        root = HERE / "evidence/run05/golden/golden-summary.json"
         frozen = json.loads(root.read_text(encoding="utf-8"))["chain"]
         for field, edit in (("pairs", lambda x: x[0].update(reason="MUTATED")),
                             ("doa", lambda x: x.update(azimuth_q8_deg=123)),
@@ -179,6 +202,17 @@ class FrozenCheckerTests(unittest.TestCase):
             edit(changed[field])
             with self.subTest(field=field), self.assertRaisesRegex(AssertionError, field):
                 compare_frozen_chain(frozen, changed)
+    def test_discontinuity_audio_array_mutations_are_rejected(self):
+        archive = HERE / "evidence/run05/golden/golden-stages.npz"
+        with np.load(archive, allow_pickle=False) as frozen:
+            baseline = {name: frozen[name].copy() for name in frozen.files}
+            for name, sample in (("auto_target_bank", 4521),
+                                 ("auto_weights_q12", (4522, 0)),
+                                 ("automatic", 4522)):
+                altered = {key: value.copy() for key, value in baseline.items()}
+                altered[name][sample] += 1
+                with self.subTest(array=name), self.assertRaisesRegex(AssertionError, name):
+                    compare_frozen_arrays(frozen, altered)
 
 
 class ContractBudgetTests(unittest.TestCase):

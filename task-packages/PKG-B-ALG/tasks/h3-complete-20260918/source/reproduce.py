@@ -60,6 +60,11 @@ def main():
     commands.append(run("golden-check", [sys.executable, "-B", package / "source/check_golden.py", "--repo", root,
                                          "--golden", args.out / "golden/golden-stages.npz",
                                          "--out", args.out / "golden-check.json"], root, logs, replacements))
+    commands.append(run("frozen-run05-check", [sys.executable, "-B", package / "source/check_golden.py",
+                                               "--repo", root,
+                                               "--golden", package / "evidence/run05/golden/golden-stages.npz",
+                                               "--out", args.out / "frozen-run05-check.json"],
+                        root, logs, replacements))
     commands.append(run("real-diagnostic", [sys.executable, "-B", package / "source/evaluate_real.py", "--repo", root,
                                             "--out", args.out / "real-diagnostic"], root, logs, replacements))
     commands.append(run("budget", [sys.executable, "-B", package / "source/budget.py", "--out", args.out / "budget.json"], root, logs, replacements))

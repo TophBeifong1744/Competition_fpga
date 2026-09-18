@@ -19,6 +19,7 @@ from typing import Iterable
 import numpy as np
 
 N = 1024
+COMMON_AVAILABILITY_DELAY_SAMPLES = 8
 FRAC_LAG = 12
 FRAC_DIR = 20
 FRAC_ANGLE = 8
@@ -358,33 +359,36 @@ def _delayed(signal: np.ndarray, delay: int) -> np.ndarray:
     return output
 
 
-def control_timeline(angle_q8: int) -> tuple[list[dict], list[dict]]:
-    """Five real-analysis-style results, then explicit control boundary probes.
+def control_timeline(angle_q8: int) -> list[dict]:
+    """One tracker drives acquisition, discontinuity, reacquisition and expiry.
 
-    The 19-degree direction switch and rejected 70-degree candidate are
-    injected control vectors, not additional claims about acoustic DOA.
+    The 1441-sample gap at 4513 must be consumed by causal_audio. The 19-degree
+    switch and rejected 70-degree candidate are injected control vectors, not
+    additional claims about acoustic DOA.
     """
     tracker = FixedTracker()
     rows = []
     schedule = [(N + i * 512, angle_q8, True, "repeated_synthetic_doa") for i in range(5)]
-    schedule += [(N + 5 * 512, 19 << FRAC_ANGLE, True, "injected_switch_19deg"),
-                 (N + 6 * 512, 70 << FRAC_ANGLE, True, "injected_jump_70deg")]
+    schedule += [(4513, angle_q8, True, "injected_sample_discontinuity")]
+    schedule += [(4513 + i * 512, angle_q8, True, "reacquisition_after_gap") for i in range(1, 5)]
+    schedule += [(7073, 19 << FRAC_ANGLE, True, "injected_switch_19deg"),
+                 (7585, 70 << FRAC_ANGLE, True, "injected_jump_70deg")]
     schedule += [(ready, None, False, "injected_no_candidate")
-                 for ready in range(N + 7 * 512, 13312 + 1, 512)]
+                 for ready in range(8097, 18100, 512)]
     for ready, angle, accepted, source in schedule:
+        previous_ready = tracker.last_ready
         state = tracker.update(ready, angle, accepted)
-        rows.append({"ready_sample": ready, "available_emit_sample": ready + 8,
+        discontinuity = source == "injected_sample_discontinuity"
+        if discontinuity and (previous_ready != 3072 or ready - previous_ready != 1441
+                              or state["reason"] != "gap_reset_acquire"):
+            raise AssertionError("gap vector did not reset the live tracker")
+        rows.append({"ready_sample": ready,
+                     "available_emit_sample": ready + COMMON_AVAILABILITY_DELAY_SAMPLES,
                      "input_angle_q8_deg": angle, "input_accepted": accepted,
-                     "source": source, **state})
-
-    gap_tracker = FixedTracker()
-    for i in range(5):
-        gap_tracker.update(N + i * 512, angle_q8, True)
-    gap_ready = N + 4 * 512 + 1441
-    gap_result = gap_tracker.update(gap_ready, angle_q8, True)
-    dropout = [{"ready_sample": gap_ready, "input_gap_samples": 1441,
-                "source": "injected_sample_discontinuity", **gap_result}]
-    return rows, dropout
+                     "source": source, "discontinuity": discontinuity,
+                     "input_gap_samples": ready - previous_ready if discontinuity else 0,
+                     **state})
+    return rows
 
 
 def _weights_at(start_weights: list[int], target: int, start: int, sample: int,
@@ -399,12 +403,19 @@ def _weights_at(start_weights: list[int], target: int, start: int, sample: int,
     return result
 
 
-def causal_audio(pcm: np.ndarray, control_rows: list[dict], *, delay: int = 8,
+def causal_audio(pcm: np.ndarray, control_rows: list[dict], *,
+                 delay: int = COMMON_AVAILABILITY_DELAY_SAMPLES,
                  fade_samples: int = 480) -> tuple[dict[str, np.ndarray], dict]:
     """Render one common delayed clock; no future direction may affect past PCM."""
     x = np.asarray(pcm, dtype=np.int64)
-    if x.ndim != 2 or x.shape[0] != 4 or x.shape[1] <= 13312 + fade_samples + delay:
+    if x.ndim != 2 or x.shape[0] != 4 or x.shape[1] <= 16682 + fade_samples + delay:
         raise ValueError("four-channel timeline must include acquisition and expiry")
+    if any(row["available_emit_sample"] != row["ready_sample"] + delay
+           for row in control_rows):
+        raise ValueError("control and audio availability delays disagree")
+    if any(left["ready_sample"] >= right["ready_sample"]
+           for left, right in zip(control_rows, control_rows[1:])):
+        raise ValueError("control rows must be in increasing sample order")
     beam0, manual_info = das_block(x, delay_q12_from_angle(0))
     beam19, switched_info = das_block(x, delay_q12_from_angle(19 << FRAC_ANGLE))
     bank = np.stack((_delayed(x[0], delay), _delayed(beam0, delay),
@@ -426,7 +437,18 @@ def causal_audio(pcm: np.ndarray, control_rows: list[dict], *, delay: int = 8,
             target, start, expiry_emit = 0, n, None
         while next_event < len(control_rows) and control_rows[next_event]["available_emit_sample"] <= n:
             row = control_rows[next_event]
-            if row["fresh_valid"]:
+            if row.get("discontinuity", False):
+                if row["fresh_valid"] or row["state"] not in ("ACQUIRE", "SEARCH"):
+                    raise AssertionError("discontinuity must invalidate the old beam")
+                previous_expiry = expiry_emit
+                start_weights = _weights_at(start_weights, target, start, n, fade_samples)
+                target, start, expiry_emit = 0, n, None
+                events.append({"kind": "DISCONTINUITY_TO_SINGLE",
+                               "ready_sample": row["ready_sample"], "emit_sample": n,
+                               "input_gap_samples": row["input_gap_samples"],
+                               "target": 0, "previous_expiry_emit_sample": previous_expiry,
+                               "new_expiry_emit_sample": None})
+            elif row["fresh_valid"]:
                 new_target = 1 if row["angle_q8_deg"] == 0 else 2 if row["angle_q8_deg"] == 19 << FRAC_ANGLE else None
                 if new_target is None:
                     raise ValueError("unmapped injected direction")
@@ -507,15 +529,15 @@ def full_chain(pcm: np.ndarray, root: Path) -> tuple[dict, dict]:
     angle = doa.get("azimuth_q8_deg") if doa.get("valid") else None
     if angle is None:
         raise RuntimeError("synthetic full-chain probe did not produce a valid DOA")
-    tracker_rows, dropout_trace = control_timeline(angle)
-    audio_pcm = np.tile(np.asarray(pcm, dtype=np.int64), (1, 16))
+    tracker_rows = control_timeline(angle)
+    audio_pcm = np.tile(np.asarray(pcm, dtype=np.int64), (1, 20))
     audio_arrays, audio_detail = causal_audio(audio_pcm, tracker_rows)
     arrays = {"pcm": np.asarray(pcm, dtype=np.int64), "hann": hann_u18f17(), "windowed": windowed,
               "fft29": spectra29, "fft25_half": spectra25, "phat": phat_codes,
               "phat_mask": masks, "ifft_real": correlations, **audio_arrays}
     result = {"window_overflow": window_overflow, "adapter_overflow": adapter_overflow,
               "fft_flags": fft_flags, "ifft_flags": ifft_flags, "pairs": pair_rows, "doa": doa,
-              "tracker": tracker_rows, "dropout_trace": dropout_trace,
+              "tracker": tracker_rows,
               "audio_timeline": audio_detail,
               "stage_shapes": {key: list(value.shape) for key, value in arrays.items()}}
     return arrays, result

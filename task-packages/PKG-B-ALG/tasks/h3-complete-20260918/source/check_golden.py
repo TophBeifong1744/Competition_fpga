@@ -13,7 +13,7 @@ from run_golden import boundary_vectors, deterministic_pcm
 
 
 FROZEN_CHAIN_FIELDS = ("window_overflow", "adapter_overflow", "fft_flags", "ifft_flags",
-                       "pairs", "doa", "tracker", "dropout_trace", "audio_timeline",
+                       "pairs", "doa", "tracker", "audio_timeline",
                        "stage_shapes")
 
 
@@ -38,6 +38,22 @@ def compare_frozen_chain(saved_chain: dict, actual_chain: dict) -> list[dict]:
     return rows
 
 
+def compare_frozen_arrays(saved, actual: dict) -> list[dict]:
+    if set(saved.files) != set(actual):
+        raise AssertionError("archive/recomputed stage set differs")
+    rows = []
+    for name in sorted(saved.files):
+        expected = saved[name]
+        observed = actual[name]
+        equal = np.array_equal(expected, observed)
+        rows.append({"name": name, "shape": list(expected.shape), "equal": bool(equal),
+                     "expected_sha256": hashlib.sha256(expected.astype("<i8", copy=False).tobytes()).hexdigest(),
+                     "actual_sha256": hashlib.sha256(observed.astype("<i8", copy=False).tobytes()).hexdigest()})
+        if not equal:
+            raise AssertionError(f"stage mismatch: {name}")
+    return rows
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--repo", type=Path, required=True)
@@ -52,20 +68,7 @@ def main():
         raise AssertionError("frozen archive byte hash mismatch")
     saved = np.load(args.golden, allow_pickle=False)
     actual, result = full_chain(deterministic_pcm(), args.repo.resolve())
-    rows = []
-    for name in sorted(saved.files):
-        if name not in actual:
-            raise AssertionError(f"missing recomputed array: {name}")
-        expected = saved[name]
-        observed = actual[name]
-        equal = np.array_equal(expected, observed)
-        rows.append({"name": name, "shape": list(expected.shape), "equal": bool(equal),
-                     "expected_sha256": hashlib.sha256(expected.astype("<i8", copy=False).tobytes()).hexdigest(),
-                     "actual_sha256": hashlib.sha256(observed.astype("<i8", copy=False).tobytes()).hexdigest()})
-        if not equal:
-            raise AssertionError(f"stage mismatch: {name}")
-    if set(saved.files) != set(actual):
-        raise AssertionError("archive/recomputed stage set differs")
+    rows = compare_frozen_arrays(saved, actual)
     frozen_rows = compare_frozen_chain(frozen["chain"], result)
     actual_boundaries = boundary_vectors()
     if exact_json_hash(frozen["boundary_vectors"]) != exact_json_hash(actual_boundaries):

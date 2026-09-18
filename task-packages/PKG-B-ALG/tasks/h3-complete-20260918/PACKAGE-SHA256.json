@@ -8,20 +8,20 @@
   "files": [
     {
       "path": "H3-ADMISSION.md",
-      "bytes": 3614,
-      "sha256": "5cd1ac6a29c62909ba28bd3b757b7ca431e22d80a0cb80d23795f9682aff4b20",
+      "bytes": 3790,
+      "sha256": "ea93f900fdbe960deabd0c36a689e19d72e78ae16274dbba1ddd3c518c7d605d",
       "byte_contract": "lf_canonical"
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 4048,
-      "sha256": "aeb1030ea2762bc38ada371212962916a759f98c08a67b05ea7cb38bfd2ac85f",
+      "bytes": 4726,
+      "sha256": "ca758b2f467bbdde22611d541e16dd16de2903349445d9543f852265f5f2025b",
       "byte_contract": "lf_canonical"
     },
     {
       "path": "README.md",
-      "bytes": 6809,
-      "sha256": "10af5b5faae000a11fba0982f43b05dfd63f9722b6c5170c3b681fda27504e09",
+      "bytes": 6857,
+      "sha256": "7e092c87e54bec531448ec0899ef57e16f950e2f7dc75ff3eb2c7f80c356ed08",
       "byte_contract": "lf_canonical"
     },
     {
@@ -32,8 +32,8 @@
     },
     {
       "path": "REVIEW-PROMPT.md",
-      "bytes": 3465,
-      "sha256": "44c393466c37d3e4bd387759129e52229ab042069ca55d8e46af6c31296b8440",
+      "bytes": 3620,
+      "sha256": "3d17234066972cb82c5a5263e4f1cad48d2f9e42a58446ab36cc7a6087682bf7",
       "byte_contract": "lf_canonical"
     },
     {
@@ -44,8 +44,8 @@
     },
     {
       "path": "WORK-EXECUTION-REPORT.md",
-      "bytes": 5645,
-      "sha256": "7b952ec4976aef03698a533480dc5ead62917b4d2b4f24b30e2913cea3cd9921",
+      "bytes": 6900,
+      "sha256": "23c7f904398fc60d1c2f2951c2980c94dda1eff2ebc093f096ad4b65ab56d42d",
       "byte_contract": "lf_canonical"
     },
     {
@@ -301,6 +301,48 @@
       "byte_contract": "lf_canonical"
     },
     {
+      "path": "evidence/run05/README.md",
+      "bytes": 3073,
+      "sha256": "0ecccf0f105c42fa3576fd580817fa3736a81a5a0cb68fb4e6ef62f6174b7f7f",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run05/first-failure.redacted.log",
+      "bytes": 833,
+      "sha256": "216376d0db98a4c31c338c23a64e98c1005b1993c6d0f315398bce6dbaf7c00c",
+      "byte_contract": "raw"
+    },
+    {
+      "path": "evidence/run05/golden-check.json",
+      "bytes": 6579,
+      "sha256": "ea04e682f372834c627cd29b68763de4941fbfa725aeebf787acdcee605191ae",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run05/golden/SHA256.json",
+      "bytes": 187,
+      "sha256": "50bd75259a63e476c617fc5ad1cf8a1ff975f908a2500c2b35d12639a99f5d3f",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run05/golden/golden-stages.npz",
+      "bytes": 110281,
+      "sha256": "66a1c9b5edd797c9c1474ce275c13065b89ac03eccd338dcb12713cf9292c19f",
+      "byte_contract": "raw"
+    },
+    {
+      "path": "evidence/run05/golden/golden-summary.json",
+      "bytes": 57141,
+      "sha256": "bbb5dbd8f19eec22a512e93c4c0579e4e5c360a9bf9d6cf2df796a5c1820bb73",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run05/unit-tests.raw.log",
+      "bytes": 4038,
+      "sha256": "d21909fcb72da04becc4d9f95ed01b87d0dce9df75eb21ddd8c7c45957bbef70",
+      "byte_contract": "raw"
+    },
+    {
       "path": "inputs.json",
       "bytes": 3754,
       "sha256": "38ccfe507a79dc1ce02dbf63db4584b997fc0d40844767c791719cd3616387aa",
@@ -314,8 +356,8 @@
     },
     {
       "path": "source/check_golden.py",
-      "bytes": 3741,
-      "sha256": "23be0ac7f4abe80695297cd243d5300f5e40689f518d70b50b65099c4559dd97",
+      "bytes": 3751,
+      "sha256": "d4f594671b61ab7655905ce1e04fe51b9a450ad4befde24484b1127faa429bcf",
       "byte_contract": "lf_canonical"
     },
     {
@@ -326,8 +368,8 @@
     },
     {
       "path": "source/fixed_golden.py",
-      "bytes": 24274,
-      "sha256": "21b67f1e614a4b5c01184a42d9e671a166f50daeaaf4d86741b9fdd5f0f56bf5",
+      "bytes": 25864,
+      "sha256": "f6bb2bc41dee3f1e2e6d93176972d92db12d687978fd3a95a47e85b28f88a74a",
       "byte_contract": "lf_canonical"
     },
     {
@@ -338,8 +380,8 @@
     },
     {
       "path": "source/reproduce.py",
-      "bytes": 5806,
-      "sha256": "2e10bd2bf5caf8d928052e1dcfc0e1d885eea8659e47fd53d4a1d141d07516b6",
+      "bytes": 6232,
+      "sha256": "90a80ba1f312042b8e4a8e0a1c45d3f21c4d3cb90d44ad8cc24262a3ba043f66",
       "byte_contract": "lf_canonical"
     },
     {
@@ -368,8 +410,8 @@
     },
     {
       "path": "tests/test_h3_candidate.py",
-      "bytes": 10735,
-      "sha256": "c4ab33861883286ed564c0fbf93e45190f53eac0efbb5ebed74e2b5ad3324cbb",
+      "bytes": 12975,
+      "sha256": "2c8207c01e2edf28893e6e015fa86d3536d4604be2455233b1be107e4a92ef68",
       "byte_contract": "lf_canonical"
     }
   ]
