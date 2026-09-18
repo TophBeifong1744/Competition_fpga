@@ -9,6 +9,7 @@
 - B 退回的返修父提交：`be3a2ed20d123a37bf79650f3d6a1685fc5d8625`。
 - 新的源码/冻结证据提交：`74306d036ae329a687f24ab8d153c3e2f4375189`。
 - 交付分支：`task/member-a-0918-h3-closeout`。B 应在复核时以 `git rev-parse HEAD`、`git rev-parse origin/task/member-a-0918-h3-closeout`、`git ls-remote origin refs/heads/task/member-a-0918-h3-closeout` 三者相同的**最终提交**为准；源码提交号不代替最终审查 SHA。
+- 发布状态：作者已在干净检出复跑，任务分支非强制推送并核对本地/跟踪/远端三方相等；准确最终 SHA 见交付回报。Git 提交不能把自身SHA可靠地写入自身文件，B须现场复核。
 - 范围：`task-packages/PKG-B-ALG/tasks/h3-complete-20260918/` 和 `deliverables/phase-2026-09-18/README.md`；默认 PHAT、原 Tracker、录音、RTL/BD/XDC/Vitis、Skill 活动源码未改。
 
 ## 返修变化与复核点
