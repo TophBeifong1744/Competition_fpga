@@ -7,7 +7,7 @@ B已对上一版 `7ea3de519c1f86832fcb03fc8d852606273a8f8a` 裁决 `FAIL / RETUR
 - 仓库：`TophBeifong1744/Competition_fpga`。
 - 建分支时主线/共同祖先：`5cfa02e51af44bb5c930babf732ddc864a1ab6cd`，包含 `21780c3`；发布核对时远端main已到 `bff9369a5c7f166344c02095df61e91e1c2f4681`。遵照原分支追加修复，未重写或合入新main。
 - B 退回的返修父提交：`be3a2ed20d123a37bf79650f3d6a1685fc5d8625`。
-- 新的源码/冻结证据提交：`74306d036ae329a687f24ab8d153c3e2f4375189`。
+- 上一轮源码/冻结证据提交：`74306d036ae329a687f24ab8d153c3e2f4375189`；本轮断流修复与run05冻结证据提交：`cef9c61a6a9aac8e8f0b0d38d56bb82981106d1a`。
 - B退回提交：`7ea3de519c1f86832fcb03fc8d852606273a8f8a`；用户提供的B报告SHA-256：`5201FA3710F9192C767C03297F2F824E23F70BEA2299358B3AA963512F605EBD`（报告原始文件未交A，字节未独立核对）。
 - 交付分支：`task/member-a-0918-h3-closeout`。B 应在复核时以 `git rev-parse HEAD`、`git rev-parse origin/task/member-a-0918-h3-closeout`、`git ls-remote origin refs/heads/task/member-a-0918-h3-closeout` 三者相同的**最终提交**为准；源码提交号不代替最终审查 SHA。
 - 发布状态：作者已在干净检出复跑，任务分支非强制推送并核对本地/跟踪/远端三方相等；准确最终 SHA 见交付回报。Git 提交不能把自身SHA可靠地写入自身文件，B须现场复核。

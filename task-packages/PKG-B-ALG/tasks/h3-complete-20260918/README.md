@@ -4,6 +4,8 @@
 
 状态：`AUTHOR_CANDIDATE_NEEDS_B_INDEPENDENT_REVIEW`。建分支时的主线/共同祖先为 `5cfa02e51af44bb5c930babf732ddc864a1ab6cd`，包含 B 指定的 `21780c3`；发布核对时远端 main 已前进到 `bff9369a5c7f166344c02095df61e91e1c2f4681`，本返修按原任务分支追加而未改写历史、未合并新 main。返修父 `be3a2ed20d123a37bf79650f3d6a1685fc5d8625`；源码/冻结证据提交 `74306d036ae329a687f24ab8d153c3e2f4375189`；交付分支 `task/member-a-0918-h3-closeout`。发布状态为任务分支非强制推送、作者干净检出复跑通过，最终交付 SHA 由发布回报给出并要求本地/跟踪/远端三方相等；Git 提交无法在自身内容中嵌入自己的 SHA。本包不修改默认 PHAT、原 Tracker、旧录音、RTL、Vivado/Vitis 工程或两项 Skill。
 
+本轮增量身份：B退回的准确提交为 `7ea3de519c1f86832fcb03fc8d852606273a8f8a`；断流修复与run05冻结证据提交为 `cef9c61a6a9aac8e8f0b0d38d56bb82981106d1a`。上段 `74306d...` 是上一轮源码提交，不是本轮评审SHA；最终远端HEAD须以交付消息及B现场核对为准。
+
 ## 一页复核入口
 
 | 项目 | 本包事实 |
