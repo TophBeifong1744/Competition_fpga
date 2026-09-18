@@ -4,7 +4,7 @@
 
 ## 报告 1：当前进度与基线对齐——完成
 
-- 已获取远端并确认 `origin/main=5cfa02e51af44bb5c930babf732ddc864a1ab6cd`，且其历史包含 B 指定的 `21780c3`。
+- 建分支时确认远端main为 `5cfa02e51af44bb5c930babf732ddc864a1ab6cd`，其历史包含 B 指定的 `21780c3`；发布前再次核对远端main已到 `bff9369a5c7f166344c02095df61e91e1c2f4681`，共同祖先仍为前者，本次不擅自重写任务分支或合入main。
 - 已从最新 main 建立独立工作树和 `task/member-a-0918-h3-closeout`，未切换、重置或清理共享脏工作区。
 - 已核对主线限定状态：`four-channel-track-01` 可复用但不等于完整 H3；SKL-001 为模块仿真限定，SKL-002 为离线 static/mock 限定。
 

@@ -5,7 +5,7 @@
 ## 固定版本
 
 - 仓库：`TophBeifong1744/Competition_fpga`。
-- 主线父提交：`5cfa02e51af44bb5c930babf732ddc864a1ab6cd`，包含 `21780c3`。
+- 建分支时主线/共同祖先：`5cfa02e51af44bb5c930babf732ddc864a1ab6cd`，包含 `21780c3`；发布核对时远端main已到 `bff9369a5c7f166344c02095df61e91e1c2f4681`。遵照原分支追加修复，未重写或合入新main。
 - B 退回的返修父提交：`be3a2ed20d123a37bf79650f3d6a1685fc5d8625`。
 - 新的源码/冻结证据提交：`74306d036ae329a687f24ab8d153c3e2f4375189`。
 - 交付分支：`task/member-a-0918-h3-closeout`。B 应在复核时以 `git rev-parse HEAD`、`git rev-parse origin/task/member-a-0918-h3-closeout`、`git ls-remote origin refs/heads/task/member-a-0918-h3-closeout` 三者相同的**最终提交**为准；源码提交号不代替最终审查 SHA。

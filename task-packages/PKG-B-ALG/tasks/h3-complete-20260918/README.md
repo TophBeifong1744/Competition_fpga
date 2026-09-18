@@ -2,7 +2,7 @@
 
 结论先行：本包把四路输入合同、存在门候选、定位/跟踪/DAS 的可执行软件整数 golden、因果音频时序、四路预算和 Skill 范围检查集中成一个可复现候选；但**不申请“完整 H3 PASS”**。存在门在现有 quiet 诊断上 61/61 帧均判有目标，且缺可信帧级真值、客观音频参考、AMD 全链位精确对照、集成周期/时序和实时输出证据。
 
-状态：`AUTHOR_CANDIDATE_NEEDS_B_INDEPENDENT_REVIEW`。基线 `origin/main=5cfa02e51af44bb5c930babf732ddc864a1ab6cd`，包含 B 指定的 `21780c3`；返修父 `be3a2ed20d123a37bf79650f3d6a1685fc5d8625`；源码/冻结证据提交 `74306d036ae329a687f24ab8d153c3e2f4375189`；交付分支 `task/member-a-0918-h3-closeout`。最终审查 SHA 须以此分支远端 HEAD 为准，不能把源码提交或移动分支名替代最终审查 SHA。本包不修改默认 PHAT、原 Tracker、旧录音、RTL、Vivado/Vitis 工程或两项 Skill。
+状态：`AUTHOR_CANDIDATE_NEEDS_B_INDEPENDENT_REVIEW`。建分支时的主线/共同祖先为 `5cfa02e51af44bb5c930babf732ddc864a1ab6cd`，包含 B 指定的 `21780c3`；发布核对时远端 main 已前进到 `bff9369a5c7f166344c02095df61e91e1c2f4681`，本返修按原任务分支追加而未改写历史、未合并新 main。返修父 `be3a2ed20d123a37bf79650f3d6a1685fc5d8625`；源码/冻结证据提交 `74306d036ae329a687f24ab8d153c3e2f4375189`；交付分支 `task/member-a-0918-h3-closeout`。最终审查 SHA 须以此分支远端 HEAD 为准，不能把源码提交或移动分支名替代最终审查 SHA。本包不修改默认 PHAT、原 Tracker、旧录音、RTL、Vivado/Vitis 工程或两项 Skill。
 
 ## 一页复核入口
 
