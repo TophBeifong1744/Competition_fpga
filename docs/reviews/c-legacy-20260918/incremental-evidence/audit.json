@@ -1,0 +1,688 @@
+{
+  "candidate": "62a252081d52b3aa9d9dc142f7cc2bf298d9c34d",
+  "baseline": "bff9369a5c7f166344c02095df61e91e1c2f4681",
+  "changed_paths": [
+    "archive/README.md",
+    "docs/three-dimensional-doa-workflow-skill-guide.md",
+    "task-packages/3D-P4/README.md",
+    "task-packages/C-REVIEW-PROMPT-WP-A0-3D-P4-2026-09-18.md",
+    "task-packages/WP-A0/ERRATUM-2026-09-18.md",
+    "task-packages/WP-A0/README.md"
+  ],
+  "original_blob": "1f0b701ec61cc895d0fc71aa9ec300bf875e716d",
+  "original_sha256": "f0ceb76c937931238a16644c5ba41f6337910951744267431df4faee4d0971b4",
+  "merge_sha256": "f188fa64f6bf11a38a2e5d2454471693f1b591faf9406bb12294fbb3fa70b310",
+  "current_sha256": "f188fa64f6bf11a38a2e5d2454471693f1b591faf9406bb12294fbb3fa70b310",
+  "package_sha256": "541e04d6d7bcd43c8bf838b568844eb227f2430812dcb8d8eb1fd6595ed42f5c",
+  "checkout_sha256": "541e04d6d7bcd43c8bf838b568844eb227f2430812dcb8d8eb1fd6595ed42f5c",
+  "merge_parents": "f2df726b7d8c1981e3c529b0301d4ad2a06224c8 f0f397f5600f111df5c66dafa34090b260ad6e00",
+  "line_count": 78,
+  "current_equals_merge": true,
+  "crlf_conversion_equals_package": true,
+  "only_status_changed": true,
+  "manifest_unchanged_since_original": true,
+  "snapshot_matches": 24,
+  "snapshot_total": 25,
+  "snapshot_items": [
+    {
+      "path": "README.md",
+      "expected": "77b1ea1be3b418574a5cb3d6397b5074d0728060a0b2ebacb07159154cf7a4d9",
+      "actual": "77b1ea1be3b418574a5cb3d6397b5074d0728060a0b2ebacb07159154cf7a4d9"
+    },
+    {
+      "path": "docs/acoustic-validation-plan.md",
+      "expected": "18e9ddd5731d301d89665fb3c3e79ad03f5c541d4a2a523fbe49be0e51c2bf55",
+      "actual": "18e9ddd5731d301d89665fb3c3e79ad03f5c541d4a2a523fbe49be0e51c2bf55"
+    },
+    {
+      "path": "docs/architecture.md",
+      "expected": "cb1f36b96360ce0ce2d2a6aef0a6a54a4b999690e161ad41602274aa58ee8b48",
+      "actual": "cb1f36b96360ce0ce2d2a6aef0a6a54a4b999690e161ad41602274aa58ee8b48"
+    },
+    {
+      "path": "docs/competition-acceptance-2026-09-07.md",
+      "expected": "45215edcb328c4b137d88f12ac9a8d6f69f5e9a214074d5c517c5ccced7cf65c",
+      "actual": "45215edcb328c4b137d88f12ac9a8d6f69f5e9a214074d5c517c5ccced7cf65c"
+    },
+    {
+      "path": "docs/engineering-flow.md",
+      "expected": "0d4363738e6ba7063e41a26ea9eb011af3433093a76340d3a0311c7d49ec329a",
+      "actual": "0d4363738e6ba7063e41a26ea9eb011af3433093a76340d3a0311c7d49ec329a"
+    },
+    {
+      "path": "docs/meeting-project-summary-and-phase-plan-2026-09-06.md",
+      "expected": "23cc5bea6e3a2b5610e45cb10cedf2e1d54be965d9b61646e2200fff23154015",
+      "actual": "23cc5bea6e3a2b5610e45cb10cedf2e1d54be965d9b61646e2200fff23154015"
+    },
+    {
+      "path": "docs/principles-flow.md",
+      "expected": "43d181adc5ddd03bad3063b92282d4d89cf690971c0497d2fc44911e5a5f85e6",
+      "actual": "43d181adc5ddd03bad3063b92282d4d89cf690971c0497d2fc44911e5a5f85e6"
+    },
+    {
+      "path": "docs/project-baseline-2026-09-06.md",
+      "expected": "0490c96e0d2bf000b165e5a5f07e85bb3eb3ff2a22a22d188cdb418f329878b7",
+      "actual": "0490c96e0d2bf000b165e5a5f07e85bb3eb3ff2a22a22d188cdb418f329878b7"
+    },
+    {
+      "path": "docs/pynq-integration-guide.md",
+      "expected": "15591e057d97f6d169cdeb2ca6b9de9dcac1a6c675365b9e1df3b0d189b78d75",
+      "actual": "15591e057d97f6d169cdeb2ca6b9de9dcac1a6c675365b9e1df3b0d189b78d75"
+    },
+    {
+      "path": "docs/roadmap.md",
+      "expected": "2989f4c9dd96119b8ddd5c5734edbad233ef4f67e7b174205da04021adeb228c",
+      "actual": "2989f4c9dd96119b8ddd5c5734edbad233ef4f67e7b174205da04021adeb228c"
+    },
+    {
+      "path": "docs/six-mic-acoustic-software-review.md",
+      "expected": "c5e23fefdd7d66eebb356d7beb91731508f8f11b25540240d5065239a34daaa5",
+      "actual": "c5e23fefdd7d66eebb356d7beb91731508f8f11b25540240d5065239a34daaa5"
+    },
+    {
+      "path": "docs/team-tasks.md",
+      "expected": "9afe097a646b4e73cedd0ecf490537e90d7d03221343394f2ee8d0fdf319be4a",
+      "actual": "9afe097a646b4e73cedd0ecf490537e90d7d03221343394f2ee8d0fdf319be4a"
+    },
+    {
+      "path": "docs/three-dimensional-doa-engineering-guide.md",
+      "expected": "9c636112907cda5a97bcff666da4e06ee866bd79d8585f39c069071de2de59e1",
+      "actual": "9c636112907cda5a97bcff666da4e06ee866bd79d8585f39c069071de2de59e1"
+    },
+    {
+      "path": "docs/three-dimensional-doa-plan.md",
+      "expected": "d88dc0984e5f89955ecc40f3b8b546b4199ac8a53d31eacd47230fef7b3fdc11",
+      "actual": "d88dc0984e5f89955ecc40f3b8b546b4199ac8a53d31eacd47230fef7b3fdc11"
+    },
+    {
+      "path": "docs/three-dimensional-doa-principles-guide.md",
+      "expected": "17463a6c9f070b2f7a52a72d0486763dac8c96936b73939a87230fc49e76dd8f",
+      "actual": "17463a6c9f070b2f7a52a72d0486763dac8c96936b73939a87230fc49e76dd8f"
+    },
+    {
+      "path": "docs/three-dimensional-doa-pynq-skill-guide.md",
+      "expected": "b54457ff0522c12fbfa3b6c4327b2696837fd4d9916fb36939fe522a538e673e",
+      "actual": "b54457ff0522c12fbfa3b6c4327b2696837fd4d9916fb36939fe522a538e673e"
+    },
+    {
+      "path": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "expected": "0c3b541a62da778dc8b6103ba06d2b92157ab6145d62e8a228eebb221bfd44a7",
+      "actual": "0c3b541a62da778dc8b6103ba06d2b92157ab6145d62e8a228eebb221bfd44a7"
+    },
+    {
+      "path": "docs/work-packages-2026-09-06.md",
+      "expected": "f0ceb76c937931238a16644c5ba41f6337910951744267431df4faee4d0971b4",
+      "actual": "541e04d6d7bcd43c8bf838b568844eb227f2430812dcb8d8eb1fd6595ed42f5c"
+    },
+    {
+      "path": "hardware/four-channel-sample-interface-contract.md",
+      "expected": "9b65b30c5ec09ab0421b6ce3d574fa157b653c4a6f48c5be7bd94157324bd0d2",
+      "actual": "9b65b30c5ec09ab0421b6ce3d574fa157b653c4a6f48c5be7bd94157324bd0d2"
+    },
+    {
+      "path": "hardware/m0-board-interface-audit-2026-09-06.md",
+      "expected": "5d4a6cb371350a988dbf50e1f0add344fbeae32ca8233d2aeb70595a9f661895",
+      "actual": "5d4a6cb371350a988dbf50e1f0add344fbeae32ca8233d2aeb70595a9f661895"
+    },
+    {
+      "path": "hardware/microphone-interface-selection.md",
+      "expected": "d28e0c52b9012c9eec53ad129c05c03524adf2a3661230454ff29e6dac9f36fc",
+      "actual": "d28e0c52b9012c9eec53ad129c05c03524adf2a3661230454ff29e6dac9f36fc"
+    },
+    {
+      "path": "hardware/microphone-recommendation-review.md",
+      "expected": "18f8391f07f6b5ee268642c0fad55ed732d8ab0cd4a1fec06f0e57aeb112e43c",
+      "actual": "18f8391f07f6b5ee268642c0fad55ed732d8ab0cd4a1fec06f0e57aeb112e43c"
+    },
+    {
+      "path": "hardware/procurement-specifications.md",
+      "expected": "27862466df0d16c5409aaa8e54b502e4c693650acfa9e4bcfd97eafc07195629",
+      "actual": "27862466df0d16c5409aaa8e54b502e4c693650acfa9e4bcfd97eafc07195629"
+    },
+    {
+      "path": "hardware/README.md",
+      "expected": "d3208425f4e85502c46a16409542fa07125071f326389696d0f707bcf4a7a2df",
+      "actual": "d3208425f4e85502c46a16409542fa07125071f326389696d0f707bcf4a7a2df"
+    },
+    {
+      "path": "hardware/three-dimensional-array-guide.md",
+      "expected": "c0eba3df45717e4c4262001ac4ab11391145ea6218f1be820d688ad5214a3d46",
+      "actual": "c0eba3df45717e4c4262001ac4ab11391145ea6218f1be820d688ad5214a3d46"
+    }
+  ],
+  "meeting_original_git_hash": "cade080ac392b81393fa76750bcb31d067b14e34987e8d2895d280bf65931939",
+  "meeting_manifest_hash": "23cc5bea6e3a2b5610e45cb10cedf2e1d54be965d9b61646e2200fff23154015",
+  "historical_diff": "diff --git a/archive/2026-09-07-before-materials-cleanup/docs/work-packages-2026-09-06.md b/archive/2026-09-07-before-materials-cleanup/docs/work-packages-2026-09-06.md\nindex 1f0b701..86003c3 100644\n--- a/archive/2026-09-07-before-materials-cleanup/docs/work-packages-2026-09-06.md\n+++ b/archive/2026-09-07-before-materials-cleanup/docs/work-packages-2026-09-06.md\n@@ -12,7 +12,7 @@\n |---|---|---|---|---|---|---|\n | WP-A0 | 团队基线与文档入口 | 拓芙 | hsc119 | 09-06 23:59 | 待复核 | 基线提交、阶段、已有证据和缺口可追溯；各入口链接有效 |\n | WP-A1 | 实物板卡证据采集 | 拓芙 | hsc119 | 09-07 22:00 | 进行中 | 已归档型号标签、底板正反面和 FPGA 正面；还需核心板背面、Codec、完整 part/速度等级和外接器件照片 |\n-| WP-C1 | ADC/DAC/麦克风库存核验 | hsc119 | BryanZheng802 | 09-07 22:00 | 未开始 | 给出完整型号、数量、正反面照片、接口、电平、时钟方式和数据手册来源 |\n+| WP-C1 | ADC/DAC/麦克风库存核验 | hsc119 | BryanZheng802 | 09-07 22:00 | 待复核 | 给出完整型号、数量、正反面照片、接口、电平、时钟方式和数据手册来源 |\n | WP-B1 | V1 演示与声学验收场景 | BryanZheng802 | 拓芙 | 09-08 20:00 | 未开始 | 冻结房间、声源角度/距离/高度、目标与干扰条件、录音时长及 A/B/C 对照指标 |\n | WP-C2 | 四路采集路线比较 | hsc119 | BryanZheng802 | 09-09 18:00 | 未开始 | 按 PDM、TDM/I2S ADC 和现有器件给出首选/备选/否决项，证据覆盖同步、带宽、电平和接线 |\n | WP-A2 | 板卡时钟、电平与 PL 引脚冻结 | 拓芙 | hsc119 | 09-10 12:00 | 阻塞 | 每个启用信号有连接器、FPGA pin、Bank、IOSTANDARD、方向、冲突与证据；形成专用 XDC 草案 |\n",
+  "active_status_diff": "commit f2df726b7d8c1981e3c529b0301d4ad2a06224c8\nAuthor: hsc119 <3167899679@qq.com>\nDate:   Mon Sep 7 21:53:10 2026 +0800\n\n    WP-C1工作状态“未开始”改为“待复核”\n\ndiff --git a/docs/work-packages-2026-09-06.md b/docs/work-packages-2026-09-06.md\nindex ad7b6ff..7225200 100644\n--- a/docs/work-packages-2026-09-06.md\n+++ b/docs/work-packages-2026-09-06.md\n@@ -12,7 +12,7 @@\n |---|---|---|---|---|---|---|\n | WP-A0 | 团队基线与文档入口 | 拓芙 | hsc119 | 09-06 23:59 | 待复核 | 基线提交、阶段、已有证据和缺口可追溯；各入口链接有效 |\n | WP-A1 | 实物板卡证据采集 | 拓芙 | hsc119 | 09-07 22:00 | 进行中 | 已归档型号标签、底板正反面和 FPGA 正面；还需核心板背面、Codec、完整 part/速度等级和外接器件照片 |\n-| WP-C1 | ADC/DAC/麦克风库存核验 | hsc119 | BryanZheng802 | 09-07 22:00 | 未开始 | 给出完整型号、数量、正反面照片、接口、电平、时钟方式和数据手册来源 |\n+| WP-C1 | ADC/DAC/麦克风库存核验 | hsc119 | BryanZheng802 | 09-07 22:00 | 待复核 | 给出完整型号、数量、正反面照片、接口、电平、时钟方式和数据手册来源 |\n | WP-B1 | V1 演示与声学验收场景 | BryanZheng802 | 拓芙 | 09-08 20:00 | 未开始 | 冻结房间、声源角度/距离/高度、目标与干扰条件、录音时长及 A/B/C 对照指标 |\n | WP-C2 | 四路采集路线比较 | hsc119 | BryanZheng802 | 09-09 18:00 | 未开始 | 按 PDM、TDM/I2S ADC 和现有器件给出首选/备选/否决项，证据覆盖同步、带宽、电平和接线 |\n | WP-A2 | 板卡时钟、电平与 PL 引脚冻结 | 拓芙 | hsc119 | 09-10 12:00 | 阻塞 | 每个启用信号有连接器、FPGA pin、Bank、IOSTANDARD、方向、冲突与证据；形成专用 XDC 草案 |\n",
+  "links": [
+    {
+      "source": "archive/README.md",
+      "target": "2026-09-13-before-skl001-technical-upgrade/README.md",
+      "resolved": "archive/2026-09-13-before-skl001-technical-upgrade/README.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "archive/README.md",
+      "target": "../skill/README.md",
+      "resolved": "skill/README.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "archive/README.md",
+      "target": "2026-09-13-before-accelerated-plan/README-ARCHIVE.md",
+      "resolved": "archive/2026-09-13-before-accelerated-plan/README-ARCHIVE.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "archive/README.md",
+      "target": "2026-09-13-active-docs-cleanup/README.md",
+      "resolved": "archive/2026-09-13-active-docs-cleanup/README.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "archive/README.md",
+      "target": "2026-09-08-before-three-handoffs/README-ARCHIVE.md",
+      "resolved": "archive/2026-09-08-before-three-handoffs/README-ARCHIVE.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "archive/README.md",
+      "target": "2026-09-07-before-materials-cleanup/README-ARCHIVE.md",
+      "resolved": "archive/2026-09-07-before-materials-cleanup/README-ARCHIVE.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "archive/README.md",
+      "target": "../task-packages/WP-A0/ERRATUM-2026-09-18.md",
+      "resolved": "task-packages/WP-A0/ERRATUM-2026-09-18.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "archive/README.md",
+      "target": "../docs/README.md",
+      "resolved": "docs/README.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "archive/README.md",
+      "target": "../task-packages/WP-A0/ERRATUM-2026-09-18.md",
+      "resolved": "task-packages/WP-A0/ERRATUM-2026-09-18.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "project-plan.md#61-统一阶段验收日历",
+      "resolved": "docs/project-plan.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "phases/2026-09-13-to-10-01/README.md",
+      "resolved": "docs/phases/2026-09-13-to-10-01/README.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "current-status.md",
+      "resolved": "docs/current-status.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "member-c-operation-sheet.md#2026-09-17-最新有效安排",
+      "resolved": "docs/member-c-operation-sheet.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "three-handoff-workflow.md",
+      "resolved": "docs/three-handoff-workflow.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "three-dimensional-doa-plan.md",
+      "resolved": "docs/three-dimensional-doa-plan.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "six-mic-acoustic-software-review.md",
+      "resolved": "docs/six-mic-acoustic-software-review.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "../skill/fpga-module-verification/SKILL.md",
+      "resolved": "skill/fpga-module-verification/SKILL.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "../skill/README.md",
+      "resolved": "skill/README.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "maintenance/skills-rereview-b-2026-09-14.md",
+      "resolved": "docs/maintenance/skills-rereview-b-2026-09-14.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "../archive/2026-09-13-before-skl001-technical-upgrade/README.md",
+      "resolved": "archive/2026-09-13-before-skl001-technical-upgrade/README.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "three-dimensional-doa-plan.md",
+      "resolved": "docs/three-dimensional-doa-plan.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "team-workflow.md",
+      "resolved": "docs/team-workflow.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "acoustic-validation-plan.md",
+      "resolved": "docs/acoustic-validation-plan.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "six-mic-acoustic-software-review.md",
+      "resolved": "docs/six-mic-acoustic-software-review.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "../results/model/six-mic-acoustic-review/direction-summary.csv",
+      "resolved": "results/model/six-mic-acoustic-review/direction-summary.csv",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "../results/model/six-mic-acoustic-review/self-tests.json",
+      "resolved": "results/model/six-mic-acoustic-review/self-tests.json",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "../results/model/six-mic-acoustic-review/audio-demo.json",
+      "resolved": "results/model/six-mic-acoustic-review/audio-demo.json",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "../deliverables/six-mic-acoustic-review-v1/README.md",
+      "resolved": "deliverables/six-mic-acoustic-review-v1/README.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "reviews/c-legacy-20260918/REVIEW.md",
+      "resolved": "docs/reviews/c-legacy-20260918/REVIEW.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "current-status.md",
+      "resolved": "docs/current-status.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "project-plan.md",
+      "resolved": "docs/project-plan.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "work-packages.md",
+      "resolved": "docs/work-packages.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "competition-acceptance.md",
+      "resolved": "docs/competition-acceptance.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "../hardware/m0-board-interface-audit.md",
+      "resolved": "hardware/m0-board-interface-audit.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "../archive/2026-09-07-before-materials-cleanup/README-ARCHIVE.md",
+      "resolved": "archive/2026-09-07-before-materials-cleanup/README-ARCHIVE.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "../task-packages/WP-A0/ERRATUM-2026-09-18.md",
+      "resolved": "task-packages/WP-A0/ERRATUM-2026-09-18.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "../archive/2026-09-07-before-materials-cleanup/docs/three-dimensional-doa-workflow-skill-guide.md",
+      "resolved": "archive/2026-09-07-before-materials-cleanup/docs/three-dimensional-doa-workflow-skill-guide.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "team-workflow.md",
+      "resolved": "docs/team-workflow.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "three-dimensional-doa-plan.md",
+      "resolved": "docs/three-dimensional-doa-plan.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "roadmap.md",
+      "resolved": "docs/roadmap.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "engineering-flow.md",
+      "resolved": "docs/engineering-flow.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "acoustic-validation-plan.md",
+      "resolved": "docs/acoustic-validation-plan.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "competition-acceptance.md",
+      "resolved": "docs/competition-acceptance.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "target": "six-mic-acoustic-software-review.md",
+      "resolved": "docs/six-mic-acoustic-software-review.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/3D-P4/README.md",
+      "target": "../../docs/three-dimensional-doa-workflow-skill-guide.md",
+      "resolved": "docs/three-dimensional-doa-workflow-skill-guide.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/3D-P4/README.md",
+      "target": "../../skill/README.md",
+      "resolved": "skill/README.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/3D-P4/README.md",
+      "target": "../../docs/maintenance/skills-rereview-b-2026-09-14.md",
+      "resolved": "docs/maintenance/skills-rereview-b-2026-09-14.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/3D-P4/README.md",
+      "target": "../../docs/member-c-operation-sheet.md",
+      "resolved": "docs/member-c-operation-sheet.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/3D-P4/README.md",
+      "target": "../WP-A0/ERRATUM-2026-09-18.md",
+      "resolved": "task-packages/WP-A0/ERRATUM-2026-09-18.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/3D-P4/README.md",
+      "target": "../../docs/reviews/c-legacy-20260918/REVIEW.md",
+      "resolved": "docs/reviews/c-legacy-20260918/REVIEW.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/3D-P4/README.md",
+      "target": "manifest.md",
+      "resolved": "task-packages/3D-P4/manifest.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/3D-P4/README.md",
+      "target": "evidence/self-check.md",
+      "resolved": "task-packages/3D-P4/evidence/self-check.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/3D-P4/README.md",
+      "target": "REVIEW.md",
+      "resolved": "task-packages/3D-P4/REVIEW.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/3D-P4/README.md",
+      "target": "../handoff-rules-2026-09-08.md",
+      "resolved": "task-packages/handoff-rules-2026-09-08.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/WP-A0/ERRATUM-2026-09-18.md",
+      "target": "../../archive/2026-09-07-before-materials-cleanup/MANIFEST.json",
+      "resolved": "archive/2026-09-07-before-materials-cleanup/MANIFEST.json",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/WP-A0/ERRATUM-2026-09-18.md",
+      "target": "../../archive/2026-09-07-before-materials-cleanup/README-ARCHIVE.md",
+      "resolved": "archive/2026-09-07-before-materials-cleanup/README-ARCHIVE.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/WP-A0/ERRATUM-2026-09-18.md",
+      "target": "../../docs/current-status.md",
+      "resolved": "docs/current-status.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/WP-A0/ERRATUM-2026-09-18.md",
+      "target": "../../docs/project-plan.md",
+      "resolved": "docs/project-plan.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/WP-A0/ERRATUM-2026-09-18.md",
+      "target": "../../docs/team-tasks.md",
+      "resolved": "docs/team-tasks.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/WP-A0/ERRATUM-2026-09-18.md",
+      "target": "../../docs/member-c-operation-sheet.md",
+      "resolved": "docs/member-c-operation-sheet.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/WP-A0/ERRATUM-2026-09-18.md",
+      "target": "../../docs/reviews/c-legacy-20260918/REVIEW.md",
+      "resolved": "docs/reviews/c-legacy-20260918/REVIEW.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/WP-A0/README.md",
+      "target": "ERRATUM-2026-09-18.md",
+      "resolved": "task-packages/WP-A0/ERRATUM-2026-09-18.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/WP-A0/README.md",
+      "target": "../../archive/README.md",
+      "resolved": "archive/README.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/WP-A0/README.md",
+      "target": "../3D-P4/README.md",
+      "resolved": "task-packages/3D-P4/README.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/WP-A0/README.md",
+      "target": "../../docs/reviews/c-legacy-20260918/REVIEW.md",
+      "resolved": "docs/reviews/c-legacy-20260918/REVIEW.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/WP-A0/README.md",
+      "target": "../../docs/reviews/c-legacy-20260918/REVIEW.md",
+      "resolved": "docs/reviews/c-legacy-20260918/REVIEW.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/WP-A0/README.md",
+      "target": "manifest.md",
+      "resolved": "task-packages/WP-A0/manifest.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/WP-A0/README.md",
+      "target": "evidence/self-check.md",
+      "resolved": "task-packages/WP-A0/evidence/self-check.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/WP-A0/README.md",
+      "target": "REVIEW.md",
+      "resolved": "task-packages/WP-A0/REVIEW.md",
+      "exists": true,
+      "anchor_ok": true
+    },
+    {
+      "source": "task-packages/WP-A0/README.md",
+      "target": "../handoff-rules-2026-09-08.md",
+      "resolved": "task-packages/handoff-rules-2026-09-08.md",
+      "exists": true,
+      "anchor_ok": true
+    }
+  ],
+  "diff_check": {
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "checks": [
+    {
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\hsc\\Documents\\Codex\\2026-09-18\\c-2026-09-17-a-wp\\work\\c-incremental\\run4\\exact\\task-packages\\verify-toph-handoffs.ps1",
+        "-PackageId",
+        "WP-A0"
+      ],
+      "cwd": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga",
+      "exit": 0,
+      "stdout": "REFERENCE DRIFT: archive/2026-09-07-before-materials-cleanup/docs/meeting-project-summary-and-phase-plan-2026-09-06.md\r\nREFERENCE DRIFT: archive/2026-09-07-before-materials-cleanup/docs/work-packages-2026-09-06.md\r\nCHECKED WP-A0 : 7 payload, 27 references; human approval pending\r\nSUMMARY payload_failures=0 reference_drifts=2\r\nHistorical manifest anomalies and scientific limitations remain in evidence/self-check.md; this is not human approval.\r\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\hsc\\Documents\\Codex\\2026-09-18\\c-2026-09-17-a-wp\\work\\c-incremental\\run4\\exact\\task-packages\\verify-toph-handoffs.ps1",
+        "-PackageId",
+        "3D-P4"
+      ],
+      "cwd": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga",
+      "exit": 0,
+      "stdout": "CHECKED 3D-P4 : 1 payload, 0 references; human approval pending\r\nSUMMARY payload_failures=0 reference_drifts=0\r\nHistorical manifest anomalies and scientific limitations remain in evidence/self-check.md; this is not human approval.\r\n",
+      "stderr": ""
+    }
+  ]
+}

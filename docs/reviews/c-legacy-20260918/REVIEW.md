@@ -52,3 +52,7 @@ python docs/reviews/c-legacy-20260918/audit.py . C:/Temp/c-legacy-review-fresh
 最后一条输出目录必须不存在；输出 audit.json、各校验日志和 committed 临时副本。需要 Git、Python 3.9+，本轮 Python 3.13.5，无第三方依赖；审计脚本固定本轮两端 SHA，保留用于历史复现，不作为未来候选的通用批准器。后续由 A 处理 C-01/C-04；已退役包不重新派工。
 
 证据：[audit.json](audit.json)、[审计完整输出](audit-run.log)、[原交付校验](handoffs.log)、[活动包修复前失败](rel6-active.log)、[冻结副本校验](rel6-snapshot.log)。发布后验证与三端核对另见 [PUBLICATION.md](PUBLICATION.md)。
+
+## 2026-09-18 C-01 / C-04 返修复核追加
+
+准确候选 62a252081d52b3aa9d9dc142f7cc2bf298d9c34d 的六份文档更正获限定 PASS，见 [增量复核](INCREMENTAL-REVIEW.md)。本页以上为上轮原结论；历史 24/25 异常仍保留，不扩大其他包批准。
