@@ -1,14 +1,18 @@
-# 拓芙既有待复核任务交接入口
+# C 旧任务复核入口
+
+2026-09-18：C 已授权 Codex 完成本批限定复核与发布。下表为当前结论；详细批准/退回范围见[复核记录](../docs/reviews/c-legacy-20260918/REVIEW.md)。旧包 payload、哈希清单及只读证据保持原样；历史清单的 pending_review 是交付时状态，不改写为追认批准。
+
+## 2026-09-08 原交接说明
 
 2026-09-08。本批仅整理拓芙负责且台账为待复核的 5 项；指定复核人均为 hsc119。推送只是待复核交付，不是批准或合入。
 
 | 工作包 | 范围 | 状态 |
 |---|---|---|
-| [WP-A0](WP-A0/README.md) | 基线与文档入口 | 待复核 |
-| [WP-S1](WP-S1/README.md) | 工程协作 Skill v0 | 待复核 |
-| [3D-P2](3D-P2/README.md) | 三维 DOA 工程指南 | 待复核 |
-| [3D-P4](3D-P4/README.md) | 三维工程 Skill 适配指南 | 待复核 |
-| [REL6-001](REL6-001/README.md) | 六麦独立报告材料包 | 待复核 |
+| [WP-A0](WP-A0/README.md) | 基线与文档入口 | NEEDS_FIX |
+| [WP-S1](WP-S1/README.md) | 工程协作 Skill v0 | SUPERSEDED |
+| [3D-P2](3D-P2/README.md) | 三维 DOA 工程指南 | PASS（限定历史工程参考） |
+| [3D-P4](3D-P4/README.md) | 三维工程 Skill 适配指南 | NEEDS_FIX（旧版不接入） |
+| [REL6-001](REL6-001/README.md) | 六麦独立报告材料包 | PASS（限定材料完整性） |
 
 本批采用同一个管理任务分支发布 5 个互相独立的交接包；每包单独审批，不批量默认为通过。
 
