@@ -1,0 +1,65 @@
+{
+  "base": "5cfa02e51af44bb5c930babf732ddc864a1ab6cd",
+  "candidate": "1731522f80ed0b970c63c8a3b019b9ba281d6ca8",
+  "packages": {
+    "WP-A0": {
+      "manifest_sha256": "e8695e0e4189d6a6523a6a3fa10315c64bade6d7103ed9ab4b7cf6ee25950bfe",
+      "checked": 34,
+      "errors": []
+    },
+    "WP-S1": {
+      "manifest_sha256": "d16fe4027e36eda24a81a62661f86dd83eabdaf8310aae0bcba8292e1ca6d2b3",
+      "checked": 3,
+      "errors": []
+    },
+    "3D-P2": {
+      "manifest_sha256": "50d29e15c09ef98f2c9fd5ded8859cfc71c0e1c4e1cbb8b1a5655e8ec2945b11",
+      "checked": 1,
+      "errors": []
+    },
+    "3D-P4": {
+      "manifest_sha256": "d7da80b396ad9ee7b20225aeb490e0ce498aa0dc7e9b50e54dd8b51fab63746d",
+      "checked": 1,
+      "errors": []
+    },
+    "REL6-001": {
+      "manifest_sha256": "6db0f152ad340aabb60242f015c6a29b027b6e77db54bda97e14ddf1208a6b11",
+      "checked": 41,
+      "errors": []
+    }
+  },
+  "historical_manifest": {
+    "count": 25,
+    "mismatches": [
+      {
+        "path": "docs/work-packages-2026-09-06.md",
+        "expected": "f0ceb76c937931238a16644c5ba41f6337910951744267431df4faee4d0971b4",
+        "actual": "541e04d6d7bcd43c8bf838b568844eb227f2430812dcb8d8eb1fd6595ed42f5c"
+      }
+    ]
+  },
+  "rel6-snapshot": {
+    "exit": 0,
+    "output": "PASS: 24 file hashes in six-mic-acoustic-review-v1\nPASS: 15 file hashes in results\nPASS: source matches original simulation config\nPASS: 15 file hashes in 2026-09-07-six-mic-package-verification\n"
+  },
+  "rel6-active": {
+    "exit": 0,
+    "output": "PASS: 24 file hashes in six-mic-acoustic-review-v1\nPASS: 15 file hashes in results\nPASS: source matches original simulation config\n"
+  },
+  "rel6-committed": {
+    "exit": 0,
+    "output": "PASS: 24 file hashes in six-mic-acoustic-review-v1\nPASS: 15 file hashes in results\nPASS: source matches original simulation config\n"
+  },
+  "negative_control": {
+    "exit": 1,
+    "output": "FAIL\nhash mismatch: REPORT.md\n"
+  },
+  "p2_arithmetic": {
+    "six_mic_pairs": 15,
+    "transforms": 21,
+    "pcm_mbit_s": 6.912,
+    "container_MB_s": 1.152,
+    "one_hour_GB": 4.1472,
+    "mask_coeff_MB": 4.42368
+  }
+}
