@@ -2,7 +2,7 @@
 
 结论先行：本包把四路输入合同、存在门候选、定位/跟踪/DAS 的可执行软件整数 golden、因果音频时序、四路预算和 Skill 范围检查集中成一个可复现候选；但**不申请“完整 H3 PASS”**。存在门在现有 quiet 诊断上 61/61 帧均判有目标，且缺可信帧级真值、客观音频参考、AMD 全链位精确对照、集成周期/时序和实时输出证据。
 
-状态：`AUTHOR_CANDIDATE_NEEDS_B_INDEPENDENT_REVIEW`。基线 `origin/main=5cfa02e51af44bb5c930babf732ddc864a1ab6cd`，包含 B 指定的 `21780c3`。返修父提交为 `be3a2ed20d123a37bf79650f3d6a1685fc5d8625`，任务分支 `task/member-a-0918-h3-closeout`；准确审查提交由该分支最新远端 HEAD 解析，不能只按分支名批准。本包不修改默认 PHAT、原 Tracker、旧录音、RTL、Vivado/Vitis 工程或两项 Skill。
+状态：`AUTHOR_CANDIDATE_NEEDS_B_INDEPENDENT_REVIEW`。基线 `origin/main=5cfa02e51af44bb5c930babf732ddc864a1ab6cd`，包含 B 指定的 `21780c3`；返修父 `be3a2ed20d123a37bf79650f3d6a1685fc5d8625`；源码/冻结证据提交 `74306d036ae329a687f24ab8d153c3e2f4375189`；交付分支 `task/member-a-0918-h3-closeout`。最终审查 SHA 须以此分支远端 HEAD 为准，不能把源码提交或移动分支名替代最终审查 SHA。本包不修改默认 PHAT、原 Tracker、旧录音、RTL、Vivado/Vitis 工程或两项 Skill。
 
 ## 一页复核入口
 
@@ -49,6 +49,7 @@ python -B task-packages/PKG-B-ALG/tasks/h3-complete-20260918/source/reproduce.py
 - `source/`、`tests/`：模型、检查器、预算、单命令复现和测试。
 - `evidence/run04/`：返修后的冻结结果、检查与脱敏复现摘要；`run01/`、`run02/`、`run03/`保留可恢复历史，具体隐私例外见 run04 说明。
 - [WORK-EXECUTION-REPORT.md](WORK-EXECUTION-REPORT.md)：逐项给“拓芙工作执行”的完成/阻断报告。
+- `evidence/run04/AUTHOR-VALIDATION.md`：作者复跑、首次失败与脱敏日志摘要；完整原始日志由 B 在其独立检出自行保存。
 
 ## 不得扩大的结论
 
