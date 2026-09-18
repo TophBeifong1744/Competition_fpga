@@ -9,7 +9,8 @@ import platform
 
 import numpy as np
 
-from fixed_golden import (BOUNDS, FRAC_LAG, FixedTracker, TrackerConfig, doa_q20,
+from fixed_golden import (PAIR_LENGTH_SQ, FixedTracker, TrackerConfig, doa_q20,
+                          physical_limit_q12,
                           full_chain, json_dump, lag_q12, rne_div, saturate)
 from presence import evaluate as presence
 
@@ -54,7 +55,7 @@ def boundary_vectors() -> dict:
         "doa": {"zero_norm": doa_q20(zero_lags),
                 "rank_deficient": doa_q20(rank_rows, rank_geometry)},
         "tracker": trace,
-        "lag_bounds_q12": [round(v * (1 << FRAC_LAG)) for v in BOUNDS]
+        "lag_bounds_q12": [physical_limit_q12(v) for v in PAIR_LENGTH_SQ]
     }
 
 

@@ -14,14 +14,18 @@ from pathlib import Path
 
 
 MANIFEST_NAME = "PACKAGE-SHA256.json"
+TEXT_SUFFIXES = {".md", ".py", ".json", ".txt"}
 
 
 def digest(path: Path) -> str:
     value = hashlib.sha256()
-    with path.open("rb") as stream:
-        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
-            value.update(chunk)
+    value.update(canonical_bytes(path))
     return value.hexdigest()
+
+
+def canonical_bytes(path: Path) -> bytes:
+    raw = path.read_bytes()
+    return raw.replace(b"\r\n", b"\n") if path.suffix.lower() in TEXT_SUFFIXES else raw
 
 
 def inventory(root: Path) -> list[dict[str, object]]:
@@ -32,8 +36,9 @@ def inventory(root: Path) -> list[dict[str, object]]:
         records.append(
             {
                 "path": path.relative_to(root).as_posix(),
-                "bytes": path.stat().st_size,
+                "bytes": len(canonical_bytes(path)),
                 "sha256": digest(path),
+                "byte_contract": "lf_canonical" if path.suffix.lower() in TEXT_SUFFIXES else "raw",
             }
         )
     return records
@@ -58,9 +63,10 @@ def main() -> int:
         return 0
 
     payload = {
-        "schema": "soundsight-h3-package-sha256-1",
+        "schema": "soundsight-h3-package-sha256-2",
         "root": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918",
         "excludes": [MANIFEST_NAME],
+        "text_rule": "Only CRLF-to-LF normalization for .md/.py/.json/.txt; binary is raw",
         "files": actual,
     }
     manifest.write_text(
