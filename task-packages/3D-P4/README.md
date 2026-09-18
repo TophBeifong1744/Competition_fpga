@@ -1,6 +1,14 @@
 # 3D-P4 · 三维工程 Skill 适配指南
 
-## 2026-09-18 当前复核状态
+## 2026-09-18 返修交审入口（作者提交，C 尚未复核）
+
+- 分支：`codex/toph/c-legacy-wpa0-3dp4-rework-20260918`；返修**内容提交**：`07d25f72a382780b7c33caca36a212dfa53be779`；最终交审 HEAD 包含本入口和提示词，以交审消息中的直接远端 SHA 为准。上次 C 发布基线：`bff9369a5c7f166344c02095df61e91e1c2f4681`；上轮候选：`1731522f80ed0b970c63c8a3b019b9ba281d6ca8`。
+- **C-04 逐项回应**：以 main 现行[指南](../../docs/three-dimensional-doa-workflow-skill-guide.md)为底修订，未覆盖 9/8 旧 payload。旧 `soundsight-engineering-workflow` 明示退役；现行 `fpga-module-verification` 按[Skill 索引](../../skill/README.md)与[B 复核](../../docs/maintenance/skills-rereview-b-2026-09-14.md)写为**限定模块仿真 PASS**，非待审、非三维/整机/实板通过。旧 G0～G7 明示历史分类，不用退役模板作活动依赖。C 按[9/17 操作单](../../docs/member-c-operation-sheet.md)负责转台、摄像头方案、驱动和最终效果测试；V1 现行日历 10/1，9/14 只作已发生检查。§5.2 引用[WP-A0 异常勘误](../WP-A0/ERRATUM-2026-09-18.md)及 REL6-001 限定复核，不宣称 25 项全部通过。
+- 相对上次的文件变化：仅 `docs/three-dimensional-doa-workflow-skill-guide.md` 的现行依赖、职责、日历与证据措辞，以及本交审入口；旧 payload、清单、自检和审批记录不改。**拟接入 main**：现行指南与本 README；不接入旧 payload，不修改两项 Skill、三维总计划、RTL、板卡或采购文件。
+- 本次运行：核对现行 Skill 索引/B 复核、C 操作单、V1 日历及 C 上轮结论；对本轮活动文档做相对链接/空白检查；原 `verify-toph-handoffs.ps1 -PackageId 3D-P4` 退出 0，旧单文件 payload 未动。复用已获限定批准的 SKL-001、3D-P2、REL6-001 既有证据，不重签；未运行六麦模型、RTL/XSim、Vivado、板测或采购核验。
+- 未解决：三维 G0/GA/G1～G3 仍受原阶段门限制，外设实际型号/板级效果也未在本指南验证。申请 C 仅批准本次**活动指南的文档语义与依赖对齐**；不得扩大为三维算法、整机或实板 PASS。`REVIEW.md` 的 NEEDS_FIX 是上轮结论，待 C 对新准确 SHA 增量复核。
+
+## 2026-09-18 上轮复核状态（保留历史，不代表返修结论）
 
 **NEEDS_FIX（旧版不接入）**。旧包以已退役 soundsight-engineering-workflow 为活动依赖，并保留旧交期及“25 份原件”表述。现行主线已有替代说明，仍须由 A 对齐当前 Skill 批准状态、C 职责和历史异常后，按新 SHA 申请活动指南复核。
 
