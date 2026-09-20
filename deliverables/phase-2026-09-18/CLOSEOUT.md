@@ -1,5 +1,7 @@
 # 2026-09-18 阶段收尾
 
+基于c7fb2eb的最终文档补记：B实际命令/cwd和部分进程退出码仍未取得，逐项见[合后回执待补表及三端发布核对](../../docs/reviews/h3-run05-7a17edd/POSTMERGE-SUPPLEMENT.md)。首错准确命令及Python退出1已从当时工具记录恢复；第二受控副本/访问控制未核实，归档状态为[NOT_ARCHIVED](../../docs/reviews/h3-run05-7a17edd/RAW-LOG-RETRIEVAL.md)。文档缺口未完全关闭；不重测、不改任务包，LIMITED PASS不变。
+
 ## 2026-09-20 B 合入后技术核验补记
 
 B经用户转交确认：合入提交`a440d9bb67a42d9f666370bbaed2cbbf252f77d1`，核验时远端main为`6751664d18db077046e0a5d5a0bfc84fcefce108`。候选`7a17edd`为祖先，69个包blob和18项输入一致；B报告以原blob `6d5e16b24be041da01f48c4383a99430025c034c`（8993字节）纳入，报告分支提交不必成为祖先。Python3.12.14/NumPy2.3.5下包清单及输入检查退出0、39项通过、14冻结数组及事件数值/字节差异0；首次Python3.7环境失败不算合入回归。
