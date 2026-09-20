@@ -1,5 +1,7 @@
 # SoundSight 当前工作包台账
 
+最新：[八段接收后的9/18再次复验](../deliverables/phase-2026-09-18/recheck-eight-20260920/README.md)。8/8开发输入接收完成，声学基线与完整H3仍未通过；各项既有限定批准和9/23、10/1日期不变，不重复派已关闭任务。
+
 2026-09-20[复验更新](../deliverables/phase-2026-09-18/recheck-20260920/README.md)：run05、S1诊断、计时入口返修已获B限定批准并入库；声学与完整H3仍未通过。B新集中接口材料已到件并复现；C新版舵机合同不能继承旧版批准。
 
 2026-09-13重排。阶段检查9/14、V1总验收10/1 10:00；[统一日历](project-plan.md#61-统一阶段验收日历)与[加速任务矩阵](phases/2026-09-13-to-10-01/README.md)为当前执行依据。旧安排[逐字备份](../archive/2026-09-13-before-accelerated-plan/docs/work-packages.md)，不按旧表重做已完成任务。
