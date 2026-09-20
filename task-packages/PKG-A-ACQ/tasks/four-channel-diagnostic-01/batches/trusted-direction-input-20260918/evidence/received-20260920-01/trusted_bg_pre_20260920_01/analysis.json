@@ -1,0 +1,66 @@
+{
+  "name": "trusted_bg_pre_20260920_01",
+  "status": "REJECTED_AS_TRUSTED_FOUR_CHANNEL_INPUT",
+  "bytes": 9224000,
+  "groups": 288250,
+  "seconds": 6.005208333333333,
+  "first_id": 17891,
+  "last_id": 306140,
+  "ids_contiguous": true,
+  "fnv1a32": "ECB7FEF1",
+  "fnv_matches_uart": true,
+  "uart_counts_match": true,
+  "reserved_zero": true,
+  "signed24_valid": true,
+  "flags_counts": {
+    "0x00000005": 288250
+  },
+  "channels": [
+    {
+      "min": 8388607,
+      "max": 8388607,
+      "zeros": 0,
+      "clip_flags": 288250,
+      "uart_stats_match": true,
+      "channel": 0,
+      "constant": true,
+      "unique_codes": 1
+    },
+    {
+      "min": -39424,
+      "max": 39424,
+      "zeros": 1430,
+      "clip_flags": 0,
+      "uart_stats_match": true,
+      "channel": 1,
+      "constant": false,
+      "unique_codes": 684
+    },
+    {
+      "min": 8388607,
+      "max": 8388607,
+      "zeros": 0,
+      "clip_flags": 288250,
+      "uart_stats_match": true,
+      "channel": 2,
+      "constant": true,
+      "unique_codes": 1
+    },
+    {
+      "min": -44992,
+      "max": 39680,
+      "zeros": 1567,
+      "clip_flags": 0,
+      "uart_stats_match": true,
+      "channel": 3,
+      "constant": false,
+      "unique_codes": 645
+    }
+  ],
+  "unchanged_strict_verifier": "REJECTED: Source/DMA not safely drained",
+  "sha256": {
+    "trusted_bg_pre_20260920_01.bin": "a27fc0f30c3a8bb10af300782099c467e530bd71ee8d3790fa842e71d34629e8",
+    "trusted_bg_pre_20260920_01.log": "fcca304fe0ec00e9abdf8e40c5f316c58367644e8995ad6f6d9a7198ba331e72"
+  },
+  "limits": "Raw integrity facts do not make saturated channels usable; root cause not established. No flags cleared or normalization applied."
+}

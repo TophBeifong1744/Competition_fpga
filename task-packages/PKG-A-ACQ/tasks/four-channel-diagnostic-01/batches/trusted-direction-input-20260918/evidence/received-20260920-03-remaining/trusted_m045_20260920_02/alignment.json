@@ -1,0 +1,115 @@
+{
+  "channels": [
+    {
+      "channel": "mic0",
+      "start_marker": {
+        "index": 44550,
+        "absolute_correlation": 0.5241365922683515,
+        "runner_up_outside_marker_width": 0.19302901407981612
+      },
+      "end_marker": {
+        "index": 248656,
+        "absolute_correlation": 0.5335993944736794,
+        "runner_up_outside_marker_width": 0.15714887484795928
+      },
+      "measured_marker_separation_s": 4.252208333333333,
+      "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+      "source_to_capture_scale": 1.0005196078431373,
+      "speech_interval_source_mapped_samples": [
+        82969.95294117648,
+        140640.90365686273
+      ],
+      "source_file_interval_mapped_samples": [
+        34945.01176470588,
+        265464.7294117647
+      ],
+      "source_file_fits_capture": true
+    },
+    {
+      "channel": "mic1",
+      "start_marker": {
+        "index": 44535,
+        "absolute_correlation": 0.5074215243667017,
+        "runner_up_outside_marker_width": 0.1888170364572513
+      },
+      "end_marker": {
+        "index": 248642,
+        "absolute_correlation": 0.5213376610858288,
+        "runner_up_outside_marker_width": 0.13793308005261395
+      },
+      "measured_marker_separation_s": 4.252229166666667,
+      "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+      "source_to_capture_scale": 1.0005245098039215,
+      "speech_interval_source_mapped_samples": [
+        82955.14117647058,
+        140626.37444607844
+      ],
+      "source_file_interval_mapped_samples": [
+        34929.964705882354,
+        265450.81176470587
+      ],
+      "source_file_fits_capture": true
+    },
+    {
+      "channel": "mic2",
+      "start_marker": {
+        "index": 44540,
+        "absolute_correlation": 0.507700276811813,
+        "runner_up_outside_marker_width": 0.1462738246548743
+      },
+      "end_marker": {
+        "index": 248647,
+        "absolute_correlation": 0.49969594239733867,
+        "runner_up_outside_marker_width": 0.13820447613099843
+      },
+      "measured_marker_separation_s": 4.252229166666667,
+      "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+      "source_to_capture_scale": 1.0005245098039215,
+      "speech_interval_source_mapped_samples": [
+        82960.14117647058,
+        140631.37444607844
+      ],
+      "source_file_interval_mapped_samples": [
+        34934.964705882354,
+        265455.81176470587
+      ],
+      "source_file_fits_capture": true
+    },
+    {
+      "channel": "mic3",
+      "start_marker": {
+        "index": 44555,
+        "absolute_correlation": 0.5196658986417404,
+        "runner_up_outside_marker_width": 0.16226496052583714
+      },
+      "end_marker": {
+        "index": 248661,
+        "absolute_correlation": 0.5164273738233093,
+        "runner_up_outside_marker_width": 0.20302257267895985
+      },
+      "measured_marker_separation_s": 4.252208333333333,
+      "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+      "source_to_capture_scale": 1.0005196078431373,
+      "speech_interval_source_mapped_samples": [
+        82974.95294117648,
+        140645.90365686273
+      ],
+      "source_file_interval_mapped_samples": [
+        34950.01176470588,
+        265469.7294117647
+      ],
+      "source_file_fits_capture": true
+    }
+  ],
+  "algorithm": "absolute normalized matched correlation against frozen chirps; two-point affine map",
+  "thresholds": {
+    "min_correlation": 0.15,
+    "peak_ratio": 1.5,
+    "separation_tolerance_s": 0.05
+  },
+  "thresholds_scope": "heuristic marker search only, NOT B target-presence thresholds or measured uncertainty",
+  "exact_activity_labels": false,
+  "activity_uncertainty_seconds": null,
+  "required_followup": "Review waveform/listening, multipath and marker clipping. Source-mapped speech window is a prediction, not actual acoustic onset/offset. Preserve uncertainty; no scoring of markers.",
+  "source_sha256": "ce28c5576eea620d8f358c0799bf8029cdc41bdeae8dcf95a02967d3bace6838"
+}

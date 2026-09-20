@@ -1,0 +1,36 @@
+{
+  "sample_rate_hz": 48000,
+  "duration_seconds": 4.8,
+  "total_samples": 230400,
+  "source_kind": "locally synthesized speech plus two distinct tapered chirps",
+  "markers": [
+    {
+      "name": "start",
+      "start_sample": 9600,
+      "end_sample_exclusive": 16800,
+      "file": "marker-start.wav"
+    },
+    {
+      "name": "end",
+      "start_sample": 213600,
+      "end_sample_exclusive": 220800,
+      "file": "marker-end.wav"
+    }
+  ],
+  "speech_source_interval": [
+    48000,
+    105641
+  ],
+  "original_speech_sha256": "0f10560515a364d0ded5fbd00076f619a15d636da8becc654bafcf4a00659050",
+  "original_source_trim_samples": [
+    3979,
+    61620
+  ],
+  "source_speech_peak_fraction": 0.42,
+  "source_marker_peak_fraction": 0.25,
+  "pcm16_peak": 13762,
+  "marker_guard_seconds_provisional": 0.2,
+  "capture_activity_labels": "UNKNOWN until acoustic alignment and waveform review; source schedule is NOT exact acoustic truth",
+  "score_exclusions": "Both markers plus acoustic reverberation guard; extend exclusion if ringing persists",
+  "no_clean_reference_claim": true
+}

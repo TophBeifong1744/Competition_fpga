@@ -1,0 +1,64 @@
+{
+  "status": "PASS_FORMAT_ONLY",
+  "segments": [
+    {
+      "schema_version": "ss-data-draft-0.3",
+      "acquisition_id": "trusted_m045_20260920_01",
+      "config_version": "four-channel-continuous-s1-6s-raw-20260917-v1",
+      "samples": 288250,
+      "sample_id_dtype": "uint64",
+      "pcm_dtype": "int32",
+      "first_sample_id": 17509,
+      "last_sample_id": 305758,
+      "clean_intervals": [
+        {
+          "row_start": 0,
+          "row_stop": 288250,
+          "first_sample_id": 17509,
+          "last_sample_id": 305758
+        }
+      ],
+      "missing_intervals": [],
+      "error_rows": 0,
+      "direction_policy": "diagnostic_only_requires_geometry_and_algorithm_validation",
+      "declared_evidence": "diagnostic",
+      "acceptance_verified": false,
+      "calibration_verified": false,
+      "file_sha256": {
+        "metadata.json": "1f35776e4b4924a3e92c65225fe16a4baedb8680849cb28d2ecd5ad08e3670fe",
+        "samples.csv": "0c801726a7d4411a46a6910fe8fb0955034c89763b1aea8e1717e6389307da0d"
+      },
+      "amplitude_all_rows": {
+        "minimum": [
+          -103872,
+          -105728,
+          -93568,
+          -85760
+        ],
+        "maximum": [
+          107520,
+          116800,
+          92096,
+          88768
+        ],
+        "mean": [
+          -723.0394726799653,
+          -949.4678091934085,
+          -781.676128360798,
+          -695.5477814397225
+        ],
+        "full_scale_code_count": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "notes": [
+        "Amplitude statistics include error rows; full-scale codes alone do not prove clipping.",
+        "Clean intervals are format-clean only, not verified acoustically clean.",
+        "JSON sample IDs are exact decimal integers; JS consumers must use lossless/BigInt parsing."
+      ]
+    }
+  ]
+}

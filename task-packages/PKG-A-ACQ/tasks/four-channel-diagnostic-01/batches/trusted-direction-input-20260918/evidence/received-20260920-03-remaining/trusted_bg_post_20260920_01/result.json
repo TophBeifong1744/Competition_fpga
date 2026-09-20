@@ -1,0 +1,51 @@
+{
+  "status": "FORMAT_AND_INTEGRITY_PASS_SCENE_REVIEW_PENDING",
+  "board_operation_by_agent": false,
+  "capture": {
+    "groups": 288250,
+    "packets": 1153,
+    "bytes": 9224000,
+    "seconds": 6.005208333333333,
+    "first_id": 16267,
+    "last_id": 304516,
+    "fnv1a32": "E5CD9659",
+    "source_status": "C100000A",
+    "dma_status": "00001002",
+    "archive_data": 1125056,
+    "capture_command_us": 6000140,
+    "drain_us": 5208,
+    "max_check_us": 59,
+    "max_arm_gap_us": 5257,
+    "channels": [
+      {
+        "min": -29568,
+        "max": 25600,
+        "zeros": 1303,
+        "clip_flags": 0
+      },
+      {
+        "min": -28288,
+        "max": 27712,
+        "zeros": 1238,
+        "clip_flags": 0
+      },
+      {
+        "min": -27648,
+        "max": 24640,
+        "zeros": 1358,
+        "clip_flags": 0
+      },
+      {
+        "min": -24896,
+        "max": 22720,
+        "zeros": 1392,
+        "clip_flags": 0
+      }
+    ],
+    "flagged_rows": 0
+  },
+  "csv_bin_exact": true,
+  "wav_readback_exact": true,
+  "reader": "PASS_FORMAT_ONLY",
+  "new_board_run_by_agent": false
+}

@@ -1,0 +1,36 @@
+{
+  "operator_statement": "这个才是正确的，刚才发错了。",
+  "previous_evidence_preserved": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\trusted-direction-input-20260918\\evidence\\received-20260920-01",
+  "previous_saturation_diagnosis_applies_only_to_previous_bytes": true,
+  "no_hardware_repair_inferred": true,
+  "results": [
+    {
+      "name": "trusted_bg_pre_20260920_01",
+      "exit_code": 0,
+      "hash_comparison": {
+        "bin": {
+          "previous": "a27fc0f30c3a8bb10af300782099c467e530bd71ee8d3790fa842e71d34629e8",
+          "corrected": "1c2e923d8b3d9bbfaa99ac1708bac7ce2563db5db3cd8eaad0189884bf64f3e2"
+        },
+        "log": {
+          "previous": "fcca304fe0ec00e9abdf8e40c5f316c58367644e8995ad6f6d9a7198ba331e72",
+          "corrected": "6f1bc858c9af8ad1e5d65f5234383fc38954a505886c8763692b7e236080757a"
+        }
+      }
+    },
+    {
+      "name": "trusted_000_20260920_01",
+      "exit_code": 0,
+      "hash_comparison": {
+        "bin": {
+          "previous": "312dd04d803e04a92801ed278f3fbe63c4e353323ff311a71c9e63166ef3e2d0",
+          "corrected": "9b7d8b36ebe300f7e6520bdb94e9e157895d4563808007e6343b1c2ab14c78a5"
+        },
+        "log": {
+          "previous": "47284c0661d419a02840b6f839ced616bc5ccbea58ddeb4e3707b8f55d308767",
+          "corrected": "fa282c519ee3f11396b514d41788067b25840d8e2e8bdd2f6a4443abf521035c"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,696 @@
+[
+  {
+    "name": "trusted_000_20260920_01",
+    "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\trusted-direction-input-20260918\\evidence\\received-20260920-02-corrected\\trusted_000_20260920_01",
+    "result": {
+      "status": "FORMAT_AND_INTEGRITY_PASS_SCENE_REVIEW_PENDING",
+      "board_operation_by_agent": false,
+      "capture": {
+        "groups": 288250,
+        "packets": 1153,
+        "bytes": 9224000,
+        "seconds": 6.005208333333333,
+        "first_id": 17967,
+        "last_id": 306216,
+        "fnv1a32": "EBD2841F",
+        "source_status": "C100000A",
+        "dma_status": "00001002",
+        "archive_data": 1125056,
+        "capture_command_us": 6000137,
+        "drain_us": 5210,
+        "max_check_us": 59,
+        "max_arm_gap_us": 5252,
+        "channels": [
+          {
+            "min": -115904,
+            "max": 111808,
+            "zeros": 1126,
+            "clip_flags": 0
+          },
+          {
+            "min": -113856,
+            "max": 114432,
+            "zeros": 1195,
+            "clip_flags": 0
+          },
+          {
+            "min": -99008,
+            "max": 106496,
+            "zeros": 1123,
+            "clip_flags": 0
+          },
+          {
+            "min": -106176,
+            "max": 107072,
+            "zeros": 1191,
+            "clip_flags": 0
+          }
+        ],
+        "flagged_rows": 0
+      },
+      "csv_bin_exact": true,
+      "wav_readback_exact": true,
+      "reader": "PASS_FORMAT_ONLY",
+      "new_board_run_by_agent": false
+    },
+    "alignment": [
+      {
+        "channel": "mic0",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          1.1527002450980393,
+          5.952394362745099
+        ],
+        "marker_interval_s": 4.249729166666667
+      },
+      {
+        "channel": "mic1",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          1.1530416666666667,
+          5.951041666666667
+        ],
+        "marker_interval_s": 4.2482291666666665
+      },
+      {
+        "channel": "mic2",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          1.1514274509803921,
+          5.95116862745098
+        ],
+        "marker_interval_s": 4.249770833333334
+      },
+      {
+        "channel": "mic3",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          1.1518142156862745,
+          5.951273039215685
+        ],
+        "marker_interval_s": 4.249520833333333
+      }
+    ]
+  },
+  {
+    "name": "trusted_bg_pre_20260920_01",
+    "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\trusted-direction-input-20260918\\evidence\\received-20260920-02-corrected\\trusted_bg_pre_20260920_01",
+    "result": {
+      "status": "FORMAT_AND_INTEGRITY_PASS_SCENE_REVIEW_PENDING",
+      "board_operation_by_agent": false,
+      "capture": {
+        "groups": 288250,
+        "packets": 1153,
+        "bytes": 9224000,
+        "seconds": 6.005208333333333,
+        "first_id": 16700,
+        "last_id": 304949,
+        "fnv1a32": "B1522C85",
+        "source_status": "C100000A",
+        "dma_status": "00001002",
+        "archive_data": 1125056,
+        "capture_command_us": 6000133,
+        "drain_us": 5210,
+        "max_check_us": 59,
+        "max_arm_gap_us": 5250,
+        "channels": [
+          {
+            "min": -23808,
+            "max": 22656,
+            "zeros": 1509,
+            "clip_flags": 0
+          },
+          {
+            "min": -22976,
+            "max": 25216,
+            "zeros": 1379,
+            "clip_flags": 0
+          },
+          {
+            "min": -22720,
+            "max": 22336,
+            "zeros": 1354,
+            "clip_flags": 0
+          },
+          {
+            "min": -23040,
+            "max": 25728,
+            "zeros": 1377,
+            "clip_flags": 0
+          }
+        ],
+        "flagged_rows": 0
+      },
+      "csv_bin_exact": true,
+      "wav_readback_exact": true,
+      "reader": "PASS_FORMAT_ONLY",
+      "new_board_run_by_agent": false
+    },
+    "alignment": []
+  },
+  {
+    "name": "trusted_000_20260920_02",
+    "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\trusted-direction-input-20260918\\evidence\\received-20260920-03-remaining\\trusted_000_20260920_02",
+    "result": {
+      "status": "FORMAT_AND_INTEGRITY_PASS_SCENE_REVIEW_PENDING",
+      "board_operation_by_agent": false,
+      "capture": {
+        "groups": 288250,
+        "packets": 1153,
+        "bytes": 9224000,
+        "seconds": 6.005208333333333,
+        "first_id": 16957,
+        "last_id": 305206,
+        "fnv1a32": "EA55C86D",
+        "source_status": "C100000A",
+        "dma_status": "00001002",
+        "archive_data": 1125056,
+        "capture_command_us": 6000125,
+        "drain_us": 5209,
+        "max_check_us": 59,
+        "max_arm_gap_us": 5241,
+        "channels": [
+          {
+            "min": -128960,
+            "max": 129792,
+            "zeros": 1039,
+            "clip_flags": 0
+          },
+          {
+            "min": -100672,
+            "max": 109696,
+            "zeros": 1001,
+            "clip_flags": 0
+          },
+          {
+            "min": -116928,
+            "max": 133120,
+            "zeros": 1084,
+            "clip_flags": 0
+          },
+          {
+            "min": -115328,
+            "max": 129600,
+            "zeros": 1133,
+            "clip_flags": 0
+          }
+        ],
+        "flagged_rows": 0
+      },
+      "csv_bin_exact": true,
+      "wav_readback_exact": true,
+      "reader": "PASS_FORMAT_ONLY",
+      "new_board_run_by_agent": false
+    },
+    "alignment": [
+      {
+        "channel": "mic0",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.8671262254901961,
+          5.675596813725489
+        ],
+        "marker_interval_s": 4.2575
+      },
+      {
+        "channel": "mic1",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.8670120098039215,
+          5.675223774509803
+        ],
+        "marker_interval_s": 4.257270833333333
+      },
+      {
+        "channel": "mic2",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.8670129901960785,
+          5.675201225490197
+        ],
+        "marker_interval_s": 4.25725
+      },
+      {
+        "channel": "mic3",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.8680105392156863,
+          5.675257598039217
+        ],
+        "marker_interval_s": 4.2564166666666665
+      }
+    ]
+  },
+  {
+    "name": "trusted_bg_post_20260920_01",
+    "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\trusted-direction-input-20260918\\evidence\\received-20260920-03-remaining\\trusted_bg_post_20260920_01",
+    "result": {
+      "status": "FORMAT_AND_INTEGRITY_PASS_SCENE_REVIEW_PENDING",
+      "board_operation_by_agent": false,
+      "capture": {
+        "groups": 288250,
+        "packets": 1153,
+        "bytes": 9224000,
+        "seconds": 6.005208333333333,
+        "first_id": 16267,
+        "last_id": 304516,
+        "fnv1a32": "E5CD9659",
+        "source_status": "C100000A",
+        "dma_status": "00001002",
+        "archive_data": 1125056,
+        "capture_command_us": 6000140,
+        "drain_us": 5208,
+        "max_check_us": 59,
+        "max_arm_gap_us": 5257,
+        "channels": [
+          {
+            "min": -29568,
+            "max": 25600,
+            "zeros": 1303,
+            "clip_flags": 0
+          },
+          {
+            "min": -28288,
+            "max": 27712,
+            "zeros": 1238,
+            "clip_flags": 0
+          },
+          {
+            "min": -27648,
+            "max": 24640,
+            "zeros": 1358,
+            "clip_flags": 0
+          },
+          {
+            "min": -24896,
+            "max": 22720,
+            "zeros": 1392,
+            "clip_flags": 0
+          }
+        ],
+        "flagged_rows": 0
+      },
+      "csv_bin_exact": true,
+      "wav_readback_exact": true,
+      "reader": "PASS_FORMAT_ONLY",
+      "new_board_run_by_agent": false
+    },
+    "alignment": []
+  },
+  {
+    "name": "trusted_m045_20260920_01",
+    "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\trusted-direction-input-20260918\\evidence\\received-20260920-03-remaining\\trusted_m045_20260920_01",
+    "result": {
+      "status": "FORMAT_AND_INTEGRITY_PASS_SCENE_REVIEW_PENDING",
+      "board_operation_by_agent": false,
+      "capture": {
+        "groups": 288250,
+        "packets": 1153,
+        "bytes": 9224000,
+        "seconds": 6.005208333333333,
+        "first_id": 17509,
+        "last_id": 305758,
+        "fnv1a32": "D94674FD",
+        "source_status": "C100000A",
+        "dma_status": "00001002",
+        "archive_data": 1125056,
+        "capture_command_us": 6000134,
+        "drain_us": 5209,
+        "max_check_us": 59,
+        "max_arm_gap_us": 5251,
+        "channels": [
+          {
+            "min": -103872,
+            "max": 107520,
+            "zeros": 1214,
+            "clip_flags": 0
+          },
+          {
+            "min": -105728,
+            "max": 116800,
+            "zeros": 1211,
+            "clip_flags": 0
+          },
+          {
+            "min": -93568,
+            "max": 92096,
+            "zeros": 1231,
+            "clip_flags": 0
+          },
+          {
+            "min": -85760,
+            "max": 88768,
+            "zeros": 1281,
+            "clip_flags": 0
+          }
+        ],
+        "flagged_rows": 0
+      },
+      "csv_bin_exact": true,
+      "wav_readback_exact": true,
+      "reader": "PASS_FORMAT_ONLY",
+      "new_board_run_by_agent": false
+    },
+    "alignment": [
+      {
+        "channel": "mic0",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.8991669117647059,
+          5.701661029411765
+        ],
+        "marker_interval_s": 4.252208333333333
+      },
+      {
+        "channel": "mic1",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.8989169117647058,
+          5.701411029411765
+        ],
+        "marker_interval_s": 4.252208333333333
+      },
+      {
+        "channel": "mic2",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.897126225490196,
+          5.699596813725489
+        ],
+        "marker_interval_s": 4.2521875
+      },
+      {
+        "channel": "mic3",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.8971887254901961,
+          5.69965931372549
+        ],
+        "marker_interval_s": 4.2521875
+      }
+    ]
+  },
+  {
+    "name": "trusted_m045_20260920_02",
+    "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\trusted-direction-input-20260918\\evidence\\received-20260920-03-remaining\\trusted_m045_20260920_02",
+    "result": {
+      "status": "FORMAT_AND_INTEGRITY_PASS_SCENE_REVIEW_PENDING",
+      "board_operation_by_agent": false,
+      "capture": {
+        "groups": 288250,
+        "packets": 1153,
+        "bytes": 9224000,
+        "seconds": 6.005208333333333,
+        "first_id": 17037,
+        "last_id": 305286,
+        "fnv1a32": "AC69AD10",
+        "source_status": "C100000A",
+        "dma_status": "00001002",
+        "archive_data": 1125056,
+        "capture_command_us": 6000135,
+        "drain_us": 5209,
+        "max_check_us": 59,
+        "max_arm_gap_us": 5252,
+        "channels": [
+          {
+            "min": -130880,
+            "max": 119552,
+            "zeros": 847,
+            "clip_flags": 0
+          },
+          {
+            "min": -126272,
+            "max": 116224,
+            "zeros": 814,
+            "clip_flags": 0
+          },
+          {
+            "min": -94272,
+            "max": 90688,
+            "zeros": 862,
+            "clip_flags": 0
+          },
+          {
+            "min": -113280,
+            "max": 90816,
+            "zeros": 819,
+            "clip_flags": 0
+          }
+        ],
+        "flagged_rows": 0
+      },
+      "csv_bin_exact": true,
+      "wav_readback_exact": true,
+      "reader": "PASS_FORMAT_ONLY",
+      "new_board_run_by_agent": false
+    },
+    "alignment": [
+      {
+        "channel": "mic0",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.7280210784313725,
+          5.530515196078431
+        ],
+        "marker_interval_s": 4.252208333333333
+      },
+      {
+        "channel": "mic1",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.7277075980392157,
+          5.5302252450980385
+        ],
+        "marker_interval_s": 4.252229166666667
+      },
+      {
+        "channel": "mic2",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.7278117647058824,
+          5.530329411764706
+        ],
+        "marker_interval_s": 4.252229166666667
+      },
+      {
+        "channel": "mic3",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.7281252450980391,
+          5.530619362745099
+        ],
+        "marker_interval_s": 4.252208333333333
+      }
+    ]
+  },
+  {
+    "name": "trusted_p045_20260920_01",
+    "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\trusted-direction-input-20260918\\evidence\\received-20260920-03-remaining\\trusted_p045_20260920_01",
+    "result": {
+      "status": "FORMAT_AND_INTEGRITY_PASS_SCENE_REVIEW_PENDING",
+      "board_operation_by_agent": false,
+      "capture": {
+        "groups": 288250,
+        "packets": 1153,
+        "bytes": 9224000,
+        "seconds": 6.005208333333333,
+        "first_id": 16444,
+        "last_id": 304693,
+        "fnv1a32": "2E1D02C7",
+        "source_status": "C100000A",
+        "dma_status": "00001002",
+        "archive_data": 1125056,
+        "capture_command_us": 6000138,
+        "drain_us": 5210,
+        "max_check_us": 59,
+        "max_arm_gap_us": 5255,
+        "channels": [
+          {
+            "min": -178432,
+            "max": 157376,
+            "zeros": 1199,
+            "clip_flags": 0
+          },
+          {
+            "min": -134400,
+            "max": 146240,
+            "zeros": 1224,
+            "clip_flags": 0
+          },
+          {
+            "min": -128384,
+            "max": 125504,
+            "zeros": 1298,
+            "clip_flags": 0
+          },
+          {
+            "min": -181568,
+            "max": 154048,
+            "zeros": 1378,
+            "clip_flags": 0
+          }
+        ],
+        "flagged_rows": 0
+      },
+      "csv_bin_exact": true,
+      "wav_readback_exact": true,
+      "reader": "PASS_FORMAT_ONLY",
+      "new_board_run_by_agent": false
+    },
+    "alignment": [
+      {
+        "channel": "mic0",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.9855301470588235,
+          5.7883066176470575
+        ],
+        "marker_interval_s": 4.252458333333333
+      },
+      {
+        "channel": "mic1",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.9854377450980392,
+          5.787931862745098
+        ],
+        "marker_interval_s": 4.252208333333333
+      },
+      {
+        "channel": "mic2",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.9853644607843137,
+          5.788117401960785
+        ],
+        "marker_interval_s": 4.2524375
+      },
+      {
+        "channel": "mic3",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.9854676470588235,
+          5.788244117647058
+        ],
+        "marker_interval_s": 4.252458333333333
+      }
+    ]
+  },
+  {
+    "name": "trusted_p045_20260920_02",
+    "path": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\trusted-direction-input-20260918\\evidence\\received-20260920-03-remaining\\trusted_p045_20260920_02",
+    "result": {
+      "status": "FORMAT_AND_INTEGRITY_PASS_SCENE_REVIEW_PENDING",
+      "board_operation_by_agent": false,
+      "capture": {
+        "groups": 288250,
+        "packets": 1153,
+        "bytes": 9224000,
+        "seconds": 6.005208333333333,
+        "first_id": 17012,
+        "last_id": 305261,
+        "fnv1a32": "BBC44E8F",
+        "source_status": "C100000A",
+        "dma_status": "00001002",
+        "archive_data": 1125056,
+        "capture_command_us": 6000134,
+        "drain_us": 5209,
+        "max_check_us": 59,
+        "max_arm_gap_us": 5251,
+        "channels": [
+          {
+            "min": -162560,
+            "max": 168320,
+            "zeros": 1104,
+            "clip_flags": 0
+          },
+          {
+            "min": -150016,
+            "max": 159360,
+            "zeros": 1095,
+            "clip_flags": 0
+          },
+          {
+            "min": -107072,
+            "max": 117632,
+            "zeros": 1073,
+            "clip_flags": 0
+          },
+          {
+            "min": -116032,
+            "max": 113408,
+            "zeros": 1252,
+            "clip_flags": 0
+          }
+        ],
+        "flagged_rows": 0
+      },
+      "csv_bin_exact": true,
+      "wav_readback_exact": true,
+      "reader": "PASS_FORMAT_ONLY",
+      "new_board_run_by_agent": false
+    },
+    "alignment": [
+      {
+        "channel": "mic0",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.7939595588235294,
+          5.596430147058823
+        ],
+        "marker_interval_s": 4.2521875
+      },
+      {
+        "channel": "mic1",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.7938544117647058,
+          5.596348529411765
+        ],
+        "marker_interval_s": 4.252208333333333
+      },
+      {
+        "channel": "mic2",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.7937928921568628,
+          5.596263480392156
+        ],
+        "marker_interval_s": 4.2521875
+      },
+      {
+        "channel": "mic3",
+        "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+        "file_fits": true,
+        "file_interval_s": [
+          0.7938644607843137,
+          5.596617401960785
+        ],
+        "marker_interval_s": 4.2524375
+      }
+    ]
+  }
+]

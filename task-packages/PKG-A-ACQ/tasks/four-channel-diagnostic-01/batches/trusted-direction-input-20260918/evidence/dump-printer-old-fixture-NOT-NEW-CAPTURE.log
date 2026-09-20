@@ -1,0 +1,3 @@
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~ "*Cortex-A9*#0"}
+mrd -bin -file {F:/College/verilog_digital_system/Vitis/trusted_bg_pre_20260918_01.bin} -size w 0x00112AC0 2306000

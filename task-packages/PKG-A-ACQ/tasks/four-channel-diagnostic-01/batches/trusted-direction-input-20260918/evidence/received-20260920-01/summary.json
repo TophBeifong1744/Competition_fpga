@@ -1,0 +1,155 @@
+{
+  "status": "STOP_REMAINING_RECORDINGS_INPUT_FAULT",
+  "captures": [
+    {
+      "name": "trusted_bg_pre_20260920_01",
+      "status": "REJECTED_AS_TRUSTED_FOUR_CHANNEL_INPUT",
+      "bytes": 9224000,
+      "groups": 288250,
+      "seconds": 6.005208333333333,
+      "first_id": 17891,
+      "last_id": 306140,
+      "ids_contiguous": true,
+      "fnv1a32": "ECB7FEF1",
+      "fnv_matches_uart": true,
+      "uart_counts_match": true,
+      "reserved_zero": true,
+      "signed24_valid": true,
+      "flags_counts": {
+        "0x00000005": 288250
+      },
+      "channels": [
+        {
+          "min": 8388607,
+          "max": 8388607,
+          "zeros": 0,
+          "clip_flags": 288250,
+          "uart_stats_match": true,
+          "channel": 0,
+          "constant": true,
+          "unique_codes": 1
+        },
+        {
+          "min": -39424,
+          "max": 39424,
+          "zeros": 1430,
+          "clip_flags": 0,
+          "uart_stats_match": true,
+          "channel": 1,
+          "constant": false,
+          "unique_codes": 684
+        },
+        {
+          "min": 8388607,
+          "max": 8388607,
+          "zeros": 0,
+          "clip_flags": 288250,
+          "uart_stats_match": true,
+          "channel": 2,
+          "constant": true,
+          "unique_codes": 1
+        },
+        {
+          "min": -44992,
+          "max": 39680,
+          "zeros": 1567,
+          "clip_flags": 0,
+          "uart_stats_match": true,
+          "channel": 3,
+          "constant": false,
+          "unique_codes": 645
+        }
+      ],
+      "unchanged_strict_verifier": "REJECTED: Source/DMA not safely drained",
+      "sha256": {
+        "trusted_bg_pre_20260920_01.bin": "a27fc0f30c3a8bb10af300782099c467e530bd71ee8d3790fa842e71d34629e8",
+        "trusted_bg_pre_20260920_01.log": "fcca304fe0ec00e9abdf8e40c5f316c58367644e8995ad6f6d9a7198ba331e72"
+      },
+      "limits": "Raw integrity facts do not make saturated channels usable; root cause not established. No flags cleared or normalization applied."
+    },
+    {
+      "name": "trusted_000_20260920_01",
+      "status": "REJECTED_AS_TRUSTED_FOUR_CHANNEL_INPUT",
+      "bytes": 9224000,
+      "groups": 288250,
+      "seconds": 6.005208333333333,
+      "first_id": 17164,
+      "last_id": 305413,
+      "ids_contiguous": true,
+      "fnv1a32": "E26A3DAE",
+      "fnv_matches_uart": true,
+      "uart_counts_match": true,
+      "reserved_zero": true,
+      "signed24_valid": true,
+      "flags_counts": {
+        "0x00000005": 288250
+      },
+      "channels": [
+        {
+          "min": 8388607,
+          "max": 8388607,
+          "zeros": 0,
+          "clip_flags": 288250,
+          "uart_stats_match": true,
+          "channel": 0,
+          "constant": true,
+          "unique_codes": 1
+        },
+        {
+          "min": -62464,
+          "max": 68864,
+          "zeros": 1082,
+          "clip_flags": 0,
+          "uart_stats_match": true,
+          "channel": 1,
+          "constant": false,
+          "unique_codes": 1618
+        },
+        {
+          "min": 8388607,
+          "max": 8388607,
+          "zeros": 0,
+          "clip_flags": 288250,
+          "uart_stats_match": true,
+          "channel": 2,
+          "constant": true,
+          "unique_codes": 1
+        },
+        {
+          "min": -68928,
+          "max": 54080,
+          "zeros": 1095,
+          "clip_flags": 0,
+          "uart_stats_match": true,
+          "channel": 3,
+          "constant": false,
+          "unique_codes": 1477
+        }
+      ],
+      "unchanged_strict_verifier": "REJECTED: Source/DMA not safely drained",
+      "sha256": {
+        "trusted_000_20260920_01.bin": "312dd04d803e04a92801ed278f3fbe63c4e353323ff311a71c9e63166ef3e2d0",
+        "trusted_000_20260920_01.log": "47284c0661d419a02840b6f839ced616bc5ccbea58ddeb4e3707b8f55d308767"
+      },
+      "limits": "Raw integrity facts do not make saturated channels usable; root cause not established. No flags cleared or normalization applied."
+    }
+  ],
+  "host_version_binding": {
+    "build/four_mic_endurance.elf": {
+      "sha256": "4b7823bdefa3776a910a3359b5851fa52c6f4ce89432cc3ee0072dee52ca06a6",
+      "matches_preflight": true
+    },
+    "_ide/launch.json": {
+      "sha256": "aa6240d2ba212b4a091ac5f419f8594a1ffddaa7efe7b013e624972b025e6cfc",
+      "matches_preflight": true
+    },
+    "_ide/bitstream/system_continuous_20260915.bit": {
+      "sha256": "b15991bc0f8595970361be553b542e334dbb7dca268c01864ecd80fcffbbffaf",
+      "matches_preflight": true
+    }
+  },
+  "root_cause": "UNDETERMINED",
+  "new_board_operations": false,
+  "firmware_modified": false,
+  "passed_captures": 0
+}
