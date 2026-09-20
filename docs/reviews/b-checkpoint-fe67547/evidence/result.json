@@ -1,0 +1,73 @@
+{
+  "status": "AUTHOR_REPRODUCED_NOT_INDEPENDENT_APPROVAL",
+  "snapshot": {
+    "current_files": 158,
+    "historical_files": 21,
+    "dependencies": 33
+  },
+  "wavs_exact": 48,
+  "integer_arrays_exact": 120,
+  "json_semantic_match": true,
+  "json_bytes_equal": 10,
+  "json_files": 19,
+  "float_differences": 2261,
+  "commands": [
+    {
+      "name": "repair-tests",
+      "argv": [
+        "<PY312>",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "<EXACT>\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\checkpoint-20260923\\source",
+        "-p",
+        "test_repair.py",
+        "-v"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "tests",
+      "argv": [
+        "<PY312>",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "<EXACT>\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\checkpoint-20260923\\source",
+        "-p",
+        "test_candidates.py",
+        "-v"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "study",
+      "argv": [
+        "<PY312>",
+        "-B",
+        "<EXACT>\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\checkpoint-20260923\\source\\run.py",
+        "--out",
+        "<OUT>\\study"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "golden",
+      "argv": [
+        "<PY312>",
+        "-B",
+        "<EXACT>\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\checkpoint-20260923\\source\\golden.py",
+        "--study",
+        "<OUT>\\study",
+        "--out",
+        "<OUT>\\golden"
+      ],
+      "returncode": 0
+    }
+  ],
+  "production_or_hardware_approval": false
+}

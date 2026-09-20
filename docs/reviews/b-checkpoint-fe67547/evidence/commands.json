@@ -1,0 +1,58 @@
+[
+  {
+    "name": "repair-tests",
+    "argv": [
+      "<PY312>",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "<EXACT>\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\checkpoint-20260923\\source",
+      "-p",
+      "test_repair.py",
+      "-v"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "tests",
+    "argv": [
+      "<PY312>",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "<EXACT>\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\checkpoint-20260923\\source",
+      "-p",
+      "test_candidates.py",
+      "-v"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "study",
+    "argv": [
+      "<PY312>",
+      "-B",
+      "<EXACT>\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\checkpoint-20260923\\source\\run.py",
+      "--out",
+      "<OUT>\\study"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "golden",
+    "argv": [
+      "<PY312>",
+      "-B",
+      "<EXACT>\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\checkpoint-20260923\\source\\golden.py",
+      "--study",
+      "<OUT>\\study",
+      "--out",
+      "<OUT>\\golden"
+    ],
+    "returncode": 0
+  }
+]
