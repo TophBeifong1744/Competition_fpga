@@ -1,0 +1,45 @@
+{
+  "schema_version": "ss-data-draft-0.3",
+  "acquisition_id": "exact1024",
+  "config_version": "framing-synthetic-1",
+  "channel_order": [
+    "mic0",
+    "mic1",
+    "mic2",
+    "mic3"
+  ],
+  "coordinates_m": null,
+  "geometry_version": "four-physical-unmeasured-v1",
+  "coordinate_system": "x-forward_y-left_z-up",
+  "direction_convention": "array-to-source",
+  "angle_unit": "deg",
+  "sample_rate_hz": 48000,
+  "sample_format": {
+    "encoding": "signed-pcm",
+    "storage_dtype": "int32",
+    "valid_bits": 24,
+    "alignment": "right",
+    "fractional_bits": 0
+  },
+  "source_kind": "synthetic-code",
+  "evidence_level": "synthetic",
+  "capture_point": "offline two-slot copy replay, not hardware",
+  "provisional_fields": {
+    "coordinates_m": "Not measured: no direction calculation permitted.",
+    "channel_order": "Logical lane order only; actual module-to-lane mapping requires recording notes.",
+    "sample_rate_hz": "Configured frequency, not instrument-measured.",
+    "sample_format": "24-bit exchange range, not measured effective precision."
+  },
+  "calibration_status": "not-calibrated",
+  "source_provenance": "B deterministic distinct lane codes",
+  "raw_file": "raw.bin",
+  "raw_sha256": "a1204b0d3a13bfe3af5412ac7346f6cd9613a73236f31f31dbde96f64b5042d3",
+  "raw_layout": "ss-four-record-0.1: little-endian id_lo,id_hi,mic0..3,flags,reserved; 32 bytes",
+  "raw_flags": "bits0..3 per-lane saturation -> H1 unknown; other bits unsupported; raw.bin retained",
+  "sample_count": 1024,
+  "first_id": 9007199254741009,
+  "last_id": 9007199254742032,
+  "processing": "none; preserve raw IDs/PCM; do not fill gaps or concatenate acquisitions",
+  "limits": "Caller source declaration is not verified acoustically by this converter; no H2/M1 approval.",
+  "samples_sha256": "574c17bb78cbe03d85698f8a4a5fd11d9237679e03e960b003db182da23b01bf"
+}
