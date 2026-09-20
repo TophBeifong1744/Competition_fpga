@@ -1,0 +1,223 @@
+{
+  "baseline_main": "6751664d18db077046e0a5d5a0bfc84fcefce108",
+  "A_checklist": "16afda2772b37ca5e50852c0f62944cd6f541472",
+  "upstream_h3_candidate": "7a17edd2b5408e10608d954f3e7fa11cb62fe34b",
+  "files": [
+    {
+      "source_commit": "16afda2772b37ca5e50852c0f62944cd6f541472",
+      "source_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/algorithm-interface-review-20260918/REVIEW.md",
+      "local_path": "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/inputs/a-checklist/REVIEW.md",
+      "bytes": 2556,
+      "sha256": "8ebb4c65f822853ef5cec5e4c65712e397327a000a53744d6e6d46347d3b8d35",
+      "evidence_grade": "A_interface_fact_input_not_algorithm_approval"
+    },
+    {
+      "source_commit": "16afda2772b37ca5e50852c0f62944cd6f541472",
+      "source_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/algorithm-interface-review-20260918/README.md",
+      "local_path": "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/inputs/a-checklist/README.md",
+      "bytes": 9632,
+      "sha256": "d3ba826606a1fa0af70fa3ab9233354486f06feada7d382923cff29ebe52acaa",
+      "evidence_grade": "A_interface_fact_input_not_algorithm_approval"
+    },
+    {
+      "source_commit": "6751664d18db077046e0a5d5a0bfc84fcefce108",
+      "source_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/export_four.py",
+      "local_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/export_four.py",
+      "bytes": 4958,
+      "sha256": "e89c82945367ef3e06113d9c18edbb3276e1ba658b2594e3f79e28a960422526",
+      "evidence_grade": "reference_only_not_new_approval"
+    },
+    {
+      "source_commit": "6751664d18db077046e0a5d5a0bfc84fcefce108",
+      "source_path": "task-packages/PKG-B-ALG/payload/model/python/h1_reader.py",
+      "local_path": "task-packages/PKG-B-ALG/payload/model/python/h1_reader.py",
+      "bytes": 13506,
+      "sha256": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9",
+      "evidence_grade": "reference_only_not_new_approval"
+    },
+    {
+      "source_commit": "6751664d18db077046e0a5d5a0bfc84fcefce108",
+      "source_path": "task-packages/PKG-B-ALG/payload/model/python/audio_frames.py",
+      "local_path": "task-packages/PKG-B-ALG/payload/model/python/audio_frames.py",
+      "bytes": 8414,
+      "sha256": "0ed77ea8db8834576c21206358a8d945b612a176cad742bb266d077ee2a79408",
+      "evidence_grade": "reference_only_not_new_approval"
+    },
+    {
+      "source_commit": "6751664d18db077046e0a5d5a0bfc84fcefce108",
+      "source_path": "task-packages/PKG-B-ALG/tasks/phat-fixed-03/phat_model.py",
+      "local_path": "task-packages/PKG-B-ALG/tasks/phat-fixed-03/phat_model.py",
+      "bytes": 2933,
+      "sha256": "84eaa9691f62aba7164e3172aa94b2e361cb99672647477d98f8b3f3889f3144",
+      "evidence_grade": "reference_only_not_new_approval"
+    },
+    {
+      "source_commit": "6751664d18db077046e0a5d5a0bfc84fcefce108",
+      "source_path": "task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/configuration.json",
+      "local_path": "task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/configuration.json",
+      "bytes": 1431,
+      "sha256": "3725ab18b45402e36aa953327f296985bc523b1ebfd4fac156d4cb2749d450bb",
+      "evidence_grade": "reference_only_not_new_approval"
+    },
+    {
+      "source_commit": "6751664d18db077046e0a5d5a0bfc84fcefce108",
+      "source_path": "task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/reference/a25-ac0ff38/contract.json",
+      "local_path": "task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/reference/a25-ac0ff38/contract.json",
+      "bytes": 1808,
+      "sha256": "f0e9d5cf07c1a6ad36efa49289624c9f6cf0a8b5cd1de211eb4c3a67511c1b7a",
+      "evidence_grade": "reference_only_not_new_approval"
+    },
+    {
+      "source_commit": "6751664d18db077046e0a5d5a0bfc84fcefce108",
+      "source_path": "task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/coverage-extension-01/RESULTS.md",
+      "local_path": "task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/coverage-extension-01/RESULTS.md",
+      "bytes": 6129,
+      "sha256": "f6edf31ee487ebae179dcbf0f2e7bf0af366c437c2542b2618aeb9b7db46b7af",
+      "evidence_grade": "reference_only_not_new_approval"
+    },
+    {
+      "source_commit": "6751664d18db077046e0a5d5a0bfc84fcefce108",
+      "source_path": "docs/reviews/h3-run05-7a17edd/B-REVIEW.md",
+      "local_path": "docs/reviews/h3-run05-7a17edd/B-REVIEW.md",
+      "bytes": 8993,
+      "sha256": "1ea8bc856c54619bd703686c5c4da2f0cd12456fb94011a9406ac5a1cda6cf88",
+      "evidence_grade": "reference_only_not_new_approval"
+    },
+    {
+      "source_commit": "6751664d18db077046e0a5d5a0bfc84fcefce108",
+      "source_path": "docs/reviews/s1-8f708e4/B-REVIEW.md",
+      "local_path": "docs/reviews/s1-8f708e4/B-REVIEW.md",
+      "bytes": 6961,
+      "sha256": "96705c13d42fc6960cbf6a6ac7ecf4ee97cb46aa9c96156a925c91bb8160af49",
+      "evidence_grade": "reference_only_not_new_approval"
+    },
+    {
+      "source_commit": "6751664d18db077046e0a5d5a0bfc84fcefce108",
+      "source_path": "docs/reviews/timerfixed-repair2-21c141b/B-REVIEW.md",
+      "local_path": "docs/reviews/timerfixed-repair2-21c141b/B-REVIEW.md",
+      "bytes": 4165,
+      "sha256": "56de460c51108ac56f02520d54f3618ffe98e548a616f9ad23b881ee3e54222a",
+      "evidence_grade": "reference_only_not_new_approval"
+    },
+    {
+      "source_commit": "6751664d18db077046e0a5d5a0bfc84fcefce108",
+      "source_path": "docs/reviews/four-track-f364a02/REVIEW.md",
+      "local_path": "docs/reviews/four-track-f364a02/REVIEW.md",
+      "bytes": 10255,
+      "sha256": "10f2627f3b1fb6308050bdeeab692381b7a1482c4ddacfc2ef04628033c631f9",
+      "evidence_grade": "reference_only_not_new_approval"
+    },
+    {
+      "source_commit": "6751664d18db077046e0a5d5a0bfc84fcefce108",
+      "source_path": "task-packages/PKG-B-ALG/tasks/c-board-algorithm-01/H3-GAPS.md",
+      "local_path": "task-packages/PKG-B-ALG/tasks/c-board-algorithm-01/H3-GAPS.md",
+      "bytes": 6937,
+      "sha256": "09c7167f6d0013d1379f33c43543e872f18d2bd9a25f4a3269538c19d24b54b8",
+      "evidence_grade": "reference_only_not_new_approval"
+    },
+    {
+      "source_commit": "7a17edd2b5408e10608d954f3e7fa11cb62fe34b",
+      "source_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/README.md",
+      "local_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/README.md",
+      "bytes": 7167,
+      "sha256": "1373a0fd41f56aae5524594b05ede8520b90d169133eeff3afb183c55d3a040b",
+      "evidence_grade": "software_candidate_gap_increment_limited_pass_only"
+    },
+    {
+      "source_commit": "7a17edd2b5408e10608d954f3e7fa11cb62fe34b",
+      "source_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/H3-ADMISSION.md",
+      "local_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/H3-ADMISSION.md",
+      "bytes": 3790,
+      "sha256": "ea93f900fdbe960deabd0c36a689e19d72e78ae16274dbba1ddd3c518c7d605d",
+      "evidence_grade": "software_candidate_gap_increment_limited_pass_only"
+    },
+    {
+      "source_commit": "7a17edd2b5408e10608d954f3e7fa11cb62fe34b",
+      "source_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/config.json",
+      "local_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/config.json",
+      "bytes": 2245,
+      "sha256": "57c950abc3253c963530a1387fb72f031e121afa5ed950427ace1a3c2fe59cb2",
+      "evidence_grade": "software_candidate_gap_increment_limited_pass_only"
+    },
+    {
+      "source_commit": "7a17edd2b5408e10608d954f3e7fa11cb62fe34b",
+      "source_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/source/fixed_golden.py",
+      "local_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/source/fixed_golden.py",
+      "bytes": 25864,
+      "sha256": "f6bb2bc41dee3f1e2e6d93176972d92db12d687978fd3a95a47e85b28f88a74a",
+      "evidence_grade": "software_candidate_gap_increment_limited_pass_only"
+    },
+    {
+      "source_commit": "7a17edd2b5408e10608d954f3e7fa11cb62fe34b",
+      "source_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/source/presence.py",
+      "local_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/source/presence.py",
+      "bytes": 1392,
+      "sha256": "ab207334e52c0c9b63742e98e36643990b3364f8820aa6a96df7a53d29da0c9e",
+      "evidence_grade": "software_candidate_gap_increment_limited_pass_only"
+    },
+    {
+      "source_commit": "7a17edd2b5408e10608d954f3e7fa11cb62fe34b",
+      "source_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/source/budget.py",
+      "local_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/source/budget.py",
+      "bytes": 4324,
+      "sha256": "5d68ffbd9891ebd71b3f024f6727171d2bed47a8732e813ca9608d060719c56a",
+      "evidence_grade": "software_candidate_gap_increment_limited_pass_only"
+    },
+    {
+      "source_commit": "7a17edd2b5408e10608d954f3e7fa11cb62fe34b",
+      "source_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/evidence/run05/golden/golden-stages.npz",
+      "local_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/evidence/run05/golden/golden-stages.npz",
+      "bytes": 110281,
+      "sha256": "66a1c9b5edd797c9c1474ce275c13065b89ac03eccd338dcb12713cf9292c19f",
+      "evidence_grade": "software_candidate_gap_increment_limited_pass_only"
+    },
+    {
+      "source_commit": "7a17edd2b5408e10608d954f3e7fa11cb62fe34b",
+      "source_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/evidence/run05/golden/golden-summary.json",
+      "local_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/evidence/run05/golden/golden-summary.json",
+      "bytes": 58995,
+      "sha256": "f848e2311bbc2333a892ac0d10bde4012403d0384a93765cb90ce6e87868aea9",
+      "evidence_grade": "software_candidate_gap_increment_limited_pass_only"
+    },
+    {
+      "source_commit": "7a17edd2b5408e10608d954f3e7fa11cb62fe34b",
+      "source_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/evidence/run05/golden-check.json",
+      "local_path": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/evidence/run05/golden-check.json",
+      "bytes": 6781,
+      "sha256": "6c98c6e8502e42dd43b32df5ae6b4946f1e3a197a943b4b8eabee2fbae436fb3",
+      "evidence_grade": "software_candidate_gap_increment_limited_pass_only"
+    },
+    {
+      "source_commit": "8f708e42caf32c1de6f30726298e3edf0e1970b6",
+      "source_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/background-target-stop-20260917/delivery-01/README.md",
+      "local_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/background-target-stop-20260917/delivery-01/README.md",
+      "bytes": 5339,
+      "sha256": "3e75ead7313e50d0d81f6c0bb25fabae6ca66aadab20e5b5a879cd9f8e829ca6",
+      "evidence_grade": "hardware_audio_diagnostic_no_ground_truth"
+    },
+    {
+      "source_commit": "8f708e42caf32c1de6f30726298e3edf0e1970b6",
+      "source_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/background-target-stop-20260917/delivery-01/c-scene-20260917-01/raw.bin",
+      "local_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/background-target-stop-20260917/delivery-01/c-scene-20260917-01/raw.bin",
+      "bytes": 9224000,
+      "sha256": "4bc12f0033e00508100ce5f70ed7bf2025236f3800ff14523feec8eacee37e83",
+      "evidence_grade": "hardware_audio_diagnostic_no_ground_truth"
+    },
+    {
+      "source_commit": "8f708e42caf32c1de6f30726298e3edf0e1970b6",
+      "source_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/background-target-stop-20260917/delivery-01/c-scene-20260917-01/samples.csv",
+      "local_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/background-target-stop-20260917/delivery-01/c-scene-20260917-01/samples.csv",
+      "bytes": 9408756,
+      "sha256": "60843531ea4ace3d977a2aa149fb3ccf4df4c41718f32bad285e3dd4fcc5e48d",
+      "evidence_grade": "hardware_audio_diagnostic_no_ground_truth"
+    },
+    {
+      "source_commit": "8f708e42caf32c1de6f30726298e3edf0e1970b6",
+      "source_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/background-target-stop-20260917/delivery-01/c-scene-20260917-01/metadata.json",
+      "local_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/background-target-stop-20260917/delivery-01/c-scene-20260917-01/metadata.json",
+      "bytes": 9145,
+      "sha256": "9189097c6dc503428d35f07fde65ff0bf443eace100e8a1508aecf688648fc14",
+      "evidence_grade": "hardware_audio_diagnostic_no_ground_truth"
+    }
+  ]
+}
