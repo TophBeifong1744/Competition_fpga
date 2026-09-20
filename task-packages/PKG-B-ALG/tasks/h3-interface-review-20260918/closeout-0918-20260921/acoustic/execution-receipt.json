@@ -1,0 +1,16 @@
+{
+  "commands": [
+    {
+      "argv": "python -B analyze_pairs.py --repo F:/NUEC/review-worktrees/algorithm-closeout-20260923 --out F:/NUEC/validation/b-0918-followup/pairs01",
+      "exit_code": 0,
+      "frames": 320,
+      "pairs": 1920
+    },
+    {
+      "argv": "python -B check_sign_invariance.py --input F:/NUEC/validation/b-0918-followup/pairs01 --out F:/NUEC/validation/b-0918-followup/sign01",
+      "exit_code": 0,
+      "frames": 298
+    }
+  ],
+  "note": "Execution receipt; raw terminal outputs are in conversation, structured results retained. No raw log claimed."
+}
