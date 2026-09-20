@@ -1,0 +1,70 @@
+{
+  "version": "h3-four-channel-candidate-0.1",
+  "evidence_level": "software_candidate_not_h3_pass",
+  "sample_rate_hz": 48000,
+  "channels": 4,
+  "channel_order": ["mic0", "mic1", "mic2", "mic3"],
+  "pcm": {
+    "container_bits": 32,
+    "effective_bits": 24,
+    "signed": true,
+    "alignment": "right_sign_extended",
+    "normalization_denominator": 8388608
+  },
+  "frame": {"length": 1024, "hop": 512, "window": "hann_u18f17_periodic_false"},
+  "geometry": {
+    "positions_m": [[0.0, 0.0, 0.0], [0.04, 0.0, 0.0], [0.04, 0.04, 0.0], [0.0, 0.04, 0.0]],
+    "coordinate_system": "x_toward_mic1_y_toward_mic3_z_up",
+    "direction": "array_to_source",
+    "azimuth_positive": "+x_to_+y_counterclockwise",
+    "sound_speed_m_s": 343
+  },
+  "band_bins_inclusive": [7, 85],
+  "relative_phat_mask": {"numerator": 1, "denominator": 50, "minimum_bins": 12},
+  "presence_gate": {
+    "frozen_before_label_scoring": true,
+    "rms_min_codes": 2048,
+    "peak_min_codes": 4096,
+    "minimum_active_channels": 3,
+    "reject_stream_error": true,
+    "reject_clip_flag": true,
+    "note": "format-scale engineering candidate; not fitted to a truth-labelled acoustic set"
+  },
+  "tracker": {
+    "allowed_azimuth_center_q8_deg": 0,
+    "allowed_half_angle_q8_deg": 7680,
+    "acquire_frames": 5,
+    "acquire_spread_q8_deg": 2048,
+    "track_step_q8_deg": 5120,
+    "hold_samples": 9600,
+    "max_input_gap_samples": 1440
+  },
+  "fixed_point": {
+    "rounding": "nearest_ties_to_even",
+    "custom_overflow": "saturate_and_count",
+    "vendor_fft_overflow": "invalidate_frame",
+    "pcm": "S24F23",
+    "hann": "U18F17",
+    "windowed": "S24F23",
+    "forward_fft_internal": "S29F27",
+    "forward_fft_output": "S29F27_total_stage_shift_10",
+    "phat_input_adapter": "S25F23_rne_from_S29F27",
+    "cross": "S51F46",
+    "phat": "S25F23",
+    "ifft": "S25F23_total_stage_shift_10",
+    "lag": "S18F12",
+    "direction_xy": "S22F20",
+    "azimuth": "S18F8_degrees",
+    "das_weight": "U13F12",
+    "das_accumulator": "S39F12",
+    "das_output": "S24F0"
+  },
+  "audio": {
+    "reference_channel": 0,
+    "manual_azimuth_q8_deg": 0,
+    "common_availability_delay_samples": 8,
+    "fade_samples": 480,
+    "raw_gain": 1,
+    "preview_common_gain": 32
+  }
+}

@@ -1,0 +1,44 @@
+test_negative_saturation (test_h3_candidate.ArithmeticTests.test_negative_saturation) ... ok
+test_positive_saturation (test_h3_candidate.ArithmeticTests.test_positive_saturation) ... ok
+test_rne_half_even_negative (test_h3_candidate.ArithmeticTests.test_rne_half_even_negative) ... ok
+test_rne_half_even_positive (test_h3_candidate.ArithmeticTests.test_rne_half_even_positive) ... ok
+test_rne_half_odd_negative (test_h3_candidate.ArithmeticTests.test_rne_half_odd_negative) ... ok
+test_rne_half_odd_positive (test_h3_candidate.ArithmeticTests.test_rne_half_odd_positive) ... ok
+test_shift_exact (test_h3_candidate.ArithmeticTests.test_shift_exact) ... ok
+test_signed24_endpoints_window (test_h3_candidate.ArithmeticTests.test_signed24_endpoints_window) ... ok
+test_budget_is_four_channel (test_h3_candidate.ContractBudgetTests.test_budget_is_four_channel) ... ok
+test_config_contract (test_h3_candidate.ContractBudgetTests.test_config_contract) ... ok
+test_discontinuity_audio_array_mutations_are_rejected (test_h3_candidate.FrozenCheckerTests.test_discontinuity_audio_array_mutations_are_rejected) ... ok
+test_lag_doa_tracker_event_mutations_are_rejected (test_h3_candidate.FrozenCheckerTests.test_lag_doa_tracker_event_mutations_are_rejected) ... ok
+test_interpolated_edge_and_diagonal_both_signs (test_h3_candidate.LagDoaTests.test_interpolated_edge_and_diagonal_both_signs) ... ok
+test_invalid_pairs (test_h3_candidate.LagDoaTests.test_invalid_pairs) ... ok
+test_lag_negative (test_h3_candidate.LagDoaTests.test_lag_negative) ... ok
+test_lag_positive (test_h3_candidate.LagDoaTests.test_lag_positive) ... ok
+test_pair_specific_limits_are_different (test_h3_candidate.LagDoaTests.test_pair_specific_limits_are_different) ... ok
+test_physical_q12_edge_and_diagonal_boundaries (test_h3_candidate.LagDoaTests.test_physical_q12_edge_and_diagonal_boundaries) ... ok
+test_positive_x_geometry (test_h3_candidate.LagDoaTests.test_positive_x_geometry) ... ok
+test_range_boundary_reject (test_h3_candidate.LagDoaTests.test_range_boundary_reject) ... ok
+test_rank_deficient (test_h3_candidate.LagDoaTests.test_rank_deficient) ... ok
+test_allowed_sector_is_not_presence (test_h3_candidate.PresenceTests.test_allowed_sector_is_not_presence) ... ok
+test_clip_rejected (test_h3_candidate.PresenceTests.test_clip_rejected) ... ok
+test_error_rejected (test_h3_candidate.PresenceTests.test_error_rejected) ... ok
+test_low_energy_rejected (test_h3_candidate.PresenceTests.test_low_energy_rejected) ... ok
+test_three_channels_accept (test_h3_candidate.PresenceTests.test_three_channels_accept) ... ok
+test_zero_rejected (test_h3_candidate.PresenceTests.test_zero_rejected) ... ok
+test_das_constant (test_h3_candidate.TrackerAndAudioTests.test_das_constant) ... ok
+test_das_zero (test_h3_candidate.TrackerAndAudioTests.test_das_zero) ... ok
+test_direction_jump_holds (test_h3_candidate.TrackerAndAudioTests.test_direction_jump_holds) ... ok
+test_direction_switch_within_step (test_h3_candidate.TrackerAndAudioTests.test_direction_switch_within_step) ... ok
+test_dropout_resets (test_h3_candidate.TrackerAndAudioTests.test_dropout_resets) ... ok
+test_five_frame_acquisition (test_h3_candidate.TrackerAndAudioTests.test_five_frame_acquisition) ... ok
+test_fresh_switch_has_finite_fade (test_h3_candidate.TrackerAndAudioTests.test_fresh_switch_has_finite_fade) ... ok
+test_gap_enters_automatic_control (test_h3_candidate.TrackerAndAudioTests.test_gap_enters_automatic_control) ... ok
+test_hold_expiry (test_h3_candidate.TrackerAndAudioTests.test_hold_expiry) ... ok
+test_hold_expiry_and_discontinuity (test_h3_candidate.TrackerAndAudioTests.test_hold_expiry_and_discontinuity) ... ok
+test_manual_auto_identity_guard (test_h3_candidate.TrackerAndAudioTests.test_manual_auto_identity_guard) ... ok
+test_no_future_direction_backfilled (test_h3_candidate.TrackerAndAudioTests.test_no_future_direction_backfilled) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 0.407s
+
+OK

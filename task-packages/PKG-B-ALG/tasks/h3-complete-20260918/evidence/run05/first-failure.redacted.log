@@ -1,0 +1,15 @@
+test_gap_enters_automatic_control (test_h3_candidate.TrackerAndAudioTests.test_gap_enters_automatic_control) ... ERROR
+
+======================================================================
+ERROR: test_gap_enters_automatic_control (test_h3_candidate.TrackerAndAudioTests.test_gap_enters_automatic_control)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPO>\task-packages\PKG-B-ALG\tasks\h3-complete-20260918\tests\test_h3_candidate.py", line 132, in test_gap_enters_automatic_control
+    gap = next(row for row in self.controls if row["ready_sample"] == 4513)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+----------------------------------------------------------------------
+Ran 1 test in 0.141s
+
+FAILED (errors=1)

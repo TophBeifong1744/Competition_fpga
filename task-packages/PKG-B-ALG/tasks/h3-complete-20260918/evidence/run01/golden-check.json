@@ -1,0 +1,230 @@
+{
+  "status": "PASS_ALL_STAGE_ARRAYS_EXACT",
+  "array_count": 11,
+  "arrays": [
+    {
+      "name": "automatic",
+      "shape": [
+        1024
+      ],
+      "equal": true,
+      "expected_sha256": "1681a1f5680c31779a04da69047db8a323e29fe857ebe9c6d54ec026fa3ab53b",
+      "actual_sha256": "1681a1f5680c31779a04da69047db8a323e29fe857ebe9c6d54ec026fa3ab53b"
+    },
+    {
+      "name": "fft25_half",
+      "shape": [
+        4,
+        513,
+        2
+      ],
+      "equal": true,
+      "expected_sha256": "4c5c79d62b28205766c0d2ecdf9bf728bbe3b192f9e270dd1891f78775840db6",
+      "actual_sha256": "4c5c79d62b28205766c0d2ecdf9bf728bbe3b192f9e270dd1891f78775840db6"
+    },
+    {
+      "name": "fft29",
+      "shape": [
+        4,
+        1024,
+        2
+      ],
+      "equal": true,
+      "expected_sha256": "a0c04f4acc6bbfcb8507aa9ebaef44d32018ad7198433463de6de3df5237213a",
+      "actual_sha256": "a0c04f4acc6bbfcb8507aa9ebaef44d32018ad7198433463de6de3df5237213a"
+    },
+    {
+      "name": "hann",
+      "shape": [
+        1024
+      ],
+      "equal": true,
+      "expected_sha256": "6735b0182229e76a47497382e6e9025f90bcb1c4a64bf3ae21b1eb6823bb6372",
+      "actual_sha256": "6735b0182229e76a47497382e6e9025f90bcb1c4a64bf3ae21b1eb6823bb6372"
+    },
+    {
+      "name": "ifft_real",
+      "shape": [
+        6,
+        1024
+      ],
+      "equal": true,
+      "expected_sha256": "1db2407ae37fefe29376853b77140fc2e56c6df64b40d61e526d2285818036cf",
+      "actual_sha256": "1db2407ae37fefe29376853b77140fc2e56c6df64b40d61e526d2285818036cf"
+    },
+    {
+      "name": "manual",
+      "shape": [
+        1024
+      ],
+      "equal": true,
+      "expected_sha256": "1681a1f5680c31779a04da69047db8a323e29fe857ebe9c6d54ec026fa3ab53b",
+      "actual_sha256": "1681a1f5680c31779a04da69047db8a323e29fe857ebe9c6d54ec026fa3ab53b"
+    },
+    {
+      "name": "pcm",
+      "shape": [
+        4,
+        1024
+      ],
+      "equal": true,
+      "expected_sha256": "80290f1fb15e5e16e8c89d760fcfada0a1acca46ea4524bdb15898484dd39547",
+      "actual_sha256": "80290f1fb15e5e16e8c89d760fcfada0a1acca46ea4524bdb15898484dd39547"
+    },
+    {
+      "name": "phat",
+      "shape": [
+        6,
+        513,
+        2
+      ],
+      "equal": true,
+      "expected_sha256": "4fd9b3bf05064cff6b4ea13c0dad83a36328771bd35d8968e6b279d2a96c4c06",
+      "actual_sha256": "4fd9b3bf05064cff6b4ea13c0dad83a36328771bd35d8968e6b279d2a96c4c06"
+    },
+    {
+      "name": "phat_mask",
+      "shape": [
+        6,
+        513
+      ],
+      "equal": true,
+      "expected_sha256": "4fa45bfdc5edb9ea0af1abae345069f111dea6b143bcad0ec4d19dbf83224006",
+      "actual_sha256": "4fa45bfdc5edb9ea0af1abae345069f111dea6b143bcad0ec4d19dbf83224006"
+    },
+    {
+      "name": "single",
+      "shape": [
+        1024
+      ],
+      "equal": true,
+      "expected_sha256": "02c8bf312a7b8bb85a74b9b81442d72ca6ac02a3baa9851e79ad5db5469f807c",
+      "actual_sha256": "02c8bf312a7b8bb85a74b9b81442d72ca6ac02a3baa9851e79ad5db5469f807c"
+    },
+    {
+      "name": "windowed",
+      "shape": [
+        4,
+        1024
+      ],
+      "equal": true,
+      "expected_sha256": "df7622949c63d2f26fc09b4c0b91b36b4f9c19e55cd8541faca3d9c3188e6bb2",
+      "actual_sha256": "df7622949c63d2f26fc09b4c0b91b36b4f9c19e55cd8541faca3d9c3188e6bb2"
+    }
+  ],
+  "chain_discrete": {
+    "pairs": [
+      {
+        "valid": false,
+        "reason": "TAU_BOUND",
+        "peak": -6,
+        "delta_q12": 12,
+        "tau_q12": -24564,
+        "peak_code": 1146694,
+        "separated_margin_q15": 6066
+      },
+      {
+        "valid": true,
+        "reason": "VALID",
+        "peak": -6,
+        "delta_q12": 12,
+        "tau_q12": -24564,
+        "peak_code": 1146694,
+        "separated_margin_q15": 6066
+      },
+      {
+        "valid": true,
+        "reason": "VALID",
+        "peak": 0,
+        "delta_q12": 0,
+        "tau_q12": 0,
+        "peak_code": 1146880,
+        "separated_margin_q15": 6081
+      },
+      {
+        "valid": true,
+        "reason": "VALID",
+        "peak": 0,
+        "delta_q12": 0,
+        "tau_q12": 0,
+        "peak_code": 1146880,
+        "separated_margin_q15": 6081
+      },
+      {
+        "valid": true,
+        "reason": "VALID",
+        "peak": 6,
+        "delta_q12": -12,
+        "tau_q12": 24564,
+        "peak_code": 1146694,
+        "separated_margin_q15": 6066
+      },
+      {
+        "valid": false,
+        "reason": "TAU_BOUND",
+        "peak": 6,
+        "delta_q12": -12,
+        "tau_q12": 24564,
+        "peak_code": 1146694,
+        "separated_margin_q15": 6066
+      }
+    ],
+    "doa": {
+      "valid": true,
+      "reason": "VALID",
+      "valid_pairs": 4,
+      "ux_q20": -1123394,
+      "uy_q20": 0,
+      "residual_sum_square_q24": 0,
+      "norm_square_q40": 1262014079236,
+      "azimuth_q8_deg": 46080
+    },
+    "tracker": [
+      {
+        "state": "SEARCH",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "candidate_rejected",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      },
+      {
+        "state": "SEARCH",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "candidate_rejected",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      },
+      {
+        "state": "SEARCH",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "candidate_rejected",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      },
+      {
+        "state": "SEARCH",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "candidate_rejected",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      },
+      {
+        "state": "SEARCH",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "candidate_rejected",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      }
+    ]
+  }
+}

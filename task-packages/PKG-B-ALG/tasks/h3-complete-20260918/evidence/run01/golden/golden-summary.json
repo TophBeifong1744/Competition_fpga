@@ -1,0 +1,680 @@
+{
+  "status": "PASS_PORTABLE_SOFTWARE_INTEGER_GOLDEN_ONLY",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "stage_archive": {
+    "file": "golden-stages.npz",
+    "sha256": "b8733ee94936d1c7c4a69f477e357a26740615d653bd534be9b4426f145b277d",
+    "arrays": {
+      "pcm": {
+        "shape": [
+          4,
+          1024
+        ],
+        "dtype": "int64",
+        "sha256": "80290f1fb15e5e16e8c89d760fcfada0a1acca46ea4524bdb15898484dd39547"
+      },
+      "hann": {
+        "shape": [
+          1024
+        ],
+        "dtype": "int64",
+        "sha256": "6735b0182229e76a47497382e6e9025f90bcb1c4a64bf3ae21b1eb6823bb6372"
+      },
+      "windowed": {
+        "shape": [
+          4,
+          1024
+        ],
+        "dtype": "int64",
+        "sha256": "df7622949c63d2f26fc09b4c0b91b36b4f9c19e55cd8541faca3d9c3188e6bb2"
+      },
+      "fft29": {
+        "shape": [
+          4,
+          1024,
+          2
+        ],
+        "dtype": "int64",
+        "sha256": "a0c04f4acc6bbfcb8507aa9ebaef44d32018ad7198433463de6de3df5237213a"
+      },
+      "fft25_half": {
+        "shape": [
+          4,
+          513,
+          2
+        ],
+        "dtype": "int64",
+        "sha256": "4c5c79d62b28205766c0d2ecdf9bf728bbe3b192f9e270dd1891f78775840db6"
+      },
+      "phat": {
+        "shape": [
+          6,
+          513,
+          2
+        ],
+        "dtype": "int64",
+        "sha256": "4fd9b3bf05064cff6b4ea13c0dad83a36328771bd35d8968e6b279d2a96c4c06"
+      },
+      "phat_mask": {
+        "shape": [
+          6,
+          513
+        ],
+        "dtype": "uint8",
+        "sha256": "4fa45bfdc5edb9ea0af1abae345069f111dea6b143bcad0ec4d19dbf83224006"
+      },
+      "ifft_real": {
+        "shape": [
+          6,
+          1024
+        ],
+        "dtype": "int64",
+        "sha256": "1db2407ae37fefe29376853b77140fc2e56c6df64b40d61e526d2285818036cf"
+      },
+      "single": {
+        "shape": [
+          1024
+        ],
+        "dtype": "int64",
+        "sha256": "02c8bf312a7b8bb85a74b9b81442d72ca6ac02a3baa9851e79ad5db5469f807c"
+      },
+      "manual": {
+        "shape": [
+          1024
+        ],
+        "dtype": "int64",
+        "sha256": "1681a1f5680c31779a04da69047db8a323e29fe857ebe9c6d54ec026fa3ab53b"
+      },
+      "automatic": {
+        "shape": [
+          1024
+        ],
+        "dtype": "int64",
+        "sha256": "1681a1f5680c31779a04da69047db8a323e29fe857ebe9c6d54ec026fa3ab53b"
+      }
+    }
+  },
+  "chain": {
+    "window_overflow": 0,
+    "adapter_overflow": 0,
+    "fft_flags": [
+      {
+        "overflow_count": 0,
+        "stage_sha256": [
+          "cb4abd45aba1664482de52239b68d814364c2772daec67faf0baeaf56e692dee",
+          "2c51699d99f58cbf350d6007ce0d46197869cf4ab6593601c616f23a462be395",
+          "e1e7e9b94c5a8c9b7f50534c175d03b68e541d0c2daae33cde347b3c3e8373cf",
+          "e455071d861c203c0d5ef7840898d0a4396ee68c7912cbe599bd79c3d8960340",
+          "e41637886369c2d78cabfa0b90b89db2e0eff7dfcf0db24d97b71e5cd35bb9be",
+          "fece2cbbcaf796e2fbb93ea2950ebd57bc637492eb42048afef200b0257b80ae",
+          "75fafe63249d0a1716dab91958f272e67bd410b8a6fd4402e8a17f3f1556b9b0",
+          "7190517da1330483aa6a755f452631d1d4dbd03bc5eb35f77d12578a421daf9c",
+          "ab68139ba2b2c2a018d7cc01e04812b67345726317bb7ad9d6cb0505c7f9fc6f",
+          "bf0b5483cfb8ba7ea1151de322aeb1cb11bdad3a1513de4da48e7f4e814734e8"
+        ]
+      },
+      {
+        "overflow_count": 0,
+        "stage_sha256": [
+          "351f57b3e938c61c5e6be4cb3b184b232f7da50791e9bc0e453a129285229de1",
+          "474d017c3d90d23116da6d6a9591e1ab5634dc58f6f7d3f54cdd660f08721b0c",
+          "10ae218c39f1b968d0aad6924b3c26fc4687fa138375204bba8bc6737eb2fe85",
+          "2d6d351d36160d7cb9f03507f0059269ab6758915dc30487f9576efca85c6ed8",
+          "66c75bb9c2d17da2592a3bd5fb036069b1465b2ac50b9bb7383e3f33b50098d6",
+          "c8f229cad32c9054f3c0d1894c68dbdcaf25cadd7b698a7053ef53413d0d6ca1",
+          "3944bdf04d17941265c2613002d05bf8ede0f09f2439902cbf05ed3adf3760fa",
+          "4998daf7027ce5886a499a5eba2cc9ac566ca90163ea439c7f2630205333d6f0",
+          "9acd2d5bbe92be141cab1683cb48e0a069e1cfd26784315fd165e1255e9c266b",
+          "7ac2feac444e70d7d5bb97942d7c56ea4af02801835fb05d5317ad6358c35a21"
+        ]
+      },
+      {
+        "overflow_count": 0,
+        "stage_sha256": [
+          "351f57b3e938c61c5e6be4cb3b184b232f7da50791e9bc0e453a129285229de1",
+          "474d017c3d90d23116da6d6a9591e1ab5634dc58f6f7d3f54cdd660f08721b0c",
+          "10ae218c39f1b968d0aad6924b3c26fc4687fa138375204bba8bc6737eb2fe85",
+          "2d6d351d36160d7cb9f03507f0059269ab6758915dc30487f9576efca85c6ed8",
+          "66c75bb9c2d17da2592a3bd5fb036069b1465b2ac50b9bb7383e3f33b50098d6",
+          "c8f229cad32c9054f3c0d1894c68dbdcaf25cadd7b698a7053ef53413d0d6ca1",
+          "3944bdf04d17941265c2613002d05bf8ede0f09f2439902cbf05ed3adf3760fa",
+          "4998daf7027ce5886a499a5eba2cc9ac566ca90163ea439c7f2630205333d6f0",
+          "9acd2d5bbe92be141cab1683cb48e0a069e1cfd26784315fd165e1255e9c266b",
+          "7ac2feac444e70d7d5bb97942d7c56ea4af02801835fb05d5317ad6358c35a21"
+        ]
+      },
+      {
+        "overflow_count": 0,
+        "stage_sha256": [
+          "cb4abd45aba1664482de52239b68d814364c2772daec67faf0baeaf56e692dee",
+          "2c51699d99f58cbf350d6007ce0d46197869cf4ab6593601c616f23a462be395",
+          "e1e7e9b94c5a8c9b7f50534c175d03b68e541d0c2daae33cde347b3c3e8373cf",
+          "e455071d861c203c0d5ef7840898d0a4396ee68c7912cbe599bd79c3d8960340",
+          "e41637886369c2d78cabfa0b90b89db2e0eff7dfcf0db24d97b71e5cd35bb9be",
+          "fece2cbbcaf796e2fbb93ea2950ebd57bc637492eb42048afef200b0257b80ae",
+          "75fafe63249d0a1716dab91958f272e67bd410b8a6fd4402e8a17f3f1556b9b0",
+          "7190517da1330483aa6a755f452631d1d4dbd03bc5eb35f77d12578a421daf9c",
+          "ab68139ba2b2c2a018d7cc01e04812b67345726317bb7ad9d6cb0505c7f9fc6f",
+          "bf0b5483cfb8ba7ea1151de322aeb1cb11bdad3a1513de4da48e7f4e814734e8"
+        ]
+      }
+    ],
+    "ifft_flags": [
+      {
+        "overflow_count": 0,
+        "stage_sha256": [
+          "bde438c4373b25b6cb3134c6cdcfdebc5000ee474fdb62f91c20cc10b6abb1a1",
+          "18befce22e743abec17da384c78ef3d95829f64cd03e51d291e3f2e2a130ec73",
+          "c13b2a35edae3cb1e86fad6502a4369904cb566ff87c6a057e6519e809cadf71",
+          "bce239b7e7a38112f059b7aa4713059c2557aa615ea3c0044a1661f0deabb4ad",
+          "8dab1e1afdd8f88737b2a3a76865cb783755a2197bb199e4391fc46bf5e4e125",
+          "cf1572cc520e9a99d7a3423dce9007d462be471bb68756cc8660737defb79a65",
+          "6754d1eb04132d07e7acec929c133d807be6935b93b4489d8883f3614c490adb",
+          "c60628806a52255b4eb96196c7e128f17490e7e738782a17ccdfe2c965ea219f",
+          "0092c7efc3433fec91e7d836bc371c1aa096f4d6826be825b90057c7f892cfb2",
+          "104597384ec49b2d9ef27a41cf06353f7dcc1c6f2c9c8b666f799629dd283f4f"
+        ]
+      },
+      {
+        "overflow_count": 0,
+        "stage_sha256": [
+          "bde438c4373b25b6cb3134c6cdcfdebc5000ee474fdb62f91c20cc10b6abb1a1",
+          "18befce22e743abec17da384c78ef3d95829f64cd03e51d291e3f2e2a130ec73",
+          "c13b2a35edae3cb1e86fad6502a4369904cb566ff87c6a057e6519e809cadf71",
+          "bce239b7e7a38112f059b7aa4713059c2557aa615ea3c0044a1661f0deabb4ad",
+          "8dab1e1afdd8f88737b2a3a76865cb783755a2197bb199e4391fc46bf5e4e125",
+          "cf1572cc520e9a99d7a3423dce9007d462be471bb68756cc8660737defb79a65",
+          "6754d1eb04132d07e7acec929c133d807be6935b93b4489d8883f3614c490adb",
+          "c60628806a52255b4eb96196c7e128f17490e7e738782a17ccdfe2c965ea219f",
+          "0092c7efc3433fec91e7d836bc371c1aa096f4d6826be825b90057c7f892cfb2",
+          "104597384ec49b2d9ef27a41cf06353f7dcc1c6f2c9c8b666f799629dd283f4f"
+        ]
+      },
+      {
+        "overflow_count": 0,
+        "stage_sha256": [
+          "0503392803b319f8b217d358548ee88d6233becf68f256aab722995fb1e18b9d",
+          "a9ce8427485c1d8b6a828f3ccc07ea0462aa350874027d3a8818764de56e7fc7",
+          "b11d8d3fc69ff52515b4947abdbecf572047ed98004895de73dd9b12165ecd04",
+          "89da43b2b0542b8022f5d83edec5e83d9ee57f2e2f04682ec9c8665fe0289842",
+          "0bf55e50cd8d62d07f3a97046ad1126caa868b014fae5a29ff11a66cfe6a9034",
+          "4e2e31af6cbb78824e8bbbf41414bc084c6c90f3f2632360b82c45a621a33860",
+          "0eab33fb9f78b704dda5bc431958af91525e671c72c2a60b9d36da89eee118c4",
+          "9e428c111c5788974a006386ff24b5a0ca7f08bd8ecc61a3ace90985b234a92a",
+          "752a1b2715499867e1042e1dead8b7ff927360e7b0aebd1cc91cbaa2a90af9b4",
+          "96d2f709f6e84f510c8df0a6c85a8a108e3f5172ca8fac3b03ad54cedd7ffbd3"
+        ]
+      },
+      {
+        "overflow_count": 0,
+        "stage_sha256": [
+          "0503392803b319f8b217d358548ee88d6233becf68f256aab722995fb1e18b9d",
+          "a9ce8427485c1d8b6a828f3ccc07ea0462aa350874027d3a8818764de56e7fc7",
+          "b11d8d3fc69ff52515b4947abdbecf572047ed98004895de73dd9b12165ecd04",
+          "89da43b2b0542b8022f5d83edec5e83d9ee57f2e2f04682ec9c8665fe0289842",
+          "0bf55e50cd8d62d07f3a97046ad1126caa868b014fae5a29ff11a66cfe6a9034",
+          "4e2e31af6cbb78824e8bbbf41414bc084c6c90f3f2632360b82c45a621a33860",
+          "0eab33fb9f78b704dda5bc431958af91525e671c72c2a60b9d36da89eee118c4",
+          "9e428c111c5788974a006386ff24b5a0ca7f08bd8ecc61a3ace90985b234a92a",
+          "752a1b2715499867e1042e1dead8b7ff927360e7b0aebd1cc91cbaa2a90af9b4",
+          "96d2f709f6e84f510c8df0a6c85a8a108e3f5172ca8fac3b03ad54cedd7ffbd3"
+        ]
+      },
+      {
+        "overflow_count": 0,
+        "stage_sha256": [
+          "44027548b06af181245f9f1ee056dbf11ab77ec4e9c6dd35618553063764c713",
+          "6619bbeab764026f12e81b00eda356d7e739f51dcda7e7b8fa5a9050d5ad039b",
+          "a90219d0ceef531cae1d5e90f2a959c1bb50141f1ad05bb7e60ac6b30aba4fe2",
+          "c61f05fa5b2215e95377be89621e14e345d90a5ef0f9f875e0a799eca97eb29b",
+          "638489c540df9f7cc8af2fbd2eb47cd3b7ed0cd2b129865c3a67cf664a2a5f1c",
+          "54af62f61f279324f6a860e6e3f05205ab8b00a50f75d1c238bad9b166ded0f5",
+          "ac043bc266e53f0342debdbb67e65eda6bf6d3b9f4b489e54fe3dca9e049c124",
+          "14eab459824dff1f506693386d29f1b048b9c48775789d40b3bc4bd17be49cba",
+          "402022a9b530594dc638bb6fe84271461f0107eb04074fb4c8206104c9f635b8",
+          "2be323c713965992b536b7b16758dea1b3a17c83c9368575e5b40be3beb00752"
+        ]
+      },
+      {
+        "overflow_count": 0,
+        "stage_sha256": [
+          "44027548b06af181245f9f1ee056dbf11ab77ec4e9c6dd35618553063764c713",
+          "6619bbeab764026f12e81b00eda356d7e739f51dcda7e7b8fa5a9050d5ad039b",
+          "a90219d0ceef531cae1d5e90f2a959c1bb50141f1ad05bb7e60ac6b30aba4fe2",
+          "c61f05fa5b2215e95377be89621e14e345d90a5ef0f9f875e0a799eca97eb29b",
+          "638489c540df9f7cc8af2fbd2eb47cd3b7ed0cd2b129865c3a67cf664a2a5f1c",
+          "54af62f61f279324f6a860e6e3f05205ab8b00a50f75d1c238bad9b166ded0f5",
+          "ac043bc266e53f0342debdbb67e65eda6bf6d3b9f4b489e54fe3dca9e049c124",
+          "14eab459824dff1f506693386d29f1b048b9c48775789d40b3bc4bd17be49cba",
+          "402022a9b530594dc638bb6fe84271461f0107eb04074fb4c8206104c9f635b8",
+          "2be323c713965992b536b7b16758dea1b3a17c83c9368575e5b40be3beb00752"
+        ]
+      }
+    ],
+    "pairs": [
+      {
+        "valid": false,
+        "reason": "TAU_BOUND",
+        "peak": -6,
+        "delta_q12": 12,
+        "tau_q12": -24564,
+        "peak_code": 1146694,
+        "separated_margin_q15": 6066
+      },
+      {
+        "valid": true,
+        "reason": "VALID",
+        "peak": -6,
+        "delta_q12": 12,
+        "tau_q12": -24564,
+        "peak_code": 1146694,
+        "separated_margin_q15": 6066
+      },
+      {
+        "valid": true,
+        "reason": "VALID",
+        "peak": 0,
+        "delta_q12": 0,
+        "tau_q12": 0,
+        "peak_code": 1146880,
+        "separated_margin_q15": 6081
+      },
+      {
+        "valid": true,
+        "reason": "VALID",
+        "peak": 0,
+        "delta_q12": 0,
+        "tau_q12": 0,
+        "peak_code": 1146880,
+        "separated_margin_q15": 6081
+      },
+      {
+        "valid": true,
+        "reason": "VALID",
+        "peak": 6,
+        "delta_q12": -12,
+        "tau_q12": 24564,
+        "peak_code": 1146694,
+        "separated_margin_q15": 6066
+      },
+      {
+        "valid": false,
+        "reason": "TAU_BOUND",
+        "peak": 6,
+        "delta_q12": -12,
+        "tau_q12": 24564,
+        "peak_code": 1146694,
+        "separated_margin_q15": 6066
+      }
+    ],
+    "doa": {
+      "valid": true,
+      "reason": "VALID",
+      "valid_pairs": 4,
+      "ux_q20": -1123394,
+      "uy_q20": 0,
+      "residual_sum_square_q24": 0,
+      "norm_square_q40": 1262014079236,
+      "azimuth_q8_deg": 46080
+    },
+    "tracker": [
+      {
+        "state": "SEARCH",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "candidate_rejected",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      },
+      {
+        "state": "SEARCH",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "candidate_rejected",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      },
+      {
+        "state": "SEARCH",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "candidate_rejected",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      },
+      {
+        "state": "SEARCH",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "candidate_rejected",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      },
+      {
+        "state": "SEARCH",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "candidate_rejected",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      }
+    ],
+    "manual": {
+      "saturation_count": 0,
+      "delays_q12": [
+        0,
+        22928,
+        22928,
+        0
+      ]
+    },
+    "automatic": {
+      "saturation_count": 0,
+      "delays_q12": [
+        0,
+        22928,
+        22928,
+        0
+      ]
+    },
+    "stage_shapes": {
+      "pcm": [
+        4,
+        1024
+      ],
+      "hann": [
+        1024
+      ],
+      "windowed": [
+        4,
+        1024
+      ],
+      "fft29": [
+        4,
+        1024,
+        2
+      ],
+      "fft25_half": [
+        4,
+        513,
+        2
+      ],
+      "phat": [
+        6,
+        513,
+        2
+      ],
+      "phat_mask": [
+        6,
+        513
+      ],
+      "ifft_real": [
+        6,
+        1024
+      ],
+      "single": [
+        1024
+      ],
+      "manual": [
+        1024
+      ],
+      "automatic": [
+        1024
+      ]
+    }
+  },
+  "boundary_vectors": {
+    "rounding": {
+      "positive_half_even": 2,
+      "positive_half_odd": 4,
+      "negative_half_even": -2,
+      "negative_half_odd": -4
+    },
+    "saturation": {
+      "positive": [
+        8388607,
+        true
+      ],
+      "negative": [
+        -8388608,
+        true
+      ]
+    },
+    "presence": {
+      "zero": {
+        "present": false,
+        "reason": "LOW_ENERGY",
+        "active_channels": 0,
+        "active_mask": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "rms_codes_floor": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "peak_abs_codes": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stream_error": false,
+        "clip_flag": false
+      },
+      "low": {
+        "present": false,
+        "reason": "LOW_ENERGY",
+        "active_channels": 0,
+        "active_mask": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "rms_codes_floor": [
+          2047,
+          2047,
+          2047,
+          2047
+        ],
+        "peak_abs_codes": [
+          2047,
+          2047,
+          2047,
+          2047
+        ],
+        "stream_error": false,
+        "clip_flag": false
+      },
+      "positive_endpoint": {
+        "present": true,
+        "reason": "PRESENT",
+        "active_channels": 4,
+        "active_mask": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "rms_codes_floor": [
+          8388607,
+          8388607,
+          8388607,
+          8388607
+        ],
+        "peak_abs_codes": [
+          8388607,
+          8388607,
+          8388607,
+          8388607
+        ],
+        "stream_error": false,
+        "clip_flag": false
+      },
+      "negative_endpoint": {
+        "present": true,
+        "reason": "PRESENT",
+        "active_channels": 4,
+        "active_mask": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "rms_codes_floor": [
+          8388608,
+          8388608,
+          8388608,
+          8388608
+        ],
+        "peak_abs_codes": [
+          8388608,
+          8388608,
+          8388608,
+          8388608
+        ],
+        "stream_error": false,
+        "clip_flag": false
+      },
+      "stream_error": {
+        "present": false,
+        "reason": "STREAM_ERROR",
+        "active_channels": 4,
+        "active_mask": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "rms_codes_floor": [
+          5000,
+          5000,
+          5000,
+          5000
+        ],
+        "peak_abs_codes": [
+          5000,
+          5000,
+          5000,
+          5000
+        ],
+        "stream_error": true,
+        "clip_flag": false
+      }
+    },
+    "doa": {
+      "zero_norm": {
+        "valid": false,
+        "reason": "GEOMETRY_REJECT",
+        "valid_pairs": 6,
+        "ux_q20": 0,
+        "uy_q20": 0,
+        "residual_sum_square_q24": 0,
+        "norm_square_q40": 0,
+        "azimuth_q8_deg": null
+      },
+      "rank_deficient": {
+        "valid": false,
+        "reason": "GEOMETRY_REJECT",
+        "valid_pairs": 3,
+        "ux_q20": 0,
+        "uy_q20": 0,
+        "residual_sum_square_q24": 0,
+        "norm_square_q40": 0,
+        "azimuth_q8_deg": null
+      }
+    },
+    "tracker": [
+      {
+        "state": "ACQUIRE",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "acquiring",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      },
+      {
+        "state": "ACQUIRE",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "acquiring",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      },
+      {
+        "state": "ACQUIRE",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "acquiring",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      },
+      {
+        "state": "ACQUIRE",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "acquiring",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      },
+      {
+        "state": "LOCKED",
+        "fresh_valid": true,
+        "angle_q8_deg": 0,
+        "display_angle_q8_deg": 0,
+        "reason": "acquired",
+        "last_fresh_sample": 3072,
+        "valid_through_sample": 12672
+      },
+      {
+        "state": "LOCKED",
+        "fresh_valid": true,
+        "angle_q8_deg": 4864,
+        "display_angle_q8_deg": 4864,
+        "reason": "track_update",
+        "last_fresh_sample": 3584,
+        "valid_through_sample": 13184
+      },
+      {
+        "state": "SEARCH",
+        "fresh_valid": false,
+        "angle_q8_deg": null,
+        "display_angle_q8_deg": null,
+        "reason": "candidate_rejected",
+        "last_fresh_sample": null,
+        "valid_through_sample": null
+      }
+    ],
+    "lag_bounds_q12": [
+      22928,
+      32425,
+      22928,
+      22928,
+      32425,
+      22928
+    ]
+  },
+  "limits": [
+    "Portable integer model is not an AMD FFT bit-exact replacement.",
+    "Synthetic vectors verify arithmetic/control coverage, not acoustic accuracy.",
+    "RTL, integrated timing, real-time audio output and H3 acceptance are NOT_RUN."
+  ]
+}
