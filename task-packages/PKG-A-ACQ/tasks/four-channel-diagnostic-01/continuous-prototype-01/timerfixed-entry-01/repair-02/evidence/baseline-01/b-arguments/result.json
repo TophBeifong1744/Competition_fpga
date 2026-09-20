@@ -1,0 +1,144 @@
+{
+  "scope": "command parsing/comparison only; no compilation, linking, hardware, or source edits",
+  "command_contract_sha256": "3d6317b87b1620b76f28506ab9b8fa4d3f4757035370aff2ac79850bb9ab4791",
+  "cases": [
+    {
+      "name": "-DSDT vs -Dsdt",
+      "accepted_as_equal": false,
+      "expected_equal": false
+    },
+    {
+      "name": "-U__clang__ vs -u__clang__",
+      "accepted_as_equal": false,
+      "expected_equal": false
+    },
+    {
+      "name": "-O2 vs -o2",
+      "accepted_as_equal": false,
+      "expected_equal": false
+    },
+    {
+      "name": "gcc -DNAME=Value vs gcc -DNAME=value",
+      "accepted_as_equal": false,
+      "expected_equal": false
+    },
+    {
+      "name": "gcc \"-DMSG=Hello World\" vs gcc -DMSG=Hello World",
+      "accepted_as_equal": false,
+      "expected_equal": false
+    },
+    {
+      "name": "gcc -DSTR=F:/AbC vs gcc -DSTR=f:/abc",
+      "accepted_as_equal": false,
+      "expected_equal": false
+    },
+    {
+      "name": "Additional -Wl linker arguments hidden by path normalization",
+      "original_token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld\"",
+      "changed_token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-L,/../lscript.ld\"",
+      "normalized_original": [
+        "f:/amd/2025.2/vitis/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe",
+        "-DSDT",
+        "-mcpu=cortex-a9",
+        "-mfpu=vfpv3",
+        "-mfloat-abi=hard",
+        "-MMD",
+        "-MP",
+        "-specs=$bsp/xilinx.spec",
+        "-I$bsp/include",
+        "-Wall",
+        "-Wextra",
+        "-O2",
+        "-g3",
+        "-std=c11",
+        "-U__clang__",
+        "-Wl,-Map=memory.map,--cref",
+        "cmakefiles/four_mic_continuous.elf.dir/main.c.obj",
+        "-o",
+        "four_mic_continuous.elf",
+        "-L$bsp/lib",
+        "-Wl,-T",
+        "-Wl,$app/src/lscript.ld",
+        "-L$app/src",
+        "-L$bsp/lib",
+        "-L/",
+        "-Wl,--start-group,-lxilstandalone,-lxiltimer,-lxil,-lgcc,-lc",
+        "-Wl,--end-group"
+      ],
+      "normalized_changed": [
+        "f:/amd/2025.2/vitis/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe",
+        "-DSDT",
+        "-mcpu=cortex-a9",
+        "-mfpu=vfpv3",
+        "-mfloat-abi=hard",
+        "-MMD",
+        "-MP",
+        "-specs=$bsp/xilinx.spec",
+        "-I$bsp/include",
+        "-Wall",
+        "-Wextra",
+        "-O2",
+        "-g3",
+        "-std=c11",
+        "-U__clang__",
+        "-Wl,-Map=memory.map,--cref",
+        "cmakefiles/four_mic_continuous.elf.dir/main.c.obj",
+        "-o",
+        "four_mic_continuous.elf",
+        "-L$bsp/lib",
+        "-Wl,-T",
+        "-Wl,$app/src/lscript.ld",
+        "-L$app/src",
+        "-L$bsp/lib",
+        "-L/",
+        "-Wl,--start-group,-lxilstandalone,-lxiltimer,-lxil,-lgcc,-lc",
+        "-Wl,--end-group"
+      ],
+      "normalized_equal": true,
+      "GCC_linker_argv_from_comma_split": [
+        "F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld",
+        "-L",
+        "/../lscript.ld"
+      ],
+      "verify_link_output": "ACCEPTED",
+      "expected": "REJECTED",
+      "error": null
+    },
+    {
+      "name": "Ordinary extra link argument  -Wl,-e,0",
+      "actual": "REJECTED",
+      "expected": "REJECTED"
+    },
+    {
+      "name": "Ordinary extra link argument  -Wl,--entry=0x01000000",
+      "actual": "REJECTED",
+      "expected": "REJECTED"
+    },
+    {
+      "name": "Ordinary extra link argument  -u__clang__",
+      "actual": "REJECTED",
+      "expected": "REJECTED"
+    },
+    {
+      "name": "Ordinary extra link argument  -Wl,--defsym,X=1",
+      "actual": "REJECTED",
+      "expected": "REJECTED"
+    }
+  ],
+  "native_gcc_argument_evidence": {
+    "argv": [
+      "F:\\Program\\env\\mingw64\\bin\\gcc.exe",
+      "-###",
+      "-Wl,-T",
+      "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-L,/../lscript.ld",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\tf-r1-baseline-01\\b-arguments\\probe.obj",
+      "-o",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\tf-r1-baseline-01\\b-arguments\\must-not-be-created.exe"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Using built-in specs.\nCOLLECT_GCC=F:\\Program\\env\\mingw64\\bin\\gcc.exe\nCOLLECT_LTO_WRAPPER=F:/Program/env/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe\nTarget: x86_64-w64-mingw32\nConfigured with: ../../../src/gcc-16.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1610-win32-seh-ucrt-rt_v14-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-tls --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-mingw-wildcard --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds LD_FOR_TARGET=/c/buildroot/x86_64-1610-win32-seh-ucrt-rt_v14-rev1/mingw64/bin/ld.exe --with-boot-ldflags='-pipe -fno-ident -L/c/buildroot/x86_64-1610-win32-seh-ucrt-rt_v14-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib  -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'\nThread model: win32\nSupported LTO compression algorithms: zlib\ngcc version 16.1.0 (x86_64-win32-seh-rev1, Built by MinGW-Builds project) \nCOMPILER_PATH=F:/Program/env/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/;F:/Program/env/mingw64/bin/../libexec/gcc/;F:/Program/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/\nLIBRARY_PATH=F:/Program/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;F:/Program/env/mingw64/bin/../lib/gcc/;F:/Program/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;F:/Program/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/;F:/Program/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/;F:/Program/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../\nCOLLECT_GCC_OPTIONS='-o' 'C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\tf-r1-baseline-01\\b-arguments\\must-not-be-created.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\tf-r1-baseline-01\\b-arguments\\must-not-be-created.'\n \"F:/Program/env/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe\" -plugin \"F:/Program/env/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll\" \"-plugin-opt=F:/Program/env/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe\" \"-plugin-opt=-fresolution=C:\\\\Users\\\\TOPHBE~1\\\\AppData\\\\Local\\\\Temp\\\\ccCpSLhM.res\" \"-plugin-opt=-pass-through=-lmingw32\" \"-plugin-opt=-pass-through=-lgcc\" \"-plugin-opt=-pass-through=-lgcc_eh\" \"-plugin-opt=-pass-through=-lmingwex\" \"-plugin-opt=-pass-through=-lmsvcrt\" \"-plugin-opt=-pass-through=-lkernel32\" \"-plugin-opt=-pass-through=-ladvapi32\" \"-plugin-opt=-pass-through=-lshell32\" \"-plugin-opt=-pass-through=-luser32\" \"-plugin-opt=-pass-through=-lkernel32\" \"-plugin-opt=-pass-through=-liconv\" \"-plugin-opt=-pass-through=-lmingw32\" \"-plugin-opt=-pass-through=-lgcc\" \"-plugin-opt=-pass-through=-lgcc_eh\" \"-plugin-opt=-pass-through=-lmingwex\" \"-plugin-opt=-pass-through=-lmsvcrt\" \"-plugin-opt=-pass-through=-lkernel32\" \"--sysroot=C:/buildroot/x86_64-1610-win32-seh-ucrt-rt_v14-rev1/mingw64\" -m i386pep -Bdynamic -o \"C:\\\\Users\\\\Toph Beifong\\\\.codex\\\\visualizations\\\\2026\\\\09\\\\07\\\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\\\tf-r1-baseline-01\\\\b-arguments\\\\must-not-be-created.exe\" \"F:/Program/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o\" \"F:/Program/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o\" \"-LF:/Program/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0\" \"-LF:/Program/env/mingw64/bin/../lib/gcc\" \"-LF:/Program/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib\" \"-LF:/Program/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib\" \"-LF:/Program/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib\" \"-LF:/Program/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../..\" -T \"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld\" -L /../lscript.ld \"C:\\\\Users\\\\Toph Beifong\\\\.codex\\\\visualizations\\\\2026\\\\09\\\\07\\\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\\\tf-r1-baseline-01\\\\b-arguments\\\\probe.obj\" -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 \"F:/Program/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o\"\nCOLLECT_GCC_OPTIONS='-o' 'C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\tf-r1-baseline-01\\b-arguments\\must-not-be-created.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\tf-r1-baseline-01\\b-arguments\\must-not-be-created.'\n",
+    "output_created": false,
+    "limitation": "Host MinGW GCC -### only; no ARM toolchain, compile, linker, or firmware execution"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "F:\\NUEC\\review-worktrees\\timerfixed-repair2-21c141b\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\timerfixed-entry-01\\repair-01\\reproduce_b_negatives.py",
+    "F:\\NUEC\\review-evidence\\timerfixed-repair2-21c141b\\required-run01\\old-b-negatives"
+  ],
+  "cwd": "F:\\NUEC\\review-worktrees\\timerfixed-repair2-21c141b\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\timerfixed-entry-01",
+  "returncode": 0,
+  "stdout": "{\n  \"baseline\": \"PASS\",\n  \"cases\": [\n    {\n      \"case\": \"entry_in_reserved_rx\",\n      \"expected\": \"REJECTED\",\n      \"actual\": \"REJECTED: Unsupported ELF startup entry/mode\",\n      \"original_entry\": \"0x100000\",\n      \"changed_entry\": \"0x1000000\",\n      \"entry_in_any_load\": false,\n      \"byte_changes\": [\n        26,\n        27\n      ],\n      \"changed_elf_sha256\": \"182dd83ce3ea97e8ae7e62b3172aac9f11ac2ac671716f2399d31eb281f86af8\"\n    },\n    {\n      \"case\": \"entry_outside_all_loads\",\n      \"expected\": \"REJECTED\",\n      \"actual\": \"REJECTED: Unsupported ELF startup entry/mode\",\n      \"original_entry\": \"0x100000\",\n      \"changed_entry\": \"0x0\",\n      \"entry_in_any_load\": false,\n      \"byte_changes\": [\n        26\n      ],\n      \"changed_elf_sha256\": \"940a9f8002b814ea67289a673840b0a6816ee4bdcefcaa2e89f97777da47f278\"\n    },\n    {\n      \"case\": \"case_sensitive_gcc_option\",\n      \"before\": \"-DSDT\",\n      \"after\": \"-Dsdt\",\n      \"expected\": \"DIFFERENT\",\n      \"actual\": \"DIFFERENT\"\n    },\n    {\n      \"case\": \"case_sensitive_gcc_option\",\n      \"before\": \"-U__clang__\",\n      \"after\": \"-u__clang__\",\n      \"expected\": \"DIFFERENT\",\n      \"actual\": \"DIFFERENT\"\n    }\n  ]\n}\n",
+  "stderr": ""
+}

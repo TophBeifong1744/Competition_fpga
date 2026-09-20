@@ -1,0 +1,435 @@
+{
+  "sha": "21c141b223936730c2ce5139624fcedb412adafb",
+  "scope": "Independent actual verify_link_output command mutation probes; no compile/link/hardware",
+  "cases": [
+    {
+      "label": "original B counterexample ",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-L,/../lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "original B counterexample ,-e,0x01000000",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-e,0x01000000,-L,/../lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "original B counterexample ,--defsym,REVIEW_MARKER=1",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--defsym,REVIEW_MARKER=1,-L,/../lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "original B counterexample ,--wrap=XAxiDma_SimpleTransfer",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--wrap=XAxiDma_SimpleTransfer,-L,/../lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,@response.txt\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,@response.txt",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,@response.txt/../lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,@response.txt/../lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,@response.txt/../../src/lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,@response.txt/../../src/lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--defsym=X=1\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--defsym=X=1",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--defsym=X=1/../lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--defsym=X=1/../lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--defsym=X=1/../../src/lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--defsym=X=1/../../src/lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--entry=0\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--entry=0",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--entry=0/../lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--entry=0/../lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--entry=0/../../src/lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--entry=0/../../src/lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-L,x\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-L,x",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-L,x/../lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-L,x/../lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-L,x/../../src/lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-L,x/../../src/lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-T,x\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-T,x",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-T,x/../lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-T,x/../lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-T,x/../../src/lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-T,x/../../src/lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--end-group\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--end-group",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--end-group/../lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--end-group/../lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--end-group/../../src/lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--end-group/../../src/lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Empty -Wl subargument"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Empty -Wl subargument"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,/../lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,/../lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,/../../src/lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,/../../src/lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,,\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Empty -Wl subargument"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,,",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Empty -Wl subargument"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,,/../lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Empty -Wl subargument"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,,/../lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Empty -Wl subargument"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,,/../../src/lscript.ld\"",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Empty -Wl subargument"
+    },
+    {
+      "label": "independent comma mutation",
+      "token": "-Wl,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,,/../../src/lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Empty -Wl subargument"
+    },
+    {
+      "label": "known path-only equivalent",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld\"",
+      "expected": "ACCEPTED",
+      "actual": "ACCEPTED",
+      "detail": null
+    },
+    {
+      "label": "known path-only equivalent",
+      "token": "-Wl,\"F:/COLLEGE/VERILOG_DIGITAL_SYSTEM/VITIS/FOUR_MIC_CONTINUOUS/SRC/LSCRIPT.LD\"",
+      "expected": "ACCEPTED",
+      "actual": "ACCEPTED",
+      "detail": null
+    },
+    {
+      "label": "known path-only equivalent",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/./lscript.ld\"",
+      "expected": "ACCEPTED",
+      "actual": "ACCEPTED",
+      "detail": null
+    },
+    {
+      "label": "known path-only equivalent",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/../src/lscript.ld\"",
+      "expected": "ACCEPTED",
+      "actual": "ACCEPTED",
+      "detail": null
+    },
+    {
+      "label": "layout or extra argument",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld\" -Wl,--end-group",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Actual expanded link command/configuration changed"
+    },
+    {
+      "label": "layout or extra argument",
+      "token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld\" -u__clang__",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Actual expanded link command/configuration changed"
+    },
+    {
+      "label": "layout or extra argument",
+      "token": "-Wl,relative.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    },
+    {
+      "label": "layout or extra argument",
+      "token": "-Wl,F:/other/lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Actual expanded link command/configuration changed"
+    },
+    {
+      "label": "layout or extra argument",
+      "token": "-Wl,-T,F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detail": "Expected one absolute -Wl script path, no extra subarguments"
+    }
+  ],
+  "passed": 61,
+  "total": 61
+}

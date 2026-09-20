@@ -1,0 +1,27 @@
+{
+  "phase": "baseline",
+  "status": "BASELINE_DEFECT_REPRODUCED_NOT_REPAIR_PASS",
+  "started_utc": "2026-09-16T14:41:14.387918+00:00",
+  "command_contract_sha256": "3d6317b87b1620b76f28506ab9b8fa4d3f4757035370aff2ac79850bb9ab4791",
+  "scope": "Command comparison and offline regressions; no ARM build/link/board",
+  "commands": [
+    {
+      "name": "b-arguments",
+      "returncode": 0
+    },
+    {
+      "name": "b-extra",
+      "returncode": 0
+    },
+    {
+      "name": "new12",
+      "returncode": 1
+    }
+  ],
+  "b_four_actual_statuses": [
+    "ACCEPTED",
+    "ACCEPTED",
+    "ACCEPTED",
+    "ACCEPTED"
+  ]
+}

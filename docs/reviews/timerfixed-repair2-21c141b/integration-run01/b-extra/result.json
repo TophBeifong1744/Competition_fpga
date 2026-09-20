@@ -1,0 +1,20 @@
+[
+  {
+    "extra_linker_flags": ",-e,0x01000000",
+    "modified_token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-e,0x01000000,-L,/../lscript.ld\"",
+    "status": "REJECTED: Expected one absolute -Wl script path, no extra subarguments",
+    "expected": "REJECTED"
+  },
+  {
+    "extra_linker_flags": ",--defsym,REVIEW_MARKER=1",
+    "modified_token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--defsym,REVIEW_MARKER=1,-L,/../lscript.ld\"",
+    "status": "REJECTED: Expected one absolute -Wl script path, no extra subarguments",
+    "expected": "REJECTED"
+  },
+  {
+    "extra_linker_flags": ",--wrap=XAxiDma_SimpleTransfer",
+    "modified_token": "-Wl,\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--wrap=XAxiDma_SimpleTransfer,-L,/../lscript.ld\"",
+    "status": "REJECTED: Expected one absolute -Wl script path, no extra subarguments",
+    "expected": "REJECTED"
+  }
+]

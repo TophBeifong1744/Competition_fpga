@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "F:\\NUEC\\review-worktrees\\timerfixed-repair2-21c141b\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\timerfixed-entry-01\\repair-02\\review-inputs\\spec\\extra_link_flags.py",
+    "--package",
+    "F:\\NUEC\\review-worktrees\\timerfixed-repair2-21c141b\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\timerfixed-entry-01",
+    "--output",
+    "F:\\NUEC\\review-evidence\\timerfixed-repair2-21c141b\\required-run01\\b-extra"
+  ],
+  "cwd": "F:\\NUEC\\review-worktrees\\timerfixed-repair2-21c141b\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\timerfixed-entry-01",
+  "returncode": 0,
+  "stdout": "[\n  {\n    \"extra_linker_flags\": \",-e,0x01000000\",\n    \"modified_token\": \"-Wl,\\\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-e,0x01000000,-L,/../lscript.ld\\\"\",\n    \"status\": \"REJECTED: Expected one absolute -Wl script path, no extra subarguments\",\n    \"expected\": \"REJECTED\"\n  },\n  {\n    \"extra_linker_flags\": \",--defsym,REVIEW_MARKER=1\",\n    \"modified_token\": \"-Wl,\\\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--defsym,REVIEW_MARKER=1,-L,/../lscript.ld\\\"\",\n    \"status\": \"REJECTED: Expected one absolute -Wl script path, no extra subarguments\",\n    \"expected\": \"REJECTED\"\n  },\n  {\n    \"extra_linker_flags\": \",--wrap=XAxiDma_SimpleTransfer\",\n    \"modified_token\": \"-Wl,\\\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--wrap=XAxiDma_SimpleTransfer,-L,/../lscript.ld\\\"\",\n    \"status\": \"REJECTED: Expected one absolute -Wl script path, no extra subarguments\",\n    \"expected\": \"REJECTED\"\n  }\n]\n",
+  "stderr": ""
+}

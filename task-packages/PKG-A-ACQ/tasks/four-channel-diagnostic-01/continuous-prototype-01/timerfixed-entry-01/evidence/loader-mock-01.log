@@ -1,0 +1,7 @@
+COMMAND: & 'F:/AMD/2025.2/tps/win64/git-2.50.0/mingw64/bin/tclsh86.exe' 'E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/test_load.tcl'
+EXIT: 0
+ARTIFACT_CHECK_PASS_NOT_BOARD
+DRY_RUN: no connect/reset/program/download
+ARTIFACT_CHECK_PASS_NOT_BOARD
+MOCK_LOADER_PASS cases=4 source-only/default-dry/reject-before-connect/checked-sequence; NO_BOARD
+

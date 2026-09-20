@@ -1,0 +1,35 @@
+{
+  "phase": "fixed",
+  "status": "PASS_R1_AUTHOR_REGRESSION_NOT_B_APPROVAL",
+  "started_utc": "2026-09-20T09:20:13.060681+00:00",
+  "command_contract_sha256": "90db84a22943681212108557616e7591b7be43740dbffc194f19731a6ba3c450",
+  "scope": "Command comparison and offline regressions; no ARM build/link/board",
+  "commands": [
+    {
+      "name": "b-arguments",
+      "returncode": 0
+    },
+    {
+      "name": "b-extra",
+      "returncode": 0
+    },
+    {
+      "name": "new12",
+      "returncode": 0
+    },
+    {
+      "name": "old-b-negatives",
+      "returncode": 0
+    },
+    {
+      "name": "original82",
+      "returncode": 0
+    }
+  ],
+  "b_four_actual_statuses": [
+    "REJECTED",
+    "REJECTED: Expected one absolute -Wl script path, no extra subarguments",
+    "REJECTED: Expected one absolute -Wl script path, no extra subarguments",
+    "REJECTED: Expected one absolute -Wl script path, no extra subarguments"
+  ]
+}

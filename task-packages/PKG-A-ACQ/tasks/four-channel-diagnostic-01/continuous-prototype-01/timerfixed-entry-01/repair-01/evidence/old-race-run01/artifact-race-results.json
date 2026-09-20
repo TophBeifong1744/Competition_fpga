@@ -1,0 +1,26 @@
+[
+  {
+    "case": "old-timer-elf",
+    "returncode": 0,
+    "stdout": "REAL_ELF_CONTRACT_CHECK_PASS sha256=726a91fe19fd9b9e67cca6f3c8668bf484df92d1bbb2ec2e5f2619cc0237324c\nMOCK_DOW_READ_UNCHECKED_REPLACEMENT bytes=296748 path=E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/timer-repair-old-race-01/race-old-timer-elf/four_mic_continuous/build/four_mic_continuous.elf\nRACE_REPRODUCED events=verifier connect targets rst artifact_replaced_during_after targets fpga targets init_source ps7_init ps7_post_config targets rst dow con; NO_BOARD\n",
+    "stderr": "",
+    "initial_sha256": "726a91fe19fd9b9e67cca6f3c8668bf484df92d1bbb2ec2e5f2619cc0237324c",
+    "replacement_sha256": "7b5630de1b04882f8cda205f3b9bb4833201ca260d1abac6390b9a342a636181",
+    "final_live_sha256": "7b5630de1b04882f8cda205f3b9bb4833201ca260d1abac6390b9a342a636181",
+    "replacement_contract_check": "REJECTED: Wrong actual timer divisor",
+    "board_test": "NOT_RUN",
+    "scope": "real verify_elf; other verifier preconditions simulated; hardware fully mocked"
+  },
+  {
+    "case": "other-valid-fixed-elf",
+    "returncode": 0,
+    "stdout": "REAL_ELF_CONTRACT_CHECK_PASS sha256=726a91fe19fd9b9e67cca6f3c8668bf484df92d1bbb2ec2e5f2619cc0237324c\nMOCK_DOW_READ_UNCHECKED_REPLACEMENT bytes=296612 path=E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/timer-repair-old-race-01/race-other-valid-fixed-elf/four_mic_continuous/build/four_mic_continuous.elf\nRACE_REPRODUCED events=verifier connect targets rst artifact_replaced_during_after targets fpga targets init_source ps7_init ps7_post_config targets rst dow con; NO_BOARD\n",
+    "stderr": "",
+    "initial_sha256": "726a91fe19fd9b9e67cca6f3c8668bf484df92d1bbb2ec2e5f2619cc0237324c",
+    "replacement_sha256": "ebc576e2bfe87ca45c06fb62359babc36f8d474505a97ff6d121336d2a3c3fa3",
+    "final_live_sha256": "ebc576e2bfe87ca45c06fb62359babc36f8d474505a97ff6d121336d2a3c3fa3",
+    "replacement_contract_check": "PASS (different ELF from checked build receipt)",
+    "board_test": "NOT_RUN",
+    "scope": "real verify_elf; other verifier preconditions simulated; hardware fully mocked"
+  }
+]

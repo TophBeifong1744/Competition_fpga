@@ -1,0 +1,20 @@
+{
+  "name": "parent10",
+  "argv": [
+    "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_entry.py",
+    "-v"
+  ],
+  "cwd": "F:\\NUEC\\review-worktrees\\timerfixed-repair2-21c141b\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01",
+  "started_utc": "2026-09-20T09:13:00.014064+00:00",
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "test_copy_and_hash (test_entry.EntryTests.test_copy_and_hash) ... ok\ntest_exclusive_copy (test_entry.EntryTests.test_exclusive_copy) ... ok\ntest_known_ps (test_entry.EntryTests.test_known_ps) ... ok\ntest_manifest_exclusive (test_entry.EntryTests.test_manifest_exclusive) ... ok\ntest_ps_changes_fail_closed (test_entry.EntryTests.test_ps_changes_fail_closed) ... ok\ntest_refuse_existing (test_entry.EntryTests.test_refuse_existing) ... ok\ntest_refuse_metachar (test_entry.EntryTests.test_refuse_metachar) ... ok\ntest_refuse_missing_parent (test_entry.EntryTests.test_refuse_missing_parent) ... ok\ntest_refuse_relative (test_entry.EntryTests.test_refuse_relative) ... ok\ntest_refuse_source (test_entry.EntryTests.test_refuse_source) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.247s\n\nOK\n"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "loader",
+  "argv": [
+    "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "repair-01",
+    "-p",
+    "test_loader.py",
+    "-v"
+  ],
+  "cwd": "F:\\NUEC\\review-worktrees\\timerfixed-r1-integration\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\timerfixed-entry-01",
+  "started_utc": "2026-09-20T09:20:18.691351+00:00",
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "test_correct_sealed_load (test_loader.LoaderTests.test_correct_sealed_load) ... ok\ntest_default_dry_no_hardware (test_loader.LoaderTests.test_default_dry_no_hardware) ... ok\ntest_rejection_before_hardware (test_loader.LoaderTests.test_rejection_before_hardware) ... ok\ntest_replacement_other_valid_elf_not_downloaded (test_loader.LoaderTests.test_replacement_other_valid_elf_not_downloaded) ... ok\ntest_replacement_wrong_timer_not_downloaded (test_loader.LoaderTests.test_replacement_wrong_timer_not_downloaded) ... ok\ntest_steps_fail_closed_and_release (test_loader.LoaderTests.test_steps_fail_closed_and_release) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 24.995s\n\nOK\n"
+}

@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\timer-entry-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\timerfixed-entry-01\\repair-02\\review-inputs\\spec\\extra_link_flags.py",
+    "--package",
+    "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\timer-entry-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\timerfixed-entry-01",
+    "--output",
+    "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\tf-r1-baseline-01\\b-extra"
+  ],
+  "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\timer-entry-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\timerfixed-entry-01",
+  "returncode": 0,
+  "stdout": "[\n  {\n    \"extra_linker_flags\": \",-e,0x01000000\",\n    \"modified_token\": \"-Wl,\\\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,-e,0x01000000,-L,/../lscript.ld\\\"\",\n    \"status\": \"ACCEPTED\",\n    \"expected\": \"REJECTED\"\n  },\n  {\n    \"extra_linker_flags\": \",--defsym,REVIEW_MARKER=1\",\n    \"modified_token\": \"-Wl,\\\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--defsym,REVIEW_MARKER=1,-L,/../lscript.ld\\\"\",\n    \"status\": \"ACCEPTED\",\n    \"expected\": \"REJECTED\"\n  },\n  {\n    \"extra_linker_flags\": \",--wrap=XAxiDma_SimpleTransfer\",\n    \"modified_token\": \"-Wl,\\\"F:/College/verilog_digital_system/Vitis/four_mic_continuous/src/lscript.ld,--wrap=XAxiDma_SimpleTransfer,-L,/../lscript.ld\\\"\",\n    \"status\": \"ACCEPTED\",\n    \"expected\": \"REJECTED\"\n  }\n]\n",
+  "stderr": ""
+}

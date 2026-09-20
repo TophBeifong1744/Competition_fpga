@@ -1,0 +1,139 @@
+{
+  "status": "LIVE_READONLY_LINK_ELF_PASS_NOT_LOAD_OR_BUILD",
+  "link_argv": [
+    "f:/amd/2025.2/vitis/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe",
+    "-DSDT",
+    "-mcpu=cortex-a9",
+    "-mfpu=vfpv3",
+    "-mfloat-abi=hard",
+    "-MMD",
+    "-MP",
+    "-specs=$bsp/xilinx.spec",
+    "-I$bsp/include",
+    "-Wall",
+    "-Wextra",
+    "-O2",
+    "-g3",
+    "-std=c11",
+    "-U__clang__",
+    "-Wl,-Map=memory.map,--cref",
+    "cmakefiles/four_mic_continuous.elf.dir/main.c.obj",
+    "-o",
+    "four_mic_continuous.elf",
+    "-L$bsp/lib",
+    "-Wl,-T",
+    "-Wl,$app/src/lscript.ld",
+    "-L$app/src",
+    "-L$bsp/lib",
+    "-L/",
+    "-Wl,--start-group,-lxilstandalone,-lxiltimer,-lxil,-lgcc,-lc",
+    "-Wl,--end-group"
+  ],
+  "compiled": {
+    "divisor": 333333343,
+    "contract": [
+      1129270833,
+      16777216,
+      17825792,
+      250,
+      8,
+      8000,
+      64,
+      8064,
+      2,
+      16128,
+      1048576,
+      1073741823,
+      1077936128,
+      1092616192,
+      10000000,
+      480000
+    ],
+    "program_end": 1123904,
+    "ranges": [
+      {
+        "name": "PT_LOAD",
+        "start": 1048576,
+        "end": 1123904
+      },
+      {
+        "name": ".text",
+        "start": 1048576,
+        "end": 1074332
+      },
+      {
+        "name": ".init",
+        "start": 1074332,
+        "end": 1074344
+      },
+      {
+        "name": ".fini",
+        "start": 1074344,
+        "end": 1074356
+      },
+      {
+        "name": ".rodata",
+        "start": 1074356,
+        "end": 1076796
+      },
+      {
+        "name": ".data",
+        "start": 1076800,
+        "end": 1078220
+      },
+      {
+        "name": ".eh_frame",
+        "start": 1078220,
+        "end": 1078276
+      },
+      {
+        "name": ".mmu_tbl",
+        "start": 1081344,
+        "end": 1097728
+      },
+      {
+        "name": ".ARM.exidx",
+        "start": 1097728,
+        "end": 1097736
+      },
+      {
+        "name": ".init_array",
+        "start": 1097736,
+        "end": 1097744
+      },
+      {
+        "name": ".fini_array",
+        "start": 1097744,
+        "end": 1097748
+      },
+      {
+        "name": ".drvcfg_sec",
+        "start": 1097748,
+        "end": 1097964
+      },
+      {
+        "name": ".bss",
+        "start": 1097968,
+        "end": 1101372
+      },
+      {
+        "name": ".heap",
+        "start": 1101372,
+        "end": 1109568
+      },
+      {
+        "name": ".stack",
+        "start": 1109568,
+        "end": 1123904
+      }
+    ],
+    "startup": {
+      "entry": 1048576,
+      "symbol": "_vector_table",
+      "executable_file_backed": true
+    },
+    "elf_sha256": "726a91fe19fd9b9e67cca6f3c8668bf484df92d1bbb2ec2e5f2619cc0237324c",
+    "object_sha256": "0fc486cf671402f1d62041e94e8ec947ebc24961f852114f03ba4baed04f6469"
+  },
+  "deployment": "SHARED_OLD_ENTRY_NOT_REPLACED"
+}

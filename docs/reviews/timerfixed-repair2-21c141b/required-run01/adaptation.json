@@ -1,0 +1,6 @@
+{
+  "original_sha256": "1050c571c7809526c0dd32757dd2b409c62fac7f1a2e7f5599cd23eae0c386ef",
+  "changed_only": "norm diagnostic wrapper catches ValueError to report strict rejection; gate and inputs unchanged",
+  "before": "norm = lambda s: cc.normalize_command(s, app, bsp)",
+  "after": "def norm(s):\n    try: return cc.normalize_command(s, app, bsp)\n    except ValueError as exc: return (\"REJECTED_BY_PARSER\", str(exc))"
+}

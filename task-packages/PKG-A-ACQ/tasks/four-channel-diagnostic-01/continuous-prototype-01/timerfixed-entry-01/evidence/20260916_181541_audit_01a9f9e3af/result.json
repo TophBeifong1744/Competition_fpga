@@ -1,0 +1,147 @@
+{
+  "stage": "audit",
+  "app": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous",
+  "platform": "F:\\College\\verilog_digital_system\\Vitis\\continuous_platform",
+  "bsp": "F:\\College\\verilog_digital_system\\Vitis\\continuous_platform\\export\\continuous_platform\\sw\\standalone_ps7_cortexa9_0",
+  "policy_sha256": "3312bcc4402c64d1ff4770963525d745111191cc70b5ae616a04a535d9efcf50",
+  "source_sha256": {
+    "main.c": "629030b95bfbb7b96fd10c89a164860b4dd556dfb697f660cedece87cf61931a",
+    "continuous/main_continuous.c": "02400654bf19a7f427fa0026aaefcbe7492186f91b229651112efeff9d33d6f4",
+    "continuous/continuous_core.c": "29feb369f255c31dce423f5301996ecb52f95124a9705978a95c2ddd6eb2e9e3",
+    "continuous/continuous_core.h": "2b2a8e0034970403ea693181950a6cec99b51802579e5693f1fdaa110fddbbc3",
+    "lscript.ld": "8872fb0af0f6bec969e63d2e5d170c1fc058c782c6924d70697b352aeab55dd4",
+    "UserConfig.cmake": "7d6f4fb42182a8ed48432d257807aa2193cab87fc0d8050385856aa7fdbb437e",
+    "Empty_applicationExample.cmake": "bca95562ac27da001b5192bb285cb59f11fe5f50474c1a7c19c7d4e4c2d8314e"
+  },
+  "bit_sha256": "b15991bc0f8595970361be553b542e334dbb7dca268c01864ecd80fcffbbffaf",
+  "bsp_dependency_files": 88,
+  "fresh_compilation_observed": false,
+  "board_test": "NOT_RUN",
+  "compiler_version_output": "arm-xilinx-eabi-gcc.exe (GCC) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "compiled": {
+    "divisor": 333333343,
+    "contract": [
+      1129270833,
+      16777216,
+      17825792,
+      250,
+      8,
+      8000,
+      64,
+      8064,
+      2,
+      16128,
+      1048576,
+      1073741823,
+      1077936128,
+      1092616192,
+      10000000,
+      480000
+    ],
+    "program_end": 1123904,
+    "ranges": [
+      {
+        "name": "PT_LOAD",
+        "start": 1048576,
+        "end": 1123904
+      },
+      {
+        "name": ".text",
+        "start": 1048576,
+        "end": 1074332
+      },
+      {
+        "name": ".init",
+        "start": 1074332,
+        "end": 1074344
+      },
+      {
+        "name": ".fini",
+        "start": 1074344,
+        "end": 1074356
+      },
+      {
+        "name": ".rodata",
+        "start": 1074356,
+        "end": 1076796
+      },
+      {
+        "name": ".data",
+        "start": 1076800,
+        "end": 1078220
+      },
+      {
+        "name": ".eh_frame",
+        "start": 1078220,
+        "end": 1078276
+      },
+      {
+        "name": ".mmu_tbl",
+        "start": 1081344,
+        "end": 1097728
+      },
+      {
+        "name": ".ARM.exidx",
+        "start": 1097728,
+        "end": 1097736
+      },
+      {
+        "name": ".init_array",
+        "start": 1097736,
+        "end": 1097744
+      },
+      {
+        "name": ".fini_array",
+        "start": 1097744,
+        "end": 1097748
+      },
+      {
+        "name": ".drvcfg_sec",
+        "start": 1097748,
+        "end": 1097964
+      },
+      {
+        "name": ".bss",
+        "start": 1097968,
+        "end": 1101372
+      },
+      {
+        "name": ".heap",
+        "start": 1101372,
+        "end": 1109568
+      },
+      {
+        "name": ".stack",
+        "start": 1109568,
+        "end": 1123904
+      }
+    ],
+    "elf_sha256": "ebc576e2bfe87ca45c06fb62359babc36f8d474505a97ff6d121336d2a3c3fa3",
+    "object_sha256": "8a376d38a7188af5884ce0e6c7eff868a0878d222634ec360cb35961c7cd11ff"
+  },
+  "load_paths": {
+    "elf": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\build\\four_mic_continuous.elf",
+    "bit": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\_ide\\bitstream\\system_continuous_20260915.bit",
+    "init": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\_ide\\psinit\\ps7_init.tcl"
+  },
+  "now_us_disassembly": "\nF:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\build\\four_mic_continuous.elf:     file format elf32-littlearm\n\n\nDisassembly of section .text:\n\n00100738 <now_us>:\n  100738:\te52de004 \tpush\t{lr}\t\t; (str lr, [sp, #-4]!)\n  10073c:\te24dd00c \tsub\tsp, sp, #12\n  100740:\te1a0000d \tmov\tr0, sp\n  100744:\teb000820 \tbl\t1027cc <XTime_GetTime>\n  100748:\te89d4004 \tldm\tsp, {r2, lr}\n  10074c:\te1a0328e \tlsl\tr3, lr, #5\n  100750:\te1a01282 \tlsl\tr1, r2, #5\n  100754:\te1833da2 \torr\tr3, r3, r2, lsr #27\n  100758:\te0511002 \tsubs\tr1, r1, r2\n  10075c:\te1a0c481 \tlsl\tip, r1, #9\n  100760:\te0c3300e \tsbc\tr3, r3, lr\n  100764:\te1a03483 \tlsl\tr3, r3, #9\n  100768:\te09cc002 \tadds\tip, ip, r2\n  10076c:\te1a0030c \tlsl\tr0, ip, #6\n  100770:\te1833ba1 \torr\tr3, r3, r1, lsr #23\n  100774:\te0ae3003 \tadc\tr3, lr, r3\n  100778:\te050000c \tsubs\tr0, r0, ip\n  10077c:\te1a01303 \tlsl\tr1, r3, #6\n  100780:\te1811d2c \torr\tr1, r1, ip, lsr #26\n  100784:\te0c11003 \tsbc\tr1, r1, r3\n  100788:\te0900002 \tadds\tr0, r0, r2\n  10078c:\te0ae1001 \tadc\tr1, lr, r1\n  100790:\te28f3010 \tadd\tr3, pc, #16\n  100794:\te1c320d0 \tldrd\tr2, [r3]\n  100798:\tfa001081 \tblx\t1049a4 <__aeabi_uldivmod>\n  10079c:\te28dd00c \tadd\tsp, sp, #12\n  1007a0:\te49df004 \tpop\t{pc}\t\t; (ldr pc, [sp], #4)\n  1007a4:\te320f000 \tnop\t{0}\n  1007a8:\t13de435f \t.word\t0x13de435f\n  1007ac:\t00000000 \t.word\t0x00000000\n\nDisassembly of section .init:\n\nDisassembly of section .fini:\n",
+  "build_inputs": {
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\src\\.clangd": "cfa1ee2e8fe7c0b9ba60eda6325f1f2e6a6f10b6dce56750e47e33d110bfeeaa",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\src\\app.yaml": "ac45db9479e7349d8e13465d195fe0fd42872b71dc69e60a5e8d68b8d448e3d2",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\src\\CMakeLists.txt": "dd1caf756b86ee7342d0a4cbfb8a6eff9e1530d85417af8525eeafa96cc41cea",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\src\\compile_commands.json": "d76f871b94fc969de485da342d48a05cde48a56744bbdc7fc010faec164c62a1",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\src\\Empty_applicationExample.cmake": "bca95562ac27da001b5192bb285cb59f11fe5f50474c1a7c19c7d4e4c2d8314e",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\src\\lscript.ld": "8872fb0af0f6bec969e63d2e5d170c1fc058c782c6924d70697b352aeab55dd4",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\src\\main.c": "629030b95bfbb7b96fd10c89a164860b4dd556dfb697f660cedece87cf61931a",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\src\\README.txt": "265e6e74d7913c397b2e78997cb08682ffdae7c838f321a3f21f521f51e92dbc",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\src\\UserConfig.cmake": "7d6f4fb42182a8ed48432d257807aa2193cab87fc0d8050385856aa7fdbb437e",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\src\\continuous\\continuous_core.c": "29feb369f255c31dce423f5301996ecb52f95124a9705978a95c2ddd6eb2e9e3",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\src\\continuous\\continuous_core.h": "2b2a8e0034970403ea693181950a6cec99b51802579e5693f1fdaa110fddbbc3",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\src\\continuous\\main_continuous.c": "02400654bf19a7f427fa0026aaefcbe7492186f91b229651112efeff9d33d6f4",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\src\\.cache\\clangd\\index\\continuous_core.c.06A45109F914F3F4.idx": "e324f7fa5b97465b2dc22dc41eedb6bac10e49593551839f41e6a6f025285c7a",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\src\\.cache\\clangd\\index\\continuous_core.h.A86BEB643D1D8730.idx": "9a1d0b90c3f713f3648bedb8d906537d52dc9a3d99a4e3dc9395bd33700946c3",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\src\\.cache\\clangd\\index\\main.c.E36355430DB682EF.idx": "94789fd3e14555d8c95c369c56814f5b51c88d11d724ba9e505fcc0336512438",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_continuous\\src\\.cache\\clangd\\index\\main_continuous.c.305296B0353831E4.idx": "9728958a2921f8593c8c2e3e77d90ed56ed4b9b188de4dda484daed16b74c99a"
+  },
+  "status": "HISTORICAL_ARTIFACT_AUDIT_ONLY"
+}
