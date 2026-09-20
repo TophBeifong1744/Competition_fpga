@@ -1,0 +1,52 @@
+{
+  "status": "B2_B4_NODE_PASS_WITH_UNINTEGRATED_GUARDS",
+  "checks": {
+    "adapter_boundary_values": 33,
+    "butterfly_cases": 32,
+    "butterfly_component_overflows": 4,
+    "sqrt_cases": 26,
+    "reciprocal_lut_entries": 256,
+    "normalization_cases": 207,
+    "normalization_code_error_limit": 2,
+    "max_normalization_code_error": 0,
+    "mask_equal_boundary_cases": 3,
+    "bin_count_cases": 3,
+    "upstream_flag_cases": 12,
+    "conjugate_bins": 511,
+    "legacy_conjugate_gaps": 3,
+    "actual_ifft_aggregation_cases": 6,
+    "frame_guard_candidate_scenarios": 5
+  },
+  "adapter_rejections": [
+    "float",
+    "shape",
+    "outside29"
+  ],
+  "legacy_gaps": [
+    {
+      "case": "dc_imag",
+      "legacy_accepted": true,
+      "outside_s25": false
+    },
+    {
+      "case": "nyquist_imag",
+      "legacy_accepted": true,
+      "outside_s25": false
+    },
+    {
+      "case": "minimum_imag",
+      "legacy_accepted": true,
+      "outside_s25": true
+    }
+  ],
+  "source_hashes": {
+    "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/source/fixed_golden.py": "f6bb2bc41dee3f1e2e6d93176972d92db12d687978fd3a95a47e85b28f88a74a",
+    "task-packages/PKG-B-ALG/tasks/phat-fixed-03/phat_model.py": "84eaa9691f62aba7164e3172aa94b2e361cb99672647477d98f8b3f3889f3144",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/source/golden.py": "56732dc2d279601efc17713f18da03cf29e540618f9022737de6f80b79ddeec5"
+  },
+  "fft_calls": 0,
+  "ifft_calls": 0,
+  "amd_tested": false,
+  "full_dynamic_range_proved": false,
+  "late_status_implemented_in_checkpoint": false
+}

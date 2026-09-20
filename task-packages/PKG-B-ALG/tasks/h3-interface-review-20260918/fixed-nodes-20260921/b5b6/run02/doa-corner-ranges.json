@@ -1,0 +1,160 @@
+{
+  "corners": 656,
+  "extremes": {
+    "ux": {
+      "min": -2531477,
+      "max": 2531477
+    },
+    "uy": {
+      "min": -2531477,
+      "max": 2531477
+    }
+  },
+  "outside_s22": [
+    {
+      "mask": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "signs": [
+        -1,
+        -1,
+        1
+      ],
+      "ux": -2531477,
+      "uy": -1048574,
+      "valid": false
+    },
+    {
+      "mask": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "signs": [
+        1,
+        1,
+        -1
+      ],
+      "ux": 2531477,
+      "uy": 1048574,
+      "valid": false
+    },
+    {
+      "mask": [
+        false,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "signs": [
+        -1,
+        1,
+        1
+      ],
+      "ux": -2531477,
+      "uy": 1048574,
+      "valid": false
+    },
+    {
+      "mask": [
+        false,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "signs": [
+        1,
+        -1,
+        -1
+      ],
+      "ux": 2531477,
+      "uy": -1048574,
+      "valid": false
+    },
+    {
+      "mask": [
+        true,
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "signs": [
+        -1,
+        -1,
+        1
+      ],
+      "ux": -1048574,
+      "uy": -2531477,
+      "valid": false
+    },
+    {
+      "mask": [
+        true,
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "signs": [
+        1,
+        1,
+        -1
+      ],
+      "ux": 1048574,
+      "uy": 2531477,
+      "valid": false
+    },
+    {
+      "mask": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "signs": [
+        -1,
+        1,
+        1
+      ],
+      "ux": -1048574,
+      "uy": 2531477,
+      "valid": false
+    },
+    {
+      "mask": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "signs": [
+        1,
+        -1,
+        -1
+      ],
+      "ux": 1048574,
+      "uy": -2531477,
+      "valid": false
+    }
+  ],
+  "note": "Per-component LS is linear and RNE monotonic: corner extrema bound all individually legal pair-delay boxes for each subset. Not full intermediate-product proof."
+}
