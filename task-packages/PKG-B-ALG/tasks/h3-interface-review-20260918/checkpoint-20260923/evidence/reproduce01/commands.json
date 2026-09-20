@@ -1,0 +1,42 @@
+[
+  {
+    "name": "tests",
+    "argv": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\checkpoint-20260923\\source",
+      "-p",
+      "test_candidates.py",
+      "-v"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "study",
+    "argv": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\checkpoint-20260923\\source\\run.py",
+      "--out",
+      "F:\\NUEC\\review-evidence\\algorithm-closeout-20260923\\reproduce01\\study"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "golden",
+    "argv": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\checkpoint-20260923\\source\\golden.py",
+      "--study",
+      "F:\\NUEC\\review-evidence\\algorithm-closeout-20260923\\reproduce01\\study",
+      "--out",
+      "F:\\NUEC\\review-evidence\\algorithm-closeout-20260923\\reproduce01\\golden"
+    ],
+    "returncode": 0
+  }
+]

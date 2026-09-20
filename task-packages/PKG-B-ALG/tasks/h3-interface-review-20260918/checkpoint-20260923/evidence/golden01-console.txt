@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "F:\NUEC\review-worktrees\algorithm-closeout-20260923\task-packages\PKG-B-ALG\tasks\h3-interface-review-20260918\checkpoint-20260923\source\golden.py", line 68, in <module>
+    a=p.parse_args();execute(a.study,new_output(a.out))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\NUEC\review-worktrees\algorithm-closeout-20260923\task-packages\PKG-B-ALG\tasks\h3-interface-review-20260918\checkpoint-20260923\source\golden.py", line 30, in execute
+    y,f=fixed.fixed_fft([(int(v)<<4,0) for v in windowed[ch]],False,29)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: fixed_fft() takes 1 positional argument but 3 were given

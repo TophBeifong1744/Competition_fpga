@@ -1,0 +1,3512 @@
+{
+  "status": "AUTHOR_DEVELOPMENT_ONLY_NOT_ACCEPTANCE",
+  "config": {
+    "version": "b-development-candidates-1",
+    "base_main": "1f369dc688cc1e49d5b2b51735bce7dc9d1cfb78",
+    "interface_commit": "28d5c775f15f29cbe1039e8ce60cc4498bb257b7",
+    "input_commit": "94b5fe79d87e038e895878fb31030cded469bb33",
+    "sample_rate_hz": 48000,
+    "frame_length": 1024,
+    "hop": 512,
+    "band_bins_inclusive": [
+      7,
+      72
+    ],
+    "band_rms_floor_codes": 512,
+    "background_percentile": 95,
+    "on_power_ratio": 4,
+    "off_power_ratio": 2,
+    "attack_frames": 3,
+    "release_frames": 3,
+    "minimum_active_channels": 3,
+    "inner_guards_ms": [
+      100,
+      200,
+      300
+    ],
+    "marker_guard_ms": 200,
+    "tracker_cone_half_angle_deg": 60,
+    "audio_angle_step_deg": 5,
+    "audio_preview_gain": 12,
+    "audio_fade_samples": 480,
+    "wrong_direction_threshold_deg": 15,
+    "design_runs": [
+      "trusted_bg_pre_20260920_01",
+      "trusted_000_20260920_01",
+      "trusted_m045_20260920_01",
+      "trusted_p045_20260920_01"
+    ],
+    "development_probe_runs": [
+      "trusted_bg_post_20260920_01",
+      "trusted_000_20260920_02",
+      "trusted_m045_20260920_02",
+      "trusted_p045_20260920_02"
+    ],
+    "calibration_run": "trusted_bg_pre_20260920_01",
+    "independent_validation_runs": [],
+    "semantics": "band activity only; neither speech classification nor target identity; all eight previously inspected"
+  },
+  "pins": {
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-02-corrected/trusted_000_20260920_01/trusted_000_20260920_01/metadata.json": "4364dfabda740c14c532e0f33ac4074ed8b5cc4bf60600c2e64fcaacda50cfa0",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-02-corrected/trusted_000_20260920_01/trusted_000_20260920_01/raw.bin": "9b7d8b36ebe300f7e6520bdb94e9e157895d4563808007e6343b1c2ab14c78a5",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-02-corrected/trusted_bg_pre_20260920_01/trusted_bg_pre_20260920_01/metadata.json": "3e3ee64fdd97d8267a36e4a41aef88e192c0b9b8d63a34a8551ad489cd535091",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-02-corrected/trusted_bg_pre_20260920_01/trusted_bg_pre_20260920_01/raw.bin": "1c2e923d8b3d9bbfaa99ac1708bac7ce2563db5db3cd8eaad0189884bf64f3e2",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_000_20260920_02/trusted_000_20260920_02/metadata.json": "9ac49fefb1c82b83bfd8c40c306b1281811c1ff7138df35ca8cccbbfb1f09eee",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_000_20260920_02/trusted_000_20260920_02/raw.bin": "6bd132aef87e68aa3f198fd19343b08682ebe291303d4fae21200d77c881f485",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_bg_post_20260920_01/trusted_bg_post_20260920_01/metadata.json": "6bbed8ac1a61a2c5fdcbdffdedb5576a05f261758dd9ba9ce9ce6c11e3a69034",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_bg_post_20260920_01/trusted_bg_post_20260920_01/raw.bin": "cdc0724a458d68139ffbfe48a9fe21331f97e7f8cc9d3775c5d0c48cfbdaadc7",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_m045_20260920_01/trusted_m045_20260920_01/metadata.json": "1f35776e4b4924a3e92c65225fe16a4baedb8680849cb28d2ecd5ad08e3670fe",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_m045_20260920_01/trusted_m045_20260920_01/raw.bin": "2bb4996a71a76d4dfaa6d404d52504015af73ad1221188648a548b78f178648c",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_m045_20260920_02/trusted_m045_20260920_02/metadata.json": "b21b3d70da0ae7e1f50388f9a0f36cf32ce4bff804ae523fa83623b8c3a761e0",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_m045_20260920_02/trusted_m045_20260920_02/raw.bin": "1883d368c22b29f5e9b205bcd381999f642a4658e7e659f9acbee6fedd9614a1",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_p045_20260920_01/trusted_p045_20260920_01/metadata.json": "1ffe9345de354f71bca2c89b18d31194a9f3c2447e0142e8d20ef09daed982a1",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_p045_20260920_01/trusted_p045_20260920_01/raw.bin": "44bee6661f3543690cf2f22ed2a5b733b503907435190778f9f4ca50a4896726",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_p045_20260920_02/trusted_p045_20260920_02/metadata.json": "fa7ea1ee332d6d1faf4f8324099472e8df03b51563b1f2cd557744237a6628fc",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_p045_20260920_02/trusted_p045_20260920_02/raw.bin": "d9e1120cc605556f4605bc53279641dc5bc4355c6cbf31c6e2c4b65612fda305"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "reports": [
+    {
+      "capture": "trusted_000_20260920_01",
+      "split": "design",
+      "nominal_deg": 0,
+      "frames": 561,
+      "background_operator_label": false,
+      "sensitivity": {
+        "100": {
+          "frames": 91,
+          "gate_pass": {
+            "frozen_baseline": 91,
+            "dc_only": 91,
+            "band_absolute": 91,
+            "band_calibrated_duration": 79
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 91,
+              "output_frames": 0,
+              "rejected_frames": 91,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 91,
+              "output_frames": 0,
+              "rejected_frames": 91,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 91,
+              "output_frames": 0,
+              "rejected_frames": 91,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 91,
+            "output_frames": 32,
+            "rejected_frames": 59,
+            "output_fraction": 0.3516483516483517,
+            "nominal_deviation_p50_deg": 29.69381147437575,
+            "nominal_deviation_p95_deg": 157.09817636620136,
+            "nominal_gt15_count": 21,
+            "nominal_gt15_over_outputs": 0.65625,
+            "nominal_gt15_over_eligible": 0.23076923076923078,
+            "formal_accuracy_accepted": false
+          }
+        },
+        "200": {
+          "frames": 73,
+          "gate_pass": {
+            "frozen_baseline": 73,
+            "dc_only": 73,
+            "band_absolute": 73,
+            "band_calibrated_duration": 61
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 73,
+              "output_frames": 0,
+              "rejected_frames": 73,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 73,
+              "output_frames": 0,
+              "rejected_frames": 73,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 73,
+              "output_frames": 0,
+              "rejected_frames": 73,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 73,
+            "output_frames": 27,
+            "rejected_frames": 46,
+            "output_fraction": 0.3698630136986301,
+            "nominal_deviation_p50_deg": 28.35084260590577,
+            "nominal_deviation_p95_deg": 157.35693561594346,
+            "nominal_gt15_count": 18,
+            "nominal_gt15_over_outputs": 0.6666666666666666,
+            "nominal_gt15_over_eligible": 0.2465753424657534,
+            "formal_accuracy_accepted": false
+          }
+        },
+        "300": {
+          "frames": 55,
+          "gate_pass": {
+            "frozen_baseline": 55,
+            "dc_only": 55,
+            "band_absolute": 55,
+            "band_calibrated_duration": 46
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 55,
+              "output_frames": 0,
+              "rejected_frames": 55,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 55,
+              "output_frames": 0,
+              "rejected_frames": 55,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 55,
+              "output_frames": 0,
+              "rejected_frames": 55,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 55,
+            "output_frames": 18,
+            "rejected_frames": 37,
+            "output_fraction": 0.32727272727272727,
+            "nominal_deviation_p50_deg": 27.915744253397108,
+            "nominal_deviation_p95_deg": 150.39630542778937,
+            "nominal_gt15_count": 12,
+            "nominal_gt15_over_outputs": 0.6666666666666666,
+            "nominal_gt15_over_eligible": 0.21818181818181817,
+            "formal_accuracy_accepted": false
+          }
+        }
+      },
+      "formal_metrics": null,
+      "audio": {
+        "reference_rows": [
+          8,
+          288242
+        ],
+        "physical_emit_rows": [
+          16,
+          288250
+        ],
+        "common_availability_delay_samples": 8,
+        "assumed_compute_delay_samples": 0,
+        "bank_angles": [],
+        "single_only_samples": 288234,
+        "beam_contribution_samples": 0,
+        "max_weight_step": 0.0,
+        "runtime_implementation": "offline cached bank, not a streaming FPGA memory budget",
+        "files": [
+          {
+            "file": "trusted_000_20260920_01-single-raw.wav",
+            "sha256": "32b5e6418ed2ca6c1d8f539a83f75eddc6548fbdbd5e799682bd4e6eaec771b7",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.01381683349609375,
+            "rms": 0.0010956007333610856,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "single",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_000_20260920_01-single-preview.wav",
+            "sha256": "be9015cfd281e543ae4540af552f39983b05383d5c51dd59e522d26171d94c2a",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.165802001953125,
+            "rms": 0.013147208800333028,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "single",
+            "mode": "preview",
+            "gain": 12
+          },
+          {
+            "file": "trusted_000_20260920_01-manual-raw.wav",
+            "sha256": "cf9beca8423512d24f162a36aed1a810f84e2beccee402070a8d81eaca6abfc0",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.010639735630577574,
+            "rms": 0.0009727958696901483,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 5.94308955381706e-08,
+            "branch": "manual",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_000_20260920_01-manual-preview.wav",
+            "sha256": "c4e537d5145d6febd4b50530be7f4e5b95e8f2a9ae8540540883dacd8b3e85bf",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.12767682756693088,
+            "rms": 0.01167355043628178,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 5.94312785651141e-08,
+            "branch": "manual",
+            "mode": "preview",
+            "gain": 12
+          },
+          {
+            "file": "trusted_000_20260920_01-automatic-raw.wav",
+            "sha256": "32b5e6418ed2ca6c1d8f539a83f75eddc6548fbdbd5e799682bd4e6eaec771b7",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.01381683349609375,
+            "rms": 0.0010956007333610856,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "automatic",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_000_20260920_01-automatic-preview.wav",
+            "sha256": "be9015cfd281e543ae4540af552f39983b05383d5c51dd59e522d26171d94c2a",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.165802001953125,
+            "rms": 0.013147208800333028,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "automatic",
+            "mode": "preview",
+            "gain": 12
+          }
+        ],
+        "manual_deg": 0,
+        "manual_is_ground_truth": false,
+        "evaluation_reference_rows": [
+          112927,
+          151303
+        ],
+        "descriptive_audio": {
+          "single": {
+            "samples": 38376,
+            "rms": 0.001187242644401941,
+            "peak": 0.0045318603515625,
+            "output_level_change_db_vs_mic0": 0.0,
+            "waveform_difference_rms": 0.0,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          },
+          "manual": {
+            "samples": 38376,
+            "rms": 0.0011542830186177591,
+            "peak": 0.004146164429780053,
+            "output_level_change_db_vs_mic0": -0.24454362101404742,
+            "waveform_difference_rms": 0.00036823116645703143,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          },
+          "automatic": {
+            "samples": 38376,
+            "rms": 0.001187242644401941,
+            "peak": 0.0045318603515625,
+            "output_level_change_db_vs_mic0": 0.0,
+            "waveform_difference_rms": 0.0,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          }
+        },
+        "listening_status": "NOT_LISTENED",
+        "objective_benefit": "NOT_MEASURABLE_NO_SYNCHRONOUS_COMPONENT_REFERENCE"
+      },
+      "failure_examples": [
+        {
+          "start": 113152,
+          "nominal_deg": 0,
+          "numeric_angle": null,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 113664,
+          "nominal_deg": 0,
+          "numeric_angle": 26.145458382487632,
+          "gate": true,
+          "tracker": {
+            "state": "ACQUIRE",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "acquiring",
+            "acquire_count": 1,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 114176,
+          "nominal_deg": 0,
+          "numeric_angle": -127.62918760553984,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "outside_cone",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 114688,
+          "nominal_deg": 0,
+          "numeric_angle": -103.49162444787736,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 115200,
+          "nominal_deg": 0,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 115712,
+          "nominal_deg": 0,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 116224,
+          "nominal_deg": 0,
+          "numeric_angle": 85.03970163549351,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "outside_cone",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 116736,
+          "nominal_deg": 0,
+          "numeric_angle": 156.63240971666562,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "outside_cone",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        }
+      ]
+    },
+    {
+      "capture": "trusted_bg_pre_20260920_01",
+      "split": "design",
+      "nominal_deg": null,
+      "frames": 561,
+      "background_operator_label": true,
+      "sensitivity": {
+        "reported_background": {
+          "frames": 561,
+          "gate_pass": {
+            "frozen_baseline": 558,
+            "dc_only": 557,
+            "band_absolute": 561,
+            "band_calibrated_duration": 0
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 561,
+              "output_frames": 0,
+              "rejected_frames": 561,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": null,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": null,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 561,
+              "output_frames": 0,
+              "rejected_frames": 561,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": null,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": null,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 561,
+              "output_frames": 0,
+              "rejected_frames": 561,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": null,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": null,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 561,
+            "output_frames": 242,
+            "rejected_frames": 319,
+            "output_fraction": 0.43137254901960786,
+            "nominal_deviation_p50_deg": null,
+            "nominal_deviation_p95_deg": null,
+            "nominal_gt15_count": null,
+            "nominal_gt15_over_outputs": null,
+            "nominal_gt15_over_eligible": null,
+            "formal_accuracy_accepted": false
+          }
+        }
+      },
+      "formal_metrics": null,
+      "audio": {
+        "reference_rows": [
+          8,
+          288242
+        ],
+        "physical_emit_rows": [
+          16,
+          288250
+        ],
+        "common_availability_delay_samples": 8,
+        "assumed_compute_delay_samples": 0,
+        "bank_angles": [],
+        "single_only_samples": 288234,
+        "beam_contribution_samples": 0,
+        "max_weight_step": 0.0,
+        "runtime_implementation": "offline cached bank, not a streaming FPGA memory budget",
+        "files": [
+          {
+            "file": "trusted_bg_pre_20260920_01-single-raw.wav",
+            "sha256": "48f5903d52fd3d1d80818d6e4783252c7125bec19795de6a3721b5430cac8558",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.002838134765625,
+            "rms": 0.0006678794977398507,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "single",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_bg_pre_20260920_01-single-preview.wav",
+            "sha256": "28f2d408853fdb460ec34210a047e4b6cd390109f56e2eb914a6784be34684d1",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.0340576171875,
+            "rms": 0.008014553972878207,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "single",
+            "mode": "preview",
+            "gain": 12
+          },
+          {
+            "file": "trusted_bg_pre_20260920_01-manual-raw.wav",
+            "sha256": "b5ad1b61d6ac3444750d6db7d557eeb067c7589272a4a7ffa48ee6c1d3ee6763",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.0024881501934618747,
+            "rms": 0.0006449079398835213,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 5.9430870447130246e-08,
+            "branch": "manual",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_bg_pre_20260920_01-manual-preview.wav",
+            "sha256": "afcd62a8dae610b520de2ec56dbc69984e15246221a73b8d276ab09c592fbb9f",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.029857802321542497,
+            "rms": 0.007738895278602255,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 5.94311253543367e-08,
+            "branch": "manual",
+            "mode": "preview",
+            "gain": 12
+          },
+          {
+            "file": "trusted_bg_pre_20260920_01-automatic-raw.wav",
+            "sha256": "48f5903d52fd3d1d80818d6e4783252c7125bec19795de6a3721b5430cac8558",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.002838134765625,
+            "rms": 0.0006678794977398507,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "automatic",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_bg_pre_20260920_01-automatic-preview.wav",
+            "sha256": "28f2d408853fdb460ec34210a047e4b6cd390109f56e2eb914a6784be34684d1",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.0340576171875,
+            "rms": 0.008014553972878207,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "automatic",
+            "mode": "preview",
+            "gain": 12
+          }
+        ],
+        "manual_deg": 0,
+        "manual_is_ground_truth": false,
+        "evaluation_reference_rows": [
+          8,
+          288242
+        ],
+        "descriptive_audio": {
+          "single": {
+            "samples": 288234,
+            "rms": 0.0006678794977398507,
+            "peak": 0.002838134765625,
+            "output_level_change_db_vs_mic0": 0.0,
+            "waveform_difference_rms": 0.0,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          },
+          "manual": {
+            "samples": 288234,
+            "rms": 0.0006449079398835213,
+            "peak": 0.0024881501934618747,
+            "output_level_change_db_vs_mic0": -0.30400776083490333,
+            "waveform_difference_rms": 0.00018581914153482283,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          },
+          "automatic": {
+            "samples": 288234,
+            "rms": 0.0006678794977398507,
+            "peak": 0.002838134765625,
+            "output_level_change_db_vs_mic0": 0.0,
+            "waveform_difference_rms": 0.0,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          }
+        },
+        "listening_status": "NOT_LISTENED",
+        "objective_benefit": "NOT_MEASURABLE_NO_SYNCHRONOUS_COMPONENT_REFERENCE"
+      },
+      "failure_examples": [
+        {
+          "start": 0,
+          "nominal_deg": null,
+          "numeric_angle": -112.87588265096184,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 512,
+          "nominal_deg": null,
+          "numeric_angle": -96.94388458492844,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 1024,
+          "nominal_deg": null,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 1536,
+          "nominal_deg": null,
+          "numeric_angle": -111.09912708390016,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 2048,
+          "nominal_deg": null,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 2560,
+          "nominal_deg": null,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 3072,
+          "nominal_deg": null,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 3584,
+          "nominal_deg": null,
+          "numeric_angle": -96.37261570564824,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        }
+      ]
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "split": "development_probe_not_independent",
+      "nominal_deg": 0,
+      "frames": 561,
+      "background_operator_label": false,
+      "sensitivity": {
+        "100": {
+          "frames": 92,
+          "gate_pass": {
+            "frozen_baseline": 92,
+            "dc_only": 92,
+            "band_absolute": 92,
+            "band_calibrated_duration": 67
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 92,
+              "output_frames": 0,
+              "rejected_frames": 92,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 92,
+              "output_frames": 0,
+              "rejected_frames": 92,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 92,
+              "output_frames": 0,
+              "rejected_frames": 92,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 92,
+            "output_frames": 58,
+            "rejected_frames": 34,
+            "output_fraction": 0.6304347826086957,
+            "nominal_deviation_p50_deg": 23.881238990996707,
+            "nominal_deviation_p95_deg": 112.5255827119799,
+            "nominal_gt15_count": 36,
+            "nominal_gt15_over_outputs": 0.6206896551724138,
+            "nominal_gt15_over_eligible": 0.391304347826087,
+            "formal_accuracy_accepted": false
+          }
+        },
+        "200": {
+          "frames": 73,
+          "gate_pass": {
+            "frozen_baseline": 73,
+            "dc_only": 73,
+            "band_absolute": 73,
+            "band_calibrated_duration": 55
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 73,
+              "output_frames": 0,
+              "rejected_frames": 73,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 73,
+              "output_frames": 0,
+              "rejected_frames": 73,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 73,
+              "output_frames": 0,
+              "rejected_frames": 73,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 73,
+            "output_frames": 45,
+            "rejected_frames": 28,
+            "output_fraction": 0.6164383561643836,
+            "nominal_deviation_p50_deg": 24.550348452086325,
+            "nominal_deviation_p95_deg": 115.48649019651789,
+            "nominal_gt15_count": 27,
+            "nominal_gt15_over_outputs": 0.6,
+            "nominal_gt15_over_eligible": 0.3698630136986301,
+            "formal_accuracy_accepted": false
+          }
+        },
+        "300": {
+          "frames": 54,
+          "gate_pass": {
+            "frozen_baseline": 54,
+            "dc_only": 54,
+            "band_absolute": 54,
+            "band_calibrated_duration": 42
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 54,
+              "output_frames": 0,
+              "rejected_frames": 54,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 54,
+              "output_frames": 0,
+              "rejected_frames": 54,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 54,
+              "output_frames": 0,
+              "rejected_frames": 54,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 54,
+            "output_frames": 36,
+            "rejected_frames": 18,
+            "output_fraction": 0.6666666666666666,
+            "nominal_deviation_p50_deg": 21.340341496810723,
+            "nominal_deviation_p95_deg": 112.98110694037035,
+            "nominal_gt15_count": 20,
+            "nominal_gt15_over_outputs": 0.5555555555555556,
+            "nominal_gt15_over_eligible": 0.37037037037037035,
+            "formal_accuracy_accepted": false
+          }
+        }
+      },
+      "formal_metrics": null,
+      "audio": {
+        "reference_rows": [
+          8,
+          288242
+        ],
+        "physical_emit_rows": [
+          16,
+          288250
+        ],
+        "common_availability_delay_samples": 8,
+        "assumed_compute_delay_samples": 0,
+        "bank_angles": [],
+        "single_only_samples": 288234,
+        "beam_contribution_samples": 0,
+        "max_weight_step": 0.0,
+        "runtime_implementation": "offline cached bank, not a streaming FPGA memory budget",
+        "files": [
+          {
+            "file": "trusted_000_20260920_02-single-raw.wav",
+            "sha256": "cac65b3898e3e604b06d4b4877a7b95318ebb45d83e56c1a4119720b3d455e66",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.015472412109375,
+            "rms": 0.0013211762221712275,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "single",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_000_20260920_02-single-preview.wav",
+            "sha256": "804c232c332136dfcde358f0663cac7d6755659b2f821b68a79751b512a2a3d0",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.1856689453125,
+            "rms": 0.01585411466605473,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "single",
+            "mode": "preview",
+            "gain": 12
+          },
+          {
+            "file": "trusted_000_20260920_02-manual-raw.wav",
+            "sha256": "6e28440739bbd47bb6d499a67f820f3f689fb53eb6ef39ea14329e1cde834764",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.011879656822272003,
+            "rms": 0.0012009868065080767,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 5.9430876719890335e-08,
+            "branch": "manual",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_000_20260920_02-manual-preview.wav",
+            "sha256": "1a2e90d72dd0d04aeeffda199c07385403fb30a4c8da1ba0c400e55931f1c731",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.14255588186726403,
+            "rms": 0.01441184167809692,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 5.94309721435593e-08,
+            "branch": "manual",
+            "mode": "preview",
+            "gain": 12
+          },
+          {
+            "file": "trusted_000_20260920_02-automatic-raw.wav",
+            "sha256": "cac65b3898e3e604b06d4b4877a7b95318ebb45d83e56c1a4119720b3d455e66",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.015472412109375,
+            "rms": 0.0013211762221712275,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "automatic",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_000_20260920_02-automatic-preview.wav",
+            "sha256": "804c232c332136dfcde358f0663cac7d6755659b2f821b68a79751b512a2a3d0",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.1856689453125,
+            "rms": 0.01585411466605473,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "automatic",
+            "mode": "preview",
+            "gain": 12
+          }
+        ],
+        "manual_deg": 0,
+        "manual_is_ground_truth": false,
+        "evaluation_reference_rows": [
+          99337,
+          137837
+        ],
+        "descriptive_audio": {
+          "single": {
+            "samples": 38500,
+            "rms": 0.0009793883478845379,
+            "peak": 0.004547119140625,
+            "output_level_change_db_vs_mic0": 0.0,
+            "waveform_difference_rms": 0.0,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          },
+          "manual": {
+            "samples": 38500,
+            "rms": 0.0007798117250343097,
+            "peak": 0.0034905758960606936,
+            "output_level_change_db_vs_mic0": -1.9793034386173682,
+            "waveform_difference_rms": 0.00046093801323707104,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          },
+          "automatic": {
+            "samples": 38500,
+            "rms": 0.0009793883478845379,
+            "peak": 0.004547119140625,
+            "output_level_change_db_vs_mic0": 0.0,
+            "waveform_difference_rms": 0.0,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          }
+        },
+        "listening_status": "NOT_LISTENED",
+        "objective_benefit": "NOT_MEASURABLE_NO_SYNCHRONOUS_COMPONENT_REFERENCE"
+      },
+      "failure_examples": [
+        {
+          "start": 99840,
+          "nominal_deg": 0,
+          "numeric_angle": null,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 100352,
+          "nominal_deg": 0,
+          "numeric_angle": -120.3834192540366,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 100864,
+          "nominal_deg": 0,
+          "numeric_angle": -105.27206380770009,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 101376,
+          "nominal_deg": 0,
+          "numeric_angle": -107.28693242543997,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 101888,
+          "nominal_deg": 0,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 102400,
+          "nominal_deg": 0,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 102912,
+          "nominal_deg": 0,
+          "numeric_angle": 16.160413627427406,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 103424,
+          "nominal_deg": 0,
+          "numeric_angle": 10.298630873180613,
+          "gate": true,
+          "tracker": {
+            "state": "ACQUIRE",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "acquiring",
+            "acquire_count": 1,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        }
+      ]
+    },
+    {
+      "capture": "trusted_bg_post_20260920_01",
+      "split": "development_probe_not_independent",
+      "nominal_deg": null,
+      "frames": 561,
+      "background_operator_label": true,
+      "sensitivity": {
+        "reported_background": {
+          "frames": 561,
+          "gate_pass": {
+            "frozen_baseline": 561,
+            "dc_only": 559,
+            "band_absolute": 561,
+            "band_calibrated_duration": 0
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 561,
+              "output_frames": 0,
+              "rejected_frames": 561,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": null,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": null,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 561,
+              "output_frames": 0,
+              "rejected_frames": 561,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": null,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": null,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 561,
+              "output_frames": 0,
+              "rejected_frames": 561,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": null,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": null,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 561,
+            "output_frames": 458,
+            "rejected_frames": 103,
+            "output_fraction": 0.8163992869875223,
+            "nominal_deviation_p50_deg": null,
+            "nominal_deviation_p95_deg": null,
+            "nominal_gt15_count": null,
+            "nominal_gt15_over_outputs": null,
+            "nominal_gt15_over_eligible": null,
+            "formal_accuracy_accepted": false
+          }
+        }
+      },
+      "formal_metrics": null,
+      "audio": {
+        "reference_rows": [
+          8,
+          288242
+        ],
+        "physical_emit_rows": [
+          16,
+          288250
+        ],
+        "common_availability_delay_samples": 8,
+        "assumed_compute_delay_samples": 0,
+        "bank_angles": [],
+        "single_only_samples": 288234,
+        "beam_contribution_samples": 0,
+        "max_weight_step": 0.0,
+        "runtime_implementation": "offline cached bank, not a streaming FPGA memory budget",
+        "files": [
+          {
+            "file": "trusted_bg_post_20260920_01-single-raw.wav",
+            "sha256": "ea5a8dd9bf418e0f3cd107bf0988e9e3fe48df1ae01da9d6d8c693d793601b9f",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.0035247802734375,
+            "rms": 0.0007748385956710741,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "single",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_bg_post_20260920_01-single-preview.wav",
+            "sha256": "f52a1bd73dd39728769b8f3b7af1ff05551cb9324705b4962c76024e90c77089",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.04229736328125,
+            "rms": 0.00929806314805289,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "single",
+            "mode": "preview",
+            "gain": 12
+          },
+          {
+            "file": "trusted_bg_post_20260920_01-manual-raw.wav",
+            "sha256": "4ea46fc7b9e1f656f1ff19f41f1db43b31559971bbe21ed76cbc93f844a2f17a",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.003029303369993408,
+            "rms": 0.0007194096772484682,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 5.9430876719890335e-08,
+            "branch": "manual",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_bg_post_20260920_01-manual-preview.wav",
+            "sha256": "3af9ef99223917acefbf44779ed1a45078f43d2cc18d35d59be5577943e15499",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.036351640439920896,
+            "rms": 0.008632916126981619,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 5.94309721435593e-08,
+            "branch": "manual",
+            "mode": "preview",
+            "gain": 12
+          },
+          {
+            "file": "trusted_bg_post_20260920_01-automatic-raw.wav",
+            "sha256": "ea5a8dd9bf418e0f3cd107bf0988e9e3fe48df1ae01da9d6d8c693d793601b9f",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.0035247802734375,
+            "rms": 0.0007748385956710741,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "automatic",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_bg_post_20260920_01-automatic-preview.wav",
+            "sha256": "f52a1bd73dd39728769b8f3b7af1ff05551cb9324705b4962c76024e90c77089",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.04229736328125,
+            "rms": 0.00929806314805289,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "automatic",
+            "mode": "preview",
+            "gain": 12
+          }
+        ],
+        "manual_deg": 0,
+        "manual_is_ground_truth": false,
+        "evaluation_reference_rows": [
+          8,
+          288242
+        ],
+        "descriptive_audio": {
+          "single": {
+            "samples": 288234,
+            "rms": 0.0007748385956710741,
+            "peak": 0.0035247802734375,
+            "output_level_change_db_vs_mic0": 0.0,
+            "waveform_difference_rms": 0.0,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          },
+          "manual": {
+            "samples": 288234,
+            "rms": 0.0007194096772484682,
+            "peak": 0.003029303369993408,
+            "output_level_change_db_vs_mic0": -0.6446993966502226,
+            "waveform_difference_rms": 0.0003134503960928327,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          },
+          "automatic": {
+            "samples": 288234,
+            "rms": 0.0007748385956710741,
+            "peak": 0.0035247802734375,
+            "output_level_change_db_vs_mic0": 0.0,
+            "waveform_difference_rms": 0.0,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          }
+        },
+        "listening_status": "NOT_LISTENED",
+        "objective_benefit": "NOT_MEASURABLE_NO_SYNCHRONOUS_COMPONENT_REFERENCE"
+      },
+      "failure_examples": [
+        {
+          "start": 0,
+          "nominal_deg": null,
+          "numeric_angle": -115.4781870195981,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 512,
+          "nominal_deg": null,
+          "numeric_angle": -108.11020816520501,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 1024,
+          "nominal_deg": null,
+          "numeric_angle": -115.47987840784435,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 1536,
+          "nominal_deg": null,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 2048,
+          "nominal_deg": null,
+          "numeric_angle": -97.24432570767614,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 2560,
+          "nominal_deg": null,
+          "numeric_angle": -108.84185679151486,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 3072,
+          "nominal_deg": null,
+          "numeric_angle": -101.37651158854152,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 3584,
+          "nominal_deg": null,
+          "numeric_angle": -102.23268243368884,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        }
+      ]
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "split": "design",
+      "nominal_deg": -45,
+      "frames": 561,
+      "background_operator_label": false,
+      "sensitivity": {
+        "100": {
+          "frames": 92,
+          "gate_pass": {
+            "frozen_baseline": 92,
+            "dc_only": 91,
+            "band_absolute": 92,
+            "band_calibrated_duration": 75
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 92,
+              "output_frames": 0,
+              "rejected_frames": 92,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 92,
+              "output_frames": 0,
+              "rejected_frames": 92,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 92,
+              "output_frames": 0,
+              "rejected_frames": 92,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 92,
+            "output_frames": 43,
+            "rejected_frames": 49,
+            "output_fraction": 0.4673913043478261,
+            "nominal_deviation_p50_deg": 26.052690956328604,
+            "nominal_deviation_p95_deg": 145.38320972976783,
+            "nominal_gt15_count": 31,
+            "nominal_gt15_over_outputs": 0.7209302325581395,
+            "nominal_gt15_over_eligible": 0.33695652173913043,
+            "formal_accuracy_accepted": false
+          }
+        },
+        "200": {
+          "frames": 73,
+          "gate_pass": {
+            "frozen_baseline": 73,
+            "dc_only": 72,
+            "band_absolute": 73,
+            "band_calibrated_duration": 62
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 73,
+              "output_frames": 0,
+              "rejected_frames": 73,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 73,
+              "output_frames": 0,
+              "rejected_frames": 73,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 73,
+              "output_frames": 0,
+              "rejected_frames": 73,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 73,
+            "output_frames": 36,
+            "rejected_frames": 37,
+            "output_fraction": 0.4931506849315068,
+            "nominal_deviation_p50_deg": 23.162368336136666,
+            "nominal_deviation_p95_deg": 147.45729623053583,
+            "nominal_gt15_count": 26,
+            "nominal_gt15_over_outputs": 0.7222222222222222,
+            "nominal_gt15_over_eligible": 0.3561643835616438,
+            "formal_accuracy_accepted": false
+          }
+        },
+        "300": {
+          "frames": 54,
+          "gate_pass": {
+            "frozen_baseline": 54,
+            "dc_only": 53,
+            "band_absolute": 54,
+            "band_calibrated_duration": 48
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 54,
+              "output_frames": 0,
+              "rejected_frames": 54,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 54,
+              "output_frames": 0,
+              "rejected_frames": 54,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 54,
+              "output_frames": 0,
+              "rejected_frames": 54,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 54,
+            "output_frames": 28,
+            "rejected_frames": 26,
+            "output_fraction": 0.5185185185185185,
+            "nominal_deviation_p50_deg": 23.162368336136666,
+            "nominal_deviation_p95_deg": 150.78516275419125,
+            "nominal_gt15_count": 20,
+            "nominal_gt15_over_outputs": 0.7142857142857143,
+            "nominal_gt15_over_eligible": 0.37037037037037035,
+            "formal_accuracy_accepted": false
+          }
+        }
+      },
+      "formal_metrics": null,
+      "audio": {
+        "reference_rows": [
+          8,
+          288242
+        ],
+        "physical_emit_rows": [
+          16,
+          288250
+        ],
+        "common_availability_delay_samples": 8,
+        "assumed_compute_delay_samples": 0,
+        "bank_angles": [],
+        "single_only_samples": 288234,
+        "beam_contribution_samples": 0,
+        "max_weight_step": 0.0,
+        "runtime_implementation": "offline cached bank, not a streaming FPGA memory budget",
+        "files": [
+          {
+            "file": "trusted_m045_20260920_01-single-raw.wav",
+            "sha256": "01f2f43922de54f50071fa2d1f79307a0889bf4e6585ae7c190badf6afaa31c6",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.0128173828125,
+            "rms": 0.0011823457292705986,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "single",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_m045_20260920_01-single-preview.wav",
+            "sha256": "ab00174a45bc8db0e890151458a93d1fcb38c73320549999f39c23ff3c860a9a",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.15380859375,
+            "rms": 0.014188148751247182,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "single",
+            "mode": "preview",
+            "gain": 12
+          },
+          {
+            "file": "trusted_m045_20260920_01-manual-raw.wav",
+            "sha256": "6f1870979be90ba9ae9f1a2194b7b14ce5fe1dcf0eaf4a5e8cabb915e19ec66b",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.009711328936998331,
+            "rms": 0.0010781140974700672,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 5.959574156388925e-08,
+            "branch": "manual",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_m045_20260920_01-manual-preview.wav",
+            "sha256": "19a3a6032fb7507def702a0e39073a8fc1318c6ccada3fa0a4bfde91bdab4ad4",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.11653594724397998,
+            "rms": 0.012937369169640806,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 5.9488118708816984e-08,
+            "branch": "manual",
+            "mode": "preview",
+            "gain": 12
+          },
+          {
+            "file": "trusted_m045_20260920_01-automatic-raw.wav",
+            "sha256": "01f2f43922de54f50071fa2d1f79307a0889bf4e6585ae7c190badf6afaa31c6",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.0128173828125,
+            "rms": 0.0011823457292705986,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "automatic",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_m045_20260920_01-automatic-preview.wav",
+            "sha256": "ab00174a45bc8db0e890151458a93d1fcb38c73320549999f39c23ff3c860a9a",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.15380859375,
+            "rms": 0.014188148751247182,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "automatic",
+            "mode": "preview",
+            "gain": 12
+          }
+        ],
+        "manual_deg": -45,
+        "manual_is_ground_truth": false,
+        "evaluation_reference_rows": [
+          100785,
+          139157
+        ],
+        "descriptive_audio": {
+          "single": {
+            "samples": 38372,
+            "rms": 0.0009413696885895887,
+            "peak": 0.0034027099609375,
+            "output_level_change_db_vs_mic0": 0.0,
+            "waveform_difference_rms": 0.0,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          },
+          "manual": {
+            "samples": 38372,
+            "rms": 0.0009118153975625556,
+            "peak": 0.003546781933040255,
+            "output_level_change_db_vs_mic0": -0.277065770007098,
+            "waveform_difference_rms": 0.00025734690526538743,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          },
+          "automatic": {
+            "samples": 38372,
+            "rms": 0.0009413696885895887,
+            "peak": 0.0034027099609375,
+            "output_level_change_db_vs_mic0": 0.0,
+            "waveform_difference_rms": 0.0,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          }
+        },
+        "listening_status": "NOT_LISTENED",
+        "objective_benefit": "NOT_MEASURABLE_NO_SYNCHRONOUS_COMPONENT_REFERENCE"
+      },
+      "failure_examples": [
+        {
+          "start": 100864,
+          "nominal_deg": -45,
+          "numeric_angle": null,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 101376,
+          "nominal_deg": -45,
+          "numeric_angle": null,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 101888,
+          "nominal_deg": -45,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 102400,
+          "nominal_deg": -45,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 102912,
+          "nominal_deg": -45,
+          "numeric_angle": 170.77095182607144,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 103424,
+          "nominal_deg": -45,
+          "numeric_angle": -63.21958988924753,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 103936,
+          "nominal_deg": -45,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 104448,
+          "nominal_deg": -45,
+          "numeric_angle": null,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        }
+      ]
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "split": "development_probe_not_independent",
+      "nominal_deg": -45,
+      "frames": 561,
+      "background_operator_label": false,
+      "sensitivity": {
+        "100": {
+          "frames": 92,
+          "gate_pass": {
+            "frozen_baseline": 92,
+            "dc_only": 92,
+            "band_absolute": 92,
+            "band_calibrated_duration": 87
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 92,
+              "output_frames": 0,
+              "rejected_frames": 92,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 92,
+              "output_frames": 0,
+              "rejected_frames": 92,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 92,
+              "output_frames": 0,
+              "rejected_frames": 92,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 92,
+            "output_frames": 33,
+            "rejected_frames": 59,
+            "output_fraction": 0.358695652173913,
+            "nominal_deviation_p50_deg": 28.0432637692046,
+            "nominal_deviation_p95_deg": 169.91356037987666,
+            "nominal_gt15_count": 25,
+            "nominal_gt15_over_outputs": 0.7575757575757576,
+            "nominal_gt15_over_eligible": 0.2717391304347826,
+            "formal_accuracy_accepted": false
+          }
+        },
+        "200": {
+          "frames": 73,
+          "gate_pass": {
+            "frozen_baseline": 73,
+            "dc_only": 73,
+            "band_absolute": 73,
+            "band_calibrated_duration": 69
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 73,
+              "output_frames": 0,
+              "rejected_frames": 73,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 73,
+              "output_frames": 0,
+              "rejected_frames": 73,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 73,
+              "output_frames": 0,
+              "rejected_frames": 73,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 73,
+            "output_frames": 30,
+            "rejected_frames": 43,
+            "output_fraction": 0.410958904109589,
+            "nominal_deviation_p50_deg": 23.490839143532057,
+            "nominal_deviation_p95_deg": 171.70850812055107,
+            "nominal_gt15_count": 22,
+            "nominal_gt15_over_outputs": 0.7333333333333333,
+            "nominal_gt15_over_eligible": 0.3013698630136986,
+            "formal_accuracy_accepted": false
+          }
+        },
+        "300": {
+          "frames": 54,
+          "gate_pass": {
+            "frozen_baseline": 54,
+            "dc_only": 54,
+            "band_absolute": 54,
+            "band_calibrated_duration": 54
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 54,
+              "output_frames": 0,
+              "rejected_frames": 54,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 54,
+              "output_frames": 0,
+              "rejected_frames": 54,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 54,
+              "output_frames": 0,
+              "rejected_frames": 54,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 54,
+            "output_frames": 23,
+            "rejected_frames": 31,
+            "output_fraction": 0.42592592592592593,
+            "nominal_deviation_p50_deg": 28.0432637692046,
+            "nominal_deviation_p95_deg": 175.89671951545816,
+            "nominal_gt15_count": 18,
+            "nominal_gt15_over_outputs": 0.782608695652174,
+            "nominal_gt15_over_eligible": 0.3333333333333333,
+            "formal_accuracy_accepted": false
+          }
+        }
+      },
+      "formal_metrics": null,
+      "audio": {
+        "reference_rows": [
+          8,
+          288242
+        ],
+        "physical_emit_rows": [
+          16,
+          288250
+        ],
+        "common_availability_delay_samples": 8,
+        "assumed_compute_delay_samples": 0,
+        "bank_angles": [],
+        "single_only_samples": 288234,
+        "beam_contribution_samples": 0,
+        "max_weight_step": 0.0,
+        "runtime_implementation": "offline cached bank, not a streaming FPGA memory budget",
+        "files": [
+          {
+            "file": "trusted_m045_20260920_02-single-raw.wav",
+            "sha256": "59c358cb3cfe2fa69a6c27240785a0d36ed158aa86a99ac05817e87a3131214a",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.01560211181640625,
+            "rms": 0.0013295822526867198,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "single",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_m045_20260920_02-single-preview.wav",
+            "sha256": "7f6977f0ed8134fdfc0262c2df9b6cbaf05e6963e01a75dde9052b9c2f0f7671",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.187225341796875,
+            "rms": 0.015954987032240638,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "single",
+            "mode": "preview",
+            "gain": 12
+          },
+          {
+            "file": "trusted_m045_20260920_02-manual-raw.wav",
+            "sha256": "2a248bec5a683af03c9dd2ff70422b471de071b38ef3373ea9a37b85ad52cd94",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.010449309430735174,
+            "rms": 0.00120556039757836,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 5.959574156388925e-08,
+            "branch": "manual",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_m045_20260920_02-manual-preview.wav",
+            "sha256": "eee49e4c3c653e131048d1d6fbcb5e326299cc78ad38a917b55608c8fe1c8c15",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.12539171316882208,
+            "rms": 0.014466724770940322,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 5.959502302754771e-08,
+            "branch": "manual",
+            "mode": "preview",
+            "gain": 12
+          },
+          {
+            "file": "trusted_m045_20260920_02-automatic-raw.wav",
+            "sha256": "59c358cb3cfe2fa69a6c27240785a0d36ed158aa86a99ac05817e87a3131214a",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.01560211181640625,
+            "rms": 0.0013295822526867198,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "automatic",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_m045_20260920_02-automatic-preview.wav",
+            "sha256": "7f6977f0ed8134fdfc0262c2df9b6cbaf05e6963e01a75dde9052b9c2f0f7671",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.187225341796875,
+            "rms": 0.015954987032240638,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "automatic",
+            "mode": "preview",
+            "gain": 12
+          }
+        ],
+        "manual_deg": -45,
+        "manual_is_ground_truth": false,
+        "evaluation_reference_rows": [
+          92575,
+          131026
+        ],
+        "descriptive_audio": {
+          "single": {
+            "samples": 38451,
+            "rms": 0.001079256241771116,
+            "peak": 0.00554656982421875,
+            "output_level_change_db_vs_mic0": 0.0,
+            "waveform_difference_rms": 0.0,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          },
+          "manual": {
+            "samples": 38451,
+            "rms": 0.0010606888843287848,
+            "peak": 0.005251569385589683,
+            "output_level_change_db_vs_mic0": -0.15073102845090516,
+            "waveform_difference_rms": 0.00025354900364168943,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          },
+          "automatic": {
+            "samples": 38451,
+            "rms": 0.001079256241771116,
+            "peak": 0.00554656982421875,
+            "output_level_change_db_vs_mic0": 0.0,
+            "waveform_difference_rms": 0.0,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          }
+        },
+        "listening_status": "NOT_LISTENED",
+        "objective_benefit": "NOT_MEASURABLE_NO_SYNCHRONOUS_COMPONENT_REFERENCE"
+      },
+      "failure_examples": [
+        {
+          "start": 92672,
+          "nominal_deg": -45,
+          "numeric_angle": null,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 93184,
+          "nominal_deg": -45,
+          "numeric_angle": null,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 93696,
+          "nominal_deg": -45,
+          "numeric_angle": null,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 94208,
+          "nominal_deg": -45,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 94720,
+          "nominal_deg": -45,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 95232,
+          "nominal_deg": -45,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 95744,
+          "nominal_deg": -45,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 96256,
+          "nominal_deg": -45,
+          "numeric_angle": null,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        }
+      ]
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "split": "design",
+      "nominal_deg": 45,
+      "frames": 561,
+      "background_operator_label": false,
+      "sensitivity": {
+        "100": {
+          "frames": 92,
+          "gate_pass": {
+            "frozen_baseline": 92,
+            "dc_only": 91,
+            "band_absolute": 92,
+            "band_calibrated_duration": 77
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 92,
+              "output_frames": 0,
+              "rejected_frames": 92,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 92,
+              "output_frames": 0,
+              "rejected_frames": 92,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 92,
+              "output_frames": 0,
+              "rejected_frames": 92,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 92,
+            "output_frames": 33,
+            "rejected_frames": 59,
+            "output_fraction": 0.358695652173913,
+            "nominal_deviation_p50_deg": 36.07936926045852,
+            "nominal_deviation_p95_deg": 131.83393584605142,
+            "nominal_gt15_count": 22,
+            "nominal_gt15_over_outputs": 0.6666666666666666,
+            "nominal_gt15_over_eligible": 0.2391304347826087,
+            "formal_accuracy_accepted": false
+          }
+        },
+        "200": {
+          "frames": 74,
+          "gate_pass": {
+            "frozen_baseline": 74,
+            "dc_only": 73,
+            "band_absolute": 74,
+            "band_calibrated_duration": 60
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 74,
+              "output_frames": 0,
+              "rejected_frames": 74,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 74,
+              "output_frames": 0,
+              "rejected_frames": 74,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 74,
+              "output_frames": 0,
+              "rejected_frames": 74,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 74,
+            "output_frames": 29,
+            "rejected_frames": 45,
+            "output_fraction": 0.3918918918918919,
+            "nominal_deviation_p50_deg": 36.07936926045852,
+            "nominal_deviation_p95_deg": 119.3595342842067,
+            "nominal_gt15_count": 20,
+            "nominal_gt15_over_outputs": 0.6896551724137931,
+            "nominal_gt15_over_eligible": 0.2702702702702703,
+            "formal_accuracy_accepted": false
+          }
+        },
+        "300": {
+          "frames": 54,
+          "gate_pass": {
+            "frozen_baseline": 54,
+            "dc_only": 54,
+            "band_absolute": 54,
+            "band_calibrated_duration": 44
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 54,
+              "output_frames": 0,
+              "rejected_frames": 54,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 54,
+              "output_frames": 0,
+              "rejected_frames": 54,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 54,
+              "output_frames": 0,
+              "rejected_frames": 54,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 54,
+            "output_frames": 20,
+            "rejected_frames": 34,
+            "output_fraction": 0.37037037037037035,
+            "nominal_deviation_p50_deg": 28.51910888390813,
+            "nominal_deviation_p95_deg": 103.1717767224599,
+            "nominal_gt15_count": 13,
+            "nominal_gt15_over_outputs": 0.65,
+            "nominal_gt15_over_eligible": 0.24074074074074073,
+            "formal_accuracy_accepted": false
+          }
+        }
+      },
+      "formal_metrics": null,
+      "audio": {
+        "reference_rows": [
+          8,
+          288242
+        ],
+        "physical_emit_rows": [
+          16,
+          288250
+        ],
+        "common_availability_delay_samples": 8,
+        "assumed_compute_delay_samples": 0,
+        "bank_angles": [],
+        "single_only_samples": 288234,
+        "beam_contribution_samples": 0,
+        "max_weight_step": 0.0,
+        "runtime_implementation": "offline cached bank, not a streaming FPGA memory budget",
+        "files": [
+          {
+            "file": "trusted_p045_20260920_01-single-raw.wav",
+            "sha256": "e72e4092fd02b54200f6e0c4780a73ba3991c1b9b52c454eb3c6346ecf818780",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.021270751953125,
+            "rms": 0.0012178886604487797,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "single",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_p045_20260920_01-single-preview.wav",
+            "sha256": "420a34b368b49f28b73d3f96ff9f50e20537ae33705e912c8d5a9737fa8bdc88",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.2552490234375,
+            "rms": 0.014614663925385357,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "single",
+            "mode": "preview",
+            "gain": 12
+          },
+          {
+            "file": "trusted_p045_20260920_01-manual-raw.wav",
+            "sha256": "701095b4f64e5be8b4466a863ecc3d7b63b9eb68bae2f90324356626f6dc89c3",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.013773334475692234,
+            "rms": 0.0010035550384896225,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 5.959574156388925e-08,
+            "branch": "manual",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_p045_20260920_01-manual-preview.wav",
+            "sha256": "a77c0f87638e3f501e8128d0ff98b6359ad2eda837472629fb0ab9a2216d7915",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.1652800137083068,
+            "rms": 0.012042660461875467,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 5.959502302754771e-08,
+            "branch": "manual",
+            "mode": "preview",
+            "gain": 12
+          },
+          {
+            "file": "trusted_p045_20260920_01-automatic-raw.wav",
+            "sha256": "e72e4092fd02b54200f6e0c4780a73ba3991c1b9b52c454eb3c6346ecf818780",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.021270751953125,
+            "rms": 0.0012178886604487797,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "automatic",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_p045_20260920_01-automatic-preview.wav",
+            "sha256": "420a34b368b49f28b73d3f96ff9f50e20537ae33705e912c8d5a9737fa8bdc88",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.2552490234375,
+            "rms": 0.014614663925385357,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "automatic",
+            "mode": "preview",
+            "gain": 12
+          }
+        ],
+        "manual_deg": 45,
+        "manual_is_ground_truth": false,
+        "evaluation_reference_rows": [
+          104934,
+          143396
+        ],
+        "descriptive_audio": {
+          "single": {
+            "samples": 38462,
+            "rms": 0.0008796175393726317,
+            "peak": 0.00392913818359375,
+            "output_level_change_db_vs_mic0": 0.0,
+            "waveform_difference_rms": 0.0,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          },
+          "manual": {
+            "samples": 38462,
+            "rms": 0.0008222388515654098,
+            "peak": 0.0037562540834459868,
+            "output_level_change_db_vs_mic0": -0.5859177350505252,
+            "waveform_difference_rms": 0.00040272000189935434,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          },
+          "automatic": {
+            "samples": 38462,
+            "rms": 0.0008796175393726317,
+            "peak": 0.00392913818359375,
+            "output_level_change_db_vs_mic0": 0.0,
+            "waveform_difference_rms": 0.0,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          }
+        },
+        "listening_status": "NOT_LISTENED",
+        "objective_benefit": "NOT_MEASURABLE_NO_SYNCHRONOUS_COMPONENT_REFERENCE"
+      },
+      "failure_examples": [
+        {
+          "start": 104960,
+          "nominal_deg": 45,
+          "numeric_angle": 23.664155676787022,
+          "gate": true,
+          "tracker": {
+            "state": "ACQUIRE",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "acquiring",
+            "acquire_count": 1,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 105472,
+          "nominal_deg": 45,
+          "numeric_angle": 109.89547260262374,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "outside_cone",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 105984,
+          "nominal_deg": 45,
+          "numeric_angle": null,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 106496,
+          "nominal_deg": 45,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 107008,
+          "nominal_deg": 45,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 107520,
+          "nominal_deg": 45,
+          "numeric_angle": 119.36246961633155,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 108032,
+          "nominal_deg": 45,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 108544,
+          "nominal_deg": 45,
+          "numeric_angle": null,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        }
+      ]
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "split": "development_probe_not_independent",
+      "nominal_deg": 45,
+      "frames": 561,
+      "background_operator_label": false,
+      "sensitivity": {
+        "100": {
+          "frames": 92,
+          "gate_pass": {
+            "frozen_baseline": 92,
+            "dc_only": 92,
+            "band_absolute": 92,
+            "band_calibrated_duration": 76
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 92,
+              "output_frames": 0,
+              "rejected_frames": 92,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 92,
+              "output_frames": 0,
+              "rejected_frames": 92,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 92,
+              "output_frames": 0,
+              "rejected_frames": 92,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 92,
+            "output_frames": 36,
+            "rejected_frames": 56,
+            "output_fraction": 0.391304347826087,
+            "nominal_deviation_p50_deg": 94.64292283049616,
+            "nominal_deviation_p95_deg": 163.4885976271009,
+            "nominal_gt15_count": 29,
+            "nominal_gt15_over_outputs": 0.8055555555555556,
+            "nominal_gt15_over_eligible": 0.31521739130434784,
+            "formal_accuracy_accepted": false
+          }
+        },
+        "200": {
+          "frames": 74,
+          "gate_pass": {
+            "frozen_baseline": 74,
+            "dc_only": 74,
+            "band_absolute": 74,
+            "band_calibrated_duration": 63
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 74,
+              "output_frames": 0,
+              "rejected_frames": 74,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 74,
+              "output_frames": 0,
+              "rejected_frames": 74,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 74,
+              "output_frames": 0,
+              "rejected_frames": 74,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 74,
+            "output_frames": 35,
+            "rejected_frames": 39,
+            "output_fraction": 0.47297297297297297,
+            "nominal_deviation_p50_deg": 94.03251874996204,
+            "nominal_deviation_p95_deg": 159.21324048620525,
+            "nominal_gt15_count": 28,
+            "nominal_gt15_over_outputs": 0.8,
+            "nominal_gt15_over_eligible": 0.3783783783783784,
+            "formal_accuracy_accepted": false
+          }
+        },
+        "300": {
+          "frames": 54,
+          "gate_pass": {
+            "frozen_baseline": 54,
+            "dc_only": 54,
+            "band_absolute": 54,
+            "band_calibrated_duration": 47
+          },
+          "direction": {
+            "baseline30": {
+              "eligible_frames": 54,
+              "output_frames": 0,
+              "rejected_frames": 54,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "ungated60": {
+              "eligible_frames": 54,
+              "output_frames": 0,
+              "rejected_frames": 54,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            },
+            "candidate60": {
+              "eligible_frames": 54,
+              "output_frames": 0,
+              "rejected_frames": 54,
+              "output_fraction": 0.0,
+              "nominal_deviation_p50_deg": null,
+              "nominal_deviation_p95_deg": null,
+              "nominal_gt15_count": 0,
+              "nominal_gt15_over_outputs": null,
+              "nominal_gt15_over_eligible": 0.0,
+              "formal_accuracy_accepted": false
+            }
+          },
+          "numeric": {
+            "eligible_frames": 54,
+            "output_frames": 25,
+            "rejected_frames": 29,
+            "output_fraction": 0.46296296296296297,
+            "nominal_deviation_p50_deg": 36.13815403320774,
+            "nominal_deviation_p95_deg": 156.57656644051937,
+            "nominal_gt15_count": 18,
+            "nominal_gt15_over_outputs": 0.72,
+            "nominal_gt15_over_eligible": 0.3333333333333333,
+            "formal_accuracy_accepted": false
+          }
+        }
+      },
+      "formal_metrics": null,
+      "audio": {
+        "reference_rows": [
+          8,
+          288242
+        ],
+        "physical_emit_rows": [
+          16,
+          288250
+        ],
+        "common_availability_delay_samples": 8,
+        "assumed_compute_delay_samples": 0,
+        "bank_angles": [],
+        "single_only_samples": 288234,
+        "beam_contribution_samples": 0,
+        "max_weight_step": 0.0,
+        "runtime_implementation": "offline cached bank, not a streaming FPGA memory budget",
+        "files": [
+          {
+            "file": "trusted_p045_20260920_02-single-raw.wav",
+            "sha256": "73dc33f8c758fc7e7923bb8da70a1b2c499299939522c5fd39a076b11adba32c",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.0200653076171875,
+            "rms": 0.0012296860743743622,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "single",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_p045_20260920_02-single-preview.wav",
+            "sha256": "ad4c2c62a8b27987ec102c745b2403e05bc47ad4489c8f30269f63319f87db89",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.24078369140625,
+            "rms": 0.014756232892492347,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "single",
+            "mode": "preview",
+            "gain": 12
+          },
+          {
+            "file": "trusted_p045_20260920_02-manual-raw.wav",
+            "sha256": "a743ca5015f3441ac7f893e9b98489cb942f7af58e317dfacf9fde784ae1cd5d",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.013563678221357234,
+            "rms": 0.0010236145298072098,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 5.959574220226749e-08,
+            "branch": "manual",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_p045_20260920_02-manual-preview.wav",
+            "sha256": "8c93b953e81d0ca853e21f9a8f9b899b54a8fbe23fe68ee57a436b0e132ff37f",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.1627641386562868,
+            "rms": 0.012283374357686519,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 5.959502302754771e-08,
+            "branch": "manual",
+            "mode": "preview",
+            "gain": 12
+          },
+          {
+            "file": "trusted_p045_20260920_02-automatic-raw.wav",
+            "sha256": "73dc33f8c758fc7e7923bb8da70a1b2c499299939522c5fd39a076b11adba32c",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.0200653076171875,
+            "rms": 0.0012296860743743622,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "automatic",
+            "mode": "raw",
+            "gain": 1
+          },
+          {
+            "file": "trusted_p045_20260920_02-automatic-preview.wav",
+            "sha256": "ad4c2c62a8b27987ec102c745b2403e05bc47ad4489c8f30269f63319f87db89",
+            "frames": 288234,
+            "saturation_samples": 0,
+            "peak_abs": 0.24078369140625,
+            "rms": 0.014756232892492347,
+            "pcm_roundtrip_exact": true,
+            "max_quantization_error": 0.0,
+            "branch": "automatic",
+            "mode": "preview",
+            "gain": 12
+          }
+        ],
+        "manual_deg": 45,
+        "manual_is_ground_truth": false,
+        "evaluation_reference_rows": [
+          95735,
+          134197
+        ],
+        "descriptive_audio": {
+          "single": {
+            "samples": 38462,
+            "rms": 0.0011941065502840192,
+            "peak": 0.00484466552734375,
+            "output_level_change_db_vs_mic0": 0.0,
+            "waveform_difference_rms": 0.0,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          },
+          "manual": {
+            "samples": 38462,
+            "rms": 0.0009990294503424645,
+            "peak": 0.0035164747032042087,
+            "output_level_change_db_vs_mic0": -1.5492957942903374,
+            "waveform_difference_rms": 0.0006282801287393365,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          },
+          "automatic": {
+            "samples": 38462,
+            "rms": 0.0011941065502840192,
+            "peak": 0.00484466552734375,
+            "output_level_change_db_vs_mic0": 0.0,
+            "waveform_difference_rms": 0.0,
+            "snr_gain_db": null,
+            "speech_quality_gain": null
+          }
+        },
+        "listening_status": "NOT_LISTENED",
+        "objective_benefit": "NOT_MEASURABLE_NO_SYNCHRONOUS_COMPONENT_REFERENCE"
+      },
+      "failure_examples": [
+        {
+          "start": 95744,
+          "nominal_deg": 45,
+          "numeric_angle": -119.8901613021356,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "outside_cone",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 96256,
+          "nominal_deg": 45,
+          "numeric_angle": -104.3749026303537,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "outside_cone",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 96768,
+          "nominal_deg": 45,
+          "numeric_angle": null,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 97280,
+          "nominal_deg": 45,
+          "numeric_angle": -104.23747199478457,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 97792,
+          "nominal_deg": 45,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 98304,
+          "nominal_deg": 45,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 98816,
+          "nominal_deg": 45,
+          "numeric_angle": null,
+          "gate": false,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        },
+        {
+          "start": 99328,
+          "nominal_deg": 45,
+          "numeric_angle": null,
+          "gate": true,
+          "tracker": {
+            "state": "SEARCH",
+            "fresh_valid": false,
+            "direction": null,
+            "display_direction": null,
+            "stale": false,
+            "reason": "baseline_rejected",
+            "acquire_count": 0,
+            "last_fresh_ms": null,
+            "display_expires_at_ms": null
+          }
+        }
+      ]
+    }
+  ],
+  "baseline_reused": "94b5fe7 B archived gate frames; no old review rerun",
+  "hardware": "NOT_RUN",
+  "independent_validation": false
+}
