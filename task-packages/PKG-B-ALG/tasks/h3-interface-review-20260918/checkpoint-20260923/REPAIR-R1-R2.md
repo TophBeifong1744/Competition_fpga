@@ -53,3 +53,26 @@ try {
 待审仅限研究复现工具返修；本机成功不代表 A Intel 环境已复核通过，不合入 main，不批准生产profile、完整H3或实板/实时。
 
 首次本机真实准备（1786f86，外部 exact-01）退出1：Git show 将长 commit:path 参数参与文件路径判定，报 Filename too long；该局部目录保留。已改用 git cat-file blob 按对象读取，后续在新目录运行，不将首次失败覆盖为通过。
+
+## 本机实际运行回执（非 A 复核通过）
+
+- 被测源码提交：`0bea3461c1b7b0a9dfd4dcf509f4773ca10b1124`；后续仅归档日志/说明与封存，不改被测实现。
+- Windows11、CPython3.12.14、NumPy2.3.5、AMD CPU。不是 A Intel 环境。
+- 原字节导出176文件，通过；官方 reproduce 从该导出运行退出0。12项返修测试 + 原18项测试分别通过。
+- 48 WAV整文件一致；120整数数组键/dtype/shape/码值一致；18份研究JSON+1份golden摘要语义通过。本机19份JSON字节也一致，浮点差异0；不把反例测试的合成尾差冒充实际Intel复跑。
+- 日志：`evidence/repair-r1-r2/run02/commands.json`、各stdout/stderr、result.json、json-comparison.json；原字节导出收据、环境、输出哈希和冻结结果逐字节检查在同级。实际大体积再生WAV/NPZ留在外部新run02，不重复上传冻结音频。
+- A 原失败报告/诊断保留为 A-REVIEW.md、A-diagnostic.json、A-diagnose.py，来源准确提交见页首；golden01旧失败及run01/golden02未覆盖。本次prepare01失败目录与摘要也保留。
+
+### 相对 bb964cb 的差异
+
+| 文件 | 改动 |
+|---|---|
+| source/reproduce.py | 调用语义比较、严格dtype/shape/PCM检查、增加返修测试及差异报告；计算任务不变 |
+| source/compare_outputs.py（新增） | 显式字段/单位容差、非有限拒绝、离散严格比较与文件字节报告 |
+| source/prepare_exact.py（新增） | 指定commit原blob导出新目录、写后校验、拒绝已有目标，不修改Git配置 |
+| source/verify.py | 保留全部哈希断言，报告具体失配路径/预期/实际值及修复入口 |
+| source/test_repair.py（新增） | 12项正反例和原字节准备测试 |
+| README.md、本文 | Windows准备、依赖安装、容差依据、准确运行与范围说明 |
+| evidence/repair-r1-r2、SNAPSHOT-SHA256.json | 保存旧快照、A依据和新运行证据；仅更新当前封存集合 |
+
+下一轮请 A 从发布回执准确SHA按本文流程在全新目录准备并运行；重点复核R1/R2，原已通过研究结果按增量规则复用。没有A跨环境回执前，状态为“作者返修验证通过、待独立复核”。

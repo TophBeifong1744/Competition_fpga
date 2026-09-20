@@ -1,0 +1,9 @@
+{
+  "status": "FAIL_RETAINED",
+  "commit": "1786f8696c81f6ce1eca084a68fc84876cf89db7",
+  "command": "python -B source/prepare_exact.py --repo . --commit 1786f86 --out F:/NUEC/validation/b-checkpoint-r1-r2-exact-01",
+  "exit_code": 1,
+  "observed_error": "git show: failed to stat commit:path: Filename too long",
+  "preserved_directory": "F:/NUEC/validation/b-checkpoint-r1-r2-exact-01",
+  "note": "Tool output was observed; this is a failure summary, not a claimed archived raw stderr."
+}
