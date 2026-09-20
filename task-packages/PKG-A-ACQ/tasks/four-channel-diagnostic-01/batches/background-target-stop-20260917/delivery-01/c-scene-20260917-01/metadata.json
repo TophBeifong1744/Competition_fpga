@@ -1,0 +1,263 @@
+{
+  "schema_version": "ss-data-draft-0.3",
+  "acquisition_id": "c-scene-20260917-01",
+  "config_version": "four-channel-continuous-s1-6s-raw-20260917-v1",
+  "channel_order": [
+    "mic0",
+    "mic1",
+    "mic2",
+    "mic3"
+  ],
+  "coordinates_m": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0.04,
+      0,
+      0
+    ],
+    [
+      0.04,
+      0.04,
+      0
+    ],
+    [
+      0,
+      0.04,
+      0
+    ]
+  ],
+  "geometry_version": "c-adapter-user-square40-mic0-origin-20260913-v1",
+  "coordinate_system": "x-forward_y-left_z-up",
+  "direction_convention": "array-to-source",
+  "angle_unit": "deg",
+  "sample_rate_hz": 48000,
+  "sample_format": {
+    "encoding": "signed-pcm",
+    "storage_dtype": "int32",
+    "valid_bits": 24,
+    "alignment": "right",
+    "fractional_bits": 0
+  },
+  "source_kind": "hardware-audio",
+  "evidence_level": "diagnostic",
+  "capture_point": "four PDM -> CIC3 R64 gain32 signed24 -> 8-word record -> DMA S2MM two slots -> PS validated raw copy -> CPU-owned DDR archive -> post-stop flush -> XSDB BIN",
+  "provisional_fields": {
+    "coordinates_m": "Derived from user-measured 40 mm edges and user-confirmed planar square; method, tolerance and diagonals not supplied; not precision-calibrated.",
+    "channel_order": "User photo labels and confirmed numbered wiring; no independent per-microphone acoustic mapping test.",
+    "sample_rate_hz": "Configured frequency, not instrument-measured.",
+    "sample_format": "24-bit exchange range, not measured effective precision."
+  },
+  "calibration_status": "not-calibrated",
+  "source_provenance": "Toph Beifong: one live-voice Run, background/speech/stopped-speech; paired UART/BIN",
+  "raw_file": "raw.bin",
+  "raw_sha256": "4bc12f0033e00508100ce5f70ed7bf2025236f3800ff14523feec8eacee37e83",
+  "raw_layout": "ss-four-record-0.1: little-endian id_lo,id_hi,mic0..3,flags,reserved; 32 bytes",
+  "raw_flags": "bits0..3 per-lane saturation -> H1 unknown; other bits unsupported; raw.bin retained",
+  "sample_count": 288250,
+  "first_id": 17246,
+  "last_id": 305495,
+  "processing": "No extra host filtering, DC removal, normalization, gap filling or renumbering in BIN/CSV. Existing frontend PDM/CIC3 R64 gain32 and signed24 saturation remain.",
+  "limits": "Near-field live voice diagnostic only; approximate activity/model geometry, no independent clean/noise reference. No SNR gain, target-detection/lock behavior, M1/H3 or direction-accuracy claim.",
+  "samples_sha256": "60843531ea4ace3d977a2aa149fb3ccf4df4c41718f32bad285e3dd4fcc5e48d",
+  "geometry_record": {
+    "geometry_version": "c-adapter-user-square40-mic0-origin-20260913-v1",
+    "coordinate_system": "x-forward_y-left_z-up",
+    "origin": "mic0 acoustic port center",
+    "positive_x": "mic0 to mic1",
+    "positive_y": "mic0 to mic3",
+    "positive_z": "right-hand normal: +X cross +Y",
+    "positive_azimuth": "+X toward +Y, atan2(y,x)",
+    "axis_naming_note": "H1 forward/left refer to the newly defined +X/+Y axes, not the earlier colloquial front/right description.",
+    "channel_order": [
+      "mic0",
+      "mic1",
+      "mic2",
+      "mic3"
+    ],
+    "coordinates_m": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0.04,
+        0,
+        0
+      ],
+      [
+        0.04,
+        0.04,
+        0
+      ],
+      [
+        0,
+        0.04,
+        0
+      ]
+    ],
+    "coordinate_basis": "Derived from four user-reported measured edges of 40 mm and explicit user confirmation of a coplanar square with microphones at the four vertices; not imported nominal CAD coordinates.",
+    "measured_edges_mm": {
+      "mic0-mic1": 40,
+      "mic0-mic3": 40,
+      "mic1-mic2": 40,
+      "mic3-mic2": 40
+    },
+    "diagonal_measurements_mm": null,
+    "measurement_instrument": null,
+    "measurement_method_detail": null,
+    "measurement_uncertainty_mm": null,
+    "squareness_independently_verified": false,
+    "coplanarity_independently_verified": false,
+    "independent_acoustic_channel_mapping_verified": false,
+    "photo_labels": {
+      "top_left": "mic0",
+      "bottom_left": "mic1",
+      "bottom_right": "mic2",
+      "top_right": "mic3"
+    }
+  },
+  "adapter_interface": {
+    "config_version": "four-channel-c-adapter-v1",
+    "adapter_source_sha256": "80ec1919164c3c65ec7ab5e59674ca3a8f2cb67fa497b7656d67f9aea1a43f30",
+    "mating": "U1 or U2 numbered pin N to Navigator J4 numbered pin N; identify square pad 1, no mirror or 180-degree reversal",
+    "power": {
+      "38": "3.3V",
+      "37": "GND",
+      "39": "GND",
+      "40": "5V passthrough; not microphone VDD"
+    },
+    "channels": [
+      {
+        "mic": "mic0",
+        "sockets": "U3/U4",
+        "data_net": "DATA1",
+        "data_port": "pdm_data[0]",
+        "data_pin": 17,
+        "data_ball": "Y9",
+        "data_bank": 13,
+        "clock_net": "CLK1",
+        "clock_port": "pdm_clk1",
+        "clock_pin": 21,
+        "clock_ball": "V11",
+        "clock_bank": 13
+      },
+      {
+        "mic": "mic1",
+        "sockets": "U5/U6",
+        "data_net": "DATA2",
+        "data_port": "pdm_data[1]",
+        "data_pin": 19,
+        "data_ball": "W10",
+        "data_bank": 13,
+        "clock_net": "CLK2",
+        "clock_port": "pdm_clk2",
+        "clock_pin": 23,
+        "clock_ball": "Y13",
+        "clock_bank": 13
+      },
+      {
+        "mic": "mic2",
+        "sockets": "U7/U8",
+        "data_net": "DATA3",
+        "data_port": "pdm_data[2]",
+        "data_pin": 33,
+        "data_ball": "W14",
+        "data_bank": 34,
+        "clock_net": "CLK3",
+        "clock_port": "pdm_clk3",
+        "clock_pin": 29,
+        "clock_ball": "U14",
+        "clock_bank": 34
+      },
+      {
+        "mic": "mic3",
+        "sockets": "U9/U10",
+        "data_net": "DATA4",
+        "data_port": "pdm_data[3]",
+        "data_pin": 35,
+        "data_ball": "V15",
+        "data_bank": 34,
+        "clock_net": "CLK4",
+        "clock_port": "pdm_clk4",
+        "clock_pin": 31,
+        "clock_ball": "V12",
+        "clock_bank": 34
+      }
+    ],
+    "shared_peripherals": "J4 29/31/33/35 share CMOS_D4/CMOS_D6/CMOS_PCLK/CMOS_PWDN; no simultaneously connected camera or other driver",
+    "geometry": "See geometry_record: user-reported measurement and declared square; original design-only unmeasured note superseded for this dataset.",
+    "evidence": "EPRO2 pad nets and footprint orientation; Navigator baseboard v3.9 sheet 5; coreboard v2.5 Bank13 sheet 6 and Bank34 sheet 3; nominal VCCIO supply sheets 7/10. Not an assembly measurement."
+  },
+  "geometry_reuse_basis": "Existing C-board declared-square geometry retained for this task; not a new geometric measurement or calibration.",
+  "source_placement_record": {
+    "source_mode": "live human voice",
+    "spoken_words": "就让我忘了这一切",
+    "source_reference": "mic0",
+    "reported_direction": "+X",
+    "reported_distance_m_approx": 0.05,
+    "reported_relative_height_m_approx": 0,
+    "measurement_method": null,
+    "position_uncertainty_m": null,
+    "source_position_model_m": [
+      0.05,
+      0,
+      0
+    ],
+    "array_center_model_m": [
+      0.02,
+      0.02,
+      0
+    ],
+    "center_relative_vector_model_m": [
+      0.03,
+      -0.02,
+      0
+    ],
+    "center_distance_model_m": 0.03605551275463989,
+    "center_azimuth_model_deg": -33.69006752597979,
+    "model_note": "Derived ONLY from approximate user placement and prior declared square; NOT measured angle/distance truth or validated far-field.",
+    "reported_activity_seconds_approx": [
+      {
+        "label": "background",
+        "start": 0,
+        "end": 2
+      },
+      {
+        "label": "speech",
+        "start": 2,
+        "end": 5
+      },
+      {
+        "label": "post_speech_background",
+        "start": 5,
+        "end": 6.005208333333333
+      }
+    ],
+    "activity_basis": "Operator approximate 2s quiet / 3s speech / 1s after; no synchronized trigger or precision sample labels",
+    "precise_activity_sample_indices": null,
+    "activity_uncertainty_seconds": null,
+    "playback_device": "not applicable: live voice",
+    "playback_effects": "not applicable: live voice",
+    "acoustic_voice_level": null,
+    "independent_clean_reference": null,
+    "independent_noise_reference": null,
+    "microphone_internal_processing": "not independently verified",
+    "far_field_validated": false,
+    "precision_direction_ground_truth": false,
+    "recording_datetime": null,
+    "timestamp_note": "Filename and firmware build dates do not independently timestamp acoustic acquisition"
+  },
+  "firmware_config_version": "S1_6S_RAW",
+  "serial_sha256": "274e0c3753fb0a7f51075a1a61b49ddb569fe594665c8a0886da77a3d1dc8550",
+  "recording_notes": {
+    "operator": "Toph Beifong",
+    "fnv1a32": "9494D645",
+    "single_continuous_run": true,
+    "stopping": "One explicit acquisition stop after >=6 seconds; full packet drain; no within-segment restart"
+  }
+}

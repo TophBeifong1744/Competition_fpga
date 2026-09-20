@@ -1,0 +1,53 @@
+{
+  "status": "DIAGNOSTIC_INPUT_SELF_CHECK_PASS_NOT_B_ACCEPTANCE",
+  "evidence_level": "diagnostic",
+  "new_board_operation_by_agent": false,
+  "capture": {
+    "groups": 288250,
+    "packets": 1153,
+    "bytes": 9224000,
+    "seconds": 6.005208333333333,
+    "first_id": 17246,
+    "last_id": 305495,
+    "fnv1a32": "9494D645",
+    "source_status": "C100000A",
+    "dma_status": "00001002",
+    "archive_data": 1125056,
+    "capture_command_us": 6000119,
+    "drain_us": 5210,
+    "max_check_us": 59,
+    "max_arm_gap_us": 5238,
+    "channels": [
+      {
+        "min": -79936,
+        "max": 56128,
+        "zeros": 999,
+        "clip_flags": 0
+      },
+      {
+        "min": -124928,
+        "max": 83648,
+        "zeros": 912,
+        "clip_flags": 0
+      },
+      {
+        "min": -90944,
+        "max": 59328,
+        "zeros": 887,
+        "clip_flags": 0
+      },
+      {
+        "min": -61760,
+        "max": 51968,
+        "zeros": 988,
+        "clip_flags": 0
+      }
+    ],
+    "flagged_rows": 0
+  },
+  "csv_bin_exact": true,
+  "wav_readback_exact": true,
+  "reader": "PASS_FORMAT_ONLY",
+  "new_continuous_raw_recording": true,
+  "not_independent_clean_noise_reference": true
+}

@@ -1,0 +1,60 @@
+{
+  "phases": [
+    {
+      "label": "background",
+      "start_index_for_summary": 0,
+      "end_exclusive": 96000,
+      "basis": "nominal operator timing, NOT detected onset/offset",
+      "mean": [
+        -722.9573333333333,
+        -894.252,
+        -900.926,
+        -781.4586666666667
+      ],
+      "raw_rms": [
+        7878.379918739639,
+        8512.315778603768,
+        8253.296376438528,
+        7964.896675454533
+      ]
+    },
+    {
+      "label": "speech",
+      "start_index_for_summary": 96000,
+      "end_exclusive": 240000,
+      "basis": "nominal operator timing, NOT detected onset/offset",
+      "mean": [
+        -936.8804444444445,
+        -1057.9346666666668,
+        -804.6306666666667,
+        -803.7084444444445
+      ],
+      "raw_rms": [
+        10590.60075215545,
+        11508.073076506867,
+        11295.601170170428,
+        10283.662477368869
+      ]
+    },
+    {
+      "label": "after",
+      "start_index_for_summary": 240000,
+      "end_exclusive": 288250,
+      "basis": "nominal operator timing, NOT detected onset/offset",
+      "mean": [
+        -206.24712953367876,
+        -330.45488082901556,
+        -575.4787150259067,
+        -338.36037305699483
+      ],
+      "raw_rms": [
+        11661.612727232823,
+        12343.24324786894,
+        13128.14007034551,
+        11569.980042984835
+      ]
+    }
+  ],
+  "units": "original PCM integer codes",
+  "not_snr": true
+}

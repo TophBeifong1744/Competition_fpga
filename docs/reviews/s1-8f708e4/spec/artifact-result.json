@@ -1,0 +1,65 @@
+{
+  "status": "PASS_LIMITED_ARCHIVE",
+  "contracts": {
+    "continuous_contract": [
+      1129270833,
+      16777216,
+      17825792,
+      250,
+      8,
+      8000,
+      64,
+      8064,
+      2,
+      16128,
+      1048576,
+      1073741823,
+      1077936128,
+      1092616192,
+      6000000,
+      288000
+    ],
+    "scene_contract": [
+      1396919857,
+      1,
+      6000000,
+      288000,
+      300000,
+      9600000,
+      64,
+      2,
+      32,
+      48000,
+      2000000
+    ]
+  },
+  "end": "0xa400c0",
+  "archive_start": "0x112a80",
+  "archive_size": 9600128,
+  "capture_bytes": 9224000,
+  "capacity_headroom_bytes": 376000,
+  "timer_literal": 333333343,
+  "source_files_bound": [
+    "continuous/scene_store.h",
+    "Empty_applicationExample.cmake",
+    "continuous/scene_store.c",
+    "lscript.ld",
+    "continuous/main_continuous.c",
+    "continuous/continuous_core.c",
+    "main.c",
+    "UserConfig.cmake",
+    "continuous/continuous_core.h",
+    "CMakeLists.txt"
+  ],
+  "archived_model_source_hashes_match": true,
+  "available_historical_object_sha256": "3fd07ea3b80a955c660291e4a38fbee2ca022bb10088f725dedea487ba4bc150",
+  "post_build_object_sha256": "0cb797800bb2f9791d35fa4c81bd995db6696513b0540d959c2e5e2614cabdc2",
+  "historical_object_matches_post_build": false,
+  "object_scope": "Only before-fix object archived; report hash is not independent post-build object inspection",
+  "not_run": [
+    "ARM compile/link",
+    "full historical gate",
+    "JTAG download/readback",
+    "board"
+  ]
+}

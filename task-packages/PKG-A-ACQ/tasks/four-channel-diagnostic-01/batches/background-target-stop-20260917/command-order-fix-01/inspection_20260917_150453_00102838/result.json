@@ -1,0 +1,200 @@
+{
+  "scope": "Existing user ARM artifacts, not new agent compilation or board test",
+  "fresh_guarded_build_required": true,
+  "board_run": false,
+  "before_rejected": "Generated commands/linker subarguments or gate mismatch",
+  "command_match_after_fix": true,
+  "source_sha256": {
+    "continuous/scene_store.h": "830c343ca1466ed85e9fedb874c4e93b94baa310e7d6f797fec629ef98e69ec5",
+    "Empty_applicationExample.cmake": "bca95562ac27da001b5192bb285cb59f11fe5f50474c1a7c19c7d4e4c2d8314e",
+    "continuous/scene_store.c": "3d687014613775eb2effbb86f3430d8db554d45cf9a1f7af869c0628575aada4",
+    "lscript.ld": "8872fb0af0f6bec969e63d2e5d170c1fc058c782c6924d70697b352aeab55dd4",
+    "continuous/main_continuous.c": "02bcef3d9abe62314123bb1ed678bf566e44beaa160459391159f272ce78528d",
+    "continuous/continuous_core.c": "346697ec817ffe0318b366f0ff8735da90fb534fb773e41545e93d94d05907f6",
+    "main.c": "51462ed4c2a7791d9b97eb528382a1e598cd4ab940759fa781f21894dbd19684",
+    "UserConfig.cmake": "f46cdae7660d1385a26c1d5af539588ab17474f5aa4a0f6f3228a0100042d4c9",
+    "continuous/continuous_core.h": "93135b855aa83da07684d1274fa5ad9c55b560eae0f5da1bba0716d4f2fdb92e",
+    "CMakeLists.txt": "58ad3d396dc1145999b1447ec5787c705fa827cd62a70fd7e1033df93729fc80"
+  },
+  "compiled": {
+    "program_end": 10748096,
+    "ranges": [
+      {
+        "name": "PT_LOAD",
+        "start": 1048576,
+        "end": 1082252
+      },
+      {
+        "name": "PT_LOAD",
+        "start": 1097728,
+        "end": 10748096
+      },
+      {
+        "name": ".text",
+        "start": 1048576,
+        "end": 1077704
+      },
+      {
+        "name": ".init",
+        "start": 1077704,
+        "end": 1077716
+      },
+      {
+        "name": ".fini",
+        "start": 1077716,
+        "end": 1077728
+      },
+      {
+        "name": ".rodata",
+        "start": 1077728,
+        "end": 1080776
+      },
+      {
+        "name": ".data",
+        "start": 1080776,
+        "end": 1082196
+      },
+      {
+        "name": ".eh_frame",
+        "start": 1082196,
+        "end": 1082252
+      },
+      {
+        "name": ".mmu_tbl",
+        "start": 1097728,
+        "end": 1114112
+      },
+      {
+        "name": ".ARM.exidx",
+        "start": 1114112,
+        "end": 1114120
+      },
+      {
+        "name": ".init_array",
+        "start": 1114120,
+        "end": 1114128
+      },
+      {
+        "name": ".fini_array",
+        "start": 1114128,
+        "end": 1114132
+      },
+      {
+        "name": ".drvcfg_sec",
+        "start": 1114132,
+        "end": 1114348
+      },
+      {
+        "name": ".bss",
+        "start": 1114368,
+        "end": 10725556
+      },
+      {
+        "name": ".heap",
+        "start": 10725556,
+        "end": 10733760
+      },
+      {
+        "name": ".stack",
+        "start": 10733760,
+        "end": 10748096
+      }
+    ],
+    "archive_start": 1124992,
+    "archive_data": 1125056,
+    "archive_end": 10725120,
+    "capacity_bytes": 9600000,
+    "guard_each": 64,
+    "divisor": 333333343,
+    "contract": [
+      1129270833,
+      16777216,
+      17825792,
+      250,
+      8,
+      8000,
+      64,
+      8064,
+      2,
+      16128,
+      1048576,
+      1073741823,
+      1077936128,
+      1092616192,
+      6000000,
+      288000
+    ],
+    "scene": [
+      1396919857,
+      1,
+      6000000,
+      288000,
+      300000,
+      9600000,
+      64,
+      2,
+      32,
+      48000,
+      2000000
+    ],
+    "elf_sha256": "4b6a15f65c278f53cd898602733c83921108dd092b64f186437e30b3bde94598",
+    "object_sha256": "3fd07ea3b80a955c660291e4a38fbee2ca022bb10088f725dedea487ba4bc150",
+    "timer_layout": {
+      "1": {
+        "address": "0x2bc",
+        "pool_offset": 108,
+        "literal_immediate": 12,
+        "padding_nop": false,
+        "divisor": 333333343,
+        "calls": {
+          "XTime_GetTime": {
+            "relocation_type": 28,
+            "symbol": "XTime_GetTime"
+          },
+          "__aeabi_uldivmod": {
+            "relocation_type": 28,
+            "symbol": "__aeabi_uldivmod"
+          }
+        }
+      },
+      "2": {
+        "address": "0x100764",
+        "pool_offset": 108,
+        "literal_immediate": 12,
+        "padding_nop": false,
+        "divisor": 333333343,
+        "calls": {
+          "XTime_GetTime": {
+            "target": "0x102b9c",
+            "thumb": false
+          },
+          "__aeabi_uldivmod": {
+            "target": "0x104d74",
+            "thumb": true
+          }
+        }
+      }
+    }
+  },
+  "graph": {
+    "source_guard_before_compile": true,
+    "source_guard_before_link": true,
+    "auxiliary_enumeration_order": "either; contents exact"
+  },
+  "full_post_result": "EXPECTED_STALE_VERIFIER_RECEIPT_REJECTION",
+  "full_post_reason": "Verifier changed since previous stage; re-run guarded pre/build, do not reuse old receipt",
+  "load_paths_read_only": {
+    "elf": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance\\build\\four_mic_endurance.elf",
+    "bit": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance\\_ide\\bitstream\\system_continuous_20260915.bit",
+    "init": "F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance\\_ide\\psinit\\ps7_init.tcl"
+  },
+  "artifact_sha256": {
+    "build/four_mic_endurance.elf": "4b6a15f65c278f53cd898602733c83921108dd092b64f186437e30b3bde94598",
+    "build/CMakeFiles/four_mic_endurance.elf.dir/main.c.obj": "3fd07ea3b80a955c660291e4a38fbee2ca022bb10088f725dedea487ba4bc150",
+    "build/memory.map": "f0484b02c33af0455326bc37fa76543b191adc7740f3aa5f942ad7dd171ced73",
+    "build/build.ninja": "4797c1a7b71a7c6fbbe597c74afc20f047d12781b693629764305f24eed8f4c8",
+    "build/compile_commands.json": "dc4523a735fb869b622953dadf1b043c843ecb4c913e8b84ad564606dbfec4a1",
+    "_ide/launch.json": "aa6240d2ba212b4a091ac5f419f8594a1ffddaa7efe7b013e624972b025e6cfc"
+  },
+  "status": "REPAIR_AND_READ_ONLY_BINDING_CHECKED_NOT_FRESH_BUILD_NOT_BOARD"
+}

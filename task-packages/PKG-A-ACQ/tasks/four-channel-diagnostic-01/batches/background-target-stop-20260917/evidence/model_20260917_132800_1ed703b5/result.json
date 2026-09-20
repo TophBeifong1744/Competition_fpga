@@ -1,0 +1,39 @@
+{
+  "kind": "HOST_C_MODEL_NOT_BOARD_NOT_ARM_BUILD",
+  "commands": [
+    {
+      "argv": [
+        "F:\\Program\\env\\mingw64\\bin\\gcc.exe",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-misleading-indentation",
+        "-IE:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\background-target-stop-20260917\\proposed-src\\continuous",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\background-target-stop-20260917\\proposed-src\\continuous\\continuous_core.c",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\background-target-stop-20260917\\proposed-src\\continuous\\scene_store.c",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\background-target-stop-20260917\\tests\\test_scene.c",
+        "-o",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\background-target-stop-20260917\\evidence\\model_20260917_132800_1ed703b5\\test_scene.exe"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\background-target-stop-20260917\\evidence\\model_20260917_132800_1ed703b5\\test_scene.exe"
+      ],
+      "returncode": 0
+    }
+  ],
+  "pass_model": true,
+  "sha256": {
+    "proposed-src\\continuous\\continuous_core.c": "346697ec817ffe0318b366f0ff8735da90fb534fb773e41545e93d94d05907f6",
+    "proposed-src\\continuous\\continuous_core.h": "93135b855aa83da07684d1274fa5ad9c55b560eae0f5da1bba0716d4f2fdb92e",
+    "proposed-src\\continuous\\main_continuous.c": "02bcef3d9abe62314123bb1ed678bf566e44beaa160459391159f272ce78528d",
+    "proposed-src\\continuous\\scene_store.c": "3d687014613775eb2effbb86f3430d8db554d45cf9a1f7af869c0628575aada4",
+    "proposed-src\\continuous\\scene_store.h": "830c343ca1466ed85e9fedb874c4e93b94baa310e7d6f797fec629ef98e69ec5",
+    "tests\\reused_core_cases.c": "7e22d7e3d3a601f5ac0c4e8cfedbc176db74dcaf3d669af0d982abd5812ca1d7",
+    "tests\\test_scene.c": "ce863948eab161ec9235612ee29e615cbc33664d94f26c4c216ceddffeffe733"
+  }
+}
