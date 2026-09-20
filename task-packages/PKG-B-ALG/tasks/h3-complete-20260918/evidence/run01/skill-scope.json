@@ -1,0 +1,65 @@
+{
+  "status": "PASS_INCREMENTAL_SCOPE_IDENTITY_ONLY",
+  "checkout_head": "5cfa02e51af44bb5c930babf732ddc864a1ab6cd",
+  "review_rule": "2026-09-17 incremental review; unchanged approved paths reused",
+  "skills": {
+    "SKL-001": {
+      "approved_sha": "a7e1ea976da91ba735af5c0a79fffdc7d10c121f",
+      "path": "skill/fpga-module-verification",
+      "approved_scope": "module simulation only",
+      "normal_cases": [
+        "pcm4 signed extension",
+        "elastic ready-valid normal and reset recovery"
+      ],
+      "failure_cases": [
+        "bad data",
+        "bad ready",
+        "two-stage latency",
+        "full-slot capacity",
+        "X/Z propagation"
+      ],
+      "unknown_case": "historical independent signed8 saturation fault is reusable evidence",
+      "migration_case": "NOT_RUN; no new unknown module/tool-version migration executed for 9/18",
+      "hardware": "NOT_RUN",
+      "approved_sha_is_ancestor": true,
+      "changed_files_since_approved_sha": [],
+      "entry_hashes": {
+        "skill/fpga-module-verification/SKILL.md": "a7329aef37d00d0e2ad43710b3e5e365ab029df3cf5e464d5dd10fe947ebfe07",
+        "skill/fpga-module-verification/README.md": "b68a0b4773c1ba668bb08a27cfff2feadf744a8a83b09d832de1bead487fc8d3"
+      },
+      "decision": "REUSE_APPROVED_SCOPE_NO_FULL_RERUN",
+      "license_and_source": "retained from approved package; no path change"
+    },
+    "SKL-002": {
+      "approved_sha": "3ac597d1d16982e0a5c5a114202ca8568dc28d8f",
+      "path": "skill/pynq-overlay-dma-validation",
+      "approved_scope": "offline static/mock only",
+      "profiles": [
+        "thermal signed16 96-byte synthetic profile",
+        "pixel uint32 128-byte synthetic profile"
+      ],
+      "failure_cases": [
+        "cache stale",
+        "timeout and abort timeout",
+        "short output",
+        "duplicate evidence ID",
+        "release failure",
+        "large integer 2**120 one-code mismatch"
+      ],
+      "hardware": "NOT_RUN_REAL_PYNQ",
+      "approved_sha_is_ancestor": true,
+      "changed_files_since_approved_sha": [],
+      "entry_hashes": {
+        "skill/pynq-overlay-dma-validation/SKILL.md": "9471b7a7f669fddba186816079d174d9e9a4a4262aaa159ed0f4a31d44e81636",
+        "skill/pynq-overlay-dma-validation/README.md": "ac972cd7fe783e403c2697e257deebf5f120235924f432c90bb25754e6d9f80f"
+      },
+      "decision": "REUSE_APPROVED_SCOPE_NO_FULL_RERUN",
+      "license_and_source": "retained from approved package; no path change"
+    }
+  },
+  "limits": [
+    "No new independent Skill acceptance is issued by A author work.",
+    "SKL-001 remains module-simulation limited, not production RTL or board proof.",
+    "SKL-002 real PYNQ remains NOT_RUN and bonus risk remains open."
+  ]
+}

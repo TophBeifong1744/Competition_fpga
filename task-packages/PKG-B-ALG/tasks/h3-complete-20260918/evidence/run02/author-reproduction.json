@@ -1,0 +1,28 @@
+{
+  "status": "PASS_AUTHOR_REPRODUCTION_NOT_INDEPENDENT_REVIEW",
+  "worktree_kind": "independent task worktree, not a clean detached verification checkout",
+  "commands": 7,
+  "all_exit_codes": 0,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Windows 11"
+  },
+  "tests": {
+    "new_h3_candidate": 29,
+    "unchanged_three_way_audio_package": 50
+  },
+  "stage_arrays_exactly_recomputed": 11,
+  "not_run": [
+    "new real-input truth metrics",
+    "presence accuracy",
+    "direction P50/P95",
+    "objective audio improvement",
+    "AMD full-chain bit-exact comparison",
+    "new RTL/XSim",
+    "integrated synthesis/timing",
+    "real-time board audio",
+    "real PYNQ"
+  ],
+  "note": "A final full rerun from a clean detached checkout is required after the task commit; this author result is not B independent review."
+}

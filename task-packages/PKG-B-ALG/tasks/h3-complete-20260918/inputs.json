@@ -1,0 +1,83 @@
+{
+  "schema": "h3-git-blob-input-ledger-0.2",
+  "byte_contract": "sha256 and bytes refer to HEAD Git blob; text checkout may only CRLF-to-LF normalize to that exact blob",
+  "files": {
+    "docs/input-scale-and-pl-ps-boundary.md": {
+      "bytes": 10244,
+      "sha256": "25543b5864ae6bf287115b09cf0018bff3f19c77a9ed2b1d77dd3bb9d5f7a639"
+    },
+    "docs/maintenance/skills-rereview-b-2026-09-14.md": {
+      "bytes": 16903,
+      "sha256": "8db4481e4e8449003247f65808a70ee50642c91c67c2e0f33e7e56f39f5b7877"
+    },
+    "docs/reviews/four-track-f364a02/REVIEW.md": {
+      "bytes": 10255,
+      "sha256": "10f2627f3b1fb6308050bdeeab692381b7a1482c4ddacfc2ef04628033c631f9"
+    },
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/config.json": {
+      "bytes": 1587,
+      "sha256": "096ebc0fd396fa4f4c07c650e4ce98c4253ee579d26d0416cbfe7c0e33f5f6ce"
+    },
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/tracking.py": {
+      "bytes": 4918,
+      "sha256": "08e3bb674ebe33ac74c1b38ccf869351d6ec3ddded50d55b170a6f36596e4d58"
+    },
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/evidence/run02/center-frames.json": {
+      "bytes": 241510,
+      "sha256": "1c70d7c0b2fb8c38d24e8cc49c1c702db1eab7ac2cef072fb5d12832b15230cc"
+    },
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/evidence/run02/quiet-frames.json": {
+      "bytes": 243391,
+      "sha256": "8db3559fafadafcaf2f5eb690b8f343815bce05ff7da7f175e520f373146cb7e"
+    },
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/config.json": {
+      "bytes": 264,
+      "sha256": "4b04859adee3de56ea458072f8bc67643c7a2420c1a98731449fb3cf07df335d"
+    },
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/evidence/run02/audio/result.json": {
+      "bytes": 56923,
+      "sha256": "efabe4c72b8bba752908558a4fb89af66dac1e1cc6b9fa20fdaff5401e988013"
+    },
+    "task-packages/PKG-B-ALG/tasks/c-board-algorithm-01/H3-GAPS.md": {
+      "bytes": 6937,
+      "sha256": "09c7167f6d0013d1379f33c43543e872f18d2bd9a25f4a3269538c19d24b54b8"
+    },
+    "task-packages/PKG-B-ALG/tasks/c-board-algorithm-01/run.py": {
+      "bytes": 10768,
+      "sha256": "7acd56bd7742baf174b0273f0aee2e54bacfe730840c7cb8019c07e3b2b675de"
+    },
+    "task-packages/PKG-B-ALG/tasks/phat-fixed-03/phat_model.py": {
+      "bytes": 2933,
+      "sha256": "84eaa9691f62aba7164e3172aa94b2e361cb99672647477d98f8b3f3889f3144"
+    },
+    "task-packages/PKG-B-ALG/tasks/phat-fixed-03/integration/protocol.json": {
+      "bytes": 688,
+      "sha256": "b4d4eb3e56c39f238ec4251b93e574d4bedf9e32b6e9189291d8c8ffa671c627"
+    },
+    "task-packages/PKG-B-ALG/tasks/input-boundary-adoption-01/contract.json": {
+      "bytes": 5771,
+      "sha256": "dab523a19df0ddbb9e4f33ba8d2d58fd9e25f56bad7d11dc10782022adbfb1ac"
+    },
+    "task-packages/PKG-A-ACQ/tasks/fft29-bitexact-budget-01/coverage-extension-01/evidence/run01/check.json": {
+      "bytes": 3302,
+      "sha256": "695c6a90144f7e20f24ca64651ec804b1c5604565cb62b5103c32d035bc61269"
+    },
+    "task-packages/PKG-A-H3-INTEGRATION/payload/H3-CONSTRAINTS.md": {
+      "bytes": 16052,
+      "sha256": "6ed0cbfc0bb9e13c04db7ae1eb72dff7b7d893edcfbef3ff27d15b81d3bb19b6"
+    },
+    "skill/fpga-module-verification/SKILL.md": {
+      "bytes": 4286,
+      "sha256": "a7329aef37d00d0e2ad43710b3e5e365ab029df3cf5e464d5dd10fe947ebfe07"
+    },
+    "skill/pynq-overlay-dma-validation/SKILL.md": {
+      "bytes": 5840,
+      "sha256": "9471b7a7f669fddba186816079d174d9e9a4a4262aaa159ed0f4a31d44e81636"
+    }
+  },
+  "external_pending": {
+    "commit": "8f708e42caf32c1de6f30726298e3edf0e1970b6",
+    "branch": "codex/toph/background-target-stop-20260917",
+    "scope": "six-second real input; pending B review; not copied into this candidate"
+  }
+}

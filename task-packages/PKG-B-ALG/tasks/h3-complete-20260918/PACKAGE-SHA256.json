@@ -1,0 +1,418 @@
+{
+  "schema": "soundsight-h3-package-sha256-2",
+  "root": "task-packages/PKG-B-ALG/tasks/h3-complete-20260918",
+  "excludes": [
+    "PACKAGE-SHA256.json"
+  ],
+  "text_rule": "Only CRLF-to-LF normalization for .md/.py/.json/.txt; binary is raw",
+  "files": [
+    {
+      "path": "H3-ADMISSION.md",
+      "bytes": 3790,
+      "sha256": "ea93f900fdbe960deabd0c36a689e19d72e78ae16274dbba1ddd3c518c7d605d",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 4821,
+      "sha256": "d362baba48d5591f6c0b297cfd79a1e75bb7cb18a1d8b02854ea6d933de7c142",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7167,
+      "sha256": "1373a0fd41f56aae5524594b05ede8520b90d169133eeff3afb183c55d3a040b",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "REAL-INPUT-STATUS.md",
+      "bytes": 1444,
+      "sha256": "17915b01b2e3740ebbeb9a6ca6054921b65bebd68bd99a84fc6fbb1b7214c06d",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "REVIEW-PROMPT.md",
+      "bytes": 3697,
+      "sha256": "c0db58acaabd4d67b2371f0fb7f930e07d0538679feb17a9688ac67744033795",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "SKILL-SCOPE-CHECK.md",
+      "bytes": 1945,
+      "sha256": "649b1d74f6cc47a083ae896707320b6c9bab3019ce089c26ea2f14aa6b215f42",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "WORK-EXECUTION-REPORT.md",
+      "bytes": 7159,
+      "sha256": "8330bd81d71cc69216905218a35265499559551b5f8c95526286a788b6e63150",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "config.json",
+      "bytes": 2245,
+      "sha256": "57c950abc3253c963530a1387fb72f031e121afa5ed950427ace1a3c2fe59cb2",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run01/FAILURE.md",
+      "bytes": 940,
+      "sha256": "b3ced2e1f4e1d518d83c03339286ce44f76068bdff7a1f7bef26f06844a85e18",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run01/budget.json",
+      "bytes": 2818,
+      "sha256": "21a2700fa5a69e9f1435582b7230776866372c01447d6c99d8aceec931bd8ef0",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run01/golden-check.json",
+      "bytes": 6090,
+      "sha256": "89885a167db60e50a35e5835c3598faef9188dee70a95bccb4e647487c0211fd",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run01/golden/SHA256.json",
+      "bytes": 187,
+      "sha256": "84a0e6560ee2b8dfa28f8d9f5749d3f409439091adfd85e9e52f79d92b0c8208",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run01/golden/golden-stages.npz",
+      "bytes": 62079,
+      "sha256": "b8733ee94936d1c7c4a69f477e357a26740615d653bd534be9b4426f145b277d",
+      "byte_contract": "raw"
+    },
+    {
+      "path": "evidence/run01/golden/golden-summary.json",
+      "bytes": 20283,
+      "sha256": "35bda3af5565b3975900668ab531a15a28be8cd0d05221c6342a62a0eecddc1f",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run01/real-diagnostic/SHA256.json",
+      "bytes": 174,
+      "sha256": "10ecb4bf4ea294ffec19162f6224b6df13c0ea1036faf87b5d6f4b251931df28",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run01/real-diagnostic/frames.json",
+      "bytes": 106871,
+      "sha256": "054d1cf519aa762ed70f9a15683e9062997a98a544e1e1eee0d35389844ffa88",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run01/real-diagnostic/summary.json",
+      "bytes": 1835,
+      "sha256": "333b20281150423ab7da7a26590f5d91128d9c801e1f7ecaea7e671f1bf2db93",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run01/skill-scope.json",
+      "bytes": 2733,
+      "sha256": "4fc33a4ea08f9810dc8f7d8c8d3645e06e95881afaf1ecc5e5ce4cab18ed26a6",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run02/SUPERSEDED.md",
+      "bytes": 647,
+      "sha256": "8f36621d33a9fda4683cb94ff45f0981e8e51d03fee21ffe738ff830499d4bb1",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run02/author-reproduction.json",
+      "bytes": 859,
+      "sha256": "bb6c8322bd0d7cf73f42845bd4efd84f2ed43e507240c6d04bb51e00311907f6",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run02/budget.json",
+      "bytes": 2818,
+      "sha256": "21a2700fa5a69e9f1435582b7230776866372c01447d6c99d8aceec931bd8ef0",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run02/golden-check.json",
+      "bytes": 6033,
+      "sha256": "39e092ded05a27cb5bb9766496c342ca66e239113b1a9805068de0f4bdd234e0",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run02/golden/SHA256.json",
+      "bytes": 187,
+      "sha256": "89bd628d3a5ae089d685d66bfac60d93f71c145538e41f8e63fe9826ffdf92cc",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run02/golden/golden-stages.npz",
+      "bytes": 64672,
+      "sha256": "94b2d2ddb9d7dfdf429108c34cfcdeaa3296cac1db07ae24ed86efeab4683be4",
+      "byte_contract": "raw"
+    },
+    {
+      "path": "evidence/run02/golden/golden-summary.json",
+      "bytes": 20226,
+      "sha256": "e652f7ec9d30fc2f0fbea5e28a688687d7340b5d497ee0bf9f4aa701281f5ec7",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run02/real-diagnostic/SHA256.json",
+      "bytes": 174,
+      "sha256": "10ecb4bf4ea294ffec19162f6224b6df13c0ea1036faf87b5d6f4b251931df28",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run02/real-diagnostic/frames.json",
+      "bytes": 106871,
+      "sha256": "054d1cf519aa762ed70f9a15683e9062997a98a544e1e1eee0d35389844ffa88",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run02/real-diagnostic/summary.json",
+      "bytes": 1835,
+      "sha256": "333b20281150423ab7da7a26590f5d91128d9c801e1f7ecaea7e671f1bf2db93",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run02/skill-scope.json",
+      "bytes": 2733,
+      "sha256": "4fc33a4ea08f9810dc8f7d8c8d3645e06e95881afaf1ecc5e5ce4cab18ed26a6",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run03/author-input-post.txt",
+      "bytes": 21,
+      "sha256": "459d4d0a5f68c53fbe14f98864c98ea084d084b4f7de36eb47d3a8c3ecd45268",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run03/author-input-pre.txt",
+      "bytes": 21,
+      "sha256": "459d4d0a5f68c53fbe14f98864c98ea084d084b4f7de36eb47d3a8c3ecd45268",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run03/author-package-manifest.txt",
+      "bytes": 32,
+      "sha256": "32f55f23b8ffbaad3d817d78234ce1bc35d3107fdf2efc6d8cbd001654cc6173",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run03/author-three-way-audio.txt",
+      "bytes": 92,
+      "sha256": "16dcff3de9eee891234d06df9be6a8b6d08cf77418c3b4e9f3d63c6e1d2709fb",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run03/author-unit-tests.txt",
+      "bytes": 2727,
+      "sha256": "e6cfb069dea60751f0c48a8db158032e6b0a13b3b0ac46fbf5b0095b78bbfd3b",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run03/budget.json",
+      "bytes": 2818,
+      "sha256": "21a2700fa5a69e9f1435582b7230776866372c01447d6c99d8aceec931bd8ef0",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run03/golden-check.json",
+      "bytes": 6033,
+      "sha256": "39e092ded05a27cb5bb9766496c342ca66e239113b1a9805068de0f4bdd234e0",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run03/golden/SHA256.json",
+      "bytes": 187,
+      "sha256": "67dd2d239f8e7500b9973e5dc8545e5436a1e0659471dc91c773bc330bf2707c",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run03/golden/golden-stages.npz",
+      "bytes": 64672,
+      "sha256": "94b2d2ddb9d7dfdf429108c34cfcdeaa3296cac1db07ae24ed86efeab4683be4",
+      "byte_contract": "raw"
+    },
+    {
+      "path": "evidence/run03/golden/golden-summary.json",
+      "bytes": 20083,
+      "sha256": "4948d7432bc306d45c651bf5712a360188797ce70e50ac65495b48f2693257e7",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run03/real-diagnostic/SHA256.json",
+      "bytes": 174,
+      "sha256": "10ecb4bf4ea294ffec19162f6224b6df13c0ea1036faf87b5d6f4b251931df28",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run03/real-diagnostic/frames.json",
+      "bytes": 106871,
+      "sha256": "054d1cf519aa762ed70f9a15683e9062997a98a544e1e1eee0d35389844ffa88",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run03/real-diagnostic/summary.json",
+      "bytes": 1835,
+      "sha256": "333b20281150423ab7da7a26590f5d91128d9c801e1f7ecaea7e671f1bf2db93",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run03/skill-scope.json",
+      "bytes": 2733,
+      "sha256": "4fc33a4ea08f9810dc8f7d8c8d3645e06e95881afaf1ecc5e5ce4cab18ed26a6",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run04/AUTHOR-VALIDATION.md",
+      "bytes": 2276,
+      "sha256": "5525bf7a20f42ff41fed5d55f0143fa81b88ee49fdce04dddd02016cf31c8649",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run04/PRIVACY-AND-HISTORY.md",
+      "bytes": 1282,
+      "sha256": "2b39220afac6e7c3482a01be8ab4d8e87026e72d14d6a8e98c14f536d87f5a9d",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run04/golden-check.json",
+      "bytes": 6829,
+      "sha256": "4814cb2b287af8cce43a7f72b2b59efcfdbb1085aac965945da0b76a0ed807f4",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run04/golden/SHA256.json",
+      "bytes": 187,
+      "sha256": "4bc8fe84b492e079b59cc8faf8aec06910bf4c48a1d53c552875558780f342e8",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run04/golden/golden-stages.npz",
+      "bytes": 96812,
+      "sha256": "056a084ebfb03e4b55b07e0033a9ddca6eaed79d63652d327e81afbfbf968f55",
+      "byte_contract": "raw"
+    },
+    {
+      "path": "evidence/run04/golden/golden-summary.json",
+      "bytes": 46646,
+      "sha256": "19c463b9f302748f5df3e2e3c03fe26abb944b28088854467b32c9aac478070f",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run05/README.md",
+      "bytes": 3073,
+      "sha256": "0ecccf0f105c42fa3576fd580817fa3736a81a5a0cb68fb4e6ef62f6174b7f7f",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run05/first-failure.redacted.log",
+      "bytes": 833,
+      "sha256": "216376d0db98a4c31c338c23a64e98c1005b1993c6d0f315398bce6dbaf7c00c",
+      "byte_contract": "raw"
+    },
+    {
+      "path": "evidence/run05/golden-check.json",
+      "bytes": 6579,
+      "sha256": "ea04e682f372834c627cd29b68763de4941fbfa725aeebf787acdcee605191ae",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run05/golden/SHA256.json",
+      "bytes": 187,
+      "sha256": "50bd75259a63e476c617fc5ad1cf8a1ff975f908a2500c2b35d12639a99f5d3f",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run05/golden/golden-stages.npz",
+      "bytes": 110281,
+      "sha256": "66a1c9b5edd797c9c1474ce275c13065b89ac03eccd338dcb12713cf9292c19f",
+      "byte_contract": "raw"
+    },
+    {
+      "path": "evidence/run05/golden/golden-summary.json",
+      "bytes": 57141,
+      "sha256": "bbb5dbd8f19eec22a512e93c4c0579e4e5c360a9bf9d6cf2df796a5c1820bb73",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "evidence/run05/unit-tests.raw.log",
+      "bytes": 4038,
+      "sha256": "d21909fcb72da04becc4d9f95ed01b87d0dce9df75eb21ddd8c7c45957bbef70",
+      "byte_contract": "raw"
+    },
+    {
+      "path": "inputs.json",
+      "bytes": 3754,
+      "sha256": "38ccfe507a79dc1ce02dbf63db4584b997fc0d40844767c791719cd3616387aa",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "source/budget.py",
+      "bytes": 4324,
+      "sha256": "5d68ffbd9891ebd71b3f024f6727171d2bed47a8732e813ca9608d060719c56a",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "source/check_golden.py",
+      "bytes": 3751,
+      "sha256": "d4f594671b61ab7655905ce1e04fe51b9a450ad4befde24484b1127faa429bcf",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "source/evaluate_real.py",
+      "bytes": 4942,
+      "sha256": "ef06636f066d0cf98685eb2f590be5dc6c89f5fca33d702b8c316033443bd542",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "source/fixed_golden.py",
+      "bytes": 25864,
+      "sha256": "f6bb2bc41dee3f1e2e6d93176972d92db12d687978fd3a95a47e85b28f88a74a",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "source/presence.py",
+      "bytes": 1392,
+      "sha256": "ab207334e52c0c9b63742e98e36643990b3364f8820aa6a96df7a53d29da0c9e",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "source/reproduce.py",
+      "bytes": 6232,
+      "sha256": "90a80ba1f312042b8e4a8e0a1c45d3f21c4d3cb90d44ad8cc24262a3ba043f66",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "source/run_golden.py",
+      "bytes": 4293,
+      "sha256": "80c13099c7d548c0dc7e53d80f6ac1c88cc7a93c7938d399dfe17d057866263b",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "source/scope_check.py",
+      "bytes": 3638,
+      "sha256": "b9b1a9309977bd02730f8cc617948905a5bc912a790086b5968b9bfea62e8ed9",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "source/seal_inputs.py",
+      "bytes": 4763,
+      "sha256": "2eaaa1d75e13c33b539c4059046fe5b2f7e8a9e9a30bb5f8abb39e586355e2ba",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "source/seal_package.py",
+      "bytes": 2432,
+      "sha256": "98c90cc9ee54fe4a35bea9b7fc781b3ad893cb77c33a9de771d12845d8ed3dd3",
+      "byte_contract": "lf_canonical"
+    },
+    {
+      "path": "tests/test_h3_candidate.py",
+      "bytes": 12975,
+      "sha256": "2c8207c01e2edf28893e6e015fa86d3536d4604be2455233b1be107e4a92ef68",
+      "byte_contract": "lf_canonical"
+    }
+  ]
+}
