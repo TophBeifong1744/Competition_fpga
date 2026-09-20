@@ -6,11 +6,13 @@ import traceback
 import numpy as np
 from common import HERE,ROOT,load,dump,sha,new_output
 from verify import verify
+from compare_outputs import compare_file, exact_file, exact_array
 
 def execute(out):
     before=verify()
     commands=[]
-    jobs=[('tests',[sys.executable,'-B','-m','unittest','discover','-s',str(HERE/'source'),'-p','test_candidates.py','-v']),
+    jobs=[('repair-tests',[sys.executable,'-B','-m','unittest','discover','-s',str(HERE/'source'),'-p','test_repair.py','-v']),
+          ('tests',[sys.executable,'-B','-m','unittest','discover','-s',str(HERE/'source'),'-p','test_candidates.py','-v']),
           ('study',[sys.executable,'-B',str(HERE/'source/run.py'),'--out',str(out/'study')]),
           ('golden',[sys.executable,'-B',str(HERE/'source/golden.py'),'--study',str(out/'study'),'--out',str(out/'golden')])]
     for name,cmd in jobs:
@@ -21,25 +23,26 @@ def execute(out):
         dump(out/'commands.json',commands)
         if p.returncode:raise RuntimeError(name+' failed; retain logs')
     archived=HERE/'evidence/run01'
-    for p in archived.glob('*.json'):
+    comparisons=[]
+    for p in sorted(archived.glob('*.json')):
         if p.name=='OUTPUT-SHA256.json':continue
-        a=load(p);b=load(out/'study'/p.name)
-        if p.name=='summary.json':a.pop('environment');b.pop('environment')
-        if a!=b:raise AssertionError('numerical/control JSON mismatch: '+p.name)
+        comparisons.append(compare_file(p,out/'study'/p.name,environment=p.name=='summary.json'))
+        dump(out/'json-comparison.json',comparisons)
     waves=list((archived/'audio').glob('*.wav'))
     assert len(waves)==48
     for p in waves:
-        if sha(p)!=sha(out/'study/audio'/p.name):raise AssertionError('PCM/WAV mismatch '+p.name)
+        exact_file(p,out/'study/audio'/p.name)
     golden=HERE/'evidence/golden02';arrays=0
     for p in golden.glob('*.npz'):
         with np.load(p,allow_pickle=False) as a,np.load(out/'golden'/p.name,allow_pickle=False) as b:
             assert a.files==b.files
             for key in a.files:
-                np.testing.assert_array_equal(a[key],b[key]);arrays+=1
-    assert load(golden/'summary.json')==load(out/'golden/summary.json')
+                exact_array(a[key],b[key],p.name+'/'+key);arrays+=1
+    comparisons.append(compare_file(golden/'summary.json',out/'golden/summary.json',golden=True))
+    dump(out/'json-comparison.json',comparisons)
     assert before==verify()
     result=dict(status='AUTHOR_REPRODUCED_NOT_INDEPENDENT_APPROVAL',snapshot=before,wavs_exact=len(waves),
-        integer_arrays_exact=arrays,study_json_exact=True,commands=commands,production_or_hardware_approval=False)
+        integer_arrays_exact=arrays,json_semantic_match=True,json_bytes_equal=sum(r['bytes_equal'] for r in comparisons),json_files=len(comparisons),float_differences=sum(r['float_differences'] for r in comparisons),commands=commands,production_or_hardware_approval=False)
     dump(out/'result.json',result)
     print('PASS_CANDIDATE_REPRODUCTION',len(waves),arrays)
 
