@@ -1,6 +1,7 @@
 param(
     [string]$VivadoBin = 'C:\AMDDesignTools\2025.2\Vivado\bin',
     [int]$ClockHz = 100000000,
+    [ValidateSet(360,220)][int]$MaxAngleDeg = 360,
     [string]$OutputDirectory = ''
 )
 $ErrorActionPreference = 'Stop'
@@ -16,7 +17,7 @@ if ($OutputDirectory) {
     $buildDir = [IO.Path]::GetFullPath($OutputDirectory)
 } else {
     $runTag = Get-Date -Format 'yyyyMMdd-HHmmss-fff'
-    $buildDir = Join-Path $repoRoot "sim/build/servo-pwm-$ClockHz-$runTag"
+    $buildDir = Join-Path $repoRoot "sim/build/servo-pwm-$ClockHz-$MaxAngleDeg-$runTag"
 }
 if (Test-Path -LiteralPath $buildDir) { throw "Output already exists: $buildDir" }
 New-Item -ItemType Directory -Force -Path $buildDir | Out-Null
@@ -26,12 +27,15 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'xvlog failed' }
     # 保留字面引号，防止 Windows .bat 把等号拆成两个参数。
     $genericArgument = '"CLK_FREQ_HZ=' + $ClockHz + '"'
-    & (Join-Path $VivadoBin 'xelab.bat') tb_motor_drive -generic_top $genericArgument -s servo_pwm_test
+    $angleArgument = '"MAX_ANGLE_DEG=' + $MaxAngleDeg + '"'
+    & (Join-Path $VivadoBin 'xelab.bat') tb_motor_drive -generic_top $genericArgument -generic_top $angleArgument -s servo_pwm_test
     if ($LASTEXITCODE -ne 0) { throw 'xelab failed' }
     & (Join-Path $VivadoBin 'xsim.bat') servo_pwm_test -runall -log simulation.log
     if ($LASTEXITCODE -ne 0) { throw 'xsim failed' }
     $simText = Get-Content -Raw simulation.log
-    if ($simText -notmatch 'PASS motor_drive' -or $simText -match 'FAIL|Fatal:') {
+    $expectedChecks = if ($MaxAngleDeg -eq 220) { 69 } else { 61 }
+    $expectedPass = "PASS motor_drive checks=$expectedChecks CLK_FREQ_HZ=$ClockHz MAX_ANGLE_DEG=$MaxAngleDeg"
+    if (-not $simText.Contains($expectedPass) -or $simText -match 'FAIL|Fatal:|ERROR:') {
         throw 'Simulation did not report a clean PASS'
     }
     Write-Host "Verified PASS; logs: $buildDir"

@@ -1,0 +1,24 @@
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Sep 20 14:42:53 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+CRITICAL WARNING: [Common 17-1297] User repo 'C:/Users/hsc/AppData/Roaming/Xilinx/Vivado/2025.2/XilinxTclStore' catalog file is corrupted. XilinxTclStore has been reverted to the installation area and Tcl Store changes will not be saved. To use local Tcl Store, please run tclapp::reset_tclstore and reinstall the apps.
+source task-packages/PKG-SERVO-PWM/scripts/create_project.tcl
+# set max_angle_deg 360
+# if {$argc > 1} { error "Usage: create_project.tcl -tclargs 360|220" }
+# if {$argc == 1} { set max_angle_deg [lindex $argv 0] }
+# if {$max_angle_deg ni {360 220}} { error "Expected 360 or 220" }
+# set package_root [file normalize [file join [file dirname [info script]] ..]]
+# set repo_root [file normalize [file join $package_root .. ..]]
+# set project_dir [file join $repo_root vivado build servo_pwm_$max_angle_deg]
+# if {[file exists $project_dir]} {
+#     error "Project output already exists: $project_dir; open it or choose another directory."
+# }
+# create_project servo_pwm $project_dir -part xc7z020clg400-2
+ERROR: [ProjectBase 2-116] Unable to create project directory: 'C:/Users/hsc/Codex/2026-09-20/wo-m/work/project-check/vivado/build/servo_pwm_220'.
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 20 14:43:02 2026...

@@ -1,0 +1,38 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/task-packages/PKG-SERVO-PWM/rtl/motor_drive.v" into library work
+INFO: [VRFC 10-311] analyzing module motor_drive
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/task-packages/PKG-SERVO-PWM/tb/tb_motor_drive.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_motor_drive
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_motor_drive -generic_top CLK_FREQ_HZ=100000000 -generic_top MAX_ANGLE_DEG=220 -s servo_pwm_test 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.motor_drive(MAX_ANGLE_DEG=220)
+Compiling module work.tb_motor_drive(MAX_ANGLE_DEG=220...
+Built simulation snapshot servo_pwm_test
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Sep 20 14:42:09 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/servo_pwm_test/xsim_script.tcl
+# xsim {servo_pwm_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS motor_drive checks=48 CLK_FREQ_HZ=100000000 MAX_ANGLE_DEG=220
+$finish called at time : 342149215 ns : File "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/task-packages/PKG-SERVO-PWM/tb/tb_motor_drive.v" Line 126
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 197.207 ; gain = 0.012
+exit
+INFO: xsimkernel Simulation Memory Usage: 11292 KB (Peak: 11292 KB), Simulation CPU Usage: 21686 ms
+INFO: [Common 17-206] Exiting xsim at Sun Sep 20 14:42:33 2026...
+Verified PASS; logs: C:\Users\hsc\Documents\Codex\2026-09-20\wo-m\work\repo-220-100000000

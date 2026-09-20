@@ -2,6 +2,7 @@
 // 自检测试仅观察输入输出边沿，不依赖 DUT 内部计数器。
 module tb_motor_drive;
     parameter integer CLK_FREQ_HZ = 100_000_000;
+    parameter integer MAX_ANGLE_DEG = 360;
     localparam real HALF_CLK_NS = 500_000_000.0 / CLK_FREQ_HZ;
     reg clk = 0;
     reg rst_n = 0;
@@ -10,7 +11,7 @@ module tb_motor_drive;
     integer checks = 0;
     integer i;
     time rise_time;
-    motor_drive #(.CLK_FREQ_HZ(CLK_FREQ_HZ)) dut (
+    motor_drive #(.CLK_FREQ_HZ(CLK_FREQ_HZ), .MAX_ANGLE_DEG(MAX_ANGLE_DEG)) dut (
         .clk(clk), .rst_n(rst_n), .angle_deg_i(angle_deg), .pwm_o(pwm)
     );
     always #(HALF_CLK_NS) clk = ~clk;
@@ -56,6 +57,7 @@ module tb_motor_drive;
 
     initial begin
         // 独立给定期望值：端点、各象限、舍入和输入饱和。
+        if (MAX_ANGLE_DEG == 360) begin
         start_angle(0);   check_frame(500);
         start_angle(90);  check_frame(1000);
         start_angle(180); check_frame(1500);
@@ -65,6 +67,19 @@ module tb_motor_drive;
         start_angle(2);   check_frame(511);
         start_angle(359); check_frame(2494);
         start_angle(511); check_frame(2500);
+        end else if (MAX_ANGLE_DEG == 220) begin
+            // 独立固定期望，不能复制 DUT 公式作为测试判据。
+            start_angle(0);   check_frame(500);
+            start_angle(45);  check_frame(909);
+            start_angle(90);  check_frame(1318);
+            start_angle(110); check_frame(1500);
+            start_angle(220); check_frame(2500);
+            start_angle(1);   check_frame(509);
+            start_angle(2);   check_frame(518);
+            start_angle(219); check_frame(2491);
+            start_angle(511); check_frame(2500);
+        end else $fatal(1, "This regression supports MAX_ANGLE_DEG=360 or 220");
+
 
         // 高电平中改变目标：旧脉冲不能缩短，下一周期使用新值。
         start_angle(360);
@@ -94,7 +109,7 @@ module tb_motor_drive;
         repeat (5) @(negedge clk);
         angle_deg = 180;
         rst_n = 1;
-        check_frame(1500);
+        check_frame((MAX_ANGLE_DEG == 220) ? 2136 : 1500);
 
         // 低电平期间复位。
         @(negedge pwm);
@@ -103,8 +118,8 @@ module tb_motor_drive;
         repeat (5) @(negedge clk);
         angle_deg = 90;
         rst_n = 1;
-        check_frame(1000);
-        $display("PASS motor_drive checks=%0d CLK_FREQ_HZ=%0d", checks, CLK_FREQ_HZ);
+        check_frame((MAX_ANGLE_DEG == 220) ? 1318 : 1000);
+        $display("PASS motor_drive checks=%0d CLK_FREQ_HZ=%0d MAX_ANGLE_DEG=%0d", checks, CLK_FREQ_HZ, MAX_ANGLE_DEG);
         $finish;
     end
 

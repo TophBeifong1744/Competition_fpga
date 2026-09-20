@@ -1,5 +1,7 @@
 # Simulation
 
+2026-09-19：当前分支舵机增加 MAX_ANGLE_DEG（默认360，可设220），属待独立复核候选；下文 b1d51d4 批准仅覆盖旧快照。使用说明见 [参数化说明](../rtl/servo/README.md)。
+
 2026-09-17：新增获准舵机模块，统一清单为7组；下面“6组”是9/10历史结果。只验证本批搬迁入口可运行 `pwsh -File ./sim/run_servo.ps1 -OutputDirectory <全新目录> -ClockHz 1000000`，实际加载 `rtl/servo/`、`tb/servo/`，不加载任务包副本；默认100 MHz。原有6组本轮未重跑。来源与限定范围见[复核](../docs/reviews/servo-b1d51d4/REVIEW.md)。未修改或执行 one/BD。
 
 ## 当前可运行入口

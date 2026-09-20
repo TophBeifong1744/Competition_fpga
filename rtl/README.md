@@ -1,5 +1,7 @@
 # RTL
 
+2026-09-19：当前分支舵机增加 MAX_ANGLE_DEG（默认360，可设220），属待独立复核候选；下文 b1d51d4 批准仅覆盖旧快照。使用说明见 [参数化说明](../rtl/servo/README.md)。
+
 2026-09-17：新增 `servo/motor_drive.v`，C候选 b1d51d4 [限定模块PASS](../docs/reviews/servo-b1d51d4/REVIEW.md)。这是唯一舵机活动源码，原包保留来源快照；运行见 `sim/run_servo.ps1`，哈希见 `sim/modules.json`。未接入 one/BD，未综合或板测；下文三模块/六组为历史收尾记录。
 
 本目录现在是已批准基础模块的活动源码入口，不再只有占位说明。2026-09-11归入以下三件，来源及规范化哈希见[清单](../sim/modules.json)：
