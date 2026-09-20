@@ -51,3 +51,5 @@ try {
 旧 SNAPSHOT 原样保存至 `evidence/repair-r1-r2/SNAPSHOT-before-bb964cb.json`；父包清单、dependencies、run01、golden01失败、golden02及旧日志均不覆盖。当前快照仅重新封存返修后的实际集合，不改冻结结果哈希。A 的独立失败由准确报告/diagnostic引用保留，不伪称本机拥有 A 所有外部run目录。
 
 待审仅限研究复现工具返修；本机成功不代表 A Intel 环境已复核通过，不合入 main，不批准生产profile、完整H3或实板/实时。
+
+首次本机真实准备（1786f86，外部 exact-01）退出1：Git show 将长 commit:path 参数参与文件路径判定，报 Filename too long；该局部目录保留。已改用 git cat-file blob 按对象读取，后续在新目录运行，不将首次失败覆盖为通过。
