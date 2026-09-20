@@ -1,10 +1,10 @@
 # 2026-09-18 阶段收尾
 
-基于c7fb2eb的最终文档补记：B实际命令/cwd和部分进程退出码仍未取得，逐项见[合后回执待补表及三端发布核对](../../docs/reviews/h3-run05-7a17edd/POSTMERGE-SUPPLEMENT.md)。首错准确命令及Python退出1已从当时工具记录恢复；第二受控副本/访问控制未核实，归档状态为[NOT_ARCHIVED](../../docs/reviews/h3-run05-7a17edd/RAW-LOG-RETRIEVAL.md)。文档缺口未完全关闭；不重测、不改任务包，LIMITED PASS不变。
+`aa2b07d`后的B回执补记：B已提供合后核验的准确命令、cwd映射、输出身份和进程退出码，逐项见[合后回执与发布核对](../../docs/reviews/h3-run05-7a17edd/POSTMERGE-SUPPLEMENT.md)。包清单和18项输入在默认Python 3.7下退出0；39项测试与冻结检查在3.7下分别退出1，改用Python 3.12.14/NumPy 2.3.5后分别退出0。首错准确命令及Python退出1已从当时工具记录恢复；第二受控副本/访问控制仍未核实，归档状态为[NOT_ARCHIVED](../../docs/reviews/h3-run05-7a17edd/RAW-LOG-RETRIEVAL.md)。不重测、不改任务包，LIMITED PASS不变。
 
 ## 2026-09-20 B 合入后技术核验补记
 
-B经用户转交确认：合入提交`a440d9bb67a42d9f666370bbaed2cbbf252f77d1`，核验时远端main为`6751664d18db077046e0a5d5a0bfc84fcefce108`。候选`7a17edd`为祖先，69个包blob和18项输入一致；B报告以原blob `6d5e16b24be041da01f48c4383a99430025c034c`（8993字节）纳入，报告分支提交不必成为祖先。Python3.12.14/NumPy2.3.5下包清单及输入检查退出0、39项通过、14冻结数组及事件数值/字节差异0；首次Python3.7环境失败不算合入回归。
+B经用户转交确认：合入提交`a440d9bb67a42d9f666370bbaed2cbbf252f77d1`，核验时远端main为`6751664d18db077046e0a5d5a0bfc84fcefce108`。候选`7a17edd`为祖先，69个包blob和18项输入一致；B报告以原blob `6d5e16b24be041da01f48c4383a99430025c034c`（8993字节）纳入，报告分支提交不必成为祖先。默认Python 3.7下包清单及输入检查退出0，39项测试与冻结检查因环境不满足要求退出1；切换Python 3.12.14/NumPy 2.3.5后39项测试与14组冻结数组/事件检查均退出0，数值/字节差异0。3.7失败不算合入回归，但其通过与失败项必须分开记录。
 
 最终状态仍为**run05软件断流闭环LIMITED PASS，完整H3未通过**。完整转交来源/边界见[补充回执](../../docs/reviews/h3-run05-7a17edd/POSTMERGE-SUPPLEMENT.md)。原始950字节首错日志已由A实际核实，保管位置、制品编号和取回办法见[原件取回说明](../../docs/reviews/h3-run05-7a17edd/RAW-LOG-RETRIEVAL.md)；B收件未发生。本次只补文档与文件身份核对，不重复技术测试，不改原候选、旧清单或B冻结报告。
 

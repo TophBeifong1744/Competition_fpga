@@ -1,6 +1,6 @@
 # SoundSight 当前状态
 
-c7fb2eb之后文档纠正：run05维持LIMITED PASS；B合后准确命令/cwd及部分退出码待提供，原始首错虽已找回准确失败命令及退出1，但第二受控副本/访问控制未验证，归档NOT_ARCHIVED。不得把下文“取回说明已补”解读为归档缺口完全关闭。
+`aa2b07d`后B回执纠正：run05维持LIMITED PASS；B合后准确命令、cwd映射及进程退出码已提供。包清单与18项输入在Python 3.7下退出0；39项测试和冻结检查在3.7下退出1、改用3.12.14后退出0。原始首错已找回准确失败命令及退出1，但第二受控副本/访问控制未验证，归档仍为NOT_ARCHIVED。不得把下文“取回说明已补”解读为归档缺口完全关闭。
 
 9/20 B后补：run05合入后技术核验仍为LIMITED PASS；已补[准确核验版本与收尾](reviews/h3-run05-7a17edd/POSTMERGE-SUPPLEMENT.md)及[原始首错日志取回说明](reviews/h3-run05-7a17edd/RAW-LOG-RETRIEVAL.md)。原件950字节/只读/哈希已核实，B未收件；完整H3结论不变。本轮仅文档补记，无新技术测试。
 

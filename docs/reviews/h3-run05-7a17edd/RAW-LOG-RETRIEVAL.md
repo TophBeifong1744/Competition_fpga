@@ -21,7 +21,7 @@
 
 执行记录时间：2026-09-18 05:45:36～37 UTC（北京时间13:45:36～37）。来源为A工程任务`01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd`的原始工具调用`call_K0jeiq5JCSmfHLLh3fJ3qsB7`及返回，未重跑失败实验。原日志本身不含shell命令，以下依据调用记录补录。
 
-cwd：`C:\Users\Toph Beifong\.codex\visualizations\2026\09\09\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\h3-closeout-0918`。
+cwd：`%USERPROFILE%\.codex\visualizations\2026\09\09\01a086de-c5a0-7ee2-b46c-c0bd5b6d3dfd\h3-closeout-0918`。`%USERPROFILE%`是A的私有Windows用户目录；准确展开值不进入Git。
 
 原PowerShell命令（换行仅为排版）：
 
@@ -29,7 +29,7 @@ cwd：`C:\Users\Toph Beifong\.codex\visualizations\2026\09\09\01a086de-c5a0-7ee2
 $d='task-packages/PKG-B-ALG/tasks/h3-complete-20260918/evidence/run05'
 if (Test-Path -LiteralPath $d) { throw 'run05 already exists' }
 New-Item -ItemType Directory -Path $d | Out-Null
-& 'C:\Users\Toph Beifong\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' -B -m unittest discover -s task-packages/PKG-B-ALG/tasks/h3-complete-20260918/tests -k test_gap_enters_automatic_control -v 2>&1 | Tee-Object -FilePath "$d/first-failure.raw.log"
+& "$env:USERPROFILE\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" -B -m unittest discover -s task-packages/PKG-B-ALG/tasks/h3-complete-20260918/tests -k test_gap_enters_automatic_control -v 2>&1 | Tee-Object -FilePath "$d/first-failure.raw.log"
 "EXIT_CODE=$LASTEXITCODE"
 ```
 

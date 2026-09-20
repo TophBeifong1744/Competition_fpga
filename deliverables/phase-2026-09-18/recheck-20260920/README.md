@@ -1,6 +1,6 @@
 # 9/18 检查点复验（实际日期 2026-09-20）
 
-后续收到[B合入后核验补充](../../../docs/reviews/h3-run05-7a17edd/POSTMERGE-SUPPLEMENT.md)：run05合后技术核验仍为LIMITED PASS，阶段结论不变。发布SHA/结果摘要和首错准确命令已补；B准确命令/cwd及部分退出码未取得，第二受控原件及访问控制未验证，归档NOT_ARCHIVED，文档缺口尚未完全关闭；未重跑技术测试。
+后续收到[B合入后核验补充](../../../docs/reviews/h3-run05-7a17edd/POSTMERGE-SUPPLEMENT.md)：run05合后技术核验仍为LIMITED PASS，阶段结论不变。发布SHA、B准确命令/cwd映射/退出码和首错准确命令已补；第二受控原件及访问控制未验证，归档仍为NOT_ARCHIVED；未重跑技术测试。
 
 结论：**已关闭三项待审/返修事项，声学基线与完整 H3 仍未通过。** 9/18 的原记录保留；本报告按 9/20 新提交增量复验。正式 M1、实板连续输出和摄像头效果仍属后续检查，不把它们临时新增为本次 H3 软件包的通过门槛。
 
@@ -31,7 +31,7 @@
 
 ## 本轮实际执行、复用及未测
 
-在全新独立工作树 `E:/ss-phase-review-20260920` 固定 `28d5c77`，使用 Python 3.12.14、NumPy 2.3.5，运行包内 `source/reproduce.py --out <全新路径>`。完整命令由各 `evidence/interface-run*/result.json` 的argv/cwd记录，stdout/stderr见相邻console日志。
+在全新独立工作树 `<A_PHASE_REVIEW_ROOT>` 固定 `28d5c77`，使用 Python 3.12.14、NumPy 2.3.5，运行包内 `source/reproduce.py --out <NEW_OUTPUT>`。准确个人路径不进入Git；完整命令由各 `evidence/interface-run*/result.json` 的argv/cwd记录，stdout/stderr见相邻console日志。
 
 最初沙箱写入被拒，测试没有启动。随后run01、run02均退出1：上游B复核报告在Windows检出时被转为CRLF。独立核对Git原blob为8993字节、SHA256 `1ea8bc856c54619bd703686c5c4da2f0cd12456fb94011a9406ac5a1cda6cf88`，与清单一致；CRLF副本为9151字节、SHA256 `753707c1b56e1cd0e7ca39004c7321fd4dee5829a65fc0d116c157b6e02621df`。仅在隔离工作树重建该报告原字节，未改源码、清单或断言，run03退出0。首次原字节重建命令因索引未重写工作文件而无效，两轮失败均保留。这是可复现性环境注意事项，不据此否定原算法。
 
@@ -41,4 +41,4 @@ run03结果字符串保留作者运行器原文 `PASS_AUTHOR_HANDOFF_INCREMENT_N
 
 本轮没有新增批准的生产源码迁移。run05、S1、计时入口已按其限定范围留在任务包，继续作为研究/诊断/候选入口；不据归档自动改写实际工程。B集中包维持待合同裁决身份，不删除其分支。新版舵机需独立核对其变更合同。
 
-本地main从`a440d9b`快进时被266份同名未跟踪文件阻挡。已逐字节确认：263份与远端相同，3份旧timerfixed文件与远端`repair-01/originals/`相同，均非未保存的新实现。暂存到 `E:/ss-sync-preserve-20260920` 后快进至`6751664`；逐项哈希见`evidence/local-sync-before.json`。其余未完成采集、Skill及帧适配资料保留。本批发布后核对三端main、未提交/忽略材料及临时目录；发布提交以Git历史和交付回报为准。
+本地main从`a440d9b`快进时被266份同名未跟踪文件阻挡。已逐字节确认：263份与远端相同，3份旧timerfixed文件与远端`repair-01/originals/`相同，均非未保存的新实现。暂存到 `<A_SYNC_PRESERVE_ROOT>` 后快进至`6751664`；逐项哈希见`evidence/local-sync-before.json`。其余未完成采集、Skill及帧适配资料保留。本批发布后核对三端main、未提交/忽略材料及临时目录；发布提交以Git历史和交付回报为准。
