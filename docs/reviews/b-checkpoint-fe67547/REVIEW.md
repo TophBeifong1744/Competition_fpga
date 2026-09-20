@@ -54,3 +54,7 @@ R2：逐个 `git cat-file blob` 获取固定提交原字节，落盘再校验，
 批准范围为上述准确版本完整父包及 checkpoint 中已审离线研究材料，加本次 A 复核记录。候选继续以任务包为离线入口，不迁入生产活动算法；后续生产接入须有完整合同和对应验证。本轮不是正式阶段验收，不重写冻结阶段快照。
 
 合并后按准确 Git 对象核对批准目录，并从最终路径执行新增反例 smoke test。完整复现原始文件保留于 A 独立证据目录；公开摘要、比较记录及路径映射命令见同目录 evidence/。不删旧失败或进行中分支。发布 SHA 与本地/远端对齐结果在最终回报中记录。
+
+实际合并提交：`135f5a0c7d251846c90135f5acf49e8891f6ecc9`，非快进合并，无冲突。合并后 `git diff --exit-code fe67547635ff254f9f91c7f917e8dedb6daf3363 HEAD -- task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918` 退出 0；最终共享路径运行 `-B -m unittest discover -s task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/source -p test_repair.py -v`，12 项通过、退出 0。
+
+本批批准目录与 A 记录的 modified/staged/untracked/ignored 检查均无遗留（本条收尾记录提交前的自身修改除外）。其他任务的 continuous-*、A 候选及阶段操作单未跟踪材料原样保留，不属于本批未处理项。原始输出及原字节副本保留作为可追溯证据；未删除工作树、分支或旧失败。完整阶段收尾、生产接入及旧日志备份状态不由本次包级批准代替。
