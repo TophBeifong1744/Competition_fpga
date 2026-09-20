@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "F:\NUEC\review-evidence\eight-94b5fe7\standards\check_independent.py", line 17, in <module>
+    assert all(x.startswith('A\t'+P.relative_to(R).as_posix()+'/') for x in diff)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
