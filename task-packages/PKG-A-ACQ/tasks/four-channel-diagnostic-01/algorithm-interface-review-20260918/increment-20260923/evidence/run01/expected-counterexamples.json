@@ -1,0 +1,19 @@
+[
+  {
+    "case": "clip-in-window",
+    "unadapted_frames": 1,
+    "adapted_frames": 0,
+    "expected_mismatch": true
+  },
+  {
+    "case": "repeated-gap",
+    "unadapted_error_ids": [
+      "103"
+    ],
+    "adapted_error_ids": [
+      "103",
+      "105"
+    ],
+    "expected_mismatch": true
+  }
+]
