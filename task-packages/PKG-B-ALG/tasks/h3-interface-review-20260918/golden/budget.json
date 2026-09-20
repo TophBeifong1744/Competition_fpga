@@ -1,0 +1,70 @@
+{
+  "status": "CALCULATED_AND_EVIDENCE_GRADED_NOT_REALTIME_PASS",
+  "frame": {
+    "sample_rate_hz": 48000,
+    "length": 1024,
+    "hop": 512,
+    "frame_ms": 21.333333333333332,
+    "hop_ms": 10.666666666666666,
+    "frames_per_second": 93.75
+  },
+  "transforms": {
+    "forward_per_frame": 4,
+    "inverse_max_per_frame": 6,
+    "forward_slot_cycles_measured_test_scheduler": 7366,
+    "inverse_slot_cycles_measured_test_scheduler": 7406,
+    "service_cycles_sum": 73900,
+    "service_ms_at_configured_100mhz": 0.739,
+    "hop_cycles_at_configured_100mhz": 1066666,
+    "remaining_before_other_work": 992766,
+    "warning": "two historical OOC candidates; not one proven mixed-width integrated scheduler"
+  },
+  "operations": {
+    "window_multiplies_per_frame": 4096,
+    "cross_spectrum_bins_per_frame": 3078,
+    "cross_real_multiplies_per_frame": 12312,
+    "cross_add_sub_per_frame": 6156,
+    "maximum_retained_band_bins": 474,
+    "lag_search_points": 86,
+    "lag_interpolation_divisions_max": 6,
+    "das_fractional_channel_interpolations_per_hop": 2048,
+    "symbolic_other_cycles": "6*513*C_cross + B*(C_sqrt+4*C_newton+2*C_output) + 86*C_compare + 6*C_div + C_DOA + 2048*C_DAS + C_DMA + C_switch + C_stall"
+  },
+  "buffers_bytes": {
+    "pcm_double_frame_int32": 32768,
+    "hann_u18_slot32": 4096,
+    "four_half_spectra_complex_slot32": 16416,
+    "one_pair_phat_complex_slot32": 4104,
+    "one_pair_ifft_full_complex_slot32": 8192,
+    "one_pair_real_correlation_int32": 4096,
+    "audio_history_four_channels_int32": 160,
+    "mono_output_hop_double_buffer_int32": 4096,
+    "current_h1_dma_two_slots_with_guards": 16128,
+    "exponent_status_descriptor_allowance": 1024,
+    "listed_total_no_lifetime_reuse": 91080
+  },
+  "bandwidth_bytes_per_second": {
+    "pcm24_net": 576000,
+    "pcm_int32_net": 768000,
+    "h1_group_transport_32_bytes": 1536000,
+    "overlap_full_window_reads_int32": 1536000.0,
+    "ten_transform_materialize_read_plus_write": 15360000.0,
+    "mono_int32_output": 192000
+  },
+  "latency": {
+    "frame_collection_ms": 21.333333333333332,
+    "five_valid_frame_best_case_collection_ms": 64.0,
+    "common_audio_availability_delay_ms": 0.16666666666666666,
+    "fade_ms": 10.0,
+    "hold_ms_not_processing_latency": 200,
+    "end_to_end_limit_ms": null,
+    "actual_integrated_processing_ms": null
+  },
+  "evidence": {
+    "forward_fft29": "OOC XSim/P&R evidence; 7366-cycle test slot; limited research approval",
+    "inverse_fft25": "historical OOC XSim/synthesis evidence; 7406-cycle test slot",
+    "processing_clock": "configured 100 MHz, not board-measured full-chain clock",
+    "phat_lag_doa_das_dma_switch": "formula/estimate only; no integrated cycle measurement",
+    "cache_total": "calculated conservative list; not BRAM mapping or proven lifetime optimum"
+  }
+}
