@@ -1,0 +1,18 @@
+{
+  "selection": "same320 selected target +1122 background",
+  "band": [
+    7,
+    85
+  ],
+  "mask": "original per-pair2percent, intersection across all six pairs",
+  "minimum_common_bins_for_score": 12,
+  "weight": "min across pairs of amplitude / each pair full-band maximum",
+  "scores": [
+    "zero_delay",
+    "graph_arrival_fit",
+    "plane_fit"
+  ],
+  "threshold_tuning": false,
+  "one_frame_closure": "algebraic identity, never acceptance evidence",
+  "new_audio": false
+}

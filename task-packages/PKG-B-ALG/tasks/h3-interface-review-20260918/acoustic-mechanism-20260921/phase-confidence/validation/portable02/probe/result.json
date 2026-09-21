@@ -1,0 +1,153 @@
+{
+  "protocol": {
+    "selection": "same320 selected target +1122 background",
+    "band": [
+      7,
+      85
+    ],
+    "mask": "original per-pair2percent, intersection across all six pairs",
+    "minimum_common_bins_for_score": 12,
+    "weight": "min across pairs of amplitude / each pair full-band maximum",
+    "scores": [
+      "zero_delay",
+      "graph_arrival_fit",
+      "plane_fit"
+    ],
+    "threshold_tuning": false,
+    "one_frame_closure": "algebraic identity, never acceptance evidence",
+    "new_audio": false
+  },
+  "pins": {
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/acoustic-mechanism-20260921/frequency-diagnostic/run01/frames.json": "edbaa69d55d59789054828eae6d7ad77f064ebe4f2ebc133f5c2a8b2a01362fb",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/summary.json": "5b199b3ee5105b6696adc980aacbbe61b091162da0b81ff0d99d739ead6cf153",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-02-corrected/trusted_000_20260920_01/trusted_000_20260920_01/raw.bin": "9b7d8b36ebe300f7e6520bdb94e9e157895d4563808007e6343b1c2ab14c78a5",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_000_20260920_02/trusted_000_20260920_02/raw.bin": "6bd132aef87e68aa3f198fd19343b08682ebe291303d4fae21200d77c881f485",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_bg_post_20260920_01/trusted_bg_post_20260920_01/raw.bin": "cdc0724a458d68139ffbfe48a9fe21331f97e7f8cc9d3775c5d0c48cfbdaadc7",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-02-corrected/trusted_bg_pre_20260920_01/trusted_bg_pre_20260920_01/raw.bin": "1c2e923d8b3d9bbfaa99ac1708bac7ce2563db5db3cd8eaad0189884bf64f3e2",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_m045_20260920_01/trusted_m045_20260920_01/raw.bin": "2bb4996a71a76d4dfaa6d404d52504015af73ad1221188648a548b78f178648c",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_m045_20260920_02/trusted_m045_20260920_02/raw.bin": "1883d368c22b29f5e9b205bcd381999f642a4658e7e659f9acbee6fedd9614a1",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_p045_20260920_01/trusted_p045_20260920_01/raw.bin": "44bee6661f3543690cf2f22ed2a5b733b503907435190778f9f4ca50a4896726",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_p045_20260920_02/trusted_p045_20260920_02/raw.bin": "d9e1120cc605556f4605bc53279641dc5bc4355c6cbf31c6e2c4b65612fda305"
+  },
+  "source_sha256": "ce9fcfdce99274c3f0b9d437c57297266a5d2ae6e6889a6748609e737e12825a",
+  "fft_calls": 5768,
+  "ifft_calls": 0,
+  "max_triangle_identity_error": 7.036119993551938e-16,
+  "groups": {
+    "background": {
+      "total": 1122,
+      "scored": 1114,
+      "insufficient": 8,
+      "scores": {
+        "zero_delay_unweighted": {
+          "p05": 0.5926170972875231,
+          "p50": 0.7730990864207505,
+          "p95": 0.9209754790275286
+        },
+        "zero_delay_weighted": {
+          "p05": 0.775943774373802,
+          "p50": 0.9170185886715962,
+          "p95": 0.9770138387393856
+        },
+        "graph_arrival_fit_unweighted": {
+          "p05": 0.6811791616840938,
+          "p50": 0.850176099798937,
+          "p95": 0.9388768790671856
+        },
+        "graph_arrival_fit_weighted": {
+          "p05": 0.8555616259035066,
+          "p50": 0.9345694580979417,
+          "p95": 0.9763592516536362
+        },
+        "plane_fit_unweighted": {
+          "p05": 0.6808708325776877,
+          "p50": 0.8491097715589294,
+          "p95": 0.9393453246737652
+        },
+        "plane_fit_weighted": {
+          "p05": 0.8556095240679826,
+          "p50": 0.9343202868377014,
+          "p95": 0.9765116308904498
+        }
+      },
+      "graph_minus_zero_median": 0.035026470290559664
+    },
+    "target_nonmarker_valid": {
+      "total": 146,
+      "scored": 120,
+      "insufficient": 26,
+      "scores": {
+        "zero_delay_unweighted": {
+          "p05": 0.49900148097214675,
+          "p50": 0.8446387060488623,
+          "p95": 0.9546698314909695
+        },
+        "zero_delay_weighted": {
+          "p05": 0.39604465929621585,
+          "p50": 0.9109246037035734,
+          "p95": 0.9783534907629822
+        },
+        "graph_arrival_fit_unweighted": {
+          "p05": 0.6552165195849137,
+          "p50": 0.8675238850860302,
+          "p95": 0.9630759198559147
+        },
+        "graph_arrival_fit_weighted": {
+          "p05": 0.5744534092955176,
+          "p50": 0.9253990736152202,
+          "p95": 0.9803979093015788
+        },
+        "plane_fit_unweighted": {
+          "p05": 0.6553991523283057,
+          "p50": 0.8670480210133319,
+          "p95": 0.9626651836225426
+        },
+        "plane_fit_weighted": {
+          "p05": 0.5715569514627366,
+          "p50": 0.9261448775449869,
+          "p95": 0.9805611618758849
+        }
+      },
+      "graph_minus_zero_median": 0.017437895882900067
+    },
+    "target_nonmarker_cycle_fail": {
+      "total": 53,
+      "scored": 46,
+      "insufficient": 7,
+      "scores": {
+        "zero_delay_unweighted": {
+          "p05": 0.46877969336455366,
+          "p50": 0.6767176118003551,
+          "p95": 0.949957434269865
+        },
+        "zero_delay_weighted": {
+          "p05": 0.3275403020359319,
+          "p50": 0.7948869010956352,
+          "p95": 0.9511817238963522
+        },
+        "graph_arrival_fit_unweighted": {
+          "p05": 0.5768693632142005,
+          "p50": 0.7157774924920852,
+          "p95": 0.9560021174785418
+        },
+        "graph_arrival_fit_weighted": {
+          "p05": 0.49999324698911346,
+          "p50": 0.820151521641828,
+          "p95": 0.9563854403129111
+        },
+        "plane_fit_unweighted": {
+          "p05": 0.5608540953919287,
+          "p50": 0.7162086691054509,
+          "p95": 0.9566919278161599
+        },
+        "plane_fit_weighted": {
+          "p05": 0.47879983011182475,
+          "p50": 0.8232182482402363,
+          "p95": 0.9578065819870192
+        }
+      },
+      "graph_minus_zero_median": 0.01566408694519017
+    }
+  },
+  "no_candidate_adopted": true
+}
