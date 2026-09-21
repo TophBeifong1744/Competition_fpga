@@ -1,0 +1,62 @@
+[
+  {
+    "case": "integral_float_noise",
+    "legacy": "ACCEPTED",
+    "strict_candidate": "ValueError"
+  },
+  {
+    "case": "bool_noise",
+    "legacy": "ACCEPTED",
+    "strict_candidate": "ValueError"
+  },
+  {
+    "case": "negative_floor",
+    "legacy": "ACCEPTED",
+    "strict_candidate": "ValueError"
+  },
+  {
+    "case": "fractional_floor",
+    "legacy": "ACCEPTED",
+    "strict_candidate": "ValueError"
+  },
+  {
+    "case": "integral_float_power",
+    "legacy": "ACCEPTED",
+    "strict_candidate": "ValueError"
+  },
+  {
+    "case": "bool_power",
+    "legacy": "ACCEPTED",
+    "strict_candidate": "ValueError"
+  },
+  {
+    "case": "missing_channel",
+    "legacy": "ValueError",
+    "strict_candidate": "ValueError"
+  },
+  {
+    "case": "power_overflow",
+    "legacy": "ValueError",
+    "strict_candidate": "ValueError"
+  },
+  {
+    "case": "bad_ratio",
+    "legacy": "ValueError",
+    "strict_candidate": "ValueError"
+  },
+  {
+    "case": "nan_power",
+    "legacy": "ValueError",
+    "strict_candidate": "ValueError"
+  },
+  {
+    "case": "inf_power",
+    "legacy": "OverflowError",
+    "strict_candidate": "ValueError"
+  },
+  {
+    "case": "nonbool_invalid",
+    "legacy": "ACCEPTED",
+    "strict_candidate": "ValueError"
+  }
+]
