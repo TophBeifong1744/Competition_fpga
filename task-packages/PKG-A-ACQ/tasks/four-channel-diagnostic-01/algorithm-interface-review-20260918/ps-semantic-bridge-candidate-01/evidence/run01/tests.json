@@ -1,0 +1,322 @@
+[
+  {
+    "name": "frozen_A_packages_preserved",
+    "status": "PASS",
+    "detail": {
+      "files": 104,
+      "text_CRLF_equivalence_explicit": true
+    }
+  },
+  {
+    "name": "B/short1023",
+    "status": "PASS",
+    "detail": {
+      "groups": 1023,
+      "accepted": 1023,
+      "frames": 0,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "B/exact1024",
+    "status": "PASS",
+    "detail": {
+      "groups": 1024,
+      "accepted": 1024,
+      "frames": 1,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "B/two_hops2048",
+    "status": "PASS",
+    "detail": {
+      "groups": 2048,
+      "accepted": 2048,
+      "frames": 3,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "B/cross_packets3000",
+    "status": "PASS",
+    "detail": {
+      "groups": 3000,
+      "accepted": 3000,
+      "frames": 4,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "B/clip3500",
+    "status": "PASS",
+    "detail": {
+      "groups": 3500,
+      "accepted": 3500,
+      "frames": 4,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "B/gap4000",
+    "status": "PASS",
+    "detail": {
+      "groups": 4000,
+      "accepted": 4000,
+      "frames": 4,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "B/restart_a",
+    "status": "PASS",
+    "detail": {
+      "groups": 1500,
+      "accepted": 1500,
+      "frames": 1,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "B/restart_b",
+    "status": "PASS",
+    "detail": {
+      "groups": 1500,
+      "accepted": 1500,
+      "frames": 1,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/zero",
+    "status": "PASS",
+    "detail": {
+      "groups": 0,
+      "accepted": 0,
+      "frames": 0,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/short1023",
+    "status": "FAIL",
+    "traceback": "Traceback (most recent call last):\n  File \"E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\tests\\run_host.py\", line 48, in test\n    try:result=fn();tests.append(dict(name=name,status='PASS',detail=result))\n               ^^^^\n  File \"E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\tests\\run_host.py\", line 165, in <lambda>\n    for name,groups in cases.items():test('A/'+name,lambda n=name,x=groups:replay(n,x))\n                                                                           ^^^^^^^^^^^\n  File \"E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\tests\\run_host.py\", line 98, in replay\n    case=out/name;case.mkdir();a=model.Adapter(core,name)\n                  ^^^^^^^^^^^^\n  File \"C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\pathlib.py\", line 1311, in mkdir\n    os.mkdir(self, mode)\nFileExistsError: [WinError 183] 当文件已存在时，无法创建该文件。: 'E:\\\\Users\\\\Toph Beifong\\\\Documents\\\\GitHub\\\\Competition_fpga\\\\task-packages\\\\PKG-A-ACQ\\\\tasks\\\\four-channel-diagnostic-01\\\\algorithm-interface-review-20260918\\\\ps-semantic-bridge-candidate-01\\\\evidence\\\\run01\\\\short1023'\n"
+  },
+  {
+    "name": "A/exact1024",
+    "status": "FAIL",
+    "traceback": "Traceback (most recent call last):\n  File \"E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\tests\\run_host.py\", line 48, in test\n    try:result=fn();tests.append(dict(name=name,status='PASS',detail=result))\n               ^^^^\n  File \"E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\tests\\run_host.py\", line 165, in <lambda>\n    for name,groups in cases.items():test('A/'+name,lambda n=name,x=groups:replay(n,x))\n                                                                           ^^^^^^^^^^^\n  File \"E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\tests\\run_host.py\", line 98, in replay\n    case=out/name;case.mkdir();a=model.Adapter(core,name)\n                  ^^^^^^^^^^^^\n  File \"C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\pathlib.py\", line 1311, in mkdir\n    os.mkdir(self, mode)\nFileExistsError: [WinError 183] 当文件已存在时，无法创建该文件。: 'E:\\\\Users\\\\Toph Beifong\\\\Documents\\\\GitHub\\\\Competition_fpga\\\\task-packages\\\\PKG-A-ACQ\\\\tasks\\\\four-channel-diagnostic-01\\\\algorithm-interface-review-20260918\\\\ps-semantic-bridge-candidate-01\\\\evidence\\\\run01\\\\exact1024'\n"
+  },
+  {
+    "name": "A/before1535",
+    "status": "PASS",
+    "detail": {
+      "groups": 1535,
+      "accepted": 1535,
+      "frames": 1,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/exact1536",
+    "status": "PASS",
+    "detail": {
+      "groups": 1536,
+      "accepted": 1536,
+      "frames": 2,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/multi2048",
+    "status": "PASS",
+    "detail": {
+      "groups": 2048,
+      "accepted": 2048,
+      "frames": 3,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/repeated_gap",
+    "status": "PASS",
+    "detail": {
+      "groups": 1027,
+      "accepted": 1027,
+      "frames": 1,
+      "error_events": 2,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/all_error",
+    "status": "PASS",
+    "detail": {
+      "groups": 30,
+      "accepted": 30,
+      "frames": 0,
+      "error_events": 30,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/continuous_clip",
+    "status": "PASS",
+    "detail": {
+      "groups": 1545,
+      "accepted": 1545,
+      "frames": 2,
+      "error_events": 8,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/duplicate",
+    "status": "PASS",
+    "detail": {
+      "groups": 2,
+      "accepted": 2,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/reverse_after_clip",
+    "status": "PASS",
+    "detail": {
+      "groups": 2,
+      "accepted": 2,
+      "frames": 0,
+      "error_events": 2,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/wrap",
+    "status": "PASS",
+    "detail": {
+      "groups": 2,
+      "accepted": 2,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/max_id_frame",
+    "status": "PASS",
+    "detail": {
+      "groups": 1024,
+      "accepted": 1024,
+      "frames": 1,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/error_code_only",
+    "status": "PASS",
+    "detail": {
+      "groups": 1,
+      "accepted": 1,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/integrity_only",
+    "status": "PASS",
+    "detail": {
+      "groups": 1,
+      "accepted": 1,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/union",
+    "status": "PASS",
+    "detail": {
+      "groups": 2,
+      "accepted": 2,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/invalid_flags",
+    "status": "PASS",
+    "detail": {
+      "groups": 1,
+      "accepted": 1,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/reserved",
+    "status": "PASS",
+    "detail": {
+      "groups": 1,
+      "accepted": 1,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/s24_edges",
+    "status": "PASS",
+    "detail": {
+      "groups": 1536,
+      "accepted": 1536,
+      "frames": 2,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/bad_signext",
+    "status": "PASS",
+    "detail": {
+      "groups": 1,
+      "accepted": 1,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "preserved_original_counterexamples",
+    "status": "PASS",
+    "detail": {
+      "original_clip_frames": 1,
+      "C_frames": 0,
+      "original_gap_events": [
+        103
+      ],
+      "C_gap_events": [
+        103,
+        105
+      ],
+      "expected_original_mismatch": true
+    }
+  }
+]

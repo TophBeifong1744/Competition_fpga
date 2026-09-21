@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\algorithm-interface-review-20260918\ps-semantic-bridge-candidate-01\tests\run_host.py", line 182, in main
+    check(all(x['status']=='PASS' for x in tests),'comparison failures retained')
+  File "E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\algorithm-interface-review-20260918\ps-semantic-bridge-candidate-01\tests\run_host.py", line 29, in check
+    if not ok:raise AssertionError(detail)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: comparison failures retained
