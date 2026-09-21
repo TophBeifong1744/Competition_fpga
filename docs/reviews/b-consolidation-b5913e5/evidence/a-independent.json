@@ -1,0 +1,29 @@
+{
+  "status": "A_INDEPENDENT_POSTPROCESS_PASS",
+  "totals": {
+    "old_acquire": 137,
+    "frames": 4488,
+    "new_acquire": 120,
+    "joint_gated_fresh": 0,
+    "joint_ungated_fresh": 0
+  },
+  "gate_projection": {
+    "insufficient_pairs": 81,
+    "consistent": 315,
+    "residual": 326,
+    "norm": 39,
+    "residual+norm": 26
+  },
+  "selected_frames": 320,
+  "selected_pairs": 1920,
+  "anchor_pair_reasons": {
+    "VALID": 777,
+    "FEWER_THAN_12_BINS": 39,
+    "TAU_BOUND": 6
+  },
+  "restart_count": 27,
+  "frozen_array_descriptors": 120,
+  "old_snapshot_bytes_equal": true,
+  "fft_rerun": false,
+  "production_approval": false
+}
