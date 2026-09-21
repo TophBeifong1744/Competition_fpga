@@ -1,5 +1,7 @@
 # A复核R1/R2返修：只审检查器增量
 
+2026-09-21结果覆盖：A已对ad30bda694abc946db045192385ebdf1b8e1a956限定批准，R1/R2关闭；[正式报告](../../../../../../docs/reviews/b-engineering-ad30bda/REVIEW.md)。A实际通过43项及14项独立邻接，原A probe也确认两例拒绝，合后43项通过。以下“待A复核”保留为作者交付历史；无需再次派审本实现。生产/硬件/实时/H3范围不变。
+
 A原结论 **NEEDS_FIX，不批准整包合入**；本轮为B作者返修，不自签关闭、不合main。读取用户提供的REVIEW.md后，在原任务分支/原包继续；远端main刷新仍cf026cf。A的原报告以原字节保存为 [A-REVIEW-original.md](A-REVIEW-original.md)，SHA256 `13fab2584b5e16ac9c367a207871723f204f8280d8d142d4e89b13160b25dbd8`。用户只提供报告，未提供A的probe.py、probes JSON及comparison.json；本轮根据报告描述复建两条反例，不冒称收到这些A文件。
 
 ## 实际修复

@@ -1,5 +1,7 @@
 # 给A：R1/R2增量复核请求
 
+**已办结：本提示词不再派发。** A已对准确ad30bda限定通过并关闭R1/R2，报告 `docs/reviews/b-engineering-ad30bda/REVIEW.md`，发布e4ac088；以下保留原请求。8400e71尾部三文档未在A批准/合入范围，不把本完成回执当成对这些文档的批准。
+
 准确返修实现 **ad30bda694abc946db045192385ebdf1b8e1a956** 已推送原待审分支且直接远端查询匹配；请固定此SHA。后续仅文档补记不改变实现。交付核查main已为99bbf5fdc3b9bb44287fcc87404028e98291c75d，其中ca512a8的PSB-B-01～03另获限定主机C批准，不在本次返修范围；不要重派，亦不扩为真实异步/生产/实时批准。
 
 请沿原任务复核仓库 https://github.com/TophBeifong1744/Competition_fpga、分支 `task/member-b-h3-engineering-closeout-20260921` 的R1/R2返修；准确新实现SHA见DELIVERY后续补记。原受审实现d3d2a3d4e78932830bf12bd84c0517b0a2092872、文档头dbd7ab5b35c75dfe9779a0452643d4bd2df24657，A报告结论NEEDS_FIX。本轮不请重审未受影响数值/预算、旧FFT/声学/E01～03。
