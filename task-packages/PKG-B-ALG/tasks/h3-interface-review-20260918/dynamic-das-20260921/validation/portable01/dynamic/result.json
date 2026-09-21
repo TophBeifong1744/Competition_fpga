@@ -1,0 +1,19 @@
+{
+  "status": "AUTHOR_NODE_PASS",
+  "dynamic_chunk_cases": 32,
+  "endpoint_short_cases": 18,
+  "invalid_cases": 8,
+  "invalid_pcm_cases": 5,
+  "causality_checks": 2,
+  "fallback_offset_checks": 17,
+  "small_fade_worst_fallback_samples": 33,
+  "burst_updates": 800,
+  "max_beam_banks": 2,
+  "mono_banks": 1,
+  "max_history_rows": 17,
+  "lookahead_samples": 8,
+  "fade_samples": 480,
+  "fallback_bound_samples": 960,
+  "policy": "serialized fade, latest pending wins; not original immediate retarget equivalence",
+  "hardware": false
+}
