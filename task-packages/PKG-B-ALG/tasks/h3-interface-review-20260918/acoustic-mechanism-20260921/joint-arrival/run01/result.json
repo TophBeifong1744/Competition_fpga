@@ -1,0 +1,5588 @@
+{
+  "status": "AUTHOR_DIAGNOSTIC_NOT_ADOPTED",
+  "pins": {
+    "closeout-0918-20260921/acoustic/pairs01/frames.json": "7f02b0f34cd7bf16773c5ccbf1567307f4b6cb87aeb7e95a01a5760de45f2740",
+    "acoustic-mechanism-20260921/cycle01/result.json": "d0ffe4b510671dac535477caf9f07d03de3549b2791c700e1dc85180a2c8b6de"
+  },
+  "grid_step_samples": 0.25,
+  "grid_candidates": 57489,
+  "groups": {
+    "False": {
+      "frames": 143,
+      "support_ratio_quartiles": [
+        0.99727439526233,
+        0.998956677788062,
+        0.9996421494031238
+      ],
+      "min_pair_ratio_quartiles": [
+        0.9878591688505878,
+        0.9943576337888773,
+        0.9983062877557722
+      ],
+      "old_valid": 123,
+      "new_valid": 137,
+      "newly_valid": 15,
+      "lost": 1
+    },
+    "True": {
+      "frames": 48,
+      "support_ratio_quartiles": [
+        0.9807381428662367,
+        0.9878171757236641,
+        0.9931348549761905
+      ],
+      "min_pair_ratio_quartiles": [
+        0.9226208173573911,
+        0.9589146857978945,
+        0.9767213807518929
+      ],
+      "old_valid": 0,
+      "new_valid": 41,
+      "newly_valid": 41,
+      "lost": 0
+    }
+  },
+  "rows": [
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 108032,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9312511467425503,
+      "min_pair_ratio": 0.7958560196654241,
+      "ratios": [
+        0.7958560196654241,
+        0.8120246162313544,
+        0.9867446490037526,
+        1.0,
+        1.0,
+        0.9928815955547707
+      ],
+      "tau": [
+        5.0,
+        4.0,
+        0.0,
+        -1.0,
+        -5.0,
+        -4.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.8088534120784202,
+      "new_valid": true,
+      "angle": -6.340191745909911,
+      "graph_residual_constructed": 2.6645352591003757e-15
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 108544,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9947369061763658,
+      "min_pair_ratio": 0.9883375582422531,
+      "ratios": [
+        1.0,
+        1.0,
+        0.9906448548579196,
+        0.9952438906809274,
+        0.9941951332770945,
+        0.9883375582422531
+      ],
+      "tau": [
+        4.0,
+        4.0,
+        0.0,
+        0.0,
+        -4.0,
+        -4.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.7145833333333333,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 2.6645352591003757e-15
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 109056,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.969115972313824,
+      "min_pair_ratio": 0.9219236996746271,
+      "ratios": [
+        0.991325671608073,
+        0.9219236996746271,
+        0.9302152601668986,
+        1.0,
+        1.0,
+        0.9712312024333455
+      ],
+      "tau": [
+        -2.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.28246386391608175,
+      "new_valid": true,
+      "angle": -161.565051177078,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 109568,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9913796874339156,
+      "min_pair_ratio": 0.9683405378746603,
+      "ratios": [
+        1.0,
+        0.9799375867288336,
+        1.0,
+        1.0,
+        0.9683405378746603,
+        1.0
+      ],
+      "tau": [
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": 135.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 110080,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9960159939425813,
+      "min_pair_ratio": 0.9830079400243509,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9830079400243509,
+        0.993088023631137
+      ],
+      "tau": [
+        1.0,
+        2.0,
+        0.0,
+        1.0,
+        -1.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": 18.434948822922014,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 110592,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9986509363460307,
+      "min_pair_ratio": 0.9919056180761853,
+      "ratios": [
+        0.9919056180761853,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 111104,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9989670376514364,
+      "min_pair_ratio": 0.9938022259086183,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        0.9938022259086183,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        -1.0,
+        -1.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": -135.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 113152,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9948366510669073,
+      "min_pair_ratio": 0.979859642289697,
+      "ratios": [
+        1.0,
+        0.9963267342274923,
+        0.9928335298842552,
+        0.979859642289697,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 3.2445990825328083e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 113664,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9974804750035673,
+      "min_pair_ratio": 0.9929166439517322,
+      "ratios": [
+        1.0,
+        0.9929166439517322,
+        0.9987441946579274,
+        1.0,
+        1.0,
+        0.9932220114117442
+      ],
+      "tau": [
+        1.0,
+        2.0,
+        0.0,
+        1.0,
+        -1.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": 18.434948822922014,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 114176,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9980536686436399,
+      "min_pair_ratio": 0.9883220118618397,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9883220118618397
+      ],
+      "tau": [
+        0.0,
+        -1.0,
+        0.0,
+        -1.0,
+        0.0,
+        1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": -135.0,
+      "graph_residual_constructed": 3.2445990825328083e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 119808,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        2.0,
+        1.0,
+        1.0,
+        0.0,
+        -1.0
+      ],
+      "plane_residual": 2.5695679235043195e-16,
+      "norm": 0.2526433603614435,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 120320,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.987123298246941,
+      "min_pair_ratio": 0.9227397894816471,
+      "ratios": [
+        1.0,
+        0.9227397894816471,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        -1.0,
+        -4.0,
+        -3.0,
+        -3.0,
+        -2.0,
+        1.0
+      ],
+      "plane_residual": 3.510833468576701e-16,
+      "norm": 0.5649277278321635,
+      "new_valid": true,
+      "angle": -108.43494882292201,
+      "graph_residual_constructed": 1.7763568394002505e-15
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 120832,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9997858569715857,
+      "min_pair_ratio": 0.9987151418295152,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9987151418295152,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 3.2445990825328083e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 121344,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9979374072082811,
+      "min_pair_ratio": 0.9876244432496866,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9876244432496866,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        0.0,
+        -1.0,
+        -1.0,
+        -2.0,
+        -1.0
+      ],
+      "plane_residual": 1.023934400414201e-17,
+      "norm": 0.2526433603614436,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 121856,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": -90.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 125440,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.8446329875802558,
+      "min_pair_ratio": 0.2528304514118892,
+      "ratios": [
+        0.2528304514118892,
+        0.9476356837032635,
+        0.9608221199350698,
+        0.9143468937803397,
+        1.0,
+        0.9921627766509734
+      ],
+      "tau": [
+        5.5,
+        6.0,
+        0.5,
+        0.5,
+        -5.0,
+        -5.5
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.9866038616914663,
+      "new_valid": true,
+      "angle": 5.194428907734806,
+      "graph_residual_constructed": 2.6645352591003757e-15
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 125952,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9950735430445846,
+      "min_pair_ratio": 0.9857303091194669,
+      "ratios": [
+        0.9857303091194669,
+        0.9947364435063374,
+        1.0,
+        0.9899745056417038,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        3.0,
+        1.0,
+        -2.0,
+        -2.0,
+        -5.0,
+        -3.0
+      ],
+      "plane_residual": 2.9021946219117546e-16,
+      "norm": 0.6441167122313272,
+      "new_valid": true,
+      "angle": -33.69006752597979,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 126464,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9845151636342137,
+      "min_pair_ratio": 0.9501673187438175,
+      "ratios": [
+        0.9859337416658417,
+        0.9501673187438175,
+        1.0,
+        0.9709899213956233,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        3.0,
+        0.0,
+        1.0,
+        -2.0,
+        -3.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.45545929509435545,
+      "new_valid": true,
+      "angle": 11.309932474020215,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 127488,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9930554125456337,
+      "min_pair_ratio": 0.9839212092036005,
+      "ratios": [
+        1.0,
+        0.9839212092036005,
+        1.0,
+        1.0,
+        0.9893765344924815,
+        0.98503473157772
+      ],
+      "tau": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.0,
+      "new_valid": false,
+      "angle": null,
+      "graph_residual_constructed": 0.0
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 128000,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9970529763866482,
+      "min_pair_ratio": 0.9845778795069856,
+      "ratios": [
+        1.0,
+        0.9845778795069856,
+        0.9977399788129048,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 128512,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9847325545974744,
+      "min_pair_ratio": 0.9432297741212132,
+      "ratios": [
+        0.9774962089690208,
+        0.9432297741212132,
+        1.0,
+        0.9948964432802561,
+        0.9975545192101568,
+        0.9952183820041992
+      ],
+      "tau": [
+        2.0,
+        3.0,
+        -1.0,
+        1.0,
+        -3.0,
+        -4.0
+      ],
+      "plane_residual": 0.816496580927726,
+      "norm": 0.5359375,
+      "new_valid": false,
+      "angle": null,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 131072,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9919131540716063,
+      "min_pair_ratio": 0.9659537720938907,
+      "ratios": [
+        1.0,
+        0.9855251523357479,
+        1.0,
+        1.0,
+        0.9659537720938907,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        2.0,
+        0.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3572916666666667,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 131584,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9755054911399035,
+      "min_pair_ratio": 0.9452748356826663,
+      "ratios": [
+        1.0,
+        0.9615072614942162,
+        0.9875680227841378,
+        0.9452748356826663,
+        1.0,
+        0.9586828268784007
+      ],
+      "tau": [
+        2.0,
+        1.0,
+        0.0,
+        -1.0,
+        -2.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": -18.434948822922014,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 132608,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.9965684741791333,
+      "min_pair_ratio": 0.9879163581833017,
+      "ratios": [
+        1.0,
+        1.0,
+        0.9914944868914983,
+        1.0,
+        0.9879163581833017,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 3.2445990825328083e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 133120,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9995682613141946,
+      "min_pair_ratio": 0.9974095678851688,
+      "ratios": [
+        1.0,
+        1.0,
+        0.9974095678851688,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 133632,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9878338429260319,
+      "min_pair_ratio": 0.9649440711567722,
+      "ratios": [
+        1.0,
+        0.9740816281757929,
+        0.9649440711567722,
+        0.991434982208254,
+        0.9965423760153732,
+        1.0
+      ],
+      "tau": [
+        -1.0,
+        -2.0,
+        -2.0,
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": -108.43494882292202,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 137728,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.993045243647767,
+      "min_pair_ratio": 0.9809148877891043,
+      "ratios": [
+        1.0,
+        1.0,
+        0.9887516064003228,
+        0.9933247913586638,
+        0.9952801763385114,
+        0.9809148877891043
+      ],
+      "tau": [
+        3.0,
+        4.0,
+        2.0,
+        1.0,
+        -1.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.5208376301906089,
+      "new_valid": true,
+      "angle": 30.963756532073518,
+      "graph_residual_constructed": 2.220446049250313e-15
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 138240,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9995344913814304,
+      "min_pair_ratio": 0.9977731891936481,
+      "ratios": [
+        0.9994337590949347,
+        1.0,
+        1.0,
+        1.0,
+        0.9977731891936481,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 138752,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9996070335854129,
+      "min_pair_ratio": 0.9976422015124785,
+      "ratios": [
+        0.9976422015124785,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        2.0,
+        -1.0,
+        0.0,
+        -3.0,
+        -3.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.45545929509435545,
+      "new_valid": true,
+      "angle": -11.309932474020217,
+      "graph_residual_constructed": 1.1102230246251565e-15
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 139264,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 139776,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9935746664361749,
+      "min_pair_ratio": 0.9694019928147023,
+      "ratios": [
+        1.0,
+        0.9694019928147023,
+        1.0,
+        1.0,
+        1.0,
+        0.9920460058023475
+      ],
+      "tau": [
+        2.0,
+        2.0,
+        0.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3572916666666667,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 141824,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9842710021271615,
+      "min_pair_ratio": 0.9668758874788169,
+      "ratios": [
+        0.9668758874788169,
+        0.9941135320204522,
+        1.0,
+        1.0,
+        0.9673869137345833,
+        0.9772496795291171
+      ],
+      "tau": [
+        3.0,
+        3.0,
+        0.0,
+        0.0,
+        -3.0,
+        -3.0
+      ],
+      "plane_residual": 3.6259732146947156e-16,
+      "norm": 0.5359375,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 142336,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9956044870198888,
+      "min_pair_ratio": 0.9833890330267403,
+      "ratios": [
+        1.0,
+        0.9902378890925936,
+        1.0,
+        0.9833890330267403,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        -1.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": -18.434948822922014,
+      "graph_residual_constructed": 7.771561172376096e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 142848,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9816019975199513,
+      "min_pair_ratio": 0.9132261160821216,
+      "ratios": [
+        0.980217280914452,
+        0.9132261160821216,
+        1.0,
+        1.0,
+        0.9961685881231344,
+        1.0
+      ],
+      "tau": [
+        4.0,
+        4.0,
+        0.0,
+        0.0,
+        -4.0,
+        -4.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.7145833333333333,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 2.6645352591003757e-15
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 143872,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9954868910125015,
+      "min_pair_ratio": 0.9851928397855195,
+      "ratios": [
+        0.9965128612680938,
+        0.9851928397855195,
+        0.9970586940842238,
+        1.0,
+        0.9941569509371725,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        1.0,
+        -2.0,
+        -1.0,
+        -4.0,
+        -3.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.5208376301906088,
+      "new_valid": true,
+      "angle": -30.963756532073518,
+      "graph_residual_constructed": 1.7763568394002505e-15
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 144384,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9979270509115075,
+      "min_pair_ratio": 0.9931442973578204,
+      "ratios": [
+        0.9944180081112253,
+        1.0,
+        1.0,
+        1.0,
+        0.9931442973578204,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 144896,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.9988922300590705,
+      "min_pair_ratio": 0.9956373555474372,
+      "ratios": [
+        0.9956373555474372,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.997716024806986
+      ],
+      "tau": [
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 147456,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9982542046859347,
+      "min_pair_ratio": 0.9942283499019687,
+      "ratios": [
+        0.9942283499019687,
+        1.0,
+        1.0,
+        0.9957105773543659,
+        1.0,
+        0.9995863008592742
+      ],
+      "tau": [
+        3.0,
+        3.0,
+        1.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.45545929509435557,
+      "new_valid": true,
+      "angle": 11.309932474020213,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 147968,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9974143422041016,
+      "min_pair_ratio": 0.9915178465351225,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        0.9984194524384871,
+        0.9915178465351225,
+        0.9945487542510001
+      ],
+      "tau": [
+        3.0,
+        3.0,
+        0.0,
+        0.0,
+        -3.0,
+        -3.0
+      ],
+      "plane_residual": 3.6259732146947156e-16,
+      "norm": 0.5359375,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 148480,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9980946401385041,
+      "min_pair_ratio": 0.9899477204193065,
+      "ratios": [
+        1.0,
+        0.9899477204193065,
+        1.0,
+        1.0,
+        1.0,
+        0.9986201204117189
+      ],
+      "tau": [
+        3.0,
+        2.0,
+        -1.0,
+        -1.0,
+        -4.0,
+        -3.0
+      ],
+      "plane_residual": 3.510833468576701e-16,
+      "norm": 0.5649277278321635,
+      "new_valid": true,
+      "angle": -18.43494882292201,
+      "graph_residual_constructed": 1.9984014443252818e-15
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 148992,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9916089372777953,
+      "min_pair_ratio": 0.9729887464479162,
+      "ratios": [
+        1.0,
+        0.9766670549208722,
+        0.9999978222979836,
+        1.0,
+        0.9729887464479162,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3572916666666667,
+      "new_valid": true,
+      "angle": -90.0,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 149504,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9995961699220768,
+      "min_pair_ratio": 0.9975770195324617,
+      "ratios": [
+        1.0,
+        0.9975770195324617,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 150016,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9894930635029858,
+      "min_pair_ratio": 0.9423400560165022,
+      "ratios": [
+        1.0,
+        0.9946495941816186,
+        0.9423400560165022,
+        1.0,
+        0.999968730819795,
+        1.0
+      ],
+      "tau": [
+        -1.0,
+        -3.0,
+        -4.0,
+        -2.0,
+        -3.0,
+        -1.0
+      ],
+      "plane_residual": 0.816496580927726,
+      "norm": 0.5359375,
+      "new_valid": false,
+      "angle": null,
+      "graph_residual_constructed": 2.6645352591003757e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 96768,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 97280,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9983181062108576,
+      "min_pair_ratio": 0.9919050240012719,
+      "ratios": [
+        1.0,
+        1.0,
+        0.9919050240012719,
+        1.0,
+        0.9980036132638741,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 97792,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.997329189983072,
+      "min_pair_ratio": 0.986443402702151,
+      "ratios": [
+        1.0,
+        1.0,
+        0.9975317371962812,
+        0.986443402702151,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 3.2242178748766684e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 98304,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9991189344553321,
+      "min_pair_ratio": 0.9970086674095573,
+      "ratios": [
+        1.0,
+        0.9977049393224355,
+        1.0,
+        1.0,
+        0.9970086674095573,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -3.0,
+        -2.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3994642272304312,
+      "new_valid": true,
+      "angle": -26.56505117707799,
+      "graph_residual_constructed": 1.7763568394002505e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 98816,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.9979362799635262,
+      "min_pair_ratio": 0.994354705448047,
+      "ratios": [
+        0.994354705448047,
+        1.0,
+        1.0,
+        0.9993953877476744,
+        0.9947618539902552,
+        0.9991057325951804
+      ],
+      "tau": [
+        2.0,
+        2.0,
+        0.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3572916666666667,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 104448,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        4.0,
+        4.0,
+        0.0,
+        0.0,
+        -4.0,
+        -4.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.7145833333333333,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 2.6645352591003757e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 105472,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9996225747748582,
+      "min_pair_ratio": 0.9977354486491496,
+      "ratios": [
+        0.9977354486491496,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        2.0,
+        0.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3572916666666667,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 107008,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9947012305371892,
+      "min_pair_ratio": 0.9747117302764772,
+      "ratios": [
+        1.0,
+        0.9940140117210686,
+        0.9747117302764772,
+        0.9994816412255901,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        -1.0,
+        -3.0,
+        -3.0,
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.45545929509435557,
+      "new_valid": true,
+      "angle": -101.30993247402021,
+      "graph_residual_constructed": 1.5543122344752192e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 115200,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9912741168503353,
+      "min_pair_ratio": 0.9804589808841162,
+      "ratios": [
+        0.9817250847641855,
+        0.9804589808841162,
+        0.9854606354537104,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        5.0,
+        6.0,
+        2.0,
+        1.0,
+        -3.0,
+        -4.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.8473915917482453,
+      "new_valid": true,
+      "angle": 18.434948822922014,
+      "graph_residual_constructed": 3.552713678800501e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 115712,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9995614126025625,
+      "min_pair_ratio": 0.9975959169499504,
+      "ratios": [
+        1.0,
+        0.9997725586654247,
+        1.0,
+        1.0,
+        0.9975959169499504,
+        1.0
+      ],
+      "tau": [
+        4.0,
+        4.0,
+        0.0,
+        0.0,
+        -4.0,
+        -4.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.7145833333333333,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 2.6645352591003757e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 116224,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9981354067067751,
+      "min_pair_ratio": 0.9888124402406513,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9888124402406513
+      ],
+      "tau": [
+        5.0,
+        5.0,
+        0.0,
+        0.0,
+        -5.0,
+        -5.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.8932291666666667,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 3.552713678800501e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 116736,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9954806798578302,
+      "min_pair_ratio": 0.9728840791469814,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        0.9728840791469814,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        4.0,
+        3.0,
+        -1.0,
+        -1.0,
+        -5.0,
+        -4.0
+      ],
+      "plane_residual": 1.2819751242557092e-16,
+      "norm": 0.7365756404098217,
+      "new_valid": true,
+      "angle": -14.036243467926477,
+      "graph_residual_constructed": 2.220446049250313e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 117248,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.979881406543849,
+      "min_pair_ratio": 0.9439625945967344,
+      "ratios": [
+        0.9442558733165365,
+        0.9910699713498236,
+        1.0,
+        0.9439625945967344,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        3.0,
+        3.0,
+        0.0,
+        0.0,
+        -3.0,
+        -3.0
+      ],
+      "plane_residual": 3.6259732146947156e-16,
+      "norm": 0.5359375,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 117760,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9070433650230443,
+      "min_pair_ratio": 0.658546820004398,
+      "ratios": [
+        0.9766918424014422,
+        0.658546820004398,
+        0.9625169828597877,
+        0.8991527416751511,
+        0.9925869409565393,
+        0.9527648622409474
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 118272,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9991133053193236,
+      "min_pair_ratio": 0.995955739539014,
+      "ratios": [
+        1.0,
+        1.0,
+        0.995955739539014,
+        1.0,
+        0.9987240923769284,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 3.2242178748766684e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 118784,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9739167676830485,
+      "min_pair_ratio": 0.9014299180116335,
+      "ratios": [
+        0.9748795409368385,
+        1.0,
+        0.9994006997221828,
+        0.999216562051395,
+        0.9014299180116335,
+        0.9685738853762408
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        -1.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": -18.434948822922014,
+      "graph_residual_constructed": 7.771561172376096e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 124416,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9990003000957646,
+      "min_pair_ratio": 0.9940018005745881,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        0.9940018005745881,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        2.0,
+        0.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3572916666666667,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 124928,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        2.0,
+        0.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3572916666666667,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 125440,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9990596056314794,
+      "min_pair_ratio": 0.9943576337888773,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        0.9943576337888773,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        3.0,
+        1.0,
+        1.0,
+        -1.0,
+        -2.0
+      ],
+      "plane_residual": 2.398355846665908e-16,
+      "norm": 0.3994642272304312,
+      "new_valid": true,
+      "angle": 26.565051177077986,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 125952,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9997645670966806,
+      "min_pair_ratio": 0.9985874025800846,
+      "ratios": [
+        0.9985874025800846,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": -90.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 126464,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        0.0,
+        -2.0,
+        -1.0,
+        -3.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.3789650405421653,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 126976,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.9983991950171045,
+      "min_pair_ratio": 0.9937280065398659,
+      "ratios": [
+        1.0,
+        0.9937280065398659,
+        1.0,
+        1.0,
+        1.0,
+        0.9966671635627614
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        -1.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": -18.434948822922014,
+      "graph_residual_constructed": 7.771561172376096e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 127488,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        3.0,
+        3.0,
+        0.0,
+        0.0,
+        -3.0,
+        -3.0
+      ],
+      "plane_residual": 3.6259732146947156e-16,
+      "norm": 0.5359375,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 128000,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9879171835366839,
+      "min_pair_ratio": 0.955082556029248,
+      "ratios": [
+        1.0,
+        0.9724205451908559,
+        1.0,
+        0.955082556029248,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        3.0,
+        -1.0,
+        1.0,
+        -3.0,
+        -4.0
+      ],
+      "plane_residual": 0.816496580927726,
+      "norm": 0.5359375,
+      "new_valid": false,
+      "angle": null,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 128512,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9878005085212963,
+      "min_pair_ratio": 0.953894054045936,
+      "ratios": [
+        0.9729089970818425,
+        1.0,
+        0.953894054045936,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        3.0,
+        2.0,
+        -1.0,
+        -1.0,
+        -4.0,
+        -3.0
+      ],
+      "plane_residual": 3.510833468576701e-16,
+      "norm": 0.5649277278321635,
+      "new_valid": true,
+      "angle": -18.43494882292201,
+      "graph_residual_constructed": 1.9984014443252818e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 129024,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9971978892228995,
+      "min_pair_ratio": 0.9864819715253076,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        0.9864819715253076,
+        1.0,
+        0.9967053638120901
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 129536,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999810640903376,
+      "min_pair_ratio": 0.9998863845420263,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9998863845420263
+      ],
+      "tau": [
+        4.0,
+        4.0,
+        0.0,
+        0.0,
+        -4.0,
+        -4.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.7145833333333333,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 2.6645352591003757e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 130048,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.991980457537014,
+      "min_pair_ratio": 0.9524746907745802,
+      "ratios": [
+        0.9524746907745802,
+        1.0,
+        1.0,
+        1.0,
+        0.9994080544475049,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        1.0,
+        0.0,
+        -1.0,
+        -2.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": -18.434948822922014,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 130560,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 131072,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9985896539630167,
+      "min_pair_ratio": 0.9915379237781009,
+      "ratios": [
+        1.0,
+        0.9915379237781009,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        0.0,
+        -1.0,
+        -1.0,
+        -2.0,
+        -1.0
+      ],
+      "plane_residual": 1.023934400414201e-17,
+      "norm": 0.2526433603614436,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 131584,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9918366840450716,
+      "min_pair_ratio": 0.9733773197761754,
+      "ratios": [
+        0.9916452335386216,
+        0.9883617636560688,
+        0.9733773197761754,
+        0.9976357872995644,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        0.0,
+        -1.0,
+        -1.0,
+        -2.0,
+        -1.0
+      ],
+      "plane_residual": 1.023934400414201e-17,
+      "norm": 0.2526433603614436,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 133632,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9974417530095863,
+      "min_pair_ratio": 0.9872747303110835,
+      "ratios": [
+        0.998120629214881,
+        0.9995733501036543,
+        1.0,
+        0.9872747303110835,
+        1.0,
+        0.9996818084278998
+      ],
+      "tau": [
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": 135.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 134144,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        3.0,
+        1.0,
+        1.0,
+        -1.0,
+        -2.0
+      ],
+      "plane_residual": 2.398355846665908e-16,
+      "norm": 0.3994642272304312,
+      "new_valid": true,
+      "angle": 26.565051177077986,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 134656,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9985982626364528,
+      "min_pair_ratio": 0.993463210568732,
+      "ratios": [
+        0.993463210568732,
+        1.0,
+        1.0,
+        1.0,
+        0.9981263652499853,
+        1.0
+      ],
+      "tau": [
+        3.0,
+        3.0,
+        0.0,
+        0.0,
+        -3.0,
+        -3.0
+      ],
+      "plane_residual": 3.6259732146947156e-16,
+      "norm": 0.5359375,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 135168,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9959766176917413,
+      "min_pair_ratio": 0.9860614972722,
+      "ratios": [
+        0.9860614972722,
+        1.0,
+        1.0,
+        0.9903047604307056,
+        0.9994934484475418,
+        1.0
+      ],
+      "tau": [
+        3.0,
+        3.0,
+        1.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.45545929509435557,
+      "new_valid": true,
+      "angle": 11.309932474020213,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 135680,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        0.0,
+        -1.0,
+        -1.0,
+        -2.0,
+        -1.0
+      ],
+      "plane_residual": 1.023934400414201e-17,
+      "norm": 0.2526433603614436,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 136192,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9998023557230045,
+      "min_pair_ratio": 0.9988141343380275,
+      "ratios": [
+        0.9988141343380275,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        -1.0,
+        -1.0,
+        -2.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.816496580927726,
+      "norm": 0.17864583333333334,
+      "new_valid": false,
+      "angle": null,
+      "graph_residual_constructed": 5.551115123125783e-16
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 137216,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9765416257253287,
+      "min_pair_ratio": 0.8628772149934535,
+      "ratios": [
+        0.9963725393585191,
+        0.8628772149934535,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        2.0,
+        0.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3572916666666667,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 137728,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        2.0,
+        0.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3572916666666667,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 138240,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9925787780804907,
+      "min_pair_ratio": 0.9730534420804494,
+      "ratios": [
+        1.0,
+        0.9730534420804494,
+        0.9824192264024953,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": -90.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 94720,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.966391844606546,
+      "min_pair_ratio": 0.9222639009846229,
+      "ratios": [
+        0.9887057079946564,
+        0.9831413370595459,
+        0.9619778483136994,
+        0.9222639009846229,
+        0.9565417936701481,
+        0.9857204796166038
+      ],
+      "tau": [
+        2.5,
+        -3.0,
+        -2.5,
+        -5.5,
+        -5.0,
+        0.5
+      ],
+      "plane_residual": 1.224744871391589,
+      "norm": 0.7365756404098215,
+      "new_valid": false,
+      "angle": null,
+      "graph_residual_constructed": 3.552713678800501e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 95232,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9969569176582298,
+      "min_pair_ratio": 0.981741505949379,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.981741505949379
+      ],
+      "tau": [
+        2.0,
+        -1.0,
+        -2.0,
+        -3.0,
+        -4.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.5208376301906089,
+      "new_valid": true,
+      "angle": -59.03624346792648,
+      "graph_residual_constructed": 1.7763568394002505e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 95744,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        -2.0,
+        -5.0,
+        -4.0,
+        -7.0,
+        -3.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.9196357131142034,
+      "new_valid": true,
+      "angle": -60.94539590092286,
+      "graph_residual_constructed": 2.220446049250313e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 96256,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9964214754846981,
+      "min_pair_ratio": 0.9785288529081887,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9785288529081887,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        -1.0,
+        -4.0,
+        -3.0,
+        -6.0,
+        -3.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.7683847829676096,
+      "new_valid": true,
+      "angle": -54.46232220802562,
+      "graph_residual_constructed": 3.552713678800501e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 96768,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.9990450811317847,
+      "min_pair_ratio": 0.9953758797025507,
+      "ratios": [
+        0.9953758797025507,
+        0.9988946070881584,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        -1.0,
+        -1.0,
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": -71.56505117707799,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 97280,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.9973209370554582,
+      "min_pair_ratio": 0.9872165928060294,
+      "ratios": [
+        0.9967090295267208,
+        0.9872165928060294,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.0,
+      "new_valid": false,
+      "angle": null,
+      "graph_residual_constructed": 0.0
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 97792,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9985388578580837,
+      "min_pair_ratio": 0.9912331471485034,
+      "ratios": [
+        1.0,
+        0.9912331471485034,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 98816,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9985107306435848,
+      "min_pair_ratio": 0.9910643838615093,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        0.9910643838615093,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 99328,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9959157431837105,
+      "min_pair_ratio": 0.989914289848818,
+      "ratios": [
+        0.9936819613696691,
+        1.0,
+        1.0,
+        1.0,
+        0.989914289848818,
+        0.9918982078837757
+      ],
+      "tau": [
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": 161.565051177078,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 116224,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9948539196234364,
+      "min_pair_ratio": 0.9810275008940343,
+      "ratios": [
+        0.9880960168465845,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9810275008940343
+      ],
+      "tau": [
+        1.0,
+        -1.0,
+        -1.0,
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": -71.56505117707799,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 116736,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9985498400434455,
+      "min_pair_ratio": 0.9923757328995327,
+      "ratios": [
+        1.0,
+        0.9923757328995327,
+        1.0,
+        0.9989233073611412,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        0.0,
+        -2.0,
+        -1.0,
+        -3.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.3789650405421653,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 117248,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9975306835753259,
+      "min_pair_ratio": 0.985184101451956,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.985184101451956
+      ],
+      "tau": [
+        2.0,
+        -1.0,
+        -4.0,
+        -3.0,
+        -6.0,
+        -3.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.7683847829676096,
+      "new_valid": true,
+      "angle": -54.46232220802562,
+      "graph_residual_constructed": 3.552713678800501e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 117760,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.9927049188862426,
+      "min_pair_ratio": 0.978471840893486,
+      "ratios": [
+        1.0,
+        0.9874639973704468,
+        1.0,
+        0.9934686610613102,
+        0.9968250139922121,
+        0.978471840893486
+      ],
+      "tau": [
+        2.0,
+        -1.0,
+        -4.0,
+        -3.0,
+        -6.0,
+        -3.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.7683847829676096,
+      "new_valid": true,
+      "angle": -54.46232220802562,
+      "graph_residual_constructed": 3.552713678800501e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 120320,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9839557520345671,
+      "min_pair_ratio": 0.9660346364891005,
+      "ratios": [
+        1.0,
+        0.9791529855826835,
+        0.9660346364891005,
+        1.0,
+        0.9892721095807668,
+        0.9692747805548522
+      ],
+      "tau": [
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 125440,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.998956677788062,
+      "min_pair_ratio": 0.9943432122157138,
+      "ratios": [
+        0.9943432122157138,
+        0.9993968545126587,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        -1.0,
+        -2.0,
+        -2.0,
+        -3.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3994642272304312,
+      "new_valid": true,
+      "angle": -63.43494882292201,
+      "graph_residual_constructed": 1.1102230246251565e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 125952,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9992805797894856,
+      "min_pair_ratio": 0.9971054081004231,
+      "ratios": [
+        0.998578070636491,
+        1.0,
+        1.0,
+        0.9971054081004231,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 3.2242178748766684e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 126464,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9994323623466458,
+      "min_pair_ratio": 0.9965941740798755,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9965941740798755,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3572916666666667,
+      "new_valid": true,
+      "angle": -90.0,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 126976,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9993742505813571,
+      "min_pair_ratio": 0.9962455034881431,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9962455034881431
+      ],
+      "tau": [
+        1.0,
+        -1.0,
+        -2.0,
+        -2.0,
+        -3.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3994642272304312,
+      "new_valid": true,
+      "angle": -63.43494882292201,
+      "graph_residual_constructed": 1.1102230246251565e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 127488,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9987918067936427,
+      "min_pair_ratio": 0.9927508407618565,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9927508407618565
+      ],
+      "tau": [
+        -1.0,
+        -1.0,
+        1.0,
+        0.0,
+        2.0,
+        2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": 161.565051177078,
+      "graph_residual_constructed": 7.771561172376096e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 129024,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9938450115598141,
+      "min_pair_ratio": 0.9802116249655466,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9828584443933378,
+        0.9802116249655466
+      ],
+      "tau": [
+        2.0,
+        -2.0,
+        -4.0,
+        -4.0,
+        -6.0,
+        -2.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.7989284544608624,
+      "new_valid": true,
+      "angle": -63.43494882292201,
+      "graph_residual_constructed": 2.220446049250313e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 129536,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.99580027687755,
+      "min_pair_ratio": 0.9826497676439789,
+      "ratios": [
+        1.0,
+        1.0,
+        0.9826497676439789,
+        1.0,
+        0.9970658735037394,
+        0.9950860201175822
+      ],
+      "tau": [
+        2.0,
+        -1.0,
+        -3.0,
+        -3.0,
+        -5.0,
+        -2.0
+      ],
+      "plane_residual": 4.796711693331816e-16,
+      "norm": 0.6441167122313273,
+      "new_valid": true,
+      "angle": -56.309932474020215,
+      "graph_residual_constructed": 3.1086244689504383e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 130048,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9725510621393448,
+      "min_pair_ratio": 0.8760091283672912,
+      "ratios": [
+        1.0,
+        1.0,
+        0.9592972444687778,
+        1.0,
+        0.8760091283672912,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        -1.0,
+        -2.0,
+        -3.0,
+        -4.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.5208376301906089,
+      "new_valid": true,
+      "angle": -59.03624346792648,
+      "graph_residual_constructed": 1.7763568394002505e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 130560,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9986163668444837,
+      "min_pair_ratio": 0.9916982010669029,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9916982010669029,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        -1.0,
+        -3.0,
+        -3.0,
+        -5.0,
+        -2.0
+      ],
+      "plane_residual": 4.796711693331816e-16,
+      "norm": 0.6441167122313273,
+      "new_valid": true,
+      "angle": -56.309932474020215,
+      "graph_residual_constructed": 3.1086244689504383e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 131072,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9942236746611915,
+      "min_pair_ratio": 0.9653420479671501,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9653420479671501,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        1.0,
+        0.0,
+        -1.0,
+        -2.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": -18.434948822922014,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 132096,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.995717942823006,
+      "min_pair_ratio": 0.9743076569380367,
+      "ratios": [
+        0.9743076569380367,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        -1.0,
+        -2.0,
+        -2.0,
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": -108.43494882292202,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 132608,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9998980499799653,
+      "min_pair_ratio": 0.999388299879793,
+      "ratios": [
+        0.999388299879793,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 133120,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9970114249870294,
+      "min_pair_ratio": 0.9904685764370579,
+      "ratios": [
+        0.9946323040915155,
+        1.0,
+        1.0,
+        0.9969676693936043,
+        1.0,
+        0.9904685764370579
+      ],
+      "tau": [
+        -1.0,
+        -1.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": -135.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 135680,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.99991473918354,
+      "min_pair_ratio": 0.9994884351012407,
+      "ratios": [
+        1.0,
+        1.0,
+        0.9994884351012407,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        -1.0,
+        -2.0,
+        -1.0,
+        -2.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": -71.56505117707799,
+      "graph_residual_constructed": 9.672653624630005e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 136192,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9997465812304295,
+      "min_pair_ratio": 0.998479487382578,
+      "ratios": [
+        0.998479487382578,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        -1.0,
+        -2.0,
+        -2.0,
+        -3.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3994642272304312,
+      "new_valid": true,
+      "angle": -63.43494882292201,
+      "graph_residual_constructed": 1.1102230246251565e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 136704,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9990546311665024,
+      "min_pair_ratio": 0.9943277869990149,
+      "ratios": [
+        1.0,
+        1.0,
+        0.9943277869990149,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        0.0,
+        -2.0,
+        -1.0,
+        -3.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.3789650405421653,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 137216,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.998899019307816,
+      "min_pair_ratio": 0.9948501224442531,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        0.9948501224442531,
+        0.9985439934026429,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": -90.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 96768,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999442502950188,
+      "min_pair_ratio": 0.9996655017701133,
+      "ratios": [
+        1.0,
+        0.9996655017701133,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        0.0,
+        -1.0,
+        -2.0,
+        -3.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.3789650405421653,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 1.7763568394002505e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 103424,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9992610204489651,
+      "min_pair_ratio": 0.9967812410354012,
+      "ratios": [
+        1.0,
+        0.9987848816583906,
+        1.0,
+        1.0,
+        1.0,
+        0.9967812410354012
+      ],
+      "tau": [
+        -2.0,
+        -2.0,
+        0.0,
+        0.0,
+        2.0,
+        2.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3572916666666667,
+      "new_valid": true,
+      "angle": 180.0,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 103936,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9990984057581948,
+      "min_pair_ratio": 0.9945904345491693,
+      "ratios": [
+        1.0,
+        1.0,
+        0.9945904345491693,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        0.0,
+        -1.0,
+        -2.0,
+        -3.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.3789650405421653,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 1.7763568394002505e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 104448,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9407302383660322,
+      "min_pair_ratio": 0.6556575985778306,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.6556575985778306,
+        0.9887238316183633
+      ],
+      "tau": [
+        2.0,
+        -2.0,
+        -5.0,
+        -4.0,
+        -7.0,
+        -3.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.9196357131142034,
+      "new_valid": true,
+      "angle": -60.94539590092286,
+      "graph_residual_constructed": 2.220446049250313e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 104960,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.997778525196915,
+      "min_pair_ratio": 0.9878019795178737,
+      "ratios": [
+        0.9878019795178737,
+        1.0,
+        1.0,
+        1.0,
+        0.9988691716636169,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        0.0,
+        -2.0,
+        -1.0,
+        -3.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.3789650405421653,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 105472,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -3.0,
+        -2.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3994642272304312,
+      "new_valid": true,
+      "angle": -26.56505117707799,
+      "graph_residual_constructed": 1.7763568394002505e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 108032,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9972278534692018,
+      "min_pair_ratio": 0.9921918508231146,
+      "ratios": [
+        1.0,
+        0.9960604821281355,
+        0.9951147878639615,
+        1.0,
+        1.0,
+        0.9921918508231146
+      ],
+      "tau": [
+        1.0,
+        0.0,
+        -1.0,
+        -1.0,
+        -2.0,
+        -1.0
+      ],
+      "plane_residual": 1.023934400414201e-17,
+      "norm": 0.2526433603614436,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 108544,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9969317417782284,
+      "min_pair_ratio": 0.9815904506693708,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        0.9815904506693708,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -3.0,
+        -2.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3994642272304312,
+      "new_valid": true,
+      "angle": -26.56505117707799,
+      "graph_residual_constructed": 1.7763568394002505e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 109056,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.981023721640366,
+      "min_pair_ratio": 0.9028544824385512,
+      "ratios": [
+        1.0,
+        0.997801227887635,
+        0.9997206585814441,
+        0.9028544824385512,
+        0.9857659609345654,
+        1.0
+      ],
+      "tau": [
+        3.0,
+        -1.0,
+        -4.0,
+        -4.0,
+        -7.0,
+        -3.0
+      ],
+      "plane_residual": 3.1401849173675503e-16,
+      "norm": 0.8932291666666666,
+      "new_valid": true,
+      "angle": -53.13010235415599,
+      "graph_residual_constructed": 2.220446049250313e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 115200,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9996617240313894,
+      "min_pair_ratio": 0.9979703441883373,
+      "ratios": [
+        0.9979703441883373,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        -1.0,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 180.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 115712,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999835340276261,
+      "min_pair_ratio": 0.9999012041657571,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9999012041657571,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        -1.0,
+        -2.0,
+        -2.0,
+        -3.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3994642272304312,
+      "new_valid": true,
+      "angle": -63.43494882292201,
+      "graph_residual_constructed": 1.1102230246251565e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 117248,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9994163974971987,
+      "min_pair_ratio": 0.9964983849831927,
+      "ratios": [
+        0.9964983849831927,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        -2.0,
+        -3.0,
+        -2.0,
+        -3.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.45545929509435557,
+      "new_valid": true,
+      "angle": -78.69006752597979,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 117760,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9992690452879033,
+      "min_pair_ratio": 0.9956142717274205,
+      "ratios": [
+        1.0,
+        1.0,
+        0.9956142717274205,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        0.0,
+        -2.0,
+        -1.0,
+        -3.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.3789650405421653,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 118272,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9986928162436488,
+      "min_pair_ratio": 0.9921568974618934,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9921568974618934,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        -3.0,
+        -3.0,
+        -3.0,
+        -3.0,
+        0.0
+      ],
+      "plane_residual": 3.6259732146947156e-16,
+      "norm": 0.5359375,
+      "new_valid": true,
+      "angle": -90.0,
+      "graph_residual_constructed": 2.3786199347760637e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 124416,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.9953681324302238,
+      "min_pair_ratio": 0.9722087945813438,
+      "ratios": [
+        1.0,
+        0.9722087945813438,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.0,
+      "new_valid": false,
+      "angle": null,
+      "graph_residual_constructed": 0.0
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 124928,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9990543885271117,
+      "min_pair_ratio": 0.9943263311626713,
+      "ratios": [
+        1.0,
+        0.9943263311626713,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        0.0,
+        -2.0,
+        -2.0,
+        -4.0,
+        -2.0
+      ],
+      "plane_residual": 2.047868800828402e-17,
+      "norm": 0.5052867207228872,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 1.7763568394002505e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 127488,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.999396019648202,
+      "min_pair_ratio": 0.9963761178892131,
+      "ratios": [
+        0.9963761178892131,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        -1.0,
+        -2.0,
+        -1.0,
+        -2.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": -71.56505117707799,
+      "graph_residual_constructed": 9.672653624630005e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 128000,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9998995162886837,
+      "min_pair_ratio": 0.9993970977321031,
+      "ratios": [
+        0.9993970977321031,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        -1.0,
+        -2.0,
+        -3.0,
+        -4.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.5208376301906089,
+      "new_valid": true,
+      "angle": -59.03624346792648,
+      "graph_residual_constructed": 1.7763568394002505e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 128512,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        -1.0,
+        -3.0,
+        -2.0,
+        -4.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.5208376301906088,
+      "new_valid": true,
+      "angle": -59.03624346792648,
+      "graph_residual_constructed": 1.7763568394002505e-15
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 129024,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        1.0,
+        0.0,
+        -1.0,
+        -2.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": -18.434948822922014,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 129536,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9993829284287458,
+      "min_pair_ratio": 0.9962975705724753,
+      "ratios": [
+        0.9962975705724753,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 90.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 104960,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9998017370940555,
+      "min_pair_ratio": 0.9988104225643336,
+      "ratios": [
+        0.9988104225643336,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        3.0,
+        1.0,
+        1.0,
+        -1.0,
+        -2.0
+      ],
+      "plane_residual": 2.398355846665908e-16,
+      "norm": 0.3994642272304312,
+      "new_valid": true,
+      "angle": 26.565051177077986,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 105472,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.998519019734368,
+      "min_pair_ratio": 0.994863922797856,
+      "ratios": [
+        0.994863922797856,
+        0.9999173496949313,
+        1.0,
+        1.0,
+        0.9963328459134211,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 90.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 118272,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9810727822694623,
+      "min_pair_ratio": 0.9458396180179894,
+      "ratios": [
+        0.981355891746179,
+        1.0,
+        0.9592411838526055,
+        0.9458396180179894,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        6.0,
+        2.0,
+        4.0,
+        0.0,
+        -4.0
+      ],
+      "plane_residual": 0.816496580927726,
+      "norm": 0.7579300810843306,
+      "new_valid": false,
+      "angle": null,
+      "graph_residual_constructed": 2.220446049250313e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 118784,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9945302864125262,
+      "min_pair_ratio": 0.9869767852509392,
+      "ratios": [
+        0.9869767852509392,
+        0.9901229402297625,
+        0.9900819929944555,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -3.0,
+        -2.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3994642272304312,
+      "new_valid": true,
+      "angle": -26.56505117707799,
+      "graph_residual_constructed": 1.7763568394002505e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 119296,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9973866333746502,
+      "min_pair_ratio": 0.9898962004781118,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9944235997697892,
+        0.9898962004781118
+      ],
+      "tau": [
+        1.0,
+        3.0,
+        1.0,
+        2.0,
+        0.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.3789650405421653,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 1.1102230246251565e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 119808,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.99469959475287,
+      "min_pair_ratio": 0.9706158098551596,
+      "ratios": [
+        0.9706158098551596,
+        1.0,
+        0.9975817586620609,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        3.0,
+        3.0,
+        1.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.45545929509435557,
+      "new_valid": true,
+      "angle": 11.309932474020213,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 120320,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9995741625234341,
+      "min_pair_ratio": 0.998049101681362,
+      "ratios": [
+        0.998049101681362,
+        0.9993958734592436,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        3.0,
+        1.0,
+        1.0,
+        -1.0,
+        -2.0
+      ],
+      "plane_residual": 2.398355846665908e-16,
+      "norm": 0.3994642272304312,
+      "new_valid": true,
+      "angle": 26.565051177077986,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 120832,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9827258360905663,
+      "min_pair_ratio": 0.9506450624682706,
+      "ratios": [
+        0.9855478731461923,
+        0.9506450624682706,
+        1.0,
+        0.9705499294814964,
+        1.0,
+        0.9896121514474392
+      ],
+      "tau": [
+        1.0,
+        5.0,
+        2.0,
+        4.0,
+        1.0,
+        -3.0
+      ],
+      "plane_residual": 0.816496580927726,
+      "norm": 0.6441167122313273,
+      "new_valid": false,
+      "angle": null,
+      "graph_residual_constructed": 3.552713678800501e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 123392,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9840050327897694,
+      "min_pair_ratio": 0.9506732529371295,
+      "ratios": [
+        0.9559250330408608,
+        0.9506732529371295,
+        0.9974319107606266,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        -1.0,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 180.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 124416,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.9942718286708824,
+      "min_pair_ratio": 0.9656309720252947,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        0.9656309720252947,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        3.0,
+        1.0,
+        2.0,
+        0.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.3789650405421653,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 1.1102230246251565e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 130048,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9996863627301198,
+      "min_pair_ratio": 0.9985665049191688,
+      "ratios": [
+        0.9985665049191688,
+        0.9995516714615509,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        0.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3572916666666667,
+      "new_valid": true,
+      "angle": 90.0,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 130560,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9989411863324944,
+      "min_pair_ratio": 0.9954647167619192,
+      "ratios": [
+        1.0,
+        1.0,
+        0.9954647167619192,
+        1.0,
+        1.0,
+        0.9981824012330476
+      ],
+      "tau": [
+        3.0,
+        4.0,
+        2.0,
+        1.0,
+        -1.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.5208376301906089,
+      "new_valid": true,
+      "angle": 30.963756532073518,
+      "graph_residual_constructed": 2.220446049250313e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 131072,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9994259859583515,
+      "min_pair_ratio": 0.9965559157501099,
+      "ratios": [
+        1.0,
+        0.9965559157501099,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 90.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 131584,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9971343487906247,
+      "min_pair_ratio": 0.9906973863259122,
+      "ratios": [
+        0.9921087064178367,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9906973863259122
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 132096,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.9964630471018323,
+      "min_pair_ratio": 0.9803220576811768,
+      "ratios": [
+        0.9984562249298176,
+        1.0,
+        1.0,
+        1.0,
+        0.9803220576811768,
+        1.0
+      ],
+      "tau": [
+        3.0,
+        5.0,
+        1.0,
+        2.0,
+        -2.0,
+        -4.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.680263066487323,
+      "new_valid": true,
+      "angle": 23.198590513648185,
+      "graph_residual_constructed": 1.7763568394002505e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 132608,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9891080486139577,
+      "min_pair_ratio": 0.9735137161201132,
+      "ratios": [
+        0.983020546280669,
+        0.9781140292829646,
+        1.0,
+        1.0,
+        1.0,
+        0.9735137161201132
+      ],
+      "tau": [
+        3.0,
+        5.0,
+        2.0,
+        2.0,
+        -1.0,
+        -3.0
+      ],
+      "plane_residual": 9.51817968857363e-16,
+      "norm": 0.6441167122313272,
+      "new_valid": true,
+      "angle": 33.69006752597979,
+      "graph_residual_constructed": 3.552713678800501e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 133120,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9948839035845959,
+      "min_pair_ratio": 0.9879351643627435,
+      "ratios": [
+        0.9936180262013566,
+        1.0,
+        0.9962569466571574,
+        0.9914932842863184,
+        0.9879351643627435,
+        1.0
+      ],
+      "tau": [
+        4.0,
+        7.0,
+        3.0,
+        3.0,
+        -1.0,
+        -4.0
+      ],
+      "plane_residual": 4.796711693331816e-16,
+      "norm": 0.8932291666666666,
+      "new_valid": true,
+      "angle": 36.86989764584402,
+      "graph_residual_constructed": 2.6645352591003757e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 133632,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9449131972383795,
+      "min_pair_ratio": 0.8401718387741698,
+      "ratios": [
+        0.9074789780186104,
+        0.8401718387741698,
+        0.9786828136964867,
+        1.0,
+        1.0,
+        0.943145552941011
+      ],
+      "tau": [
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": 135.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 136192,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9988946350363539,
+      "min_pair_ratio": 0.9933678102181244,
+      "ratios": [
+        0.9933678102181244,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 136704,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        -1.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": 108.43494882292202,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 140288,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9933731822678609,
+      "min_pair_ratio": 0.9777848692115062,
+      "ratios": [
+        0.9777848692115062,
+        0.9963025604944769,
+        1.0,
+        0.9946839795059067,
+        0.9948682799070573,
+        0.9965994044882184
+      ],
+      "tau": [
+        3.0,
+        5.0,
+        2.0,
+        2.0,
+        -1.0,
+        -3.0
+      ],
+      "plane_residual": 9.51817968857363e-16,
+      "norm": 0.6441167122313272,
+      "new_valid": true,
+      "angle": 33.69006752597979,
+      "graph_residual_constructed": 3.552713678800501e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 140800,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9980870287234724,
+      "min_pair_ratio": 0.9919037204774486,
+      "ratios": [
+        0.9919037204774486,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9966184518633867
+      ],
+      "tau": [
+        2.0,
+        4.0,
+        2.0,
+        2.0,
+        0.0,
+        -2.0
+      ],
+      "plane_residual": 5.139135847008639e-16,
+      "norm": 0.505286720722887,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 1.7763568394002505e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 141312,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9983011281224726,
+      "min_pair_ratio": 0.9898067687348361,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        0.9898067687348361,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        2.0,
+        1.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.28246386391608175,
+      "new_valid": true,
+      "angle": 18.43494882292201,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 141824,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9968009561126622,
+      "min_pair_ratio": 0.9864030790229354,
+      "ratios": [
+        0.9948628418421797,
+        1.0,
+        0.9995398158108586,
+        1.0,
+        1.0,
+        0.9864030790229354
+      ],
+      "tau": [
+        -1.0,
+        1.0,
+        2.0,
+        2.0,
+        3.0,
+        1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3994642272304312,
+      "new_valid": true,
+      "angle": 116.56505117707799,
+      "graph_residual_constructed": 1.1102230246251565e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 145920,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9900621918732919,
+      "min_pair_ratio": 0.9627468155665412,
+      "ratios": [
+        1.0,
+        0.9776263356732109,
+        1.0,
+        1.0,
+        1.0,
+        0.9627468155665412
+      ],
+      "tau": [
+        2.0,
+        3.0,
+        2.0,
+        1.0,
+        0.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.3789650405421653,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 146944,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9941063579027694,
+      "min_pair_ratio": 0.9724373672938843,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        0.9922007801227316,
+        1.0,
+        0.9724373672938843
+      ],
+      "tau": [
+        1.0,
+        3.0,
+        1.0,
+        2.0,
+        0.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.3789650405421653,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 1.1102230246251565e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 147456,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9956726628433034,
+      "min_pair_ratio": 0.9877517303346625,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        0.9924390986459338,
+        0.9938451480792236,
+        0.9877517303346625
+      ],
+      "tau": [
+        2.0,
+        2.0,
+        0.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3572916666666667,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 147968,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9992911079100367,
+      "min_pair_ratio": 0.9957466474602215,
+      "ratios": [
+        1.0,
+        0.9957466474602215,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        2.0,
+        0.0,
+        1.0,
+        -1.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": 18.434948822922014,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 148480,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.9905770736293394,
+      "min_pair_ratio": 0.9763668845986884,
+      "ratios": [
+        1.0,
+        1.0,
+        0.9955720127313469,
+        0.9836317222852036,
+        0.9878918221607982,
+        0.9763668845986884
+      ],
+      "tau": [
+        -1.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": 108.43494882292202,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 283648,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.999692249070125,
+      "min_pair_ratio": 0.998914988554814,
+      "ratios": [
+        1.0,
+        1.0,
+        0.998914988554814,
+        0.9992385058659363,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 3.2445990825328083e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 284672,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.999012756708726,
+      "min_pair_ratio": 0.9954601733029049,
+      "ratios": [
+        0.9954601733029049,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9986163669494516
+      ],
+      "tau": [
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": -45.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 101888,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9995589425995437,
+      "min_pair_ratio": 0.9977556358763949,
+      "ratios": [
+        1.0,
+        0.9977556358763949,
+        0.9995980197208676,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        -1.0,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 180.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 102400,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9990509761835632,
+      "min_pair_ratio": 0.9960820053918651,
+      "ratios": [
+        1.0,
+        0.9982238517095147,
+        1.0,
+        1.0,
+        1.0,
+        0.9960820053918651
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 102912,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.9999100738155687,
+      "min_pair_ratio": 0.9994604428934131,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9994604428934131,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.0,
+      "new_valid": false,
+      "angle": null,
+      "graph_residual_constructed": 0.0
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 108032,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.9948900086461457,
+      "min_pair_ratio": 0.9826344207934519,
+      "ratios": [
+        0.9876568530693455,
+        0.9990487780140779,
+        1.0,
+        1.0,
+        1.0,
+        0.9826344207934519
+      ],
+      "tau": [
+        3.0,
+        7.0,
+        3.0,
+        4.0,
+        0.0,
+        -4.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.8842517612650523,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 1.7763568394002505e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 109568,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9993426877811397,
+      "min_pair_ratio": 0.9960861669706121,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9999699597162262,
+        0.9960861669706121
+      ],
+      "tau": [
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 90.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 111104,
+      "old_cycle_fail": true,
+      "old_valid": false,
+      "support_ratio": 0.986115418524291,
+      "min_pair_ratio": 0.9379203979907719,
+      "ratios": [
+        0.9890666622604897,
+        0.9379203979907719,
+        1.0,
+        1.0,
+        1.0,
+        0.9897054508944849
+      ],
+      "tau": [
+        2.0,
+        4.0,
+        1.0,
+        2.0,
+        -1.0,
+        -3.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.5208376301906089,
+      "new_valid": true,
+      "angle": 30.963756532073536,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 112128,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.9944287499566805,
+      "min_pair_ratio": 0.9665724997400836,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        0.9665724997400836,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        2.0,
+        6.0,
+        2.0,
+        4.0,
+        0.0,
+        -4.0
+      ],
+      "plane_residual": 0.816496580927726,
+      "norm": 0.7579300810843306,
+      "new_valid": false,
+      "angle": null,
+      "graph_residual_constructed": 2.220446049250313e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 120832,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        2.0,
+        2.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": 71.56505117707799,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 121344,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.999613617711849,
+      "min_pair_ratio": 0.9987818805424321,
+      "ratios": [
+        0.9988998257286623,
+        0.9987818805424321,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 3.2445990825328083e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 121856,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9995090484383503,
+      "min_pair_ratio": 0.997846989325349,
+      "ratios": [
+        1.0,
+        0.9995921749063743,
+        1.0,
+        0.997846989325349,
+        0.9996151263983788,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        3.0,
+        1.0,
+        2.0,
+        0.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.3789650405421653,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 1.1102230246251565e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 122368,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9976241135253978,
+      "min_pair_ratio": 0.9857446811523876,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9857446811523876
+      ],
+      "tau": [
+        0.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        0.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.3572916666666667,
+      "new_valid": true,
+      "angle": 90.0,
+      "graph_residual_constructed": 1.3322676295501878e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 123904,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.9984694589535774,
+      "min_pair_ratio": 0.9908167537214653,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        0.9908167537214653,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        4.0,
+        7.0,
+        4.0,
+        3.0,
+        0.0,
+        -3.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.8842517612650523,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 6.217248937900877e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 124416,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9952239234805772,
+      "min_pair_ratio": 0.987940679095522,
+      "ratios": [
+        1.0,
+        0.987940679095522,
+        1.0,
+        1.0,
+        0.9930820161550777,
+        0.9903208456328633
+      ],
+      "tau": [
+        2.0,
+        4.0,
+        1.0,
+        2.0,
+        -1.0,
+        -3.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.5208376301906089,
+      "new_valid": true,
+      "angle": 30.963756532073536,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 124928,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.9950784203144554,
+      "min_pair_ratio": 0.9826452084670046,
+      "ratios": [
+        1.0,
+        1.0,
+        0.991953204318108,
+        1.0,
+        0.9958721091016195,
+        0.9826452084670046
+      ],
+      "tau": [
+        0.0,
+        2.0,
+        1.0,
+        2.0,
+        1.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": 71.56505117707799,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 126976,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9993320323343612,
+      "min_pair_ratio": 0.9959921940061673,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        0.9959921940061673,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        2.0,
+        1.0,
+        1.0,
+        0.0,
+        -1.0
+      ],
+      "plane_residual": 2.5695679235043195e-16,
+      "norm": 0.2526433603614435,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 127488,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9966413516649677,
+      "min_pair_ratio": 0.9798481099898066,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9798481099898066
+      ],
+      "tau": [
+        -1.0,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 180.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 131072,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.999943156080184,
+      "min_pair_ratio": 0.999658936481105,
+      "ratios": [
+        1.0,
+        1.0,
+        0.999658936481105,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        3.0,
+        1.0,
+        2.0,
+        0.0,
+        -2.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.3789650405421653,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 1.1102230246251565e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 131584,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9986031317641393,
+      "min_pair_ratio": 0.9960339774524245,
+      "ratios": [
+        1.0,
+        0.9981641446585177,
+        0.9960339774524245,
+        1.0,
+        0.997420668473894,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 132096,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9999999999999999,
+      "min_pair_ratio": 1.0,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.17864583333333334,
+      "new_valid": true,
+      "angle": 0.0,
+      "graph_residual_constructed": 6.661338147750939e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 132608,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9987204029991925,
+      "min_pair_ratio": 0.9923224179951559,
+      "ratios": [
+        0.9923224179951559,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        -2.0,
+        -6.0,
+        -4.0,
+        -4.0,
+        -2.0,
+        2.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.7989284544608624,
+      "new_valid": true,
+      "angle": -116.56505117707799,
+      "graph_residual_constructed": 1.7763568394002505e-15
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 145920,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9998137295895478,
+      "min_pair_ratio": 0.9988823775372879,
+      "ratios": [
+        1.0,
+        1.0,
+        0.9988823775372879,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        -1.0,
+        -1.0,
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": -71.56505117707799,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 146432,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9952658806867408,
+      "min_pair_ratio": 0.9733495137614337,
+      "ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9733495137614337,
+        0.9982457703590115
+      ],
+      "tau": [
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        -1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": 45.0,
+      "graph_residual_constructed": 3.2445990825328083e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 146944,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.9902797868029389,
+      "min_pair_ratio": 0.9484379628680516,
+      "ratios": [
+        0.9484379628680516,
+        1.0,
+        1.0,
+        0.9932407579495826,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        1.0,
+        -1.0,
+        -1.0,
+        -2.0,
+        -2.0,
+        0.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.2824638639160818,
+      "new_valid": true,
+      "angle": -71.56505117707799,
+      "graph_residual_constructed": 8.881784197001252e-16
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 167424,
+      "old_cycle_fail": false,
+      "old_valid": false,
+      "support_ratio": 0.9992705889684217,
+      "min_pair_ratio": 0.9956235338105311,
+      "ratios": [
+        0.9956235338105311,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "plane_residual": 0.0,
+      "norm": 0.0,
+      "new_valid": false,
+      "angle": null,
+      "graph_residual_constructed": 0.0
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 168448,
+      "old_cycle_fail": false,
+      "old_valid": true,
+      "support_ratio": 0.9993863295460202,
+      "min_pair_ratio": 0.9981330881289664,
+      "ratios": [
+        0.9981848891471556,
+        1.0,
+        0.9981330881289664,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tau": [
+        0.0,
+        -1.0,
+        0.0,
+        -1.0,
+        0.0,
+        1.0
+      ],
+      "plane_residual": 0.408248290463863,
+      "norm": 0.1263216801807218,
+      "new_valid": true,
+      "angle": -135.0,
+      "graph_residual_constructed": 3.2445990825328083e-16
+    }
+  ],
+  "fft_calls": 0,
+  "ifft_calls": 0
+}
