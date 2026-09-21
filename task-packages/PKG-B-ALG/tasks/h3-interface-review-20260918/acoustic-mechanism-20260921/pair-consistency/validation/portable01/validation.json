@@ -1,0 +1,26 @@
+{
+  "command": [
+    "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\acoustic-mechanism-20260921\\pair-consistency\\probe.py",
+    "--repo",
+    "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923",
+    "--out",
+    "F:\\NUEC\\validation\\b-pair-consistency-portable01\\probe"
+  ],
+  "exit": 0,
+  "test_command": [
+    "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\acoustic-mechanism-20260921\\pair-consistency",
+    "-p",
+    "test_probe.py",
+    "-v"
+  ],
+  "test_exit": 0,
+  "eligible_boolean_equal_frames": 320
+}
