@@ -1,0 +1,164 @@
+{
+  "total": "REALTIME_BLOCKED",
+  "conditional_cycles": 477432,
+  "hop_cycles": 1066666,
+  "conditional_deadline_met": true,
+  "rows": [
+    {
+      "name": "copy_check",
+      "resource": "serial_shared",
+      "begin": 0,
+      "end": 24384,
+      "cycles": 24384
+    },
+    {
+      "name": "accepted_frame",
+      "resource": "serial_shared",
+      "begin": 24384,
+      "end": 36672,
+      "cycles": 12288
+    },
+    {
+      "name": "mean",
+      "resource": "serial_shared",
+      "begin": 36672,
+      "end": 44900,
+      "cycles": 8228
+    },
+    {
+      "name": "window",
+      "resource": "serial_shared",
+      "begin": 44900,
+      "end": 69476,
+      "cycles": 24576
+    },
+    {
+      "name": "fft_slots",
+      "resource": "serial_shared",
+      "begin": 69476,
+      "end": 128404,
+      "cycles": 58928
+    },
+    {
+      "name": "adapt",
+      "resource": "serial_shared",
+      "begin": 128404,
+      "end": 144820,
+      "cycles": 16416
+    },
+    {
+      "name": "gate_power",
+      "resource": "serial_shared",
+      "begin": 144820,
+      "end": 146588,
+      "cycles": 1768
+    },
+    {
+      "name": "cross",
+      "resource": "serial_shared",
+      "begin": 146588,
+      "end": 165056,
+      "cycles": 18468
+    },
+    {
+      "name": "power_mask",
+      "resource": "serial_shared",
+      "begin": 165056,
+      "end": 199388,
+      "cycles": 34332
+    },
+    {
+      "name": "phat",
+      "resource": "serial_shared",
+      "begin": 199388,
+      "end": 339218,
+      "cycles": 139830
+    },
+    {
+      "name": "conjugate",
+      "resource": "serial_shared",
+      "begin": 339218,
+      "end": 351506,
+      "cycles": 12288
+    },
+    {
+      "name": "ifft_slots",
+      "resource": "serial_shared",
+      "begin": 351506,
+      "end": 395942,
+      "cycles": 44436
+    },
+    {
+      "name": "lag",
+      "resource": "serial_shared",
+      "begin": 395942,
+      "end": 396972,
+      "cycles": 1030
+    },
+    {
+      "name": "doa",
+      "resource": "serial_shared",
+      "begin": 396972,
+      "end": 397952,
+      "cycles": 980
+    },
+    {
+      "name": "das_delay_generation",
+      "resource": "serial_shared",
+      "begin": 397952,
+      "end": 398360,
+      "cycles": 408
+    },
+    {
+      "name": "das_two_beams",
+      "resource": "serial_shared",
+      "begin": 398360,
+      "end": 426008,
+      "cycles": 27648
+    },
+    {
+      "name": "config_status",
+      "resource": "serial_shared",
+      "begin": 426008,
+      "end": 426296,
+      "cycles": 288
+    },
+    {
+      "name": "cdc_protocol",
+      "resource": "serial_shared",
+      "begin": 426296,
+      "end": 426408,
+      "cycles": 112
+    },
+    {
+      "name": "queue_bookkeeping",
+      "resource": "serial_shared",
+      "begin": 426408,
+      "end": 427432,
+      "cycles": 1024
+    },
+    {
+      "name": "external_service_wait",
+      "resource": "serial_shared",
+      "begin": 427432,
+      "end": 477432,
+      "cycles": 50000
+    }
+  ],
+  "assumptions": {
+    "mult25": 1,
+    "mult51": 4,
+    "wide_mult": 9,
+    "external_wait": 50000,
+    "alu_ii": "serialized",
+    "clock_hz": 100000000
+  },
+  "not_evidenced": [
+    "PS WCET",
+    "DDR arbitration",
+    "IP service bound",
+    "wide ALU timing",
+    "CDC",
+    "output service"
+  ]
+}

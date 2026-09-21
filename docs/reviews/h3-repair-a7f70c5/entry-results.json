@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "name": "existing-output",
+      "command": [
+        "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "-B",
+        "F:\\NUEC\\r\\h3r\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\engineering-closeout-20260923\\repair-h3-e01-e03\\source\\prepare.py",
+        "--repo",
+        "F:\\NUEC\\r\\h3r",
+        "--out",
+        "F:\\NUEC\\r\\h3r-out01"
+      ],
+      "exit": 1,
+      "expected": "REFUSE_OVERWRITE"
+    },
+    {
+      "name": "missing-object",
+      "command": [
+        "C:/Users/BryanZheng/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "-B",
+        "F:\\NUEC\\r\\h3r\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\engineering-closeout-20260923\\repair-h3-e01-e03\\source\\prepare.py",
+        "--repo",
+        "F:\\NUEC\\review-evidence\\h3-repair-a7f70c5\\empty-objects",
+        "--out",
+        "F:\\NUEC\\review-evidence\\h3-repair-a7f70c5\\must-not-exist"
+      ],
+      "exit": 1,
+      "expected": "CalledProcessError"
+    }
+  ],
+  "export_bindings": 132,
+  "existing_unchanged": true,
+  "missing_output_absent": true
+}

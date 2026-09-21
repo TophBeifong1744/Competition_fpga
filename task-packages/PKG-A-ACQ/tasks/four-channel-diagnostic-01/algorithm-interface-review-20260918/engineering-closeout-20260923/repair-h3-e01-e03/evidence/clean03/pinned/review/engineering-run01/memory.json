@@ -1,0 +1,73 @@
+{
+  "regions": [
+    {
+      "name": "rx_slots",
+      "offset": 0,
+      "end": 16128,
+      "bytes": 16128
+    },
+    {
+      "name": "accepted_packet_ring",
+      "offset": 16128,
+      "end": 80640,
+      "bytes": 64512
+    },
+    {
+      "name": "frame_workspaces",
+      "offset": 80640,
+      "end": 146432,
+      "bytes": 65792
+    },
+    {
+      "name": "two_spectra",
+      "offset": 146432,
+      "end": 179264,
+      "bytes": 32832
+    },
+    {
+      "name": "phat_pair",
+      "offset": 179264,
+      "end": 183496,
+      "bytes": 4232
+    },
+    {
+      "name": "ifft_work",
+      "offset": 183552,
+      "end": 191872,
+      "bytes": 8320
+    },
+    {
+      "name": "correlation",
+      "offset": 191872,
+      "end": 196096,
+      "bytes": 4224
+    },
+    {
+      "name": "audio_history_lookahead",
+      "offset": 196096,
+      "end": 196512,
+      "bytes": 416
+    },
+    {
+      "name": "output_hop",
+      "offset": 196544,
+      "end": 198720,
+      "bytes": 2176
+    },
+    {
+      "name": "descriptors",
+      "offset": 198720,
+      "end": 202816,
+      "bytes": 4096
+    }
+  ],
+  "logical_bytes": 202816,
+  "capacity": 1048576,
+  "fits": true,
+  "actual_addresses": "UNASSIGNED_NOT_LINKED",
+  "excludes": [
+    "IP internal BRAM",
+    "program/heap/stack",
+    "PL framer cache if selected"
+  ]
+}

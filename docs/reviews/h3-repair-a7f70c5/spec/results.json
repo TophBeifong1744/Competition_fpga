@@ -1,0 +1,349 @@
+{
+  "sha": "a7f70c5149a6503effdbbf16a9903d42c2d39e6d",
+  "source": "F:\\NUEC\\r\\h3r\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\engineering-closeout-20260923\\repair-h3-e01-e03\\source\\results.py",
+  "source_sha256": "d1cb00d299edce2887582ac1405ac50b4e1ce887972711028d25e1886bf39e8a",
+  "cases": [
+    {
+      "name": "historical_commit/CLIP",
+      "result": "PASS",
+      "detail": {
+        "barriers": [
+          "CLIP"
+        ],
+        "audit": [
+          "CLIP",
+          [
+            "LATE_ERROR",
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "POST_COMMIT_FAIL_STOP"
+        ]
+      }
+    },
+    {
+      "name": "historical_commit/DROP",
+      "result": "PASS",
+      "detail": {
+        "barriers": [
+          "DROP"
+        ],
+        "audit": [
+          "DROP",
+          [
+            "LATE_ERROR",
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "POST_COMMIT_FAIL_STOP"
+        ]
+      }
+    },
+    {
+      "name": "historical_commit/CLIP,DROP",
+      "result": "PASS",
+      "detail": {
+        "barriers": [
+          "CLIP",
+          "DROP"
+        ],
+        "audit": [
+          "CLIP",
+          "DROP",
+          [
+            "LATE_ERROR",
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "POST_COMMIT_FAIL_STOP"
+        ]
+      }
+    },
+    {
+      "name": "historical_commit/STOP",
+      "result": "PASS",
+      "detail": {
+        "barriers": [
+          "STOP"
+        ],
+        "audit": [
+          "STOP",
+          [
+            "LATE_ERROR",
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "POST_COMMIT_FAIL_STOP"
+        ]
+      }
+    },
+    {
+      "name": "historical_commit/RESET",
+      "result": "PASS",
+      "detail": {
+        "barriers": [
+          "RESET"
+        ],
+        "audit": [
+          "RESET",
+          [
+            "LATE_ERROR",
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "POST_COMMIT_FAIL_STOP"
+        ]
+      }
+    },
+    {
+      "name": "historical_commit/CLIP,STOP",
+      "result": "PASS",
+      "detail": {
+        "barriers": [
+          "CLIP",
+          "STOP"
+        ],
+        "audit": [
+          "CLIP",
+          "STOP",
+          [
+            "LATE_ERROR",
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "POST_COMMIT_FAIL_STOP"
+        ]
+      }
+    },
+    {
+      "name": "historical_commit/DROP,RESET",
+      "result": "PASS",
+      "detail": {
+        "barriers": [
+          "DROP",
+          "RESET"
+        ],
+        "audit": [
+          "DROP",
+          "RESET",
+          [
+            "LATE_ERROR",
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "POST_COMMIT_FAIL_STOP"
+        ]
+      }
+    },
+    {
+      "name": "historical_commit/STOP,RESET",
+      "result": "PASS",
+      "detail": {
+        "barriers": [
+          "STOP",
+          "RESET"
+        ],
+        "audit": [
+          "STOP",
+          "RESET",
+          [
+            "LATE_ERROR",
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "POST_COMMIT_FAIL_STOP"
+        ]
+      }
+    },
+    {
+      "name": "old_epoch/STOP/False",
+      "result": "PASS",
+      "detail": {
+        "old": [
+          1,
+          0,
+          0
+        ],
+        "new": [
+          2,
+          0,
+          0
+        ],
+        "old_was_committed": false
+      }
+    },
+    {
+      "name": "old_epoch/STOP/True",
+      "result": "PASS",
+      "detail": {
+        "old": [
+          1,
+          0,
+          0
+        ],
+        "new": [
+          2,
+          0,
+          0
+        ],
+        "old_was_committed": true
+      }
+    },
+    {
+      "name": "old_epoch/RESET/False",
+      "result": "PASS",
+      "detail": {
+        "old": [
+          1,
+          0,
+          0
+        ],
+        "new": [
+          2,
+          0,
+          0
+        ],
+        "old_was_committed": false
+      }
+    },
+    {
+      "name": "old_epoch/RESET/True",
+      "result": "PASS",
+      "detail": {
+        "old": [
+          1,
+          0,
+          0
+        ],
+        "new": [
+          2,
+          0,
+          0
+        ],
+        "old_was_committed": true
+      }
+    },
+    {
+      "name": "current_stop_and_error",
+      "result": "PASS",
+      "detail": [
+        "STOP",
+        [
+          "LATE_ERROR",
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "POST_COMMIT_FAIL_STOP"
+      ]
+    },
+    {
+      "name": "multiple_old_epoch_callbacks",
+      "result": "PASS",
+      "detail": {
+        "epoch": 3,
+        "audit": [
+          "STOP",
+          "RESET",
+          [
+            "OLD_SESSION_LATE_ERROR",
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          [
+            "OLD_SESSION_LATE_ERROR",
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          [
+            "OLD_SESSION_LATE_ERROR",
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nested_snapshot_aliases_and_dict_order",
+      "result": "PASS",
+      "detail": {
+        "snapshot_stable": true,
+        "new_session_allows_change": true
+      }
+    },
+    {
+      "name": "typed_binding/bool_vs_int",
+      "result": "PASS",
+      "detail": {
+        "type_a": "bool",
+        "type_b": "int"
+      }
+    },
+    {
+      "name": "typed_binding/list_vs_tuple",
+      "result": "PASS",
+      "detail": {
+        "type_a": "list",
+        "type_b": "tuple"
+      }
+    },
+    {
+      "name": "typed_binding/str_vs_bytes",
+      "result": "PASS",
+      "detail": {
+        "type_a": "str",
+        "type_b": "bytes"
+      }
+    },
+    {
+      "name": "typed_binding/null_vs_string",
+      "result": "PASS",
+      "detail": {
+        "type_a": "NoneType",
+        "type_b": "str"
+      }
+    },
+    {
+      "name": "unsupported_binding_failure_atomicity",
+      "result": "PASS",
+      "detail": "unsupported types rejected without poisoning first valid submit"
+    }
+  ],
+  "pass_count": 20,
+  "fail_count": 0
+}
