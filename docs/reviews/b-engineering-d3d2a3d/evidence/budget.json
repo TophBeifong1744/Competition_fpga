@@ -1,0 +1,199 @@
+{
+  "status": "REALTIME_BLOCKED",
+  "total_seconds": null,
+  "hop_seconds": 0.010666666666666666,
+  "proposed_hop_cycles": 1066666,
+  "branches": {
+    "manual_das_only": {
+      "fft": 0,
+      "ifft": 0,
+      "description": "Configured delays only; no localization or presence claim",
+      "historical_slots_cycles": 0,
+      "historical_slots_seconds": 0.0,
+      "hypothetical_materialized_transform_bytes": 0,
+      "wcet_seconds": null
+    },
+    "legacy_doa": {
+      "fft": 4,
+      "ifft": 6,
+      "description": "Original PCM Hann DOA path; no centered gate",
+      "historical_slots_cycles": 73900,
+      "historical_slots_seconds": 0.000739,
+      "hypothetical_materialized_transform_bytes": 163840,
+      "wcet_seconds": null
+    },
+    "centered_gate_only": {
+      "fft": 4,
+      "ifft": 0,
+      "description": "Centered gate diagnostics only, not complete H3",
+      "historical_slots_cycles": 29464,
+      "historical_slots_seconds": 0.00029464,
+      "hypothetical_materialized_transform_bytes": 65536,
+      "wcet_seconds": null
+    },
+    "centered_gate_plus_doa": {
+      "fft": 8,
+      "ifft": 6,
+      "description": "Separate centered gate and original PCM DOA transforms",
+      "historical_slots_cycles": 103364,
+      "historical_slots_seconds": 0.00103364,
+      "hypothetical_materialized_transform_bytes": 229376,
+      "wcet_seconds": null
+    }
+  },
+  "services": [
+    {
+      "name": "mean_center_window_adapter",
+      "unit": "cycles",
+      "clock": "PS_or_PL_undecided",
+      "upper": null,
+      "owner": "A",
+      "basis": "8192 window multiplies; 8208 adaptation components on full branch",
+      "next": "Bind implementation and all memory reads"
+    },
+    {
+      "name": "fft_ifft_service",
+      "unit": "cycles",
+      "clock": "proposed_PL_100MHz",
+      "upper": null,
+      "owner": "A",
+      "basis": "Historical slots are reference arithmetic only",
+      "next": "Bind XCI/config/wrapper, II, startup, status and contention"
+    },
+    {
+      "name": "gate_power_state",
+      "unit": "cycles",
+      "clock": "PS_or_PL_undecided",
+      "upper": null,
+      "owner": "A",
+      "basis": "264 bins; 528 squares; 4 normalization divisions",
+      "next": "Bind divider and gate state service"
+    },
+    {
+      "name": "phat",
+      "unit": "cycles",
+      "clock": "PS_or_PL_undecided",
+      "upper": null,
+      "owner": "A",
+      "basis": "3078 cross bins; at most 474 normalizations",
+      "next": "sqrt/reciprocal/RNE latency and scratch"
+    },
+    {
+      "name": "conjugate_lag",
+      "unit": "cycles",
+      "clock": "PS_or_PL_undecided",
+      "upper": null,
+      "owner": "A",
+      "basis": "6 spectra; 86 peak candidates plus second peak; at most 12 divisions",
+      "next": "Bind memory ports and margin/interpolation divider"
+    },
+    {
+      "name": "doa_cordic_tracker",
+      "unit": "cycles",
+      "clock": "PS_or_PL_undecided",
+      "upper": null,
+      "owner": "A+B",
+      "basis": "2 xy and up to 6 residual divisions; 24 CORDIC steps",
+      "next": "Select original gated vs normalized generic CORDIC; bind latency"
+    },
+    {
+      "name": "das",
+      "unit": "cycles",
+      "clock": "PS_or_PL_undecided",
+      "upper": null,
+      "owner": "A",
+      "basis": "Per hop <=9216 data multiplies,8704 additions,2048 RNE in serialized candidate",
+      "next": "Schedule 17-row ring ports, mix and output"
+    },
+    {
+      "name": "copy_cache_dma_ddr",
+      "unit": "seconds",
+      "clock": "PS_DDR_DMA",
+      "upper": null,
+      "owner": "A",
+      "basis": "Input 32 bytes/group includes IDs/flags",
+      "next": "Cache maintenance, descriptors, burst and DDR worst service"
+    },
+    {
+      "name": "rom_control_delivery",
+      "unit": "seconds",
+      "clock": "PS_DDR_to_PL",
+      "upper": null,
+      "owner": "A",
+      "basis": "552960-byte ROM net,8-byte ROM-domain delays/request excluding identity",
+      "next": "Select placement, ownership, address, request rate and queue"
+    },
+    {
+      "name": "arbitration",
+      "unit": "seconds",
+      "clock": "all_shared_resources",
+      "upper": null,
+      "owner": "A",
+      "basis": "RAM/ALU/bus users cannot overlap without arbitration",
+      "next": "Bound competing masters and starvation"
+    },
+    {
+      "name": "config_final_status",
+      "unit": "seconds",
+      "clock": "PS_PL",
+      "upper": null,
+      "owner": "A",
+      "basis": "14 transform transactions in full branch",
+      "next": "Status completion deadline and session/config atomicity"
+    },
+    {
+      "name": "cdc_reset",
+      "unit": "seconds",
+      "clock": "capture_61.44MHz_to_proposed_100MHz",
+      "upper": null,
+      "owner": "A",
+      "basis": "Clock values are configurations, not timing signoff",
+      "next": "FIFO reset, full latency and synchronization bounds"
+    },
+    {
+      "name": "output_wait_backpressure",
+      "unit": "seconds",
+      "clock": "external_output_unknown",
+      "upper": null,
+      "owner": "A",
+      "basis": "No selected output service bound; unlimited ready stalls imply infinite wait",
+      "next": "Select output, burst/service contract, queue capacity and fail-stop"
+    }
+  ],
+  "traffic_bytes_per_second": {
+    "raw_with_ids_flags": 1536000,
+    "pcm_int32": 768000,
+    "mono_int32": 192000
+  },
+  "memory_models": {
+    "B_listed_historical": {
+      "bytes": 107496,
+      "scope": "listed buffers only; includes old160-byte audio history; no IP internals"
+    },
+    "A_relative_layout": {
+      "bytes": 202816,
+      "scope": "separate 64-byte aligned logical PS layout, no deployed absolute addresses"
+    },
+    "dynamic_candidate_net": {
+      "history_s24_bytes": 204,
+      "config_rom_s16_bytes": 24,
+      "config_generic_s17_packed_bytes": 27,
+      "config_int32_bytes": 48,
+      "rom_net_bytes": 552960,
+      "total_deployment_bytes": null
+    },
+    "system_upper_bytes": null
+  },
+  "queue_contract": {
+    "required_inputs": [
+      "arrival burst",
+      "maximum service blackout",
+      "minimum sustained service rate",
+      "initial occupancy",
+      "in_service counts in capacity",
+      "full policy"
+    ],
+    "capacity_proven": null,
+    "note": "Two output hops or eight packets alone do not prove bounded operation"
+  }
+}

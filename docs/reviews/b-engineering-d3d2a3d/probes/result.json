@@ -1,0 +1,32 @@
+{
+  "available_before_final_status": {
+    "accepted": true,
+    "result": {
+      "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+      "commits": 1,
+      "accepted": 32,
+      "resets": 1,
+      "late_errors": 0,
+      "stale_callbacks": 0
+    }
+  },
+  "float_sample_identity": {
+    "accepted": true,
+    "result": {
+      "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+      "commits": 1,
+      "accepted": 32,
+      "resets": 1,
+      "late_errors": 0,
+      "stale_callbacks": 0
+    }
+  },
+  "weakened_expected_control": {
+    "accepted": false,
+    "reason": "trace cannot weaken external completion contract"
+  },
+  "changed_stall_control": {
+    "accepted": false,
+    "reason": "payload/valid changed under backpressure"
+  }
+}

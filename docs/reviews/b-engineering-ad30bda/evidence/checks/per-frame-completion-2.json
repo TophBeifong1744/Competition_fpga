@@ -1,0 +1,135 @@
+[
+  {
+    "tick": 0,
+    "now": 0,
+    "session": "s0",
+    "reset": true,
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "submit",
+        "session": "s0",
+        "frame": 0,
+        "config": "fixed",
+        "expected": [
+          "fft",
+          "ifft"
+        ]
+      }
+    ]
+  },
+  {
+    "tick": 1,
+    "now": 1,
+    "session": "s0",
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "status",
+        "session": "s0",
+        "frame": 0,
+        "unit": "fft"
+      }
+    ]
+  },
+  {
+    "tick": 2,
+    "now": 2,
+    "session": "s0",
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "status",
+        "session": "s0",
+        "frame": 0,
+        "unit": "ifft"
+      }
+    ]
+  },
+  {
+    "tick": 3,
+    "now": 4,
+    "session": "s0",
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "commit",
+        "session": "s0",
+        "frame": 0,
+        "config": "fixed",
+        "available": 2,
+        "valid_through": 10
+      }
+    ]
+  },
+  {
+    "tick": 4,
+    "now": 5,
+    "session": "s0",
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "submit",
+        "config": "fixed",
+        "expected": [
+          "fft",
+          "ifft"
+        ],
+        "session": "s0",
+        "frame": 1
+      }
+    ]
+  },
+  {
+    "tick": 5,
+    "now": 6,
+    "session": "s0",
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "status",
+        "unit": "fft",
+        "session": "s0",
+        "frame": 1
+      }
+    ]
+  },
+  {
+    "tick": 6,
+    "now": 6,
+    "session": "s0",
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "status",
+        "unit": "ifft",
+        "session": "s0",
+        "frame": 1
+      }
+    ]
+  },
+  {
+    "tick": 7,
+    "now": 7,
+    "session": "s0",
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "commit",
+        "config": "fixed",
+        "available": 2,
+        "valid_through": 9,
+        "session": "s0",
+        "frame": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,130 @@
+{
+  "status": "PASS",
+  "comparison": {
+    "strict_leaves": 15027,
+    "float_differences": 0,
+    "max_float_difference": 0.0
+  },
+  "checks_files": [
+    {
+      "path": "checks/config-mismatch.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "7360ed3cc2403d8ae5a16db17a1f06482a82c2cc47f74ecac9e17d38995b5ee1"
+    },
+    {
+      "path": "checks/cordic-vectors.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "1dc6858fe8c7e98534672d503ae02d1ca29cbbe0e89af791bd5d109cf93c91c5"
+    },
+    {
+      "path": "checks/cordic-width.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "0a7b6f47451853c07424568f7511d6ee50a07ae9aebb1074faab81fb870f13c9"
+    },
+    {
+      "path": "checks/duplicate-commit.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "1168d5b228112a2adfdcc7dff80ccde3b861bdad353bcc336fe0f0982113efe8"
+    },
+    {
+      "path": "checks/duplicate-status.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "7d40aabde56f1486f0e35a21c5676123d29a681d826ed174fa3a0c05b2be4063"
+    },
+    {
+      "path": "checks/early-available.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "fdb134efb24e70ae35b09a357d3841df2bd5d0c1fe79fe33f9772ef9bdfb06d2"
+    },
+    {
+      "path": "checks/expected-rejections.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "bcd0e79ad166fda70ef00af3fb82d91bc4fb99fc8b1c4b5c4b7ddcf18b0c1ae8"
+    },
+    {
+      "path": "checks/expired-commit.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "228b8374d0a940963f00c02a18b6c9778159c02b266858700926fdec934e479f"
+    },
+    {
+      "path": "checks/fatal-with-output.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "4a6bc69b927e72fafea7764b073aa4de233c2b915859ccffeb164f448f73f749"
+    },
+    {
+      "path": "checks/late-reset-trace.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "5ac966a20afbd6ca1783e272c65230bd6439d30cbb1ff01cfba03ace4cc73282"
+    },
+    {
+      "path": "checks/missing-status.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "5bfeec86edea2de319a68edf83222fdd4330d084e3ea9fd7d41191eabaca1638"
+    },
+    {
+      "path": "checks/non-s24-output.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "b5951cac3e570ec541ea1df39f5a348957c7d730dad152dfb57ee03263dd6346"
+    },
+    {
+      "path": "checks/original-cordic-counterexamples.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "f684afcb99999213c11c5332aa626b0c9a9cf02e1c07a8c4517815420be1d805"
+    },
+    {
+      "path": "checks/reset-cancels-stall.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "ce68659d7cb75f85a07a72849e69959f35279638c4e9fc9f6afe9745d3353e0d"
+    },
+    {
+      "path": "checks/result.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "24c50ca954b32de2291899d0a89312573873635867c70756758c6b9854a7ddce"
+    },
+    {
+      "path": "checks/rne-vectors.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "930bf8aecd8947b3820dddb693427df9e58abf1e9f5132ff89ede6fc40faee94"
+    },
+    {
+      "path": "checks/same-tick-error-after-commit.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "407852794aaa6fdce68f444c9cf2ce3af6263c27f807810059d3eb2492bf6ffd"
+    },
+    {
+      "path": "checks/stale-session-output.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "e64cdb82d5e3c26e943fac9e2bb999213bd71824c13fce141f0ed6baec12e3c7"
+    },
+    {
+      "path": "checks/unbounded-stall.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "3e1275cc3bbf50d9c0b62000ae4adc971b5b53aefb553352aada148e9db5a4b2"
+    },
+    {
+      "path": "checks/unstable-stall.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "f69893bc04af10bf7d353999499564ade64f7e758cf09eb6fc5dd354362f910e"
+    },
+    {
+      "path": "checks/valid-trace.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "b16f6265ec671dfb94d4dbe5fae0ca0cdf3e806fc1574de3a622d5f708c322fd"
+    },
+    {
+      "path": "checks/weakened-status-contract.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "c0b3dbc5c2b8ee0500b9d69ae99df8391abb7920d6605b87cc22b572f327306e"
+    },
+    {
+      "path": "checks/wrong-sample-id.json",
+      "bytes_equal": true,
+      "reviewer_sha256": "c687dd458b8f4510e117d84e3e6190cc14a90011d4fa946b39754867c5756a0d"
+    }
+  ],
+  "budget_semantic_equal": true,
+  "runner_source_equal": true,
+  "runner_paths_not_byte_compared": true,
+  "independent_xy_upper": 80001531,
+  "s28_contains": true
+}
