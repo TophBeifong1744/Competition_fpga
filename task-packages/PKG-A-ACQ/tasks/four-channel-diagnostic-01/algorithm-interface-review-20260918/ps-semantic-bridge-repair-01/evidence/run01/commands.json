@@ -1,0 +1,475 @@
+[
+  {
+    "name": "compiler",
+    "args": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "--version"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.13245219999953406
+  },
+  {
+    "name": "original-B-probe-O0-build",
+    "args": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O0",
+      "-I",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-src",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-src\\ps_bridge.c",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\feedback\\spec\\probe.c",
+      "-o",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-B-probe-O0.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.6231268000010459
+  },
+  {
+    "name": "original-B-probe-O0",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-B-probe-O0.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.2053235000003042
+  },
+  {
+    "name": "original-generation-O0-build",
+    "args": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O0",
+      "-I",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-src",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-src\\ps_bridge.c",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\feedback\\spec\\generation.c",
+      "-o",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-generation-O0.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.3035626000000775
+  },
+  {
+    "name": "original-generation-O0",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-generation-O0.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.19775259999914852
+  },
+  {
+    "name": "original-generation_max-O0-build",
+    "args": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O0",
+      "-I",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-src",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-src\\ps_bridge.c",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\feedback\\standards\\generation_max.c",
+      "-o",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-generation_max-O0.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.28490679999958957
+  },
+  {
+    "name": "original-generation_max-O0",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-generation_max-O0.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.2127519999994547
+  },
+  {
+    "name": "fixed-B-probe-O0-build",
+    "args": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O0",
+      "-I",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\src",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\src\\ps_bridge.c",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\feedback\\spec\\probe.c",
+      "-o",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\fixed-B-probe-O0.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.28053619999991497
+  },
+  {
+    "name": "fixed-B-probe-O0",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\fixed-B-probe-O0.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.2086488000004465
+  },
+  {
+    "name": "fixed-generation-O0-build",
+    "args": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O0",
+      "-I",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\src",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\src\\ps_bridge.c",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\feedback\\spec\\generation.c",
+      "-o",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\fixed-generation-O0.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.2842199000006076
+  },
+  {
+    "name": "fixed-generation-O0",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\fixed-generation-O0.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.20356969999920693
+  },
+  {
+    "name": "fixed-generation_max-O0-build",
+    "args": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O0",
+      "-I",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\src",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\src\\ps_bridge.c",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\feedback\\standards\\generation_max.c",
+      "-o",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\fixed-generation_max-O0.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.26881850000063423
+  },
+  {
+    "name": "fixed-generation_max-O0",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\fixed-generation_max-O0.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 1,
+    "seconds": 0.2168736000003264
+  },
+  {
+    "name": "repair-regression-O0-build",
+    "args": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O0",
+      "-I",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\src",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\src\\ps_bridge.c",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\tests\\repair.c",
+      "-o",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-regression-O0.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.3014335999996547
+  },
+  {
+    "name": "repair-regression-O0",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-regression-O0.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.2188920999997208
+  },
+  {
+    "name": "original-B-probe-O2-build",
+    "args": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O2",
+      "-I",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-src",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-src\\ps_bridge.c",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\feedback\\spec\\probe.c",
+      "-o",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-B-probe-O2.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.455057899998792
+  },
+  {
+    "name": "original-B-probe-O2",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-B-probe-O2.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.1988459000003786
+  },
+  {
+    "name": "original-generation-O2-build",
+    "args": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O2",
+      "-I",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-src",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-src\\ps_bridge.c",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\feedback\\spec\\generation.c",
+      "-o",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-generation-O2.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.4467764000000898
+  },
+  {
+    "name": "original-generation-O2",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-generation-O2.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.1915887000013754
+  },
+  {
+    "name": "original-generation_max-O2-build",
+    "args": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O2",
+      "-I",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-src",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-src\\ps_bridge.c",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\feedback\\standards\\generation_max.c",
+      "-o",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-generation_max-O2.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.410781999999017
+  },
+  {
+    "name": "original-generation_max-O2",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\original-generation_max-O2.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.18951500000002852
+  },
+  {
+    "name": "fixed-B-probe-O2-build",
+    "args": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O2",
+      "-I",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\src",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\src\\ps_bridge.c",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\feedback\\spec\\probe.c",
+      "-o",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\fixed-B-probe-O2.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.44002540000110457
+  },
+  {
+    "name": "fixed-B-probe-O2",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\fixed-B-probe-O2.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.18392229999881238
+  },
+  {
+    "name": "fixed-generation-O2-build",
+    "args": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O2",
+      "-I",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\src",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\src\\ps_bridge.c",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\feedback\\spec\\generation.c",
+      "-o",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\fixed-generation-O2.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.45115350000014587
+  },
+  {
+    "name": "fixed-generation-O2",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\fixed-generation-O2.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.20551460000024235
+  },
+  {
+    "name": "fixed-generation_max-O2-build",
+    "args": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O2",
+      "-I",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\src",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\src\\ps_bridge.c",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\feedback\\standards\\generation_max.c",
+      "-o",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\fixed-generation_max-O2.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.421520199999577
+  },
+  {
+    "name": "fixed-generation_max-O2",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\fixed-generation_max-O2.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 1,
+    "seconds": 0.1706501999997272
+  },
+  {
+    "name": "repair-regression-O2-build",
+    "args": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O2",
+      "-I",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\src",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\src\\ps_bridge.c",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-source\\tests\\repair.c",
+      "-o",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-regression-O2.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.5261731000009604
+  },
+  {
+    "name": "repair-regression-O2",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\repair-regression-O2.exe"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 0.19476570000006177
+  },
+  {
+    "name": "original-33-runner",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\repair-psb-b01-b03\\tests\\run_host.py",
+      "--cc",
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "--out",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run01\\host33"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr",
+    "exit": 0,
+    "seconds": 9.760260900000503
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "O0-build",
+    "args": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-O0",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-I",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run02",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run02\\ps_bridge.c",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run02\\repair.c",
+      "-o",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run02\\O0.exe"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit": 0
+  },
+  {
+    "name": "O0",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run02\\O0.exe"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit": 0
+  },
+  {
+    "name": "O2-build",
+    "args": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-I",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run02",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run02\\ps_bridge.c",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run02\\repair.c",
+      "-o",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run02\\O2.exe"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit": 0
+  },
+  {
+    "name": "O2",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\psbr-run02\\O2.exe"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit": 0
+  }
+]
