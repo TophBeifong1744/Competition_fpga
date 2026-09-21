@@ -42,3 +42,7 @@ Windows，CPython 3.12.14 / NumPy 2.3.5；使用准确提交的 Git blob 导出�
 ## 发布收尾边界
 
 仅合入上述固定新增目录与增量封存，以及本A审核记录。保持任务包内离线入口，不迁入默认生产算法；原因是本次候选不采用、合同/预算仍未冻结。本轮不是正式阶段验收，不重写阶段公共状态或冻结快照。发布后准确合并SHA、main三端对齐及本批材料分类另行回报；其他未完成任务原样保留。
+
+实际非快进合并 `0aec8d72d9227803b479249f9a470b9de2e2129e`，无冲突。合后批准父目录相对准确 b5913e5 的 `git diff --exit-code` 为0；最终共享路径运行 `-B -m unittest discover -s task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/closeout-0918-20260921/acoustic -p test_joint.py -v`，4项通过、退出0，不重复全套检查。
+
+本批 modified/staged/untracked/ignored 检查无未处理项（本条收尾记录提交前自身除外）；原字节导出和原始执行日志有明确外部留存，公开关键结果已提交。其他任务的 continuous-*、A 候选和阶段操作单未跟踪资料原样保留。未删除任何分支、旧失败或工作资料；作者后续任务完成性未确认，不擅自清理其分支。最终 main SHA 与三端对齐以发布回报为准。
