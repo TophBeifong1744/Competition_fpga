@@ -1,0 +1,119 @@
+{
+  "recorded_at": "2026-09-21T12:24:01.977215+00:00",
+  "cwd": "F:\\NUEC\\r\\h3e",
+  "scope": "Git source identity checks only; no numeric, vector-generation, AMD, RTL or service measurement tests",
+  "a_documents_identical_at_main": true,
+  "commands": [
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "--verify",
+        "704407e19f25a5405ef4d8f0272e977224e69b2c:docs/phases/2026-09-13-to-10-01/dispatch.md"
+      ],
+      "exit_code": 0,
+      "stdout": "4899376352bc16792ea5c951987cdb0647dc3400",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "--verify",
+        "704407e19f25a5405ef4d8f0272e977224e69b2c:docs/reviews/readiness-f08556d/B-REVIEW.md"
+      ],
+      "exit_code": 0,
+      "stdout": "74320577c44db07251da4af51ffee5c144847f77",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "--verify",
+        "3c04a8c221a3808846e749c8814ad22a85e8e13d:task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/delay-consistency-01/DISPATCH-20260921-B.md"
+      ],
+      "exit_code": 0,
+      "stdout": "4b05a51437630d9e0734dafebb9e11012356ddcd",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "--verify",
+        "f08556d01821d6c3c8204fdac2c38f53b2107c05:task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/algorithm-interface-review-20260918/PRODUCTION-CONTRACT-20260921.md"
+      ],
+      "exit_code": 0,
+      "stdout": "aac29e1befabc544adb1e8c978b95a1e42e7b8d7",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "--verify",
+        "704407e19f25a5405ef4d8f0272e977224e69b2c:task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/algorithm-interface-review-20260918/PRODUCTION-CONTRACT-20260921.md"
+      ],
+      "exit_code": 0,
+      "stdout": "aac29e1befabc544adb1e8c978b95a1e42e7b8d7",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "--verify",
+        "f08556d01821d6c3c8204fdac2c38f53b2107c05:task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/algorithm-interface-review-20260918/GOLDEN-GAPS-20260921.md"
+      ],
+      "exit_code": 0,
+      "stdout": "533c8545d5bf3beaa0f47366fe73ea895be56ffe",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "--verify",
+        "704407e19f25a5405ef4d8f0272e977224e69b2c:task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/algorithm-interface-review-20260918/GOLDEN-GAPS-20260921.md"
+      ],
+      "exit_code": 0,
+      "stdout": "533c8545d5bf3beaa0f47366fe73ea895be56ffe",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "--verify",
+        "f08556d01821d6c3c8204fdac2c38f53b2107c05:task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/algorithm-interface-review-20260918/service-budget-20260921.json"
+      ],
+      "exit_code": 0,
+      "stdout": "51bdc9d61789774a8abec023d4550d8a8e6d6280",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "--verify",
+        "704407e19f25a5405ef4d8f0272e977224e69b2c:task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/algorithm-interface-review-20260918/service-budget-20260921.json"
+      ],
+      "exit_code": 0,
+      "stdout": "51bdc9d61789774a8abec023d4550d8a8e6d6280",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "e_originals_status": "NOT_OBTAINED; generation/saving state on E machine UNKNOWN",
+  "delivery_status": "NOT_SENT_TO_E_OR_W"
+}
