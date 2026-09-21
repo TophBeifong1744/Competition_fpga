@@ -1,0 +1,43 @@
+{
+  "status": "REALTIME_BLOCKED",
+  "claim": "CONDITIONAL_ARITHMETIC_ONLY_NOT_PRODUCTION_APPROVAL",
+  "hop_seconds": "4/375",
+  "hop_reference_cycles_floor": 1066666,
+  "historical_transform_slots": 103364,
+  "input_bytes_per_second": 1536000,
+  "max_full_packet_arrivals_per_hop": 3,
+  "max_packet_payload_bytes_per_hop": 24000,
+  "conditional_serial_seconds": null,
+  "conditional_deadline_met": null,
+  "service_durations": [],
+  "unbounded_services": [
+    "capture_dma_cache_copy",
+    "accepted_row_frame",
+    "mean_two_windows",
+    "fft8",
+    "fixed4",
+    "gate_power_state",
+    "cross_mask_phat",
+    "conjugate_ifft6",
+    "lag",
+    "doa_cordic_tracker",
+    "rom_control",
+    "das_two_beams",
+    "config_status_commit",
+    "arbitration_cdc_reset",
+    "output_backpressure",
+    "audit_drain"
+  ],
+  "queue_conditional_peak_packets": null,
+  "queue_conditional_sufficient": null,
+  "queue_model": "arrival burst+rate, service latency+rate; not measured",
+  "whole_system_peak_bytes": null,
+  "missing_proofs": [
+    "actual_service_bounds",
+    "resource_contention",
+    "queue_arrival_and_service",
+    "arm_layout_and_cache",
+    "physical_clock_anchor",
+    "system_timing"
+  ]
+}
