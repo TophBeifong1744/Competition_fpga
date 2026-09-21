@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "F:\NUEC\r\psc\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\algorithm-interface-review-20260918\ps-semantic-bridge-candidate-01\tests\run_host.py", line 81, in main
+    exe=out/f'host-{opt}.exe';p=run(common+['-'+opt,'-g','-o',exe],'build-'+opt);check(p.returncode==0,'C build failed '+opt)
+                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\NUEC\r\psc\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\algorithm-interface-review-20260918\ps-semantic-bridge-candidate-01\tests\run_host.py", line 29, in check
+    if not ok:raise AssertionError(detail)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: C build failed O0

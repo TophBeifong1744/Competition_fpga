@@ -1,0 +1,113 @@
+F:\NUEC\r\psc-run01\source\host.c: In function 'self_trace':
+F:\NUEC\r\psc-run01\source\host.c:14:9: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+  printf("TRACE kind=%u reason=%u fatal=%u session=%"PRIu64" row=%"PRIu64" id=%"PRIu64" tx_session=%"PRIu64" tx_generation=%"PRIu64" tx_slot=%u frame=%u interval=%u discarded=%"PRIu64"\n",(unsigned)e->kind,e->reasons,e->fatal,e->session,e->row,e->id,e->transaction.session,e->transaction.generation,e->transaction.slot,e->frame,e->interval,e->discarded_rows);
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+F:\NUEC\r\psc-run01\source\host.c:14:9: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:14:9: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:14:9: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:14:9: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:14:9: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:14:9: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:14:9: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:14:9: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:14:9: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:14:9: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:14:9: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c: In function 'memory_report':
+F:\NUEC\r\psc-run01\source\host.c:178:30: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                              ^
+F:\NUEC\r\psc-run01\source\host.c:178:51: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                   ^
+F:\NUEC\r\psc-run01\source\host.c:178:65: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                 ^
+F:\NUEC\r\psc-run01\source\host.c:178:84: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                    ^
+F:\NUEC\r\psc-run01\source\host.c:178:98: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                                  ^
+F:\NUEC\r\psc-run01\source\host.c:178:113: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                                                 ^
+F:\NUEC\r\psc-run01\source\host.c:178:127: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                                                               ^
+F:\NUEC\r\psc-run01\source\host.c:178:142: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                                                                              ^
+F:\NUEC\r\psc-run01\source\host.c:178:157: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                                                                                             ^
+F:\NUEC\r\psc-run01\source\host.c:178:173: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                                                                                                             ^
+F:\NUEC\r\psc-run01\source\host.c:178:188: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                                                                                                                            ^
+F:\NUEC\r\psc-run01\source\host.c:178:202: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                                                                                                                                          ^
+F:\NUEC\r\psc-run01\source\host.c:178:9: error: too many arguments for format [-Werror=format-extra-args]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+F:\NUEC\r\psc-run01\source\host.c:178:30: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                              ^
+F:\NUEC\r\psc-run01\source\host.c:178:51: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                   ^
+F:\NUEC\r\psc-run01\source\host.c:178:65: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                 ^
+F:\NUEC\r\psc-run01\source\host.c:178:84: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                    ^
+F:\NUEC\r\psc-run01\source\host.c:178:98: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                                  ^
+F:\NUEC\r\psc-run01\source\host.c:178:113: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                                                 ^
+F:\NUEC\r\psc-run01\source\host.c:178:127: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                                                               ^
+F:\NUEC\r\psc-run01\source\host.c:178:142: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                                                                              ^
+F:\NUEC\r\psc-run01\source\host.c:178:157: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                                                                                             ^
+F:\NUEC\r\psc-run01\source\host.c:178:173: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                                                                                                             ^
+F:\NUEC\r\psc-run01\source\host.c:178:188: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                                                                                                                            ^
+F:\NUEC\r\psc-run01\source\host.c:178:202: error: unknown conversion type character 'z' in format [-Werror=format=]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+                                                                                                                                                                                                          ^
+F:\NUEC\r\psc-run01\source\host.c:178:9: error: too many arguments for format [-Werror=format-extra-args]
+  printf("MEMORY {\"bridge\":%zu,\"bridge_align\":%zu,\"group\":%zu,\"descriptor\":%zu,\"input\":%zu,\"inputs\":%zu,\"frame\":%zu,\"frames\":%zu,\"result\":%zu,\"results\":%zu,\"window\":%zu,\"audit\":%zu}\n",sizeof(b),_Alignof(struct psb_bridge),sizeof(struct psb_group),sizeof(struct psb_desc),sizeof(struct psb_input),sizeof(b.input),sizeof(struct psb_frame),sizeof(b.frame),sizeof(struct psb_result),sizeof(b.result),sizeof(b.window),sizeof(b.audit));
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+F:\NUEC\r\psc-run01\source\host.c: In function 'event_out':
+F:\NUEC\r\psc-run01\source\host.c:191:20: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+  fprintf(f->events,"{\"kind\":%u,\"reasons\":%u,\"session\":\"%"PRIu64"\",\"row\":\"%"PRIu64"\",\"id\":\"%"PRIu64"\",\"previous\":\"%"PRIu64"\",\"have_previous\":%u,\"flags\":%u,\"upstream\":%u,\"fatal\":%u,\"unused_tail\":%u,\"discarded_rows\":\"%"PRIu64"\"}\n",(unsigned)e->kind,e->reasons,e->session,e->row,e->id,e->previous,e->have_previous,e->flags,e->upstream,e->fatal,e->unused_tail,e->discarded_rows);
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+F:\NUEC\r\psc-run01\source\host.c:191:20: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:191:20: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:191:20: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:191:20: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:191:20: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:191:20: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:191:20: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:191:20: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c:191:20: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+F:\NUEC\r\psc-run01\source\host.c: In function 'replay':
+F:\NUEC\r\psc-run01\source\host.c:214:9: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+  printf("REPLAY {\"frames\":%u,\"events\":%u,\"failed\":%u,\"rows\":\"%"PRIu64"\",\"reason_union\":%u}\n",files.frames_count,files.events_count,b.failed,b.rows,b.reasons);
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+F:\NUEC\r\psc-run01\source\host.c:214:9: error: ISO C does not support the 'I64' ms_printf length modifier [-Werror=format=]
+cc1.exe: all warnings being treated as errors

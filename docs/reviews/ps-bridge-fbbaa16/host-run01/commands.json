@@ -1,0 +1,38 @@
+[
+  {
+    "argv": [
+      "F:/STUDY/IT/C/develop/mingw64/bin/gcc.exe",
+      "--version"
+    ],
+    "cwd": "F:\\NUEC\\r\\psc",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.05437320000055479,
+    "stdout": "001_compiler-version-stdout.txt",
+    "stderr": "001_compiler-version-stderr.txt"
+  },
+  {
+    "argv": [
+      "F:/STUDY/IT/C/develop/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-I",
+      "F:\\NUEC\\r\\psc-run01\\source",
+      "F:\\NUEC\\r\\psc-run01\\source\\ps_bridge.c",
+      "F:\\NUEC\\r\\psc-run01\\source\\host.c",
+      "-O0",
+      "-g",
+      "-o",
+      "F:\\NUEC\\r\\psc-run01\\host-O0.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psc",
+    "exit_code": 1,
+    "host_elapsed_seconds": 4.3262236999999,
+    "stdout": "002_build-O0-stdout.txt",
+    "stderr": "002_build-O0-stderr.txt"
+  }
+]
