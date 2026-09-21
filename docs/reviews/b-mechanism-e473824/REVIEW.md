@@ -50,3 +50,11 @@
 唯一三方冲突是父快照：主线61个 dynamic-das 新条目与本轮121个 acoustic 条目并行追加。核实重叠键同哈希后取并集，保留主线字段及307项原条目，最终489项实际文件哈希全部通过；旧 snapshot 原件未动。最终路径重新执行 audit.py、a-input verify、3项 acquisition 测试，均退出0，证据分别在 postmerge-audit.json/postmerge-input.txt/postmerge-tests.txt。源码未改，故不重复4,488帧FFT。
 
 未测/不批准：新独立声学验证集、正式定位精度、目标身份、锁定/音频改善、生产 profile、完整 H3、实时/RTL/AMD/实板。phase/frequency/background 的未受影响重变换引用封存证据，不能写成全部重新跑过。没有遗留必须返修项；现有声学问题仍开放。
+
+## 发布收尾
+
+限定合并提交 `eb3a4482d9bdf9812b20e102fdb5af0d66069813`，非快进合并，唯一快照冲突按上文处理。首次发布后共享 main、origin/main、直接远端均为此 SHA，ahead/behind=0/0。后续本报告补记可由 Git 历史追溯，不修改批准候选。
+
+非阻断告警：`git diff --cached --check` 报 B 原 `a-input-response/verify.py:18` 文件尾多一空行；保留准确原 blob，不为格式重写冻结源码。复核证据首次入库发生 Git 换行转换，收尾核对检出；仅为 A 新 evidence 目录添加 `-text` 并重新暂存原字节，候选/历史证据不改。这是发布存储差异，不是算法数值失败。
+
+本批 modified/staged/untracked/ignored 有用材料归入本复核目录，其他连续采集、A 接口/帧适配候选和 Skill 未完成材料继续保留，不宣称整仓干净。未处理数按最终发布检查回报；B/C 设备不代签同步。46份独立输出入库，短期复核副本仅在逐字节确认及无独有文件后清理；失败证据保留于原批准包。不是新阶段总验收，不新增阶段快照或生产入口。
