@@ -1,0 +1,1849 @@
+{
+  "protocol": {
+    "window": 5,
+    "warmup": "five consecutive gate+projection valid inputs",
+    "clear_on": "gate or projection invalid",
+    "tracker": "unchanged 5-frame/8-degree, cone60",
+    "calibration": "frozen pre-background only",
+    "groups": [
+      "whole_recording",
+      "100",
+      "200",
+      "300"
+    ],
+    "all_eight_previously_inspected": true,
+    "oracle_modes": "diagnostic hypothetical constant +X, not an implementation",
+    "fft_calls": 0
+  },
+  "pins": {
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/config.json": "dd1f8a1375cd50187ba012235226c53548d75f95fbe6cf5e4483af9d47e9a163",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/summary.json": "5b199b3ee5105b6696adc980aacbbe61b091162da0b81ff0d99d739ead6cf153",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/calibration.json": "8e517e831bcb4cef2f42c0010b5fb30379ac5166ac3690d24353553df1558e8a",
+    "task-packages/PKG-B-ALG/payload/model/python/sector_tracker.py": "2297aa7f94058e3e4faf3da792c6f1beef6c68fa72121100ec672d60ade5ec50",
+    "docs/reviews/eight-94b5fe7/markers/results.json": "16740e302a2726d4a6ad7f1d888822cecc6b20e38cbad226d6d45636995a2431",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_000_20260920_01-frames.json": "e207cfb3931ce11d980fed7e2ad15e424d595fbb9ab81deec1a3846f91a30f58",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_000_20260920_02-frames.json": "098beeffb1b65f1a1a78c5b84b6afea328df401d2f81db11cba914f8577fb271",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_bg_post_20260920_01-frames.json": "19b05b78beea74da9d3865d42c5f7277652feb26e62b95d54aaf6c8d03228872",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_bg_pre_20260920_01-frames.json": "9ecec805cbd3d58f528dc97dc285896de224262df7a66ee04779cd10d232172e",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_m045_20260920_01-frames.json": "902e7a349168c22a8dde0aa581cef76c9c255fd9475a2ac3051eb7b013f115ce",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_m045_20260920_02-frames.json": "142acfc9c3fe2b3c297271766cb7099461059638d1d1543657162bf2d80d1835",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_p045_20260920_01-frames.json": "b3960f09b2232f849c866e61ac43590a2a8bab91ef8c7e491861f9f8465acdbb",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_p045_20260920_02-frames.json": "b814ec3e3f6f505fae811cd75773d320768e3ec199d907e0a34cf4b654855047"
+  },
+  "captures": [
+    {
+      "capture": "trusted_000_20260920_01",
+      "split": "design",
+      "background_operator_label": false,
+      "groups": {
+        "whole_recording": {
+          "frames": 561,
+          "gates": {
+            "baseline": 561,
+            "dc_only": 561,
+            "band_absolute": 561,
+            "band_calibrated_duration": 136
+          },
+          "gate_then_projection": 49,
+          "gate_then_projection_then_cone": 26,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 2,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 104,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 3321.028053165552,
+            "p50": 6147.204527453074,
+            "p95": 14261.09415767268
+          },
+          "centered_rms": {
+            "p05": 2878.5806798061985,
+            "p50": 5711.370191015671,
+            "p95": 14055.726282681939
+          },
+          "dc_power_fraction": {
+            "p05": 0.000392598537526484,
+            "p50": 0.06188539005037874,
+            "p95": 0.48549647087576325
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.010268514010760937,
+            "p50": 0.04478813646544891,
+            "p95": 0.6585500855832734
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 0.5658890358391901,
+            "p50": 1.0317856647410237,
+            "p95": 59.09045456269115
+          }
+        },
+        "100": {
+          "frames": 91,
+          "gates": {
+            "baseline": 91,
+            "dc_only": 91,
+            "band_absolute": 91,
+            "band_calibrated_duration": 79
+          },
+          "gate_then_projection": 30,
+          "gate_then_projection_then_cone": 20,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 2,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 63,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 3805.4189811717683,
+            "p50": 8637.383269153444,
+            "p95": 15043.189096153168
+          },
+          "centered_rms": {
+            "p05": 2880.6931181316986,
+            "p50": 8454.462706280272,
+            "p95": 14696.166394090695
+          },
+          "dc_power_fraction": {
+            "p05": 0.00021147189912628097,
+            "p50": 0.03961601513945445,
+            "p95": 0.35437166657435826
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.016464218794464854,
+            "p50": 0.1362461613017497,
+            "p95": 0.7610753170381165
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 1.3111708756797036,
+            "p50": 6.5689303314859115,
+            "p95": 58.232656552108
+          }
+        },
+        "200": {
+          "frames": 73,
+          "gates": {
+            "baseline": 73,
+            "dc_only": 73,
+            "band_absolute": 73,
+            "band_calibrated_duration": 61
+          },
+          "gate_then_projection": 25,
+          "gate_then_projection_then_cone": 17,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 2,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 3,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 49,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 4748.257144731664,
+            "p50": 9090.937515041267,
+            "p95": 15268.926952666117
+          },
+          "centered_rms": {
+            "p05": 4147.423471694836,
+            "p50": 8675.205767249452,
+            "p95": 15247.239331808272
+          },
+          "dc_power_fraction": {
+            "p05": 0.00021686337502161424,
+            "p50": 0.039266975153631534,
+            "p95": 0.29310592454820944
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.01171349346301802,
+            "p50": 0.1263236644560253,
+            "p95": 0.8019442279161233
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 1.0243076053959828,
+            "p50": 7.579556258353362,
+            "p95": 65.19527159673466
+          }
+        },
+        "300": {
+          "frames": 55,
+          "gates": {
+            "baseline": 55,
+            "dc_only": 55,
+            "band_absolute": 55,
+            "band_calibrated_duration": 46
+          },
+          "gate_then_projection": 17,
+          "gate_then_projection_then_cone": 13,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 2,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 3,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 37,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 6077.1402051520945,
+            "p50": 9218.26298061561,
+            "p95": 15199.8359348639
+          },
+          "centered_rms": {
+            "p05": 5350.081448024363,
+            "p50": 8899.739344066322,
+            "p95": 15196.403082735267
+          },
+          "dc_power_fraction": {
+            "p05": 0.0001909047180141677,
+            "p50": 0.04095234223545696,
+            "p95": 0.23114863611659614
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.010358154671049082,
+            "p50": 0.10774752813817684,
+            "p95": 0.7950799902413008
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 0.932255052809902,
+            "p50": 7.579556258353362,
+            "p95": 66.90628107912006
+          }
+        }
+      },
+      "longest_whole_recording_runs": {
+        "gate": 39,
+        "gate_projection": 4,
+        "gate_projection_cone": 3
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "split": "development_probe_not_independent",
+      "background_operator_label": false,
+      "groups": {
+        "whole_recording": {
+          "frames": 561,
+          "gates": {
+            "baseline": 559,
+            "dc_only": 553,
+            "band_absolute": 561,
+            "band_calibrated_duration": 108
+          },
+          "gate_then_projection": 56,
+          "gate_then_projection_then_cone": 36,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 3,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 2,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 18,
+              "hold": 15,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 84,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 3212.440601209944,
+            "p50": 6683.803972247149,
+            "p95": 21943.465504618023
+          },
+          "centered_rms": {
+            "p05": 2651.9548992362224,
+            "p50": 5173.69347263413,
+            "p95": 11816.801381298943
+          },
+          "dc_power_fraction": {
+            "p05": 0.0018096958926346997,
+            "p50": 0.20007661092336887,
+            "p95": 0.9107551780543547
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.0097134779162155,
+            "p50": 0.040385599146869275,
+            "p95": 0.6675960464048837
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 0.447161195752014,
+            "p50": 0.7855468435387674,
+            "p95": 54.44531963908969
+          }
+        },
+        "100": {
+          "frames": 92,
+          "gates": {
+            "baseline": 92,
+            "dc_only": 92,
+            "band_absolute": 92,
+            "band_calibrated_duration": 67
+          },
+          "gate_then_projection": 40,
+          "gate_then_projection_then_cone": 28,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 3,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 2,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 18,
+              "hold": 15,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 51,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 3817.6833366133565,
+            "p50": 6156.9594223778895,
+            "p95": 11559.460363061995
+          },
+          "centered_rms": {
+            "p05": 3294.9326323436803,
+            "p50": 5151.087959183804,
+            "p95": 10045.021263223982
+          },
+          "dc_power_fraction": {
+            "p05": 0.0008521679635144608,
+            "p50": 0.11011388839933572,
+            "p95": 0.7137402890327282
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.0288210852272009,
+            "p50": 0.22415476334325096,
+            "p95": 0.8594987227581129
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 0.8913153152487278,
+            "p50": 4.926454188624872,
+            "p95": 70.61907031763913
+          }
+        },
+        "200": {
+          "frames": 73,
+          "gates": {
+            "baseline": 73,
+            "dc_only": 73,
+            "band_absolute": 73,
+            "band_calibrated_duration": 55
+          },
+          "gate_then_projection": 33,
+          "gate_then_projection_then_cone": 23,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 3,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 2,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 16,
+              "hold": 13,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 43,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 3946.430204707624,
+            "p50": 6443.9211360170375,
+            "p95": 11533.595405908649
+          },
+          "centered_rms": {
+            "p05": 3278.331102850654,
+            "p50": 5466.585052992596,
+            "p95": 10251.493199779254
+          },
+          "dc_power_fraction": {
+            "p05": 0.0008680947676054985,
+            "p50": 0.11920650512901637,
+            "p95": 0.7173672365728153
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.0200183136644019,
+            "p50": 0.23878917057516674,
+            "p95": 0.9005805835051565
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 0.8982027736855853,
+            "p50": 5.248239186533141,
+            "p95": 73.18380669550072
+          }
+        },
+        "300": {
+          "frames": 54,
+          "gates": {
+            "baseline": 54,
+            "dc_only": 54,
+            "band_absolute": 54,
+            "band_calibrated_duration": 42
+          },
+          "gate_then_projection": 28,
+          "gate_then_projection_then_cone": 19,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 3,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 2,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 12,
+              "hold": 7,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 32,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 4238.121919600699,
+            "p50": 6667.842944568341,
+            "p95": 11814.195966380528
+          },
+          "centered_rms": {
+            "p05": 3455.2221044054,
+            "p50": 5814.315393472733,
+            "p95": 10460.429671360827
+          },
+          "dc_power_fraction": {
+            "p05": 0.0008840215716965361,
+            "p50": 0.11059318991047906,
+            "p95": 0.7170324829761369
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.01811569715852481,
+            "p50": 0.22415476334325096,
+            "p95": 0.8445221987471381
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 0.9918981663718334,
+            "p50": 4.926454188624872,
+            "p95": 78.30855735219563
+          }
+        }
+      },
+      "longest_whole_recording_runs": {
+        "gate": 31,
+        "gate_projection": 7,
+        "gate_projection_cone": 5
+      }
+    },
+    {
+      "capture": "trusted_bg_post_20260920_01",
+      "split": "development_probe_not_independent",
+      "background_operator_label": true,
+      "groups": {
+        "whole_recording": {
+          "frames": 561,
+          "gates": {
+            "baseline": 561,
+            "dc_only": 559,
+            "band_absolute": 561,
+            "band_calibrated_duration": 0
+          },
+          "gate_then_projection": 0,
+          "gate_then_projection_then_cone": 0,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 3161.900673473339,
+            "p50": 5616.173955850903,
+            "p95": 10404.45075560572
+          },
+          "centered_rms": {
+            "p05": 2637.5355336268017,
+            "p50": 4818.001422720232,
+            "p95": 8413.562428726871
+          },
+          "dc_power_fraction": {
+            "p05": 0.0014970443778402514,
+            "p50": 0.14620788058463496,
+            "p95": 0.7533788857406654
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.008087153745590965,
+            "p50": 0.030163758697814222,
+            "p95": 0.11122565078172944
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 0.40366872452138647,
+            "p50": 0.6472647890732727,
+            "p95": 1.2481120220589956
+          }
+        }
+      },
+      "longest_whole_recording_runs": {
+        "gate": 0,
+        "gate_projection": 0,
+        "gate_projection_cone": 0
+      }
+    },
+    {
+      "capture": "trusted_bg_pre_20260920_01",
+      "split": "design",
+      "background_operator_label": true,
+      "groups": {
+        "whole_recording": {
+          "frames": 561,
+          "gates": {
+            "baseline": 558,
+            "dc_only": 557,
+            "band_absolute": 561,
+            "band_calibrated_duration": 0
+          },
+          "gate_then_projection": 0,
+          "gate_then_projection_then_cone": 0,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 2815.8712955755864,
+            "p50": 5314.417339793046,
+            "p95": 8459.6563749882
+          },
+          "centered_rms": {
+            "p05": 2527.125949950933,
+            "p50": 4774.4224809015195,
+            "p95": 7861.073751723419
+          },
+          "dc_power_fraction": {
+            "p05": 0.00075227099763604,
+            "p50": 0.07958247690716141,
+            "p95": 0.563644718799188
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.008489476195869547,
+            "p50": 0.027530760911390555,
+            "p95": 0.10284287993147764
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 0.39076156798390105,
+            "p50": 0.5959293297447296,
+            "p95": 0.9727624874716578
+          }
+        }
+      },
+      "longest_whole_recording_runs": {
+        "gate": 0,
+        "gate_projection": 0,
+        "gate_projection_cone": 0
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "split": "design",
+      "background_operator_label": false,
+      "groups": {
+        "whole_recording": {
+          "frames": 561,
+          "gates": {
+            "baseline": 559,
+            "dc_only": 554,
+            "band_absolute": 561,
+            "band_calibrated_duration": 137
+          },
+          "gate_then_projection": 59,
+          "gate_then_projection_then_cone": 22,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 1,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 1,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 15,
+              "hold": 10,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 113,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 2937.7536232566586,
+            "p50": 6266.643702738584,
+            "p95": 19434.81082324211
+          },
+          "centered_rms": {
+            "p05": 2462.1356506205625,
+            "p50": 4970.503113873885,
+            "p95": 11429.082263303253
+          },
+          "dc_power_fraction": {
+            "p05": 0.0013320192577058077,
+            "p50": 0.17132746896012374,
+            "p95": 0.8521748181087463
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.010051546970466046,
+            "p50": 0.059908479479154855,
+            "p95": 0.7554374702292317
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 0.4359117382222182,
+            "p50": 0.9090177864212198,
+            "p95": 64.77713941204235
+          }
+        },
+        "100": {
+          "frames": 92,
+          "gates": {
+            "baseline": 92,
+            "dc_only": 91,
+            "band_absolute": 92,
+            "band_calibrated_duration": 75
+          },
+          "gate_then_projection": 35,
+          "gate_then_projection_then_cone": 14,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 1,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 1,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 15,
+              "hold": 10,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 67,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 4447.74863099724,
+            "p50": 7527.638795952894,
+            "p95": 11383.05025450917
+          },
+          "centered_rms": {
+            "p05": 3504.2343883324115,
+            "p50": 6072.140108563603,
+            "p95": 9281.609448648982
+          },
+          "dc_power_fraction": {
+            "p05": 0.0021412650893258838,
+            "p50": 0.1915693490742591,
+            "p95": 0.8044006830578622
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.03525515114442401,
+            "p50": 0.22136406743541093,
+            "p95": 0.9330991518999794
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 1.2297188144593192,
+            "p50": 6.472319921001683,
+            "p95": 57.931900932054035
+          }
+        },
+        "200": {
+          "frames": 73,
+          "gates": {
+            "baseline": 73,
+            "dc_only": 72,
+            "band_absolute": 73,
+            "band_calibrated_duration": 62
+          },
+          "gate_then_projection": 31,
+          "gate_then_projection_then_cone": 11,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 1,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 1,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 15,
+              "hold": 6,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 54,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 4646.512399926381,
+            "p50": 7785.009023569513,
+            "p95": 11552.94727205485
+          },
+          "centered_rms": {
+            "p05": 3688.683768521833,
+            "p50": 6426.422743982437,
+            "p95": 9430.574432590129
+          },
+          "dc_power_fraction": {
+            "p05": 0.0021903837927851333,
+            "p50": 0.19570853218432827,
+            "p95": 0.8064043950521471
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.033387356817139655,
+            "p50": 0.2347537152436296,
+            "p95": 0.9656509304932994
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 1.1880034870975615,
+            "p50": 7.794682251222184,
+            "p95": 63.60959477948926
+          }
+        },
+        "300": {
+          "frames": 54,
+          "gates": {
+            "baseline": 54,
+            "dc_only": 53,
+            "band_absolute": 54,
+            "band_calibrated_duration": 48
+          },
+          "gate_then_projection": 25,
+          "gate_then_projection_then_cone": 8,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 1,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 9,
+              "hold": 3,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 43,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 4468.446824259222,
+            "p50": 7623.257708242102,
+            "p95": 12003.789891207272
+          },
+          "centered_rms": {
+            "p05": 3469.5976295898804,
+            "p50": 6095.726371126351,
+            "p95": 9459.362992854312
+          },
+          "dc_power_fraction": {
+            "p05": 0.0033694900336858624,
+            "p50": 0.2140368323892028,
+            "p95": 0.8552177471603837
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.04342887176993371,
+            "p50": 0.2347537152436296,
+            "p95": 0.9268711402683409
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 1.1500944248245986,
+            "p50": 7.577032480534199,
+            "p95": 58.52482851438485
+          }
+        }
+      },
+      "longest_whole_recording_runs": {
+        "gate": 52,
+        "gate_projection": 9,
+        "gate_projection_cone": 2
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "split": "development_probe_not_independent",
+      "background_operator_label": false,
+      "groups": {
+        "whole_recording": {
+          "frames": 561,
+          "gates": {
+            "baseline": 561,
+            "dc_only": 561,
+            "band_absolute": 556,
+            "band_calibrated_duration": 132
+          },
+          "gate_then_projection": 45,
+          "gate_then_projection_then_cone": 15,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 2,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 2,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 2,
+              "hold": 13,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 116,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 4133.872189453128,
+            "p50": 8617.807773812227,
+            "p95": 16360.690493945202
+          },
+          "centered_rms": {
+            "p05": 3605.7016727002633,
+            "p50": 7799.826866048701,
+            "p95": 14709.960452000292
+          },
+          "dc_power_fraction": {
+            "p05": 0.0005516576466904345,
+            "p50": 0.06815501148394926,
+            "p95": 0.6083055856395368
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.003135101891985792,
+            "p50": 0.017666454856253292,
+            "p95": 0.7054971127921208
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 0.34919324625454057,
+            "p50": 0.756714019851104,
+            "p95": 79.25273821013677
+          }
+        },
+        "100": {
+          "frames": 92,
+          "gates": {
+            "baseline": 92,
+            "dc_only": 92,
+            "band_absolute": 92,
+            "band_calibrated_duration": 87
+          },
+          "gate_then_projection": 33,
+          "gate_then_projection_then_cone": 13,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 2,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 2,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 2,
+              "hold": 10,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 79,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 4728.193577276203,
+            "p50": 7994.377095396647,
+            "p95": 14025.811346173952
+          },
+          "centered_rms": {
+            "p05": 4240.287346792867,
+            "p50": 7496.220123327397,
+            "p95": 13556.612673944697
+          },
+          "dc_power_fraction": {
+            "p05": 0.0005275560271311486,
+            "p50": 0.058749630493961924,
+            "p95": 0.39158530206936326
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.03514949811675994,
+            "p50": 0.19374817410585415,
+            "p95": 0.9323088764751467
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 1.6183275052638355,
+            "p50": 10.407438369570048,
+            "p95": 93.05491610465329
+          }
+        },
+        "200": {
+          "frames": 73,
+          "gates": {
+            "baseline": 73,
+            "dc_only": 73,
+            "band_absolute": 73,
+            "band_calibrated_duration": 69
+          },
+          "gate_then_projection": 30,
+          "gate_then_projection_then_cone": 13,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 2,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 2,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 2,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 65,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 5563.318097767089,
+            "p50": 8710.607095506364,
+            "p95": 14517.364777204983
+          },
+          "centered_rms": {
+            "p05": 5149.500433090013,
+            "p50": 8072.752615377677,
+            "p95": 14063.22345305665
+          },
+          "dc_power_fraction": {
+            "p05": 0.0007742393166563556,
+            "p50": 0.059318527460220705,
+            "p95": 0.37289942858631714
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.031140737761233234,
+            "p50": 0.2023117902243955,
+            "p95": 0.9484221446186306
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 1.6347449733383905,
+            "p50": 11.150162489081168,
+            "p95": 96.69150794106892
+          }
+        },
+        "300": {
+          "frames": 54,
+          "gates": {
+            "baseline": 54,
+            "dc_only": 54,
+            "band_absolute": 54,
+            "band_calibrated_duration": 54
+          },
+          "gate_then_projection": 23,
+          "gate_then_projection_then_cone": 8,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 1,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 53,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 5474.187026188016,
+            "p50": 8256.31279448112,
+            "p95": 14779.976573276264
+          },
+          "centered_rms": {
+            "p05": 5261.237570717263,
+            "p50": 7767.757582572542,
+            "p95": 14238.741605916312
+          },
+          "dc_power_fraction": {
+            "p05": 0.0007768605990394473,
+            "p50": 0.06471308004263565,
+            "p95": 0.35079104183050713
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.03555983439047268,
+            "p50": 0.20798548685422974,
+            "p95": 0.9053231661239887
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 2.5195101731865233,
+            "p50": 10.875469962777977,
+            "p95": 81.48033999404983
+          }
+        }
+      },
+      "longest_whole_recording_runs": {
+        "gate": 79,
+        "gate_projection": 6,
+        "gate_projection_cone": 3
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "split": "design",
+      "background_operator_label": false,
+      "groups": {
+        "whole_recording": {
+          "frames": 561,
+          "gates": {
+            "baseline": 560,
+            "dc_only": 558,
+            "band_absolute": 553,
+            "band_calibrated_duration": 132
+          },
+          "gate_then_projection": 41,
+          "gate_then_projection_then_cone": 21,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 1,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 14,
+              "hold": 22,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 104,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 3136.036486598133,
+            "p50": 5924.72767302005,
+            "p95": 14253.110992162
+          },
+          "centered_rms": {
+            "p05": 2664.9103071282584,
+            "p50": 5022.529575285397,
+            "p95": 12127.151167493024
+          },
+          "dc_power_fraction": {
+            "p05": 0.0007449586390606279,
+            "p50": 0.11048706479577014,
+            "p95": 0.6978764653026398
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.00798666788366984,
+            "p50": 0.04284987010495995,
+            "p95": 0.740659684816191
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 0.33599531425818774,
+            "p50": 0.7712396474027295,
+            "p95": 79.06943347265435
+          }
+        },
+        "100": {
+          "frames": 92,
+          "gates": {
+            "baseline": 92,
+            "dc_only": 91,
+            "band_absolute": 92,
+            "band_calibrated_duration": 77
+          },
+          "gate_then_projection": 29,
+          "gate_then_projection_then_cone": 14,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 1,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 13,
+              "hold": 18,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 61,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 3781.3350041030853,
+            "p50": 6829.937989599103,
+            "p95": 10969.337786235303
+          },
+          "centered_rms": {
+            "p05": 3470.7176342122734,
+            "p50": 6365.571744340079,
+            "p95": 10920.240439100004
+          },
+          "dc_power_fraction": {
+            "p05": 0.00045295959417968057,
+            "p50": 0.05898765951729762,
+            "p95": 0.40174094637831753
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.032352759140207514,
+            "p50": 0.3115425220607082,
+            "p95": 0.9375726744643026
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 0.9426434999927481,
+            "p50": 11.496453667939308,
+            "p95": 62.87272010935934
+          }
+        },
+        "200": {
+          "frames": 74,
+          "gates": {
+            "baseline": 74,
+            "dc_only": 73,
+            "band_absolute": 74,
+            "band_calibrated_duration": 60
+          },
+          "gate_then_projection": 25,
+          "gate_then_projection_then_cone": 12,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 1,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 11,
+              "hold": 11,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 48,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 4230.402788388069,
+            "p50": 7163.85476016538,
+            "p95": 11251.468507462365
+          },
+          "centered_rms": {
+            "p05": 3701.7934000117193,
+            "p50": 6636.974419823053,
+            "p95": 11089.931469820076
+          },
+          "dc_power_fraction": {
+            "p05": 0.00034890862285413826,
+            "p50": 0.05534008755889147,
+            "p95": 0.4020801468627975
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.024144423737714988,
+            "p50": 0.3318622830498802,
+            "p95": 0.9461825154973722
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 0.8831668843060394,
+            "p50": 12.810121344731703,
+            "p95": 74.12475680462799
+          }
+        },
+        "300": {
+          "frames": 54,
+          "gates": {
+            "baseline": 54,
+            "dc_only": 54,
+            "band_absolute": 54,
+            "band_calibrated_duration": 44
+          },
+          "gate_then_projection": 17,
+          "gate_then_projection_then_cone": 9,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 1,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 5,
+              "hold": 7,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 35,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 4800.692420004212,
+            "p50": 7343.420292247773,
+            "p95": 10647.79559994482
+          },
+          "centered_rms": {
+            "p05": 4329.704221021768,
+            "p50": 6933.639966176248,
+            "p95": 10583.513049837245
+          },
+          "dc_power_fraction": {
+            "p05": 0.0002532608188745844,
+            "p50": 0.039504104821223796,
+            "p95": 0.3364559801996704
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.012648258224386219,
+            "p50": 0.3151718925248368,
+            "p95": 0.9346198875509428
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 0.9464663432058664,
+            "p50": 12.772321437439873,
+            "p95": 85.03269036685981
+          }
+        }
+      },
+      "longest_whole_recording_runs": {
+        "gate": 41,
+        "gate_projection": 5,
+        "gate_projection_cone": 2
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "split": "development_probe_not_independent",
+      "background_operator_label": false,
+      "groups": {
+        "whole_recording": {
+          "frames": 561,
+          "gates": {
+            "baseline": 560,
+            "dc_only": 552,
+            "band_absolute": 561,
+            "band_calibrated_duration": 142
+          },
+          "gate_then_projection": 65,
+          "gate_then_projection_then_cone": 17,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 2,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 23,
+              "hold": 16,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 114,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 3116.2013997304452,
+            "p50": 6681.378750865695,
+            "p95": 13617.13490724015
+          },
+          "centered_rms": {
+            "p05": 2602.3080343780725,
+            "p50": 5620.612715212836,
+            "p95": 11400.833380194928
+          },
+          "dc_power_fraction": {
+            "p05": 0.0009306475588997444,
+            "p50": 0.15889795732226397,
+            "p95": 0.7281806871132707
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.011170166728654016,
+            "p50": 0.04433298662083533,
+            "p95": 0.7253459910551227
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 0.47896778839325543,
+            "p50": 0.9259677641782021,
+            "p95": 59.689345298947146
+          }
+        },
+        "100": {
+          "frames": 92,
+          "gates": {
+            "baseline": 92,
+            "dc_only": 92,
+            "band_absolute": 92,
+            "band_calibrated_duration": 76
+          },
+          "gate_then_projection": 31,
+          "gate_then_projection_then_cone": 11,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 2,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 13,
+              "hold": 16,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 64,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 3735.452204650094,
+            "p50": 8622.291085211295,
+            "p95": 13145.232456249149
+          },
+          "centered_rms": {
+            "p05": 3335.3848553664075,
+            "p50": 7073.059199366448,
+            "p95": 11127.210398048706
+          },
+          "dc_power_fraction": {
+            "p05": 0.00023650473535570838,
+            "p50": 0.17325793570943726,
+            "p95": 0.6558590140974722
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.021299427539159827,
+            "p50": 0.20600108816125876,
+            "p95": 0.8019328543606684
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 1.1177034855620749,
+            "p50": 7.4909694598277135,
+            "p95": 61.755339095892744
+          }
+        },
+        "200": {
+          "frames": 74,
+          "gates": {
+            "baseline": 74,
+            "dc_only": 74,
+            "band_absolute": 74,
+            "band_calibrated_duration": 63
+          },
+          "gate_then_projection": 30,
+          "gate_then_projection_then_cone": 11,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 2,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 13,
+              "hold": 11,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 55,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 5316.83689353006,
+            "p50": 9059.381876480158,
+            "p95": 13351.059381885994
+          },
+          "centered_rms": {
+            "p05": 4630.314566615112,
+            "p50": 7421.1119586257855,
+            "p95": 11415.68398857285
+          },
+          "dc_power_fraction": {
+            "p05": 0.000302742909892989,
+            "p50": 0.19823548108550598,
+            "p95": 0.6560037711804383
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.018545340299922657,
+            "p50": 0.21450813754312692,
+            "p95": 0.8307827652160911
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 1.0662696172906556,
+            "p50": 9.912727469277367,
+            "p95": 69.3004091556936
+          }
+        },
+        "300": {
+          "frames": 54,
+          "gates": {
+            "baseline": 54,
+            "dc_only": 54,
+            "band_absolute": 54,
+            "band_calibrated_duration": 47
+          },
+          "gate_then_projection": 21,
+          "gate_then_projection_then_cone": 9,
+          "trackers": {
+            "raw": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 1,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "causal5": {
+              "fresh": 0,
+              "hold": 0,
+              "max_acquire": 0,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_valid": {
+              "fresh": 6,
+              "hold": 8,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            },
+            "oracle_gate": {
+              "fresh": 42,
+              "hold": 0,
+              "max_acquire": 4,
+              "nominal_deviation": null,
+              "nominal_gt15": null
+            }
+          },
+          "raw_rms": {
+            "p05": 5083.654770407173,
+            "p50": 9295.207638493395,
+            "p95": 13439.184025518116
+          },
+          "centered_rms": {
+            "p05": 4348.2858941565055,
+            "p50": 7635.556782263908,
+            "p95": 11485.533737134101
+          },
+          "dc_power_fraction": {
+            "p05": 0.000350308417063544,
+            "p50": 0.19370143553411356,
+            "p95": 0.7002479168900686
+          },
+          "band_to_centered_power_fraction": {
+            "p05": 0.02355375320606028,
+            "p50": 0.2274902535282382,
+            "p95": 0.7863913023116159
+          },
+          "third_largest_band_to_noise_ratio": {
+            "p05": 1.1212158626536584,
+            "p50": 10.098269694749558,
+            "p95": 83.15022743076126
+          }
+        }
+      },
+      "longest_whole_recording_runs": {
+        "gate": 54,
+        "gate_projection": 14,
+        "gate_projection_cone": 2
+      }
+    }
+  ],
+  "prefix_checks": 16,
+  "formal_acceptance": false
+}
