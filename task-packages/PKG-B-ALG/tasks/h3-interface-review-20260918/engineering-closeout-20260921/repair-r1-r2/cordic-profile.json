@@ -1,0 +1,26 @@
+{
+  "profile_id": "cordic-s23-normalized24-canonical-q8-v1",
+  "scope": "offline_candidate_not_production",
+  "input": {
+    "signed_bits": 23,
+    "zero_vector": "reject",
+    "bool_float": "reject"
+  },
+  "normalization": "common exact left shift 24-max(abs(x),abs(y)).bit_length()",
+  "cordic_iterations": 24,
+  "xy_container_signed_bits": 28,
+  "angle_accumulator_signed_bits": 26,
+  "output": {
+    "signed_bits": 18,
+    "fractional_bits": 8,
+    "unit": "degree",
+    "interval": "[-180,180)",
+    "rounding": "RNE"
+  },
+  "golden_scope": "1215 existing deterministic vectors, not full-domain error proof",
+  "bindings": {
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/engineering-closeout-20260921/cordic_candidate.py": "28fdfe04a92b95dc3c3ace42d960812ea569a64801d25d0da2ed8b0551c7cccf",
+    "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/source/fixed_golden.py": "f6bb2bc41dee3f1e2e6d93176972d92db12d687978fd3a95a47e85b28f88a74a",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/engineering-closeout-20260921/evidence/run05/checks/cordic-vectors.json": "1dc6858fe8c7e98534672d503ae02d1ca29cbbe0e89af791bd5d109cf93c91c5"
+  }
+}

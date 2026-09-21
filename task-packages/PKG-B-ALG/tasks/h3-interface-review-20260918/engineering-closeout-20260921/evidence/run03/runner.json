@@ -1,0 +1,53 @@
+{
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\r\\h3e\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\engineering-closeout-20260921\\verify_increment.py",
+        "--repo",
+        "F:\\NUEC\\r\\h3e",
+        "--out",
+        "F:\\NUEC\\r\\h3e\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\engineering-closeout-20260921\\evidence\\run03\\checks"
+      ],
+      "cwd": "F:\\NUEC\\r\\h3e",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\r\\h3e\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\engineering-closeout-20260921\\budget_ledger.py",
+        "--config",
+        "F:\\NUEC\\r\\h3e\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\engineering-closeout-20260921\\budget_config.json",
+        "--out",
+        "F:\\NUEC\\r\\h3e\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\engineering-closeout-20260921\\evidence\\run03\\budget.json"
+      ],
+      "cwd": "F:\\NUEC\\r\\h3e",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\r\\h3e\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\engineering-closeout-20260921\\trace_scoreboard.py",
+        "F:\\NUEC\\r\\h3e\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\engineering-closeout-20260921\\evidence\\run03\\checks\\valid-trace.json",
+        "--max-stall-ticks",
+        "2",
+        "--expected-units",
+        "fft",
+        "ifft"
+      ],
+      "cwd": "F:\\NUEC\\r\\h3e",
+      "exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "budget_config.json": "4a47aae649b6e10b095e63737d763718ed96ffd7bf221696f6edca1b9998e635",
+    "budget_ledger.py": "c12f88f20ac709b03197ee764bcbe64faba9ef455a7c581c0841b544df6d7e0a",
+    "cordic_candidate.py": "28fdfe04a92b95dc3c3ace42d960812ea569a64801d25d0da2ed8b0551c7cccf",
+    "run_all.py": "fd38349caad6a5eb2d3dad73a5eecd6ed84c3016874ed0202232531e5a9eaba5",
+    "trace_scoreboard.py": "35c541e5ec37bb8232891e0d7d70d7ee8d1e8ce64eb2cf4ab40c72f499173994",
+    "verify_increment.py": "da590d5d00bc37e90f8538a9322ba91c7e4c97061bc6fc00ed16eefa9081368b"
+  }
+}

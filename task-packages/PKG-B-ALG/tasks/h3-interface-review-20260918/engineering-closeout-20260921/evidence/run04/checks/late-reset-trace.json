@@ -1,0 +1,117 @@
+[
+  {
+    "tick": 0,
+    "now": 0,
+    "session": "s0",
+    "reset": true,
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "submit",
+        "session": "s0",
+        "frame": 0,
+        "config": "fixture-config",
+        "expected": [
+          "fft",
+          "ifft"
+        ]
+      }
+    ]
+  },
+  {
+    "tick": 1,
+    "now": 0,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 0,
+      "source_sample": -8,
+      "available": 0,
+      "pcm": 0
+    }
+  },
+  {
+    "tick": 2,
+    "now": 1,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 1,
+      "source_sample": -7,
+      "available": 1,
+      "pcm": 0
+    },
+    "events": [
+      {
+        "kind": "status",
+        "session": "s0",
+        "frame": 0,
+        "unit": "fft"
+      }
+    ]
+  },
+  {
+    "tick": 3,
+    "now": 2,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 2,
+      "source_sample": -6,
+      "available": 2,
+      "pcm": 0
+    },
+    "events": [
+      {
+        "kind": "status",
+        "session": "s0",
+        "frame": 0,
+        "unit": "ifft"
+      },
+      {
+        "kind": "commit",
+        "session": "s0",
+        "frame": 0,
+        "config": "fixture-config",
+        "available": 2,
+        "valid_through": 20
+      }
+    ]
+  },
+  {
+    "tick": 4,
+    "now": 3,
+    "session": "s0",
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "error",
+        "session": "s0",
+        "frame": 0
+      }
+    ]
+  },
+  {
+    "tick": 5,
+    "now": 0,
+    "session": "s1",
+    "reset": true,
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "error",
+        "session": "s0",
+        "frame": 0
+      }
+    ]
+  }
+]
