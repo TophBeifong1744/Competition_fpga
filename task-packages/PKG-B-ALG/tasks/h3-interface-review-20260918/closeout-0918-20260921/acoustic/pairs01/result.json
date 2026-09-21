@@ -1,0 +1,202 @@
+{
+  "status": "SELECTED_REAL_INPUT_DIAGNOSTIC_ONLY",
+  "source_commit": "fe67547635ff254f9f91c7f917e8dedb6daf3363",
+  "selection": "all 137 candidate60 ACQUIRE anchors plus one immediate preceding/following frame, deduplicated",
+  "groups": [
+    {
+      "capture": "trusted_000_20260920_01",
+      "anchors": 26,
+      "selected": 62
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "anchors": 36,
+      "selected": 70
+    },
+    {
+      "capture": "trusted_bg_post_20260920_01",
+      "anchors": 0,
+      "selected": 0
+    },
+    {
+      "capture": "trusted_bg_pre_20260920_01",
+      "anchors": 0,
+      "selected": 0
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "anchors": 22,
+      "selected": 53
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "anchors": 15,
+      "selected": 37
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "anchors": 21,
+      "selected": 53
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "anchors": 17,
+      "selected": 45
+    }
+  ],
+  "frames": 320,
+  "anchors": 137,
+  "pair_evaluations": 1920,
+  "all_787_gate_frames_projection": {
+    "insufficient_pairs": 81,
+    "consistent": 315,
+    "residual": 326,
+    "norm": 39,
+    "residual+norm": 26
+  },
+  "classes": {
+    "anchors": {
+      "frames": 137,
+      "pair_reasons": {
+        "VALID": 777,
+        "FEWER_THAN_12_BINS": 39,
+        "TAU_BOUND": 6
+      },
+      "edge_peaks": 6,
+      "valid_pairs": 777,
+      "margin": {
+        "n": 783,
+        "p50": 0.05860929445499873,
+        "p95": 0.12972882896001411,
+        "max": 0.23755211368361367
+      },
+      "residual": {
+        "n": 137,
+        "p50": 0.2798392037119037,
+        "p95": 0.4721012912036147,
+        "max": 0.49680627118367254
+      },
+      "norm": {
+        "n": 137,
+        "p50": 0.3340329248602305,
+        "p95": 0.7273132728968523,
+        "max": 0.9066207569722065
+      }
+    },
+    "neighbor_projection_rejected": {
+      "frames": 134,
+      "pair_reasons": {
+        "FEWER_THAN_12_BINS": 134,
+        "VALID": 665,
+        "TAU_BOUND": 5
+      },
+      "edge_peaks": 9,
+      "valid_pairs": 665,
+      "margin": {
+        "n": 670,
+        "p50": 0.0721729551900154,
+        "p95": 0.14175403646260817,
+        "max": 0.26361931000435923
+      },
+      "residual": {
+        "n": 112,
+        "p50": 0.7355783561412155,
+        "p95": 2.619757066145421,
+        "max": 3.092955906369888
+      },
+      "norm": {
+        "n": 112,
+        "p50": 0.3765882283032145,
+        "p95": 0.8148070205172805,
+        "max": 0.9027863497337958
+      }
+    },
+    "neighbor_other": {
+      "frames": 49,
+      "pair_reasons": {
+        "VALID": 285,
+        "FEWER_THAN_12_BINS": 8,
+        "TAU_BOUND": 1
+      },
+      "edge_peaks": 1,
+      "valid_pairs": 285,
+      "margin": {
+        "n": 286,
+        "p50": 0.04518881810739969,
+        "p95": 0.12078609933361475,
+        "max": 0.3225008408607645
+      },
+      "residual": {
+        "n": 49,
+        "p50": 0.32350072394483564,
+        "p95": 0.47165287854608146,
+        "max": 0.4888619027085235
+      },
+      "norm": {
+        "n": 49,
+        "p50": 0.22698977713469043,
+        "p95": 0.7590888442692793,
+        "max": 0.9375383654401952
+      }
+    }
+  },
+  "spread_restarts": 27,
+  "restart_angle_change": {
+    "n": 27,
+    "p50": 20.744866999039942,
+    "p95": 73.79137512565478,
+    "max": 85.1376750897511
+  },
+  "restarts_with_integer_peak_change": 27,
+  "input_pins": {
+    "docs/reviews/eight-94b5fe7/B-REVIEW.md": "effbf0a1329fc818cd12215f1f1a4622885ed0c9a03affbc28cf1175f9ec52af",
+    "docs/reviews/eight-94b5fe7/gate-frames.json": "23c6de08664bdf18bf8fd3c9aea7c6c309bad6ef380e2ffd3a015d09cc0620fc",
+    "docs/reviews/eight-94b5fe7/markers/results.json": "16740e302a2726d4a6ad7f1d888822cecc6b20e38cbad226d6d45636995a2431",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/background-confirmation-20260920-01/CURRENT-DATA-SHA256.json": "90c99ba3e51bc30b380eabde1be861813c3967018ce25212fe27096b7883dd8f",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-02-corrected/trusted_000_20260920_01/trusted_000_20260920_01/metadata.json": "4364dfabda740c14c532e0f33ac4074ed8b5cc4bf60600c2e64fcaacda50cfa0",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-02-corrected/trusted_000_20260920_01/trusted_000_20260920_01/raw.bin": "9b7d8b36ebe300f7e6520bdb94e9e157895d4563808007e6343b1c2ab14c78a5",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-02-corrected/trusted_bg_pre_20260920_01/trusted_bg_pre_20260920_01/metadata.json": "3e3ee64fdd97d8267a36e4a41aef88e192c0b9b8d63a34a8551ad489cd535091",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-02-corrected/trusted_bg_pre_20260920_01/trusted_bg_pre_20260920_01/raw.bin": "1c2e923d8b3d9bbfaa99ac1708bac7ce2563db5db3cd8eaad0189884bf64f3e2",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_000_20260920_02/trusted_000_20260920_02/metadata.json": "9ac49fefb1c82b83bfd8c40c306b1281811c1ff7138df35ca8cccbbfb1f09eee",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_000_20260920_02/trusted_000_20260920_02/raw.bin": "6bd132aef87e68aa3f198fd19343b08682ebe291303d4fae21200d77c881f485",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_bg_post_20260920_01/trusted_bg_post_20260920_01/metadata.json": "6bbed8ac1a61a2c5fdcbdffdedb5576a05f261758dd9ba9ce9ce6c11e3a69034",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_bg_post_20260920_01/trusted_bg_post_20260920_01/raw.bin": "cdc0724a458d68139ffbfe48a9fe21331f97e7f8cc9d3775c5d0c48cfbdaadc7",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_m045_20260920_01/trusted_m045_20260920_01/metadata.json": "1f35776e4b4924a3e92c65225fe16a4baedb8680849cb28d2ecd5ad08e3670fe",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_m045_20260920_01/trusted_m045_20260920_01/raw.bin": "2bb4996a71a76d4dfaa6d404d52504015af73ad1221188648a548b78f178648c",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_m045_20260920_02/trusted_m045_20260920_02/metadata.json": "b21b3d70da0ae7e1f50388f9a0f36cf32ce4bff804ae523fa83623b8c3a761e0",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_m045_20260920_02/trusted_m045_20260920_02/raw.bin": "1883d368c22b29f5e9b205bcd381999f642a4658e7e659f9acbee6fedd9614a1",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_p045_20260920_01/trusted_p045_20260920_01/metadata.json": "1ffe9345de354f71bca2c89b18d31194a9f3c2447e0142e8d20ef09daed982a1",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_p045_20260920_01/trusted_p045_20260920_01/raw.bin": "44bee6661f3543690cf2f22ed2a5b733b503907435190778f9f4ca50a4896726",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_p045_20260920_02/trusted_p045_20260920_02/metadata.json": "fa7ea1ee332d6d1faf4f8324099472e8df03b51563b1f2cd557744237a6628fc",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-03-remaining/trusted_p045_20260920_02/trusted_p045_20260920_02/raw.bin": "d9e1120cc605556f4605bc53279641dc5bc4355c6cbf31c6e2c4b65612fda305",
+    "task-packages/PKG-B-ALG/payload/model/python/audio_frames.py": "0ed77ea8db8834576c21206358a8d945b612a176cad742bb266d077ee2a79408",
+    "task-packages/PKG-B-ALG/payload/model/python/h1_reader.py": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9",
+    "task-packages/PKG-B-ALG/payload/model/python/sector_tracker.py": "2297aa7f94058e3e4faf3da792c6f1beef6c68fa72121100ec672d60ade5ec50",
+    "task-packages/PKG-B-ALG/payload/model/python/six_mic_baseline_core.py": "23184058f08fa54af4c61b9681f2fbe40341430f0ba48f8574676f27ce4964b0",
+    "task-packages/PKG-B-ALG/tasks/c-board-algorithm-01/run.py": "7acd56bd7742baf174b0273f0aee2e54bacfe730840c7cb8019c07e3b2b675de",
+    "task-packages/PKG-B-ALG/tasks/fft-bitexact-01/compare_cmodel.py": "d14e589b559a5afbf5e1e2d6e095d54896fef1f33ffd482c5a80ad293398b1d8",
+    "task-packages/PKG-B-ALG/tasks/fft-window-02/window_model.py": "3fd314bcf6c866b2a2ed8185ea1be2dd1079d38e38dc11f5caa883b748889bce",
+    "task-packages/PKG-B-ALG/tasks/four-channel-track-01/audio-01/mixer.py": "c22fa4d79dc581999f8c4a4e2013f1e0d6e3f13dbfa2345fd4bdb13f6754ebab",
+    "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/source/fixed_golden.py": "f6bb2bc41dee3f1e2e6d93176972d92db12d687978fd3a95a47e85b28f88a74a",
+    "task-packages/PKG-B-ALG/tasks/phat-fixed-03/integration/chain.py": "eb5c19b1ff30ec5926170c2f1c216ac764f3aa855c0d165c9822c6d59e11a9a7",
+    "task-packages/PKG-B-ALG/tasks/phat-fixed-03/phat_model.py": "84eaa9691f62aba7164e3172aa94b2e361cb99672647477d98f8b3f3889f3144",
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/check_inputs.py": "4f7cc3dc96c0f1b0966e5d38bdd89390a017606141a2da01514336e1bbe8a3d9",
+    "task-packages/PKG-B-ALG/tasks/real-audio-compare-01/render_audio.py": "150478f12144be489e5ea2418d24a024cbeb1a837fbbe70059ba171d81e5384a",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_000_20260920_01-frames.json": "e207cfb3931ce11d980fed7e2ad15e424d595fbb9ab81deec1a3846f91a30f58",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_000_20260920_02-frames.json": "098beeffb1b65f1a1a78c5b84b6afea328df401d2f81db11cba914f8577fb271",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_bg_post_20260920_01-frames.json": "19b05b78beea74da9d3865d42c5f7277652feb26e62b95d54aaf6c8d03228872",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_bg_pre_20260920_01-frames.json": "9ecec805cbd3d58f528dc97dc285896de224262df7a66ee04779cd10d232172e",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_m045_20260920_01-frames.json": "902e7a349168c22a8dde0aa581cef76c9c255fd9475a2ac3051eb7b013f115ce",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_m045_20260920_02-frames.json": "142acfc9c3fe2b3c297271766cb7099461059638d1d1543657162bf2d80d1835",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_p045_20260920_01-frames.json": "b3960f09b2232f849c866e61ac43590a2a8bab91ef8c7e491861f9f8465acdbb",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_p045_20260920_02-frames.json": "b814ec3e3f6f505fae811cd75773d320768e3ec199d907e0a34cf4b654855047"
+  },
+  "script_sha256": "5fbedcf8d8dee7c936c0197542648310234fc15f9e904373c941d7dafb1724dc",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "hardware": "NOT_RUN",
+  "production_changes": false,
+  "independent_validation": false
+}

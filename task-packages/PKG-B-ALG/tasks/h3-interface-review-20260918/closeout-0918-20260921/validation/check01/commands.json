@@ -1,0 +1,33 @@
+[
+  {
+    "name": "joint-tests",
+    "argv": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\closeout-0918-20260921\\acoustic",
+      "-p",
+      "test_joint.py",
+      "-v"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "paired-analysis",
+    "argv": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\closeout-0918-20260921\\acoustic\\summarize_joint.py",
+      "--repo",
+      "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923",
+      "--study",
+      "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\closeout-0918-20260921\\acoustic\\joint01",
+      "--out",
+      "F:\\NUEC\\validation\\b-0918-consolidation-check01\\paired"
+    ],
+    "exit_code": 0
+  }
+]

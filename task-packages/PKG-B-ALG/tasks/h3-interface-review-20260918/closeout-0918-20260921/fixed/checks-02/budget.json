@@ -1,0 +1,29 @@
+{
+  "status": "DEPENDENCY_ARITHMETIC_ONLY_REALTIME_BLOCKED",
+  "forward_per_frame": 8,
+  "inverse_max_per_frame": 6,
+  "radix2_butterflies_per_transform": 5120,
+  "radix2_butterflies_all_transforms": 71680,
+  "historical_slot_sum_cycles": 103364,
+  "hop_cycles_100mhz": 1066666,
+  "historical_difference_not_margin": 963302,
+  "buffers_bytes": {
+    "pcm_double_frame": 32768,
+    "hann": 4096,
+    "doa_half_spectra": 16416,
+    "gate_half_spectra": 16416,
+    "pair_phat": 4104,
+    "pair_ifft": 8192,
+    "correlation": 4096,
+    "audio_history": 160,
+    "mono_double_hop": 4096,
+    "rx_slots_guards": 16128,
+    "descriptors_allowance": 1024
+  },
+  "listed_bytes": 107496,
+  "total_wcet_cycles": null,
+  "actual_resources": null,
+  "actual_memory_bytes": null,
+  "end_to_end_latency_cycles": null,
+  "stall_upper_bound_cycles": null
+}

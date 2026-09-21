@@ -1,0 +1,397 @@
+{
+  "status": "FROZEN_CONTROL_REPLAY_PASS_NOT_PERFORMANCE_ACCEPTANCE",
+  "input_pins": {
+    "task-packages/PKG-B-ALG/payload/model/python/sector_tracker.py": "2297aa7f94058e3e4faf3da792c6f1beef6c68fa72121100ec672d60ade5ec50",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_000_20260920_01-frames.json": "e207cfb3931ce11d980fed7e2ad15e424d595fbb9ab81deec1a3846f91a30f58",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_000_20260920_02-frames.json": "098beeffb1b65f1a1a78c5b84b6afea328df401d2f81db11cba914f8577fb271",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_bg_post_20260920_01-frames.json": "19b05b78beea74da9d3865d42c5f7277652feb26e62b95d54aaf6c8d03228872",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_bg_pre_20260920_01-frames.json": "9ecec805cbd3d58f528dc97dc285896de224262df7a66ee04779cd10d232172e",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_m045_20260920_01-frames.json": "902e7a349168c22a8dde0aa581cef76c9c255fd9475a2ac3051eb7b013f115ce",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_m045_20260920_02-frames.json": "142acfc9c3fe2b3c297271766cb7099461059638d1d1543657162bf2d80d1835",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_p045_20260920_01-frames.json": "b3960f09b2232f849c866e61ac43590a2a8bab91ef8c7e491861f9f8465acdbb",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/trusted_p045_20260920_02-frames.json": "b814ec3e3f6f505fae811cd75773d320768e3ec199d907e0a34cf4b654855047"
+  },
+  "captures": [
+    {
+      "capture": "trusted_000_20260920_01",
+      "frames": 561,
+      "scope": "whole_recording_including_markers_not_formal_voice_metrics",
+      "pair_reasons": {
+        "VALID": 3226,
+        "FEWER_THAN_12_BINS": 132,
+        "TAU_BOUND": 8
+      },
+      "branches": {
+        "baseline30": {
+          "counts": {
+            "outside_cone": 226,
+            "projection_reject": 310,
+            "acquire_wait": 22,
+            "acquire_spread_restart": 3
+          },
+          "max_consecutive_eligible": 3,
+          "max_acquire_count": 2
+        },
+        "ungated60": {
+          "counts": {
+            "outside_cone": 215,
+            "projection_reject": 310,
+            "acquire_wait": 31,
+            "acquire_spread_restart": 5
+          },
+          "max_consecutive_eligible": 3,
+          "max_acquire_count": 2
+        },
+        "candidate60": {
+          "counts": {
+            "activity_gate_reject": 425,
+            "projection_reject": 87,
+            "acquire_wait": 21,
+            "acquire_spread_restart": 5,
+            "outside_cone": 23
+          },
+          "max_consecutive_eligible": 3,
+          "max_acquire_count": 2
+        }
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "frames": 561,
+      "scope": "whole_recording_including_markers_not_formal_voice_metrics",
+      "pair_reasons": {
+        "VALID": 3281,
+        "FEWER_THAN_12_BINS": 82,
+        "TAU_BOUND": 3
+      },
+      "branches": {
+        "baseline30": {
+          "counts": {
+            "projection_reject": 159,
+            "outside_cone": 362,
+            "acquire_wait": 28,
+            "activity_gate_reject": 2,
+            "acquire_spread_restart": 10
+          },
+          "max_consecutive_eligible": 5,
+          "max_acquire_count": 3
+        },
+        "ungated60": {
+          "counts": {
+            "projection_reject": 159,
+            "outside_cone": 355,
+            "acquire_wait": 31,
+            "acquire_spread_restart": 16
+          },
+          "max_consecutive_eligible": 5,
+          "max_acquire_count": 3
+        },
+        "candidate60": {
+          "counts": {
+            "activity_gate_reject": 453,
+            "projection_reject": 52,
+            "acquire_wait": 25,
+            "acquire_spread_restart": 11,
+            "outside_cone": 20
+          },
+          "max_consecutive_eligible": 5,
+          "max_acquire_count": 3
+        }
+      }
+    },
+    {
+      "capture": "trusted_bg_post_20260920_01",
+      "frames": 561,
+      "scope": "whole_recording_including_markers_not_formal_voice_metrics",
+      "pair_reasons": {
+        "VALID": 3365,
+        "FEWER_THAN_12_BINS": 1
+      },
+      "branches": {
+        "baseline30": {
+          "counts": {
+            "outside_cone": 458,
+            "projection_reject": 103
+          },
+          "max_consecutive_eligible": 0,
+          "max_acquire_count": 0
+        },
+        "ungated60": {
+          "counts": {
+            "outside_cone": 456,
+            "projection_reject": 103,
+            "acquire_wait": 2
+          },
+          "max_consecutive_eligible": 1,
+          "max_acquire_count": 1
+        },
+        "candidate60": {
+          "counts": {
+            "activity_gate_reject": 561
+          },
+          "max_consecutive_eligible": 0,
+          "max_acquire_count": 0
+        }
+      }
+    },
+    {
+      "capture": "trusted_bg_pre_20260920_01",
+      "frames": 561,
+      "scope": "whole_recording_including_markers_not_formal_voice_metrics",
+      "pair_reasons": {
+        "VALID": 3348,
+        "TAU_BOUND": 15,
+        "FEWER_THAN_12_BINS": 3
+      },
+      "branches": {
+        "baseline30": {
+          "counts": {
+            "outside_cone": 236,
+            "projection_reject": 317,
+            "acquire_wait": 5,
+            "activity_gate_reject": 3
+          },
+          "max_consecutive_eligible": 1,
+          "max_acquire_count": 1
+        },
+        "ungated60": {
+          "counts": {
+            "outside_cone": 226,
+            "projection_reject": 319,
+            "acquire_wait": 16
+          },
+          "max_consecutive_eligible": 2,
+          "max_acquire_count": 2
+        },
+        "candidate60": {
+          "counts": {
+            "activity_gate_reject": 561
+          },
+          "max_consecutive_eligible": 0,
+          "max_acquire_count": 0
+        }
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "frames": 561,
+      "scope": "whole_recording_including_markers_not_formal_voice_metrics",
+      "pair_reasons": {
+        "VALID": 3222,
+        "TAU_BOUND": 7,
+        "FEWER_THAN_12_BINS": 137
+      },
+      "branches": {
+        "baseline30": {
+          "counts": {
+            "outside_cone": 312,
+            "projection_reject": 241,
+            "acquire_wait": 5,
+            "acquire_spread_restart": 1,
+            "activity_gate_reject": 2
+          },
+          "max_consecutive_eligible": 2,
+          "max_acquire_count": 1
+        },
+        "ungated60": {
+          "counts": {
+            "outside_cone": 297,
+            "projection_reject": 241,
+            "acquire_wait": 19,
+            "acquire_spread_restart": 4
+          },
+          "max_consecutive_eligible": 2,
+          "max_acquire_count": 1
+        },
+        "candidate60": {
+          "counts": {
+            "activity_gate_reject": 424,
+            "outside_cone": 37,
+            "projection_reject": 78,
+            "acquire_wait": 18,
+            "acquire_spread_restart": 4
+          },
+          "max_consecutive_eligible": 2,
+          "max_acquire_count": 1
+        }
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "frames": 561,
+      "scope": "whole_recording_including_markers_not_formal_voice_metrics",
+      "pair_reasons": {
+        "VALID": 3044,
+        "FEWER_THAN_12_BINS": 316,
+        "TAU_BOUND": 6
+      },
+      "branches": {
+        "baseline30": {
+          "counts": {
+            "projection_reject": 271,
+            "acquire_wait": 102,
+            "outside_cone": 159,
+            "acquire_spread_restart": 29
+          },
+          "max_consecutive_eligible": 7,
+          "max_acquire_count": 2
+        },
+        "ungated60": {
+          "counts": {
+            "projection_reject": 271,
+            "acquire_wait": 122,
+            "outside_cone": 94,
+            "acquire_spread_restart": 74
+          },
+          "max_consecutive_eligible": 7,
+          "max_acquire_count": 2
+        },
+        "candidate60": {
+          "counts": {
+            "activity_gate_reject": 429,
+            "projection_reject": 87,
+            "outside_cone": 30,
+            "acquire_wait": 13,
+            "acquire_spread_restart": 2
+          },
+          "max_consecutive_eligible": 3,
+          "max_acquire_count": 2
+        }
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "frames": 561,
+      "scope": "whole_recording_including_markers_not_formal_voice_metrics",
+      "pair_reasons": {
+        "VALID": 3133,
+        "FEWER_THAN_12_BINS": 211,
+        "TAU_BOUND": 22
+      },
+      "branches": {
+        "baseline30": {
+          "counts": {
+            "outside_cone": 227,
+            "projection_reject": 311,
+            "acquire_wait": 22,
+            "activity_gate_reject": 1
+          },
+          "max_consecutive_eligible": 2,
+          "max_acquire_count": 2
+        },
+        "ungated60": {
+          "counts": {
+            "outside_cone": 176,
+            "projection_reject": 311,
+            "acquire_wait": 60,
+            "acquire_spread_restart": 14
+          },
+          "max_consecutive_eligible": 5,
+          "max_acquire_count": 3
+        },
+        "candidate60": {
+          "counts": {
+            "activity_gate_reject": 429,
+            "projection_reject": 91,
+            "acquire_wait": 18,
+            "outside_cone": 20,
+            "acquire_spread_restart": 3
+          },
+          "max_consecutive_eligible": 2,
+          "max_acquire_count": 1
+        }
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "frames": 561,
+      "scope": "whole_recording_including_markers_not_formal_voice_metrics",
+      "pair_reasons": {
+        "VALID": 3207,
+        "FEWER_THAN_12_BINS": 149,
+        "TAU_BOUND": 10
+      },
+      "branches": {
+        "baseline30": {
+          "counts": {
+            "projection_reject": 170,
+            "outside_cone": 382,
+            "acquire_wait": 8,
+            "activity_gate_reject": 1
+          },
+          "max_consecutive_eligible": 2,
+          "max_acquire_count": 2
+        },
+        "ungated60": {
+          "counts": {
+            "projection_reject": 171,
+            "outside_cone": 369,
+            "acquire_wait": 19,
+            "acquire_spread_restart": 2
+          },
+          "max_consecutive_eligible": 2,
+          "max_acquire_count": 2
+        },
+        "candidate60": {
+          "counts": {
+            "activity_gate_reject": 419,
+            "projection_reject": 77,
+            "acquire_wait": 15,
+            "outside_cone": 48,
+            "acquire_spread_restart": 2
+          },
+          "max_consecutive_eligible": 2,
+          "max_acquire_count": 2
+        }
+      }
+    }
+  ],
+  "replayed_states": 13464,
+  "config": {
+    "version": "b-development-candidates-1",
+    "base_main": "1f369dc688cc1e49d5b2b51735bce7dc9d1cfb78",
+    "interface_commit": "28d5c775f15f29cbe1039e8ce60cc4498bb257b7",
+    "input_commit": "94b5fe79d87e038e895878fb31030cded469bb33",
+    "sample_rate_hz": 48000,
+    "frame_length": 1024,
+    "hop": 512,
+    "band_bins_inclusive": [
+      7,
+      72
+    ],
+    "band_rms_floor_codes": 512,
+    "background_percentile": 95,
+    "on_power_ratio": 4,
+    "off_power_ratio": 2,
+    "attack_frames": 3,
+    "release_frames": 3,
+    "minimum_active_channels": 3,
+    "inner_guards_ms": [
+      100,
+      200,
+      300
+    ],
+    "marker_guard_ms": 200,
+    "tracker_cone_half_angle_deg": 60,
+    "audio_angle_step_deg": 5,
+    "audio_preview_gain": 12,
+    "audio_fade_samples": 480,
+    "wrong_direction_threshold_deg": 15,
+    "design_runs": [
+      "trusted_bg_pre_20260920_01",
+      "trusted_000_20260920_01",
+      "trusted_m045_20260920_01",
+      "trusted_p045_20260920_01"
+    ],
+    "development_probe_runs": [
+      "trusted_bg_post_20260920_01",
+      "trusted_000_20260920_02",
+      "trusted_m045_20260920_02",
+      "trusted_p045_20260920_02"
+    ],
+    "calibration_run": "trusted_bg_pre_20260920_01",
+    "independent_validation_runs": [],
+    "semantics": "band activity only; neither speech classification nor target identity; all eight previously inspected"
+  },
+  "limitation": "Whole-recording attribution; includes marker/background frames; no independent truth or parameter tuning."
+}
