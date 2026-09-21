@@ -1,0 +1,100 @@
+Exact prepared inputs verified 132 3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]
+{
+  "sources": {
+    "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\engineering-closeout-20260923\\repair-h3-e01-e03\\evidence\\clean02\\pinned\\engineering\\source\\engineering_model.py": "3cec481efa0ea12173fe121e2e2908bd504e8c664a64cb67809e9b69ddfe20a8",
+    "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\engineering-closeout-20260923\\repair-h3-e01-e03\\evidence\\clean02\\pinned\\logic\\source\\logic_adapter.py": "ad2bd1068ae62af84fb095e7a9b65645c92eedf23c055562542cacc1b7ef8ce5"
+  },
+  "cases": [
+    {
+      "name": "committed_then_clip_then_late_error",
+      "expected": "historical commit preserved; late fault fail-stops; next submit rejected",
+      "first": "COMMITTED",
+      "late": "REVOKED",
+      "failed": false,
+      "active": true,
+      "subsequent_commit": "COMMITTED",
+      "audit": [
+        "CLIP",
+        [
+          "FRAME_ERROR",
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      ],
+      "finding": true
+    },
+    {
+      "name": "configuration_changed_within_one_epoch",
+      "expected": "reject configuration change until new session",
+      "first": "COMMITTED",
+      "second": "COMMITTED",
+      "keys": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "finding": true
+    },
+    {
+      "name": "mutable_binding_changes_submitted_snapshot",
+      "expected": "frozen submitted binding remains A; B rejected",
+      "actual": "COMMITTED",
+      "stored": {
+        "config": "B",
+        "numeric": "fixed4"
+      },
+      "finding": true,
+      "note": "API does not restrict binding type; main session-change probe also uses only author-style immutable strings"
+    },
+    {
+      "name": "control_direct_post_commit_fault",
+      "expected": true,
+      "failed": true,
+      "passed": true
+    }
+  ],
+  "logic_ttl_observations": [
+    {
+      "last_id": 1023,
+      "ttl": 512,
+      "available": 100,
+      "result": "COMMIT_RESEARCH_ONLY"
+    },
+    {
+      "last_id": 1023,
+      "ttl": 512,
+      "available": 1535,
+      "result": "COMMIT_RESEARCH_ONLY"
+    },
+    {
+      "last_id": 1023,
+      "ttl": 512,
+      "available": 1536,
+      "result": "RESULT_EXPIRED"
+    }
+  ]
+}
+test_binding_types (__main__.Contracts.test_binding_types) ... ok
+test_config_session (__main__.Contracts.test_config_session) ... ok
+test_control_priority (__main__.Contracts.test_control_priority) ... ok
+test_mutation_wrong_completion (__main__.Contracts.test_mutation_wrong_completion) ... ok
+test_nested_snapshot (__main__.Contracts.test_nested_snapshot) ... ok
+test_old_session_callback (__main__.Contracts.test_old_session_callback) ... ok
+test_pending_error_and_expiry (__main__.Contracts.test_pending_error_and_expiry) ... ok
+test_revocation_late_error (__main__.Contracts.test_revocation_late_error) ... ok
+test_ttl_identity_bounds (__main__.Contracts.test_ttl_identity_bounds) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK
