@@ -1,0 +1,475 @@
+[
+  {
+    "name": "compiler",
+    "args": [
+      "F:/NUEC/review-evidence/ps-repair-ca512a8/gcc-ansi.cmd",
+      "--version"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.5292852000020503
+  },
+  {
+    "name": "original-B-probe-O0-build",
+    "args": [
+      "F:/NUEC/review-evidence/ps-repair-ca512a8/gcc-ansi.cmd",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O0",
+      "-I",
+      "F:\\NUEC\\r\\psr-run01\\original-src",
+      "F:\\NUEC\\r\\psr-run01\\original-src\\ps_bridge.c",
+      "F:\\NUEC\\r\\psr-run01\\feedback\\spec\\probe.c",
+      "-o",
+      "F:\\NUEC\\r\\psr-run01\\original-B-probe-O0.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 1.7478699999992386
+  },
+  {
+    "name": "original-B-probe-O0",
+    "args": [
+      "F:\\NUEC\\r\\psr-run01\\original-B-probe-O0.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.23662140000305953
+  },
+  {
+    "name": "original-generation-O0-build",
+    "args": [
+      "F:/NUEC/review-evidence/ps-repair-ca512a8/gcc-ansi.cmd",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O0",
+      "-I",
+      "F:\\NUEC\\r\\psr-run01\\original-src",
+      "F:\\NUEC\\r\\psr-run01\\original-src\\ps_bridge.c",
+      "F:\\NUEC\\r\\psr-run01\\feedback\\spec\\generation.c",
+      "-o",
+      "F:\\NUEC\\r\\psr-run01\\original-generation-O0.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.9809900000000198
+  },
+  {
+    "name": "original-generation-O0",
+    "args": [
+      "F:\\NUEC\\r\\psr-run01\\original-generation-O0.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.2719236000011733
+  },
+  {
+    "name": "original-generation_max-O0-build",
+    "args": [
+      "F:/NUEC/review-evidence/ps-repair-ca512a8/gcc-ansi.cmd",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O0",
+      "-I",
+      "F:\\NUEC\\r\\psr-run01\\original-src",
+      "F:\\NUEC\\r\\psr-run01\\original-src\\ps_bridge.c",
+      "F:\\NUEC\\r\\psr-run01\\feedback\\standards\\generation_max.c",
+      "-o",
+      "F:\\NUEC\\r\\psr-run01\\original-generation_max-O0.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.991798099999869
+  },
+  {
+    "name": "original-generation_max-O0",
+    "args": [
+      "F:\\NUEC\\r\\psr-run01\\original-generation_max-O0.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.27515259999927366
+  },
+  {
+    "name": "fixed-B-probe-O0-build",
+    "args": [
+      "F:/NUEC/review-evidence/ps-repair-ca512a8/gcc-ansi.cmd",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O0",
+      "-I",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\src",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\src\\ps_bridge.c",
+      "F:\\NUEC\\r\\psr-run01\\feedback\\spec\\probe.c",
+      "-o",
+      "F:\\NUEC\\r\\psr-run01\\fixed-B-probe-O0.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.9940341000001354
+  },
+  {
+    "name": "fixed-B-probe-O0",
+    "args": [
+      "F:\\NUEC\\r\\psr-run01\\fixed-B-probe-O0.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.2812205999980506
+  },
+  {
+    "name": "fixed-generation-O0-build",
+    "args": [
+      "F:/NUEC/review-evidence/ps-repair-ca512a8/gcc-ansi.cmd",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O0",
+      "-I",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\src",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\src\\ps_bridge.c",
+      "F:\\NUEC\\r\\psr-run01\\feedback\\spec\\generation.c",
+      "-o",
+      "F:\\NUEC\\r\\psr-run01\\fixed-generation-O0.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.9638598999990791
+  },
+  {
+    "name": "fixed-generation-O0",
+    "args": [
+      "F:\\NUEC\\r\\psr-run01\\fixed-generation-O0.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.2622537999995984
+  },
+  {
+    "name": "fixed-generation_max-O0-build",
+    "args": [
+      "F:/NUEC/review-evidence/ps-repair-ca512a8/gcc-ansi.cmd",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O0",
+      "-I",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\src",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\src\\ps_bridge.c",
+      "F:\\NUEC\\r\\psr-run01\\feedback\\standards\\generation_max.c",
+      "-o",
+      "F:\\NUEC\\r\\psr-run01\\fixed-generation_max-O0.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.9287546999985352
+  },
+  {
+    "name": "fixed-generation_max-O0",
+    "args": [
+      "F:\\NUEC\\r\\psr-run01\\fixed-generation_max-O0.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 1,
+    "seconds": 0.26051409999854513
+  },
+  {
+    "name": "repair-regression-O0-build",
+    "args": [
+      "F:/NUEC/review-evidence/ps-repair-ca512a8/gcc-ansi.cmd",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O0",
+      "-I",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\src",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\src\\ps_bridge.c",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\tests\\repair.c",
+      "-o",
+      "F:\\NUEC\\r\\psr-run01\\repair-regression-O0.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.9954120999973384
+  },
+  {
+    "name": "repair-regression-O0",
+    "args": [
+      "F:\\NUEC\\r\\psr-run01\\repair-regression-O0.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.26895390000208863
+  },
+  {
+    "name": "original-B-probe-O2-build",
+    "args": [
+      "F:/NUEC/review-evidence/ps-repair-ca512a8/gcc-ansi.cmd",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O2",
+      "-I",
+      "F:\\NUEC\\r\\psr-run01\\original-src",
+      "F:\\NUEC\\r\\psr-run01\\original-src\\ps_bridge.c",
+      "F:\\NUEC\\r\\psr-run01\\feedback\\spec\\probe.c",
+      "-o",
+      "F:\\NUEC\\r\\psr-run01\\original-B-probe-O2.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 1.234588999999687
+  },
+  {
+    "name": "original-B-probe-O2",
+    "args": [
+      "F:\\NUEC\\r\\psr-run01\\original-B-probe-O2.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.23083150000093156
+  },
+  {
+    "name": "original-generation-O2-build",
+    "args": [
+      "F:/NUEC/review-evidence/ps-repair-ca512a8/gcc-ansi.cmd",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O2",
+      "-I",
+      "F:\\NUEC\\r\\psr-run01\\original-src",
+      "F:\\NUEC\\r\\psr-run01\\original-src\\ps_bridge.c",
+      "F:\\NUEC\\r\\psr-run01\\feedback\\spec\\generation.c",
+      "-o",
+      "F:\\NUEC\\r\\psr-run01\\original-generation-O2.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 1.237237199999072
+  },
+  {
+    "name": "original-generation-O2",
+    "args": [
+      "F:\\NUEC\\r\\psr-run01\\original-generation-O2.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.2405322000013257
+  },
+  {
+    "name": "original-generation_max-O2-build",
+    "args": [
+      "F:/NUEC/review-evidence/ps-repair-ca512a8/gcc-ansi.cmd",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O2",
+      "-I",
+      "F:\\NUEC\\r\\psr-run01\\original-src",
+      "F:\\NUEC\\r\\psr-run01\\original-src\\ps_bridge.c",
+      "F:\\NUEC\\r\\psr-run01\\feedback\\standards\\generation_max.c",
+      "-o",
+      "F:\\NUEC\\r\\psr-run01\\original-generation_max-O2.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 1.2396513999992749
+  },
+  {
+    "name": "original-generation_max-O2",
+    "args": [
+      "F:\\NUEC\\r\\psr-run01\\original-generation_max-O2.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.32501500000216765
+  },
+  {
+    "name": "fixed-B-probe-O2-build",
+    "args": [
+      "F:/NUEC/review-evidence/ps-repair-ca512a8/gcc-ansi.cmd",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O2",
+      "-I",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\src",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\src\\ps_bridge.c",
+      "F:\\NUEC\\r\\psr-run01\\feedback\\spec\\probe.c",
+      "-o",
+      "F:\\NUEC\\r\\psr-run01\\fixed-B-probe-O2.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 1.2922513999983494
+  },
+  {
+    "name": "fixed-B-probe-O2",
+    "args": [
+      "F:\\NUEC\\r\\psr-run01\\fixed-B-probe-O2.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.2789827000015066
+  },
+  {
+    "name": "fixed-generation-O2-build",
+    "args": [
+      "F:/NUEC/review-evidence/ps-repair-ca512a8/gcc-ansi.cmd",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O2",
+      "-I",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\src",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\src\\ps_bridge.c",
+      "F:\\NUEC\\r\\psr-run01\\feedback\\spec\\generation.c",
+      "-o",
+      "F:\\NUEC\\r\\psr-run01\\fixed-generation-O2.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 1.299023900002794
+  },
+  {
+    "name": "fixed-generation-O2",
+    "args": [
+      "F:\\NUEC\\r\\psr-run01\\fixed-generation-O2.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.2582685000015772
+  },
+  {
+    "name": "fixed-generation_max-O2-build",
+    "args": [
+      "F:/NUEC/review-evidence/ps-repair-ca512a8/gcc-ansi.cmd",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O2",
+      "-I",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\src",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\src\\ps_bridge.c",
+      "F:\\NUEC\\r\\psr-run01\\feedback\\standards\\generation_max.c",
+      "-o",
+      "F:\\NUEC\\r\\psr-run01\\fixed-generation_max-O2.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 1.2400082999993174
+  },
+  {
+    "name": "fixed-generation_max-O2",
+    "args": [
+      "F:\\NUEC\\r\\psr-run01\\fixed-generation_max-O2.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 1,
+    "seconds": 0.24963279999792576
+  },
+  {
+    "name": "repair-regression-O2-build",
+    "args": [
+      "F:/NUEC/review-evidence/ps-repair-ca512a8/gcc-ansi.cmd",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-O2",
+      "-I",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\src",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\src\\ps_bridge.c",
+      "F:\\NUEC\\r\\psr-run01\\repair-source\\tests\\repair.c",
+      "-o",
+      "F:\\NUEC\\r\\psr-run01\\repair-regression-O2.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 1.3881776000016544
+  },
+  {
+    "name": "repair-regression-O2",
+    "args": [
+      "F:\\NUEC\\r\\psr-run01\\repair-regression-O2.exe"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 0.24182180000207154
+  },
+  {
+    "name": "original-33-runner",
+    "args": [
+      "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "F:\\NUEC\\r\\psr\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-repair-01\\tests\\run_host.py",
+      "--cc",
+      "F:/NUEC/review-evidence/ps-repair-ca512a8/gcc-ansi.cmd",
+      "--out",
+      "F:\\NUEC\\r\\psr-run01\\host33"
+    ],
+    "cwd": "F:\\NUEC\\r\\psr",
+    "exit": 0,
+    "seconds": 34.712393699999666
+  }
+]

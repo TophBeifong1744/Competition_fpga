@@ -1,0 +1,128 @@
+{
+  "status": "A_ADJACENT_PASS",
+  "cases": 14,
+  "rejected": 9,
+  "accepted": 5,
+  "results": [
+    {
+      "name": "delayed-commit-expiry-equality",
+      "expected_error": null,
+      "actual_error": null,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 0,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "completion-minus-one",
+      "expected_error": "availability precedes required status visibility",
+      "actual_error": "availability precedes required status visibility",
+      "result": null
+    },
+    {
+      "name": "ignore-forged-status-timestamp",
+      "expected_error": "availability precedes required status visibility",
+      "actual_error": "availability precedes required status visibility",
+      "result": null
+    },
+    {
+      "name": "availability-between-completion-and-commit",
+      "expected_error": null,
+      "actual_error": null,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 0,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "availability-after-commit",
+      "expected_error": "future or expired commit",
+      "actual_error": "future or expired commit",
+      "result": null
+    },
+    {
+      "name": "expiry-plus-one",
+      "expected_error": "future or expired commit",
+      "actual_error": "future or expired commit",
+      "result": null
+    },
+    {
+      "name": "commit-listed-before-same-tick-status",
+      "expected_error": null,
+      "actual_error": null,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 0,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "same-tick-error-wins-over-reordered-commit",
+      "expected_error": "non-atomic commit",
+      "actual_error": "non-atomic commit",
+      "result": null
+    },
+    {
+      "name": "other-frame-later-status-does-not-raise-bound",
+      "expected_error": null,
+      "actual_error": null,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 0,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "accepted-source-nan",
+      "expected_error": "integer source_sample required",
+      "actual_error": "integer source_sample required",
+      "result": null
+    },
+    {
+      "name": "held-available-inf",
+      "expected_error": "uint64 output available required",
+      "actual_error": "uint64 output available required",
+      "result": null
+    },
+    {
+      "name": "initial-stall-source-string",
+      "expected_error": "integer source_sample required",
+      "actual_error": "integer source_sample required",
+      "result": null
+    },
+    {
+      "name": "recovery-available-string",
+      "expected_error": "uint64 output available required",
+      "actual_error": "uint64 output available required",
+      "result": null
+    },
+    {
+      "name": "physical-time-advances-under-stall",
+      "expected_error": null,
+      "actual_error": null,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 32,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    }
+  ],
+  "note": "NaN/Infinity fixtures are Python JSON decoder robustness probes, not valid production JSON"
+}

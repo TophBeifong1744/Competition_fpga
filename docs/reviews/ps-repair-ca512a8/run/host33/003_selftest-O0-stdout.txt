@@ -1,0 +1,124 @@
+PASS config_and_buffer_length
+TRACE kind=4 reason=2 fatal=1 session=1 row=0 id=0 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+PASS copied_input_and_full_queue
+TRACE kind=4 reason=2 fatal=1 session=1 row=2048 id=2047 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+PASS frame_consumer_stall_and_tokens
+TRACE kind=1 reason=768 fatal=0 session=1 row=1 id=103 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=768 fatal=0 session=1 row=2 id=105 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=485 fatal=1 session=1 row=4 id=106 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+PASS accepted_row_recovery_complete_reason_union
+TRACE kind=1 reason=16 fatal=1 session=1 row=1 id=0 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=0 id=12 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=8 fatal=1 session=1 row=1 id=11 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=4 reason=1024 fatal=1 session=1 row=1 id=0 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=4 reason=1024 fatal=1 session=1 row=18446744073709551615 id=0 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=1 id=1 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=4 reason=1024 fatal=1 session=1 row=3 id=2 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=4 reason=1024 fatal=1 session=1 row=1536 id=1535 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=4 reason=1024 fatal=1 session=1 row=0 id=0 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=4 reason=1024 fatal=1 session=1 row=1 id=0 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=4 reason=1024 fatal=1 session=1 row=1536 id=1535 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=1 id=1 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=4 reason=1024 fatal=1 session=1 row=3 id=2 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=0 id=0 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=1 id=1 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=2 id=2 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=3 id=3 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=4 id=4 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=5 id=5 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=6 id=6 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=7 id=7 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=8 id=8 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=9 id=9 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=10 id=10 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=11 id=11 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=12 id=12 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=13 id=13 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=14 id=14 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=15 id=15 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=16 id=16 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=17 id=17 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=18 id=18 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=19 id=19 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=20 id=20 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=21 id=21 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=22 id=22 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=23 id=23 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=24 id=24 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=25 id=25 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=26 id=26 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=27 id=27 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=28 id=28 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=29 id=29 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=30 id=30 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=31 id=31 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=32 id=32 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=33 id=33 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=34 id=34 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=35 id=35 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=36 id=36 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=37 id=37 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=38 id=38 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=39 id=39 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=40 id=40 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=41 id=41 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=42 id=42 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=43 id=43 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=44 id=44 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=45 id=45 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=46 id=46 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=47 id=47 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=48 id=48 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=49 id=49 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=50 id=50 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=51 id=51 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=52 id=52 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=53 id=53 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=54 id=54 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=55 id=55 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=56 id=56 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=57 id=57 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=58 id=58 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=59 id=59 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=60 id=60 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=61 id=61 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=62 id=62 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=256 fatal=0 session=1 row=63 id=63 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=1 reason=4352 fatal=1 session=1 row=64 id=64 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+PASS finite_counters_wrap_audit_overflow
+TRACE kind=6 reason=0 fatal=0 session=1 row=1024 id=1023 tx_session=1 tx_generation=1026 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=5 reason=2049 fatal=1 session=1 row=1024 id=1023 tx_session=1 tx_generation=1026 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=4 reason=2048 fatal=1 session=1 row=1024 id=1023 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+PASS result_status_barrier_once_only_and_retired_late_error
+TRACE kind=6 reason=0 fatal=0 session=1 row=1024 id=1023 tx_session=1 tx_generation=1026 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=8 reason=32768 fatal=0 session=1 row=1024 id=1023 tx_session=1 tx_generation=1026 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=8 reason=32768 fatal=0 session=1 row=1024 id=1023 tx_session=1 tx_generation=1026 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=8 reason=32768 fatal=0 session=1 row=1024 id=1023 tx_session=1 tx_generation=1026 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=6 reason=0 fatal=0 session=1 row=1024 id=1023 tx_session=1 tx_generation=1026 tx_slot=0 frame=0 interval=0 discarded=0
+PASS ttl_clock_config_and_addition_bounds
+TRACE kind=2 reason=0 fatal=0 session=1 row=1024 id=1023 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=7 reason=16384 fatal=0 session=2 row=0 id=0 tx_session=1 tx_generation=1026 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=7 reason=16384 fatal=0 session=2 row=0 id=0 tx_session=1 tx_generation=1026 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=3 reason=0 fatal=0 session=2 row=1 id=0 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=7 reason=16384 fatal=0 session=2 row=0 id=0 tx_session=1 tx_generation=1026 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=5 reason=1 fatal=0 session=1 row=1024 id=1023 tx_session=1 tx_generation=1026 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=4 reason=8192 fatal=1 session=1 row=1024 id=1023 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=6 reason=0 fatal=0 session=1 row=1024 id=1023 tx_session=1 tx_generation=1026 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=2 reason=0 fatal=0 session=1 row=1024 id=1023 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=5 reason=2049 fatal=1 session=1 row=1024 id=1023 tx_session=1 tx_generation=1026 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=4 reason=2048 fatal=1 session=1 row=1024 id=1023 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=5 reason=1 fatal=0 session=1 row=1024 id=1023 tx_session=1 tx_generation=1026 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=4 reason=8192 fatal=1 session=1 row=1024 id=1023 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=3 reason=0 fatal=0 session=1 row=1024 id=1023 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=5 reason=1 fatal=0 session=1 row=1024 id=1023 tx_session=1 tx_generation=1026 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=4 reason=8192 fatal=1 session=1 row=1024 id=1023 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=3 reason=0 fatal=0 session=1 row=1024 id=1023 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+PASS simultaneous_control_fault_completion_and_old_session
+TRACE kind=4 reason=2 fatal=1 session=1 row=3072 id=3071 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=2 reason=0 fatal=0 session=1 row=600 id=599 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=2 reason=0 fatal=0 session=2 row=600 id=1199 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=1
+TRACE kind=2 reason=0 fatal=0 session=18446744073709551615 row=0 id=0 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+TRACE kind=2 reason=0 fatal=0 session=1 row=1024 id=1023 tx_session=0 tx_generation=0 tx_slot=0 frame=0 interval=0 discarded=0
+PASS result_full_stop_tail_new_session
+MEMORY {"bridge":178856,"bridge_align":8,"group":32,"descriptor":152,"input":9040,"inputs":72320,"frame":32960,"frames":65920,"result":208,"results":832,"window":32768,"audit":6656}
+HOST_SELFTEST_PASS groups=9 assertions=27131

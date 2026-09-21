@@ -1,0 +1,37 @@
+{
+  "status": "AUTHOR_INCREMENT_PASS",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "cordic_vectors": 1215,
+  "original_counterexamples": 942,
+  "max_candidate_error_codes": 0.5077271740956348,
+  "max_original_error_codes": 2530.0,
+  "illegal_cordic_rejected": 6,
+  "rne_vectors": 162,
+  "saturation_vectors": 6,
+  "trace_faults_rejected": 13,
+  "dynamic_pcm_samples": 32,
+  "trace": {
+    "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+    "commits": 1,
+    "accepted": 32,
+    "resets": 1,
+    "late_errors": 0,
+    "stale_callbacks": 0
+  },
+  "late_reset": {
+    "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+    "commits": 1,
+    "accepted": 3,
+    "resets": 2,
+    "late_errors": 1,
+    "stale_callbacks": 1
+  },
+  "fft_runs": 0,
+  "amd_runs": 0,
+  "rtl_runs": 0,
+  "source_sha256": {
+    "task-packages/PKG-B-ALG/tasks/h3-complete-20260918/source/fixed_golden.py": "f6bb2bc41dee3f1e2e6d93176972d92db12d687978fd3a95a47e85b28f88a74a",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/dynamic-das-20260921/dynamic_das.py": "c0ccf39467e58c0fc75e88146d84119970fb1dbbbf99733ced8f8e3947fe7e3c"
+  }
+}

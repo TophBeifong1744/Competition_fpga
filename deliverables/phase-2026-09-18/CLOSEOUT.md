@@ -1,5 +1,17 @@
 # 2026-09-18 阶段收尾
 
+## 2026-09-21任务分派与索引收尾
+
+本轮固定输入`8cdebb64f87f7200689691385725f88d795b7671`，fetch及直接远端查询成功，本地main/origin/main/remote相同，ahead/behind=0/0。已批准材料和1673原件处置复用[readiness收尾](readiness-closeout-20260921.md)，不重复移动或重测。原日志ARCHIVED_LOCAL_CONTROLLED只限本机；下文NOT_ARCHIVED属历史。
+
+新增改动仅为统一dispatch、A/B入口、当前状态/台账及本阶段README/CLOSEOUT七份文档。未新增获准生产源码，不移动活动入口，不改RTL/BD/XDC/Vitis/默认算法，不重复技术测试；任务包/历史报告/清单原件不改。文档做链接、范围及空白检查后发布，发布准确SHA由本页Git历史和本轮回报定位。
+
+现有工程/工作执行/B任务没有可调用的跨聊天发送接口，任务状态READY_TO_FORWARD；内部辅助核查不冒充那些任务或成员回执。部分硬件工作仍需双方生产合同和拓芙选择/操作；总体任务未完成，完整H3与REALTIME_BLOCKED不变。
+
+本轮相关文档在发布后核对三端main及modified/staged/untracked/ignored；原continuous、帧适配、Skill、A旧工作稿、positioned-single-source-01及早期未发布复验草稿保留，不夹带。未删除任何分支、工作树、原件或备份，不声称全仓干净；本轮没有新增需要移入生产目录的获准代码。
+
+## 以下保留此前收尾时点
+
 `aa2b07d`后的B回执补记：B已提供合后核验的准确命令、cwd映射、输出身份和进程退出码，逐项见[合后回执与发布核对](../../docs/reviews/h3-run05-7a17edd/POSTMERGE-SUPPLEMENT.md)。包清单和18项输入在默认Python 3.7下退出0；39项测试与冻结检查在3.7下分别退出1，改用Python 3.12.14/NumPy 2.3.5后分别退出0。首错准确命令及Python退出1已从当时工具记录恢复；第二受控副本/访问控制仍未核实，归档状态为[NOT_ARCHIVED](../../docs/reviews/h3-run05-7a17edd/RAW-LOG-RETRIEVAL.md)。不重测、不改任务包，LIMITED PASS不变。
 
 ## 2026-09-20 B 合入后技术核验补记

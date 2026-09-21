@@ -1,0 +1,409 @@
+[
+  {
+    "name": "A-R1-available-before-final-status",
+    "expected_error": "availability precedes required status visibility",
+    "actual_error": "availability precedes required status visibility",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  },
+  {
+    "name": "A-R2-float-sample-identity",
+    "expected_error": "integer source_sample required",
+    "actual_error": "integer source_sample required",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  },
+  {
+    "name": "same-tick-final-status-and-commit",
+    "expected_error": null,
+    "actual_error": null,
+    "matched": true,
+    "original_misaccepted": false,
+    "result": {
+      "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+      "commits": 1,
+      "accepted": 32,
+      "resets": 1,
+      "late_errors": 0,
+      "stale_callbacks": 0
+    }
+  },
+  {
+    "name": "delayed-commit-at-completion-time",
+    "expected_error": null,
+    "actual_error": null,
+    "matched": true,
+    "original_misaccepted": false,
+    "result": {
+      "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+      "commits": 1,
+      "accepted": 0,
+      "resets": 1,
+      "late_errors": 0,
+      "stale_callbacks": 0
+    }
+  },
+  {
+    "name": "delayed-commit-later-availability",
+    "expected_error": null,
+    "actual_error": null,
+    "matched": true,
+    "original_misaccepted": false,
+    "result": {
+      "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+      "commits": 1,
+      "accepted": 0,
+      "resets": 1,
+      "late_errors": 0,
+      "stale_callbacks": 0
+    }
+  },
+  {
+    "name": "same-sample-different-capture-tick",
+    "expected_error": null,
+    "actual_error": null,
+    "matched": true,
+    "original_misaccepted": false,
+    "result": {
+      "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+      "commits": 1,
+      "accepted": 0,
+      "resets": 1,
+      "late_errors": 0,
+      "stale_callbacks": 0
+    }
+  },
+  {
+    "name": "expiry-equality",
+    "expected_error": null,
+    "actual_error": null,
+    "matched": true,
+    "original_misaccepted": false,
+    "result": {
+      "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+      "commits": 1,
+      "accepted": 0,
+      "resets": 1,
+      "late_errors": 0,
+      "stale_callbacks": 0
+    }
+  },
+  {
+    "name": "delayed-commit-backdated",
+    "expected_error": "availability precedes required status visibility",
+    "actual_error": "availability precedes required status visibility",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  },
+  {
+    "name": "future-commit-availability",
+    "expected_error": "future or expired commit",
+    "actual_error": "future or expired commit",
+    "matched": true,
+    "original_misaccepted": false,
+    "result": null
+  },
+  {
+    "name": "expired-delayed-commit",
+    "expected_error": "future or expired commit",
+    "actual_error": "future or expired commit",
+    "matched": true,
+    "original_misaccepted": false,
+    "result": null
+  },
+  {
+    "name": "downstream-completion-bound",
+    "expected_error": null,
+    "actual_error": null,
+    "matched": true,
+    "original_misaccepted": false,
+    "result": {
+      "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+      "commits": 1,
+      "accepted": 0,
+      "resets": 1,
+      "late_errors": 0,
+      "stale_callbacks": 0
+    }
+  },
+  {
+    "name": "downstream-cannot-be-backdated",
+    "expected_error": "availability precedes required status visibility",
+    "actual_error": "availability precedes required status visibility",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  },
+  {
+    "name": "downstream-missing-blocks-commit",
+    "expected_error": "non-atomic commit",
+    "actual_error": "non-atomic commit",
+    "matched": true,
+    "original_misaccepted": false,
+    "result": null
+  },
+  {
+    "name": "same-tick-error-blocks-delayed-commit",
+    "expected_error": "non-atomic commit",
+    "actual_error": "non-atomic commit",
+    "matched": true,
+    "original_misaccepted": false,
+    "result": null
+  },
+  {
+    "name": "per-frame-completion-2",
+    "expected_error": "availability precedes required status visibility",
+    "actual_error": "availability precedes required status visibility",
+    "matched": true,
+    "original_misaccepted": false,
+    "result": null
+  },
+  {
+    "name": "per-frame-completion-6",
+    "expected_error": null,
+    "actual_error": null,
+    "matched": true,
+    "original_misaccepted": false,
+    "result": {
+      "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+      "commits": 2,
+      "accepted": 0,
+      "resets": 1,
+      "late_errors": 0,
+      "stale_callbacks": 0
+    }
+  },
+  {
+    "name": "reset-new-session-restarts-time",
+    "expected_error": null,
+    "actual_error": null,
+    "matched": true,
+    "original_misaccepted": false,
+    "result": {
+      "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+      "commits": 2,
+      "accepted": 0,
+      "resets": 2,
+      "late_errors": 0,
+      "stale_callbacks": 0
+    }
+  },
+  {
+    "name": "uint64-maximum-completion",
+    "expected_error": null,
+    "actual_error": null,
+    "matched": true,
+    "original_misaccepted": false,
+    "result": {
+      "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+      "commits": 1,
+      "accepted": 0,
+      "resets": 1,
+      "late_errors": 0,
+      "stale_callbacks": 0
+    }
+  },
+  {
+    "name": "commit-available-domain-True",
+    "expected_error": "future or expired commit",
+    "actual_error": "future or expired commit",
+    "matched": true,
+    "original_misaccepted": false,
+    "result": null
+  },
+  {
+    "name": "commit-available-domain-2.0",
+    "expected_error": "future or expired commit",
+    "actual_error": "future or expired commit",
+    "matched": true,
+    "original_misaccepted": false,
+    "result": null
+  },
+  {
+    "name": "commit-available-domain--1",
+    "expected_error": "future or expired commit",
+    "actual_error": "future or expired commit",
+    "matched": true,
+    "original_misaccepted": false,
+    "result": null
+  },
+  {
+    "name": "commit-available-domain-18446744073709551616",
+    "expected_error": "future or expired commit",
+    "actual_error": "future or expired commit",
+    "matched": true,
+    "original_misaccepted": false,
+    "result": null
+  },
+  {
+    "name": "source-float-zero",
+    "expected_error": "integer source_sample required",
+    "actual_error": "integer source_sample required",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  },
+  {
+    "name": "source-bool-false",
+    "expected_error": "integer source_sample required",
+    "actual_error": "integer source_sample required",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  },
+  {
+    "name": "source-bool-true",
+    "expected_error": "integer source_sample required",
+    "actual_error": "integer source_sample required",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  },
+  {
+    "name": "startup-source-float",
+    "expected_error": "integer source_sample required",
+    "actual_error": "integer source_sample required",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  },
+  {
+    "name": "source-below-startup",
+    "expected_error": "source_sample outside profile domain",
+    "actual_error": "source_sample outside profile domain",
+    "matched": true,
+    "original_misaccepted": false,
+    "result": null
+  },
+  {
+    "name": "source-above-profile",
+    "expected_error": "source_sample outside profile domain",
+    "actual_error": "source_sample outside profile domain",
+    "matched": true,
+    "original_misaccepted": false,
+    "result": null
+  },
+  {
+    "name": "source-uint64-overflow",
+    "expected_error": "source_sample outside profile domain",
+    "actual_error": "source_sample outside profile domain",
+    "matched": true,
+    "original_misaccepted": false,
+    "result": null
+  },
+  {
+    "name": "available-float",
+    "expected_error": "uint64 output available required",
+    "actual_error": "uint64 output available required",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  },
+  {
+    "name": "available-bool-false",
+    "expected_error": "uint64 output available required",
+    "actual_error": "uint64 output available required",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  },
+  {
+    "name": "available-bool-true",
+    "expected_error": "uint64 output available required",
+    "actual_error": "uint64 output available required",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  },
+  {
+    "name": "available-negative",
+    "expected_error": "uint64 output available required",
+    "actual_error": "uint64 output available required",
+    "matched": true,
+    "original_misaccepted": false,
+    "result": null
+  },
+  {
+    "name": "available-overflow",
+    "expected_error": "uint64 output available required",
+    "actual_error": "uint64 output available required",
+    "matched": true,
+    "original_misaccepted": false,
+    "result": null
+  },
+  {
+    "name": "emit-float",
+    "expected_error": "output identity gap/duplicate",
+    "actual_error": "output identity gap/duplicate",
+    "matched": true,
+    "original_misaccepted": false,
+    "result": null
+  },
+  {
+    "name": "emit-bool",
+    "expected_error": "output identity gap/duplicate",
+    "actual_error": "output identity gap/duplicate",
+    "matched": true,
+    "original_misaccepted": false,
+    "result": null
+  },
+  {
+    "name": "first-stall-source_sample",
+    "expected_error": "integer source_sample required",
+    "actual_error": "integer source_sample required",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  },
+  {
+    "name": "first-stall-available",
+    "expected_error": "uint64 output available required",
+    "actual_error": "uint64 output available required",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  },
+  {
+    "name": "held-stall-source_sample",
+    "expected_error": "integer source_sample required",
+    "actual_error": "integer source_sample required",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  },
+  {
+    "name": "held-stall-available",
+    "expected_error": "uint64 output available required",
+    "actual_error": "uint64 output available required",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  },
+  {
+    "name": "accept-after-stall-source_sample",
+    "expected_error": "integer source_sample required",
+    "actual_error": "integer source_sample required",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  },
+  {
+    "name": "accept-after-stall-available",
+    "expected_error": "uint64 output available required",
+    "actual_error": "uint64 output available required",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  },
+  {
+    "name": "held-stall-bool-type-change",
+    "expected_error": "integer source_sample required",
+    "actual_error": "integer source_sample required",
+    "matched": true,
+    "original_misaccepted": true,
+    "result": null
+  }
+]

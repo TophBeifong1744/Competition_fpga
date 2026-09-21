@@ -1,0 +1,3 @@
+First local check exited 1 at check-local-closeout.py:11.
+AssertionError: docs/reviews/b-engineering-ad30bda/.gitattributes
+The initial check required both recovery original and newly checked-out file to share raw SHA-256. Follow-up now separately checks recovery originals by raw hash and records checkout-only CRLF differences. No original files, Git objects, or frozen manifests were changed. The 29 approved readiness files still require raw equality.

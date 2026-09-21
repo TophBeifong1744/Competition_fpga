@@ -1,0 +1,947 @@
+[
+  {
+    "argv": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "--version"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.02632610000000568,
+    "stdout": "001_compiler-version-stdout.txt",
+    "stderr": "001_compiler-version-stderr.txt"
+  },
+  {
+    "argv": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-I",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\source",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\source\\ps_bridge.c",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\source\\host.c",
+      "-O0",
+      "-g",
+      "-o",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.35213260000000446,
+    "stdout": "002_build-O0-stdout.txt",
+    "stderr": "002_build-O0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.3551563000000897,
+    "stdout": "003_selftest-O0-stdout.txt",
+    "stderr": "003_selftest-O0-stderr.txt"
+  },
+  {
+    "argv": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-I",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\source",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\source\\ps_bridge.c",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\source\\host.c",
+      "-O2",
+      "-g",
+      "-o",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.6820413999998891,
+    "stdout": "004_build-O2-stdout.txt",
+    "stderr": "004_build-O2-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.3583240000002661,
+    "stdout": "005_selftest-O2-stdout.txt",
+    "stderr": "005_selftest-O2-stderr.txt"
+  },
+  {
+    "argv": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-I",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\source",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\source\\ps_bridge.c",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\source\\host.c",
+      "-O1",
+      "-g",
+      "-fsanitize=address,undefined",
+      "-fno-omit-frame-pointer",
+      "-o",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\asan-ubsan.exe"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 1,
+    "host_elapsed_seconds": 0.9422219999996742,
+    "stdout": "006_build-asan-ubsan-stdout.txt",
+    "stderr": "006_build-asan-ubsan-stderr.txt"
+  },
+  {
+    "argv": [
+      "F:/Program/env/mingw64/bin/gcc.exe",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wshadow",
+      "-Werror",
+      "-I",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\source",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\source\\ps_bridge.c",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\source\\host.c",
+      "-O1",
+      "-g",
+      "-fsanitize=undefined",
+      "-fno-sanitize-recover=all",
+      "-o",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\ubsan.exe"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 1,
+    "host_elapsed_seconds": 0.6016113000000587,
+    "stdout": "007_build-ubsan-stdout.txt",
+    "stderr": "007_build-ubsan-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\short1023\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\short1023\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\short1023\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\short1023\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.015920299999834242,
+    "stdout": "008_short1023-0-stdout.txt",
+    "stderr": "008_short1023-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\short1023\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\short1023\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\short1023\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\short1023\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.015070299999933923,
+    "stdout": "009_short1023-1-stdout.txt",
+    "stderr": "009_short1023-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\exact1024\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\exact1024\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\exact1024\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\exact1024\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.013926600000104372,
+    "stdout": "010_exact1024-0-stdout.txt",
+    "stderr": "010_exact1024-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\exact1024\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\exact1024\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\exact1024\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\exact1024\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.029875000000174623,
+    "stdout": "011_exact1024-1-stdout.txt",
+    "stderr": "011_exact1024-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\two_hops2048\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\two_hops2048\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\two_hops2048\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\two_hops2048\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.015260699999998906,
+    "stdout": "012_two_hops2048-0-stdout.txt",
+    "stderr": "012_two_hops2048-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\two_hops2048\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\two_hops2048\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\two_hops2048\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\two_hops2048\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.015082400000210328,
+    "stdout": "013_two_hops2048-1-stdout.txt",
+    "stderr": "013_two_hops2048-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\cross_packets3000\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\cross_packets3000\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\cross_packets3000\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\cross_packets3000\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.033118000000285974,
+    "stdout": "014_cross_packets3000-0-stdout.txt",
+    "stderr": "014_cross_packets3000-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\cross_packets3000\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\cross_packets3000\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\cross_packets3000\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\cross_packets3000\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.021723300000303425,
+    "stdout": "015_cross_packets3000-1-stdout.txt",
+    "stderr": "015_cross_packets3000-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\clip3500\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\clip3500\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\clip3500\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\clip3500\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.01900759999989532,
+    "stdout": "016_clip3500-0-stdout.txt",
+    "stderr": "016_clip3500-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\clip3500\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\clip3500\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\clip3500\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\clip3500\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.017122400000062044,
+    "stdout": "017_clip3500-1-stdout.txt",
+    "stderr": "017_clip3500-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\gap4000\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\gap4000\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\gap4000\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\gap4000\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.015135000000100263,
+    "stdout": "018_gap4000-0-stdout.txt",
+    "stderr": "018_gap4000-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\gap4000\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\gap4000\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\gap4000\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\gap4000\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.01779569999962405,
+    "stdout": "019_gap4000-1-stdout.txt",
+    "stderr": "019_gap4000-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\restart_a\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\restart_a\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\restart_a\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\restart_a\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.013153399999737303,
+    "stdout": "020_restart_a-0-stdout.txt",
+    "stderr": "020_restart_a-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\restart_a\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\restart_a\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\restart_a\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\restart_a\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.023757199999636214,
+    "stdout": "021_restart_a-1-stdout.txt",
+    "stderr": "021_restart_a-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\restart_b\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\restart_b\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\restart_b\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\restart_b\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.01524619999963761,
+    "stdout": "022_restart_b-0-stdout.txt",
+    "stderr": "022_restart_b-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\restart_b\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\restart_b\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\restart_b\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\restart_b\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.013401400000020658,
+    "stdout": "023_restart_b-1-stdout.txt",
+    "stderr": "023_restart_b-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\zero\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\zero\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\zero\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\zero\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.014881500000228698,
+    "stdout": "024_zero-0-stdout.txt",
+    "stderr": "024_zero-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\zero\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\zero\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\zero\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\zero\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.014593800000056945,
+    "stdout": "025_zero-1-stdout.txt",
+    "stderr": "025_zero-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\before1535\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\before1535\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\before1535\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\before1535\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.012998100000004342,
+    "stdout": "026_before1535-0-stdout.txt",
+    "stderr": "026_before1535-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\before1535\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\before1535\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\before1535\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\before1535\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.013360800000100426,
+    "stdout": "027_before1535-1-stdout.txt",
+    "stderr": "027_before1535-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\exact1536\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\exact1536\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\exact1536\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\exact1536\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.014159900000322523,
+    "stdout": "028_exact1536-0-stdout.txt",
+    "stderr": "028_exact1536-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\exact1536\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\exact1536\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\exact1536\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\exact1536\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.014068200000110664,
+    "stdout": "029_exact1536-1-stdout.txt",
+    "stderr": "029_exact1536-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\multi2048\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\multi2048\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\multi2048\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\multi2048\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.015818599999875005,
+    "stdout": "030_multi2048-0-stdout.txt",
+    "stderr": "030_multi2048-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\multi2048\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\multi2048\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\multi2048\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\multi2048\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.01662399999986519,
+    "stdout": "031_multi2048-1-stdout.txt",
+    "stderr": "031_multi2048-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\repeated_gap\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\repeated_gap\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\repeated_gap\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\repeated_gap\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.016619100000298204,
+    "stdout": "032_repeated_gap-0-stdout.txt",
+    "stderr": "032_repeated_gap-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\repeated_gap\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\repeated_gap\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\repeated_gap\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\repeated_gap\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.016049199999997654,
+    "stdout": "033_repeated_gap-1-stdout.txt",
+    "stderr": "033_repeated_gap-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\all_error\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\all_error\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\all_error\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\all_error\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.021788699999888195,
+    "stdout": "034_all_error-0-stdout.txt",
+    "stderr": "034_all_error-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\all_error\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\all_error\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\all_error\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\all_error\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.013739399999849411,
+    "stdout": "035_all_error-1-stdout.txt",
+    "stderr": "035_all_error-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\continuous_clip\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\continuous_clip\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\continuous_clip\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\continuous_clip\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.018213899999864225,
+    "stdout": "036_continuous_clip-0-stdout.txt",
+    "stderr": "036_continuous_clip-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\continuous_clip\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\continuous_clip\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\continuous_clip\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\continuous_clip\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.03026289999979781,
+    "stdout": "037_continuous_clip-1-stdout.txt",
+    "stderr": "037_continuous_clip-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\duplicate\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\duplicate\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\duplicate\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\duplicate\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.01584420000017417,
+    "stdout": "038_duplicate-0-stdout.txt",
+    "stderr": "038_duplicate-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\duplicate\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\duplicate\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\duplicate\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\duplicate\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.014608200000111538,
+    "stdout": "039_duplicate-1-stdout.txt",
+    "stderr": "039_duplicate-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\reverse_after_clip\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\reverse_after_clip\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\reverse_after_clip\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\reverse_after_clip\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.015588599999773578,
+    "stdout": "040_reverse_after_clip-0-stdout.txt",
+    "stderr": "040_reverse_after_clip-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\reverse_after_clip\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\reverse_after_clip\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\reverse_after_clip\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\reverse_after_clip\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.014512100000047212,
+    "stdout": "041_reverse_after_clip-1-stdout.txt",
+    "stderr": "041_reverse_after_clip-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\wrap\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\wrap\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\wrap\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\wrap\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.014524400000027526,
+    "stdout": "042_wrap-0-stdout.txt",
+    "stderr": "042_wrap-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\wrap\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\wrap\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\wrap\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\wrap\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.02258769999980359,
+    "stdout": "043_wrap-1-stdout.txt",
+    "stderr": "043_wrap-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\max_id_frame\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\max_id_frame\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\max_id_frame\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\max_id_frame\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.014909299999999348,
+    "stdout": "044_max_id_frame-0-stdout.txt",
+    "stderr": "044_max_id_frame-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\max_id_frame\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\max_id_frame\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\max_id_frame\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\max_id_frame\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.012467800000194984,
+    "stdout": "045_max_id_frame-1-stdout.txt",
+    "stderr": "045_max_id_frame-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\error_code_only\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\error_code_only\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\error_code_only\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\error_code_only\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.014820800000052259,
+    "stdout": "046_error_code_only-0-stdout.txt",
+    "stderr": "046_error_code_only-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\error_code_only\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\error_code_only\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\error_code_only\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\error_code_only\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.012453800000002957,
+    "stdout": "047_error_code_only-1-stdout.txt",
+    "stderr": "047_error_code_only-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\integrity_only\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\integrity_only\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\integrity_only\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\integrity_only\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.02567159999989599,
+    "stdout": "048_integrity_only-0-stdout.txt",
+    "stderr": "048_integrity_only-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\integrity_only\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\integrity_only\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\integrity_only\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\integrity_only\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.016117499999836582,
+    "stdout": "049_integrity_only-1-stdout.txt",
+    "stderr": "049_integrity_only-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\union\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\union\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\union\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\union\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.012411499999871012,
+    "stdout": "050_union-0-stdout.txt",
+    "stderr": "050_union-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\union\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\union\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\union\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\union\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.013498300000264862,
+    "stdout": "051_union-1-stdout.txt",
+    "stderr": "051_union-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\invalid_flags\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\invalid_flags\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\invalid_flags\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\invalid_flags\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.013039399999797752,
+    "stdout": "052_invalid_flags-0-stdout.txt",
+    "stderr": "052_invalid_flags-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\invalid_flags\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\invalid_flags\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\invalid_flags\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\invalid_flags\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.01384649999999965,
+    "stdout": "053_invalid_flags-1-stdout.txt",
+    "stderr": "053_invalid_flags-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\reserved\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\reserved\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\reserved\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\reserved\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.017023500000050262,
+    "stdout": "054_reserved-0-stdout.txt",
+    "stderr": "054_reserved-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\reserved\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\reserved\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\reserved\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\reserved\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.012230100000124366,
+    "stdout": "055_reserved-1-stdout.txt",
+    "stderr": "055_reserved-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\s24_edges\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\s24_edges\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\s24_edges\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\s24_edges\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.014370400000188965,
+    "stdout": "056_s24_edges-0-stdout.txt",
+    "stderr": "056_s24_edges-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\s24_edges\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\s24_edges\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\s24_edges\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\s24_edges\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.01360160000012911,
+    "stdout": "057_s24_edges-1-stdout.txt",
+    "stderr": "057_s24_edges-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\bad_signext\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\bad_signext\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\bad_signext\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\bad_signext\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.014585600000373233,
+    "stdout": "058_bad_signext-0-stdout.txt",
+    "stderr": "058_bad_signext-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\bad_signext\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\bad_signext\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\bad_signext\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\bad_signext\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.014794100000017352,
+    "stdout": "059_bad_signext-1-stdout.txt",
+    "stderr": "059_bad_signext-1-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O0.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\old_clip_counterexample\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\old_clip_counterexample\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\old_clip_counterexample\\frames-0.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\old_clip_counterexample\\events-0.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.01687949999995908,
+    "stdout": "060_old_clip_counterexample-0-stdout.txt",
+    "stderr": "060_old_clip_counterexample-0-stderr.txt"
+  },
+  {
+    "argv": [
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\host-O2.exe",
+      "replay",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\old_clip_counterexample\\input.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\old_clip_counterexample\\upstream.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\old_clip_counterexample\\frames-1.bin",
+      "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\ps-semantic-bridge-candidate-01\\evidence\\run01\\old_clip_counterexample\\events-1.jsonl"
+    ],
+    "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga",
+    "exit_code": 0,
+    "host_elapsed_seconds": 0.015503300000091258,
+    "stdout": "061_old_clip_counterexample-1-stdout.txt",
+    "stderr": "061_old_clip_counterexample-1-stderr.txt"
+  }
+]
