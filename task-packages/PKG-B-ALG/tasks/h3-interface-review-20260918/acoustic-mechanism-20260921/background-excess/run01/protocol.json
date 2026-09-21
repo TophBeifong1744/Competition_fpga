@@ -1,0 +1,16 @@
+{
+  "reference_capture": "trusted_bg_pre_20260920_01",
+  "reference": "per-channel per-bin linear percentile95 of uncentered Hann1024 spectrum power",
+  "weight": "sqrt(max(0,1-N95/Pi)*max(0,1-N95/Pj))",
+  "band": [
+    7,
+    85
+  ],
+  "mask": "original full-band2percent unchanged",
+  "min_positive_weight_bins": 12,
+  "activity": "frozen calibrated gate unchanged",
+  "tracker": "unchanged cone60/acquire5/spread8/hold200ms",
+  "sweep": false,
+  "all_eight_already_inspected": true,
+  "independent_validation": false
+}

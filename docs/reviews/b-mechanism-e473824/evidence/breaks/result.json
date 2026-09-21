@@ -1,0 +1,2882 @@
+{
+  "status": "AUTHOR_ATTRIBUTION_NOT_NEW_ALGORITHM",
+  "input_sha256": "c3f914eaefb4d4e87ea66c2af506a7d281fc225eb2854e0ac257534aafa3c6c1",
+  "totals": {
+    "baseline": {
+      "frame_causes": {
+        "activity_gate_closed": 3701,
+        "geometry_rejected": 472,
+        "eligible": 137,
+        "outside_cone": 178
+      },
+      "break_counts": {
+        "geometry_rejected": 71,
+        "spread_restart": 27,
+        "outside_cone": 27,
+        "activity_gate_closed": 3
+      },
+      "longest_eligible_run": 5,
+      "max_acquire": 3
+    },
+    "joint": {
+      "frame_causes": {
+        "activity_gate_closed": 3701,
+        "geometry_rejected": 197,
+        "eligible": 267,
+        "outside_cone": 323
+      },
+      "break_counts": {
+        "geometry_rejected": 42,
+        "spread_restart": 102,
+        "outside_cone": 88,
+        "activity_gate_closed": 5
+      },
+      "longest_eligible_run": 8,
+      "max_acquire": 3
+    }
+  },
+  "captures": [
+    {
+      "capture": "trusted_000_20260920_01",
+      "baseline": {
+        "frames": 561,
+        "frame_causes": {
+          "activity_gate_closed": 425,
+          "geometry_rejected": 87,
+          "eligible": 26,
+          "outside_cone": 23
+        },
+        "longest_eligible_run": 3,
+        "max_acquire": 2,
+        "break_counts": {
+          "geometry_rejected": 15,
+          "spread_restart": 5,
+          "outside_cone": 4
+        },
+        "events": [
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 66560,
+            "break_start": 67072,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 70144,
+            "break_start": 70656,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 70656,
+            "break_start": 71168,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 72192,
+            "break_start": 72704,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 108544,
+            "break_start": 109056,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 110080,
+            "break_start": 110592,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 110592,
+            "break_start": 111104,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 113664,
+            "break_start": 114176,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 119808,
+            "break_start": 120320,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 120832,
+            "break_start": 121344,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 121344,
+            "break_start": 121856,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 125952,
+            "break_start": 126464,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 128000,
+            "break_start": 128512,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 131072,
+            "break_start": 131584,
+            "previous_acquire_count": 2,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 133120,
+            "break_start": 133632,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 138240,
+            "break_start": 138752,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 139264,
+            "break_start": 139776,
+            "previous_acquire_count": 2,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 142336,
+            "break_start": 142848,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 144384,
+            "break_start": 144896,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 147968,
+            "break_start": 148480,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 148480,
+            "break_start": 148992,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 149504,
+            "break_start": 150016,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 272384,
+            "break_start": 272896,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 275456,
+            "break_start": 275968,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          }
+        ]
+      },
+      "joint": {
+        "frames": 561,
+        "frame_causes": {
+          "activity_gate_closed": 425,
+          "geometry_rejected": 32,
+          "eligible": 62,
+          "outside_cone": 42
+        },
+        "longest_eligible_run": 7,
+        "max_acquire": 2,
+        "break_counts": {
+          "geometry_rejected": 8,
+          "spread_restart": 34,
+          "outside_cone": 15
+        },
+        "events": [
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 66560,
+            "break_start": 67072,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 70144,
+            "break_start": 70656,
+            "previous_acquire_count": 2,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 70656,
+            "break_start": 71168,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 72192,
+            "break_start": 72704,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 73216,
+            "break_start": 73728,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 89088,
+            "break_start": 89600,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 94720,
+            "break_start": 95232,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 96256,
+            "break_start": 96768,
+            "previous_acquire_count": 2,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 96768,
+            "break_start": 97280,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 108544,
+            "break_start": 109056,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 110080,
+            "break_start": 110592,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 110592,
+            "break_start": 111104,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 113152,
+            "break_start": 113664,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 113664,
+            "break_start": 114176,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 119808,
+            "break_start": 120320,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 120832,
+            "break_start": 121344,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 121344,
+            "break_start": 121856,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 125952,
+            "break_start": 126464,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 126464,
+            "break_start": 126976,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 128000,
+            "break_start": 128512,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 130560,
+            "break_start": 131072,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 131072,
+            "break_start": 131584,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 131584,
+            "break_start": 132096,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 132096,
+            "break_start": 132608,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 132608,
+            "break_start": 133120,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 133120,
+            "break_start": 133632,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 137728,
+            "break_start": 138240,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 138240,
+            "break_start": 138752,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 138752,
+            "break_start": 139264,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 139776,
+            "break_start": 140288,
+            "previous_acquire_count": 2,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 140800,
+            "break_start": 141312,
+            "previous_acquire_count": 2,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 141824,
+            "break_start": 142336,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 142336,
+            "break_start": 142848,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 142848,
+            "break_start": 143360,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 143360,
+            "break_start": 143872,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 143872,
+            "break_start": 144384,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 144384,
+            "break_start": 144896,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 144896,
+            "break_start": 145408,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 147456,
+            "break_start": 147968,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 147968,
+            "break_start": 148480,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 148480,
+            "break_start": 148992,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 149504,
+            "break_start": 150016,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 151040,
+            "break_start": 151552,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 151552,
+            "break_start": 152064,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 152064,
+            "break_start": 152576,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 153088,
+            "break_start": 153600,
+            "previous_acquire_count": 2,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 153600,
+            "break_start": 154112,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 154112,
+            "break_start": 154624,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 272384,
+            "break_start": 272896,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 273408,
+            "break_start": 273920,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 273920,
+            "break_start": 274432,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 275456,
+            "break_start": 275968,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 275968,
+            "break_start": 276480,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 276480,
+            "break_start": 276992,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 276992,
+            "break_start": 277504,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 277504,
+            "break_start": 278016,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_01",
+            "previous_start": 278016,
+            "break_start": 278528,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          }
+        ]
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "baseline": {
+        "frames": 561,
+        "frame_causes": {
+          "activity_gate_closed": 453,
+          "geometry_rejected": 52,
+          "eligible": 36,
+          "outside_cone": 20
+        },
+        "longest_eligible_run": 5,
+        "max_acquire": 3,
+        "break_counts": {
+          "geometry_rejected": 15,
+          "spread_restart": 11,
+          "outside_cone": 5
+        },
+        "events": [
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 53248,
+            "break_start": 53760,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 56320,
+            "break_start": 56832,
+            "previous_acquire_count": 2,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 56832,
+            "break_start": 57344,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 60928,
+            "break_start": 61440,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 96768,
+            "break_start": 97280,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 97280,
+            "break_start": 97792,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 97792,
+            "break_start": 98304,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 98304,
+            "break_start": 98816,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 103424,
+            "break_start": 103936,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 105472,
+            "break_start": 105984,
+            "previous_acquire_count": 3,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 106496,
+            "break_start": 107008,
+            "previous_acquire_count": 2,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 116224,
+            "break_start": 116736,
+            "previous_acquire_count": 2,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 116736,
+            "break_start": 117248,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 118272,
+            "break_start": 118784,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 123392,
+            "break_start": 123904,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 124416,
+            "break_start": 124928,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 124928,
+            "break_start": 125440,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 125440,
+            "break_start": 125952,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 126464,
+            "break_start": 126976,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 127488,
+            "break_start": 128000,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 129024,
+            "break_start": 129536,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 129536,
+            "break_start": 130048,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 130560,
+            "break_start": 131072,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 131072,
+            "break_start": 131584,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 134144,
+            "break_start": 134656,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 134656,
+            "break_start": 135168,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 135680,
+            "break_start": 136192,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 137728,
+            "break_start": 138240,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 258048,
+            "break_start": 258560,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 260096,
+            "break_start": 260608,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 262656,
+            "break_start": 263168,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          }
+        ]
+      },
+      "joint": {
+        "frames": 561,
+        "frame_causes": {
+          "activity_gate_closed": 453,
+          "geometry_rejected": 15,
+          "eligible": 58,
+          "outside_cone": 35
+        },
+        "longest_eligible_run": 8,
+        "max_acquire": 3,
+        "break_counts": {
+          "spread_restart": 27,
+          "geometry_rejected": 7,
+          "outside_cone": 13
+        },
+        "events": [
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 53248,
+            "break_start": 53760,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 53760,
+            "break_start": 54272,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 54784,
+            "break_start": 55296,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 55296,
+            "break_start": 55808,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 55808,
+            "break_start": 56320,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 56320,
+            "break_start": 56832,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 56832,
+            "break_start": 57344,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 58880,
+            "break_start": 59392,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 60416,
+            "break_start": 60928,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 60928,
+            "break_start": 61440,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 97280,
+            "break_start": 97792,
+            "previous_acquire_count": 2,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 97792,
+            "break_start": 98304,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 98304,
+            "break_start": 98816,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 98816,
+            "break_start": 99328,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 103424,
+            "break_start": 103936,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 105472,
+            "break_start": 105984,
+            "previous_acquire_count": 3,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 106496,
+            "break_start": 107008,
+            "previous_acquire_count": 2,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 113664,
+            "break_start": 114176,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 115200,
+            "break_start": 115712,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 116224,
+            "break_start": 116736,
+            "previous_acquire_count": 2,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 116736,
+            "break_start": 117248,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 117760,
+            "break_start": 118272,
+            "previous_acquire_count": 2,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 118272,
+            "break_start": 118784,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 118784,
+            "break_start": 119296,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 123392,
+            "break_start": 123904,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 124928,
+            "break_start": 125440,
+            "previous_acquire_count": 2,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 125440,
+            "break_start": 125952,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 126464,
+            "break_start": 126976,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 126976,
+            "break_start": 127488,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 127488,
+            "break_start": 128000,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 128512,
+            "break_start": 129024,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 129536,
+            "break_start": 130048,
+            "previous_acquire_count": 2,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 130048,
+            "break_start": 130560,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 130560,
+            "break_start": 131072,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 131584,
+            "break_start": 132096,
+            "previous_acquire_count": 2,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 134144,
+            "break_start": 134656,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 134656,
+            "break_start": 135168,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 135168,
+            "break_start": 135680,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 135680,
+            "break_start": 136192,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 137728,
+            "break_start": 138240,
+            "previous_acquire_count": 2,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 258048,
+            "break_start": 258560,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 260096,
+            "break_start": 260608,
+            "previous_acquire_count": 2,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 261120,
+            "break_start": 261632,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 262144,
+            "break_start": 262656,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 262656,
+            "break_start": 263168,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 263168,
+            "break_start": 263680,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_000_20260920_02",
+            "previous_start": 267776,
+            "break_start": 268288,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          }
+        ]
+      }
+    },
+    {
+      "capture": "trusted_bg_post_20260920_01",
+      "baseline": {
+        "frames": 561,
+        "frame_causes": {
+          "activity_gate_closed": 561
+        },
+        "longest_eligible_run": 0,
+        "max_acquire": 0,
+        "break_counts": {},
+        "events": []
+      },
+      "joint": {
+        "frames": 561,
+        "frame_causes": {
+          "activity_gate_closed": 561
+        },
+        "longest_eligible_run": 0,
+        "max_acquire": 0,
+        "break_counts": {},
+        "events": []
+      }
+    },
+    {
+      "capture": "trusted_bg_pre_20260920_01",
+      "baseline": {
+        "frames": 561,
+        "frame_causes": {
+          "activity_gate_closed": 561
+        },
+        "longest_eligible_run": 0,
+        "max_acquire": 0,
+        "break_counts": {},
+        "events": []
+      },
+      "joint": {
+        "frames": 561,
+        "frame_causes": {
+          "activity_gate_closed": 561
+        },
+        "longest_eligible_run": 0,
+        "max_acquire": 0,
+        "break_counts": {},
+        "events": []
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "baseline": {
+        "frames": 561,
+        "frame_causes": {
+          "activity_gate_closed": 424,
+          "outside_cone": 37,
+          "geometry_rejected": 78,
+          "eligible": 22
+        },
+        "longest_eligible_run": 2,
+        "max_acquire": 1,
+        "break_counts": {
+          "spread_restart": 4,
+          "geometry_rejected": 12,
+          "outside_cone": 5,
+          "activity_gate_closed": 1
+        },
+        "events": [
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 55296,
+            "break_start": 55808,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 55808,
+            "break_start": 56320,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 58880,
+            "break_start": 59392,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 60416,
+            "break_start": 60928,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 60928,
+            "break_start": 61440,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 95232,
+            "break_start": 95744,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 96256,
+            "break_start": 96768,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 97792,
+            "break_start": 98304,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 98816,
+            "break_start": 99328,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 116736,
+            "break_start": 117248,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 117248,
+            "break_start": 117760,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 119808,
+            "break_start": 120320,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 125952,
+            "break_start": 126464,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 126976,
+            "break_start": 127488,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 129536,
+            "break_start": 130048,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 130560,
+            "break_start": 131072,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 132608,
+            "break_start": 133120,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 135168,
+            "break_start": 135680,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 136192,
+            "break_start": 136704,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 136704,
+            "break_start": 137216,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 260096,
+            "break_start": 260608,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 268288,
+            "break_start": 268800,
+            "previous_acquire_count": 1,
+            "reason": "activity_gate_closed"
+          }
+        ]
+      },
+      "joint": {
+        "frames": 561,
+        "frame_causes": {
+          "activity_gate_closed": 424,
+          "outside_cone": 76,
+          "geometry_rejected": 31,
+          "eligible": 30
+        },
+        "longest_eligible_run": 4,
+        "max_acquire": 3,
+        "break_counts": {
+          "geometry_rejected": 3,
+          "outside_cone": 17,
+          "spread_restart": 4,
+          "activity_gate_closed": 1
+        },
+        "events": [
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 55808,
+            "break_start": 56320,
+            "previous_acquire_count": 2,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 59392,
+            "break_start": 59904,
+            "previous_acquire_count": 2,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 60416,
+            "break_start": 60928,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 60928,
+            "break_start": 61440,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 92160,
+            "break_start": 92672,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 95232,
+            "break_start": 95744,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 96256,
+            "break_start": 96768,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 97792,
+            "break_start": 98304,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 98816,
+            "break_start": 99328,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 115200,
+            "break_start": 115712,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 116736,
+            "break_start": 117248,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 117760,
+            "break_start": 118272,
+            "previous_acquire_count": 2,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 119808,
+            "break_start": 120320,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 120320,
+            "break_start": 120832,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 125952,
+            "break_start": 126464,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 130560,
+            "break_start": 131072,
+            "previous_acquire_count": 3,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 131072,
+            "break_start": 131584,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 132608,
+            "break_start": 133120,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 135168,
+            "break_start": 135680,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 136704,
+            "break_start": 137216,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 260096,
+            "break_start": 260608,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 261632,
+            "break_start": 262144,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 268288,
+            "break_start": 268800,
+            "previous_acquire_count": 1,
+            "reason": "activity_gate_closed"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 279040,
+            "break_start": 279552,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_01",
+            "previous_start": 281088,
+            "break_start": 281600,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          }
+        ]
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "baseline": {
+        "frames": 561,
+        "frame_causes": {
+          "activity_gate_closed": 429,
+          "geometry_rejected": 87,
+          "outside_cone": 30,
+          "eligible": 15
+        },
+        "longest_eligible_run": 3,
+        "max_acquire": 2,
+        "break_counts": {
+          "geometry_rejected": 8,
+          "activity_gate_closed": 1,
+          "spread_restart": 2,
+          "outside_cone": 3
+        },
+        "events": [
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 48640,
+            "break_start": 49152,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 55808,
+            "break_start": 56320,
+            "previous_acquire_count": 1,
+            "reason": "activity_gate_closed"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 96768,
+            "break_start": 97280,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 103936,
+            "break_start": 104448,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 104960,
+            "break_start": 105472,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 105472,
+            "break_start": 105984,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 108544,
+            "break_start": 109056,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 110592,
+            "break_start": 111104,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 115712,
+            "break_start": 116224,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 117760,
+            "break_start": 118272,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 124928,
+            "break_start": 125440,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 126976,
+            "break_start": 127488,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 128512,
+            "break_start": 129024,
+            "previous_acquire_count": 2,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 129024,
+            "break_start": 129536,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          }
+        ]
+      },
+      "joint": {
+        "frames": 561,
+        "frame_causes": {
+          "activity_gate_closed": 429,
+          "geometry_rejected": 35,
+          "outside_cone": 55,
+          "eligible": 42
+        },
+        "longest_eligible_run": 4,
+        "max_acquire": 2,
+        "break_counts": {
+          "outside_cone": 17,
+          "geometry_rejected": 8,
+          "activity_gate_closed": 2,
+          "spread_restart": 12
+        },
+        "events": [
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 46592,
+            "break_start": 47104,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 48640,
+            "break_start": 49152,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 51712,
+            "break_start": 52224,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 52736,
+            "break_start": 53248,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 53760,
+            "break_start": 54272,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 55808,
+            "break_start": 56320,
+            "previous_acquire_count": 1,
+            "reason": "activity_gate_closed"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 89088,
+            "break_start": 89600,
+            "previous_acquire_count": 2,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 90112,
+            "break_start": 90624,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 96768,
+            "break_start": 97280,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 102400,
+            "break_start": 102912,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 103936,
+            "break_start": 104448,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 104960,
+            "break_start": 105472,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 105472,
+            "break_start": 105984,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 108032,
+            "break_start": 108544,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 108544,
+            "break_start": 109056,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 109056,
+            "break_start": 109568,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 110592,
+            "break_start": 111104,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 117760,
+            "break_start": 118272,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 120832,
+            "break_start": 121344,
+            "previous_acquire_count": 2,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 122368,
+            "break_start": 122880,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 122880,
+            "break_start": 123392,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 123392,
+            "break_start": 123904,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 124928,
+            "break_start": 125440,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 126976,
+            "break_start": 127488,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 128512,
+            "break_start": 129024,
+            "previous_acquire_count": 2,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 129024,
+            "break_start": 129536,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 130048,
+            "break_start": 130560,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 130560,
+            "break_start": 131072,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 131072,
+            "break_start": 131584,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 131584,
+            "break_start": 132096,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 132608,
+            "break_start": 133120,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 133632,
+            "break_start": 134144,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 134144,
+            "break_start": 134656,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 135168,
+            "break_start": 135680,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 135680,
+            "break_start": 136192,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 136192,
+            "break_start": 136704,
+            "previous_acquire_count": 1,
+            "reason": "activity_gate_closed"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 253952,
+            "break_start": 254464,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 254976,
+            "break_start": 255488,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_m045_20260920_02",
+            "previous_start": 257024,
+            "break_start": 257536,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          }
+        ]
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "baseline": {
+        "frames": 561,
+        "frame_causes": {
+          "activity_gate_closed": 429,
+          "geometry_rejected": 91,
+          "eligible": 21,
+          "outside_cone": 20
+        },
+        "longest_eligible_run": 2,
+        "max_acquire": 1,
+        "break_counts": {
+          "geometry_rejected": 13,
+          "outside_cone": 5,
+          "spread_restart": 3
+        },
+        "events": [
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 58880,
+            "break_start": 59392,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 68608,
+            "break_start": 69120,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 104960,
+            "break_start": 105472,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 112128,
+            "break_start": 112640,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 118784,
+            "break_start": 119296,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 119296,
+            "break_start": 119808,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 120320,
+            "break_start": 120832,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 123904,
+            "break_start": 124416,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 130560,
+            "break_start": 131072,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 131584,
+            "break_start": 132096,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 133120,
+            "break_start": 133632,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 136192,
+            "break_start": 136704,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 140800,
+            "break_start": 141312,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 141312,
+            "break_start": 141824,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 146432,
+            "break_start": 146944,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 146944,
+            "break_start": 147456,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 147968,
+            "break_start": 148480,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 266752,
+            "break_start": 267264,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 270336,
+            "break_start": 270848,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 283648,
+            "break_start": 284160,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 284672,
+            "break_start": 285184,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          }
+        ]
+      },
+      "joint": {
+        "frames": 561,
+        "frame_causes": {
+          "activity_gate_closed": 429,
+          "geometry_rejected": 47,
+          "eligible": 41,
+          "outside_cone": 44
+        },
+        "longest_eligible_run": 7,
+        "max_acquire": 3,
+        "break_counts": {
+          "geometry_rejected": 7,
+          "outside_cone": 13,
+          "spread_restart": 16,
+          "activity_gate_closed": 1
+        },
+        "events": [
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 59392,
+            "break_start": 59904,
+            "previous_acquire_count": 2,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 61952,
+            "break_start": 62464,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 63488,
+            "break_start": 64000,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 68608,
+            "break_start": 69120,
+            "previous_acquire_count": 3,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 69120,
+            "break_start": 69632,
+            "previous_acquire_count": 1,
+            "reason": "activity_gate_closed"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 101376,
+            "break_start": 101888,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 102400,
+            "break_start": 102912,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 104960,
+            "break_start": 105472,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 112128,
+            "break_start": 112640,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 113152,
+            "break_start": 113664,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 118784,
+            "break_start": 119296,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 119296,
+            "break_start": 119808,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 119808,
+            "break_start": 120320,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 120320,
+            "break_start": 120832,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 123904,
+            "break_start": 124416,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 124416,
+            "break_start": 124928,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 130560,
+            "break_start": 131072,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 131584,
+            "break_start": 132096,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 132096,
+            "break_start": 132608,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 133120,
+            "break_start": 133632,
+            "previous_acquire_count": 2,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 136192,
+            "break_start": 136704,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 140288,
+            "break_start": 140800,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 140800,
+            "break_start": 141312,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 141312,
+            "break_start": 141824,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 142336,
+            "break_start": 142848,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 144896,
+            "break_start": 145408,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 145408,
+            "break_start": 145920,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 145920,
+            "break_start": 146432,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 146432,
+            "break_start": 146944,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 146944,
+            "break_start": 147456,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 147456,
+            "break_start": 147968,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 147968,
+            "break_start": 148480,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 266240,
+            "break_start": 266752,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 266752,
+            "break_start": 267264,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 270336,
+            "break_start": 270848,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 283648,
+            "break_start": 284160,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_01",
+            "previous_start": 284672,
+            "break_start": 285184,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          }
+        ]
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "baseline": {
+        "frames": 561,
+        "frame_causes": {
+          "activity_gate_closed": 419,
+          "geometry_rejected": 77,
+          "eligible": 17,
+          "outside_cone": 48
+        },
+        "longest_eligible_run": 2,
+        "max_acquire": 2,
+        "break_counts": {
+          "geometry_rejected": 8,
+          "activity_gate_closed": 1,
+          "spread_restart": 2,
+          "outside_cone": 5
+        },
+        "events": [
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 50688,
+            "break_start": 51200,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 53248,
+            "break_start": 53760,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 54784,
+            "break_start": 55296,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 58880,
+            "break_start": 59392,
+            "previous_acquire_count": 1,
+            "reason": "activity_gate_closed"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 102400,
+            "break_start": 102912,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 108544,
+            "break_start": 109056,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 109056,
+            "break_start": 109568,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 111616,
+            "break_start": 112128,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 114176,
+            "break_start": 114688,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 121344,
+            "break_start": 121856,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 121856,
+            "break_start": 122368,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 124416,
+            "break_start": 124928,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 126976,
+            "break_start": 127488,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 132096,
+            "break_start": 132608,
+            "previous_acquire_count": 2,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 146432,
+            "break_start": 146944,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 167936,
+            "break_start": 168448,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          }
+        ]
+      },
+      "joint": {
+        "frames": 561,
+        "frame_causes": {
+          "activity_gate_closed": 419,
+          "geometry_rejected": 37,
+          "eligible": 34,
+          "outside_cone": 71
+        },
+        "longest_eligible_run": 3,
+        "max_acquire": 2,
+        "break_counts": {
+          "geometry_rejected": 9,
+          "spread_restart": 9,
+          "outside_cone": 13,
+          "activity_gate_closed": 1
+        },
+        "events": [
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 50688,
+            "break_start": 51200,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 53248,
+            "break_start": 53760,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 53760,
+            "break_start": 54272,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 54784,
+            "break_start": 55296,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 57344,
+            "break_start": 57856,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 58880,
+            "break_start": 59392,
+            "previous_acquire_count": 1,
+            "reason": "activity_gate_closed"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 91648,
+            "break_start": 92160,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 102400,
+            "break_start": 102912,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 108544,
+            "break_start": 109056,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 109056,
+            "break_start": 109568,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 110592,
+            "break_start": 111104,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 111104,
+            "break_start": 111616,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 111616,
+            "break_start": 112128,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 112640,
+            "break_start": 113152,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 114176,
+            "break_start": 114688,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 115200,
+            "break_start": 115712,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 121856,
+            "break_start": 122368,
+            "previous_acquire_count": 2,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 122880,
+            "break_start": 123392,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 123904,
+            "break_start": 124416,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 124416,
+            "break_start": 124928,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 125440,
+            "break_start": 125952,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 125952,
+            "break_start": 126464,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 126976,
+            "break_start": 127488,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 131072,
+            "break_start": 131584,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 132096,
+            "break_start": 132608,
+            "previous_acquire_count": 2,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 133632,
+            "break_start": 134144,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 134144,
+            "break_start": 134656,
+            "previous_acquire_count": 1,
+            "reason": "spread_restart"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 134656,
+            "break_start": 135168,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 146432,
+            "break_start": 146944,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 167936,
+            "break_start": 168448,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 257024,
+            "break_start": 257536,
+            "previous_acquire_count": 1,
+            "reason": "outside_cone"
+          },
+          {
+            "capture": "trusted_p045_20260920_02",
+            "previous_start": 259584,
+            "break_start": 260096,
+            "previous_acquire_count": 1,
+            "reason": "geometry_rejected"
+          }
+        ]
+      }
+    }
+  ]
+}

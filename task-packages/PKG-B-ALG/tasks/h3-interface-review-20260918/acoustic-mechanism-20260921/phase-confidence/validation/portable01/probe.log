@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "F:\NUEC\review-worktrees\algorithm-closeout-20260923\task-packages\PKG-B-ALG\tasks\h3-interface-review-20260918\acoustic-mechanism-20260921\phase-confidence\probe.py", line 55, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "F:\NUEC\review-worktrees\algorithm-closeout-20260923\task-packages\PKG-B-ALG\tasks\h3-interface-review-20260918\acoustic-mechanism-20260921\phase-confidence\probe.py", line 40, in main
+    assert np.isclose(np.linalg.norm(u),full['norm'],atol=1e-10,rtol=1e-12)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

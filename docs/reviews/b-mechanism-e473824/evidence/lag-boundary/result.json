@@ -1,0 +1,143 @@
+{
+  "status": "AUTHOR_DIAGNOSTIC_NOT_ACCEPTANCE",
+  "pins": {
+    "acoustic-mechanism-20260921/frequency-diagnostic/run01/frames.json": "edbaa69d55d59789054828eae6d7ad77f064ebe4f2ebc133f5c2a8b2a01362fb",
+    "checkpoint-20260923/evidence/run01/trusted_000_20260920_01-frames.json": "e207cfb3931ce11d980fed7e2ad15e424d595fbb9ab81deec1a3846f91a30f58",
+    "checkpoint-20260923/evidence/run01/trusted_000_20260920_02-frames.json": "098beeffb1b65f1a1a78c5b84b6afea328df401d2f81db11cba914f8577fb271",
+    "checkpoint-20260923/evidence/run01/trusted_bg_post_20260920_01-frames.json": "19b05b78beea74da9d3865d42c5f7277652feb26e62b95d54aaf6c8d03228872",
+    "checkpoint-20260923/evidence/run01/trusted_bg_pre_20260920_01-frames.json": "9ecec805cbd3d58f528dc97dc285896de224262df7a66ee04779cd10d232172e",
+    "checkpoint-20260923/evidence/run01/trusted_m045_20260920_01-frames.json": "902e7a349168c22a8dde0aa581cef76c9c255fd9475a2ac3051eb7b013f115ce",
+    "checkpoint-20260923/evidence/run01/trusted_m045_20260920_02-frames.json": "142acfc9c3fe2b3c297271766cb7099461059638d1d1543657162bf2d80d1835",
+    "checkpoint-20260923/evidence/run01/trusted_p045_20260920_01-frames.json": "b3960f09b2232f849c866e61ac43590a2a8bab91ef8c7e491861f9f8465acdbb",
+    "checkpoint-20260923/evidence/run01/trusted_p045_20260920_02-frames.json": "b814ec3e3f6f505fae811cd75773d320768e3ec199d907e0a34cf4b654855047",
+    "closeout-0918-20260921/acoustic/pairs01/frames.json": "7f02b0f34cd7bf16773c5ccbf1567307f4b6cb87aeb7e95a01a5760de45f2740"
+  },
+  "counts": {
+    "all": {
+      "frames": 4488,
+      "frames_tau_bound": 63,
+      "pair_tau_bound": 71,
+      "cycle_analyzable": 1420,
+      "cycle_fail": 303,
+      "cycle_fail_with_bound": 8,
+      "cycle_fail_without_bound": 295,
+      "valid_pair_histogram": {
+        "0": 101,
+        "1": 27,
+        "2": 22,
+        "3": 30,
+        "4": 40,
+        "5": 103,
+        "6": 4165
+      }
+    },
+    "background": {
+      "frames": 1122,
+      "frames_tau_bound": 14,
+      "pair_tau_bound": 15,
+      "cycle_analyzable": 1122,
+      "cycle_fail": 225,
+      "cycle_fail_with_bound": 6,
+      "cycle_fail_without_bound": 219,
+      "valid_pair_histogram": {
+        "3": 1,
+        "4": 1,
+        "5": 14,
+        "6": 1106
+      }
+    },
+    "target_nonmarker": {
+      "frames": 2724,
+      "frames_tau_bound": 33,
+      "pair_tau_bound": 36,
+      "cycle_analyzable": 222,
+      "cycle_fail": 53,
+      "cycle_fail_with_bound": 0,
+      "cycle_fail_without_bound": 53,
+      "valid_pair_histogram": {
+        "0": 66,
+        "1": 21,
+        "2": 17,
+        "3": 19,
+        "4": 29,
+        "5": 66,
+        "6": 2506
+      }
+    },
+    "target_marker": {
+      "frames": 642,
+      "frames_tau_bound": 16,
+      "pair_tau_bound": 20,
+      "cycle_analyzable": 76,
+      "cycle_fail": 25,
+      "cycle_fail_with_bound": 2,
+      "cycle_fail_without_bound": 23,
+      "valid_pair_histogram": {
+        "0": 35,
+        "1": 6,
+        "2": 5,
+        "3": 10,
+        "4": 10,
+        "5": 23,
+        "6": 553
+      }
+    },
+    "target_nonmarker_gate": {
+      "frames": 536,
+      "frames_tau_bound": 16,
+      "pair_tau_bound": 18,
+      "cycle_analyzable": 218,
+      "cycle_fail": 51,
+      "cycle_fail_with_bound": 0,
+      "cycle_fail_without_bound": 51,
+      "valid_pair_histogram": {
+        "0": 34,
+        "1": 13,
+        "2": 8,
+        "3": 10,
+        "4": 19,
+        "5": 38,
+        "6": 414
+      }
+    },
+    "selected_nonmarker": {
+      "frames": 237,
+      "frames_tau_bound": 5,
+      "pair_tau_bound": 6,
+      "cycle_analyzable": 222,
+      "cycle_fail": 53,
+      "cycle_fail_with_bound": 0,
+      "cycle_fail_without_bound": 53,
+      "valid_pair_histogram": {
+        "0": 9,
+        "1": 4,
+        "2": 2,
+        "3": 7,
+        "4": 8,
+        "5": 16,
+        "6": 191
+      }
+    }
+  },
+  "edge_counts": {
+    "selected_target": {
+      "frames": 320,
+      "scored_pairs": 1739,
+      "edge_pairs": 16,
+      "edge_bound_pairs": 12,
+      "bound_pairs": 12,
+      "frames_edge": 13
+    },
+    "selected_nonmarker": {
+      "frames": 237,
+      "scored_pairs": 1293,
+      "edge_pairs": 9,
+      "edge_bound_pairs": 6,
+      "bound_pairs": 6,
+      "frames_edge": 8
+    }
+  },
+  "fft_calls": 0,
+  "ifft_calls": 0,
+  "limitations": "Cycle cache covers 1122 background plus biased 320 selected target frames only; edge cache covers those 320 target frames only. None means unavailable or unfit, never zero residual. No threshold changes."
+}

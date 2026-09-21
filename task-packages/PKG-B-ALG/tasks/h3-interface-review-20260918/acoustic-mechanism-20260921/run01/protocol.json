@@ -1,0 +1,16 @@
+{
+  "window": 5,
+  "warmup": "five consecutive gate+projection valid inputs",
+  "clear_on": "gate or projection invalid",
+  "tracker": "unchanged 5-frame/8-degree, cone60",
+  "calibration": "frozen pre-background only",
+  "groups": [
+    "whole_recording",
+    "100",
+    "200",
+    "300"
+  ],
+  "all_eight_previously_inspected": true,
+  "oracle_modes": "diagnostic hypothetical constant +X, not an implementation",
+  "fft_calls": 0
+}

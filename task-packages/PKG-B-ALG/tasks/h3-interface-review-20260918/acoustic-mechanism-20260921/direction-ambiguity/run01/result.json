@@ -1,0 +1,5010 @@
+{
+  "status": "AUTHOR_DIAGNOSTIC_NOT_CONFIDENCE_CALIBRATION",
+  "pins": {
+    "acoustic-mechanism-20260921/joint-arrival/analyze.py": "c82e2fb9ad9693ec8383ac1682b3994b2db3f5cd283e4b7f310037ad4364d807",
+    "closeout-0918-20260921/acoustic/pairs01/frames.json": "7f02b0f34cd7bf16773c5ccbf1567307f4b6cb87aeb7e95a01a5760de45f2740",
+    "acoustic-mechanism-20260921/joint-arrival/run01/result.json": "abec19a3b3d534254adc9df1aa385372722df3bc3a6ec2fb5ad9070cc2b3c623",
+    "checkpoint-20260923/evidence/run01/summary.json": "5b199b3ee5105b6696adc980aacbbe61b091162da0b81ff0d99d739ead6cf153"
+  },
+  "matched_prior_frames": 191,
+  "angle_separation_deg": 15,
+  "grid_candidates": 57489,
+  "geometrically_valid_grid_candidates": 14000,
+  "groups": {
+    "False": {
+      "frames": 143,
+      "best_valid": 137,
+      "best_invalid": 6,
+      "competitors": 137,
+      "absolute_gap_quartiles": [
+        0.0010449200159153849,
+        0.0019191357790694363,
+        0.0035946501331128866
+      ],
+      "relative_loss_quartiles": [
+        0.0010459035777499164,
+        0.0019218462473080185,
+        0.003594650133112887
+      ],
+      "separation_quartiles": [
+        15.642246457208728,
+        18.434948822922024,
+        18.434948822922024
+      ]
+    },
+    "True": {
+      "frames": 48,
+      "best_valid": 41,
+      "best_invalid": 7,
+      "competitors": 41,
+      "absolute_gap_quartiles": [
+        0.0008363127189849884,
+        0.004137404208172435,
+        0.007601250636536161
+      ],
+      "relative_loss_quartiles": [
+        0.000842169804784472,
+        0.004176761524485469,
+        0.007684954790518421
+      ],
+      "separation_quartiles": [
+        15.255118703057775,
+        16.144338780283476,
+        18.434948822922024
+      ]
+    }
+  },
+  "rows": [
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 108032,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9312511467425503,
+      "best_norm": 0.8088534120784202,
+      "best_residual": 0.408248290463863,
+      "best_angle": -6.340191745909911,
+      "competitor": {
+        "angle": -21.37062226934318,
+        "separation_deg": 15.030430523433267,
+        "score": 0.9185967901472615,
+        "absolute_gap": 0.012654356595288796,
+        "relative_loss": 0.013588554107614071,
+        "tau": [
+          2.75,
+          1.75,
+          -1.25,
+          -1.0,
+          -4.0,
+          -3.0
+        ],
+        "norm": 0.5515283254014799,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 108544,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9947369061763658,
+      "best_norm": 0.7145833333333333,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -15.25511870305778,
+        "separation_deg": 15.255118703057775,
+        "score": 0.961506099421302,
+        "absolute_gap": 0.033230806755063735,
+        "relative_loss": 0.03340662897770473,
+        "tau": [
+          4.25,
+          3.0,
+          -1.0,
+          -1.25,
+          -5.25,
+          -4.0
+        ],
+        "norm": 0.7638284586113365,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 109056,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.969115972313824,
+      "best_norm": 0.28246386391608175,
+      "best_residual": 0.408248290463863,
+      "best_angle": -161.565051177078,
+      "competitor": {
+        "angle": 180.0,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9674530560099546,
+        "absolute_gap": 0.0016629163038693884,
+        "relative_loss": 0.0017159105322545386,
+        "tau": [
+          -1.0,
+          -1.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "norm": 0.17864583333333334,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 109568,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9913796874339156,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": 135.0,
+      "competitor": {
+        "angle": 161.565051177078,
+        "separation_deg": 26.565051177078004,
+        "score": 0.9897077052054932,
+        "absolute_gap": 0.0016719822284223529,
+        "relative_loss": 0.001686520562823016,
+        "tau": [
+          -1.0,
+          -0.5,
+          0.0,
+          0.5,
+          1.0,
+          0.5
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 110080,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9960159939425813,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": 18.434948822922014,
+      "competitor": {
+        "angle": 33.69006752597979,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9947299065284233,
+        "absolute_gap": 0.0012860874141580325,
+        "relative_loss": 0.0012912316890286537,
+        "tau": [
+          0.25,
+          1.25,
+          0.0,
+          1.0,
+          -0.25,
+          -1.25
+        ],
+        "norm": 0.1610291780578318,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 110592,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9986509363460307,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": 15.25511870305778,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9963920551088148,
+        "absolute_gap": 0.0022588812372159595,
+        "relative_loss": 0.0022619327284476316,
+        "tau": [
+          1.75,
+          1.75,
+          0.75,
+          0.0,
+          -1.0,
+          -1.0
+        ],
+        "norm": 0.25460948620377877,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 111104,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9989670376514364,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": -135.0,
+      "competitor": {
+        "angle": -108.43494882292202,
+        "separation_deg": 26.565051177077976,
+        "score": 0.9980658224412183,
+        "absolute_gap": 0.0009012152102180204,
+        "relative_loss": 0.0009021470941991943,
+        "tau": [
+          -0.5,
+          -1.0,
+          -1.0,
+          -0.5,
+          -0.5,
+          0.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 113152,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9948366510669073,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 18.434948822922014,
+        "separation_deg": 26.565051177077976,
+        "score": 0.9947599136552686,
+        "absolute_gap": 7.67374116387165e-05,
+        "relative_loss": 7.713569012201136e-05,
+        "tau": [
+          0.5,
+          1.0,
+          0.0,
+          0.5,
+          -0.5,
+          -1.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 113664,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9974804750035673,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": 18.434948822922014,
+      "competitor": {
+        "angle": 37.8749836510982,
+        "separation_deg": 19.44003482817618,
+        "score": 0.996361749582233,
+        "absolute_gap": 0.0011187254213342879,
+        "relative_loss": 0.001121551197611449,
+        "tau": [
+          1.0,
+          2.0,
+          0.75,
+          1.0,
+          -0.25,
+          -1.25
+        ],
+        "norm": 0.2546094862037789,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 114176,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9980536686436399,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": -135.0,
+      "competitor": {
+        "angle": -108.43494882292202,
+        "separation_deg": 26.565051177077976,
+        "score": 0.9970913300533871,
+        "absolute_gap": 0.0009623385902527426,
+        "relative_loss": 0.0009642152726722259,
+        "tau": [
+          0.0,
+          -1.0,
+          -0.5,
+          -1.0,
+          -0.5,
+          0.5
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 119808,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.2526433603614435,
+      "best_residual": 2.5695679235043195e-16,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 60.94539590092286,
+        "separation_deg": 15.945395900922847,
+        "score": 0.9984713958174191,
+        "absolute_gap": 0.0015286041825808283,
+        "relative_loss": 0.0015286041825808285,
+        "tau": [
+          0.5,
+          1.75,
+          1.0,
+          1.25,
+          0.5,
+          -0.75
+        ],
+        "norm": 0.22990892827855086,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 120320,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.987123298246941,
+      "best_norm": 0.5649277278321635,
+      "best_residual": 3.510833468576701e-16,
+      "best_angle": -108.43494882292201,
+      "competitor": {
+        "angle": -92.29061004263853,
+        "separation_deg": 16.144338780283476,
+        "score": 0.9735450468202024,
+        "absolute_gap": 0.01357825142673863,
+        "relative_loss": 0.013755375291873482,
+        "tau": [
+          0.0,
+          -3.25,
+          -3.0,
+          -3.25,
+          -3.0,
+          0.25
+        ],
+        "norm": 0.5587146652469406,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 120832,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9997858569715857,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 18.434948822922014,
+        "separation_deg": 26.565051177077976,
+        "score": 0.9983730694067812,
+        "absolute_gap": 0.001412787564804563,
+        "relative_loss": 0.0014130901682126065,
+        "tau": [
+          0.5,
+          1.0,
+          0.0,
+          0.5,
+          -0.5,
+          -1.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 121344,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9979374072082811,
+      "best_norm": 0.2526433603614436,
+      "best_residual": 1.023934400414201e-17,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -63.43494882292201,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9960808515595605,
+        "absolute_gap": 0.0018565556487205592,
+        "relative_loss": 0.001860392881668053,
+        "tau": [
+          0.5,
+          -0.5,
+          -1.0,
+          -1.0,
+          -1.5,
+          -0.5
+        ],
+        "norm": 0.1997321136152156,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 121856,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": -90.0,
+      "competitor": {
+        "angle": -71.56505117707799,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9962708670246025,
+        "absolute_gap": 0.0037291329753973423,
+        "relative_loss": 0.0037291329753973428,
+        "tau": [
+          0.5,
+          -0.5,
+          -0.5,
+          -1.0,
+          -1.0,
+          0.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 125440,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.8446329875802558,
+      "best_norm": 0.9866038616914663,
+      "best_residual": 0.0,
+      "best_angle": 5.194428907734806,
+      "competitor": {
+        "angle": -10.007979801441337,
+        "separation_deg": 15.202408709176154,
+        "score": 0.8127161867302394,
+        "absolute_gap": 0.03191680085001647,
+        "relative_loss": 0.03778777447640687,
+        "tau": [
+          3.75,
+          3.5,
+          -1.25,
+          -0.25,
+          -5.0,
+          -4.75
+        ],
+        "norm": 0.7709763072994531,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 125952,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9950735430445846,
+      "best_norm": 0.6441167122313272,
+      "best_residual": 4.796711693331816e-16,
+      "best_angle": -33.69006752597979,
+      "competitor": {
+        "angle": -18.43494882292201,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9914150367094459,
+        "absolute_gap": 0.003658506335138756,
+        "relative_loss": 0.003676619040583652,
+        "tau": [
+          3.0,
+          2.0,
+          -1.0,
+          -1.0,
+          -4.0,
+          -3.0
+        ],
+        "norm": 0.5649277278321635,
+        "plane_residual": 3.510833468576701e-16
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 126464,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9845151636342137,
+      "best_norm": 0.45545929509435545,
+      "best_residual": 0.408248290463863,
+      "best_angle": 11.309932474020215,
+      "competitor": {
+        "angle": -5.194428907734806,
+        "separation_deg": 16.504361381755018,
+        "score": 0.9754876358010359,
+        "absolute_gap": 0.009027527833177729,
+        "relative_loss": 0.009169516292520826,
+        "tau": [
+          2.5,
+          2.5,
+          -0.5,
+          0.0,
+          -3.0,
+          -3.0
+        ],
+        "norm": 0.49330193084573315,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 127488,
+      "old_cycle_fail": true,
+      "best_valid": false,
+      "best_score": 0.9930554125456337,
+      "best_norm": 0.0,
+      "best_residual": 0.0,
+      "best_angle": null,
+      "competitor": null
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 128000,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9970529763866482,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": 15.255118703057777,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9935229811928651,
+        "absolute_gap": 0.003529995193783164,
+        "relative_loss": 0.0035404289214159704,
+        "tau": [
+          1.0,
+          1.75,
+          0.0,
+          0.75,
+          -1.0,
+          -1.75
+        ],
+        "norm": 0.2546094862037789,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 128512,
+      "old_cycle_fail": true,
+      "best_valid": false,
+      "best_score": 0.9847325545974744,
+      "best_norm": 0.5359375,
+      "best_residual": 0.816496580927726,
+      "best_angle": null,
+      "competitor": null
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 131072,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9919131540716063,
+      "best_norm": 0.3572916666666667,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -16.38954033403479,
+        "separation_deg": 16.38954033403479,
+        "score": 0.9871645952464108,
+        "absolute_gap": 0.004748558825195537,
+        "relative_loss": 0.004787272762442606,
+        "tau": [
+          2.0,
+          1.5,
+          -0.75,
+          -0.5,
+          -2.75,
+          -2.25
+        ],
+        "norm": 0.3957015289913793,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 131584,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9755054911399035,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": -18.434948822922014,
+      "competitor": {
+        "angle": 0.0,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9752578303472723,
+        "absolute_gap": 0.0002476607926311658,
+        "relative_loss": 0.00025387944494476163,
+        "tau": [
+          2.0,
+          2.0,
+          0.0,
+          0.0,
+          -2.0,
+          -2.0
+        ],
+        "norm": 0.3572916666666667,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 132608,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9965684741791333,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 18.43494882292201,
+        "separation_deg": 26.565051177077976,
+        "score": 0.9933012102359504,
+        "absolute_gap": 0.0032672639431828854,
+        "relative_loss": 0.0032785142494840694,
+        "tau": [
+          0.25,
+          1.0,
+          -0.25,
+          0.75,
+          -0.5,
+          -1.25
+        ],
+        "norm": 0.14123193195804087,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 133120,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9995682613141946,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -18.434948822922014,
+        "separation_deg": 26.565051177077976,
+        "score": 0.9975572372344178,
+        "absolute_gap": 0.002011024079776824,
+        "relative_loss": 0.002011892691683513,
+        "tau": [
+          1.0,
+          0.5,
+          0.0,
+          -0.5,
+          -1.0,
+          -0.5
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 133632,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9878338429260319,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": -108.43494882292202,
+      "competitor": {
+        "angle": -90.0,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9874270123310633,
+        "absolute_gap": 0.0004068305949685991,
+        "relative_loss": 0.00041184111870832326,
+        "tau": [
+          0.0,
+          -2.0,
+          -2.0,
+          -2.0,
+          -2.0,
+          0.0
+        ],
+        "norm": 0.3572916666666667,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 137728,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.993045243647767,
+      "best_norm": 0.5208376301906089,
+      "best_residual": 0.408248290463863,
+      "best_angle": 30.963756532073518,
+      "competitor": {
+        "angle": 14.743562836470735,
+        "separation_deg": 16.220193695602774,
+        "score": 0.992208930928782,
+        "absolute_gap": 0.0008363127189849884,
+        "relative_loss": 0.000842169804784472,
+        "tau": [
+          2.75,
+          3.0,
+          1.0,
+          0.25,
+          -1.75,
+          -2.0
+        ],
+        "norm": 0.4387292166409672,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 138240,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9995344913814304,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -15.255118703057777,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9983480901215847,
+        "absolute_gap": 0.001186401259845704,
+        "relative_loss": 0.0011869537970680833,
+        "tau": [
+          1.75,
+          1.0,
+          0.0,
+          -0.75,
+          -1.75,
+          -1.0
+        ],
+        "norm": 0.2546094862037789,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 138752,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9996070335854129,
+      "best_norm": 0.45545929509435545,
+      "best_residual": 0.408248290463863,
+      "best_angle": -11.309932474020217,
+      "competitor": {
+        "angle": -26.56505117707799,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9969724168928517,
+        "absolute_gap": 0.0026346166925612646,
+        "relative_loss": 0.0026356524154410583,
+        "tau": [
+          2.0,
+          1.0,
+          -1.0,
+          -1.0,
+          -3.0,
+          -2.0
+        ],
+        "norm": 0.3994642272304312,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 139264,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -18.434948822922014,
+        "separation_deg": 18.434948822922024,
+        "score": 0.99851409182333,
+        "absolute_gap": 0.0014859081766699367,
+        "relative_loss": 0.001485908176669937,
+        "tau": [
+          1.0,
+          0.5,
+          0.0,
+          -0.5,
+          -1.0,
+          -0.5
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 139776,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9935746664361749,
+      "best_norm": 0.3572916666666667,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -15.255118703057777,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9907115637298619,
+        "absolute_gap": 0.002863102706312959,
+        "relative_loss": 0.002881618063574972,
+        "tau": [
+          1.75,
+          1.0,
+          0.0,
+          -0.75,
+          -1.75,
+          -1.0
+        ],
+        "norm": 0.2546094862037789,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 141824,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9842710021271615,
+      "best_norm": 0.5359375,
+      "best_residual": 3.6259732146947156e-16,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -15.255118703057775,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9764179342224262,
+        "absolute_gap": 0.007853067904735278,
+        "relative_loss": 0.007978562700479428,
+        "tau": [
+          3.0,
+          2.0,
+          -0.5,
+          -1.0,
+          -3.5,
+          -2.5
+        ],
+        "norm": 0.5092189724075578,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 142336,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9956044870198888,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": -18.434948822922014,
+      "competitor": {
+        "angle": -37.8749836510982,
+        "separation_deg": 19.44003482817618,
+        "score": 0.9925484694037341,
+        "absolute_gap": 0.003056017616154705,
+        "relative_loss": 0.0030695096858213092,
+        "tau": [
+          1.0,
+          0.25,
+          -1.0,
+          -0.75,
+          -2.0,
+          -1.25
+        ],
+        "norm": 0.2546094862037789,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 142848,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9816019975199513,
+      "best_norm": 0.7145833333333333,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": 15.255118703057775,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9704168506275843,
+        "absolute_gap": 0.011185146892366937,
+        "relative_loss": 0.011394788234566114,
+        "tau": [
+          4.0,
+          5.25,
+          1.0,
+          1.25,
+          -3.0,
+          -4.25
+        ],
+        "norm": 0.7638284586113366,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 143872,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9954868910125015,
+      "best_norm": 0.5208376301906088,
+      "best_residual": 0.408248290463863,
+      "best_angle": -30.963756532073518,
+      "competitor": {
+        "angle": -48.576334374997344,
+        "separation_deg": 17.612577842923827,
+        "score": 0.9879531503097609,
+        "absolute_gap": 0.007533740702740599,
+        "relative_loss": 0.007567895439665804,
+        "tau": [
+          1.75,
+          -0.25,
+          -2.25,
+          -2.0,
+          -4.0,
+          -2.0
+        ],
+        "norm": 0.5062726469691197,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 144384,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9979270509115075,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -15.255118703057775,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9975399721969507,
+        "absolute_gap": 0.0003870787145567878,
+        "relative_loss": 0.00038788277580333123,
+        "tau": [
+          1.0,
+          1.0,
+          -0.75,
+          0.0,
+          -1.75,
+          -1.75
+        ],
+        "norm": 0.2546094862037789,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 144896,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9988922300590705,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -135.0,
+        "separation_deg": 90.0,
+        "score": 0.9981825085233392,
+        "absolute_gap": 0.0007097215357312336,
+        "relative_loss": 0.000710508615818609,
+        "tau": [
+          0.0,
+          -1.0,
+          0.0,
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "norm": 0.1263216801807218,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 147456,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9982542046859347,
+      "best_norm": 0.45545929509435557,
+      "best_residual": 0.408248290463863,
+      "best_angle": 11.309932474020213,
+      "competitor": {
+        "angle": 26.565051177077986,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9967894376954354,
+        "absolute_gap": 0.0014647669904993554,
+        "relative_loss": 0.00146732864597369,
+        "tau": [
+          3.0,
+          3.75,
+          1.75,
+          0.75,
+          -1.25,
+          -2.0
+        ],
+        "norm": 0.499330284038039,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 147968,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9974143422041016,
+      "best_norm": 0.5359375,
+      "best_residual": 3.6259732146947156e-16,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": 15.255118703057772,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9956028054247639,
+        "absolute_gap": 0.0018115367793377635,
+        "relative_loss": 0.0018162329361883865,
+        "tau": [
+          3.0,
+          3.5,
+          1.0,
+          0.5,
+          -2.0,
+          -2.5
+        ],
+        "norm": 0.5092189724075578,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 148480,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9980946401385041,
+      "best_norm": 0.5649277278321635,
+      "best_residual": 3.510833468576701e-16,
+      "best_angle": -18.43494882292201,
+      "competitor": {
+        "angle": -2.2906100426385296,
+        "separation_deg": 16.144338780283476,
+        "score": 0.9973421987351314,
+        "absolute_gap": 0.0007524414033727167,
+        "relative_loss": 0.0007538778118959756,
+        "tau": [
+          3.25,
+          3.0,
+          0.0,
+          -0.25,
+          -3.25,
+          -3.0
+        ],
+        "norm": 0.5587146652469406,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 148992,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9916089372777953,
+      "best_norm": 0.3572916666666667,
+      "best_residual": 0.0,
+      "best_angle": -90.0,
+      "competitor": {
+        "angle": -106.38954033403479,
+        "separation_deg": 16.38954033403479,
+        "score": 0.987042102474176,
+        "absolute_gap": 0.004566834803619302,
+        "relative_loss": 0.0046054796724163865,
+        "tau": [
+          -0.5,
+          -2.75,
+          -2.0,
+          -2.25,
+          -1.5,
+          0.75
+        ],
+        "norm": 0.3957015289913792,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 149504,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9995961699220768,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": 15.255118703057777,
+        "separation_deg": 15.255118703057775,
+        "score": 0.996915633465033,
+        "absolute_gap": 0.002680536457043803,
+        "relative_loss": 0.0026816193756052137,
+        "tau": [
+          1.0,
+          1.75,
+          0.0,
+          0.75,
+          -1.0,
+          -1.75
+        ],
+        "norm": 0.2546094862037789,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_01",
+      "start": 150016,
+      "old_cycle_fail": true,
+      "best_valid": false,
+      "best_score": 0.9894930635029858,
+      "best_norm": 0.5359375,
+      "best_residual": 0.816496580927726,
+      "best_angle": null,
+      "competitor": null
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 96768,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": 18.434948822922014,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9970910227549578,
+        "absolute_gap": 0.0029089772450421325,
+        "relative_loss": 0.002908977245042133,
+        "tau": [
+          0.5,
+          1.0,
+          0.0,
+          0.5,
+          -0.5,
+          -1.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 97280,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9983181062108576,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -18.434948822922014,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9981625637169033,
+        "absolute_gap": 0.0001555424939543304,
+        "relative_loss": 0.00015580454064355898,
+        "tau": [
+          0.5,
+          0.5,
+          -0.5,
+          0.0,
+          -1.0,
+          -1.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 97792,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.997329189983072,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -71.56505117707799,
+        "separation_deg": 26.565051177077976,
+        "score": 0.9965552806088497,
+        "absolute_gap": 0.0007739093742222813,
+        "relative_loss": 0.0007759818743853443,
+        "tau": [
+          0.0,
+          -0.5,
+          -1.0,
+          -0.5,
+          -1.0,
+          -0.5
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 98304,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9991189344553321,
+      "best_norm": 0.3994642272304312,
+      "best_residual": 0.0,
+      "best_angle": -26.56505117707799,
+      "competitor": {
+        "angle": -45.0,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9973025782235371,
+        "absolute_gap": 0.001816356231794991,
+        "relative_loss": 0.0018179579719257092,
+        "tau": [
+          1.0,
+          0.0,
+          -1.0,
+          -1.0,
+          -2.0,
+          -1.0
+        ],
+        "norm": 0.2526433603614436,
+        "plane_residual": 1.023934400414201e-17
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 98816,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9979362799635262,
+      "best_norm": 0.3572916666666667,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": 15.945395900922858,
+        "separation_deg": 15.945395900922847,
+        "score": 0.9961953184579531,
+        "absolute_gap": 0.0017409615055731242,
+        "relative_loss": 0.001744561792699585,
+        "tau": [
+          1.25,
+          2.25,
+          0.0,
+          1.0,
+          -1.25,
+          -2.25
+        ],
+        "norm": 0.3251403244821898,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 104448,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.7145833333333333,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -15.945395900922854,
+        "separation_deg": 15.945395900922847,
+        "score": 0.9900130737754969,
+        "absolute_gap": 0.009986926224503034,
+        "relative_loss": 0.009986926224503036,
+        "tau": [
+          3.5,
+          2.5,
+          -1.0,
+          -1.0,
+          -4.5,
+          -3.5
+        ],
+        "norm": 0.6502806489643795,
+        "plane_residual": 4.965068306494546e-16
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 105472,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9996225747748582,
+      "best_norm": 0.3572916666666667,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": 18.434948822922014,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9978013272169792,
+        "absolute_gap": 0.0018212475578789356,
+        "relative_loss": 0.0018219352021828132,
+        "tau": [
+          1.0,
+          2.0,
+          0.0,
+          1.0,
+          -1.0,
+          -2.0
+        ],
+        "norm": 0.2824638639160818,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 107008,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9947012305371892,
+      "best_norm": 0.45545929509435557,
+      "best_residual": 0.408248290463863,
+      "best_angle": -101.30993247402021,
+      "competitor": {
+        "angle": -116.56505117707799,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9941550553312888,
+        "absolute_gap": 0.0005461752059003899,
+        "relative_loss": 0.0005490846790301321,
+        "tau": [
+          -1.0,
+          -3.0,
+          -2.0,
+          -2.0,
+          -1.0,
+          1.0
+        ],
+        "norm": 0.3994642272304312,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 115200,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9912741168503353,
+      "best_norm": 0.8473915917482453,
+      "best_residual": 0.408248290463863,
+      "best_angle": 18.434948822922014,
+      "competitor": {
+        "angle": 3.01278750418334,
+        "separation_deg": 15.422161318738688,
+        "score": 0.9738921079129205,
+        "absolute_gap": 0.017382008937414817,
+        "relative_loss": 0.017535017450717106,
+        "tau": [
+          5.0,
+          5.0,
+          0.5,
+          0.0,
+          -4.5,
+          -4.5
+        ],
+        "norm": 0.8497421970730565,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 115712,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9995614126025625,
+      "best_norm": 0.7145833333333333,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -15.255118703057777,
+        "separation_deg": 15.255118703057775,
+        "score": 0.98279187174907,
+        "absolute_gap": 0.01676954085349247,
+        "relative_loss": 0.01677689898995755,
+        "tau": [
+          4.0,
+          3.0,
+          -1.25,
+          -1.0,
+          -5.25,
+          -4.25
+        ],
+        "norm": 0.7638284586113366,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 116224,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9981354067067751,
+      "best_norm": 0.8932291666666667,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -15.25511870305778,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9686628380249593,
+        "absolute_gap": 0.029472568681815803,
+        "relative_loss": 0.029527625694650905,
+        "tau": [
+          4.25,
+          3.0,
+          -1.0,
+          -1.25,
+          -5.25,
+          -4.0
+        ],
+        "norm": 0.7638284586113365,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 116736,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9954806798578302,
+      "best_norm": 0.7365756404098217,
+      "best_residual": 1.2819751242557092e-16,
+      "best_angle": -14.036243467926477,
+      "competitor": {
+        "angle": 1.8476102659945954,
+        "separation_deg": 15.883853733921057,
+        "score": 0.9841587982513172,
+        "absolute_gap": 0.011321881606512929,
+        "relative_loss": 0.011373281104892831,
+        "tau": [
+          3.75,
+          4.0,
+          0.0,
+          0.25,
+          -3.75,
+          -4.0
+        ],
+        "norm": 0.6926126835689964,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 117248,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.979881406543849,
+      "best_norm": 0.5359375,
+      "best_residual": 3.6259732146947156e-16,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -15.255118703057772,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9756672008006203,
+        "absolute_gap": 0.004214205743228727,
+        "relative_loss": 0.004300730389499583,
+        "tau": [
+          2.5,
+          2.0,
+          -1.0,
+          -0.5,
+          -3.5,
+          -3.0
+        ],
+        "norm": 0.5092189724075578,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 117760,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9070433650230443,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -18.434948822922014,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9064967985554093,
+        "absolute_gap": 0.0005465664676349569,
+        "relative_loss": 0.0006025803051004853,
+        "tau": [
+          1.0,
+          0.5,
+          0.0,
+          -0.5,
+          -1.0,
+          -0.5
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 118272,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9991133053193236,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -71.56505117707799,
+        "separation_deg": 26.565051177077976,
+        "score": 0.9953895134944657,
+        "absolute_gap": 0.003723791824857936,
+        "relative_loss": 0.0037270966216066815,
+        "tau": [
+          0.0,
+          -0.5,
+          -1.0,
+          -0.5,
+          -1.0,
+          -0.5
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 118784,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9739167676830485,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": -18.434948822922014,
+      "competitor": {
+        "angle": -37.8749836510982,
+        "separation_deg": 19.44003482817618,
+        "score": 0.973718197533419,
+        "absolute_gap": 0.00019857014962942898,
+        "relative_loss": 0.00020388821326264677,
+        "tau": [
+          1.0,
+          0.25,
+          -1.0,
+          -0.75,
+          -2.0,
+          -1.25
+        ],
+        "norm": 0.2546094862037789,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 124416,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9990003000957646,
+      "best_norm": 0.3572916666666667,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": 20.556045219583464,
+        "separation_deg": 20.556045219583467,
+        "score": 0.9987774129343387,
+        "absolute_gap": 0.0002228871614258221,
+        "relative_loss": 0.0002231102046760707,
+        "tau": [
+          2.0,
+          2.75,
+          0.75,
+          0.75,
+          -1.25,
+          -2.0
+        ],
+        "norm": 0.38158766727134286,
+        "plane_residual": 6.409875621278546e-17
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 124928,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.3572916666666667,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": 15.945395900922858,
+        "separation_deg": 15.945395900922847,
+        "score": 0.9966808241738051,
+        "absolute_gap": 0.003319175826194787,
+        "relative_loss": 0.0033191758261947872,
+        "tau": [
+          1.5,
+          2.25,
+          0.25,
+          0.75,
+          -1.25,
+          -2.0
+        ],
+        "norm": 0.3251403244821898,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 125440,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9990596056314794,
+      "best_norm": 0.3994642272304312,
+      "best_residual": 1.5700924586837752e-16,
+      "best_angle": 26.565051177077986,
+      "competitor": {
+        "angle": 10.007979801441337,
+        "separation_deg": 16.55707137563664,
+        "score": 0.9980146856155641,
+        "absolute_gap": 0.0010449200159153849,
+        "relative_loss": 0.0010459035777499164,
+        "tau": [
+          2.25,
+          2.5,
+          0.5,
+          0.25,
+          -1.75,
+          -2.0
+        ],
+        "norm": 0.38548815364972655,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 125952,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9997645670966806,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": -90.0,
+      "competitor": {
+        "angle": -71.56505117707799,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9979227703321515,
+        "absolute_gap": 0.0018417967645291133,
+        "relative_loss": 0.0018422304862010632,
+        "tau": [
+          0.5,
+          -0.5,
+          -0.5,
+          -1.0,
+          -1.0,
+          0.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 126464,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.3789650405421653,
+      "best_residual": 0.408248290463863,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -60.94539590092286,
+        "separation_deg": 15.945395900922847,
+        "score": 0.9975438574495626,
+        "absolute_gap": 0.002456142550437246,
+        "relative_loss": 0.0024561425504372463,
+        "tau": [
+          0.75,
+          -1.0,
+          -2.75,
+          -1.75,
+          -3.5,
+          -1.75
+        ],
+        "norm": 0.4598178565571018,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 126976,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9983991950171045,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": -18.434948822922014,
+      "competitor": {
+        "angle": -3.3664606634298004,
+        "separation_deg": 15.068488159492205,
+        "score": 0.9950383877525009,
+        "absolute_gap": 0.003360807264603638,
+        "relative_loss": 0.0033661958877541573,
+        "tau": [
+          1.75,
+          2.0,
+          -0.5,
+          0.25,
+          -2.25,
+          -2.5
+        ],
+        "norm": 0.3802786148120284,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 127488,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.5359375,
+      "best_residual": 3.6259732146947156e-16,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -18.43494882292201,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9964131474566652,
+        "absolute_gap": 0.0035868525433346843,
+        "relative_loss": 0.0035868525433346847,
+        "tau": [
+          3.0,
+          2.0,
+          -1.0,
+          -1.0,
+          -4.0,
+          -3.0
+        ],
+        "norm": 0.5649277278321635,
+        "plane_residual": 3.510833468576701e-16
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 128000,
+      "old_cycle_fail": true,
+      "best_valid": false,
+      "best_score": 0.9879171835366839,
+      "best_norm": 0.5359375,
+      "best_residual": 0.816496580927726,
+      "best_angle": null,
+      "competitor": null
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 128512,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9878005085212963,
+      "best_norm": 0.5649277278321635,
+      "best_residual": 3.510833468576701e-16,
+      "best_angle": -18.43494882292201,
+      "competitor": {
+        "angle": -2.489552921999156,
+        "separation_deg": 15.945395900922847,
+        "score": 0.9827793549754377,
+        "absolute_gap": 0.0050211535458586365,
+        "relative_loss": 0.0050831655810494895,
+        "tau": [
+          3.0,
+          2.75,
+          0.0,
+          -0.25,
+          -3.0,
+          -2.75
+        ],
+        "norm": 0.5140919922649635,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 129024,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9971978892228995,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -18.434948822922014,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9931016915024998,
+        "absolute_gap": 0.004096197720399708,
+        "relative_loss": 0.004107707973180538,
+        "tau": [
+          1.0,
+          0.5,
+          0.0,
+          -0.5,
+          -1.0,
+          -0.5
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 129536,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999810640903376,
+      "best_norm": 0.7145833333333333,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": 16.189206257026946,
+        "separation_deg": 16.18920625702694,
+        "score": 0.9750527802431886,
+        "absolute_gap": 0.024928283847148958,
+        "relative_loss": 0.024928755895818597,
+        "tau": [
+          4.0,
+          5.0,
+          1.25,
+          1.0,
+          -2.75,
+          -3.75
+        ],
+        "norm": 0.7208364909255413,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 130048,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.991980457537014,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": -18.434948822922014,
+      "competitor": {
+        "angle": -37.874983651098205,
+        "separation_deg": 19.44003482817618,
+        "score": 0.9860949249382603,
+        "absolute_gap": 0.005885532598753684,
+        "relative_loss": 0.00593311345403604,
+        "tau": [
+          1.25,
+          0.25,
+          -0.75,
+          -1.0,
+          -2.0,
+          -1.0
+        ],
+        "norm": 0.2546094862037788,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 130560,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -18.434948822922014,
+        "separation_deg": 18.434948822922024,
+        "score": 0.996405349866887,
+        "absolute_gap": 0.0035946501331128866,
+        "relative_loss": 0.003594650133112887,
+        "tau": [
+          1.0,
+          0.5,
+          0.0,
+          -0.5,
+          -1.0,
+          -0.5
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 131072,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9985896539630167,
+      "best_norm": 0.2526433603614436,
+      "best_residual": 1.023934400414201e-17,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -65.55604521958347,
+        "separation_deg": 20.556045219583467,
+        "score": 0.9966705181839473,
+        "absolute_gap": 0.0019191357790694363,
+        "relative_loss": 0.0019218462473080185,
+        "tau": [
+          0.25,
+          -0.75,
+          -1.75,
+          -1.0,
+          -2.0,
+          -1.0
+        ],
+        "norm": 0.26982322714472257,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 131584,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9918366840450716,
+      "best_norm": 0.2526433603614436,
+      "best_residual": 1.023934400414201e-17,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -24.44395478041654,
+        "separation_deg": 20.556045219583467,
+        "score": 0.9913314217137871,
+        "absolute_gap": 0.0005052623312845617,
+        "relative_loss": 0.000509420895004526,
+        "tau": [
+          1.75,
+          0.75,
+          -0.25,
+          -1.0,
+          -2.0,
+          -1.0
+        ],
+        "norm": 0.26982322714472257,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 133632,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9974417530095863,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": 135.0,
+      "competitor": {
+        "angle": 101.30993247402021,
+        "separation_deg": 33.69006752597977,
+        "score": 0.9963033496810239,
+        "absolute_gap": 0.0011384033285624096,
+        "relative_loss": 0.0011413231149864133,
+        "tau": [
+          -0.5,
+          0.5,
+          0.25,
+          1.0,
+          0.75,
+          -0.25
+        ],
+        "norm": 0.11386482377358889,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 134144,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.3994642272304312,
+      "best_residual": 1.5700924586837752e-16,
+      "best_angle": 26.565051177077986,
+      "competitor": {
+        "angle": 11.309932474020213,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9984914554698965,
+        "absolute_gap": 0.0015085445301034062,
+        "relative_loss": 0.0015085445301034064,
+        "tau": [
+          3.0,
+          3.0,
+          1.0,
+          0.0,
+          -2.0,
+          -2.0
+        ],
+        "norm": 0.45545929509435557,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 134656,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9985982626364528,
+      "best_norm": 0.5359375,
+      "best_residual": 3.6259732146947156e-16,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": 16.38954033403479,
+        "separation_deg": 16.38954033403479,
+        "score": 0.9950913180974099,
+        "absolute_gap": 0.0035069445390428777,
+        "relative_loss": 0.003511867254589454,
+        "tau": [
+          2.0,
+          2.75,
+          0.5,
+          0.75,
+          -1.5,
+          -2.25
+        ],
+        "norm": 0.3957015289913793,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 135168,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9959766176917413,
+      "best_norm": 0.45545929509435557,
+      "best_residual": 0.408248290463863,
+      "best_angle": 11.309932474020213,
+      "competitor": {
+        "angle": -3.814074834290354,
+        "separation_deg": 15.124007308310581,
+        "score": 0.994710221451805,
+        "absolute_gap": 0.001266396239936296,
+        "relative_loss": 0.0012715120188978681,
+        "tau": [
+          2.0,
+          1.75,
+          0.0,
+          -0.25,
+          -2.0,
+          -1.75
+        ],
+        "norm": 0.3357044699076763,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 135680,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.2526433603614436,
+      "best_residual": 1.023934400414201e-17,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -60.94539590092286,
+        "separation_deg": 15.945395900922847,
+        "score": 0.9969966070253645,
+        "absolute_gap": 0.003003392974635366,
+        "relative_loss": 0.0030033929746353665,
+        "tau": [
+          0.5,
+          -0.5,
+          -1.25,
+          -1.0,
+          -1.75,
+          -0.75
+        ],
+        "norm": 0.22990892827855086,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 136192,
+      "old_cycle_fail": false,
+      "best_valid": false,
+      "best_score": 0.9998023557230045,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.816496580927726,
+      "best_angle": null,
+      "competitor": null
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 137216,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9765416257253287,
+      "best_norm": 0.3572916666666667,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -15.945395900922854,
+        "separation_deg": 15.945395900922847,
+        "score": 0.970508154238927,
+        "absolute_gap": 0.006033471486401654,
+        "relative_loss": 0.006178406867111556,
+        "tau": [
+          2.0,
+          1.25,
+          -0.25,
+          -0.75,
+          -2.25,
+          -1.5
+        ],
+        "norm": 0.32514032448218977,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 137728,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.3572916666666667,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": 15.945395900922858,
+        "separation_deg": 15.945395900922847,
+        "score": 0.994846270782224,
+        "absolute_gap": 0.005153729217775904,
+        "relative_loss": 0.005153729217775905,
+        "tau": [
+          1.5,
+          2.25,
+          0.25,
+          0.75,
+          -1.25,
+          -2.0
+        ],
+        "norm": 0.3251403244821898,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_000_20260920_02",
+      "start": 138240,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9925787780804907,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": -90.0,
+      "competitor": {
+        "angle": -116.56505117707799,
+        "separation_deg": 26.565051177077976,
+        "score": 0.9905964851526146,
+        "absolute_gap": 0.001982292927876106,
+        "relative_loss": 0.00199711395372525,
+        "tau": [
+          -0.5,
+          -1.5,
+          -1.0,
+          -1.0,
+          -0.5,
+          0.5
+        ],
+        "norm": 0.1997321136152156,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 94720,
+      "old_cycle_fail": true,
+      "best_valid": false,
+      "best_score": 0.966391844606546,
+      "best_norm": 0.7365756404098215,
+      "best_residual": 1.224744871391589,
+      "best_angle": null,
+      "competitor": null
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 95232,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9969569176582298,
+      "best_norm": 0.5208376301906089,
+      "best_residual": 0.408248290463863,
+      "best_angle": -59.03624346792648,
+      "competitor": {
+        "angle": -41.42366562500264,
+        "separation_deg": 17.612577842923827,
+        "score": 0.9846617032236555,
+        "absolute_gap": 0.012295214434574264,
+        "relative_loss": 0.012332743990035915,
+        "tau": [
+          2.25,
+          0.25,
+          -1.75,
+          -2.0,
+          -4.0,
+          -2.0
+        ],
+        "norm": 0.5062726469691198,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 95744,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.9196357131142034,
+      "best_residual": 0.408248290463863,
+      "best_angle": -60.94539590092286,
+      "competitor": {
+        "angle": -45.0,
+        "separation_deg": 15.945395900922847,
+        "score": 0.9501751455330603,
+        "absolute_gap": 0.04982485446693963,
+        "relative_loss": 0.049824854466939635,
+        "tau": [
+          3.0,
+          0.0,
+          -4.0,
+          -3.0,
+          -7.0,
+          -4.0
+        ],
+        "norm": 0.8842517612650523,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 96256,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9964214754846981,
+      "best_norm": 0.7683847829676096,
+      "best_residual": 0.408248290463863,
+      "best_angle": -54.46232220802562,
+      "competitor": {
+        "angle": -69.62356478616361,
+        "separation_deg": 15.161242578138001,
+        "score": 0.9540805915205645,
+        "absolute_gap": 0.0423408839641336,
+        "relative_loss": 0.04249294601316913,
+        "tau": [
+          1.25,
+          -2.75,
+          -4.75,
+          -4.0,
+          -6.0,
+          -2.0
+        ],
+        "norm": 0.8337470134101437,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 96768,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9990450811317847,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": -71.56505117707799,
+      "competitor": {
+        "angle": -56.309932474020215,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9975162497030642,
+        "absolute_gap": 0.0015288314287205118,
+        "relative_loss": 0.0015302927341262218,
+        "tau": [
+          1.5,
+          -0.5,
+          -1.0,
+          -2.0,
+          -2.5,
+          -0.5
+        ],
+        "norm": 0.3220583561156636,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 97280,
+      "old_cycle_fail": false,
+      "best_valid": false,
+      "best_score": 0.9973209370554582,
+      "best_norm": 0.0,
+      "best_residual": 0.0,
+      "best_angle": null,
+      "competitor": null
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 97792,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9985388578580837,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": 18.434948822922014,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9970408421087473,
+        "absolute_gap": 0.00149801574933639,
+        "relative_loss": 0.0015002077661251053,
+        "tau": [
+          0.5,
+          1.0,
+          0.0,
+          0.5,
+          -0.5,
+          -1.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 98816,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9985107306435848,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -71.56505117707799,
+        "separation_deg": 26.565051177077976,
+        "score": 0.996359486612002,
+        "absolute_gap": 0.002151244031582733,
+        "relative_loss": 0.0021544525918075616,
+        "tau": [
+          0.5,
+          -0.5,
+          -0.5,
+          -1.0,
+          -1.0,
+          0.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 99328,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9959157431837105,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": 161.565051177078,
+      "competitor": {
+        "angle": 146.30993247402023,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9936292040777828,
+        "absolute_gap": 0.0022865391059276874,
+        "relative_loss": 0.002295916217388185,
+        "tau": [
+          -1.25,
+          -0.25,
+          0.0,
+          1.0,
+          1.25,
+          0.25
+        ],
+        "norm": 0.1610291780578318,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 116224,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9948539196234364,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": -71.56505117707799,
+      "competitor": {
+        "angle": -52.1250163489018,
+        "separation_deg": 19.44003482817618,
+        "score": 0.993698908958533,
+        "absolute_gap": 0.001155010664903422,
+        "relative_loss": 0.0011609851879968536,
+        "tau": [
+          1.0,
+          -0.25,
+          -1.0,
+          -1.25,
+          -2.0,
+          -0.75
+        ],
+        "norm": 0.2546094862037789,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 116736,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9985498400434455,
+      "best_norm": 0.3789650405421653,
+      "best_residual": 0.408248290463863,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -26.56505117707799,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9983025205598883,
+        "absolute_gap": 0.0002473194835571624,
+        "relative_loss": 0.00024767865722796756,
+        "tau": [
+          2.0,
+          1.0,
+          -1.0,
+          -1.0,
+          -3.0,
+          -2.0
+        ],
+        "norm": 0.3994642272304312,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 117248,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9975306835753259,
+      "best_norm": 0.7683847829676096,
+      "best_residual": 0.408248290463863,
+      "best_angle": -54.46232220802562,
+      "competitor": {
+        "angle": -70.3461759419467,
+        "separation_deg": 15.883853733921086,
+        "score": 0.9790885017354227,
+        "absolute_gap": 0.018442181839903204,
+        "relative_loss": 0.018487834152432457,
+        "tau": [
+          0.75,
+          -2.25,
+          -4.0,
+          -3.0,
+          -4.75,
+          -1.75
+        ],
+        "norm": 0.6639403099388342,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 117760,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9927049188862426,
+      "best_norm": 0.7683847829676096,
+      "best_residual": 0.408248290463863,
+      "best_angle": -54.46232220802562,
+      "competitor": {
+        "angle": -70.3461759419467,
+        "separation_deg": 15.883853733921086,
+        "score": 0.9852070265702007,
+        "absolute_gap": 0.007497892316041921,
+        "relative_loss": 0.007552992005372676,
+        "tau": [
+          0.75,
+          -2.25,
+          -4.0,
+          -3.0,
+          -4.75,
+          -1.75
+        ],
+        "norm": 0.6639403099388342,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 120320,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9839557520345671,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -26.56505117707799,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9807486453574297,
+        "absolute_gap": 0.003207106677137417,
+        "relative_loss": 0.003259401320136547,
+        "tau": [
+          1.5,
+          0.5,
+          0.0,
+          -1.0,
+          -1.5,
+          -0.5
+        ],
+        "norm": 0.1997321136152156,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 125440,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.998956677788062,
+      "best_norm": 0.3994642272304312,
+      "best_residual": 0.0,
+      "best_angle": -63.43494882292201,
+      "competitor": {
+        "angle": -45.0,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9968137441740808,
+        "absolute_gap": 0.0021429336139812127,
+        "relative_loss": 0.0021451717192843634,
+        "tau": [
+          2.0,
+          0.0,
+          -2.0,
+          -2.0,
+          -4.0,
+          -2.0
+        ],
+        "norm": 0.5052867207228872,
+        "plane_residual": 2.047868800828402e-17
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 125952,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9992805797894856,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -71.56505117707799,
+        "separation_deg": 26.565051177077976,
+        "score": 0.9982309845654824,
+        "absolute_gap": 0.0010495952240031636,
+        "relative_loss": 0.0010503508676454791,
+        "tau": [
+          0.0,
+          -0.5,
+          -1.0,
+          -0.5,
+          -1.0,
+          -0.5
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 126464,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9994323623466458,
+      "best_norm": 0.3572916666666667,
+      "best_residual": 0.0,
+      "best_angle": -90.0,
+      "competitor": {
+        "angle": -73.61045966596522,
+        "separation_deg": 16.38954033403479,
+        "score": 0.9981652185394634,
+        "absolute_gap": 0.0012671438071824026,
+        "relative_loss": 0.0012678634942410471,
+        "tau": [
+          0.75,
+          -1.5,
+          -2.0,
+          -2.25,
+          -2.75,
+          -0.5
+        ],
+        "norm": 0.39570152899137945,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 126976,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9993742505813571,
+      "best_norm": 0.3994642272304312,
+      "best_residual": 0.0,
+      "best_angle": -63.43494882292201,
+      "competitor": {
+        "angle": -45.0,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9969559153867222,
+        "absolute_gap": 0.0024183351946348575,
+        "relative_loss": 0.0024198494139988707,
+        "tau": [
+          2.0,
+          0.0,
+          -2.0,
+          -2.0,
+          -4.0,
+          -2.0
+        ],
+        "norm": 0.5052867207228872,
+        "plane_residual": 2.047868800828402e-17
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 127488,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9987918067936427,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": 161.565051177078,
+      "competitor": {
+        "angle": 180.0,
+        "separation_deg": 18.434948822921996,
+        "score": 0.9986726416652448,
+        "absolute_gap": 0.00011916512839782456,
+        "relative_loss": 0.0001193092770558188,
+        "tau": [
+          -1.0,
+          -1.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "norm": 0.17864583333333334,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 129024,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9938450115598141,
+      "best_norm": 0.7989284544608624,
+      "best_residual": 0.0,
+      "best_angle": -63.43494882292201,
+      "competitor": {
+        "angle": -78.69006752597979,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9654437752617637,
+        "absolute_gap": 0.02840123629805036,
+        "relative_loss": 0.02857712819172413,
+        "tau": [
+          1.0,
+          -3.5,
+          -4.25,
+          -4.5,
+          -5.25,
+          -0.75
+        ],
+        "norm": 0.7970537664151222,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 129536,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.99580027687755,
+      "best_norm": 0.6441167122313272,
+      "best_residual": 2.9021946219117546e-16,
+      "best_angle": -56.309932474020215,
+      "competitor": {
+        "angle": -71.56505117707799,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9795414796160232,
+        "absolute_gap": 0.01625879726152679,
+        "relative_loss": 0.016327367685122746,
+        "tau": [
+          1.5,
+          -2.25,
+          -3.0,
+          -3.75,
+          -4.5,
+          -0.75
+        ],
+        "norm": 0.635543693811184,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 130048,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9725510621393448,
+      "best_norm": 0.5208376301906089,
+      "best_residual": 0.408248290463863,
+      "best_angle": -59.03624346792648,
+      "competitor": {
+        "angle": -74.74488129694222,
+        "separation_deg": 15.708637829015743,
+        "score": 0.9571656758996366,
+        "absolute_gap": 0.015385386239708199,
+        "relative_loss": 0.015819617949791327,
+        "tau": [
+          1.25,
+          -2.0,
+          -2.25,
+          -3.25,
+          -3.5,
+          -0.25
+        ],
+        "norm": 0.5092189724075578,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 130560,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9986163668444837,
+      "best_norm": 0.6441167122313272,
+      "best_residual": 2.9021946219117546e-16,
+      "best_angle": -56.309932474020215,
+      "competitor": {
+        "angle": -39.28940686250036,
+        "separation_deg": 17.020525611519872,
+        "score": 0.9797721179020031,
+        "absolute_gap": 0.0188442489424806,
+        "relative_loss": 0.01887035859629091,
+        "tau": [
+          3.0,
+          0.5,
+          -2.0,
+          -2.5,
+          -5.0,
+          -2.5
+        ],
+        "norm": 0.6347585870336329,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 131072,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9942236746611915,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": -18.434948822922014,
+      "competitor": {
+        "angle": 0.0,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9936906804365996,
+        "absolute_gap": 0.000532994224591965,
+        "relative_loss": 0.0005360908598093856,
+        "tau": [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          -1.0
+        ],
+        "norm": 0.17864583333333334,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 132096,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.995717942823006,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": -108.43494882292202,
+      "competitor": {
+        "angle": -90.0,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9928105014053472,
+        "absolute_gap": 0.0029074414176587515,
+        "relative_loss": 0.00291994478819547,
+        "tau": [
+          -0.5,
+          -1.5,
+          -2.0,
+          -1.0,
+          -1.5,
+          -0.5
+        ],
+        "norm": 0.26796875,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 132608,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9998980499799653,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -71.56505117707799,
+        "separation_deg": 26.565051177077976,
+        "score": 0.997509853567806,
+        "absolute_gap": 0.0023881964121593713,
+        "relative_loss": 0.00238843991365642,
+        "tau": [
+          0.5,
+          -0.5,
+          -0.5,
+          -1.0,
+          -1.0,
+          0.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 133120,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9970114249870294,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": -135.0,
+      "competitor": {
+        "angle": -116.56505117707799,
+        "separation_deg": 18.434948822922024,
+        "score": 0.995854340063364,
+        "absolute_gap": 0.0011570849236653968,
+        "relative_loss": 0.0011605533243317144,
+        "tau": [
+          -1.0,
+          -1.5,
+          -1.5,
+          -0.5,
+          -0.5,
+          0.0
+        ],
+        "norm": 0.19973211361521556,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 135680,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.99991473918354,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": -71.56505117707799,
+      "competitor": {
+        "angle": -52.1250163489018,
+        "separation_deg": 19.44003482817618,
+        "score": 0.9992313914985148,
+        "absolute_gap": 0.000683347685025204,
+        "relative_loss": 0.0006834059527747112,
+        "tau": [
+          0.75,
+          -0.25,
+          -1.25,
+          -1.0,
+          -2.0,
+          -1.0
+        ],
+        "norm": 0.2546094862037789,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 136192,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9997465812304295,
+      "best_norm": 0.3994642272304312,
+      "best_residual": 0.0,
+      "best_angle": -63.43494882292201,
+      "competitor": {
+        "angle": -45.0,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9961955377530742,
+        "absolute_gap": 0.0035510434773552424,
+        "relative_loss": 0.003551943606533594,
+        "tau": [
+          2.0,
+          0.0,
+          -1.0,
+          -2.0,
+          -3.0,
+          -1.0
+        ],
+        "norm": 0.3789650405421653,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 136704,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9990546311665024,
+      "best_norm": 0.3789650405421653,
+      "best_residual": 0.408248290463863,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -26.56505117707799,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9971638642388746,
+        "absolute_gap": 0.001890766927627796,
+        "relative_loss": 0.0018925560911720362,
+        "tau": [
+          2.0,
+          1.0,
+          -1.0,
+          -1.0,
+          -3.0,
+          -2.0
+        ],
+        "norm": 0.3994642272304312,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_01",
+      "start": 137216,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.998899019307816,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": -90.0,
+      "competitor": {
+        "angle": -71.56505117707799,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9975490424791061,
+        "absolute_gap": 0.0013499768287098535,
+        "relative_loss": 0.0013514647653226407,
+        "tau": [
+          0.0,
+          -0.5,
+          -1.0,
+          -0.5,
+          -1.0,
+          -0.5
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 96768,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999442502950188,
+      "best_norm": 0.3789650405421653,
+      "best_residual": 0.408248290463863,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -63.43494882292201,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9987695534530747,
+        "absolute_gap": 0.0011746968419440451,
+        "relative_loss": 0.001174762334597622,
+        "tau": [
+          1.0,
+          -1.0,
+          -2.0,
+          -2.0,
+          -3.0,
+          -1.0
+        ],
+        "norm": 0.3994642272304312,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 103424,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9992610204489651,
+      "best_norm": 0.3572916666666667,
+      "best_residual": 0.0,
+      "best_angle": 180.0,
+      "competitor": {
+        "angle": -163.6104596659652,
+        "separation_deg": 16.38954033403479,
+        "score": 0.9964042119714686,
+        "absolute_gap": 0.0028568084774965863,
+        "relative_loss": 0.0028589211617731573,
+        "tau": [
+          -2.0,
+          -2.75,
+          -0.5,
+          -0.75,
+          1.5,
+          2.25
+        ],
+        "norm": 0.3957015289913793,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 103936,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9990984057581948,
+      "best_norm": 0.3789650405421653,
+      "best_residual": 0.408248290463863,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -63.43494882292201,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9984043473957972,
+        "absolute_gap": 0.0006940583623975538,
+        "relative_loss": 0.0006946846861104213,
+        "tau": [
+          1.0,
+          -1.0,
+          -2.0,
+          -2.0,
+          -3.0,
+          -1.0
+        ],
+        "norm": 0.3994642272304312,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 104448,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9407302383660322,
+      "best_norm": 0.9196357131142034,
+      "best_residual": 0.408248290463863,
+      "best_angle": -60.94539590092286,
+      "competitor": {
+        "angle": -45.0,
+        "separation_deg": 15.945395900922847,
+        "score": 0.9164197842791515,
+        "absolute_gap": 0.024310454086880706,
+        "relative_loss": 0.025842109773260697,
+        "tau": [
+          3.0,
+          0.0,
+          -4.0,
+          -3.0,
+          -7.0,
+          -4.0
+        ],
+        "norm": 0.8842517612650523,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 104960,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.997778525196915,
+      "best_norm": 0.3789650405421653,
+      "best_residual": 0.408248290463863,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -26.56505117707799,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9977374563914462,
+        "absolute_gap": 4.1068805468835734e-05,
+        "relative_loss": 4.116024190912574e-05,
+        "tau": [
+          2.0,
+          1.0,
+          -1.0,
+          -1.0,
+          -3.0,
+          -2.0
+        ],
+        "norm": 0.3994642272304312,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 105472,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.3994642272304312,
+      "best_residual": 0.0,
+      "best_angle": -26.56505117707799,
+      "competitor": {
+        "angle": -45.0,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9902632141101673,
+        "absolute_gap": 0.009736785889832622,
+        "relative_loss": 0.009736785889832624,
+        "tau": [
+          1.0,
+          0.0,
+          -2.0,
+          -1.0,
+          -3.0,
+          -2.0
+        ],
+        "norm": 0.3789650405421653,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 108032,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9972278534692018,
+      "best_norm": 0.2526433603614436,
+      "best_residual": 1.023934400414201e-17,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -65.55604521958347,
+        "separation_deg": 20.556045219583467,
+        "score": 0.996045822734768,
+        "absolute_gap": 0.0011820307344337921,
+        "relative_loss": 0.0011853166057503204,
+        "tau": [
+          0.25,
+          -0.75,
+          -1.75,
+          -1.0,
+          -2.0,
+          -1.0
+        ],
+        "norm": 0.26982322714472257,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 108544,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9969317417782284,
+      "best_norm": 0.3994642272304312,
+      "best_residual": 0.0,
+      "best_angle": -26.56505117707799,
+      "competitor": {
+        "angle": -11.30993247402021,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9950676420746115,
+        "absolute_gap": 0.001864099703616895,
+        "relative_loss": 0.0018698368458926766,
+        "tau": [
+          1.75,
+          1.5,
+          -0.5,
+          -0.25,
+          -2.25,
+          -2.0
+        ],
+        "norm": 0.34159447132076665,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 109056,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.981023721640366,
+      "best_norm": 0.8932291666666666,
+      "best_residual": 4.796711693331816e-16,
+      "best_angle": -53.13010235415599,
+      "competitor": {
+        "angle": -37.8749836510982,
+        "separation_deg": 15.255118703057803,
+        "score": 0.9706244886674692,
+        "absolute_gap": 0.0103992329728968,
+        "relative_loss": 0.010600388903449023,
+        "tau": [
+          3.0,
+          0.75,
+          -3.0,
+          -2.25,
+          -6.0,
+          -3.75
+        ],
+        "norm": 0.7638284586113364,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 115200,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9996617240313894,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 180.0,
+      "competitor": {
+        "angle": 164.74488129694222,
+        "separation_deg": 15.255118703057775,
+        "score": 0.998058219462415,
+        "absolute_gap": 0.001603504568974401,
+        "relative_loss": 0.0016040471795877732,
+        "tau": [
+          -1.75,
+          -1.0,
+          0.0,
+          0.75,
+          1.75,
+          1.0
+        ],
+        "norm": 0.2546094862037789,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 115712,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999835340276261,
+      "best_norm": 0.3994642272304312,
+      "best_residual": 0.0,
+      "best_angle": -63.43494882292201,
+      "competitor": {
+        "angle": -45.0,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9996427831966708,
+        "absolute_gap": 0.00034075083095530534,
+        "relative_loss": 0.00034075644184146294,
+        "tau": [
+          1.0,
+          0.0,
+          -1.0,
+          -1.0,
+          -2.0,
+          -1.0
+        ],
+        "norm": 0.2526433603614436,
+        "plane_residual": 1.023934400414201e-17
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 117248,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9994163974971987,
+      "best_norm": 0.45545929509435557,
+      "best_residual": 0.408248290463863,
+      "best_angle": -78.69006752597979,
+      "competitor": {
+        "angle": -63.43494882292201,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9990507160470834,
+        "absolute_gap": 0.00036568145011528497,
+        "relative_loss": 0.00036589498734566233,
+        "tau": [
+          0.75,
+          -1.25,
+          -3.0,
+          -2.0,
+          -3.75,
+          -1.75
+        ],
+        "norm": 0.499330284038039,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 117760,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9992690452879033,
+      "best_norm": 0.3789650405421653,
+      "best_residual": 0.408248290463863,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -26.56505117707799,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9989814288316662,
+        "absolute_gap": 0.0002876164562370942,
+        "relative_loss": 0.00028782684462544107,
+        "tau": [
+          2.0,
+          1.0,
+          -1.0,
+          -1.0,
+          -3.0,
+          -2.0
+        ],
+        "norm": 0.3994642272304312,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 118272,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9986928162436488,
+      "best_norm": 0.5359375,
+      "best_residual": 3.6259732146947156e-16,
+      "best_angle": -90.0,
+      "competitor": {
+        "angle": -74.35775354279127,
+        "separation_deg": 15.642246457208728,
+        "score": 0.9962817281770212,
+        "absolute_gap": 0.002411088066627598,
+        "relative_loss": 0.0024142439270729375,
+        "tau": [
+          1.0,
+          -2.25,
+          -3.0,
+          -3.25,
+          -4.0,
+          -0.75
+        ],
+        "norm": 0.5797394479311561,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 124416,
+      "old_cycle_fail": false,
+      "best_valid": false,
+      "best_score": 0.9953681324302238,
+      "best_norm": 0.0,
+      "best_residual": 0.0,
+      "best_angle": null,
+      "competitor": null
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 124928,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9990543885271117,
+      "best_norm": 0.5052867207228872,
+      "best_residual": 2.047868800828402e-17,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -63.43494882292201,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9979593573745364,
+        "absolute_gap": 0.0010950311525752543,
+        "relative_loss": 0.0010960676066791913,
+        "tau": [
+          1.0,
+          -1.0,
+          -2.0,
+          -2.0,
+          -3.0,
+          -1.0
+        ],
+        "norm": 0.3994642272304312,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 127488,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.999396019648202,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": -71.56505117707799,
+      "competitor": {
+        "angle": -52.1250163489018,
+        "separation_deg": 19.44003482817618,
+        "score": 0.9982434093748419,
+        "absolute_gap": 0.0011526102733601107,
+        "relative_loss": 0.0011533068480359184,
+        "tau": [
+          0.75,
+          -0.25,
+          -1.25,
+          -1.0,
+          -2.0,
+          -1.0
+        ],
+        "norm": 0.2546094862037789,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 128000,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9998995162886837,
+      "best_norm": 0.5208376301906089,
+      "best_residual": 0.408248290463863,
+      "best_angle": -59.03624346792648,
+      "competitor": {
+        "angle": -74.74488129694222,
+        "separation_deg": 15.708637829015743,
+        "score": 0.9950260088122916,
+        "absolute_gap": 0.004873507476392036,
+        "relative_loss": 0.004873997233723026,
+        "tau": [
+          1.0,
+          -2.0,
+          -2.5,
+          -3.0,
+          -3.5,
+          -0.5
+        ],
+        "norm": 0.5092189724075575,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 128512,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.5208376301906088,
+      "best_residual": 0.408248290463863,
+      "best_angle": -59.03624346792648,
+      "competitor": {
+        "angle": -74.74488129694222,
+        "separation_deg": 15.708637829015743,
+        "score": 0.9939343721878519,
+        "absolute_gap": 0.006065627812148033,
+        "relative_loss": 0.006065627812148034,
+        "tau": [
+          0.5,
+          -2.0,
+          -3.0,
+          -2.5,
+          -3.5,
+          -1.0
+        ],
+        "norm": 0.5092189724075579,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 129024,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": -18.434948822922014,
+      "competitor": {
+        "angle": -33.690067525979785,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9975285574889368,
+        "absolute_gap": 0.0024714425110631266,
+        "relative_loss": 0.002471442511063127,
+        "tau": [
+          2.0,
+          0.5,
+          -0.5,
+          -1.5,
+          -2.5,
+          -1.0
+        ],
+        "norm": 0.3220583561156636,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_m045_20260920_02",
+      "start": 129536,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9993829284287458,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 90.0,
+      "competitor": {
+        "angle": 71.56505117707799,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9987152091696295,
+        "absolute_gap": 0.0006677192591162395,
+        "relative_loss": 0.0006681315440979606,
+        "tau": [
+          0.5,
+          1.0,
+          1.0,
+          0.5,
+          0.5,
+          0.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 104960,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9998017370940555,
+      "best_norm": 0.3994642272304312,
+      "best_residual": 1.5700924586837752e-16,
+      "best_angle": 26.565051177077986,
+      "competitor": {
+        "angle": 11.30993247402021,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9952241936788261,
+        "absolute_gap": 0.004577543415229424,
+        "relative_loss": 0.004578451152259595,
+        "tau": [
+          2.0,
+          2.25,
+          0.5,
+          0.25,
+          -1.5,
+          -1.75
+        ],
+        "norm": 0.34159447132076665,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 105472,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.998519019734368,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 90.0,
+      "competitor": {
+        "angle": 105.25511870305779,
+        "separation_deg": 15.255118703057803,
+        "score": 0.9979862411883039,
+        "absolute_gap": 0.0005327785460640388,
+        "relative_loss": 0.0005335687508544122,
+        "tau": [
+          -0.75,
+          1.0,
+          1.0,
+          1.75,
+          1.75,
+          0.0
+        ],
+        "norm": 0.2546094862037789,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 118272,
+      "old_cycle_fail": true,
+      "best_valid": false,
+      "best_score": 0.9810727822694623,
+      "best_norm": 0.7579300810843306,
+      "best_residual": 0.816496580927726,
+      "best_angle": null,
+      "competitor": null
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 118784,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9945302864125262,
+      "best_norm": 0.3994642272304312,
+      "best_residual": 0.0,
+      "best_angle": -26.56505117707799,
+      "competitor": {
+        "angle": -45.0,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9912886355392012,
+        "absolute_gap": 0.0032416508733249527,
+        "relative_loss": 0.0032594792914937254,
+        "tau": [
+          1.0,
+          0.0,
+          -1.0,
+          -1.0,
+          -2.0,
+          -1.0
+        ],
+        "norm": 0.2526433603614436,
+        "plane_residual": 1.023934400414201e-17
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 119296,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9973866333746502,
+      "best_norm": 0.3789650405421653,
+      "best_residual": 0.408248290463863,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 63.43494882292201,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9967000792913978,
+        "absolute_gap": 0.0006865540832523553,
+        "relative_loss": 0.0006883530020142788,
+        "tau": [
+          1.0,
+          3.0,
+          2.0,
+          2.0,
+          1.0,
+          -1.0
+        ],
+        "norm": 0.3994642272304312,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 119808,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.99469959475287,
+      "best_norm": 0.45545929509435557,
+      "best_residual": 0.408248290463863,
+      "best_angle": 11.309932474020213,
+      "competitor": {
+        "angle": 26.565051177077986,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9918383727663731,
+        "absolute_gap": 0.0028612219864968536,
+        "relative_loss": 0.0028764684348823078,
+        "tau": [
+          2.0,
+          3.0,
+          1.0,
+          1.0,
+          -1.0,
+          -2.0
+        ],
+        "norm": 0.3994642272304312,
+        "plane_residual": 1.5700924586837752e-16
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 120320,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9995741625234341,
+      "best_norm": 0.3994642272304312,
+      "best_residual": 1.5700924586837752e-16,
+      "best_angle": 26.565051177077986,
+      "competitor": {
+        "angle": 45.0,
+        "separation_deg": 18.434948822922024,
+        "score": 0.995231960426934,
+        "absolute_gap": 0.004342202096500158,
+        "relative_loss": 0.004344051956623438,
+        "tau": [
+          1.0,
+          3.0,
+          1.0,
+          2.0,
+          0.0,
+          -2.0
+        ],
+        "norm": 0.3789650405421653,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 120832,
+      "old_cycle_fail": true,
+      "best_valid": false,
+      "best_score": 0.9827258360905663,
+      "best_norm": 0.6441167122313272,
+      "best_residual": 0.816496580927726,
+      "best_angle": null,
+      "competitor": null
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 123392,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9840050327897694,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 180.0,
+      "competitor": {
+        "angle": -161.565051177078,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9837313737384685,
+        "absolute_gap": 0.0002736590513008341,
+        "relative_loss": 0.00027810736955783517,
+        "tau": [
+          -0.5,
+          -1.0,
+          0.0,
+          -0.5,
+          0.5,
+          1.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 124416,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9942718286708824,
+      "best_norm": 0.3789650405421653,
+      "best_residual": 0.408248290463863,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 26.565051177077986,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9928649183575361,
+        "absolute_gap": 0.0014069103133462768,
+        "relative_loss": 0.0014150157660878305,
+        "tau": [
+          2.0,
+          3.0,
+          1.0,
+          1.0,
+          -1.0,
+          -2.0
+        ],
+        "norm": 0.3994642272304312,
+        "plane_residual": 1.5700924586837752e-16
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 130048,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9996863627301198,
+      "best_norm": 0.3572916666666667,
+      "best_residual": 0.0,
+      "best_angle": 90.0,
+      "competitor": {
+        "angle": 108.43494882292202,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9992890615029675,
+        "absolute_gap": 0.00039730122715231353,
+        "relative_loss": 0.00039742587471864005,
+        "tau": [
+          -1.0,
+          1.0,
+          1.0,
+          2.0,
+          2.0,
+          0.0
+        ],
+        "norm": 0.2824638639160818,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 130560,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9989411863324944,
+      "best_norm": 0.5208376301906089,
+      "best_residual": 0.408248290463863,
+      "best_angle": 30.963756532073518,
+      "competitor": {
+        "angle": 14.743562836470735,
+        "separation_deg": 16.220193695602774,
+        "score": 0.9961811531314482,
+        "absolute_gap": 0.0027600332010462303,
+        "relative_loss": 0.002762958659437596,
+        "tau": [
+          2.75,
+          3.0,
+          1.0,
+          0.25,
+          -1.75,
+          -2.0
+        ],
+        "norm": 0.4387292166409672,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 131072,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9994259859583515,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 90.0,
+      "competitor": {
+        "angle": 116.56505117707799,
+        "separation_deg": 26.565051177077976,
+        "score": 0.9989109771708471,
+        "absolute_gap": 0.000515008787504434,
+        "relative_loss": 0.0005153045795688323,
+        "tau": [
+          -0.5,
+          0.5,
+          1.0,
+          1.0,
+          1.5,
+          0.5
+        ],
+        "norm": 0.1997321136152156,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 131584,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9971343487906247,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 71.56505117707799,
+        "separation_deg": 26.565051177077976,
+        "score": 0.9963942981157746,
+        "absolute_gap": 0.0007400506748500568,
+        "relative_loss": 0.0007421774966910206,
+        "tau": [
+          0.5,
+          1.0,
+          1.0,
+          0.5,
+          0.5,
+          0.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 132096,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9964630471018323,
+      "best_norm": 0.680263066487323,
+      "best_residual": 0.408248290463863,
+      "best_angle": 23.198590513648185,
+      "competitor": {
+        "angle": 8.130102354155978,
+        "separation_deg": 15.068488159492205,
+        "score": 0.9944079768562486,
+        "absolute_gap": 0.002055070245583712,
+        "relative_loss": 0.002062364732501412,
+        "tau": [
+          3.0,
+          4.0,
+          0.0,
+          1.0,
+          -3.0,
+          -4.0
+        ],
+        "norm": 0.6316084009036088,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 132608,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9891080486139577,
+      "best_norm": 0.6441167122313272,
+      "best_residual": 7.152111528976949e-16,
+      "best_angle": 33.69006752597979,
+      "competitor": {
+        "angle": 48.81407483429036,
+        "separation_deg": 15.124007308310581,
+        "score": 0.9815067979774216,
+        "absolute_gap": 0.007601250636536161,
+        "relative_loss": 0.007684954790518421,
+        "tau": [
+          1.75,
+          3.75,
+          2.0,
+          2.0,
+          0.25,
+          -1.75
+        ],
+        "norm": 0.47475781429270636,
+        "plane_residual": 2.3221980631040627e-16
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 133120,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9948839035845959,
+      "best_norm": 0.8932291666666666,
+      "best_residual": 3.1401849173675503e-16,
+      "best_angle": 36.86989764584402,
+      "competitor": {
+        "angle": 52.1250163489018,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9723069222334394,
+        "absolute_gap": 0.02257698135115649,
+        "relative_loss": 0.022693081343271273,
+        "tau": [
+          2.25,
+          6.0,
+          3.0,
+          3.75,
+          0.75,
+          -3.0
+        ],
+        "norm": 0.7638284586113365,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 133632,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9449131972383795,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": 135.0,
+      "competitor": {
+        "angle": 45.0,
+        "separation_deg": 90.0,
+        "score": 0.9448719483115269,
+        "absolute_gap": 4.124892685264392e-05,
+        "relative_loss": 4.365366784292862e-05,
+        "tau": [
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          0.0,
+          -1.0
+        ],
+        "norm": 0.2526433603614435,
+        "plane_residual": 2.5695679235043195e-16
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 136192,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9988946350363539,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": 15.25511870305778,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9965362460057484,
+        "absolute_gap": 0.002358389030605479,
+        "relative_loss": 0.002360998795953737,
+        "tau": [
+          1.75,
+          1.75,
+          0.75,
+          0.0,
+          -1.0,
+          -1.0
+        ],
+        "norm": 0.25460948620377877,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 136704,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": 108.43494882292202,
+      "competitor": {
+        "angle": 127.87498365109822,
+        "separation_deg": 19.44003482817618,
+        "score": 0.9941469810331239,
+        "absolute_gap": 0.005853018966875956,
+        "relative_loss": 0.005853018966875957,
+        "tau": [
+          -1.0,
+          0.25,
+          1.0,
+          1.25,
+          2.0,
+          0.75
+        ],
+        "norm": 0.2546094862037789,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 140288,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9933731822678609,
+      "best_norm": 0.6441167122313272,
+      "best_residual": 7.152111528976949e-16,
+      "best_angle": 33.69006752597979,
+      "competitor": {
+        "angle": 18.43494882292201,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9883739423692127,
+        "absolute_gap": 0.0049992398986481446,
+        "relative_loss": 0.005032589955000527,
+        "tau": [
+          3.0,
+          4.0,
+          1.0,
+          1.0,
+          -2.0,
+          -3.0
+        ],
+        "norm": 0.5649277278321635,
+        "plane_residual": 3.510833468576701e-16
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 140800,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9980870287234724,
+      "best_norm": 0.505286720722887,
+      "best_residual": 5.139135847008639e-16,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 29.054604099077153,
+        "separation_deg": 15.945395900922847,
+        "score": 0.9954617330748295,
+        "absolute_gap": 0.002625295648642889,
+        "relative_loss": 0.0026303273893866497,
+        "tau": [
+          1.75,
+          3.5,
+          0.75,
+          1.75,
+          -1.0,
+          -2.75
+        ],
+        "norm": 0.4598178565571016,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 141312,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9983011281224726,
+      "best_norm": 0.28246386391608175,
+      "best_residual": 0.408248290463863,
+      "best_angle": 18.43494882292201,
+      "competitor": {
+        "angle": 37.874983651098205,
+        "separation_deg": 19.44003482817618,
+        "score": 0.9982160875168916,
+        "absolute_gap": 8.504060558101045e-05,
+        "relative_loss": 8.518532453323802e-05,
+        "tau": [
+          1.25,
+          2.0,
+          1.0,
+          0.75,
+          -0.25,
+          -1.0
+        ],
+        "norm": 0.2546094862037788,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 141824,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9968009561126622,
+      "best_norm": 0.3994642272304312,
+      "best_residual": 0.0,
+      "best_angle": 116.56505117707799,
+      "competitor": {
+        "angle": 101.30993247402021,
+        "separation_deg": 15.255118703057775,
+        "score": 0.996094439949232,
+        "absolute_gap": 0.0007065161634302042,
+        "relative_loss": 0.0007087835932516412,
+        "tau": [
+          -0.5,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          0.25
+        ],
+        "norm": 0.3415944713207666,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 145920,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9900621918732919,
+      "best_norm": 0.3789650405421653,
+      "best_residual": 0.408248290463863,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 60.25511870305778,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9856373420287815,
+        "absolute_gap": 0.0044248498445104145,
+        "relative_loss": 0.004469264537956123,
+        "tau": [
+          1.0,
+          2.75,
+          1.75,
+          1.75,
+          0.75,
+          -1.0
+        ],
+        "norm": 0.3600721884982295,
+        "plane_residual": 2.603703785810335e-16
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 146944,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9941063579027694,
+      "best_norm": 0.3789650405421653,
+      "best_residual": 0.408248290463863,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 29.74488129694222,
+        "separation_deg": 15.255118703057775,
+        "score": 0.988353027659418,
+        "absolute_gap": 0.00575333024335134,
+        "relative_loss": 0.0057874393394776544,
+        "tau": [
+          1.75,
+          2.75,
+          1.0,
+          1.0,
+          -0.75,
+          -1.75
+        ],
+        "norm": 0.3600721884982295,
+        "plane_residual": 2.5639502485114184e-16
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 147456,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9956726628433034,
+      "best_norm": 0.3572916666666667,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -18.434948822922014,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9894016404398769,
+        "absolute_gap": 0.006271022403426474,
+        "relative_loss": 0.006298277172257156,
+        "tau": [
+          2.0,
+          1.0,
+          0.0,
+          -1.0,
+          -2.0,
+          -1.0
+        ],
+        "norm": 0.2824638639160818,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 147968,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9992911079100367,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": 18.434948822922014,
+      "competitor": {
+        "angle": 33.69006752597979,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9965402072194892,
+        "absolute_gap": 0.0027509006905475086,
+        "relative_loss": 0.002752852165672592,
+        "tau": [
+          1.0,
+          2.5,
+          0.5,
+          1.5,
+          -0.5,
+          -2.0
+        ],
+        "norm": 0.3220583561156636,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 148480,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.9905770736293394,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": 108.43494882292202,
+      "competitor": {
+        "angle": 123.69006752597979,
+        "separation_deg": 15.255118703057747,
+        "score": 0.986439669421167,
+        "absolute_gap": 0.004137404208172435,
+        "relative_loss": 0.004176761524485469,
+        "tau": [
+          -1.0,
+          0.25,
+          0.25,
+          1.25,
+          1.25,
+          0.0
+        ],
+        "norm": 0.16102917805783185,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 283648,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.999692249070125,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 18.434948822922014,
+        "separation_deg": 26.565051177077976,
+        "score": 0.9991246884203209,
+        "absolute_gap": 0.0005675606498041219,
+        "relative_loss": 0.000567735370892437,
+        "tau": [
+          0.5,
+          1.0,
+          0.0,
+          0.5,
+          -0.5,
+          -1.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_01",
+      "start": 284672,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.999012756708726,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": -45.0,
+      "competitor": {
+        "angle": -71.56505117707799,
+        "separation_deg": 26.565051177077976,
+        "score": 0.9985554160954323,
+        "absolute_gap": 0.0004573406132937219,
+        "relative_loss": 0.00045779256593323457,
+        "tau": [
+          0.5,
+          -0.5,
+          -0.5,
+          -1.0,
+          -1.0,
+          0.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 101888,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9995589425995437,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 180.0,
+      "competitor": {
+        "angle": -161.565051177078,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9992889107355665,
+        "absolute_gap": 0.000270031863977227,
+        "relative_loss": 0.0002701510160821108,
+        "tau": [
+          -1.25,
+          -1.5,
+          -0.5,
+          -0.25,
+          0.75,
+          1.0
+        ],
+        "norm": 0.21184789793706132,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 102400,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9990509761835632,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": -18.434948822922014,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9989750542840677,
+        "absolute_gap": 7.592189949545691e-05,
+        "relative_loss": 7.599401962999254e-05,
+        "tau": [
+          1.0,
+          0.5,
+          0.0,
+          -0.5,
+          -1.0,
+          -0.5
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 102912,
+      "old_cycle_fail": false,
+      "best_valid": false,
+      "best_score": 0.9999100738155687,
+      "best_norm": 0.0,
+      "best_residual": 0.0,
+      "best_angle": null,
+      "competitor": null
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 108032,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9948900086461457,
+      "best_norm": 0.8842517612650523,
+      "best_residual": 0.408248290463863,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 29.05460409907714,
+        "separation_deg": 15.945395900922847,
+        "score": 0.9583407752423148,
+        "absolute_gap": 0.03654923340383098,
+        "relative_loss": 0.03673695894641406,
+        "tau": [
+          4.0,
+          7.0,
+          2.0,
+          3.0,
+          -2.0,
+          -5.0
+        ],
+        "norm": 0.9196357131142034,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 109568,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9993426877811397,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 90.0,
+      "competitor": {
+        "angle": 63.43494882292201,
+        "separation_deg": 26.565051177077976,
+        "score": 0.9978970787244376,
+        "absolute_gap": 0.0014456090567021018,
+        "relative_loss": 0.001446559898198501,
+        "tau": [
+          0.5,
+          1.5,
+          1.0,
+          1.0,
+          0.5,
+          -0.5
+        ],
+        "norm": 0.1997321136152156,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 111104,
+      "old_cycle_fail": true,
+      "best_valid": true,
+      "best_score": 0.986115418524291,
+      "best_norm": 0.5208376301906088,
+      "best_residual": 0.408248290463863,
+      "best_angle": 30.963756532073536,
+      "competitor": {
+        "angle": 48.01278750418334,
+        "separation_deg": 17.04903097210982,
+        "score": 0.9816709909595376,
+        "absolute_gap": 0.004444427564753384,
+        "relative_loss": 0.004507005449123199,
+        "tau": [
+          1.75,
+          4.75,
+          2.0,
+          3.0,
+          0.25,
+          -2.75
+        ],
+        "norm": 0.6008584698107138,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 112128,
+      "old_cycle_fail": false,
+      "best_valid": false,
+      "best_score": 0.9944287499566805,
+      "best_norm": 0.7579300810843306,
+      "best_residual": 0.816496580927726,
+      "best_angle": null,
+      "competitor": null
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 120832,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": 71.56505117707799,
+      "competitor": {
+        "angle": 90.0,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9987711710328484,
+        "absolute_gap": 0.0012288289671514852,
+        "relative_loss": 0.0012288289671514854,
+        "tau": [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          0.0
+        ],
+        "norm": 0.3572916666666667,
+        "plane_residual": 0.0
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 121344,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.999613617711849,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 71.56505117707799,
+        "separation_deg": 26.565051177077976,
+        "score": 0.9981928064873263,
+        "absolute_gap": 0.0014208112245226445,
+        "relative_loss": 0.0014213604130113111,
+        "tau": [
+          0.0,
+          1.0,
+          0.5,
+          1.0,
+          0.5,
+          -0.5
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 121856,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9995090484383503,
+      "best_norm": 0.3789650405421653,
+      "best_residual": 0.408248290463863,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 26.565051177077994,
+        "separation_deg": 18.434948822921996,
+        "score": 0.9985774164310545,
+        "absolute_gap": 0.0009316320072958462,
+        "relative_loss": 0.0009320896181494741,
+        "tau": [
+          1.0,
+          2.25,
+          0.25,
+          1.25,
+          -0.75,
+          -2.0
+        ],
+        "norm": 0.2995981704228234,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 122368,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9976241135253978,
+      "best_norm": 0.3572916666666667,
+      "best_residual": 0.0,
+      "best_angle": 90.0,
+      "competitor": {
+        "angle": 73.61045966596522,
+        "separation_deg": 16.38954033403479,
+        "score": 0.995770868014785,
+        "absolute_gap": 0.0018532455106128332,
+        "relative_loss": 0.0018576590977375696,
+        "tau": [
+          0.5,
+          2.75,
+          2.0,
+          2.25,
+          1.5,
+          -0.75
+        ],
+        "norm": 0.3957015289913792,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 123904,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9984694589535774,
+      "best_norm": 0.8842517612650523,
+      "best_residual": 0.408248290463863,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 29.054604099077153,
+        "separation_deg": 15.945395900922847,
+        "score": 0.9764814367670411,
+        "absolute_gap": 0.021988022186536282,
+        "relative_loss": 0.02202172734414963,
+        "tau": [
+          5.0,
+          7.0,
+          3.0,
+          2.0,
+          -2.0,
+          -4.0
+        ],
+        "norm": 0.9196357131142032,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 124416,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9952239234805772,
+      "best_norm": 0.5208376301906088,
+      "best_residual": 0.408248290463863,
+      "best_angle": 30.963756532073536,
+      "competitor": {
+        "angle": 48.576334374997344,
+        "separation_deg": 17.6125778429238,
+        "score": 0.9890522216277129,
+        "absolute_gap": 0.006171701852864309,
+        "relative_loss": 0.006201319830898092,
+        "tau": [
+          1.75,
+          4.0,
+          2.0,
+          2.25,
+          0.25,
+          -2.0
+        ],
+        "norm": 0.5062726469691196,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 124928,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9950784203144554,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": 71.56505117707799,
+      "competitor": {
+        "angle": 56.309932474020215,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9934897823367004,
+        "absolute_gap": 0.001588637977754992,
+        "relative_loss": 0.0015964952563768445,
+        "tau": [
+          0.5,
+          2.5,
+          1.0,
+          2.0,
+          0.5,
+          -1.5
+        ],
+        "norm": 0.3220583561156636,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 126976,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9993320323343612,
+      "best_norm": 0.2526433603614435,
+      "best_residual": 2.5695679235043195e-16,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 65.55604521958347,
+        "separation_deg": 20.556045219583467,
+        "score": 0.9957433809668169,
+        "absolute_gap": 0.003588651367544271,
+        "relative_loss": 0.003591050072878644,
+        "tau": [
+          0.25,
+          2.0,
+          1.0,
+          1.75,
+          0.75,
+          -1.0
+        ],
+        "norm": 0.26982322714472257,
+        "plane_residual": 0.30618621784789724
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 127488,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9966413516649677,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 180.0,
+      "competitor": {
+        "angle": -161.565051177078,
+        "separation_deg": 18.434948822922024,
+        "score": 0.995631461194207,
+        "absolute_gap": 0.0010098904707607215,
+        "relative_loss": 0.0010132937681881452,
+        "tau": [
+          -1.0,
+          -1.0,
+          -0.5,
+          0.0,
+          0.5,
+          0.5
+        ],
+        "norm": 0.14123193195804087,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 131072,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.999943156080184,
+      "best_norm": 0.3789650405421653,
+      "best_residual": 0.408248290463863,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 29.74488129694223,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9964992841693533,
+        "absolute_gap": 0.0034438719108307314,
+        "relative_loss": 0.0034440676851380664,
+        "tau": [
+          1.25,
+          2.75,
+          0.5,
+          1.5,
+          -0.75,
+          -2.25
+        ],
+        "norm": 0.3600721884982295,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 131584,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9986031317641393,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": 18.434948822922014,
+        "separation_deg": 18.434948822922024,
+        "score": 0.997759762712309,
+        "absolute_gap": 0.000843369051830245,
+        "relative_loss": 0.0008445487751879401,
+        "tau": [
+          0.5,
+          1.0,
+          0.0,
+          0.5,
+          -0.5,
+          -1.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 132096,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9999999999999999,
+      "best_norm": 0.17864583333333334,
+      "best_residual": 0.0,
+      "best_angle": 0.0,
+      "competitor": {
+        "angle": 18.434948822922014,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9998766682632586,
+        "absolute_gap": 0.0001233317367412834,
+        "relative_loss": 0.00012333173674128342,
+        "tau": [
+          0.5,
+          1.0,
+          0.0,
+          0.5,
+          -0.5,
+          -1.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 132608,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9987204029991925,
+      "best_norm": 0.7989284544608624,
+      "best_residual": 0.0,
+      "best_angle": -116.56505117707799,
+      "competitor": {
+        "angle": -101.30993247402021,
+        "separation_deg": 15.255118703057775,
+        "score": 0.9748882388163461,
+        "absolute_gap": 0.023832164182846394,
+        "relative_loss": 0.02386269882068852,
+        "tau": [
+          -0.75,
+          -5.25,
+          -4.25,
+          -4.5,
+          -3.5,
+          1.0
+        ],
+        "norm": 0.7970537664151222,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 145920,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9998137295895478,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": -71.56505117707799,
+      "competitor": {
+        "angle": -52.1250163489018,
+        "separation_deg": 19.44003482817618,
+        "score": 0.9948110975169302,
+        "absolute_gap": 0.005002632072617641,
+        "relative_loss": 0.00500356408855414,
+        "tau": [
+          1.0,
+          -0.25,
+          -1.0,
+          -1.25,
+          -2.0,
+          -0.75
+        ],
+        "norm": 0.2546094862037789,
+        "plane_residual": 0.10206207261596575
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 146432,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9952658806867408,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": 45.0,
+      "competitor": {
+        "angle": 18.434948822922014,
+        "separation_deg": 26.565051177077976,
+        "score": 0.9947290962705198,
+        "absolute_gap": 0.00053678441622107,
+        "relative_loss": 0.0005393377052679479,
+        "tau": [
+          0.5,
+          1.0,
+          0.0,
+          0.5,
+          -0.5,
+          -1.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 146944,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9902797868029389,
+      "best_norm": 0.2824638639160818,
+      "best_residual": 0.408248290463863,
+      "best_angle": -71.56505117707799,
+      "competitor": {
+        "angle": -90.0,
+        "separation_deg": 18.434948822922024,
+        "score": 0.9896421302926562,
+        "absolute_gap": 0.0006376565102826914,
+        "relative_loss": 0.000643915506284672,
+        "tau": [
+          0.5,
+          -1.5,
+          -1.0,
+          -2.0,
+          -1.5,
+          0.5
+        ],
+        "norm": 0.26796875,
+        "plane_residual": 0.408248290463863
+      }
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 167424,
+      "old_cycle_fail": false,
+      "best_valid": false,
+      "best_score": 0.9992705889684217,
+      "best_norm": 0.0,
+      "best_residual": 0.0,
+      "best_angle": null,
+      "competitor": null
+    },
+    {
+      "capture": "trusted_p045_20260920_02",
+      "start": 168448,
+      "old_cycle_fail": false,
+      "best_valid": true,
+      "best_score": 0.9993863295460202,
+      "best_norm": 0.1263216801807218,
+      "best_residual": 0.408248290463863,
+      "best_angle": -135.0,
+      "competitor": {
+        "angle": -161.565051177078,
+        "separation_deg": 26.565051177078004,
+        "score": 0.9976168438814744,
+        "absolute_gap": 0.0017694856645458223,
+        "relative_loss": 0.0017705722123992093,
+        "tau": [
+          -0.5,
+          -1.0,
+          0.0,
+          -0.5,
+          0.5,
+          1.0
+        ],
+        "norm": 0.1412319319580409,
+        "plane_residual": 0.2041241452319315
+      }
+    }
+  ],
+  "fft_calls": 0,
+  "ifft_calls": 0
+}

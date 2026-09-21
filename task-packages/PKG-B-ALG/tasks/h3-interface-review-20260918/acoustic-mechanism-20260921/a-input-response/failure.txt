@@ -1,0 +1,3 @@
+首次执行verify-before-longpath-fix.py失败：git show 94b5fe79d87e038e895878fb31030cded469bb33:task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/evidence/received-20260920-02-corrected/trusted_000_20260920_01/version-binding.json
+fatal: failed to stat ...: Filename too long
+subprocess.CalledProcessError，exit status 128。此文件为工具输出错误的摘要，非原始完整stderr。旧脚本保留，可追溯；失败运行未完成八份绑定检查，不作为通过证据。改为git cat-file blob后重跑通过。
