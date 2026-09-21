@@ -1,0 +1,33 @@
+{
+  "status": "B1_B3_NODE_CHECK_PASS_WITH_LEGACY_INPUT_GAPS",
+  "frontend_cases": 13,
+  "s25_window_codes_outside_s24": 8,
+  "power_cases": 7,
+  "state_sequences": 4096,
+  "state_steps": 24840,
+  "threshold_cases": 66,
+  "invalid_cases": 12,
+  "direct_power_rejections": 6,
+  "u64_unreachable_onset_cases": 2,
+  "additional_rne_half_cases": 4,
+  "legacy_invalid_accepted": [
+    "integral_float_noise",
+    "bool_noise",
+    "negative_floor",
+    "fractional_floor",
+    "integral_float_power",
+    "bool_power",
+    "nonbool_invalid"
+  ],
+  "frozen_hann_matches": 8,
+  "rom_sha256": "51a05f855181f1774c3373c83085fd5a2792f5db932d66b1f3dc768e8ec6a2f2",
+  "source_hashes": {
+    "task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\checkpoint-20260923\\source\\integer_gate.py": "c2f22ea3f6fb184a38d2f3802d89cd5487e202e44b4226075004460a4c7af1d8",
+    "task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\checkpoint-20260923\\source\\common.py": "13fe26ac27e13ac31e8c9cd312cb261dc61d864e646d2c48d6c70752c2915bcc",
+    "task-packages\\PKG-B-ALG\\tasks\\h3-complete-20260918\\source\\fixed_golden.py": "f6bb2bc41dee3f1e2e6d93176972d92db12d687978fd3a95a47e85b28f88a74a"
+  },
+  "fft_calls": 0,
+  "amd_or_rtl_tested": false,
+  "full_gate_pipeline_tested": false,
+  "default_modified": false
+}
