@@ -1,5 +1,7 @@
 # PKG-A-ACQ · 工程与采集/导出包
 
+2026-09-21范围更新：PS语义桥返修准确`ca512a8`、合同与条件预算准确`f08556d`均获B限定PASS入main，见[本轮批准及收尾](../../deliverables/phase-2026-09-18/readiness-closeout-20260921.md)。有效主机C入口为`tasks/four-channel-diagnostic-01/algorithm-interface-review-20260918/ps-semantic-bridge-repair-01/src/`；原candidate错误版只保留历史。合同入口为同父目录`PRODUCTION-READINESS-20260921.md`，最新批准以复核报告及收尾覆盖历史待审文字。均未安装到Vitis/one，未批准生产ABI、硬件实时或完整H3，完整包仍进行中。
+
 2026-09-12 当前说明：四路杜邦线诊断已获 B 接收，见 [B-REVIEW](deliveries/dupont-diagnostic-20260911/B-REVIEW.md)。待审工程包另行发布，不将诊断接收扩大为工程整体验收。下面 9 月 9 日旧接线草案已集中到[历史原件](../../archive/2026-09-12-local-materials/README.md)，由已选 C 板方案替代，不再作为当前待接线/待补证任务。
 
 ## 2026-09-10 电气与时序补证
