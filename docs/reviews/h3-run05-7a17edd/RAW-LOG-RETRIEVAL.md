@@ -1,5 +1,13 @@
 # run05 首错原始日志的受控取回说明
 
+## 2026-09-21当前状态：ARCHIVED_LOCAL_CONTROLLED
+
+拓芙本轮确认授权后，在仓库外创建第二原字节副本：
+`%USERPROFILE%/.codex/visualizations/2026/09/07/01a07c21-b7f9-74d2-92c5-7f8d235d8379/private-evidence-backup/H3-RUN05-FIRST-FAILURE-RAW-01/run05-first-failure.raw.log`。
+从该副本恢复为同目录`restore-check.raw.log`并读回，两者均950字节，SHA256均为`DCF5A3FBE69CA7CD1D5537371B7F7A21777D770DFCCB110F71A67DD10C3762EE`；原件未修改。目录已禁用权限继承，仅当前拓芙账户、SYSTEM、本机Administrators具有允许访问项，文件继承该限定ACL。实际Get-Acl确认目录保护为true、文件仅上述三项；普通沙箱复读被拒，授权账户复读成功，未为沙箱放宽权限。
+
+实际操作：先验原件长度/哈希，再创建新目录，以icacls移除继承并对上述三身份授权，Copy-Item按字节备份与恢复，Get-FileHash/Get-Acl核验。不公开原文，不改只读原件、不向B发送。此为**同机独立目录可恢复副本**，不是独立介质/异机灾备；B取回仍NOT_RECEIVED。归档/ACL缺口在上述本机范围内关闭，不扩大技术批准。以下NOT_ARCHIVED表保留为9/20历史。
+
 2026-09-20，A/主流程实际核实文件存在、长度、只读属性和SHA-256；未运行技术测试，未公开原始日志内容。
 
 | 字段 | 核实结果 |
