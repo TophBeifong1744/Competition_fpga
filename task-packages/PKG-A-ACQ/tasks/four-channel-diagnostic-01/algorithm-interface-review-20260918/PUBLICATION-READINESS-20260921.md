@@ -1,5 +1,11 @@
 # A合同决定与预算子包发布回执
 
+## 发布期间状态覆盖
+
+本包首次提交dce7b8125378d914b1d20b7147eeabb9418eaa41推送后，直接远端main已前进为`99bbf5fdc3b9bb44287fcc87404028e98291c75d`。读取该版本`docs/reviews/ps-repair-ca512a8/B-REVIEW.md`确认：B对准确ca512a8限定PASS，PSB-B-01～03关闭，B已合入。本包各表及下文“ca512待审”为此前写作时点，统一由本条覆盖；有效入口为修复版src，原错误版只保留历史。无需重派PS桥复核。
+
+本合同/预算子包仍未获B批准、未合入。B的C批准不覆盖本子包或生产ABI/ARM/实时/H3。该main变化与本轮29个新文件无路径重叠；本任务不把main合并进候选，也不强行同步带其他任务的共享目录。此补记仅更新发布事实，数值预算/检查器/最终run02源码哈希不变。
+
 入口：[PRODUCTION-READINESS-20260921.md](PRODUCTION-READINESS-20260921.md)。分支`codex/toph/h3-production-readiness-20260921`，准确提交以本页所属发布提交及工作执行回报为准，不把基线当交付SHA。未合入main，不代签B。
 
 ## 实际完成
