@@ -1,0 +1,339 @@
+{
+  "status": "AUTHOR_R1_R2_FAIL",
+  "cases": 43,
+  "expected_rejections": 34,
+  "expected_acceptances": 9,
+  "original_misacceptances_reproduced": 18,
+  "unexpected": [
+    {
+      "name": "A-R1-available-before-final-status",
+      "expected_error": "availability precedes required status visibility",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 32,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "A-R2-float-sample-identity",
+      "expected_error": "integer source_sample required",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 32,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "delayed-commit-backdated",
+      "expected_error": "availability precedes required status visibility",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 0,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "downstream-cannot-be-backdated",
+      "expected_error": "availability precedes required status visibility",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 0,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "per-frame-completion-2",
+      "expected_error": "availability precedes required status visibility",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": false,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 2,
+        "accepted": 0,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "source-float-zero",
+      "expected_error": "integer source_sample required",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 32,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "source-bool-false",
+      "expected_error": "integer source_sample required",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 32,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "source-bool-true",
+      "expected_error": "integer source_sample required",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 32,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "startup-source-float",
+      "expected_error": "integer source_sample required",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 32,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "source-below-startup",
+      "expected_error": "source_sample outside profile domain",
+      "actual_error": "8-sample profile identity mismatch",
+      "matched": false,
+      "original_misaccepted": false,
+      "result": null
+    },
+    {
+      "name": "source-above-profile",
+      "expected_error": "source_sample outside profile domain",
+      "actual_error": "8-sample profile identity mismatch",
+      "matched": false,
+      "original_misaccepted": false,
+      "result": null
+    },
+    {
+      "name": "source-uint64-overflow",
+      "expected_error": "source_sample outside profile domain",
+      "actual_error": "8-sample profile identity mismatch",
+      "matched": false,
+      "original_misaccepted": false,
+      "result": null
+    },
+    {
+      "name": "available-float",
+      "expected_error": "uint64 output available required",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 32,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "available-bool-false",
+      "expected_error": "uint64 output available required",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 32,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "available-bool-true",
+      "expected_error": "uint64 output available required",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 32,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "available-negative",
+      "expected_error": "uint64 output available required",
+      "actual_error": "output before availability",
+      "matched": false,
+      "original_misaccepted": false,
+      "result": null
+    },
+    {
+      "name": "available-overflow",
+      "expected_error": "uint64 output available required",
+      "actual_error": "output before availability",
+      "matched": false,
+      "original_misaccepted": false,
+      "result": null
+    },
+    {
+      "name": "first-stall-source_sample",
+      "expected_error": "integer source_sample required",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 32,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "first-stall-available",
+      "expected_error": "uint64 output available required",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 32,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "held-stall-source_sample",
+      "expected_error": "integer source_sample required",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 32,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "held-stall-available",
+      "expected_error": "uint64 output available required",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 32,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "accept-after-stall-source_sample",
+      "expected_error": "integer source_sample required",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 32,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "accept-after-stall-available",
+      "expected_error": "uint64 output available required",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 32,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    },
+    {
+      "name": "held-stall-bool-type-change",
+      "expected_error": "integer source_sample required",
+      "actual_error": null,
+      "matched": false,
+      "original_misaccepted": true,
+      "result": {
+        "status": "TRACE_MATCHES_CANDIDATE_ONLY",
+        "commits": 1,
+        "accepted": 9,
+        "resets": 1,
+        "late_errors": 0,
+        "stale_callbacks": 0
+      }
+    }
+  ],
+  "base_commit": "d3d2a3d4e78932830bf12bd84c0517b0a2092872",
+  "source_sha256": "2f452207c6495a147d04ba184094a0b4b1248645f85270014111d582b2459b5a",
+  "original_sha256": "2f452207c6495a147d04ba184094a0b4b1248645f85270014111d582b2459b5a",
+  "fixture_sha256": "b16f6265ec671dfb94d4dbe5fae0ca0cdf3e806fc1574de3a622d5f708c322fd",
+  "numeric_fft_amd_rtl_runs": 0
+}

@@ -1,5 +1,9 @@
 # 动态时间语义及9/23实施边界
 
+2026-09-21 A复核R1/R2返修覆盖：`commit.available`是本session物理采样时基上的结果可用时刻，不是源sample_id或帧尾。每个必需status到达时，checker从捕获行的严格整数`now`记录 `(session, frame, unit)` 可见时刻；全部到齐后要求 `max(status_visible_at) <= commit.available <= commit_now <= valid_through`。允许同拍完成及晚提交，不强迫available等于commit_now。若available包含DOA等后级服务，外部expected_units必须加入这些独立完成状态；两unit夹具不能证明未列服务。checker验证可观察状态给出的下界，不认证捕获时钟或实际硬件状态信号的真实性。
+
+所有live valid拍（首次背压、持续背压、恢复接受）先检查schema再比较payload：`emit/available`严格uint64；`source_sample`严格Python整数且排除bool，范围 `[-8, 2^64-9]`，仍须等于emit−8。startup的−8..−1合法；0.0/False不能冒充0，8.0不能冒充8。非法域反例见返修目录；没有改原PCM、TTL优先级或启动补零。
+
 本页为待裁决合同。D=父目录 `dynamic-das-20260921/dynamic_das.py`；旧固定= `fixed-nodes-20260921/b5b6/stream_das.py`。二者均保留，不把新结果倒签给旧合同。
 
 | 项 | 已批准离线实际行为 | 生产尚缺/责任 |

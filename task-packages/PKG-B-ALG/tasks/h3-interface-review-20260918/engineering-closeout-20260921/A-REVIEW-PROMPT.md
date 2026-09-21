@@ -1,13 +1,19 @@
-# 给A的集中复核请求
+# 给A：R1/R2增量复核请求
 
-请复核仓库 `https://github.com/TophBeifong1744/Competition_fpga` 的 `task/member-b-h3-engineering-closeout-20260921`，准确实现候选 **d3d2a3d4e78932830bf12bd84c0517b0a2092872** 已推送并直接查询确认；后续文档提交只绑定本SHA，不改实现（不要只按可移动分支头审）。包为 `task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/engineering-closeout-20260921/`，入口README。
+请沿原任务复核仓库 https://github.com/TophBeifong1744/Competition_fpga、分支 `task/member-b-h3-engineering-closeout-20260921` 的R1/R2返修；准确新实现SHA见DELIVERY后续补记。原受审实现d3d2a3d4e78932830bf12bd84c0517b0a2092872、文档头dbd7ab5b35c75dfe9779a0452643d4bd2df24657，A报告结论NEEDS_FIX。本轮不请重审未受影响数值/预算、旧FFT/声学/E01～03。
 
-基线cf026cf29518488f8c7275b825f3487a8d892f80；已核对新增e473824仅声学离线批准。已关闭fe67547/b5913e5/349501c/f879/a7f70c5/268e526保持原范围，不全量复跑、不重派E01～03。
+包：`task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/engineering-closeout-20260921/`；返修入口 `repair-r1-r2/README.md`。收到的原报告逐字节保存，A的probe文件未收到，两条反例按报告描述从旧fixture复建；不可将B重建件说成A原文件。
 
-申请仅批准：本子目录的B离线候选、检查器、异常夹具、合同/预算资料。新增CORDIC共同左移与规范角度未替换FG；旧小向量失败保留，新1215向量误差界≤1 Q8码，新的S28内部界须单独审。轨迹checker为B准备材料，非生产实现；请重点检查独立expected_units不能由DUT削弱、背压payload保持、晚错/reset顺序与实际采样时间区分。
+仅一处已有执行源码变化：trace_scoreboard.py。R1从独立必需status捕获行的now建立每事务完成时刻下界，要求`all_required_visible <= available <= commit_now <= expiry`，保留同拍及延迟提交。若包含后级，expected_units必须独立加入后级完成。R2在所有有效拍（包括首次/持续背压及恢复接受）先检查source_sample严格整数且排除bool、域[-8,2^64-9]，available严格uint64，再做值与背压比较；startup负编号和PCM未改。
 
-复现：Python3.12+NumPy2.3.5，在准确提交根执行 `python -B task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/engineering-closeout-20260921/run_all.py --repo . --out <不存在的新目录>`。再执行同目录 `check_delivery.py --repo . --out <新的检查结果.json>`，核对run05源码/输出哈希和旧FG/D依赖。不改冻结结果吸收差异。测试/未测见README；完整FFT/IFFT、AMD、RTL、Vivado/Vitis、板测与声学研究本轮未运行。
+复现（Python3.12，无NumPy依赖，准确Git检出含原d3d2a3d/dbd7ab5对象）：
 
-请一次给出：原/归一化CORDIC是否需要单独生产profile；8前视/17历史与串行pending/最多20ms平滑回mono能否接受；session/TTL/available统一时基与硬停分界；ROM部署与有限服务证据下一步。reference25保留，portable Q30与AMD24黄金独立，107496B/202816B/552960B不混加，缺服务上界继续REALTIME_BLOCKED。不要将限定软件批准写成生产接口、完整H3或实时冻结。
+```powershell
+python -B task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/engineering-closeout-20260921/repair-r1-r2/run_repair.py --repo . --out <不存在的新目录>
+```
 
-目标活动路径仍本任务包候选目录；新实现由A独立审，B不自审自合。未选择实际one/Vitis工程、未导入RTL/IP或改A/C文件。无可立即删除分支/副本；待审分支及其独有证据必须保留。其他声学对话不在本复核范围。
+作者实际43项（34拒绝、9允许）全部符合预期；原实现运行退出1、返修退出0，A两例及指定18旧误接收记录保留。合法路径结果与原checker严格一致。新交付检查核对48输出/4源码/145旧文件原字节。旧check_delivery.py绑定旧checker源码，当前应使用返修入口，不重写旧run05哈希。
+
+请独立增加R1/R2邻接反例并仅签准确返修SHA；其余1215向量、S28、RNE/饱和、极端PCM及预算复用你上次报告。CORDIC独立profile文件只绑定不变实现与原golden，8/17及20ms仍限研究候选；生产接口、可靠硬件时钟/状态、AMD/RTL、CDC、有限服务与完整H3未批准。本轮无上述工具/板测/声学运行。
+
+若通过，由A或授权主流程按限定范围合入/发布；B不自审自合，不迁入生产默认链。待审分支及证据继续保留；无可以立即删除的未完成分支/工作树。main基线仍cf026cf29518488f8c7275b825f3487a8d892f80。

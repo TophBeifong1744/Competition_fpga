@@ -1,0 +1,200 @@
+[
+  {
+    "tick": 0,
+    "now": 0,
+    "session": "s0",
+    "reset": true,
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "submit",
+        "session": "s0",
+        "frame": 0,
+        "config": "fixture-config",
+        "expected": [
+          "fft",
+          "ifft"
+        ]
+      }
+    ]
+  },
+  {
+    "tick": 1,
+    "now": 0,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 0,
+      "source_sample": -8,
+      "available": 0,
+      "pcm": 0
+    }
+  },
+  {
+    "tick": 2,
+    "now": 1,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 1,
+      "source_sample": -7,
+      "available": 1,
+      "pcm": 0
+    },
+    "events": [
+      {
+        "kind": "status",
+        "session": "s0",
+        "frame": 0,
+        "unit": "fft"
+      }
+    ]
+  },
+  {
+    "tick": 3,
+    "now": 2,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 2,
+      "source_sample": -6,
+      "available": 2,
+      "pcm": 0
+    },
+    "events": [
+      {
+        "kind": "status",
+        "session": "s0",
+        "frame": 0,
+        "unit": "ifft"
+      },
+      {
+        "kind": "commit",
+        "session": "s0",
+        "frame": 0,
+        "config": "fixture-config",
+        "available": 2,
+        "valid_through": 20
+      }
+    ]
+  },
+  {
+    "tick": 4,
+    "now": 3,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 3,
+      "source_sample": -5,
+      "available": 3,
+      "pcm": 0
+    }
+  },
+  {
+    "tick": 5,
+    "now": 4,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 4,
+      "source_sample": -4,
+      "available": 4,
+      "pcm": 0
+    }
+  },
+  {
+    "tick": 6,
+    "now": 5,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 5,
+      "source_sample": -3,
+      "available": 5,
+      "pcm": 0
+    }
+  },
+  {
+    "tick": 7,
+    "now": 6,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 6,
+      "source_sample": -2,
+      "available": 6,
+      "pcm": 0
+    }
+  },
+  {
+    "tick": 8,
+    "now": 7,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 7,
+      "source_sample": -1,
+      "available": 7,
+      "pcm": 0
+    }
+  },
+  {
+    "tick": 9,
+    "now": 8,
+    "session": "s0",
+    "valid": true,
+    "ready": false,
+    "payload": {
+      "session": "s0",
+      "emit": 8,
+      "source_sample": 0,
+      "available": 8,
+      "pcm": -2096640
+    }
+  },
+  {
+    "tick": 10,
+    "now": 8,
+    "session": "s0",
+    "valid": true,
+    "ready": false,
+    "payload": {
+      "session": "s0",
+      "emit": 8,
+      "source_sample": false,
+      "available": 8,
+      "pcm": -2096640
+    }
+  },
+  {
+    "tick": 11,
+    "now": 8,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 8,
+      "source_sample": 0,
+      "available": 8,
+      "pcm": -2096640
+    }
+  }
+]

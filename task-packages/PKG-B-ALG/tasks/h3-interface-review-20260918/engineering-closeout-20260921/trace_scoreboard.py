@@ -75,14 +75,17 @@ def check(rows, *, max_stall_ticks, expected_units=('fft', 'ifft')):
                 if config is None:
                     config = event['config']
                 require(config == event['config'], 'session config changed')
-                transactions[key] = dict(expected=set(expected), done=set(), bad=False, committed=False,
-                                         config=config)
+                transactions[key] = dict(expected=set(expected), done=set(), status_visible_at={},
+                                         bad=False, committed=False, config=config)
             else:
                 require(key in transactions, 'unknown transaction')
                 tx = transactions[key]
                 if kind == 'status':
                     require(event['unit'] in tx['expected'] and event['unit'] not in tx['done'], 'unknown/duplicate final status')
                     tx['done'].add(event['unit'])
+                    # Derive visibility from the observed session sample clock,
+                    # never from a DUT-supplied timestamp or the source frame ID.
+                    tx['status_visible_at'][event['unit']] = now
                     if event.get('error', False):
                         tx['bad'] = True
                         if tx['committed']:
@@ -98,6 +101,8 @@ def check(rows, *, max_stall_ticks, expected_units=('fft', 'ifft')):
                     require(event['config'] == tx['config'], 'commit config mismatch')
                     available, expiry = event['available'], event['valid_through']
                     require(uint(available) and uint(expiry) and available <= now <= expiry, 'future or expired commit')
+                    all_required_visible = max(tx['status_visible_at'].values())
+                    require(all_required_visible <= available, 'availability precedes required status visibility')
                     tx['committed'] = True
                     counts['commits'] += 1
                 else:
@@ -109,15 +114,22 @@ def check(rows, *, max_stall_ticks, expected_units=('fft', 'ifft')):
             pending, stall = None, 0
             continue
         payload = row.get('payload')
-        if pending is not None:
-            require(valid and payload == pending, 'payload/valid changed under backpressure')
         if valid:
             require(payload['session'] == epoch, 'stale output')
             emit = payload['emit']
             require(uint(emit) and emit == last_emit + 1, 'output identity gap/duplicate')
-            require(payload['source_sample'] == emit - 8, '8-sample profile identity mismatch')
+            source_sample = payload['source_sample']
+            require(type(source_sample) is int, 'integer source_sample required')
+            require(-8 <= source_sample < 2**64-8, 'source_sample outside profile domain')
+            require(source_sample == emit - 8, '8-sample profile identity mismatch')
+            require(uint(payload['available']), 'uint64 output available required')
             require(payload['available'] == emit and now >= emit, 'output before availability')
             require(type(payload['pcm']) is int and -(2**23) <= payload['pcm'] < 2**23, 'non-S24 output')
+        # Type validation must precede equality: False == 0 and 8.0 == 8.
+        # This applies to initial stalled, continued stalled and accepted beats.
+        if pending is not None:
+            require(valid and payload == pending, 'payload/valid changed under backpressure')
+        if valid:
             if ready:
                 last_emit, pending, stall = emit, None, 0
                 counts['accepted'] += 1
