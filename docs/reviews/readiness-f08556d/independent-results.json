@@ -1,0 +1,30 @@
+{
+  "source_sha256": "3c13cb16342c2fb3e02154b71d5e512a45b1e5d7f4b4f1ac800fd62095f373d4",
+  "checks": [
+    {
+      "case": "packet_all_250_phases",
+      "min": 2,
+      "max": 3,
+      "mean_bytes_per_hop": 16384,
+      "peak_packet_bytes": 24000
+    },
+    {
+      "case": "mixed_clocks_and_each_unknown",
+      "cases": 16
+    },
+    {
+      "case": "queue_boundary_grid",
+      "cases": 252
+    },
+    {
+      "case": "each_unknown_queue_bound",
+      "cases": 3
+    },
+    {
+      "case": "partial_unknown_with_negative_burst_observation",
+      "result": null,
+      "status": "REALTIME_BLOCKED",
+      "note": "known malformed field is not independently validated until all queue bounds present; never approves capacity"
+    }
+  ]
+}

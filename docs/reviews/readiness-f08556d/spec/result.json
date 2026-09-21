@@ -1,0 +1,35 @@
+{
+  "independent_checks_passed": [
+    "exact_deadline_equality",
+    "one_cycle_late",
+    "unknown_clock_blocks",
+    "queue_integer_rounding_below",
+    "queue_integer_rounding_above",
+    "steady_state_rate_insufficient",
+    "packet_phase_250",
+    "packet_phase_251",
+    "packet_phase_500",
+    "packet_phase_501",
+    "packet_phase_512"
+  ],
+  "partial_invalid_queue_input_observations": [
+    {
+      "field": "burst_packets",
+      "invalid_value": -1,
+      "queue_result": null,
+      "status": "REALTIME_BLOCKED"
+    },
+    {
+      "field": "max_blackout_ns",
+      "invalid_value": true,
+      "queue_result": null,
+      "status": "REALTIME_BLOCKED"
+    },
+    {
+      "field": "minimum_service_packets_per_second",
+      "invalid_value": -10,
+      "queue_result": null,
+      "status": "REALTIME_BLOCKED"
+    }
+  ]
+}
