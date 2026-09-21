@@ -1,0 +1,50 @@
+[
+  {
+    "name": "unstable-stall",
+    "error": "payload/valid changed under backpressure"
+  },
+  {
+    "name": "early-available",
+    "error": "output before availability"
+  },
+  {
+    "name": "wrong-sample-id",
+    "error": "8-sample profile identity mismatch"
+  },
+  {
+    "name": "stale-session-output",
+    "error": "stale output"
+  },
+  {
+    "name": "missing-status",
+    "error": "non-atomic commit"
+  },
+  {
+    "name": "config-mismatch",
+    "error": "commit config mismatch"
+  },
+  {
+    "name": "expired-commit",
+    "error": "future or expired commit"
+  },
+  {
+    "name": "fatal-with-output",
+    "error": "non-atomic commit"
+  },
+  {
+    "name": "duplicate-status",
+    "error": "unknown/duplicate final status"
+  },
+  {
+    "name": "unbounded-stall",
+    "error": "bounded backpressure exceeded"
+  },
+  {
+    "name": "duplicate-commit",
+    "error": "non-atomic commit"
+  },
+  {
+    "name": "non-s24-output",
+    "error": "non-S24 output"
+  }
+]
