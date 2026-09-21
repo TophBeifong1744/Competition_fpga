@@ -1,0 +1,43 @@
+{
+  "frames": 0,
+  "events": [
+    {
+      "row": 0,
+      "id": "10",
+      "previous": null,
+      "reasons": [
+        "CLIP"
+      ],
+      "raw_flags": 1,
+      "fatal": false
+    },
+    {
+      "row": 1,
+      "id": "9",
+      "previous": "10",
+      "reasons": [
+        "ID_REVERSE"
+      ],
+      "raw_flags": 0,
+      "fatal": true
+    }
+  ],
+  "raw_sha256": "fb582c5fedd29b5c1a97784a50cbb30747ae8c28f65eaa825567c57a03374b40",
+  "runs": [
+    {
+      "frames": 0,
+      "events": 2,
+      "failed": 1,
+      "rows": "2",
+      "reason_union": 264
+    },
+    {
+      "frames": 0,
+      "events": 2,
+      "failed": 1,
+      "rows": "2",
+      "reason_union": 264
+    }
+  ],
+  "oracle": "pinned A accepted-row model; frozen B NPZ when specified"
+}

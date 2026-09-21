@@ -1,0 +1,22 @@
+{
+  "tests": 33,
+  "passed": 32,
+  "failed": 1,
+  "C_selftest_groups_per_build": 9,
+  "builds": 2,
+  "sanitizers": [
+    {
+      "profile": "asan-ubsan",
+      "state": "UNAVAILABLE_BUILD_FAILED_NOT_TEST_PASS"
+    },
+    {
+      "profile": "ubsan",
+      "state": "UNAVAILABLE_BUILD_FAILED_NOT_TEST_PASS"
+    }
+  ],
+  "ARM": "NOT_RUN",
+  "BSP": "NOT_RUN",
+  "board": "NOT_RUN",
+  "realtime": "REALTIME_BLOCKED",
+  "host_timing": "observation only, not Cortex-A9 WCET"
+}

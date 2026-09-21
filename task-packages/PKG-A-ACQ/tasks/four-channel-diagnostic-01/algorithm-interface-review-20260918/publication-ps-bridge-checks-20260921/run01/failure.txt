@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\Toph Beifong\.codex\visualizations\2026\09\07\01a07c21-b7f9-74d2-92c5-7f8d235d8379\ps-bridge-publication\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\algorithm-interface-review-20260918\ps-semantic-bridge-candidate-01\tests\run_host.py", line 185, in main
+    check(all(x['status']=='PASS' for x in tests),'comparison failures retained')
+  File "C:\Users\Toph Beifong\.codex\visualizations\2026\09\07\01a07c21-b7f9-74d2-92c5-7f8d235d8379\ps-bridge-publication\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\algorithm-interface-review-20260918\ps-semantic-bridge-candidate-01\tests\run_host.py", line 29, in check
+    if not ok:raise AssertionError(detail)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: comparison failures retained

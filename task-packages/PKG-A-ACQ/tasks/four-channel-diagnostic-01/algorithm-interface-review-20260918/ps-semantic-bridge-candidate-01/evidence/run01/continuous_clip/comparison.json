@@ -1,0 +1,103 @@
+{
+  "frames": 2,
+  "events": [
+    {
+      "row": 1,
+      "id": "1",
+      "previous": "0",
+      "reasons": [
+        "CLIP"
+      ],
+      "raw_flags": 2,
+      "fatal": false
+    },
+    {
+      "row": 2,
+      "id": "2",
+      "previous": "1",
+      "reasons": [
+        "CLIP"
+      ],
+      "raw_flags": 2,
+      "fatal": false
+    },
+    {
+      "row": 3,
+      "id": "3",
+      "previous": "2",
+      "reasons": [
+        "CLIP"
+      ],
+      "raw_flags": 2,
+      "fatal": false
+    },
+    {
+      "row": 4,
+      "id": "4",
+      "previous": "3",
+      "reasons": [
+        "CLIP"
+      ],
+      "raw_flags": 2,
+      "fatal": false
+    },
+    {
+      "row": 5,
+      "id": "5",
+      "previous": "4",
+      "reasons": [
+        "CLIP"
+      ],
+      "raw_flags": 2,
+      "fatal": false
+    },
+    {
+      "row": 6,
+      "id": "6",
+      "previous": "5",
+      "reasons": [
+        "CLIP"
+      ],
+      "raw_flags": 2,
+      "fatal": false
+    },
+    {
+      "row": 7,
+      "id": "7",
+      "previous": "6",
+      "reasons": [
+        "CLIP"
+      ],
+      "raw_flags": 2,
+      "fatal": false
+    },
+    {
+      "row": 8,
+      "id": "8",
+      "previous": "7",
+      "reasons": [
+        "CLIP"
+      ],
+      "raw_flags": 2,
+      "fatal": false
+    }
+  ],
+  "raw_sha256": "61c24ef705b6eb9ab4347b341e37f7e37d887a014ed961ecafdd8a4db9d24c1e",
+  "runs": [
+    {
+      "frames": 2,
+      "events": 9,
+      "failed": 0,
+      "rows": "1545",
+      "reason_union": 256
+    },
+    {
+      "frames": 2,
+      "events": 9,
+      "failed": 0,
+      "rows": "1545",
+      "reason_union": 256
+    }
+  ],
+  "oracle": "pinned A accepted-row model; frozen B NPZ when specified"
+}
