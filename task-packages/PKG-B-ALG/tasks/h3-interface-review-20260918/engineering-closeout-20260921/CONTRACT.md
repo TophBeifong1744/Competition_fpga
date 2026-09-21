@@ -2,6 +2,8 @@
 
 2026-09-21 A复核覆盖：整包NEEDS_FIX仅针对轨迹R1/R2，作者返修见 [repair-r1-r2](repair-r1-r2/README.md)，尚待A批准。A已确认CORDIC须独立profile，新候选以该子目录 `cordic-profile.json` 绑定原源码与原run05 golden，未重新计算或替换FG。A接受8前视/17历史及最坏20ms平滑回mono作为下一步离线候选取舍；统一session采样时基、硬停与平滑STOP分离。ROM优先评估PS DDR只是部署建议；生产/AMD/RTL/资源/实时未冻结。下表原“待裁决”依此分为已接受的研究取舍与仍未批准的生产选择。
 
+交付期main 99bbf5f新增ca512a8 PS语义桥返修限定主机C批准（PSB-B-01～03关闭），旧“PS C未实现”须按此细分；引用 `docs/reviews/ps-repair-ca512a8/B-REVIEW.md`，不重复复核。它不批准真实ARM/BSP、线程/ISR、异步/CDC、实际内存/DMA/cache、生产ABI或完整H3，与本R1/R2检查器修复分别交付。
+
 “已决定”仅指已获相应限定批准的事实或保留约束；“候选”不是双方生产冻结；“阻断”指部署所缺材料。本文覆盖父目录历史表中的 S22/9 样点待定措辞，不改原件。默认 reference25 保留，声学阈值与方向准入不变。
 
 ## 源码、证据简称

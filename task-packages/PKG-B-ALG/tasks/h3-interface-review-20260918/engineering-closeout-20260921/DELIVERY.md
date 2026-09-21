@@ -27,3 +27,7 @@
 实际 `repair-r1-r2/run_repair.py --repo . --out <包内>/repair-r1-r2/validation01` 退出0；43项（34应拒绝/9应允许）均符合预期，先前before退出1保留。48份输出、4份运行源码、145份旧文件原字节校验通过；A原报告SHA256为13fab2584b5e16ac9c367a207871723f204f8280d8d142d4e89b13160b25dbd8。旧checker与数值依赖不是用放宽哈希处理，新入口分别校验旧证据和新实现。
 
 本轮没有运行CORDIC数值、FFT/IFFT、AMD/RTL、one/Vitis、板测或声学测试；A此前通过部分按报告复用。状态是作者修复完成而非A已关闭R1/R2；REALTIME_BLOCKED不变。返修准确提交与远端确认在随后补记绑定，仍在原待审分支，不推main。
+
+返修实现准确SHA **ad30bda694abc946db045192385ebdf1b8e1a956** 已推送原任务分支，ls-remote精确匹配；305份包内文件与提交blob原字节一致。随后只补文档绑定，不改该返修实现。
+
+交付时远端main更新为 **99bbf5fdc3b9bb44287fcc87404028e98291c75d**，已fetch并读 `docs/reviews/ps-repair-ca512a8/B-REVIEW.md`：ca512a8be7978ab6ca2ade3d5e0b922e53a89c79 的PSB-B-01～03获限定单执行者主机C通过，不能继续按全未实现派工。该更新未改变本包、AGENTS或FG依赖，不需重跑本返修。真实ARM/BSP、异步/CDC、生产ABI、实际DMA/cache、实时/H3仍未批准。当前任务实现仍在cf026cf分叉的待审分支，本轮没有将其合入main或代签该PS工作。
