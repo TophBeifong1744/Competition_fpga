@@ -1,6 +1,6 @@
 # 给A的集中复核请求
 
-请复核本仓库 `task/member-b-h3-engineering-closeout-20260921`，准确候选SHA见本目录DELIVERY发布补记（不要只按可移动分支头审）。包为 `task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/engineering-closeout-20260921/`，入口README。
+请复核仓库 `https://github.com/TophBeifong1744/Competition_fpga` 的 `task/member-b-h3-engineering-closeout-20260921`，准确实现候选 **d3d2a3d4e78932830bf12bd84c0517b0a2092872** 已推送并直接查询确认；后续文档提交只绑定本SHA，不改实现（不要只按可移动分支头审）。包为 `task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/engineering-closeout-20260921/`，入口README。
 
 基线cf026cf29518488f8c7275b825f3487a8d892f80；已核对新增e473824仅声学离线批准。已关闭fe67547/b5913e5/349501c/f879/a7f70c5/268e526保持原范围，不全量复跑、不重派E01～03。
 
