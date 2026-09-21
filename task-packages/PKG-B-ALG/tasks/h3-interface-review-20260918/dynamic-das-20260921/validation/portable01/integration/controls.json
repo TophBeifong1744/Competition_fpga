@@ -1,0 +1,549 @@
+[
+  {
+    "ready": 512,
+    "emit": 520,
+    "tracker": {
+      "state": "ACQUIRE",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": null,
+      "reason": "acquiring",
+      "last_fresh_sample": null,
+      "valid_through_sample": null
+    },
+    "control": {
+      "state": "SEARCH"
+    }
+  },
+  {
+    "ready": 1024,
+    "emit": 1032,
+    "tracker": {
+      "state": "ACQUIRE",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": null,
+      "reason": "acquiring",
+      "last_fresh_sample": null,
+      "valid_through_sample": null
+    },
+    "control": {
+      "state": "SEARCH"
+    }
+  },
+  {
+    "ready": 1536,
+    "emit": 1544,
+    "tracker": {
+      "state": "ACQUIRE",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": null,
+      "reason": "acquiring",
+      "last_fresh_sample": null,
+      "valid_through_sample": null
+    },
+    "control": {
+      "state": "SEARCH"
+    }
+  },
+  {
+    "ready": 2048,
+    "emit": 2056,
+    "tracker": {
+      "state": "ACQUIRE",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": null,
+      "reason": "acquiring",
+      "last_fresh_sample": null,
+      "valid_through_sample": null
+    },
+    "control": {
+      "state": "SEARCH"
+    }
+  },
+  {
+    "ready": 2560,
+    "emit": 2568,
+    "tracker": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "angle_q8_deg": 0,
+      "display_angle_q8_deg": 0,
+      "reason": "acquired",
+      "last_fresh_sample": 2560,
+      "valid_through_sample": 12160
+    },
+    "control": {
+      "state": "LOCKED",
+      "delays": [
+        0,
+        22928,
+        22928,
+        0
+      ],
+      "valid_through": 12168
+    }
+  },
+  {
+    "ready": 3072,
+    "emit": 3080,
+    "tracker": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "angle_q8_deg": 4864,
+      "display_angle_q8_deg": 4864,
+      "reason": "track_update",
+      "last_fresh_sample": 3072,
+      "valid_through_sample": 12672
+    },
+    "control": {
+      "state": "LOCKED",
+      "delays": [
+        0,
+        21679,
+        29144,
+        7465
+      ],
+      "valid_through": 12680
+    }
+  },
+  {
+    "ready": 3584,
+    "emit": 3592,
+    "tracker": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "angle_q8_deg": 4864,
+      "display_angle_q8_deg": 4864,
+      "reason": "track_update",
+      "last_fresh_sample": 3584,
+      "valid_through_sample": 13184
+    },
+    "control": {
+      "state": "LOCKED",
+      "delays": [
+        0,
+        21679,
+        29144,
+        7465
+      ],
+      "valid_through": 13192
+    }
+  },
+  {
+    "ready": 4096,
+    "emit": 4104,
+    "tracker": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "angle_q8_deg": 4864,
+      "display_angle_q8_deg": 4864,
+      "reason": "track_update",
+      "last_fresh_sample": 4096,
+      "valid_through_sample": 13696
+    },
+    "control": {
+      "state": "LOCKED",
+      "delays": [
+        0,
+        21679,
+        29144,
+        7465
+      ],
+      "valid_through": 13704
+    }
+  },
+  {
+    "ready": 4608,
+    "emit": 4616,
+    "tracker": {
+      "state": "LOCKED",
+      "fresh_valid": true,
+      "angle_q8_deg": 4864,
+      "display_angle_q8_deg": 4864,
+      "reason": "track_update",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "LOCKED",
+      "delays": [
+        0,
+        21679,
+        29144,
+        7465
+      ],
+      "valid_through": 14216
+    }
+  },
+  {
+    "ready": 5120,
+    "emit": 5128,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 5632,
+    "emit": 5640,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 6144,
+    "emit": 6152,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 6656,
+    "emit": 6664,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 7168,
+    "emit": 7176,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 7680,
+    "emit": 7688,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 8192,
+    "emit": 8200,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 8704,
+    "emit": 8712,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 9216,
+    "emit": 9224,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 9728,
+    "emit": 9736,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 10240,
+    "emit": 10248,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 10752,
+    "emit": 10760,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 11264,
+    "emit": 11272,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 11776,
+    "emit": 11784,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 12288,
+    "emit": 12296,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 12800,
+    "emit": 12808,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 13312,
+    "emit": 13320,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 13824,
+    "emit": 13832,
+    "tracker": {
+      "state": "HOLD",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": 4864,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": 4608,
+      "valid_through_sample": 14208
+    },
+    "control": {
+      "state": "HOLD"
+    }
+  },
+  {
+    "ready": 14336,
+    "emit": 14344,
+    "tracker": {
+      "state": "SEARCH",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": null,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": null,
+      "valid_through_sample": null
+    },
+    "control": {
+      "state": "SEARCH"
+    }
+  },
+  {
+    "ready": 14848,
+    "emit": 14856,
+    "tracker": {
+      "state": "SEARCH",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": null,
+      "reason": "candidate_rejected",
+      "last_fresh_sample": null,
+      "valid_through_sample": null
+    },
+    "control": {
+      "state": "SEARCH"
+    }
+  },
+  {
+    "ready": 15360,
+    "emit": 15368,
+    "tracker": {
+      "state": "ACQUIRE",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": null,
+      "reason": "acquiring",
+      "last_fresh_sample": null,
+      "valid_through_sample": null
+    },
+    "control": {
+      "state": "SEARCH"
+    }
+  },
+  {
+    "ready": 15872,
+    "emit": 15880,
+    "tracker": {
+      "state": "ACQUIRE",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": null,
+      "reason": "acquiring",
+      "last_fresh_sample": null,
+      "valid_through_sample": null
+    },
+    "control": {
+      "state": "SEARCH"
+    }
+  },
+  {
+    "ready": 16384,
+    "emit": 16392,
+    "tracker": {
+      "state": "ACQUIRE",
+      "fresh_valid": false,
+      "angle_q8_deg": null,
+      "display_angle_q8_deg": null,
+      "reason": "acquiring",
+      "last_fresh_sample": null,
+      "valid_through_sample": null
+    },
+    "control": {
+      "state": "SEARCH"
+    }
+  }
+]

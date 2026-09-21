@@ -1,0 +1,80 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "stages": [
+    {
+      "stage": "dynamic",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\dynamic-das-20260921\\verify_dynamic.py",
+        "--out",
+        "F:\\NUEC\\validation\\b-dynamic-das-portable01\\dynamic"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "delay",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\dynamic-das-20260921\\verify_delay.py",
+        "--out",
+        "F:\\NUEC\\validation\\b-dynamic-das-portable01\\delay",
+        "--repo",
+        "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "widths",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\dynamic-das-20260921\\derive_widths.py",
+        "--out",
+        "F:\\NUEC\\validation\\b-dynamic-das-portable01\\widths"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "width-trace",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\dynamic-das-20260921\\verify_widths.py",
+        "--out",
+        "F:\\NUEC\\validation\\b-dynamic-das-portable01\\width-trace",
+        "--repo",
+        "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "integration",
+      "command": [
+        "C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\dynamic-das-20260921\\verify_integration.py",
+        "--out",
+        "F:\\NUEC\\validation\\b-dynamic-das-portable01\\integration",
+        "--repo",
+        "F:\\NUEC\\review-worktrees\\algorithm-closeout-20260923",
+        "--rom",
+        "F:\\NUEC\\validation\\b-dynamic-das-portable01\\delay\\delay-rom-s16.npy"
+      ],
+      "returncode": 0
+    }
+  ],
+  "source_hashes": {
+    "delay_rom.py": "0b70b43b9197ba7b00df0d140d649ff81d7df82c66f6b789c9d80ba86ea2c7bb",
+    "derive_widths.py": "91371a5fc9a417c97af5f2e606124a51ca8182b718f0330806e220b3b765d604",
+    "dynamic_das.py": "c0ccf39467e58c0fc75e88146d84119970fb1dbbbf99733ced8f8e3947fe7e3c",
+    "run_all.py": "690832f725c5500e1086e953364ae0d9d6b294a3778e2d04eaa42e9ebce9815c",
+    "verify_delay.py": "418af64a1ef61733f27c524a73e2e2716c398a2529207cf56cc84786847e5533",
+    "verify_dynamic.py": "de2a99a649228f47fab806218d4868caaaf6335b628738ec0b24b0b89fe5ca40",
+    "verify_integration.py": "ba0b2d617182197a0862ddff58bb0c54f1ac2ebf5feb80f2479361c8f738cab0",
+    "verify_widths.py": "65781ba6b94afffdfc9d7309380ece80bf4497cb5f70840d35cc3f53cacb9e88"
+  }
+}
