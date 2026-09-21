@@ -1,0 +1,294 @@
+{
+  "tests": [
+    {
+      "name": "published_increment_preserved",
+      "result": "FAIL",
+      "method": "software_integer_or_model",
+      "traceback": "Traceback (most recent call last):\n  File \"F:\\NUEC\\review-worktrees\\review-h3-engineering-0abdc91\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\engineering-closeout-20260923\\source\\run_checks.py\", line 95, in test\n    detail = fn()\n             ^^^^\n  File \"F:\\NUEC\\review-worktrees\\review-h3-engineering-0abdc91\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\engineering-closeout-20260923\\source\\run_checks.py\", line 123, in old_unchanged\n    current = (root/path).read_bytes()\n              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\pathlib.py\", line 1019, in read_bytes\n    with self.open(mode='rb') as f:\n         ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\BryanZheng\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'F:\\\\NUEC\\\\review-worktrees\\\\review-h3-engineering-0abdc91\\\\task-packages\\\\PKG-A-ACQ\\\\tasks\\\\four-channel-diagnostic-01\\\\algorithm-interface-review-20260918\\\\increment-20260923\\\\A-CONFIRMATION.md'\n"
+    },
+    {
+      "name": "hann_coefficients_independent",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "coefficients": 1024,
+        "oracle": "65-digit Decimal Taylor cosine + ties-even"
+      }
+    },
+    {
+      "name": "hann_products_and_range",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "products": 4096,
+        "negative_cases": 2,
+        "oracle": "Fraction.__round__"
+      }
+    },
+    {
+      "name": "cross_s25_wide_products",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "cases": 4097,
+        "exact": true
+      }
+    },
+    {
+      "name": "phat_sqrt_and_normalize_independent",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "cases": 2054,
+        "max_ideal_code_error": 1,
+        "error_histogram": {
+          "0": 2048,
+          "1": 6
+        },
+        "meaning": "sqrt exact; reciprocal approximation versus ideal unit vector, NOT AMD bit equivalence"
+      }
+    },
+    {
+      "name": "phat_invalid_pair_state",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "overflow_rejected": true,
+        "epsilon_units": "cross amplitude code",
+        "min_bins": 12
+      }
+    },
+    {
+      "name": "ifft_conjugate_and_rejection",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "mirrored_bins": 511,
+        "expected_endpoint_gap": true,
+        "negative_min_conjugate_rejected_at_fft": true
+      }
+    },
+    {
+      "name": "proposed_ifft_guard",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "legal": 2,
+        "rejected": 3,
+        "scope": "new proposed software boundary guard, not B modification"
+      }
+    },
+    {
+      "name": "ifft_inverse_scaling_basis",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "new_inverse_only_cases": [
+          {
+            "bin": 0,
+            "exact_components": 2048
+          },
+          {
+            "bin": 256,
+            "exact_components": 2048
+          },
+          {
+            "bin": 512,
+            "exact_components": 2048
+          }
+        ],
+        "forward_fft_reruns": 0
+      }
+    },
+    {
+      "name": "ifft_overflow_observed_not_repaired",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "overflow_count": 255,
+        "required_action": "invalidate pair/frame; do not use saturated output",
+        "oracle": "independent inverse DFT dynamic-range witness"
+      }
+    },
+    {
+      "name": "lag_physical_and_interpolation",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "cases": 102,
+        "oracle": "rational parabola and squared physical inequality"
+      }
+    },
+    {
+      "name": "doa_rational_solution_and_angle",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "cases": [
+          {
+            "valid": true,
+            "reason": "VALID",
+            "valid_pairs": 6,
+            "ux_q20": 0,
+            "uy_q20": -1048574,
+            "residual_sum_square_q24": 0,
+            "norm_square_q40": 1099507433476,
+            "azimuth_q8_deg": -23040
+          },
+          {
+            "valid": true,
+            "reason": "VALID",
+            "valid_pairs": 6,
+            "ux_q20": 741463,
+            "uy_q20": -741463,
+            "residual_sum_square_q24": 0,
+            "norm_square_q40": 1099534760738,
+            "azimuth_q8_deg": -11520
+          },
+          {
+            "valid": true,
+            "reason": "VALID",
+            "valid_pairs": 6,
+            "ux_q20": 1048574,
+            "uy_q20": 0,
+            "residual_sum_square_q24": 0,
+            "norm_square_q40": 1099507433476,
+            "azimuth_q8_deg": 0
+          },
+          {
+            "valid": true,
+            "reason": "VALID",
+            "valid_pairs": 6,
+            "ux_q20": 741463,
+            "uy_q20": 741463,
+            "residual_sum_square_q24": 0,
+            "norm_square_q40": 1099534760738,
+            "azimuth_q8_deg": 11520
+          },
+          {
+            "valid": true,
+            "reason": "VALID",
+            "valid_pairs": 6,
+            "ux_q20": 0,
+            "uy_q20": 1048574,
+            "residual_sum_square_q24": 0,
+            "norm_square_q40": 1099507433476,
+            "azimuth_q8_deg": 23040
+          }
+        ],
+        "angle_tolerance_deg": 0.02,
+        "meaning": "math comparison, not measured direction accuracy"
+      }
+    },
+    {
+      "name": "das_fractional_signed_delay",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "samples": 257,
+        "oracle": "Fraction piecewise-linear interpolation",
+        "edge_policy": "zero extension; not valid continuous interior"
+      }
+    },
+    {
+      "name": "new_B_gate_threshold_state_only",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "origin": "exact pinned class extracted by AST; stage/FFT not executed",
+        "negative_cases": 2,
+        "expected": "explicit 3-on/3-off transition table, widened threshold cannot wrap"
+      }
+    },
+    {
+      "name": "dma_copy_ownership_and_full",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "overwrite_prevented": true,
+        "failure_retained": "QUEUE_OVERFLOW"
+      }
+    },
+    {
+      "name": "epoch_ttl_and_duplicate_commit",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "equal_ttl_valid": true,
+        "old_epoch_rejected": true,
+        "finite_key_no_wrap": true
+      }
+    },
+    {
+      "name": "control_priority_and_late_fault",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "stop_wins": true,
+        "late_status_fail_stop": true,
+        "audit": [
+          "STOP",
+          [
+            "LATE_ERROR",
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "POST_COMMIT_FAIL_STOP"
+        ]
+      }
+    },
+    {
+      "name": "sample_clock_ttl_bound",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "rate_hz": 48000,
+        "note": "bound requires measured timer+sampling anchor uncertainty; stale last-received ID is not current time"
+      }
+    },
+    {
+      "name": "identity_and_counter_rejections",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "config_mismatch": true,
+        "ttl_overflow": true,
+        "frame_overflow": true,
+        "interval_overflow": true,
+        "consecutive_errors_no_empty_interval": true
+      }
+    },
+    {
+      "name": "queue_and_dependency_counterexamples",
+      "result": "PASS",
+      "method": "software_integer_or_model",
+      "detail": {
+        "boundary_pass": true,
+        "overbudget_full_and_unbounded_rejected": true,
+        "shared_ram_serialized": true
+      }
+    },
+    {
+      "name": "conditional_budget_and_memory",
+      "result": "PASS",
+      "method": "arithmetic_conditional_model",
+      "detail": {
+        "serial": 1633192,
+        "parallel_conditional": 477432,
+        "hop": 1066666,
+        "logical_bytes": 202816,
+        "production": "REALTIME_BLOCKED"
+      }
+    }
+  ],
+  "passed": 20,
+  "failed": 1,
+  "exit_code": 1,
+  "AMD_IP": "NOT_RUN",
+  "implementation": "NOT_RUN",
+  "board": "NOT_RUN",
+  "approval": "NOT_REQUESTED_NOT_GRANTED"
+}

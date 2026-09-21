@@ -1,0 +1,42 @@
+[
+  {
+    "name": "prepare",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\h3-repair-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\engineering-closeout-20260923\\repair-h3-e01-e03\\source\\prepare.py",
+      "--repo",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\h3-repair-publication",
+      "--out",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\h3-repair-check02"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379",
+    "exit": 0
+  },
+  {
+    "name": "regression",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\h3-repair-check02\\run_checks.py"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379",
+    "exit": 0
+  },
+  {
+    "name": "entry",
+    "args": [
+      "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\h3-repair-publication\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\algorithm-interface-review-20260918\\engineering-closeout-20260923\\repair-h3-e01-e03\\source\\check_entry.py",
+      "--repo",
+      "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga",
+      "--clean",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\h3-repair-check02",
+      "--out",
+      "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379\\h3-repair-publication-evidence\\entry"
+    ],
+    "cwd": "C:\\Users\\Toph Beifong\\.codex\\visualizations\\2026\\09\\07\\01a07c21-b7f9-74d2-92c5-7f8d235d8379",
+    "exit": 1
+  }
+]

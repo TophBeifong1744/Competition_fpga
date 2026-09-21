@@ -1,0 +1,442 @@
+{
+  "passed": 28,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "B-golden/short1023",
+      "status": "PASS",
+      "details": {
+        "groups": 1023,
+        "frames": 0,
+        "all_pcm_and_descriptors_exact": true
+      }
+    },
+    {
+      "name": "B-golden/exact1024",
+      "status": "PASS",
+      "details": {
+        "groups": 1024,
+        "frames": 1,
+        "all_pcm_and_descriptors_exact": true
+      }
+    },
+    {
+      "name": "B-golden/two_hops2048",
+      "status": "PASS",
+      "details": {
+        "groups": 2048,
+        "frames": 3,
+        "all_pcm_and_descriptors_exact": true
+      }
+    },
+    {
+      "name": "B-golden/cross_packets3000",
+      "status": "PASS",
+      "details": {
+        "groups": 3000,
+        "frames": 4,
+        "all_pcm_and_descriptors_exact": true
+      }
+    },
+    {
+      "name": "B-golden/clip3500",
+      "status": "PASS",
+      "details": {
+        "groups": 3500,
+        "frames": 4,
+        "all_pcm_and_descriptors_exact": true
+      }
+    },
+    {
+      "name": "B-golden/gap4000",
+      "status": "PASS",
+      "details": {
+        "groups": 4000,
+        "frames": 4,
+        "all_pcm_and_descriptors_exact": true
+      }
+    },
+    {
+      "name": "B-golden/restart_a",
+      "status": "PASS",
+      "details": {
+        "groups": 1500,
+        "frames": 1,
+        "all_pcm_and_descriptors_exact": true
+      }
+    },
+    {
+      "name": "B-golden/restart_b",
+      "status": "PASS",
+      "details": {
+        "groups": 1500,
+        "frames": 1,
+        "all_pcm_and_descriptors_exact": true
+      }
+    },
+    {
+      "name": "preserve-original-counterexamples",
+      "status": "PASS",
+      "details": [
+        {
+          "case": "clip-in-window",
+          "unadapted_frames": 1,
+          "adapted_frames": 0,
+          "expected_mismatch": true
+        },
+        {
+          "case": "repeated-gap",
+          "unadapted_error_ids": [
+            "103"
+          ],
+          "adapted_error_ids": [
+            "103",
+            "105"
+          ],
+          "expected_mismatch": true
+        }
+      ]
+    },
+    {
+      "name": "clip-recovery",
+      "status": "PASS",
+      "details": {
+        "events": [
+          {
+            "row": 1,
+            "id": "101",
+            "previous": "100",
+            "reasons": [
+              "CLIP"
+            ],
+            "raw_flags": 1,
+            "fatal": false
+          }
+        ],
+        "nonempty_intervals": 2
+      }
+    },
+    {
+      "name": "drop-recovery",
+      "status": "PASS",
+      "details": {
+        "events": [
+          {
+            "row": 1,
+            "id": "103",
+            "previous": "100",
+            "reasons": [
+              "DROP"
+            ],
+            "raw_flags": 0,
+            "fatal": false
+          }
+        ],
+        "nonempty_intervals": 2
+      }
+    },
+    {
+      "name": "drop-clip-drop",
+      "status": "PASS",
+      "details": {
+        "events": [
+          {
+            "row": 1,
+            "id": "103",
+            "previous": "100",
+            "reasons": [
+              "DROP",
+              "CLIP"
+            ],
+            "raw_flags": 1,
+            "fatal": false
+          },
+          {
+            "row": 2,
+            "id": "105",
+            "previous": "103",
+            "reasons": [
+              "DROP"
+            ],
+            "raw_flags": 0,
+            "fatal": false
+          }
+        ],
+        "nonempty_intervals": 2
+      }
+    },
+    {
+      "name": "consecutive-errors-no-empty-interval",
+      "status": "PASS",
+      "details": {
+        "events": [
+          {
+            "row": 1,
+            "id": "101",
+            "previous": "100",
+            "reasons": [
+              "CLIP"
+            ],
+            "raw_flags": 1,
+            "fatal": false
+          },
+          {
+            "row": 2,
+            "id": "102",
+            "previous": "101",
+            "reasons": [
+              "CLIP"
+            ],
+            "raw_flags": 2,
+            "fatal": false
+          }
+        ],
+        "nonempty_intervals": 2
+      }
+    },
+    {
+      "name": "last-drop-no-invented-interval",
+      "status": "PASS",
+      "details": {
+        "events": [
+          {
+            "row": 1,
+            "id": "103",
+            "previous": "100",
+            "reasons": [
+              "DROP"
+            ],
+            "raw_flags": 0,
+            "fatal": false
+          }
+        ],
+        "nonempty_intervals": 1
+      }
+    },
+    {
+      "name": "all-errors-no-interval",
+      "status": "PASS",
+      "details": {
+        "events": [
+          {
+            "row": 0,
+            "id": "1",
+            "previous": null,
+            "reasons": [
+              "CLIP"
+            ],
+            "raw_flags": 1,
+            "fatal": false
+          },
+          {
+            "row": 1,
+            "id": "2",
+            "previous": "1",
+            "reasons": [
+              "CLIP"
+            ],
+            "raw_flags": 2,
+            "fatal": false
+          }
+        ],
+        "nonempty_intervals": 0
+      }
+    },
+    {
+      "name": "fatal/duplicate",
+      "status": "PASS",
+      "details": {
+        "row": 1,
+        "id": "100",
+        "previous": "100",
+        "reasons": [
+          "ID_DUPLICATE"
+        ],
+        "raw_flags": 0,
+        "fatal": true
+      }
+    },
+    {
+      "name": "fatal/clip-reverse",
+      "status": "PASS",
+      "details": {
+        "row": 1,
+        "id": "99",
+        "previous": "100",
+        "reasons": [
+          "ID_REVERSE"
+        ],
+        "raw_flags": 0,
+        "fatal": true
+      }
+    },
+    {
+      "name": "fatal/wrap",
+      "status": "PASS",
+      "details": {
+        "row": 1,
+        "id": "0",
+        "previous": "18446744073709551615",
+        "reasons": [
+          "ID_WRAP"
+        ],
+        "raw_flags": 0,
+        "fatal": true
+      }
+    },
+    {
+      "name": "fatal/flags",
+      "status": "PASS",
+      "details": {
+        "row": 0,
+        "id": "1",
+        "previous": null,
+        "reasons": [
+          "INVALID_FLAGS"
+        ],
+        "raw_flags": 16,
+        "fatal": true
+      }
+    },
+    {
+      "name": "fatal/reserved",
+      "status": "PASS",
+      "details": {
+        "row": 0,
+        "id": "1",
+        "previous": null,
+        "reasons": [
+          "INVALID_RESERVED"
+        ],
+        "raw_flags": 0,
+        "fatal": true
+      }
+    },
+    {
+      "name": "fatal/range",
+      "status": "PASS",
+      "details": {
+        "row": 0,
+        "id": "1",
+        "previous": null,
+        "reasons": [
+          "PCM_RANGE"
+        ],
+        "raw_flags": 0,
+        "fatal": true
+      }
+    },
+    {
+      "name": "fatal/upstream",
+      "status": "PASS",
+      "details": {
+        "row": 0,
+        "id": "1",
+        "previous": null,
+        "reasons": [
+          "UPSTREAM_ERROR"
+        ],
+        "raw_flags": 0,
+        "fatal": true
+      }
+    },
+    {
+      "name": "fatal/reason-union",
+      "status": "PASS",
+      "details": {
+        "row": 1,
+        "id": "1",
+        "previous": "1",
+        "reasons": [
+          "UPSTREAM_ERROR",
+          "ID_DUPLICATE",
+          "INVALID_FLAGS",
+          "INVALID_RESERVED",
+          "CLIP"
+        ],
+        "raw_flags": 17,
+        "fatal": true
+      }
+    },
+    {
+      "name": "fatal/queue",
+      "status": "PASS",
+      "details": {
+        "row": 0,
+        "id": "1",
+        "previous": null,
+        "reasons": [
+          "QUEUE_OVERFLOW"
+        ],
+        "raw_flags": 0,
+        "fatal": true
+      }
+    },
+    {
+      "name": "frame-boundaries-and-session-isolation",
+      "status": "PASS",
+      "details": [
+        [
+          0,
+          0
+        ],
+        [
+          1023,
+          0
+        ],
+        [
+          1024,
+          1
+        ],
+        [
+          1535,
+          1
+        ],
+        [
+          1536,
+          2
+        ],
+        [
+          2048,
+          3
+        ]
+      ]
+    },
+    {
+      "name": "fixed4-exact-rational-boundaries",
+      "status": "PASS",
+      "details": {
+        "integer_cases": 262401,
+        "saturations": 8,
+        "oracle": "Fraction exact rational nearest-even",
+        "profile": "fixed4 software only"
+      }
+    },
+    {
+      "name": "zero-weak-mask-epsilon-units",
+      "status": "PASS",
+      "details": {
+        "mask": "square>0 and 2500*square>=max",
+        "epsilon_unit": "cross-spectrum magnitude codes",
+        "hardware_overflow": "NOT_TESTED Python unbounded integers"
+      }
+    },
+    {
+      "name": "commit-priority-TTL",
+      "status": "PASS",
+      "details": {
+        "assertions": 11,
+        "scope": "Decision predicates only; no hardware state-machine proof"
+      }
+    }
+  ],
+  "level": "SOFTWARE_FUNCTIONAL_ONLY",
+  "rtl_xsim": "NOT_RUN",
+  "amd_new_simulation": "NOT_RUN",
+  "board": "NOT_RUN",
+  "argv": [
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/algorithm-interface-review-20260918/increment-20260923/source/run_checks.py",
+    "--out",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/algorithm-interface-review-20260918/increment-20260923/evidence/run02"
+  ]
+}
