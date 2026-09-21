@@ -1,0 +1,450 @@
+[
+  {
+    "node": "window.doa_product",
+    "minimum": -1099511627776,
+    "maximum": 1099511496704,
+    "signed_bits": 41,
+    "unsigned_bits": null
+  },
+  {
+    "node": "gate.sum",
+    "minimum": -8589934592,
+    "maximum": 8589933568,
+    "signed_bits": 34,
+    "unsigned_bits": null
+  },
+  {
+    "node": "gate.center",
+    "minimum": -16777215,
+    "maximum": 16777215,
+    "signed_bits": 25,
+    "unsigned_bits": null
+  },
+  {
+    "node": "gate.window_product",
+    "minimum": -2199023124480,
+    "maximum": 2199023124480,
+    "signed_bits": 42,
+    "unsigned_bits": null
+  },
+  {
+    "node": "fft25.scalar_product",
+    "minimum": -18014398509481984,
+    "maximum": 18014398509481984,
+    "signed_bits": 56,
+    "unsigned_bits": null
+  },
+  {
+    "node": "fft25.complex_product_sum",
+    "minimum": -36028797018963968,
+    "maximum": 36028797018963968,
+    "signed_bits": 57,
+    "unsigned_bits": null
+  },
+  {
+    "node": "fft25.rotated",
+    "minimum": -33554432,
+    "maximum": 33554432,
+    "signed_bits": 27,
+    "unsigned_bits": null
+  },
+  {
+    "node": "fft25.butterfly_pre_shift",
+    "minimum": -50331648,
+    "maximum": 50331647,
+    "signed_bits": 27,
+    "unsigned_bits": null
+  },
+  {
+    "node": "fft25.pre_saturate",
+    "minimum": -25165824,
+    "maximum": 25165824,
+    "signed_bits": 26,
+    "unsigned_bits": null
+  },
+  {
+    "node": "fft29.scalar_product",
+    "minimum": -288230376151711744,
+    "maximum": 288230376151711744,
+    "signed_bits": 60,
+    "unsigned_bits": null
+  },
+  {
+    "node": "fft29.complex_product_sum",
+    "minimum": -576460752303423488,
+    "maximum": 576460752303423488,
+    "signed_bits": 61,
+    "unsigned_bits": null
+  },
+  {
+    "node": "fft29.rotated",
+    "minimum": -536870912,
+    "maximum": 536870912,
+    "signed_bits": 31,
+    "unsigned_bits": null
+  },
+  {
+    "node": "fft29.butterfly_pre_shift",
+    "minimum": -805306368,
+    "maximum": 805306367,
+    "signed_bits": 31,
+    "unsigned_bits": null
+  },
+  {
+    "node": "fft29.pre_saturate",
+    "minimum": -402653184,
+    "maximum": 402653184,
+    "signed_bits": 30,
+    "unsigned_bits": null
+  },
+  {
+    "node": "gate.sum_power",
+    "minimum": 0,
+    "maximum": 37154696925806592,
+    "signed_bits": 57,
+    "unsigned_bits": 56
+  },
+  {
+    "node": "gate.power_numerator",
+    "minimum": 0,
+    "maximum": 1307264681485361570293475180544,
+    "signed_bits": 102,
+    "unsigned_bits": 101
+  },
+  {
+    "node": "gate.on_threshold",
+    "minimum": 0,
+    "maximum": 73786976294838206460,
+    "signed_bits": 67,
+    "unsigned_bits": 66
+  },
+  {
+    "node": "phat.square",
+    "minimum": 0,
+    "maximum": 2535301200456458802993406410752,
+    "signed_bits": 103,
+    "unsigned_bits": 102
+  },
+  {
+    "node": "phat.mask_product",
+    "minimum": 0,
+    "maximum": 6338253001141147007483516026880000,
+    "signed_bits": 114,
+    "unsigned_bits": 113
+  },
+  {
+    "node": "phat.sqrt_input",
+    "minimum": 0,
+    "maximum": 713623846352979940529142984724747568191373312,
+    "signed_bits": 151,
+    "unsigned_bits": 150
+  },
+  {
+    "node": "phat.sqrt_compare_4n",
+    "minimum": 0,
+    "maximum": 2854495385411919762116571938898990272765493248,
+    "signed_bits": 153,
+    "unsigned_bits": 152
+  },
+  {
+    "node": "phat.sqrt_compare_odd_square",
+    "minimum": 1,
+    "maximum": 2854495385411919762116695236865057064708986225,
+    "signed_bits": 153,
+    "unsigned_bits": 152
+  },
+  {
+    "node": "phat.magnitude",
+    "minimum": 16777216,
+    "maximum": 26713738906281537970892,
+    "signed_bits": 76,
+    "unsigned_bits": 75
+  },
+  {
+    "node": "phat.newton0.mr_product",
+    "minimum": 1150674094249738240,
+    "maximum": 1155168913858752520,
+    "signed_bits": 62,
+    "unsigned_bits": 61
+  },
+  {
+    "node": "phat.newton0.mr",
+    "minimum": 1071648760,
+    "maximum": 1075834887,
+    "signed_bits": 32,
+    "unsigned_bits": 31
+  },
+  {
+    "node": "phat.newton0.factor",
+    "minimum": 1071648761,
+    "maximum": 1075834888,
+    "signed_bits": 32,
+    "unsigned_bits": 31
+  },
+  {
+    "node": "phat.newton0.update_product",
+    "minimum": 576460201471244286,
+    "maximum": 1152917123689938880,
+    "signed_bits": 61,
+    "unsigned_bits": 60
+  },
+  {
+    "node": "phat.newton0.reciprocal",
+    "minimum": 536870399,
+    "maximum": 1073737744,
+    "signed_bits": 31,
+    "unsigned_bits": 30
+  },
+  {
+    "node": "phat.newton1.mr_product",
+    "minimum": 1148431065833013248,
+    "maximum": 1157420705181077488,
+    "signed_bits": 62,
+    "unsigned_bits": 61
+  },
+  {
+    "node": "phat.newton1.mr",
+    "minimum": 1069559777,
+    "maximum": 1077932031,
+    "signed_bits": 32,
+    "unsigned_bits": 31
+  },
+  {
+    "node": "phat.newton1.factor",
+    "minimum": 1069551617,
+    "maximum": 1077923871,
+    "signed_bits": 32,
+    "unsigned_bits": 31
+  },
+  {
+    "node": "phat.newton1.update_product",
+    "minimum": 575332651229516804,
+    "maximum": 1157407545451287024,
+    "signed_bits": 62,
+    "unsigned_bits": 61
+  },
+  {
+    "node": "phat.newton1.reciprocal",
+    "minimum": 535820286,
+    "maximum": 1077919775,
+    "signed_bits": 32,
+    "unsigned_bits": 31
+  },
+  {
+    "node": "phat.normalize_product",
+    "minimum": -1213629774256322222489600,
+    "maximum": 1213629774256321144569825,
+    "signed_bits": 82,
+    "unsigned_bits": null
+  },
+  {
+    "node": "lag.denominator",
+    "minimum": -67108862,
+    "maximum": 67108862,
+    "signed_bits": 27,
+    "unsigned_bits": null
+  },
+  {
+    "node": "lag.numerator",
+    "minimum": -68719474688,
+    "maximum": 68719474688,
+    "signed_bits": 37,
+    "unsigned_bits": null
+  },
+  {
+    "node": "lag.unclamped_delta",
+    "minimum": -68719474688,
+    "maximum": 68719474688,
+    "signed_bits": 37,
+    "unsigned_bits": null
+  },
+  {
+    "node": "lag.tau_before_physical_guard",
+    "minimum": -34816,
+    "maximum": 34816,
+    "signed_bits": 17,
+    "unsigned_bits": null
+  },
+  {
+    "node": "lag.margin_numerator",
+    "minimum": -1099511595008,
+    "maximum": 1099511595008,
+    "signed_bits": 41,
+    "unsigned_bits": null
+  },
+  {
+    "node": "lag.margin_output",
+    "minimum": 0,
+    "maximum": 1099511595008,
+    "signed_bits": 41,
+    "unsigned_bits": 40
+  },
+  {
+    "node": "doa.sxx",
+    "minimum": 1,
+    "maximum": 4,
+    "signed_bits": 4,
+    "unsigned_bits": 3
+  },
+  {
+    "node": "doa.syy",
+    "minimum": 1,
+    "maximum": 4,
+    "signed_bits": 4,
+    "unsigned_bits": 3
+  },
+  {
+    "node": "doa.sxy",
+    "minimum": -1,
+    "maximum": 1,
+    "signed_bits": 2,
+    "unsigned_bits": null
+  },
+  {
+    "node": "doa.det_products",
+    "minimum": 0,
+    "maximum": 16,
+    "signed_bits": 6,
+    "unsigned_bits": 5
+  },
+  {
+    "node": "doa.det",
+    "minimum": 2,
+    "maximum": 16,
+    "signed_bits": 6,
+    "unsigned_bits": 5
+  },
+  {
+    "node": "doa.bx_by",
+    "minimum": -110706,
+    "maximum": 110706,
+    "signed_bits": 18,
+    "unsigned_bits": null
+  },
+  {
+    "node": "doa.ls_term_product",
+    "minimum": -442824,
+    "maximum": 442824,
+    "signed_bits": 20,
+    "unsigned_bits": null
+  },
+  {
+    "node": "doa.ls_difference",
+    "minimum": -442824,
+    "maximum": 442824,
+    "signed_bits": 20,
+    "unsigned_bits": null
+  },
+  {
+    "node": "doa.ls_scaled_numerator",
+    "minimum": -38883489792,
+    "maximum": 38883489792,
+    "signed_bits": 37,
+    "unsigned_bits": null
+  },
+  {
+    "node": "doa.denominator",
+    "minimum": 3840,
+    "maximum": 30720,
+    "signed_bits": 16,
+    "unsigned_bits": 15
+  },
+  {
+    "node": "doa.xy_pre_guard",
+    "minimum": -2531477,
+    "maximum": 2531477,
+    "signed_bits": 23,
+    "unsigned_bits": null
+  },
+  {
+    "node": "doa.predicted_dot",
+    "minimum": -3580051,
+    "maximum": 3580051,
+    "signed_bits": 23,
+    "unsigned_bits": null
+  },
+  {
+    "node": "doa.predicted_numerator",
+    "minimum": -28154666680320,
+    "maximum": 28154666680320,
+    "signed_bits": 46,
+    "unsigned_bits": null
+  },
+  {
+    "node": "doa.predicted",
+    "minimum": -78281,
+    "maximum": 78281,
+    "signed_bits": 18,
+    "unsigned_bits": null
+  },
+  {
+    "node": "doa.residual_difference",
+    "minimum": -110706,
+    "maximum": 110706,
+    "signed_bits": 18,
+    "unsigned_bits": null
+  },
+  {
+    "node": "doa.residual_sum_square",
+    "minimum": 0,
+    "maximum": 25653418668,
+    "signed_bits": 36,
+    "unsigned_bits": 35
+  },
+  {
+    "node": "doa.norm_square",
+    "minimum": 0,
+    "maximum": 7507883235005,
+    "signed_bits": 44,
+    "unsigned_bits": 43
+  },
+  {
+    "node": "cordic.xy_all_iterations",
+    "minimum": -12071262,
+    "maximum": 12071262,
+    "signed_bits": 25,
+    "unsigned_bits": null
+  },
+  {
+    "node": "cordic.angle_plus_offset",
+    "minimum": -18677784,
+    "maximum": 18677784,
+    "signed_bits": 26,
+    "unsigned_bits": null
+  },
+  {
+    "node": "cordic.angle_output",
+    "minimum": -72960,
+    "maximum": 72960,
+    "signed_bits": 18,
+    "unsigned_bits": null
+  },
+  {
+    "node": "das.channel_weighted_sum",
+    "minimum": -34359738368,
+    "maximum": 34359734272,
+    "signed_bits": 36,
+    "unsigned_bits": null
+  },
+  {
+    "node": "das.four_channel_sum",
+    "minimum": -137438953472,
+    "maximum": 137438937088,
+    "signed_bits": 38,
+    "unsigned_bits": null
+  },
+  {
+    "node": "das.fade_sum",
+    "minimum": -34359738368,
+    "maximum": 34359734272,
+    "signed_bits": 36,
+    "unsigned_bits": null
+  },
+  {
+    "node": "das.fade_alpha_numerator",
+    "minimum": 0,
+    "maximum": 1966080,
+    "signed_bits": 22,
+    "unsigned_bits": 21
+  }
+]
