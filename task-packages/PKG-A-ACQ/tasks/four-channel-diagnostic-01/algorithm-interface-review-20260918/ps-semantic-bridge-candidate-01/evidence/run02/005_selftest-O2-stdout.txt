@@ -1,0 +1,11 @@
+PASS config_and_buffer_length
+PASS copied_input_and_full_queue
+PASS frame_consumer_stall_and_tokens
+PASS accepted_row_recovery_complete_reason_union
+PASS finite_counters_wrap_audit_overflow
+PASS result_status_barrier_once_only_and_retired_late_error
+PASS ttl_clock_config_and_addition_bounds
+PASS simultaneous_control_fault_completion_and_old_session
+PASS result_full_stop_tail_new_session
+MEMORY {"bridge":178856,"bridge_align":8,"group":32,"descriptor":152,"input":9040,"inputs":72320,"frame":32960,"frames":65920,"result":208,"results":832,"window":32768,"audit":6656}
+HOST_SELFTEST_PASS groups=9 assertions=21462

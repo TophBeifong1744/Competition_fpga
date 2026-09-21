@@ -1,0 +1,522 @@
+[
+  {
+    "tick": 0,
+    "now": 0,
+    "session": "s0",
+    "reset": true,
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "submit",
+        "session": "s0",
+        "frame": 0,
+        "config": "fixture-config",
+        "expected": [
+          "fft",
+          "ifft"
+        ]
+      }
+    ]
+  },
+  {
+    "tick": 1,
+    "now": 0,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 0,
+      "source_sample": -8,
+      "available": -1,
+      "pcm": 0
+    }
+  },
+  {
+    "tick": 2,
+    "now": 1,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 1,
+      "source_sample": -7,
+      "available": 1,
+      "pcm": 0
+    },
+    "events": [
+      {
+        "kind": "status",
+        "session": "s0",
+        "frame": 0,
+        "unit": "fft"
+      }
+    ]
+  },
+  {
+    "tick": 3,
+    "now": 2,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 2,
+      "source_sample": -6,
+      "available": 2,
+      "pcm": 0
+    },
+    "events": [
+      {
+        "kind": "status",
+        "session": "s0",
+        "frame": 0,
+        "unit": "ifft"
+      },
+      {
+        "kind": "commit",
+        "session": "s0",
+        "frame": 0,
+        "config": "fixture-config",
+        "available": 2,
+        "valid_through": 20
+      }
+    ]
+  },
+  {
+    "tick": 4,
+    "now": 3,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 3,
+      "source_sample": -5,
+      "available": 3,
+      "pcm": 0
+    }
+  },
+  {
+    "tick": 5,
+    "now": 4,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 4,
+      "source_sample": -4,
+      "available": 4,
+      "pcm": 0
+    }
+  },
+  {
+    "tick": 6,
+    "now": 5,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 5,
+      "source_sample": -3,
+      "available": 5,
+      "pcm": 0
+    }
+  },
+  {
+    "tick": 7,
+    "now": 6,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 6,
+      "source_sample": -2,
+      "available": 6,
+      "pcm": 0
+    }
+  },
+  {
+    "tick": 8,
+    "now": 7,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 7,
+      "source_sample": -1,
+      "available": 7,
+      "pcm": 0
+    }
+  },
+  {
+    "tick": 9,
+    "now": 8,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 8,
+      "source_sample": 0,
+      "available": 8,
+      "pcm": -2096640
+    }
+  },
+  {
+    "tick": 10,
+    "now": 9,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 9,
+      "source_sample": 1,
+      "available": 9,
+      "pcm": 2096128
+    }
+  },
+  {
+    "tick": 11,
+    "now": 10,
+    "session": "s0",
+    "valid": true,
+    "ready": false,
+    "payload": {
+      "session": "s0",
+      "emit": 10,
+      "source_sample": 2,
+      "available": 10,
+      "pcm": -2096128
+    }
+  },
+  {
+    "tick": 12,
+    "now": 10,
+    "session": "s0",
+    "valid": true,
+    "ready": false,
+    "payload": {
+      "session": "s0",
+      "emit": 10,
+      "source_sample": 2,
+      "available": 10,
+      "pcm": -2096128
+    }
+  },
+  {
+    "tick": 13,
+    "now": 10,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 10,
+      "source_sample": 2,
+      "available": 10,
+      "pcm": -2096128
+    }
+  },
+  {
+    "tick": 14,
+    "now": 11,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 11,
+      "source_sample": 3,
+      "available": 11,
+      "pcm": 2096128
+    }
+  },
+  {
+    "tick": 15,
+    "now": 12,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 12,
+      "source_sample": 4,
+      "available": 12,
+      "pcm": -2096128
+    }
+  },
+  {
+    "tick": 16,
+    "now": 13,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 13,
+      "source_sample": 5,
+      "available": 13,
+      "pcm": 2096128
+    }
+  },
+  {
+    "tick": 17,
+    "now": 14,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 14,
+      "source_sample": 6,
+      "available": 14,
+      "pcm": -2096128
+    }
+  },
+  {
+    "tick": 18,
+    "now": 15,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 15,
+      "source_sample": 7,
+      "available": 15,
+      "pcm": 2096128
+    }
+  },
+  {
+    "tick": 19,
+    "now": 16,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 16,
+      "source_sample": 8,
+      "available": 16,
+      "pcm": 1023
+    }
+  },
+  {
+    "tick": 20,
+    "now": 17,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 17,
+      "source_sample": 9,
+      "available": 17,
+      "pcm": -1024
+    }
+  },
+  {
+    "tick": 21,
+    "now": 18,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 18,
+      "source_sample": 10,
+      "available": 18,
+      "pcm": 1023
+    }
+  },
+  {
+    "tick": 22,
+    "now": 19,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 19,
+      "source_sample": 11,
+      "available": 19,
+      "pcm": -1024
+    }
+  },
+  {
+    "tick": 23,
+    "now": 20,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 20,
+      "source_sample": 12,
+      "available": 20,
+      "pcm": 1023
+    }
+  },
+  {
+    "tick": 24,
+    "now": 21,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 21,
+      "source_sample": 13,
+      "available": 21,
+      "pcm": -1024
+    }
+  },
+  {
+    "tick": 25,
+    "now": 22,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 22,
+      "source_sample": 14,
+      "available": 22,
+      "pcm": 1023
+    }
+  },
+  {
+    "tick": 26,
+    "now": 23,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 23,
+      "source_sample": 15,
+      "available": 23,
+      "pcm": -1024
+    }
+  },
+  {
+    "tick": 27,
+    "now": 24,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 24,
+      "source_sample": 16,
+      "available": 24,
+      "pcm": 2098175
+    }
+  },
+  {
+    "tick": 28,
+    "now": 25,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 25,
+      "source_sample": 17,
+      "available": 25,
+      "pcm": -2098176
+    }
+  },
+  {
+    "tick": 29,
+    "now": 26,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 26,
+      "source_sample": 18,
+      "available": 26,
+      "pcm": 2098175
+    }
+  },
+  {
+    "tick": 30,
+    "now": 27,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 27,
+      "source_sample": 19,
+      "available": 27,
+      "pcm": -2098176
+    }
+  },
+  {
+    "tick": 31,
+    "now": 28,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 28,
+      "source_sample": 20,
+      "available": 28,
+      "pcm": 2098175
+    }
+  },
+  {
+    "tick": 32,
+    "now": 29,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 29,
+      "source_sample": 21,
+      "available": 29,
+      "pcm": -2098176
+    }
+  },
+  {
+    "tick": 33,
+    "now": 30,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 30,
+      "source_sample": 22,
+      "available": 30,
+      "pcm": 2098175
+    }
+  },
+  {
+    "tick": 34,
+    "now": 31,
+    "session": "s0",
+    "valid": true,
+    "ready": true,
+    "payload": {
+      "session": "s0",
+      "emit": 31,
+      "source_sample": 23,
+      "available": 31,
+      "pcm": -2098176
+    }
+  }
+]

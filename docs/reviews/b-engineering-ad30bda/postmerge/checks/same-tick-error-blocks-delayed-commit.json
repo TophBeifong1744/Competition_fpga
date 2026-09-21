@@ -1,0 +1,74 @@
+[
+  {
+    "tick": 0,
+    "now": 0,
+    "session": "s0",
+    "reset": true,
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "submit",
+        "session": "s0",
+        "frame": 0,
+        "config": "fixed",
+        "expected": [
+          "fft",
+          "ifft"
+        ]
+      }
+    ]
+  },
+  {
+    "tick": 1,
+    "now": 1,
+    "session": "s0",
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "status",
+        "session": "s0",
+        "frame": 0,
+        "unit": "fft"
+      }
+    ]
+  },
+  {
+    "tick": 2,
+    "now": 2,
+    "session": "s0",
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "status",
+        "session": "s0",
+        "frame": 0,
+        "unit": "ifft"
+      }
+    ]
+  },
+  {
+    "tick": 3,
+    "now": 4,
+    "session": "s0",
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "commit",
+        "session": "s0",
+        "frame": 0,
+        "config": "fixed",
+        "available": 2,
+        "valid_through": 10
+      },
+      {
+        "kind": "error",
+        "session": "s0",
+        "frame": 0
+      }
+    ]
+  }
+]

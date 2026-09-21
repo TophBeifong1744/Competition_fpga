@@ -1,0 +1,69 @@
+[
+  {
+    "tick": 0,
+    "now": 30,
+    "session": "new",
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "submit",
+        "session": "new",
+        "frame": 7,
+        "config": "frozen",
+        "expected": [
+          "fft",
+          "ifft"
+        ]
+      }
+    ],
+    "reset": true
+  },
+  {
+    "tick": 1,
+    "now": 31,
+    "session": "new",
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "status",
+        "session": "new",
+        "frame": 7,
+        "unit": "fft"
+      }
+    ]
+  },
+  {
+    "tick": 2,
+    "now": 35,
+    "session": "new",
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "status",
+        "session": "new",
+        "frame": 7,
+        "unit": "ifft"
+      }
+    ]
+  },
+  {
+    "tick": 3,
+    "now": 40,
+    "session": "new",
+    "valid": false,
+    "ready": true,
+    "events": [
+      {
+        "kind": "commit",
+        "session": "new",
+        "frame": 7,
+        "config": "frozen",
+        "available": 35,
+        "valid_through": 40
+      }
+    ]
+  }
+]

@@ -1,0 +1,367 @@
+[
+  {
+    "name": "frozen_A_packages_preserved",
+    "status": "PASS",
+    "detail": {
+      "files": 104,
+      "text_CRLF_equivalence_explicit": true
+    }
+  },
+  {
+    "name": "B/short1023",
+    "status": "PASS",
+    "detail": {
+      "groups": 1023,
+      "accepted": 1023,
+      "frames": 0,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "B/exact1024",
+    "status": "PASS",
+    "detail": {
+      "groups": 1024,
+      "accepted": 1024,
+      "frames": 1,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "B/two_hops2048",
+    "status": "PASS",
+    "detail": {
+      "groups": 2048,
+      "accepted": 2048,
+      "frames": 3,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "B/cross_packets3000",
+    "status": "PASS",
+    "detail": {
+      "groups": 3000,
+      "accepted": 3000,
+      "frames": 4,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "B/clip3500",
+    "status": "PASS",
+    "detail": {
+      "groups": 3500,
+      "accepted": 3500,
+      "frames": 4,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "B/gap4000",
+    "status": "PASS",
+    "detail": {
+      "groups": 4000,
+      "accepted": 4000,
+      "frames": 4,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "B/restart_a",
+    "status": "PASS",
+    "detail": {
+      "groups": 1500,
+      "accepted": 1500,
+      "frames": 1,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "B/restart_b",
+    "status": "PASS",
+    "detail": {
+      "groups": 1500,
+      "accepted": 1500,
+      "frames": 1,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/zero",
+    "status": "PASS",
+    "detail": {
+      "groups": 0,
+      "accepted": 0,
+      "frames": 0,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/short1023",
+    "status": "PASS",
+    "detail": {
+      "groups": 1023,
+      "accepted": 1023,
+      "frames": 0,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/exact1024",
+    "status": "PASS",
+    "detail": {
+      "groups": 1024,
+      "accepted": 1024,
+      "frames": 1,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/before1535",
+    "status": "PASS",
+    "detail": {
+      "groups": 1535,
+      "accepted": 1535,
+      "frames": 1,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/exact1536",
+    "status": "PASS",
+    "detail": {
+      "groups": 1536,
+      "accepted": 1536,
+      "frames": 2,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/multi2048",
+    "status": "PASS",
+    "detail": {
+      "groups": 2048,
+      "accepted": 2048,
+      "frames": 3,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/repeated_gap",
+    "status": "PASS",
+    "detail": {
+      "groups": 1027,
+      "accepted": 1027,
+      "frames": 1,
+      "error_events": 2,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/all_error",
+    "status": "PASS",
+    "detail": {
+      "groups": 30,
+      "accepted": 30,
+      "frames": 0,
+      "error_events": 30,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/continuous_clip",
+    "status": "PASS",
+    "detail": {
+      "groups": 1545,
+      "accepted": 1545,
+      "frames": 2,
+      "error_events": 8,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/duplicate",
+    "status": "PASS",
+    "detail": {
+      "groups": 2,
+      "accepted": 2,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/reverse_after_clip",
+    "status": "PASS",
+    "detail": {
+      "groups": 2,
+      "accepted": 2,
+      "frames": 0,
+      "error_events": 2,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/wrap",
+    "status": "PASS",
+    "detail": {
+      "groups": 2,
+      "accepted": 2,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/max_id_frame",
+    "status": "PASS",
+    "detail": {
+      "groups": 1024,
+      "accepted": 1024,
+      "frames": 1,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/error_code_only",
+    "status": "PASS",
+    "detail": {
+      "groups": 1,
+      "accepted": 1,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/integrity_only",
+    "status": "PASS",
+    "detail": {
+      "groups": 1,
+      "accepted": 1,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/union",
+    "status": "PASS",
+    "detail": {
+      "groups": 2,
+      "accepted": 2,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/invalid_flags",
+    "status": "PASS",
+    "detail": {
+      "groups": 1,
+      "accepted": 1,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/reserved",
+    "status": "PASS",
+    "detail": {
+      "groups": 1,
+      "accepted": 1,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/s24_edges",
+    "status": "PASS",
+    "detail": {
+      "groups": 1536,
+      "accepted": 1536,
+      "frames": 2,
+      "error_events": 0,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/bad_signext",
+    "status": "PASS",
+    "detail": {
+      "groups": 1,
+      "accepted": 1,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/int32_min",
+    "status": "PASS",
+    "detail": {
+      "groups": 1,
+      "accepted": 1,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/int32_max",
+    "status": "PASS",
+    "detail": {
+      "groups": 1,
+      "accepted": 1,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "A/upstream_high_bit",
+    "status": "PASS",
+    "detail": {
+      "groups": 1,
+      "accepted": 1,
+      "frames": 0,
+      "error_events": 1,
+      "builds": 2
+    }
+  },
+  {
+    "name": "preserved_original_counterexamples",
+    "status": "PASS",
+    "detail": {
+      "original_clip_frames": 1,
+      "C_frames": 0,
+      "original_gap_events": [
+        103
+      ],
+      "C_gap_events": [
+        103,
+        105
+      ],
+      "expected_original_mismatch": true
+    }
+  }
+]

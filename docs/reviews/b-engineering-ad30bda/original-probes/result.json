@@ -1,0 +1,18 @@
+{
+  "available_before_final_status": {
+    "accepted": false,
+    "reason": "availability precedes required status visibility"
+  },
+  "float_sample_identity": {
+    "accepted": false,
+    "reason": "integer source_sample required"
+  },
+  "weakened_expected_control": {
+    "accepted": false,
+    "reason": "trace cannot weaken external completion contract"
+  },
+  "changed_stall_control": {
+    "accepted": false,
+    "reason": "payload/valid changed under backpressure"
+  }
+}

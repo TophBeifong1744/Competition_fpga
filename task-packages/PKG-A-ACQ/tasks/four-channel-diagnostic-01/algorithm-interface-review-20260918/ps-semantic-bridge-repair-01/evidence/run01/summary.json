@@ -1,0 +1,20 @@
+{
+  "result": "REPAIR_AUTHOR_PASS_PENDING_B_REVIEW",
+  "original_cases": 33,
+  "new_regression": "REPAIR_PASS cases=120 assertions=3909",
+  "original_defects_reproduced": true,
+  "sanitizers": [
+    {
+      "profile": "asan-ubsan",
+      "state": "UNAVAILABLE_BUILD_FAILED_NOT_TEST_PASS"
+    },
+    {
+      "profile": "ubsan",
+      "state": "UNAVAILABLE_BUILD_FAILED_NOT_TEST_PASS"
+    }
+  ],
+  "ARM": "NOT_RUN",
+  "BSP": "NOT_RUN",
+  "board": "NOT_RUN",
+  "realtime": "REALTIME_BLOCKED"
+}

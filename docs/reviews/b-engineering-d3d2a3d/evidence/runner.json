@@ -1,0 +1,54 @@
+{
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\ss-b-engineering-d3d2a3d\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\engineering-closeout-20260921\\verify_increment.py",
+        "--repo",
+        "E:\\ss-b-engineering-d3d2a3d",
+        "--out",
+        "E:\\ss-b-engineering-d3d2a3d-run01\\checks"
+      ],
+      "cwd": "E:\\ss-b-engineering-d3d2a3d",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\ss-b-engineering-d3d2a3d\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\engineering-closeout-20260921\\budget_ledger.py",
+        "--config",
+        "E:\\ss-b-engineering-d3d2a3d\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\engineering-closeout-20260921\\budget_config.json",
+        "--out",
+        "E:\\ss-b-engineering-d3d2a3d-run01\\budget.json"
+      ],
+      "cwd": "E:\\ss-b-engineering-d3d2a3d",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "E:\\ss-b-engineering-d3d2a3d\\task-packages\\PKG-B-ALG\\tasks\\h3-interface-review-20260918\\engineering-closeout-20260921\\trace_scoreboard.py",
+        "E:\\ss-b-engineering-d3d2a3d-run01\\checks\\valid-trace.json",
+        "--max-stall-ticks",
+        "2",
+        "--expected-units",
+        "fft",
+        "ifft"
+      ],
+      "cwd": "E:\\ss-b-engineering-d3d2a3d",
+      "exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "budget_config.json": "4a47aae649b6e10b095e63737d763718ed96ffd7bf221696f6edca1b9998e635",
+    "budget_ledger.py": "c12f88f20ac709b03197ee764bcbe64faba9ef455a7c581c0841b544df6d7e0a",
+    "check_delivery.py": "9adf589e45b780fe3262d04c0f9c00d38391f2cdefa977e410138ceb4554274f",
+    "cordic_candidate.py": "28fdfe04a92b95dc3c3ace42d960812ea569a64801d25d0da2ed8b0551c7cccf",
+    "run_all.py": "fd38349caad6a5eb2d3dad73a5eecd6ed84c3016874ed0202232531e5a9eaba5",
+    "trace_scoreboard.py": "2f452207c6495a147d04ba184094a0b4b1248645f85270014111d582b2459b5a",
+    "verify_increment.py": "9efaf53957bf2a63fc3134a8f0c0231c6380bed29299cff5572a6249e581a76d"
+  }
+}
