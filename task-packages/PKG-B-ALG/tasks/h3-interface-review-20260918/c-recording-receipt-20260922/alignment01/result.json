@@ -1,0 +1,489 @@
+{
+  "status": "CANDIDATE_SOURCE_ALIGNMENT_NOT_ACTIVITY_TRUTH",
+  "zip_sha256": "965095987f65e229319487fffa5abb77dbcb40ec885a564489e4ec14b4bbc6d4",
+  "timeline_sha256": "c7ff0ebe1d02fa29321a7e95c407307da58470997e3804c4044ba935b1ef1509",
+  "dependencies": {
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/scripts/process_capture.py": "68398065275e6cb8ef891492fab7b8d6b363d4c9b6a7cee67119d3c6005e22d3",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/playback-v1/timeline.json": "78417648f5cc9a1ff8f1f461d5def3dce71074996efe61c0023fc9814d4bb325",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/playback-v1/marker-start.wav": "43ed63711ff3908bb8368a6935c7496c38f040df293707bc0ae3eefaaaf8939b",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/playback-v1/marker-end.wav": "fca8f0d94b690656d17acbb4eb8e5572b756c1158ffc9a7aaf1d32bc56cd63fb",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/trusted-direction-input-20260918/playback-v1/soundsight-target-v1.wav": "ce28c5576eea620d8f358c0799bf8029cdc41bdeae8dcf95a02967d3bace6838"
+  },
+  "captures": [
+    {
+      "capture": "az000_r1",
+      "alignment": {
+        "channels": [
+          {
+            "channel": "mic0",
+            "start_marker": {
+              "index": 270968,
+              "absolute_correlation": 0.18851985947411487,
+              "runner_up_outside_marker_width": 0.17917685765480593
+            },
+            "end_marker": {
+              "index": 271378,
+              "absolute_correlation": 0.22912883665897088,
+              "runner_up_outside_marker_width": 0.175675479116926
+            },
+            "measured_marker_separation_s": 0.008541666666666666,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic1",
+            "start_marker": {
+              "index": 270963,
+              "absolute_correlation": 0.19936778995613477,
+              "runner_up_outside_marker_width": 0.17777600421525586
+            },
+            "end_marker": {
+              "index": 271352,
+              "absolute_correlation": 0.22265442532709226,
+              "runner_up_outside_marker_width": 0.2083621125181154
+            },
+            "measured_marker_separation_s": 0.008104166666666668,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic2",
+            "start_marker": {
+              "index": 270952,
+              "absolute_correlation": 0.18969814591539386,
+              "runner_up_outside_marker_width": 0.15396362055237223
+            },
+            "end_marker": {
+              "index": 145444,
+              "absolute_correlation": 0.2278947329105953,
+              "runner_up_outside_marker_width": 0.21517293473178226
+            },
+            "measured_marker_separation_s": -2.61475,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic3",
+            "start_marker": {
+              "index": 270913,
+              "absolute_correlation": 0.20615524975816021,
+              "runner_up_outside_marker_width": 0.17997373631448063
+            },
+            "end_marker": {
+              "index": 271026,
+              "absolute_correlation": 0.2208946555393027,
+              "runner_up_outside_marker_width": 0.1769185820876436
+            },
+            "measured_marker_separation_s": 0.0023541666666666667,
+            "status": "UNRESOLVED"
+          }
+        ],
+        "algorithm": "absolute normalized matched correlation against frozen chirps; two-point affine map",
+        "thresholds": {
+          "min_correlation": 0.15,
+          "peak_ratio": 1.5,
+          "separation_tolerance_s": 0.05
+        },
+        "thresholds_scope": "heuristic marker search only, NOT B target-presence thresholds or measured uncertainty",
+        "exact_activity_labels": false,
+        "activity_uncertainty_seconds": null,
+        "required_followup": "Review waveform/listening, multipath and marker clipping. Source-mapped speech window is a prediction, not actual acoustic onset/offset. Preserve uncertainty; no scoring of markers.",
+        "source_sha256": "ce28c5576eea620d8f358c0799bf8029cdc41bdeae8dcf95a02967d3bace6838"
+      },
+      "all_four_candidate": false
+    },
+    {
+      "capture": "az000_r2",
+      "alignment": {
+        "channels": [
+          {
+            "channel": "mic0",
+            "start_marker": {
+              "index": 97241,
+              "absolute_correlation": 0.17134026516295348,
+              "runner_up_outside_marker_width": 0.16569020199912946
+            },
+            "end_marker": {
+              "index": 257427,
+              "absolute_correlation": 0.21442633536079114,
+              "runner_up_outside_marker_width": 0.1987375560563931
+            },
+            "measured_marker_separation_s": 3.3372083333333333,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic1",
+            "start_marker": {
+              "index": 97269,
+              "absolute_correlation": 0.21085805774171884,
+              "runner_up_outside_marker_width": 0.19481946246144877
+            },
+            "end_marker": {
+              "index": 96404,
+              "absolute_correlation": 0.19164092217464282,
+              "runner_up_outside_marker_width": 0.18401622830076944
+            },
+            "measured_marker_separation_s": -0.018020833333333333,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic2",
+            "start_marker": {
+              "index": 95162,
+              "absolute_correlation": 0.20979445386133738,
+              "runner_up_outside_marker_width": 0.18026805603785634
+            },
+            "end_marker": {
+              "index": 256574,
+              "absolute_correlation": 0.20074728734360742,
+              "runner_up_outside_marker_width": 0.18723928845153606
+            },
+            "measured_marker_separation_s": 3.36275,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic3",
+            "start_marker": {
+              "index": 97231,
+              "absolute_correlation": 0.16815461969155698,
+              "runner_up_outside_marker_width": 0.16237167290931276
+            },
+            "end_marker": {
+              "index": 257428,
+              "absolute_correlation": 0.20448513289290315,
+              "runner_up_outside_marker_width": 0.1766828651984217
+            },
+            "measured_marker_separation_s": 3.3374375,
+            "status": "UNRESOLVED"
+          }
+        ],
+        "algorithm": "absolute normalized matched correlation against frozen chirps; two-point affine map",
+        "thresholds": {
+          "min_correlation": 0.15,
+          "peak_ratio": 1.5,
+          "separation_tolerance_s": 0.05
+        },
+        "thresholds_scope": "heuristic marker search only, NOT B target-presence thresholds or measured uncertainty",
+        "exact_activity_labels": false,
+        "activity_uncertainty_seconds": null,
+        "required_followup": "Review waveform/listening, multipath and marker clipping. Source-mapped speech window is a prediction, not actual acoustic onset/offset. Preserve uncertainty; no scoring of markers.",
+        "source_sha256": "ce28c5576eea620d8f358c0799bf8029cdc41bdeae8dcf95a02967d3bace6838"
+      },
+      "all_four_candidate": false
+    },
+    {
+      "capture": "az045_r1",
+      "alignment": {
+        "channels": [
+          {
+            "channel": "mic0",
+            "start_marker": {
+              "index": 145529,
+              "absolute_correlation": 0.18972750910645603,
+              "runner_up_outside_marker_width": 0.11390700257559433
+            },
+            "end_marker": {
+              "index": 146952,
+              "absolute_correlation": 0.20400194881922626,
+              "runner_up_outside_marker_width": 0.11473576041361415
+            },
+            "measured_marker_separation_s": 0.029645833333333333,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic1",
+            "start_marker": {
+              "index": 147032,
+              "absolute_correlation": 0.17668885154865815,
+              "runner_up_outside_marker_width": 0.1050269619456615
+            },
+            "end_marker": {
+              "index": 146947,
+              "absolute_correlation": 0.22465410796525795,
+              "runner_up_outside_marker_width": 0.13685051783470245
+            },
+            "measured_marker_separation_s": -0.0017708333333333332,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic2",
+            "start_marker": {
+              "index": 147283,
+              "absolute_correlation": 0.17541395042762808,
+              "runner_up_outside_marker_width": 0.14553070439772228
+            },
+            "end_marker": {
+              "index": 146878,
+              "absolute_correlation": 0.19268012037261717,
+              "runner_up_outside_marker_width": 0.16185725949811958
+            },
+            "measured_marker_separation_s": -0.0084375,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic3",
+            "start_marker": {
+              "index": 147253,
+              "absolute_correlation": 0.22443985023512586,
+              "runner_up_outside_marker_width": 0.11493964387358059
+            },
+            "end_marker": {
+              "index": 146881,
+              "absolute_correlation": 0.2024492277882876,
+              "runner_up_outside_marker_width": 0.13014999794735294
+            },
+            "measured_marker_separation_s": -0.00775,
+            "status": "UNRESOLVED"
+          }
+        ],
+        "algorithm": "absolute normalized matched correlation against frozen chirps; two-point affine map",
+        "thresholds": {
+          "min_correlation": 0.15,
+          "peak_ratio": 1.5,
+          "separation_tolerance_s": 0.05
+        },
+        "thresholds_scope": "heuristic marker search only, NOT B target-presence thresholds or measured uncertainty",
+        "exact_activity_labels": false,
+        "activity_uncertainty_seconds": null,
+        "required_followup": "Review waveform/listening, multipath and marker clipping. Source-mapped speech window is a prediction, not actual acoustic onset/offset. Preserve uncertainty; no scoring of markers.",
+        "source_sha256": "ce28c5576eea620d8f358c0799bf8029cdc41bdeae8dcf95a02967d3bace6838"
+      },
+      "all_four_candidate": false
+    },
+    {
+      "capture": "az045_r2",
+      "alignment": {
+        "channels": [
+          {
+            "channel": "mic0",
+            "start_marker": {
+              "index": 165266,
+              "absolute_correlation": 0.16149237692773455,
+              "runner_up_outside_marker_width": 0.1139233290297957
+            },
+            "end_marker": {
+              "index": 166050,
+              "absolute_correlation": 0.1472464751200538,
+              "runner_up_outside_marker_width": 0.11244788222321364
+            },
+            "measured_marker_separation_s": 0.01633333333333333,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic1",
+            "start_marker": {
+              "index": 166864,
+              "absolute_correlation": 0.1322885599037107,
+              "runner_up_outside_marker_width": 0.09182397480073684
+            },
+            "end_marker": {
+              "index": 167287,
+              "absolute_correlation": 0.15329853625621256,
+              "runner_up_outside_marker_width": 0.11247175751198467
+            },
+            "measured_marker_separation_s": 0.0088125,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic2",
+            "start_marker": {
+              "index": 166862,
+              "absolute_correlation": 0.16100393173636293,
+              "runner_up_outside_marker_width": 0.1142746343100314
+            },
+            "end_marker": {
+              "index": 170889,
+              "absolute_correlation": 0.16795318726909927,
+              "runner_up_outside_marker_width": 0.1161159762121752
+            },
+            "measured_marker_separation_s": 0.08389583333333334,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic3",
+            "start_marker": {
+              "index": 167062,
+              "absolute_correlation": 0.15240075066300024,
+              "runner_up_outside_marker_width": 0.10500294187862595
+            },
+            "end_marker": {
+              "index": 166188,
+              "absolute_correlation": 0.15941320507164777,
+              "runner_up_outside_marker_width": 0.12004337701937287
+            },
+            "measured_marker_separation_s": -0.018208333333333333,
+            "status": "UNRESOLVED"
+          }
+        ],
+        "algorithm": "absolute normalized matched correlation against frozen chirps; two-point affine map",
+        "thresholds": {
+          "min_correlation": 0.15,
+          "peak_ratio": 1.5,
+          "separation_tolerance_s": 0.05
+        },
+        "thresholds_scope": "heuristic marker search only, NOT B target-presence thresholds or measured uncertainty",
+        "exact_activity_labels": false,
+        "activity_uncertainty_seconds": null,
+        "required_followup": "Review waveform/listening, multipath and marker clipping. Source-mapped speech window is a prediction, not actual acoustic onset/offset. Preserve uncertainty; no scoring of markers.",
+        "source_sha256": "ce28c5576eea620d8f358c0799bf8029cdc41bdeae8dcf95a02967d3bace6838"
+      },
+      "all_four_candidate": false
+    },
+    {
+      "capture": "azm045_r1",
+      "alignment": {
+        "channels": [
+          {
+            "channel": "mic0",
+            "start_marker": {
+              "index": 277647,
+              "absolute_correlation": 0.20209793205216028,
+              "runner_up_outside_marker_width": 0.16529453606049976
+            },
+            "end_marker": {
+              "index": 240950,
+              "absolute_correlation": 0.23219006889053012,
+              "runner_up_outside_marker_width": 0.201750003674891
+            },
+            "measured_marker_separation_s": -0.7645208333333333,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic1",
+            "start_marker": {
+              "index": 276055,
+              "absolute_correlation": 0.22535472148458868,
+              "runner_up_outside_marker_width": 0.170408485527525
+            },
+            "end_marker": {
+              "index": 240946,
+              "absolute_correlation": 0.25328603370341357,
+              "runner_up_outside_marker_width": 0.22321501028744928
+            },
+            "measured_marker_separation_s": -0.7314375,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic2",
+            "start_marker": {
+              "index": 276060,
+              "absolute_correlation": 0.2093563789805731,
+              "runner_up_outside_marker_width": 0.18747116550811063
+            },
+            "end_marker": {
+              "index": 240950,
+              "absolute_correlation": 0.2341402783031612,
+              "runner_up_outside_marker_width": 0.1870051651251904
+            },
+            "measured_marker_separation_s": -0.7314583333333333,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic3",
+            "start_marker": {
+              "index": 276087,
+              "absolute_correlation": 0.2502508164860936,
+              "runner_up_outside_marker_width": 0.15632927504390162
+            },
+            "end_marker": {
+              "index": 240954,
+              "absolute_correlation": 0.21965110112035977,
+              "runner_up_outside_marker_width": 0.20207754563832192
+            },
+            "measured_marker_separation_s": -0.7319375,
+            "status": "UNRESOLVED"
+          }
+        ],
+        "algorithm": "absolute normalized matched correlation against frozen chirps; two-point affine map",
+        "thresholds": {
+          "min_correlation": 0.15,
+          "peak_ratio": 1.5,
+          "separation_tolerance_s": 0.05
+        },
+        "thresholds_scope": "heuristic marker search only, NOT B target-presence thresholds or measured uncertainty",
+        "exact_activity_labels": false,
+        "activity_uncertainty_seconds": null,
+        "required_followup": "Review waveform/listening, multipath and marker clipping. Source-mapped speech window is a prediction, not actual acoustic onset/offset. Preserve uncertainty; no scoring of markers.",
+        "source_sha256": "ce28c5576eea620d8f358c0799bf8029cdc41bdeae8dcf95a02967d3bace6838"
+      },
+      "all_four_candidate": false
+    },
+    {
+      "capture": "azm045_r2",
+      "alignment": {
+        "channels": [
+          {
+            "channel": "mic0",
+            "start_marker": {
+              "index": 230715,
+              "absolute_correlation": 0.21955937954808438,
+              "runner_up_outside_marker_width": 0.1817653984430602
+            },
+            "end_marker": {
+              "index": 197112,
+              "absolute_correlation": 0.18729615276987513,
+              "runner_up_outside_marker_width": 0.17617434589038838
+            },
+            "measured_marker_separation_s": -0.7000625,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic1",
+            "start_marker": {
+              "index": 67305,
+              "absolute_correlation": 0.2115412498162772,
+              "runner_up_outside_marker_width": 0.2053131630915178
+            },
+            "end_marker": {
+              "index": 197096,
+              "absolute_correlation": 0.20708516469993155,
+              "runner_up_outside_marker_width": 0.19580651191131226
+            },
+            "measured_marker_separation_s": 2.7039791666666666,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic2",
+            "start_marker": {
+              "index": 230716,
+              "absolute_correlation": 0.2154776123600822,
+              "runner_up_outside_marker_width": 0.18273472608516309
+            },
+            "end_marker": {
+              "index": 197124,
+              "absolute_correlation": 0.22892178723755124,
+              "runner_up_outside_marker_width": 0.1782428765619867
+            },
+            "measured_marker_separation_s": -0.6998333333333333,
+            "status": "UNRESOLVED"
+          },
+          {
+            "channel": "mic3",
+            "start_marker": {
+              "index": 230720,
+              "absolute_correlation": 0.23152097726902224,
+              "runner_up_outside_marker_width": 0.1834305657982428
+            },
+            "end_marker": {
+              "index": 197128,
+              "absolute_correlation": 0.22525331659483835,
+              "runner_up_outside_marker_width": 0.20381875102869734
+            },
+            "measured_marker_separation_s": -0.6998333333333333,
+            "status": "UNRESOLVED"
+          }
+        ],
+        "algorithm": "absolute normalized matched correlation against frozen chirps; two-point affine map",
+        "thresholds": {
+          "min_correlation": 0.15,
+          "peak_ratio": 1.5,
+          "separation_tolerance_s": 0.05
+        },
+        "thresholds_scope": "heuristic marker search only, NOT B target-presence thresholds or measured uncertainty",
+        "exact_activity_labels": false,
+        "activity_uncertainty_seconds": null,
+        "required_followup": "Review waveform/listening, multipath and marker clipping. Source-mapped speech window is a prediction, not actual acoustic onset/offset. Preserve uncertainty; no scoring of markers.",
+        "source_sha256": "ce28c5576eea620d8f358c0799bf8029cdc41bdeae8dcf95a02967d3bace6838"
+      },
+      "all_four_candidate": false
+    }
+  ],
+  "limits": "Marker match does not prove speech content identity or exact onset. Tracker state uses full recording; guarded scores may inherit prior acquisition/HOLD."
+}
