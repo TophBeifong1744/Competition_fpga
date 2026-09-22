@@ -1,0 +1,280 @@
+{
+  "status": "CONDITIONAL_DEVELOPMENT_DIAGNOSTIC_NOT_ACCEPTANCE",
+  "zip_sha256": "965095987f65e229319487fffa5abb77dbcb40ec885a564489e4ec14b4bbc6d4",
+  "dependencies": {
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/config.json": "dd1f8a1375cd50187ba012235226c53548d75f95fbe6cf5e4483af9d47e9a163",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/evidence/run01/calibration.json": "8e517e831bcb4cef2f42c0010b5fb30379ac5166ac3690d24353553df1558e8a",
+    "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/checkpoint-20260923/source/candidates.py": "3360fdbfc07f073b9e3c45883811dfeee3177a4ec6a1d50ba4cae2468a138cb4",
+    "task-packages/PKG-B-ALG/tasks/c-board-algorithm-01/run.py": "7acd56bd7742baf174b0273f0aee2e54bacfe730840c7cb8019c07e3b2b675de",
+    "task-packages/PKG-B-ALG/payload/model/python/sector_tracker.py": "2297aa7f94058e3e4faf3da792c6f1beef6c68fa72121100ec672d60ade5ec50",
+    "task-packages/PKG-B-ALG/tasks/phat-fixed-03/integration/chain.py": "eb5c19b1ff30ec5926170c2f1c216ac764f3aa855c0d165c9822c6d59e11a9a7"
+  },
+  "source_sha256": "b332d450b25421d1cd592c0787ff4077a448ddc0614ef017c981cc41f7ae961f",
+  "assumptions": {
+    "positions_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.04,
+        0.0,
+        0.0
+      ],
+      [
+        0.04,
+        0.04,
+        0.0
+      ],
+      [
+        0.0,
+        0.04,
+        0.0
+      ]
+    ],
+    "fs": 48000,
+    "sound_speed": 343,
+    "configuration_confirmation": "pending operator confirmation",
+    "scene_mapping": {
+      "back_od": "pre_background",
+      "az045": "azp045"
+    },
+    "mapping_source": "user confirmation",
+    "activity_truth": "unavailable; full recordings include markers and pauses"
+  },
+  "new_pre_background_power": [
+    4531329.071681948,
+    4952596.364283197,
+    4783360.614912916,
+    4396443.415657734
+  ],
+  "calibration_note": "activity background normalization only, not channel calibration; pre background in calibration sample",
+  "captures": [
+    {
+      "capture": "az000_r1",
+      "frames": 561,
+      "numeric_valid": 254,
+      "modes": {
+        "no_gate": {
+          "gate_frames": 561,
+          "eligible": 231,
+          "fresh": 92,
+          "hold": 210,
+          "max_acquire": 4
+        },
+        "old_background": {
+          "gate_frames": 559,
+          "eligible": 231,
+          "fresh": 92,
+          "hold": 210,
+          "max_acquire": 4
+        },
+        "new_pre_background": {
+          "gate_frames": 412,
+          "eligible": 159,
+          "fresh": 30,
+          "hold": 56,
+          "max_acquire": 4
+        }
+      }
+    },
+    {
+      "capture": "az000_r2",
+      "frames": 561,
+      "numeric_valid": 263,
+      "modes": {
+        "no_gate": {
+          "gate_frames": 561,
+          "eligible": 248,
+          "fresh": 124,
+          "hold": 224,
+          "max_acquire": 4
+        },
+        "old_background": {
+          "gate_frames": 559,
+          "eligible": 248,
+          "fresh": 124,
+          "hold": 224,
+          "max_acquire": 4
+        },
+        "new_pre_background": {
+          "gate_frames": 407,
+          "eligible": 173,
+          "fresh": 66,
+          "hold": 122,
+          "max_acquire": 4
+        }
+      }
+    },
+    {
+      "capture": "az045_r1",
+      "frames": 561,
+      "numeric_valid": 228,
+      "modes": {
+        "no_gate": {
+          "gate_frames": 561,
+          "eligible": 197,
+          "fresh": 44,
+          "hold": 88,
+          "max_acquire": 4
+        },
+        "old_background": {
+          "gate_frames": 559,
+          "eligible": 197,
+          "fresh": 44,
+          "hold": 88,
+          "max_acquire": 4
+        },
+        "new_pre_background": {
+          "gate_frames": 416,
+          "eligible": 140,
+          "fresh": 4,
+          "hold": 13,
+          "max_acquire": 4
+        }
+      }
+    },
+    {
+      "capture": "az045_r2",
+      "frames": 561,
+      "numeric_valid": 248,
+      "modes": {
+        "no_gate": {
+          "gate_frames": 561,
+          "eligible": 198,
+          "fresh": 0,
+          "hold": 0,
+          "max_acquire": 4
+        },
+        "old_background": {
+          "gate_frames": 559,
+          "eligible": 198,
+          "fresh": 0,
+          "hold": 0,
+          "max_acquire": 4
+        },
+        "new_pre_background": {
+          "gate_frames": 385,
+          "eligible": 128,
+          "fresh": 0,
+          "hold": 0,
+          "max_acquire": 4
+        }
+      }
+    },
+    {
+      "capture": "azm045_r1",
+      "frames": 561,
+      "numeric_valid": 228,
+      "modes": {
+        "no_gate": {
+          "gate_frames": 561,
+          "eligible": 184,
+          "fresh": 41,
+          "hold": 90,
+          "max_acquire": 4
+        },
+        "old_background": {
+          "gate_frames": 559,
+          "eligible": 184,
+          "fresh": 41,
+          "hold": 90,
+          "max_acquire": 4
+        },
+        "new_pre_background": {
+          "gate_frames": 383,
+          "eligible": 122,
+          "fresh": 26,
+          "hold": 60,
+          "max_acquire": 4
+        }
+      }
+    },
+    {
+      "capture": "azm045_r2",
+      "frames": 561,
+      "numeric_valid": 229,
+      "modes": {
+        "no_gate": {
+          "gate_frames": 561,
+          "eligible": 188,
+          "fresh": 107,
+          "hold": 293,
+          "max_acquire": 4
+        },
+        "old_background": {
+          "gate_frames": 545,
+          "eligible": 180,
+          "fresh": 63,
+          "hold": 187,
+          "max_acquire": 4
+        },
+        "new_pre_background": {
+          "gate_frames": 379,
+          "eligible": 108,
+          "fresh": 40,
+          "hold": 146,
+          "max_acquire": 4
+        }
+      }
+    },
+    {
+      "capture": "back_od",
+      "frames": 561,
+      "numeric_valid": 388,
+      "modes": {
+        "no_gate": {
+          "gate_frames": 561,
+          "eligible": 342,
+          "fresh": 0,
+          "hold": 0,
+          "max_acquire": 4
+        },
+        "old_background": {
+          "gate_frames": 4,
+          "eligible": 3,
+          "fresh": 0,
+          "hold": 0,
+          "max_acquire": 1
+        },
+        "new_pre_background": {
+          "gate_frames": 0,
+          "eligible": 0,
+          "fresh": 0,
+          "hold": 0,
+          "max_acquire": 0
+        }
+      }
+    },
+    {
+      "capture": "bg_post",
+      "frames": 561,
+      "numeric_valid": 415,
+      "modes": {
+        "no_gate": {
+          "gate_frames": 561,
+          "eligible": 221,
+          "fresh": 0,
+          "hold": 0,
+          "max_acquire": 3
+        },
+        "old_background": {
+          "gate_frames": 60,
+          "eligible": 19,
+          "fresh": 0,
+          "hold": 0,
+          "max_acquire": 2
+        },
+        "new_pre_background": {
+          "gate_frames": 0,
+          "eligible": 0,
+          "fresh": 0,
+          "hold": 0,
+          "max_acquire": 0
+        }
+      }
+    }
+  ],
+  "frames": 4488
+}
