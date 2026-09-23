@@ -1,8 +1,8 @@
 # Competition_fpga
 
-2026-09-23 已迁移至 [fpga-team-workflow](docs/team-workflow.md)。A/B/C 对等承担工程职责，任务与批准以 [GitHub Issues](https://github.com/TophBeifong1744/Competition_fpga/issues) / PR 为准；正式 V1 总验收 **2026-10-07**，此前检查为 9/25、9/29、10/3。
+2026-09-23 已迁移至 [fpga-team-workflow](document/team-workflow.md)。A/B/C 对等承担工程职责，任务与批准以 [GitHub Issues](https://github.com/TophBeifong1744/Competition_fpga/issues) / PR 为准；正式 V1 总验收 **2026-10-07**，此前检查为 9/25、9/29、10/3。
 
-入口：[当前进展快照](docs/current-status.md) · [验收日历](docs/project-plan.md) · [三人分工](docs/team-tasks.md) · [新聊天启动提示](docs/chat-start-prompts.md) · [迁移与清理记录](docs/maintenance/workflow-migration-20260923.md)。
+入口：[当前进展快照](document/current-status.md) · [验收日历](document/project-plan.md) · [三人分工](document/team-tasks.md) · [新聊天启动提示](document/chat-start-prompts.md) · [迁移与清理记录](docs/maintenance/workflow-migration-20260923.md)。
 
 嵌入式比赛作品
 
@@ -10,11 +10,11 @@
 
 SoundSight 面向 AMD FPGA 自主设计比赛，目标是在 Zynq-7020 平台上完成四路同步声音采集、可靠声源方向估计（DOA）与自动指向的 Delay-and-Sum 波束形成，输出增强后的目标方向音频并展示方向、置信度和运行状态。C 并行完成舵机/转台与摄像头驱动及实物效果；声学跟踪闭环仍须通过可信方向、坐标和安全控制验证，机械移动不替代声学收益。
 
-当前A FFT29新增覆盖、C板实录及B reference25算法诊断均已获限定独立批准并入main，阶段进展检查通过；正式M1、完整H3、二维定位精度/音频收益和整机实板仍未通过。C001～003基础模块已接入[rtl](rtl/README.md)、[tb](tb/README.md)及[统一仿真入口](sim/README.md)，原六组回归通过，不等于整机接通。本阶段新增材料仅获研究/诊断批准，保留可运行任务包，不强搬生产主链，见[本次归位与收尾](deliverables/phase-2026-09-14/CLOSEOUT.md)。最新入口：[文档目录](docs/README.md)、[当前状态](docs/current-status.md)、[工作包台账](docs/work-packages.md)、[六麦独立材料包](deliverables/six-mic-acoustic-review-v1/README.md)。旧文档集中于[历史备份](archive/README.md)。
+当前A FFT29新增覆盖、C板实录及B reference25算法诊断均已获限定独立批准并入main，阶段进展检查通过；正式M1、完整H3、二维定位精度/音频收益和整机实板仍未通过。C001～003基础模块已接入[rtl](project/rtl/README.md)、[tb](simulation/tb/README.md)及[统一仿真入口](simulation/README.md)，原六组回归通过，不等于整机接通。本阶段新增材料仅获研究/诊断批准，保留可运行任务包，不强搬生产主链，见[本次归位与收尾](deliverables/phase-2026-09-14/CLOSEOUT.md)。最新入口：[文档目录](document/README.md)、[当前状态](document/current-status.md)、[工作包台账](document/work-packages.md)、[六麦独立材料包](deliverables/six-mic-acoustic-review-v1/README.md)。旧文档集中于[历史备份](archive/README.md)。
 
-版本范围：2026-10-07 的 V1 用四麦先验收二维水平声源方向及音频改善；三维方向（方位角、俯仰角和单位向量，不含距离/位置）列为 V2。V2 六麦为首选候选、非共面四麦为低成本备选、八麦暂缓；当前已形成六麦指南和首轮软件基线，不扩大首版交付范围，不提前增加采集通道或采购。六麦须经过声学/资源评审和扩展采集准入，不能直接继承四麦验收结论。评估、阶段门与三人分工见[三维方向升级计划](docs/three-dimensional-doa-plan.md)。
+版本范围：2026-10-07 的 V1 用四麦先验收二维水平声源方向及音频改善；三维方向（方位角、俯仰角和单位向量，不含距离/位置）列为 V2。V2 六麦为首选候选、非共面四麦为低成本备选、八麦暂缓；当前已形成六麦指南和首轮软件基线，不扩大首版交付范围，不提前增加采集通道或采购。六麦须经过声学/资源评审和扩展采集准入，不能直接继承四麦验收结论。评估、阶段门与三人分工见[三维方向升级计划](document/three-dimensional-doa-plan.md)。
 
-最新授权范围：麦克风沿用既定选择；仅执行六麦声学评审与离线软件模拟，不新增四麦模拟或四/六麦对比。第一轮2700帧合成浮点结果、波束图、同组六路数据的音频对照及失败边界见[六麦软件预评审](docs/six-mic-acoustic-software-review.md)；不代表3D-G0整体或板测通过。
+最新授权范围：麦克风沿用既定选择；仅执行六麦声学评审与离线软件模拟，不新增四麦模拟或四/六麦对比。第一轮2700帧合成浮点结果、波束图、同组六路数据的音频对照及失败边界见[六麦软件预评审](document/six-mic-acoustic-software-review.md)；不代表3D-G0整体或板测通过。
 
 ### 设计原则
 
@@ -53,7 +53,7 @@ flowchart LR
     PL -->|AXI DMA / DDR| REC
 ```
 
-完整的数据流、控制流、时钟域和模块边界见 [系统架构](docs/architecture.md)；各算法板块为什么存在、如何衔接以及怎样形成验证闭环，见 [原理流程](docs/principles-flow.md)；模块职责、接口交接、Vivado 集成与分阶段实现方法见 [工程实施流程](docs/engineering-flow.md)；PYNQ 的采用条件、接口和替换边界见 [PYNQ 集成与控制面指南](docs/pynq-integration-guide.md)；定位与音频收益的实验矩阵、指标和算法升级门见 [声学性能验证计划](docs/acoustic-validation-plan.md)；第三赛道初级组的逐项状态和两个 Skill 工作包见 [赛题验收台账](docs/competition-acceptance.md)。
+完整的数据流、控制流、时钟域和模块边界见 [系统架构](document/architecture.md)；各算法板块为什么存在、如何衔接以及怎样形成验证闭环，见 [原理流程](document/principles-flow.md)；模块职责、接口交接、Vivado 集成与分阶段实现方法见 [工程实施流程](document/engineering-flow.md)；PYNQ 的采用条件、接口和替换边界见 [PYNQ 集成与控制面指南](document/pynq-integration-guide.md)；定位与音频收益的实验矩阵、指标和算法升级门见 [声学性能验证计划](document/acoustic-validation-plan.md)；第三赛道初级组的逐项状态和两个 Skill 工作包见 [赛题验收台账](document/competition-acceptance.md)。
 
 ## 核心算法
 
@@ -124,7 +124,7 @@ PYNQ 是首选控制层实现，但 AXI4-Lite 寄存器、AXI DMA 数据格式�
 | M6 PYNQ/PS、UI 与整机 | 完整源码、PYNQ 首选控制程序、构建/运行脚本、报告、AI 可见协作记录和发布包 | 纯英文路径提交包可从零构建、部署、运行并复现实测结果 |
 | M7 可选自动跟踪转台 | 明确载荷后的执行机构、位置反馈、跟踪控制与安全保护 | 核心声学系统不依赖转台且转动不会破坏采集与定位 |
 
-详细里程碑与任务依赖见 [路线图](docs/roadmap.md) 和 [团队任务分解](docs/team-tasks.md)。
+详细里程碑与任务依赖见 [路线图](document/roadmap.md) 和 [团队任务分解](document/team-tasks.md)。
 
 ## 关键指标（目标值）
 
@@ -146,35 +146,41 @@ PYNQ 是首选控制层实现，但 AXI4-Lite 寄存器、AXI DMA 数据格式�
 
 ```text
 .
-├─ docs/            系统架构、路线图、验证和任务文档
-├─ hardware/        麦克风阵列、接口、电源、时钟、引脚与标定资料
-├─ model/matlab/    浮点/定点黄金模型与测试向量生成
-├─ rtl/             可综合 SystemVerilog/Verilog 源码
-├─ tb/              自检测试平台与断言
-├─ sim/             仿真配置、向量和批处理入口
-├─ vivado/          可复现工程脚本、约束、IP 配置与 BD 脚本
-├─ ps/              PYNQ 优先的 PS 配置、DMA、UI、通信和日志程序
-├─ scripts/         跨模块构建、检查与结果归档脚本
-├─ skill/           FPGA模块开发/仿真与PYNQ接口验证Skill
-└─ results/         经过确认的测试报告、资源/时序摘要和图表
+├─ document/        活动架构、接口、计划和验证说明
+├─ project/
+│  ├─ rtl/          唯一活动 RTL
+│  └─ add_sources.tcl  向已打开工程添加三件基础模块的人工入口
+├─ simulation/
+│  ├─ tb/           唯一活动 TB
+│  ├─ modules.json  模块来源、哈希与仿真清单
+│  └─ run_*.ps1     现有 XSim 诊断入口
+├─ models/          MATLAB/Python 模型与复现说明
+├─ software/        PS 软件说明；当前实现仍按固定任务包定位
+├─ data/fixtures/h1/  小型确定性 H1 数据
+├─ hardware/        板卡、接口、电源、时钟、引脚与标定资料
+├─ scripts/         仓库检查与适配脚本
+├─ skill/           已批准的比赛 Skill 原件
+├─ docs/            reviews/maintenance/phases/templates 等冻结历史区
+├─ task-packages/、deliverables/、archive/、results/  原任务与证据保留区
+└─ codex_out/、.local/  本机诊断与私有配置，运行时按需生成并忽略
 ```
 
-各目录 README 说明允许提交的内容和边界。协作流程见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+各目录 README 说明允许提交的内容和边界。协作流程见 [CONTRIBUTING.md](CONTRIBUTING.md)，旧新映射和历史复现见[实体迁移说明](document/layout-migration.md)。这是 Issue #26 的候选布局；准确合入状态以 PR 为准。仓库没有已核定的正式 .xpr/BAT/ModelSim 入口，外部 one 工程不在本次迁移范围。
 
 ## 官方推荐提交目录映射
 
-第三赛道推荐使用 `README.md`、`src/`、`sim/`、`build/`、`board/`、`data/`、`skill/` 和 `report/`。当前开发仓库按职责拆得更细，最终发布时按下表导出，不为迎合目录而移动正在使用的源码：
+第三赛道推荐使用 `README.md`、`src/`、`sim/`、`build/`、`board/`、`data/`、`skill/` 和 `report/`。开发布局与提交包布局分别管理；最终发布授权后才按下表及真实工程依赖导出：
 
 | 官方提交目录 | 当前仓库来源 | 发布包内容 |
 |---|---|---|
 | `README.md` | `README.md` | 项目简介、环境、构建、部署、运行、验证和从零复现入口 |
-| `src/` | `rtl/`、`ps/`、`vivado/bd/`、`vivado/ip/` | 完整 RTL、PS 源码、受控 Block Design/IP 源描述 |
-| `sim/` | `tb/`、`sim/` | 自检 TB、仿真脚本、输入、预期、实际和 PASS/FAIL 结果 |
-| `build/` | `vivado/`、`scripts/`、审核后的 `results/` | Vivado 2025.2 重建脚本及综合、实现、资源、时序、时钟报告 |
-| `board/` | `hardware/` 中已核验连接、`vivado/constraints/`、PS 部署脚本和板测结果 | 上板工程、运行脚本、硬件清单、实测输出和 golden 对比 |
-| `data/` | `sim/vectors/`、`model/matlab/` 的导出、审核后的测试数据 | 小型测试数据、元数据、golden reference 和大文件外部清单 |
+| `src/` | `project/rtl/`、获准 PS 源码及原生工程的 BD/IP 输入 | 完整 RTL、PS 源码、受控 Block Design/IP 源描述 |
+| `sim/` | `simulation/` | 自检 TB、仿真脚本、输入、预期、实际和 PASS/FAIL 结果 |
+| `build/` | `project/`、`scripts/`、审核后的 `results/` 及原生工程 recipe | Vivado 2025.2 重建脚本及综合、实现、资源、时序、时钟报告 |
+| `board/` | `hardware/` 中已核验连接、原生工程约束、PS 部署脚本和板测结果 | 上板工程、运行脚本、硬件清单、实测输出和 golden 对比 |
+| `data/` | `data/fixtures/`、`models/` 的导出、审核后的测试数据 | 小型测试数据、元数据、golden reference 和大文件外部清单 |
 | `skill/` | `skill/` | 通过验收的 SKL-001、SKL-002 及各自 README、边界和验证结果 |
-| `report/` | `docs/` 中面向评审的定稿、`results/` 摘要 | 设计报告、指标证据、复现说明和用户可见的 AI 协作记录 |
+| `report/` | `document/` 中面向评审的定稿、`results/` 摘要 | 设计报告、指标证据、复现说明和用户可见的 AI 协作记录 |
 
 最终提交包根目录使用纯英文项目名，例如 `soundsight/`；所有目录和文件名只使用小写英文字母、数字、下划线或连字符。`官方资源/` 下的官方 PDF、内部会议纪要、工作包草稿、未脱敏照片和无再分发许可的第三方资料只作内部证据，不直接进入提交包。发布前必须完成隐私/匿名信息、绝对路径、账号令牌、第三方许可和开源许可证检查；是否匿名按最终提交规则执行，不把内部姓名和机器路径无条件带入公开包。
 
@@ -182,4 +188,4 @@ AI 协作材料只保存用户可见提示、模型可见回答、人工纠正�
 
 ## 当前最优先任务
 
-A先处理 #13 加载入口与 #14 生产合同；B推进 #16 诊断复核及 #17 完整算法/定点包；C完成 #15 正确素材的新八段录音，继续 #19 舵机和 #20 摄像头。已发布的准备包与Skill候选直接增量交审，不重复旧FFT。详见[当前任务入口](docs/work-packages.md)。
+A先处理 #13 加载入口与 #14 生产合同；B推进 #16 诊断复核及 #17 完整算法/定点包；C完成 #15 正确素材的新八段录音，继续 #19 舵机和 #20 摄像头。已发布的准备包与Skill候选直接增量交审，不重复旧FFT。详见[当前任务入口](document/work-packages.md)。

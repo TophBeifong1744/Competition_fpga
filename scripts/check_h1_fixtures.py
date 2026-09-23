@@ -10,7 +10,7 @@ def require(condition, message):
 
 
 def check():
-    root = Path(__file__).resolve().parents[1] / "examples" / "h1"
+    root = Path(__file__).resolve().parents[1] / "data" / "fixtures" / "h1"
     expected = {
         "code-pattern": [
             [9007199254740992, 0, 1, -1, 2, 0, ""],

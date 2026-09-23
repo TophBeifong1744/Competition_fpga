@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Sep 23 20:50:29 2026
+# Process ID         : 52428
+# Current directory  : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/codex_out/layout-validation-01/regression/stats
+# Command line       : xsim.exe -log simulation.log -mode tcl -source {xsim.dir/dut_test/xsim_script.tcl}
+# Log file           : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/codex_out/layout-validation-01/regression/stats/simulation.log
+# Journal file       : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/codex_out/layout-validation-01/regression/stats\xsim.jou
+# Running On         : Toph
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 17179 MB
+# Total Virtual      : 34070 MB
+# Available Virtual  : 11121 MB
+#-----------------------------------------------------------
+source xsim.dir/dut_test/xsim_script.tcl
+# xsim {dut_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS COUNT_WIDTH=32 checks=541
+PASS COUNT_WIDTH=64 checks=541
+PASS COUNT_WIDTH=1 checks=561
+PASS COUNT_WIDTH=3 checks=579
+ALL TESTS PASS: COUNT_WIDTH=1,3,default32,64
+$finish called at time : 5776 ns : File "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/simulation/tb/common/tb_stream_error_stats.sv" Line 16
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 23 20:50:31 2026...

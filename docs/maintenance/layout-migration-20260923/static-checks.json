@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "0a5f544893cff1094bcd1bad5346a1cf05790707",
+  "primary_mode": "BUILD_FLOW",
+  "identity": [
+    {
+      "old": "examples/h1/code-pattern/metadata.json",
+      "new": "data/fixtures/h1/code-pattern/metadata.json",
+      "before_sha256": "2f1aca137563cdecb72a59c87f73a20233e62ffcd4e9997a798dc3ee5df93964",
+      "after_sha256": "2f1aca137563cdecb72a59c87f73a20233e62ffcd4e9997a798dc3ee5df93964",
+      "old_blob": "45177136a2fed756d71ca1b09e5752280c1c3eaa",
+      "new_blob": "45177136a2fed756d71ca1b09e5752280c1c3eaa",
+      "byte_equal": true,
+      "git_blob_equal": true
+    },
+    {
+      "old": "examples/h1/code-pattern/samples.csv",
+      "new": "data/fixtures/h1/code-pattern/samples.csv",
+      "before_sha256": "c02fdf3855e87a2d8c6e57ebbeb2b9304ab00cd7cd5c9afe022bad00574b9d0f",
+      "after_sha256": "c02fdf3855e87a2d8c6e57ebbeb2b9304ab00cd7cd5c9afe022bad00574b9d0f",
+      "old_blob": "445cce5f8f48b868b8fa3270a65a97f326053eab",
+      "new_blob": "445cce5f8f48b868b8fa3270a65a97f326053eab",
+      "byte_equal": true,
+      "git_blob_equal": true
+    },
+    {
+      "old": "examples/h1/reader-test-plan.json",
+      "new": "data/fixtures/h1/reader-test-plan.json",
+      "before_sha256": "2a3de3dc33e0b500d62ffd97207b2f262b35e9a4c1c823b82985b793b7fd8afb",
+      "after_sha256": "2a3de3dc33e0b500d62ffd97207b2f262b35e9a4c1c823b82985b793b7fd8afb",
+      "old_blob": "d1ee293965413b7b060446f73cf735a4bc72ad1e",
+      "new_blob": "d1ee293965413b7b060446f73cf735a4bc72ad1e",
+      "byte_equal": true,
+      "git_blob_equal": true
+    },
+    {
+      "old": "examples/h1/restart/metadata.json",
+      "new": "data/fixtures/h1/restart/metadata.json",
+      "before_sha256": "c3ffc03e41ca5c8e9cee4dd050c51bcbd98d112dce299683c3b4873d019af9e3",
+      "after_sha256": "c3ffc03e41ca5c8e9cee4dd050c51bcbd98d112dce299683c3b4873d019af9e3",
+      "old_blob": "ba5a028ae7ab348ae17ef538470a0662936fa5d4",
+      "new_blob": "ba5a028ae7ab348ae17ef538470a0662936fa5d4",
+      "byte_equal": true,
+      "git_blob_equal": true
+    },
+    {
+      "old": "examples/h1/restart/samples.csv",
+      "new": "data/fixtures/h1/restart/samples.csv",
+      "before_sha256": "d95c743494822c2279647a770fceb8bbc4d4c222d1917c9c92a77ea2e2a15119",
+      "after_sha256": "d95c743494822c2279647a770fceb8bbc4d4c222d1917c9c92a77ea2e2a15119",
+      "old_blob": "67e4b8b9968aa72258738d46de2d201f5535ed41",
+      "new_blob": "67e4b8b9968aa72258738d46de2d201f5535ed41",
+      "byte_equal": true,
+      "git_blob_equal": true
+    },
+    {
+      "old": "model/matlab/square_array_baseline.m",
+      "new": "models/matlab/square_array_baseline.m",
+      "before_sha256": "2bb7ee58ba09995d1222bb11fdb44669fdbc7ba099b543280e09654f7b77c7f6",
+      "after_sha256": "2bb7ee58ba09995d1222bb11fdb44669fdbc7ba099b543280e09654f7b77c7f6",
+      "old_blob": "94efcb4a81a4a8a83af4f3dc5e67b110535574b3",
+      "new_blob": "94efcb4a81a4a8a83af4f3dc5e67b110535574b3",
+      "byte_equal": true,
+      "git_blob_equal": true
+    },
+    {
+      "old": "model/python/six_mic_acoustic_review.py",
+      "new": "models/python/six_mic_acoustic_review.py",
+      "before_sha256": "b50cdf8eafad2b14998156e705e30f1a353ee6c4b8b3f87ce461fe8e4f086a8b",
+      "after_sha256": "b50cdf8eafad2b14998156e705e30f1a353ee6c4b8b3f87ce461fe8e4f086a8b",
+      "old_blob": "b50b196a3971de3473378e2157f145e091d69b25",
+      "new_blob": "b50b196a3971de3473378e2157f145e091d69b25",
+      "byte_equal": true,
+      "git_blob_equal": true
+    },
+    {
+      "old": "rtl/acquisition/pcm4_signext_pack.v",
+      "new": "project/rtl/acquisition/pcm4_signext_pack.v",
+      "before_sha256": "85269ccd9991c80a2dbd507d342cc19d6e58517b9cc525520dce03b710df215a",
+      "after_sha256": "85269ccd9991c80a2dbd507d342cc19d6e58517b9cc525520dce03b710df215a",
+      "old_blob": "a300f74c48fe68eb34247d7a6f1cf97a28778f58",
+      "new_blob": "a300f74c48fe68eb34247d7a6f1cf97a28778f58",
+      "byte_equal": true,
+      "git_blob_equal": true
+    },
+    {
+      "old": "rtl/common/stream_error_snapshot.v",
+      "new": "project/rtl/common/stream_error_snapshot.v",
+      "before_sha256": "e66c836d22c3f022815e7c364bd3c9c9e0f782d57c511b09984744bfdc2c4546",
+      "after_sha256": "e66c836d22c3f022815e7c364bd3c9c9e0f782d57c511b09984744bfdc2c4546",
+      "old_blob": "35e8b74588181f01436db1e9d7d252d93bd92bb1",
+      "new_blob": "35e8b74588181f01436db1e9d7d252d93bd92bb1",
+      "byte_equal": true,
+      "git_blob_equal": true
+    },
+    {
+      "old": "rtl/common/stream_error_stats.sv",
+      "new": "project/rtl/common/stream_error_stats.sv",
+      "before_sha256": "aeb7d2242a65ea46eb465b563149320e83a3386f80ff30fa44ff403ef0f46b07",
+      "after_sha256": "aeb7d2242a65ea46eb465b563149320e83a3386f80ff30fa44ff403ef0f46b07",
+      "old_blob": "5986e166a8465a1540e15cdbb9d81f3e890346a7",
+      "new_blob": "5986e166a8465a1540e15cdbb9d81f3e890346a7",
+      "byte_equal": true,
+      "git_blob_equal": true
+    },
+    {
+      "old": "rtl/servo/motor_drive.v",
+      "new": "project/rtl/servo/motor_drive.v",
+      "before_sha256": "9beccf7b4adb6bcf651b06cdf6e691898c43c5798731f56fd60a6f9569214106",
+      "after_sha256": "9beccf7b4adb6bcf651b06cdf6e691898c43c5798731f56fd60a6f9569214106",
+      "old_blob": "725093852f82a68ecd12421fd0c97d92d2eb7a98",
+      "new_blob": "725093852f82a68ecd12421fd0c97d92d2eb7a98",
+      "byte_equal": true,
+      "git_blob_equal": true
+    },
+    {
+      "old": "tb/acquisition/tb_pcm4_independent.sv",
+      "new": "simulation/tb/acquisition/tb_pcm4_independent.sv",
+      "before_sha256": "7ed04b1d8835b88c8e21dfc92792970687d266edd6a026c31385b592ed5332e5",
+      "after_sha256": "7ed04b1d8835b88c8e21dfc92792970687d266edd6a026c31385b592ed5332e5",
+      "old_blob": "c0c569500ff1e926bdc37e168a7926bd5e80ba1e",
+      "new_blob": "c0c569500ff1e926bdc37e168a7926bd5e80ba1e",
+      "byte_equal": true,
+      "git_blob_equal": true
+    },
+    {
+      "old": "tb/acquisition/tb_pcm4_signext_pack.v",
+      "new": "simulation/tb/acquisition/tb_pcm4_signext_pack.v",
+      "before_sha256": "8327fb2bbcb0eaddf3f7779f4bc0e3701502f43385f3acfe0e7ffb1628cc49cc",
+      "after_sha256": "8327fb2bbcb0eaddf3f7779f4bc0e3701502f43385f3acfe0e7ffb1628cc49cc",
+      "old_blob": "c309a0b0f6b92c8df09b548607e1241484696869",
+      "new_blob": "c309a0b0f6b92c8df09b548607e1241484696869",
+      "byte_equal": true,
+      "git_blob_equal": true
+    },
+    {
+      "old": "tb/common/tb_snapshot_independent.sv",
+      "new": "simulation/tb/common/tb_snapshot_independent.sv",
+      "before_sha256": "45d59ea7ccabd69144b0eef2fb8644483cc35431c742efa120b0aefc3d436ba9",
+      "after_sha256": "45d59ea7ccabd69144b0eef2fb8644483cc35431c742efa120b0aefc3d436ba9",
+      "old_blob": "c7a04b813871641116b1dcd051e7e14c5d650f41",
+      "new_blob": "c7a04b813871641116b1dcd051e7e14c5d650f41",
+      "byte_equal": true,
+      "git_blob_equal": true
+    },
+    {
+      "old": "tb/common/tb_stream_error_snapshot_integration.v",
+      "new": "simulation/tb/common/tb_stream_error_snapshot_integration.v",
+      "before_sha256": "13379f6f28a47e146926a22e65004595077d464c74c6c00bba3c4a7fce025ba2",
+      "after_sha256": "13379f6f28a47e146926a22e65004595077d464c74c6c00bba3c4a7fce025ba2",
+      "old_blob": "c6ced71dee403be52672a5cc399e5b535a33321d",
+      "new_blob": "c6ced71dee403be52672a5cc399e5b535a33321d",
+      "byte_equal": true,
+      "git_blob_equal": true
+    },
+    {
+      "old": "tb/common/tb_stream_error_snapshot.v",
+      "new": "simulation/tb/common/tb_stream_error_snapshot.v",
+      "before_sha256": "58ac3e1c7c63da018139e94018165282348d0175d2091246307f92db236ed0b1",
+      "after_sha256": "58ac3e1c7c63da018139e94018165282348d0175d2091246307f92db236ed0b1",
+      "old_blob": "454861f1209141a86c5ccf255ef16d086903afec",
+      "new_blob": "454861f1209141a86c5ccf255ef16d086903afec",
+      "byte_equal": true,
+      "git_blob_equal": true
+    },
+    {
+      "old": "tb/common/tb_stream_error_stats.sv",
+      "new": "simulation/tb/common/tb_stream_error_stats.sv",
+      "before_sha256": "d26edd7be346ef849c6d746d9cfe469a4d4d87c321702114960c91f11bdb8cd3",
+      "after_sha256": "d26edd7be346ef849c6d746d9cfe469a4d4d87c321702114960c91f11bdb8cd3",
+      "old_blob": "924a8638334794f8676b047b2ddf08350ff8aa99",
+      "new_blob": "924a8638334794f8676b047b2ddf08350ff8aa99",
+      "byte_equal": true,
+      "git_blob_equal": true
+    },
+    {
+      "old": "tb/servo/tb_motor_drive.v",
+      "new": "simulation/tb/servo/tb_motor_drive.v",
+      "before_sha256": "689731c55212d9ebcc72fb975b58836542f11cf28b654c49e54acce546bfd2ac",
+      "after_sha256": "689731c55212d9ebcc72fb975b58836542f11cf28b654c49e54acce546bfd2ac",
+      "old_blob": "3ba792edd0ceb4e6b0eda8d41b5f351d9f46b754",
+      "new_blob": "3ba792edd0ceb4e6b0eda8d41b5f351d9f46b754",
+      "byte_equal": true,
+      "git_blob_equal": true
+    }
+  ],
+  "ignore_check": {
+    "checked_count": 62,
+    "checked_paths": [
+      "document/acoustic-validation-plan.md",
+      "document/architecture.md",
+      "document/chat-start-prompts.md",
+      "document/competition-acceptance.md",
+      "document/current-status.md",
+      "document/deferred-acquisition-risks.md",
+      "document/engineering-flow.md",
+      "document/generated-artifacts.md",
+      "document/git-workflow.md",
+      "document/input-scale-and-pl-ps-boundary.md",
+      "document/member-c-operation-sheet.md",
+      "document/minimal-data-interface.md",
+      "document/phase-closeout.md",
+      "document/principles-flow.md",
+      "document/project-identity.md",
+      "document/project-plan.md",
+      "document/pynq-integration-guide.md",
+      "document/README.md",
+      "document/roadmap.md",
+      "document/six-mic-acoustic-software-review.md",
+      "document/skills-delivery-plan.md",
+      "document/task-package-handoff.md",
+      "document/team-tasks.md",
+      "document/team-workflow.md",
+      "document/three-dimensional-doa-engineering-guide.md",
+      "document/three-dimensional-doa-plan.md",
+      "document/three-dimensional-doa-principles-guide.md",
+      "document/three-dimensional-doa-pynq-skill-guide.md",
+      "document/three-dimensional-doa-workflow-skill-guide.md",
+      "document/three-handoff-workflow.md",
+      "document/work-packages.md",
+      "data/fixtures/h1/code-pattern/metadata.json",
+      "data/fixtures/h1/code-pattern/samples.csv",
+      "data/fixtures/h1/reader-test-plan.json",
+      "data/fixtures/h1/restart/metadata.json",
+      "data/fixtures/h1/restart/samples.csv",
+      "models/matlab/README.md",
+      "models/matlab/square_array_baseline.m",
+      "models/python/README.md",
+      "models/python/six_mic_acoustic_review.py",
+      "software/README.md",
+      "project/rtl/acquisition/.gitattributes",
+      "project/rtl/acquisition/pcm4_signext_pack.v",
+      "project/rtl/common/stream_error_snapshot.v",
+      "project/rtl/common/stream_error_stats.sv",
+      "project/rtl/README.md",
+      "project/rtl/servo/motor_drive.v",
+      "simulation/.gitattributes",
+      "project/add_sources.tcl",
+      "simulation/modules.json",
+      "simulation/README.md",
+      "simulation/run_regression.ps1",
+      "simulation/run_servo.ps1",
+      "simulation/tb/acquisition/tb_pcm4_independent.sv",
+      "simulation/tb/acquisition/tb_pcm4_signext_pack.v",
+      "simulation/tb/common/tb_snapshot_independent.sv",
+      "simulation/tb/common/tb_stream_error_snapshot_integration.v",
+      "simulation/tb/common/tb_stream_error_snapshot.v",
+      "simulation/tb/common/tb_stream_error_stats.sv",
+      "simulation/tb/README.md",
+      "simulation/tb/servo/tb_motor_drive.v",
+      "project/README.md"
+    ],
+    "ignored_paths": []
+  },
+  "manifest_allowed_fields": [
+    "files[].target",
+    "cases[].sources"
+  ],
+  "manifest_equal_after_path_restore": true,
+  "links": {
+    "checked_documents": 53,
+    "new_broken_links": [],
+    "baseline_untracked_wav": [
+      "results/model/six-mic-acoustic-review/six-channel-synthetic-input.wav",
+      "results/model/six-mic-acoustic-review/A-single-reference.wav",
+      "results/model/six-mic-acoustic-review/B-manual-direction.wav",
+      "results/model/six-mic-acoustic-review/C-auto-static-direction.wav"
+    ],
+    "sparse_omitted_but_git_tree_present": [
+      "官方资源/全国大学生嵌入式芯片与系统设计竞赛'2026FPGA赛道选题指南-AMD.pdf"
+    ]
+  },
+  "diff_check": {
+    "command": "git diff --check",
+    "exit_code": 0,
+    "warnings": "Ordinary text LF/CRLF conversion warnings only; protected input Git blob identity checked separately"
+  },
+  "writer_not_run": [
+    "simulation",
+    "synthesis",
+    "implementation",
+    "STA",
+    "ModelSim/Questa",
+    "Tcl source import",
+    "Vitis build",
+    "board"
+  ],
+  "independent_simulation_evidence": "codex_out/layout-validation-01",
+  "formal_adapter": "UNVERIFIED",
+  "power": "NOT_APPLICABLE"
+}

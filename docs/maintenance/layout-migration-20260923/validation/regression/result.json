@@ -1,0 +1,66 @@
+{
+  "status": "PASS_MODULE_REGRESSION",
+  "scope": "Module source integration regression only",
+  "source_commit": "1aab6b5370558c7e24fda97d26b73edc90a66fde",
+  "manifest_sha256": "3166A34DB2051F24679E71FFB0EE25208EF99D1F400C7609018D4980C8943B6A",
+  "runner_sha256": "230B2563AC60728D956A067FA6947A6F4FB9DEA8CB1004B5FD766CD642C31059",
+  "vivado_bin": "F:/AMD/2025.2/Vivado/bin",
+  "not_run": [
+    "synthesis",
+    "timing",
+    "board",
+    "four-channel capture",
+    "C004"
+  ],
+  "cases": [
+    {
+      "name": "servo",
+      "top": "tb_motor_drive",
+      "status": "PASS",
+      "marker": "PASS motor_drive checks=39",
+      "log_sha256": "137C67C7535946D3761020D595D23E0B3EF8C135BD19F9E4207CF2CA482999B2"
+    },
+    {
+      "name": "stats",
+      "top": "tb_stream_error_stats",
+      "status": "PASS",
+      "marker": "ALL TESTS PASS",
+      "log_sha256": "FBFB27E6B2C3EFD65FEA6C85E9B854B18B31820381495715306D83C3D816F85B"
+    },
+    {
+      "name": "snapshot",
+      "top": "tb_stream_error_snapshot_all_widths",
+      "status": "PASS",
+      "marker": "ALL TESTS PASS",
+      "log_sha256": "8EA122DBCD878DC807C8E5E1030892F9D688D31F5FB7F9C658F66E46DB0A9454"
+    },
+    {
+      "name": "snapshot_joint",
+      "top": "tb_stream_error_snapshot_integration",
+      "status": "PASS",
+      "marker": "ALL TESTS PASS",
+      "log_sha256": "C0931DBF07FE56235FAAF5D4B39BE9D25AB3B0E8470D0F80F1402E079F7EE489"
+    },
+    {
+      "name": "snapshot_independent",
+      "top": "tb_independent",
+      "status": "PASS",
+      "marker": "REVIEW ALL PASS",
+      "log_sha256": "AE988B9B6305056D241E6F61EA110847778D419208B08100ACB077B165F838B2"
+    },
+    {
+      "name": "pcm4",
+      "top": "tb_pcm4_signext_pack",
+      "status": "PASS",
+      "marker": "ALL TESTS PASS",
+      "log_sha256": "22DC1D483941A5E127EC3FE7C76A33F5C80AF1E3D0E091C027F47592FF38BF39"
+    },
+    {
+      "name": "pcm4_independent",
+      "top": "tb_review",
+      "status": "PASS",
+      "marker": "REVIEW ALL PASS",
+      "log_sha256": "727F6D108D73557EF485091660F7ABFFCF8B5584FD17790A2C6D31B2639CCA05"
+    }
+  ]
+}
