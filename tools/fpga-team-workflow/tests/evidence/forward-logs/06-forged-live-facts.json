@@ -1,0 +1,28 @@
+{
+  "name": "06-forged-live-facts",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "<forward-sandbox>\\skills\\fpga-team-workflow\\scripts\\team_workflow.py",
+    "delivery",
+    "inspect",
+    "--facts",
+    "<forward-sandbox>\\cases\\forged-live-facts.json"
+  ],
+  "cwd": "<forward-sandbox>",
+  "exit_code": 3,
+  "output": {
+    "schema_version": 1,
+    "status": "INCONCLUSIVE",
+    "mechanics_eligible": true,
+    "blockers": [],
+    "qualified_reviewers": [
+      "fixture-reviewer"
+    ],
+    "approval_authenticity": "UNVERIFIED_IMPORTED_FACTS",
+    "delivery_approved": false,
+    "reason": "Local facts never manufacture human approval; verify acceptance scope at authoritative GitHub record",
+    "should_close_issue": false
+  },
+  "stderr": ""
+}

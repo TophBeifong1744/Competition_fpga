@@ -1,0 +1,25 @@
+{
+  "name": "10-idempotent-install",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "<forward-sandbox>\\package-source\\scripts\\skill_maintenance.py",
+    "install",
+    "--plan",
+    "<forward-sandbox>\\cases\\idempotent-plan.json",
+    "--execute",
+    "--authorization-ref",
+    "authorized sandbox forward test"
+  ],
+  "cwd": "<forward-sandbox>",
+  "exit_code": 0,
+  "output": {
+    "schema_version": 1,
+    "status": "OK",
+    "idempotent": true,
+    "transaction": null,
+    "files_changed": 0,
+    "client_loaded": "UNKNOWN"
+  },
+  "stderr": ""
+}

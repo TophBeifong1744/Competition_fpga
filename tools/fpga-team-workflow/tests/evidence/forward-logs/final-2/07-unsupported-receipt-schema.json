@@ -1,0 +1,25 @@
+{
+  "name": "07-unsupported-receipt-schema",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "<forward-sandbox>\\source-final-2\\scripts\\skill_maintenance.py",
+    "verify",
+    "--source",
+    "<forward-sandbox>\\skills\\fpga-team-workflow"
+  ],
+  "cwd": "<forward-sandbox>",
+  "exit_code": 2,
+  "output": {
+    "schema_version": 1,
+    "status": "BLOCKED",
+    "errors": [
+      "Invalid installed receipt: Unsupported or missing schema_version"
+    ],
+    "version": "0.1.0",
+    "content_sha256": "1e0b3f29cc0661bd30260898bc78477aa0592f921afecdf2706d046d8798e6fc",
+    "tests": null,
+    "review": "Behavioral/user acceptance is separate from package validation"
+  },
+  "stderr": ""
+}

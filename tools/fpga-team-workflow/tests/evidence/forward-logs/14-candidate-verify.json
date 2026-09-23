@@ -1,0 +1,23 @@
+{
+  "name": "14-candidate-verify",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "<forward-sandbox>\\package-source\\scripts\\skill_maintenance.py",
+    "verify",
+    "--source",
+    "<forward-sandbox>\\candidate"
+  ],
+  "cwd": "<forward-sandbox>",
+  "exit_code": 0,
+  "output": {
+    "schema_version": 1,
+    "status": "OK",
+    "errors": [],
+    "version": "0.1.1-forward-test",
+    "content_sha256": "1fbb1f9ec5f47773e560cca8a3b040796ef793359116759960acdeaec67e27b9",
+    "tests": null,
+    "review": "Behavioral/user acceptance is separate from package validation"
+  },
+  "stderr": ""
+}

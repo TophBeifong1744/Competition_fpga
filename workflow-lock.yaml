@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "outer_skill": {
+    "name": "fpga-team-workflow",
+    "release": "0.1.0",
+    "source_commit": null,
+    "source_kind": "user-provided-local-package",
+    "content_sha256": "b226438c46b1c4b56f49d4e2c6f0d486235f8b152d9023442f04dfb7651a2f12",
+    "distribution_ref": "tools/fpga-team-workflow",
+    "manifest_ref": "tools/fpga-team-workflow/package-manifest.json"
+  },
+  "engineering_skill": {
+    "name": "run-fpga-workflow",
+    "repository": "prasetyarobert205-jpg/codex-fpga-engineering-workflow",
+    "version": "0.4.0",
+    "source_commit": "e40fd8000b526b72ba80373127bf5fd6e5f8dc28"
+  },
+  "bridge": {
+    "schema_version": 1,
+    "verified_client": null,
+    "verification_record": "docs/maintenance/workflow-migration-20260923.md",
+    "engineering_adapter_status": "UNVERIFIED"
+  },
+  "model_policy": {
+    "policy_version": "0.1.0",
+    "config_ref": "team-workflow.yaml#model_policy",
+    "content_sha256": "5a1ea903762b949aaa6c736e3158c63851559a2f851c58fa1a2f1e3dc851da51"
+  }
+}

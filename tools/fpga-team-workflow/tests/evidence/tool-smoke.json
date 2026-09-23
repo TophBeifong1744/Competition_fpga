@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "claim": "DIAGNOSTIC_ONLY",
+  "tool": "XSim 2018.3",
+  "commands": [
+    [
+      "xvlog",
+      "tb_tool_smoke.v"
+    ],
+    [
+      "xelab",
+      "work.tb_tool_smoke",
+      "-s",
+      "ftw_tool_smoke"
+    ],
+    [
+      "xsim",
+      "ftw_tool_smoke",
+      "-tclbatch",
+      "run.tcl"
+    ]
+  ],
+  "exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "functional_acceptance": false,
+  "board_test": "NOT_RUN",
+  "log_hashes": {
+    "compile.log": "e3be7551485843197a1affdae6530a89e6f92e6e4f50bc7e3cdc3bfd29333248",
+    "elaborate.log": "464192385ec209481b0d6217b345d1929638d29545d46965494a8dcea3b44b6a",
+    "run.log": "903fffded3eba0385d8d43c9412bfb0ee42845c7646098dfdda3e8751f1cea1b"
+  }
+}

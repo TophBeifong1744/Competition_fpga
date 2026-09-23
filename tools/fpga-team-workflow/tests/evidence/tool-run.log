@@ -1,0 +1,17 @@
+
+****** xsim v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/ftw_tool_smoke/xsim_script.tcl
+# xsim {ftw_tool_smoke} -autoloadwcfg -tclbatch {run.tcl}
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source run.tcl
+## run all
+FTW_TOOL_SMOKE_STARTED
+FTW_TOOL_SMOKE_COMPLETED
+$finish called at time : 1 ns : File "<workspace>/work/tool-smoke/tb_tool_smoke.v" Line 7
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 23 18:43:00 2026...

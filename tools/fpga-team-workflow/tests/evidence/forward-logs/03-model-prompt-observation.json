@@ -1,0 +1,46 @@
+{
+  "name": "03-model-prompt-observation",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "<forward-sandbox>\\skills\\fpga-team-workflow\\scripts\\team_workflow.py",
+    "model",
+    "inspect",
+    "--metadata",
+    "<forward-sandbox>\\cases\\prompt-metadata.json",
+    "--roles",
+    "<user>\\.codex\\agents"
+  ],
+  "cwd": "<forward-sandbox>",
+  "exit_code": 0,
+  "output": {
+    "schema_version": 1,
+    "status": "OK",
+    "observed": {
+      "main": {
+        "source_kind": "prompt",
+        "model_id": "gpt-6-astra",
+        "reasoning_effort": "xhigh",
+        "text": "�������Ѿ��л�Ϊ GPT-6 Astra xhigh",
+        "observation_status": "UNKNOWN",
+        "verification_limit": "Imported metadata is not independently authenticated"
+      },
+      "subagents": [
+        {
+          "started": true,
+          "source_kind": "prompt",
+          "role": "fpga_architect",
+          "model_id": "gpt-6-astra",
+          "reasoning_effort": "xhigh",
+          "observation_status": "UNKNOWN",
+          "verification_limit": "Imported metadata is not independently authenticated"
+        }
+      ]
+    },
+    "role_overrides": [],
+    "settings_modified": false,
+    "runtime_adapter": "UNSUPPORTED",
+    "requested": null
+  },
+  "stderr": ""
+}

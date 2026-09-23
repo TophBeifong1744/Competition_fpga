@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "status": "INCONCLUSIVE",
+  "layout": {
+    "schema_version": 1,
+    "status": "INCONCLUSIVE",
+    "layout_mode": "existing",
+    "target": null,
+    "dependencies": {
+      "files": [
+        "sim/modules.json"
+      ],
+      "include_dirs": [],
+      "filelists": [],
+      "errors": [],
+      "unsupported": [],
+      "duplicate_modules": {},
+      "scope": "Explicit plain filelists and literal includes only; vendor source view, conditional preprocessing and external dependencies require adapter evidence"
+    },
+    "errors": [],
+    "warnings": [
+      "Real build adapter is UNVERIFIED; mapping is not execution compatibility",
+      "No real vendor project entry configured"
+    ],
+    "ignored_sources": [],
+    "untracked_required": [],
+    "tracked_outputs": [],
+    "product_modified": false,
+    "engineering_entry_verified": false
+  },
+  "dependency": {
+    "schema_version": 1,
+    "status": "OK",
+    "dependency_version": "0.4.0",
+    "source_commit": "e40fd8000b526b72ba80373127bf5fd6e5f8dc28",
+    "files_checked": 40,
+    "roles_expected": 13,
+    "missing": [],
+    "changed": [],
+    "client_loaded": "UNKNOWN",
+    "technical_acceptance": "NOT_RUN"
+  },
+  "project_lock_status": "CHECKED",
+  "issues": [],
+  "tools": {
+    "git": "F:\\Program\\Git\\cmd\\git.EXE",
+    "gh": "C:\\Program Files\\GitHub CLI\\gh.EXE",
+    "vivado": "F:\\Xilinx\\Vivado\\2018.3\\bin\\vivado.BAT",
+    "xsim": "F:\\Xilinx\\Vivado\\2018.3\\bin\\xsim.BAT",
+    "vsim": null
+  },
+  "model_actual": "UNKNOWN",
+  "client_loaded": "UNKNOWN",
+  "writes": []
+}

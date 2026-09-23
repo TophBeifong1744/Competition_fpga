@@ -1,0 +1,109 @@
+{
+  "name": "12-maintain-plan",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "<forward-sandbox>\\package-source\\scripts\\skill_maintenance.py",
+    "plan",
+    "--source",
+    "<forward-sandbox>\\package-source",
+    "--request",
+    "<forward-sandbox>\\cases\\change-request.json"
+  ],
+  "cwd": "<forward-sandbox>",
+  "exit_code": 0,
+  "output": {
+    "schema_version": 1,
+    "status": "OK",
+    "proposal": {
+      "schema_version": 1,
+      "status": "OK",
+      "change_id": "CHG-0d7e7b6f1d56",
+      "proposal": {
+        "schema_version": 1,
+        "kind": "outer_rule",
+        "problem": "sandbox-only controlled update exercise",
+        "requested_behavior": "add lab-only README marker and lab version",
+        "base_tree_sha256": "f6b74368e750a65f2cf81c7b51f413398911041d8e4666deee4dae6abb03741c",
+        "protected_invariants": [
+          "never modify original source, global installation, project files or remote state"
+        ],
+        "scope": {
+          "include": [
+            "README.md",
+            "VERSION"
+          ],
+          "exclude": [
+            "upstream",
+            "product"
+          ]
+        },
+        "acceptance": [
+          "sandbox upgraded and original bytes restored by controlled rollback"
+        ],
+        "changes": [
+          {
+            "path": "README.md",
+            "base_sha256": "155e7aacdd5f6753cd0f1ef46efb2be802d725d063f76d1ab9f4e187784fbbb5",
+            "content": "# fpga-team-workflow 0.1.0\n\n�����û��ṩ������ָ�� v1.2.0 ʵ�ֵĶ��� FPGA Э����㡣���������̶�Ϊ\n`run-fpga-workflow 0.4.0 @ e40fd8000b526b72ba80373127bf5fd6e5f8dc28`��\n����ʵ�ʹ�ͬʹ�ã����û�и��ƹ��̽�ɫ��Դ����Ǳ�Ŀ¼������Ŀ¼�ַ���\n\n## ��������ʲô\n\n- status/plan��work��review��integrate��maintain �İ�����������Ľ���ģ�塣\n- Դ��/�������顢�ɲ���ӳ�䡢����������ա����ع������ƻ���ִ�С�\n- ֤������/�/������顢����׼��Ļ�е��飻����������ʵ��Ա��׼��\n- ��Ŀ�����Զ��Ƽ�����ģ�ͺ� effort���׶β��졢��������/�����á���ɫ���Ǽ�顣\n- ά���᰸��׼ȷ���ߵĺ�ѡ�Ķ�������֤����װԤ�������񱸷�/�ָ�/���ˡ�\n\n�߽磺ģ�ͽ��Ƽ������Զ��л��Ϳ��ſͻ������й۲����������� GitHub д�������\n�ް忨���������Զ�����ɾ����GitHub Ȩ����ʵ�ɵ�ǰ���ù���/��ʵ��Ա�˶ԡ�\n�ļ�/fixture ��֤������ Vivado ���ܡ�ʱ��CDC ��弶���ա�\n\n## ��װ��˶�\n\nǰ�ã�Python 3.11+��PyYAML 6.x��������������Ҫ Git��Windows ռ�ü��ʹ�� tasklist.exe��\n����ʵ�� Python/Windows ��������� [������](COMPATIBILITY.md) �� [���Ա���](tests/REPORT.md)��\nȱ PyYAML ʱ���û���ѡ�� Python ������װ `python -m pip install -r requirements.txt`��\n��Ҫ����޸�ȫ�� PATH �򸲸����� Python ������\n\n�ڱ���Ŀ¼�� PowerShell�������У�\n\n```powershell\npython -B scripts/skill_maintenance.py verify --source . --run-tests\n```\n\nָ��һ����װ������ʾ��Ϊ `~/.codex/skills/fpga-team-workflow`�����ϱ��� Skill\n����Լ�����ٷ�ͨ�÷���Ŀ¼������ `~/.agents/skills` ����Ŀ `.agents/skills`��\nֻ����һ���ͬ����װ���ȼ�鵱ǰ�ͻ���ʵ�ʷ���·������Ҫ����������������\n\n```powershell\n$skillDestination = Join-Path $env:USERPROFILE '.codex/skills/fpga-team-workflow'\n$planPath = Join-Path $env:TEMP ('ftw-plan-' + [guid]::NewGuid().ToString('N') + '.json')\npython -B scripts/skill_maintenance.py install-plan --source . --target \"$skillDestination\" --out \"$planPath\"\npython -B scripts/skill_maintenance.py install --plan \"$planPath\" --execute --authorization-ref '�����û���װ����'\n```\n\n`--out` ����Ű�Ŀ¼֮�⣨�����ʾ����ʹ�ö�����ʱ·������\n������ʽд�룬�����������ļ���ʹ�� `--dry-run` ��ʡ�� `--execute` ֻԤ����\nΪ��������ʵ��ʹ�ý���� [CLI ʾ��](references/cli.md) �İ���ƻ�·����\n��װֻд��һ Skill Ŀ¼���丸Ŀ¼�µ� `.fpga-team-workflow-transactions`��\n���� AGENTS.md��config.toml�����ν�ɫ��ƾ�ݻ��ƷԴ�롣\n����δ����ͬ��Ŀ¼���û��Ķ�������Ԥ���ᱻ��ֹ��\n\n��װ��һ��������ȷ���б����� `fpga-team-workflow`����ִ�У�\n\n```text\nʹ�� $fpga-team-workflow��ֻ���鿴��ǰ��Ŀ���ú�һ��������������ģ�ͽ��顢\nȱ������� Skill ��ʵ��·������Ҫ�������޸�ģ�����û�д GitHub��\n```\n\n�ļ���װ�ɹ���֤����������ˢ�¡�������ԱӦ�Լ��˶԰�װ/��ɫ/���ߣ�������ƾ�ݡ�\n�Ѱ�װĿ¼�е� `verify` ��˶Թ����ļ�����Ҫ�ڰ���������ʱ����� __pycache__��\n\n## ����������������װ����ֹֻ���� SKILL.md\n\n��[�̶��ύ](https://github.com/prasetyarobert205-jpg/codex-fpga-engineering-workflow/tree/e40fd8000b526b72ba80373127bf5fd6e5f8dc28)\nȡ���������ΰ����Ķ��䰲װ�ű���ԭ�������֤/Ԥ��/��װ�������ƶ� main �Զ����£�\n\n```powershell\npwsh -NoProfile -File scripts/validate-package.ps1\npwsh -NoProfile -File scripts/install.ps1 -Scope User -WhatIf\n# �������������ΰ�Ŀ¼ִ�С���ø����ΰ�װ��Ȩ����ִ�в��� -WhatIf �İ�װ��\npwsh -NoProfile -File scripts/verify-install.ps1 -Scope User\n```\n\n�����ĺ˶���������Ŀ¼ִ�У���\n\n```powershell\npython -B scripts/team_workflow.py upstream inspect --skill \"$env:USERPROFILE/.agents/skills/run-fpga-workflow\" --agents \"$env:USERPROFILE/.codex/agents\"\n```\n\n���ù̶����ΰ��� 40 ���ļ� SHA-256 �˶����ݺ� 13 ��ɫ���ֽڲ�һ�»ᱨ����죬\n����Ĭ�� CRLF ����򱾵��޸ĵ�������֤���ݡ���ɫ/���ߵ�ǰ�Ѽ�������ʵ��������֤��\n����һЩ�ο��ἰ��Դ��ֿ� scripts����Щ�ű�δ�����ΰ�װ������� Skill Ŀ¼��\n��Ҫ���ศ���ű�ʱ��ͬһ�̶��ύ������Դ���ȡ�ã��������ư�װĿ¼�ڴ������ǡ�\n\n## ��Ŀ�������ճ��÷�\n\n����Ŀ�� assets/project.example.yaml������Ŀ�� project-existing.example.yaml���˶�ʵ��·����\n��д��Ŀ����Ա��Ŀ���������ֻ����Ҫ��Ŀ¼��`layout init` ֻ���ĵ�/�ܿ�Ŀ¼��\n��ʵ������IP����ں͹������̽��ڲ㽨������α�� .xpr ��ռλ bitstream��\n\n```text\nʹ�� $fpga-team-workflow plan���������� Issue ��һ���ɶ��������Ĺ�����������ģ�ͽ��顣\nʹ�� $fpga-team-workflow work���ڸð�����Ȩ��Χ���ʵ���뽻�������û��������\nʹ�� $fpga-team-workflow review��ֻ������ PR ��׼ȷ�ύ���Ⱥ˲�ԭ��ͬ�پ������⡣\nʹ�� $fpga-team-workflow integrate������ѡ���ɰ汾��������ɶ��壬����ȱ֤�ݡ�\nʹ�� $fpga-team-workflow maintain��Ϊ�����������ȱ�������᰸���Ȳ����ǰ�װ��\n```\n\n������ `apply` ���ٴκ˶Ի������������κ���/δ����/�������ݶ��ᱣ����ֹ�л���\n�����Ҫ����������Ȩ��Χ�鵵����뵱ǰ���ݣ��ű��������������\n������ռ�����������Ѻ�ʵ��ʵ��������ֻԼ��ʹ�ñ����ߵĽ��̣����ǿ��������\n\n## ���������\n\n�� `maintain propose �� plan �� apply �� verify �� publish/��װ` ʹ�ã���Ҫ���ߴ�ȷ�ϡ�\n`apply` ֻ���µĺ�ѡĿ¼����仯��У��׼ȷ���ߺ����ļ���ϣ����ֱ�ӱ༭��װ������\n��������Ȩ GitHub ����/��Աִ�У�CLI publish ֻ���ɷ���Ҫ�������״̬��\n\n��װ��������·��������ʱʹ��**Դ���**�еĹ��ߣ�\n\n```powershell\npython -B scripts/skill_maintenance.py rollback --transaction '<��װ���ص�����Ŀ¼>' --dry-run\npython -B scripts/skill_maintenance.py rollback --transaction '<��װ���ص�����Ŀ¼>' --execute --authorization-ref '<��������>'\n```\n\n����ʧ���Զ��ָ����쳣�ж�ʹ�� `recover`��δ֪�����仯����ֹ���ǡ����ݲ����Զ�ɾ����\nWindows Ŀ¼�滻�Ǿ������Եķֲ� rename + �ָ�����**�����������л��ǵ���ԭ�Ӳ���**��\n���̱�ǿɱ�������°�װ������ȷ������ PID/�������޻д�롢�˶��������ݺ�\n����ȷ��Ȩ�Ƴ��õ���ʧЧ������ recover������ɾ�������������\n\nģ�Ͳ������� `UNBENCHMARKED`��·�ɲ���ֻ��֤������Ϊ��û��ʵ�ʶ�ģ��ͬ�����ż�\nʵ�飬�Ͳ����������Լ۱Ȼ��ʡ�ٷֱȡ�\n\nSANDBOX FORWARD TEST ONLY.\n"
+          },
+          {
+            "path": "VERSION",
+            "base_sha256": "3d097c315a1c543040f548da4c7051265e94c77211a2411ced1d4621344270de",
+            "content": "0.1.1-forward-test\n"
+          }
+        ]
+      },
+      "dedupe_key": "0d7e7b6f1d56832d43f6a6b38644a816eb5fd64bfbd9d117dda96ad3ec1ee6aa",
+      "effective_rules_modified": false,
+      "next_action": "Compare dedupe_key in existing maintenance Issue; plan smallest owning layer"
+    },
+    "minimal_layer": "outer_rule",
+    "baseline": {
+      "CHANGELOG.md": "449b985a59aca8be3c132a1a653c4ee0d1b50f7d3e2d2ceaffee8f0b45664c7d",
+      "COMPATIBILITY.md": "2c433e12905f7f8c1e1831b73535c83d7a2b412bbac67a8df02779ee279b00c6",
+      "README.md": "155e7aacdd5f6753cd0f1ef46efb2be802d725d063f76d1ab9f4e187784fbbb5",
+      "SKILL.md": "af48973f1baf9acc602de785f9e03adb3224d69d728a344be4e75f95e0d97995",
+      "THIRD_PARTY_NOTICES.md": "791398f13a2a6c7282135925a2a0aecb0ade094b1210b236ddee02af968611a5",
+      "VERSION": "3d097c315a1c543040f548da4c7051265e94c77211a2411ced1d4621344270de",
+      "agents/openai.yaml": "57202495b9d505a54d2c8d6892af2d02a00ccb7e362527ce12177eb0642c3484",
+      "assets/change-request-template.yaml": "7184eddef426ff8558983ed342172844826f302e81ecea7491212b9a9e39f82f",
+      "assets/guidance-source.json": "27bd246c33bdc586470b2576098ff5297dd0414711be778669bbd2c7b7da677f",
+      "assets/project-existing.example.yaml": "39a723948d593bfebe514d7016c48d789fd4398c9888b7bfbff42ab354c8cd54",
+      "assets/project.example.yaml": "281b6b267da6048688e663dea2fcb0dc293bc3656f83aae7ea4aa35f213b127c",
+      "assets/repository-gitignore.example": "128361fc2751d29a406cb062262aa4cab90f7afda3ca1037e98d8a3b8d97b140",
+      "assets/review-template.md": "b83850a14256ff11248fd5c56292a98e3c56b7bfe97d89436fc5f645375c0182",
+      "assets/stage-template.md": "b41ee609a7c296a2d9d4d06a11e4cfc94b55f408220737d9ec9ff9e3c63e7670",
+      "assets/upstream-lock.json": "9acca8657fc6acefe81ab7b9f2f98c267d57b56ce4a4d0d536a352d7a648a089",
+      "assets/work-package-template.md": "c904b9ffc3cae2eb34c2599f0a40c6ce1011023112582abc0d9815ce6d884622",
+      "assets/workflow-lock.example.yaml": "5b7a14342193b12df3fa0183a1494f5edcf704aab015fb33e5efef7cb0e2384f",
+      "package-manifest.json": "68d3ac228e3cb2c18f48747682af0635775d9238d377ba305f5e3bade91b4121",
+      "references/cli.md": "ad44634142e26e18770ab9a536d8e790ce77c33dedee45ea757a9e3f22b3e221",
+      "references/collaboration.md": "af874f9325a45b6b85989af7f8f8244464d780f511a7c604d68914259f8527ae",
+      "references/engineering-bridge.md": "d9a14f95f95f672dbeca58e1358c2c8994c360c9c9515cc5d32778eee57f7843",
+      "references/maintenance.md": "be64b3c75f836685ec795b17d3ba49301bf3fffb5bed467eaff21dc84440e2dd",
+      "references/model-routing.md": "bd8584a2d319fd9db0d3968fe64da49e3325c7fe52bc49d3cfb5e8b291d189be",
+      "references/repository-layout.md": "88bce2565968afe4eef3d202caf81cf21627832dd6f93b7f503519b5b44a0f87",
+      "references/review-and-evidence.md": "b5e2ce94f4ffc07a0e7159c5b0b208930ab0b42e1e6a4422d4ff849e29a66745",
+      "references/sources.md": "a0783bf8645637ef1c9ab9767690854cd08c9f369597a4303d4919a8a00ca5b3",
+      "references/workspace-and-git.md": "59389d8585545b13a841cb6015e5d0071686af3fe315e9ed9c0820ab4840d334",
+      "requirements.txt": "3511b03c402b6669c1dbfa10ed53e74f95874b6f388fb37cf23a559af184f0b4",
+      "scripts/demo.py": "5d7740fba7d75648259e534b73ff160f7121309131286cf5410d7023e1342d73",
+      "scripts/ftw_common.py": "0170872144dde8dd27ced8d5bb1429527c775b0b41ffe19341a553e0554e8f56",
+      "scripts/model_policy.py": "cf2059e2903252e895cd826bce8c2627513c855ebe6bffc9b209320bc237e530",
+      "scripts/skill_maintenance.py": "bb6b28e522a1cd0ac472e6c3e5652ce13ecfd95876061ac4548c01b392ceb5f9",
+      "scripts/team_workflow.py": "587a78c3be339f6384aa2adede59beefc2ebf6a36f497fe4d911eef4a6632efd",
+      "scripts/workflow_ops.py": "54849fc61396c4b570148222f2a5631cae3c0079a3f4ee10f0685a9e7a0209d2",
+      "tests/REPORT.md": "1916ddc5f2b7a2232b3df1f0a175dc0263088f8769df7ebaced2f3db0ecbbb33",
+      "tests/helpers.py": "8cb2fca837ad2b7034e498e827216431d7b5d250622b2e5230f60d0f01e22b94",
+      "tests/scenarios.json": "62b124bba1e120ee5c8ee89f368a454a8da389d6d5df960fa8333ead62451076",
+      "tests/test_cli.py": "5de7a60fc28df5b293403726d70ccaa477678f2ac799fb601f900e17ba2236ee",
+      "tests/test_evidence_policy.py": "725bf21ea1c0bf9031089d16b4ffaa2e5915e0a9aff3a3e1f9de06619b6f2f09",
+      "tests/test_maintenance.py": "ce922fe3d30a28fab2f8b6609aaca70c59db1f9394b3e27ea996e39cdef5143d",
+      "tests/test_model_policy.py": "e2d911ec4209c59e454467c0bbedec58d58e7dd96ebf7718e74b894dc8cf246d",
+      "tests/test_workspace_safety.py": "f880aec7f2e2835cdc355c241e92ff124bf07f47dc35110331e740b61d79edd2"
+    },
+    "plan": "Edit exact include paths in a new candidate; verify tests; preserve installed and upstream files; install from fingerprinted preview; rollback by transaction"
+  },
+  "stderr": ""
+}

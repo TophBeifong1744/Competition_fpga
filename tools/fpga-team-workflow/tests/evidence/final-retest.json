@@ -1,0 +1,87 @@
+{
+  "status": "PASS_FOR_TARGETED_RETEST",
+  "finding_id": "F-FTW-001",
+  "finding_status": "VERIFIED_CLOSED_FOR_TESTED_SNAPSHOT",
+  "version": "0.1.0",
+  "source_content_sha256": "1e0b3f29cc0661bd30260898bc78477aa0592f921afecdf2706d046d8798e6fc",
+  "source_full_tree_sha256": "2f0a854a12267f664bbc87a4a8cbac68af7f98abfaa3d97082ecfedd2c3b3741",
+  "transaction": "<forward-sandbox>\\skills\\.fpga-team-workflow-transactions\\1430510d6fcd47b791fabd49730984ca",
+  "transaction_final_state": "ROLLED_BACK",
+  "receipt_corruption_cases_blocked": [
+    "05-empty-receipt-files",
+    "06-wrong-receipt-version",
+    "07-unsupported-receipt-schema",
+    "08-missing-transaction-id"
+  ],
+  "rollback_preserved_later_edit": true,
+  "rollback_restored_initial_bytes": true,
+  "new_source_and_installation_verified": true,
+  "full_regression_rerun": false,
+  "client_loaded": "UNKNOWN",
+  "runtime_model": "UNKNOWN",
+  "EDA_run": false,
+  "remote_write": false,
+  "human_approval": false,
+  "commands": [
+    {
+      "name": "01-final-source-verify",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "02-final-install-plan",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "03-final-install",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "04-final-installed-verify",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "05-empty-receipt-files",
+      "exit_code": 2,
+      "status": "BLOCKED"
+    },
+    {
+      "name": "06-wrong-receipt-version",
+      "exit_code": 2,
+      "status": "BLOCKED"
+    },
+    {
+      "name": "07-unsupported-receipt-schema",
+      "exit_code": 2,
+      "status": "BLOCKED"
+    },
+    {
+      "name": "08-missing-transaction-id",
+      "exit_code": 2,
+      "status": "BLOCKED"
+    },
+    {
+      "name": "09-valid-restored-receipt",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "10-rollback-protects-edit",
+      "exit_code": 2,
+      "status": "BLOCKED"
+    },
+    {
+      "name": "11-final-rollback-preview",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "12-final-rollback",
+      "exit_code": 0,
+      "status": "OK"
+    }
+  ]
+}

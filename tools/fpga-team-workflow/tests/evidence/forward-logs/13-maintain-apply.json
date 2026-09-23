@@ -1,0 +1,30 @@
+{
+  "name": "13-maintain-apply",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "<forward-sandbox>\\package-source\\scripts\\skill_maintenance.py",
+    "apply",
+    "--source",
+    "<forward-sandbox>\\package-source",
+    "--request",
+    "<forward-sandbox>\\cases\\change-request.json",
+    "--target",
+    "<forward-sandbox>\\candidate",
+    "--execute",
+    "--authorization-ref",
+    "authorized sandbox candidate update test"
+  ],
+  "cwd": "<forward-sandbox>",
+  "exit_code": 0,
+  "output": {
+    "schema_version": 1,
+    "status": "OK",
+    "dry_run": false,
+    "diff": "--- a/README.md\n+++ b/README.md\n@@ -118,3 +118,5 @@\n \n ģ�Ͳ������� `UNBENCHMARKED`��·�ɲ���ֻ��֤������Ϊ��û��ʵ�ʶ�ģ��ͬ�����ż�\n ʵ�飬�Ͳ����������Լ۱Ȼ��ʡ�ٷֱȡ�\n+\n+SANDBOX FORWARD TEST ONLY.\n--- a/VERSION\n+++ b/VERSION\n@@ -1 +1 @@\n-0.1.0\n+0.1.1-forward-test",
+    "candidate": "<forward-sandbox>\\candidate",
+    "tests": "NOT_RUN: use verify --run-tests and independent forward test",
+    "installed_modified": false
+  },
+  "stderr": ""
+}

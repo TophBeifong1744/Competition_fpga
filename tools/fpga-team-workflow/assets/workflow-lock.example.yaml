@@ -1,0 +1,21 @@
+schema_version: 1
+outer_skill:
+  name: fpga-team-workflow
+  release: 0.1.0
+  source_commit: null
+  # 本地候选包版本已确定；尚未远端发布，source_commit 保持 null。
+  # 实际安装身份由包 manifest 和安装事务证明，发布后填已核对的源码提交。
+engineering_skill:
+  name: run-fpga-workflow
+  repository: prasetyarobert205-jpg/codex-fpga-engineering-workflow
+  version: 0.4.0
+  source_commit: e40fd8000b526b72ba80373127bf5fd6e5f8dc28
+bridge:
+  schema_version: 1
+  verified_client: null
+  verification_record: null
+model_policy:
+  policy_version: 0.1.0
+  config_ref: team-workflow.yaml#model_policy
+  content_sha256: null
+  # 工具按约定规范化策略子树计算；不能伪造，也不表示每个成员已使用该配置。

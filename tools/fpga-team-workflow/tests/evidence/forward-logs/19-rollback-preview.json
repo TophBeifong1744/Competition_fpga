@@ -1,0 +1,22 @@
+{
+  "name": "19-rollback-preview",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "<forward-sandbox>\\package-source\\scripts\\skill_maintenance.py",
+    "rollback",
+    "--transaction",
+    "<forward-sandbox>\\skills\\.fpga-team-workflow-transactions\\4cd73cc9c3964830b1e70bcbce114276",
+    "--dry-run"
+  ],
+  "cwd": "<forward-sandbox>",
+  "exit_code": 0,
+  "output": {
+    "schema_version": 1,
+    "status": "OK",
+    "dry_run": true,
+    "target": "<forward-sandbox>\\skills\\fpga-team-workflow",
+    "restore_version": "previous managed directory or absence"
+  },
+  "stderr": ""
+}

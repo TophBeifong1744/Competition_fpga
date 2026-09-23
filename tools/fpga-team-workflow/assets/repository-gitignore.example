@@ -1,0 +1,23 @@
+# 本机配置；示例配置应另存受控位置
+/.local/
+
+# 上游诊断／正式仿真的本地产物；必要证据仍需另行归档
+/codex_out/
+/simulation/work/
+
+# 已确认输出区，不代表授权删除
+/software/build/
+/software/work/
+/models/output/
+/data/local/
+/release/output/
+
+# 仅限已确认可再生的 Vivado 运行状态；不整体忽略 project/par
+/project/par/.Xil/
+/project/par/*.runs/
+/project/par/*.cache/
+/project/par/*.sim/
+/project/par/*.gen/
+
+# 故意不通配忽略 .xpr、.srcs、.xci、.bd、.mem、.coe 或 .dcp
+# script 方式若要忽略 .xpr，验证 recipe 后再添加真实入口的精确规则
