@@ -1,0 +1,27 @@
+{
+  "name": "03-final-install",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "<forward-sandbox>\\source-final-2\\scripts\\skill_maintenance.py",
+    "install",
+    "--plan",
+    "<forward-sandbox>\\logs\\final-2\\install-plan.json",
+    "--execute",
+    "--authorization-ref",
+    "authorized independent final sandbox retest"
+  ],
+  "cwd": "<forward-sandbox>",
+  "exit_code": 0,
+  "output": {
+    "schema_version": 1,
+    "status": "OK",
+    "transaction": "<forward-sandbox>\\skills\\.fpga-team-workflow-transactions\\1430510d6fcd47b791fabd49730984ca",
+    "version": "0.1.0",
+    "files_verified": 83,
+    "files_changed": 52,
+    "client_loaded": "UNKNOWN",
+    "recovery_command": "python scripts/skill_maintenance.py recover --transaction \"<forward-sandbox>\\skills\\.fpga-team-workflow-transactions\\1430510d6fcd47b791fabd49730984ca\" --execute --authorization-ref <request-ref>"
+  },
+  "stderr": ""
+}

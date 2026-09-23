@@ -1,0 +1,64 @@
+{
+  "name": "01-model-review",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "<forward-sandbox>\\skills\\fpga-team-workflow\\scripts\\team_workflow.py",
+    "model",
+    "recommend",
+    "--config",
+    "<forward-sandbox>\\cases\\no-project-policy.json",
+    "--task",
+    "<forward-sandbox>\\cases\\review-task.json"
+  ],
+  "cwd": "<forward-sandbox>",
+  "exit_code": 0,
+  "output": {
+    "schema_version": 1,
+    "status": "OK",
+    "task_ref": "independent-forward:read-only-numeric-review",
+    "actor_ref": "AI-forward-tester-not-human-member",
+    "base_commit": null,
+    "phase": "review",
+    "execution_kind": "model_assisted",
+    "policy_configured": false,
+    "policy_version": "0.1.0",
+    "policy_content_sha256": "5a1ea903762b949aaa6c736e3158c63851559a2f851c58fa1a2f1e3dc851da51",
+    "recommended": {
+      "routing_profile": "analysis",
+      "model_id": "gpt-6-sol",
+      "reasoning_effort": "high",
+      "reason": "Bounded diagnosis, verification design, or independent review",
+      "escalation_triggers": [
+        "New interface/clock/cross-layer impact",
+        "Contradictory reference or assumptions",
+        "First no-progress round: recheck root cause; limits never reset"
+      ]
+    },
+    "availability_status": "UNKNOWN",
+    "availability_reason": "No observed member capability record",
+    "alternatives": [],
+    "quality_status": "UNBENCHMARKED",
+    "requested": null,
+    "observed": {
+      "main": {
+        "model_id": null,
+        "reasoning_effort": null,
+        "observation_status": "UNKNOWN",
+        "evidence_ref": null
+      },
+      "subagents": []
+    },
+    "application_status": "RECOMMENDATION_ONLY",
+    "settings_modified": false,
+    "stop_reason": null,
+    "repair": {},
+    "usage": {
+      "metric_kind": null,
+      "value": null,
+      "source_ref": null
+    },
+    "manual_path": "Desktop: model/effort control below composer; CLI: /model. Confirm available pair; no automatic application."
+  },
+  "stderr": ""
+}

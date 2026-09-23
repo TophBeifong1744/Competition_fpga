@@ -1,0 +1,210 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe work.tb_tool_smoke -s ftw_tool_smoke 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.tb_tool_smoke
+Built simulation snapshot ftw_tool_smoke
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Toph -notrace
+invalid command name "
+    "Version": "0.0.1",
+    "UsedAPIsUI32": 193,
+    "Devices": [
+        {
+            "Name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "AdapterIndex": 0,
+            "DriverVersion": "32.0.15.6094",
+            "DriverVersionRaw": 9007199255730126,
+            "Type": 2,
+            "DedicatedMemory": 8343519232,
+            "SharedMemory": 8480813056,
+            "MemoryBandWidthMax": -1,
+            "FreqMaxMHz": -1,
+            "FreqMinMHz": -1,
+            "dxgiDesc": {
+                "VendorID": 4318,
+                "DeviceID": 10464,
+                "SubSysID": 1022498730,
+                "Revision": 161,
+                "DedicatedVideoMemory": 8343519232,
+                "DedicatedSystemMemory": 0,
+                "SharedSystemMemory": 8480813056,
+                "AdapterLuid": 87744,
+                "Flags": 0
+            },
+            "GenerationID": -1,
+            "DeviceIPVersion": 0,
+            "GenerationAPI": 0,
+            "ComputeUnits": -1,
+            "ComputeUnitsSIMDWidth": -1,
+            "PackageTDP": -1,
+            "validAPIs": 65,
+            "UMA": 2,
+            "PCIAddress": {
+                "domain": 4294967295,
+                "bus": 4294967295,
+                "device": 4294967295,
+                "function": 4294967295
+            },
+            "PCIDeviceGen": -1,
+            "PCIDeviceWidth": -1,
+            "PCICurrentGen": -1,
+            "PCICurrentWidth": -1,
+            "MediaFreqMaxMHz": -1,
+            "MediaFreqMinMHz": -1,
+            "MemoryFreqMaxMHz": -1,
+            "MemoryFreqMinMHz": -1,
+            "VendorFlags": 0,
+            "cudaComputeCapability_Major": -1,
+            "cudaComputeCapability_Minor": -1,
+            "IsHighPerformance": 0,
+            "IsMinimumPower": 0,
+            "IsDetachable": 0
+        }
+    ],
+    "CPU": {
+        "Name": "Intel(R) Core(TM) i9-14900HX",
+        "VendorID": "GenuineIntel",
+        "Cores": 24,
+        "LogicalProcessors": 32,
+        "Hybrid": true,
+        "FeatureFlagsUI64": 532479,
+        "CPUID_1_EAX": 722545,
+        "cpuSets": {
+            "0": [],
+            "16": [],
+            "32": [
+                272,
+                273,
+                274,
+                275,
+                276,
+                277,
+                278,
+                279,
+                280,
+                281,
+                282,
+                283,
+                284,
+                285,
+                286,
+                287
+            ],
+            "48": [],
+            "64": [
+                256,
+                257,
+                258,
+                259,
+                260,
+                261,
+                262,
+                263,
+                264,
+                265,
+                266,
+                267,
+                268,
+                269,
+                270,
+                271
+            ],
+            "4294967295": [
+                256,
+                257,
+                258,
+                259,
+                260,
+                261,
+                262,
+                263,
+                264,
+                265,
+                266,
+                267,
+                268,
+                269,
+                270,
+                271,
+                272,
+                273,
+                274,
+                275,
+                276,
+                277,
+                278,
+                279,
+                280,
+                281,
+                282,
+                283,
+                284,
+                285,
+                286,
+                287
+            ]
+        },
+        "coreMasks": {
+            "-1": 4294967295,
+            "0": 0,
+            "16": 0,
+            "32": 4294901760,
+            "48": 0,
+            "64": 65535
+        }
+    },
+    "RuntimeVersionInfo": [
+        {
+            "Microsoft.AI.MachineLearning.dll": "1.23.0",
+            "productVersion": "1.23.0"
+        },
+        {
+            "DirectML.dll": "1.15.4",
+            "productVersion": "1.15.4+241025-1615.1.dml-1.15.fac7597"
+        },
+        {
+            "onnxruntime.dll": "1.23.0",
+            "productVersion": "1.23.0"
+        },
+        {
+            "OpenVino.dll": "2025.2.1",
+            "productVersion": "2025.2.1-19180-b76ccb46ae6-epalmer/2025_2_patch_mem_weights"
+        },
+        {
+            "onnxruntime_providers_shared.dll": "1.23.0",
+            "productVersion": "1.23.0"
+        },
+        {
+            "onnxruntime_providers_openvino.dll": "1.23.0",
+            "productVersion": "1.23.0"
+        }
+    ],
+    "Memory": {
+        "InstalledPhysicalMemory": 17179869184,
+        "TotalPhysicalMemory": 16961626112,
+        "AvailablePhysicalMemoryAtInit": 4813160448,
+        "PageSize": 4096
+    },
+    "XPUInfoInitSecs": 0.056621399999999995
+"
+    while executing
+"{
+    "Version": "0.0.1",
+    "UsedAPIsUI32": 193,
+    "Devices": [
+        {
+            "Name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "A..."
+    (file "C:/Users/Toph" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Wed Sep 23 18:42:55 2026...

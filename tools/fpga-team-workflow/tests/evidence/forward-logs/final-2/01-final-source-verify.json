@@ -1,0 +1,23 @@
+{
+  "name": "01-final-source-verify",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "<forward-sandbox>\\source-final-2\\scripts\\skill_maintenance.py",
+    "verify",
+    "--source",
+    "<forward-sandbox>\\source-final-2"
+  ],
+  "cwd": "<forward-sandbox>",
+  "exit_code": 0,
+  "output": {
+    "schema_version": 1,
+    "status": "OK",
+    "errors": [],
+    "version": "0.1.0",
+    "content_sha256": "1e0b3f29cc0661bd30260898bc78477aa0592f921afecdf2706d046d8798e6fc",
+    "tests": null,
+    "review": "Behavioral/user acceptance is separate from package validation"
+  },
+  "stderr": ""
+}

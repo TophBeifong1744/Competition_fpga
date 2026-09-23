@@ -1,0 +1,6 @@
+interface:
+  display_name: "FPGA 团队协作"
+  short_description: "组织多人 FPGA 工作包、独立复核、模型建议与可回退的工作流维护"
+  default_prompt: "使用 $fpga-team-workflow，读取当前项目配置，按授权组织本次工作包、模型建议与准确版本交接。"
+policy:
+  allow_implicit_invocation: true

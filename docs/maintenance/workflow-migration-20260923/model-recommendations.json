@@ -1,0 +1,782 @@
+{
+  "algorithm": {
+    "input": {
+      "schema_version": 1,
+      "task_ref": "algorithm",
+      "actor_ref": "B",
+      "phase": "planning",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "activity": "architecture",
+      "execution_kind": "model_assisted",
+      "contract_trusted": true,
+      "high_impact": false
+    },
+    "output": {
+      "schema_version": 1,
+      "status": "OK",
+      "task_ref": "algorithm",
+      "actor_ref": "B",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "phase": "planning",
+      "execution_kind": "model_assisted",
+      "policy_configured": true,
+      "policy_version": "0.1.0",
+      "policy_content_sha256": "5a1ea903762b949aaa6c736e3158c63851559a2f851c58fa1a2f1e3dc851da51",
+      "recommended": {
+        "routing_profile": "decision",
+        "model_id": "gpt-6-astra",
+        "reasoning_effort": "high",
+        "reason": "Key assumptions, public interfaces, or high-impact decisions need independent analysis",
+        "escalation_triggers": [
+          "New interface/clock/cross-layer impact",
+          "Contradictory reference or assumptions",
+          "First no-progress round: recheck root cause; limits never reset"
+        ]
+      },
+      "availability_status": "UNKNOWN",
+      "availability_reason": "No observed member capability record",
+      "alternatives": [],
+      "quality_status": "UNBENCHMARKED",
+      "requested": null,
+      "observed": {
+        "main": {
+          "model_id": null,
+          "reasoning_effort": null,
+          "observation_status": "UNKNOWN",
+          "evidence_ref": null
+        },
+        "subagents": []
+      },
+      "application_status": "RECOMMENDATION_ONLY",
+      "settings_modified": false,
+      "stop_reason": null,
+      "repair": {},
+      "usage": {
+        "metric_kind": null,
+        "value": null,
+        "source_ref": null
+      },
+      "manual_path": "Desktop: model/effort control below composer; CLI: /model. Confirm available pair; no automatic application."
+    }
+  },
+  "backlog": {
+    "input": {
+      "schema_version": 1,
+      "task_ref": "backlog",
+      "actor_ref": "A",
+      "phase": "planning",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "activity": "documentation",
+      "execution_kind": "model_assisted",
+      "contract_trusted": true,
+      "high_impact": false
+    },
+    "output": {
+      "schema_version": 1,
+      "status": "OK",
+      "task_ref": "backlog",
+      "actor_ref": "A",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "phase": "planning",
+      "execution_kind": "model_assisted",
+      "policy_configured": true,
+      "policy_version": "0.1.0",
+      "policy_content_sha256": "5a1ea903762b949aaa6c736e3158c63851559a2f851c58fa1a2f1e3dc851da51",
+      "recommended": {
+        "routing_profile": "routine",
+        "model_id": "gpt-6-sol",
+        "reasoning_effort": "medium",
+        "reason": "Trusted contract and bounded implementation",
+        "escalation_triggers": [
+          "New interface/clock/cross-layer impact",
+          "Contradictory reference or assumptions",
+          "First no-progress round: recheck root cause; limits never reset"
+        ]
+      },
+      "availability_status": "UNKNOWN",
+      "availability_reason": "No observed member capability record",
+      "alternatives": [],
+      "quality_status": "UNBENCHMARKED",
+      "requested": null,
+      "observed": {
+        "main": {
+          "model_id": null,
+          "reasoning_effort": null,
+          "observation_status": "UNKNOWN",
+          "evidence_ref": null
+        },
+        "subagents": []
+      },
+      "application_status": "RECOMMENDATION_ONLY",
+      "settings_modified": false,
+      "stop_reason": null,
+      "repair": {},
+      "usage": {
+        "metric_kind": null,
+        "value": null,
+        "source_ref": null
+      },
+      "manual_path": "Desktop: model/effort control below composer; CLI: /model. Confirm available pair; no automatic application."
+    }
+  },
+  "bdiagnostic": {
+    "input": {
+      "schema_version": 1,
+      "task_ref": "bdiagnostic",
+      "actor_ref": "B",
+      "phase": "planning",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "activity": "review",
+      "execution_kind": "model_assisted",
+      "contract_trusted": true,
+      "high_impact": false
+    },
+    "output": {
+      "schema_version": 1,
+      "status": "OK",
+      "task_ref": "bdiagnostic",
+      "actor_ref": "B",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "phase": "planning",
+      "execution_kind": "model_assisted",
+      "policy_configured": true,
+      "policy_version": "0.1.0",
+      "policy_content_sha256": "5a1ea903762b949aaa6c736e3158c63851559a2f851c58fa1a2f1e3dc851da51",
+      "recommended": {
+        "routing_profile": "analysis",
+        "model_id": "gpt-6-sol",
+        "reasoning_effort": "high",
+        "reason": "Bounded diagnosis, verification design, or independent review",
+        "escalation_triggers": [
+          "New interface/clock/cross-layer impact",
+          "Contradictory reference or assumptions",
+          "First no-progress round: recheck root cause; limits never reset"
+        ]
+      },
+      "availability_status": "UNKNOWN",
+      "availability_reason": "No observed member capability record",
+      "alternatives": [],
+      "quality_status": "UNBENCHMARKED",
+      "requested": null,
+      "observed": {
+        "main": {
+          "model_id": null,
+          "reasoning_effort": null,
+          "observation_status": "UNKNOWN",
+          "evidence_ref": null
+        },
+        "subagents": []
+      },
+      "application_status": "RECOMMENDATION_ONLY",
+      "settings_modified": false,
+      "stop_reason": null,
+      "repair": {},
+      "usage": {
+        "metric_kind": null,
+        "value": null,
+        "source_ref": null
+      },
+      "manual_path": "Desktop: model/effort control below composer; CLI: /model. Confirm available pair; no automatic application."
+    }
+  },
+  "camera": {
+    "input": {
+      "schema_version": 1,
+      "task_ref": "camera",
+      "actor_ref": "C",
+      "phase": "planning",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "activity": "architecture",
+      "execution_kind": "model_assisted",
+      "contract_trusted": true,
+      "high_impact": false
+    },
+    "output": {
+      "schema_version": 1,
+      "status": "OK",
+      "task_ref": "camera",
+      "actor_ref": "C",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "phase": "planning",
+      "execution_kind": "model_assisted",
+      "policy_configured": true,
+      "policy_version": "0.1.0",
+      "policy_content_sha256": "5a1ea903762b949aaa6c736e3158c63851559a2f851c58fa1a2f1e3dc851da51",
+      "recommended": {
+        "routing_profile": "decision",
+        "model_id": "gpt-6-astra",
+        "reasoning_effort": "high",
+        "reason": "Key assumptions, public interfaces, or high-impact decisions need independent analysis",
+        "escalation_triggers": [
+          "New interface/clock/cross-layer impact",
+          "Contradictory reference or assumptions",
+          "First no-progress round: recheck root cause; limits never reset"
+        ]
+      },
+      "availability_status": "UNKNOWN",
+      "availability_reason": "No observed member capability record",
+      "alternatives": [],
+      "quality_status": "UNBENCHMARKED",
+      "requested": null,
+      "observed": {
+        "main": {
+          "model_id": null,
+          "reasoning_effort": null,
+          "observation_status": "UNKNOWN",
+          "evidence_ref": null
+        },
+        "subagents": []
+      },
+      "application_status": "RECOMMENDATION_ONLY",
+      "settings_modified": false,
+      "stop_reason": null,
+      "repair": {},
+      "usage": {
+        "metric_kind": null,
+        "value": null,
+        "source_ref": null
+      },
+      "manual_path": "Desktop: model/effort control below composer; CLI: /model. Confirm available pair; no automatic application."
+    }
+  },
+  "entry": {
+    "input": {
+      "schema_version": 1,
+      "task_ref": "entry",
+      "actor_ref": "A",
+      "phase": "planning",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "activity": "diagnosis",
+      "execution_kind": "model_assisted",
+      "contract_trusted": true,
+      "high_impact": false
+    },
+    "output": {
+      "schema_version": 1,
+      "status": "OK",
+      "task_ref": "entry",
+      "actor_ref": "A",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "phase": "planning",
+      "execution_kind": "model_assisted",
+      "policy_configured": true,
+      "policy_version": "0.1.0",
+      "policy_content_sha256": "5a1ea903762b949aaa6c736e3158c63851559a2f851c58fa1a2f1e3dc851da51",
+      "recommended": {
+        "routing_profile": "analysis",
+        "model_id": "gpt-6-sol",
+        "reasoning_effort": "high",
+        "reason": "Bounded diagnosis, verification design, or independent review",
+        "escalation_triggers": [
+          "New interface/clock/cross-layer impact",
+          "Contradictory reference or assumptions",
+          "First no-progress round: recheck root cause; limits never reset"
+        ]
+      },
+      "availability_status": "UNKNOWN",
+      "availability_reason": "No observed member capability record",
+      "alternatives": [],
+      "quality_status": "UNBENCHMARKED",
+      "requested": null,
+      "observed": {
+        "main": {
+          "model_id": null,
+          "reasoning_effort": null,
+          "observation_status": "UNKNOWN",
+          "evidence_ref": null
+        },
+        "subagents": []
+      },
+      "application_status": "RECOMMENDATION_ONLY",
+      "settings_modified": false,
+      "stop_reason": null,
+      "repair": {},
+      "usage": {
+        "metric_kind": null,
+        "value": null,
+        "source_ref": null
+      },
+      "manual_path": "Desktop: model/effort control below composer; CLI: /model. Confirm available pair; no automatic application."
+    }
+  },
+  "migration": {
+    "input": {
+      "schema_version": 1,
+      "task_ref": "migration",
+      "actor_ref": "A",
+      "phase": "planning",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "activity": "architecture",
+      "execution_kind": "model_assisted",
+      "contract_trusted": true,
+      "high_impact": true
+    },
+    "output": {
+      "schema_version": 1,
+      "status": "OK",
+      "task_ref": "migration",
+      "actor_ref": "A",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "phase": "planning",
+      "execution_kind": "model_assisted",
+      "policy_configured": true,
+      "policy_version": "0.1.0",
+      "policy_content_sha256": "5a1ea903762b949aaa6c736e3158c63851559a2f851c58fa1a2f1e3dc851da51",
+      "recommended": {
+        "routing_profile": "decision",
+        "model_id": "gpt-6-astra",
+        "reasoning_effort": "high",
+        "reason": "Key assumptions, public interfaces, or high-impact decisions need independent analysis",
+        "escalation_triggers": [
+          "New interface/clock/cross-layer impact",
+          "Contradictory reference or assumptions",
+          "First no-progress round: recheck root cause; limits never reset"
+        ]
+      },
+      "availability_status": "UNKNOWN",
+      "availability_reason": "No observed member capability record",
+      "alternatives": [],
+      "quality_status": "UNBENCHMARKED",
+      "requested": null,
+      "observed": {
+        "main": {
+          "model_id": null,
+          "reasoning_effort": null,
+          "observation_status": "UNKNOWN",
+          "evidence_ref": null
+        },
+        "subagents": []
+      },
+      "application_status": "RECOMMENDATION_ONLY",
+      "settings_modified": false,
+      "stop_reason": null,
+      "repair": {},
+      "usage": {
+        "metric_kind": null,
+        "value": null,
+        "source_ref": null
+      },
+      "manual_path": "Desktop: model/effort control below composer; CLI: /model. Confirm available pair; no automatic application."
+    }
+  },
+  "profile": {
+    "input": {
+      "schema_version": 1,
+      "task_ref": "profile",
+      "actor_ref": "A",
+      "phase": "planning",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "activity": "architecture",
+      "execution_kind": "model_assisted",
+      "contract_trusted": true,
+      "high_impact": true
+    },
+    "output": {
+      "schema_version": 1,
+      "status": "OK",
+      "task_ref": "profile",
+      "actor_ref": "A",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "phase": "planning",
+      "execution_kind": "model_assisted",
+      "policy_configured": true,
+      "policy_version": "0.1.0",
+      "policy_content_sha256": "5a1ea903762b949aaa6c736e3158c63851559a2f851c58fa1a2f1e3dc851da51",
+      "recommended": {
+        "routing_profile": "decision",
+        "model_id": "gpt-6-astra",
+        "reasoning_effort": "high",
+        "reason": "Key assumptions, public interfaces, or high-impact decisions need independent analysis",
+        "escalation_triggers": [
+          "New interface/clock/cross-layer impact",
+          "Contradictory reference or assumptions",
+          "First no-progress round: recheck root cause; limits never reset"
+        ]
+      },
+      "availability_status": "UNKNOWN",
+      "availability_reason": "No observed member capability record",
+      "alternatives": [],
+      "quality_status": "UNBENCHMARKED",
+      "requested": null,
+      "observed": {
+        "main": {
+          "model_id": null,
+          "reasoning_effort": null,
+          "observation_status": "UNKNOWN",
+          "evidence_ref": null
+        },
+        "subagents": []
+      },
+      "application_status": "RECOMMENDATION_ONLY",
+      "settings_modified": false,
+      "stop_reason": null,
+      "repair": {},
+      "usage": {
+        "metric_kind": null,
+        "value": null,
+        "source_ref": null
+      },
+      "manual_path": "Desktop: model/effort control below composer; CLI: /model. Confirm available pair; no automatic application."
+    }
+  },
+  "recording": {
+    "input": {
+      "schema_version": 1,
+      "task_ref": "recording",
+      "actor_ref": "C",
+      "phase": "planning",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "activity": "implementation",
+      "execution_kind": "model_assisted",
+      "contract_trusted": true,
+      "high_impact": false
+    },
+    "output": {
+      "schema_version": 1,
+      "status": "OK",
+      "task_ref": "recording",
+      "actor_ref": "C",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "phase": "planning",
+      "execution_kind": "model_assisted",
+      "policy_configured": true,
+      "policy_version": "0.1.0",
+      "policy_content_sha256": "5a1ea903762b949aaa6c736e3158c63851559a2f851c58fa1a2f1e3dc851da51",
+      "recommended": {
+        "routing_profile": "routine",
+        "model_id": "gpt-6-sol",
+        "reasoning_effort": "medium",
+        "reason": "Trusted contract and bounded implementation",
+        "escalation_triggers": [
+          "New interface/clock/cross-layer impact",
+          "Contradictory reference or assumptions",
+          "First no-progress round: recheck root cause; limits never reset"
+        ]
+      },
+      "availability_status": "UNKNOWN",
+      "availability_reason": "No observed member capability record",
+      "alternatives": [],
+      "quality_status": "UNBENCHMARKED",
+      "requested": null,
+      "observed": {
+        "main": {
+          "model_id": null,
+          "reasoning_effort": null,
+          "observation_status": "UNKNOWN",
+          "evidence_ref": null
+        },
+        "subagents": []
+      },
+      "application_status": "RECOMMENDATION_ONLY",
+      "settings_modified": false,
+      "stop_reason": null,
+      "repair": {},
+      "usage": {
+        "metric_kind": null,
+        "value": null,
+        "source_ref": null
+      },
+      "manual_path": "Desktop: model/effort control below composer; CLI: /model. Confirm available pair; no automatic application."
+    }
+  },
+  "release": {
+    "input": {
+      "schema_version": 1,
+      "task_ref": "release",
+      "actor_ref": "A",
+      "phase": "planning",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "activity": "architecture",
+      "execution_kind": "model_assisted",
+      "contract_trusted": true,
+      "high_impact": true
+    },
+    "output": {
+      "schema_version": 1,
+      "status": "OK",
+      "task_ref": "release",
+      "actor_ref": "A",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "phase": "planning",
+      "execution_kind": "model_assisted",
+      "policy_configured": true,
+      "policy_version": "0.1.0",
+      "policy_content_sha256": "5a1ea903762b949aaa6c736e3158c63851559a2f851c58fa1a2f1e3dc851da51",
+      "recommended": {
+        "routing_profile": "decision",
+        "model_id": "gpt-6-astra",
+        "reasoning_effort": "high",
+        "reason": "Key assumptions, public interfaces, or high-impact decisions need independent analysis",
+        "escalation_triggers": [
+          "New interface/clock/cross-layer impact",
+          "Contradictory reference or assumptions",
+          "First no-progress round: recheck root cause; limits never reset"
+        ]
+      },
+      "availability_status": "UNKNOWN",
+      "availability_reason": "No observed member capability record",
+      "alternatives": [],
+      "quality_status": "UNBENCHMARKED",
+      "requested": null,
+      "observed": {
+        "main": {
+          "model_id": null,
+          "reasoning_effort": null,
+          "observation_status": "UNKNOWN",
+          "evidence_ref": null
+        },
+        "subagents": []
+      },
+      "application_status": "RECOMMENDATION_ONLY",
+      "settings_modified": false,
+      "stop_reason": null,
+      "repair": {},
+      "usage": {
+        "metric_kind": null,
+        "value": null,
+        "source_ref": null
+      },
+      "manual_path": "Desktop: model/effort control below composer; CLI: /model. Confirm available pair; no automatic application."
+    }
+  },
+  "servo": {
+    "input": {
+      "schema_version": 1,
+      "task_ref": "servo",
+      "actor_ref": "C",
+      "phase": "planning",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "activity": "implementation",
+      "execution_kind": "model_assisted",
+      "contract_trusted": true,
+      "high_impact": false
+    },
+    "output": {
+      "schema_version": 1,
+      "status": "OK",
+      "task_ref": "servo",
+      "actor_ref": "C",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "phase": "planning",
+      "execution_kind": "model_assisted",
+      "policy_configured": true,
+      "policy_version": "0.1.0",
+      "policy_content_sha256": "5a1ea903762b949aaa6c736e3158c63851559a2f851c58fa1a2f1e3dc851da51",
+      "recommended": {
+        "routing_profile": "routine",
+        "model_id": "gpt-6-sol",
+        "reasoning_effort": "medium",
+        "reason": "Trusted contract and bounded implementation",
+        "escalation_triggers": [
+          "New interface/clock/cross-layer impact",
+          "Contradictory reference or assumptions",
+          "First no-progress round: recheck root cause; limits never reset"
+        ]
+      },
+      "availability_status": "UNKNOWN",
+      "availability_reason": "No observed member capability record",
+      "alternatives": [],
+      "quality_status": "UNBENCHMARKED",
+      "requested": null,
+      "observed": {
+        "main": {
+          "model_id": null,
+          "reasoning_effort": null,
+          "observation_status": "UNKNOWN",
+          "evidence_ref": null
+        },
+        "subagents": []
+      },
+      "application_status": "RECOMMENDATION_ONLY",
+      "settings_modified": false,
+      "stop_reason": null,
+      "repair": {},
+      "usage": {
+        "metric_kind": null,
+        "value": null,
+        "source_ref": null
+      },
+      "manual_path": "Desktop: model/effort control below composer; CLI: /model. Confirm available pair; no automatic application."
+    }
+  },
+  "skill1": {
+    "input": {
+      "schema_version": 1,
+      "task_ref": "skill1",
+      "actor_ref": "A",
+      "phase": "planning",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "activity": "review",
+      "execution_kind": "model_assisted",
+      "contract_trusted": true,
+      "high_impact": false
+    },
+    "output": {
+      "schema_version": 1,
+      "status": "OK",
+      "task_ref": "skill1",
+      "actor_ref": "A",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "phase": "planning",
+      "execution_kind": "model_assisted",
+      "policy_configured": true,
+      "policy_version": "0.1.0",
+      "policy_content_sha256": "5a1ea903762b949aaa6c736e3158c63851559a2f851c58fa1a2f1e3dc851da51",
+      "recommended": {
+        "routing_profile": "analysis",
+        "model_id": "gpt-6-sol",
+        "reasoning_effort": "high",
+        "reason": "Bounded diagnosis, verification design, or independent review",
+        "escalation_triggers": [
+          "New interface/clock/cross-layer impact",
+          "Contradictory reference or assumptions",
+          "First no-progress round: recheck root cause; limits never reset"
+        ]
+      },
+      "availability_status": "UNKNOWN",
+      "availability_reason": "No observed member capability record",
+      "alternatives": [],
+      "quality_status": "UNBENCHMARKED",
+      "requested": null,
+      "observed": {
+        "main": {
+          "model_id": null,
+          "reasoning_effort": null,
+          "observation_status": "UNKNOWN",
+          "evidence_ref": null
+        },
+        "subagents": []
+      },
+      "application_status": "RECOMMENDATION_ONLY",
+      "settings_modified": false,
+      "stop_reason": null,
+      "repair": {},
+      "usage": {
+        "metric_kind": null,
+        "value": null,
+        "source_ref": null
+      },
+      "manual_path": "Desktop: model/effort control below composer; CLI: /model. Confirm available pair; no automatic application."
+    }
+  },
+  "skill2": {
+    "input": {
+      "schema_version": 1,
+      "task_ref": "skill2",
+      "actor_ref": "A",
+      "phase": "planning",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "activity": "review",
+      "execution_kind": "model_assisted",
+      "contract_trusted": true,
+      "high_impact": false
+    },
+    "output": {
+      "schema_version": 1,
+      "status": "OK",
+      "task_ref": "skill2",
+      "actor_ref": "A",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "phase": "planning",
+      "execution_kind": "model_assisted",
+      "policy_configured": true,
+      "policy_version": "0.1.0",
+      "policy_content_sha256": "5a1ea903762b949aaa6c736e3158c63851559a2f851c58fa1a2f1e3dc851da51",
+      "recommended": {
+        "routing_profile": "analysis",
+        "model_id": "gpt-6-sol",
+        "reasoning_effort": "high",
+        "reason": "Bounded diagnosis, verification design, or independent review",
+        "escalation_triggers": [
+          "New interface/clock/cross-layer impact",
+          "Contradictory reference or assumptions",
+          "First no-progress round: recheck root cause; limits never reset"
+        ]
+      },
+      "availability_status": "UNKNOWN",
+      "availability_reason": "No observed member capability record",
+      "alternatives": [],
+      "quality_status": "UNBENCHMARKED",
+      "requested": null,
+      "observed": {
+        "main": {
+          "model_id": null,
+          "reasoning_effort": null,
+          "observation_status": "UNKNOWN",
+          "evidence_ref": null
+        },
+        "subagents": []
+      },
+      "application_status": "RECOMMENDATION_ONLY",
+      "settings_modified": false,
+      "stop_reason": null,
+      "repair": {},
+      "usage": {
+        "metric_kind": null,
+        "value": null,
+        "source_ref": null
+      },
+      "manual_path": "Desktop: model/effort control below composer; CLI: /model. Confirm available pair; no automatic application."
+    }
+  },
+  "system": {
+    "input": {
+      "schema_version": 1,
+      "task_ref": "system",
+      "actor_ref": "A",
+      "phase": "planning",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "activity": "architecture",
+      "execution_kind": "model_assisted",
+      "contract_trusted": true,
+      "high_impact": true
+    },
+    "output": {
+      "schema_version": 1,
+      "status": "OK",
+      "task_ref": "system",
+      "actor_ref": "A",
+      "base_commit": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+      "phase": "planning",
+      "execution_kind": "model_assisted",
+      "policy_configured": true,
+      "policy_version": "0.1.0",
+      "policy_content_sha256": "5a1ea903762b949aaa6c736e3158c63851559a2f851c58fa1a2f1e3dc851da51",
+      "recommended": {
+        "routing_profile": "decision",
+        "model_id": "gpt-6-astra",
+        "reasoning_effort": "high",
+        "reason": "Key assumptions, public interfaces, or high-impact decisions need independent analysis",
+        "escalation_triggers": [
+          "New interface/clock/cross-layer impact",
+          "Contradictory reference or assumptions",
+          "First no-progress round: recheck root cause; limits never reset"
+        ]
+      },
+      "availability_status": "UNKNOWN",
+      "availability_reason": "No observed member capability record",
+      "alternatives": [],
+      "quality_status": "UNBENCHMARKED",
+      "requested": null,
+      "observed": {
+        "main": {
+          "model_id": null,
+          "reasoning_effort": null,
+          "observation_status": "UNKNOWN",
+          "evidence_ref": null
+        },
+        "subagents": []
+      },
+      "application_status": "RECOMMENDATION_ONLY",
+      "settings_modified": false,
+      "stop_reason": null,
+      "repair": {},
+      "usage": {
+        "metric_kind": null,
+        "value": null,
+        "source_ref": null
+      },
+      "manual_path": "Desktop: model/effort control below composer; CLI: /model. Confirm available pair; no automatic application."
+    }
+  }
+}

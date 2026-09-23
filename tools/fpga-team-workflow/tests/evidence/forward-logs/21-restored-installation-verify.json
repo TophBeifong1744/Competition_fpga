@@ -1,0 +1,23 @@
+{
+  "name": "21-restored-installation-verify",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "<forward-sandbox>\\package-source\\scripts\\skill_maintenance.py",
+    "verify",
+    "--source",
+    "<forward-sandbox>\\skills\\fpga-team-workflow"
+  ],
+  "cwd": "<forward-sandbox>",
+  "exit_code": 0,
+  "output": {
+    "schema_version": 1,
+    "status": "OK",
+    "errors": [],
+    "version": "0.1.0",
+    "content_sha256": "1b5e27ed59fd867e533298d783ccf0966bdcdb4f37bc792bebb97b7afb71af32",
+    "tests": null,
+    "review": "Behavioral/user acceptance is separate from package validation"
+  },
+  "stderr": ""
+}

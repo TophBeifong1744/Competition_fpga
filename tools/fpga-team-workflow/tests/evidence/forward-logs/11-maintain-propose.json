@@ -1,0 +1,57 @@
+{
+  "name": "11-maintain-propose",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "<forward-sandbox>\\package-source\\scripts\\skill_maintenance.py",
+    "propose",
+    "--request",
+    "<forward-sandbox>\\cases\\change-request.json"
+  ],
+  "cwd": "<forward-sandbox>",
+  "exit_code": 0,
+  "output": {
+    "schema_version": 1,
+    "status": "OK",
+    "change_id": "CHG-0d7e7b6f1d56",
+    "proposal": {
+      "schema_version": 1,
+      "kind": "outer_rule",
+      "problem": "sandbox-only controlled update exercise",
+      "requested_behavior": "add lab-only README marker and lab version",
+      "base_tree_sha256": "f6b74368e750a65f2cf81c7b51f413398911041d8e4666deee4dae6abb03741c",
+      "protected_invariants": [
+        "never modify original source, global installation, project files or remote state"
+      ],
+      "scope": {
+        "include": [
+          "README.md",
+          "VERSION"
+        ],
+        "exclude": [
+          "upstream",
+          "product"
+        ]
+      },
+      "acceptance": [
+        "sandbox upgraded and original bytes restored by controlled rollback"
+      ],
+      "changes": [
+        {
+          "path": "README.md",
+          "base_sha256": "155e7aacdd5f6753cd0f1ef46efb2be802d725d063f76d1ab9f4e187784fbbb5",
+          "content": "# fpga-team-workflow 0.1.0\n\n�����û��ṩ������ָ�� v1.2.0 ʵ�ֵĶ��� FPGA Э����㡣���������̶�Ϊ\n`run-fpga-workflow 0.4.0 @ e40fd8000b526b72ba80373127bf5fd6e5f8dc28`��\n����ʵ�ʹ�ͬʹ�ã����û�и��ƹ��̽�ɫ��Դ����Ǳ�Ŀ¼������Ŀ¼�ַ���\n\n## ��������ʲô\n\n- status/plan��work��review��integrate��maintain �İ�����������Ľ���ģ�塣\n- Դ��/�������顢�ɲ���ӳ�䡢����������ա����ع������ƻ���ִ�С�\n- ֤������/�/������顢����׼��Ļ�е��飻����������ʵ��Ա��׼��\n- ��Ŀ�����Զ��Ƽ�����ģ�ͺ� effort���׶β��졢��������/�����á���ɫ���Ǽ�顣\n- ά���᰸��׼ȷ���ߵĺ�ѡ�Ķ�������֤����װԤ�������񱸷�/�ָ�/���ˡ�\n\n�߽磺ģ�ͽ��Ƽ������Զ��л��Ϳ��ſͻ������й۲����������� GitHub д�������\n�ް忨���������Զ�����ɾ����GitHub Ȩ����ʵ�ɵ�ǰ���ù���/��ʵ��Ա�˶ԡ�\n�ļ�/fixture ��֤������ Vivado ���ܡ�ʱ��CDC ��弶���ա�\n\n## ��װ��˶�\n\nǰ�ã�Python 3.11+��PyYAML 6.x��������������Ҫ Git��Windows ռ�ü��ʹ�� tasklist.exe��\n����ʵ�� Python/Windows ��������� [������](COMPATIBILITY.md) �� [���Ա���](tests/REPORT.md)��\nȱ PyYAML ʱ���û���ѡ�� Python ������װ `python -m pip install -r requirements.txt`��\n��Ҫ����޸�ȫ�� PATH �򸲸����� Python ������\n\n�ڱ���Ŀ¼�� PowerShell�������У�\n\n```powershell\npython -B scripts/skill_maintenance.py verify --source . --run-tests\n```\n\nָ��һ����װ������ʾ��Ϊ `~/.codex/skills/fpga-team-workflow`�����ϱ��� Skill\n����Լ�����ٷ�ͨ�÷���Ŀ¼������ `~/.agents/skills` ����Ŀ `.agents/skills`��\nֻ����һ���ͬ����װ���ȼ�鵱ǰ�ͻ���ʵ�ʷ���·������Ҫ����������������\n\n```powershell\n$skillDestination = Join-Path $env:USERPROFILE '.codex/skills/fpga-team-workflow'\n$planPath = Join-Path $env:TEMP ('ftw-plan-' + [guid]::NewGuid().ToString('N') + '.json')\npython -B scripts/skill_maintenance.py install-plan --source . --target \"$skillDestination\" --out \"$planPath\"\npython -B scripts/skill_maintenance.py install --plan \"$planPath\" --execute --authorization-ref '�����û���װ����'\n```\n\n`--out` ����Ű�Ŀ¼֮�⣨�����ʾ����ʹ�ö�����ʱ·������\n������ʽд�룬�����������ļ���ʹ�� `--dry-run` ��ʡ�� `--execute` ֻԤ����\nΪ��������ʵ��ʹ�ý���� [CLI ʾ��](references/cli.md) �İ���ƻ�·����\n��װֻд��һ Skill Ŀ¼���丸Ŀ¼�µ� `.fpga-team-workflow-transactions`��\n���� AGENTS.md��config.toml�����ν�ɫ��ƾ�ݻ��ƷԴ�롣\n����δ����ͬ��Ŀ¼���û��Ķ�������Ԥ���ᱻ��ֹ��\n\n��װ��һ��������ȷ���б����� `fpga-team-workflow`����ִ�У�\n\n```text\nʹ�� $fpga-team-workflow��ֻ���鿴��ǰ��Ŀ���ú�һ��������������ģ�ͽ��顢\nȱ������� Skill ��ʵ��·������Ҫ�������޸�ģ�����û�д GitHub��\n```\n\n�ļ���װ�ɹ���֤����������ˢ�¡�������ԱӦ�Լ��˶԰�װ/��ɫ/���ߣ�������ƾ�ݡ�\n�Ѱ�װĿ¼�е� `verify` ��˶Թ����ļ�����Ҫ�ڰ���������ʱ����� __pycache__��\n\n## ����������������װ����ֹֻ���� SKILL.md\n\n��[�̶��ύ](https://github.com/prasetyarobert205-jpg/codex-fpga-engineering-workflow/tree/e40fd8000b526b72ba80373127bf5fd6e5f8dc28)\nȡ���������ΰ����Ķ��䰲װ�ű���ԭ�������֤/Ԥ��/��װ�������ƶ� main �Զ����£�\n\n```powershell\npwsh -NoProfile -File scripts/validate-package.ps1\npwsh -NoProfile -File scripts/install.ps1 -Scope User -WhatIf\n# �������������ΰ�Ŀ¼ִ�С���ø����ΰ�װ��Ȩ����ִ�в��� -WhatIf �İ�װ��\npwsh -NoProfile -File scripts/verify-install.ps1 -Scope User\n```\n\n�����ĺ˶���������Ŀ¼ִ�У���\n\n```powershell\npython -B scripts/team_workflow.py upstream inspect --skill \"$env:USERPROFILE/.agents/skills/run-fpga-workflow\" --agents \"$env:USERPROFILE/.codex/agents\"\n```\n\n���ù̶����ΰ��� 40 ���ļ� SHA-256 �˶����ݺ� 13 ��ɫ���ֽڲ�һ�»ᱨ����죬\n����Ĭ�� CRLF ����򱾵��޸ĵ�������֤���ݡ���ɫ/���ߵ�ǰ�Ѽ�������ʵ��������֤��\n����һЩ�ο��ἰ��Դ��ֿ� scripts����Щ�ű�δ�����ΰ�װ������� Skill Ŀ¼��\n��Ҫ���ศ���ű�ʱ��ͬһ�̶��ύ������Դ���ȡ�ã��������ư�װĿ¼�ڴ������ǡ�\n\n## ��Ŀ�������ճ��÷�\n\n����Ŀ�� assets/project.example.yaml������Ŀ�� project-existing.example.yaml���˶�ʵ��·����\n��д��Ŀ����Ա��Ŀ���������ֻ����Ҫ��Ŀ¼��`layout init` ֻ���ĵ�/�ܿ�Ŀ¼��\n��ʵ������IP����ں͹������̽��ڲ㽨������α�� .xpr ��ռλ bitstream��\n\n```text\nʹ�� $fpga-team-workflow plan���������� Issue ��һ���ɶ��������Ĺ�����������ģ�ͽ��顣\nʹ�� $fpga-team-workflow work���ڸð�����Ȩ��Χ���ʵ���뽻�������û��������\nʹ�� $fpga-team-workflow review��ֻ������ PR ��׼ȷ�ύ���Ⱥ˲�ԭ��ͬ�پ������⡣\nʹ�� $fpga-team-workflow integrate������ѡ���ɰ汾��������ɶ��壬����ȱ֤�ݡ�\nʹ�� $fpga-team-workflow maintain��Ϊ�����������ȱ�������᰸���Ȳ����ǰ�װ��\n```\n\n������ `apply` ���ٴκ˶Ի������������κ���/δ����/�������ݶ��ᱣ����ֹ�л���\n�����Ҫ����������Ȩ��Χ�鵵����뵱ǰ���ݣ��ű��������������\n������ռ�����������Ѻ�ʵ��ʵ��������ֻԼ��ʹ�ñ����ߵĽ��̣����ǿ��������\n\n## ���������\n\n�� `maintain propose �� plan �� apply �� verify �� publish/��װ` ʹ�ã���Ҫ���ߴ�ȷ�ϡ�\n`apply` ֻ���µĺ�ѡĿ¼����仯��У��׼ȷ���ߺ����ļ���ϣ����ֱ�ӱ༭��װ������\n��������Ȩ GitHub ����/��Աִ�У�CLI publish ֻ���ɷ���Ҫ�������״̬��\n\n��װ��������·��������ʱʹ��**Դ���**�еĹ��ߣ�\n\n```powershell\npython -B scripts/skill_maintenance.py rollback --transaction '<��װ���ص�����Ŀ¼>' --dry-run\npython -B scripts/skill_maintenance.py rollback --transaction '<��װ���ص�����Ŀ¼>' --execute --authorization-ref '<��������>'\n```\n\n����ʧ���Զ��ָ����쳣�ж�ʹ�� `recover`��δ֪�����仯����ֹ���ǡ����ݲ����Զ�ɾ����\nWindows Ŀ¼�滻�Ǿ������Եķֲ� rename + �ָ�����**�����������л��ǵ���ԭ�Ӳ���**��\n���̱�ǿɱ�������°�װ������ȷ������ PID/�������޻д�롢�˶��������ݺ�\n����ȷ��Ȩ�Ƴ��õ���ʧЧ������ recover������ɾ�������������\n\nģ�Ͳ������� `UNBENCHMARKED`��·�ɲ���ֻ��֤������Ϊ��û��ʵ�ʶ�ģ��ͬ�����ż�\nʵ�飬�Ͳ����������Լ۱Ȼ��ʡ�ٷֱȡ�\n\nSANDBOX FORWARD TEST ONLY.\n"
+        },
+        {
+          "path": "VERSION",
+          "base_sha256": "3d097c315a1c543040f548da4c7051265e94c77211a2411ced1d4621344270de",
+          "content": "0.1.1-forward-test\n"
+        }
+      ]
+    },
+    "dedupe_key": "0d7e7b6f1d56832d43f6a6b38644a816eb5fd64bfbd9d117dda96ad3ec1ee6aa",
+    "effective_rules_modified": false,
+    "next_action": "Compare dedupe_key in existing maintenance Issue; plan smallest owning layer"
+  },
+  "stderr": ""
+}

@@ -1,0 +1,114 @@
+schema_version: 1
+project:
+  id: REPLACE_WITH_PROJECT_ID
+  repository: REPLACE_OWNER/REPLACE_REPO
+  default_branch: main
+  identity_ref: docs/project-identity.md
+  interface_refs: []
+
+layout:
+  schema_version: 1
+  mode: existing
+  upstream_project_root: .
+  document_root: docs
+  project_control: native_project
+  project_entry: fpga/prj/system.xpr
+  rtl_roots: [fpga/rtl, common/hdl]
+  ip_roots: [fpga/ip]
+  bd_roots: [fpga/prj/system.srcs/sources_1/bd]
+  constraint_roots: [fpga/constraints]
+  tb_roots: [verification/tb]
+  model_roots: [algorithm]
+  software_roots: [firmware]
+  fixture_roots: [testdata/small]
+  filelist_refs:
+    product: fpga/scripts/sources.txt
+    simulation: verification/scripts/sources.txt
+  entry_refs:
+    build: fpga/scripts/build.tcl
+    simulation: verification/scripts/run_sim.tcl
+  runtime_roots:
+    formal_build: fpga/prj
+    formal_simulation: verification/work
+    diagnostics: codex_out
+    release_output: artifacts/output
+  source_exceptions:
+    - fpga/prj/system.xpr
+    - fpga/prj/system.srcs
+  adapter_status: UNVERIFIED
+  adapter_evidence_ref: null
+
+members:
+  - id: member-one
+    github: REPLACE_LOGIN_1
+    capabilities: [rtl, simulation]
+  - id: member-two
+    github: REPLACE_LOGIN_2
+    capabilities: [model, simulation]
+# 实际名单可扩展；能力声明不自动构成特定任务的批准资格。
+
+ownership: []
+# 每个元素可关联实际模块路径、owner、review_candidates；不建立全员两两矩阵。
+# 文件归属采用第 7 节规则；路径配置不应另抄一份到手工任务表。
+
+workspace:
+  default_strategy: reuse
+  sparse_checkout: when_dependency_closed
+  extra_worktree: only_when_needed
+  generated_policy_ref: docs/generated-artifacts.md
+  protected_paths: []
+  board_resource_ref: null
+
+collaboration:
+  default_human_approvals: 1
+  merge_method: squash
+  task_source: github_issue
+  review_source: github_pr_or_issue
+  stage_source: github_milestone
+
+model_policy:
+  schema_version: 1
+  policy_version: 0.1.0
+  # 这是本项目候选策略版本，不是外层 Skill 或本指南版本。
+  mode: recommend_only
+  quality_status: UNBENCHMARKED
+  catalog_checked_at: "2026-09-23"
+  # 官方目录核对日期不等于任一成员账号已经验证可用。
+  default_profile: routine
+  catalog:
+    luna:
+      model_id: gpt-6-luna
+      candidate_efforts: [high]
+    sol:
+      model_id: gpt-6-sol
+      candidate_efforts: [medium, high]
+    astra:
+      model_id: gpt-6-astra
+      candidate_efforts: [medium, high, xhigh]
+  # candidate_efforts 仅为策略候选，非本机实际支持清单或完整官方支持集合。
+  routing_profiles:
+    execution: {model_ref: luna, reasoning_effort: high}
+    routine: {model_ref: sol, reasoning_effort: medium}
+    analysis: {model_ref: sol, reasoning_effort: high}
+    decision: {model_ref: astra, reasoning_effort: high}
+    deep: {model_ref: astra, reasoning_effort: xhigh}
+  capability_cache_ref: .local/model-capabilities.yaml
+  calibration_ref: null
+  # 未来可指向 document/verification/ 中实际完成的短校准记录。
+  application:
+    allow_global_config_write: false
+    allow_upstream_role_write: false
+    allow_billing_change: false
+    authorized_pairs: []
+    # 空列表不允许自动应用；填写也只是限制清单，不能替代实际用户授权。
+  escalation:
+    stable_checkpoint_only: true
+    preserve_repair_budget: true
+    no_progress_rule_ref: workflow-inherited
+    # 继承原工作包／上游返修计数，不因模型变化重新计数。
+
+maintenance:
+  skill_source_repository: REPLACE_OWNER/REPLACE_SKILL_REPO
+  lock_file: workflow-lock.yaml
+  default_action: propose
+  automatic_install: false

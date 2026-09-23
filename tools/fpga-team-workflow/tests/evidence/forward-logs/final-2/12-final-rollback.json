@@ -1,0 +1,25 @@
+{
+  "name": "12-final-rollback",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "<forward-sandbox>\\source-final-2\\scripts\\skill_maintenance.py",
+    "rollback",
+    "--transaction",
+    "<forward-sandbox>\\skills\\.fpga-team-workflow-transactions\\1430510d6fcd47b791fabd49730984ca",
+    "--execute",
+    "--authorization-ref",
+    "authorized sandbox exact rollback retest"
+  ],
+  "cwd": "<forward-sandbox>",
+  "exit_code": 0,
+  "output": {
+    "schema_version": 1,
+    "status": "OK",
+    "rolled_back": true,
+    "target": "<forward-sandbox>\\skills\\fpga-team-workflow",
+    "verified": true,
+    "product_files_changed": false
+  },
+  "stderr": ""
+}

@@ -1,0 +1,23 @@
+schema_version: 1
+change_id: CHG-EXAMPLE
+kind: outer_rule
+base_release: null
+base_source_commit: null
+problem: 复核对同一稳定证据重复执行完整仿真
+reproducer_ref: null
+requested_behavior: 先核对假设和证据身份，再选择最小有价值的补测
+protected_invariants:
+  - 保留真实成员独立批准
+  - 不弱化上游功能验收和技术终审
+  - 不复用已被错误假设污染的接受结论
+scope:
+  include: [references/review-and-evidence.md]
+  exclude: [upstream_skill, product_rtl, installed_copy]
+acceptance:
+  - 同一有效证据不触发无理由全量重跑
+  - 错误饱和假设即使自检通过仍被阻断
+  - 缺失必要证据不能被自动批准
+compatibility:
+  project_schema_change: false
+  bridge_schema_change: false
+rollback_target: null

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "OK",
+  "observed": {
+    "main": {
+      "source_kind": "prompt",
+      "model_id": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "text": "你现在已经切换为 GPT-6 Astra xhigh",
+      "observation_status": "UNKNOWN",
+      "verification_limit": "Imported metadata is not independently authenticated"
+    },
+    "subagents": [
+      {
+        "started": true,
+        "source_kind": "prompt",
+        "role": "fpga_architect",
+        "model_id": "gpt-6-astra",
+        "reasoning_effort": "xhigh",
+        "observation_status": "UNKNOWN",
+        "verification_limit": "Imported metadata is not independently authenticated"
+      }
+    ]
+  },
+  "role_overrides": [],
+  "settings_modified": false,
+  "runtime_adapter": "UNSUPPORTED",
+  "requested": null
+}

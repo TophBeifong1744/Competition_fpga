@@ -1,0 +1,130 @@
+{
+  "scope": "workflow configuration, not FPGA acceptance",
+  "records": [
+    {
+      "name": "package",
+      "argv": [
+        "python",
+        "-B",
+        "tools/fpga-team-workflow/scripts/skill_maintenance.py",
+        "verify",
+        "--source",
+        "tools/fpga-team-workflow",
+        "--run-tests"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "logs": {
+        "stdout": {
+          "path": "docs/maintenance/workflow-migration-20260923/package.stdout.txt",
+          "sha256": "7a2ed99aa3f6ee0f645e088ac530d60702f9d75bfce140d8ac57c30f1cc6af71"
+        },
+        "stderr": {
+          "path": "docs/maintenance/workflow-migration-20260923/package.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "name": "layout",
+      "argv": [
+        "python",
+        "-B",
+        "tools/fpga-team-workflow/scripts/team_workflow.py",
+        "layout",
+        "inspect",
+        "--root",
+        ".",
+        "--config",
+        "team-workflow.yaml"
+      ],
+      "cwd": ".",
+      "exit_code": 3,
+      "expected_exit": 3,
+      "logs": {
+        "stdout": {
+          "path": "docs/maintenance/workflow-migration-20260923/layout.stdout.txt",
+          "sha256": "ddec7428bb62bd1c5376f5cda02af1430ea12e0b402042cb99a95a3ec5548916"
+        },
+        "stderr": {
+          "path": "docs/maintenance/workflow-migration-20260923/layout.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "name": "doctor",
+      "argv": [
+        "python",
+        "-B",
+        "tools/fpga-team-workflow/scripts/team_workflow.py",
+        "doctor",
+        "--root",
+        ".",
+        "--config",
+        "team-workflow.yaml",
+        "--skill",
+        "C:/Users/Toph Beifong/.agents/skills/run-fpga-workflow",
+        "--agents",
+        "C:/Users/Toph Beifong/.codex/agents"
+      ],
+      "cwd": ".",
+      "exit_code": 3,
+      "expected_exit": 3,
+      "logs": {
+        "stdout": {
+          "path": "docs/maintenance/workflow-migration-20260923/doctor.stdout.txt",
+          "sha256": "9dc03886c8252954d598db8973c4da4c156cfc5eb96514419d0ca1dc987d1389"
+        },
+        "stderr": {
+          "path": "docs/maintenance/workflow-migration-20260923/doctor.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "name": "python-version",
+      "argv": [
+        "python",
+        "--version"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "logs": {
+        "stdout": {
+          "path": "docs/maintenance/workflow-migration-20260923/python-version.stdout.txt",
+          "sha256": "2b095b05c4093ebca54b87bd2c6a6f557935e6b3f8f506a0c2e5e294a763f4ad"
+        },
+        "stderr": {
+          "path": "docs/maintenance/workflow-migration-20260923/python-version.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "name": "git-whitespace",
+      "argv": [
+        "git",
+        "-c",
+        "core.whitespace=cr-at-eol",
+        "diff",
+        "--check"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "logs": {
+        "stdout": {
+          "path": "docs/maintenance/workflow-migration-20260923/git-whitespace.stdout.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "docs/maintenance/workflow-migration-20260923/git-whitespace.stderr.txt",
+          "sha256": "e9d65afa660a7647a6ce110047f974338d19f7b7623badbc1d6a501efbaacd1e"
+        }
+      }
+    }
+  ]
+}

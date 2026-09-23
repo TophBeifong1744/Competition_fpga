@@ -11,3 +11,9 @@
 
 # Frozen six-mic bundle hashes must not vary with Windows checkout conversion.
 /deliverables/six-mic-acoustic-review-v1/** -text
+
+# Pinned external workflow distribution preserves manifest byte identity.
+/tools/fpga-team-workflow/** -text -whitespace
+# Preserve raw management evidence bytes; never normalize hashed logs.
+/docs/maintenance/workflow-migration-20260923/** -text
+/docs/maintenance/workflow-migration-20260923/*.txt -whitespace

@@ -1,18 +1,18 @@
 # Competition_fpga
 
-2026-09-17职责覆盖：C负责[转台与摄像头方案落实、全部相关驱动和最终效果测试](docs/member-c-operation-sheet.md)，替代下文旧“不追加派工”。旧机械路线退役，舵机b1d51d4获[限定模块PASS](docs/reviews/servo-b1d51d4/REVIEW.md)，归入活动rtl/tb/sim；实板和摄像头未通过。A/B声学、H1/H2/H3与V1日历不变。
+2026-09-23 已迁移至 [fpga-team-workflow](docs/team-workflow.md)。A/B/C 对等承担工程职责，任务与批准以 [GitHub Issues](https://github.com/TophBeifong1744/Competition_fpga/issues) / PR 为准；正式 V1 总验收 **2026-10-07**，此前检查为 9/25、9/29、10/3。
 
-当前安排（2026-09-13夜间）：原9/14检查已于9/13提前执行，阶段进展限定通过，见[阶段验收及收尾](deliverables/phase-2026-09-14/README.md)。下一正式检查9/18，V1总验收10/1 10:00；A/B继续工程和算法，C不追加派工。成员交接仍仅H1/H2/H3，见[统一日历](docs/project-plan.md#61-统一阶段验收日历)、[加速任务](docs/phases/2026-09-13-to-10-01/README.md)和[工作包台账](docs/work-packages.md)。
+入口：[当前进展快照](docs/current-status.md) · [验收日历](docs/project-plan.md) · [三人分工](docs/team-tasks.md) · [新聊天启动提示](docs/chat-start-prompts.md) · [迁移与清理记录](docs/maintenance/workflow-migration-20260923.md)。
 
 嵌入式比赛作品
 
 ## SoundSight：基于 Zynq FPGA 的实时声源定位与波束形成系统
 
-SoundSight 面向 AMD FPGA 自主设计比赛，目标是在 Zynq-7020 平台上完成四路同步声音采集、可靠声源方向估计（DOA）与自动指向的 Delay-and-Sum 波束形成，输出增强后的目标方向音频并展示方向、置信度和运行状态。自动声源跟踪转台保留为后续扩展，只有核心声学链路通过且存在明确的朝向载荷时才进入闭环集成。
+SoundSight 面向 AMD FPGA 自主设计比赛，目标是在 Zynq-7020 平台上完成四路同步声音采集、可靠声源方向估计（DOA）与自动指向的 Delay-and-Sum 波束形成，输出增强后的目标方向音频并展示方向、置信度和运行状态。C 并行完成舵机/转台与摄像头驱动及实物效果；声学跟踪闭环仍须通过可信方向、坐标和安全控制验证，机械移动不替代声学收益。
 
 当前A FFT29新增覆盖、C板实录及B reference25算法诊断均已获限定独立批准并入main，阶段进展检查通过；正式M1、完整H3、二维定位精度/音频收益和整机实板仍未通过。C001～003基础模块已接入[rtl](rtl/README.md)、[tb](tb/README.md)及[统一仿真入口](sim/README.md)，原六组回归通过，不等于整机接通。本阶段新增材料仅获研究/诊断批准，保留可运行任务包，不强搬生产主链，见[本次归位与收尾](deliverables/phase-2026-09-14/CLOSEOUT.md)。最新入口：[文档目录](docs/README.md)、[当前状态](docs/current-status.md)、[工作包台账](docs/work-packages.md)、[六麦独立材料包](deliverables/six-mic-acoustic-review-v1/README.md)。旧文档集中于[历史备份](archive/README.md)。
 
-版本范围：2026-10-01 的 V1 用四麦先验收二维水平声源方向及音频改善；三维方向（方位角、俯仰角和单位向量，不含距离/位置）列为 V2。V2 六麦为首选候选、非共面四麦为低成本备选、八麦暂缓；当前已形成六麦指南和首轮软件基线，不扩大首版交付范围，不提前增加采集通道或采购。六麦须经过声学/资源评审和扩展采集准入，不能直接继承四麦验收结论。评估、阶段门与三人分工见[三维方向升级计划](docs/three-dimensional-doa-plan.md)。
+版本范围：2026-10-07 的 V1 用四麦先验收二维水平声源方向及音频改善；三维方向（方位角、俯仰角和单位向量，不含距离/位置）列为 V2。V2 六麦为首选候选、非共面四麦为低成本备选、八麦暂缓；当前已形成六麦指南和首轮软件基线，不扩大首版交付范围，不提前增加采集通道或采购。六麦须经过声学/资源评审和扩展采集准入，不能直接继承四麦验收结论。评估、阶段门与三人分工见[三维方向升级计划](docs/three-dimensional-doa-plan.md)。
 
 最新授权范围：麦克风沿用既定选择；仅执行六麦声学评审与离线软件模拟，不新增四麦模拟或四/六麦对比。第一轮2700帧合成浮点结果、波束图、同组六路数据的音频对照及失败边界见[六麦软件预评审](docs/six-mic-acoustic-software-review.md)；不代表3D-G0整体或板测通过。
 
@@ -182,4 +182,4 @@ AI 协作材料只保存用户可见提示、模型可见回答、人工纠正�
 
 ## 当前最优先任务
 
-沿现有采集工程补可解释的已知方向输入，B复核已提交FFT29覆盖并完成V1实际输入/手动与自动波束/定点预算完整包，目标9/18交H3。C四麦转接板已选，A按四个同源CLOCK和DATA映射适配，不要求旧可调支架返工。H3前继续已有IP、接口与TB，正式算法按准入范围接入；六麦扩展与转台实现不抢10/1首版关键路径。
+A先处理 #13 加载入口与 #14 生产合同；B推进 #16 诊断复核及 #17 完整算法/定点包；C完成 #15 正确素材的新八段录音，继续 #19 舵机和 #20 摄像头。已发布的准备包与Skill候选直接增量交审，不重复旧FFT。详见[当前任务入口](docs/work-packages.md)。

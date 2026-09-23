@@ -1,0 +1,117 @@
+{
+  "source_tree_sha256": "f6b74368e750a65f2cf81c7b51f413398911041d8e4666deee4dae6abb03741c",
+  "source_content_sha256": "1b5e27ed59fd867e533298d783ccf0966bdcdb4f37bc792bebb97b7afb71af32",
+  "cases": [
+    {
+      "name": "01-model-review",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "02-counterexample-budget-pressure",
+      "exit_code": 2,
+      "status": "BLOCKED"
+    },
+    {
+      "name": "03-model-prompt-observation",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "04-model-apply",
+      "exit_code": 4,
+      "status": "NEEDS_USER_ACTION"
+    },
+    {
+      "name": "05-only-author",
+      "exit_code": 2,
+      "status": "BLOCKED"
+    },
+    {
+      "name": "06-forged-live-facts",
+      "exit_code": 3,
+      "status": "INCONCLUSIVE"
+    },
+    {
+      "name": "07-corrupt-receipt-verify",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "08-corrupt-receipt-install-plan",
+      "exit_code": 2,
+      "status": "BLOCKED"
+    },
+    {
+      "name": "09-idempotent-plan",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "10-idempotent-install",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "11-maintain-propose",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "12-maintain-plan",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "13-maintain-apply",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "14-candidate-verify",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "15-update-plan",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "16-stale-update-refusal",
+      "exit_code": 2,
+      "status": "BLOCKED"
+    },
+    {
+      "name": "17-install-update",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "18-rollback-edit-refusal",
+      "exit_code": 2,
+      "status": "BLOCKED"
+    },
+    {
+      "name": "19-rollback-preview",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "20-rollback-execute",
+      "exit_code": 0,
+      "status": "OK"
+    },
+    {
+      "name": "21-restored-installation-verify",
+      "exit_code": 0,
+      "status": "OK"
+    }
+  ],
+  "upgrade_changed": true,
+  "rollback_exact": true,
+  "all_writes_within": "<forward-sandbox>",
+  "human_approval": false,
+  "EDA_run": false,
+  "remote_write": false
+}

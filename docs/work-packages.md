@@ -1,38 +1,21 @@
-# SoundSight 当前工作包台账
+# 工作包唯一入口
 
-2026-09-21用户转交回执与附件：E/W/B已接收，E准备子包未提交、B意见3c04a8c未推送；W按准备范围发布交换，不等生产全部完成。新外包为C按[八段操作单](phases/2026-09-13-to-10-01/c-recording-batch-20260921.md)完成测量摆位录音全流程，A接收、B诊断；覆盖旧仅一段暂定安排，不覆盖旧录音原件，C接单尚未确认。E核对入口依赖失败。详见[交接](phases/2026-09-13-to-10-01/dispatch.md)，准备/接单不等于验收。
+2026-09-23迁移后，**工作包状态以GitHub Issue/PR为准**，本页只保留路由，不再复制“待做/已完成”的手工台账。每包一owner、一合格非作者；阶段见[Milestone](https://github.com/TophBeifong1744/Competition_fpga/milestones)。
 
-2026-09-21执行分派：工程实现负责生产profile协调、受影响逐级仿真与16服务证据；拓芙工作执行负责完整子包发布/交B复核/批次收尾；B负责合同协作及声学主线，详见[统一派发](phases/2026-09-13-to-10-01/dispatch.md)。已批准批次及main同步不重复执行，跨聊天尚未送达。C、Skill、H1/H2/H3及日期不变。
-
-2026-09-21最新覆盖：PKG-A-ACQ的`ca512a8`（PSB-B-01～03）及`f08556d`（A生产候选合同、golden缺项、条件预算）均已获B限定PASS入main；B的`ad30bda`工程R1/R2已独立关闭。此轮A离线补缺材料不再待复核，原33/122/30项等未变化测试不重派。下一责任为按获准候选安排后续生产实现及真实服务证据，不把16项未知上界变为0，不把研究合同批准写成H3或实时通过。[准确版本、保留限制及本机收尾](../deliverables/phase-2026-09-18/readiness-closeout-20260921.md)。
-
-2026-09-21 B复核覆盖：本页 b0643b1 文档增量已限定通过；下文 f879/0ab“待审”为编写时历史。当前 f879 软件逻辑及 a7f70c5 工程Python模型返修已限定批准，E01～03关闭；生产ABI、动态DAS、AMD/RTL、实时与完整H3仍未批准。集中确认及补采适用边界见[B复核记录](reviews/status-b0643b1/B-REVIEW.md)。 最新动态DAS [268e526已获A限定离线批准](reviews/b-dynamic-268e526/REVIEW.md)：8样点前视/17行历史与旧9样点候选分列，串行pending策略最多约20ms回单麦；内部位宽已有限定域推界，生产接口/硬件服务仍未冻结。
-
-2026-09-21：三批B限定批准已入库，见[增量收口及责任表](../deliverables/phase-2026-09-18/recheck-20260921.md)。A软件f879a54、工程方案0abdc91仍按各自待审身份，未升为生产。B1–B6已完成软件节点验证，不重派；剩余为生产合同、受影响AMD/RTL对照、动态DAS和真实有界服务预算。原日志本机受控备份缺口已关闭，B收件仍未发生；声学不无条件补录。
-
-最新：[八段接收后的9/18再次复验](../deliverables/phase-2026-09-18/recheck-eight-20260920/README.md)。8/8开发输入接收完成，声学基线与完整H3仍未通过；各项既有限定批准和9/23、10/1日期不变，不重复派已关闭任务。
-
-2026-09-20[复验更新](../deliverables/phase-2026-09-18/recheck-20260920/README.md)：run05、S1诊断、计时入口返修已获B限定批准并入库；声学与完整H3仍未通过。B新集中接口材料已到件并复现；C新版舵机合同不能继承旧版批准。
-
-2026-09-13重排。阶段检查9/14、V1总验收10/1 10:00；[统一日历](project-plan.md#61-统一阶段验收日历)与[加速任务矩阵](phases/2026-09-13-to-10-01/README.md)为当前执行依据。旧安排[逐字备份](../archive/2026-09-13-before-accelerated-plan/docs/work-packages.md)，不按旧表重做已完成任务。
-
-| 既有包 / 负责人 / 复核 | 已有成果与状态 | 未完成交付和目标节点 |
+| 入口 | 内容 | owner → reviewer |
 | --- | --- | --- |
-| PKG-A-ACQ / A / B | H1/current_build及旧诊断保持；S1与计时入口返修已限定PASS；94b5fe7八段开发输入获B限定PASS并入46aee3d，A本机收尾完成 | 8/8开发材料已接收，不重派录制；存在门与候选标签限制保留，9/23正式采集按原判据检查；不升级精度/收益/M1/H3 |
-| A FFT29 coverage-extension-01 / A / B | b8c5e87已获B限定独立批准，023177c合入main | 本项已完成，不重复派审；不冻结全链格式、不重跑历史60帧 |
-| PKG-B-ALG / B / A | 旧诊断批准保持；7a17edd的run05获B增量限定PASS；B集中接口包28d5c77已交且本轮复现通过 | 完整H3仍缺正式存在/方向/音频、最终数制/AMD逐级golden与整链预算；A/B一次裁决接口，不重复run05复核 |
-| PKG-A-SYSTEM、H3集成 / A / B（B算法由A审） | 既有接口、工程约束和FFT候选可复用；9/18未批准新生产算法 | 仅已准入模块可进入用户主导的工程接入；9/23定位RTL检查据实判定，9/26波束/PS/整机、9/27冻结目标不自动视为完成 |
-| PKG-A-SKILLS / SKL-001 / A / B | a7e1ea9获B限定模块仿真PASS，已进入活动目录；9/18确认既有范围，未新增迁移案例 | 9/23候选、9/25完整交付、9/28独立回归、9/29提交、10/1验收；陌生模块/故障和真实适用按[判据](skills-delivery-plan.md)继续，不当生产RTL/板测通过 |
-| SKL-002 / A / B（完整材料在Skill目录） | 3ac597d获B限定离线PASS，已进入活动目录；9/18确认既有范围，实板未准入 | 9/23明确真实PYNQ路线/缺口，后续与SKL-001同节点分别交包；离线通过不当加分实证，不阻塞Vitis采集、不派C |
-| 发布/报告/演示 / A工程与发布 / B算法与交叉复核 | 已有源文件、阶段材料和六麦独立报告包 | 9/26形成演示/报告候选，9/28回归、9/29干净复现/英文路径/许可/AI可见记录预检，9/30缓冲，10/1总验收 |
-| PKG-C-EVIDENCE / 历史责任保留 | 已交齐资料复用 | 主线剩余录音/测试/素材由A/B完成，本轮不向C续派 |
-| 旧机械路线 / C历史提交 | 773a56c和407849e历史限定批准保留，现停止采用 | 不继续旧方案实施，不继承其工况/性能，不改冻结证据 |
-| PKG-SERVO-PWM / C / A独立复核 | b1d51d4旧版获限定PASS；d63544d已入main并改变有效握手/最大角/复位角，只有作者自测记录 | 新版需绑定准确SHA独立复核；C继续[操作单](member-c-operation-sheet.md)，摄像头/实物/总集成未通过，不自动新增交期 |
-| C004 / 原责任人及复核人不变 | 正式批准未闭环，原证据保留 | 004-R2暂缓、005不启动；主流程保留例外，不因提速催C重做 |
-| PKG-A-3D-ENGINEERING、SIM6/ENG6/REL6 / A工程、B声学 | 六麦模型/指南/有限研究可复用，3D-G0整体未通过 | V1前不追加抢占主线的新实验/六路实现；正式三维在V1实际通过后再按3D-G0/GA/G1～G3排期，不承诺10/1自动进入 |
+| [#12](https://github.com/TophBeifong1744/Competition_fpga/issues/12) | [MIGRATION] 9/23 工作流迁移、进度核对与安全清理 | A → B |
+| [#13](https://github.com/TophBeifong1744/Competition_fpga/issues/13) | [A] 修复 S1 加载入口与已批准检查器的组合绑定 | A → B |
+| [#14](https://github.com/TophBeifong1744/Competition_fpga/issues/14) | [A+B] 生产 profile、状态集合和 16 服务接口统一 | A → B |
+| [#15](https://github.com/TophBeifong1744/Competition_fpga/issues/15) | [C] 正确播放素材的测量摆位八段录音与数据交付 | C → B |
+| [#16](https://github.com/TophBeifong1744/Competition_fpga/issues/16) | [B] 9/22 录音诊断增量交审及独立评价集准备 | B → A |
+| [#17](https://github.com/TophBeifong1744/Competition_fpga/issues/17) | [B] 二维定位、动态 DAS 与生产定点/golden 完整 H3 包 | B → A |
+| [#18](https://github.com/TophBeifong1744/Competition_fpga/issues/18) | [A] M1、生产链集成与可验证实时/资源/时序 | A → B |
+| [#19](https://github.com/TophBeifong1744/Competition_fpga/issues/19) | [C] 当前舵机驱动合同复核与双轴控制实证 | C → A |
+| [#20](https://github.com/TophBeifong1744/Competition_fpga/issues/20) | [C] 摄像头方案落实、驱动与转台载荷效果 | C → A |
+| [#21](https://github.com/TophBeifong1744/Competition_fpga/issues/21) | [SKL-001] 9/23 技术 Skill 候选增量复核与陌生案例交付 | A → B |
+| [#22](https://github.com/TophBeifong1744/Competition_fpga/issues/22) | [SKL-002] S2MM-only 候选、PYNQ准入与独立复用 | A → C |
+| [#23](https://github.com/TophBeifong1744/Competition_fpga/issues/23) | [V1] 10月7日集成验收、比赛材料与发布收尾 | A → B |
+| [#24](https://github.com/TophBeifong1744/Competition_fpga/issues/24) | [BACKLOG] 保留的旧候选与 V2 六麦三维，不占 V1 关键路径 | A → B |
 
-## 完整交付与发布
-
-H1/H2/H3仍是仅有三个成员交接点。独立实验不报批；完整交付集中既有包，复核准确SHA后按[统一流程](team-workflow.md)限定合入main、验证、去重，并核实本地/远端和遗漏材料。
-
-每阶段验收后执行[收尾规则](phase-closeout.md)。9/10旧快照和原9/16名下的9/12提前核验不改名、不重算哈希；9/14新验收按真实日期另记。
+旧task-packages/保留冻结交付/失败证据，未批准候选仍在原分支。本次不把所有候选直接合main，也不为重排建立第二份工程。后续新工作包直接Issue/PR，不为每个小实验新增目录。

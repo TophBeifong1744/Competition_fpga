@@ -1,0 +1,27 @@
+{
+  "name": "17-install-update",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "<forward-sandbox>\\package-source\\scripts\\skill_maintenance.py",
+    "install",
+    "--plan",
+    "<forward-sandbox>\\cases\\update-plan.json",
+    "--execute",
+    "--authorization-ref",
+    "authorized sandbox upgrade test"
+  ],
+  "cwd": "<forward-sandbox>",
+  "exit_code": 0,
+  "output": {
+    "schema_version": 1,
+    "status": "OK",
+    "transaction": "<forward-sandbox>\\skills\\.fpga-team-workflow-transactions\\4cd73cc9c3964830b1e70bcbce114276",
+    "version": "0.1.1-forward-test",
+    "files_verified": 42,
+    "files_changed": 3,
+    "client_loaded": "UNKNOWN",
+    "recovery_command": "python scripts/skill_maintenance.py recover --transaction \"<forward-sandbox>\\skills\\.fpga-team-workflow-transactions\\4cd73cc9c3964830b1e70bcbce114276\" --execute --authorization-ref <request-ref>"
+  },
+  "stderr": ""
+}
