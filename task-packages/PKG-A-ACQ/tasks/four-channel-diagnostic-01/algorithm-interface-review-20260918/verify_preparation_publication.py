@@ -10,7 +10,7 @@ REL = 'task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/algorithm-interf
 PIN = 'f08556d01821d6c3c8204fdac2c38f53b2107c05'
 ORIGINAL = BASE / 'evidence/e-dispatch-20260921-run01'
 RERUN = BASE / 'evidence/w-preparation-20260921-run01'
-MANIFEST = RERUN / 'publication-check.json'
+MANIFEST = RERUN / 'publication-check-final.json'
 
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -42,6 +42,9 @@ def main():
                  'verify_preparation_publication.py')]
         paths += sorted(ORIGINAL.glob('*.json'))
         paths += sorted(p for p in RERUN.glob('*.json') if p != MANIFEST)
+        extra = json.loads((BASE / 'E-PREPARATION-SHA256.json').read_bytes())
+        paths += [BASE / name for name in extra if BASE / name not in paths]
+        paths.append(BASE / 'E-PREPARATION-SHA256.json')
         entries = {p.relative_to(BASE).as_posix(): {'sha256': digest(p), 'bytes': p.stat().st_size}
                    for p in paths}
         with MANIFEST.open('x', encoding='utf-8', newline='\n') as stream:

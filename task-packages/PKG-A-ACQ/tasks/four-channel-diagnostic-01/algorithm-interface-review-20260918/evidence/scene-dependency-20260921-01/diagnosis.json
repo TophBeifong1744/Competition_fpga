@@ -1,0 +1,51 @@
+{
+  "head": "704407e19f25a5405ef4d8f0272e977224e69b2c",
+  "argv": [
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/algorithm-interface-review-20260918/audit_scene_dependency_20260921.py",
+    "--out",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/algorithm-interface-review-20260918/evidence/scene-dependency-20260921-01"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "dependencies": [
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/check_entry.py",
+      "expected": "f9572f048ab12f72aeb740e5175ccc2c3457396dfec99360834fc724962c1d59",
+      "actual": "d2f5de34df23a6c1d47ea12078975bab8e72f84189b31c8cb7ab33b7bff1f888",
+      "git": "d2f5de34df23a6c1d47ea12078975bab8e72f84189b31c8cb7ab33b7bff1f888",
+      "lf": "d2f5de34df23a6c1d47ea12078975bab8e72f84189b31c8cb7ab33b7bff1f888",
+      "actual_matches": false,
+      "git_matches": false,
+      "only_crlf_difference": true
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/timerfixed-entry-01/POLICY.json",
+      "expected": "3312bcc4402c64d1ff4770963525d745111191cc70b5ae616a04a535d9efcf50",
+      "actual": "3312bcc4402c64d1ff4770963525d745111191cc70b5ae616a04a535d9efcf50",
+      "git": "3312bcc4402c64d1ff4770963525d745111191cc70b5ae616a04a535d9efcf50",
+      "lf": "3312bcc4402c64d1ff4770963525d745111191cc70b5ae616a04a535d9efcf50",
+      "actual_matches": true,
+      "git_matches": true,
+      "only_crlf_difference": true
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/endurance-test-01/timer_layout.py",
+      "expected": "e70181352037fbda38be79f11ba1e0be5d714bdad679b31e11e0e23bbdd8c439",
+      "actual": "e70181352037fbda38be79f11ba1e0be5d714bdad679b31e11e0e23bbdd8c439",
+      "git": "e70181352037fbda38be79f11ba1e0be5d714bdad679b31e11e0e23bbdd8c439",
+      "lf": "e70181352037fbda38be79f11ba1e0be5d714bdad679b31e11e0e23bbdd8c439",
+      "actual_matches": true,
+      "git_matches": true,
+      "only_crlf_difference": true
+    }
+  ],
+  "artifacts": {
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance\\build\\four_mic_endurance.elf": "4b7823bdefa3776a910a3359b5851fa52c6f4ce89432cc3ee0072dee52ca06a6",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance\\build\\CMakeFiles\\four_mic_endurance.elf.dir\\main.c.obj": "0cb797800bb2f9791d35fa4c81bd995db6696513b0540d959c2e5e2614cabdc2",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance\\_ide\\launch.json": "aa6240d2ba212b4a091ac5f419f8594a1ffddaa7efe7b013e624972b025e6cfc",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance\\_ide\\bitstream\\system_continuous_20260915.bit": "b15991bc0f8595970361be553b542e334dbb7dca268c01864ecd80fcffbbffaf",
+    "F:\\College\\verilog_digital_system\\Vitis\\four_mic_endurance\\_ide\\psinit\\ps7_init.tcl": "a158fcc7d723b21003864159006e781ffaf5e8df24ec9b1d9279f9d14ff3ee5e"
+  },
+  "changes_to_actual_files": false,
+  "load_check": "NOT_PASSED",
+  "board": "NOT_RUN"
+}
