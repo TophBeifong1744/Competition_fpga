@@ -23,6 +23,16 @@ command used byte-identical Luna `originals/` copies while the mapping names
 the `F:/资料/录音/` originals. Their accepted byte hashes bind the records;
 historical paths are not rewritten. Machine relocation is outside this batch.
 
+Every invocation requires `--expected-commit` with the complete B commit SHA
+chosen outside the adapter. Before reading `accepted-inputs.json`, the adapter
+checks that `--repo` is the Git root, HEAD equals that SHA, the executing
+`diagnose.py` is the authoritative file under that root, and its raw bytes and
+the manifest's raw bytes equal their Git blobs at that commit. It repeats the
+HEAD and byte checks before publishing a successful result. The result records
+both observed identities. This runtime drift gate does not establish that the
+chosen commit is reviewed; the main process must independently check its
+commit and source/input identity before a later real run.
+
 `--mapping` is Luna's mapping of both environments, not a directory scan.
 Exactly eight BIN/LOG pairs per environment are required. Each pair must
 bind its canonical `c_{indoor|outdoor}_{scene}_20260922_{run}` identity to one
@@ -53,6 +63,7 @@ From the B checkout, use a **new** `--out` directory:
 ```powershell
 & 'D:/Python/python.exe' -B task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/two-environment-diagnostic-20260924/diagnose.py `
   --repo F:/NUEC/develop `
+  --expected-commit '<reviewed-40-char-B-SHA>' `
   --s1-snapshot-root F:/NUEC/codex_out/i16-entry-b-review-a91000c `
   --s1-evidence-root F:/NUEC/codex_out/i16-two-environment-s1-20260924 `
   --mapping F:/NUEC/develop/codex_out/c-two-environments-receipt-20260924/luna-receipt/mapping.json `
@@ -78,6 +89,7 @@ or Luna mechanical summary is rejected.
 ```powershell
 & 'D:/Python/python.exe' -B task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/two-environment-diagnostic-20260924/diagnose.py `
   --repo F:/NUEC/develop `
+  --expected-commit '<reviewed-40-char-B-SHA>' `
   --s1-snapshot-root F:/NUEC/codex_out/i16-entry-b-review-a91000c `
   --s1-evidence-root F:/NUEC/codex_out/i16-two-environment-s1-20260924 `
   --mapping F:/NUEC/develop/codex_out/c-two-environments-receipt-20260924/luna-receipt/mapping.json `

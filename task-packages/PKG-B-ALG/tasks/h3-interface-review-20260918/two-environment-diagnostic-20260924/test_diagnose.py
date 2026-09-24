@@ -2,11 +2,14 @@
 
 import hashlib
 import importlib.util
+import io
 import json
 import pathlib
+import subprocess
 import tempfile
 import unittest
 import zipfile
+from contextlib import redirect_stderr, redirect_stdout
 
 import numpy as np
 
@@ -159,6 +162,29 @@ CFG = dict(frame_length=1024, hop=512, sample_rate_hz=48000,
            band_bins_inclusive=[7, 72], band_rms_floor_codes=512,
            on_power_ratio=4, off_power_ratio=2, attack_frames=3,
            release_frames=3, minimum_active_channels=3)
+
+
+def version_fixture(base):
+    """Small synthetic Git repository; never edits the real checkout."""
+    repo = base / "version-repo"
+    folder = repo / D.ADAPTER_RELATIVE
+    folder.mkdir(parents=True)
+    script = folder / "diagnose.py"
+    manifest = folder / "accepted-inputs.json"
+    script.write_bytes(b"# SYNTHETIC adapter\n")
+    manifest.write_bytes(b'{"kind":"SYNTHETIC"}\n')
+
+    def git(*args):
+        return subprocess.run(["git", *args], cwd=repo, capture_output=True,
+                              check=True).stdout.decode().strip()
+
+    git("init", "-q")
+    git("config", "user.name", "Synthetic Test")
+    git("config", "user.email", "synthetic@example.invalid")
+    git("add", D.ADAPTER_RELATIVE + "diagnose.py",
+        D.ADAPTER_RELATIVE + "accepted-inputs.json")
+    git("commit", "-qm", "synthetic identity fixture")
+    return repo, script, manifest, git("rev-parse", "HEAD"), git
 
 
 class TwoEnvironmentTest(unittest.TestCase):
@@ -318,10 +344,82 @@ class TwoEnvironmentTest(unittest.TestCase):
         occupied.mkdir()
         with self.assertRaisesRegex(ValueError, "OUTPUT_ALREADY_EXISTS"):
             D.main(["--repo", str(self.base), "--zip", str(self.archives["indoor"]),
+                    "--expected-commit", "0" * 40,
                     "--mapping", str(self.base / "absent.json"),
                     "--environment", "indoor", "--receipt", str(self.base / "absent.json"),
                     "--s1-snapshot-root", str(self.base),
                     "--s1-evidence-root", str(self.base), "--out", str(occupied)])
+
+    def test_exact_commit_and_raw_git_blobs(self):
+        repo, script, manifest, expected, _ = version_fixture(self.base)
+        identity = D.execution_identity(repo, expected, script)
+        self.assertEqual(expected, identity["observed_head"])
+        self.assertEqual(expected, D.execution_identity(repo, expected.upper(), script)
+                         ["expected_commit"])
+        self.assertEqual(sha(script.read_bytes()),
+                         identity["files"]["diagnose.py"]["git_blob_sha256"])
+        self.assertEqual(sha(manifest.read_bytes()),
+                         identity["files"]["accepted-inputs.json"]["actual_sha256"])
+
+    def test_missing_invalid_and_noncommit_expected_are_rejected(self):
+        repo, script, _, expected, git = version_fixture(self.base)
+        errors = io.StringIO()
+        with redirect_stderr(errors), self.assertRaises(SystemExit) as missing:
+            D.main(["--repo", str(repo), "--s1-snapshot-root", str(repo),
+                    "--s1-evidence-root", str(repo), "--mapping", str(repo / "mapping.json"),
+                    "--out", str(repo / "new-output"), "--preflight-only"])
+        self.assertEqual(2, missing.exception.code)
+        self.assertIn("--expected-commit", errors.getvalue())
+        for value in ("", expected[:39], "z" * 40):
+            with self.subTest(value=value), self.assertRaisesRegex(
+                    ValueError, "EXPECTED_COMMIT_MUST_BE_FULL_SHA"):
+                D.execution_identity(repo, value, script)
+        blob = git("rev-parse", "HEAD:" + D.ADAPTER_RELATIVE + "diagnose.py")
+        with self.assertRaisesRegex(ValueError, "EXPECTED_OBJECT_NOT_COMMIT"):
+            D.execution_identity(repo, blob, script)
+
+    def test_later_head_and_uncommitted_bytes_are_rejected(self):
+        repo, script, manifest, expected, git = version_fixture(self.base)
+        for target in (script, manifest):
+            original = target.read_bytes()
+            target.write_bytes(original + b"# SYNTHETIC drift\n")
+            with self.subTest(path=target.name), self.assertRaisesRegex(
+                    ValueError, "EXECUTION_FILE_DRIFT: " + target.name):
+                D.execution_identity(repo, expected, script)
+            target.write_bytes(original)
+        (repo / "later.txt").write_text("SYNTHETIC descendant", encoding="utf-8")
+        git("add", "later.txt")
+        git("commit", "-qm", "synthetic descendant")
+        with self.assertRaisesRegex(ValueError, "EXECUTION_HEAD_MISMATCH"):
+            D.execution_identity(repo, expected, script)
+
+    def test_other_script_path_and_postcheck_drift_are_rejected(self):
+        repo, script, manifest, expected, git = version_fixture(self.base)
+        other = self.base / "other" / "diagnose.py"
+        other.parent.mkdir()
+        other.write_bytes(script.read_bytes())
+        with self.assertRaisesRegex(ValueError, "EXECUTING_SCRIPT_OUTSIDE_AUTHORITY"):
+            D.execution_identity(repo, expected, other)
+        before = D.execution_identity(repo, expected, script)
+        self.assertEqual(expected, before["observed_head"])
+        manifest.write_bytes(manifest.read_bytes() + b" ")
+        with self.assertRaisesRegex(ValueError, "EXECUTION_FILE_DRIFT"):
+            D.execution_identity(repo, expected, script)
+        manifest.write_bytes(b'{"kind":"SYNTHETIC"}\n')
+        (repo / "later.txt").write_text("SYNTHETIC descendant", encoding="utf-8")
+        git("add", "later.txt")
+        git("commit", "-qm", "synthetic descendant")
+        with self.assertRaisesRegex(ValueError, "EXECUTION_HEAD_MISMATCH"):
+            D.execution_identity(repo, expected, script)
+
+    def test_cli_help_states_partial_s1_boundary(self):
+        output = io.StringIO()
+        with redirect_stdout(output), self.assertRaises(SystemExit) as help_exit:
+            D.main(["--help"])
+        self.assertEqual(0, help_exit.exception.code)
+        self.assertIn("--expected-commit", output.getvalue())
+        self.assertIn("partial S1 raw-UART", output.getvalue())
+        self.assertIn("PASS_RAW_UART_ONLY", output.getvalue())
 
     def test_real_locked_tracker_synthetic_hold_is_not_fresh(self):
         tracker_path = (next(p for p in HERE.parents if (p / "AGENTS.md").is_file()) /

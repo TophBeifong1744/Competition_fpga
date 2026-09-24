@@ -1,4 +1,7 @@
-"""Two-environment development diagnostic. Real captures require a full S1 receipt."""
+"""Two-environment diagnostic requiring pinned native partial S1 raw-UART evidence.
+
+PASS_RAW_UART_ONLY does not establish scene provenance or acoustic performance.
+"""
 
 import argparse
 import hashlib
@@ -19,7 +22,11 @@ SCENES = {"bg_pre": ("01",), "bg_post": ("01",),
           "000": ("01", "02"), "m045": ("01", "02"), "p045": ("01", "02")}
 ENVIRONMENTS = ("indoor", "outdoor")
 HASH = re.compile(r"[0-9a-f]{64}\Z")
+COMMIT = re.compile(r"[0-9a-fA-F]{40}\Z")
 DATE = "20260922"
+ADAPTER_RELATIVE = ("task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/"
+                    "two-environment-diagnostic-20260924/")
+EXECUTION_FILES = ("diagnose.py", "accepted-inputs.json")
 STATUS = "CONDITIONAL_DEVELOPMENT_DIAGNOSTIC_NOT_ACCEPTANCE"
 PREFLIGHT_STATUS = "METADATA_PREFLIGHT_ONLY"
 REFERENCE_COMMIT = "21e93570cb054f81c629675bd4f1b99a6249edc6"
@@ -54,6 +61,46 @@ def need(condition, message):
 
 def read_json(path):
     return json.loads(pathlib.Path(path).read_text(encoding="utf-8"))
+
+
+def git_bytes(repo, *arguments):
+    completed = subprocess.run(["git", *arguments], cwd=repo, capture_output=True)
+    need(completed.returncode == 0, "GIT_IDENTITY_COMMAND_FAILED: " +
+         " ".join(arguments) + " (exit {})".format(completed.returncode))
+    return completed.stdout
+
+
+def execution_identity(repo, expected_commit, executing_script):
+    """Bind this process and its input manifest to exact committed raw bytes."""
+    need(isinstance(expected_commit, str) and COMMIT.fullmatch(expected_commit),
+         "EXPECTED_COMMIT_MUST_BE_FULL_SHA")
+    expected_commit = expected_commit.lower()
+    repo = pathlib.Path(repo).resolve()
+    script = pathlib.Path(executing_script).resolve()
+    need(script == (repo / ADAPTER_RELATIVE / "diagnose.py").resolve(),
+         "EXECUTING_SCRIPT_OUTSIDE_AUTHORITY")
+    top = pathlib.Path(git_bytes(repo, "rev-parse", "--show-toplevel").decode().strip()).resolve()
+    need(top == repo, "REPO_IS_NOT_GIT_TOPLEVEL")
+    need(git_bytes(repo, "cat-file", "-t", expected_commit).strip() == b"commit",
+         "EXPECTED_OBJECT_NOT_COMMIT")
+    head = git_bytes(repo, "rev-parse", "--verify", "HEAD^{commit}").decode().strip()
+    need(head == expected_commit, "EXECUTION_HEAD_MISMATCH: observed " + head)
+    files = {}
+    for name in EXECUTION_FILES:
+        relative = ADAPTER_RELATIVE + name
+        entry = git_bytes(repo, "ls-tree", "--full-tree", expected_commit, "--", relative)
+        prefix, separator, listed_path = entry.partition(b"\t")
+        fields = prefix.split()
+        need(separator == b"\t" and listed_path.rstrip(b"\n").decode() == relative and
+             len(fields) == 3 and fields[1] == b"blob", "EXECUTION_BLOB_MISSING: " + name)
+        blob = git_bytes(repo, "cat-file", "blob", fields[2].decode())
+        path = script if name == "diagnose.py" else repo / relative
+        committed_hash = hashlib.sha256(blob).hexdigest()
+        actual_hash = digest(path)
+        need(actual_hash == committed_hash, "EXECUTION_FILE_DRIFT: " + name)
+        files[name] = dict(git_blob_oid=fields[2].decode(),
+                           git_blob_sha256=committed_hash, actual_sha256=actual_hash)
+    return dict(expected_commit=expected_commit, observed_head=head, files=files)
 
 
 def module(name, path):
@@ -461,6 +508,8 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     for name in ("repo", "s1-snapshot-root", "s1-evidence-root", "mapping", "out"):
         parser.add_argument("--" + name, required=True)
+    parser.add_argument("--expected-commit", required=True,
+                        help="exact 40-character reviewed B commit SHA; supplied externally")
     for name in ("zip", "environment", "receipt"):
         parser.add_argument("--" + name)
     parser.add_argument("--preflight-only", action="store_true")
@@ -468,6 +517,7 @@ def main(argv=None):
     root = pathlib.Path(args.repo).resolve()
     output = pathlib.Path(args.out).resolve()
     need(not output.exists(), "OUTPUT_ALREADY_EXISTS")
+    pre_identity = execution_identity(root, args.expected_commit, pathlib.Path(__file__))
     mapping_path = pathlib.Path(args.mapping).resolve()
     context = load_context(root, args.s1_snapshot_root, args.s1_evidence_root, mapping_path)
     command = ([sys.executable, str(pathlib.Path(__file__).resolve())] +
@@ -486,6 +536,8 @@ def main(argv=None):
         need(args.zip is None and args.receipt is None and args.environment is None,
              "PREFLIGHT_HAS_DIAGNOSTIC_ARGUMENTS")
         unchanged(context["input_sha256"])
+        post_identity = execution_identity(root, args.expected_commit, pathlib.Path(__file__))
+        common["execution_identity"] = dict(before=pre_identity, after=post_identity)
         output.mkdir(parents=True, exist_ok=False)
         result = dict(common, status=PREFLIGHT_STATUS, native_s1=context["native"],
                       not_run=["real ZIP/BIN/LOG read", "PCM extraction", "DOA/Tracker",
@@ -528,6 +580,8 @@ def main(argv=None):
         runs, pcm, cfg, act.features, locate, act.BandActivity,
         lambda: trk.Tracker(trk.Config(cone_half_angle_deg=60)))
     unchanged(context["input_sha256"])
+    post_identity = execution_identity(root, args.expected_commit, pathlib.Path(__file__))
+    common["execution_identity"] = dict(before=pre_identity, after=post_identity)
     output.mkdir(parents=True, exist_ok=False)
     result = dict(common, status=STATUS, claim_stage="SIM_SMOKE",
                   environment=environment, native_s1=context["native"][environment],
