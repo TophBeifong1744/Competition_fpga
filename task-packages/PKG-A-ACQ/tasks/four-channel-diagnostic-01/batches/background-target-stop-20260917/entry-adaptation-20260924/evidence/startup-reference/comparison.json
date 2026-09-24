@@ -1,0 +1,74 @@
+{
+  "status": "DIAGNOSTIC_ONLY",
+  "source_sha256": {
+    "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\issue13\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\continuous-prototype-01\\board-run-20260915-02\\runtime\\four_mic_continuous.elf": "ebc576e2bfe87ca45c06fb62359babc36f8d474505a97ff6d121336d2a3c3fa3",
+    "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\issue13\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\background-target-stop-20260917\\delivery-01\\versions\\build\\four_mic_endurance.elf": "4b7823bdefa3776a910a3359b5851fa52c6f4ce89432cc3ee0072dee52ca06a6"
+  },
+  "compared_bytes": 208,
+  "differences": [
+    {
+      "address": "0x100024",
+      "timerfixed_word": "0xeb000975",
+      "s1_word": "0xeb000a69"
+    },
+    {
+      "address": "0x100034",
+      "timerfixed_word": "0xeb00096c",
+      "s1_word": "0xeb000a60"
+    },
+    {
+      "address": "0x100050",
+      "timerfixed_word": "0xeb00096f",
+      "s1_word": "0xeb000a63"
+    },
+    {
+      "address": "0x100074",
+      "timerfixed_word": "0xeb00096b",
+      "s1_word": "0xeb000a5f"
+    },
+    {
+      "address": "0x100094",
+      "timerfixed_word": "0xeb000968",
+      "s1_word": "0xeb000a5c"
+    },
+    {
+      "address": "0x1000b4",
+      "timerfixed_word": "0xeb000965",
+      "s1_word": "0xeb000a59"
+    },
+    {
+      "address": "0x1000c0",
+      "timerfixed_word": "0x10cc88",
+      "s1_word": "0xa3a700"
+    },
+    {
+      "address": "0x1000c4",
+      "timerfixed_word": "0x10cc90",
+      "s1_word": "0xa3a708"
+    },
+    {
+      "address": "0x1000c8",
+      "timerfixed_word": "0x10cc8c",
+      "s1_word": "0xa3a704"
+    }
+  ],
+  "symbols": {
+    "timerfixed": {
+      "XTimer_SetHandler": "0x1028d8",
+      "UndefinedExceptionAddr": "0x10cc88",
+      "Xil_ExceptionRegisterHandler": "0x102678",
+      "XNullHandler": "0x105d28",
+      "Xil_ExceptionRemoveHandler": "0x1026b0",
+      "Xil_GetExceptionRegisterHandler": "0x102690"
+    },
+    "s1_archive": {
+      "XTimer_SetHandler": "0x102ca8",
+      "UndefinedExceptionAddr": "0xa3a700",
+      "Xil_ExceptionRegisterHandler": "0x102a48",
+      "XNullHandler": "0x106768",
+      "Xil_ExceptionRemoveHandler": "0x102a80",
+      "Xil_GetExceptionRegisterHandler": "0x102a60"
+    }
+  },
+  "board_test": "NOT_RUN"
+}

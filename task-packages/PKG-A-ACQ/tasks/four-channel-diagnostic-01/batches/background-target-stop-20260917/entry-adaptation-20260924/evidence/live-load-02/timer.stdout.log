@@ -1,0 +1,40 @@
+
+F:\College\verilog_digital_system\Vitis\four_mic_endurance\build\four_mic_endurance.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00100764 <now_us>:
+  100764:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
+  100768:	e24dd00c 	sub	sp, sp, #12
+  10076c:	e1a0000d 	mov	r0, sp
+  100770:	eb000909 	bl	102b9c <XTime_GetTime>
+  100774:	e89d4004 	ldm	sp, {r2, lr}
+  100778:	e1a0328e 	lsl	r3, lr, #5
+  10077c:	e1a01282 	lsl	r1, r2, #5
+  100780:	e1833da2 	orr	r3, r3, r2, lsr #27
+  100784:	e0511002 	subs	r1, r1, r2
+  100788:	e1a0c481 	lsl	ip, r1, #9
+  10078c:	e0c3300e 	sbc	r3, r3, lr
+  100790:	e1a03483 	lsl	r3, r3, #9
+  100794:	e09cc002 	adds	ip, ip, r2
+  100798:	e1a0030c 	lsl	r0, ip, #6
+  10079c:	e1833ba1 	orr	r3, r3, r1, lsr #23
+  1007a0:	e0ae3003 	adc	r3, lr, r3
+  1007a4:	e050000c 	subs	r0, r0, ip
+  1007a8:	e1a01303 	lsl	r1, r3, #6
+  1007ac:	e1811d2c 	orr	r1, r1, ip, lsr #26
+  1007b0:	e0c11003 	sbc	r1, r1, r3
+  1007b4:	e0900002 	adds	r0, r0, r2
+  1007b8:	e0ae1001 	adc	r1, lr, r1
+  1007bc:	e28f300c 	add	r3, pc, #12
+  1007c0:	e1c320d0 	ldrd	r2, [r3]
+  1007c4:	fa00116a 	blx	104d74 <__aeabi_uldivmod>
+  1007c8:	e28dd00c 	add	sp, sp, #12
+  1007cc:	e49df004 	pop	{pc}		; (ldr pc, [sp], #4)
+  1007d0:	13de435f 	.word	0x13de435f
+  1007d4:	00000000 	.word	0x00000000
+
+Disassembly of section .init:
+
+Disassembly of section .fini:

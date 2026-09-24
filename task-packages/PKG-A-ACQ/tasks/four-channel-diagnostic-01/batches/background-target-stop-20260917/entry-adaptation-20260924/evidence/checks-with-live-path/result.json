@@ -1,0 +1,483 @@
+{
+  "status": "CHECKER_CASES_MATCHED_PENDING_REVIEW",
+  "claim_stage": "PREFLIGHT",
+  "implementation_checkpoint": "7e9352a94f59c442f715997e8d95785913eac301",
+  "implementation_sha256": "9407acdf3cd4e9f14a1779bb0b3d2baf9714c60e413b35f4eb6299cfc71217c1",
+  "test_sha256": "56f3b292cc7bd035a29ecc9537f9c18df922974e976f66ba823c0f33c0a6f472",
+  "cases": [
+    {
+      "id": "dependency_closure_positive",
+      "requirement": "R2",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "ACCEPT",
+      "expected_error": null,
+      "outcome": "MATCHED",
+      "observed": "ACCEPT"
+    },
+    {
+      "id": "command_contract_missing",
+      "requirement": "R2",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "No such file or directory: .*command_contract\\.py",
+      "observed": "FileNotFoundError",
+      "observed_error": "[Errno 2] No such file or directory: 'E:\\\\Users\\\\Toph Beifong\\\\Documents\\\\GitHub\\\\Competition_fpga\\\\codex_out\\\\issue13\\\\codex_out\\\\s1-verification-final-03\\\\dependency-fixture\\\\continuous-prototype-01\\\\timerfixed-entry-01\\\\command_contract.py'",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "command_contract_replaced",
+      "requirement": "R2",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Dependency/input mismatch:",
+      "observed": "ValueError",
+      "observed_error": "Dependency/input mismatch: E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\issue13\\codex_out\\s1-verification-final-03\\dependency-fixture\\continuous-prototype-01\\timerfixed-entry-01\\command_contract.py",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "command_contract_omitted_pin",
+      "requirement": "R2",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Incomplete/unexpected dependency closure",
+      "observed": "ValueError",
+      "observed_error": "Incomplete/unexpected dependency closure",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "startup_reference_missing",
+      "requirement": "R2",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "No such file or directory: .*four_mic_endurance\\.elf",
+      "observed": "FileNotFoundError",
+      "observed_error": "[Errno 2] No such file or directory: 'E:\\\\Users\\\\Toph Beifong\\\\Documents\\\\GitHub\\\\Competition_fpga\\\\codex_out\\\\issue13\\\\codex_out\\\\s1-verification-final-03\\\\dependency-fixture\\\\batches\\\\background-target-stop-20260917\\\\delivery-01\\\\versions\\\\build\\\\four_mic_endurance.elf'",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "startup_reference_replaced",
+      "requirement": "R2",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Dependency/input mismatch:",
+      "observed": "ValueError",
+      "observed_error": "Dependency/input mismatch: E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\issue13\\codex_out\\s1-verification-final-03\\dependency-fixture\\batches\\background-target-stop-20260917\\delivery-01\\versions\\build\\four_mic_endurance.elf",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "startup_reference_omitted_pin",
+      "requirement": "R2",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Incomplete/unexpected dependency closure",
+      "observed": "ValueError",
+      "observed_error": "Incomplete/unexpected dependency closure",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "archived_s1_composed_compiled",
+      "requirement": "R1,R4",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "ACCEPT",
+      "expected_error": null,
+      "outcome": "MATCHED",
+      "observed": "ACCEPT"
+    },
+    {
+      "id": "entry_reserved_rx",
+      "requirement": "R4",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "ELF entry differs from fixed vector start",
+      "observed": "ValueError",
+      "observed_error": "ELF entry differs from fixed vector start",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "entry_thumb_mode",
+      "requirement": "R4",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "ELF entry differs from fixed vector start",
+      "observed": "ValueError",
+      "observed_error": "ELF entry differs from fixed vector start",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "entry_no_file_bytes",
+      "requirement": "R4",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Entry not in exactly one executable file-backed PT_LOAD",
+      "observed": "ValueError",
+      "observed_error": "Entry not in exactly one executable file-backed PT_LOAD",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "entry_not_executable",
+      "requirement": "R4",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Entry not in exactly one executable file-backed PT_LOAD",
+      "observed": "ValueError",
+      "observed_error": "Entry not in exactly one executable file-backed PT_LOAD",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "vector_symbol_changed",
+      "requirement": "R4",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Entry differs from _vector_table",
+      "observed": "ValueError",
+      "observed_error": "Entry differs from _vector_table",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "boot_symbol_changed",
+      "requirement": "R4",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Startup _boot changed",
+      "observed": "ValueError",
+      "observed_error": "Startup _boot changed",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "startup_vector_bytes",
+      "requirement": "R4",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Startup vector/reset bytes changed",
+      "observed": "ValueError",
+      "observed_error": "Startup vector/reset bytes changed",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "startup_reset_bytes",
+      "requirement": "R4",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Startup vector/reset bytes changed",
+      "observed": "ValueError",
+      "observed_error": "Startup vector/reset bytes changed",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "old_timer_divisor",
+      "requirement": "R1",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Wrong actual timer divisor",
+      "observed": "ValueError",
+      "observed_error": "Wrong actual timer divisor",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "old_10s_duration",
+      "requirement": "R1",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Object/ELF continuous contract mismatch",
+      "observed": "ValueError",
+      "observed_error": "Object/ELF continuous contract mismatch",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "wrong_archive_capacity",
+      "requirement": "R1",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Object/ELF S1 archive contract mismatch",
+      "observed": "ValueError",
+      "observed_error": "Object/ELF S1 archive contract mismatch",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "archive_size_changed",
+      "requirement": "R1",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Missing/wrong archive allocation size",
+      "observed": "ValueError",
+      "observed_error": "Missing/wrong archive allocation size",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "program_overlaps_rx",
+      "requirement": "R1",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Program/static archive/heap/stack overlaps RX or leaves program DDR",
+      "observed": "ValueError",
+      "observed_error": "Program/static archive/heap/stack overlaps RX or leaves program DDR",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "object_old_timer_divisor",
+      "requirement": "R1",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Wrong actual timer divisor",
+      "observed": "ValueError",
+      "observed_error": "Wrong actual timer divisor",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "frozen_commands",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "ACCEPT",
+      "expected_error": null,
+      "outcome": "MATCHED",
+      "observed": "ACCEPT"
+    },
+    {
+      "id": "only_auxiliary_swap",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "ACCEPT",
+      "expected_error": null,
+      "outcome": "MATCHED",
+      "observed": "ACCEPT"
+    },
+    {
+      "id": "missing_command",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Generated command count mismatch",
+      "observed": "ValueError",
+      "observed_error": "Generated command count mismatch",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "extra_command",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Generated command count mismatch",
+      "observed": "ValueError",
+      "observed_error": "Generated command count mismatch",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "duplicate_prerequisite",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Generated commands/linker subarguments or gate mismatch",
+      "observed": "ValueError",
+      "observed_error": "Generated commands/linker subarguments or gate mismatch",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "compile_link_reordered",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Generated commands/linker subarguments or gate mismatch",
+      "observed": "ValueError",
+      "observed_error": "Generated commands/linker subarguments or gate mismatch",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "compiler_case",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Compiler options or path differs",
+      "observed": "ValueError",
+      "observed_error": "Compiler options or path differs from the fixed E1 toolchain contract",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "macro_value",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Compiler options or path differs",
+      "observed": "ValueError",
+      "observed_error": "Compiler options or path differs from the fixed E1 toolchain contract",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "compiler_extra",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Compiler options or path differs",
+      "observed": "ValueError",
+      "observed_error": "Compiler options or path differs from the fixed E1 toolchain contract",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "linker_injection_-e",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Generated commands/linker subarguments or gate mismatch",
+      "observed": "ValueError",
+      "observed_error": "Generated commands/linker subarguments or gate mismatch",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "parser_injection_-e",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Expected one absolute -Wl script path, no extra subarguments",
+      "observed": "ValueError",
+      "observed_error": "Expected one absolute -Wl script path, no extra subarguments",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "linker_injection_--defsym",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Generated commands/linker subarguments or gate mismatch",
+      "observed": "ValueError",
+      "observed_error": "Generated commands/linker subarguments or gate mismatch",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "parser_injection_--defsym",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Expected one absolute -Wl script path, no extra subarguments",
+      "observed": "ValueError",
+      "observed_error": "Expected one absolute -Wl script path, no extra subarguments",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "linker_injection_--wrap",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Generated commands/linker subarguments or gate mismatch",
+      "observed": "ValueError",
+      "observed_error": "Generated commands/linker subarguments or gate mismatch",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "parser_injection_--wrap",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Expected one absolute -Wl script path, no extra subarguments",
+      "observed": "ValueError",
+      "observed_error": "Expected one absolute -Wl script path, no extra subarguments",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "linker_injection_-L",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Generated commands/linker subarguments or gate mismatch",
+      "observed": "ValueError",
+      "observed_error": "Generated commands/linker subarguments or gate mismatch",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "parser_injection_-L",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Expected one absolute -Wl script path, no extra subarguments",
+      "observed": "ValueError",
+      "observed_error": "Expected one absolute -Wl script path, no extra subarguments",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "gate_command_modified",
+      "requirement": "R3",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Generated commands/linker subarguments or gate mismatch",
+      "observed": "ValueError",
+      "observed_error": "Generated commands/linker subarguments or gate mismatch",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "archived_launch_paths",
+      "requirement": "R5",
+      "scope": "OFFLINE_PATH_ONLY",
+      "expected": "ACCEPT",
+      "expected_error": null,
+      "outcome": "MATCHED",
+      "observed": "ACCEPT"
+    },
+    {
+      "id": "wrong_elf_launch_path",
+      "requirement": "R5",
+      "scope": "OFFLINE_PATH_ONLY",
+      "expected": "REJECT",
+      "expected_error": "Run points to wrong/old artifact path",
+      "observed": "ValueError",
+      "observed_error": "Run points to wrong/old artifact path",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "wrong_bit_launch_path",
+      "requirement": "R5",
+      "scope": "OFFLINE_PATH_ONLY",
+      "expected": "REJECT",
+      "expected_error": "Run points to wrong/old artifact path",
+      "observed": "ValueError",
+      "observed_error": "Run points to wrong/old artifact path",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "wrong_bit_bytes",
+      "requirement": "R5",
+      "scope": "OFFLINE_IDENTITY_ONLY",
+      "expected": "REJECT",
+      "expected_error": "Dependency/input mismatch:",
+      "observed": "ValueError",
+      "observed_error": "Dependency/input mismatch: E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\issue13\\codex_out\\s1-verification-final-03\\wrong.bit",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "wrong_xsa_bytes",
+      "requirement": "R5",
+      "scope": "OFFLINE_IDENTITY_ONLY",
+      "expected": "REJECT",
+      "expected_error": "Dependency/input mismatch:",
+      "observed": "ValueError",
+      "observed_error": "Dependency/input mismatch: E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\issue13\\codex_out\\s1-verification-final-03\\wrong.xsa",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "input_changed_after_check",
+      "requirement": "R6",
+      "scope": "OFFLINE_BOUNDARY",
+      "expected": "REJECT",
+      "expected_error": "Input changed during preflight:",
+      "observed": "ValueError",
+      "observed_error": "Input changed during preflight: E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\issue13\\codex_out\\s1-verification-final-03\\input-race.bin",
+      "outcome": "MATCHED"
+    },
+    {
+      "id": "wrong_platform_path",
+      "requirement": "R5",
+      "scope": "LIVE_EARLY_REJECTION",
+      "expected": "REJECT",
+      "expected_error": "Wrong app/platform path",
+      "observed": "ValueError",
+      "observed_error": "Wrong app/platform path",
+      "outcome": "MATCHED"
+    }
+  ],
+  "total": 47,
+  "matched": 47,
+  "failures": 0,
+  "live_full_load": "REUSED_NOT_RERUN",
+  "board_test": "NOT_RUN",
+  "build": "NOT_RUN",
+  "rtl_simulation": "NOT_RUN",
+  "independent_signoff": "PENDING_B_REVIEW",
+  "seed": null
+}
