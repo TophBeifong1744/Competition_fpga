@@ -1,14 +1,27 @@
 # #16 two-environment development diagnostic adapter
 
-This is a diagnostic/test asset. Reference behavior is commit
-`21e93570cb054f81c629675bd4f1b99a6249edc6`; the direct algorithm and
-configuration files plus their local import closure are pinned by SHA-256 in
-`diagnose.py`. It does
-not change production defaults or implement chirp alignment, formal angle
-scoring, audio gain, or SNR scoring. A successful run is
-`CONDITIONAL_DEVELOPMENT_DIAGNOSTIC_NOT_ACCEPTANCE` (`DIAGNOSTIC_SMOKE`).
+This diagnostic/test asset follows algorithm behavior at
+`21e93570cb054f81c629675bd4f1b99a6249edc6`. Its ten local algorithm and
+configuration dependencies are pinned by SHA-256. Repair parent:
+`ddd44f8d190a76352bb79630e3fd761270d0828e`. It changes no production
+default, threshold or interface. A later real output, if authorized, is
+`CONDITIONAL_DEVELOPMENT_DIAGNOSTIC_NOT_ACCEPTANCE`.
 
-## Inputs and gates
+## Three distinct read-only roots
+
+- `--repo F:/NUEC/develop`: B algorithm/configuration and Luna mapping.
+- `--s1-snapshot-root F:/NUEC/codex_out/i16-entry-b-review-a91000c`: A's
+  snapshot at `a91000c5e99ceb279a7178885f8fdbd7ffe0da08`, with
+  `snapshot-manifest.json` and source tree under `snapshot/`.
+- `--s1-evidence-root F:/NUEC/codex_out/i16-two-environment-s1-20260924`:
+  native S1 result, command and identity records.
+
+`accepted-inputs.json` freezes these paths and published hashes for this
+host and batch. Children are resolved within their separate owner roots.
+Historical command paths are checked, retained and never executed. The S1
+command used byte-identical Luna `originals/` copies while the mapping names
+the `F:/资料/录音/` originals. Their accepted byte hashes bind the records;
+historical paths are not rewritten. Machine relocation is outside this batch.
 
 `--mapping` is Luna's mapping of both environments, not a directory scan.
 Exactly eight BIN/LOG pairs per environment are required. Each pair must
@@ -25,42 +38,59 @@ The fixed input metadata reviewed for this batch is:
 | `luna-receipt/summary.json` | `e046966df4d1ab07a15a5170c08b1f55e4b122d98c7e710cb506c351e88557ef` |
 | `luna-receipt/runs/index.json` | `61ef3998c4a01f9dd457e089de5ab8a750fe33386981a16f4ec32cfb115a51b7` |
 
-The Luna summary is a **mechanical receipt** with `complete_s1_status =
-BLOCKED_I16_ENTRY_01`; it cannot be passed as `--receipt`. Before a real run,
-A's I16-ENTRY-01 repair must pass independent review and a complete S1
-verification must produce a per-environment receipt. The bridge that creates
-that receipt remains an explicit integration dependency. A receipt must be a
-JSON object with:
+The two existing native S1 results each report 8/8 `PASS_RAW_UART_ONLY`
+captures, 288250 groups and zero flagged rows. Their top statuses remain
+`PARTIAL_RECEIPT_PENDING_POSITION_AND_PROVENANCE`; original `missing` and
+`not_tested` lists are carried into preflight and later diagnostic outputs.
+This supports raw UART integrity only. Position, configuration, playback byte
+identity and acoustic performance remain unverified. The A entry snapshot is
+consumed read-only, with no copy in the B checkout.
 
-- `kind: FULL_S1_CAPTURE_VERIFICATION`, `status: PASS_FULL_S1`,
-  `environment`, `mapping_sha256`, and `source_zip_sha256`;
-- `entry_commit` (40 hex), `entry_path` (repo-relative),
-  `entry_source_sha256`, `evidence_path` (repo-relative),
-  `evidence_sha256`, and the real `command` array;
-- eight `captures` with unique `canonical_stem`, `status: PASS_FULL_S1`,
-  `raw_sha256`, and `log_sha256` matching the mapping exactly.
+## Metadata preflight — run in this repair
 
-The adapter verifies referenced files and hashes. These checks bind records;
-they do not confer human approval or prove that an arbitrary receipt was
-produced by an approved entry. The entry reviewer and #16 reviewer must check
-that provenance separately. The existing `finish_scene.py` import failure is
-not bypassed by the adapter.
-
-## Proposed real invocation — NOT_RUN
-
-After the full S1 gate is met, invoke separately for `indoor` and `outdoor`
-with the corresponding original ZIP and a new output path:
+From the B checkout, use a **new** `--out` directory:
 
 ```powershell
 & 'D:/Python/python.exe' -B task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/two-environment-diagnostic-20260924/diagnose.py `
-  --repo F:/NUEC/develop --zip '<matching-original.zip>' `
-  --mapping '<luna-receipt/mapping.json>' --environment indoor `
-  --receipt '<complete-S1-indoor-receipt.json>' --out '<new-diagnostic-output>'
+  --repo F:/NUEC/develop `
+  --s1-snapshot-root F:/NUEC/codex_out/i16-entry-b-review-a91000c `
+  --s1-evidence-root F:/NUEC/codex_out/i16-two-environment-s1-20260924 `
+  --mapping F:/NUEC/develop/codex_out/c-two-environments-receipt-20260924/luna-receipt/mapping.json `
+  --out '<new-preflight-output-directory>' `
+  --preflight-only
+```
+
+This reads JSON, source text and pinned algorithm files. It verifies the
+snapshot manifest but deliberately skips its old recording ZIP. It does not
+open received ZIP/BIN/LOG, extract PCM, call the acoustic algorithm, or rerun
+S1. The result is `METADATA_PREFLIGHT_ONLY`, not ZIP re-verification. Native
+command/log evidence is under
+`codex_out/i16-two-environment-adapter-20260924/repair01/`.
+
+## Later real development run — NOT_RUN
+
+The following is an interface example for `indoor`; use the corresponding
+original ZIP, native result and fresh output directory for `outdoor`.
+`--receipt` must be the **existing native**
+`indoor-run/verifier-output/result.json`. An invented `PASS_FULL_S1` object
+or Luna mechanical summary is rejected.
+
+```powershell
+& 'D:/Python/python.exe' -B task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/two-environment-diagnostic-20260924/diagnose.py `
+  --repo F:/NUEC/develop `
+  --s1-snapshot-root F:/NUEC/codex_out/i16-entry-b-review-a91000c `
+  --s1-evidence-root F:/NUEC/codex_out/i16-two-environment-s1-20260924 `
+  --mapping F:/NUEC/develop/codex_out/c-two-environments-receipt-20260924/luna-receipt/mapping.json `
+  --environment indoor --zip 'F:/资料/录音/sound_09_22(1).zip' `
+  --receipt F:/NUEC/codex_out/i16-two-environment-s1-20260924/indoor-run/verifier-output/result.json `
+  --out '<new-development-output>'
 ```
 
 `--out` must not exist. It receives `result.json` and full `frames.json`, with
-the actual command, working directory, Python/NumPy versions, source and
-dependency hashes, ZIP/member/receipt identities, and candidate assumptions.
+the actual command, three roots, Python/NumPy versions, source and dependency
+hashes, original ZIP/member/native result identities, and candidate assumptions.
+After metadata binding a later run verifies the original ZIP and each selected
+member by hash.
 For each environment only its `bg_pre` supplies the 95th percentile background
 power; no `old_background` mode is run. Every complete 1024-sample window is
 processed at 512-sample hops from the start of each separate Run. Each Run
@@ -85,7 +115,15 @@ credible array-position component references no objective SNR is reported.
   -p 'test_*.py' -v
 ```
 
-The test makes tiny ZIPs and PCM in a temporary directory. It does not open
-either received recording. This check is a diagnostic smoke of mapping,
-reference isolation, frame/state handling and failure gates; it is not an FPGA
-functional or acoustic acceptance test.
+The tests make tiny ZIPs and PCM in a temporary directory. Synthetic
+native-format negative cases run after a separate synthetic identity gate;
+the fixed real-evidence hash gate is tested independently. A bounded trace
+uses the locked real Tracker with controlled synthetic directions to check
+HOLD counting. No received PCM is opened. This is a diagnostic smoke, not an
+FPGA functional or acoustic acceptance test. The adapter has been tested on
+Python 3.13.0 / NumPy 2.2.0. Native S1's Python 3.7.0 / NumPy 1.21.6
+record does not prove adapter compatibility.
+
+The earlier author description of a first test failure has no retained
+original failure log and is `AUTHOR_REPORTED / UNVERIFIED`. Preserved `run01`
+command/log shows 8/8 success; it is not rewritten as failure proof.

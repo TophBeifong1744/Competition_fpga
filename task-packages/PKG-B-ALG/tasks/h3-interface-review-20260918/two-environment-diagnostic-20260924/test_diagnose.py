@@ -65,17 +65,58 @@ def fixture(base):
     return {"files": rows}, archives, pcm
 
 
-def receipt(environment, mapping_sha, zip_sha, runs):
-    return dict(kind="FULL_S1_CAPTURE_VERIFICATION", status="PASS_FULL_S1",
-                environment=environment, mapping_sha256=mapping_sha,
-                source_zip_sha256=zip_sha, entry_commit="a" * 40,
-                entry_path="synthetic/entry.py", entry_source_sha256="b" * 64,
-                evidence_path="synthetic/result.json", evidence_sha256="d" * 64,
-                command=["synthetic", "full-s1"], captures=[
-                    dict(canonical_stem=r["stem"], status="PASS_FULL_S1",
-                         raw_sha256=r["bin"]["source_member_sha256"],
-                         log_sha256=r["log"]["source_member_sha256"])
-                    for r in runs])
+def synthetic_native(base, environment, runs, archive):
+    """Independent synthetic native-format record; no received result is copied."""
+    repo, snapshot, evidence = (base / n for n in ("repo", "snapshot", "evidence"))
+    for root in (repo, snapshot, evidence):
+        root.mkdir()
+    source = "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/c-recording-receipt-20260922/verify_zip.py"
+    finish = "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/background-target-stop-20260917/finish_scene.py"
+    export = "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/export_four.py"
+    manifest = {"files": {source: {"sha256": "a" * 64}, finish: {"sha256": "b" * 64},
+                          export: {"sha256": "c" * 64}}}
+    accepted = dict(verify_zip_sha256="a" * 64, finish_scene_sha256="b" * 64,
+                    native_result_sha256={environment: "d" * 64},
+                    native_command_sha256={environment: "e" * 64},
+                    zip={environment: dict(sha256=D.digest(archive), bytes=archive.stat().st_size,
+                                           receipt_copy_relative_path="copies/" + environment + ".zip")})
+    result = dict(status="PARTIAL_RECEIPT_PENDING_POSITION_AND_PROVENANCE", passed=8,
+                  all_raw_unique=True, zip_sha256=D.digest(archive),
+                  zip_bytes=archive.stat().st_size, zip_name=environment + ".zip",
+                  source_sha256="a" * 64,
+                  dependencies={finish: "b" * 64, export: "c" * 64},
+                  python="3.7.0", numpy="1.21.6",
+                  missing=["missing"] * 6, not_tested=["not tested"] * 5,
+                  input_sha256={r[k]["source_member_path"]: r[k]["source_member_sha256"]
+                                for r in runs for k in ("bin", "log")},
+                  inventory=[dict(path=r[k]["source_member_path"],
+                                  bytes=r[k]["source_bytes"], crc32="1234ABCD")
+                             for r in runs for k in ("bin", "log")],
+                  captures=[dict(name=r["bin"]["source_stem"],
+                                 raw_sha256=r["bin"]["source_member_sha256"],
+                                 log_sha256=r["log"]["source_member_sha256"],
+                                 status="PASS_RAW_UART_ONLY", checked=dict(groups=288250,
+                                                                            flagged_rows=0,
+                                                                            bytes=r["bin"]["source_bytes"]))
+                            for r in runs])
+    snap_tree = snapshot / "snapshot"
+    run_root = evidence / (environment + "-run")
+    run_root.mkdir()
+    (run_root / "stdout.log").write_text("SYNTHETIC\n", encoding="utf-8")
+    (run_root / "stderr.log").write_text("", encoding="utf-8")
+    command = dict(argv=["synthetic-python", "-B", str(snap_tree / source),
+                         "--repo", str(snap_tree), "--zip",
+                         str(repo / accepted["zip"][environment]["receipt_copy_relative_path"]),
+                         "--out", str(run_root / "verifier-output")],
+                   cwd=str(snap_tree), environment=environment, returncode=0,
+                   spawn_error=None, python_executable="synthetic-python",
+                   python_version="3.7.0", numpy_version="1.21.6",
+                   result_path=str(run_root / "verifier-output/result.json"),
+                   stdout_path=str(run_root / "stdout.log"),
+                   stderr_path=str(run_root / "stderr.log"),
+                   started_utc="synthetic-start", finished_utc="synthetic-end",
+                   elapsed_seconds=1.0)
+    return result, command, manifest, accepted, repo, snapshot, evidence
 
 
 class Gate:
@@ -211,22 +252,61 @@ class TwoEnvironmentTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "MAPPING_NEEDS_32_FILES"):
             D.mapping_for_environment(altered, "indoor", self.archives["indoor"])
 
-    def test_receipt_must_be_full_s1_and_match_all_hashes(self):
-        runs, zip_sha = self.selected("indoor")
-        good = receipt("indoor", "c" * 64, zip_sha, runs)
-        D.check_receipt(good, "indoor", "c" * 64, zip_sha, runs)
-        for field, value in (("kind", "LUNA_MECHANICAL_RECEIPT"),
-                             ("environment", "outdoor"),
-                             ("mapping_sha256", "0" * 64),
-                             ("source_zip_sha256", "0" * 64)):
-            bad = json.loads(json.dumps(good))
-            bad[field] = value
-            with self.subTest(field=field), self.assertRaises(ValueError):
-                D.check_receipt(bad, "indoor", "c" * 64, zip_sha, runs)
-        bad = json.loads(json.dumps(good))
-        bad["captures"][0]["raw_sha256"] = "0" * 64
-        with self.assertRaisesRegex(ValueError, "RECEIPT_MEMBER_HASH_MISMATCH"):
-            D.check_receipt(bad, "indoor", "c" * 64, zip_sha, runs)
+    def test_partial_native_result_and_finished_command_bind_by_source_name(self):
+        runs, _ = self.selected("indoor")
+        result, command, manifest, accepted, repo, snapshot, evidence = synthetic_native(
+            self.base, "indoor", runs, self.archives["indoor"])
+        result["captures"].reverse()  # order is not a binding key
+        checked = D.check_native_semantics(result, command, runs, "indoor", snapshot,
+                                           evidence, repo, accepted, manifest)
+        self.assertEqual("PARTIAL_RECEIPT_PENDING_POSITION_AND_PROVENANCE",
+                         checked["top_status"])
+        self.assertEqual({"PASS_RAW_UART_ONLY"}, set(checked["capture_statuses"].values()))
+        self.assertEqual(6, len(checked["missing"]))
+        self.assertEqual(5, len(checked["not_tested"]))
+
+    def test_native_semantic_negative_cases_after_synthetic_identity_gate(self):
+        runs, _ = self.selected("indoor")
+        result, command, manifest, accepted, repo, snapshot, evidence = synthetic_native(
+            self.base, "indoor", runs, self.archives["indoor"])
+        cases = [
+            ("top status", "result", "status", "PASS_FULL_S1"),
+            ("missing run", "result", "captures", result["captures"][:-1]),
+            ("wrong member", "result", "input_sha256", {}),
+            ("wrong source", "result", "source_sha256", "0" * 64),
+            ("wrong environment", "command", "environment", "outdoor"),
+            ("failed command", "command", "returncode", 1),
+        ]
+        for label, which, key, value in cases:
+            changed_result = json.loads(json.dumps(result))
+            changed_command = json.loads(json.dumps(command))
+            (changed_result if which == "result" else changed_command)[key] = value
+            with self.subTest(label=label), self.assertRaises(ValueError):
+                D.check_native_semantics(changed_result, changed_command, runs, "indoor",
+                                         snapshot, evidence, repo, accepted, manifest)
+        wrong_command = json.loads(json.dumps(command))
+        wrong_command["argv"][8] = str(repo / "outside-output")
+        with self.assertRaises(ValueError):
+            D.check_native_semantics(result, wrong_command, runs, "indoor", snapshot,
+                                     evidence, repo, accepted, manifest)
+        wrong_command = json.loads(json.dumps(command))
+        wrong_command["argv"][6] = str(self.archives["outdoor"])
+        with self.assertRaises(ValueError):
+            D.check_native_semantics(result, wrong_command, runs, "indoor", snapshot,
+                                     evidence, repo, accepted, manifest)
+
+    def test_fixed_hash_and_cross_root_rejections_are_separate_from_semantics(self):
+        root = self.base / "root"
+        root.mkdir()
+        path = root / "metadata.json"
+        path.write_text("synthetic", encoding="utf-8")
+        observed = {}
+        self.assertEqual(path.resolve(), D.locked_file(root, "metadata.json", D.digest(path),
+                                                       "SYNTHETIC", observed))
+        with self.assertRaisesRegex(ValueError, "SYNTHETIC_HASH_MISMATCH"):
+            D.locked_file(root, "metadata.json", "0" * 64, "SYNTHETIC", observed)
+        with self.assertRaisesRegex(ValueError, "SYNTHETIC_OUTSIDE_ROOT"):
+            D.child(root, "../out-of-root.json", "SYNTHETIC")
 
     def test_zip_member_hash_and_existing_output_rejected(self):
         runs, zip_sha = self.selected("indoor")
@@ -240,31 +320,33 @@ class TwoEnvironmentTest(unittest.TestCase):
             D.main(["--repo", str(self.base), "--zip", str(self.archives["indoor"]),
                     "--mapping", str(self.base / "absent.json"),
                     "--environment", "indoor", "--receipt", str(self.base / "absent.json"),
-                    "--out", str(occupied)])
+                    "--s1-snapshot-root", str(self.base),
+                    "--s1-evidence-root", str(self.base), "--out", str(occupied)])
 
-    def test_synthetic_end_to_end_with_pinned_algorithm_dependencies(self):
-        repo = next(p for p in HERE.parents if (p / "AGENTS.md").is_file())
-        runs, zip_sha = self.selected("indoor")
-        mapping_path = self.base / "mapping.json"
-        mapping_path.write_text(json.dumps(self.mapping), encoding="utf-8")
-        gate = receipt("indoor", D.digest(mapping_path), zip_sha, runs)
-        gate["entry_path"] = (HERE / "test_diagnose.py").relative_to(repo).as_posix()
-        gate["evidence_path"] = gate["entry_path"]
-        gate["entry_source_sha256"] = D.digest(HERE / "test_diagnose.py")
-        gate["evidence_sha256"] = gate["entry_source_sha256"]
-        receipt_path = self.base / "full-s1-synthetic.json"
-        receipt_path.write_text(json.dumps(gate), encoding="utf-8")
-        output = self.base / "diagnostic"
-        D.main(["--repo", str(repo), "--zip", str(self.archives["indoor"]),
-                "--mapping", str(mapping_path), "--environment", "indoor",
-                "--receipt", str(receipt_path), "--out", str(output)])
-        result = D.read_json(output / "result.json")
-        frames = D.read_json(output / "frames.json")
-        self.assertEqual(D.STATUS, result["status"])
-        self.assertEqual(8, len(result["captures"]))
-        self.assertEqual(16, len(frames))
-        self.assertEqual(0, sum(r["modes"]["env_pre_background"]["fresh"]
-                                for r in result["captures"]))
+    def test_real_locked_tracker_synthetic_hold_is_not_fresh(self):
+        tracker_path = (next(p for p in HERE.parents if (p / "AGENTS.md").is_file()) /
+                        "task-packages/PKG-B-ALG/payload/model/python/sector_tracker.py")
+        tracker = D.module("locked_real_tracker_synthetic", tracker_path)
+        self.assertEqual("2297aa7f94058e3e4faf3da792c6f1beef6c68fa72121100ec672d60ade5ec50",
+                         D.digest(tracker_path))
+        stem = "synthetic_indoor_bg_pre"
+        run = dict(stem=stem, scene="bg_pre", bin={"environment": "indoor"})
+        pcm = {stem: np.ones((4096, 4), dtype=np.int32)}  # seven complete windows
+        angles = iter([0, 0, 0, 0, 0, 45, 45])
+
+        def controlled_locate(_):
+            return dict(advisory_consistent=True,
+                        advisory_azimuth_deg=next(angles)), ["VALID"] * 6, [0] * 6
+
+        _, frames, summary = D.analyze([run], pcm, CFG, features, controlled_locate,
+                                       Gate, lambda: tracker.Tracker(
+                                           tracker.Config(cone_half_angle_deg=60)))
+        self.assertEqual(7, len(frames))
+        self.assertEqual(["ACQUIRE", "ACQUIRE", "ACQUIRE", "ACQUIRE", "LOCKED", "HOLD", "HOLD"],
+                         [f["trackers"]["env_pre_background"]["state"] for f in frames])
+        self.assertEqual({"fresh": 1, "hold": 2, "rejected": 6},
+                         {k: summary[0]["modes"]["env_pre_background"][k]
+                          for k in ("fresh", "hold", "rejected")})
 
 
 if __name__ == "__main__":

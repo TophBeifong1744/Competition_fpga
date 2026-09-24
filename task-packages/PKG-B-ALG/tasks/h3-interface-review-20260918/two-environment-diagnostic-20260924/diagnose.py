@@ -8,6 +8,7 @@ import math
 import pathlib
 import platform
 import re
+import subprocess
 import sys
 import zipfile
 
@@ -18,9 +19,9 @@ SCENES = {"bg_pre": ("01",), "bg_post": ("01",),
           "000": ("01", "02"), "m045": ("01", "02"), "p045": ("01", "02")}
 ENVIRONMENTS = ("indoor", "outdoor")
 HASH = re.compile(r"[0-9a-f]{64}\Z")
-COMMIT = re.compile(r"[0-9a-f]{40}\Z")
 DATE = "20260922"
 STATUS = "CONDITIONAL_DEVELOPMENT_DIAGNOSTIC_NOT_ACCEPTANCE"
+PREFLIGHT_STATUS = "METADATA_PREFLIGHT_ONLY"
 REFERENCE_COMMIT = "21e93570cb054f81c629675bd4f1b99a6249edc6"
 PINNED_DEPENDENCIES = (
     "dd1f8a1375cd50187ba012235226c53548d75f95fbe6cf5e4483af9d47e9a163",
@@ -68,7 +69,7 @@ def canonical(environment, scene, run):
     return "c_{}_{}_{}_{}".format(environment, scene, DATE, run)
 
 
-def mapping_for_environment(mapping, environment, zip_path):
+def mapping_for_environment(mapping, environment, zip_path=None):
     """Validate the complete mapping before selecting either environment."""
     need(environment in ENVIRONMENTS, "UNKNOWN_ENVIRONMENT")
     files = mapping.get("files")
@@ -126,8 +127,9 @@ def mapping_for_environment(mapping, environment, zip_path):
          "INCOMPLETE_SCENE_MAPPING")
     need(zip_identity["indoor"] != zip_identity["outdoor"], "ENVIRONMENTS_SHARE_ZIP")
     selected_path, selected_sha = zip_identity[environment]
-    need(pathlib.Path(selected_path).resolve() == pathlib.Path(zip_path).resolve(),
-         "ZIP_PATH_MISMATCH")
+    if zip_path is not None:
+        need(pathlib.Path(selected_path).resolve() == pathlib.Path(zip_path).resolve(),
+             "ZIP_PATH_MISMATCH")
     runs = []
     for scene, run_tags in SCENES.items():
         for run in run_tags:
@@ -139,34 +141,234 @@ def mapping_for_environment(mapping, environment, zip_path):
     return runs, selected_sha
 
 
-def check_receipt(receipt, environment, mapping_sha, zip_sha, runs):
-    """Require full S1 evidence identity; a Luna mechanical receipt cannot pass."""
-    need(receipt.get("kind") == "FULL_S1_CAPTURE_VERIFICATION" and
-         receipt.get("status") == "PASS_FULL_S1" and
-         receipt.get("environment") == environment and
-         receipt.get("mapping_sha256") == mapping_sha and
-         receipt.get("source_zip_sha256") == zip_sha, "FULL_S1_RECEIPT_REQUIRED")
-    for field in ("entry_commit", "entry_path", "entry_source_sha256",
-                  "evidence_path", "evidence_sha256", "command"):
-        need(bool(receipt.get(field)), "RECEIPT_FIELD_MISSING: " + field)
-    need(COMMIT.fullmatch(receipt["entry_commit"]) and
-         HASH.fullmatch(receipt["entry_source_sha256"]) and
-         HASH.fullmatch(receipt["evidence_sha256"]) and
-         isinstance(receipt["command"], list), "RECEIPT_ENTRY_IDENTITY_INVALID")
-    rows = receipt.get("captures")
-    need(isinstance(rows, list) and len(rows) == 8, "RECEIPT_RUN_COUNT_MISMATCH")
-    by_stem = {}
-    for row in rows:
-        stem = row.get("canonical_stem")
-        need(stem not in by_stem and row.get("status") == "PASS_FULL_S1",
-             "RECEIPT_RUN_NOT_VERIFIED")
-        by_stem[stem] = row
-    need(set(by_stem) == {r["stem"] for r in runs}, "RECEIPT_RUN_SET_MISMATCH")
-    for run in runs:
-        row = by_stem[run["stem"]]
-        need(row.get("raw_sha256") == run["bin"]["source_member_sha256"] and
-             row.get("log_sha256") == run["log"]["source_member_sha256"],
-             "RECEIPT_MEMBER_HASH_MISMATCH")
+def inside(root, path, label):
+    """Resolve paths without following a link out of its separately owned root."""
+    root = pathlib.Path(root).resolve()
+    result = pathlib.Path(path).resolve()
+    need(result == root or result.is_relative_to(root), label + "_OUTSIDE_ROOT")
+    return result
+
+
+def child(root, relative, label):
+    need(isinstance(relative, str) and not pathlib.Path(relative).is_absolute(),
+         label + "_NOT_RELATIVE")
+    return inside(root, pathlib.Path(root) / relative, label)
+
+
+def locked_file(root, relative, expected, label, observed):
+    path = child(root, relative, label)
+    need(path.is_file() and digest(path) == expected, label + "_HASH_MISMATCH")
+    observed[str(path)] = expected
+    return path
+
+
+def equal_path(left, right, label):
+    need(pathlib.Path(left).resolve() == pathlib.Path(right).resolve(), label + "_PATH_MISMATCH")
+
+
+def check_native_semantics(result, command, runs, environment, snapshot, evidence,
+                           repo, accepted, manifest):
+    """Check the existing partial raw-UART result and its finished CLI record."""
+    zip_id = accepted["zip"][environment]
+    by_source = {r["bin"]["source_stem"]: r for r in runs}
+    need(len(by_source) == 8, "NATIVE_SOURCE_NAMES_AMBIGUOUS")
+    need(result.get("status") == "PARTIAL_RECEIPT_PENDING_POSITION_AND_PROVENANCE" and
+         result.get("passed") == 8 and result.get("all_raw_unique") is True and
+         result.get("zip_sha256") == zip_id["sha256"] and
+         result.get("zip_bytes") == zip_id["bytes"], "NATIVE_TOP_STATUS_OR_ZIP_MISMATCH")
+    source_rel = "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/c-recording-receipt-20260922/verify_zip.py"
+    dep_rel = (
+        "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/background-target-stop-20260917/finish_scene.py",
+        "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/export_four.py",
+    )
+    manifest_files = manifest["files"]
+    need(result.get("source_sha256") == accepted["verify_zip_sha256"] ==
+         manifest_files[source_rel]["sha256"] and
+         result.get("dependencies") == {p: manifest_files[p]["sha256"] for p in dep_rel} and
+         manifest_files[dep_rel[0]]["sha256"] == accepted["finish_scene_sha256"],
+         "NATIVE_SOURCE_OR_DEPENDENCY_MISMATCH")
+    missing, not_tested = result.get("missing"), result.get("not_tested")
+    need(isinstance(missing, list) and len(missing) == 6 and all(isinstance(x, str) for x in missing)
+         and isinstance(not_tested, list) and len(not_tested) == 5 and
+         all(isinstance(x, str) for x in not_tested), "NATIVE_LIMITS_MISSING")
+    expected_members = {r[k]["source_member_path"]: r[k] for r in runs for k in ("bin", "log")}
+    need(result.get("input_sha256") == {p: row["source_member_sha256"]
+                                            for p, row in expected_members.items()},
+         "NATIVE_INPUT_HASH_MISMATCH")
+    inventory = result.get("inventory")
+    need(isinstance(inventory, list) and len(inventory) == 16 and
+         {i.get("path") for i in inventory} == set(expected_members),
+         "NATIVE_INVENTORY_MISMATCH")
+    for item in inventory:
+        need(item.get("bytes") == expected_members[item["path"]]["source_bytes"] and
+             isinstance(item.get("crc32"), str) and
+             re.fullmatch(r"[0-9A-F]{8}", item["crc32"]), "NATIVE_INVENTORY_SIZE_OR_CRC")
+    captures = result.get("captures")
+    need(isinstance(captures, list) and len(captures) == 8, "NATIVE_CAPTURE_COUNT_MISMATCH")
+    seen = set()
+    for row in captures:
+        name = row.get("name")
+        need(name in by_source and name not in seen, "NATIVE_CAPTURE_NAME_MISMATCH")
+        seen.add(name)
+        mapped = by_source[name]
+        checked = row.get("checked")
+        need(row.get("status") == "PASS_RAW_UART_ONLY" and not row.get("error") and
+             isinstance(checked, dict) and checked.get("groups") == 288250 and
+             checked.get("flagged_rows") == 0 and
+             checked.get("bytes") == mapped["bin"]["source_bytes"] and
+             row.get("raw_sha256") == mapped["bin"]["source_member_sha256"] and
+             row.get("log_sha256") == mapped["log"]["source_member_sha256"],
+             "NATIVE_CAPTURE_STATUS_OR_IDENTITY_MISMATCH")
+    argv = command.get("argv")
+    need(command.get("environment") == environment and command.get("returncode") == 0 and
+         command.get("spawn_error") is None and isinstance(argv, list) and len(argv) == 9 and
+         argv[1:2] == ["-B"] and argv[3::2] == ["--repo", "--zip", "--out"] and
+         command.get("python_executable") == argv[0] and
+         command.get("python_version") == result.get("python") and
+         command.get("numpy_version") == result.get("numpy"), "NATIVE_COMMAND_NOT_COMPLETED")
+    source_path = child(snapshot, "snapshot/" + source_rel, "NATIVE_SCRIPT")
+    equal_path(argv[2], source_path, "NATIVE_SCRIPT")
+    snap_tree = child(snapshot, "snapshot", "S1_SNAPSHOT")
+    equal_path(argv[4], snap_tree, "NATIVE_REPO")
+    equal_path(command.get("cwd"), snap_tree, "NATIVE_CWD")
+    copy_path = child(repo, zip_id["receipt_copy_relative_path"], "NATIVE_ZIP_COPY")
+    equal_path(argv[6], copy_path, "NATIVE_ZIP_COPY")
+    need(result.get("zip_name") == copy_path.name, "NATIVE_ZIP_NAME_MISMATCH")
+    run_root = child(evidence, environment + "-run", "NATIVE_RUN")
+    output = child(run_root, "verifier-output", "NATIVE_OUTPUT")
+    equal_path(argv[8], output, "NATIVE_OUTPUT")
+    equal_path(command.get("result_path"), child(output, "result.json", "NATIVE_RESULT"),
+               "NATIVE_RESULT")
+    for stream in ("stdout", "stderr"):
+        log_path = child(run_root, stream + ".log", "NATIVE_LOG")
+        equal_path(command.get(stream + "_path"), log_path, "NATIVE_LOG")
+        need(log_path.is_file(), "NATIVE_LOG_MISSING")
+    need(command.get("started_utc") and command.get("finished_utc") and
+         isinstance(command.get("elapsed_seconds"), (int, float)) and
+         command["elapsed_seconds"] >= 0, "NATIVE_COMMAND_TIME_MISSING")
+    return dict(environment=environment, top_status=result["status"], passed=result["passed"],
+                capture_statuses={r["name"]: r["status"] for r in captures},
+                missing=missing, not_tested=not_tested, native_command=command,
+                native_result_sha256=accepted["native_result_sha256"][environment],
+                native_command_sha256=accepted["native_command_sha256"][environment],
+                source_sha256=result["source_sha256"], dependencies=result["dependencies"],
+                zip_sha256=result["zip_sha256"], zip_bytes=result["zip_bytes"])
+
+
+def algorithm_hashes(root, observed):
+    package = root / "task-packages/PKG-B-ALG"
+    checkpoint = package / "tasks/h3-interface-review-20260918/checkpoint-20260923"
+    direct = [checkpoint / "config.json", checkpoint / "source/candidates.py",
+              package / "tasks/c-board-algorithm-01/run.py",
+              package / "payload/model/python/sector_tracker.py",
+              package / "tasks/phat-fixed-03/integration/chain.py"]
+    for path, expected in zip(direct, PINNED_DEPENDENCIES):
+        relative = path.relative_to(root).as_posix()
+        locked_file(root, relative, expected, "ALGORITHM_DEPENDENCY", observed)
+    for relative, expected in PINNED_IMPORTS.items():
+        locked_file(root, "task-packages/PKG-B-ALG/" + relative,
+                    expected, "ALGORITHM_IMPORT", observed)
+    return direct
+
+
+def load_context(repo, snapshot, evidence, mapping_path):
+    """Metadata-only check of all three read-only roots and both environments."""
+    accepted_path = pathlib.Path(__file__).resolve().parent / "accepted-inputs.json"
+    accepted = read_json(accepted_path)
+    repo, snapshot, evidence = (pathlib.Path(x).resolve() for x in (repo, snapshot, evidence))
+    for actual, expected, label in ((repo, accepted["algorithm_root"], "ALGORITHM_ROOT"),
+                                    (snapshot, accepted["snapshot_root"], "SNAPSHOT_ROOT"),
+                                    (evidence, accepted["s1_evidence_root"], "S1_EVIDENCE_ROOT")):
+        equal_path(actual, expected, label)
+    observed = {str(accepted_path): digest(accepted_path),
+                str(pathlib.Path(__file__).resolve()): digest(pathlib.Path(__file__))}
+    mapping = locked_file(repo, accepted["mapping_relative_path"],
+                          accepted["mapping_sha256"], "MAPPING", observed)
+    equal_path(mapping_path, mapping, "MAPPING")
+    mapping_data = read_json(mapping)
+    manifest_path = locked_file(snapshot, "snapshot-manifest.json",
+                                accepted["snapshot_manifest_sha256"], "SNAPSHOT_MANIFEST", observed)
+    manifest = read_json(manifest_path)
+    need(manifest.get("candidate") == accepted["snapshot_candidate"] and
+         manifest.get("main") == "28d58e908525d1de1c018eeb99fd607a07b6047c" and
+         manifest.get("parent") == REFERENCE_COMMIT, "SNAPSHOT_COMMIT_MISMATCH")
+    for relative, identity in manifest["files"].items():
+        if relative.endswith(".zip"):
+            continue  # Old recording is outside this metadata-only check.
+        path = locked_file(snapshot, "snapshot/" + relative, identity["sha256"],
+                           "SNAPSHOT_FILE", observed)
+        need(path.stat().st_size == identity["bytes"], "SNAPSHOT_SIZE_MISMATCH")
+    need(manifest["files"]["task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/"
+                           "c-recording-receipt-20260922/verify_zip.py"]["sha256"] ==
+         accepted["verify_zip_sha256"], "SNAPSHOT_VERIFIER_MISMATCH")
+    native_indexes = {}
+    for name, expected in accepted["native_index_sha256"].items():
+        path = locked_file(evidence, name, expected, "NATIVE_INDEX", observed)
+        native_indexes[name] = read_json(path)
+    machine = native_indexes["machine-summary.json"]
+    identity = native_indexes["identity.json"]
+    comparison = native_indexes["mapping-comparison.json"]
+    need(machine.get("candidate") == accepted["snapshot_candidate"] and
+         machine.get("snapshot_manifest_sha256") == accepted["snapshot_manifest_sha256"] and
+         machine.get("verify_zip_sha256") == accepted["verify_zip_sha256"] and
+         machine.get("raw_uart_summary_status") == "PASS_RAW_UART_ONLY" and
+         identity.get("pre_post_identity_errors") == [] and
+         comparison.get("prior_mapping_sha256") == accepted["mapping_sha256"],
+         "NATIVE_INDEX_IDENTITY_MISMATCH")
+    direct = algorithm_hashes(repo, observed)
+    head = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=repo, text=True).strip()
+    ancestor = subprocess.run(["git", "merge-base", "--is-ancestor",
+                               accepted["algorithm_parent_commit"], "HEAD"], cwd=repo,
+                              capture_output=True, text=True)
+    need(ancestor.returncode == 0, "ALGORITHM_PARENT_NOT_ANCESTOR")
+    native, runs_by_environment = {}, {}
+    for environment in ENVIRONMENTS:
+        runs, zip_sha = mapping_for_environment(mapping_data, environment)
+        zip_id = accepted["zip"][environment]
+        need(zip_sha == zip_id["sha256"], "MAPPING_ZIP_HASH_MISMATCH")
+        equal_path(runs[0]["bin"]["source_zip_path"], zip_id["original_path"],
+                   "MAPPING_ORIGINAL_ZIP")
+        result_rel = environment + "-run/verifier-output/result.json"
+        command_rel = environment + "-run/command.json"
+        result_path = locked_file(evidence, result_rel,
+                                  accepted["native_result_sha256"][environment],
+                                  "NATIVE_RESULT", observed)
+        command_path = locked_file(evidence, command_rel,
+                                   accepted["native_command_sha256"][environment],
+                                   "NATIVE_COMMAND", observed)
+        result, command = read_json(result_path), read_json(command_path)
+        native[environment] = check_native_semantics(
+            result, command, runs, environment, snapshot, evidence, repo, accepted, manifest)
+        for stream in ("stdout", "stderr"):
+            path = child(evidence, environment + "-run/" + stream + ".log", "NATIVE_LOG")
+            observed[str(path)] = digest(path)
+        runs_by_environment[environment] = runs
+        index_row = machine["environment_statuses"][environment]
+        compare_row = comparison["environments"][environment]
+        need(index_row["capture_count"] == index_row["passed_capture_count"] == 8 and
+             index_row["group_counts_288250"] == 8 and index_row["issues"] == [] and
+             index_row["verifier_top_status"] == native[environment]["top_status"] and
+             compare_row["issues"] == [] and
+             compare_row["verifier_top_status"] == native[environment]["top_status"] and
+             compare_row["zip_sha256"] == zip_sha and
+             compare_row["input_inventory_exact_mapping_match"] is True,
+             "NATIVE_INDEX_ENVIRONMENT_MISMATCH")
+        for when in ("before", "after"):
+            historical = identity["input_zips_" + when][environment]
+            need(historical["sha256"] == zip_sha and historical["bytes"] == zip_id["bytes"],
+                 "HISTORICAL_ZIP_IDENTITY_MISMATCH")
+            equal_path(historical["path"], child(repo, zip_id["receipt_copy_relative_path"],
+                                                 "HISTORICAL_ZIP_COPY"), "HISTORICAL_ZIP_COPY")
+    return dict(accepted=accepted, roots=dict(algorithm=str(repo), snapshot=str(snapshot),
+                                               s1_evidence=str(evidence)),
+                mapping_sha256=accepted["mapping_sha256"], manifest_sha256=accepted["snapshot_manifest_sha256"],
+                algorithm_head=head, algorithm_direct_files=[str(p) for p in direct],
+                input_sha256=observed, native=native, runs=runs_by_environment)
+
+
+def unchanged(observed):
+    need(all(digest(pathlib.Path(path)) == expected for path, expected in observed.items()),
+         "METADATA_CHANGED_DURING_RUN")
 
 
 def read_pcm(zip_path, runs, expected_zip_sha):
@@ -194,15 +396,6 @@ def read_pcm(zip_path, runs, expected_zip_sha):
                     data[run["stem"]] = words[:, 2:6].view("<i4").copy()
     need(digest(zip_path) == expected_zip_sha, "ZIP_CHANGED_DURING_RUN")
     return data
-
-
-def bound_file(root, relative, expected_hash):
-    need(isinstance(relative, str) and not pathlib.Path(relative).is_absolute(),
-         "RECEIPT_PATH_INVALID")
-    path = (root / relative).resolve()
-    need(path.is_relative_to(root) and path.is_file() and digest(path) == expected_hash,
-         "RECEIPT_FILE_IDENTITY_MISMATCH")
-    return path
 
 
 def analyze(runs, pcm, cfg, feature, locate, gate_factory, tracker_factory):
@@ -266,44 +459,62 @@ def analyze(runs, pcm, cfg, feature, locate, gate_factory, tracker_factory):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    for name in ("repo", "zip", "mapping", "environment", "receipt", "out"):
+    for name in ("repo", "s1-snapshot-root", "s1-evidence-root", "mapping", "out"):
         parser.add_argument("--" + name, required=True)
+    for name in ("zip", "environment", "receipt"):
+        parser.add_argument("--" + name)
+    parser.add_argument("--preflight-only", action="store_true")
     args = parser.parse_args(argv)
     root = pathlib.Path(args.repo).resolve()
     output = pathlib.Path(args.out).resolve()
     need(not output.exists(), "OUTPUT_ALREADY_EXISTS")
     mapping_path = pathlib.Path(args.mapping).resolve()
-    receipt_path = pathlib.Path(args.receipt).resolve()
+    context = load_context(root, args.s1_snapshot_root, args.s1_evidence_root, mapping_path)
+    command = ([sys.executable, str(pathlib.Path(__file__).resolve())] +
+               (list(argv) if argv is not None else sys.argv[1:]))
+    common = dict(roots=context["roots"], algorithm_head=context["algorithm_head"],
+                  algorithm_parent_commit=context["accepted"]["algorithm_parent_commit"],
+                  snapshot_candidate=context["accepted"]["snapshot_candidate"],
+                  mapping_sha256=context["mapping_sha256"],
+                  snapshot_manifest_sha256=context["manifest_sha256"],
+                  input_sha256=context["input_sha256"],
+                  source_sha256=digest(pathlib.Path(__file__)),
+                  command=command, cwd=str(pathlib.Path.cwd()),
+                  tools=dict(python=platform.python_version(), numpy=np.__version__),
+                  evidence_profile="DIAGNOSTIC_SMOKE", claim_stage="PREFLIGHT")
+    if args.preflight_only:
+        need(args.zip is None and args.receipt is None and args.environment is None,
+             "PREFLIGHT_HAS_DIAGNOSTIC_ARGUMENTS")
+        unchanged(context["input_sha256"])
+        output.mkdir(parents=True, exist_ok=False)
+        result = dict(common, status=PREFLIGHT_STATUS, native_s1=context["native"],
+                      not_run=["real ZIP/BIN/LOG read", "PCM extraction", "DOA/Tracker",
+                               "audio", "formal scoring"],
+                      limit="Metadata identity and partial raw-UART records only; ZIP bytes not reverified")
+        (output / "result.json").write_text(json.dumps(result, ensure_ascii=False,
+                                                        indent=2, allow_nan=False) + "\n",
+                                            encoding="utf-8")
+        print(json.dumps(dict(status=PREFLIGHT_STATUS, environments=list(context["native"]),
+                              out=str(output))))
+        return
+    need(args.zip and args.receipt and args.environment in ENVIRONMENTS,
+         "DIAGNOSTIC_ARGUMENTS_REQUIRED")
+    environment = args.environment
+    evidence = pathlib.Path(context["roots"]["s1_evidence"])
+    receipt_path = child(evidence, environment + "-run/verifier-output/result.json", "NATIVE_RESULT")
+    equal_path(args.receipt, receipt_path, "NATIVE_RESULT")
     zip_path = pathlib.Path(args.zip).resolve()
-    mapping = read_json(mapping_path)
-    runs, zip_sha = mapping_for_environment(mapping, args.environment, zip_path)
-    mapping_sha = digest(mapping_path)
-    receipt_sha = digest(receipt_path)
-    receipt = read_json(receipt_path)
-    check_receipt(receipt, args.environment, mapping_sha, zip_sha, runs)
-    entry_path = bound_file(root, receipt["entry_path"], receipt["entry_source_sha256"])
-    evidence_path = bound_file(root, receipt["evidence_path"], receipt["evidence_sha256"])
-    pcm = read_pcm(zip_path, runs, zip_sha)
-    package = root / "task-packages/PKG-B-ALG"
-    checkpoint = package / "tasks/h3-interface-review-20260918/checkpoint-20260923"
-    dependencies = [checkpoint / "config.json", checkpoint / "source/candidates.py",
-                    package / "tasks/c-board-algorithm-01/run.py",
-                    package / "payload/model/python/sector_tracker.py",
-                    package / "tasks/phat-fixed-03/integration/chain.py"]
-    hashes = {p.relative_to(root).as_posix(): digest(p) for p in dependencies}
-    need(tuple(hashes.values()) == PINNED_DEPENDENCIES, "REFERENCE_DEPENDENCY_CHANGED")
-    cfg = read_json(dependencies[0])
-    act = module("two_env_activity", dependencies[1])
-    diag = module("two_env_doa", dependencies[2])
-    trk = module("two_env_tracker", dependencies[3])
-    for loaded in tuple(sys.modules.values()):
-        source = getattr(loaded, "__file__", None)
-        if source and pathlib.Path(source).suffix == ".py":
-            path = pathlib.Path(source).resolve()
-            if path.is_relative_to(root) and path.is_file():
-                hashes[path.relative_to(root).as_posix()] = digest(path)
-    need(all(hashes.get("task-packages/PKG-B-ALG/" + path) == expected
-             for path, expected in PINNED_IMPORTS.items()), "REFERENCE_IMPORT_CHANGED")
+    equal_path(zip_path, context["accepted"]["zip"][environment]["original_path"],
+               "ORIGINAL_ZIP")
+    need(zip_path.stat().st_size == context["accepted"]["zip"][environment]["bytes"],
+         "ORIGINAL_ZIP_SIZE_MISMATCH")
+    runs = context["runs"][environment]
+    pcm = read_pcm(zip_path, runs, context["accepted"]["zip"][environment]["sha256"])
+    direct = [pathlib.Path(p) for p in context["algorithm_direct_files"]]
+    cfg = read_json(direct[0])
+    act = module("two_env_activity", direct[1])
+    diag = module("two_env_doa", direct[2])
+    trk = module("two_env_tracker", direct[3])
     positions = np.array([[0, 0, 0], [.04, 0, 0], [.04, .04, 0], [0, .04, 0]])
     bounds = [np.linalg.norm(positions[j] - positions[i]) * 48000 / 343
               for i, j in diag.PAIRS]
@@ -316,32 +527,24 @@ def main(argv=None):
     noise, frames, summaries = analyze(
         runs, pcm, cfg, act.features, locate, act.BandActivity,
         lambda: trk.Tracker(trk.Config(cone_half_angle_deg=60)))
-    need(all(digest(root / p) == h for p, h in hashes.items()) and
-         digest(mapping_path) == mapping_sha and
-         digest(receipt_path) == receipt_sha, "INPUT_CHANGED_DURING_RUN")
+    unchanged(context["input_sha256"])
     output.mkdir(parents=True, exist_ok=False)
-    result = dict(status=STATUS, evidence_profile="DIAGNOSTIC_SMOKE",
-                  claim_stage="SIM_SMOKE", environment=args.environment,
-                  mapping_sha256=mapping_sha, receipt_sha256=receipt_sha,
-                  source_zip_sha256=zip_sha,
-                  full_s1_entry=str(entry_path), full_s1_evidence=str(evidence_path),
+    result = dict(common, status=STATUS, claim_stage="SIM_SMOKE",
+                  environment=environment, native_s1=context["native"][environment],
+                  native_result_path=str(receipt_path),
+                  source_zip_sha256=context["accepted"]["zip"][environment]["sha256"],
                   source_members={r["stem"]: {k: dict(path=r[k]["source_member_path"],
                                                     sha256=r[k]["source_member_sha256"])
                                               for k in ("bin", "log")} for r in runs},
                   reference_source=pre_stem_from_runs(runs),
                   pre_background_power=noise, captures=summaries,
-                  frames=len(frames), dependency_sha256=hashes,
+                  frames=len(frames),
                   reference_commit=REFERENCE_COMMIT,
-                  source_sha256=digest(pathlib.Path(__file__)),
-                  command=[sys.executable, str(pathlib.Path(__file__).resolve())] +
-                          (list(argv) if argv is not None else sys.argv[1:]),
-                  cwd=str(pathlib.Path.cwd()),
-                  tools=dict(python=platform.python_version(), numpy=np.__version__),
                   assumptions=dict(geometry="candidate 40 mm coplanar square; not measured for these recordings",
                                    positions_m=positions.tolist(), pair_bounds_samples=bounds,
                                    sample_rate_hz=48000, sound_speed_m_s=343,
                                    playback_identity="USER_REPORTED_NOT_BYTE_VERIFIED"),
-                  limits="Full S1 receipt identity is required; this output is not formal direction or SNR scoring")
+                  limits="Native S1 is partial raw-UART only; no formal direction or SNR acceptance")
     for name, value in (("result.json", result), ("frames.json", frames)):
         (output / name).write_text(json.dumps(value, ensure_ascii=False, indent=2,
                                             allow_nan=False) + "\n", encoding="utf-8")
