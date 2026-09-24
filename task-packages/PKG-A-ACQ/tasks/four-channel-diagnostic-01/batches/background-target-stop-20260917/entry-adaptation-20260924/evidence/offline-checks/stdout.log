@@ -1,0 +1,47 @@
+MATCHED dependency_closure_positive 
+MATCHED command_contract_missing [Errno 2] No such file or directory: 'E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\issue13\\codex_out\\s1-verification-offline-02\\dependency-fixture\\continuous-prototype-01\\timerfixed-entry-01\\command_contract.py'
+MATCHED command_contract_replaced Dependency/input mismatch: E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\codex_out\issue13\codex_out\s1-verification-offline-02\dependency-fixture\continuous-prototype-01\timerfixed-entry-01\command_contract.py
+MATCHED command_contract_omitted_pin Incomplete/unexpected dependency closure
+MATCHED startup_reference_missing [Errno 2] No such file or directory: 'E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\issue13\\codex_out\\s1-verification-offline-02\\dependency-fixture\\batches\\background-target-stop-20260917\\delivery-01\\versions\\build\\four_mic_endurance.elf'
+MATCHED startup_reference_replaced Dependency/input mismatch: E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\codex_out\issue13\codex_out\s1-verification-offline-02\dependency-fixture\batches\background-target-stop-20260917\delivery-01\versions\build\four_mic_endurance.elf
+MATCHED startup_reference_omitted_pin Incomplete/unexpected dependency closure
+MATCHED archived_s1_composed_compiled 
+MATCHED entry_reserved_rx ELF entry differs from fixed vector start
+MATCHED entry_thumb_mode ELF entry differs from fixed vector start
+MATCHED entry_no_file_bytes Entry not in exactly one executable file-backed PT_LOAD
+MATCHED entry_not_executable Entry not in exactly one executable file-backed PT_LOAD
+MATCHED vector_symbol_changed Entry differs from _vector_table
+MATCHED boot_symbol_changed Startup _boot changed
+MATCHED startup_vector_bytes Startup vector/reset bytes changed
+MATCHED startup_reset_bytes Startup vector/reset bytes changed
+MATCHED old_timer_divisor Wrong actual timer divisor
+MATCHED old_10s_duration Object/ELF continuous contract mismatch
+MATCHED wrong_archive_capacity Object/ELF S1 archive contract mismatch
+MATCHED archive_size_changed Missing/wrong archive allocation size
+MATCHED program_overlaps_rx Program/static archive/heap/stack overlaps RX or leaves program DDR
+MATCHED object_old_timer_divisor Wrong actual timer divisor
+MATCHED frozen_commands 
+MATCHED only_auxiliary_swap 
+MATCHED missing_command Generated command count mismatch
+MATCHED extra_command Generated command count mismatch
+MATCHED duplicate_prerequisite Generated commands/linker subarguments or gate mismatch
+MATCHED compile_link_reordered Generated commands/linker subarguments or gate mismatch
+MATCHED compiler_case Compiler options or path differs from the fixed E1 toolchain contract
+MATCHED macro_value Compiler options or path differs from the fixed E1 toolchain contract
+MATCHED compiler_extra Compiler options or path differs from the fixed E1 toolchain contract
+MATCHED linker_injection_-e Generated commands/linker subarguments or gate mismatch
+MATCHED parser_injection_-e Expected one absolute -Wl script path, no extra subarguments
+MATCHED linker_injection_--defsym Generated commands/linker subarguments or gate mismatch
+MATCHED parser_injection_--defsym Expected one absolute -Wl script path, no extra subarguments
+MATCHED linker_injection_--wrap Generated commands/linker subarguments or gate mismatch
+MATCHED parser_injection_--wrap Expected one absolute -Wl script path, no extra subarguments
+MATCHED linker_injection_-L Generated commands/linker subarguments or gate mismatch
+MATCHED parser_injection_-L Expected one absolute -Wl script path, no extra subarguments
+MATCHED gate_command_modified Generated commands/linker subarguments or gate mismatch
+MATCHED archived_launch_paths 
+MATCHED wrong_elf_launch_path Run points to wrong/old artifact path
+MATCHED wrong_bit_launch_path Run points to wrong/old artifact path
+MATCHED wrong_bit_bytes Dependency/input mismatch: E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\codex_out\issue13\codex_out\s1-verification-offline-02\wrong.bit
+MATCHED wrong_xsa_bytes Dependency/input mismatch: E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\codex_out\issue13\codex_out\s1-verification-offline-02\wrong.xsa
+MATCHED input_changed_after_check Input changed during preflight: E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\codex_out\issue13\codex_out\s1-verification-offline-02\input-race.bin
+CHECKER_CASES_MATCHED_PENDING_REVIEW 46 / 46 E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\codex_out\issue13\codex_out\s1-verification-offline-02

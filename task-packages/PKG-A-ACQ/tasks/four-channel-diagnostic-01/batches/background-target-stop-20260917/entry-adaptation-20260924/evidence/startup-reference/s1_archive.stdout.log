@@ -1,0 +1,75 @@
+
+E:\Users\Toph Beifong\Documents\GitHub\Competition_fpga\codex_out\issue13\task-packages\PKG-A-ACQ\tasks\four-channel-diagnostic-01\batches\background-target-stop-20260917\delivery-01\versions\build\four_mic_endurance.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00100000 <_vector_table>:
+  100000:	ea000031 	b	1000cc <_boot>
+  100004:	ea00000d 	b	100040 <Undefined>
+  100008:	ea000013 	b	10005c <SVCHandler>
+  10000c:	ea000023 	b	1000a0 <PrefetchAbortHandler>
+  100010:	ea00001a 	b	100080 <DataAbortHandler>
+  100014:	e320f000 	nop	{0}
+  100018:	ea000000 	b	100020 <IRQHandler>
+  10001c:	ea000003 	b	100030 <FIQHandler>
+
+00100020 <IRQHandler>:
+  100020:	e92d500f 	push	{r0, r1, r2, r3, ip, lr}
+  100024:	eb000a69 	bl	1029d0 <IRQInterrupt>
+  100028:	e8bd500f 	pop	{r0, r1, r2, r3, ip, lr}
+  10002c:	e25ef004 	subs	pc, lr, #4
+
+00100030 <FIQHandler>:
+  100030:	e92d500f 	push	{r0, r1, r2, r3, ip, lr}
+
+00100034 <FIQLoop>:
+  100034:	eb000a60 	bl	1029bc <FIQInterrupt>
+  100038:	e8bd500f 	pop	{r0, r1, r2, r3, ip, lr}
+  10003c:	e25ef004 	subs	pc, lr, #4
+
+00100040 <Undefined>:
+  100040:	e92d500f 	push	{r0, r1, r2, r3, ip, lr}
+  100044:	e59f0074 	ldr	r0, [pc, #116]	; 1000c0 <PrefetchAbortHandler+0x20>
+  100048:	e24e1004 	sub	r1, lr, #4
+  10004c:	e5801000 	str	r1, [r0]
+  100050:	eb000a63 	bl	1029e4 <UndefinedException>
+  100054:	e8bd500f 	pop	{r0, r1, r2, r3, ip, lr}
+  100058:	e1b0f00e 	movs	pc, lr
+
+0010005c <SVCHandler>:
+  10005c:	e92d500f 	push	{r0, r1, r2, r3, ip, lr}
+  100060:	e3100020 	tst	r0, #32
+  100064:	115e00b2 	ldrhne	r0, [lr, #-2]
+  100068:	13c00cff 	bicne	r0, r0, #65280	; 0xff00
+  10006c:	051e0004 	ldreq	r0, [lr, #-4]
+  100070:	03c004ff 	biceq	r0, r0, #-16777216	; 0xff000000
+  100074:	eb000a5f 	bl	1029f8 <SWInterrupt>
+  100078:	e8bd500f 	pop	{r0, r1, r2, r3, ip, lr}
+  10007c:	e1b0f00e 	movs	pc, lr
+
+00100080 <DataAbortHandler>:
+  100080:	f57ff04f 	dsb	sy
+  100084:	e92d500f 	push	{r0, r1, r2, r3, ip, lr}
+  100088:	e59f0034 	ldr	r0, [pc, #52]	; 1000c4 <PrefetchAbortHandler+0x24>
+  10008c:	e24e1008 	sub	r1, lr, #8
+  100090:	e5801000 	str	r1, [r0]
+  100094:	eb000a5c 	bl	102a0c <DataAbortInterrupt>
+  100098:	e8bd500f 	pop	{r0, r1, r2, r3, ip, lr}
+  10009c:	e25ef008 	subs	pc, lr, #8
+
+001000a0 <PrefetchAbortHandler>:
+  1000a0:	f57ff04f 	dsb	sy
+  1000a4:	e92d500f 	push	{r0, r1, r2, r3, ip, lr}
+  1000a8:	e59f0018 	ldr	r0, [pc, #24]	; 1000c8 <PrefetchAbortHandler+0x28>
+  1000ac:	e24e1004 	sub	r1, lr, #4
+  1000b0:	e5801000 	str	r1, [r0]
+  1000b4:	eb000a59 	bl	102a20 <PrefetchAbortInterrupt>
+  1000b8:	e8bd500f 	pop	{r0, r1, r2, r3, ip, lr}
+  1000bc:	e25ef004 	subs	pc, lr, #4
+  1000c0:	00a3a700 	.word	0x00a3a700
+  1000c4:	00a3a708 	.word	0x00a3a708
+  1000c8:	00a3a704 	.word	0x00a3a704
+
+001000cc <_boot>:
+  1000cc:	ee101fb0 	mrc	15, 0, r1, cr0, cr0, {5}
