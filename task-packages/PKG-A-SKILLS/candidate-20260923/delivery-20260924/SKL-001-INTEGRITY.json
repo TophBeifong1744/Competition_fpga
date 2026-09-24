@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "issue": 21,
+  "package": "fpga-module-verification",
+  "status": "PACKAGE_BYTE_IDENTITY_ONLY",
+  "source_commit": "929d737f062adc03dbb8759aafe3584119d65b2a",
+  "source_git_tree": "5f37f225da31658448cab4242631ebbb7430853f",
+  "export_path": "task-packages/PKG-A-SKILLS/candidate-20260923/exports/fpga-module-verification",
+  "file_count": 20,
+  "source_url": "https://github.com/TophBeifong1744/Competition_fpga/tree/929d737f062adc03dbb8759aafe3584119d65b2a/task-packages/PKG-A-SKILLS/candidate-20260923/exports/fpga-module-verification",
+  "source_manifest_url": "https://github.com/TophBeifong1744/Competition_fpga/blob/929d737f062adc03dbb8759aafe3584119d65b2a/task-packages/PKG-A-SKILLS/candidate-20260923/MANIFEST.device-part-fix.sha256.json",
+  "source_manifest_sha256": "fbe213a4309c2116240c952b39a0806c827a1aec9a59ea57eaec8a8061a36740",
+  "source_tree_blobs_equal": true,
+  "checkout_bytes_equal": true,
+  "entry": "skill.md",
+  "license": "license.txt",
+  "license_id": "MIT",
+  "install_mapping": "skill.md -> SKILL.md in a separate installation copy; NOT_INSTALLED",
+  "local_markdown_links": {
+    "checked": 7,
+    "broken": 0,
+    "entries": [
+      {
+        "source": "README.md",
+        "target": "references/correction-index.md"
+      },
+      {
+        "source": "README.md",
+        "target": "skill.md"
+      },
+      {
+        "source": "README.md",
+        "target": "references/correction-index.md"
+      },
+      {
+        "source": "README.md",
+        "target": "examples/pcm4/contract.md"
+      },
+      {
+        "source": "skill.md",
+        "target": "references/rtl-and-tb.md"
+      },
+      {
+        "source": "skill.md",
+        "target": "assets/module-contract.md"
+      },
+      {
+        "source": "skill.md",
+        "target": "references/xsim-and-debug.md"
+      }
+    ]
+  },
+  "example_case_inputs": {
+    "checked": 6,
+    "missing_or_external": 0,
+    "entries": [
+      {
+        "source": "examples/elastic/case.json",
+        "target": "elastic_stage.v"
+      },
+      {
+        "source": "examples/elastic/case.json",
+        "target": "tb_elastic.sv"
+      },
+      {
+        "source": "examples/elastic/case.json",
+        "target": "contract.md"
+      },
+      {
+        "source": "examples/pcm4/case.json",
+        "target": "pcm4_signext_pack.v"
+      },
+      {
+        "source": "examples/pcm4/case.json",
+        "target": "tb_pcm4_skill.sv"
+      },
+      {
+        "source": "examples/pcm4/case.json",
+        "target": "contract.md"
+      }
+    ]
+  },
+  "tests": "SOURCE_EVIDENCE_REUSED_NOT_RERUN",
+  "board": "NOT_RUN",
+  "member_approval": "PENDING",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 113,
+      "git_blob": "08ecccb7ebec8e5724c4b69e970b6d3a5022f76d",
+      "sha256": "5b9e3419f96fdceeb46fccb70a491205c396ce9ee16229c330ce78febc1a8edd"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6797,
+      "git_blob": "20cea461a3175c20ad63220bcceff9001bb3c1d4",
+      "sha256": "431845afa1f2bc2f11dfec4281de3c949c32809e563d2d4cc05280fa2b03d6c7"
+    },
+    {
+      "path": "assets/module-contract.md",
+      "bytes": 873,
+      "git_blob": "d865d774f80454b4827a7d828b594f12b435c460",
+      "sha256": "b2d6067459c4be09ae749f036a657547d1ba8e487930f16754aa531f19d522fb"
+    },
+    {
+      "path": "examples/elastic/case.json",
+      "bytes": 203,
+      "git_blob": "506c9b71a650c72b42ef50f03ca0d676ac67366e",
+      "sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2"
+    },
+    {
+      "path": "examples/elastic/contract.md",
+      "bytes": 1002,
+      "git_blob": "dd226a18004e739f054bb6ed99252065d1561258",
+      "sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383"
+    },
+    {
+      "path": "examples/elastic/elastic_stage.v",
+      "bytes": 756,
+      "git_blob": "b2b4079e115a1128a0e38416ce12b48543c654cb",
+      "sha256": "b96f113a3dd5da3a6ddbb388adc44828fdb20cffd856a9f20fbcba5181d2a633"
+    },
+    {
+      "path": "examples/elastic/tb_elastic.sv",
+      "bytes": 6019,
+      "git_blob": "337d94305c94e78c8c07d2cd2c46a535f0ea459f",
+      "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7"
+    },
+    {
+      "path": "examples/pcm4/.gitattributes",
+      "bytes": 111,
+      "git_blob": "6ad9e05ac21c2e1975526a22b792eb72071a48fe",
+      "sha256": "08861a568a80737adde0a49ee042bca15e13af5679f26aa3ba149af37e1d978e"
+    },
+    {
+      "path": "examples/pcm4/case.json",
+      "bytes": 210,
+      "git_blob": "800912efec538b0b8915dc12c8f769d38c65d3f5",
+      "sha256": "0b4bceb94eb9cd74cb2c7055861df3e81697ad1f15bd8d1900cfe6d921774c52"
+    },
+    {
+      "path": "examples/pcm4/contract.md",
+      "bytes": 1560,
+      "git_blob": "44dd1404584ca907ace91cf73ec1904e9f4f57b2",
+      "sha256": "c60d6228400969d2eec482ed521a37d68a5eebd5c66190bb424c1b2f28676f7d"
+    },
+    {
+      "path": "examples/pcm4/pcm4_signext_pack.v",
+      "bytes": 931,
+      "git_blob": "4446d486d0e07f5c233ef29818ac6cf975f207fd",
+      "sha256": "85269ccd9991c80a2dbd507d342cc19d6e58517b9cc525520dce03b710df215a"
+    },
+    {
+      "path": "examples/pcm4/tb_pcm4_skill.sv",
+      "bytes": 1874,
+      "git_blob": "7feaa4a530162621ffe75faa651972e58c94cb2b",
+      "sha256": "e35fcf8526373193977e1e7a261edb4e2b1e681a0c00efff732c8f2241be70b6"
+    },
+    {
+      "path": "license.txt",
+      "bytes": 1083,
+      "git_blob": "dce20d91665f0a4c8a6d738c95534c1b7604d733",
+      "sha256": "ebba6c4cedfa8bcb7bf70eb0fa7fffb8629ae18de4eb098b5057a97cb32e7a8e"
+    },
+    {
+      "path": "references/correction-index.md",
+      "bytes": 1545,
+      "git_blob": "0ce7e76d8f46448979e7c0f733cc30eaa6e46c4b",
+      "sha256": "551992326659d184c660d2dbe45faa6ec001c29cdfa10a6125ae5121770a50ac"
+    },
+    {
+      "path": "references/rtl-and-tb.md",
+      "bytes": 3593,
+      "git_blob": "768026fe86af563789618bde040047331a0b0315",
+      "sha256": "b4f6428c63b5884e40369d7a6c053658fba7eceb32e909eb458fc4e5479b6a28"
+    },
+    {
+      "path": "references/xsim-and-debug.md",
+      "bytes": 3260,
+      "git_blob": "88bbce5a5c74c132caffa97b149d2ec17e4522a4",
+      "sha256": "6d7f4088d6eafa4de41df76088950555ef20dc269fd04ba6aaab2d99677ee011"
+    },
+    {
+      "path": "scripts/run_examples.py",
+      "bytes": 4183,
+      "git_blob": "28bd8c7f98a3ba9fd9bf517f9b7930b83fef7655",
+      "sha256": "75a1a6858a8e6bacff9985b709ef1c346de98bee87ef93b1f7db198453c2f201"
+    },
+    {
+      "path": "scripts/run_xsim.py",
+      "bytes": 9519,
+      "git_blob": "4b0474e7e12a60743687290256210449f7197b64",
+      "sha256": "80eabf73d614898636fcc599844c714480987cea66ee9e0bdbbc710f36a144e6"
+    },
+    {
+      "path": "skill.md",
+      "bytes": 4286,
+      "git_blob": "8a7d4e5d879db2104e625f3e5070295502996541",
+      "sha256": "a7329aef37d00d0e2ad43710b3e5e365ab029df3cf5e464d5dd10fe947ebfe07"
+    },
+    {
+      "path": "tests/test_runner.py",
+      "bytes": 3731,
+      "git_blob": "e3c66487e1b2e856a9018b30ae246eae0b195a10",
+      "sha256": "53dde1b4e2be35b3d6aea6fb3b83c8aea5d4c93382f6ffbb0a451e38dfb92db4"
+    }
+  ]
+}
