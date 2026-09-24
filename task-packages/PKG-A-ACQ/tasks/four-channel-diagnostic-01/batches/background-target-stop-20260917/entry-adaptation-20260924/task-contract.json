@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "issue": 13,
+  "owner": "A=TophBeifong1744",
+  "human_reviewer": "B=BryanZheng802",
+  "base_commit": "7f26cf115b1b57ddede67439921b562274667fd6",
+  "mode": "QUICK",
+  "primary_mode": "BUILD_FLOW",
+  "evidence_profile": "DIAGNOSTIC_SMOKE",
+  "claim_stage": "BOARD_PREP",
+  "requested_claim": "Read-only S1 composition artifact/load preflight; not build or board acceptance",
+  "scope": "New entry-adaptation-20260924 directory only; no frozen or actual engineering input changes",
+  "diagnosis_commit": "7274df873d6a36da8e16ca54f05688d3c7f09689",
+  "approved_checker_commit": "21c141b223936730c2ce5139624fcedb412adafb",
+  "startup_reference_commit": "8f708e42caf32c1de6f30726298e3edf0e1970b6",
+  "startup_reference": "../delivery-01/versions/build/four_mic_endurance.elf",
+  "startup_reference_sha256": "4b7823bdefa3776a910a3359b5851fa52c6f4ce89432cc3ee0072dee52ca06a6",
+  "immutable_contracts": [
+    "S1 16I continuous and 11I scene; 6000000 us, 288000 groups, 9600000 byte archive",
+    "108/112 byte timer pool layouts with divisor 333333343 and real call/relocation identities",
+    "Exact S1 source, command envelope, graph, BSP/XSA, artifact, history and launch identities",
+    "Original historical policy/verifier hashes and truthful pre/post build status",
+    "Original approved startup checker; exact archived S1 reference bytes",
+    "No RTL, latency, throughput, clock, reset, CDC/RDC, register, IRQ or DMA change"
+  ],
+  "protected": [
+    "../check_scene.py", "../POLICY.json", "../vitis_gate.cmake", "../delivery-01",
+    "continuous-prototype-01/timerfixed-entry-01 and helper/reference dependencies",
+    "Actual one and all Vitis application/platform sources, configuration and artifacts",
+    "Historical receipts and evidence; unrelated shared-checkout work"
+  ],
+  "writer_evidence": {
+    "initial_rejection": "codex_out/entry-adaptation-smoke-01/20260924_114442_load_dba0e3db50",
+    "startup_diagnosis": "codex_out/entry-adaptation-startup-20260924",
+    "complete_readonly_load": "codex_out/entry-adaptation-smoke-02/20260924_114828_load_4ede0e949b",
+    "result": "ARTIFACT_CHECK_PASS_NOT_BOARD"
+  },
+  "required_next_verification": [
+    "Reject old timer, wrong bit/ELF/platform, changed entry/startup",
+    "Reject changed compile/link/gate commands or graph and missing/changed dependency",
+    "Keep frozen inputs unchanged; retain real positive and negative evidence"
+  ],
+  "member_approval": "PENDING_B_REVIEW",
+  "board_test": "NOT_RUN",
+  "new_build": "NOT_RUN",
+  "rtl_acceptance": "NOT_CLAIMED",
+  "power": "NOT_APPLICABLE",
+  "cycle_contract_delta": "NONE"
+}
