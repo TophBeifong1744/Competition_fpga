@@ -1,0 +1,349 @@
+{
+  "status": "FINITE_DOCUMENT_PROBES_PASS_NOT_PRODUCTION",
+  "checks": [
+    {
+      "name": "geometry-synthetic-structural-only",
+      "pass": true
+    },
+    {
+      "name": "geometry-missing-schema",
+      "pass": true
+    },
+    {
+      "name": "geometry-missing-version",
+      "pass": true
+    },
+    {
+      "name": "geometry-missing-kind",
+      "pass": true
+    },
+    {
+      "name": "geometry-missing-scope",
+      "pass": true
+    },
+    {
+      "name": "geometry-missing-coordinate_unit",
+      "pass": true
+    },
+    {
+      "name": "geometry-missing-speed_unit",
+      "pass": true
+    },
+    {
+      "name": "geometry-missing-reference_mic",
+      "pass": true
+    },
+    {
+      "name": "geometry-missing-x_axis",
+      "pass": true
+    },
+    {
+      "name": "geometry-missing-y_axis",
+      "pass": true
+    },
+    {
+      "name": "geometry-missing-angle_convention",
+      "pass": true
+    },
+    {
+      "name": "geometry-missing-speed_of_sound",
+      "pass": true
+    },
+    {
+      "name": "geometry-missing-mics",
+      "pass": true
+    },
+    {
+      "name": "geometry-bad-unknown-'x'",
+      "pass": true
+    },
+    {
+      "name": "geometry-bad-version-None",
+      "pass": true
+    },
+    {
+      "name": "geometry-bad-version-1",
+      "pass": true
+    },
+    {
+      "name": "geometry-bad-version-True",
+      "pass": true
+    },
+    {
+      "name": "numeric-synthetic-structural-only",
+      "pass": true
+    },
+    {
+      "name": "numeric-missing-schema",
+      "pass": true
+    },
+    {
+      "name": "numeric-missing-version",
+      "pass": true
+    },
+    {
+      "name": "numeric-missing-kind",
+      "pass": true
+    },
+    {
+      "name": "numeric-missing-profile_id",
+      "pass": true
+    },
+    {
+      "name": "numeric-missing-geometry_sha256",
+      "pass": true
+    },
+    {
+      "name": "numeric-missing-twiddle_backend",
+      "pass": true
+    },
+    {
+      "name": "numeric-missing-algorithm_ref",
+      "pass": true
+    },
+    {
+      "name": "numeric-missing-source_manifest_ref",
+      "pass": true
+    },
+    {
+      "name": "numeric-bad-unknown-'x'",
+      "pass": true
+    },
+    {
+      "name": "numeric-bad-version-None",
+      "pass": true
+    },
+    {
+      "name": "numeric-bad-version-1",
+      "pass": true
+    },
+    {
+      "name": "numeric-bad-version-True",
+      "pass": true
+    },
+    {
+      "name": "config-synthetic-structural-only",
+      "pass": true
+    },
+    {
+      "name": "config-missing-schema",
+      "pass": true
+    },
+    {
+      "name": "config-missing-version",
+      "pass": true
+    },
+    {
+      "name": "config-missing-kind",
+      "pass": true
+    },
+    {
+      "name": "config-missing-geometry_sha256",
+      "pass": true
+    },
+    {
+      "name": "config-missing-numeric_sha256",
+      "pass": true
+    },
+    {
+      "name": "config-missing-acquisition",
+      "pass": true
+    },
+    {
+      "name": "config-missing-transport",
+      "pass": true
+    },
+    {
+      "name": "config-missing-activity_ref",
+      "pass": true
+    },
+    {
+      "name": "config-missing-calibration_ref",
+      "pass": true
+    },
+    {
+      "name": "config-missing-tracker_ref",
+      "pass": true
+    },
+    {
+      "name": "config-missing-ttl_ref",
+      "pass": true
+    },
+    {
+      "name": "config-missing-required_units_ref",
+      "pass": true
+    },
+    {
+      "name": "config-missing-timebase_ref",
+      "pass": true
+    },
+    {
+      "name": "config-bad-unknown-'x'",
+      "pass": true
+    },
+    {
+      "name": "config-bad-version-None",
+      "pass": true
+    },
+    {
+      "name": "config-bad-version-1",
+      "pass": true
+    },
+    {
+      "name": "config-bad-version-True",
+      "pass": true
+    },
+    {
+      "name": "zero-hash",
+      "pass": true
+    },
+    {
+      "name": "wrong-ref-kind",
+      "pass": true
+    },
+    {
+      "name": "extra-ref",
+      "pass": true
+    },
+    {
+      "name": "backend",
+      "pass": true
+    },
+    {
+      "name": "slug-newline",
+      "pass": true
+    },
+    {
+      "name": "bad-integer-'01'",
+      "pass": true
+    },
+    {
+      "name": "bad-integer-'-0'",
+      "pass": true
+    },
+    {
+      "name": "bad-integer-'+1'",
+      "pass": true
+    },
+    {
+      "name": "bad-integer-'1e1'",
+      "pass": true
+    },
+    {
+      "name": "bad-integer-'1.0'",
+      "pass": true
+    },
+    {
+      "name": "bad-integer-'1\\n'",
+      "pass": true
+    },
+    {
+      "name": "bad-integer-1",
+      "pass": true
+    },
+    {
+      "name": "bad-integer-True",
+      "pass": true
+    },
+    {
+      "name": "bad-integer-None",
+      "pass": true
+    },
+    {
+      "name": "mic-order",
+      "pass": true
+    },
+    {
+      "name": "schema-alone-allows-unreduced-('2', '4')",
+      "pass": true
+    },
+    {
+      "name": "semantic-gcd-rejects-('2', '4')",
+      "pass": true
+    },
+    {
+      "name": "schema-alone-allows-unreduced-('0', '2')",
+      "pass": true
+    },
+    {
+      "name": "semantic-gcd-rejects-('0', '2')",
+      "pass": true
+    },
+    {
+      "name": "B-raw-literal-digest",
+      "pass": true
+    },
+    {
+      "name": "B-raw-escaped-digest",
+      "pass": true
+    },
+    {
+      "name": "B-counterexample-normalizes",
+      "pass": true
+    },
+    {
+      "name": "counterexample-not-production",
+      "pass": true
+    },
+    {
+      "name": "ASCII-escapes",
+      "pass": true
+    },
+    {
+      "name": "sort-keys-keep-array",
+      "pass": true
+    },
+    {
+      "name": "parse-encode-reject-duplicate",
+      "pass": true
+    },
+    {
+      "name": "parse-encode-reject-BOM",
+      "pass": true
+    },
+    {
+      "name": "parse-encode-reject-nonascii",
+      "pass": true
+    },
+    {
+      "name": "parse-encode-reject-number",
+      "pass": true
+    },
+    {
+      "name": "parse-encode-reject-float",
+      "pass": true
+    },
+    {
+      "name": "parse-encode-reject-bool",
+      "pass": true
+    },
+    {
+      "name": "parse-encode-reject-null",
+      "pass": true
+    },
+    {
+      "name": "parse-encode-reject-NaN",
+      "pass": true
+    },
+    {
+      "name": "parse-encode-reject-invalid-utf8",
+      "pass": true
+    }
+  ],
+  "count": 82,
+  "schema_sha256": "7fad279d3656d7b70fe79ff6100ceff152f35cfdfa3d920862865558478054b0",
+  "checker_sha256": "7875a8e7eb2d96b06b85c6c6d786f4504d8f2b77d306672adca3e06c0f29bf15",
+  "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+  "jsonschema": "4.25.1",
+  "synthetic_only": true,
+  "production_frozen": false,
+  "missing_external_schemas": true,
+  "not_tested": [
+    "external reference resolution and recursive DAG verifier",
+    "full geometry/cross-root semantics",
+    "production encoder",
+    "C token counterexample execution",
+    "RTL/EDA/ARM/board"
+  ],
+  "b_review": "https://github.com/TophBeifong1744/Competition_fpga/pull/30#issuecomment-5810446729"
+}

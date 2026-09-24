@@ -1,0 +1,623 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:soundsight:identity-container:v1",
+  "title": "D14-02 identity containers, candidate v1; structural validation only",
+  "$comment": "Apply IDENTITY-CONTAINER-20260924.md encoding, reduced-rational, geometry, reference resolution, acyclic graph and joint-confirmation rules. External object schemas and real values are not complete. This schema cannot authorize production identity generation.",
+  "$defs": {
+    "digest": {
+      "type": "string",
+      "minLength": 64,
+      "maxLength": 64,
+      "pattern": "^[0-9a-f]{64}$",
+      "not": {
+        "const": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "integer_string": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*)$",
+      "not": {
+        "pattern": "[^0-9-]"
+      }
+    },
+    "positive_integer_string": {
+      "type": "string",
+      "pattern": "^[1-9][0-9]*$",
+      "not": {
+        "pattern": "[^0-9]"
+      }
+    },
+    "rational": {
+      "type": "object",
+      "properties": {
+        "numerator": {
+          "$ref": "#/$defs/integer_string"
+        },
+        "denominator": {
+          "$ref": "#/$defs/positive_integer_string"
+        }
+      },
+      "required": [
+        "numerator",
+        "denominator"
+      ],
+      "additionalProperties": false
+    },
+    "positive_rational": {
+      "type": "object",
+      "properties": {
+        "numerator": {
+          "$ref": "#/$defs/positive_integer_string"
+        },
+        "denominator": {
+          "$ref": "#/$defs/positive_integer_string"
+        }
+      },
+      "required": [
+        "numerator",
+        "denominator"
+      ],
+      "additionalProperties": false
+    },
+    "reference": {
+      "type": "object",
+      "properties": {
+        "schema_id": {
+          "type": "string",
+          "enum": [
+            "ss-numeric-algorithm-v1",
+            "ss-numeric-source-manifest-v1",
+            "ss-activity-v1",
+            "ss-calibration-v1",
+            "ss-tracker-v1",
+            "ss-ttl-v1",
+            "ss-required-units-v1",
+            "ss-timebase-v1",
+            "ss-capture-contract-v1",
+            "ss-transport-binding-v1"
+          ]
+        },
+        "schema_version": {
+          "type": "string",
+          "const": "1"
+        },
+        "schema_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "encoding": {
+          "type": "string",
+          "const": "ss-canonical-json-v1"
+        },
+        "content_sha256": {
+          "$ref": "#/$defs/digest"
+        }
+      },
+      "required": [
+        "schema_id",
+        "schema_version",
+        "schema_sha256",
+        "encoding",
+        "content_sha256"
+      ],
+      "additionalProperties": false
+    },
+    "mic": {
+      "type": "object",
+      "properties": {
+        "channel": {
+          "type": "string",
+          "enum": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "mic_id": {
+          "type": "string",
+          "enum": [
+            "mic0",
+            "mic1",
+            "mic2",
+            "mic3"
+          ]
+        },
+        "x": {
+          "$ref": "#/$defs/rational"
+        },
+        "y": {
+          "$ref": "#/$defs/rational"
+        },
+        "z": {
+          "$ref": "#/$defs/rational"
+        }
+      },
+      "required": [
+        "channel",
+        "mic_id",
+        "x",
+        "y",
+        "z"
+      ],
+      "additionalProperties": false
+    },
+    "geometry": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "const": "ss-identity-container-v1"
+        },
+        "version": {
+          "type": "string",
+          "const": "1"
+        },
+        "kind": {
+          "type": "string",
+          "const": "geometry"
+        },
+        "scope": {
+          "type": "string",
+          "const": "four-mic-planar-design"
+        },
+        "coordinate_unit": {
+          "type": "string",
+          "const": "mm"
+        },
+        "speed_unit": {
+          "type": "string",
+          "const": "mm-per-second"
+        },
+        "reference_mic": {
+          "type": "string",
+          "const": "mic0"
+        },
+        "x_axis": {
+          "type": "string",
+          "const": "mic0-to-mic1"
+        },
+        "y_axis": {
+          "type": "string",
+          "const": "mic0-to-mic3"
+        },
+        "angle_convention": {
+          "type": "string",
+          "const": "atan2-y-x-degrees"
+        },
+        "mics": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "prefixItems": [
+            {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/mic"
+                },
+                {
+                  "properties": {
+                    "channel": {
+                      "type": "string",
+                      "const": "0"
+                    },
+                    "mic_id": {
+                      "type": "string",
+                      "const": "mic0"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/mic"
+                },
+                {
+                  "properties": {
+                    "channel": {
+                      "type": "string",
+                      "const": "1"
+                    },
+                    "mic_id": {
+                      "type": "string",
+                      "const": "mic1"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/mic"
+                },
+                {
+                  "properties": {
+                    "channel": {
+                      "type": "string",
+                      "const": "2"
+                    },
+                    "mic_id": {
+                      "type": "string",
+                      "const": "mic2"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/mic"
+                },
+                {
+                  "properties": {
+                    "channel": {
+                      "type": "string",
+                      "const": "3"
+                    },
+                    "mic_id": {
+                      "type": "string",
+                      "const": "mic3"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "items": false
+        },
+        "speed_of_sound": {
+          "$ref": "#/$defs/positive_rational"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "kind",
+        "scope",
+        "coordinate_unit",
+        "speed_unit",
+        "reference_mic",
+        "x_axis",
+        "y_axis",
+        "angle_convention",
+        "mics",
+        "speed_of_sound"
+      ],
+      "additionalProperties": false
+    },
+    "numeric": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "const": "ss-identity-container-v1"
+        },
+        "version": {
+          "type": "string",
+          "const": "1"
+        },
+        "kind": {
+          "type": "string",
+          "const": "numeric"
+        },
+        "profile_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 96,
+          "pattern": "^[a-z0-9][a-z0-9-]*$",
+          "not": {
+            "pattern": "[^a-z0-9-]"
+          }
+        },
+        "geometry_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "twiddle_backend": {
+          "type": "string",
+          "enum": [
+            "portable-q30",
+            "amd24"
+          ]
+        },
+        "algorithm_ref": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/reference"
+            },
+            {
+              "properties": {
+                "schema_id": {
+                  "type": "string",
+                  "const": "ss-numeric-algorithm-v1"
+                }
+              }
+            }
+          ]
+        },
+        "source_manifest_ref": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/reference"
+            },
+            {
+              "properties": {
+                "schema_id": {
+                  "type": "string",
+                  "const": "ss-numeric-source-manifest-v1"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "kind",
+        "profile_id",
+        "geometry_sha256",
+        "twiddle_backend",
+        "algorithm_ref",
+        "source_manifest_ref"
+      ],
+      "additionalProperties": false
+    },
+    "acquisition": {
+      "type": "object",
+      "properties": {
+        "sample_rate_hz": {
+          "type": "string",
+          "const": "48000"
+        },
+        "frame_length": {
+          "type": "string",
+          "const": "1024"
+        },
+        "hop": {
+          "type": "string",
+          "const": "512"
+        },
+        "channels": {
+          "type": "string",
+          "const": "4"
+        },
+        "row_words": {
+          "type": "string",
+          "const": "8"
+        },
+        "format": {
+          "type": "string",
+          "const": "h1-0.3-s24-signext-le32"
+        },
+        "capture_contract_ref": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/reference"
+            },
+            {
+              "properties": {
+                "schema_id": {
+                  "type": "string",
+                  "const": "ss-capture-contract-v1"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "sample_rate_hz",
+        "frame_length",
+        "hop",
+        "channels",
+        "row_words",
+        "format",
+        "capture_contract_ref"
+      ],
+      "additionalProperties": false
+    },
+    "transport": {
+      "type": "object",
+      "properties": {
+        "worker": {
+          "type": "string",
+          "const": "single-owner"
+        },
+        "isr": {
+          "type": "string",
+          "const": "enqueue-only"
+        },
+        "rx_release": {
+          "type": "string",
+          "const": "after-successful-copy"
+        },
+        "token": {
+          "type": "string",
+          "const": "session-generation-slot"
+        },
+        "session": {
+          "type": "string",
+          "const": "boot-scoped-monotone-u64"
+        },
+        "generation": {
+          "type": "string",
+          "const": "object-lifetime-monotone-u64"
+        },
+        "binding_ref": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/reference"
+            },
+            {
+              "properties": {
+                "schema_id": {
+                  "type": "string",
+                  "const": "ss-transport-binding-v1"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "worker",
+        "isr",
+        "rx_release",
+        "token",
+        "session",
+        "generation",
+        "binding_ref"
+      ],
+      "additionalProperties": false
+    },
+    "config": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "const": "ss-identity-container-v1"
+        },
+        "version": {
+          "type": "string",
+          "const": "1"
+        },
+        "kind": {
+          "type": "string",
+          "const": "config"
+        },
+        "geometry_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "numeric_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "acquisition": {
+          "$ref": "#/$defs/acquisition"
+        },
+        "transport": {
+          "$ref": "#/$defs/transport"
+        },
+        "activity_ref": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/reference"
+            },
+            {
+              "properties": {
+                "schema_id": {
+                  "type": "string",
+                  "const": "ss-activity-v1"
+                }
+              }
+            }
+          ]
+        },
+        "calibration_ref": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/reference"
+            },
+            {
+              "properties": {
+                "schema_id": {
+                  "type": "string",
+                  "const": "ss-calibration-v1"
+                }
+              }
+            }
+          ]
+        },
+        "tracker_ref": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/reference"
+            },
+            {
+              "properties": {
+                "schema_id": {
+                  "type": "string",
+                  "const": "ss-tracker-v1"
+                }
+              }
+            }
+          ]
+        },
+        "ttl_ref": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/reference"
+            },
+            {
+              "properties": {
+                "schema_id": {
+                  "type": "string",
+                  "const": "ss-ttl-v1"
+                }
+              }
+            }
+          ]
+        },
+        "required_units_ref": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/reference"
+            },
+            {
+              "properties": {
+                "schema_id": {
+                  "type": "string",
+                  "const": "ss-required-units-v1"
+                }
+              }
+            }
+          ]
+        },
+        "timebase_ref": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/reference"
+            },
+            {
+              "properties": {
+                "schema_id": {
+                  "type": "string",
+                  "const": "ss-timebase-v1"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "kind",
+        "geometry_sha256",
+        "numeric_sha256",
+        "acquisition",
+        "transport",
+        "activity_ref",
+        "calibration_ref",
+        "tracker_ref",
+        "ttl_ref",
+        "required_units_ref",
+        "timebase_ref"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "#/$defs/geometry"
+    },
+    {
+      "$ref": "#/$defs/numeric"
+    },
+    {
+      "$ref": "#/$defs/config"
+    }
+  ]
+}

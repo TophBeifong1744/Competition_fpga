@@ -1,6 +1,6 @@
 # #14 A侧合同决策增量：身份、数值、状态与时间
 
-版本：`a-production-contract-candidate-0.2`；作者A，非作者复核B。状态：`PROPOSED_BY_A / WAIT_B_CONFIRMATION`，`production_frozen=false`，`REALTIME_BLOCKED`。
+版本：`a-production-contract-candidate-0.3`；作者A，非作者复核B。状态：`PROPOSED_BY_A / WAIT_B_CONFIRMATION`，`production_frozen=false`，`REALTIME_BLOCKED`。
 
 本稿把候选设计选择具体化，供B按D14编号集中确认；不把设计决定当作实现或测试通过。PR #30 对 `c4a2a173eb48383a30d3bfc3138e0ee14a25b4d4` 的批准仅覆盖原准备稿，本增量不继承该批准。默认reference25、旧profile/golden、采集固件、实际one/Vitis及历史证据均不改。
 
@@ -38,17 +38,15 @@ S0要求PL实时GCC-PHAT/TDOA/二维DOA。S1中“doa_cordic_tracker：PS首选�
 
 ## 3. D14-02：三份身份的候选生成规则
 
-本节是新规范建议，尚无生成器或生产hash；不得填造hash。保留现C桥config/geometry/numeric各32B且非零的边界，不改现ABI布局。
+按B对`ec5017d`的复核修订：旧规则没有规定字符串转义，不能唯一编码；同对象的`"A"`与`"\u0041"`不得直接各自hash。本节以[身份容器规范](IDENTITY-CONTAINER-20260924.md)及[可执行容器schema](identity-container-v1.schema.json)为唯一详细定义；本稿不再维护第二套字段表。
 
-1. 规范对象使用固定schema/version、ASCII字段名；拒绝重复键、未知字段和浮点数。身份/计数/定点码用规范十进制字符串（无前导+、无多余0，零仅`0`）；有理数用约分的`numerator/denominator`对象，分母为正。枚举和哈希用规定的小写字符串，逻辑标志才用bool。数组次序按合同，不能自动排序通道或pair。
-2. 对象键递归按ASCII字典序；UTF-8、无BOM、无空白、无末尾换行的JSON字节为canonical payload；字符串值限定ASCII以避免Unicode归一化分歧。SHA-256输入为`SoundSight/<kind>/v1\n`的UTF-8字节与payload直接拼接，kind只能是config/geometry/numeric。输出32B；JSON展示为64位小写十六进制。域前缀中的`\n`是单个LF字节。
-3. `geometry`包含channel→mic映射、坐标及单位、参考mic、坐标轴/角度方向、声速和几何适用范围；实际不确定性以独立现场证据引用，不把40mm模型写成精密实测。
-4. `numeric`包含D14-01各节点格式/缩放/舍入/非法域、pair顺序、ROM和算法参考字节身份、**twiddle_backend**及对应golden身份。portable-q30与amd24是不同numeric对象；当前AMD绑定缺项时不生成“生产已完成”的numeric对象。共同profile名称不代表逐码相同。
-5. `config`引用geometry/numeric摘要，并包含采集来源/采样配置、activity与calibration对象摘要、Tracker/TTL策略、完整required-units及skip规则、时基/身份映射合同版本。calibration数据的内容身份需纳入其对象，不能只写易变路径。三对象引用保持无环：geometry不引用config，numeric可引用geometry，config引用二者。
-6. 实际XCI/wrapper/ELF、工具及构建字节身份另列实现绑定清单；该清单引用三份摘要和实际产物哈希。源码语义一致不证明构建或实际位精确结果一致。源码证据以固定Git提交/blob或其明确导出字节为准；可加载工件使用实物字节SHA-256，禁止静默把CRLF转换当同一工件。
-7. 缺少必需字段的草案可保留null，但不得通过生产profile验证或下发。运行中配置不可变；任何有效字段变化必须新身份，并在停止/退役旧在途对象后的新session生效。
+输入允许非canonical但合法的JSON文本，须拒绝重复键/非法字符和类型，先校验解析对象，再由唯一encoder生成canonical payload后hash。生产输出只允许canonical字节。引号和反斜线分别仅用JSON标准两字节转义，其他可打印ASCII原样输出（含斜线），控制字符与DEL固定小写`\u00xx`，不用短转义。数字码值仍为规范十进制字符串；有理数约分，分母正，零唯一为0/1且禁止负零。
 
-B需要一次确认的是算法字段全集与引用关系；E后续实现canonical生成/校验及缺项拒绝，不在本轮生成假默认。
+三个kind的容器字段、精确类型、版本值、required/null/unknown规则及引用方向已列出。容器内部不放任意扩展字典；未齐的numeric/activity/calibration/Tracker/TTL/required-units算法对象通过具名schema与内容摘要引用，字段和准确原件仍由B确认。**容器schema通过不表示引用对象完整或生产准入**；缺外部schema/原件、图有环、参数不适用或双方未确认时不得生成可下发生产身份。草案可用null显式记缺件，但严格schema拒绝它。
+
+numeric不再引用golden全文件哈希：golden验证绑定记录位于三个身份之外，由它引用numeric/config、输入与golden的准确字节摘要；numeric的算法源/ROM等上游引用不得反向引用自身或config。这是本轮消除hash环的明确选择，不通过忽略字段或修改旧golden解决。
+
+保留现C桥三份32B非零摘要边界，不改变ABI布局。当前没有生产生成器、真实完整对象或可下发生产hash；机械反例/合成schema用例只验证本次规范的有限性质。
 
 ## 4. D14-03：时基适配与TTL，不把8样点前视当处理延迟
 
@@ -94,7 +92,13 @@ C桥unknown clock时不提交，take返回WAIT；这是保留行为，不写成�
 - token沿用(session,generation,slot)。session非零uint64严格递增，generation跨正常stop/reset/start保留递增，耗尽拒绝；对象重建还需boot映射与旧回调退役证明。不得截断外部字符串或清零generation假装新事务。
 - 平滑audio_stop/SEARCH/TTL沿S5：不启动第三beam，最坏960样点回mono，淡出期间旧beam可仍有权重。fatal/session_abort为另一条撤销/运输停止路径，不能解释成20ms平滑等待；硬停完成必须有实际abort/drain及输出取消证据。
 
-**I14-TOKEN-01（新组合差异，OPEN）：** S3文档泛称当前未知事务错误保守fail-stop，但其dispatch对`slot >= PSB_RESULTS`先归STALE并跳过。A本次选择的生产适配规则为：已可靠归属旧session的事件只审计；当前session的非法slot/未知generation或不可归属的畸形当前事件不得静默忽略，须拒绝并fail-stop。此规则尚未实现，B应确认影响及适用错误分类；后续E只修明确增量并补当前/旧session对照反例。不倒签S3已覆盖，不撤销其未受影响的限定批准，也不重开既有R1/R2。
+**I14-TOKEN-01（OPEN；原ID保留，文稿分类返修第1轮）：** 接受B更正，拆为以下三个范围，不能统称本轮新需求。
+
+- **既有合同与实现差距，静态确认：** S2已明确当前未知error（含越界slot/未知代次/已释放对象）应fail-stop，S3 CONTRACT也要求当前未知错误保守停止；但S3 `src/ps_bridge.c:172`先把session不匹配或`slot >= PSB_RESULTS`合并归STALE并continue，跳过error处理。完整静态反例前提是active、未failed的当前session、审计有空位、单条slot=4（PSB_RESULTS=4）、error=true、batch无fatal/control。该路径记录STALE并REJECT而未置failed；审计溢出触发的旁路fault不能抵扣。**本轮未编译/运行该C反例，不称实测复现。**
+- **新增组合要求，待确认：** 当前session无error的畸形事件也fail-stop，单独于既有error缺陷审查，不能混成原合同已批准范围。未来session、未知boot或无法归属的事件也不能仅因session不相等就当成已证实的旧回调；归属策略仍OPEN。
+- **沿用保护：** 已可靠归属旧session的error只STALE/审计，不误杀当前session。对象重建/boot映射及旧回调退役必须给实际依据。
+
+实际修复由A所有，在后续E实现/验收资产串行批次处理。本轮仅改分类，不改C源码。最小验证需覆盖当前/旧session、越界slot、未知generation/已释放对象error、与合法完成同批的两种顺序；核对failed、撤销、无新commit和take拒绝，不能只看返回码。无error策略独立列新增合同用例。原批准未覆盖此静态缺陷，不以旧PASS证明它；未受影响批准及既有R1/R2保留，不整体撤销或重开。
 
 ## 7. D14-06：哪些待设计确认，哪些待实现/实测
 
@@ -110,8 +114,10 @@ C桥unknown clock时不提交，take返回WAIT；这是保留行为，不写成�
 
 ## 8. B最小回执与E后续实施边界
 
-B只需对本增量准确SHA按D14-01～06回复同意/具体调整/缺件及文件版本，另回复I14-TOKEN-01分类；引用未变批准，不重审FFT/耐久或重跑33/122/30项。一个准备稿APPROVED不自动填写这些确认。
+B已在[原PR复核评论](https://github.com/TophBeifong1744/Competition_fpga/pull/30#issuecomment-5810446729)接受D14-01、03～06的候选方向，未整体批准表中常量或生产配置。本轮只请B增量核查D14-02的编码/容器/引用定义及I14-TOKEN-01分类，并集中确认身份容器规范末表的具体算法对象/来源；已有方向意见直接沿用，不要求重审FFT/耐久或重跑33/122/30项。原准备稿APPROVED不扩大到本增量。
 
 首个E实施包建议是**固定4独立适配及验收**，前置为B确认D14-01对应域、输入/输出握手和状态绑定：复用145向量作输入，独立期望核对，覆盖正负tie、极限RNE溢出、随机ready、末拍、错误/停止同拍及状态晚到；不修改默认reference25、现有FFT IP、one/Vitis或旧golden。确定源码/TB路径、单写入方和锁定工程Skill后再派发；本稿不假定E已接单。身份/状态/时基适配是另一个完整组合包，不按每条命令拆单，也不在边界未确认时提前实现整条生产链。
 
-本次实际工作仅来源/语义核对和合同增量；没有新的RTL、AMD、ARM、板测或声学结果。S1的145向量、S3/S4/S5既有证据按原范围引用，未重跑。A机现有未跟踪旧意见原件保留，不另建任务状态台账。
+新增机械检查见 `identity-contract-checks-20260924/README.md` 与准确同版 `result.json`；只覆盖合成容器/编码有限探针，外部引用解析、完整关系与生产生成器未实现。
+
+本次实际工作仅来源/语义核对、合同增量和机械探针；没有新的RTL、AMD、ARM、板测或声学结果。S1的145向量、S3/S4/S5既有证据按原范围引用，未重跑。A机现有未跟踪旧意见原件保留，不另建任务状态台账。
