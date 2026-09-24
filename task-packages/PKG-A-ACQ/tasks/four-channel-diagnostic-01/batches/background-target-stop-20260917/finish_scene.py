@@ -6,7 +6,10 @@ from pathlib import Path
 import numpy as np
 HERE=Path(__file__).resolve().parent
 TASK=HERE.parents[1]
-REPO=next(p for p in HERE.parents if (p/'docs/team-workflow.md').is_file())
+REPO=TASK.parents[3]
+if (TASK != REPO/'task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01' or
+        not (REPO/'document/team-workflow.md').is_file()):
+    raise RuntimeError(f'Invalid SoundSight repository root: {REPO} (expected task package layout and document/team-workflow.md)')
 SOURCE=TASK/'source'
 sys.path.insert(0,str(SOURCE))
 from export_four import export,decode,HEADER
