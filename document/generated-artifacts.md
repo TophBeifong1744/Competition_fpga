@@ -2,7 +2,7 @@
 
 采用 fpga-team-workflow：一个成员默认一个活动checkout；分支不等于新工程副本。只有独立复现或真实并行写入才新增最小worktree，完成后按证据检查退出。
 
-- Issue #26 候选将活动源码/入口归入 project/rtl、simulation/tb、simulation、software、models、data/fixtures；skill 与外部原生 one 不迁移。后续产品只维护一份权威源，任务包仅保留交付索引、配置和必需冻结证据。准确映射及待审边界见[实体迁移](layout-migration.md)。
+- Issue #26 的实体迁移已通过 B 限定复核，经 PR #27 合入：活动源码/入口位于 project/rtl、simulation/tb、simulation、software、models、data/fixtures；skill 与外部原生 one 不迁移。后续产品只维护一份权威源，任务包仅保留交付索引、配置和必需冻结证据。准确映射与发布边界见[实体迁移](layout-migration.md)。
 - 旧 task-packages/、deliverables/、archive/ 的冻结源码/失败日志为历史证据，不全量删重，不当新活动源码。代码接入必须有准确范围的真实成员批准与新入口验证。
 - .xpr、.srcs、.bd、.xci、.mem/.coe、锁定IP的DCP及bit/XSA/ELF/HWH不能按后缀当缓存。
 - 原录音、旧错误素材、失败日志和唯一测量保留；临时目录名、Git忽略、已合并都不是删除依据。

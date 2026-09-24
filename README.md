@@ -165,7 +165,7 @@ PYNQ 是首选控制层实现，但 AXI4-Lite 寄存器、AXI DMA 数据格式�
 └─ codex_out/、.local/  本机诊断与私有配置，运行时按需生成并忽略
 ```
 
-各目录 README 说明允许提交的内容和边界。协作流程见 [CONTRIBUTING.md](CONTRIBUTING.md)，旧新映射和历史复现见[实体迁移说明](document/layout-migration.md)。这是 Issue #26 的候选布局；准确合入状态以 PR 为准。仓库没有已核定的正式 .xpr/BAT/ModelSim 入口，外部 one 工程不在本次迁移范围。
+各目录 README 说明允许提交的内容和边界。协作流程见 [CONTRIBUTING.md](CONTRIBUTING.md)，旧新映射和历史复现见[实体迁移说明](document/layout-migration.md)。此布局已获 B 限定批准，2026-09-24 经 PR #27 合入 main 并同步本机，见[发布收尾](docs/maintenance/layout-migration-20260923/CLOSEOUT-20260924.md)。仓库没有已核定的正式 .xpr/BAT/ModelSim 入口，外部 one 工程不在本次迁移范围。
 
 ## 官方推荐提交目录映射
 
