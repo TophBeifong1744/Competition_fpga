@@ -4,10 +4,10 @@
     "id": "soundsight",
     "repository": "TophBeifong1744/Competition_fpga",
     "default_branch": "main",
-    "identity_ref": "docs/project-identity.md",
+    "identity_ref": "document/project-identity.md",
     "interface_refs": [
-      "docs/minimal-data-interface.md",
-      "docs/three-handoff-workflow.md"
+      "document/minimal-data-interface.md",
+      "document/three-handoff-workflow.md"
     ],
     "tool_baseline": "Vivado 2025.2",
     "final_acceptance_date": "2026-10-07"
@@ -16,42 +16,44 @@
     "schema_version": 1,
     "mode": "existing",
     "upstream_project_root": ".",
-    "document_root": "docs",
+    "document_root": "document",
     "project_control": "native_project",
     "project_entry": null,
     "rtl_roots": [
-      "rtl"
+      "project/rtl"
     ],
     "ip_roots": [],
     "bd_roots": [],
     "constraint_roots": [],
     "tb_roots": [
-      "tb"
+      "simulation/tb"
     ],
     "model_roots": [
-      "model"
+      "models"
     ],
     "software_roots": [
-      "ps"
+      "software"
     ],
-    "fixture_roots": [],
+    "fixture_roots": [
+      "data/fixtures/h1"
+    ],
     "filelist_refs": {
       "product": null,
       "simulation": null
     },
     "entry_refs": {
       "build": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/current_build/build_current.py",
-      "simulation": "sim/run_regression.ps1"
+      "simulation": "simulation/run_regression.ps1"
     },
     "runtime_roots": {
       "formal_build": null,
-      "formal_simulation": "sim/build",
-      "diagnostics": "results/tmp",
+      "formal_simulation": null,
+      "diagnostics": "codex_out",
       "release_output": null
     },
     "source_exceptions": [],
     "required_inputs": [
-      "sim/modules.json"
+      "simulation/modules.json"
     ],
     "adapter_status": "UNVERIFIED",
     "adapter_evidence_ref": null
@@ -98,9 +100,9 @@
   "ownership": [
     {
       "paths": [
-        "rtl/acquisition",
-        "ps",
-        "vivado"
+        "project/rtl/acquisition",
+        "software",
+        "project/add_sources.tcl"
       ],
       "owner": "A",
       "review_candidates": [
@@ -110,7 +112,7 @@
     },
     {
       "paths": [
-        "model"
+        "models"
       ],
       "owner": "B",
       "review_candidates": [
@@ -120,8 +122,8 @@
     },
     {
       "paths": [
-        "rtl/servo",
-        "tb/servo",
+        "project/rtl/servo",
+        "simulation/tb/servo",
         "task-packages/PKG-SERVO-PWM"
       ],
       "owner": "C",
@@ -142,7 +144,7 @@
     },
     {
       "paths": [
-        "docs"
+        "document"
       ],
       "owner": "A",
       "review_candidates": [
@@ -155,19 +157,22 @@
     "default_strategy": "reuse",
     "sparse_checkout": "when_dependency_closed",
     "extra_worktree": "only_when_needed",
-    "generated_policy_ref": "docs/generated-artifacts.md",
+    "generated_policy_ref": "document/generated-artifacts.md",
     "protected_paths": [
       "task-packages",
       "hardware",
       "deliverables",
       "archive",
-      "model",
-      "rtl",
-      "tb",
-      "ps",
-      "skill"
+      "models",
+      "project",
+      "simulation/tb",
+      "software",
+      "data/fixtures",
+      "skill",
+      "docs",
+      "tools"
     ],
-    "board_resource_ref": "docs/project-identity.md"
+    "board_resource_ref": "document/project-identity.md"
   },
   "collaboration": {
     "default_human_approvals": 1,

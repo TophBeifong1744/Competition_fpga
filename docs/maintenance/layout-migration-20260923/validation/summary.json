@@ -1,0 +1,556 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "layout-validation-01",
+  "snapshot_id": "sha256:c8bcbdbd15f6df61cac26b194476603136f40fc84f4ca7b50f6dd1c34492eb49",
+  "claim_stage": "SIM_SMOKE",
+  "verdict": "DIAGNOSTIC_ONLY",
+  "checks": {
+    "manifest_only_target_and_sources_changed": true,
+    "all_16_moved_inputs_byte_identical": true,
+    "source_inputs_stable": true,
+    "all_native_requested_sources_loaded": true,
+    "all_skill_snapshots_match_originals": true,
+    "all_commands_match_expectations": true,
+    "h1_fixture_markers": true
+  },
+  "matrix": [
+    {
+      "name": "regression/servo",
+      "top": "tb_motor_drive",
+      "output_directory": "regression\\servo",
+      "status": "DIAGNOSTIC_ONLY",
+      "native_result": {
+        "name": "servo",
+        "top": "tb_motor_drive",
+        "status": "PASS",
+        "marker": "PASS motor_drive checks=39",
+        "log_sha256": "137C67C7535946D3761020D595D23E0B3EF8C135BD19F9E4207CF2CA482999B2"
+      },
+      "actual_loader_paths": [
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/project/rtl/servo/motor_drive.v",
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/simulation/tb/servo/tb_motor_drive.v"
+      ],
+      "all_requested_sources_observed": true,
+      "marker": "PASS motor_drive checks=39",
+      "marker_seen": true,
+      "compile_logs": [
+        "regression\\servo\\compile-v.txt"
+      ],
+      "elaborate_log": "regression\\servo\\elaborate.txt",
+      "run_log": "regression\\servo\\simulation.log",
+      "isolated_library": "regression\\servo\\xsim.dir",
+      "warnings": []
+    },
+    {
+      "name": "regression/stats",
+      "top": "tb_stream_error_stats",
+      "output_directory": "regression\\stats",
+      "status": "DIAGNOSTIC_ONLY",
+      "native_result": {
+        "name": "stats",
+        "top": "tb_stream_error_stats",
+        "status": "PASS",
+        "marker": "ALL TESTS PASS",
+        "log_sha256": "FBFB27E6B2C3EFD65FEA6C85E9B854B18B31820381495715306D83C3D816F85B"
+      },
+      "actual_loader_paths": [
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/project/rtl/common/stream_error_stats.sv",
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/simulation/tb/common/tb_stream_error_stats.sv"
+      ],
+      "all_requested_sources_observed": true,
+      "marker": "ALL TESTS PASS",
+      "marker_seen": true,
+      "compile_logs": [
+        "regression\\stats\\compile-sv.txt"
+      ],
+      "elaborate_log": "regression\\stats\\elaborate.txt",
+      "run_log": "regression\\stats\\simulation.log",
+      "isolated_library": "regression\\stats\\xsim.dir",
+      "warnings": []
+    },
+    {
+      "name": "regression/snapshot",
+      "top": "tb_stream_error_snapshot_all_widths",
+      "output_directory": "regression\\snapshot",
+      "status": "DIAGNOSTIC_ONLY",
+      "native_result": {
+        "name": "snapshot",
+        "top": "tb_stream_error_snapshot_all_widths",
+        "status": "PASS",
+        "marker": "ALL TESTS PASS",
+        "log_sha256": "8EA122DBCD878DC807C8E5E1030892F9D688D31F5FB7F9C658F66E46DB0A9454"
+      },
+      "actual_loader_paths": [
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/project/rtl/common/stream_error_snapshot.v",
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/simulation/tb/common/tb_stream_error_snapshot.v"
+      ],
+      "all_requested_sources_observed": true,
+      "marker": "ALL TESTS PASS",
+      "marker_seen": true,
+      "compile_logs": [
+        "regression\\snapshot\\compile-v.txt"
+      ],
+      "elaborate_log": "regression\\snapshot\\elaborate.txt",
+      "run_log": "regression\\snapshot\\simulation.log",
+      "isolated_library": "regression\\snapshot\\xsim.dir",
+      "warnings": []
+    },
+    {
+      "name": "regression/snapshot_joint",
+      "top": "tb_stream_error_snapshot_integration",
+      "output_directory": "regression\\snapshot_joint",
+      "status": "DIAGNOSTIC_ONLY",
+      "native_result": {
+        "name": "snapshot_joint",
+        "top": "tb_stream_error_snapshot_integration",
+        "status": "PASS",
+        "marker": "ALL TESTS PASS",
+        "log_sha256": "C0931DBF07FE56235FAAF5D4B39BE9D25AB3B0E8470D0F80F1402E079F7EE489"
+      },
+      "actual_loader_paths": [
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/project/rtl/common/stream_error_snapshot.v",
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/project/rtl/common/stream_error_stats.sv",
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/simulation/tb/common/tb_stream_error_snapshot_integration.v"
+      ],
+      "all_requested_sources_observed": true,
+      "marker": "ALL TESTS PASS",
+      "marker_seen": true,
+      "compile_logs": [
+        "regression\\snapshot_joint\\compile-sv.txt",
+        "regression\\snapshot_joint\\compile-v.txt"
+      ],
+      "elaborate_log": "regression\\snapshot_joint\\elaborate.txt",
+      "run_log": "regression\\snapshot_joint\\simulation.log",
+      "isolated_library": "regression\\snapshot_joint\\xsim.dir",
+      "warnings": []
+    },
+    {
+      "name": "regression/snapshot_independent",
+      "top": "tb_independent",
+      "output_directory": "regression\\snapshot_independent",
+      "status": "DIAGNOSTIC_ONLY",
+      "native_result": {
+        "name": "snapshot_independent",
+        "top": "tb_independent",
+        "status": "PASS",
+        "marker": "REVIEW ALL PASS",
+        "log_sha256": "AE988B9B6305056D241E6F61EA110847778D419208B08100ACB077B165F838B2"
+      },
+      "actual_loader_paths": [
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/project/rtl/common/stream_error_snapshot.v",
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/project/rtl/common/stream_error_stats.sv",
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/simulation/tb/common/tb_snapshot_independent.sv"
+      ],
+      "all_requested_sources_observed": true,
+      "marker": "REVIEW ALL PASS",
+      "marker_seen": true,
+      "compile_logs": [
+        "regression\\snapshot_independent\\compile-sv.txt",
+        "regression\\snapshot_independent\\compile-v.txt"
+      ],
+      "elaborate_log": "regression\\snapshot_independent\\elaborate.txt",
+      "run_log": "regression\\snapshot_independent\\simulation.log",
+      "isolated_library": "regression\\snapshot_independent\\xsim.dir",
+      "warnings": []
+    },
+    {
+      "name": "regression/pcm4",
+      "top": "tb_pcm4_signext_pack",
+      "output_directory": "regression\\pcm4",
+      "status": "DIAGNOSTIC_ONLY",
+      "native_result": {
+        "name": "pcm4",
+        "top": "tb_pcm4_signext_pack",
+        "status": "PASS",
+        "marker": "ALL TESTS PASS",
+        "log_sha256": "22DC1D483941A5E127EC3FE7C76A33F5C80AF1E3D0E091C027F47592FF38BF39"
+      },
+      "actual_loader_paths": [
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/project/rtl/acquisition/pcm4_signext_pack.v",
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/simulation/tb/acquisition/tb_pcm4_signext_pack.v"
+      ],
+      "all_requested_sources_observed": true,
+      "marker": "ALL TESTS PASS",
+      "marker_seen": true,
+      "compile_logs": [
+        "regression\\pcm4\\compile-v.txt"
+      ],
+      "elaborate_log": "regression\\pcm4\\elaborate.txt",
+      "run_log": "regression\\pcm4\\simulation.log",
+      "isolated_library": "regression\\pcm4\\xsim.dir",
+      "warnings": []
+    },
+    {
+      "name": "regression/pcm4_independent",
+      "top": "tb_review",
+      "output_directory": "regression\\pcm4_independent",
+      "status": "DIAGNOSTIC_ONLY",
+      "native_result": {
+        "name": "pcm4_independent",
+        "top": "tb_review",
+        "status": "PASS",
+        "marker": "REVIEW ALL PASS",
+        "log_sha256": "727F6D108D73557EF485091660F7ABFFCF8B5584FD17790A2C6D31B2639CCA05"
+      },
+      "actual_loader_paths": [
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/project/rtl/acquisition/pcm4_signext_pack.v",
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/simulation/tb/acquisition/tb_pcm4_independent.sv"
+      ],
+      "all_requested_sources_observed": true,
+      "marker": "REVIEW ALL PASS",
+      "marker_seen": true,
+      "compile_logs": [
+        "regression\\pcm4_independent\\compile-sv.txt",
+        "regression\\pcm4_independent\\compile-v.txt"
+      ],
+      "elaborate_log": "regression\\pcm4_independent\\elaborate.txt",
+      "run_log": "regression\\pcm4_independent\\simulation.log",
+      "isolated_library": "regression\\pcm4_independent\\xsim.dir",
+      "warnings": []
+    },
+    {
+      "name": "servo-1mhz",
+      "top": "tb_motor_drive",
+      "output_directory": "servo-1mhz",
+      "status": "DIAGNOSTIC_ONLY",
+      "native_result": {
+        "status": "PASS_MODULE_SIMULATION",
+        "clock_hz": 1000000,
+        "max_angle_deg": 360,
+        "vivado_bin": "F:/AMD/2025.2/Vivado/bin",
+        "sources": [
+          "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\project\\rtl\\servo\\motor_drive.v",
+          "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\simulation\\tb\\servo\\tb_motor_drive.v"
+        ],
+        "stages": [
+          {
+            "exit_code": 0,
+            "name": "xvlog"
+          },
+          {
+            "exit_code": 0,
+            "name": "xelab"
+          },
+          {
+            "exit_code": 0,
+            "name": "xsim"
+          }
+        ]
+      },
+      "actual_loader_paths": [
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/project/rtl/servo/motor_drive.v",
+        "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/simulation/tb/servo/tb_motor_drive.v"
+      ],
+      "all_requested_sources_observed": true,
+      "marker": "PASS motor_drive checks=39 CLK_FREQ_HZ=1000000 MAX_ANGLE_DEG=360",
+      "marker_seen": true,
+      "compile_logs": [
+        "servo-1mhz\\compile.txt"
+      ],
+      "elaborate_log": "servo-1mhz\\elaborate.txt",
+      "run_log": "servo-1mhz\\simulation.log",
+      "isolated_library": "servo-1mhz\\xsim.dir",
+      "warnings": []
+    },
+    {
+      "name": "skill/pcm4",
+      "top": "tb_pcm4_skill",
+      "status": "DIAGNOSTIC_ONLY",
+      "native_status": "PASS_SIMULATION",
+      "checks": 792,
+      "result": "skill-examples\\runs\\pcm4\\result.json",
+      "commands": [
+        {
+          "stage": "version",
+          "argv": [
+            "F:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+            "--version"
+          ],
+          "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\codex_out\\layout-validation-01\\skill-examples\\runs\\pcm4\\work",
+          "returncode": 0,
+          "timed_out": false,
+          "log_sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2"
+        },
+        {
+          "stage": "compile_v",
+          "argv": [
+            "F:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+            "pcm4_signext_pack.v"
+          ],
+          "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\codex_out\\layout-validation-01\\skill-examples\\runs\\pcm4\\work",
+          "returncode": 0,
+          "timed_out": false,
+          "log_sha256": "5ef2da29cb41ffeca6ead5628ca6a0c7fd3b700a4a220ff21ddedf73d59fe197"
+        },
+        {
+          "stage": "compile_sv",
+          "argv": [
+            "F:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+            "--sv",
+            "tb_pcm4_skill.sv"
+          ],
+          "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\codex_out\\layout-validation-01\\skill-examples\\runs\\pcm4\\work",
+          "returncode": 0,
+          "timed_out": false,
+          "log_sha256": "88d56df755f2ea82a6efe2ea5ea848b934d69cfc2efc225164b76630524ec742"
+        },
+        {
+          "stage": "elaborate",
+          "argv": [
+            "F:\\AMD\\2025.2\\Vivado\\bin\\xelab.bat",
+            "work.tb_pcm4_skill",
+            "-s",
+            "module_test",
+            "-timescale",
+            "1ns/1ps"
+          ],
+          "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\codex_out\\layout-validation-01\\skill-examples\\runs\\pcm4\\work",
+          "returncode": 0,
+          "timed_out": false,
+          "log_sha256": "ebd90cf67c325474ef8524b82fb2a12daf08dd37e9ad5f991f3cbe367a7ed584"
+        },
+        {
+          "stage": "simulate",
+          "argv": [
+            "F:\\AMD\\2025.2\\Vivado\\bin\\xsim.bat",
+            "module_test",
+            "-runall",
+            "-log",
+            "xsim.log"
+          ],
+          "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\codex_out\\layout-validation-01\\skill-examples\\runs\\pcm4\\work",
+          "returncode": 0,
+          "timed_out": false,
+          "log_sha256": "a9be44bd162adab107c07693da60a1864e25a9bc4def2a71e0efdc73a0c7d7d2"
+        }
+      ],
+      "load_chain": [
+        {
+          "resolved_source": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\project\\rtl\\acquisition\\pcm4_signext_pack.v",
+          "snapshot": "skill-examples\\runs\\pcm4\\inputs\\pcm4_signext_pack.v",
+          "compiled_copy": "skill-examples\\runs\\pcm4\\work\\pcm4_signext_pack.v",
+          "sha256": "85269ccd9991c80a2dbd507d342cc19d6e58517b9cc525520dce03b710df215a",
+          "all_three_bytes_identical": true
+        },
+        {
+          "resolved_source": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\skill\\fpga-module-verification\\examples\\pcm4\\tb_pcm4_skill.sv",
+          "snapshot": "skill-examples\\runs\\pcm4\\inputs\\tb_pcm4_skill.sv",
+          "compiled_copy": "skill-examples\\runs\\pcm4\\work\\tb_pcm4_skill.sv",
+          "sha256": "e35fcf8526373193977e1e7a261edb4e2b1e681a0c00efff732c8f2241be70b6",
+          "all_three_bytes_identical": true
+        }
+      ],
+      "derived_sources": [
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\project\\rtl\\acquisition\\pcm4_signext_pack.v",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\skill\\fpga-module-verification\\examples\\pcm4\\tb_pcm4_skill.sv"
+      ],
+      "isolated_library": "skill-examples\\runs\\pcm4\\work\\xsim.dir"
+    },
+    {
+      "name": "skill/elastic",
+      "top": "tb_elastic",
+      "status": "DIAGNOSTIC_ONLY",
+      "native_status": "PASS_SIMULATION",
+      "checks": 13800,
+      "result": "skill-examples\\runs\\elastic\\result.json",
+      "commands": [
+        {
+          "stage": "version",
+          "argv": [
+            "F:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+            "--version"
+          ],
+          "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\codex_out\\layout-validation-01\\skill-examples\\runs\\elastic\\work",
+          "returncode": 0,
+          "timed_out": false,
+          "log_sha256": "77c08d9897bb965504c2b5d52c23b33f1ddfa900b65deaa955558153f3329bd2"
+        },
+        {
+          "stage": "compile_v",
+          "argv": [
+            "F:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+            "elastic_stage.v"
+          ],
+          "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\codex_out\\layout-validation-01\\skill-examples\\runs\\elastic\\work",
+          "returncode": 0,
+          "timed_out": false,
+          "log_sha256": "c3bc05d4860e256058f438a8900d26b018866254aba9f8a8c1c0fe945dd7fd9f"
+        },
+        {
+          "stage": "compile_sv",
+          "argv": [
+            "F:\\AMD\\2025.2\\Vivado\\bin\\xvlog.bat",
+            "--sv",
+            "tb_elastic.sv"
+          ],
+          "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\codex_out\\layout-validation-01\\skill-examples\\runs\\elastic\\work",
+          "returncode": 0,
+          "timed_out": false,
+          "log_sha256": "5e80b4f9da54d6eb7103d2206956ad4ad914ff8258f009b1ae7a986506f07cb1"
+        },
+        {
+          "stage": "elaborate",
+          "argv": [
+            "F:\\AMD\\2025.2\\Vivado\\bin\\xelab.bat",
+            "work.tb_elastic",
+            "-s",
+            "module_test",
+            "-timescale",
+            "1ns/1ps"
+          ],
+          "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\codex_out\\layout-validation-01\\skill-examples\\runs\\elastic\\work",
+          "returncode": 0,
+          "timed_out": false,
+          "log_sha256": "d554031462435775800a4ee2dfcb95c3e52dc2f7fa60ed2b7aee37fb331ed7e6"
+        },
+        {
+          "stage": "simulate",
+          "argv": [
+            "F:\\AMD\\2025.2\\Vivado\\bin\\xsim.bat",
+            "module_test",
+            "-runall",
+            "-log",
+            "xsim.log"
+          ],
+          "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\codex_out\\layout-validation-01\\skill-examples\\runs\\elastic\\work",
+          "returncode": 0,
+          "timed_out": false,
+          "log_sha256": "17af277a0a7ffb7234775b44c244302f54523bfb2386b3e32f789a1d7da08b04"
+        }
+      ],
+      "load_chain": [
+        {
+          "resolved_source": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\skill\\fpga-module-verification\\examples\\elastic\\elastic_stage.v",
+          "snapshot": "skill-examples\\runs\\elastic\\inputs\\elastic_stage.v",
+          "compiled_copy": "skill-examples\\runs\\elastic\\work\\elastic_stage.v",
+          "sha256": "b96f113a3dd5da3a6ddbb388adc44828fdb20cffd856a9f20fbcba5181d2a633",
+          "all_three_bytes_identical": true
+        },
+        {
+          "resolved_source": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\skill\\fpga-module-verification\\examples\\elastic\\tb_elastic.sv",
+          "snapshot": "skill-examples\\runs\\elastic\\inputs\\tb_elastic.sv",
+          "compiled_copy": "skill-examples\\runs\\elastic\\work\\tb_elastic.sv",
+          "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7",
+          "all_three_bytes_identical": true
+        }
+      ],
+      "derived_sources": [
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\skill\\fpga-module-verification\\examples\\elastic\\elastic_stage.v",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\skill\\fpga-module-verification\\examples\\elastic\\tb_elastic.sv"
+      ],
+      "isolated_library": "skill-examples\\runs\\elastic\\work\\xsim.dir"
+    }
+  ],
+  "negative_cases": [
+    {
+      "name": "negative-regression-noncodex",
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-NoProfile",
+        "-File",
+        "simulation/run_regression.ps1",
+        "-VivadoBin",
+        "F:/AMD/2025.2/Vivado/bin",
+        "-OutputDirectory",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\layout-validation-invalid-output-01"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source",
+      "started_utc": "2026-09-23T12:51:32.260462+00:00",
+      "stdout": "commands\\negative-regression-noncodex\\stdout.txt",
+      "stderr": "commands\\negative-regression-noncodex\\stderr.txt",
+      "expectation": "Use a new directory below repository codex_out",
+      "exit_code": 1,
+      "ended_utc": "2026-09-23T12:51:32.673660+00:00",
+      "elapsed_seconds": 0.413,
+      "expectation_met": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "3c1cea67f61de20d17fefbfa79b37d029f087696f1ca88bd908eacc526178ac2"
+    },
+    {
+      "name": "negative-regression-existing",
+      "argv": [
+        "C:\\Users\\Toph Beifong\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+        "-NoProfile",
+        "-File",
+        "simulation/run_regression.ps1",
+        "-VivadoBin",
+        "F:/AMD/2025.2/Vivado/bin",
+        "-OutputDirectory",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\codex_out\\layout-validation-01\\regression"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source",
+      "started_utc": "2026-09-23T12:51:32.715914+00:00",
+      "stdout": "commands\\negative-regression-existing\\stdout.txt",
+      "stderr": "commands\\negative-regression-existing\\stderr.txt",
+      "expectation": "Use a new output directory; previous evidence is immutable",
+      "exit_code": 1,
+      "ended_utc": "2026-09-23T12:51:33.147572+00:00",
+      "elapsed_seconds": 0.431,
+      "expectation_met": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "89fe4ad4e026c363db449ec2352bec534b32c759dfb01260768d2dc703aada07"
+    },
+    {
+      "name": "negative-skill-existing",
+      "argv": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "scripts/run_module_skill_examples.py",
+        "--case",
+        "all",
+        "--vivado-bin",
+        "F:/AMD/2025.2/Vivado/bin",
+        "--output",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\codex_out\\layout-validation-01\\skill-examples"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source",
+      "started_utc": "2026-09-23T12:51:33.227980+00:00",
+      "stdout": "commands\\negative-skill-existing\\stdout.txt",
+      "stderr": "commands\\negative-skill-existing\\stderr.txt",
+      "expectation": "Use a new output directory; previous evidence is immutable",
+      "exit_code": 2,
+      "ended_utc": "2026-09-23T12:51:33.335528+00:00",
+      "elapsed_seconds": 0.106,
+      "expectation_met": true,
+      "stdout_sha256": "0b7f0e25c28ad4fd704c5cce08e8bfaf71fb15c6b37c1ee0d1cd3e74baad138b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "tool_banner": "Vivado Simulator v2025.2",
+  "source_stability_count": 37,
+  "traceability": {
+    "R1_original_input_bytes": "preflight.json: 11 HDL/TB + 5 fixtures compared to shared original paths",
+    "R2_provenance_approval_unchanged": "preflight.json: deep manifest comparison permits only files.target/cases.sources",
+    "R3_new_entry_loads_relocated_sources": "matrix: compiler loader lines and skill source/snapshot/work-copy hashes",
+    "R4_bounded_smoke_completion": "run-manifest.json: four sequential entry points, logs, exit codes",
+    "R5_reject_unsafe_or_existing_output": "negative_cases: rejected before EDA; existing evidence hashes unchanged",
+    "R6_frozen_runtime_inputs": "inputs-before.json and inputs-after.json: 37 stable actual dependencies"
+  },
+  "changed_test_assets": [],
+  "changed_product_assets": [],
+  "defects": [],
+  "limitations": [
+    "Diagnostic scope only; native PASS strings retained as raw observations, not functional acceptance",
+    "Servo MAX_ANGLE_DEG candidate pending independent review remains unchanged",
+    "Regression script stores overall exit and markers, not individual numeric stage exits; guard code checks each stage",
+    "Historical architecture input-boundary hash mismatch was already known; check NOT RUN",
+    "No desktop BAT, vendor export/preparation, or external one project is in this task",
+    "Initial recorder preflight erroneously tried historical provenance paths omitted from sparse candidate; recorder corrected to actual execution dependencies before any EDA"
+  ],
+  "required_reruns": [
+    "Rerun affected cases only if an input fingerprint or loader/runner changes"
+  ],
+  "not_run": [
+    "functional acceptance",
+    "negative HDL mutations",
+    "formal",
+    "CDC/RDC signoff",
+    "synthesis",
+    "implementation",
+    "STA",
+    "board",
+    "FFT",
+    "endurance",
+    "historical architecture input-boundary hash check"
+  ]
+}

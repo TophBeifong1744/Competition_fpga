@@ -1,6 +1,6 @@
 # 转台与摄像头路线决定
 
-2026-09-17，拓芙明确决定：**旧机械路线停止采用，按C的舵机与摄像头路线推进**。候选`b1d51d44aa2c055a145b832b7c272fd33b7d0395`获[限定模块PASS](../docs/reviews/servo-b1d51d4/REVIEW.md)，C负责方案落实、全部相关驱动与最终效果测试，见[C操作单](../docs/member-c-operation-sheet.md)。
+2026-09-17，拓芙明确决定：**旧机械路线停止采用，按C的舵机与摄像头路线推进**。候选`b1d51d44aa2c055a145b832b7c272fd33b7d0395`获[限定模块PASS](../docs/reviews/servo-b1d51d4/REVIEW.md)，C负责方案落实、全部相关驱动与最终效果测试，见[C操作单](../document/member-c-operation-sheet.md)。
 
 命令合同：同域稳定9位无符号角度，>360饱和；20 ms周期、500～2500 μs对应0～360°；异步复位、同步释放。复位拉低PWM不等于机械回位，单路PWM不等于双轴控制或位置反馈。
 

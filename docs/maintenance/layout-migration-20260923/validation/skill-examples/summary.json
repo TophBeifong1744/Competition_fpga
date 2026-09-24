@@ -1,0 +1,99 @@
+{
+  "status": "DIAGNOSTIC_ONLY",
+  "scope": "layout-adapted positive examples; diagnostic only, not Skill or product approval",
+  "adapter_sha256": "27518dfff5acc494ef1d47401e4bf68bdfd215a4135114d8f96a29467c47977c",
+  "runner": "skill\\fpga-module-verification\\scripts\\run_xsim.py",
+  "runner_sha256": "80eabf73d614898636fcc599844c714480987cea66ee9e0bdbbc710f36a144e6",
+  "not_run": [
+    "negative mutations",
+    "synthesis",
+    "timing",
+    "cdc",
+    "board",
+    "system"
+  ],
+  "cases": [
+    {
+      "name": "pcm4",
+      "original_case": "skill\\fpga-module-verification\\examples\\pcm4\\case.json",
+      "original_case_sha256": "3c3762d080e9bfc2ad496c4ad490d74c5f95d4e9401b3c4d8bd245fb1d33fc1a",
+      "derived_case": "cases\\pcm4\\case.json",
+      "derived_case_sha256": "cde8f57ff21602e87665489c58ec49b22a0b87b2f53e081c3280b3816c3a13fb",
+      "contract": "skill\\fpga-module-verification\\examples\\pcm4\\contract.md",
+      "contract_sha256": "54c975e57bd17484e3d175960a4c1431f9e017d8541539a75a0ca70eef50dc79",
+      "sources": [
+        {
+          "original": "../../../../rtl/acquisition/pcm4_signext_pack.v",
+          "resolved": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\project\\rtl\\acquisition\\pcm4_signext_pack.v",
+          "sha256": "85269ccd9991c80a2dbd507d342cc19d6e58517b9cc525520dce03b710df215a"
+        },
+        {
+          "original": "tb_pcm4_skill.sv",
+          "resolved": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\skill\\fpga-module-verification\\examples\\pcm4\\tb_pcm4_skill.sv",
+          "sha256": "e35fcf8526373193977e1e7a261edb4e2b1e681a0c00efff732c8f2241be70b6"
+        }
+      ],
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\skill\\fpga-module-verification\\scripts\\run_xsim.py",
+        "--case",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\codex_out\\layout-validation-01\\skill-examples\\cases\\pcm4\\case.json",
+        "--vivado-bin",
+        "F:/AMD/2025.2/Vivado/bin",
+        "--output",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\codex_out\\layout-validation-01\\skill-examples\\runs\\pcm4",
+        "--timeout",
+        "90"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source",
+      "exit_code": 0,
+      "status": "PASS_SIMULATION",
+      "stage": "simulate",
+      "checks": 792,
+      "result": "runs\\pcm4\\result.json",
+      "result_sha256": "cfcb20b7a2b867378ca3ce6203065bb2a30b0ae67d8d72e67d6410f3cccf25ff"
+    },
+    {
+      "name": "elastic",
+      "original_case": "skill\\fpga-module-verification\\examples\\elastic\\case.json",
+      "original_case_sha256": "0beb4fc4fa2e76fe0eb274389cdd7043affd29330fd57259d8a985b6442258d2",
+      "derived_case": "cases\\elastic\\case.json",
+      "derived_case_sha256": "6e2b7040ca0fdda9046f211aedb145543c54483caed8c3be732c010c34970d14",
+      "contract": "skill\\fpga-module-verification\\examples\\elastic\\contract.md",
+      "contract_sha256": "1eebb98f2b6dcc05a3dcb56cb9193fe684424b5ccdc44dd78440e62e9f61e383",
+      "sources": [
+        {
+          "original": "elastic_stage.v",
+          "resolved": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\skill\\fpga-module-verification\\examples\\elastic\\elastic_stage.v",
+          "sha256": "b96f113a3dd5da3a6ddbb388adc44828fdb20cffd856a9f20fbcba5181d2a633"
+        },
+        {
+          "original": "tb_elastic.sv",
+          "resolved": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\skill\\fpga-module-verification\\examples\\elastic\\tb_elastic.sv",
+          "sha256": "15dd48ef072b6aeae4fd56961ff1025c56c15e19e8d42ce7ece75ff1a37cb4f7"
+        }
+      ],
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\skill\\fpga-module-verification\\scripts\\run_xsim.py",
+        "--case",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\codex_out\\layout-validation-01\\skill-examples\\cases\\elastic\\case.json",
+        "--vivado-bin",
+        "F:/AMD/2025.2/Vivado/bin",
+        "--output",
+        "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source\\codex_out\\layout-validation-01\\skill-examples\\runs\\elastic",
+        "--timeout",
+        "90"
+      ],
+      "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\results\\tmp\\layout-migration-control-20260923\\source",
+      "exit_code": 0,
+      "status": "PASS_SIMULATION",
+      "stage": "simulate",
+      "checks": 13800,
+      "result": "runs\\elastic\\result.json",
+      "result_sha256": "23744421b256c2ec43f017899c92625e31cbf6bbd7bae76892e99cdf9331105e"
+    }
+  ]
+}

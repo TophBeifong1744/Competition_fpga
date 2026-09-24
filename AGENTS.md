@@ -1,18 +1,18 @@
 # SoundSight 项目约定（2026-09-23 起）
 
-以后团队协作使用 `fpga-team-workflow`；实际工程使用其锁定的 `run-fpga-workflow`。先读本文件、[配置](team-workflow.yaml)、[版本锁](workflow-lock.yaml)、[当前状态](docs/current-status.md)，然后只读当前Issue/PR和必要合同。
+以后团队协作使用 `fpga-team-workflow`；实际工程使用其锁定的 `run-fpga-workflow`。先读本文件、[配置](team-workflow.yaml)、[版本锁](workflow-lock.yaml)、[当前状态](document/current-status.md)，然后只读当前Issue/PR和必要合同。
 
 ## 当前决定
 
 - 三人A=TophBeifong1744、B=BryanZheng802、C=hsc119。C与A/B同等承担设计、代码、调试、测试和合格非作者复核，不再适用“仅操作单”“不派任务”限制。
-- V1总验收改为 **2026-10-07 10:00（UTC+8）**；9/25、9/29、10/3检查，10/6冻结。见[唯一日历](docs/project-plan.md)。日期是目标，不等于通过。
+- V1总验收改为 **2026-10-07 10:00（UTC+8）**；9/25、9/29、10/3检查，10/6冻结。见[唯一日历](document/project-plan.md)。日期是目标，不等于通过。
 - A采集/PS/PL与集成，B声学/定点/golden与算法，C转台/摄像头/现场采录与效果；按Issue指定具体owner/reviewer，技能证据决定复核资格，不以职位限制C。
 - C继续负责正确播放素材的新八段四路录音全流程，A接收/入口支持，B独立诊断。9/22错素材原件保留，不能当正确标记批次。首段完整性通过即继续，不等待第二次派工。
 - 四麦二维V1、原麦克风、C转接板四同源CLOCK/DATA映射不变；六麦三维是后续目标。旧步进路线停用，C当前舵机/摄像头并行；声源联动和完整外设效果单列，不偷换核心V1门槛。
 
 ## 工作、交接与批准
 
-- 阶段/任务以GitHub Milestone/Issue为准，代码/成员批准以PR与真实事件为准，日志以原生证据为准。docs仅保留规则、入口与注明日期的核查快照，不另建手工任务状态数据库。
+- 阶段/任务以GitHub Milestone/Issue为准，代码/成员批准以PR与真实事件为准，日志以原生证据为准。document仅保留活动规则、入口与注明日期的核查快照，docs子目录保留历史证据，不另建手工任务状态数据库。
 - 一个工作包一个负责人、一个合格非作者复核人。AI终审/作者自检/另一模型同意不是成员批准。首次完整审申请范围，返修审增量；复用证据前核对假设、输入、工具/入口及适用范围。每次补跑要消除具体不确定性。
 - H1最小接口、H2诊断输入、H3算法包集成评审保留；可独立工作不等待。不按每个函数/实验开包，不重复已批准且未变化的FFT/录音/耐久研究。
 - 以main为集成基线；新任务优先短分支 `codex/<issue>-<slug>`，旧返修留原PR/分支及问题ID。稳定检查点commit，正式交审push准确SHA；无代码的数据交付可直接Issue，不造空PR。
@@ -21,21 +21,23 @@
 
 ## 工作区与发布
 
+- 当前实体布局及历史例外见[迁移说明](document/layout-migration.md)；活动 RTL/TB/模型/fixture 分别位于 project/rtl、simulation/tb、models、data/fixtures。任务包、批准 Skill 和旧报告保留原位；不靠副本、stub 或 junction 兼容旧入口。
+
 - 默认每人一个活动checkout，每个可写checkout/EDA输出同时一名写入方。只读看准确提交不建副本；独立复现或真实并行时才建最小worktree。
 - 保留未提交/未跟踪/ignored有用材料；不reset/clean、不切换脏共享目录、不强推。清理先dry-run并核对精确路径、独有数据、链接和占用；不删唯一失败证据或待审成果。
 - 每批批准发布后检查实际共享main、origin/main、直接远端SHA和ahead/behind，处理本批仍未提交材料；无关未完成工作保留。不能只查发布worktree。
-- 每次真正阶段验收按[收尾规则](docs/phase-closeout.md)：按批准范围接入活动源/测试、验证新入口、保存版本及证据索引；旧阶段快照不倒填。迁移/合并不是新阶段验收。
+- 每次真正阶段验收按[收尾规则](document/phase-closeout.md)：按批准范围接入活动源/测试、验证新入口、保存版本及证据索引；旧阶段快照不倒填。迁移/合并不是新阶段验收。
 
 ## 工程与安全授权（9/15约定继续）
 
 A机Vivado工程修改（RTL/BD/XDC/IP/导入/连线）及Vitis源码/配置/构建/下载由拓芙选择原工程或副本后亲自操作；Codex先给目标、范围、预期和一整阶段步骤。Codex负责TB、仿真、诊断和结果检查。只有针对具体任务明确授权才代执行。此次工作流迁移不改one、不构建、不板测。
 
-精细非阻塞风险只在[暂缓清单](docs/deferred-acquisition-risks.md)追踪，不主动加回全套开工门槛；明确错电源、针脚冲突、短路和实际装配风险仍立即处理。未知时序、实时和真实声学效果不得猜成PASS。
+精细非阻塞风险只在[暂缓清单](document/deferred-acquisition-risks.md)追踪，不主动加回全套开工门槛；明确错电源、针脚冲突、短路和实际装配风险仍立即处理。未知时序、实时和真实声学效果不得猜成PASS。
 
 ## Skill、模型与聊天
 
-分发源位于tools/fpga-team-workflow，非比赛原创Skill；不复制/覆盖已批准的skill/两项成果。成员按[接入指南](docs/team-workflow.md)安装并核对锁版本；本机安装不表示B/C已安装。
+分发源位于tools/fpga-team-workflow，非比赛原创Skill；不复制/覆盖已批准的skill/两项成果。成员按[接入指南](document/team-workflow.md)安装并核对锁版本；本机安装不表示B/C已安装。
 
 模型建议由model recommend生成，recommend_only，UNBENCHMARKED；推荐/请求/实际观测分开，UNKNOWN不填造，不自动改账号/全局配置/13角色。工程入口适配UNVERIFIED时不伪称工具可直接运行。
 
-旧聊天已由用户删除，不再通知不存在的聊天。采用本聊天协调＋每成员执行/复核两个任务，工程专项按需；见[新聊天提示词](docs/chat-start-prompts.md)。GitHub派发不等于已读/接单，不能声称跨聊天发送成功。
+旧聊天已由用户删除，不再通知不存在的聊天。采用本聊天协调＋每成员执行/复核两个任务，工程专项按需；见[新聊天提示词](document/chat-start-prompts.md)。GitHub派发不等于已读/接单，不能声称跨聊天发送成功。

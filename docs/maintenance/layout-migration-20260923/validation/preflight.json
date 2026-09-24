@@ -1,0 +1,159 @@
+{
+  "base_commit": "0a5f544893cff1094bcd1bad5346a1cf05790707",
+  "shared_head": "0a5f544893cff1094bcd1bad5346a1cf05790707",
+  "manifest_only_allowed_fields_changed": true,
+  "manifest_changed_fields": [
+    "files[0].target",
+    "files[1].target",
+    "files[2].target",
+    "files[3].target",
+    "files[4].target",
+    "files[5].target",
+    "files[6].target",
+    "files[7].target",
+    "files[8].target",
+    "files[9].target",
+    "files[10].target",
+    "cases[0].sources",
+    "cases[1].sources",
+    "cases[2].sources",
+    "cases[3].sources",
+    "cases[4].sources",
+    "cases[5].sources",
+    "cases[6].sources"
+  ],
+  "identities": [
+    {
+      "kind": "HDL_TB",
+      "old": "rtl/servo/motor_drive.v",
+      "new": "project/rtl/servo/motor_drive.v",
+      "shared_sha256": "9beccf7b4adb6bcf651b06cdf6e691898c43c5798731f56fd60a6f9569214106",
+      "candidate_sha256": "9beccf7b4adb6bcf651b06cdf6e691898c43c5798731f56fd60a6f9569214106",
+      "byte_identical": true
+    },
+    {
+      "kind": "HDL_TB",
+      "old": "tb/servo/tb_motor_drive.v",
+      "new": "simulation/tb/servo/tb_motor_drive.v",
+      "shared_sha256": "689731c55212d9ebcc72fb975b58836542f11cf28b654c49e54acce546bfd2ac",
+      "candidate_sha256": "689731c55212d9ebcc72fb975b58836542f11cf28b654c49e54acce546bfd2ac",
+      "byte_identical": true
+    },
+    {
+      "kind": "HDL_TB",
+      "old": "rtl/common/stream_error_stats.sv",
+      "new": "project/rtl/common/stream_error_stats.sv",
+      "shared_sha256": "aeb7d2242a65ea46eb465b563149320e83a3386f80ff30fa44ff403ef0f46b07",
+      "candidate_sha256": "aeb7d2242a65ea46eb465b563149320e83a3386f80ff30fa44ff403ef0f46b07",
+      "byte_identical": true
+    },
+    {
+      "kind": "HDL_TB",
+      "old": "rtl/common/stream_error_snapshot.v",
+      "new": "project/rtl/common/stream_error_snapshot.v",
+      "shared_sha256": "e66c836d22c3f022815e7c364bd3c9c9e0f782d57c511b09984744bfdc2c4546",
+      "candidate_sha256": "e66c836d22c3f022815e7c364bd3c9c9e0f782d57c511b09984744bfdc2c4546",
+      "byte_identical": true
+    },
+    {
+      "kind": "HDL_TB",
+      "old": "rtl/acquisition/pcm4_signext_pack.v",
+      "new": "project/rtl/acquisition/pcm4_signext_pack.v",
+      "shared_sha256": "85269ccd9991c80a2dbd507d342cc19d6e58517b9cc525520dce03b710df215a",
+      "candidate_sha256": "85269ccd9991c80a2dbd507d342cc19d6e58517b9cc525520dce03b710df215a",
+      "byte_identical": true
+    },
+    {
+      "kind": "HDL_TB",
+      "old": "tb/common/tb_stream_error_stats.sv",
+      "new": "simulation/tb/common/tb_stream_error_stats.sv",
+      "shared_sha256": "d26edd7be346ef849c6d746d9cfe469a4d4d87c321702114960c91f11bdb8cd3",
+      "candidate_sha256": "d26edd7be346ef849c6d746d9cfe469a4d4d87c321702114960c91f11bdb8cd3",
+      "byte_identical": true
+    },
+    {
+      "kind": "HDL_TB",
+      "old": "tb/common/tb_stream_error_snapshot.v",
+      "new": "simulation/tb/common/tb_stream_error_snapshot.v",
+      "shared_sha256": "58ac3e1c7c63da018139e94018165282348d0175d2091246307f92db236ed0b1",
+      "candidate_sha256": "58ac3e1c7c63da018139e94018165282348d0175d2091246307f92db236ed0b1",
+      "byte_identical": true
+    },
+    {
+      "kind": "HDL_TB",
+      "old": "tb/common/tb_stream_error_snapshot_integration.v",
+      "new": "simulation/tb/common/tb_stream_error_snapshot_integration.v",
+      "shared_sha256": "13379f6f28a47e146926a22e65004595077d464c74c6c00bba3c4a7fce025ba2",
+      "candidate_sha256": "13379f6f28a47e146926a22e65004595077d464c74c6c00bba3c4a7fce025ba2",
+      "byte_identical": true
+    },
+    {
+      "kind": "HDL_TB",
+      "old": "tb/common/tb_snapshot_independent.sv",
+      "new": "simulation/tb/common/tb_snapshot_independent.sv",
+      "shared_sha256": "45d59ea7ccabd69144b0eef2fb8644483cc35431c742efa120b0aefc3d436ba9",
+      "candidate_sha256": "45d59ea7ccabd69144b0eef2fb8644483cc35431c742efa120b0aefc3d436ba9",
+      "byte_identical": true
+    },
+    {
+      "kind": "HDL_TB",
+      "old": "tb/acquisition/tb_pcm4_signext_pack.v",
+      "new": "simulation/tb/acquisition/tb_pcm4_signext_pack.v",
+      "shared_sha256": "8327fb2bbcb0eaddf3f7779f4bc0e3701502f43385f3acfe0e7ffb1628cc49cc",
+      "candidate_sha256": "8327fb2bbcb0eaddf3f7779f4bc0e3701502f43385f3acfe0e7ffb1628cc49cc",
+      "byte_identical": true
+    },
+    {
+      "kind": "HDL_TB",
+      "old": "tb/acquisition/tb_pcm4_independent.sv",
+      "new": "simulation/tb/acquisition/tb_pcm4_independent.sv",
+      "shared_sha256": "7ed04b1d8835b88c8e21dfc92792970687d266edd6a026c31385b592ed5332e5",
+      "candidate_sha256": "7ed04b1d8835b88c8e21dfc92792970687d266edd6a026c31385b592ed5332e5",
+      "byte_identical": true
+    },
+    {
+      "kind": "H1_FIXTURE",
+      "old": "examples/h1/code-pattern/metadata.json",
+      "new": "data/fixtures/h1/code-pattern/metadata.json",
+      "shared_sha256": "2f1aca137563cdecb72a59c87f73a20233e62ffcd4e9997a798dc3ee5df93964",
+      "candidate_sha256": "2f1aca137563cdecb72a59c87f73a20233e62ffcd4e9997a798dc3ee5df93964",
+      "byte_identical": true
+    },
+    {
+      "kind": "H1_FIXTURE",
+      "old": "examples/h1/code-pattern/samples.csv",
+      "new": "data/fixtures/h1/code-pattern/samples.csv",
+      "shared_sha256": "c02fdf3855e87a2d8c6e57ebbeb2b9304ab00cd7cd5c9afe022bad00574b9d0f",
+      "candidate_sha256": "c02fdf3855e87a2d8c6e57ebbeb2b9304ab00cd7cd5c9afe022bad00574b9d0f",
+      "byte_identical": true
+    },
+    {
+      "kind": "H1_FIXTURE",
+      "old": "examples/h1/reader-test-plan.json",
+      "new": "data/fixtures/h1/reader-test-plan.json",
+      "shared_sha256": "2a3de3dc33e0b500d62ffd97207b2f262b35e9a4c1c823b82985b793b7fd8afb",
+      "candidate_sha256": "2a3de3dc33e0b500d62ffd97207b2f262b35e9a4c1c823b82985b793b7fd8afb",
+      "byte_identical": true
+    },
+    {
+      "kind": "H1_FIXTURE",
+      "old": "examples/h1/restart/metadata.json",
+      "new": "data/fixtures/h1/restart/metadata.json",
+      "shared_sha256": "c3ffc03e41ca5c8e9cee4dd050c51bcbd98d112dce299683c3b4873d019af9e3",
+      "candidate_sha256": "c3ffc03e41ca5c8e9cee4dd050c51bcbd98d112dce299683c3b4873d019af9e3",
+      "byte_identical": true
+    },
+    {
+      "kind": "H1_FIXTURE",
+      "old": "examples/h1/restart/samples.csv",
+      "new": "data/fixtures/h1/restart/samples.csv",
+      "shared_sha256": "d95c743494822c2279647a770fceb8bbc4d4c222d1917c9c92a77ea2e2a15119",
+      "candidate_sha256": "d95c743494822c2279647a770fceb8bbc4d4c222d1917c9c92a77ea2e2a15119",
+      "byte_identical": true
+    }
+  ],
+  "servo_status": [
+    "candidate_max_angle_parameter_pending_independent_review",
+    "candidate_max_angle_parameter_pending_independent_review"
+  ]
+}

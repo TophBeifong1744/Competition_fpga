@@ -20,21 +20,19 @@ slprj/
 *.jou
 *.log
 *.str
-*.xpr
 *.cache/
 *.gen/
 *.hw/
 *.ip_user_files/
 *.runs/
 *.sim/
-vivado/build/
-vivado/.Xil/
+/project/par/.Xil/
 
 # Vitis / SDK generated workspaces
 .metadata/
-ps/workspace/
-ps/**/Debug/
-ps/**/Release/
+software/workspace/
+software/**/Debug/
+software/**/Release/
 *.elf
 *.bit
 *.bin
@@ -42,8 +40,7 @@ ps/**/Release/
 
 # Simulation and coverage outputs
 /dfx_runtime.txt
-sim/build/
-sim/out/
+/simulation/work/
 *.wdb
 *.vcd
 *.fst
@@ -52,6 +49,8 @@ sim/out/
 # Temporary or bulky measurement data
 results/tmp/
 results/raw/
+/codex_out/
+/.local/
 *.wav
 *.zip
 

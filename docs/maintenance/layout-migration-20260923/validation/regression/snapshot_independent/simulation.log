@@ -1,0 +1,96 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Sep 23 20:50:55 2026
+# Process ID         : 50308
+# Current directory  : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/codex_out/layout-validation-01/regression/snapshot_independent
+# Command line       : xsim.exe -log simulation.log -mode tcl -source {xsim.dir/dut_test/xsim_script.tcl}
+# Log file           : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/codex_out/layout-validation-01/regression/snapshot_independent/simulation.log
+# Journal file       : E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/codex_out/layout-validation-01/regression/snapshot_independent\xsim.jou
+# Running On         : Toph
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 16890 MB
+# Swap memory        : 17179 MB
+# Total Virtual      : 34070 MB
+# Available Virtual  : 11168 MB
+#-----------------------------------------------------------
+source xsim.dir/dut_test/xsim_script.tcl
+# xsim {dut_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+REVIEW UNIT PASS W=1 checks=2088
+REVIEW UNIT PASS W=2 checks=2104
+REVIEW UNIT PASS W=3 checks=2120
+REVIEW UNIT PASS W=4 checks=2136
+REVIEW UNIT PASS W=5 checks=2152
+REVIEW UNIT PASS W=6 checks=2168
+REVIEW UNIT PASS W=7 checks=2184
+REVIEW UNIT PASS W=8 checks=2200
+REVIEW UNIT PASS W=9 checks=2216
+REVIEW UNIT PASS W=10 checks=2232
+REVIEW UNIT PASS W=11 checks=2248
+REVIEW UNIT PASS W=12 checks=2264
+REVIEW UNIT PASS W=13 checks=2280
+REVIEW UNIT PASS W=14 checks=2296
+REVIEW UNIT PASS W=15 checks=2312
+REVIEW UNIT PASS W=16 checks=2328
+REVIEW UNIT PASS W=17 checks=2344
+REVIEW UNIT PASS W=18 checks=2360
+REVIEW UNIT PASS W=19 checks=2376
+REVIEW UNIT PASS W=20 checks=2392
+REVIEW UNIT PASS W=21 checks=2408
+REVIEW UNIT PASS W=22 checks=2424
+REVIEW UNIT PASS W=23 checks=2440
+REVIEW UNIT PASS W=24 checks=2456
+REVIEW UNIT PASS W=25 checks=2472
+REVIEW UNIT PASS W=26 checks=2488
+REVIEW UNIT PASS W=27 checks=2504
+REVIEW UNIT PASS W=28 checks=2520
+REVIEW UNIT PASS W=29 checks=2536
+REVIEW UNIT PASS W=30 checks=2552
+REVIEW UNIT PASS W=31 checks=2568
+REVIEW UNIT PASS W=32 checks=2584
+REVIEW UNIT PASS W=33 checks=2600
+REVIEW UNIT PASS W=34 checks=2616
+REVIEW UNIT PASS W=35 checks=2632
+REVIEW UNIT PASS W=36 checks=2648
+REVIEW UNIT PASS W=37 checks=2664
+REVIEW UNIT PASS W=38 checks=2680
+REVIEW UNIT PASS W=39 checks=2696
+REVIEW UNIT PASS W=40 checks=2712
+REVIEW UNIT PASS W=41 checks=2728
+REVIEW UNIT PASS W=42 checks=2744
+REVIEW UNIT PASS W=43 checks=2760
+REVIEW UNIT PASS W=44 checks=2776
+REVIEW UNIT PASS W=45 checks=2792
+REVIEW UNIT PASS W=46 checks=2808
+REVIEW UNIT PASS W=47 checks=2824
+REVIEW UNIT PASS W=48 checks=2840
+REVIEW UNIT PASS W=49 checks=2856
+REVIEW UNIT PASS W=50 checks=2872
+REVIEW UNIT PASS W=51 checks=2888
+REVIEW UNIT PASS W=52 checks=2904
+REVIEW UNIT PASS W=53 checks=2920
+REVIEW UNIT PASS W=54 checks=2936
+REVIEW UNIT PASS W=55 checks=2952
+REVIEW UNIT PASS W=56 checks=2968
+REVIEW UNIT PASS W=57 checks=2984
+REVIEW UNIT PASS W=58 checks=3000
+REVIEW UNIT PASS W=59 checks=3016
+REVIEW UNIT PASS W=60 checks=3032
+REVIEW UNIT PASS W=61 checks=3048
+REVIEW UNIT PASS W=62 checks=3064
+REVIEW UNIT PASS W=63 checks=3080
+REVIEW UNIT PASS W=64 checks=3096
+REVIEW JOINT PASS checks=12289
+REVIEW ALL PASS widths=1..64 and joint
+$finish called at time : 122896 ns : File "E:/Users/Toph Beifong/Documents/GitHub/Competition_fpga/results/tmp/layout-migration-control-20260923/source/simulation/tb/common/tb_snapshot_independent.sv" Line 9
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 23 20:50:58 2026...
