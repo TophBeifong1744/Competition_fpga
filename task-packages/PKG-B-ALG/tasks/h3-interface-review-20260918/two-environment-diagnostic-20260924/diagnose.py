@@ -77,7 +77,8 @@ def execution_identity(repo, expected_commit, executing_script):
     expected_commit = expected_commit.lower()
     repo = pathlib.Path(repo).resolve()
     script = pathlib.Path(executing_script).resolve()
-    need(script == (repo / ADAPTER_RELATIVE / "diagnose.py").resolve(),
+    need(script.is_relative_to(repo) and
+         script == (repo / ADAPTER_RELATIVE / "diagnose.py").resolve(),
          "EXECUTING_SCRIPT_OUTSIDE_AUTHORITY")
     top = pathlib.Path(git_bytes(repo, "rev-parse", "--show-toplevel").decode().strip()).resolve()
     need(top == repo, "REPO_IS_NOT_GIT_TOPLEVEL")
