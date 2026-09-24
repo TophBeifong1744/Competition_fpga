@@ -281,6 +281,69 @@ class ReceiveProfileTests(unittest.TestCase):
                 self.assertEqual(1, code, report)
                 self.assertIn(expected, self.codes(report))
 
+    def test_receive_timeout_must_be_finite_and_positive(self) -> None:
+        # Keep the other synthetic artifacts valid so each rejection identifies
+        # the timeout contract, rather than an unrelated manifest failure.
+        for timeout in (0, -1, 0.0, -0.25):
+            with self.subTest(timeout=timeout):
+                self.profile["receive_tests"][0]["timeout_seconds"] = timeout
+                report, code = self.run_validator()
+                self.assertEqual(1, code, report)
+                self.assertEqual({"RECEIVE_TEST_TIMEOUT"}, self.codes(report))
+
+        self.profile["receive_tests"][0]["timeout_seconds"] = 2.0
+        report, code = self.run_validator()
+        self.assertEqual(0, code, report)
+
+    def test_raw_json_timeout_overflow_is_rejected_at_timeout_check(self) -> None:
+        # 1e999 is legal JSON syntax; json.load turns it into infinity on
+        # Python 3.12. Exercise the raw file rather than json.dumps(inf).
+        self.write_profile()
+        raw = self.profile_path.read_text(encoding="utf-8")
+        self.assertIn('"timeout_seconds": 2.0', raw)
+        self.profile_path.write_text(raw.replace('"timeout_seconds": 2.0',
+                                                 '"timeout_seconds": 1e999'), encoding="utf-8")
+        report, code = VALIDATOR.validate(self.profile_path)
+        self.assertEqual(1, code, report)
+        self.assertEqual({"RECEIVE_TEST_TIMEOUT"}, self.codes(report))
+
+    def test_nonstandard_json_timeout_constant_is_rejected_by_parser(self) -> None:
+        self.write_profile()
+        raw = self.profile_path.read_text(encoding="utf-8")
+        self.profile_path.write_text(raw.replace('"timeout_seconds": 2.0',
+                                                 '"timeout_seconds": NaN'), encoding="utf-8")
+        report, code = VALIDATOR.validate(self.profile_path)
+        self.assertEqual(2, code, report)
+        self.assertEqual({"INPUT_ERROR"}, self.codes(report))
+
+    def test_control_and_dma_must_be_distinct_normalized_hwh_instances(self) -> None:
+        for alias in ("system_i/axi_dma_0", "/system_i/axi_dma_0"):
+            with self.subTest(alias=alias):
+                self.profile["control_contract"]["ip_name"] = alias
+                report, code = self.run_validator()
+                self.assertEqual(1, code, report)
+                self.assertEqual({"HWH_CONTROL_DMA_DISTINCT"}, self.codes(report))
+
+    def test_distinct_control_path_with_same_basename_is_legal(self) -> None:
+        self.profile["control_contract"]["ip_name"] = "/other_i/axi_dma_0"
+        raw = self.hwh.read_text(encoding="utf-8")
+        self.hwh.write_text(raw.replace("</HW>",
+                                        '<MODULE FULLNAME="/other_i/axi_dma_0"/></HW>'),
+                            encoding="utf-8")
+        self.write_manifest()
+        report, code = self.run_validator()
+        self.assertEqual(0, code, report)
+        self.assertEqual("PASS", report["status"])
+
+    def test_absent_control_instance_is_rejected(self) -> None:
+        raw = self.hwh.read_text(encoding="utf-8")
+        self.hwh.write_text(raw.replace('<MODULE FULLNAME="/system_i/axi_gpio_run"/>', ""),
+                            encoding="utf-8")
+        self.write_manifest()
+        report, code = self.run_validator()
+        self.assertEqual(1, code, report)
+        self.assertEqual({"HWH_CONTROL_INSTANCE"}, self.codes(report))
+
     def test_absolute_artifact_path_is_rejected(self) -> None:
         self.profile["overlay"]["bit"] = str(self.bit.resolve())
         report, code = self.run_validator()

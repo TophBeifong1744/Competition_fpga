@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import math
 import re
 import sys
 import xml.etree.ElementTree as ET
@@ -316,6 +317,8 @@ def validate_receive(profile_path: Path, profile: dict[str, Any], manifest: dict
     control_key = normalize_instance(control_ip) if control_ip else ""
     result.check("HWH_CONTROL_INSTANCE", bool(control_key) and control_key in modules,
                  f"control_contract.ip_name {control_ip!r} must be an exact HWH MODULE path")
+    result.check("HWH_CONTROL_DMA_DISTINCT", bool(control_key) and bool(ip_key) and control_key != ip_key,
+                 "control_contract.ip_name must differ from receive_contract.ip_name after HWH path normalization")
     expected_control = {
         "start_semantics": "level_high_run",
         "stop_semantics": "deassert_run_drain_full_packet",
@@ -377,8 +380,10 @@ def validate_receive(profile_path: Path, profile: dict[str, Any], manifest: dict
                 result.check("RECEIVE_TEST_BEAT", length % (numbers["axis_data_width_bits"] // 8) == 0,
                              f"receive_tests[{index}] length must contain full AXIS beats")
         timeout = item.get("timeout_seconds")
-        result.check("RECEIVE_TEST_TIMEOUT", type(timeout) in {int, float} and timeout > 0,
-                     f"receive_tests[{index}].timeout_seconds must be positive")
+        valid_timeout = (type(timeout) is int and timeout > 0) or (
+            type(timeout) is float and math.isfinite(timeout) and timeout > 0)
+        result.check("RECEIVE_TEST_TIMEOUT", valid_timeout,
+                     f"receive_tests[{index}].timeout_seconds must be finite and positive")
 
     result.summary = {
         "build_id": overlay.get("build_id"),
