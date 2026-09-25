@@ -1,10 +1,11 @@
-# #14 A工程接口补充：fixed4首包候选 r1
+# #14 A工程接口补充：fixed4首包候选 r2
 
 结论：B的准确r2可作为限定设计输入；本稿把首包收窄为单时钟、单在途事务的fixed4叶模块。r2真实A成员确认及本新增接口的非作者复核仍待完成，不能据此宣布生产冻结或直接修改A机工程。
 
 ## 1. 身份、范围和证据等级
 
-- Issue #14 / 原PR #30；父提交 `274a408cfb3cdc12844a136be296a41fd901c3a6`，共享main基线 `28d58e908525d1de1c018eeb99fd607a07b6047c`。
+- Issue #14 / 原PR #30；本轮父提交 `f1962ea2c5d4e93e7af88eaef3d6c5a3b61f9fe7`，初始增量父提交 `274a408cfb3cdc12844a136be296a41fd901c3a6`，共享main基线 `28d58e908525d1de1c018eeb99fd607a07b6047c`。
+- 本A稿r2为R首次NEEDS_FIX后的第1轮返修；I14-F4-01/02均为FIXED_PENDING_REVIEW，作者不自行关闭。B原稿也称r2，两者按文件/哈希区分。
 - B原稿：[准确r2](b-contract-r2-20260925/B-DECISIONS-20260925-r2.md)，SHA256 `30a9a550d4303d464dc2e56d8b2ce38774b49c1d8e313bc70efbc0c4b06c5924`。源索引SHA256 `3baff634ed25082ce1c57238b0aee7a5d8616e1dc924bb9b665881878a912228`。
 - B r2独立技术复核为PASS_WITH_SCOPE；B14-R1-01/02仅为VERIFIED_CLOSED_MANUSCRIPT_ONLY。r1被r2取代，不把r1结论或PR旧APPROVED扩到本候选。
 - 工程身份：四麦二维V1，ATK-DF7010P_7020P V3.9 / xc7z020clg400-2 / Vivado 2025.2；实际project_entry仍未验证。本批模式ANALYZE，claim_stage=PREFLIGHT，证据仅合同/来源核对。
@@ -26,19 +27,22 @@
 
 一个fixed4实例一次只处理一个域、一个通道的513复数。八个逻辑事务可串行复用，仍保留八套身份/结果；本稿不声称串行满足48 kHz或hop预算。只含一项输出弹性寄存器及计数/取消状态，不含FFT IP、帧聚合器、DMA、CSR、DAS或PS桥修复。
 
-以下是模块内部接口候选，不是现有AXI、CSR或C ABI。所有输入在同一`clk`上升沿满足建立/保持；无CDC。仅冷启动允许`cold_reset`清记录，条件是外部已证明无旧引用/回调；运行中受控reset必须走取消和持久记录，再退役，不能直接拉此reset。
+以下是模块内部接口候选，不是现有AXI、CSR或C ABI。所有输入在同一`clk`上升沿满足建立/保持；无CDC。`cold_reset`只用于冷启动或已完整退役后的数据通路初始化，合法条件及管理检查见第5节；活动事务的受控reset必须先取消、保存、退役，不能直接拉此reset。
 
 | 端口组 | 方向/宽度 | 定义 |
 | --- | --- | --- |
+| `clk`, `cold_reset` | 入各1 | clk上升沿；cold_reset高有效、同步采样，无异步复位敏感边沿；第5节定义合法条件及复位值 |
+| `ctx_active`, `active_ctx`, `terminal_saved` | 出1/64/1 | ctx_active从begin接受后保持到合法retire；包括正常数据完成及取消后的占用。active_ctx在占用时有效；terminal_saved表示此前已接受初始终结保存确认，不等于资源已退役 |
 | `begin_valid/ready`, `begin_ctx` | 入/出1，入64 | 非零上下文句柄；ready仅空闲且终结记录容量已预留。接受begin的同边沿不收数据 |
 | `s_valid/ready`, `s_ctx`, `s_bin`, `s_re/im` | 入/出1，入64、10、各29 signed | 输入bin必须从0连续到512，同句柄；只在握手边沿检验此输入 |
 | `m_valid/ready`, `m_ctx`, `m_bin`, `m_re/im` | 出/入1，出64、10、各25 signed | 一入一出；普通背压下所有有效负载与侧带稳定 |
 | `m_numeric_valid`, `m_ov_re/im` | 出各1 | 任一分量溢出，则本复数numeric_valid=0，re/im均0；溢出标志逐分量保留 |
 | `cancel`, `cancel_causes[31:0]` | 入1/32 | 由管理层归属到当前ctx的同步取消；持续电平幂等。原因是候选内部bit集合，不分配系统ABI码 |
-| `protocol_fault_now` | 出1 | 活动事务的实际输入握手出现ctx/bin错误时，同边沿组合告警；取消判定见第4节 |
+| `protocol_fault_now`, `protocol_fault_bits_now` | 出1/2 | 实际输入握手错误的组合告警；bits[0]=ctx不符，bits[1]=bin不符，可同时置位，now为两位OR；第4节定义持久编码 |
 | `data_done`, `sticky_numeric_overflow` | 出各1 | data_done仅表示513个语义输入及513个输出已传输；不是FFT最终status或帧成功 |
-| `terminal_cancelled`, `terminal_ctx`, `terminal_causes` | 出1/64/32 | 每次被取消的ctx锁存一次终结，保持到管理确认；后到原因只做sticky并集，不产生第二终结 |
-| `terminal_n/p/t`, `terminal_cancelled_untransferred` | 出10/10/1/10 | r2的N、P、T及N−P−T；另输出同E新输入物理握手标志和旧输出bin（仅T=1有效） |
+| `terminal_cancelled`, `terminal_ctx`, `terminal_causes` | 出1/64/35 | 每次被取消的ctx锁存一次终结；原因[0]=外部cancel曾有效，[1]=本地ctx错，[2]=本地bin错，[34:3]=外部32位原因并集；保持到合法retire |
+| `terminal_n/p/t`, `terminal_cancelled_untransferred` | 出10/10/1/10 | r2的N、P、T及N−P−T，均是首次取消快照 |
+| `terminal_s_transfer`, `terminal_t_bin` | 出1/10 | 首次E的新输入物理握手标志（不加入N）；旧输出bin仅terminal_t=1时有效，否则确定为0；两字段保持到合法retire |
 | `terminal_saved_ack`, `ack_ctx` | 入1/64 | 管理层已持久接收该终结；只确认记录保存，不释放任何物理引用 |
 | `local_quiescent` | 出1 | 本叶不再持有有效待输出beat且不会再自行产生旧ctx输出；不代表FFT/DMA停止 |
 | `retire_valid`, `retire_ctx`, `retire_safe` | 入1/64/1 | 管理层确认当前ctx记录已保存、读者/回调已物理退役；本地条件同时满足后才返回空闲 |
@@ -55,6 +59,10 @@
 
 有效取消条件`kill = cancel || protocol_fault_now`。协议错同边沿输入记物理接收但不加入合法N；当前旧输出若传输仍按T记账。protocol_fault_now必须在E前同域组合可见给管理层/消费者，消费者同E禁止成功提交；不可先寄存一拍后再倒称E已取消。组合告警只依赖本地预状态及输入/ready，管理层不得把它回灌到本地ready造成组合环。接口连到不认识取消的普通消费者不构成本合同实现。
 
+**I14-F4-01持久原因定义：** 正常ACTIVE的`s_valid && s_ready`为1时，分别比较`s_ctx != active_ctx`和`s_bin != N`得到protocol_fault_bits_now[0]、[1]；没有此实际握手则两位均0。N在比较时为E前已语义接受数。`cause_now[34:0] = {cancel ? cancel_causes[31:0] : 32'b0, protocol_fault_bits_now[1:0], cancel}`。首次kill在E把cause_now锁存到terminal_causes；因此仅本地bin错得到0x4，仅ctx错得到0x2，两者同时得到0x6。外部cancel即使cancel_causes=0也有bit0=1；cancel=0时外部原因线的闲置值不进入记录。外部与本地错误同E并存时取全部并集，不以外部输入覆盖本地位。
+
+首次取消之后，同一ctx的terminal_causes只做`旧值 OR cause_now`，不清位；terminal_saved_ack不清原因。其他首次快照字段（身份、N/P/T、terminal_s_transfer、terminal_t_bin）不重采样；持续cancel不生成第二终结。管理层在E用公开的组合fault位和自身cancel输入保存原因/禁止commit，不能等寄存输出下一拍才阻止提交；取消后的新增原因另写late-error审计，不倒改此前已保存的初始快照。terminal_saved仅确认初始快照，不免除管理层对后到原因的保存责任。
+
 E是可靠同步观察kill的边沿。优先级：kill > 正常输入计数/数据完成 > 正常退役。记录E前N、P及E的旧输出物理传输T；E的新输入物理握手另记为DISCARDED_ON_ABORT。E后q_valid=0、data_done=0、terminal_cancelled=1、local_quiescent=1，不等ready或audit ack。N−P−T必须非负；不变量破坏时保存原值并报协议错误，不能修数掩盖。
 
 | E前状态与E事件 | E后要求 |
@@ -63,6 +71,8 @@ E是可靠同步观察kill的边沿。优先级：kill > 正常输入计数/数�
 | 同上，cancel=1且ready=1 | 物理T=1，TRANSFER_ON_ABORT，未传输取消数0；不能用于fresh/commit/take |
 | 末拍N=513/P=512，最后FFT status与cancel同时 | 可保存物理末拍/状态观察；取消终结，正常成功为0 |
 | cancel持续或重复；迟到旧输出请求 | 一个终结，不复活旧ctx；额外错误来源由管理审计保留 |
+| R的反例：N=P=0、q空，输入ctx正确但bin=1，cancel=0、cancel_causes=0 | fault_bits=2'b10；E后terminal_causes=0x4、terminal_s_transfer=1、N=P=T=0，无零原因终结 |
+| 同上但ctx也错误，且cancel=1、cancel_causes=0x8 | cause_now=(0x8<<3) OR 0x7=0x47；三类原因保留，不能把本地错冲掉 |
 
 这些是设计期待，NOT_RUN。普通stall保持规则的唯一撤回例外是双方已约定的取消。
 
@@ -70,7 +80,15 @@ E是可靠同步观察kill的边沿。优先级：kill > 正常输入计数/数�
 
 本叶为一个活动ctx预留一个不可覆盖取消槽，未退役时拒绝新begin。terminal_saved_ack必须在terminal_cancelled已经可见之后到达并匹配ctx；确认后叶模块仍保留原终结及sticky原因到retire，不能因ack清除占用。后到新原因由管理层另外审计；审计接收不动原N/P/T快照。
 
-取消后本地静止不依赖任何消费；正常路径只有513输出传完才本地静止。retire需要：ctx匹配、本地静止、retire_safe=1，且取消路径先前已有匹配saved_ack；正常路径需要data_done。retire_safe必须由管理层在实际读者read_done/取消确认且无未来访问后给出，不能固定绑1。kill与retire同拍不释放。非法ack/retire不得释放，送管理层审计；不能以错误控制事件清掉原故障记录。
+**I14-F4-02复位定稿：** 首次上电尚无已初始化状态时，管理层先保证所有请求（begin_valid、s_valid、cancel、terminal_saved_ack、retire_valid）为0、无外部旧引用/回调，再至少一个clk上升沿采样cold_reset=1；在此之前不声称输出/状态有效。已初始化后的再次cold_reset，前一状态必须满足`!ctx_active && !terminal_cancelled && !terminal_saved && local_quiescent`，同时上述五项请求均0，且管理层的旧引用/回调退役证明已成立。叶侧TB断言检查前述公开状态和请求，管理模型另断言其持有的退役证明；硬件中证明来自真实读者，不能由叶虚构。非法cold_reset是环境合同违例，必须被断言/管理监控报告；本首包不承诺非法复位仍无损审计或故障容错，不将它用于运行中取消。
+
+合法cold_reset保持期间begin_ready、s_ready、m_valid为0；采样边沿清q、N/P及所有sticky/终结字段，ctx_active=0、active_ctx=0、data_done=0、terminal_saved=0、local_quiescent=1。所有payload/terminal观察字段复位为0，组合protocol_fault输出为0；释放cold_reset后恢复空闲begin资格。begin接受时装载active_ctx、ctx_active=1，清本事务计数/终结字段、local_quiescent=0；直到513输出全部传完或取消才再次local_quiescent=1。合法retire清占用及本地终结/确认字段，回相同空闲状态，不重置外部句柄分配器。运行中受控reset的合法次序是cancel→初始终结已保存→真实引用退役→retire→可选cold_reset，外部持久审计/boot/generation不随它清零。
+
+取消后本地静止不依赖任何消费；正常路径只有513输出传完才本地静止。retire_safe必须由管理层在实际读者read_done/取消确认且无未来访问后给出，不能固定绑1。合法cold_reset之外，ack/retire按以下E前公开状态判定，管理层与叶采用同一判据：
+
+- `ack_ok = terminal_saved_ack && ctx_active && terminal_cancelled && (ack_ctx == active_ctx) && !terminal_saved`。满足则E后terminal_saved=1；否则该请求不改变任何终结或资源状态。首次取消同E的ack因E前尚未terminal_cancelled而拒绝；持续cancel期间可保存已存在快照，ack不清原因且不改kill优先级。
+- `retire_ok = retire_valid && ctx_active && (retire_ctx == active_ctx) && local_quiescent && retire_safe && !kill && (terminal_cancelled ? terminal_saved : data_done)`。不满足则不释放。首次有效ack与retire同E时，retire使用旧terminal_saved=0，必须另一个边沿才能成功；kill与retire同E同样不释放。
+- **审计责任固定归管理层**：本叶不增加reject事件端口。管理层在每个E用上述公开信号计算`terminal_saved_ack && !ack_ok`、`retire_valid && !retire_ok`并各记一条拒绝事件（同E两者均错则两条），保存请求ctx、活动ctx、终结/确认/静止/安全/kill预状态及失败谓词，包括重复ack、错误ctx或未退役。无请求时不审计闲置payload。叶忽略被拒绝控制，不因它清错/复用；管理审计满按既有fail-stop/隔离规则处理，不能假称叶已保存该拒绝事件。该审计与真实排空仍是外围责任，但本地接受/拒绝判据不再由实现者选择。
 
 帧管理层另须在开帧前预留至少一个完整活动帧的ABORT存储：固定身份、expected集合身份、E前最终集合F及状态、Q=expected−F、原因/坐标及既有提交历史。首个集成候选只允许一帧在途，容量按这一个完整集合设计；位图宽度/实体布局仍待管理器合同，不是本叶取消槽的别名。无容量拒绝开帧；运行中审计满保留故障和未退役身份并fail-stop，不能覆盖后继续。
 
@@ -98,3 +116,5 @@ E是可靠同步观察kill的边沿。优先级：kill > 正常输入计数/数�
 公开接口矛盾、r2哈希变化、同边沿裁决无法成立、需要更改既有RTL/IP/参考模型/生产配置时返回M；不由执行方改合同绕过。I14-TOKEN-01沿原问题独立串行修复包，不能混入fixed4首包或重置返修次数。
 
 本轮实际完成：两个B交付包逐字节收件、来源身份核对，以及本工程接口候选。复用已有数值/录音/技术复核，未重跑；RTL、EDA、板测、正式性能和生产冻结均NOT_RUN/未通过。此文稿发布不关闭#14/#16，不执行merge，不表示已向其他聊天发单成功。
+
+本次A稿r2返修只改本文件：I14-F4-01补固定本地原因/外部并集及首次快照保持；I14-F4-02补clk/cold_reset、终结观察与控制判据。可见接口增量为terminal_causes从32到35位，新增2位组合fault明细、两个首次传输观察字段及ctx_active/active_ctx/terminal_saved；原数值公式、正常数据II/延迟及取消E优先级不变。表中新轨迹是文稿推演NOT_RUN，不能称RTL验证；两项状态仍FIXED_PENDING_REVIEW，等待R对本轮增量复核及真实成员批准。
