@@ -8,12 +8,12 @@
   "historical_candidate_elf_sha256": "4b7823bdefa3776a910a3359b5851fa52c6f4ce89432cc3ee0072dee52ca06a6",
   "historical_candidate_bit_sha256": "b15991bc0f8595970361be553b542e334dbb7dca268c01864ecd80fcffbbffaf",
   "historical_hashes_source": "../trusted-direction-input-20260918/README.md",
-  "actual_capture_run_entry": null,
-  "actual_host_elf_sha256_at_capture": null,
-  "actual_host_bit_sha256_at_capture": null,
+  "actual_capture_run_entry": "vitis-capture-import_app_hw_1 (C operator retrospective confirmation for both batches on 2026-09-28)",
+  "actual_host_elf_sha256_at_capture": "4b7823bdefa3776a910a3359b5851fa52c6f4ce89432cc3ee0072dee52ca06a6 (inferred from C statement that file has not changed since capture and current host hash)",
+  "actual_host_bit_sha256_at_capture": "b15991bc0f8595970361be553b542e334dbb7dca268c01864ecd80fcffbbffaf (inferred from C statement that file has not changed since capture and current host hash)",
   "load_preflight_record": null,
-  "vitis_launch_record_or_screenshot": null,
+  "vitis_launch_record_or_screenshot": "../c-issue15-vitis-config-20260928/README.md; original screenshots and launch.json retained there",
   "device_readback_attested": false,
-  "approval_status_for_actual_load_entry": "UNVERIFIED",
-  "limitation": "UART build and profile agree across eight captures; they do not prove the GUI Run entry, host artifact identity, approved load preflight, or on-device readback."
+  "approval_status_for_actual_load_entry": "OPERATOR_REPORTED; A approval/entry check pending",
+  "limitation": "Current launch.json and host hashes corroborate C's retrospective report of the actual Run and unchanged ELF/bit. No capture-time automated Run log, approved load preflight, or on-device readback is retained."
 }

@@ -9,4 +9,6 @@
 
 两批各有 `capture-index.json`、`positions.json`、`operator-report.json`、`playback-identity.json`、`version-binding.json`、逐段 metadata/CSV/统一增益 WAV、H1 stdout/stderr 和 `evidence/offline-current.json`。原始 BIN/LOG 及失败段始终保留，未用重复段补数。C 事后报告三处距离均约 1.5 m（尺量）、0°沿 +X、高差在 5 cm 内、两次重复不移动、未拍照片；x/y/z 双读数、角度误差与尺最小刻度缺失。户外背景可能有人声，室内报告无人讲话。试听 WAV 已无新增削顶且回读一致，人耳试听尚未完成。
 
-本批只申请**开发诊断输入的独立复核**，不得将 16/16 格式通过写成 #15 八段播放完整、测量摆位精度、声学效果、M1/H3 或真人 B 批准。A 仍需确认两批实际获批 Run/bit/ELF 加载身份；C 如有替代原件或重录，以新 ID 补交并保留本次失败原件。B 按两批准确哈希、原始异常与现场误差独立诊断。AI 整理与自检不代替真人非作者批准；本文件不改变 Issue #15 的状态。
+C 另提供三张 Vitis 2025.2 截图，并确认室内与户外两批当时实际运行同一个 `vitis-capture-import_app_hw_1`，ELF/bit 自录音以来未变。[Vitis 配置补证](c-issue15-vitis-config-20260928/README.md)保留原截图、当前 `launch.json` 和当前文件哈希；ELF/bit 哈希与历史候选记录吻合。这是操作人事后确认并由当前配置佐证，缺采集当时自动 Run 日志、加载前检查和板上读回。
+
+本批只申请**开发诊断输入的独立复核**，不得将 16/16 格式通过写成 #15 八段播放完整、测量摆位精度、声学效果、M1/H3 或真人 B 批准。A 仍需核对所报 Run/bit/ELF 是否为获批加载入口；C 如有替代原件或重录，以新 ID 补交并保留本次失败原件。B 按两批准确哈希、原始异常与现场误差独立诊断。AI 整理与自检不代替真人非作者批准；本文件不改变 Issue #15 的状态。

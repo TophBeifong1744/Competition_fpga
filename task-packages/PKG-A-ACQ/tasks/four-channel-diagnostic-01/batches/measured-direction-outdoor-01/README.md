@@ -8,7 +8,7 @@
 - 用户提供的 `soundsight-target-v1(1).wav` 与仓库冻结 `playback-v1/soundsight-target-v1.wav` 哈希相同：`ce28c5576eea620d8f358c0799bf8029cdc41bdeae8dcf95a02967d3bace6838`。用户保证 WAV 正确；手机端实际文件哈希和内部处理未独立核验。详见 `playback-identity.json`。
 - 用户事后报告：户外使用华为荣耀9、微信播放、最大音量、无特殊音效设置；每个位置两次录音间未移动；背景段暂停播放，但户外可能有人讲话。该报告不是同步现场日志。详见 `operator-report.json`。
 - 六个目标段的四路均得到首尾标记的**候选**匹配；`az045_r1_otd` 的四路两点映射都推算源文件终点超过抓取终点约 949–964 样本（约 20 ms）。尾标记本身位于抓取中，仍须人工复核波形和试听；不能声称六段均完整容纳 4.8 秒源文件。其余五个目标段候选映射显示源文件位于抓取内。标记位置不是精确声学活动真值。
-- 用户事后报告三处阵列中心到声孔均约 1.5 m（尺量）、相对计划位置无明显偏移、0°沿 +X、高差在 5 cm 内，未拍照片；尺的最小刻度、三处 x/y/z 双读数和角度误差未提供。名义 0°/±45°不能写成实测方向。`positions.json` 保留未知。现场 Run/加载绑定亦待补，见 `version-binding.json`。
+- 用户事后报告三处阵列中心到声孔均约 1.5 m（尺量）、相对计划位置无明显偏移、0°沿 +X、高差在 5 cm 内，未拍照片；尺的最小刻度、三处 x/y/z 双读数和角度误差未提供。名义 0°/±45°不能写成实测方向。`positions.json` 保留未知。C 事后确认两批实际使用同一个 Vitis Run 且 ELF/bit 未变；[截图和当前配置补证](../c-issue15-vitis-config-20260928/README.md)已入库，`version-binding.json` 区分操作人确认与缺少的加载前检查、板上读回。
 
 ## 文件与处理
 
@@ -29,4 +29,4 @@ python -B task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measu
 python -B task-packages/PKG-B-ALG/payload/model/python/h1_reader.py task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az000_r1_otd
 ```
 
-输出 `PASS_FORMAT_ONLY` 只证明 H1 格式。后续由 C 补齐可追溯现场事实和异常试听，A 核对实际获批加载入口，B 独立诊断完整时间线与两次重复；真实成员批准前不声称 #15 完成。若无法补齐三处实测坐标，保留本包作为户外开发输入，不作为“测量摆位”验收或精度真值。失败与缺项不筛除、不覆写原件。
+输出 `PASS_FORMAT_ONLY` 只证明 H1 格式。后续由 C 补齐可追溯现场事实和异常试听，A 核对所报 Run 是否为获批加载入口，B 独立诊断完整时间线与两次重复；真实成员批准前不声称 #15 完成。若无法补齐三处实测坐标，保留本包作为户外开发输入，不作为“测量摆位”验收或精度真值。失败与缺项不筛除、不覆写原件。
