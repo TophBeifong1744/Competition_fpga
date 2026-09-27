@@ -32,10 +32,18 @@ if ((Get-FileHash -LiteralPath $fixture -Algorithm SHA256).Hash -ne $expectedFix
 foreach ($name in @('xvlog.bat','xelab.bat','xsim.bat')) {
   if (!(Test-Path -LiteralPath (Join-Path $VivadoBin $name) -PathType Leaf)) { throw "Missing Vivado tool: $name" }
 }
+$sourcePaths=@($rtl,$tb,$fixture,$PSCommandPath)
+$sourceHashes=@($sourcePaths | ForEach-Object { (Get-FileHash -LiteralPath $_ -Algorithm SHA256).Hash.ToLowerInvariant() })
+$sourceSetPayload=$sourceHashes -join ':'
+$sourceSetDigest=[Convert]::ToHexString([Security.Cryptography.SHA256]::HashData([Text.Encoding]::ASCII.GetBytes($sourceSetPayload))).ToLowerInvariant()
+$snapshotId="source-set-sha256:$sourceSetDigest"
+$parentCandidate='e3483410077fbfbf87cac62fccec916144b84286'
 New-Item -ItemType Directory -Path $out | Out-Null
 $manifest = [ordered]@{
   claim_stage='FUNCTIONAL_SIM'; status='RUNNING'; cwd=$out; vivado_bin=[IO.Path]::GetFullPath($VivadoBin)
-  source_files=@(@{path=$rtl;sha256=(Get-FileHash $rtl -Algorithm SHA256).Hash},@{path=$tb;sha256=(Get-FileHash $tb -Algorithm SHA256).Hash},@{path=$fixture;sha256=(Get-FileHash $fixture -Algorithm SHA256).Hash},@{path=$PSCommandPath;sha256=(Get-FileHash $PSCommandPath -Algorithm SHA256).Hash})
+  snapshot_id=$snapshotId;parent_candidate=$parentCandidate
+  source_set_algorithm='SHA256(ASCII(lowercase_hex_rtl:lowercase_hex_tb:lowercase_hex_fixture:lowercase_hex_runner))'
+  source_files=@(@{path=$rtl;sha256=$sourceHashes[0]},@{path=$tb;sha256=$sourceHashes[1]},@{path=$fixture;sha256=$sourceHashes[2]},@{path=$PSCommandPath;sha256=$sourceHashes[3]})
   prepared_inputs=@{count=145;origin_commit='cb9118582f3ea09c47cb53e9141f395cbb3ee832';origin_blob='41c6e4ccbde45310a79dac844fb6312a5694e9fe';fixture_sha256=$expectedFixtureHash;use='input_s29 only'}
   tool_files=@(@('xvlog.bat','xelab.bat','xsim.bat') | ForEach-Object { $p=Join-Path $VivadoBin $_; @{path=$p;sha256=(Get-FileHash $p -Algorithm SHA256).Hash} })
   cases=@(); verdict_probes=@(); failure=$null
@@ -200,7 +208,7 @@ try {
   $functional=@($manifest.cases | Where-Object { $_.name -eq 'functional' }) | Select-Object -First 1
   $negative=@($manifest.cases | Where-Object { $_.name -ne 'functional' })
   $evidence=[ordered]@{
-    schema_version='1.0.0';run_id=[IO.Path]::GetFileName($out);snapshot_id='e3483410077fbfbf87cac62fccec916144b84286'
+    schema_version='1.0.0';run_id=[IO.Path]::GetFileName($out);snapshot_id=$snapshotId;parent_candidate=$parentCandidate
     evidence_profile='FUNCTIONAL_ACCEPTANCE';classification='INCONCLUSIVE'
     compile_exit_code=if($functional -and $functional.stages.Count -ge 1){[int]$functional.stages[0].exit_code}else{-1}
     elaboration_exit_code=if($functional -and $functional.stages.Count -ge 2){[int]$functional.stages[1].exit_code}else{-1}
