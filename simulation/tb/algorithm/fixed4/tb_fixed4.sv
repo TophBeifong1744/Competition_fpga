@@ -1,6 +1,5 @@
 `timescale 1ns/1ps
-// Independent, cycle-indexed contract model. Run with +CANARY or
-// +ILLEGAL_RESET to verify that the acceptance and reset guards fail.
+// Independent, cycle-indexed contract model. Select one XSim CASE_* plusarg.
 module tb_fixed4;
   logic clk=0;
   always #5 clk=~clk;
@@ -33,22 +32,36 @@ module tb_fixed4;
   logic [34:0] mtcauses=0;
   integer accepted_at=-1;
   integer seed=32'h5a17_c0de;
-  bit canary=0, illegal_reset=0;
+  string test_case="functional", trace_window="", active_checker="";
+  integer proof_fd=0, ledger_fd=0, accepted_fd=0;
+  integer token_count=0, queue_token=-1;
+  integer token_edge[0:2047],token_due[0:2047],token_observed[0:2047];
+  logic [63:0] token_ctx[0:2047];
+  logic [9:0] token_bin[0:2047];
+  logic signed [24:0] token_re[0:2047],token_im[0:2047];
+  bit token_numeric[0:2047],token_ov_re[0:2047],token_ov_im[0:2047];
+  string token_result[0:2047];
+  bit injected=0, illegal_reset=0;
   localparam longint signed S25_MIN = -64'sd16777216;
   localparam longint signed S25_MAX =  64'sd16777215;
 `include "fixed4_145_inputs.svh"
 
   task automatic fail(input string reason);
-    $display("FIXED4_FAIL cycle=%0d reason=%s seed=%08x ctx=%h n=%0d p=%0d q=%b term=%b",cycle,reason,seed,mctx,mn,mp,mq,mterm);
+    $display("FIXED4_FAIL case=%s checker=%s cycle=%0d reason=%s seed_init=5a17c0de seed_state=%08x ctx=%h n=%0d p=%0d q=%b term=%b",test_case,active_checker,cycle,reason,seed,mctx,mn,mp,mq,mterm);
     $fatal(1,"FIXED4_FAIL");
+  endtask
+  task automatic inject(input string checker_id);
+    if(injected) fail("duplicate_canary_injection");
+    injected=1;
+    $display("CANARY_INJECT case=%s checker=%s cycle=%0d seed_state=%08x",test_case,checker_id,cycle,seed);
   endtask
   task automatic eqb(input string name,input logic got,input logic exp);
     checks++;
-    if(got !== exp) fail($sformatf("%s got=%b expected=%b",name,got,exp));
+    if(got !== exp) begin active_checker=name; fail($sformatf("%s got=%b expected=%b",name,got,exp)); end
   endtask
   task automatic eqv(input string name,input logic [63:0] got,input logic [63:0] exp);
     checks++;
-    if(got !== exp) fail($sformatf("%s got=%h expected=%h",name,got,exp));
+    if(got !== exp) begin active_checker=name; fail($sformatf("%s got=%h expected=%h",name,got,exp)); end
   endtask
   // Magnitude-only integer quotient/remainder, then restore sign.  This keeps
   // all division and remainder operands nonnegative in the reference model.
@@ -109,8 +122,27 @@ module tb_fixed4;
       eqb("m_ov_im",m_ov_im,mqovim);
     end
   endtask
+  // Selected two-sided edge packet. Pre is after settled combinational logic;
+  // post is after the DUT NBA region. Expected columns come only from the model.
+  task automatic proof_row(input string phase,input bit accepted,input bit transferred);
+    if(proof_fd && trace_window!="")
+      $fdisplay(proof_fd,"%s,%s,%0d,%0d,ps,%08x,%08x,%0d,%b,%b,%b,%b,%h,%0d,%b,%h,%b,%b,%b,%b,%b,%b,%b,%b,%b,%h,%h,%0d,%0d,%0d,%0d,%0d,%0d,%h,%h,%b,%b,%b,%b,%b,%b,%b,%b,%b,%b,%h,%h,%b,%b,%b,%b,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%b,%b,%h,%h",
+        trace_window,phase,cycle,$rtoi($realtime*1000.0),32'h5a17c0de,seed,accepted_at+1,
+        cold_reset,begin_valid,s_valid,m_ready,s_ctx,s_bin,cancel,cancel_causes,
+        terminal_saved_ack,retire_valid,retire_safe,accepted,transferred,
+        s_ready,(!cold_reset && ma && !mterm && !mdone && mn<513 && (!mq || m_ready)),
+        m_valid,(!cold_reset && mq),m_ctx,mqctx,m_bin,mqbin,
+        m_re,mqre,m_im,mqim,terminal_causes,mtcauses,
+        protocol_fault_now,(s_valid && !cold_reset && ma && !mterm && !mdone && mn<513 && (!mq || m_ready) && (s_ctx!=mctx || s_bin!=mn)),
+        manager_commit_now,(!cold_reset && mq && m_ready && !cancel && !(s_valid && !cold_reset && ma && !mterm && !mdone && mn<513 && (!mq || m_ready) && (s_ctx!=mctx || s_bin!=mn))),
+        terminal_t,mt,terminal_s_transfer,mstrans,
+        ctx_active,ma,active_ctx,mctx,terminal_saved,msaved,
+        terminal_cancelled,mterm,terminal_n,mtn,terminal_p,mtp,
+        terminal_cancelled_untransferred,muntrans,terminal_t_bin,mtbin,
+        data_done,mdone,terminal_ctx,mtctx);
+  endtask
   task automatic tick;
-    integer z;
+    integer z, old_queue_token;
     bit it,ot,fctx,fbin,kill,ackok,retok;
     logic [34:0] cause;
     longint signed rr,ri;
@@ -119,20 +151,26 @@ module tb_fixed4;
     if(initialized) check_outputs();
     if(cold_reset && initialized) begin
       if(ma || mterm || msaved || !local_quiescent || begin_valid || s_valid || cancel || terminal_saved_ack || retire_valid)
-        $fatal(1,"ILLEGAL_RESET_ASSERT cycle=%0d",cycle);
+        $fatal(1,"ILLEGAL_RESET_ASSERT case=%s checker=ILLEGAL_RESET_ASSERT cycle=%0d",test_case,cycle);
     end
     it=initialized && s_valid && s_ready;
     ot=initialized && m_valid && m_ready;
-    if(ot && cycle+1<accepted_at+1) fail("output transferred before due cycle");
     fctx=it && s_ctx!=mctx;
     fbin=it && s_bin!=mn;
     kill=cancel||fctx||fbin;
     if(initialized) begin
       eqb("fault_ctx",protocol_fault_bits_now[0],fctx);
-      eqb("fault_bin",protocol_fault_bits_now[1],fbin);
+      if(test_case=="fault" && fbin && !injected) begin inject("fault_bin"); eqb("fault_bin",protocol_fault_bits_now[1],!fbin); end
+      else eqb("fault_bin",protocol_fault_bits_now[1],fbin);
       eqb("fault_now",protocol_fault_now,fctx||fbin);
-      eqb("manager_commit_gate",manager_commit_now,ot && !kill);
+      if(test_case=="commit" && ot && fbin && !injected) begin inject("manager_commit_gate"); eqb("manager_commit_gate",manager_commit_now,1'b1); end
+      else eqb("manager_commit_gate",manager_commit_now,ot && !kill);
     end
+    if(ledger_fd && ot)
+      $fdisplay(ledger_fd,"%0d,%0d,%0d,%h,%0d,%0d,%0d,%0d,%0d,%b,%b,%b,%b,%s,%08x",
+        accepted_at,accepted_at+1,cycle+1,mqctx,mqbin,mqre,m_re,mqim,m_im,
+        mqnum,m_numeric_valid,mqovre,m_ov_re,
+        kill ? "CANCELLED_PHYSICAL" : "MATCH",seed);
     cause={cancel ? cancel_causes : 32'b0,fbin,fctx,cancel};
     ackok=terminal_saved_ack && ma && mterm && ack_ctx==mctx && !msaved;
     retok=retire_valid && ma && retire_ctx==mctx && (!ma||mterm||mdone) && retire_safe && !kill && (mterm ? msaved : mdone);
@@ -150,8 +188,30 @@ module tb_fixed4;
        (rr!=2 || ri!=-2 || ovre || ovim))
       $fatal(1,"REFERENCE_MODEL_FAIL bin1 re=%0d im=%0d rounded_re=%0d rounded_im=%0d ov_re=%b ov_im=%b",
              $signed(s_re),$signed(s_im),rr,ri,ovre,ovim);
+    proof_row("pre",it,ot);
     @(posedge clk);
     cycle++;
+    old_queue_token=queue_token;
+    if(ot && old_queue_token>=0) begin
+      token_observed[old_queue_token]=cycle;
+      token_result[old_queue_token]=kill ? "CANCELLED_PHYSICAL" : "MATCH";
+    end else if(kill && old_queue_token>=0) begin
+      token_observed[old_queue_token]=cycle;
+      token_result[old_queue_token]="CANCELLED_UNTRANSFERRED";
+    end
+    if(it) begin
+      if(token_count>=2048) fail("acceptance ledger capacity");
+      token_edge[token_count]=cycle; token_due[token_count]=cycle+1;
+      token_ctx[token_count]=s_ctx; token_bin[token_count]=s_bin;
+      token_re[token_count]=(ovre||ovim) ? 0 : rr;
+      token_im[token_count]=(ovre||ovim) ? 0 : ri;
+      token_numeric[token_count]=!(ovre||ovim);
+      token_ov_re[token_count]=ovre; token_ov_im[token_count]=ovim;
+      token_observed[token_count]=kill ? cycle : -1;
+      token_result[token_count]=kill ? "CANCELLED_AT_ACCEPT" : "PENDING";
+      queue_token=kill ? -1 : token_count;
+      token_count++;
+    end else if(ot || kill) queue_token=-1;
     if(cold_reset) begin
       ma=0; mctx=0; msaved=0; mn=0; mp=0; mq=0; mqctx=0; mqbin=0;
       mqre=0; mqim=0; mqnum=0; mqovre=0; mqovim=0; mdone=0; msticky=0;
@@ -204,8 +264,17 @@ module tb_fixed4;
       end
     end
     #1;
-    if(canary && inputs==1 && ma && mq) mqre=mqre+1;
+    if(inputs==1 && ma && mq && !injected) begin
+      if(test_case=="numeric") begin inject("m_re"); mqre=mqre+1; end
+      if(test_case=="sideband") begin inject("m_numeric_valid"); mqnum=!mqnum; end
+      if(test_case=="timing") begin inject("m_valid"); mq=0; end
+      if(test_case=="tag") begin inject("m_bin"); mqbin=mqbin+1; end
+    end
+    if(test_case=="snapshot" && mterm && mctx==64'h1003 && !injected) begin inject("terminal_causes"); mtcauses=mtcauses^35'h1; end
+    if(test_case=="ack_retire" && mterm && mctx==64'h1002 && terminal_saved_ack && retire_valid && !injected) begin inject("terminal_saved"); msaved=0; end
     check_outputs();
+    proof_row("post",it,ot);
+    trace_window="";
   endtask
   task automatic idle_inputs;
     begin_valid=0; s_valid=0; cancel=0; cancel_causes=0;
@@ -224,9 +293,36 @@ module tb_fixed4;
     idle_inputs();
   endtask
   initial begin : main
-    integer i,r,old_ack,old_retire,old_commits,old_blocked;
+    integer i,r,old_ack,old_retire,old_commits,old_blocked,case_count;
     longint signed c_pos8,c_pos24,c_neg8,c_neg24,c_hi_ok,c_hi_ov,c_lo_ok;
-    canary=$test$plusargs("CANARY"); illegal_reset=$test$plusargs("ILLEGAL_RESET");
+    test_case="INVALID"; case_count=0;
+    if($test$plusargs("CASE_FUNCTIONAL")) begin case_count++; test_case="functional"; end
+    if($test$plusargs("CASE_NUMERIC")) begin case_count++; test_case="numeric"; end
+    if($test$plusargs("CASE_SIDEBAND")) begin case_count++; test_case="sideband"; end
+    if($test$plusargs("CASE_TIMING")) begin case_count++; test_case="timing"; end
+    if($test$plusargs("CASE_TAG")) begin case_count++; test_case="tag"; end
+    if($test$plusargs("CASE_FAULT")) begin case_count++; test_case="fault"; end
+    if($test$plusargs("CASE_SNAPSHOT")) begin case_count++; test_case="snapshot"; end
+    if($test$plusargs("CASE_ACK_RETIRE")) begin case_count++; test_case="ack_retire"; end
+    if($test$plusargs("CASE_COMMIT")) begin case_count++; test_case="commit"; end
+    if($test$plusargs("CASE_RESET")) begin case_count++; test_case="reset"; end
+    if(case_count!=1) $fatal(1,"CASE_SELECTION_INVALID count=%0d",case_count);
+    illegal_reset=(test_case=="reset");
+    if(test_case!="functional" && test_case!="numeric" && test_case!="sideband" &&
+       test_case!="timing" && test_case!="tag" && test_case!="fault" &&
+       test_case!="snapshot" && test_case!="ack_retire" && test_case!="commit" &&
+       test_case!="reset") $fatal(1,"UNKNOWN_CASE %s",test_case);
+    if(test_case=="functional") begin
+      proof_fd=$fopen("cycle-proof.csv","w");
+      if(!proof_fd) $fatal(1,"SCRIPT_PATH_FAIL cycle-proof.csv");
+      ledger_fd=$fopen("transaction-ledger.csv","w");
+      if(!ledger_fd) $fatal(1,"SCRIPT_PATH_FAIL transaction-ledger.csv");
+      accepted_fd=$fopen("accepted-ledger.csv","w");
+      if(!accepted_fd) $fatal(1,"SCRIPT_PATH_FAIL accepted-ledger.csv");
+      $fdisplay(proof_fd,"window,phase,cycle,time,time_unit,seed_init,seed_state,due_cycle,cold_reset,begin_valid,s_valid,m_ready,s_ctx,s_bin,cancel,cancel_causes,ack,retire,retire_safe,s_accepted,m_transferred,s_ready_actual,s_ready_expected,m_valid_actual,m_valid_expected,m_ctx_actual,m_ctx_expected,m_bin_actual,m_bin_expected,m_re_actual,m_re_expected,m_im_actual,m_im_expected,causes_actual,causes_expected,fault_actual,fault_expected,commit_actual,commit_expected,t_actual,t_expected,s_transfer_actual,s_transfer_expected,ctx_active_actual,ctx_active_expected,active_ctx_actual,active_ctx_expected,terminal_saved_actual,terminal_saved_expected,terminal_cancelled_actual,terminal_cancelled_expected,terminal_n_actual,terminal_n_expected,terminal_p_actual,terminal_p_expected,terminal_untransferred_actual,terminal_untransferred_expected,terminal_t_bin_actual,terminal_t_bin_expected,data_done_actual,data_done_expected,terminal_ctx_actual,terminal_ctx_expected");
+      $fdisplay(ledger_fd,"accepted_cycle,due_cycle,observed_cycle,ctx,bin,expected_re,actual_re,expected_im,actual_im,expected_numeric_valid,actual_numeric_valid,expected_ov_re,actual_ov_re,result,seed_state");
+      $fdisplay(accepted_fd,"accepted_cycle,due_cycle,observed_cycle,ctx,bin,expected_re,expected_im,expected_numeric_valid,expected_ov_re,expected_ov_im,result");
+    end
     c_pos8=rne16(64'sd8); c_pos24=rne16(64'sd24);
     c_neg8=rne16(-64'sd8); c_neg24=rne16(-64'sd24);
     c_hi_ok=rne16(64'sd268435447);
@@ -244,7 +340,7 @@ module tb_fixed4;
     cold_reset=1; tick();
     if(illegal_reset) begin
       cold_reset=0; start_ctx(64'h77);
-      cold_reset=1; s_valid=1; tick();
+      cold_reset=1; s_valid=1; inject("ILLEGAL_RESET_ASSERT"); tick();
       fail("illegal reset canary escaped");
     end
     cold_reset=0; begin_ctx=0; begin_valid=1; tick();
@@ -269,6 +365,7 @@ module tb_fixed4;
       endcase
       do begin
         r=rand32(); m_ready=(i<6) ? 1 : ((r & 3)!=0);
+        if(i<2) trace_window="first_beat";
         tick();
       end while(!(!mterm && mn==i+1));
     end
@@ -281,11 +378,11 @@ module tb_fixed4;
     retire_safe=1; tick(); if(ma) fail("normal retire rejected");
     idle_inputs();
     // Permanent backpressure: cancellation must discard queued output locally.
-    start_ctx(64'h1002); m_ready=0; s_valid=1; s_ctx=mctx; s_bin=0; s_re=16; s_im=32; tick();
+    start_ctx(64'h1002); m_ready=0; s_valid=1; s_ctx=mctx; s_bin=0; s_re=16; s_im=32; trace_window="stall"; tick();
     s_valid=0; repeat(4) tick();
     // First kill and ack share E: ack is rejected against pre-edge state.
     old_ack=audits_ack; cancel=1; cancel_causes=32'h1;
-    terminal_saved_ack=1; ack_ctx=mctx; tick();
+    terminal_saved_ack=1; ack_ctx=mctx; trace_window="first_kill_ack"; tick();
     if(mtn!=1 || mtp!=0 || mt || muntrans!=1 || mstrans ||
        !mterm || msaved || audits_ack!=old_ack+1) fail("first kill/ack rejection");
     cover_kill_ack++;
@@ -295,7 +392,7 @@ module tb_fixed4;
     cover_busy_begin++; begin_valid=0;
     cancel=1; cancel_causes=32'h2; tick(); if(mtcauses!=35'h19) fail("late cause union");
     cancel=0; terminal_saved_ack=1; ack_ctx=64'h1002;
-    retire_valid=1; retire_ctx=64'h1002; retire_safe=1; old_retire=audits_retire; tick();
+    retire_valid=1; retire_ctx=64'h1002; retire_safe=1; old_retire=audits_retire; trace_window="first_ack_retire"; tick();
     if(!msaved || !ma || audits_retire!=old_retire+1) fail("same-edge ack/retire rejection");
     // A repeated correct-ctx ack is still rejected; original snapshot stays.
     retire_valid=0; old_ack=audits_ack; tick();
@@ -304,15 +401,15 @@ module tb_fixed4;
     cover_duplicate_ack++;
     // Here retirement would otherwise be legal; kill must block it on E.
     terminal_saved_ack=0; retire_valid=1; cancel=1; cancel_causes=32'h4;
-    old_retire=audits_retire; tick();
+    old_retire=audits_retire; trace_window="kill_retire"; tick();
     if(!ma || !msaved || !mterm || mtn!=1 || mtp!=0 ||
        mtcauses!=35'h39 || audits_retire!=old_retire+1) fail("retire/kill priority");
     cover_retire_kill++;
     cancel=0; tick(); if(ma) fail("cancelled context not retired after kill cleared");
     idle_inputs();
     // Same-edge old output T and newly accepted S are both physical transfers.
-    start_ctx(64'h1003); m_ready=0; s_valid=1; s_ctx=mctx; s_bin=0; tick();
-    m_ready=1; s_bin=1; cancel=1; cancel_causes=32'h8; tick();
+    start_ctx(64'h1003); m_ready=0; s_valid=1; s_ctx=mctx; s_bin=0; trace_window="stall_before_resume"; tick();
+    m_ready=1; s_bin=1; cancel=1; cancel_causes=32'h8; trace_window="resume_e_old_t_new_s"; tick();
     if(mtn!=1 || mtp!=0 || !mt || mtbin!=0 || muntrans!=0 || !mstrans || mtcauses!=35'h41)
       fail("same-edge S/T cancel snapshot");
     s_valid=0; cancel=0; abort_retire(64'h1003);
@@ -326,8 +423,8 @@ module tb_fixed4;
     s_valid=0; cancel=0; abort_retire(64'h1005);
     // Last output and external status/cancel on one edge: physical T, no done.
     start_ctx(64'h1006); m_ready=1;
-    for(i=0;i<513;i++) begin s_valid=1; s_ctx=mctx; s_bin=i; s_re=i; s_im=-i; tick(); end
-    s_valid=0; cancel=1; cancel_causes=32'h80; tick();
+    for(i=0;i<513;i++) begin s_valid=1; s_ctx=mctx; s_bin=i; s_re=i; s_im=-i; if(i==512) trace_window="last_beat_pending"; tick(); end
+    s_valid=0; cancel=1; cancel_causes=32'h80; trace_window="last_beat_cancel"; tick();
     if(mtn!=513 || mtp!=512 || !mt || mtbin!=512 || muntrans!=0 || mdone)
       fail("last-beat cancellation");
     cancel=0; abort_retire(64'h1006);
@@ -335,7 +432,7 @@ module tb_fixed4;
     // manager's same-edge public fault gate must suppress a success commit.
     start_ctx(64'h1008); m_ready=0; s_valid=1; s_ctx=mctx; s_bin=0; tick();
     m_ready=1; s_bin=2; old_commits=manager_commits;
-    old_blocked=blocked_fault_outputs; tick();
+    old_blocked=blocked_fault_outputs; trace_window="fault_commit"; tick();
     if(!mterm || !mt || mtbin!=0 || mtcauses!=35'h4 ||
        manager_commits!=old_commits || blocked_fault_outputs!=old_blocked+1)
       fail("same-edge fault allowed manager commit");
@@ -346,6 +443,15 @@ module tb_fixed4;
        cover_duplicate_ack!=1 || cover_retire_kill!=1 || cover_busy_begin!=1 ||
        cover_fault_commit!=1 || fixture_inputs!=145)
       fail("directed cover point missing");
+    for(i=0;i<token_count;i++) begin
+      if(token_result[i]=="PENDING" || token_observed[i]<0) fail($sformatf("undrained accepted token %0d",i));
+      if(accepted_fd) $fdisplay(accepted_fd,"%0d,%0d,%0d,%h,%0d,%0d,%0d,%b,%b,%b,%s",
+        token_edge[i],token_due[i],token_observed[i],token_ctx[i],token_bin[i],
+        token_re[i],token_im[i],token_numeric[i],token_ov_re[i],token_ov_im[i],token_result[i]);
+    end
+    if(proof_fd) $fclose(proof_fd);
+    if(ledger_fd) $fclose(ledger_fd);
+    if(accepted_fd) $fclose(accepted_fd);
     $display("FIXED4_PASS checks=%0d cycles=%0d inputs=%0d outputs=%0d fixture=%0d ack_reject=%0d retire_reject=%0d seed_initial=5a17c0de",checks,cycle,inputs,outputs,fixture_inputs,audits_ack,audits_retire);
     $finish;
   end
