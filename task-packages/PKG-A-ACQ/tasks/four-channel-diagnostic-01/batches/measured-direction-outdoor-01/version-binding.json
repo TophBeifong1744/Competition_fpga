@@ -1,0 +1,19 @@
+{
+  "scope": "This outdoor capture batch only",
+  "board": "ATK-DF7010P_7020P, baseboard V3.9; repository project identity, not independently read from this batch",
+  "part": "xc7z020clg400-2",
+  "tool_baseline": "Vivado/Vitis 2025.2 per project identity",
+  "uart_build_line_all_eight": "FOUR SCENE S1 candidate build Sep 17 2026 15:09:29",
+  "uart_profile_all_eight": "S1_6S_RAW target_us=6000000 min_groups=288000 capacity_groups=300000 record_bytes=32 timeout_us=2000000",
+  "historical_candidate_elf_sha256": "4b7823bdefa3776a910a3359b5851fa52c6f4ce89432cc3ee0072dee52ca06a6",
+  "historical_candidate_bit_sha256": "b15991bc0f8595970361be553b542e334dbb7dca268c01864ecd80fcffbbffaf",
+  "historical_hashes_source": "../trusted-direction-input-20260918/README.md",
+  "actual_capture_run_entry": null,
+  "actual_host_elf_sha256_at_capture": null,
+  "actual_host_bit_sha256_at_capture": null,
+  "load_preflight_record": null,
+  "vitis_launch_record_or_screenshot": null,
+  "device_readback_attested": false,
+  "approval_status_for_actual_load_entry": "UNVERIFIED",
+  "limitation": "UART build and profile agree across eight captures; they do not prove the GUI Run entry, host artifact identity, approved load preflight, or on-device readback."
+}

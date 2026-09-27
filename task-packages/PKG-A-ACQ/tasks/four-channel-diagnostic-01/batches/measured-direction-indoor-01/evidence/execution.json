@@ -1,0 +1,148 @@
+{
+  "date": "2026-09-28",
+  "actor": "E engineering assistant for C/hsc119",
+  "claim": "offline source-copy, export, format and marker diagnostics; no board operation or independent member approval",
+  "source_folder_label": "sound_09_22",
+  "commands": {
+    "exporter_template": "python -B task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/export_four.py <source .bin> measured-direction-indoor-01/captures/<ID> --acquisition-id <ID> --config-version four-channel-continuous-s1-6s-raw-20260917-v1 --source-kind hardware-audio --provenance <batch-specific C source statement> --capture-point <S1 chain>",
+    "h1_reader_template": "python -B task-packages/PKG-B-ALG/payload/model/python/h1_reader.py measured-direction-indoor-01/captures/<ID>",
+    "offline_verifier": "python -B task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/verify_batch.py --batch-root task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01 --out task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/evidence/offline-current.json"
+  },
+  "tool_versions": {
+    "python": "3.13.5",
+    "numpy": "2.3.2"
+  },
+  "source_code_sha256": {
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/export_four.py": "e89c82945367ef3e06113d9c18edbb3276e1ba658b2594e3f79e28a960422526",
+    "task-packages/PKG-B-ALG/payload/model/python/h1_reader.py": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/verify_batch.py": "a7501045f5d76d2937dbf473a7ccc053b1bf017a943ecba9a324dc8035f41886"
+  },
+  "captures": [
+    {
+      "capture_id": "bg_od",
+      "delivery_acquisition_id": "c15_indoor01_bg_od",
+      "source_raw_basename": "bg_od.bin",
+      "source_serial_basename": "bg_od.log",
+      "copy_sha256_match": true,
+      "exported_raw_sha256": "6737038669998e0797acf7f030134ef1af639d54d19df27cbac69ef01f56adfc",
+      "samples_csv_sha256": "c7aafcaed5df21c7af40c2ec9bcaf8b9214d09e1692af28dc9001ebb6e78b15c",
+      "metadata_sha256": "a6225d509f146ffe9401dcf61cf2d761fdb605bc5e69e17ac8485694a2f6e380",
+      "h1_reader_status": "PASS_FORMAT_ONLY",
+      "h1_reader_exit_code": 0,
+      "h1_reader_stdout": "evidence/h1-reader-current/bg_od.json",
+      "s1_result": "evidence/offline-current.json",
+      "listening_wav_readback_exact": true
+    },
+    {
+      "capture_id": "az000_r1",
+      "delivery_acquisition_id": "c15_indoor01_az000_r1",
+      "source_raw_basename": "az000_r1.bin",
+      "source_serial_basename": "az000_r1.log",
+      "copy_sha256_match": true,
+      "exported_raw_sha256": "fa1f3e13c054645f2b39e324ab4c4b824f89a8aa9561a51063373e76b18ede01",
+      "samples_csv_sha256": "31541f39128b8466e1197767e45bd2c229725918bb1bdd64a33d349a0a2b4ce5",
+      "metadata_sha256": "381c76ed0bacbda35354f88cdef4e78011cc0d0119456d1e385b73e6b450d91e",
+      "h1_reader_status": "PASS_FORMAT_ONLY",
+      "h1_reader_exit_code": 0,
+      "h1_reader_stdout": "evidence/h1-reader-current/az000_r1.json",
+      "s1_result": "evidence/offline-current.json",
+      "listening_wav_readback_exact": true
+    },
+    {
+      "capture_id": "az000_r2",
+      "delivery_acquisition_id": "c15_indoor01_az000_r2",
+      "source_raw_basename": "az000_r2.bin",
+      "source_serial_basename": "az000_r2.log",
+      "copy_sha256_match": true,
+      "exported_raw_sha256": "1dbdebdeb62b9549a973246e3192771e3ba50b22445beb2de0f0d8fdf8e5ffc8",
+      "samples_csv_sha256": "ef4457490dbff0fd9e8b4a1d06336d813aa05cf6917cf70b9a3f0653805bc343",
+      "metadata_sha256": "7288795b3ac14acbd1e3df8dc74a5662eaa863645a50d79ba1027d03f33f1f1d",
+      "h1_reader_status": "PASS_FORMAT_ONLY",
+      "h1_reader_exit_code": 0,
+      "h1_reader_stdout": "evidence/h1-reader-current/az000_r2.json",
+      "s1_result": "evidence/offline-current.json",
+      "listening_wav_readback_exact": true
+    },
+    {
+      "capture_id": "azm045_r1",
+      "delivery_acquisition_id": "c15_indoor01_azm045_r1",
+      "source_raw_basename": "azm045_r1.bin",
+      "source_serial_basename": "azm045_r1.log",
+      "copy_sha256_match": true,
+      "exported_raw_sha256": "9eb1b4180eb51c5bfbfb485ae7f62c80977d98d3a8d4f2fd0cae2100fead5375",
+      "samples_csv_sha256": "f5c169a4862cab4841fb6a74aac68fa16b170fc223822caeb12fc092549a4bad",
+      "metadata_sha256": "ede5b205b7a489961699c3652a26d26fe07d93c765af441e9bb53ebf80eff3bb",
+      "h1_reader_status": "PASS_FORMAT_ONLY",
+      "h1_reader_exit_code": 0,
+      "h1_reader_stdout": "evidence/h1-reader-current/azm045_r1.json",
+      "s1_result": "evidence/offline-current.json",
+      "listening_wav_readback_exact": true
+    },
+    {
+      "capture_id": "azm045_r2",
+      "delivery_acquisition_id": "c15_indoor01_azm045_r2",
+      "source_raw_basename": "azm045_r2.bin",
+      "source_serial_basename": "azm045_r2.log",
+      "copy_sha256_match": true,
+      "exported_raw_sha256": "ed971ad77ccd1aa18c6279286dc4399f5ae587e02ed5f9f95ef6c2fea311cdb6",
+      "samples_csv_sha256": "0ed4bb290540c88fc511594bc4b2f5d70d3f46762b3aca6acc3f7144b77a3872",
+      "metadata_sha256": "17aa8384d321a963ab3f948efe2d79f6fd52f5d4402a3636c52f69c2da22960f",
+      "h1_reader_status": "PASS_FORMAT_ONLY",
+      "h1_reader_exit_code": 0,
+      "h1_reader_stdout": "evidence/h1-reader-current/azm045_r2.json",
+      "s1_result": "evidence/offline-current.json",
+      "listening_wav_readback_exact": true
+    },
+    {
+      "capture_id": "az045_r1",
+      "delivery_acquisition_id": "c15_indoor01_az045_r1",
+      "source_raw_basename": "az045_r1.bin",
+      "source_serial_basename": "az045_r1.log",
+      "copy_sha256_match": true,
+      "exported_raw_sha256": "3640fb40d99d15dbdfdcbc9badf10e5a48277e2ebfbf7a0dd079df64f357389d",
+      "samples_csv_sha256": "ebd68a1955356c72d802210797e53d4872effc665f33da6b371f4eba6f85dea2",
+      "metadata_sha256": "3ffc3d84f7c93e37bff5a9ddc571aeed71fda955f15dc722d38cd305334a5872",
+      "h1_reader_status": "PASS_FORMAT_ONLY",
+      "h1_reader_exit_code": 0,
+      "h1_reader_stdout": "evidence/h1-reader-current/az045_r1.json",
+      "s1_result": "evidence/offline-current.json",
+      "listening_wav_readback_exact": true
+    },
+    {
+      "capture_id": "az045_r2",
+      "delivery_acquisition_id": "c15_indoor01_az045_r2",
+      "source_raw_basename": "az045_r2.bin",
+      "source_serial_basename": "az045_r2.log",
+      "copy_sha256_match": true,
+      "exported_raw_sha256": "016586c38701b2c1e423028228be7ec513a6cf1a5eb48cfc0c1118cf0a10f4c2",
+      "samples_csv_sha256": "cfcf0c380c4f437569592d8f7dc9c952b13e2cdafe5c0a9d41cc974be1b4b46a",
+      "metadata_sha256": "dc3f3a956fc21579d415fefacf2ac03fa459541726a122aa47c6f8f8e6d4ea67",
+      "h1_reader_status": "PASS_FORMAT_ONLY",
+      "h1_reader_exit_code": 0,
+      "h1_reader_stdout": "evidence/h1-reader-current/az045_r2.json",
+      "s1_result": "evidence/offline-current.json",
+      "listening_wav_readback_exact": true
+    },
+    {
+      "capture_id": "bg_post",
+      "delivery_acquisition_id": "c15_indoor01_bg_post",
+      "source_raw_basename": "bg_post.bin",
+      "source_serial_basename": "bg_post.log",
+      "copy_sha256_match": true,
+      "exported_raw_sha256": "96630e0ac5d70949f2e8f23ef28618066288356b55075f3706eca06c66eed749",
+      "samples_csv_sha256": "dffa323ce2f58480dd52950e9bef856d5d39eda54a0713fb946d1e6cc9841a47",
+      "metadata_sha256": "e8852a73db2a0ada8129a3579609418815f061d0a48082238606ce0de93315cd",
+      "h1_reader_status": "PASS_FORMAT_ONLY",
+      "h1_reader_exit_code": 0,
+      "h1_reader_stdout": "evidence/h1-reader-current/bg_post.json",
+      "s1_result": "evidence/offline-current.json",
+      "listening_wav_readback_exact": true
+    }
+  ],
+  "limitations": [
+    "Actual Run entry and host bit/ELF at capture not independently bound",
+    "Human listening not performed by assistant",
+    "Marker alignment is provisional",
+    "Operator position report is after the fact"
+  ]
+}

@@ -1,0 +1,35 @@
+
+FOUR SCENE S1 candidate build Sep 17 2026 15:09:29
+RX=[01000000,01100000) slot_stride=8064 packet=8000 guard=64 used=16128 end=00A400C0
+PROFILE=S1_6S_RAW target_us=6000000 min_groups=288000 capacity_groups=300000 record_bytes=32 timeout_us=2000000
+One continuous segment; original IDs/flags; CPU archive, no realtime UART
+ARCHIVE allocation=00112A80 data=00112AC0 capacity_bytes=9600000 total_bytes=9600128 guard_each=64
+START session=0 target_us=6000000 min_groups=288000 no_UART_until_stop
+SESSION 0 result=OK groups=288250 packets=1153 bytes_checked=9224000 stop_sent=1
+first=000000000000573A last=000000000004BD33 capture_command_us=6000124 drain_us=5208 max_check_us=60 max_arm_gap_us=5240
+SOURCE=C100000A DMA_SR=00001002 length=8000 active=-1 owners=0,0 bad_group=249 bad_lane=3 bad_value=000013C0
+CHECK first_failure=OK verified_packets=1153 verified_groups=288250 guard_checked_per_verified_packet=1
+TRACE packet=1137 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=1138 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=1139 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=1140 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=1141 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=1142 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=1143 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=1144 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=1145 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=1146 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=1147 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=1148 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=1149 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=1150 slot=0 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=1151 slot=1 SR=00001002 SOURCE=C1000003 length=8000
+TRACE packet=1152 slot=0 SR=00001002 SOURCE=C100000A length=8000
+mic0 min=-32896 max=28288 zeros=1224 clip_flags=0
+mic1 min=-33472 max=32576 zeros=1059 clip_flags=0
+mic2 min=-31872 max=29824 zeros=1114 clip_flags=0
+mic3 min=-33728 max=27776 zeros=1177 clip_flags=0
+SCENE_INTEGRITY_PASS groups=288250 packets=1153 bytes=9224000 fnv1a32=8B8522C8 guard_ok=1
+READY_FOR_DDR_DUMP base=00112AC0 bytes=9224000 words=2306000
+SUMMARY started=1 completed=1 failures=0; diagnostic only; NOT acoustic acceptance
+RUN LOW, drained; DO NOT reset/re-run before BIN dump; no further capture during export
