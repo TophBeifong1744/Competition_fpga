@@ -1,0 +1,94 @@
+[
+  {
+    "case": "stable",
+    "samples": 46080,
+    "frames": 89,
+    "valid": 89,
+    "calls": {
+      "rfft_calls": 89,
+      "rfft_vectors": 534,
+      "irfft_calls": 1335,
+      "irfft_vectors": 1335,
+      "matrix_rank_calls": 178,
+      "lstsq_calls": 89
+    },
+    "input_peak": 4.45296864761234,
+    "retained_frame_payload_bytes": 4374528,
+    "input_float_payload_bytes": 2211840,
+    "measured_instrumented_localize_frame_ms": {
+      "p50": 0.617599995166529,
+      "p95": 0.8454799972241744,
+      "max": 1.3915000017732382
+    },
+    "scope": "Single local instrumented run, includes FFT/GCC/LS and wrapper; excludes input generation, tracking, audio, I/O, DMA and PDM. Not real-time proof."
+  },
+  {
+    "case": "drop-return",
+    "samples": 46080,
+    "frames": 89,
+    "valid": 64,
+    "calls": {
+      "rfft_calls": 89,
+      "rfft_vectors": 534,
+      "irfft_calls": 960,
+      "irfft_vectors": 960,
+      "matrix_rank_calls": 128,
+      "lstsq_calls": 64
+    },
+    "input_peak": 4.282471259383717,
+    "retained_frame_payload_bytes": 4374528,
+    "input_float_payload_bytes": 2211840,
+    "measured_instrumented_localize_frame_ms": {
+      "p50": 0.5948000034550205,
+      "p95": 0.7527600013418116,
+      "max": 1.4569999984814785
+    },
+    "scope": "Single local instrumented run, includes FFT/GCC/LS and wrapper; excludes input generation, tracking, audio, I/O, DMA and PDM. Not real-time proof."
+  },
+  {
+    "case": "outside",
+    "samples": 46080,
+    "frames": 89,
+    "valid": 89,
+    "calls": {
+      "rfft_calls": 89,
+      "rfft_vectors": 534,
+      "irfft_calls": 1335,
+      "irfft_vectors": 1335,
+      "matrix_rank_calls": 178,
+      "lstsq_calls": 89
+    },
+    "input_peak": 4.45296864761234,
+    "retained_frame_payload_bytes": 4374528,
+    "input_float_payload_bytes": 2211840,
+    "measured_instrumented_localize_frame_ms": {
+      "p50": 0.5957999965175986,
+      "p95": 0.7248999987496062,
+      "max": 1.479599995946046
+    },
+    "scope": "Single local instrumented run, includes FFT/GCC/LS and wrapper; excludes input generation, tracking, audio, I/O, DMA and PDM. Not real-time proof."
+  },
+  {
+    "case": "directional-interference",
+    "samples": 144384,
+    "frames": 281,
+    "valid": 222,
+    "calls": {
+      "rfft_calls": 281,
+      "rfft_vectors": 1686,
+      "irfft_calls": 4215,
+      "irfft_vectors": 4215,
+      "matrix_rank_calls": 562,
+      "lstsq_calls": 281
+    },
+    "input_peak": 5.3129255030137434,
+    "retained_frame_payload_bytes": 13811712,
+    "input_float_payload_bytes": 6930432,
+    "measured_instrumented_localize_frame_ms": {
+      "p50": 0.6248999998206273,
+      "p95": 0.7411999977193773,
+      "max": 1.2373999998089857
+    },
+    "scope": "Single local instrumented run, includes FFT/GCC/LS and wrapper; excludes input generation, tracking, audio, I/O, DMA and PDM. Not real-time proof."
+  }
+]

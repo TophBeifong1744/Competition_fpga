@@ -1,0 +1,384 @@
+{
+  "status": "VALID_DRAFT_NOT_FIXED_POINT_ACCEPTANCE",
+  "known": {
+    "channels": 6,
+    "sample_rate_hz": 48000,
+    "frame_samples": 1024,
+    "hop_samples": 512,
+    "pair_count": 15,
+    "band_hz": [
+      300,
+      4000
+    ],
+    "common_audio_delay_samples": 4,
+    "audio_history_samples": 8,
+    "fade_samples": 480,
+    "hold_ms": 200,
+    "input_normalized_abs_bound_for_analysis": 1.0
+  },
+  "pending_A": {
+    "input_pcm_effective_bits": null,
+    "input_container_bits": null,
+    "input_gain_and_full_scale_definition": null,
+    "processing_clock_hz": null,
+    "fft_ip_and_version": null,
+    "fft_cycles_per_transform": null,
+    "ifft_cycles_per_transform": null,
+    "fft_stage_scaling_schedule": null,
+    "ifft_stage_scaling_schedule": null,
+    "fft_block_exponent_width_and_range": null,
+    "ifft_block_exponent_width_and_range": null,
+    "fft_internal_ram_bytes": null,
+    "phat_magnitude_reciprocal_implementation": null,
+    "least_squares_pl_ps_partition": null,
+    "pair_missing_and_rank_check_implementation": null,
+    "dma_block_samples": null,
+    "axi_width_and_memory_layout": null,
+    "pdm_decimation_ratio_and_group_delay_samples": null,
+    "dsp_budget": null,
+    "bram_budget_bytes": null,
+    "end_to_end_latency_limit_ms": null,
+    "allowed_quantization_error_and_discrete_mismatch_policy": null
+  },
+  "candidates": [
+    {
+      "name": "GROWTH_REFERENCE",
+      "ranges": {
+        "pcm": {
+          "min": -1.0,
+          "max": 0.9999998807907104,
+          "lsb": 1.1920928955078125e-07
+        },
+        "hann": {
+          "min": 0.0,
+          "max": 1.9999923706054688,
+          "lsb": 7.62939453125e-06
+        },
+        "fft_component": {
+          "min": -1024.0,
+          "max": 1023.9999998807907,
+          "lsb": 1.1920928955078125e-07
+        },
+        "cross_component": {
+          "min": -4194304.0,
+          "max": 4194304.0,
+          "lsb": 1.4210854715202004e-14
+        },
+        "phat_component": {
+          "min": -2.0,
+          "max": 1.9999998807907104,
+          "lsb": 1.1920928955078125e-07
+        },
+        "ifft_internal_component": {
+          "min": -2048.0,
+          "max": 2047.9999998807907,
+          "lsb": 1.1920928955078125e-07
+        },
+        "correlation": {
+          "min": -2.0,
+          "max": 1.9999998807907104,
+          "lsb": 1.1920928955078125e-07
+        },
+        "delay_samples": {
+          "min": -32.0,
+          "max": 31.999755859375,
+          "lsb": 0.000244140625
+        },
+        "audio_weight": {
+          "min": 0.0,
+          "max": 1.9999998807907104,
+          "lsb": 1.1920928955078125e-07
+        },
+        "audio_accumulator": {
+          "min": -128.0,
+          "max": 127.99999999999999,
+          "lsb": 1.4210854715202004e-14
+        }
+      },
+      "partial_inventory": {
+        "six_channel_frame_ring": {
+          "elements": 6144,
+          "element_bits": 24,
+          "bit_packed_bytes": 18432,
+          "byte_aligned_element_bytes": 18432,
+          "software_container_bytes": 24576
+        },
+        "new_hop_pingpong": {
+          "elements": 6144,
+          "element_bits": 24,
+          "bit_packed_bytes": 18432,
+          "byte_aligned_element_bytes": 18432,
+          "software_container_bytes": 24576
+        },
+        "six_fft_spectra_components": {
+          "elements": 6156,
+          "element_bits": 34,
+          "bit_packed_bytes": 26163,
+          "byte_aligned_element_bytes": 30780,
+          "software_container_bytes": 49248
+        },
+        "one_pair_cross_components": {
+          "elements": 1026,
+          "element_bits": 69,
+          "bit_packed_bytes": 8850,
+          "byte_aligned_element_bytes": 9234,
+          "software_container_bytes": 16416
+        },
+        "one_pair_normalized_components": {
+          "elements": 1026,
+          "element_bits": 25,
+          "bit_packed_bytes": 3207,
+          "byte_aligned_element_bytes": 4104,
+          "software_container_bytes": 4104
+        },
+        "pair_mask": {
+          "elements": 513,
+          "element_bits": 1,
+          "bit_packed_bytes": 65,
+          "byte_aligned_element_bytes": 513,
+          "software_container_bytes": 513
+        },
+        "one_pair_correlation": {
+          "elements": 1024,
+          "element_bits": 25,
+          "bit_packed_bytes": 3200,
+          "byte_aligned_element_bytes": 4096,
+          "software_container_bytes": 4096
+        },
+        "delays": {
+          "elements": 15,
+          "element_bits": 18,
+          "bit_packed_bytes": 34,
+          "byte_aligned_element_bytes": 45,
+          "software_container_bytes": 60
+        },
+        "hann": {
+          "elements": 1024,
+          "element_bits": 18,
+          "bit_packed_bytes": 2304,
+          "byte_aligned_element_bytes": 3072,
+          "software_container_bytes": 4096
+        },
+        "audio_history": {
+          "elements": 48,
+          "element_bits": 24,
+          "bit_packed_bytes": 144,
+          "byte_aligned_element_bytes": 144,
+          "software_container_bytes": 192
+        },
+        "audio_four_weights": {
+          "elements": 216,
+          "element_bits": 24,
+          "bit_packed_bytes": 648,
+          "byte_aligned_element_bytes": 648,
+          "software_container_bytes": 864
+        },
+        "mono_hop_pingpong": {
+          "elements": 1024,
+          "element_bits": 24,
+          "bit_packed_bytes": 3072,
+          "byte_aligned_element_bytes": 3072,
+          "software_container_bytes": 4096
+        }
+      },
+      "partial_totals": {
+        "bit_packed_bytes": 84551,
+        "byte_aligned_element_bytes": 92572,
+        "software_container_bytes": 132837
+      },
+      "omitted": [
+        "magnitude workspace width unknown",
+        "FFT/IFFT internal RAM",
+        "LS/rank workspace",
+        "DMA/AXI FIFO and alignment",
+        "block exponent arrays",
+        "logs and runtime metadata"
+      ]
+    },
+    {
+      "name": "SCALED_STORAGE",
+      "ranges": {
+        "pcm": {
+          "min": -1.0,
+          "max": 0.9999998807907104,
+          "lsb": 1.1920928955078125e-07
+        },
+        "hann": {
+          "min": 0.0,
+          "max": 1.9999923706054688,
+          "lsb": 7.62939453125e-06
+        },
+        "fft_component": {
+          "min": -2.0,
+          "max": 1.9999998807907104,
+          "lsb": 1.1920928955078125e-07
+        },
+        "cross_component": {
+          "min": -16.0,
+          "max": 15.999999999999986,
+          "lsb": 1.4210854715202004e-14
+        },
+        "phat_component": {
+          "min": -2.0,
+          "max": 1.9999998807907104,
+          "lsb": 1.1920928955078125e-07
+        },
+        "correlation": {
+          "min": -2.0,
+          "max": 1.9999998807907104,
+          "lsb": 1.1920928955078125e-07
+        },
+        "delay_samples": {
+          "min": -32.0,
+          "max": 31.999755859375,
+          "lsb": 0.000244140625
+        },
+        "audio_weight": {
+          "min": 0.0,
+          "max": 1.9999998807907104,
+          "lsb": 1.1920928955078125e-07
+        },
+        "audio_accumulator": {
+          "min": -128.0,
+          "max": 127.99999999999999,
+          "lsb": 1.4210854715202004e-14
+        }
+      },
+      "partial_inventory": {
+        "six_channel_frame_ring": {
+          "elements": 6144,
+          "element_bits": 24,
+          "bit_packed_bytes": 18432,
+          "byte_aligned_element_bytes": 18432,
+          "software_container_bytes": 24576
+        },
+        "new_hop_pingpong": {
+          "elements": 6144,
+          "element_bits": 24,
+          "bit_packed_bytes": 18432,
+          "byte_aligned_element_bytes": 18432,
+          "software_container_bytes": 24576
+        },
+        "six_fft_spectra_components": {
+          "elements": 6156,
+          "element_bits": 25,
+          "bit_packed_bytes": 19238,
+          "byte_aligned_element_bytes": 24624,
+          "software_container_bytes": 24624
+        },
+        "one_pair_cross_components": {
+          "elements": 1026,
+          "element_bits": 51,
+          "bit_packed_bytes": 6541,
+          "byte_aligned_element_bytes": 7182,
+          "software_container_bytes": 8208
+        },
+        "one_pair_normalized_components": {
+          "elements": 1026,
+          "element_bits": 25,
+          "bit_packed_bytes": 3207,
+          "byte_aligned_element_bytes": 4104,
+          "software_container_bytes": 4104
+        },
+        "pair_mask": {
+          "elements": 513,
+          "element_bits": 1,
+          "bit_packed_bytes": 65,
+          "byte_aligned_element_bytes": 513,
+          "software_container_bytes": 513
+        },
+        "one_pair_correlation": {
+          "elements": 1024,
+          "element_bits": 25,
+          "bit_packed_bytes": 3200,
+          "byte_aligned_element_bytes": 4096,
+          "software_container_bytes": 4096
+        },
+        "delays": {
+          "elements": 15,
+          "element_bits": 18,
+          "bit_packed_bytes": 34,
+          "byte_aligned_element_bytes": 45,
+          "software_container_bytes": 60
+        },
+        "hann": {
+          "elements": 1024,
+          "element_bits": 18,
+          "bit_packed_bytes": 2304,
+          "byte_aligned_element_bytes": 3072,
+          "software_container_bytes": 4096
+        },
+        "audio_history": {
+          "elements": 48,
+          "element_bits": 24,
+          "bit_packed_bytes": 144,
+          "byte_aligned_element_bytes": 144,
+          "software_container_bytes": 192
+        },
+        "audio_four_weights": {
+          "elements": 216,
+          "element_bits": 24,
+          "bit_packed_bytes": 648,
+          "byte_aligned_element_bytes": 648,
+          "software_container_bytes": 864
+        },
+        "mono_hop_pingpong": {
+          "elements": 1024,
+          "element_bits": 24,
+          "bit_packed_bytes": 3072,
+          "byte_aligned_element_bytes": 3072,
+          "software_container_bytes": 4096
+        }
+      },
+      "partial_totals": {
+        "bit_packed_bytes": 75317,
+        "byte_aligned_element_bytes": 84364,
+        "software_container_bytes": 100005
+      },
+      "omitted": [
+        "magnitude workspace width unknown",
+        "FFT/IFFT internal RAM",
+        "LS/rank workspace",
+        "DMA/AXI FIFO and alignment",
+        "block exponent arrays",
+        "logs and runtime metadata"
+      ]
+    }
+  ],
+  "operations_per_frame": {
+    "rfft_real_1024": 6,
+    "irfft_real_1024": 15,
+    "hann_real_mult": 6144,
+    "cross_complex_mult": 7695,
+    "cross_equivalent_real_mult": 30780,
+    "cross_equivalent_real_add": 15390,
+    "complex_magnitudes": 7695,
+    "complex_by_real_divisions": 7695,
+    "physical_lag_peak_candidates": 207
+  },
+  "audio_operations": {
+    "history_samples": 8,
+    "common_delay_samples": 4,
+    "common_delay_ms": 0.08333333333333333,
+    "fade_samples": 480,
+    "fade_ms": 10,
+    "fixed_das_nonzero_taps_max": 12,
+    "ramp_from_taps_upper_bound": 54,
+    "goal_taps_upper_bound": 12,
+    "current_audio_filter_mac_upper_bound_per_output": 66,
+    "blend_real_mult_per_output": 2,
+    "blend_real_add_per_output": 1,
+    "filter_mac_upper_bound_per_second": 3168000,
+    "per_audio_subchunk_weight_tests": 108,
+    "warning": "Current Python computes both filters even after alpha reaches 1. Interrupted fades may densify old weights. Count excludes alpha division, per-block weight updates and direction-to-delay geometry."
+  },
+  "cycles_available_per_hop": null,
+  "serial_fft_ifft_cycles": null,
+  "schedule_warning": "Cycle expression only if transforms are serialized on one engine. Overlap, stalls, scaling and other computation still required.",
+  "selected_candidate": null,
+  "sources": {
+    "contract.json": "70c2fa9ab954034da50cc12c3615fe4dffa1a171abe1284bf765bbe585edbb39",
+    "evaluate_contract.py": "e646ab207fccab3f3b778d1d9f481cf9338efa97d2053f935b609f4abeb01cb6",
+    "budget_ledger_sha256": "b9f5cb5bc8e8f27877533abfe22f67e3ec1bea7b400e7024bd2dd6b3fe1fcc25"
+  }
+}

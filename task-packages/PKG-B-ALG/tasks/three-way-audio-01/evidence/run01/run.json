@@ -1,0 +1,368 @@
+{
+  "status": "PASS_THREE_WAY_SYNTHETIC",
+  "tests": 5,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "cases": [
+    {
+      "case": "stable",
+      "source": {
+        "kind": "unchanged previous teaching input",
+        "path": "tasks/tracked-audio-01/evidence/run03/stable/input",
+        "files": {
+          "metadata.json": "61b643335e47bc52ebc47e106f5550dd39ce4fad860324e3e7434a521f8d122c",
+          "samples.npy": "fbf9aae8024015cbaea032ec724738f914a4c2844f3138120e8c01a51ab2f0ca"
+        },
+        "truth_note": "fixed generator geometry; drop-return truth only applicable when source active; no truth inferred from audio"
+      },
+      "manual_direction": [
+        1.0,
+        0,
+        0
+      ],
+      "input_float64_sha256": "38c4cb4018b74d40bc463afb16fe0b8db3e4cfdc6a943535ebe1e02fbc7ee286",
+      "samples": 46080,
+      "sample_origin": 1536,
+      "evaluation_samples": 45568,
+      "common_delay_samples": 4,
+      "common_wav_gain": 0.18360200293612502,
+      "metrics": {
+        "single": {
+          "rms": 0.9891310379374606,
+          "peak": 4.291556897078613,
+          "rms_difference_from_manual": 0.8298553453395195,
+          "normalized_error_to_manual": 0.6927009602766837
+        },
+        "manual": {
+          "rms": 0.9970788426402338,
+          "peak": 4.357250940657327,
+          "rms_difference_from_manual": 0.0,
+          "normalized_error_to_manual": 0.0
+        },
+        "auto": {
+          "rms": 0.9959363037130773,
+          "peak": 4.357250940657327,
+          "rms_difference_from_manual": 0.21172854104494068,
+          "normalized_error_to_manual": 0.0450920321586939
+        }
+      },
+      "tracker_states": {
+        "ACQUIRE": 4,
+        "LOCKED": 85
+      },
+      "audio_mode_samples": {
+        "FALLBACK": 3072,
+        "BEAM": 43008
+      },
+      "float_output_sha256": {
+        "single": "4f1630de8931140b1153b1bb583c68e235d71d9e1333e27992de81168e8f1e77",
+        "manual": "d639bcfb4af71f8c49490a4ed4ae3441fa4cd284b01b10c23baffebebe05ebff",
+        "auto": "a7219d7cb17d6fe6c92500b9a46b49490ed3b1784378c752dfedb5c714376863"
+      },
+      "limitations": "common 4-point processing delay, no cross-correlation alignment or separate normalization; manual reference is not an upper bound; error-to-manual is not speech quality",
+      "truth_policy": "manual only; automatic unchanged; component replay uses mixture-derived control including fallback/fades"
+    },
+    {
+      "case": "drop-return",
+      "source": {
+        "kind": "unchanged previous teaching input",
+        "path": "tasks/tracked-audio-01/evidence/run03/drop-return/input",
+        "files": {
+          "metadata.json": "4807c9b2975630d31fbb7191dd73016890e404155baf252fd5483bffdb23ca5d",
+          "samples.npy": "dd21d92dc352574c35f83711c71b2125301e844b62cd8d5fbcc55f8ecf3a19af"
+        },
+        "truth_note": "fixed generator geometry; drop-return truth only applicable when source active; no truth inferred from audio"
+      },
+      "manual_direction": [
+        1.0,
+        0,
+        0
+      ],
+      "input_float64_sha256": "cd6f8de7349876350ca5ce3dd6a5bf2057ac767e11c78731f47afbcedac7ed95",
+      "samples": 46080,
+      "sample_origin": 1536,
+      "evaluation_samples": 31560,
+      "common_delay_samples": 4,
+      "common_wav_gain": 0.1900389528718809,
+      "metrics": {
+        "single": {
+          "rms": 0.9902456885947774,
+          "peak": 4.169463151512026,
+          "rms_difference_from_manual": 0.8283215583267541,
+          "normalized_error_to_manual": 0.688506056153131
+        },
+        "manual": {
+          "rms": 0.9982632477307009,
+          "peak": 4.209663271189135,
+          "rms_difference_from_manual": 0.0,
+          "normalized_error_to_manual": 0.0
+        },
+        "auto": {
+          "rms": 0.9947429595684034,
+          "peak": 4.169463151512026,
+          "rms_difference_from_manual": 0.3412809866860391,
+          "normalized_error_to_manual": 0.11687833676550097
+        }
+      },
+      "tracker_states": {
+        "ACQUIRE": 8,
+        "LOCKED": 56,
+        "HOLD": 18,
+        "SEARCH": 7
+      },
+      "audio_mode_samples": {
+        "FALLBACK": 8831,
+        "BEAM": 28160,
+        "HOLD": 9089
+      },
+      "float_output_sha256": {
+        "single": "f476091b6c5d2fa3bcd5b434a0b929feeffbacc076ff01ae10cee87fa79a8496",
+        "manual": "9297db7495d3024eac5e5fe0a6826d427ab9d7071423d33db8e1b16714033a58",
+        "auto": "ad20c975d2b1c71df9d64ade0e0e5cd276c182a1d151a1f9b76fb50de2294929"
+      },
+      "limitations": "common 4-point processing delay, no cross-correlation alignment or separate normalization; manual reference is not an upper bound; error-to-manual is not speech quality",
+      "truth_policy": "manual only; automatic unchanged; component replay uses mixture-derived control including fallback/fades"
+    },
+    {
+      "case": "outside",
+      "source": {
+        "kind": "unchanged previous teaching input",
+        "path": "tasks/tracked-audio-01/evidence/run03/outside/input",
+        "files": {
+          "metadata.json": "48f45c765f1a5264b7c2fa038f9521838a16d92b24cb84a04d573b2de8151922",
+          "samples.npy": "cd68e79633363f3e21d9f11d5a1ad33de7fd77c32692c443e7ae20e12d0335f4"
+        },
+        "truth_note": "fixed generator geometry; drop-return truth only applicable when source active; no truth inferred from audio"
+      },
+      "manual_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "input_float64_sha256": "6cf952c539fdbca55614ba2e5af81969c32efb4f48c1e930e0d56e384948e09d",
+      "samples": 46080,
+      "sample_origin": 1536,
+      "evaluation_samples": 45568,
+      "common_delay_samples": 4,
+      "common_wav_gain": 0.18360200293612502,
+      "metrics": {
+        "single": {
+          "rms": 0.9891310379374606,
+          "peak": 4.291556897078613,
+          "rms_difference_from_manual": 0.8298553453395195,
+          "normalized_error_to_manual": 0.6927009602766837
+        },
+        "manual": {
+          "rms": 0.9970788426402338,
+          "peak": 4.357250940657327,
+          "rms_difference_from_manual": 0.0,
+          "normalized_error_to_manual": 0.0
+        },
+        "auto": {
+          "rms": 0.9891310379374606,
+          "peak": 4.291556897078613,
+          "rms_difference_from_manual": 0.8298553453395195,
+          "normalized_error_to_manual": 0.6927009602766837
+        }
+      },
+      "tracker_states": {
+        "SEARCH": 89
+      },
+      "audio_mode_samples": {
+        "FALLBACK": 46080
+      },
+      "float_output_sha256": {
+        "single": "4f1630de8931140b1153b1bb583c68e235d71d9e1333e27992de81168e8f1e77",
+        "manual": "f237ea5c79b0909c8997e8cc18e3db231b16efe6d2e528063af59ab6bc5742fe",
+        "auto": "4f1630de8931140b1153b1bb583c68e235d71d9e1333e27992de81168e8f1e77"
+      },
+      "limitations": "common 4-point processing delay, no cross-correlation alignment or separate normalization; manual reference is not an upper bound; error-to-manual is not speech quality",
+      "truth_policy": "manual only; automatic unchanged; component replay uses mixture-derived control including fallback/fades"
+    },
+    {
+      "case": "directional-interference",
+      "source": {
+        "kind": "new synthetic diagnostic, not heldout performance",
+        "seed": 2026092001,
+        "source_length": 147456,
+        "crop": [
+          1536,
+          145920
+        ],
+        "target": [
+          1,
+          0,
+          0
+        ],
+        "interferer": [
+          0,
+          1,
+          0
+        ],
+        "interferer_scale": 0.5,
+        "propagation": "original spherical periodic renderer, interior crop, no room reverberation"
+      },
+      "manual_direction": [
+        1.0,
+        0,
+        0
+      ],
+      "input_float64_sha256": "2809ca7ab69f2d439c7b1306a1d33c5d75ddd021ae6e9437a5f8472130687f5e",
+      "samples": 144384,
+      "sample_origin": 1536,
+      "evaluation_samples": 143872,
+      "common_delay_samples": 4,
+      "common_wav_gain": 0.1692058883234392,
+      "metrics": {
+        "single": {
+          "rms": 1.1019913402605397,
+          "peak": 4.727967849858688,
+          "rms_difference_from_manual": 0.8955823259039869,
+          "normalized_error_to_manual": 0.7233335915593937,
+          "target_to_interferer_db": 6.022954479804326,
+          "improvement_vs_single_db": 0.0
+        },
+        "manual": {
+          "rms": 1.05301897532885,
+          "peak": 4.684647859937774,
+          "rms_difference_from_manual": 0.0,
+          "normalized_error_to_manual": 0.0,
+          "target_to_interferer_db": 9.095550471672958,
+          "improvement_vs_single_db": 3.0725959918686314
+        },
+        "auto": {
+          "rms": 1.0570916934098766,
+          "peak": 4.673463557533484,
+          "rms_difference_from_manual": 0.2206494196119051,
+          "normalized_error_to_manual": 0.04390694136519624,
+          "target_to_interferer_db": 8.700652758366825,
+          "improvement_vs_single_db": 2.6776982785624988
+        }
+      },
+      "tracker_states": {
+        "ACQUIRE": 13,
+        "SEARCH": 3,
+        "LOCKED": 209,
+        "HOLD": 56
+      },
+      "audio_mode_samples": {
+        "FALLBACK": 9216,
+        "BEAM": 106496,
+        "HOLD": 28672
+      },
+      "float_output_sha256": {
+        "single": "436b7eab36913b2e8013e65b0f7e95932be677d33b2a823e9c58ca10586a1db9",
+        "manual": "8e1ec9881d935161cf2ba16c7885a8d5f6e758a9c45080297bd7045efd4f24ae",
+        "auto": "22e76f3aac041e2b21af9d81f40cf83234999561b3fe6e836fbc2f0472fc44b8"
+      },
+      "limitations": "common 4-point processing delay, no cross-correlation alignment or separate normalization; manual reference is not an upper bound; error-to-manual is not speech quality",
+      "truth_policy": "manual only; automatic unchanged; component replay uses mixture-derived control including fallback/fades"
+    }
+  ],
+  "source_sha256": {
+    "compare_audio.py": "a33fbbb8cfe0df584f0de60e88a4135804025041ea7b9a461108cd1d5a296503",
+    "run_task.py": "5a4f79fae9a6b558b4b33519b8b2740301410a79880203e85a6a25f53ce063ea",
+    "test_compare.py": "f2edbd9459fcfd9aa8281410f44322db740d4d0e8109be7e4b6d7cbf717c2bb6"
+  },
+  "prior_tasks_unchanged": {
+    "tasks/fixed-das-01/files.json": "f0753087a9aa94108bdcfbb60bac5f455ed9367f7cd554fdb4fe7fc0fe7b084f",
+    "tasks/fixed-das-01/fixed_das.py": "d87056befbde3630e8f9f42ae5dc5440ca0ab27e477bc566f418fa5618cadab7",
+    "tasks/fixed-das-01/README.md": "587760a14d0ae487fe86d9335c7e9c0149877b546f3336b3e3bcb3d02c31dc30",
+    "tasks/fixed-das-01/run_task.py": "0de7bebb66d5f2c5e4ca03c8657d74cb18edfe09d85fceb73d374565c39facf2",
+    "tasks/fixed-das-01/test_fixed_das.py": "8b8b78200c7cbe89fc4e0556bdb5142d187104103325fe45deeee81f862cfbac",
+    "tasks/fixed-das-01/evidence/run01/fixed-direction-das.wav": "6aa292a92e6e332828c41719961ab6c4d66af03c11a4905c9de10a0cb9958619",
+    "tasks/fixed-das-01/evidence/run01/metrics.json": "2f2e83d5e01ddd3fb3d900f58cd77d2ca1d38cb4001cd19a63267b2b16efd966",
+    "tasks/fixed-das-01/evidence/run01/run.json": "cdce49b918476bb467d154be32ac5b57866c122b713b3b179d5a6e467ddf7bad",
+    "tasks/fixed-das-01/evidence/run01/single-reference-delayed.wav": "aa788831b94f71f79d4ff9cd8e4bb54378748f5dc1c1415d2619a7587a0f923c",
+    "tasks/fixed-das-01/evidence/run01/six-channel-input.wav": "b2656a8978eb62be13f868bb41c60f4b406c5037992a131d31d4d9bc30b8239b",
+    "tasks/fixed-das-01/evidence/run01/test-result.json": "b644d557e189d6512ccf7fa3238a38fec804d99e3f182ed28cbec3610cdeccdf",
+    "tasks/fixed-das-01/evidence/run01/tests.txt": "7bcdbb7681fef48c96d913fdc2f53746b48d8247ab53aac8cf993df8018c07ab",
+    "tasks/tracked-audio-01/files.json": "dfcbdbafd710f3747387fe6c4a265e4b4578c7718ca625b0b89658b17fad0326",
+    "tasks/tracked-audio-01/README.md": "3aca0b11d2863c2403fbfa12255a56e1afdf24fe0a63214c5162e284f6e649aa",
+    "tasks/tracked-audio-01/run_task.py": "840733340603c3727a6022e7ccfc1938781467a9b21236bf326cee530812f334",
+    "tasks/tracked-audio-01/test_tracked_audio.py": "5c5eb6348f45a3bc5dbf4ec1049497ea1ba1ed0af5b1bc032823569e030b1a78",
+    "tasks/tracked-audio-01/tracked_audio.py": "fd5dd241f80b125a7c85675c8815604a562095715448e826ae04e01b4b967e3c",
+    "tasks/tracked-audio-01/evidence/run01/failure.json": "04c863fa02dca1fbf057f4b609da913bef52ce898d0c15ecb1644353799b8a2d",
+    "tasks/tracked-audio-01/evidence/run01/tests.txt": "1c48f6eeab5d5a267c502c6ebcd7304c5837db16a123939fcdf3281ec0ba210a",
+    "tasks/tracked-audio-01/evidence/run02/run.json": "d7ea5f5375cb71b13334b58c336a4f6d351ee0cece5a52ddf707df100932d36a",
+    "tasks/tracked-audio-01/evidence/run02/tests.txt": "92dba2291c4714261ab1efef4322e79751f8af49573507316e0dc05e86721197",
+    "tasks/tracked-audio-01/evidence/run03/run.json": "744475f5e3a5a94971886d980aee3534c1c9bce5964551ad50b7e300ba856eeb",
+    "tasks/tracked-audio-01/evidence/run03/tests.txt": "ccbe108c88b4cda73b60c7d487e1517ddbdb3866ff42712fe36a345581b26702",
+    "tasks/tracked-audio-01/evidence/run01/stable/input/metadata.json": "61b643335e47bc52ebc47e106f5550dd39ce4fad860324e3e7434a521f8d122c",
+    "tasks/tracked-audio-01/evidence/run01/stable/input/samples.npy": "fbf9aae8024015cbaea032ec724738f914a4c2844f3138120e8c01a51ab2f0ca",
+    "tasks/tracked-audio-01/evidence/run02/drop-return/audio-events.json": "a351df0a3a7b136a9b1706afe3c43c46277f0df63f0eba751e3beb54b86f6498",
+    "tasks/tracked-audio-01/evidence/run02/drop-return/auto-tracked.wav": "49bcd76ab44bd4cf3e63394031eb86a54a7273bd8fcbd4a8b57121c65d42b905",
+    "tasks/tracked-audio-01/evidence/run02/drop-return/result.json": "501771a7275d78874038e18adacf118ab3af50c3b6b553c89e980812c477dc0e",
+    "tasks/tracked-audio-01/evidence/run02/drop-return/single-reference.wav": "1eb96b1465fd620c99a5c6bfbc9c19df84d908f1c50ee52e9b1daf1d707b91d2",
+    "tasks/tracked-audio-01/evidence/run02/drop-return/tracking.json": "fed92fe94cfac0fa4c652abf661da1b09ad633103847100803f7d7df5ba87afd",
+    "tasks/tracked-audio-01/evidence/run02/outside/audio-events.json": "a7b56c04d08eb3c234b15182a222654e586c4afd7fde9f9fb8786bfae14cbd36",
+    "tasks/tracked-audio-01/evidence/run02/outside/auto-tracked.wav": "6c3e9c7eb390fd3f383c887487db21eb4a93f8a2d03cb6b7076309bb1c436b36",
+    "tasks/tracked-audio-01/evidence/run02/outside/result.json": "401913ac0805a54df1e8757d2c3cfda622e4e009daf07d930caa03da6e5888fa",
+    "tasks/tracked-audio-01/evidence/run02/outside/single-reference.wav": "6c3e9c7eb390fd3f383c887487db21eb4a93f8a2d03cb6b7076309bb1c436b36",
+    "tasks/tracked-audio-01/evidence/run02/outside/tracking.json": "0c4582d61e6c2b9e2f1d019d393c89e0a2fac9ae9a94258c0b92a4576d07bb52",
+    "tasks/tracked-audio-01/evidence/run02/stable/audio-events.json": "b9baa7397b093d713e9cb4ad21f92d2100a02971a8f52dc875c9fb27cad2ddbd",
+    "tasks/tracked-audio-01/evidence/run02/stable/auto-tracked.wav": "ca7513b0af35cd1f403329d8d3fb8951b3b189d00cd4a59815766cd2fdda1a69",
+    "tasks/tracked-audio-01/evidence/run02/stable/result.json": "f7c26229c040117ccd94dd0c45ee818b69a50b65a54d467cc84de49f6572498e",
+    "tasks/tracked-audio-01/evidence/run02/stable/single-reference.wav": "883208f45ffcc60c820a0e0b3085d4cf0a227bd5ef6773a79f01767c78ee0a42",
+    "tasks/tracked-audio-01/evidence/run02/stable/tracking.json": "c78ab3a0a80f7afcb3ad7a98d2d5012baae057a76fd261eb4a7d8fcf32084eb5",
+    "tasks/tracked-audio-01/evidence/run02/drop-return/input/metadata.json": "4807c9b2975630d31fbb7191dd73016890e404155baf252fd5483bffdb23ca5d",
+    "tasks/tracked-audio-01/evidence/run02/drop-return/input/samples.npy": "dd21d92dc352574c35f83711c71b2125301e844b62cd8d5fbcc55f8ecf3a19af",
+    "tasks/tracked-audio-01/evidence/run02/outside/input/metadata.json": "48f45c765f1a5264b7c2fa038f9521838a16d92b24cb84a04d573b2de8151922",
+    "tasks/tracked-audio-01/evidence/run02/outside/input/samples.npy": "cd68e79633363f3e21d9f11d5a1ad33de7fd77c32692c443e7ae20e12d0335f4",
+    "tasks/tracked-audio-01/evidence/run02/stable/input/metadata.json": "61b643335e47bc52ebc47e106f5550dd39ce4fad860324e3e7434a521f8d122c",
+    "tasks/tracked-audio-01/evidence/run02/stable/input/samples.npy": "fbf9aae8024015cbaea032ec724738f914a4c2844f3138120e8c01a51ab2f0ca",
+    "tasks/tracked-audio-01/evidence/run03/drop-return/audio-events.json": "a351df0a3a7b136a9b1706afe3c43c46277f0df63f0eba751e3beb54b86f6498",
+    "tasks/tracked-audio-01/evidence/run03/drop-return/auto-tracked.wav": "49bcd76ab44bd4cf3e63394031eb86a54a7273bd8fcbd4a8b57121c65d42b905",
+    "tasks/tracked-audio-01/evidence/run03/drop-return/result.json": "501771a7275d78874038e18adacf118ab3af50c3b6b553c89e980812c477dc0e",
+    "tasks/tracked-audio-01/evidence/run03/drop-return/single-reference.wav": "1eb96b1465fd620c99a5c6bfbc9c19df84d908f1c50ee52e9b1daf1d707b91d2",
+    "tasks/tracked-audio-01/evidence/run03/drop-return/tracking.json": "fed92fe94cfac0fa4c652abf661da1b09ad633103847100803f7d7df5ba87afd",
+    "tasks/tracked-audio-01/evidence/run03/outside/audio-events.json": "a7b56c04d08eb3c234b15182a222654e586c4afd7fde9f9fb8786bfae14cbd36",
+    "tasks/tracked-audio-01/evidence/run03/outside/auto-tracked.wav": "6c3e9c7eb390fd3f383c887487db21eb4a93f8a2d03cb6b7076309bb1c436b36",
+    "tasks/tracked-audio-01/evidence/run03/outside/result.json": "401913ac0805a54df1e8757d2c3cfda622e4e009daf07d930caa03da6e5888fa",
+    "tasks/tracked-audio-01/evidence/run03/outside/single-reference.wav": "6c3e9c7eb390fd3f383c887487db21eb4a93f8a2d03cb6b7076309bb1c436b36",
+    "tasks/tracked-audio-01/evidence/run03/outside/tracking.json": "0c4582d61e6c2b9e2f1d019d393c89e0a2fac9ae9a94258c0b92a4576d07bb52",
+    "tasks/tracked-audio-01/evidence/run03/stable/audio-events.json": "b9baa7397b093d713e9cb4ad21f92d2100a02971a8f52dc875c9fb27cad2ddbd",
+    "tasks/tracked-audio-01/evidence/run03/stable/auto-tracked.wav": "ca7513b0af35cd1f403329d8d3fb8951b3b189d00cd4a59815766cd2fdda1a69",
+    "tasks/tracked-audio-01/evidence/run03/stable/result.json": "f7c26229c040117ccd94dd0c45ee818b69a50b65a54d467cc84de49f6572498e",
+    "tasks/tracked-audio-01/evidence/run03/stable/single-reference.wav": "883208f45ffcc60c820a0e0b3085d4cf0a227bd5ef6773a79f01767c78ee0a42",
+    "tasks/tracked-audio-01/evidence/run03/stable/tracking.json": "c78ab3a0a80f7afcb3ad7a98d2d5012baae057a76fd261eb4a7d8fcf32084eb5",
+    "tasks/tracked-audio-01/evidence/run03/drop-return/input/metadata.json": "4807c9b2975630d31fbb7191dd73016890e404155baf252fd5483bffdb23ca5d",
+    "tasks/tracked-audio-01/evidence/run03/drop-return/input/samples.npy": "dd21d92dc352574c35f83711c71b2125301e844b62cd8d5fbcc55f8ecf3a19af",
+    "tasks/tracked-audio-01/evidence/run03/outside/input/metadata.json": "48f45c765f1a5264b7c2fa038f9521838a16d92b24cb84a04d573b2de8151922",
+    "tasks/tracked-audio-01/evidence/run03/outside/input/samples.npy": "cd68e79633363f3e21d9f11d5a1ad33de7fd77c32692c443e7ae20e12d0335f4",
+    "tasks/tracked-audio-01/evidence/run03/stable/input/metadata.json": "61b643335e47bc52ebc47e106f5550dd39ce4fad860324e3e7434a521f8d122c",
+    "tasks/tracked-audio-01/evidence/run03/stable/input/samples.npy": "fbf9aae8024015cbaea032ec724738f914a4c2844f3138120e8c01a51ab2f0ca"
+  },
+  "artifacts": {
+    "tests.txt": "83108a694a6bcd6576a11b2cb2f25ebddc1ca943de4de3e1c525fce50a1b3eb8",
+    "directional-interference/audio-events.json": "136cea07d4c0da73d3944522a151734f42a3bbb08abfb50ce3d27d1fea0401ba",
+    "directional-interference/auto.wav": "291a7c499d787d5d983163684c31782798e192a3ee247963d94c2ede900bb1f3",
+    "directional-interference/evaluation-mask.npy": "c9fa8a8be5078ba3acb3c911b76993dca6b62bc6854c5abba1e4c6b6b2c379ad",
+    "directional-interference/input-components.npz": "9646c7d4f0e5762c84f509b83b741b010f61393f621b63fe6e27585502897668",
+    "directional-interference/manual.wav": "0634daef46d9516479111597a180b9f328afb6678b7b9b76b5d5495dcc664e5b",
+    "directional-interference/result.json": "15e644b3b3edf810eb6d14b79f36ea67f64da97b2ba5371c97de2e9f207fcb3f",
+    "directional-interference/single.wav": "60c0ffbdbbce82e77ad87bb1c628d95e2643140158932c912e7c4f558a84e895",
+    "directional-interference/tracking.json": "2cb250a57af34eaa3c406785738376f25aae81be51de8c667200b723a67588da",
+    "drop-return/audio-events.json": "a351df0a3a7b136a9b1706afe3c43c46277f0df63f0eba751e3beb54b86f6498",
+    "drop-return/auto.wav": "45054538670d8f8b899a06521240efe5ee42145dae25ffce61fc6788bffffda6",
+    "drop-return/evaluation-mask.npy": "97576c6565e7d5973558068780e55773940f473dd1c88d84a6d61ac811d8b2ca",
+    "drop-return/manual.wav": "896df6fa138da14637d37334ae42d09233574156b988918d70f831f9b5384f0b",
+    "drop-return/result.json": "b43330b890aefee63946880687cac645983b81fde65392f50d8a7f28487fde23",
+    "drop-return/single.wav": "21afbd5ee80480c426987e7bd9d5a4739ebb1137b7fe71e1a3c1ab71ba8029fb",
+    "drop-return/tracking.json": "fed92fe94cfac0fa4c652abf661da1b09ad633103847100803f7d7df5ba87afd",
+    "outside/audio-events.json": "a7b56c04d08eb3c234b15182a222654e586c4afd7fde9f9fb8786bfae14cbd36",
+    "outside/auto.wav": "883208f45ffcc60c820a0e0b3085d4cf0a227bd5ef6773a79f01767c78ee0a42",
+    "outside/evaluation-mask.npy": "98a768072babf3662b817bed9782df65798acfc7cb8a84eb4808ab2e113acde1",
+    "outside/manual.wav": "7c28d8b6030eeae9af49a71a6fe247ea5e61990112140e1ff2cd27519b2bd411",
+    "outside/result.json": "47aada3d96c48a367ac80144887dac9c5a7ad9bef2c92e5fd9280984a1098372",
+    "outside/single.wav": "883208f45ffcc60c820a0e0b3085d4cf0a227bd5ef6773a79f01767c78ee0a42",
+    "outside/tracking.json": "0c4582d61e6c2b9e2f1d019d393c89e0a2fac9ae9a94258c0b92a4576d07bb52",
+    "stable/audio-events.json": "b9baa7397b093d713e9cb4ad21f92d2100a02971a8f52dc875c9fb27cad2ddbd",
+    "stable/auto.wav": "ca7513b0af35cd1f403329d8d3fb8951b3b189d00cd4a59815766cd2fdda1a69",
+    "stable/evaluation-mask.npy": "98a768072babf3662b817bed9782df65798acfc7cb8a84eb4808ab2e113acde1",
+    "stable/manual.wav": "7c28d8b6030eeae9af49a71a6fe247ea5e61990112140e1ff2cd27519b2bd411",
+    "stable/result.json": "c760acaef5cfdb63475d780fcb8bee33a89f416fc895cc8748f21ab474657e12",
+    "stable/single.wav": "883208f45ffcc60c820a0e0b3085d4cf0a227bd5ef6773a79f01767c78ee0a42",
+    "stable/tracking.json": "c78ab3a0a80f7afcb3ad7a98d2d5012baae057a76fd261eb4a7d8fcf32084eb5"
+  }
+}

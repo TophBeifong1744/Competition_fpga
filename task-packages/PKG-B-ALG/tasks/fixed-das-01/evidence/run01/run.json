@@ -1,0 +1,27 @@
+{
+  "status": "PASS_FIXED_DIRECTION_SYNTHETIC_ONLY",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "source_sha256": {
+    "fixed_das.py": "d87056befbde3630e8f9f42ae5dc5440ca0ab27e477bc566f418fa5618cadab7",
+    "run_task.py": "0de7bebb66d5f2c5e4ca03c8657d74cb18edfe09d85fceb73d374565c39facf2",
+    "test_fixed_das.py": "8b8b78200c7cbe89fc4e0556bdb5142d187104103325fe45deeee81f862cfbac"
+  },
+  "unchanged_default_sources": {
+    "six_mic_baseline_core.py": "23184058f08fa54af4c61b9681f2fbe40341430f0ba48f8574676f27ce4964b0",
+    "six_mic_localize.py": "f78439c83138bea387664050ba68c05f8299baaa532f9b63585254c2b616992c",
+    "six_mic_track.py": "ffb84602192a52fff8eafdff547a690bea25ca740a4298d6b31d4e874b6a66c0",
+    "sector_tracker.py": "2297aa7f94058e3e4faf3da792c6f1beef6c68fa72121100ec672d60ade5ec50",
+    "audio_frames.py": "0ed77ea8db8834576c21206358a8d945b612a176cad742bb266d077ee2a79408"
+  },
+  "outputs": {
+    "fixed-direction-das.wav": "6aa292a92e6e332828c41719961ab6c4d66af03c11a4905c9de10a0cb9958619",
+    "metrics.json": "2f2e83d5e01ddd3fb3d900f58cd77d2ca1d38cb4001cd19a63267b2b16efd966",
+    "single-reference-delayed.wav": "aa788831b94f71f79d4ff9cd8e4bb54378748f5dc1c1415d2619a7587a0f923c",
+    "six-channel-input.wav": "b2656a8978eb62be13f868bb41c60f4b406c5037992a131d31d4d9bc30b8239b",
+    "test-result.json": "b644d557e189d6512ccf7fa3238a38fec804d99e3f182ed28cbec3610cdeccdf",
+    "tests.txt": "7bcdbb7681fef48c96d913fdc2f53746b48d8247ab53aac8cf993df8018c07ab"
+  },
+  "scope": "No tracking integration, no hardware or H3 acceptance; no final tail flush"
+}

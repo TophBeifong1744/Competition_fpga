@@ -1,0 +1,131 @@
+{
+  "input_kind": "synthetic analytic tones, not speech; plane wave; no room reverb",
+  "target_direction": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "interferer_direction": [
+    -1.0,
+    0.0,
+    0.0
+  ],
+  "target_tones": [
+    [
+      530,
+      0.5,
+      0.1
+    ],
+    [
+      1030,
+      0.4,
+      0.6
+    ],
+    [
+      1870,
+      0.3,
+      0.9
+    ],
+    [
+      3170,
+      0.2,
+      1.2
+    ]
+  ],
+  "interferer_tones": [
+    [
+      710,
+      0.5,
+      0.3
+    ],
+    [
+      1390,
+      0.4,
+      0.8
+    ],
+    [
+      2530,
+      0.3,
+      0.5
+    ],
+    [
+      3730,
+      0.2,
+      1.4
+    ]
+  ],
+  "samples": 144000,
+  "block_size": 512,
+  "alternate_block_size": 137,
+  "block_outputs_bit_identical": true,
+  "linearity_checked": true,
+  "evaluation_samples": [
+    256,
+    143744
+  ],
+  "invalid_startup_samples": 7,
+  "single_target_to_interferer_db": 7.70074739822518e-05,
+  "das_target_to_interferer_db": 2.7316777205347957,
+  "improvement_db": 2.7316007130608133,
+  "comparison": "known component powers through identical filters; this one fixed synthetic scenario, not general SNR/real speech validation",
+  "common_wav_gain": 0.2965853682443831,
+  "pcm": "int16, common gain and rounding; WAV input is quantized audition copy, not exact float input",
+  "input_float64_time_by_channel_sha256": "fdb63e0692521258328c9718ef40a70db03dafb789b670dc70db64bf64aed1b2",
+  "output_float64_sha256": "e101484c447a096f8628e09a5c951d6ce0d9c3037e21c9c9fbd415e70901017b",
+  "interpolation_min_channel_gain_db": -0.19114834421226656,
+  "beamformer": {
+    "sample_rate_hz": 48000,
+    "positions_m": [
+      [
+        -0.02,
+        -0.02,
+        0.0
+      ],
+      [
+        0.02,
+        -0.02,
+        0.0
+      ],
+      [
+        0.02,
+        0.02,
+        0.0
+      ],
+      [
+        -0.02,
+        0.02,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.028284271247461905
+      ],
+      [
+        0.0,
+        0.0,
+        -0.028284271247461905
+      ]
+    ],
+    "direction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "channel_delay_samples": [
+      1.2011661807580176,
+      6.798833819241983,
+      6.798833819241983,
+      1.2011661807580176,
+      4.0,
+      4.0
+    ],
+    "common_delay_samples": 4,
+    "common_delay_ms": 0.08333333333333333,
+    "history_samples": 7,
+    "interpolation": "two-tap linear, causal",
+    "output": "one sample per input; mean of six channels",
+    "timing": "output sample ID is processing input ID; source-centre time approximately ID minus common delay",
+    "end_policy": "no tail flush; output length equals input; final delayed source samples are not emitted"
+  }
+}

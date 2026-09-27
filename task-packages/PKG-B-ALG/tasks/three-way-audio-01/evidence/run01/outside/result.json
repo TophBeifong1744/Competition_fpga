@@ -1,0 +1,56 @@
+{
+  "case": "outside",
+  "source": {
+    "kind": "unchanged previous teaching input",
+    "path": "tasks/tracked-audio-01/evidence/run03/outside/input",
+    "files": {
+      "metadata.json": "48f45c765f1a5264b7c2fa038f9521838a16d92b24cb84a04d573b2de8151922",
+      "samples.npy": "cd68e79633363f3e21d9f11d5a1ad33de7fd77c32692c443e7ae20e12d0335f4"
+    },
+    "truth_note": "fixed generator geometry; drop-return truth only applicable when source active; no truth inferred from audio"
+  },
+  "manual_direction": [
+    0.0,
+    1.0,
+    0.0
+  ],
+  "input_float64_sha256": "6cf952c539fdbca55614ba2e5af81969c32efb4f48c1e930e0d56e384948e09d",
+  "samples": 46080,
+  "sample_origin": 1536,
+  "evaluation_samples": 45568,
+  "common_delay_samples": 4,
+  "common_wav_gain": 0.18360200293612502,
+  "metrics": {
+    "single": {
+      "rms": 0.9891310379374606,
+      "peak": 4.291556897078613,
+      "rms_difference_from_manual": 0.8298553453395195,
+      "normalized_error_to_manual": 0.6927009602766837
+    },
+    "manual": {
+      "rms": 0.9970788426402338,
+      "peak": 4.357250940657327,
+      "rms_difference_from_manual": 0.0,
+      "normalized_error_to_manual": 0.0
+    },
+    "auto": {
+      "rms": 0.9891310379374606,
+      "peak": 4.291556897078613,
+      "rms_difference_from_manual": 0.8298553453395195,
+      "normalized_error_to_manual": 0.6927009602766837
+    }
+  },
+  "tracker_states": {
+    "SEARCH": 89
+  },
+  "audio_mode_samples": {
+    "FALLBACK": 46080
+  },
+  "float_output_sha256": {
+    "single": "4f1630de8931140b1153b1bb583c68e235d71d9e1333e27992de81168e8f1e77",
+    "manual": "f237ea5c79b0909c8997e8cc18e3db231b16efe6d2e528063af59ab6bc5742fe",
+    "auto": "4f1630de8931140b1153b1bb583c68e235d71d9e1333e27992de81168e8f1e77"
+  },
+  "limitations": "common 4-point processing delay, no cross-correlation alignment or separate normalization; manual reference is not an upper bound; error-to-manual is not speech quality",
+  "truth_policy": "manual only; automatic unchanged; component replay uses mixture-derived control including fallback/fades"
+}
