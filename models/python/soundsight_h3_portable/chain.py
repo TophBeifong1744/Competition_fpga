@@ -4,6 +4,7 @@ import numpy as np
 
 from .contracts import PAIRS
 from .fft_table import fixed_fft_table
+from .fixed4 import adapt_half_s29
 from .audio import render_three_lanes
 from .contracts import EXTERNAL, validate_config, validate_time
 
@@ -108,7 +109,8 @@ def run_numeric_frame(pcm, frame_identity, activity, bindings):
     arrays = {"pcm": x, "hann_u18f17": bindings.hann.copy()}
     detail = {"frame_identity": dict(frame_identity), "numeric_invalid": False,
               "invalid_reasons": [], "pair_rows": [], "fft_flags": {"gate": [], "doa": []},
-              "ifft_flags": [], "cordic": "NOT_RUN", "claim": "NUMERIC_ONLY_TIME_UNBOUND"}
+              "fixed4": {}, "ifft_flags": [], "cordic": "NOT_RUN",
+              "claim": "NUMERIC_ONLY_TIME_UNBOUND"}
     means = np.array([leaf.rne_div(sum(map(int, x[:, ch])), 1024) for ch in range(4)], dtype=np.int64)
     centered = x - means
     if np.any(centered < -(1 << 24)) or np.any(centered >= (1 << 24)):
@@ -136,15 +138,27 @@ def run_numeric_frame(pcm, frame_identity, activity, bindings):
             _set(status, f"{domain}_fft_{ch}", "NUMERIC_OK_WAIT_EXTERNAL" if not flags["overflow_count"] else "NUMERIC_INVALID_OVERFLOW")
             if flags["overflow_count"]:
                 detail["invalid_reasons"].append(f"{domain}_fft_{ch}_OVERFLOW")
-        spectra_half, adapter_overflow = bindings.guards.checked_adapter(
-            spectra[:, :513], leaf.adapt_fft29_to_s25)
+        adapted = adapt_half_s29(spectra[:, :513], frame_identity=frame_identity,
+                                 domain=domain, bindings=bindings)
+        spectra_half = adapted["payload_s25"]
+        detail["fixed4"][domain] = adapted["summary"]
         for ch in range(4):
-            _set(status, f"{domain}_fixed4_{ch}", "NUMERIC_OK_WAIT_EXTERNAL" if not adapter_overflow else "NUMERIC_INVALID_OVERFLOW")
-        if adapter_overflow:
-            detail["invalid_reasons"].append(domain + "_FIXED4_OVERFLOW")
+            channel_bad = adapted["summary"]["invalid_complex_by_channel"][ch] > 0
+            _set(status, f"{domain}_fixed4_{ch}",
+                 "NUMERIC_INVALID_OVERFLOW" if channel_bad else "NUMERIC_OK_WAIT_EXTERNAL")
+            if channel_bad:
+                detail["invalid_reasons"].append(f"{domain}_FIXED4_CH{ch}_OVERFLOW")
         full[domain], half[domain] = spectra, spectra_half
         arrays[domain + "_fft29"] = spectra
         arrays[domain + "_half25"] = spectra_half
+        arrays[domain + "_fixed4_numeric_valid"] = adapted["numeric_valid"]
+        arrays[domain + "_fixed4_overflow_components"] = adapted["overflow_components"]
+    detail["fixed4_totals"] = {
+        "overflow_components": sum(detail["fixed4"][domain]["overflow_components_total"]
+                                   for domain in ("gate", "doa")),
+        "invalid_complex": sum(detail["fixed4"][domain]["invalid_complex_total"]
+                               for domain in ("gate", "doa")),
+    }
     if window_overflow:
         detail["invalid_reasons"].append("DOA_WINDOW_OVERFLOW")
     detail["numeric_invalid"] = bool(detail["invalid_reasons"])
@@ -372,12 +386,17 @@ def run_causal_interval(pcm, config, schedule, manual_angle_q8, bindings):
             request = {"emit": take - first,
                        "state": "HOLD" if state["state"] == "HOLD" and not invalid else "SEARCH"}
         controls.append(request)
-        rows.append({"frame": frame_index, "last_id": last_id, "available": available,
-                     "commit": commit, "take": take, "expiry": expiry,
-                     "external_visible": {key: visible[key] for key in sorted(external_needed)},
-                     "external_errors": sorted(errors), "fresh": state["fresh_valid"],
-                     "state": state["state"], "tracker": state, "invalid": invalid,
-                     "control": request, "suppressed": suppressed})
+        row = {"frame": frame_index, "last_id": last_id, "available": available,
+               "commit": commit, "take": take, "expiry": expiry,
+               "external_visible": {key: visible[key] for key in sorted(external_needed)},
+               "external_errors": sorted(errors), "fresh": state["fresh_valid"],
+               "state": state["state"], "tracker": state, "invalid": invalid,
+               "control": request, "suppressed": suppressed}
+        if invalid:
+            # These are scheduled attempt times, not successful commit/take.
+            row["commit_status"] = "REJECTED_NUMERIC_OR_PROTOCOL_INVALID"
+            row["take_status"] = "REJECTED_NUMERIC_OR_PROTOCOL_INVALID"
+        rows.append(row)
         events.extend(({"frame": frame_index, "unit": key, "visible_at": visible[key],
                         "result": units[key]} for key in sorted(external_needed)))
         events.append({"frame": frame_index, "unit": "tracker", "visible_at": available,
@@ -385,7 +404,8 @@ def run_causal_interval(pcm, config, schedule, manual_angle_q8, bindings):
         events.append({"frame": frame_index, "unit": "result_binding", "visible_at": commit,
                        "result": units["result_binding"]})
         events.append({"frame": frame_index, "unit": "take", "visible_at": take,
-                       "result": "TAKEN_FRESH" if state["fresh_valid"] else "TAKEN_NO_FRESH"})
+                       "result": ("REJECTED_NUMERIC_OR_PROTOCOL_INVALID" if invalid else
+                                  "TAKEN_FRESH" if state["fresh_valid"] else "TAKEN_NO_FRESH")})
     if stop is not None and (fatal is None or stop < fatal):
         controls.append({"emit": stop - first, "state": "STOP"})
     audio = render_three_lanes(x, manual_angle_q8, controls, bindings,

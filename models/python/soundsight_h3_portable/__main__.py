@@ -33,7 +33,7 @@ def _read_json(path):
 
 def _local_code():
     names = ("__init__.py", "__main__.py", "bindings.py", "contracts.py",
-             "fft_table.py", "chain.py", "audio.py")
+             "fft_table.py", "fixed4.py", "chain.py", "audio.py")
     return {name: digest(HERE / name) for name in names}
 
 

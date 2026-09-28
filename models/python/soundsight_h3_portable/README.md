@@ -97,6 +97,28 @@ The Hann U18F17 and delay ROM S16 identities are in
 extraction method; normal runs consume the stored table bytes and never
 regenerate them. The leaf FFT is used only for bounded author comparison.
 
+The new composition's sole fixed4 entry is
+`soundsight_h3_portable.fixed4.adapt_half_s29(values, frame_identity=...,
+domain=..., bindings=...)`. It accepts four 513-bin S29 half spectra and
+returns `payload_s25[4,513,2]`, `numeric_valid[4,513]`, and
+`overflow_components[4,513,2]` (component order real, imaginary), plus a
+summary with original frame identity, domain, per-channel component and
+invalid-complex counts, and exact channel/bin/component error locations. A
+single overflowing component makes that complex payload `(0,0)` without
+clearing a legal neighbor. Both gate and doa arrays are published in the
+normal `stages-and-audio.npz` as `<domain>_half25`,
+`<domain>_fixed4_numeric_valid`, and
+`<domain>_fixed4_overflow_components`; summaries appear under
+`result.json` `stage_details[*].detail.fixed4.<domain>`; frame totals are in
+`stage_details[*].detail.fixed4_totals`. Per-channel fixed4
+unit states reflect only bins owned by that channel; a frame-level error
+still prevents fresh and requests the established fallback. Causal rows then
+mark scheduled commit/take attempts `REJECTED_NUMERIC_OR_PROTOCOL_INVALID`;
+the recorded times are attempts, not successful events. The old bound
+`guards.checked_adapter(..., fixed_golden.adapt_fft29_to_s25)` retains its
+historic saturating behavior and is not the new composition entry. These
+software arrays do not model RTL ready/valid, held beats, or DMA drain.
+
 Normal audio lanes use source `n=0..T-1` at emit `n+8`: common mic0, fixed
 manual direction with the S5 Q12 interpolation rule, and S5 dynamic automatic
 direction. The untrimmed dynamic stream has startup/tail eight samples as
