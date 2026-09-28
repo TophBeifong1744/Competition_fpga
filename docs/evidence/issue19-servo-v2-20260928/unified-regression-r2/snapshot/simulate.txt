@@ -1,0 +1,81 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Sep 28 13:24:59 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/dut_test/xsim_script.tcl
+# xsim {dut_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS COUNT_WIDTH=4 checks=729
+PASS COUNT_WIDTH=5 checks=737
+PASS COUNT_WIDTH=6 checks=745
+PASS COUNT_WIDTH=7 checks=753
+PASS COUNT_WIDTH=8 checks=761
+PASS COUNT_WIDTH=1 checks=769
+PASS COUNT_WIDTH=9 checks=769
+PASS COUNT_WIDTH=10 checks=777
+PASS COUNT_WIDTH=11 checks=785
+PASS COUNT_WIDTH=12 checks=793
+PASS COUNT_WIDTH=13 checks=801
+PASS COUNT_WIDTH=14 checks=809
+PASS COUNT_WIDTH=15 checks=817
+PASS COUNT_WIDTH=16 checks=825
+PASS COUNT_WIDTH=17 checks=833
+PASS COUNT_WIDTH=18 checks=841
+PASS COUNT_WIDTH=19 checks=849
+PASS COUNT_WIDTH=20 checks=857
+PASS COUNT_WIDTH=21 checks=865
+PASS COUNT_WIDTH=22 checks=873
+PASS COUNT_WIDTH=23 checks=881
+PASS COUNT_WIDTH=24 checks=889
+PASS COUNT_WIDTH=25 checks=897
+PASS COUNT_WIDTH=26 checks=905
+PASS COUNT_WIDTH=27 checks=913
+PASS COUNT_WIDTH=28 checks=921
+PASS COUNT_WIDTH=29 checks=929
+PASS COUNT_WIDTH=30 checks=937
+PASS COUNT_WIDTH=31 checks=945
+PASS COUNT_WIDTH=32 checks=953
+PASS COUNT_WIDTH=33 checks=961
+PASS COUNT_WIDTH=2 checks=969
+PASS COUNT_WIDTH=34 checks=969
+PASS COUNT_WIDTH=35 checks=977
+PASS COUNT_WIDTH=36 checks=985
+PASS COUNT_WIDTH=37 checks=993
+PASS COUNT_WIDTH=38 checks=1001
+PASS COUNT_WIDTH=39 checks=1009
+PASS COUNT_WIDTH=40 checks=1017
+PASS COUNT_WIDTH=41 checks=1025
+PASS COUNT_WIDTH=42 checks=1033
+PASS COUNT_WIDTH=43 checks=1041
+PASS COUNT_WIDTH=44 checks=1049
+PASS COUNT_WIDTH=45 checks=1057
+PASS COUNT_WIDTH=46 checks=1065
+PASS COUNT_WIDTH=47 checks=1073
+PASS COUNT_WIDTH=48 checks=1081
+PASS COUNT_WIDTH=49 checks=1089
+PASS COUNT_WIDTH=50 checks=1097
+PASS COUNT_WIDTH=51 checks=1105
+PASS COUNT_WIDTH=52 checks=1113
+PASS COUNT_WIDTH=53 checks=1121
+PASS COUNT_WIDTH=54 checks=1129
+PASS COUNT_WIDTH=55 checks=1137
+PASS COUNT_WIDTH=56 checks=1145
+PASS COUNT_WIDTH=57 checks=1153
+PASS COUNT_WIDTH=58 checks=1161
+PASS COUNT_WIDTH=59 checks=1169
+PASS COUNT_WIDTH=60 checks=1177
+PASS COUNT_WIDTH=61 checks=1185
+PASS COUNT_WIDTH=62 checks=1193
+PASS COUNT_WIDTH=63 checks=1201
+PASS COUNT_WIDTH=64 checks=1209
+PASS COUNT_WIDTH=3 checks=1745
+ALL TESTS PASS: every COUNT_WIDTH from 1 through 64
+$finish called at time : 8707 ns : File "C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/simulation/tb/common/tb_stream_error_snapshot.v" Line 240
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 28 13:25:01 2026...

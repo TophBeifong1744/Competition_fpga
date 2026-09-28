@@ -17,3 +17,6 @@
 # Preserve raw management evidence bytes; never normalize hashed logs.
 /docs/maintenance/workflow-migration-20260923/** -text
 /docs/maintenance/workflow-migration-20260923/*.txt -whitespace
+
+# Preserve native XSim evidence logs, including tool-emitted trailing spaces.
+/docs/evidence/issue19-servo-v2-20260928/** -text -whitespace

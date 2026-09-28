@@ -1,10 +1,10 @@
 # Testbench
 
-2026-09-17：`servo/tb_motor_drive.v` 是获准舵机模块的活动TB，39项检查；`simulation/run_servo.ps1` 可分别以100 MHz/1 MHz复跑。独立512编码/逐拍复核证据见 `docs/reviews/servo-b1d51d4/REVIEW.md`；原包是来源快照，不双处维护。
+2026-09-28 #19 候选分支：`servo/tb_motor_drive.v` 已接入 v2 作者原 TB，默认 360° 为 61 项、220° 为 69 项；新增 `servo/tb_motor_drive_v2_targeted.sv` 和 `servo/tb_servo_dual_axis_v2.sv` 做 A 所需边界和双轴定向检查。旧版 39 项及独立 512 编码复核只适用于 `docs/reviews/servo-b1d51d4/REVIEW.md` 的旧 SHA，不能批准 v2。具体运行见[servo/README.md](servo/README.md)。
 
 2026-09-11已归入common/和acquisition/：C001作者TB、C002作者/联合/独立TB、C003作者/独立TB，共6个文件、6组统一回归（C002作者组运行全部1～64位）。原测试激励不改，仅文件归位；顶层名可能沿用tb_independent/tb_review，由[清单](../modules.json)明确映射。
 
-使用[统一回归入口](../run_regression.ps1)，每组单独编译库，DUT只从project/rtl/读取，避免旧任务包同名模块重复编译。当前仅基础模块功能测试，不代表四路采集或整机测试。当前 MAX_ANGLE_DEG 参数化 TB 与 DUT 仍待独立复核，旧批准不覆盖该候选。
+使用[统一回归入口](../run_regression.ps1)，每组单独编译库，DUT只从project/rtl/读取，避免旧任务包同名模块重复编译。当前结果只涉及基础模块功能和定向仿真，不代表四路采集、机械到位或整机测试。v2 仍待 A 独立复核。
 
 本目录保存自检测试平台、断言、scoreboard 和覆盖用例，不把波形目测作为通过标准。
 

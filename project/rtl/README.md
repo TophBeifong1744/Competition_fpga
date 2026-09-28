@@ -1,6 +1,6 @@
 # RTL
 
-2026-09-19：当前分支舵机增加 MAX_ANGLE_DEG（默认360，可设220），属待独立复核候选；下文 b1d51d4 批准仅覆盖旧快照。参数及当前入口见[仿真说明](../../simulation/README.md)。
+2026-09-28 #19 候选分支：活动 `servo/motor_drive.v` 已接入与任务包 `d63544d` 候选逐字节相同的 v2：新增 `angle_valid_i` 和 `RESET_ANGLE_DEG`，旧调用点必须显式连接 valid。当前改动及补测是 C/助手作者自检，待 A 按准确提交独立复核；下文 b1d51d4 批准仅覆盖旧 v1 快照。参数及当前入口见[仿真说明](../../simulation/README.md)。
 
 2026-09-17：新增 `servo/motor_drive.v`，C候选 b1d51d4 [限定模块PASS](../../docs/reviews/servo-b1d51d4/REVIEW.md)。这是唯一舵机活动源码，原包保留来源快照；运行见 `simulation/run_servo.ps1`，哈希见 `simulation/modules.json`。未接入 one/BD，未综合或板测；下文三模块/六组为历史收尾记录。
 

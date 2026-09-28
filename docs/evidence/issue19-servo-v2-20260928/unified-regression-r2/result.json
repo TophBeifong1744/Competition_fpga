@@ -1,0 +1,66 @@
+{
+  "status": "PASS_MODULE_REGRESSION",
+  "scope": "Module source integration regression only",
+  "source_commit": null,
+  "manifest_sha256": "75499E05270519E29847258EDC9523E4A556E2A1A9647558CF899826233D64EE",
+  "runner_sha256": "564D1C13874DBD85CED576FD322201C272C6AC6DDC67EFEC6BC31B348FF4A72F",
+  "vivado_bin": "C:\\AMDDesignTools\\2025.2\\Vivado\\bin",
+  "not_run": [
+    "synthesis",
+    "timing",
+    "board",
+    "four-channel capture",
+    "C004"
+  ],
+  "cases": [
+    {
+      "name": "servo",
+      "top": "tb_motor_drive",
+      "status": "PASS",
+      "marker": "PASS motor_drive checks=61",
+      "log_sha256": "8DAF3BC5ECB36734A44D7F4E06BE6959D76BB00FB0F0DDFE6E25CE3F1CF9D4E5"
+    },
+    {
+      "name": "stats",
+      "top": "tb_stream_error_stats",
+      "status": "PASS",
+      "marker": "ALL TESTS PASS",
+      "log_sha256": "298D8D40416896D1EBBB25F3678C4BCC0265EA4003E84B1E6E63F442FEC0476C"
+    },
+    {
+      "name": "snapshot",
+      "top": "tb_stream_error_snapshot_all_widths",
+      "status": "PASS",
+      "marker": "ALL TESTS PASS",
+      "log_sha256": "8C4590AE3827C783C6E35BDB117441B2BA3B05952352861C5922F913FDED9E3B"
+    },
+    {
+      "name": "snapshot_joint",
+      "top": "tb_stream_error_snapshot_integration",
+      "status": "PASS",
+      "marker": "ALL TESTS PASS",
+      "log_sha256": "E951B9825CE1672810C36FF96171EF5F227DABF4E30D099206D876E29640D899"
+    },
+    {
+      "name": "snapshot_independent",
+      "top": "tb_independent",
+      "status": "PASS",
+      "marker": "REVIEW ALL PASS",
+      "log_sha256": "D5782C26ED03D927BF4351587F8F222FC3A9FDD22D4C9CB4179D1C95C9F9D23A"
+    },
+    {
+      "name": "pcm4",
+      "top": "tb_pcm4_signext_pack",
+      "status": "PASS",
+      "marker": "ALL TESTS PASS",
+      "log_sha256": "31A13C405E25818E364F0902DF8EDFAF7C289831D40D40AE375DF9DD39A87B4A"
+    },
+    {
+      "name": "pcm4_independent",
+      "top": "tb_review",
+      "status": "PASS",
+      "marker": "REVIEW ALL PASS",
+      "log_sha256": "3ED1D77C0012B470F2E12DC504181FDB8B0229F5EF8F351CAAB7D33FBC714094"
+    }
+  ]
+}
