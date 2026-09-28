@@ -69,6 +69,33 @@ take_now <= frame.last_id + result_ttl_samples
 Equality at the expiry boundary is valid; overflow, missing/unissued statuses,
 same-tick frames/takes, and out-of-record events are rejected. Tracker updates
 once at `available`; its `hold_samples` counts from the last fresh update.
+The portable software precomputes numeric arrays offline, then publishes local
+numeric and qualification unit states at `available`. This publication time is
+a research abstraction, not a measured computation or hardware completion
+time. Each external status publishes at its own `external_visible_at`, even
+when another frame's take is pending. At one timestamp, cancellation precedes
+normal publication; otherwise external status and local qualification precede
+Tracker, binding at `commit_now`, and take at `take_now`. A prior successful
+binding remains `BOUND_FRESH` or `BOUND_NO_FRESH` after later cancellation.
+An offline error calculated for a cancelled frame remains diagnostic only.
+
+`events` keeps its existing `{frame,unit,visible_at,result}` rows for normal
+events strictly before cancellation. `terminations` adds one record per frame:
+full boot/session/interval/frame/generation identity, `SYNTHETIC_TIME`, edge,
+reason, all 53 expected units, the pre-edge final unit→status map, remaining
+cancelled units, and whether successful commit/take occurred. The 53-unit
+partition excludes take, which is a separate service event. A prior binding
+is never retroactively rewritten; `prior_binding_retracted` is always false.
+`observations` records statuses arriving on the cancellation edge without
+counting them as earlier completion. `diagnostic_invalid_reasons` retains
+offline numeric findings separately from pre-edge published external errors.
+Consumers of `result.json` should read these additional fields for cancelled
+transactions; existing normal event row fields and completed frame fields are
+unchanged. Neither audit field represents RTL beats or hardware done.
+Cancelled frame rows remain present for every planned window; a frame already
+taken before a later interval end keeps its normal row, with the later end
+recorded separately in its termination audit. STOP keeps the existing smooth
+audio fallback, while fatal still cuts emission before its edge.
 `result_ttl_samples` counts from raw `last_id`; audio expiry is a separate
 absolute emit coordinate. No result waits for its own Tracker status. A normal
 rejection updates Tracker with no candidate. ACQUIRE keeps Tracker history but
