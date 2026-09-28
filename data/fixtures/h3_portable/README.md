@@ -72,7 +72,7 @@ runner exits 1. This canary never reaches the DUT.
 | PHAT→Hermitian→IFFT→lag→DOA/CORDIC | five active frames, six pairs | independent integer normalization, inverse FFT and direction metadata; PHAT/IFFT/angle canaries | 30 conditional inverses; bounded scene, not all leaf-code space |
 | Gate and Tracker normal path | seven-frame CLI and candidate rejection/gap probes | named status closure, SEARCH→ACQUIRE→LOCKED, four fresh; HOLD and expiry/gap checks | synthetic events; injected rejection labelled |
 | TTL, status and priority | event probe | equality, exceeded, zero expiry, overflow, missing/late/error status, fatal>STOP and tail length | declared research schedule; no hardware service bound |
-| Three audio lanes and fades | normal CLI plus 6000-sample test-side control scene | independent Q12 beam/mix for 0°→19°→mono, all emits, source `n`→`n+8`, 480 fade | no second naturally derived PCM angle or public chunk API |
+| Three audio lanes and fades | normal CLI plus 6000-sample test-side control scenes | independent Q12 beam/mix for 0°→19°→mono, all emits, source `n`→`n+8`, 480 fades; overlap return at 760 ≤960 samples | no second naturally derived PCM angle or public chunk API |
 | Checker and runner sensitivity | seven in-memory normal checker corruptions, five fixed4 corruptions and runner child failure | intended first error and nonzero exit | not exhaustive fault injection |
 
 ## Interpretation

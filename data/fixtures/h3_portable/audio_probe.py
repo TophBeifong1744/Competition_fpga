@@ -86,12 +86,43 @@ def main():
     # No public portable streaming API is claimed. This compositor reads one
     # physical source sample at a time, so its 4096 join cannot insert zeros.
     assert result["automatic_raw"][4104] == expected[4104]
+    # A return requested during the A->B fade is queued until the 480-sample
+    # fade completes. The second 480-sample fade must finish within 960 total.
+    overlap_controls = controls[:2] + [{"emit": 3200, "state": "SEARCH"}]
+    overlap = render_three_lanes(pcm, angle_a, overlap_controls, Bindings(a.repo))
+    overlap_expected = np.empty_like(expected)
+    for emit in range(len(overlap_expected)):
+        n = emit - 8
+        m = int(mono[n]) if n >= 0 else 0
+        b0 = int(beam_a[n]) if n >= 0 else 0
+        b1 = int(beam_b[n]) if n >= 0 else 0
+        if emit < 2000:
+            value = m
+        elif emit < 2480:
+            alpha = min(4096, rne((emit - 2000) * 4096, 480))
+            value = rne(m * (4096 - alpha) + b0 * alpha, 4096)
+        elif emit < 3000:
+            value = b0
+        elif emit < 3480:
+            alpha = min(4096, rne((emit - 3000) * 4096, 480))
+            value = rne(b0 * (4096 - alpha) + b1 * alpha, 4096)
+        elif emit < 3960:
+            alpha = min(4096, rne((emit - 3480) * 4096, 480))
+            value = rne(b1 * (4096 - alpha) + m * alpha, 4096)
+        else:
+            value = m
+        overlap_expected[emit] = value
+    first_difference(overlap["automatic_raw"], overlap_expected, "SERIALIZED_RETURN_Q12")
+    assert [e["emit"] for e in overlap["events"] if e["kind"] == "FADE_START"] == [2000, 3000, 3480]
+    assert overlap["stats"]["max_beams"] <= 2 and overlap["stats"]["max_history"] <= 17
     packet = {"status": "PASS_SPACED_Q12_TURN_RETURN", "controls": controls,
               "source_samples": 6000, "raw_emits": 6008, "fade_samples": 480,
               "return_to_mono_by": 4480, "return_after_request_samples": 480,
               "manual_angle_q8": angle_a, "auto_turn_angle_q8": angle_b,
               "source_join": 4096, "max_history": result["stats"]["max_history"],
               "max_beams": result["stats"]["max_beams"],
+              "overlap_fallback_request": 3200, "overlap_return_to_mono_by": 3960,
+              "overlap_fallback_samples": 760,
               "pcm_sha256": hashlib.sha256(pcm.astype("<i8").tobytes()).hexdigest(),
               "scope": "test-side declared controls; not a second legal PCM DOA scenario or public streaming API"}
     (a.out / "result.json").write_text(json.dumps(packet, indent=2) + "\n", encoding="utf-8")
