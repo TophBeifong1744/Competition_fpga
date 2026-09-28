@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Sep 28 13:16:04 2026
+# Process ID         : 21464
+# Current directory  : C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/codex_out/issue19-v2-targeted-20260928/single-100m-220-r1
+# Command line       : xsim.exe -log simulation.log -mode tcl -source {xsim.dir/servo_v2_targeted/xsim_script.tcl}
+# Log file           : C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/codex_out/issue19-v2-targeted-20260928/single-100m-220-r1/simulation.log
+# Journal file       : C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/codex_out/issue19-v2-targeted-20260928/single-100m-220-r1\xsim.jou
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36176 MB
+# Available Virtual  : 23166 MB
+#-----------------------------------------------------------
+source xsim.dir/servo_v2_targeted/xsim_script.tcl
+# xsim {servo_v2_targeted} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+OBS valid B-1 boundary actual_ns=20000000 expected_ns=20000000
+OBS valid B-1 width actual_ns=500000 expected_ns=500000
+OBS valid B-1 period actual_ns=20000000 expected_ns=20000000
+OBS valid B boundary actual_ns=20000000 expected_ns=20000000
+OBS valid B old width actual_ns=1682000 expected_ns=1682000
+OBS valid B old period actual_ns=20000000 expected_ns=20000000
+OBS valid B new width actual_ns=500000 expected_ns=500000
+OBS valid B new period actual_ns=20000000 expected_ns=20000000
+OBS valid B+1 boundary actual_ns=20000000 expected_ns=20000000
+OBS valid B+1 old width actual_ns=1682000 expected_ns=1682000
+OBS valid B+1 old period actual_ns=20000000 expected_ns=20000000
+OBS valid B+1 new width actual_ns=500000 expected_ns=500000
+OBS valid B+1 new period actual_ns=20000000 expected_ns=20000000
+OBS release+valid first width actual_ns=1682000 expected_ns=1682000
+OBS release+valid first period actual_ns=20000000 expected_ns=20000000
+OBS release+valid next width actual_ns=500000 expected_ns=500000
+OBS release+valid next period actual_ns=20000000 expected_ns=20000000
+OBS valid during reset first width actual_ns=1682000 expected_ns=1682000
+OBS valid during reset first period actual_ns=20000000 expected_ns=20000000
+OBS valid during reset hold width actual_ns=1682000 expected_ns=1682000
+OBS valid during reset hold period actual_ns=20000000 expected_ns=20000000
+OBS sustained valid current width actual_ns=1682000 expected_ns=1682000
+OBS sustained valid current period actual_ns=20000000 expected_ns=20000000
+OBS sustained valid latest width actual_ns=2500000 expected_ns=2500000
+OBS sustained valid latest period actual_ns=20000000 expected_ns=20000000
+PASS v2 targeted checks=25 CLK_FREQ_HZ=100000000 MAX_ANGLE_DEG=220
+$finish called at time : 280000245 ns : File "C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/simulation/tb/servo/tb_motor_drive_v2_targeted.sv" Line 127
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 218.020 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 12572 KB (Peak: 12572 KB), Simulation CPU Usage: 13640 ms
+INFO: [Common 17-206] Exiting xsim at Mon Sep 28 13:16:20 2026...

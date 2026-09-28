@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Sep 28 13:25:36 2026
+# Process ID         : 7724
+# Current directory  : C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/codex_out/issue19-v2-targeted-20260928/unified-regression-r2/pcm4_independent
+# Command line       : xsim.exe -log simulation.log -mode tcl -source {xsim.dir/dut_test/xsim_script.tcl}
+# Log file           : C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/codex_out/issue19-v2-targeted-20260928/unified-regression-r2/pcm4_independent/simulation.log
+# Journal file       : C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/codex_out/issue19-v2-targeted-20260928/unified-regression-r2/pcm4_independent\xsim.jou
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36176 MB
+# Available Virtual  : 22532 MB
+#-----------------------------------------------------------
+source xsim.dir/dut_test/xsim_script.tcl
+# xsim {dut_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+REVIEW PASS W=4 comparisons=561
+REVIEW PASS W=5 comparisons=569
+REVIEW PASS W=6 comparisons=577
+REVIEW PASS W=7 comparisons=585
+REVIEW PASS W=8 comparisons=593
+REVIEW PASS W=9 comparisons=601
+REVIEW PASS W=10 comparisons=609
+REVIEW PASS W=11 comparisons=617
+REVIEW PASS W=12 comparisons=625
+REVIEW PASS W=13 comparisons=633
+REVIEW PASS W=14 comparisons=641
+REVIEW PASS W=15 comparisons=649
+REVIEW PASS W=16 comparisons=657
+REVIEW PASS W=17 comparisons=665
+REVIEW PASS W=18 comparisons=673
+REVIEW PASS W=19 comparisons=681
+REVIEW PASS W=20 comparisons=689
+REVIEW PASS W=21 comparisons=697
+REVIEW PASS W=22 comparisons=705
+REVIEW PASS W=23 comparisons=713
+REVIEW PASS W=24 comparisons=721
+REVIEW PASS W=25 comparisons=729
+REVIEW PASS W=26 comparisons=737
+REVIEW PASS W=27 comparisons=745
+REVIEW PASS W=28 comparisons=753
+REVIEW PASS W=29 comparisons=761
+REVIEW PASS W=30 comparisons=769
+REVIEW PASS W=31 comparisons=777
+REVIEW PASS W=32 comparisons=785
+REVIEW PASS W=2 comparisons=801
+REVIEW PASS W=3 comparisons=4649
+REVIEW ALL PASS widths=2..32
+$finish called at time : 4649 ns : File "C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/simulation/tb/acquisition/tb_pcm4_independent.sv" Line 7
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 28 13:25:38 2026...

@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Sep 28 13:17:38 2026
+# Process ID         : 19632
+# Current directory  : C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/codex_out/issue19-v2-targeted-20260928/active-entry-1m-360
+# Command line       : xsim.exe -log simulation.log -mode tcl -source {xsim.dir/servo_library/xsim_script.tcl}
+# Log file           : C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/codex_out/issue19-v2-targeted-20260928/active-entry-1m-360/simulation.log
+# Journal file       : C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/codex_out/issue19-v2-targeted-20260928/active-entry-1m-360\xsim.jou
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36176 MB
+# Available Virtual  : 23518 MB
+#-----------------------------------------------------------
+source xsim.dir/servo_library/xsim_script.tcl
+# xsim {servo_library} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS motor_drive checks=61 CLK_FREQ_HZ=1000000 MAX_ANGLE_DEG=360
+$finish called at time : 681577500 ns : File "C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/simulation/tb/servo/tb_motor_drive.v" Line 151
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 28 13:17:40 2026...
