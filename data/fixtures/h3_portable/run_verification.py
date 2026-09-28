@@ -91,7 +91,7 @@ def main():
     unexpected = [row for row in steps if row["exit_code"]]
     product_paths = subprocess.run(["git", "-C", str(repo), "ls-files", "models/python/soundsight_h3_portable"],
                                    capture_output=True, text=True, check=True).stdout.splitlines()
-    product_commit = "204192fd69fae45512ca961063f575681697f7b9"
+    product_commit = "7e5506c411ee739881dc36ae4e315361180c1764"
     product_files = {}
     for path in product_paths:
         worktree_bytes = (repo / path).read_bytes()

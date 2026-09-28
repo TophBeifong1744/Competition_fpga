@@ -131,7 +131,9 @@ def main():
     fatal["stop_emit"] = 2500
     aborted = execute(sch=fatal, data=short_pcm)
     assert aborted["status"] == "ABORTED" and aborted["frames"][3]["state"] == "CANCELLED"
-    assert aborted["frames"][3]["suppressed"] == ["FATAL_BEFORE_AVAILABLE"]
+    assert aborted["frames"][3]["suppressed"] == ["FRAME_TAKE_CANCELLED_BY_FATAL"]
+    assert aborted["terminations"][3]["reason"] == "FATAL_BEFORE_AVAILABLE"
+    assert aborted["terminations"][3]["time_basis"] == "SYNTHETIC_TIME"
     assert len(aborted["audio"]["automatic_raw"]) == 2500
     assert aborted["audio"]["aborted_at_emit"] == 2500
     result["fatal_over_stop"] = {"emit": 2500, "raw_length": len(aborted["audio"]["automatic_raw"]),
@@ -139,8 +141,9 @@ def main():
     stop = copy.deepcopy(base4)
     stop["stop_emit"] = 2500
     stopped = execute(sch=stop, data=short_pcm)
-    assert stopped["status"] == "COMPLETED" and stopped["frames"][3]["state"] == "CANCELLED"
-    assert stopped["frames"][3]["suppressed"] == ["STOP_BEFORE_AVAILABLE"]
+    assert stopped["status"] == "COMPLETED" and stopped["frames"][3]["state"] == "STOPPED"
+    assert stopped["frames"][3]["suppressed"] == ["FRAME_TAKE_CANCELLED_BY_STOP"]
+    assert stopped["terminations"][3]["reason"] == "STOP_BEFORE_AVAILABLE"
     assert stopped["audio"]["aborted_at_emit"] is None
     assert len(stopped["audio"]["automatic_raw"]) == 2568
     result["smooth_stop"] = {"emit": 2500, "raw_length": len(stopped["audio"]["automatic_raw"])}

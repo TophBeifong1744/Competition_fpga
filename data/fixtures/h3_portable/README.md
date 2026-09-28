@@ -105,6 +105,41 @@ unmodified DUT naturally reaches a fault. The main flow has accepted
 The new `I17-H3-V2-01/02` checker changes are authored here and remain
 `FIXED_PENDING_REVIEW`; they do not self-approve the acceptance assets.
 
+## I17-H3-R-01 cancellation increment
+
+`cancel_contract.py` derives the publication queue from the frozen schedule,
+the predeclared 53-unit set and the existing independent integer reference.
+`cancel_checker.py` checks exact event rows, same-edge observations, transaction
+identity, 53-unit termination partition, earlier terminal values, and prior
+commit/take history. It does not import the composer or derive its oracle from
+DUT event/termination fields. `cancel_runner.py` checks the original A saved
+fixture hashes, records the manifest rebind as new local bytes, and invokes the
+authority CLI plus checker for 12 bounded schedules. `cancel_canary.py` submits
+isolated corrupted result copies through real checker subprocesses; the
+runner's `--only-case fatal2561 --inject-checker-failure` is an isolated
+failure-propagation canary and must exit nonzero. `cancel_audio_check.py`
+compares saved CLI sample prefixes, fatal hard cuts and STOP completion against
+the no-cancel run. The old `event_probe.py` remains connected with the new
+termination reason and frame suppression fields.
+
+Example, using a new output directory and the fixed A input files:
+
+```text
+D:/Python/python.exe -B data/fixtures/h3_portable/cancel_runner.py \
+  --repo F:/NUEC/develop --python D:/Python/python.exe \
+  --source-fixture F:/NUEC/codex_out/i17-r01-receipt-20260928/inputs/inputs/final02 \
+  --reference F:/NUEC/codex_out/i17-portable-independent-v2-20260928-172100/final02/reference/expected-stages.npz \
+  --out F:/NUEC/codex_out/<unique-run>/cancel
+```
+
+The reference path is a previously frozen B independent reference, not a DUT
+output. A receiving machine must carry or regenerate that reference using
+`independent_reference.py` and the fixed table identities. The full normal
+runner checks 119 arrays, five direction frames and three audio lanes on the
+current product candidate. The four-frame STOP window is too short to prove
+all 480 fade samples; the separate 6000-sample `audio_probe.py` supplies that
+bounded Q12 check. These are portable software and synthetic-time claims only.
+
 No public portable chunk API is present. The audio composition consumes one
 real source sample at each emit and only zero-pads real record boundaries;
 the synthetic source join at sample 4096 is checked without an inserted zero.
