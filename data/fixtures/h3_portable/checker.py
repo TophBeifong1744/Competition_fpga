@@ -12,6 +12,11 @@ import sys
 
 import numpy as np
 
+ASSET_DIR = Path(__file__).resolve().parent
+if str(ASSET_DIR) not in sys.path:
+    sys.path.insert(0, str(ASSET_DIR))
+from independent_contract import ALL_UNITS, active, event_map, state_map
+
 
 class CheckFailure(Exception):
     pass
@@ -20,6 +25,17 @@ class CheckFailure(Exception):
 def require(condition, label):
     if not condition:
         raise CheckFailure(label)
+
+
+def strict_json(path):
+    """Preserve duplicate-key detection before dict construction hides it."""
+    def unique(pairs):
+        result = {}
+        for key, value in pairs:
+            require(key not in result, "DUPLICATE_JSON_KEY:" + key)
+            result[key] = value
+        return result
+    return json.loads(Path(path).read_bytes(), object_pairs_hook=unique)
 
 
 def first_array_difference(observed, expected, name):
@@ -65,18 +81,29 @@ def compare(result, arrays, expected, fixture, repo, manual_angle_q8):
     require(result["planned_frames"] == 7 and len(result["frames"]) == 7,
             "FRAME_COUNT")
     require(len(result["stage_details"]) == 7, "STAGE_COUNT")
-    expected_units = None
     fresh = 0
     ifft_success = 0
     for i, row in enumerate(result["frames"]):
         detail = result["stage_details"][i]
         units = detail["units"]
-        if expected_units is None:
-            expected_units = set(detail["expected"])
-            require(len(expected_units) == len(detail["expected"]), "DUPLICATE_EXPECTED")
-        require(set(detail["expected"]) == expected_units and set(units) == expected_units,
-                "UNIT_CLOSURE:" + str(i))
-        require(all(value != "PENDING" for value in units.values()), "PENDING_UNIT:" + str(i))
+        declared = detail["expected"]
+        require(isinstance(declared, list) and all(isinstance(name, str) for name in declared),
+                "EXPECTED_UNIT_FORMAT:" + str(i))
+        require(len(declared) == len(set(declared)), "DUPLICATE_EXPECTED:" + str(i))
+        missing_expected = sorted(set(ALL_UNITS) - set(declared))
+        extra_expected = sorted(set(declared) - set(ALL_UNITS))
+        require(not missing_expected and not extra_expected,
+                f"EXPECTED_UNIT_SET:{i}:missing={missing_expected}:extra={extra_expected}")
+        require(isinstance(units, dict), "UNIT_STATUS_FORMAT:" + str(i))
+        missing_units = sorted(set(ALL_UNITS) - set(units))
+        extra_units = sorted(set(units) - set(ALL_UNITS))
+        require(not missing_units and not extra_units,
+                f"UNIT_STATUS_SET:{i}:missing={missing_units}:extra={extra_units}")
+        wanted_states = state_map(i, expected)
+        for name in ALL_UNITS:
+            require(units[name] != "PENDING", f"PENDING_UNIT:{i}:{name}")
+            require(units[name] == wanted_states[name],
+                    f"UNIT_STATE:{i}:{name}:expected={wanted_states[name]}:observed={units[name]}")
         require(row["frame"] == i and row["last_id"] == 1023 + i * 512,
                 "FRAME_IDENTITY:" + str(i))
         schedule = fixture["frames"][i]
@@ -93,8 +120,8 @@ def compare(result, arrays, expected, fixture, repo, manual_angle_q8):
                 require(units[f"{domain}_fft_{ch}"] == "OK" and
                         units[f"{domain}_fixed4_{ch}"] == "OK",
                         "FORWARD_UNIT:" + str(i))
-        active = i >= 2
-        require(bool(detail["detail"]["gate_state"]["active"]) == active,
+        opened = active(i)
+        require(bool(detail["detail"]["gate_state"]["active"]) == opened,
                 "GATE_ATTACK:" + str(i))
         require(not row["invalid"] and not detail["detail"]["numeric_invalid"],
                 "NUMERIC_INVALID:" + str(i))
@@ -109,7 +136,7 @@ def compare(result, arrays, expected, fixture, repo, manual_angle_q8):
                     and fixed["invalid_locations"] == [],
                     "FIXED4_NORMAL_SUMMARY:" + str(i) + ":" + domain)
         for pair in ("01", "02", "03", "12", "13", "23"):
-            if not active:
+            if not opened:
                 require(all(units[f"{kind}_{pair}"] == "SKIPPED_GATE_CLOSED"
                             for kind in ("phat", "ifft", "lag")), "GATE_CLOSED_SKIP:" + str(i))
             else:
@@ -117,7 +144,7 @@ def compare(result, arrays, expected, fixture, repo, manual_angle_q8):
                         "ACTIVE_PAIR:" + str(i) + ":" + pair)
                 ifft_success += 1
         doa = detail["detail"]["doa"]
-        if active:
+        if opened:
             require(doa["valid"] and doa["reason"] == "VALID", "DOA_QUALIFICATION:" + str(i))
             require(abs(doa["azimuth_q8_deg"]) <= 8 * 256,
                     "SYNTHETIC_X_AXIS_ANGLE:" + str(i))
@@ -135,14 +162,28 @@ def compare(result, arrays, expected, fixture, repo, manual_angle_q8):
         require(row["control"]["emit"] == row["take"], "CONTROL_EMIT_TIME:" + str(i))
     require(ifft_success == 30 and fresh == 4, "POSITIVE_COVERAGE")
     events = result["events"]
-    for i, schedule in enumerate(fixture["frames"]):
-        event_rows = [event for event in events if event["frame"] == i]
-        take = [event for event in event_rows if event["unit"] == "take"]
-        require(len(take) == 1 and take[0]["visible_at"] == schedule["take_now"] and
-                take[0]["result"] == ("TAKEN_FRESH" if i >= 3 else "TAKEN_NO_FRESH"),
-                "TAKE_EVENT:" + str(i))
-        require(len([event for event in event_rows if event["unit"] in schedule["external_visible_at"]])
-                == len(schedule["external_visible_at"]), "MISSING_OR_DUPLICATE_STATUS:" + str(i))
+    wanted_events = event_map(fixture, expected)
+    require(isinstance(events, list), "EVENT_LOG_FORMAT")
+    observed_events = {}
+    for index, event in enumerate(events):
+        require(isinstance(event, dict) and set(event) ==
+                {"frame", "unit", "visible_at", "result"},
+                "EVENT_ROW_FORMAT:" + str(index))
+        frame, unit = event["frame"], event["unit"]
+        require(type(frame) is int and isinstance(unit, str),
+                "EVENT_IDENTITY_FORMAT:" + str(index))
+        key = (frame, unit)
+        require(key in wanted_events, f"EVENT_EXTRA:{frame}:{unit}")
+        observed_events.setdefault(key, []).append(event)
+    for (frame, unit), (visible_at, status) in wanted_events.items():
+        matches = observed_events.get((frame, unit), [])
+        require(matches, f"EVENT_KEY_MISSING:{frame}:{unit}")
+        require(len(matches) == 1, f"EVENT_DUPLICATE:{frame}:{unit}:count={len(matches)}")
+        event = matches[0]
+        require(type(event["visible_at"]) is int and event["visible_at"] == visible_at,
+                f"EVENT_TIME:{frame}:{unit}:expected={visible_at}:observed={event['visible_at']}")
+        require(event["result"] == status,
+                f"EVENT_RESULT:{frame}:{unit}:expected={status}:observed={event['result']}")
     pcm = np.load(repo["pcm_path"], allow_pickle=False)
     count = pcm.shape[1]
     audio = result["audio"]
@@ -197,12 +238,12 @@ def main():
     ap.add_argument("--out", type=Path, required=True)
     a = ap.parse_args()
     require(not a.out.exists(), "OUTPUT_EXISTS")
-    schedule = json.loads((a.fixture / "schedule.json").read_text())
+    schedule = strict_json(a.fixture / "schedule.json")
     manifest = json.loads((a.repo / "models/python/soundsight_h3_portable/tables/source-manifest.json").read_text())
     drom = manifest["entries"]["delay_rom"]
     context = {"root": a.repo, "pcm_path": a.fixture / "pcm.npy",
                "delay_path": drom["path"], "delay_sha": drom["sha256"]}
-    result = json.loads((a.result / "result.json").read_text())
+    result = strict_json(a.result / "result.json")
     with np.load(a.result / "stages-and-audio.npz", allow_pickle=False) as source:
         arrays = {name: source[name].copy() for name in source.files}
     with np.load(a.reference / "expected-stages.npz", allow_pickle=False) as source:

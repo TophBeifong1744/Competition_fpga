@@ -41,6 +41,16 @@ scene is deterministic xorshift32 synthetic PCM, not a real acoustic reference.
 against an integer oracle and isolated output mutations. Its direct overflow
 vectors do not claim legal PCM naturally reaches those S29 codes.
 
+For the seven-frame scene, `independent_contract.py` fixes all 53 B14-05/P17
+instance names independently of DUT `expected`/`units`. Frames 0–1 require
+closed-gate SKIPPED states; frames 2–6 require active states. The active lag
+status is derived from the independent inverse-FFT reference, so a physical
+TAU_BOUND rejection is allowed only for the corresponding pair. The contract
+also constructs one external completion per scheduled `(frame, unit)` and
+separate Tracker, result-binding and take events with their own time/result.
+Neither the DUT's external-visible summary nor the count of matching events
+defines the expected event set.
+
 ## Reproduce
 
 Use Python 3.13 and NumPy 2.2.0; the known executable is `D:/Python/python.exe`.
@@ -61,6 +71,14 @@ hashes are kept. It stops at a failed child and exits nonzero. The option
 raises `CONTROLLED_CHILD_FAILURE`, the index says `FAIL_INCOMPLETE`, and the
 runner exits 1. This canary never reaches the DUT.
 
+For the first acceptance-asset repair, replay the prior frozen `final02`
+results with `checker.py --self-test` and run `asset_repair_canary.py` with
+`--saved <prior-final02> --out <new-directory>`. This runs no DUT or reference
+generation. The canary uses in-memory copies for missing/extra/duplicate or
+incorrect unit and event records, then passes a separately copied, corrupted
+result through the actual checker subprocess. The expected failure is nonzero
+with no success directory; the prior saved input hashes must remain identical.
+
 ## Requirement → Test → Checker → Cover
 
 | Requirement | Test | Checker | Covered scope / limit |
@@ -71,18 +89,21 @@ runner exits 1. This canary never reaches the DUT.
 | Error propagation from single domain/channel | test-side one S29 forward-output injection | frame units, gate/Tracker reset, no fresh/successful commit/take, neighbor statuses | injected boundary, not legal PCM reachability |
 | PHAT→Hermitian→IFFT→lag→DOA/CORDIC | five active frames, six pairs | independent integer normalization, inverse FFT and direction metadata; PHAT/IFFT/angle canaries | 30 conditional inverses; bounded scene, not all leaf-code space |
 | Gate and Tracker normal path | seven-frame CLI and candidate rejection/gap probes | named status closure, SEARCH→ACQUIRE→LOCKED, four fresh; HOLD and expiry/gap checks | synthetic events; injected rejection labelled |
+| B14-05 complete instance closure | frozen seven-frame result replay | independent 53-name set, unique declaration, exact per-instance terminal status from fixed scene and independent lags | `I17-H3-V2-01` test-asset repair; no DUT `expected` as oracle |
+| External event identity and lifecycle | frozen result replay and mutated CLI subprocess | fixed schedule plus independent external-unit map; exactly one event per `(frame,unit)`, declared time/result, separate Tracker/binding/take categories | `I17-H3-V2-02` test-asset repair; output summary cannot certify its own log |
 | TTL, status and priority | event probe | equality, exceeded, zero expiry, overflow, missing/late/error status, fatal>STOP and tail length | declared research schedule; no hardware service bound |
 | Three audio lanes and fades | normal CLI plus 6000-sample test-side control scenes | independent Q12 beam/mix for 0°→19°→mono, all emits, source `n`→`n+8`, 480 fades; overlap return at 760 ≤960 samples | no second naturally derived PCM angle or public chunk API |
-| Checker and runner sensitivity | seven in-memory normal checker corruptions, five fixed4 corruptions and runner child failure | intended first error and nonzero exit | not exhaustive fault injection |
+| Checker and runner sensitivity | seven original in-memory corruptions, five fixed4 corruptions, 19 asset-repair mutations, runner child failure | intended first error and nonzero exit; one corrupted saved result checked in a real subprocess | not exhaustive fault injection |
 
 ## Interpretation
 
 The baseline CLI must have genuine active frames and fresh results; zero-fresh
 or empty arrays cannot pass this fixture. Positive CLI results and isolated
 negative probes are separate. Test-side mutations are not evidence that the
-unmodified DUT naturally reaches a fault. The old `I17-H3-V1-01` can be
-recommended closed for the new fixed4 software boundary only after its direct
-and integrated evidence is reviewed against this exact product commit.
+unmodified DUT naturally reaches a fault. The main flow has accepted
+`I17-H3-V1-01` as `VERIFIED_CLOSED` only for the portable software boundary.
+The new `I17-H3-V2-01/02` checker changes are authored here and remain
+`FIXED_PENDING_REVIEW`; they do not self-approve the acceptance assets.
 
 No public portable chunk API is present. The audio composition consumes one
 real source sample at each emit and only zero-pads real record boundaries;
