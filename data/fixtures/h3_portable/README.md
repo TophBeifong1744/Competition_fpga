@@ -1,95 +1,93 @@
-# Independent portable H3 verification fixture
+# Independent portable H3 software verification assets
 
-This directory is a separate verification asset for product commit
-`5efc4b67ad49de2c2bd99eb38ba8995b6f312289` and Draft PR #34. It tests
-research-only portable integer composition and `SYNTHETIC_TIME` events. It is
-authored by B-REVIEW after the product writer released the clean checkout; its
-author cannot independently approve this new checker or reference. Formal #17
-evaluation r2, production parameters, physical timing, RTL and measured acoustic
-performance remain outside this claim.
+These assets target product commit `204192fd69fae45512ca961063f575681697f7b9`
+on Draft PR #34. The earlier asset commit `de12773d5dac8f3dd2477dfcc7e9116ef9e47f6f`
+tested the original product `5efc4b67ad49de2c2bd99eb38ba8995b6f312289`.
+Its first runner incorrectly returned zero on a failing index, and its old
+boundary probe called the historic saturating adapter. Both original failures
+remain in the first packet; the present runner and probe have new identities.
 
-## Independent basis
+The claim is a candidate `FUNCTIONAL_SIM` result for portable software and
+explicit `SYNTHETIC_TIME` only. Verification assets were written by B-REVIEW,
+which may verify a product repair but may not independently approve its own
+reference or checker. Production numbers, service latency, RTL handshakes,
+recorded acoustics, AMD equivalence, and formal #17 evaluation are outside scope.
 
-The frozen B r2 contract has two distinct windows: direct S24 Hann for DOA and
-per-channel RNE mean removal in S25 before Hann for the gate. Each domain runs
-four radix-2 FFT29 transforms, ten RNE /2 stages, then a separate RNE /16
-half-spectrum adapter. The six PHAT pairs use the DOA spectrum in the frozen
-01/02/03/12/13/23 order. Gate attack 3/3 requires all four explicit power
-references. A gate-closed frame still completes all eight front-end transforms
-and names all six later pairs as skipped. ACQUIRE retains candidate history but
-does not provide a beam or fresh. First legal fresh may retarget the automatic
-lane only at its supplied take time; source sample `n` maps to emit `n+8`.
-Without an external time anchor, the numeric CLI cannot claim fresh or control.
+## Independent expectations fixed before DUT comparison
 
-`independent_reference.py` contains its own signed nearest-even division,
-complex adapter, even/odd recursive FFT, window and gate-power equations, and
-PHAT cross/mask arithmetic. It never imports the DUT or historic leaf code.
-The frozen Hann/twiddle/atan bytes are intentionally shared inputs: all 2046
-twiddle values and 24 atan values are checked against the extraction formula,
-but that common table identity alone does not prove an independently generated
-hardware ROM. The positive golden is computed before invoking the DUT and is
-stored in the evidence run, not checked into source as a claimed universal
-golden. The xorshift32 PCM is a new deterministic broadband scene with a
-synthetic six-sample inter-column offset, distinct from the author's LCG/tiled
-diagnostic. Its 40 mm geometry and unit power reference are research assumptions,
-not measured array truth or production defaults.
+The B r2 and P17 contracts require two windows: S24 Hann for DOA and RNE mean
+removal followed by S25 Hann for gate. Each of four channels in each domain
+runs FFT29, then B14-02 RNE >>4. Signed25 is
+`[-2^24,2^24-1]`; either component overflow makes one entire complex `(0,0)`
+and sets separate real/imag overflow bits plus `numeric_valid=false`. The
+positive S29 codes `2^28-8..2^28-1` overflow; `-2^28` remains valid. Six PHAT
+pairs use the frozen 01/02/03/12/13/23 order, guarded Hermitian completion,
+conditional IFFT25, lag and DOA/CORDIC. Gate closed still completes all eight
+front-end transforms; later pair units are named SKIPPED. Numeric-only data
+cannot become fresh. Synthetic-time `available <= commit <= take <= expiry`
+and externally visible status are required. HOLD cannot renew Tracker or audio
+deadlines. Source sample `n` emits at `n+8` with common coordinates on all
+three audio lanes.
+
+`independent_reference.py` implements signed RNE, recursive FFT (different
+structure from the DUT's bit-reversed loop), PHAT integer square root and
+reciprocal, Hermitian completion, inverse FFT, lag, vector solve and CORDIC.
+It imports no DUT or historic leaf. It shares the frozen Hann/twiddle/atan
+bytes as explicitly bound inputs; all 2046 twiddle complex values and 24 atan
+codes are checked against their formula. Shared ROM bytes do not independently
+prove the ROM generator or AMD/RTL implementation. The positive seven-frame
+scene is deterministic xorshift32 synthetic PCM, not a real acoustic reference.
+`boundary_probe.py` separately checks the new authoritative fixed4 entry
+against an integer oracle and isolated output mutations. Its direct overflow
+vectors do not claim legal PCM naturally reaches those S29 codes.
 
 ## Reproduce
 
-Use Python 3.13 with NumPy 2.2 (the known working environment). Supply a new
-output directory and the exact fixed 21-object index, for example:
+Use Python 3.13 and NumPy 2.2.0; the known executable is `D:/Python/python.exe`.
+Pass a new output directory each time:
 
 ```text
-python -B data/fixtures/h3_portable/run_verification.py \
-  --repo <checkout-at-5efc4b67> --python <python-3.13-executable> \
-  --fixed-input-index <ASSEMBLY-PLAN-INPUTS.json> --out <new-codex_out-directory>
+D:/Python/python.exe -B data/fixtures/h3_portable/run_verification.py \
+  --repo F:/NUEC/develop --python D:/Python/python.exe \
+  --fixed-input-index F:/NUEC/codex_out/i17-h3-assembly-plan-20260928/INPUTS.json \
+  --out F:/NUEC/codex_out/<unique-run>/normal
 ```
 
-The runner records commands, stdout/stderr, exit codes, product Git-blob versus
-worktree byte hashes (including the two checkout-only CRLF JSON manifests),
-source bindings, source index, test-asset hashes, and independent outputs. It
-never edits product files. A nonzero `boundary` substep is intentionally retained
-as a product-contract discrepancy, not relabeled PASS; the runner itself exits
-2 for `DUT_BOUNDARY_FAIL`. An initial development runner returned 0 while its
-index correctly said `DUT_BOUNDARY_FAIL`; its original log is retained and a
-later run verifies the corrected exit propagation. `checker.py --self-test`
-performs four **in-memory** isolated corruptions; it never changes actual CLI
-artifacts. The CLI negatives each get their own bad config and must fail for
-the intended identity, missing-field, or type reason before writing an output.
+The runner records child commands, logs, exit codes, product Git-blob and
+worktree byte hashes, source identity, asset hashes, and CLI executed-module
+identity. The two JSON manifests can have Git LF and checkout CRLF; both raw
+hashes are kept. It stops at a failed child and exits nonzero. The option
+`--inject-failure-step reference` is a runner-only negative canary: the child
+raises `CONTROLLED_CHILD_FAILURE`, the index says `FAIL_INCOMPLETE`, and the
+runner exits 1. This canary never reaches the DUT.
 
-## Requirement → test → checker → covered scope
+## Requirement → Test → Checker → Cover
 
-| Requirement | Input/operation | Independent check | Coverage and limit |
+| Requirement | Test | Checker | Covered scope / limit |
 | --- | --- | --- | --- |
-| Exact identity | fixed Git product plus source/table manifests | runner raw SHA/Git comparisons; CLI wrong-manifest rejection | exact local bytes; not cross-platform execution |
-| S24/S25 dual windows | 7 complete 1024/512 frames of four-channel PCM | RNE mean/Hann arrays and independent FFT/half-spectrum/power for all frames | 77 array names; no AMD equivalence |
-| Frozen tables | 2×1023 Q30 complex twiddles, 24 atan codes | formula versus every item, raw byte SHA | one specified Python/NumPy profile |
-| Activity/instance closure | two gate-closed, five active frames | 56 forward instances, 30 conditional IFFT, named skipped units, 7 exact expected sets | does not independently derive every IFFT output or every DOA vector code |
-| DOA and CORDIC integration | coherent synthetic x-axis signal | DOA validity, angle within predeclared ±8°, normalized CORDIC status; independent PHAT cross/mask | bounded geometry/integration, not all angle codes |
-| Causal Tracker | explicit status/available/commit/take sequence | SEARCH→ACQUIRE→LOCKED, four fresh, one take per frame, no premature beam | synthetic service only; HOLD/late fault/STOP still untested in this first packet |
-| Audio | common source/emit, manual 0° | independent full manual Q12 interpolation; auto equals mono before first fresh, output coordinate/length and 2-beam/17-history limits | full dynamic PCM after retarget not independently modeled |
-| CLI rejection | wrong manifest, missing tracker field, bool integer | nonzero and exact intended error; no success output | three bad-input classes |
-| Checker sensitivity | in-memory numeric/fresh/event/audio corruption | intended first error for each | four canaries, not an exhaustive fault model |
-| Fixed4 overflow contract | S29 positive max and signed tie codes | `boundary_probe.py` independent B14-02 expectation | **current DUT-bound adapter mismatches zero placeholder and per-component flag exposure** |
+| Exact product, dependency and execution identity | runner plus both CLI invocations | raw Git/worktree/source/CLI module hashes; wrong-manifest, missing config and illegal type negatives | fixed commit and local bytes; no remote service identity |
+| Dual windows, eight FFT29/fixed4 instances | seven 1024/512 windows | independent RNE/Hann/recursive FFT and complete half spectra | all normal frames; no new AMD proof |
+| B14-02 signed boundary, flags and atomicity | direct gate/doa boundary probe | separate integer oracle and five output corruption canaries | real/imag/both overflow, ties, endpoints, bin0/512, neighbor isolation and rejection; no natural PCM overflow claim |
+| Error propagation from single domain/channel | test-side one S29 forward-output injection | frame units, gate/Tracker reset, no fresh/successful commit/take, neighbor statuses | injected boundary, not legal PCM reachability |
+| PHAT→Hermitian→IFFT→lag→DOA/CORDIC | five active frames, six pairs | independent integer normalization, inverse FFT and direction metadata; PHAT/IFFT/angle canaries | 30 conditional inverses; bounded scene, not all leaf-code space |
+| Gate and Tracker normal path | seven-frame CLI and candidate rejection/gap probes | named status closure, SEARCH→ACQUIRE→LOCKED, four fresh; HOLD and expiry/gap checks | synthetic events; injected rejection labelled |
+| TTL, status and priority | event probe | equality, exceeded, zero expiry, overflow, missing/late/error status, fatal>STOP and tail length | declared research schedule; no hardware service bound |
+| Three audio lanes and fades | normal CLI plus 6000-sample test-side control scene | independent Q12 beam/mix for 0°→19°→mono, all emits, source `n`→`n+8`, 480 fade | no second naturally derived PCM angle or public chunk API |
+| Checker and runner sensitivity | seven in-memory normal checker corruptions, five fixed4 corruptions and runner child failure | intended first error and nonzero exit | not exhaustive fault injection |
 
-## Current finding and untested boundaries
+## Interpretation
 
-`I17-H3-V1-01` is the first observed product discrepancy: B r2 B14-02 requires
-one overflowing component to produce a complex `(0,0)` placeholder with a
-component overflow indication and `numeric_valid=false`. The bound software
-adapter in the new chain calls the legacy `adapt_fft29_to_s25` through
-`checked_adapter`, which returns the positive S25 saturation code for a crafted
-maximum S29 real input, plus only a cumulative overflow count. RNE tie codes
-match. The normal legal-PCM scene did not reach this boundary; its successful
-run does not erase the direct interface discrepancy. The product owner/main
-flow must decide whether the portable software artifact is required to expose
-the full B14-02 adapter contract at this boundary, or explicitly narrow the
-portable claim and keep the fixed4 leaf as separately verified. No DUT edit or
-new profile was made here.
+The baseline CLI must have genuine active frames and fresh results; zero-fresh
+or empty arrays cannot pass this fixture. Positive CLI results and isolated
+negative probes are separate. Test-side mutations are not evidence that the
+unmodified DUT naturally reaches a fault. The old `I17-H3-V1-01` can be
+recommended closed for the new fixed4 software boundary only after its direct
+and integrated evidence is reviewed against this exact product commit.
 
-This first packet deliberately stops at that specific mismatch. HOLD/reacquire,
-TTL equality/overflow, fatal versus STOP, missing/late statuses, full PHAT/IFFT
-and DOA code-by-code, dynamic fade PCM, and chunking remain NOT_TESTED by this
-independent packet; the author's `DIAGNOSTIC_SMOKE` is not independent
-acceptance evidence for those items. A follow-up should resolve the first
-contract scope issue before interpreting broader FUNCTIONAL_SIM acceptance.
+No public portable chunk API is present. The audio composition consumes one
+real source sample at each emit and only zero-pads real record boundaries;
+the synthetic source join at sample 4096 is checked without an inserted zero.
+The underlying old DynamicDAS leaf's chunk behavior is a shared dependency,
+not reapproved here. Timing is in source/visible/commit/take/emit sample
+coordinates, never RTL clock cycles. All new reference/checker code still
+requires a different technical reviewer and real A-member acceptance.

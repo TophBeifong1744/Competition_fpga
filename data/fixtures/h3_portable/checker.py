@@ -98,6 +98,16 @@ def compare(result, arrays, expected, fixture, repo, manual_angle_q8):
                 "GATE_ATTACK:" + str(i))
         require(not row["invalid"] and not detail["detail"]["numeric_invalid"],
                 "NUMERIC_INVALID:" + str(i))
+        require(detail["detail"]["fixed4_totals"] ==
+                {"overflow_components": 0, "invalid_complex": 0},
+                "FIXED4_FRAME_TOTALS:" + str(i))
+        for domain in ("gate", "doa"):
+            fixed = detail["detail"]["fixed4"][domain]
+            require(fixed["domain"] == domain and fixed["frame_identity"]["frame"] == i
+                    and fixed["overflow_components_by_channel"] == [[0, 0]] * 4
+                    and fixed["invalid_complex_by_channel"] == [0] * 4
+                    and fixed["invalid_locations"] == [],
+                    "FIXED4_NORMAL_SUMMARY:" + str(i) + ":" + domain)
         for pair in ("01", "02", "03", "12", "13", "23"):
             if not active:
                 require(all(units[f"{kind}_{pair}"] == "SKIPPED_GATE_CLOSED"
@@ -161,6 +171,21 @@ def compare(result, arrays, expected, fixture, repo, manual_angle_q8):
             "audio_sources": count}
 
 
+def compare_directions(result, reference_summary):
+    rows = reference_summary["active_direction_checks"]
+    require(len(rows) == 5, "DIRECTION_REFERENCE_COVERAGE")
+    for frame_text, expected in rows.items():
+        frame = int(frame_text)
+        observed = result["stage_details"][frame]["detail"]
+        for pair, wanted in enumerate(expected["lags"]):
+            require(observed["pair_rows"][pair] == wanted,
+                    f"LAG_FIRST_DIFFERENCE:{frame}:{pair}")
+        for key, wanted in expected["direction"].items():
+            require(observed["doa"].get(key) == wanted,
+                    f"DIRECTION_FIRST_DIFFERENCE:{frame}:{key}:expected={wanted}:observed={observed['doa'].get(key)}")
+    return len(rows)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--repo", type=Path, required=True)
@@ -182,14 +207,16 @@ def main():
         arrays = {name: source[name].copy() for name in source.files}
     with np.load(a.reference / "expected-stages.npz", allow_pickle=False) as source:
         expected = {name: source[name].copy() for name in source.files}
+    reference_summary = json.loads((a.reference / "reference-summary.json").read_text())
     class ArrayView:
         files = list(expected)
         def __getitem__(self, key):
             return expected[key]
     summary = compare(result, arrays, ArrayView(), schedule, context, a.manual_angle_q8)
+    summary["independent_direction_frames"] = compare_directions(result, reference_summary)
     negatives = {}
     if a.self_test:
-        experiments = ("NUMERIC", "FRESH", "EVENT", "AUDIO")
+        experiments = ("NUMERIC", "FRESH", "EVENT", "AUDIO", "PHAT", "IFFT", "DIRECTION")
         for kind in experiments:
             result_copy = copy.deepcopy(result)
             array_copy = dict(arrays)
@@ -201,12 +228,21 @@ def main():
             elif kind == "EVENT":
                 result_copy["events"] = [row for row in result_copy["events"]
                                          if not (row["frame"] == 3 and row["unit"] == "take")]
+            elif kind == "PHAT":
+                array_copy["frame0002_phat_s25"] = arrays["frame0002_phat_s25"].copy()
+                array_copy["frame0002_phat_s25"][0, 7, 0] += 1
+            elif kind == "IFFT":
+                array_copy["frame0002_ifft_real"] = arrays["frame0002_ifft_real"].copy()
+                array_copy["frame0002_ifft_real"][0, 0] += 1
+            elif kind == "DIRECTION":
+                result_copy["stage_details"][2]["detail"]["doa"]["azimuth_q8_deg"] += 1
             else:
                 array_copy["audio_automatic"] = arrays["audio_automatic"].copy()
                 array_copy["audio_automatic"][0] += 1
             try:
                 compare(result_copy, array_copy, ArrayView(), schedule, context,
                         a.manual_angle_q8)
+                compare_directions(result_copy, reference_summary)
             except CheckFailure as error:
                 negatives[kind] = str(error)
             else:
