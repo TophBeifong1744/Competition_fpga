@@ -1,0 +1,732 @@
+{
+  "status": "PARTIAL_RECEIPT_PENDING_POSITION_AND_PROVENANCE",
+  "zip_name": "sound_09_22.zip",
+  "zip_sha256": "965095987f65e229319487fffa5abb77dbcb40ec885a564489e4ec14b4bbc6d4",
+  "zip_bytes": 21589520,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "source_sha256": "2d1b14cc15bc28b8247af0e84b3b545553366240e24c5cfb67e37fec0be2baf7",
+  "dependencies": {
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/background-target-stop-20260917/finish_scene.py": "afd26ca64637ebf0c19ff54631348947fc703723322348e8ce6b34ca0312bb5d",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/export_four.py": "e89c82945367ef3e06113d9c18edbb3276e1ba658b2594e3f79e28a960422526"
+  },
+  "inventory": [
+    {
+      "path": "sound_09_22/az000_r1.bin",
+      "bytes": 9224000,
+      "crc32": "B93BFA67"
+    },
+    {
+      "path": "sound_09_22/az000_r1.log",
+      "bytes": 2503,
+      "crc32": "49FED7AA"
+    },
+    {
+      "path": "sound_09_22/az000_r2.bin",
+      "bytes": 9224000,
+      "crc32": "004AB23B"
+    },
+    {
+      "path": "sound_09_22/az000_r2.log",
+      "bytes": 2500,
+      "crc32": "64282FE5"
+    },
+    {
+      "path": "sound_09_22/az045_r1.bin",
+      "bytes": 9224000,
+      "crc32": "90AB3BA1"
+    },
+    {
+      "path": "sound_09_22/az045_r1.log",
+      "bytes": 2504,
+      "crc32": "FDC2B06B"
+    },
+    {
+      "path": "sound_09_22/az045_r2.bin",
+      "bytes": 9224000,
+      "crc32": "5A436461"
+    },
+    {
+      "path": "sound_09_22/az045_r2.log",
+      "bytes": 2499,
+      "crc32": "037502A0"
+    },
+    {
+      "path": "sound_09_22/azm045_r1.bin",
+      "bytes": 9224000,
+      "crc32": "BA3ECD3B"
+    },
+    {
+      "path": "sound_09_22/azm045_r1.log",
+      "bytes": 2511,
+      "crc32": "A3A78872"
+    },
+    {
+      "path": "sound_09_22/azm045_r2.bin",
+      "bytes": 9224000,
+      "crc32": "DB24D5F4"
+    },
+    {
+      "path": "sound_09_22/azm045_r2.log",
+      "bytes": 2511,
+      "crc32": "2174FFFA"
+    },
+    {
+      "path": "sound_09_22/back_od.bin",
+      "bytes": 9224000,
+      "crc32": "4BC4A88F"
+    },
+    {
+      "path": "sound_09_22/back_od.log",
+      "bytes": 2537,
+      "crc32": "8F722494"
+    },
+    {
+      "path": "sound_09_22/bg_post.bin",
+      "bytes": 9224000,
+      "crc32": "4B51E5F1"
+    },
+    {
+      "path": "sound_09_22/bg_post.log",
+      "bytes": 2504,
+      "crc32": "1C6722E5"
+    }
+  ],
+  "input_sha256": {
+    "sound_09_22/az000_r1.bin": "d115e03a6829ac0faa32ee242174a4bfb7c09df1bae84f54f600656846400a92",
+    "sound_09_22/az000_r1.log": "f6216563f70f48633c45729ab4d89c571110dcc923b2b925bd22774c8ea26ff9",
+    "sound_09_22/az000_r2.bin": "eec7b72e860113e15ffe2749c6aa6533fb21e66ebe367ad4e6de50c3490338ec",
+    "sound_09_22/az000_r2.log": "cf40aeb837c7548b965381cd30182b44406472489e556a053c8e1105fcd93e66",
+    "sound_09_22/az045_r1.bin": "f1428d0b92be1cc3f03b80a41427c806ebb4cf8d93144305de12b2381372b278",
+    "sound_09_22/az045_r1.log": "bc46f44ff82a5d8b688b251d078d850e4c60472557a8bd282b83edcffcf20e3b",
+    "sound_09_22/az045_r2.bin": "d78e643b68f782a41194ef08ce695c480b8bff3faf5d38ea6b9d7ff8ae2ab62a",
+    "sound_09_22/az045_r2.log": "f2db2c32b3e8284f19e006559e4f588208162af455eeb66ebf135449eb634248",
+    "sound_09_22/azm045_r1.bin": "6c9d29665ee155ff81c5c8ba4ebb13320b008d853c608b3c17c6e88f0ab1042d",
+    "sound_09_22/azm045_r1.log": "4fce6e8ff49fb5955f85976795036dc2b5c1e2d1535dd6110fc7f73387b514e1",
+    "sound_09_22/azm045_r2.bin": "c9ab2cbb5aba888bd00cb18129d4c8236816089aca6d55c043afb22ea89021d4",
+    "sound_09_22/azm045_r2.log": "e7d00aefb398f0fdd957fef7e23c34347fc7811224dcb71bb473436622d0c971",
+    "sound_09_22/back_od.bin": "b5f11f9b3773c63d5947a02c98226a008f2ab3f895937489cdc1ead5633febc5",
+    "sound_09_22/back_od.log": "c2ebab5b6e0eaf8183815ea71a61c4aee02e325e4bc2d0946bc96719fd0d9506",
+    "sound_09_22/bg_post.bin": "b1a86eac3b388f489d2e320fe42f8831193f80a4c85488d36dabbd01df4ff514",
+    "sound_09_22/bg_post.log": "9bf2925b1e40f31a3f690b47c6f0a0bc6d59e748b68e5d592f4345f465cc7c70"
+  },
+  "captures": [
+    {
+      "name": "az000_r1",
+      "raw_sha256": "d115e03a6829ac0faa32ee242174a4bfb7c09df1bae84f54f600656846400a92",
+      "log_sha256": "f6216563f70f48633c45729ab4d89c571110dcc923b2b925bd22774c8ea26ff9",
+      "status": "PASS_RAW_UART_ONLY",
+      "checked": {
+        "groups": 288250,
+        "packets": 1153,
+        "bytes": 9224000,
+        "seconds": 6.005208333333333,
+        "first_id": 22560,
+        "last_id": 310809,
+        "fnv1a32": "9B9DF124",
+        "source_status": "C100000A",
+        "dma_status": "00001002",
+        "archive_data": 1125056,
+        "capture_command_us": 6000128,
+        "drain_us": 5208,
+        "max_check_us": 59,
+        "max_arm_gap_us": 5246,
+        "channels": [
+          {
+            "min": -105664,
+            "max": 101888,
+            "zeros": 1084,
+            "clip_flags": 0
+          },
+          {
+            "min": -69184,
+            "max": 75648,
+            "zeros": 992,
+            "clip_flags": 0
+          },
+          {
+            "min": -79872,
+            "max": 73664,
+            "zeros": 1021,
+            "clip_flags": 0
+          },
+          {
+            "min": -81728,
+            "max": 78208,
+            "zeros": 1014,
+            "clip_flags": 0
+          }
+        ],
+        "flagged_rows": 0
+      },
+      "dc_codes": [
+        -902.9695056374675,
+        -1032.3889401561146,
+        -811.7731136166523,
+        -783.2896166522116
+      ],
+      "ac_rms_codes": [
+        9726.145323122135,
+        9399.547153320998,
+        9240.087114452683,
+        9307.498271211745
+      ],
+      "constant_channels": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "identical_channel_pairs": [],
+      "fullscale_code_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pcm_multiple32": true
+    },
+    {
+      "name": "az000_r2",
+      "raw_sha256": "eec7b72e860113e15ffe2749c6aa6533fb21e66ebe367ad4e6de50c3490338ec",
+      "log_sha256": "cf40aeb837c7548b965381cd30182b44406472489e556a053c8e1105fcd93e66",
+      "status": "PASS_RAW_UART_ONLY",
+      "checked": {
+        "groups": 288250,
+        "packets": 1153,
+        "bytes": 9224000,
+        "seconds": 6.005208333333333,
+        "first_id": 21427,
+        "last_id": 309676,
+        "fnv1a32": "ADCEE6ED",
+        "source_status": "C100000A",
+        "dma_status": "00001002",
+        "archive_data": 1125056,
+        "capture_command_us": 6000122,
+        "drain_us": 5208,
+        "max_check_us": 59,
+        "max_arm_gap_us": 5241,
+        "channels": [
+          {
+            "min": -85568,
+            "max": 96384,
+            "zeros": 967,
+            "clip_flags": 0
+          },
+          {
+            "min": -78976,
+            "max": 94912,
+            "zeros": 1019,
+            "clip_flags": 0
+          },
+          {
+            "min": -72768,
+            "max": 72128,
+            "zeros": 1009,
+            "clip_flags": 0
+          },
+          {
+            "min": -66560,
+            "max": 76352,
+            "zeros": 974,
+            "clip_flags": 0
+          }
+        ],
+        "flagged_rows": 0
+      },
+      "dc_codes": [
+        -878.0713408499566,
+        -977.233484822203,
+        -788.4533564614051,
+        -796.6631188204683
+      ],
+      "ac_rms_codes": [
+        9987.409880561696,
+        10166.596694368694,
+        9705.13321538766,
+        9743.743316881668
+      ],
+      "constant_channels": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "identical_channel_pairs": [],
+      "fullscale_code_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pcm_multiple32": true
+    },
+    {
+      "name": "az045_r1",
+      "raw_sha256": "f1428d0b92be1cc3f03b80a41427c806ebb4cf8d93144305de12b2381372b278",
+      "log_sha256": "bc46f44ff82a5d8b688b251d078d850e4c60472557a8bd282b83edcffcf20e3b",
+      "status": "PASS_RAW_UART_ONLY",
+      "checked": {
+        "groups": 288250,
+        "packets": 1153,
+        "bytes": 9224000,
+        "seconds": 6.005208333333333,
+        "first_id": 23654,
+        "last_id": 311903,
+        "fnv1a32": "CBC686F0",
+        "source_status": "C100000A",
+        "dma_status": "00001002",
+        "archive_data": 1125056,
+        "capture_command_us": 6000123,
+        "drain_us": 5208,
+        "max_check_us": 60,
+        "max_arm_gap_us": 5238,
+        "channels": [
+          {
+            "min": -100032,
+            "max": 87360,
+            "zeros": 873,
+            "clip_flags": 0
+          },
+          {
+            "min": -85696,
+            "max": 89408,
+            "zeros": 829,
+            "clip_flags": 0
+          },
+          {
+            "min": -96000,
+            "max": 103424,
+            "zeros": 887,
+            "clip_flags": 0
+          },
+          {
+            "min": -113920,
+            "max": 109952,
+            "zeros": 870,
+            "clip_flags": 0
+          }
+        ],
+        "flagged_rows": 0
+      },
+      "dc_codes": [
+        -863.6318751084128,
+        -1124.879320034692,
+        -890.2434414570686,
+        -838.9826053772766
+      ],
+      "ac_rms_codes": [
+        10869.466661780418,
+        11102.454745481107,
+        10959.78142248802,
+        10911.399584044544
+      ],
+      "constant_channels": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "identical_channel_pairs": [],
+      "fullscale_code_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pcm_multiple32": true
+    },
+    {
+      "name": "az045_r2",
+      "raw_sha256": "d78e643b68f782a41194ef08ce695c480b8bff3faf5d38ea6b9d7ff8ae2ab62a",
+      "log_sha256": "f2db2c32b3e8284f19e006559e4f588208162af455eeb66ebf135449eb634248",
+      "status": "PASS_RAW_UART_ONLY",
+      "checked": {
+        "groups": 288250,
+        "packets": 1153,
+        "bytes": 9224000,
+        "seconds": 6.005208333333333,
+        "first_id": 24919,
+        "last_id": 313168,
+        "fnv1a32": "ACEA8100",
+        "source_status": "C100000A",
+        "dma_status": "00001002",
+        "archive_data": 1125056,
+        "capture_command_us": 6000131,
+        "drain_us": 5210,
+        "max_check_us": 59,
+        "max_arm_gap_us": 5248,
+        "channels": [
+          {
+            "min": -88704,
+            "max": 69120,
+            "zeros": 820,
+            "clip_flags": 0
+          },
+          {
+            "min": -65728,
+            "max": 72128,
+            "zeros": 847,
+            "clip_flags": 0
+          },
+          {
+            "min": -104576,
+            "max": 76096,
+            "zeros": 857,
+            "clip_flags": 0
+          },
+          {
+            "min": -81920,
+            "max": 64256,
+            "zeros": 958,
+            "clip_flags": 0
+          }
+        ],
+        "flagged_rows": 0
+      },
+      "dc_codes": [
+        -941.843094535993,
+        -1175.1727736339983,
+        -1032.1711292281007,
+        -901.8504770164787
+      ],
+      "ac_rms_codes": [
+        10315.675814423003,
+        10349.073830342746,
+        10415.21391277295,
+        10036.929308668688
+      ],
+      "constant_channels": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "identical_channel_pairs": [],
+      "fullscale_code_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pcm_multiple32": true
+    },
+    {
+      "name": "azm045_r1",
+      "raw_sha256": "6c9d29665ee155ff81c5c8ba4ebb13320b008d853c608b3c17c6e88f0ab1042d",
+      "log_sha256": "4fce6e8ff49fb5955f85976795036dc2b5c1e2d1535dd6110fc7f73387b514e1",
+      "status": "PASS_RAW_UART_ONLY",
+      "checked": {
+        "groups": 288250,
+        "packets": 1153,
+        "bytes": 9224000,
+        "seconds": 6.005208333333333,
+        "first_id": 23104,
+        "last_id": 311353,
+        "fnv1a32": "39ADB2F8",
+        "source_status": "C100000A",
+        "dma_status": "00001002",
+        "archive_data": 1125056,
+        "capture_command_us": 6000121,
+        "drain_us": 5210,
+        "max_check_us": 60,
+        "max_arm_gap_us": 5239,
+        "channels": [
+          {
+            "min": -136064,
+            "max": 122240,
+            "zeros": 1040,
+            "clip_flags": 0
+          },
+          {
+            "min": -148800,
+            "max": 142144,
+            "zeros": 898,
+            "clip_flags": 0
+          },
+          {
+            "min": -146176,
+            "max": 130432,
+            "zeros": 1046,
+            "clip_flags": 0
+          },
+          {
+            "min": -104704,
+            "max": 104896,
+            "zeros": 1013,
+            "clip_flags": 0
+          }
+        ],
+        "flagged_rows": 0
+      },
+      "dc_codes": [
+        -933.9179739809193,
+        -957.9710945359931,
+        -907.0499635732871,
+        -957.7031049436254
+      ],
+      "ac_rms_codes": [
+        10550.186393768814,
+        10544.127344891309,
+        10294.510066300893,
+        10164.467073036129
+      ],
+      "constant_channels": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "identical_channel_pairs": [],
+      "fullscale_code_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pcm_multiple32": true
+    },
+    {
+      "name": "azm045_r2",
+      "raw_sha256": "c9ab2cbb5aba888bd00cb18129d4c8236816089aca6d55c043afb22ea89021d4",
+      "log_sha256": "e7d00aefb398f0fdd957fef7e23c34347fc7811224dcb71bb473436622d0c971",
+      "status": "PASS_RAW_UART_ONLY",
+      "checked": {
+        "groups": 288250,
+        "packets": 1153,
+        "bytes": 9224000,
+        "seconds": 6.005208333333333,
+        "first_id": 22782,
+        "last_id": 311031,
+        "fnv1a32": "AC2A49C7",
+        "source_status": "C100000A",
+        "dma_status": "00001002",
+        "archive_data": 1125056,
+        "capture_command_us": 6000139,
+        "drain_us": 5210,
+        "max_check_us": 59,
+        "max_arm_gap_us": 5254,
+        "channels": [
+          {
+            "min": -116480,
+            "max": 132992,
+            "zeros": 974,
+            "clip_flags": 0
+          },
+          {
+            "min": -134272,
+            "max": 130368,
+            "zeros": 998,
+            "clip_flags": 0
+          },
+          {
+            "min": -140480,
+            "max": 119168,
+            "zeros": 979,
+            "clip_flags": 0
+          },
+          {
+            "min": -134784,
+            "max": 118144,
+            "zeros": 1000,
+            "clip_flags": 0
+          }
+        ],
+        "flagged_rows": 0
+      },
+      "dc_codes": [
+        -860.779462272333,
+        -1071.4279410234171,
+        -773.5676114483955,
+        -784.4266296617519
+      ],
+      "ac_rms_codes": [
+        11373.143109784258,
+        11256.366777390107,
+        10852.5020164169,
+        10874.081232919783
+      ],
+      "constant_channels": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "identical_channel_pairs": [],
+      "fullscale_code_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pcm_multiple32": true
+    },
+    {
+      "name": "back_od",
+      "raw_sha256": "b5f11f9b3773c63d5947a02c98226a008f2ab3f895937489cdc1ead5633febc5",
+      "log_sha256": "c2ebab5b6e0eaf8183815ea71a61c4aee02e325e4bc2d0946bc96719fd0d9506",
+      "status": "PASS_RAW_UART_ONLY",
+      "checked": {
+        "groups": 288250,
+        "packets": 1153,
+        "bytes": 9224000,
+        "seconds": 6.005208333333333,
+        "first_id": 30646,
+        "last_id": 318895,
+        "fnv1a32": "C4E212A8",
+        "source_status": "C100000A",
+        "dma_status": "00001002",
+        "archive_data": 1125056,
+        "capture_command_us": 6000127,
+        "drain_us": 5209,
+        "max_check_us": 59,
+        "max_arm_gap_us": 5245,
+        "channels": [
+          {
+            "min": -24256,
+            "max": 19584,
+            "zeros": 1448,
+            "clip_flags": 0
+          },
+          {
+            "min": -23488,
+            "max": 20224,
+            "zeros": 1499,
+            "clip_flags": 0
+          },
+          {
+            "min": -24448,
+            "max": 19904,
+            "zeros": 1494,
+            "clip_flags": 0
+          },
+          {
+            "min": -25344,
+            "max": 20288,
+            "zeros": 1552,
+            "clip_flags": 0
+          }
+        ],
+        "flagged_rows": 0
+      },
+      "dc_codes": [
+        -742.9666192541197,
+        -901.4932315698179,
+        -610.5069349522984,
+        -715.156537727667
+      ],
+      "ac_rms_codes": [
+        5495.52604789309,
+        5759.290509719604,
+        5521.953208365229,
+        5379.894734537887
+      ],
+      "constant_channels": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "identical_channel_pairs": [],
+      "fullscale_code_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pcm_multiple32": true
+    },
+    {
+      "name": "bg_post",
+      "raw_sha256": "b1a86eac3b388f489d2e320fe42f8831193f80a4c85488d36dabbd01df4ff514",
+      "log_sha256": "9bf2925b1e40f31a3f690b47c6f0a0bc6d59e748b68e5d592f4345f465cc7c70",
+      "status": "PASS_RAW_UART_ONLY",
+      "checked": {
+        "groups": 288250,
+        "packets": 1153,
+        "bytes": 9224000,
+        "seconds": 6.005208333333333,
+        "first_id": 23686,
+        "last_id": 311935,
+        "fnv1a32": "91F5CD29",
+        "source_status": "C100000A",
+        "dma_status": "00001002",
+        "archive_data": 1125056,
+        "capture_command_us": 6000135,
+        "drain_us": 5209,
+        "max_check_us": 60,
+        "max_arm_gap_us": 5253,
+        "channels": [
+          {
+            "min": -25728,
+            "max": 23360,
+            "zeros": 1386,
+            "clip_flags": 0
+          },
+          {
+            "min": -26624,
+            "max": 23424,
+            "zeros": 1301,
+            "clip_flags": 0
+          },
+          {
+            "min": -25536,
+            "max": 23040,
+            "zeros": 1342,
+            "clip_flags": 0
+          },
+          {
+            "min": -26176,
+            "max": 21888,
+            "zeros": 1382,
+            "clip_flags": 0
+          }
+        ],
+        "flagged_rows": 0
+      },
+      "dc_codes": [
+        -866.1359236773634,
+        -1027.6801387684302,
+        -838.2581231569818,
+        -783.7718647007806
+      ],
+      "ac_rms_codes": [
+        5942.186193615753,
+        6187.378626943372,
+        5968.8818946109195,
+        5810.937656289221
+      ],
+      "constant_channels": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "identical_channel_pairs": [],
+      "fullscale_code_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pcm_multiple32": true
+    }
+  ],
+  "all_raw_unique": true,
+  "passed": 8,
+  "missing": [
+    "capture-to-scene mapping (back_od, az045)",
+    "measured source positions and measurement method/uncertainty",
+    "position photos and fixation/orientation records",
+    "per-capture metadata/config/geometry identity",
+    "actual load bit/ELF binding and playback source identity",
+    "operator chronology and anomalies"
+  ],
+  "not_tested": [
+    "DOA/tracking",
+    "marker alignment and playback content",
+    "human listening",
+    "objective audio gain",
+    "physical acoustic mapping/calibration"
+  ]
+}
