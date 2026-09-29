@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import math
 from pathlib import Path
 from typing import Any
 
@@ -56,8 +57,15 @@ def load_bundle(path: Path) -> tuple[dict, bytes]:
     def reject_constant(value):
         raise BundleError(f"NONFINITE_JSON_NUMBER:{value}")
 
+    def finite_float(value):
+        result = float(value)
+        if not math.isfinite(result):
+            raise BundleError(f"NONFINITE_JSON_NUMBER:{value}")
+        return result
+
     try:
-        obj = json.loads(raw, object_pairs_hook=unique_object, parse_constant=reject_constant)
+        obj = json.loads(raw, object_pairs_hook=unique_object, parse_constant=reject_constant,
+                         parse_float=finite_float)
     except (UnicodeDecodeError, json.JSONDecodeError) as exc:
         raise BundleError(f"BUNDLE_JSON_INVALID:{exc}") from exc
     require(isinstance(obj, dict), "BUNDLE_NOT_OBJECT")
@@ -101,20 +109,23 @@ def _source(obj: dict, refs: set[str], label: str, formal: bool) -> None:
         require((isinstance(source, str) and source in refs) or missing(source),
                 f"SOURCE_REF_OR_MISSING_REASON_REQUIRED:{label}")
     elif source is not None:
-        require(source in refs, f"UNKNOWN_SOURCE_REF:{label}")
+        require((isinstance(source, str) and source in refs) or missing(source),
+                f"UNKNOWN_SOURCE_REF:{label}")
 
 
 def validate_structure(bundle: dict, verified: list[dict]) -> None:
     require(bundle.get("schema_version") == SCHEMA_VERSION, "SCHEMA_VERSION_UNSUPPORTED")
     scope = bundle.get("claim_scope")
-    require(scope in {"SYNTHETIC_TEST", "DIRECTION_RUN", "DIRECTION_CELL", "P1_P4_BATCH"},
+    require(isinstance(scope, str) and scope in {"SYNTHETIC_TEST", "DIRECTION_RUN", "DIRECTION_CELL", "P1_P4_BATCH"},
             "CLAIM_SCOPE_UNSUPPORTED")
     formal = scope != "SYNTHETIC_TEST"
-    require(bundle.get("evidence_level") in {"SYNTHETIC", "NATIVE", "INDEPENDENT", "MIXED"},
+    require(isinstance(bundle.get("evidence_level"), str) and
+            bundle["evidence_level"] in {"SYNTHETIC", "NATIVE", "INDEPENDENT", "MIXED"},
             "EVIDENCE_LEVEL_REQUIRED")
     require(not formal or bundle["evidence_level"] != "SYNTHETIC", "FORMAL_SCOPE_SYNTHETIC_LEVEL")
     seal = bundle.get("seal")
-    require(isinstance(seal, dict) and seal.get("status") in {"SEALED", "PROVISIONAL"},
+    require(isinstance(seal, dict) and isinstance(seal.get("status"), str) and
+            seal["status"] in {"SEALED", "PROVISIONAL"},
             "SEAL_STATUS_REQUIRED")
     for name in ("policy_ref", "preregistration", "runs"):
         require(name in bundle, f"TOP_LEVEL_REQUIRED:{name}")
@@ -134,7 +145,11 @@ def validate_structure(bundle: dict, verified: list[dict]) -> None:
         require(isinstance(slot, dict), "PREREGISTRATION_SLOT_OBJECT")
         rid = slot.get("run_id")
         require(isinstance(rid, str) and rid and rid not in prereg, "DUPLICATE_OR_MISSING_RUN_ID")
-        require(all(key in slot for key in ("environment", "scenario", "nominal_angle_deg")),
+        require(all(key in slot for key in ("environment", "scenario", "nominal_angle_deg")) and
+                isinstance(slot["environment"], str) and bool(slot["environment"]) and
+                isinstance(slot["scenario"], str) and bool(slot["scenario"]) and
+                type(slot["nominal_angle_deg"]) in (int, float) and
+                math.isfinite(slot["nominal_angle_deg"]),
                 f"PREREGISTRATION_FIELDS:{rid}")
         _source(slot, refs, f"preregistered.{rid}", formal)
         prereg[rid] = slot
@@ -142,7 +157,8 @@ def validate_structure(bundle: dict, verified: list[dict]) -> None:
     for run in bundle["runs"]:
         require(isinstance(run, dict), "RUN_OBJECT")
         rid = run.get("run_id")
-        require(rid in prereg and rid not in runs, f"RUN_ID_NOT_PREREGISTERED_OR_DUPLICATE:{rid}")
+        require(isinstance(rid, str) and rid in prereg and rid not in runs,
+                f"RUN_ID_NOT_PREREGISTERED_OR_DUPLICATE:{rid}")
         slot = prereg[rid]
         for key in ("environment", "scenario", "nominal_angle_deg"):
             if run.get(key) != slot.get(key):
@@ -182,7 +198,12 @@ def validate_structure(bundle: dict, verified: list[dict]) -> None:
         require(portable is None or isinstance(portable, dict), f"PORTABLE_REF_OBJECT:{rid}")
         if isinstance(portable, dict) and not missing(portable):
             for key in ("run_index_ref", "result_ref"):
-                require(portable.get(key) in refs, f"PORTABLE_REFERENCE_NOT_BOUND:{rid}.{key}")
+                require(isinstance(portable.get(key), str) and portable[key] in refs,
+                        f"PORTABLE_REFERENCE_NOT_BOUND:{rid}.{key}")
+        units = run["algorithm"]["required_units"]
+        if isinstance(units, list):
+            require(all(isinstance(unit, str) and unit for unit in units),
+                    f"REQUIRED_UNIT_NAMES_INVALID:{rid}")
         if formal and isinstance(run["algorithm"]["required_units"], list):
             from .events import EXPECTED_UNITS
             require(tuple(run["algorithm"]["required_units"]) == EXPECTED_UNITS,
@@ -204,8 +225,11 @@ def portable_link(run: dict, verified: list[dict], planned_m: int | None) -> dic
         result = load_bundle(Path(by_id[link["result_ref"]]["path"]))[0]
     except (BundleError, KeyError) as exc:
         raise IdentityError(f"PORTABLE_REFERENCE_CONTENT_INVALID:{run['run_id']}:{exc}") from exc
+    if not isinstance(run_index, dict) or not isinstance(result, dict):
+        raise IdentityError(f"PORTABLE_REFERENCE_NOT_JSON_OBJECT:{run['run_id']}")
     actual_result_sha = by_id[link["result_ref"]]["sha256"]
-    if run_index.get("outputs_sha256", {}).get("result.json") != actual_result_sha:
+    outputs = run_index.get("outputs_sha256")
+    if not isinstance(outputs, dict) or outputs.get("result.json") != actual_result_sha:
         raise IdentityError(f"PORTABLE_INDEX_RESULT_HASH_CONFLICT:{run['run_id']}:")
     count = result.get("planned_frames")
     if planned_m is not None and count is not None and count != planned_m:

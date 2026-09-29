@@ -130,7 +130,8 @@ def score_run(run: dict, grid: dict, outcomes: dict[int, dict], issues: list[dic
         input_reasons.append("INDEPENDENT_TRUTH_NOT_SEALED")
     if claim_scope != "SYNTHETIC_TEST":
         for name in ("capture", "truth", "algorithm", "time_proof", "watermarks"):
-            if run[name].get("source_ref") not in verified_ref_ids:
+            source_ref = run[name].get("source_ref")
+            if not isinstance(source_ref, str) or source_ref not in verified_ref_ids:
                 input_reasons.append("NATIVE_SOURCE_NOT_BOUND:" + name)
     # The present-case policy is not implemented in this first product batch.
     # A claimed policy reference alone cannot decide whether clipped windows enter N/B.
@@ -249,10 +250,13 @@ def score_run(run: dict, grid: dict, outcomes: dict[int, dict], issues: list[dic
     target = dict(run["target_identity"])
     if run["scenario"] == "single-source":
         target_status = "NOT_APPLICABLE_SINGLE_SOURCE"
-    elif target.get("status") == "WRONG_TARGET" and target.get("independent_source_ref") in verified_ref_ids:
+    elif (target.get("status") == "WRONG_TARGET" and
+          isinstance(target.get("independent_source_ref"), str) and
+          target["independent_source_ref"] in verified_ref_ids):
         target_status = "FAIL"
     elif (target.get("status") == "ESTABLISHED" and target.get("policy_id") and
-          target.get("independent_source_ref") in verified_ref_ids):
+          isinstance(target.get("independent_source_ref"), str) and
+          target["independent_source_ref"] in verified_ref_ids):
         target_status = "ESTABLISHED"
     else:
         target_status = "NOT_ESTABLISHED"
@@ -302,7 +306,8 @@ def score_cells(runs: list[dict], results: list[dict], scope: str) -> list[dict]
     for (environment, scenario, angle), items in groups.items():
         states = [r["decision"]["status"] for _, r in items]
         sources = [r["capture"].get("source_ref") for r, _ in items]
-        independent = len(sources) == len(set(sources)) and all(sources)
+        independent = (all(isinstance(source, str) and source for source in sources) and
+                       len(sources) == len(set(source for source in sources if isinstance(source, str))))
         if scope == "SYNTHETIC_TEST":
             status = "SYNTHETIC_TEST_ONLY"
         elif "FAIL" in states:

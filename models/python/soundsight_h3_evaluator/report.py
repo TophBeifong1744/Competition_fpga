@@ -44,7 +44,7 @@ def evaluate(bundle: dict, verified: list[dict]) -> dict:
     policy_blockers = []
     if scope != "SYNTHETIC_TEST":
         for slot in bundle["preregistration"]:
-            if slot.get("source_ref") not in refs:
+            if not isinstance(slot.get("source_ref"), str) or slot["source_ref"] not in refs:
                 policy_blockers.append("PREREGISTRATION_SOURCE_UNBOUND:" + slot["run_id"])
         if not _hex_identity(policy.get("algorithm_commit"), 40):
             policy_blockers.append("POLICY_IDENTITY_MISSING_OR_INVALID:algorithm_commit")
@@ -53,11 +53,12 @@ def evaluate(bundle: dict, verified: list[dict]) -> dict:
                 policy_blockers.append("POLICY_IDENTITY_MISSING_OR_INVALID:" + name)
         if not isinstance(policy.get("p1_p4_policy_ref"), str):
             policy_blockers.append("POLICY_IDENTITY_MISSING:p1_p4_policy_ref")
-        if policy.get("p1_p4_policy_ref") not in refs:
+        if not isinstance(policy.get("p1_p4_policy_ref"), str) or policy["p1_p4_policy_ref"] not in refs:
             policy_blockers.append("P1_P4_POLICY_ORIGINAL_BYTES_UNBOUND")
         for name, expected in (("spec_ref", SPEC_SHA256), ("cases_ref", CASES_SHA256),
                                ("decision_ref", DECISION_SHA256)):
-            ref = refs.get(policy.get(name))
+            ref_id = policy.get(name)
+            ref = refs.get(ref_id) if isinstance(ref_id, str) else None
             if not ref or ref["sha256"] != expected:
                 policy_blockers.append("FROZEN_CONTRACT_ORIGINAL_BYTES_UNBOUND:" + name)
         for run in bundle["runs"]:
@@ -68,7 +69,8 @@ def evaluate(bundle: dict, verified: list[dict]) -> dict:
                 if capture.get(field) != policy.get(policy_field):
                     policy_blockers.append(f"RUN_POLICY_IDENTITY_UNBOUND:{run['run_id']}:{field}")
             clip = capture.get("clip_policy")
-            if isinstance(clip, dict) and clip.get("status") == "FROZEN" and clip.get("source_ref") not in refs:
+            if (isinstance(clip, dict) and clip.get("status") == "FROZEN" and
+                    (not isinstance(clip.get("source_ref"), str) or clip["source_ref"] not in refs)):
                 policy_blockers.append(f"CLIP_POLICY_SOURCE_UNBOUND:{run['run_id']}")
         if bundle["seal"]["status"] != "SEALED":
             policy_blockers.append("PREREGISTRATION_NOT_SEALED")
@@ -79,7 +81,7 @@ def evaluate(bundle: dict, verified: list[dict]) -> dict:
             if not _hex_identity(policy.get("target_selector_sha256"), 64):
                 policy_blockers.append("TARGET_SELECTOR_IDENTITY_INVALID")
             for name in ("target_policy_b_ref", "target_policy_a_ref"):
-                if policy.get(name) not in refs:
+                if not isinstance(policy.get(name), str) or policy[name] not in refs:
                     policy_blockers.append("TARGET_POLICY_ORIGINAL_BYTES_UNBOUND:" + name)
     states = [item["decision"]["status"] for item in results]
     if scope == "SYNTHETIC_TEST":

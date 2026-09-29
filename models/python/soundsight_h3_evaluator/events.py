@@ -62,7 +62,8 @@ def prepare_events(run: dict) -> tuple[dict[str, dict], dict[str, set[str]], lis
         require(isinstance(event, dict), "EVENT_NOT_OBJECT")
         eid = event.get("event_id")
         require(isinstance(eid, str) and eid, "EVENT_ID_REQUIRED")
-        require(event.get("kind") in EVENT_KINDS, f"EVENT_KIND_INVALID:{eid}")
+        require(isinstance(event.get("kind"), str) and event["kind"] in EVENT_KINDS,
+                f"EVENT_KIND_INVALID:{eid}")
         _event_at(event)
         if eid in events:
             if event == events[eid] and event["kind"] == "NOTICE" and event.get("no_side_effect") is True:
@@ -72,11 +73,19 @@ def prepare_events(run: dict) -> tuple[dict[str, dict], dict[str, set[str]], lis
             continue
         events[eid] = event
     edges: dict[str, set[str]] = {eid: set() for eid in events}
-    for a, b in run["time_proof"].get("order_edges", []):
+    order_edges = run["time_proof"].get("order_edges", [])
+    require(isinstance(order_edges, list), "ORDER_EDGES_LIST_REQUIRED")
+    for edge in order_edges:
+        require(isinstance(edge, list) and len(edge) == 2 and
+                all(isinstance(part, str) for part in edge), "ORDER_EDGE_PAIR_REQUIRED")
+        a, b = edge
         require(a in events and b in events and a != b, f"ORDER_EDGE_UNKNOWN:{a}:{b}")
         edges[a].add(b)
     for eid, event in events.items():
-        for earlier in event.get("causes", []):
+        causes = event.get("causes", [])
+        require(isinstance(causes, list) and all(isinstance(x, str) for x in causes),
+                f"CAUSES_LIST_REQUIRED:{eid}")
+        for earlier in causes:
             require(earlier in events and earlier != eid, f"CAUSE_UNKNOWN:{eid}:{earlier}")
             edges[earlier].add(eid)
     for earlier, later_set in edges.items():
@@ -148,6 +157,9 @@ def _watermark_index(run: dict) -> dict[str, dict]:
         require(isinstance(name, str) and name not in by_name, "WATERMARK_DUPLICATE_OR_NAME")
         keys = stream.get("terminal_keys", [])
         require(isinstance(keys, list), "WATERMARK_TERMINAL_KEYS_LIST")
+        require(all(isinstance(k, str) and len(k) == 64 and
+                    all(ch in "0123456789abcdef" for ch in k) for k in keys),
+                "WATERMARK_TERMINAL_KEY_INVALID")
         by_name[name] = {**stream, "terminal_keys": set(keys)}
     return by_name
 
@@ -199,9 +211,10 @@ def _time_qualified(run: dict, formal: bool, expiry: int | None,
         return False
     ttl = proof.get("T_result")
     if not (isinstance(ttl, dict) and ttl.get("status") == "FROZEN" and
-            ttl.get("policy_ref") in verified_ref_ids and
+            isinstance(ttl.get("policy_ref"), str) and ttl["policy_ref"] in verified_ref_ids and
             isinstance(proof.get("consumer_id"), str) and proof["consumer_id"] and
-            proof.get("consumer_source_ref") in verified_ref_ids and
+            isinstance(proof.get("consumer_source_ref"), str) and
+            proof["consumer_source_ref"] in verified_ref_ids and
             proof.get("anchor_status") == "SEALED"):
         return False
     anchors = proof.get("anchors")
@@ -211,7 +224,7 @@ def _time_qualified(run: dict, formal: bool, expiry: int | None,
     if type(first) is not int:
         return False
     for anchor in anchors:
-        if not isinstance(anchor, dict) or anchor.get("source_ref") not in verified_ref_ids:
+        if not isinstance(anchor, dict) or not isinstance(anchor.get("source_ref"), str) or anchor["source_ref"] not in verified_ref_ids:
             continue
         if not isinstance(anchor.get("native_domain"), str) or not anchor["native_domain"]:
             continue

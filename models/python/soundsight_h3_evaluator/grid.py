@@ -42,8 +42,11 @@ def planned_windows(run: dict) -> dict:
         require(isinstance(row, dict), "TRUTH_WINDOW_NOT_OBJECT")
         start = uint(row.get("start_original_id"), "truth.window.start")
         require(start not in truth_map, f"TRUTH_DUPLICATE_WINDOW:{start}")
-        require(row.get("label") in TRUTH_LABELS, f"TRUTH_LABEL_INVALID:{start}")
+        require(isinstance(row.get("label"), str) and row["label"] in TRUTH_LABELS,
+                f"TRUTH_LABEL_INVALID:{start}")
         require(isinstance(row.get("flags"), list), f"TRUTH_FLAGS_REQUIRED:{start}")
+        require(all(isinstance(flag, str) and flag for flag in row["flags"]),
+                f"TRUTH_FLAG_NAME_INVALID:{start}")
         truth_map[start] = row
     first_start = origin + ((max(0, first - origin) + 511) // 512) * 512
     windows = []
