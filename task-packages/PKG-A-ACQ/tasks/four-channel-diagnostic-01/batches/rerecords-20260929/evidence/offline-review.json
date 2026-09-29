@@ -1,0 +1,297 @@
+{
+  "schema_version": "c15-rerecord-check-1",
+  "checked_at_utc": "2026-09-29T02:53:52.103459+00:00",
+  "entry": "existing S1 verify and marker align function bodies extracted verbatim because historical module import root is stale",
+  "source_sha256": {
+    "finish_scene.py": "afd26ca64637ebf0c19ff54631348947fc703723322348e8ce6b34ca0312bb5d",
+    "process_capture.py": "68398065275e6cb8ef891492fab7b8d6b363d4c9b6a7cee67119d3c6005e22d3"
+  },
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "playback_reference_sha256": "ce28c5576eea620d8f358c0799bf8029cdc41bdeae8dcf95a02967d3bace6838",
+  "scope": "raw BIN/UART integrity and candidate two-marker source coverage only",
+  "records": [
+    {
+      "id": "indoor-az000-r1-new",
+      "raw_sha256": "d087b3b4425b2b9362827ce54abd579e33e7eaa68d3dce177e1498d5e7c1b3b0",
+      "log_sha256": "165d00e7e14930e3b53cc7e42379cfe469dd3924424fad7af70e2414941ae271",
+      "s1_integrity": "PASS",
+      "groups": 288250,
+      "packets": 1153,
+      "fnv1a32": "C88FF7BB",
+      "channels": [
+        {
+          "channel": "mic0",
+          "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+          "start_marker": {
+            "index": 61292,
+            "absolute_correlation": 0.6801695411520029,
+            "runner_up_outside_marker_width": 0.18552993507631083
+          },
+          "end_marker": {
+            "index": 266039,
+            "absolute_correlation": 0.6520711511969277,
+            "runner_up_outside_marker_width": 0.18581764103753545
+          },
+          "source_file_fits_capture": true,
+          "source_file_interval_mapped_samples": [
+            51656.84705882353,
+            282900.5176470588
+          ],
+          "estimated_source_end_margin_samples": 5349.482352941181
+        },
+        {
+          "channel": "mic1",
+          "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+          "start_marker": {
+            "index": 61298,
+            "absolute_correlation": 0.7782732081339725,
+            "runner_up_outside_marker_width": 0.20544997959933295
+          },
+          "end_marker": {
+            "index": 266045,
+            "absolute_correlation": 0.7342597651152701,
+            "runner_up_outside_marker_width": 0.2516014614520128
+          },
+          "source_file_fits_capture": true,
+          "source_file_interval_mapped_samples": [
+            51662.84705882353,
+            282906.5176470588
+          ],
+          "estimated_source_end_margin_samples": 5343.482352941181
+        },
+        {
+          "channel": "mic2",
+          "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+          "start_marker": {
+            "index": 61298,
+            "absolute_correlation": 0.8017904067737892,
+            "runner_up_outside_marker_width": 0.22824899682698824
+          },
+          "end_marker": {
+            "index": 266045,
+            "absolute_correlation": 0.7612854153518622,
+            "runner_up_outside_marker_width": 0.2840769522730763
+          },
+          "source_file_fits_capture": true,
+          "source_file_interval_mapped_samples": [
+            51662.84705882353,
+            282906.5176470588
+          ],
+          "estimated_source_end_margin_samples": 5343.482352941181
+        },
+        {
+          "channel": "mic3",
+          "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+          "start_marker": {
+            "index": 61303,
+            "absolute_correlation": 0.6987102648865198,
+            "runner_up_outside_marker_width": 0.21162670037880787
+          },
+          "end_marker": {
+            "index": 266039,
+            "absolute_correlation": 0.6647067108300415,
+            "runner_up_outside_marker_width": 0.2508688126263233
+          },
+          "source_file_fits_capture": true,
+          "source_file_interval_mapped_samples": [
+            51668.364705882355,
+            282899.61176470586
+          ],
+          "estimated_source_end_margin_samples": 5350.388235294144
+        }
+      ],
+      "all_four_marker_candidates": true,
+      "all_four_source_file_fits": true,
+      "minimum_source_end_margin_samples": 5343.482352941181
+    },
+    {
+      "id": "indoor-az045-r1-new",
+      "raw_sha256": "fcce740be30f3a071db92d21a559fcd726f4d3b58f2ca60fa56d2071180747e7",
+      "log_sha256": "c49aaa5a113e8a9cad75c79abeca90ae236ee5e47af79a8e8a9c11c1a9d70276",
+      "s1_integrity": "PASS",
+      "groups": 288250,
+      "packets": 1153,
+      "fnv1a32": "73B7DF53",
+      "channels": [
+        {
+          "channel": "mic0",
+          "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+          "start_marker": {
+            "index": 63524,
+            "absolute_correlation": 0.7493188010732487,
+            "runner_up_outside_marker_width": 0.17145317151532186
+          },
+          "end_marker": {
+            "index": 267503,
+            "absolute_correlation": 0.6306732835503818,
+            "runner_up_outside_marker_width": 0.22748438582995328
+          },
+          "source_file_fits_capture": true,
+          "source_file_interval_mapped_samples": [
+            53924.98823529412,
+            284301.2705882353
+          ],
+          "estimated_source_end_margin_samples": 3948.7294117647107
+        },
+        {
+          "channel": "mic1",
+          "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+          "start_marker": {
+            "index": 63520,
+            "absolute_correlation": 0.6881033001738862,
+            "runner_up_outside_marker_width": 0.1683523020553539
+          },
+          "end_marker": {
+            "index": 267499,
+            "absolute_correlation": 0.59319787634113,
+            "runner_up_outside_marker_width": 0.19145343837607487
+          },
+          "source_file_fits_capture": true,
+          "source_file_interval_mapped_samples": [
+            53920.98823529412,
+            284297.2705882353
+          ],
+          "estimated_source_end_margin_samples": 3952.7294117647107
+        },
+        {
+          "channel": "mic2",
+          "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+          "start_marker": {
+            "index": 63516,
+            "absolute_correlation": 0.715732541385802,
+            "runner_up_outside_marker_width": 0.17744153130875537
+          },
+          "end_marker": {
+            "index": 267494,
+            "absolute_correlation": 0.6095267257330443,
+            "runner_up_outside_marker_width": 0.18859529432997413
+          },
+          "source_file_fits_capture": true,
+          "source_file_interval_mapped_samples": [
+            53917.035294117646,
+            284292.18823529413
+          ],
+          "estimated_source_end_margin_samples": 3957.811764705868
+        },
+        {
+          "channel": "mic3",
+          "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+          "start_marker": {
+            "index": 63520,
+            "absolute_correlation": 0.7347002311693188,
+            "runner_up_outside_marker_width": 0.15590567986224102
+          },
+          "end_marker": {
+            "index": 267499,
+            "absolute_correlation": 0.6241896220710043,
+            "runner_up_outside_marker_width": 0.18041723831130235
+          },
+          "source_file_fits_capture": true,
+          "source_file_interval_mapped_samples": [
+            53920.98823529412,
+            284297.2705882353
+          ],
+          "estimated_source_end_margin_samples": 3952.7294117647107
+        }
+      ],
+      "all_four_marker_candidates": true,
+      "all_four_source_file_fits": true,
+      "minimum_source_end_margin_samples": 3948.7294117647107
+    },
+    {
+      "id": "outdoor-az045-r1-new",
+      "raw_sha256": "0b65b02ffd99efda9619025a0931fa54d4c15d773c9d03bbcca10c601913a9e9",
+      "log_sha256": "afd3df71899e370be5f4a1e4dace89b671f1ebbe3d5cc825110c92cae530838b",
+      "s1_integrity": "PASS",
+      "groups": 288250,
+      "packets": 1153,
+      "fnv1a32": "3550B731",
+      "channels": [
+        {
+          "channel": "mic0",
+          "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+          "start_marker": {
+            "index": 63232,
+            "absolute_correlation": 0.7166691863194531,
+            "runner_up_outside_marker_width": 0.14579461985555306
+          },
+          "end_marker": {
+            "index": 267339,
+            "absolute_correlation": 0.7238321402479763,
+            "runner_up_outside_marker_width": 0.19062306220187447
+          },
+          "source_file_fits_capture": true,
+          "source_file_interval_mapped_samples": [
+            53626.964705882354,
+            284147.81176470587
+          ],
+          "estimated_source_end_margin_samples": 4102.188235294132
+        },
+        {
+          "channel": "mic1",
+          "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+          "start_marker": {
+            "index": 63228,
+            "absolute_correlation": 0.6940759609103158,
+            "runner_up_outside_marker_width": 0.13109303112138593
+          },
+          "end_marker": {
+            "index": 267335,
+            "absolute_correlation": 0.7015243375988277,
+            "runner_up_outside_marker_width": 0.18682563069751082
+          },
+          "source_file_fits_capture": true,
+          "source_file_interval_mapped_samples": [
+            53622.964705882354,
+            284143.81176470587
+          ],
+          "estimated_source_end_margin_samples": 4106.188235294132
+        },
+        {
+          "channel": "mic2",
+          "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+          "start_marker": {
+            "index": 63213,
+            "absolute_correlation": 0.6516037931776016,
+            "runner_up_outside_marker_width": 0.13317313381420676
+          },
+          "end_marker": {
+            "index": 267320,
+            "absolute_correlation": 0.6556656646350065,
+            "runner_up_outside_marker_width": 0.16774213034637242
+          },
+          "source_file_fits_capture": true,
+          "source_file_interval_mapped_samples": [
+            53607.964705882354,
+            284128.81176470587
+          ],
+          "estimated_source_end_margin_samples": 4121.188235294132
+        },
+        {
+          "channel": "mic3",
+          "status": "CANDIDATE_ALIGNMENT_REVIEW_REQUIRED",
+          "start_marker": {
+            "index": 63217,
+            "absolute_correlation": 0.6101977806036267,
+            "runner_up_outside_marker_width": 0.15072190942526867
+          },
+          "end_marker": {
+            "index": 267324,
+            "absolute_correlation": 0.6220392928486803,
+            "runner_up_outside_marker_width": 0.1614580178894916
+          },
+          "source_file_fits_capture": true,
+          "source_file_interval_mapped_samples": [
+            53611.964705882354,
+            284132.81176470587
+          ],
+          "estimated_source_end_margin_samples": 4117.188235294132
+        }
+      ],
+      "all_four_marker_candidates": true,
+      "all_four_source_file_fits": true,
+      "minimum_source_end_margin_samples": 4102.188235294132
+    }
+  ]
+}
