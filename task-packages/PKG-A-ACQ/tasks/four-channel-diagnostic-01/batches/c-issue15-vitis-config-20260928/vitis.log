@@ -1,0 +1,1115 @@
+14:46:32 INFO  : updated workspace path: C:\Users\hsc\Documents\Codex\2026-09-20\wo-m\outputs\vitis-capture-import
+14:46:32 INFO  : created .gitignore file for the project C:\Users\hsc\Documents\Codex\2026-09-20\wo-m\outputs\vitis-capture-import
+14:51:03 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+14:51:03 INFO  : Failed to start XSDB server from front end.
+14:51:03 INFO  : Starting XSDB server from Vitis Server.
+14:51:03 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\hsc\AppData\Local\Temp\temp_xsdb_launch_script8390590709741713036.tcl
+14:51:03 ERROR : Failed to launch command : xsct.bat -n -interactive C:\Users\hsc\AppData\Local\Temp\temp_xsdb_launch_script8390590709741713036.tcl
+java.io.IOException: Cannot run program "xsct.bat": CreateProcess error=2, 系统找不到指定的文件。
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1170) ~[?:?]
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089) ~[?:?]
+	at com.xilinx.rigel.util.ProcessInvokeHelperRaw.invokeProcess(ProcessInvokeHelperRaw.java:96) ~[rigel_server-1.0.0-120.jar:?]
+	at com.xilinx.rigel.util.ProcessInvokeHelper.invokeProcess(ProcessInvokeHelper.java:51) ~[rigel_server-1.0.0-120.jar:?]
+	at com.xilinx.rigel.xsdb.XSDBCommandManager.launchXsdbServer(XSDBCommandManager.java:377) ~[rigel_server-1.0.0-120.jar:?]
+	at com.xilinx.rigel.xsdb.XSDBCommandManager.ensureServerIsLaunched(XSDBCommandManager.java:166) ~[rigel_server-1.0.0-120.jar:?]
+	at com.xilinx.rigel.xsdb.XSDBCommandManager.issueAndWait(XSDBCommandManager.java:474) ~[rigel_server-1.0.0-120.jar:?]
+	at com.xilinx.rigel.xsdb.XsdbCommandUtils.executeAndRespond(XsdbCommandUtils.java:345) ~[rigel_server-1.0.0-120.jar:?]
+	at com.xilinx.rigel.platform.HwPlatform.openHw(HwPlatform.java:339) ~[rigel_server-1.0.0-120.jar:?]
+	at com.xilinx.rigel.platform.HwPlatform.<init>(HwPlatform.java:327) ~[rigel_server-1.0.0-120.jar:?]
+	at com.xilinx.rigel.platform.HwSpecFactory.createHwSpec(HwSpecFactory.java:49) ~[rigel_server-1.0.0-120.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerService.addCustomLaunch(DebuggerService.java:2366) ~[rigel_server-1.0.0-120.jar:?]
+	at com.xilinx.rigel.services.debugger.DebuggerServiceGrpc$MethodHandlers.invoke(DebuggerServiceGrpc.java:2293) ~[rigel_server-1.0.0-120.jar:?]
+	at io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:182) ~[grpc-stub-1.69.0.jar:1.69.0]
+	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:356) ~[grpc-core-1.69.0.jar:1.69.0]
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:861) ~[grpc-core-1.69.0.jar:1.69.0]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[grpc-core-1.69.0.jar:1.69.0]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133) ~[grpc-core-1.69.0.jar:1.69.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.lang.ProcessImpl.create(Native Method) ~[?:?]
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:500) ~[?:?]
+	at java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[?:?]
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1126) ~[?:?]
+	... 20 more
+14:53:59 INFO  : connection terminated
+14:53:59 INFO  : connection terminated
+14:53:59 INFO  : scheduling shutdown timer for 2 seconds ...
+14:54:01 INFO  : Terminating Vitis C++ Server
+14:54:01 INFO  : Vitis C++ Server terminated
+15:37:28 INFO  : updated workspace path: C:\Users\hsc\Documents\Codex\2026-09-20\wo-m\outputs\vitis-capture-import
+15:38:06 INFO  : XSDB server has started successfully from frontend.
+15:38:06 INFO  : It has taken  3secs.
+15:38:07 INFO  : Connection to XSDB Server established.
+15:38:07 INFO  : It has taken  1secs.
+15:38:07 INFO  : Done
+16:56:49 INFO  : connection terminated
+16:56:49 INFO  : connection terminated
+16:56:49 INFO  : scheduling shutdown timer for 2 seconds ...
+16:56:49 INFO  : scheduling shutdown timer for 2 seconds ...
+16:56:53 INFO  : Terminating Vitis C++ Server
+16:56:53 INFO  : Terminating Vitis C++ Server
+16:56:53 INFO  : Vitis C++ Server terminated
+16:56:53 INFO  : Vitis C++ Server terminated
+16:57:16 INFO  : updated workspace path: C:\Users\hsc\Documents\Codex\2026-09-20\wo-m\outputs\vitis-capture-import
+16:57:22 INFO  : XSDB server has started successfully from frontend.
+16:57:22 INFO  : It has taken  4secs.
+16:57:23 INFO  : Connection to XSDB Server established.
+16:57:23 INFO  : It has taken  1secs.
+16:57:27 INFO  : Done
+16:58:44 INFO  : connect -url tcp:127.0.0.1:3121
+16:58:44 INFO  : bpremove -all
+16:58:46 INFO  : Context for 'APU' is selected.
+16:58:46 INFO  : System reset is completed.
+16:58:49 INFO  : 'after 3000' command is executed.
+16:58:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+16:58:53 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+16:58:53 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+16:58:54 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+16:58:54 INFO  : configparams force-mem-access 1
+16:58:54 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+16:58:54 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+16:58:55 INFO  : ps7_init
+16:58:55 INFO  : ps7_post_config
+16:58:55 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+16:58:55 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+16:58:55 INFO  : con
+16:58:55 INFO  : configparams force-mem-access 0
+16:58:55 INFO  : Testing the connection for 127.0.0.1
+17:21:01 INFO  : disconnect
+17:21:44 INFO  : connect -url tcp:127.0.0.1:3121
+17:21:44 INFO  : bpremove -all
+17:21:45 INFO  : Context for 'APU' is selected.
+17:21:45 INFO  : System reset is completed.
+17:21:48 INFO  : 'after 3000' command is executed.
+17:21:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:21:52 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:21:52 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:21:55 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:21:55 INFO  : configparams force-mem-access 1
+17:21:55 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:21:55 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:21:56 INFO  : ps7_init
+17:21:56 INFO  : ps7_post_config
+17:21:56 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:21:56 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:21:56 INFO  : con
+17:21:56 INFO  : configparams force-mem-access 0
+17:21:56 INFO  : Testing the connection for 127.0.0.1
+17:29:19 INFO  : disconnect
+17:30:03 INFO  : connect -url tcp:127.0.0.1:3121
+17:30:03 INFO  : bpremove -all
+17:30:04 INFO  : Context for 'APU' is selected.
+17:30:04 INFO  : System reset is completed.
+17:30:07 INFO  : 'after 3000' command is executed.
+17:30:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:30:11 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:30:11 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:30:14 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:30:14 INFO  : configparams force-mem-access 1
+17:30:14 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:30:14 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:30:15 INFO  : ps7_init
+17:30:15 INFO  : ps7_post_config
+17:30:15 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:30:15 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:30:15 INFO  : con
+17:30:15 INFO  : configparams force-mem-access 0
+17:30:16 INFO  : Testing the connection for 127.0.0.1
+17:31:14 INFO  : disconnect
+17:31:32 INFO  : connect -url tcp:127.0.0.1:3121
+17:31:32 INFO  : bpremove -all
+17:31:33 INFO  : Context for 'APU' is selected.
+17:31:33 INFO  : System reset is completed.
+17:31:36 INFO  : 'after 3000' command is executed.
+17:31:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:31:40 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:31:40 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:31:44 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:31:44 INFO  : configparams force-mem-access 1
+17:31:44 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:31:44 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:31:44 INFO  : ps7_init
+17:31:44 INFO  : ps7_post_config
+17:31:45 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:31:45 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:31:45 INFO  : con
+17:31:45 INFO  : configparams force-mem-access 0
+17:31:45 INFO  : Testing the connection for 127.0.0.1
+17:35:33 INFO  : disconnect
+17:36:24 INFO  : connect -url tcp:127.0.0.1:3121
+17:36:24 INFO  : bpremove -all
+17:36:25 INFO  : Context for 'APU' is selected.
+17:36:25 INFO  : System reset is completed.
+17:36:28 INFO  : 'after 3000' command is executed.
+17:36:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:36:32 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:36:32 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:36:35 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:36:35 INFO  : configparams force-mem-access 1
+17:36:35 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:36:35 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:36:36 INFO  : ps7_init
+17:36:36 INFO  : ps7_post_config
+17:36:36 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:36:36 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:36:36 INFO  : con
+17:36:36 INFO  : configparams force-mem-access 0
+17:36:36 INFO  : Testing the connection for 127.0.0.1
+17:36:40 INFO  : disconnect
+17:36:58 INFO  : connect -url tcp:127.0.0.1:3121
+17:36:58 INFO  : bpremove -all
+17:36:59 INFO  : Context for 'APU' is selected.
+17:37:00 INFO  : System reset is completed.
+17:37:03 INFO  : 'after 3000' command is executed.
+17:37:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:37:06 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:37:06 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:37:09 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:37:09 INFO  : configparams force-mem-access 1
+17:37:09 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:37:09 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:37:10 INFO  : ps7_init
+17:37:10 INFO  : ps7_post_config
+17:37:10 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:37:11 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:37:11 INFO  : con
+17:37:11 INFO  : configparams force-mem-access 0
+17:37:11 INFO  : Testing the connection for 127.0.0.1
+17:40:48 INFO  : disconnect
+17:41:11 INFO  : connect -url tcp:127.0.0.1:3121
+17:41:11 INFO  : bpremove -all
+17:41:12 INFO  : Context for 'APU' is selected.
+17:41:13 INFO  : System reset is completed.
+17:41:16 INFO  : 'after 3000' command is executed.
+17:41:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:41:19 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:41:19 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:41:23 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:41:23 INFO  : configparams force-mem-access 1
+17:41:23 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:41:23 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:41:24 INFO  : ps7_init
+17:41:24 INFO  : ps7_post_config
+17:41:24 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:41:24 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:41:24 INFO  : con
+17:41:24 INFO  : configparams force-mem-access 0
+17:41:24 INFO  : Testing the connection for 127.0.0.1
+17:43:17 INFO  : disconnect
+17:43:38 INFO  : connect -url tcp:127.0.0.1:3121
+17:43:38 INFO  : bpremove -all
+17:43:39 INFO  : Context for 'APU' is selected.
+17:43:39 INFO  : System reset is completed.
+17:43:42 INFO  : 'after 3000' command is executed.
+17:43:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:43:45 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:43:45 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:43:48 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:43:48 INFO  : configparams force-mem-access 1
+17:43:49 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:43:49 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:43:49 INFO  : ps7_init
+17:43:49 INFO  : ps7_post_config
+17:43:50 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:43:50 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:43:50 INFO  : con
+17:43:50 INFO  : configparams force-mem-access 0
+17:43:50 INFO  : Testing the connection for 127.0.0.1
+17:45:35 INFO  : disconnect
+17:45:56 INFO  : connect -url tcp:127.0.0.1:3121
+17:45:56 INFO  : bpremove -all
+17:45:57 INFO  : Context for 'APU' is selected.
+17:45:57 INFO  : System reset is completed.
+17:46:00 INFO  : 'after 3000' command is executed.
+17:46:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:46:04 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:46:04 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:46:07 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:46:07 INFO  : configparams force-mem-access 1
+17:46:07 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:46:07 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:46:08 INFO  : ps7_init
+17:46:08 INFO  : ps7_post_config
+17:46:08 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:46:08 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:46:08 INFO  : con
+17:46:08 INFO  : configparams force-mem-access 0
+17:46:08 INFO  : Testing the connection for 127.0.0.1
+17:48:08 INFO  : disconnect
+17:48:40 INFO  : connect -url tcp:127.0.0.1:3121
+17:48:40 INFO  : bpremove -all
+17:48:42 INFO  : Context for 'APU' is selected.
+17:48:42 INFO  : System reset is completed.
+17:48:45 INFO  : 'after 3000' command is executed.
+17:48:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:48:48 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:48:48 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:48:51 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:48:51 INFO  : configparams force-mem-access 1
+17:48:52 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:48:52 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:48:52 INFO  : ps7_init
+17:48:52 INFO  : ps7_post_config
+17:48:52 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:48:53 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:48:53 INFO  : con
+17:48:53 INFO  : configparams force-mem-access 0
+17:48:53 INFO  : Testing the connection for 127.0.0.1
+17:51:19 INFO  : disconnect
+17:51:37 INFO  : connect -url tcp:127.0.0.1:3121
+17:51:37 INFO  : bpremove -all
+17:51:38 INFO  : Context for 'APU' is selected.
+17:51:38 INFO  : System reset is completed.
+17:51:41 INFO  : 'after 3000' command is executed.
+17:51:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:51:45 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:51:45 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:51:48 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:51:48 INFO  : configparams force-mem-access 1
+17:51:48 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:51:48 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:51:49 INFO  : ps7_init
+17:51:49 INFO  : ps7_post_config
+17:51:49 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:51:49 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:51:49 INFO  : con
+17:51:49 INFO  : configparams force-mem-access 0
+17:51:49 INFO  : Testing the connection for 127.0.0.1
+17:54:15 INFO  : disconnect
+17:54:19 INFO  : connect -url tcp:127.0.0.1:3121
+17:54:19 INFO  : bpremove -all
+17:54:20 INFO  : Context for 'APU' is selected.
+17:54:20 INFO  : System reset is completed.
+17:54:23 INFO  : 'after 3000' command is executed.
+17:54:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:54:27 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:54:27 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:54:30 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:54:30 INFO  : configparams force-mem-access 1
+17:54:30 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:54:30 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:54:31 INFO  : ps7_init
+17:54:31 INFO  : ps7_post_config
+17:54:31 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:54:31 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:54:31 INFO  : con
+17:54:31 INFO  : configparams force-mem-access 0
+17:54:31 INFO  : Testing the connection for 127.0.0.1
+18:09:47 INFO  : connection terminated
+18:09:47 INFO  : connection terminated
+18:09:47 INFO  : scheduling shutdown timer for 2 seconds ...
+18:09:50 INFO  : Terminating Vitis C++ Server
+18:09:50 INFO  : Vitis C++ Server terminated
+17:07:33 INFO  : updated workspace path: C:\Users\hsc\Documents\Codex\2026-09-20\wo-m\outputs\vitis-capture-import
+17:07:42 INFO  : XSDB server has started successfully from frontend.
+17:07:42 INFO  : It has taken  7secs.
+17:07:44 INFO  : Connection to XSDB Server established.
+17:07:44 INFO  : It has taken  1secs.
+17:07:54 INFO  : Done
+17:08:48 INFO  : connect -url tcp:127.0.0.1:3121
+17:08:48 INFO  : bpremove -all
+17:08:59 ERROR : Failed to setup the launch.json Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green. 
+17:09:42 INFO  : connect -url tcp:127.0.0.1:3121
+17:09:42 INFO  : bpremove -all
+17:09:42 INFO  : Context for 'APU' is selected.
+17:09:42 INFO  : System reset is completed.
+17:09:45 INFO  : 'after 3000' command is executed.
+17:09:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:09:49 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:09:49 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:09:50 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:09:50 INFO  : configparams force-mem-access 1
+17:09:50 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:09:50 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:09:51 INFO  : ps7_init
+17:09:51 INFO  : ps7_post_config
+17:09:51 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:09:51 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:09:51 INFO  : con
+17:09:51 INFO  : configparams force-mem-access 0
+17:09:51 INFO  : Testing the connection for 127.0.0.1
+17:10:14 INFO  : disconnect
+17:10:34 INFO  : connect -url tcp:127.0.0.1:3121
+17:10:34 INFO  : bpremove -all
+17:10:35 INFO  : Context for 'APU' is selected.
+17:10:35 INFO  : System reset is completed.
+17:10:38 INFO  : 'after 3000' command is executed.
+17:10:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:10:41 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:10:41 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:10:45 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:10:45 INFO  : configparams force-mem-access 1
+17:10:45 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:10:45 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:10:46 INFO  : ps7_init
+17:10:46 INFO  : ps7_post_config
+17:10:46 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:10:46 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:10:46 INFO  : con
+17:10:46 INFO  : configparams force-mem-access 0
+17:10:46 INFO  : Testing the connection for 127.0.0.1
+17:13:10 INFO  : disconnect
+17:13:13 INFO  : connect -url tcp:127.0.0.1:3121
+17:13:13 INFO  : bpremove -all
+17:13:14 INFO  : Context for 'APU' is selected.
+17:13:14 INFO  : System reset is completed.
+17:13:17 INFO  : 'after 3000' command is executed.
+17:13:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:13:21 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:13:21 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:13:24 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:13:24 INFO  : configparams force-mem-access 1
+17:13:25 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:13:25 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:13:25 INFO  : ps7_init
+17:13:25 INFO  : ps7_post_config
+17:13:25 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:13:26 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:13:26 INFO  : con
+17:13:26 INFO  : configparams force-mem-access 0
+17:13:26 INFO  : Testing the connection for 127.0.0.1
+17:15:59 INFO  : disconnect
+17:16:07 INFO  : connect -url tcp:127.0.0.1:3121
+17:16:07 INFO  : bpremove -all
+17:16:08 INFO  : Context for 'APU' is selected.
+17:16:08 INFO  : System reset is completed.
+17:16:11 INFO  : 'after 3000' command is executed.
+17:16:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:16:14 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:16:14 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:16:18 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:16:18 INFO  : configparams force-mem-access 1
+17:16:18 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:16:18 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:16:19 INFO  : ps7_init
+17:16:19 INFO  : ps7_post_config
+17:16:19 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:16:19 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:16:19 INFO  : con
+17:16:19 INFO  : configparams force-mem-access 0
+17:16:19 INFO  : Testing the connection for 127.0.0.1
+17:16:41 INFO  : disconnect
+17:16:48 INFO  : connect -url tcp:127.0.0.1:3121
+17:16:48 INFO  : bpremove -all
+17:16:49 INFO  : Context for 'APU' is selected.
+17:16:49 INFO  : System reset is completed.
+17:16:52 INFO  : 'after 3000' command is executed.
+17:16:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:16:55 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:16:56 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:16:59 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:16:59 INFO  : configparams force-mem-access 1
+17:16:59 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:16:59 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:16:59 INFO  : ps7_init
+17:17:00 INFO  : ps7_post_config
+17:17:00 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:17:00 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:17:00 INFO  : con
+17:17:00 INFO  : configparams force-mem-access 0
+17:17:00 INFO  : Testing the connection for 127.0.0.1
+17:18:40 INFO  : disconnect
+17:19:18 INFO  : connect -url tcp:127.0.0.1:3121
+17:19:18 INFO  : bpremove -all
+17:19:20 INFO  : Context for 'APU' is selected.
+17:19:20 INFO  : System reset is completed.
+17:19:23 INFO  : 'after 3000' command is executed.
+17:19:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:19:26 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:19:26 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:19:30 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:19:30 INFO  : configparams force-mem-access 1
+17:19:30 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:19:30 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:19:31 INFO  : ps7_init
+17:19:31 INFO  : ps7_post_config
+17:19:31 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:19:31 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:19:31 INFO  : con
+17:19:31 INFO  : configparams force-mem-access 0
+17:19:31 INFO  : Testing the connection for 127.0.0.1
+17:19:47 INFO  : disconnect
+17:19:49 INFO  : connect -url tcp:127.0.0.1:3121
+17:19:49 INFO  : bpremove -all
+17:19:50 INFO  : Context for 'APU' is selected.
+17:19:50 INFO  : System reset is completed.
+17:19:53 INFO  : 'after 3000' command is executed.
+17:19:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:19:57 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:19:57 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:20:00 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:20:00 INFO  : configparams force-mem-access 1
+17:20:01 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:20:01 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:20:01 INFO  : ps7_init
+17:20:01 INFO  : ps7_post_config
+17:20:02 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:20:02 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:20:02 INFO  : con
+17:20:02 INFO  : configparams force-mem-access 0
+17:20:02 INFO  : Testing the connection for 127.0.0.1
+17:20:18 INFO  : disconnect
+17:20:21 INFO  : connect -url tcp:127.0.0.1:3121
+17:20:21 INFO  : bpremove -all
+17:20:22 INFO  : Context for 'APU' is selected.
+17:20:22 INFO  : System reset is completed.
+17:20:25 INFO  : 'after 3000' command is executed.
+17:20:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:20:29 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:20:29 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:20:32 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:20:32 INFO  : configparams force-mem-access 1
+17:20:32 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:20:32 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:20:33 INFO  : ps7_init
+17:20:33 INFO  : ps7_post_config
+17:20:33 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:20:33 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:20:34 INFO  : con
+17:20:34 INFO  : configparams force-mem-access 0
+17:20:34 INFO  : Testing the connection for 127.0.0.1
+17:20:50 INFO  : disconnect
+17:20:53 INFO  : connect -url tcp:127.0.0.1:3121
+17:20:53 INFO  : bpremove -all
+17:20:54 INFO  : Context for 'APU' is selected.
+17:20:54 INFO  : System reset is completed.
+17:20:57 INFO  : 'after 3000' command is executed.
+17:20:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:21:01 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:21:01 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:21:04 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:21:04 INFO  : configparams force-mem-access 1
+17:21:04 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:21:04 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:21:05 INFO  : ps7_init
+17:21:05 INFO  : ps7_post_config
+17:21:05 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:21:05 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:21:06 INFO  : con
+17:21:06 INFO  : configparams force-mem-access 0
+17:21:06 INFO  : Testing the connection for 127.0.0.1
+17:23:05 INFO  : disconnect
+17:23:08 INFO  : connect -url tcp:127.0.0.1:3121
+17:23:08 INFO  : bpremove -all
+17:23:09 INFO  : Context for 'APU' is selected.
+17:23:09 INFO  : System reset is completed.
+17:23:12 INFO  : 'after 3000' command is executed.
+17:23:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:23:16 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:23:16 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:23:19 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:23:19 INFO  : configparams force-mem-access 1
+17:23:19 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:23:19 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:23:20 INFO  : ps7_init
+17:23:20 INFO  : ps7_post_config
+17:23:20 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:23:20 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:23:20 INFO  : con
+17:23:20 INFO  : configparams force-mem-access 0
+17:23:20 INFO  : Testing the connection for 127.0.0.1
+17:25:16 INFO  : disconnect
+17:25:19 INFO  : connect -url tcp:127.0.0.1:3121
+17:25:19 INFO  : bpremove -all
+17:25:20 INFO  : Context for 'APU' is selected.
+17:25:20 INFO  : System reset is completed.
+17:25:23 INFO  : 'after 3000' command is executed.
+17:25:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:25:27 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:25:27 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:25:30 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:25:30 INFO  : configparams force-mem-access 1
+17:25:30 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:25:30 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:25:31 INFO  : ps7_init
+17:25:31 INFO  : ps7_post_config
+17:25:31 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:25:31 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:25:31 INFO  : con
+17:25:31 INFO  : configparams force-mem-access 0
+17:25:31 INFO  : Testing the connection for 127.0.0.1
+17:29:08 INFO  : disconnect
+17:29:12 INFO  : connect -url tcp:127.0.0.1:3121
+17:29:12 INFO  : bpremove -all
+17:29:13 INFO  : Context for 'APU' is selected.
+17:29:13 INFO  : System reset is completed.
+17:29:16 INFO  : 'after 3000' command is executed.
+17:29:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:29:19 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:29:20 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:29:23 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:29:23 INFO  : configparams force-mem-access 1
+17:29:23 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:29:23 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:29:24 INFO  : ps7_init
+17:29:24 INFO  : ps7_post_config
+17:29:24 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:29:25 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:29:25 INFO  : con
+17:29:25 INFO  : configparams force-mem-access 0
+17:29:25 INFO  : Testing the connection for 127.0.0.1
+17:29:43 INFO  : disconnect
+17:29:46 INFO  : connect -url tcp:127.0.0.1:3121
+17:29:46 INFO  : bpremove -all
+17:29:47 INFO  : Context for 'APU' is selected.
+17:29:48 INFO  : System reset is completed.
+17:29:51 INFO  : 'after 3000' command is executed.
+17:29:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:29:54 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:29:54 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:29:57 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:29:57 INFO  : configparams force-mem-access 1
+17:29:58 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:29:58 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:29:58 INFO  : ps7_init
+17:29:58 INFO  : ps7_post_config
+17:29:58 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:29:59 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:29:59 INFO  : con
+17:29:59 INFO  : configparams force-mem-access 0
+17:29:59 INFO  : Testing the connection for 127.0.0.1
+17:31:35 INFO  : disconnect
+17:31:39 INFO  : connect -url tcp:127.0.0.1:3121
+17:31:39 INFO  : bpremove -all
+17:31:40 INFO  : Context for 'APU' is selected.
+17:31:40 INFO  : System reset is completed.
+17:31:43 INFO  : 'after 3000' command is executed.
+17:31:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:31:46 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:31:47 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:31:50 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:31:50 INFO  : configparams force-mem-access 1
+17:31:50 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:31:50 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:31:51 INFO  : ps7_init
+17:31:51 INFO  : ps7_post_config
+17:31:51 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:31:51 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:31:51 INFO  : con
+17:31:51 INFO  : configparams force-mem-access 0
+17:31:51 INFO  : Testing the connection for 127.0.0.1
+17:33:33 INFO  : disconnect
+17:33:37 INFO  : connect -url tcp:127.0.0.1:3121
+17:33:37 INFO  : bpremove -all
+17:33:38 INFO  : Context for 'APU' is selected.
+17:33:38 INFO  : System reset is completed.
+17:33:41 INFO  : 'after 3000' command is executed.
+17:33:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:33:44 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:33:45 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:33:48 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:33:48 INFO  : configparams force-mem-access 1
+17:33:48 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:33:48 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:33:49 INFO  : ps7_init
+17:33:49 INFO  : ps7_post_config
+17:33:49 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:33:49 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:33:49 INFO  : con
+17:33:49 INFO  : configparams force-mem-access 0
+17:33:49 INFO  : Testing the connection for 127.0.0.1
+17:36:14 INFO  : disconnect
+17:36:43 INFO  : connect -url tcp:127.0.0.1:3121
+17:36:43 INFO  : bpremove -all
+17:36:44 INFO  : Context for 'APU' is selected.
+17:36:44 INFO  : System reset is completed.
+17:36:47 INFO  : 'after 3000' command is executed.
+17:36:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:36:51 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:36:51 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:36:54 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:36:54 INFO  : configparams force-mem-access 1
+17:36:55 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:36:55 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:36:55 INFO  : ps7_init
+17:36:55 INFO  : ps7_post_config
+17:36:55 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:36:56 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:36:56 INFO  : con
+17:36:56 INFO  : configparams force-mem-access 0
+17:36:56 INFO  : Testing the connection for 127.0.0.1
+17:47:13 INFO  : created .gitignore file for the project C:\Users\hsc\Documents\Codex\2026-09-20\wo-m\outputs\vitis-capture-import
+17:47:13 INFO  : updated workspace path: C:\Users\hsc\Documents\Codex\2026-09-20\wo-m\outputs\vitis-capture-import
+17:47:30 INFO  : connection terminated
+17:47:30 INFO  : connection terminated
+17:47:30 INFO  : scheduling shutdown timer for 2 seconds ...
+17:47:33 INFO  : Terminating Vitis C++ Server
+17:47:33 INFO  : Vitis C++ Server terminated
+17:47:56 INFO  : updated workspace path: C:\Users\hsc\Documents\Codex\2026-09-20\wo-m\outputs\vitis-capture-import
+17:48:02 INFO  : XSDB server has started successfully from frontend.
+17:48:02 INFO  : It has taken  4secs.
+17:48:03 INFO  : Connection to XSDB Server established.
+17:48:03 INFO  : It has taken  1secs.
+17:48:06 INFO  : Done
+17:48:46 INFO  : connection terminated
+17:48:46 INFO  : connection terminated
+17:48:46 INFO  : scheduling shutdown timer for 2 seconds ...
+17:48:48 INFO  : Terminating Vitis C++ Server
+17:48:48 INFO  : Vitis C++ Server terminated
+17:49:16 INFO  : updated workspace path: C:\Users\hsc\Documents\Codex\2026-09-20\wo-m\outputs\vitis-capture-import
+17:49:22 INFO  : XSDB server has started successfully from frontend.
+17:49:22 INFO  : It has taken  4secs.
+17:49:24 INFO  : Connection to XSDB Server established.
+17:49:24 INFO  : It has taken  1secs.
+17:49:26 INFO  : Done
+17:49:43 INFO  : connect -url tcp:127.0.0.1:3121
+17:49:43 INFO  : bpremove -all
+17:49:45 INFO  : Context for 'APU' is selected.
+17:49:45 INFO  : System reset is completed.
+17:49:48 INFO  : 'after 3000' command is executed.
+17:49:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:49:51 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:49:52 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:49:52 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:49:52 INFO  : configparams force-mem-access 1
+17:49:52 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:49:52 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:49:53 INFO  : ps7_init
+17:49:53 INFO  : ps7_post_config
+17:49:53 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:49:53 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:49:53 INFO  : con
+17:49:53 INFO  : configparams force-mem-access 0
+17:49:53 INFO  : Testing the connection for 127.0.0.1
+17:50:23 INFO  : disconnect
+17:50:27 INFO  : connect -url tcp:127.0.0.1:3121
+17:50:27 INFO  : bpremove -all
+17:50:28 INFO  : Context for 'APU' is selected.
+17:50:28 INFO  : System reset is completed.
+17:50:31 INFO  : 'after 3000' command is executed.
+17:50:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:50:34 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:50:34 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:50:38 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:50:38 INFO  : configparams force-mem-access 1
+17:50:38 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:50:38 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:50:39 INFO  : ps7_init
+17:50:39 INFO  : ps7_post_config
+17:50:39 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:50:39 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:50:39 INFO  : con
+17:50:39 INFO  : configparams force-mem-access 0
+17:50:39 INFO  : Testing the connection for 127.0.0.1
+17:50:59 INFO  : disconnect
+17:51:22 INFO  : connect -url tcp:127.0.0.1:3121
+17:51:22 INFO  : bpremove -all
+17:51:23 INFO  : Context for 'APU' is selected.
+17:51:23 INFO  : System reset is completed.
+17:51:26 INFO  : 'after 3000' command is executed.
+17:51:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:51:30 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:51:30 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:51:33 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:51:33 INFO  : configparams force-mem-access 1
+17:51:33 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:51:33 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:51:34 INFO  : ps7_init
+17:51:34 INFO  : ps7_post_config
+17:51:34 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:51:34 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:51:34 INFO  : con
+17:51:34 INFO  : configparams force-mem-access 0
+17:51:34 INFO  : Testing the connection for 127.0.0.1
+17:51:51 INFO  : disconnect
+17:51:53 INFO  : connect -url tcp:127.0.0.1:3121
+17:51:53 INFO  : bpremove -all
+17:51:54 INFO  : Context for 'APU' is selected.
+17:51:54 INFO  : System reset is completed.
+17:51:57 INFO  : 'after 3000' command is executed.
+17:51:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:52:01 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:52:01 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:52:04 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:52:04 INFO  : configparams force-mem-access 1
+17:52:04 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:52:04 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:52:05 INFO  : ps7_init
+17:52:05 INFO  : ps7_post_config
+17:52:05 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:52:05 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:52:05 INFO  : con
+17:52:05 INFO  : configparams force-mem-access 0
+17:52:05 INFO  : Testing the connection for 127.0.0.1
+17:54:23 INFO  : disconnect
+17:54:28 INFO  : connect -url tcp:127.0.0.1:3121
+17:54:28 INFO  : bpremove -all
+17:54:29 INFO  : Context for 'APU' is selected.
+17:54:29 INFO  : System reset is completed.
+17:54:32 INFO  : 'after 3000' command is executed.
+17:54:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:54:35 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:54:36 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:54:39 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:54:39 INFO  : configparams force-mem-access 1
+17:54:39 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:54:39 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:54:40 INFO  : ps7_init
+17:54:40 INFO  : ps7_post_config
+17:54:40 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:54:40 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:54:40 INFO  : con
+17:54:40 INFO  : configparams force-mem-access 0
+17:54:40 INFO  : Testing the connection for 127.0.0.1
+17:57:18 INFO  : disconnect
+17:57:21 INFO  : connect -url tcp:127.0.0.1:3121
+17:57:21 INFO  : bpremove -all
+17:57:22 INFO  : Context for 'APU' is selected.
+17:57:22 INFO  : System reset is completed.
+17:57:25 INFO  : 'after 3000' command is executed.
+17:57:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:57:28 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:57:29 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:57:32 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+17:57:32 INFO  : configparams force-mem-access 1
+17:57:32 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:57:32 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+17:57:32 INFO  : ps7_init
+17:57:32 INFO  : ps7_post_config
+17:57:33 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+17:57:33 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+17:57:33 INFO  : con
+17:57:33 INFO  : configparams force-mem-access 0
+17:57:33 INFO  : Testing the connection for 127.0.0.1
+17:59:44 INFO  : disconnect
+17:59:50 INFO  : connect -url tcp:127.0.0.1:3121
+17:59:50 INFO  : bpremove -all
+17:59:51 INFO  : Context for 'APU' is selected.
+17:59:51 INFO  : System reset is completed.
+17:59:54 INFO  : 'after 3000' command is executed.
+17:59:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+17:59:58 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+17:59:58 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+18:00:02 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+18:00:02 INFO  : configparams force-mem-access 1
+18:00:02 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+18:00:02 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+18:00:02 INFO  : ps7_init
+18:00:02 INFO  : ps7_post_config
+18:00:03 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+18:00:03 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+18:00:03 INFO  : con
+18:00:03 INFO  : configparams force-mem-access 0
+18:00:03 INFO  : Testing the connection for 127.0.0.1
+18:01:50 INFO  : disconnect
+18:01:53 INFO  : connect -url tcp:127.0.0.1:3121
+18:01:53 INFO  : bpremove -all
+18:01:54 INFO  : Context for 'APU' is selected.
+18:01:54 INFO  : System reset is completed.
+18:01:57 INFO  : 'after 3000' command is executed.
+18:01:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+18:02:01 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+18:02:01 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+18:02:04 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+18:02:04 INFO  : configparams force-mem-access 1
+18:02:04 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+18:02:04 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+18:02:05 INFO  : ps7_init
+18:02:05 INFO  : ps7_post_config
+18:02:05 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+18:02:05 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+18:02:05 INFO  : con
+18:02:05 INFO  : configparams force-mem-access 0
+18:02:05 INFO  : Testing the connection for 127.0.0.1
+18:03:55 INFO  : disconnect
+18:03:58 INFO  : connect -url tcp:127.0.0.1:3121
+18:03:58 INFO  : bpremove -all
+18:03:59 INFO  : Context for 'APU' is selected.
+18:03:59 INFO  : System reset is completed.
+18:04:02 INFO  : 'after 3000' command is executed.
+18:04:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+18:04:05 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+18:04:05 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+18:04:09 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+18:04:09 INFO  : configparams force-mem-access 1
+18:04:09 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+18:04:09 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+18:04:09 INFO  : ps7_init
+18:04:10 INFO  : ps7_post_config
+18:04:10 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+18:04:10 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+18:04:10 INFO  : con
+18:04:10 INFO  : configparams force-mem-access 0
+18:04:10 INFO  : Testing the connection for 127.0.0.1
+18:06:12 INFO  : disconnect
+18:06:15 INFO  : connect -url tcp:127.0.0.1:3121
+18:06:15 INFO  : bpremove -all
+18:06:16 INFO  : Context for 'APU' is selected.
+18:06:16 INFO  : System reset is completed.
+18:06:19 INFO  : 'after 3000' command is executed.
+18:06:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+18:06:23 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+18:06:23 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+18:06:26 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+18:06:26 INFO  : configparams force-mem-access 1
+18:06:27 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+18:06:27 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+18:06:27 INFO  : ps7_init
+18:06:27 INFO  : ps7_post_config
+18:06:27 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+18:06:28 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+18:06:28 INFO  : con
+18:06:28 INFO  : configparams force-mem-access 0
+18:06:28 INFO  : Testing the connection for 127.0.0.1
+18:08:37 INFO  : disconnect
+18:08:41 INFO  : connect -url tcp:127.0.0.1:3121
+18:08:41 INFO  : bpremove -all
+18:08:42 INFO  : Context for 'APU' is selected.
+18:08:42 INFO  : System reset is completed.
+18:08:45 INFO  : 'after 3000' command is executed.
+18:08:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+18:08:48 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+18:08:49 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+18:08:52 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+18:08:52 INFO  : configparams force-mem-access 1
+18:08:52 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+18:08:52 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+18:08:52 INFO  : ps7_init
+18:08:52 INFO  : ps7_post_config
+18:08:53 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+18:08:53 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+18:08:53 INFO  : con
+18:08:53 INFO  : configparams force-mem-access 0
+18:08:53 INFO  : Testing the connection for 127.0.0.1
+18:11:42 INFO  : disconnect
+18:11:55 INFO  : connection terminated
+18:11:55 INFO  : connection terminated
+18:11:55 INFO  : scheduling shutdown timer for 2 seconds ...
+18:11:58 INFO  : Terminating Vitis C++ Server
+18:11:58 INFO  : Vitis C++ Server terminated
+00:55:09 INFO  : updated workspace path: C:\Users\hsc\Documents\Codex\2026-09-20\wo-m\outputs\vitis-capture-import
+00:55:16 INFO  : XSDB server has started successfully from frontend.
+00:55:16 INFO  : It has taken  5secs.
+00:55:17 INFO  : Connection to XSDB Server established.
+00:55:17 INFO  : It has taken  1secs.
+00:55:25 INFO  : Done
+01:07:33 INFO  : connection terminated
+01:07:33 INFO  : connection terminated
+01:07:33 INFO  : scheduling shutdown timer for 2 seconds ...
+01:07:36 INFO  : Terminating Vitis C++ Server
+01:07:36 INFO  : Vitis C++ Server terminated
+09:44:53 INFO  : updated workspace path: C:\Users\hsc\Documents\Codex\2026-09-20\wo-m\outputs\vitis-capture-import
+09:45:03 INFO  : XSDB server has started successfully from frontend.
+09:45:03 INFO  : It has taken  7secs.
+09:45:04 INFO  : Connection to XSDB Server established.
+09:45:04 INFO  : It has taken  1secs.
+09:45:15 INFO  : Done
+09:45:37 INFO  : connect -url tcp:127.0.0.1:3121
+09:45:37 INFO  : bpremove -all
+09:45:38 INFO  : Context for 'APU' is selected.
+09:45:38 INFO  : System reset is completed.
+09:45:41 INFO  : 'after 3000' command is executed.
+09:45:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+09:45:45 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+09:45:45 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+09:45:46 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+09:45:46 INFO  : configparams force-mem-access 1
+09:45:46 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+09:45:46 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+09:45:47 INFO  : ps7_init
+09:45:47 INFO  : ps7_post_config
+09:45:47 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+09:45:47 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+09:45:48 INFO  : con
+09:45:48 INFO  : configparams force-mem-access 0
+09:45:48 INFO  : Testing the connection for 127.0.0.1
+09:49:35 INFO  : disconnect
+09:54:38 INFO  : connect -url tcp:127.0.0.1:3121
+09:54:38 INFO  : bpremove -all
+09:54:39 INFO  : Context for 'APU' is selected.
+09:54:39 INFO  : System reset is completed.
+09:54:42 INFO  : 'after 3000' command is executed.
+09:54:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+09:54:45 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+09:54:46 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+09:54:49 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+09:54:49 INFO  : configparams force-mem-access 1
+09:54:49 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+09:54:49 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+09:54:50 INFO  : ps7_init
+09:54:50 INFO  : ps7_post_config
+09:54:50 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+09:54:50 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+09:54:50 INFO  : con
+09:54:50 INFO  : configparams force-mem-access 0
+09:54:50 INFO  : Testing the connection for 127.0.0.1
+09:55:11 INFO  : disconnect
+09:55:14 INFO  : connect -url tcp:127.0.0.1:3121
+09:55:14 INFO  : bpremove -all
+09:55:15 INFO  : Context for 'APU' is selected.
+09:55:15 INFO  : System reset is completed.
+09:55:18 INFO  : 'after 3000' command is executed.
+09:55:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+09:55:21 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+09:55:21 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+09:55:24 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+09:55:24 INFO  : configparams force-mem-access 1
+09:55:24 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+09:55:24 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+09:55:25 INFO  : ps7_init
+09:55:25 INFO  : ps7_post_config
+09:55:25 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+09:55:25 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+09:55:26 INFO  : con
+09:55:26 INFO  : configparams force-mem-access 0
+09:55:26 INFO  : Testing the connection for 127.0.0.1
+09:55:41 INFO  : disconnect
+09:55:45 INFO  : connect -url tcp:127.0.0.1:3121
+09:55:45 INFO  : bpremove -all
+09:55:46 INFO  : Context for 'APU' is selected.
+09:55:46 INFO  : System reset is completed.
+09:55:49 INFO  : 'after 3000' command is executed.
+09:55:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+09:55:53 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+09:55:53 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+09:55:56 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+09:55:56 INFO  : configparams force-mem-access 1
+09:55:56 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+09:55:56 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+09:55:57 INFO  : ps7_init
+09:55:57 INFO  : ps7_post_config
+09:55:57 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+09:55:57 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+09:55:57 INFO  : con
+09:55:57 INFO  : configparams force-mem-access 0
+09:55:57 INFO  : Testing the connection for 127.0.0.1
+09:57:54 INFO  : disconnect
+10:02:33 INFO  : connection terminated
+10:02:33 INFO  : connection terminated
+10:02:33 INFO  : scheduling shutdown timer for 2 seconds ...
+10:02:37 INFO  : Terminating Vitis C++ Server
+10:02:37 INFO  : Vitis C++ Server terminated
+10:03:04 INFO  : updated workspace path: C:\Users\hsc\Documents\Codex\2026-09-20\wo-m\outputs\vitis-capture-import
+10:03:10 INFO  : XSDB server has started successfully from frontend.
+10:03:10 INFO  : It has taken  4secs.
+10:03:11 INFO  : Connection to XSDB Server established.
+10:03:11 INFO  : It has taken  1secs.
+10:03:11 INFO  : Done
+10:04:39 INFO  : connect -url tcp:127.0.0.1:3121
+10:04:39 INFO  : bpremove -all
+10:04:40 INFO  : Context for 'APU' is selected.
+10:04:40 INFO  : System reset is completed.
+10:04:43 INFO  : 'after 3000' command is executed.
+10:04:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+10:04:47 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+10:04:47 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+10:04:47 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+10:04:47 INFO  : configparams force-mem-access 1
+10:04:48 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+10:04:48 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+10:04:48 INFO  : ps7_init
+10:04:48 INFO  : ps7_post_config
+10:04:48 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+10:04:49 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+10:04:49 INFO  : con
+10:04:49 INFO  : configparams force-mem-access 0
+10:04:49 INFO  : Testing the connection for 127.0.0.1
+10:08:16 INFO  : disconnect
+10:08:20 INFO  : connection terminated
+10:08:20 INFO  : connection terminated
+10:08:20 INFO  : scheduling shutdown timer for 2 seconds ...
+10:08:23 INFO  : Terminating Vitis C++ Server
+10:08:23 INFO  : Vitis C++ Server terminated
+10:35:49 INFO  : updated workspace path: C:\Users\hsc\Documents\Codex\2026-09-20\wo-m\outputs\vitis-capture-import
+10:35:56 INFO  : XSDB server has started successfully from frontend.
+10:35:56 INFO  : It has taken  4secs.
+10:35:57 INFO  : Connection to XSDB Server established.
+10:35:57 INFO  : It has taken  1secs.
+10:35:57 INFO  : Done
+10:36:11 INFO  : connect -url tcp:127.0.0.1:3121
+10:36:11 INFO  : bpremove -all
+10:36:12 INFO  : Context for 'APU' is selected.
+10:36:13 INFO  : System reset is completed.
+10:36:16 INFO  : 'after 3000' command is executed.
+10:36:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+10:36:19 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+10:36:19 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+10:36:20 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+10:36:20 INFO  : configparams force-mem-access 1
+10:36:20 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+10:36:20 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+10:36:20 INFO  : ps7_init
+10:36:21 INFO  : ps7_post_config
+10:36:21 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+10:36:21 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+10:36:21 INFO  : con
+10:36:21 INFO  : configparams force-mem-access 0
+10:36:21 INFO  : Testing the connection for 127.0.0.1
+10:36:39 INFO  : disconnect
+10:36:42 INFO  : connect -url tcp:127.0.0.1:3121
+10:36:42 INFO  : bpremove -all
+10:36:43 INFO  : Context for 'APU' is selected.
+10:36:43 INFO  : System reset is completed.
+10:36:46 INFO  : 'after 3000' command is executed.
+10:36:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+10:36:50 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+10:36:50 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+10:36:53 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+10:36:53 INFO  : configparams force-mem-access 1
+10:36:53 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+10:36:53 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+10:36:54 INFO  : ps7_init
+10:36:54 INFO  : ps7_post_config
+10:36:54 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+10:36:54 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+10:36:54 INFO  : con
+10:36:54 INFO  : configparams force-mem-access 0
+10:36:54 INFO  : Testing the connection for 127.0.0.1
+10:37:04 INFO  : disconnect
+10:37:13 INFO  : connect -url tcp:127.0.0.1:3121
+10:37:13 INFO  : bpremove -all
+10:37:14 INFO  : Context for 'APU' is selected.
+10:37:14 INFO  : System reset is completed.
+10:37:17 INFO  : 'after 3000' command is executed.
+10:37:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+10:37:21 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+10:37:21 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+10:37:24 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+10:37:24 INFO  : configparams force-mem-access 1
+10:37:25 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+10:37:25 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+10:37:25 INFO  : ps7_init
+10:37:25 INFO  : ps7_post_config
+10:37:25 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+10:37:25 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+10:37:26 INFO  : con
+10:37:26 INFO  : configparams force-mem-access 0
+10:37:26 INFO  : Testing the connection for 127.0.0.1
+10:37:46 INFO  : disconnect
+10:37:50 INFO  : connect -url tcp:127.0.0.1:3121
+10:37:50 INFO  : bpremove -all
+10:37:51 INFO  : Context for 'APU' is selected.
+10:37:51 INFO  : System reset is completed.
+10:37:54 INFO  : 'after 3000' command is executed.
+10:37:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-23727093-0"}' command is executed.
+10:37:58 INFO  : Device configured successfully with "C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit"
+10:37:58 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+10:38:01 INFO  : loadhw -hw C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/system_continuous_20260915.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+10:38:01 INFO  : configparams force-mem-access 1
+10:38:01 INFO  : targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+10:38:01 INFO  : source C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/ps7_init.tcl
+10:38:02 INFO  : ps7_init
+10:38:02 INFO  : ps7_post_config
+10:38:02 INFO  : targets -set -nocase -filter {name =~ "*A9*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-4ba00477-0"}
+10:38:02 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf
+10:38:02 INFO  : con
+10:38:02 INFO  : configparams force-mem-access 0
+10:38:02 INFO  : Testing the connection for 127.0.0.1
+10:41:01 INFO  : disconnect
+22:29:38 INFO  : connection terminated
+22:29:38 INFO  : connection terminated
+22:29:38 INFO  : scheduling shutdown timer for 2 seconds ...
+22:29:40 INFO  : Terminating Vitis C++ Server
+22:29:41 INFO  : Vitis C++ Server terminated
