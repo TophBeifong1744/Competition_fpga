@@ -43,6 +43,14 @@ The HWH must expose these AXI DMA parameters at the exact configured instance:
 The declared maximum is `(1 << length_width_bits) - 1`; each concrete transfer
 must still satisfy the configured granularity and contain full AXIS beats.
 
+Without S2MM DRE, `buffer_alignment_bytes` must be a positive integer multiple
+of `memory_data_width_bits / 8`, with a positive byte-addressable memory width.
+This makes every address admitted by the declared alignment legal for the
+selected DMA memory-mapped interface. For a 64-bit memory interface, 8, 16 and
+64 bytes qualify; 12 bytes does not. This is an address constraint, separate
+from `length_granularity_bytes` and the receive length checks. This candidate
+still rejects DRE-enabled profiles under its existing receive-only contract.
+
 ## Command
 
 Run from the Skill directory and always select a new output file:

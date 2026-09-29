@@ -1,0 +1,46 @@
+{
+  "case": "new-width-128-alignment-8",
+  "synthetic_only": true,
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\issue13\\task-packages\\PKG-A-SKILLS\\candidate-20260923\\exports\\pynq-overlay-dma-validation\\scripts\\validate_receive_profile.py",
+    "--profile",
+    "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\pr32-i22-b01-repair-20260929\\verification\\cases\\new-width-128-alignment-8\\references\\example-receive\\receive-profile.json",
+    "--output",
+    "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\pr32-i22-b01-repair-20260929\\verification\\cases\\new-width-128-alignment-8\\report.json"
+  ],
+  "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\issue13\\task-packages\\PKG-A-SKILLS\\candidate-20260923\\exports\\pynq-overlay-dma-validation",
+  "python_version": "Python 3.14.6",
+  "validator_sha256": "5c693d637e7a0c109634fbe11ce3026a376ba77793c4bad777c2cc1968b0101e",
+  "input_sha256": {
+    "receive-profile.json": "5f1be1bb41a98ea287380bbfc08d5035d0ed8145573b86ed0708fbb9a9f0c129",
+    "design.bit": "7a61da9f823718c099a57ee29ba7fe098e19f9400c69bbb3a86595e710838ee8",
+    "design.hwh": "f3a7f5da5706f76d2725146186032ec3ef258caca600e54d2fa6414025a4a5f8",
+    "build-manifest.json": "946a37e8d2ba1b60014ec044753c7fef855f84d74fb263b63c279381dd3e8693"
+  },
+  "payload_schema_sha256": "e2cf7d09e5aa7284d21137e71b113dbcd2de8c6eb7144af042f7e037e3074b43",
+  "expected": {
+    "exit_code": 1,
+    "first_issue": "S2MM_ADDRESS_ALIGNMENT"
+  },
+  "observed": {
+    "exit_code": 1,
+    "status": "FAIL",
+    "first_issue": "S2MM_ADDRESS_ALIGNMENT",
+    "all_issues": [
+      "S2MM_ADDRESS_ALIGNMENT"
+    ],
+    "artifact_hashes": {
+      "bit": "7a61da9f823718c099a57ee29ba7fe098e19f9400c69bbb3a86595e710838ee8",
+      "hwh": "f3a7f5da5706f76d2725146186032ec3ef258caca600e54d2fa6414025a4a5f8",
+      "manifest": "946a37e8d2ba1b60014ec044753c7fef855f84d74fb263b63c279381dd3e8693",
+      "payload_schema": "e2cf7d09e5aa7284d21137e71b113dbcd2de8c6eb7144af042f7e037e3074b43"
+    },
+    "report_sha256": "f429ce6786dde502d38994919305913422e7ef93dcd86d0d5a1d0a44558b5f06"
+  },
+  "matched": true,
+  "report": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\pr32-i22-b01-repair-20260929\\verification\\cases\\new-width-128-alignment-8\\report.json",
+  "stdout": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\pr32-i22-b01-repair-20260929\\verification\\cases\\new-width-128-alignment-8\\stdout.txt",
+  "stderr": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\pr32-i22-b01-repair-20260929\\verification\\cases\\new-width-128-alignment-8\\stderr.txt"
+}

@@ -288,6 +288,16 @@ def validate_receive(profile_path: Path, profile: dict[str, Any], manifest: dict
         if field in numbers:
             result.check("BYTE_WIDTH", numbers[field] % 8 == 0,
                          f"receive_contract.{field} must be byte-addressable")
+    # Without S2MM DRE, every address admitted by the declared alignment must
+    # also satisfy the memory-mapped data-width alignment required by AXI DMA.
+    if (contract.get("s2mm_dre") is False
+            and "buffer_alignment_bytes" in numbers
+            and "memory_data_width_bits" in numbers
+            and numbers["memory_data_width_bits"] % 8 == 0):
+        memory_width_bytes = numbers["memory_data_width_bits"] // 8
+        result.check("S2MM_ADDRESS_ALIGNMENT",
+                     numbers["buffer_alignment_bytes"] % memory_width_bytes == 0,
+                     "no-DRE buffer_alignment_bytes must be a multiple of the S2MM memory-mapped data width in bytes")
     if "length_width_bits" in numbers and "max_transfer_bytes" in numbers:
         expected_max = (1 << numbers["length_width_bits"]) - 1
         result.check("MAX_TRANSFER_LENGTH", numbers["max_transfer_bytes"] == expected_max,

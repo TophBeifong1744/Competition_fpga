@@ -1,0 +1,187 @@
+{
+  "claim_stage": "BOARD_PREP",
+  "evidence_profile": "SPECIALIST_ACCEPTANCE",
+  "scope": "offline synthetic static receive-profile CLI only",
+  "cases": [
+    {
+      "case": "old-original-64",
+      "matched": true,
+      "exit_code": 0,
+      "first_issue": null,
+      "issues": [],
+      "report_sha256": "194e20739ebe390cf21057420b0793144748225b8879f85be34fc9902228a249"
+    },
+    {
+      "case": "old-alignment-1",
+      "matched": true,
+      "exit_code": 0,
+      "first_issue": null,
+      "issues": [],
+      "report_sha256": "e80b405828e9d4faf372f468f8b7a1678c82d1cabc4a88b83682ab296f312750"
+    },
+    {
+      "case": "new-original-64",
+      "matched": true,
+      "exit_code": 0,
+      "first_issue": null,
+      "issues": [],
+      "report_sha256": "34e0b8014c011ad6338ea4315c71c14b8c2f06b77c28147a43b19e6ea451aafd"
+    },
+    {
+      "case": "new-alignment-1",
+      "matched": true,
+      "exit_code": 1,
+      "first_issue": "S2MM_ADDRESS_ALIGNMENT",
+      "issues": [
+        "S2MM_ADDRESS_ALIGNMENT"
+      ],
+      "report_sha256": "bb7aa6477aff05a7ff13f70f8f7b8436585d7b7e84c91148966e0c5c6639965e"
+    },
+    {
+      "case": "new-alignment-4",
+      "matched": true,
+      "exit_code": 1,
+      "first_issue": "S2MM_ADDRESS_ALIGNMENT",
+      "issues": [
+        "S2MM_ADDRESS_ALIGNMENT"
+      ],
+      "report_sha256": "4de5d0e5724649294c5dcd17c43bdca55e40bdff1319d7ae6c8ffa46926e26a3"
+    },
+    {
+      "case": "new-alignment-8",
+      "matched": true,
+      "exit_code": 0,
+      "first_issue": null,
+      "issues": [],
+      "report_sha256": "81beaa72454214a0e3af3dd9e037ad14f02a5a51af778d887a89bf8623d832f3"
+    },
+    {
+      "case": "new-alignment-12",
+      "matched": true,
+      "exit_code": 1,
+      "first_issue": "S2MM_ADDRESS_ALIGNMENT",
+      "issues": [
+        "S2MM_ADDRESS_ALIGNMENT"
+      ],
+      "report_sha256": "031c57956af1e84474f63a1a543f8bdba1d001175880221adbf723ee62810a7e"
+    },
+    {
+      "case": "new-alignment-16",
+      "matched": true,
+      "exit_code": 0,
+      "first_issue": null,
+      "issues": [],
+      "report_sha256": "783be64fa95dff693ec1d68705a987551ccb572bcb9373ce26dfb136dd3a1556"
+    },
+    {
+      "case": "new-alignment-bool",
+      "matched": true,
+      "exit_code": 1,
+      "first_issue": "CONTRACT_INTEGER",
+      "issues": [
+        "CONTRACT_INTEGER"
+      ],
+      "report_sha256": "1ba5623bd6451adc9aa8dfb45666986db3f3f3b657233668b8a4d53b6848a350"
+    },
+    {
+      "case": "new-alignment-zero",
+      "matched": true,
+      "exit_code": 1,
+      "first_issue": "CONTRACT_INTEGER",
+      "issues": [
+        "CONTRACT_INTEGER"
+      ],
+      "report_sha256": "63832bf0b731e50ebb02a76d43b05bc7907be03213a480d544d89507760c1914"
+    },
+    {
+      "case": "new-alignment-missing",
+      "matched": true,
+      "exit_code": 1,
+      "first_issue": "CONTRACT_INTEGER",
+      "issues": [
+        "CONTRACT_INTEGER"
+      ],
+      "report_sha256": "853de6194ca07396a2ceb4a54f3f749080488d7b0954c70acc74b6c02ab7a3b9"
+    },
+    {
+      "case": "new-width-bool",
+      "matched": true,
+      "exit_code": 1,
+      "first_issue": "CONTRACT_INTEGER",
+      "issues": [
+        "CONTRACT_INTEGER",
+        "HWH_C_M_AXI_S2MM_DATA_WIDTH"
+      ],
+      "report_sha256": "97d9e12b96fa161a405d43c3509ebbc2a98b3c7d309cca1471e3b77c623deae7"
+    },
+    {
+      "case": "new-width-zero",
+      "matched": true,
+      "exit_code": 1,
+      "first_issue": "CONTRACT_INTEGER",
+      "issues": [
+        "CONTRACT_INTEGER",
+        "HWH_C_M_AXI_S2MM_DATA_WIDTH"
+      ],
+      "report_sha256": "e71121abad4b396d71f9b6b5d0eab5ba32b1e0859d71600fa68cea0634114c47"
+    },
+    {
+      "case": "new-width-missing",
+      "matched": true,
+      "exit_code": 1,
+      "first_issue": "CONTRACT_INTEGER",
+      "issues": [
+        "CONTRACT_INTEGER",
+        "HWH_C_M_AXI_S2MM_DATA_WIDTH"
+      ],
+      "report_sha256": "a27355d7db65d8c8c60ef841a652e5c7cbb13c9ba51e661bde87a3408f1fc6e3"
+    },
+    {
+      "case": "new-width-12",
+      "matched": true,
+      "exit_code": 1,
+      "first_issue": "BYTE_WIDTH",
+      "issues": [
+        "BYTE_WIDTH"
+      ],
+      "report_sha256": "85b8f0ae47b88d1003f9a5defcd850d3ff9a52548c95761f81066d074360b630"
+    },
+    {
+      "case": "new-dre-alignment-1",
+      "matched": true,
+      "exit_code": 1,
+      "first_issue": "CONTRACT_S2MM_DRE",
+      "issues": [
+        "CONTRACT_S2MM_DRE"
+      ],
+      "report_sha256": "674035d5d99a4ab71dcf9d795568c4b59967cf7a8eb485416ff0793dece6b6d6"
+    },
+    {
+      "case": "new-length-96-alignment-64",
+      "matched": true,
+      "exit_code": 0,
+      "first_issue": null,
+      "issues": [],
+      "report_sha256": "baa2bfacbdbc6a476664790f32a1c9a83470f3db394d240edb41e0fa8104e004"
+    },
+    {
+      "case": "new-width-128-alignment-8",
+      "matched": true,
+      "exit_code": 1,
+      "first_issue": "S2MM_ADDRESS_ALIGNMENT",
+      "issues": [
+        "S2MM_ADDRESS_ALIGNMENT"
+      ],
+      "report_sha256": "f429ce6786dde502d38994919305913422e7ef93dcd86d0d5a1d0a44558b5f06"
+    },
+    {
+      "case": "new-width-128-alignment-16",
+      "matched": true,
+      "exit_code": 0,
+      "first_issue": null,
+      "issues": [],
+      "report_sha256": "52ab73dc92f22bd053ecac3dc3759e022a4dbb38314613426ecb055ec0cb2488"
+    }
+  ],
+  "all_matched": true
+}
