@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Sep 28 13:24:11 2026
+# Process ID         : 11012
+# Current directory  : C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/codex_out/issue19-v2-targeted-20260928/unified-regression-r2/servo
+# Command line       : xsim.exe -log simulation.log -mode tcl -source {xsim.dir/dut_test/xsim_script.tcl}
+# Log file           : C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/codex_out/issue19-v2-targeted-20260928/unified-regression-r2/servo/simulation.log
+# Journal file       : C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/codex_out/issue19-v2-targeted-20260928/unified-regression-r2/servo\xsim.jou
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36176 MB
+# Available Virtual  : 22455 MB
+#-----------------------------------------------------------
+source xsim.dir/dut_test/xsim_script.tcl
+# xsim {dut_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS motor_drive checks=61 CLK_FREQ_HZ=100000000 MAX_ANGLE_DEG=360
+$finish called at time : 681513115 ns : File "C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/simulation/tb/servo/tb_motor_drive.v" Line 151
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:27 . Memory (MB): peak = 220.648 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 11336 KB (Peak: 11336 KB), Simulation CPU Usage: 27015 ms
+INFO: [Common 17-206] Exiting xsim at Mon Sep 28 13:24:40 2026...

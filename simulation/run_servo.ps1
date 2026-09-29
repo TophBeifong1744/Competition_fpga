@@ -37,7 +37,8 @@ try{
     $result.stages+=@{name='xsim';exit_code=$LASTEXITCODE}
     if($LASTEXITCODE -ne 0){throw 'Simulation process failed'}
     $log=Get-Content simulation.log -Raw
-    if($log -notmatch 'PASS motor_drive checks=39' -or $log -match 'FAIL|Fatal:|ERROR:'){throw 'Simulation verdict failed'}
+    $expectedChecks=if($MaxAngleDeg -eq 220){69}else{61}
+    if(-not $log.Contains("PASS motor_drive checks=$expectedChecks") -or $log -match 'FAIL|Fatal:|ERROR:'){throw 'Simulation verdict failed'}
     $result.status='PASS_MODULE_SIMULATION'
     Write-Output "PASS servo active-library CLK_FREQ_HZ=$ClockHz MAX_ANGLE_DEG=$MaxAngleDeg"
 }catch{

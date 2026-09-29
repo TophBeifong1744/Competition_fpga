@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Sep 28 13:25:06 2026
+# Process ID         : 15948
+# Current directory  : C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/codex_out/issue19-v2-targeted-20260928/unified-regression-r2/snapshot_joint
+# Command line       : xsim.exe -log simulation.log -mode tcl -source {xsim.dir/dut_test/xsim_script.tcl}
+# Log file           : C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/codex_out/issue19-v2-targeted-20260928/unified-regression-r2/snapshot_joint/simulation.log
+# Journal file       : C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/codex_out/issue19-v2-targeted-20260928/unified-regression-r2/snapshot_joint\xsim.jou
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36176 MB
+# Available Virtual  : 22493 MB
+#-----------------------------------------------------------
+source xsim.dir/dut_test/xsim_script.tcl
+# xsim {dut_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS integration case=reset wins snapshot=0/0 valid=0 live=0/0
+PASS integration case=first event plus req snapshot=0/0 valid=1 live=1/0
+PASS integration case=next req sees event snapshot=1/0 valid=1 live=1/0
+PASS integration case=both events plus req snapshot=1/0 valid=1 live=2/1
+PASS integration case=next req sees both snapshot=2/1 valid=1 live=2/1
+PASS integration case=live advances no req snapshot=2/1 valid=0 live=3/2
+PASS integration case=clear plus req old data snapshot=3/2 valid=1 live=0/0
+PASS integration case=next req sees cleared snapshot=0/0 valid=1 live=0/0
+PASS integration case=repopulate stats snapshot=0/0 valid=0 live=1/1
+PASS integration case=clear event req old snapshot=1/1 valid=1 live=0/1
+PASS integration case=next sees clear event snapshot=0/1 valid=1 live=0/1
+PASS integration case=joint reset snapshot=0/0 valid=0 live=0/0
+PASS integration case=recovery event req snapshot=0/0 valid=1 live=1/1
+PASS integration case=recovery next req snapshot=1/1 valid=1 live=1/1
+PASS integration case=final idle snapshot=1/1 valid=0 live=1/1
+PASS integration case=count toward saturation plus req snapshot=1/1 valid=1 live=2/2
+PASS integration case=count toward saturation plus req snapshot=2/2 valid=1 live=3/3
+PASS integration case=count toward saturation plus req snapshot=3/3 valid=1 live=4/4
+PASS integration case=count toward saturation plus req snapshot=4/4 valid=1 live=5/5
+PASS integration case=count toward saturation plus req snapshot=5/5 valid=1 live=6/6
+PASS integration case=count toward saturation plus req snapshot=6/6 valid=1 live=7/7
+PASS integration case=saturated event plus req snapshot=7/7 valid=1 live=7/7
+PASS integration case=saturated event plus req snapshot=7/7 valid=1 live=7/7
+PASS integration case=saturated event plus req snapshot=7/7 valid=1 live=7/7
+PASS integration case=saturated event plus req snapshot=7/7 valid=1 live=7/7
+PASS integration case=clear saturated overflow event req snapshot=7/7 valid=1 live=1/0
+PASS integration case=next sees overflow clear event snapshot=1/0 valid=1 live=1/0
+PASS integration case=drop-only event plus req snapshot=1/0 valid=1 live=1/1
+PASS integration case=clear both events plus req snapshot=1/1 valid=1 live=1/1
+PASS integration case=repeated clear both events req snapshot=1/1 valid=1 live=1/1
+PASS integration case=clear without req snapshot holds snapshot=1/1 valid=0 live=0/0
+PASS integration case=next request sees zero snapshot=0/0 valid=1 live=0/0
+ALL TESTS PASS: integration COUNT_WIDTH=3 checks=32
+$finish called at time : 326 ns : File "C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/simulation/tb/common/tb_stream_error_snapshot_integration.v" Line 88
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 28 13:25:08 2026...

@@ -11,7 +11,7 @@ pwsh -File ./simulation/run_servo.ps1 -VivadoBin '<Vivado-bin>' -OutputDirectory
 
 [modules.json](modules.json)列出 7 组及来源身份。统一回归校验活动源码哈希，分别编译 Verilog/SystemVerilog；预期 7 行 PASS 与 result.json 中的 PASS_MODULE_REGRESSION。错误、缺标记或非零退出均失败。输出目录必须尚不存在；统一回归仅接受仓库 codex_out 下的新目录，拒绝已有目录和 reparse 输出祖先。历史批准范围不因这些字符串扩大。
 
-唯一活动输入在[RTL](../project/rtl/README.md)与[TB](tb/README.md)。舵机 MAX_ANGLE_DEG 参数化版本（默认360，可设220）仍待独立复核；b1d51d4 批准仅覆盖旧快照。run_servo 默认100 MHz，可用 -ClockHz 1000000 作入口诊断。本次不改其时钟/角度合同。
+唯一活动输入在[RTL](../project/rtl/README.md)与[TB](tb/README.md)。#19 候选分支的舵机活动源现为 v2，包含 `angle_valid_i` 与 `RESET_ANGLE_DEG`，默认360°、可设220°；`run_servo.ps1` 按两档检查 61/69 项作者 TB 标记。针对 A 的定向入口见[servo TB 说明](tb/servo/README.md)。b1d51d4 批准仅覆盖旧快照，当前 v2 待 A 独立复核；仿真不能推断机械到位。
 
 获准后由用户在已打开的 Vivado 工程执行 `source /实际路径/project/add_sources.tcl`。它只加入三件基础设计源，不选系统顶层、不接 BD、不修改约束，本次未执行。实际 one 工程不随仓库路径自动修改。
 
