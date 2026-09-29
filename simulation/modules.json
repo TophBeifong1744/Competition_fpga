@@ -1,7 +1,9 @@
 {
   "schema_version": 1,
-  "source_commit": "1aab6b5370558c7e24fda97d26b73edc90a66fde",
-  "scope": "Reviewed C001-C003 and servo module library; not board/BD acceptance; servo target now MAX_ANGLE_DEG candidate pending independent review",
+  "source_commit": null,
+  "historical_source_commit": "1aab6b5370558c7e24fda97d26b73edc90a66fde",
+  "source_set_note": "Mixed-source module manifest; use each file's original and candidate identities and this manifest hash for the exact current set",
+  "scope": "Reviewed C001-C003 remain unchanged; servo target is v2 candidate pending A independent review; not board/BD acceptance",
   "normalization": "CRLF to LF only; original snapshots remain unchanged",
   "files": [
     {
@@ -9,20 +11,24 @@
       "source_commit": "b1d51d44aa2c055a145b832b7c272fd33b7d0395",
       "target": "project/rtl/servo/motor_drive.v",
       "original_sha256": "0fcf25b63efdc55794667e892a3f3920f20128beb7458d501509ea1d3d37b4dd",
-      "normalized_sha256": "0d905c51fcc13e8b16e99b6e762babbe157ac74f8dc4e57d46b5e089628800a0",
+      "normalized_sha256": "23f438b7c5d6ac491f6532c447413edad48f88d0bc79325d90ace8e3981f2214",
       "baseline_normalized_sha256": "0fcf25b63efdc55794667e892a3f3920f20128beb7458d501509ea1d3d37b4dd",
-      "status": "candidate_max_angle_parameter_pending_independent_review",
-      "change_note": "source/source_commit/original_sha256 identify the unchanged approved snapshot; target is a new candidate, not covered by that approval"
+      "status": "candidate_servo_v2_pending_A_independent_review",
+      "candidate_source_commit": "d63544d6c48b9cfaaf2c629536de2647b8762f84",
+      "candidate_sha256": "23f438b7c5d6ac491f6532c447413edad48f88d0bc79325d90ace8e3981f2214",
+      "change_note": "source_commit/original_sha256 retain old approved b1d51d4 scope; active target is byte-identical to v2 candidate d63544d and has separate pending status"
     },
     {
       "source": "task-packages/PKG-SERVO-PWM/tb/tb_motor_drive.v",
       "source_commit": "b1d51d44aa2c055a145b832b7c272fd33b7d0395",
       "target": "simulation/tb/servo/tb_motor_drive.v",
       "original_sha256": "0f54aaeb9abaec223b0b650c7b162dcc818e21841054a86ea36a670445366076",
-      "normalized_sha256": "5199943ff2cbe7ad8a862f4e731c28c372bf8335f1be9e2e6a694406791064d9",
+      "normalized_sha256": "fb17b0e6328dc82ad06ee075c690d7d359ef70b9aa94e8d5247bf4f0930ebf33",
       "baseline_normalized_sha256": "0f54aaeb9abaec223b0b650c7b162dcc818e21841054a86ea36a670445366076",
-      "status": "candidate_max_angle_parameter_pending_independent_review",
-      "change_note": "source/source_commit/original_sha256 identify the unchanged approved snapshot; target is a new candidate, not covered by that approval"
+      "status": "candidate_servo_v2_pending_A_independent_review",
+      "candidate_source_commit": "d63544d6c48b9cfaaf2c629536de2647b8762f84",
+      "candidate_sha256": "fb17b0e6328dc82ad06ee075c690d7d359ef70b9aa94e8d5247bf4f0930ebf33",
+      "change_note": "source_commit/original_sha256 retain old approved b1d51d4 scope; active target is byte-identical to v2 candidate d63544d and has separate pending status"
     },
     {
       "source": "task-packages/PKG-A-ACQ/outsourcing/C-RTL-001/submission/rtl/stream_error_stats.sv",
@@ -87,7 +93,7 @@
         "project/rtl/servo/motor_drive.v",
         "simulation/tb/servo/tb_motor_drive.v"
       ],
-      "marker": "PASS motor_drive checks=39"
+      "marker": "PASS motor_drive checks=61"
     },
     {
       "name": "stats",

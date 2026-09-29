@@ -1,0 +1,59 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Sep 28 13:16:01 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/servo_v2_targeted/xsim_script.tcl
+# xsim {servo_v2_targeted} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+OBS reset positions horizontal width actual_ns=1500000 expected_ns=1500000
+OBS reset positions vertical width actual_ns=1682000 expected_ns=1682000
+OBS reset positions horizontal period actual_ns=20000000 expected_ns=20000000
+OBS reset positions vertical period actual_ns=20000000 expected_ns=20000000
+OBS reset positions aligned rise actual_ns=20000045 expected_ns=20000045
+OBS simultaneous commands horizontal width actual_ns=1000000 expected_ns=1000000
+OBS simultaneous commands vertical width actual_ns=1000000 expected_ns=1000000
+OBS simultaneous commands horizontal period actual_ns=20000000 expected_ns=20000000
+OBS simultaneous commands vertical period actual_ns=20000000 expected_ns=20000000
+OBS simultaneous commands aligned rise actual_ns=40000045 expected_ns=40000045
+OBS one-axis current horizontal width actual_ns=1000000 expected_ns=1000000
+OBS one-axis current vertical width actual_ns=1000000 expected_ns=1000000
+OBS one-axis current horizontal period actual_ns=20000000 expected_ns=20000000
+OBS one-axis current vertical period actual_ns=20000000 expected_ns=20000000
+OBS one-axis current aligned rise actual_ns=60000045 expected_ns=60000045
+OBS one-axis update horizontal width actual_ns=2000000 expected_ns=2000000
+OBS one-axis update vertical width actual_ns=1000000 expected_ns=1000000
+OBS one-axis update horizontal period actual_ns=20000000 expected_ns=20000000
+OBS one-axis update vertical period actual_ns=20000000 expected_ns=20000000
+OBS one-axis update aligned rise actual_ns=80000045 expected_ns=80000045
+OBS vertical current horizontal width actual_ns=2000000 expected_ns=2000000
+OBS vertical current vertical width actual_ns=1000000 expected_ns=1000000
+OBS vertical current horizontal period actual_ns=20000000 expected_ns=20000000
+OBS vertical current vertical period actual_ns=20000000 expected_ns=20000000
+OBS vertical current aligned rise actual_ns=100000045 expected_ns=100000045
+OBS vertical update horizontal width actual_ns=2000000 expected_ns=2000000
+OBS vertical update vertical width actual_ns=500000 expected_ns=500000
+OBS vertical update horizontal period actual_ns=20000000 expected_ns=20000000
+OBS vertical update vertical period actual_ns=20000000 expected_ns=20000000
+OBS vertical update aligned rise actual_ns=120000045 expected_ns=120000045
+OBS pair reset release horizontal width actual_ns=1500000 expected_ns=1500000
+OBS pair reset release vertical width actual_ns=1682000 expected_ns=1682000
+OBS pair reset release horizontal period actual_ns=20000000 expected_ns=20000000
+OBS pair reset release vertical period actual_ns=20000000 expected_ns=20000000
+OBS pair reset release aligned rise actual_ns=140100075 expected_ns=140100075
+OBS pair reset holds horizontal width actual_ns=1500000 expected_ns=1500000
+OBS pair reset holds vertical width actual_ns=1682000 expected_ns=1682000
+OBS pair reset holds horizontal period actual_ns=20000000 expected_ns=20000000
+OBS pair reset holds vertical period actual_ns=20000000 expected_ns=20000000
+OBS pair reset holds aligned rise actual_ns=160100075 expected_ns=160100075
+PASS v2 dual-axis checks=41 CLK_FREQ_HZ=100000000
+$finish called at time : 160100075 ns : File "C:/Users/hsc/.codex/worktrees/issue19-servo/Competition_fpga/simulation/tb/servo/tb_servo_dual_axis_v2.sv" Line 112
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 219.324 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 12592 KB (Peak: 12592 KB), Simulation CPU Usage: 10921 ms
+INFO: [Common 17-206] Exiting xsim at Mon Sep 28 13:16:14 2026...
