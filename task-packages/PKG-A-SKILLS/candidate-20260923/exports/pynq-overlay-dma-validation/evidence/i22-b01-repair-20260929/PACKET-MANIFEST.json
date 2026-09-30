@@ -1,0 +1,114 @@
+{
+  "scope": "I22-B-01 synthetic offline static review only",
+  "parent_commit": "6a1efb1fa945ec17a38baa128ca93fb829503085",
+  "product_freeze_sha256": {
+    "scripts/validate_receive_profile.py": "5c693d637e7a0c109634fbe11ce3026a376ba77793c4bad777c2cc1968b0101e",
+    "references/receive-profile-contract.md": "79dd356f81e304107041a0932a6f9b6421e9e435e7903599e304c746c8d7f08b"
+  },
+  "members": [
+    {
+      "path": "scripts/validate_receive_profile.py",
+      "sha256": "5c693d637e7a0c109634fbe11ce3026a376ba77793c4bad777c2cc1968b0101e"
+    },
+    {
+      "path": "references/receive-profile-contract.md",
+      "sha256": "79dd356f81e304107041a0932a6f9b6421e9e435e7903599e304c746c8d7f08b"
+    },
+    {
+      "path": "tests/test_i22_b01_alignment.py",
+      "sha256": "ca7148916b327f0aa21e73c433ce679440a6bed0d11c567e9eb5290daad0b870"
+    },
+    {
+      "path": "references/example-receive/receive-profile.json",
+      "sha256": "f129388d06a00e776a6bd9b8c98bf5f42d54956257e7dd33226be43e0b870df5"
+    },
+    {
+      "path": "references/example-receive/build-manifest.json",
+      "sha256": "ef3e31401be03013696de261d604ef448275d95f712ac151f5c13618f365636e"
+    },
+    {
+      "path": "references/example-receive/design.bit",
+      "sha256": "7a61da9f823718c099a57ee29ba7fe098e19f9400c69bbb3a86595e710838ee8"
+    },
+    {
+      "path": "references/example-receive/design.hwh",
+      "sha256": "2147f25c6d4748183d91c4747f528a0260a50554a54c140ae1b292990e6f4f65"
+    },
+    {
+      "path": "references/soundsight-record-v1.json",
+      "sha256": "e2cf7d09e5aa7284d21137e71b113dbcd2de8c6eb7144af042f7e037e3074b43"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/README.md",
+      "sha256": "c7afde4b2fc94723102ab369c80134f788569c8abd99f4303d4368c8be0f225d"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/new-alignment-1/command-result.json",
+      "sha256": "8f5fcdaaf5e6a9d5062232561afa213af2534d848eb07f3069623b86adc5662a"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/new-alignment-1/report.json",
+      "sha256": "bb7aa6477aff05a7ff13f70f8f7b8436585d7b7e84c91148966e0c5c6639965e"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/new-dre-alignment-1/command-result.json",
+      "sha256": "3a5308177194fd79d5b3f9516f8378a3ee94dea2f011dcdb846e9cc542fd5a0d"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/new-dre-alignment-1/report.json",
+      "sha256": "674035d5d99a4ab71dcf9d795568c4b59967cf7a8eb485416ff0793dece6b6d6"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/new-length-96-alignment-64/command-result.json",
+      "sha256": "15e8a25bbd21efd3c3e9f85025dfa525efca722b5d2a3ef6ef76d1b4d2a192c5"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/new-length-96-alignment-64/report.json",
+      "sha256": "baa2bfacbdbc6a476664790f32a1c9a83470f3db394d240edb41e0fa8104e004"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/new-original-64/command-result.json",
+      "sha256": "ce6cfd0ac002fefaedd7a790e3fcc92f662ee158a339703b95ef1fd7ef9deec6"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/new-original-64/report.json",
+      "sha256": "34e0b8014c011ad6338ea4315c71c14b8c2f06b77c28147a43b19e6ea451aafd"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/new-width-128-alignment-8/command-result.json",
+      "sha256": "7d2de9ed8d6ddf6c16cbddf3c4dbfc9fdf7dd89e5c78b031aefa76c8fbb20a69"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/new-width-128-alignment-8/report.json",
+      "sha256": "f429ce6786dde502d38994919305913422e7ef93dcd86d0d5a1d0a44558b5f06"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/old-alignment-1/command-result.json",
+      "sha256": "1ca1091ff3e498cc4859a2d6bc3ebde4fa150a2946232e3285e86a84e024a94e"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/old-alignment-1/report.json",
+      "sha256": "e80b405828e9d4faf372f468f8b7a1678c82d1cabc4a88b83682ab296f312750"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/old-original-64/command-result.json",
+      "sha256": "718c4d0a6def7291dad48b68803292bb5260d8965e29ce97a05ec663995fcbeb"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/old-original-64/report.json",
+      "sha256": "194e20739ebe390cf21057420b0793144748225b8879f85be34fc9902228a249"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/summary.json",
+      "sha256": "a29a227aa3328525a49bfedfb5da15564c1aee17c6ee7c1843e49ab5091cb195"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/unit-verified-command-result.json",
+      "sha256": "2299a19e494b20e4b5d20be38637ecc3fbf49240ac0ade359d0792c48302e284"
+    },
+    {
+      "path": "evidence/i22-b01-repair-20260929/unit-verified-stderr.txt",
+      "sha256": "7a7731b5e88b495e6bba1a6f232d1bce46a7c83aa0280d802a60bd7fa3ea3b28"
+    }
+  ]
+}

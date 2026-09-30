@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "finding_ids": [
+    "C22-01",
+    "C22-02"
+  ],
+  "phase": "repaired",
+  "claim": "offline_static_only",
+  "python": "3.12.14",
+  "validator_sha256": "f915cdf91187e1e9b54d696035f8fea96c98c0d7c4cc5899ff40f8c31c9cc2b5",
+  "source_profile_sha256": "f129388d06a00e776a6bd9b8c98bf5f42d54956257e7dd33226be43e0b870df5",
+  "cases": [
+    {
+      "id": "valid",
+      "exit_code": 0,
+      "status": "PASS",
+      "issue_codes": [],
+      "profile_sha256": "6c1a4e056bdf823817bb4a53cbc4f1b9b601ca22c27df99792fb494c81d63803",
+      "report_sha256": "6b028e5808df82c9f9c50dd40ac122a129bbb976defa99365ac68838945e2453"
+    },
+    {
+      "id": "legal_timeout",
+      "exit_code": 0,
+      "status": "PASS",
+      "issue_codes": [],
+      "profile_sha256": "d78ff81576b735e67f30aefc56f62f9be6c8d7078ec62ce73196b5f205868cb3",
+      "report_sha256": "0d98fe4f80402b72e352e952cefd654c0b33406f45bfe0ce8b58c49a3c18cdc0"
+    },
+    {
+      "id": "overflow_1e999",
+      "exit_code": 1,
+      "status": "FAIL",
+      "issue_codes": [
+        "RECEIVE_TEST_TIMEOUT"
+      ],
+      "profile_sha256": "847973670aa09cd481d27a6215ea4af3c214442c589e7b3a6eb4bfea0608d69d",
+      "report_sha256": "6d775d112318a204c35bb37a1a03a39676891efe504b7206bb94f1b3453caac4"
+    },
+    {
+      "id": "same_instance",
+      "exit_code": 1,
+      "status": "FAIL",
+      "issue_codes": [
+        "HWH_CONTROL_DMA_DISTINCT"
+      ],
+      "profile_sha256": "ca74f2b44b89e8fd324d0935b5423ca3aa91ff8ba3a777251f6ac7844a93c262",
+      "report_sha256": "7f4dc9327a2a19f3944e48501d12ef6855975043d3bc09738c1a3c88f918759b"
+    },
+    {
+      "id": "leading_slash_alias",
+      "exit_code": 1,
+      "status": "FAIL",
+      "issue_codes": [
+        "HWH_CONTROL_DMA_DISTINCT"
+      ],
+      "profile_sha256": "8c802e935b42aaaba5fe1bb0ecfe16f962f035e7eb1c14603c742a80097aab1f",
+      "report_sha256": "56cf5cd7bc4054a0ea2a75b5911291ea6d1a55a3a4d80dd152c4cb7a8c6e3530"
+    },
+    {
+      "id": "distinct_slash_alias",
+      "exit_code": 0,
+      "status": "PASS",
+      "issue_codes": [],
+      "profile_sha256": "8cc6f7414f424f63d68a952db3a66c312d7714c245a1fea83a5a2c9bf57bf975",
+      "report_sha256": "a675e7e829e938e65dbe75dba5f3550165ca6f8543ac9d4269ab705b6fd50607"
+    }
+  ]
+}

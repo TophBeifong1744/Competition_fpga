@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "finding_ids": [
+    "C22-01",
+    "C22-02"
+  ],
+  "phase": "baseline",
+  "claim": "offline_static_only",
+  "python": "3.12.14",
+  "validator_sha256": "623179d496b62ef01b6a644d2fd082f17159807cbda7fb7840ad119320568906",
+  "source_profile_sha256": "f129388d06a00e776a6bd9b8c98bf5f42d54956257e7dd33226be43e0b870df5",
+  "cases": [
+    {
+      "id": "valid",
+      "exit_code": 0,
+      "status": "PASS",
+      "issue_codes": [],
+      "profile_sha256": "6c1a4e056bdf823817bb4a53cbc4f1b9b601ca22c27df99792fb494c81d63803",
+      "report_sha256": "9742c1dc54c71f8c9eb7043fe0b344b0e0ee1c660831b0049e119b25b10b6fdb"
+    },
+    {
+      "id": "legal_timeout",
+      "exit_code": 0,
+      "status": "PASS",
+      "issue_codes": [],
+      "profile_sha256": "d78ff81576b735e67f30aefc56f62f9be6c8d7078ec62ce73196b5f205868cb3",
+      "report_sha256": "a0e77893b381d544e75e3f04adfb2f7a523061518628a647a04add06ed5e8de2"
+    },
+    {
+      "id": "overflow_1e999",
+      "exit_code": 0,
+      "status": "PASS",
+      "issue_codes": [],
+      "profile_sha256": "847973670aa09cd481d27a6215ea4af3c214442c589e7b3a6eb4bfea0608d69d",
+      "report_sha256": "ed8616696c88a9bca948ba9e4638efc12d616b6f1fe3c9a5d323aca4bbe4d9a7"
+    },
+    {
+      "id": "same_instance",
+      "exit_code": 0,
+      "status": "PASS",
+      "issue_codes": [],
+      "profile_sha256": "ca74f2b44b89e8fd324d0935b5423ca3aa91ff8ba3a777251f6ac7844a93c262",
+      "report_sha256": "c74737c849bcb4eccfb771d39884538494df85b053f9551fcaca814edd0e6a7b"
+    },
+    {
+      "id": "leading_slash_alias",
+      "exit_code": 0,
+      "status": "PASS",
+      "issue_codes": [],
+      "profile_sha256": "8c802e935b42aaaba5fe1bb0ecfe16f962f035e7eb1c14603c742a80097aab1f",
+      "report_sha256": "b98f6a9e484c6f3536aef85cd24c6b5449af3ca1a6e8821560ec762e6251f08d"
+    },
+    {
+      "id": "distinct_slash_alias",
+      "exit_code": 0,
+      "status": "PASS",
+      "issue_codes": [],
+      "profile_sha256": "8cc6f7414f424f63d68a952db3a66c312d7714c245a1fea83a5a2c9bf57bf975",
+      "report_sha256": "e6c722297c870ca58f3462698d790c8491c886b1efa112eaee9fcec4144b8b2d"
+    }
+  ]
+}

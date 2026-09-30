@@ -1,0 +1,44 @@
+{
+  "case": "new-original-64",
+  "synthetic_only": true,
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\issue13\\task-packages\\PKG-A-SKILLS\\candidate-20260923\\exports\\pynq-overlay-dma-validation\\scripts\\validate_receive_profile.py",
+    "--profile",
+    "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\pr32-i22-b01-repair-20260929\\verification\\cases\\new-original-64\\references\\example-receive\\receive-profile.json",
+    "--output",
+    "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\pr32-i22-b01-repair-20260929\\verification\\cases\\new-original-64\\report.json"
+  ],
+  "cwd": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\issue13\\task-packages\\PKG-A-SKILLS\\candidate-20260923\\exports\\pynq-overlay-dma-validation",
+  "python_version": "Python 3.14.6",
+  "validator_sha256": "5c693d637e7a0c109634fbe11ce3026a376ba77793c4bad777c2cc1968b0101e",
+  "input_sha256": {
+    "receive-profile.json": "6c1a4e056bdf823817bb4a53cbc4f1b9b601ca22c27df99792fb494c81d63803",
+    "design.bit": "7a61da9f823718c099a57ee29ba7fe098e19f9400c69bbb3a86595e710838ee8",
+    "design.hwh": "05faad6a58bc83d95c30cdd1415782440a383ecc322b5d020bab1040d34c966c",
+    "build-manifest.json": "82c0fdebd236fe96396e28d8a400175a9d645dd9306341a1788db232060f0ccc"
+  },
+  "payload_schema_sha256": "e2cf7d09e5aa7284d21137e71b113dbcd2de8c6eb7144af042f7e037e3074b43",
+  "expected": {
+    "exit_code": 0,
+    "first_issue": null
+  },
+  "observed": {
+    "exit_code": 0,
+    "status": "PASS",
+    "first_issue": null,
+    "all_issues": [],
+    "artifact_hashes": {
+      "bit": "7a61da9f823718c099a57ee29ba7fe098e19f9400c69bbb3a86595e710838ee8",
+      "hwh": "05faad6a58bc83d95c30cdd1415782440a383ecc322b5d020bab1040d34c966c",
+      "manifest": "82c0fdebd236fe96396e28d8a400175a9d645dd9306341a1788db232060f0ccc",
+      "payload_schema": "e2cf7d09e5aa7284d21137e71b113dbcd2de8c6eb7144af042f7e037e3074b43"
+    },
+    "report_sha256": "34e0b8014c011ad6338ea4315c71c14b8c2f06b77c28147a43b19e6ea451aafd"
+  },
+  "matched": true,
+  "report": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\pr32-i22-b01-repair-20260929\\verification\\cases\\new-original-64\\report.json",
+  "stdout": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\pr32-i22-b01-repair-20260929\\verification\\cases\\new-original-64\\stdout.txt",
+  "stderr": "E:\\Users\\Toph Beifong\\Documents\\GitHub\\Competition_fpga\\codex_out\\pr32-i22-b01-repair-20260929\\verification\\cases\\new-original-64\\stderr.txt"
+}
