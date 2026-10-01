@@ -104,6 +104,25 @@ fresh. A numeric or external protocol error resets activity/Tracker and asks
 audio to fall back. Optional `fatal_emit` hard-cancels before that emission;
 `stop_emit` requests a smooth STOP. Fatal wins on the same event edge.
 
+The schedule's STOP domain includes the closed endpoint
+`E=first_sample_id+T+8`. The renderer's local emit domain remains `[0,T+8)`:
+STOP at E is an end audit only, with no renderer control or additional PCM.
+Without fatal it returns `COMPLETED`, preserving all earlier frame events,
+bindings/takes and the same audio samples/lengths as no STOP. Interior STOP
+still uses the existing smooth fallback; STOP outside the closed schedule
+domain is still rejected.
+
+Only a scheduled EOF STOP adds `result.json.eof_stop_audit`: interval
+`identity` (boot/session/interval/generation), `time_basis=SYNTHETIC_TIME`,
+absolute `at`, `reason=STOP_AT_EOF`, `effective`, `superseded_by`,
+`renderer_control_emitted=false`, and `termination_frames` linking the
+existing per-frame termination records. Same-edge or earlier fatal sets
+`effective=false` and `superseded_by={reason:FATAL,at:<fatal>}`; the interval
+keeps `ABORTED` and its existing hard-cut behavior. This audit records the
+validated synthetic schedule's EOF end or suppression, not a rendered E
+sample, hardware completion, device silence, or resource drain. Non-EOF
+outputs retain their existing fields and meanings.
+
 `take_now` is an explicitly supplied synthetic service event, **not** a measured
 latency. The source→emit `+8` offset belongs only to the dynamic delay stream.
 Physical sample clocks, service bounds, bridge status, and real audio deadlines
