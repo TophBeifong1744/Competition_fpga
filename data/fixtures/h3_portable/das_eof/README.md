@@ -65,6 +65,15 @@ is an input encoding only, not an oracle. Short input and schedules are created
 without importing the product; `EXPECTATIONS-BEFORE-DUT.json` freezes them and
 the reference/checker hashes before the first CLI invocation.
 
+The local `.gitattributes` marks the accepted original JSON literal and its
+provenance JSON `-text`: their original exact bytes must survive Git checkout,
+including legacy CRLF. Numerical expectations and original hash identities must
+not be changed to accommodate Git text normalization. An intermediate test
+commit had normalized these two blobs despite successful execution against the
+unchanged working files; that asset portability defect and its intermediate
+result are retained. The corrected final asset commit preserves both Git blob
+and working identities, and receives a complete affected rerun.
+
 ## Evidence and limitations
 
 Each child has `command.json`, byte-preserved stdout/stderr, actual exit and
