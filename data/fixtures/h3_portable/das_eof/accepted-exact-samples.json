@@ -1,0 +1,383 @@
+{
+  "purpose": "Independent finite math derivation; NOT_DUT_TEST; NOT_NONAUTHOR_ACCEPTED",
+  "round_ties": {
+    "-7/2": -4,
+    "-5/2": -2,
+    "-3/2": -2,
+    "-1/2": 0,
+    "1/2": 0,
+    "3/2": 2,
+    "5/2": 2,
+    "7/2": 4
+  },
+  "short_record": {
+    "pcm_each_channel": [
+      8,
+      16,
+      24,
+      32
+    ],
+    "emit_indices": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "delays_plus_half_expected": [
+      4,
+      12,
+      20,
+      28
+    ],
+    "delays_minus_half_expected": [
+      12,
+      20,
+      28,
+      16
+    ]
+  },
+  "half_pulse_one_channel_expected_two_points": 12,
+  "synthetic_ramp": {
+    "source_n": [
+      2,
+      3,
+      4
+    ],
+    "emit": [
+      10,
+      11,
+      12
+    ],
+    "expected_pcm": [
+      14,
+      22,
+      30
+    ]
+  },
+  "alpha_q12": {
+    "0": 0,
+    "1": 9,
+    "15": 128,
+    "120": 1024,
+    "239": 2039,
+    "240": 2048,
+    "360": 3072,
+    "479": 4087,
+    "480": 4096
+  },
+  "angle_rom_samples": [
+    {
+      "angle_deg": -180,
+      "delays_q12": [
+        0,
+        -22928,
+        -22928,
+        0
+      ],
+      "source_n": 20,
+      "emit": 28,
+      "beam": 1480,
+      "interior_offset_from_20n": 1080
+    },
+    {
+      "angle_deg": -90,
+      "delays_q12": [
+        0,
+        0,
+        -22928,
+        -22928
+      ],
+      "source_n": 20,
+      "emit": 28,
+      "beam": 1502,
+      "interior_offset_from_20n": 1102
+    },
+    {
+      "angle_deg": -45,
+      "delays_q12": [
+        0,
+        16213,
+        0,
+        -16213
+      ],
+      "source_n": 20,
+      "emit": 28,
+      "beam": 1440,
+      "interior_offset_from_20n": 1040
+    },
+    {
+      "angle_deg": 0,
+      "delays_q12": [
+        0,
+        22928,
+        22928,
+        0
+      ],
+      "source_n": 20,
+      "emit": 28,
+      "beam": 1368,
+      "interior_offset_from_20n": 968
+    },
+    {
+      "angle_deg": 45,
+      "delays_q12": [
+        0,
+        16213,
+        32425,
+        16213
+      ],
+      "source_n": 20,
+      "emit": 28,
+      "beam": 1329,
+      "interior_offset_from_20n": 929
+    },
+    {
+      "angle_deg": 90,
+      "delays_q12": [
+        0,
+        0,
+        22928,
+        22928
+      ],
+      "source_n": 20,
+      "emit": 28,
+      "beam": 1346,
+      "interior_offset_from_20n": 946
+    }
+  ],
+  "turn_fixture": {
+    "T": 1600,
+    "slopes": [
+      8,
+      16,
+      24,
+      32
+    ],
+    "offsets": [
+      0,
+      0,
+      0,
+      4096
+    ],
+    "scope": "S5 leaf control arithmetic, not a runnable portable schedule",
+    "controls": [
+      {
+        "emit": 28,
+        "request_angle": 0
+      },
+      {
+        "emit": 100,
+        "request_angle": 45
+      },
+      {
+        "emit": 200,
+        "request_angle": 90
+      },
+      {
+        "emit": 700,
+        "request_angle": -45
+      },
+      {
+        "emit": 701,
+        "request": "STOP"
+      }
+    ],
+    "valid_through_for_fresh": 3000,
+    "selected_transitions": "mono→0 at28; 0→90 at508; 90→mono at988; mono complete1468; +45 and -45 never become endpoints"
+  },
+  "turn_selected_samples": [
+    {
+      "emit": 28,
+      "source_n": 20,
+      "phase_offset": 0,
+      "old": "mono",
+      "new": 0,
+      "alpha_q12": 0,
+      "old_beam_or_mono": 160,
+      "new_beam_or_mono": 1368,
+      "expected_pcm": 160
+    },
+    {
+      "emit": 29,
+      "source_n": 21,
+      "phase_offset": 1,
+      "old": "mono",
+      "new": 0,
+      "alpha_q12": 9,
+      "old_beam_or_mono": 168,
+      "new_beam_or_mono": 1388,
+      "expected_pcm": 171
+    },
+    {
+      "emit": 148,
+      "source_n": 140,
+      "phase_offset": 120,
+      "old": "mono",
+      "new": 0,
+      "alpha_q12": 1024,
+      "old_beam_or_mono": 1120,
+      "new_beam_or_mono": 3768,
+      "expected_pcm": 1782
+    },
+    {
+      "emit": 267,
+      "source_n": 259,
+      "phase_offset": 239,
+      "old": "mono",
+      "new": 0,
+      "alpha_q12": 2039,
+      "old_beam_or_mono": 2072,
+      "new_beam_or_mono": 6148,
+      "expected_pcm": 4101
+    },
+    {
+      "emit": 268,
+      "source_n": 260,
+      "phase_offset": 240,
+      "old": "mono",
+      "new": 0,
+      "alpha_q12": 2048,
+      "old_beam_or_mono": 2080,
+      "new_beam_or_mono": 6168,
+      "expected_pcm": 4124
+    },
+    {
+      "emit": 507,
+      "source_n": 499,
+      "phase_offset": 479,
+      "old": "mono",
+      "new": 0,
+      "alpha_q12": 4087,
+      "old_beam_or_mono": 3992,
+      "new_beam_or_mono": 10948,
+      "expected_pcm": 10933
+    },
+    {
+      "emit": 508,
+      "source_n": 500,
+      "phase_offset": 0,
+      "old": 0,
+      "new": 90,
+      "alpha_q12": 0,
+      "old_beam_or_mono": 10968,
+      "new_beam_or_mono": 10946,
+      "expected_pcm": 10968
+    },
+    {
+      "emit": 748,
+      "source_n": 740,
+      "phase_offset": 240,
+      "old": 0,
+      "new": 90,
+      "alpha_q12": 2048,
+      "old_beam_or_mono": 15768,
+      "new_beam_or_mono": 15746,
+      "expected_pcm": 15757
+    },
+    {
+      "emit": 987,
+      "source_n": 979,
+      "phase_offset": 479,
+      "old": 0,
+      "new": 90,
+      "alpha_q12": 4087,
+      "old_beam_or_mono": 20548,
+      "new_beam_or_mono": 20526,
+      "expected_pcm": 20526
+    },
+    {
+      "emit": 988,
+      "source_n": 980,
+      "phase_offset": 0,
+      "old": 90,
+      "new": "mono",
+      "alpha_q12": 0,
+      "old_beam_or_mono": 20546,
+      "new_beam_or_mono": 7840,
+      "expected_pcm": 20546
+    },
+    {
+      "emit": 1228,
+      "source_n": 1220,
+      "phase_offset": 240,
+      "old": 90,
+      "new": "mono",
+      "alpha_q12": 2048,
+      "old_beam_or_mono": 25346,
+      "new_beam_or_mono": 9760,
+      "expected_pcm": 17553
+    },
+    {
+      "emit": 1467,
+      "source_n": 1459,
+      "phase_offset": 479,
+      "old": 90,
+      "new": "mono",
+      "alpha_q12": 4087,
+      "old_beam_or_mono": 30126,
+      "new_beam_or_mono": 11672,
+      "expected_pcm": 11713
+    },
+    {
+      "emit": 1468,
+      "source_n": 1460,
+      "phase": "mono complete",
+      "expected_pcm": 11680
+    }
+  ],
+  "bounds": {
+    "Q12_four_channel_sum_min": -137438953472,
+    "Q12_four_channel_sum_max": 137438937088,
+    "sum_signed_bits": 38,
+    "fade_sum_signed_bits": 36,
+    "legal_final_range": [
+      -8388608,
+      8388607
+    ]
+  },
+  "fatal_length_notes": [
+    {
+      "T": 1024,
+      "E": 0,
+      "raw_length": 0,
+      "trimmed_source_count": 0,
+      "last_retained_source_n": null
+    },
+    {
+      "T": 1024,
+      "E": 7,
+      "raw_length": 7,
+      "trimmed_source_count": 0,
+      "last_retained_source_n": null
+    },
+    {
+      "T": 1024,
+      "E": 8,
+      "raw_length": 8,
+      "trimmed_source_count": 0,
+      "last_retained_source_n": null
+    },
+    {
+      "T": 1024,
+      "E": 9,
+      "raw_length": 9,
+      "trimmed_source_count": 1,
+      "last_retained_source_n": 0
+    },
+    {
+      "T": 1024,
+      "E": 1024,
+      "raw_length": 1024,
+      "trimmed_source_count": 1016,
+      "last_retained_source_n": 1015
+    },
+    {
+      "T": 1024,
+      "E": 1031,
+      "raw_length": 1031,
+      "trimmed_source_count": 1023,
+      "last_retained_source_n": 1022
+    }
+  ],
+  "rom_input_sha256": "acb899401cf0f1b7d7c9685d52c04bcbf28b6f1454b386bde57310f23776fe86"
+}

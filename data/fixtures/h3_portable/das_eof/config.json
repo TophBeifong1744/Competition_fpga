@@ -1,0 +1,60 @@
+{
+  "scope": "RESEARCH_ONLY",
+  "profile_id": "soundsight-fixed4-dual-domain-research-v1",
+  "source_manifest_sha256": "d0eaa3a5e0f14c863de8bc1185eb99adf070b919a018d186dc1721ae93cce023",
+  "table_manifest_sha256": "0465697bfa2219f2c74275a0a6a2c332d9b90ef7e39439ed9f9aa928d10cd62c",
+  "sample_rate_hz": 48000,
+  "frame_length": 1024,
+  "hop": 512,
+  "backend": "portable_q30_frozen",
+  "geometry": {
+    "positions_mm": [
+      [
+        0,
+        0
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        40,
+        40
+      ],
+      [
+        0,
+        40
+      ]
+    ],
+    "sound_speed_m_s": 343,
+    "correction_policy": "UNAPPLIED_CANDIDATE",
+    "basis": "CANDIDATE_NOT_MEASURED"
+  },
+  "activity": {
+    "on_power_ratio": 4,
+    "off_power_ratio": 2,
+    "attack_frames": 3,
+    "release_frames": 3,
+    "minimum_active_channels": 3,
+    "noise_power_u64": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "band_rms_floor_codes": 1,
+    "reference_sha256": "a73d6ecd5aa4039fc1013866812788778bc4ed8621b22fdc54c0e26a3bd8be94",
+    "initial_state": "INACTIVE",
+    "invalid_policy": "RESET_ACTIVITY_AND_TRACKER"
+  },
+  "tracker": {
+    "half_angle_q8": 7680,
+    "acquire_frames": 2,
+    "acquire_spread_q8": 2048,
+    "track_step_q8": 5120,
+    "hold_samples": 9600,
+    "max_gap_samples": 1440,
+    "time_domain": "SESSION_SAMPLE"
+  },
+  "audio_fade_samples": 480
+}
