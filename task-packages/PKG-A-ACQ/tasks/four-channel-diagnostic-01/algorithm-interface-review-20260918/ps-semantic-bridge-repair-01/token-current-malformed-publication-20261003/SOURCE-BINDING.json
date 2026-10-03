@@ -1,0 +1,51 @@
+{
+  "schema": "I14_TOKEN_SOURCE_BINDING_V1",
+  "task": "#14/I14-TOKEN-01-PUBLISH",
+  "parent_commit": "f8367f5bd2bd7d52348c9259a9051ff050c4f1ab",
+  "source_directory": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/algorithm-interface-review-20260918/ps-semantic-bridge-repair-01/src",
+  "original_candidate_directory": "codex_out/i14-token-current-malformed-implementation-20260930/candidate",
+  "files": {
+    "ps_bridge.c": {
+      "parent_sha256": "e56676fdfd43fc12f5be5ab43ac7bb2c1b77cc175b86826e4d3d178125390003",
+      "parent_git_blob": "40114578cc8398184405c9afe8af5b0ef4116026",
+      "published_sha256": "bac5f31018a9edb87d4bc64321dce15da5d266f6e82a92abf86125a69de2e0d2",
+      "published_git_blob": "b1af5308f265708deb07d0fc9c3b253a93241c5d"
+    },
+    "ps_bridge.h": {
+      "parent_sha256": "67d7765b811c61ec2f60ffb6dc96cc1023293d29a6ff036ad94b44a32ea72a3d",
+      "parent_git_blob": "d95bd86c0e675ab606872ac5644102361a0a54fa",
+      "published_sha256": "e7e68fd0367fd0a8623c635cfdd3d870df334bfbaf76741c60b98667c80d4124",
+      "published_git_blob": "3d2df5a5df6a2122d26a7e7d463835e316aedbbf"
+    }
+  },
+  "aggregate_rule": "Sort original filenames ascending; concatenate filename, two ASCII spaces, lowercase SHA256, LF for each file; SHA256 the ASCII bytes.",
+  "aggregate_input": "ps_bridge.c  bac5f31018a9edb87d4bc64321dce15da5d266f6e82a92abf86125a69de2e0d2\nps_bridge.h  e7e68fd0367fd0a8623c635cfdd3d870df334bfbaf76741c60b98667c80d4124\n",
+  "aggregate_sha256": "a97c9493d02bc26655bd8c05f68aaaf08d40e0eff950253f99c1c2976f2f34b5",
+  "author_manifest": {
+    "path": "codex_out/i14-token-current-malformed-implementation-20260930/MANIFEST.json",
+    "sha256": "00a419123874b45dd7b18d854789aaf38c2d6f800fd523f4d27db88cfb97b61d"
+  },
+  "product_freeze": "codex_out/i14-token-current-malformed-implementation-20260930/PRODUCT-FREEZE.json",
+  "technical_review": {
+    "path": "codex_out/i14-token-review-a97c949-20260930/REVIEW.md",
+    "sha256": "27551c907ba0b7fb31cd7729ec383f334d9ee882fe782e3ca6af497b914acc6d"
+  },
+  "portable_originals": {
+    "zip_url": "https://github.com/TophBeifong1744/Competition_fpga/releases/download/b-evidence-space-trial-20261002/i14-token-b-review.zip",
+    "zip_sha256": "6fb834ac5b624fdedfbbe9a50e5be0d3906cb63036b9bc1b30a0581c9acda6f3",
+    "zip_bytes": 872994,
+    "zip_member_root": "inputs/codex_out/i14-token-current-malformed-implementation-20260930/",
+    "b_review_url": "https://github.com/TophBeifong1744/Competition_fpga/releases/download/b-evidence-space-trial-20261002/i14-token-REVIEW.md",
+    "b_review_sha256": "d1a7c6e25f3848f380c25001e96bcd47160b56ed1e1940a32f556c43290bf387",
+    "evidence_index_url": "https://github.com/TophBeifong1744/Competition_fpga/releases/download/b-evidence-space-trial-20261002/i14-token-evidence-index.json",
+    "evidence_index_sha256": "25ba7010a3fc0d637ecf3e9a94edcee399ba02072d32ae91829463d5eb7cb47d"
+  },
+  "authorization": {
+    "space_page": "https://chatgpt.com/space/page_046d52c0ffd481918d86cfb5b70d7a09",
+    "dispatch_block_id": "b1a32648-50bc-45cb-9fcc-ec8dcec71635",
+    "dispatch_block_sha256": "9ff75e40f0756e418663960d457376679a0ac9d61d0bcd7af5bcf4baaff94ce9",
+    "member_decision_block_id": "91c141f9-c918-4741-af60-a6723a525b71",
+    "member_decision_block_sha256": "145cea9a23bb5d8ab1bd1b589da18a879f3360e00337ff2758755e9af15eb64b"
+  },
+  "commit_binding": "The containing Git commit, Draft PR and external publication receipt supply the complete published commit SHA; this file does not self-reference a future commit."
+}
