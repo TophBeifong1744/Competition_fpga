@@ -1,0 +1,27 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe work.tb_servo_dual_test_top --snapshot servo_top --debug typical --log elaborate.log 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.motor_drive(CLK_FREQ_HZ=50000000...
+Compiling module work.motor_drive(CLK_FREQ_HZ=50000000...
+Compiling module work.servo_dual_test_top_default
+Compiling module work.servo_top_case
+Compiling module work.servo_dual_test_top(HORIZONTAL_D...
+Compiling module work.servo_top_case(H=-1,V=-1)
+Compiling module work.servo_dual_test_top(HORIZONTAL_D...
+Compiling module work.servo_top_case(H=1024,V=1024)
+Compiling module work.servo_dual_test_top(HORIZONTAL_D...
+Compiling module work.servo_top_case(H=90,V=55)
+Compiling module work.servo_dual_test_top(HORIZONTAL_D...
+Compiling module work.servo_top_case(H=360)
+Compiling module work.servo_dual_test_top(VERTICAL_DEG...
+Compiling module work.servo_top_case(V=220)
+Compiling module work.tb_servo_dual_test_top
+Built simulation snapshot servo_top

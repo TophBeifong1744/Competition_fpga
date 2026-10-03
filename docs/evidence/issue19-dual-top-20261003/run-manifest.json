@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "issue19-dual-top-20261003",
+  "snapshot_id": "sha256:2fea207c93d1358ca7908d350a9190488acc9fdc058307a272100eb97ac51c48",
+  "job_id": "normal-and-four-checker-canaries",
+  "command": "Native xvlog/xelab/xsim, per-job commands in jobs and runner",
+  "working_directory": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\issue19-dual-top-20261003",
+  "tool": {
+    "version": "2025.2",
+    "name": "XSim"
+  },
+  "target": "behavioral50MHz",
+  "seed": 19,
+  "libraries": [
+    "work"
+  ],
+  "exit_code": 0,
+  "evidence_paths": [
+    "snapshot-manifest.json",
+    "verification-plan.json",
+    "run-verification.ps1",
+    "simulation/normal_checked_wavefixed/compile.log",
+    "simulation/normal_checked_wavefixed/elaborate.log",
+    "simulation/normal_checked_wavefixed/run.log",
+    "simulation/normal_checked_wavefixed/wave.wdb",
+    "simulation/NEG_WIDTH_wavefixed/run.log",
+    "simulation/NEG_PERIOD_wavefixed/run.log",
+    "simulation/NEG_STARTUP_wavefixed/run.log",
+    "simulation/NEG_VALID_wavefixed/run.log"
+  ],
+  "jobs": [
+    {
+      "case": "normal_checked",
+      "working_directory": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\issue19-dual-top-20261003\\simulation\\normal_checked_wavefixed",
+      "compile_command": "xvlog --sv motor_drive.v servo_dual_test_top.v tb_servo_dual_test_top.sv --log compile.log (absolute sources in compile.log)",
+      "elaboration_command": "xelab work.tb_servo_dual_test_top --snapshot servo_top --debug typical --log elaborate.log",
+      "run_command": "xsim servo_top --tclbatch wave.tcl --wdb wave.wdb --log run.log --sv_seed 19 --onerror quit",
+      "compile_exit_code": 0,
+      "elaboration_exit_code": 0,
+      "run_exit_code": 0,
+      "semantic_simulation_exit": 0,
+      "wrapper_exit": 0,
+      "seed": 19
+    },
+    {
+      "case": "NEG_WIDTH",
+      "working_directory": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\issue19-dual-top-20261003\\simulation\\NEG_WIDTH_wavefixed",
+      "compile_command": "xvlog --sv motor_drive.v servo_dual_test_top.v tb_servo_dual_test_top.sv --log compile.log (absolute sources in compile.log)",
+      "elaboration_command": "xelab work.tb_servo_dual_test_top --snapshot servo_top --debug typical --log elaborate.log",
+      "run_command": "xsim servo_top --tclbatch wave.tcl --wdb wave.wdb --log run.log --sv_seed 19 --onerror quit --testplusarg NEG_WIDTH",
+      "compile_exit_code": 0,
+      "elaboration_exit_code": 0,
+      "run_exit_code": 0,
+      "semantic_simulation_exit": 1,
+      "wrapper_exit": 0,
+      "seed": 19
+    },
+    {
+      "case": "NEG_PERIOD",
+      "working_directory": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\issue19-dual-top-20261003\\simulation\\NEG_PERIOD_wavefixed",
+      "compile_command": "xvlog --sv motor_drive.v servo_dual_test_top.v tb_servo_dual_test_top.sv --log compile.log (absolute sources in compile.log)",
+      "elaboration_command": "xelab work.tb_servo_dual_test_top --snapshot servo_top --debug typical --log elaborate.log",
+      "run_command": "xsim servo_top --tclbatch wave.tcl --wdb wave.wdb --log run.log --sv_seed 19 --onerror quit --testplusarg NEG_PERIOD",
+      "compile_exit_code": 0,
+      "elaboration_exit_code": 0,
+      "run_exit_code": 0,
+      "semantic_simulation_exit": 1,
+      "wrapper_exit": 0,
+      "seed": 19
+    },
+    {
+      "case": "NEG_STARTUP",
+      "working_directory": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\issue19-dual-top-20261003\\simulation\\NEG_STARTUP_wavefixed",
+      "compile_command": "xvlog --sv motor_drive.v servo_dual_test_top.v tb_servo_dual_test_top.sv --log compile.log (absolute sources in compile.log)",
+      "elaboration_command": "xelab work.tb_servo_dual_test_top --snapshot servo_top --debug typical --log elaborate.log",
+      "run_command": "xsim servo_top --tclbatch wave.tcl --wdb wave.wdb --log run.log --sv_seed 19 --onerror quit --testplusarg NEG_STARTUP",
+      "compile_exit_code": 0,
+      "elaboration_exit_code": 0,
+      "run_exit_code": 0,
+      "semantic_simulation_exit": 1,
+      "wrapper_exit": 0,
+      "seed": 19
+    },
+    {
+      "case": "NEG_VALID",
+      "working_directory": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\issue19-dual-top-20261003\\simulation\\NEG_VALID_wavefixed",
+      "compile_command": "xvlog --sv motor_drive.v servo_dual_test_top.v tb_servo_dual_test_top.sv --log compile.log (absolute sources in compile.log)",
+      "elaboration_command": "xelab work.tb_servo_dual_test_top --snapshot servo_top --debug typical --log elaborate.log",
+      "run_command": "xsim servo_top --tclbatch wave.tcl --wdb wave.wdb --log run.log --sv_seed 19 --onerror quit --testplusarg NEG_VALID",
+      "compile_exit_code": 0,
+      "elaboration_exit_code": 0,
+      "run_exit_code": 0,
+      "semantic_simulation_exit": 1,
+      "wrapper_exit": 0,
+      "seed": 19
+    }
+  ],
+  "wave_path_issue": "Initial c* wildcards rejected; final explicit c0..c5 paths clean, original logs retained"
+}

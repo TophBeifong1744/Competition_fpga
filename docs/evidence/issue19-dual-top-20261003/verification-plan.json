@@ -1,0 +1,106 @@
+{
+  "claim_stage": "FUNCTIONAL_SIM",
+  "profile": "FUNCTIONAL_ACCEPTANCE",
+  "author_role": "verification_engineer",
+  "independent_acceptance": "PENDING_READ_ONLY_REVIEW",
+  "model": {
+    "name": "literal cycle PWM contract",
+    "version": "1",
+    "source": "task-contract.json and cycle-contract.json, fixed before run",
+    "independence": "Literal pulse widths and due cycles, no shared DUT arithmetic or latency calibration",
+    "signals": "clk and PWM black-box outputs; command_valid observed only for frozen acceptance assertion",
+    "abstractions": "No mechanical, voltage, pin, clock loss, or CDC/STA model",
+    "sampling": "command_valid pre-NBA; PWM at posedge +1ns",
+    "clock_hz": 50000000,
+    "seed": 19
+  },
+  "traceability": [
+    {
+      "checker": "each-cycle expected H/V low before17 and expected high at17",
+      "test": "all6cases",
+      "canary": "NEG_STARTUP",
+      "requirement": "startup16edgesLOW / start17"
+    },
+    {
+      "checker": "literal widths H75000cycles V84100cycles",
+      "test": "all6cases frame1",
+      "canary": "NEG_WIDTH",
+      "requirement": "first reset targetsH180V130"
+    },
+    {
+      "checker": "frames2/3 literal widths H500/2500/1000us V864/2500/1000us",
+      "test": "negative(-1,-1),oversized(1024,1024),normal(90,55)",
+      "canary": "NEG_WIDTH",
+      "requirement": "signed clamp before9bit conversion"
+    },
+    {
+      "checker": "1000000cycle frame length with continuous expected PWM comparisons",
+      "test": "all6cases frames1..4rising",
+      "canary": "NEG_PERIOD",
+      "requirement": "20ms period and hold"
+    },
+    {
+      "checker": "sample valid on every risingedge,count exactly1 at drainedend",
+      "test": "all6cases",
+      "canary": "NEG_VALID",
+      "requirement": "one valid acceptance edge17"
+    },
+    {
+      "checker": "frames2/3 literal independent pulses",
+      "test": "H360/Vdefault130 and Hdefault180/V220",
+      "canary": "NEG_WIDTH",
+      "requirement": "independent axis params"
+    }
+  ],
+  "matrix": {
+    "final_edge": 3000017,
+    "cases": 6,
+    "complete_frames": 3,
+    "target": "XSim2025.2 actual50MHz"
+  },
+  "gaps": [
+    "No external reset port, dynamic input, FIFO, IRQ, DMA or error/abort interface applicable",
+    "No mechanical position or pin correctness proven by simulation",
+    "Clockstop/resume not tested; no failsafe claim",
+    "Synthesis implementation timing BOARD NOT RUN"
+  ],
+  "canary_method": "Expected contract fault injection only; no DUT force. width+50cycles, period+1cycle, startup+1edge, valid+1edge. Normal pass required; each isolated canary required FAIL.",
+  "schema_version": "1.0.0",
+  "run_id": "issue19-dual-top-20261003",
+  "snapshot_id": "sha256:2fea207c93d1358ca7908d350a9190488acc9fdc058307a272100eb97ac51c48",
+  "model_independence": [
+    {
+      "shares_dut_logic": false,
+      "model": "literal cycle PWM contract",
+      "source": "task-contract.json and cycle-contract.json, fixed before run"
+    }
+  ],
+  "negative_canaries": [
+    {
+      "expected_detection": "CHECKER_FAIL",
+      "fault": "NEG_WIDTH",
+      "checker": "NEG_WIDTH"
+    },
+    {
+      "expected_detection": "CHECKER_FAIL",
+      "fault": "NEG_PERIOD",
+      "checker": "NEG_PERIOD"
+    },
+    {
+      "expected_detection": "CHECKER_FAIL",
+      "fault": "NEG_STARTUP",
+      "checker": "NEG_STARTUP"
+    },
+    {
+      "expected_detection": "CHECKER_FAIL",
+      "fault": "NEG_VALID",
+      "checker": "NEG_VALID"
+    }
+  ],
+  "uncovered_requirements": [
+    "No external reset port, dynamic input, FIFO, IRQ, DMA or error/abort interface applicable",
+    "No mechanical position or pin correctness proven by simulation",
+    "Clockstop/resume not tested; no failsafe claim",
+    "Synthesis implementation timing BOARD NOT RUN"
+  ]
+}

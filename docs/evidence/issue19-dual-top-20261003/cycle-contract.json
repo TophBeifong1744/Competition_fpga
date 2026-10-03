@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "issue19-dual-top-20261003",
+  "snapshot_id": "sha256:2fea207c93d1358ca7908d350a9190488acc9fdc058307a272100eb97ac51c48",
+  "domain": "sys_clk",
+  "edge_origin": "First input-clock rising edge = 1",
+  "edges_1_through_16": "Driver reset asserted at sampling edge; PWM outputs low after NBA",
+  "edge_16_post_nba": "startup[15] becomes 1; internal rst_n releases synchronously",
+  "edge_17": "Both drivers begin reset-target pulse using old commanded angles and accept static clamped targets; command_sent becomes 1",
+  "first_pulse_width_us": {
+    "horizontal": 1500,
+    "vertical": 1682
+  },
+  "second_frame_start_edge": "17 + CLK_FREQ_HZ/50",
+  "next_frames": "Clamped target PWM; exactly CLK_FREQ_HZ/50 cycles per frame",
+  "command_valid": "High for exactly one sampling edge (17), no subsequent commands",
+  "clock_stopped": "State holds; restart does not reinitialize; not a fail-safe guarantee",
+  "external_reset": "NOT_PRESENT",
+  "cdc": "NONE; one clock and static elaborated commands",
+  "clock_domain": "sys_clk",
+  "input_acceptance": "Static clamped H/V targets sampled with shared valid once at edge17",
+  "output_completion": "First reset PWM rising edge17; selected target PWM rising edge1000017 at50MHz",
+  "latency": {
+    "clocks": 1000000,
+    "note": "Target acceptance to target-frame start",
+    "kind": "FIXED"
+  },
+  "throughput": "Fixed startup command once; PWM every20ms",
+  "alignment": [
+    "H/V common rise",
+    "Per-axis distinct width",
+    "One same-domain valid"
+  ],
+  "reset_behavior": "Configuration init holdlow edges1..16; release after edge16; no runtime reset",
+  "stall_behavior": "No handshake; stopped clock holds state without reinitialization",
+  "error_behavior": "Signed static target parameters saturated at mechanical bounds; invalidclock handled by unchanged driver"
+}
