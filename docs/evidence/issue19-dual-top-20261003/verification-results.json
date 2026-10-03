@@ -1,0 +1,67 @@
+[
+  {
+    "kind": "normal_checked",
+    "directory": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\issue19-dual-top-20261003\\simulation\\normal_checked_wavefixed",
+    "compile_exit": 0,
+    "elaborate_exit": 0,
+    "simulator_exit": 0,
+    "wrapper_exit": 0,
+    "normal_pass": true,
+    "canary_detected": false,
+    "semantic_simulation_exit": 0,
+    "seed": 19,
+    "command": "xsim servo_top --tclbatch wave.tcl --wdb wave.wdb --log run.log --sv_seed 19 --onerror quit"
+  },
+  {
+    "kind": "NEG_WIDTH",
+    "directory": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\issue19-dual-top-20261003\\simulation\\NEG_WIDTH_wavefixed",
+    "compile_exit": 0,
+    "elaborate_exit": 0,
+    "simulator_exit": 0,
+    "wrapper_exit": 0,
+    "normal_pass": false,
+    "canary_detected": true,
+    "semantic_simulation_exit": 1,
+    "seed": 19,
+    "command": "xsim servo_top --tclbatch wave.tcl --wdb wave.wdb --log run.log --sv_seed 19 --onerror quit --testplusarg NEG_WIDTH"
+  },
+  {
+    "kind": "NEG_PERIOD",
+    "directory": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\issue19-dual-top-20261003\\simulation\\NEG_PERIOD_wavefixed",
+    "compile_exit": 0,
+    "elaborate_exit": 0,
+    "simulator_exit": 0,
+    "wrapper_exit": 0,
+    "normal_pass": false,
+    "canary_detected": true,
+    "semantic_simulation_exit": 1,
+    "seed": 19,
+    "command": "xsim servo_top --tclbatch wave.tcl --wdb wave.wdb --log run.log --sv_seed 19 --onerror quit --testplusarg NEG_PERIOD"
+  },
+  {
+    "kind": "NEG_STARTUP",
+    "directory": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\issue19-dual-top-20261003\\simulation\\NEG_STARTUP_wavefixed",
+    "compile_exit": 0,
+    "elaborate_exit": 0,
+    "simulator_exit": 0,
+    "wrapper_exit": 0,
+    "normal_pass": false,
+    "canary_detected": true,
+    "semantic_simulation_exit": 1,
+    "seed": 19,
+    "command": "xsim servo_top --tclbatch wave.tcl --wdb wave.wdb --log run.log --sv_seed 19 --onerror quit --testplusarg NEG_STARTUP"
+  },
+  {
+    "kind": "NEG_VALID",
+    "directory": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\issue19-dual-top-20261003\\simulation\\NEG_VALID_wavefixed",
+    "compile_exit": 0,
+    "elaborate_exit": 0,
+    "simulator_exit": 0,
+    "wrapper_exit": 0,
+    "normal_pass": false,
+    "canary_detected": true,
+    "semantic_simulation_exit": 1,
+    "seed": 19,
+    "command": "xsim servo_top --tclbatch wave.tcl --wdb wave.wdb --log run.log --sv_seed 19 --onerror quit --testplusarg NEG_VALID"
+  }
+]

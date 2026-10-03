@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "issue19-dual-top-20261003",
+  "snapshot_id": "sha256:2fea207c93d1358ca7908d350a9190488acc9fdc058307a272100eb97ac51c48",
+  "base_commit": "f8367f5bd2bd7d52348c9259a9051ff050c4f1ab",
+  "identity_encoding": "UTF8, path:sha256 lines in recorded order, LF including final LF",
+  "identity_text": "project/rtl/servo/motor_drive.v:1b47f4c9c7223ba5d8e16bcdd178d2012ca219b8650937b2f4b040af1e0e5294\nproject/rtl/servo/servo_dual_test_top.v:072bbe373c302cb410fe6120c8c2cb43027f5f5d4f018ff7c704d85c0b367677\nproject/constraints/servo_dual_test.xdc:b6626652e028f12969046e4c9f5c8263dd9783996826fab125df17c4193e58e7\nsimulation/tb/servo/tb_servo_dual_test_top.sv:20570c218b0acd23cbe25cce77e9a2dbabdbfe6e3f30d97cdb2618d217b89930\n",
+  "sources": [
+    {
+      "path": "project/rtl/servo/motor_drive.v",
+      "sha256": "1b47f4c9c7223ba5d8e16bcdd178d2012ca219b8650937b2f4b040af1e0e5294"
+    },
+    {
+      "path": "project/rtl/servo/servo_dual_test_top.v",
+      "sha256": "072bbe373c302cb410fe6120c8c2cb43027f5f5d4f018ff7c704d85c0b367677"
+    },
+    {
+      "path": "project/constraints/servo_dual_test.xdc",
+      "sha256": "b6626652e028f12969046e4c9f5c8263dd9783996826fab125df17c4193e58e7"
+    },
+    {
+      "path": "simulation/tb/servo/tb_servo_dual_test_top.sv",
+      "sha256": "20570c218b0acd23cbe25cce77e9a2dbabdbfe6e3f30d97cdb2618d217b89930"
+    }
+  ],
+  "tool": "XSim 2025.2",
+  "clock_hz": 50000000,
+  "seed": 19,
+  "board": "NOT_RUN",
+  "synthesis": "NOT_RUN",
+  "timing": "UNVERIFIED"
+}

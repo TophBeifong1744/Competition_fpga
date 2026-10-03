@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Oct  3 21:02:29 2026
+# Process ID         : 33208
+# Current directory  : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/issue19-dual-top-20261003/simulation/NEG_VALID_wavefixed
+# Command line       : xsim.exe -log run.log -mode tcl -source {xsim.dir/servo_top/xsim_script.tcl}
+# Log file           : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/issue19-dual-top-20261003/simulation/NEG_VALID_wavefixed/run.log
+# Journal file       : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/issue19-dual-top-20261003/simulation/NEG_VALID_wavefixed\xsim.jou
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36176 MB
+# Available Virtual  : 7781 MB
+#-----------------------------------------------------------
+source xsim.dir/servo_top/xsim_script.tcl
+# xsim {servo_top} -testplusarg NEG_VALID -wdb {wave.wdb} -autoloadwcfg -tclbatch {wave.tcl} -onerror quit -sv_seed 19
+Time resolution is 1 ps
+source wave.tcl
+## log_wave /tb_servo_dual_test_top/clk
+## log_wave /tb_servo_dual_test_top/c0/hp
+## log_wave /tb_servo_dual_test_top/c0/vp
+## log_wave /tb_servo_dual_test_top/c0/dut/command_valid
+## log_wave /tb_servo_dual_test_top/c1/hp
+## log_wave /tb_servo_dual_test_top/c1/vp
+## log_wave /tb_servo_dual_test_top/c1/dut/command_valid
+## log_wave /tb_servo_dual_test_top/c2/hp
+## log_wave /tb_servo_dual_test_top/c2/vp
+## log_wave /tb_servo_dual_test_top/c2/dut/command_valid
+## log_wave /tb_servo_dual_test_top/c3/hp
+## log_wave /tb_servo_dual_test_top/c3/vp
+## log_wave /tb_servo_dual_test_top/c3/dut/command_valid
+## log_wave /tb_servo_dual_test_top/c4/hp
+## log_wave /tb_servo_dual_test_top/c4/vp
+## log_wave /tb_servo_dual_test_top/c4/dut/command_valid
+## log_wave /tb_servo_dual_test_top/c5/hp
+## log_wave /tb_servo_dual_test_top/c5/vp
+## log_wave /tb_servo_dual_test_top/c5/dut/command_valid
+## run all
+COMPARE tag=valid case=5 accepted_cycle=17 expected_cycle=17 observed_cycle=17 result=PASS
+COMPARE tag=H_edge case=5 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS
+COMPARE tag=V_edge case=5 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS
+COMPARE tag=valid case=4 accepted_cycle=17 expected_cycle=17 observed_cycle=17 result=PASS
+COMPARE tag=H_edge case=4 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS
+COMPARE tag=V_edge case=4 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS
+COMPARE tag=valid case=3 accepted_cycle=17 expected_cycle=17 observed_cycle=17 result=PASS
+COMPARE tag=H_edge case=3 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS
+COMPARE tag=V_edge case=3 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS
+COMPARE tag=valid case=2 accepted_cycle=17 expected_cycle=17 observed_cycle=17 result=PASS
+COMPARE tag=H_edge case=2 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS
+COMPARE tag=V_edge case=2 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS
+COMPARE tag=valid case=1 accepted_cycle=17 expected_cycle=17 observed_cycle=17 result=PASS
+COMPARE tag=H_edge case=1 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS
+COMPARE tag=V_edge case=1 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS
+COMPARE tag=valid case=0 accepted_cycle=17 expected_cycle=18 observed_cycle=17 result=FAIL ASSERTION_FAIL
+Fatal: CHECKER_FAIL valid
+Time: 331 ns  Iteration: 0  Process: /tb_servo_dual_test_top/c0/Always23_10  Scope: tb_servo_dual_test_top.c0  File: C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/simulation/tb/servo/tb_servo_dual_test_top.sv Line: 32
+$finish called at time : 331 ns
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Oct  3 21:02:31 2026...

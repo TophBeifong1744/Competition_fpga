@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "issue19-dual-top-20261003",
+  "snapshot_id": "sha256:2fea207c93d1358ca7908d350a9190488acc9fdc058307a272100eb97ac51c48",
+  "mode": "FULL",
+  "evidence_profile": "FUNCTIONAL_ACCEPTANCE",
+  "claim_stage": "FUNCTIONAL_SIM",
+  "actor": "C/hsc119",
+  "issue": 19,
+  "base_commit": "f8367f5bd2bd7d52348c9259a9051ff050c4f1ab",
+  "authorization": {
+    "write_verification": true,
+    "clean_or_overwrite": false,
+    "write_constraints": true,
+    "run_implementation": false,
+    "regenerate_ip": false,
+    "write_product": true,
+    "external_publish": false,
+    "generate_release": false,
+    "run_formal_entrypoints": false
+  },
+  "product_scope": [
+    "project/rtl/servo/servo_dual_test_top.v",
+    "project/constraints/servo_dual_test.xdc",
+    "docs/servo-dual-test-20261003.md"
+  ],
+  "test_scope": [
+    "simulation/tb/servo/tb_servo_dual_test_top.sv"
+  ],
+  "immutable": [
+    "project/rtl/servo/motor_drive.v",
+    "D:/vavido_project/motor_drive",
+    "old evidence and unrelated dirty materials"
+  ],
+  "requirements": {
+    "clock_hz": 50000000,
+    "horizontal": {
+      "pin": "T15",
+      "min_degrees": 0,
+      "max_degrees": 360,
+      "reset_degrees": 180
+    },
+    "vertical": {
+      "pin": "W16",
+      "min_degrees": 40,
+      "max_degrees": 220,
+      "reset_degrees": 130
+    },
+    "targets": "Elaboration-time signed integer parameters, clamped before narrowing to 9 bits",
+    "command": "One common valid sampled once after startup; fixed targets held thereafter",
+    "startup": "FPGA initialized 16-bit shift register; no external runtime reset port",
+    "period_us": 20000,
+    "mapping": "H electrical MAX=360, V electrical MAX=220; each 0..MAX maps to 500..2500 us"
+  },
+  "identity": {
+    "tool": "Vivado/XSim 2025.2",
+    "board_reference": "Navigator; repository project-identity xc7z020clg400-2",
+    "foreign_xpr_part": "xc7z020clg400-1",
+    "part_conflict": "UNRESOLVED; no new XPR, synthesis or implementation",
+    "clock_reference": "U18 / 50 MHz in existing board reference and old top"
+  },
+  "excluded": [
+    "DOA input interface",
+    "TTL/stop state machine",
+    "D: project mutation",
+    "synthesis",
+    "implementation",
+    "download",
+    "wiring",
+    "servo motion",
+    "historical load claims"
+  ],
+  "acceptance": [
+    "startup quiet for first 16 edges",
+    "first PWM frame at H180/V130",
+    "second frame at clamped targets",
+    "20 ms periods",
+    "one sampled valid",
+    "negative-canary detection",
+    "independent source/evidence review"
+  ],
+  "member_approval": "PENDING; AI reviews do not replace A approval",
+  "authorization_source": "User: 好，那你帮我写; continued with 继续. Repository implementation and bounded simulation only.",
+  "scope": [
+    "project/rtl/servo/servo_dual_test_top.v",
+    "project/constraints/servo_dual_test.xdc",
+    "docs/servo-dual-test-20261003.md",
+    "simulation/tb/servo/tb_servo_dual_test_top.sv"
+  ],
+  "non_goals": [
+    "DOA input interface",
+    "TTL/stop state machine",
+    "D: project mutation",
+    "synthesis",
+    "implementation",
+    "download",
+    "wiring",
+    "servo motion",
+    "historical load claims"
+  ],
+  "immutable_boundaries": [
+    "project/rtl/servo/motor_drive.v",
+    "D:/vavido_project/motor_drive",
+    "old evidence and unrelated dirty materials"
+  ],
+  "acceptance_evidence": [
+    "startup quiet for first 16 edges",
+    "first PWM frame at H180/V130",
+    "second frame at clamped targets",
+    "20 ms periods",
+    "one sampled valid",
+    "negative-canary detection",
+    "independent source/evidence review"
+  ],
+  "project_identity": {
+    "canonical_project_entry": "UNVERIFIED",
+    "build_entry": "NOT_CREATED",
+    "project_root": ".",
+    "simulation_entry": "Native xvlog/xelab/xsim isolated diagnostics",
+    "tool_version": "2025.2",
+    "product_top": "servo_dual_test_top",
+    "tool": "XSim",
+    "vendor": "AMD/Xilinx",
+    "part": "UNRESOLVED speed grade, xc7z020clg400",
+    "simulation_top": "tb_servo_dual_test_top"
+  }
+}

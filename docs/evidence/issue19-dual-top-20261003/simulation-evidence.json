@@ -1,0 +1,843 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "issue19-dual-top-20261003",
+  "snapshot_id": "sha256:2fea207c93d1358ca7908d350a9190488acc9fdc058307a272100eb97ac51c48",
+  "evidence_profile": "FUNCTIONAL_ACCEPTANCE",
+  "classification": "SIMULATION_PASS",
+  "verdict_scope": "Independent AI final reviewer accepted bounded FUNCTIONAL_SIM; A member acceptance pending",
+  "compile_exit_code": 0,
+  "elaboration_exit_code": 0,
+  "run_exit_code": 0,
+  "tests_discovered": 6,
+  "tests_executed": 6,
+  "scoreboard_drained": true,
+  "comparisons": [
+    {
+      "tag": "valid/case5",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=valid case=5 accepted_cycle=17 expected_cycle=17 observed_cycle=17 result=PASS"
+    },
+    {
+      "tag": "H_edge/case5",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=5 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case5",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=5 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS"
+    },
+    {
+      "tag": "valid/case4",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=valid case=4 accepted_cycle=17 expected_cycle=17 observed_cycle=17 result=PASS"
+    },
+    {
+      "tag": "H_edge/case4",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=4 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case4",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=4 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS"
+    },
+    {
+      "tag": "valid/case3",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=valid case=3 accepted_cycle=17 expected_cycle=17 observed_cycle=17 result=PASS"
+    },
+    {
+      "tag": "H_edge/case3",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=3 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case3",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=3 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS"
+    },
+    {
+      "tag": "valid/case2",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=valid case=2 accepted_cycle=17 expected_cycle=17 observed_cycle=17 result=PASS"
+    },
+    {
+      "tag": "H_edge/case2",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=2 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case2",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=2 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS"
+    },
+    {
+      "tag": "valid/case1",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=valid case=1 accepted_cycle=17 expected_cycle=17 observed_cycle=17 result=PASS"
+    },
+    {
+      "tag": "H_edge/case1",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=1 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case1",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=1 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS"
+    },
+    {
+      "tag": "valid/case0",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=valid case=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 result=PASS"
+    },
+    {
+      "tag": "H_edge/case0",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=0 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case0",
+      "accepted_cycle": 17,
+      "expected_cycle": 17,
+      "observed_cycle": 17,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=0 frame=0 accepted_cycle=17 expected_cycle=17 observed_cycle=17 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case5",
+      "accepted_cycle": 17,
+      "expected_cycle": 75017,
+      "observed_cycle": 75017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=5 frame=0 accepted_cycle=17 expected_cycle=75017 observed_cycle=75017 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case4",
+      "accepted_cycle": 17,
+      "expected_cycle": 75017,
+      "observed_cycle": 75017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=4 frame=0 accepted_cycle=17 expected_cycle=75017 observed_cycle=75017 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case3",
+      "accepted_cycle": 17,
+      "expected_cycle": 75017,
+      "observed_cycle": 75017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=3 frame=0 accepted_cycle=17 expected_cycle=75017 observed_cycle=75017 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case2",
+      "accepted_cycle": 17,
+      "expected_cycle": 75017,
+      "observed_cycle": 75017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=2 frame=0 accepted_cycle=17 expected_cycle=75017 observed_cycle=75017 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case1",
+      "accepted_cycle": 17,
+      "expected_cycle": 75017,
+      "observed_cycle": 75017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=1 frame=0 accepted_cycle=17 expected_cycle=75017 observed_cycle=75017 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case0",
+      "accepted_cycle": 17,
+      "expected_cycle": 75017,
+      "observed_cycle": 75017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=0 frame=0 accepted_cycle=17 expected_cycle=75017 observed_cycle=75017 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case5",
+      "accepted_cycle": 17,
+      "expected_cycle": 84117,
+      "observed_cycle": 84117,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=5 frame=0 accepted_cycle=17 expected_cycle=84117 observed_cycle=84117 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case4",
+      "accepted_cycle": 17,
+      "expected_cycle": 84117,
+      "observed_cycle": 84117,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=4 frame=0 accepted_cycle=17 expected_cycle=84117 observed_cycle=84117 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case3",
+      "accepted_cycle": 17,
+      "expected_cycle": 84117,
+      "observed_cycle": 84117,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=3 frame=0 accepted_cycle=17 expected_cycle=84117 observed_cycle=84117 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case2",
+      "accepted_cycle": 17,
+      "expected_cycle": 84117,
+      "observed_cycle": 84117,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=2 frame=0 accepted_cycle=17 expected_cycle=84117 observed_cycle=84117 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case1",
+      "accepted_cycle": 17,
+      "expected_cycle": 84117,
+      "observed_cycle": 84117,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=1 frame=0 accepted_cycle=17 expected_cycle=84117 observed_cycle=84117 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case0",
+      "accepted_cycle": 17,
+      "expected_cycle": 84117,
+      "observed_cycle": 84117,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=0 frame=0 accepted_cycle=17 expected_cycle=84117 observed_cycle=84117 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case5",
+      "accepted_cycle": 17,
+      "expected_cycle": 1000017,
+      "observed_cycle": 1000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=5 frame=1 accepted_cycle=17 expected_cycle=1000017 observed_cycle=1000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case5",
+      "accepted_cycle": 17,
+      "expected_cycle": 1000017,
+      "observed_cycle": 1000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=5 frame=1 accepted_cycle=17 expected_cycle=1000017 observed_cycle=1000017 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case4",
+      "accepted_cycle": 17,
+      "expected_cycle": 1000017,
+      "observed_cycle": 1000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=4 frame=1 accepted_cycle=17 expected_cycle=1000017 observed_cycle=1000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case4",
+      "accepted_cycle": 17,
+      "expected_cycle": 1000017,
+      "observed_cycle": 1000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=4 frame=1 accepted_cycle=17 expected_cycle=1000017 observed_cycle=1000017 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case3",
+      "accepted_cycle": 17,
+      "expected_cycle": 1000017,
+      "observed_cycle": 1000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=3 frame=1 accepted_cycle=17 expected_cycle=1000017 observed_cycle=1000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case3",
+      "accepted_cycle": 17,
+      "expected_cycle": 1000017,
+      "observed_cycle": 1000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=3 frame=1 accepted_cycle=17 expected_cycle=1000017 observed_cycle=1000017 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case2",
+      "accepted_cycle": 17,
+      "expected_cycle": 1000017,
+      "observed_cycle": 1000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=2 frame=1 accepted_cycle=17 expected_cycle=1000017 observed_cycle=1000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case2",
+      "accepted_cycle": 17,
+      "expected_cycle": 1000017,
+      "observed_cycle": 1000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=2 frame=1 accepted_cycle=17 expected_cycle=1000017 observed_cycle=1000017 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case1",
+      "accepted_cycle": 17,
+      "expected_cycle": 1000017,
+      "observed_cycle": 1000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=1 frame=1 accepted_cycle=17 expected_cycle=1000017 observed_cycle=1000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case1",
+      "accepted_cycle": 17,
+      "expected_cycle": 1000017,
+      "observed_cycle": 1000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=1 frame=1 accepted_cycle=17 expected_cycle=1000017 observed_cycle=1000017 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case0",
+      "accepted_cycle": 17,
+      "expected_cycle": 1000017,
+      "observed_cycle": 1000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=0 frame=1 accepted_cycle=17 expected_cycle=1000017 observed_cycle=1000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case0",
+      "accepted_cycle": 17,
+      "expected_cycle": 1000017,
+      "observed_cycle": 1000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=0 frame=1 accepted_cycle=17 expected_cycle=1000017 observed_cycle=1000017 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case1",
+      "accepted_cycle": 17,
+      "expected_cycle": 1025017,
+      "observed_cycle": 1025017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=1 frame=1 accepted_cycle=17 expected_cycle=1025017 observed_cycle=1025017 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case1",
+      "accepted_cycle": 17,
+      "expected_cycle": 1043217,
+      "observed_cycle": 1043217,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=1 frame=1 accepted_cycle=17 expected_cycle=1043217 observed_cycle=1043217 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case3",
+      "accepted_cycle": 17,
+      "expected_cycle": 1050017,
+      "observed_cycle": 1050017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=3 frame=1 accepted_cycle=17 expected_cycle=1050017 observed_cycle=1050017 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case3",
+      "accepted_cycle": 17,
+      "expected_cycle": 1050017,
+      "observed_cycle": 1050017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=3 frame=1 accepted_cycle=17 expected_cycle=1050017 observed_cycle=1050017 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case5",
+      "accepted_cycle": 17,
+      "expected_cycle": 1075017,
+      "observed_cycle": 1075017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=5 frame=1 accepted_cycle=17 expected_cycle=1075017 observed_cycle=1075017 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case0",
+      "accepted_cycle": 17,
+      "expected_cycle": 1075017,
+      "observed_cycle": 1075017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=0 frame=1 accepted_cycle=17 expected_cycle=1075017 observed_cycle=1075017 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case4",
+      "accepted_cycle": 17,
+      "expected_cycle": 1084117,
+      "observed_cycle": 1084117,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=4 frame=1 accepted_cycle=17 expected_cycle=1084117 observed_cycle=1084117 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case0",
+      "accepted_cycle": 17,
+      "expected_cycle": 1084117,
+      "observed_cycle": 1084117,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=0 frame=1 accepted_cycle=17 expected_cycle=1084117 observed_cycle=1084117 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case5",
+      "accepted_cycle": 17,
+      "expected_cycle": 1125017,
+      "observed_cycle": 1125017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=5 frame=1 accepted_cycle=17 expected_cycle=1125017 observed_cycle=1125017 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case4",
+      "accepted_cycle": 17,
+      "expected_cycle": 1125017,
+      "observed_cycle": 1125017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=4 frame=1 accepted_cycle=17 expected_cycle=1125017 observed_cycle=1125017 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case2",
+      "accepted_cycle": 17,
+      "expected_cycle": 1125017,
+      "observed_cycle": 1125017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=2 frame=1 accepted_cycle=17 expected_cycle=1125017 observed_cycle=1125017 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case2",
+      "accepted_cycle": 17,
+      "expected_cycle": 1125017,
+      "observed_cycle": 1125017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=2 frame=1 accepted_cycle=17 expected_cycle=1125017 observed_cycle=1125017 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case5",
+      "accepted_cycle": 17,
+      "expected_cycle": 2000017,
+      "observed_cycle": 2000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=5 frame=2 accepted_cycle=17 expected_cycle=2000017 observed_cycle=2000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case5",
+      "accepted_cycle": 17,
+      "expected_cycle": 2000017,
+      "observed_cycle": 2000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=5 frame=2 accepted_cycle=17 expected_cycle=2000017 observed_cycle=2000017 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case4",
+      "accepted_cycle": 17,
+      "expected_cycle": 2000017,
+      "observed_cycle": 2000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=4 frame=2 accepted_cycle=17 expected_cycle=2000017 observed_cycle=2000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case4",
+      "accepted_cycle": 17,
+      "expected_cycle": 2000017,
+      "observed_cycle": 2000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=4 frame=2 accepted_cycle=17 expected_cycle=2000017 observed_cycle=2000017 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case3",
+      "accepted_cycle": 17,
+      "expected_cycle": 2000017,
+      "observed_cycle": 2000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=3 frame=2 accepted_cycle=17 expected_cycle=2000017 observed_cycle=2000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case3",
+      "accepted_cycle": 17,
+      "expected_cycle": 2000017,
+      "observed_cycle": 2000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=3 frame=2 accepted_cycle=17 expected_cycle=2000017 observed_cycle=2000017 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case2",
+      "accepted_cycle": 17,
+      "expected_cycle": 2000017,
+      "observed_cycle": 2000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=2 frame=2 accepted_cycle=17 expected_cycle=2000017 observed_cycle=2000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case2",
+      "accepted_cycle": 17,
+      "expected_cycle": 2000017,
+      "observed_cycle": 2000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=2 frame=2 accepted_cycle=17 expected_cycle=2000017 observed_cycle=2000017 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case1",
+      "accepted_cycle": 17,
+      "expected_cycle": 2000017,
+      "observed_cycle": 2000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=1 frame=2 accepted_cycle=17 expected_cycle=2000017 observed_cycle=2000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case1",
+      "accepted_cycle": 17,
+      "expected_cycle": 2000017,
+      "observed_cycle": 2000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=1 frame=2 accepted_cycle=17 expected_cycle=2000017 observed_cycle=2000017 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case0",
+      "accepted_cycle": 17,
+      "expected_cycle": 2000017,
+      "observed_cycle": 2000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=0 frame=2 accepted_cycle=17 expected_cycle=2000017 observed_cycle=2000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case0",
+      "accepted_cycle": 17,
+      "expected_cycle": 2000017,
+      "observed_cycle": 2000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=0 frame=2 accepted_cycle=17 expected_cycle=2000017 observed_cycle=2000017 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case1",
+      "accepted_cycle": 17,
+      "expected_cycle": 2025017,
+      "observed_cycle": 2025017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=1 frame=2 accepted_cycle=17 expected_cycle=2025017 observed_cycle=2025017 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case1",
+      "accepted_cycle": 17,
+      "expected_cycle": 2043217,
+      "observed_cycle": 2043217,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=1 frame=2 accepted_cycle=17 expected_cycle=2043217 observed_cycle=2043217 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case3",
+      "accepted_cycle": 17,
+      "expected_cycle": 2050017,
+      "observed_cycle": 2050017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=3 frame=2 accepted_cycle=17 expected_cycle=2050017 observed_cycle=2050017 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case3",
+      "accepted_cycle": 17,
+      "expected_cycle": 2050017,
+      "observed_cycle": 2050017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=3 frame=2 accepted_cycle=17 expected_cycle=2050017 observed_cycle=2050017 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case5",
+      "accepted_cycle": 17,
+      "expected_cycle": 2075017,
+      "observed_cycle": 2075017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=5 frame=2 accepted_cycle=17 expected_cycle=2075017 observed_cycle=2075017 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case0",
+      "accepted_cycle": 17,
+      "expected_cycle": 2075017,
+      "observed_cycle": 2075017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=0 frame=2 accepted_cycle=17 expected_cycle=2075017 observed_cycle=2075017 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case4",
+      "accepted_cycle": 17,
+      "expected_cycle": 2084117,
+      "observed_cycle": 2084117,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=4 frame=2 accepted_cycle=17 expected_cycle=2084117 observed_cycle=2084117 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case0",
+      "accepted_cycle": 17,
+      "expected_cycle": 2084117,
+      "observed_cycle": 2084117,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=0 frame=2 accepted_cycle=17 expected_cycle=2084117 observed_cycle=2084117 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case5",
+      "accepted_cycle": 17,
+      "expected_cycle": 2125017,
+      "observed_cycle": 2125017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=5 frame=2 accepted_cycle=17 expected_cycle=2125017 observed_cycle=2125017 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case4",
+      "accepted_cycle": 17,
+      "expected_cycle": 2125017,
+      "observed_cycle": 2125017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=4 frame=2 accepted_cycle=17 expected_cycle=2125017 observed_cycle=2125017 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case2",
+      "accepted_cycle": 17,
+      "expected_cycle": 2125017,
+      "observed_cycle": 2125017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=2 frame=2 accepted_cycle=17 expected_cycle=2125017 observed_cycle=2125017 level=0 result=PASS"
+    },
+    {
+      "tag": "V_edge/case2",
+      "accepted_cycle": 17,
+      "expected_cycle": 2125017,
+      "observed_cycle": 2125017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=2 frame=2 accepted_cycle=17 expected_cycle=2125017 observed_cycle=2125017 level=0 result=PASS"
+    },
+    {
+      "tag": "H_edge/case5",
+      "accepted_cycle": 17,
+      "expected_cycle": 3000017,
+      "observed_cycle": 3000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=5 frame=3 accepted_cycle=17 expected_cycle=3000017 observed_cycle=3000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case5",
+      "accepted_cycle": 17,
+      "expected_cycle": 3000017,
+      "observed_cycle": 3000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=5 frame=3 accepted_cycle=17 expected_cycle=3000017 observed_cycle=3000017 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case4",
+      "accepted_cycle": 17,
+      "expected_cycle": 3000017,
+      "observed_cycle": 3000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=4 frame=3 accepted_cycle=17 expected_cycle=3000017 observed_cycle=3000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case4",
+      "accepted_cycle": 17,
+      "expected_cycle": 3000017,
+      "observed_cycle": 3000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=4 frame=3 accepted_cycle=17 expected_cycle=3000017 observed_cycle=3000017 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case3",
+      "accepted_cycle": 17,
+      "expected_cycle": 3000017,
+      "observed_cycle": 3000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=3 frame=3 accepted_cycle=17 expected_cycle=3000017 observed_cycle=3000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case3",
+      "accepted_cycle": 17,
+      "expected_cycle": 3000017,
+      "observed_cycle": 3000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=3 frame=3 accepted_cycle=17 expected_cycle=3000017 observed_cycle=3000017 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case2",
+      "accepted_cycle": 17,
+      "expected_cycle": 3000017,
+      "observed_cycle": 3000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=2 frame=3 accepted_cycle=17 expected_cycle=3000017 observed_cycle=3000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case2",
+      "accepted_cycle": 17,
+      "expected_cycle": 3000017,
+      "observed_cycle": 3000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=2 frame=3 accepted_cycle=17 expected_cycle=3000017 observed_cycle=3000017 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case1",
+      "accepted_cycle": 17,
+      "expected_cycle": 3000017,
+      "observed_cycle": 3000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=1 frame=3 accepted_cycle=17 expected_cycle=3000017 observed_cycle=3000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case1",
+      "accepted_cycle": 17,
+      "expected_cycle": 3000017,
+      "observed_cycle": 3000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=1 frame=3 accepted_cycle=17 expected_cycle=3000017 observed_cycle=3000017 level=1 result=PASS"
+    },
+    {
+      "tag": "H_edge/case0",
+      "accepted_cycle": 17,
+      "expected_cycle": 3000017,
+      "observed_cycle": 3000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=H_edge case=0 frame=3 accepted_cycle=17 expected_cycle=3000017 observed_cycle=3000017 level=1 result=PASS"
+    },
+    {
+      "tag": "V_edge/case0",
+      "accepted_cycle": 17,
+      "expected_cycle": 3000017,
+      "observed_cycle": 3000017,
+      "result": "PASS",
+      "raw": "COMPARE tag=V_edge case=0 frame=3 accepted_cycle=17 expected_cycle=3000017 observed_cycle=3000017 level=1 result=PASS"
+    }
+  ],
+  "negative_canaries": [
+    {
+      "fault": "NEG_WIDTH",
+      "detected": true,
+      "raw_failure": "COMPARE tag=pwm case=0 frame=0 accepted_cycle=17 expected_cycle=75017 observed_cycle=75017 expected_h=1 observed_h=0 expected_v=1 observed_v=1 result=FAIL ASSERTION_FAIL",
+      "simulator_exit_code": 0,
+      "semantic_simulation_exit": 1,
+      "wrapper_exit": 0,
+      "evidence_path": "simulation/NEG_WIDTH_wavefixed/run.log"
+    },
+    {
+      "fault": "NEG_PERIOD",
+      "detected": true,
+      "raw_failure": "COMPARE tag=pwm case=0 frame=0 accepted_cycle=17 expected_cycle=1000017 observed_cycle=1000017 expected_h=0 observed_h=1 expected_v=0 observed_v=1 result=FAIL ASSERTION_FAIL",
+      "simulator_exit_code": 0,
+      "semantic_simulation_exit": 1,
+      "wrapper_exit": 0,
+      "evidence_path": "simulation/NEG_PERIOD_wavefixed/run.log"
+    },
+    {
+      "fault": "NEG_STARTUP",
+      "detected": true,
+      "raw_failure": "COMPARE tag=pwm case=0 frame=-1 accepted_cycle=17 expected_cycle=17 observed_cycle=17 expected_h=0 observed_h=1 expected_v=0 observed_v=1 result=FAIL ASSERTION_FAIL",
+      "simulator_exit_code": 0,
+      "semantic_simulation_exit": 1,
+      "wrapper_exit": 0,
+      "evidence_path": "simulation/NEG_STARTUP_wavefixed/run.log"
+    },
+    {
+      "fault": "NEG_VALID",
+      "detected": true,
+      "raw_failure": "COMPARE tag=valid case=0 accepted_cycle=17 expected_cycle=18 observed_cycle=17 result=FAIL ASSERTION_FAIL",
+      "simulator_exit_code": 0,
+      "semantic_simulation_exit": 1,
+      "wrapper_exit": 0,
+      "evidence_path": "simulation/NEG_VALID_wavefixed/run.log"
+    }
+  ],
+  "first_failure": null,
+  "proof_packet": [
+    "snapshot-manifest.json",
+    "verification-plan.json",
+    "run-verification.ps1",
+    "simulation/normal_checked_wavefixed/compile.log",
+    "simulation/normal_checked_wavefixed/elaborate.log",
+    "simulation/normal_checked_wavefixed/run.log",
+    "simulation/normal_checked_wavefixed/wave.wdb",
+    "simulation/NEG_WIDTH_wavefixed/run.log",
+    "simulation/NEG_PERIOD_wavefixed/run.log",
+    "simulation/NEG_STARTUP_wavefixed/run.log",
+    "simulation/NEG_VALID_wavefixed/run.log"
+  ],
+  "proof_hashes": [
+    {
+      "path": "snapshot-manifest.json",
+      "sha256": "57952f782a90831e286ad82424754cf384d806e3d5e4e454b8e1ca7cce51ad2e"
+    },
+    {
+      "path": "verification-plan.json",
+      "sha256": "4abc3bd88e2a02c575103b813c148eb3a69a9b74d6eac06416c24a506f67f503"
+    },
+    {
+      "path": "run-verification.ps1",
+      "sha256": "3122d1c28a690b79dcc8eb54f14917940af401840d1052cb03276151fc4c3dc0"
+    },
+    {
+      "path": "simulation/normal_checked_wavefixed/compile.log",
+      "sha256": "5189bc70dd10dabbbf4a59b77dc3a62de6bf95ea01cfe70057ece85e1fdf77de"
+    },
+    {
+      "path": "simulation/normal_checked_wavefixed/elaborate.log",
+      "sha256": "07d9ef89f2a71910058193c83bc5ef5a5568cf104c771974093d346d2a31d7fb"
+    },
+    {
+      "path": "simulation/normal_checked_wavefixed/run.log",
+      "sha256": "6d281435882fb3a8d9183660983fa9dcaaf500139f29c6b1c3f6db7e6166c95c"
+    },
+    {
+      "path": "simulation/normal_checked_wavefixed/wave.wdb",
+      "sha256": "373b2e15c16ce9696f0796da08a74cf4913b0fc5e9aa72294ad1ea7c653cb807"
+    },
+    {
+      "path": "simulation/NEG_WIDTH_wavefixed/run.log",
+      "sha256": "77f563d6c6c1fa8d3de0cb6d7a98a81a2a7069cf0a6a116cad402bd851594c59"
+    },
+    {
+      "path": "simulation/NEG_PERIOD_wavefixed/run.log",
+      "sha256": "21f9e5761b646d9299b6cd1408d0d21ccc6cae96488b0e05ec83cfc704b7ed37"
+    },
+    {
+      "path": "simulation/NEG_STARTUP_wavefixed/run.log",
+      "sha256": "0e7034cd5e96bf48c22870fbd6625fc3c63964c5746b28ba2c0ad03627f95c10"
+    },
+    {
+      "path": "simulation/NEG_VALID_wavefixed/run.log",
+      "sha256": "3f5f74daab6edbede83836a016392123ec6b51a7db118e647577102d3feb51c0"
+    }
+  ],
+  "total_signal_comparisons": 54000306,
+  "manual_waveform_inspection": "NOT_CLAIMED",
+  "member_approval": "PENDING",
+  "independent_review": {
+    "no_open_blocker_high": true,
+    "evidence": "FINAL-REVIEW.md",
+    "verdict": "PASS_FUNCTIONAL_SIM",
+    "role": "fpga_reviewer"
+  }
+}

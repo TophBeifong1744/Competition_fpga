@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "issue19-dual-top-20261003",
+  "snapshot_id": "sha256:2fea207c93d1358ca7908d350a9190488acc9fdc058307a272100eb97ac51c48",
+  "cone": "New top startup/command-sent state and two static command branches into unchanged motor_drive v2 PWM outputs",
+  "domains": [
+    "sys_clk"
+  ],
+  "new_state": [
+    "startup[15:0]",
+    "command_sent"
+  ],
+  "reverse_backpressure": [],
+  "shared_state": [
+    "startup[15:0]",
+    "command_sent"
+  ],
+  "constraints": "50 MHz U18 input; T15 horizontal/W16 vertical; asynchronous PWM receiver exception only at ports",
+  "pin_overlap": "Board reference assigns T15/W16 to LCD RGB; standalone source/constraint set excludes LCD",
+  "unchanged_boundary": "motor_drive v2 RTL/ports/timing contract",
+  "affected_tests": [
+    "New tb_servo_dual_test_top"
+  ],
+  "existing_tests": "Approved single-driver and dual-instance tests reused; not rerun without changed assumptions",
+  "physical_timing": "UNVERIFIED",
+  "board": "NOT_RUN",
+  "primary_clock_domain": "sys_clk",
+  "entry_boundary": "Static integer parameters and50MHz clock",
+  "exit_boundary": "Two PWM output ports",
+  "affected_units": [
+    "servo_dual_test_top",
+    "unchanged motor_drive instances"
+  ],
+  "forward_path": [
+    "signed clamp",
+    "one-shot command",
+    "driver command register",
+    "frame active pulse",
+    "PWM ports"
+  ],
+  "sidebands": [
+    "command_valid",
+    "rst_n"
+  ],
+  "relevant_tests": [
+    "tb_servo_dual_test_top:6cases,4negativecanaries"
+  ],
+  "partition_status": "BOUNDED"
+}

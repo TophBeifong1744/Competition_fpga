@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "issue19-dual-top-20261003",
+  "snapshot_id": "sha256:2fea207c93d1358ca7908d350a9190488acc9fdc058307a272100eb97ac51c48",
+  "findings": [
+    {
+      "id": "SV19-WAVE-01",
+      "severity": "LOW",
+      "class": "SCRIPT_PATH_FAIL",
+      "status": "VERIFIED_CLOSED",
+      "owner": "verification_engineer",
+      "problem": "Initial c* log_wave paths matched no HDL signals",
+      "repair": "Explicit c0..c5 paths; original warning runs preserved",
+      "evidence": "All final *_wavefixed logs have no signal-path warning; final reviewer audited logs"
+    },
+    {
+      "id": "SH-EVID-04",
+      "severity": "INFO",
+      "status": "DISPUTED",
+      "problem": "Shadow audit treated absent manual WDB-window inspection as an unconditional acceptance gap",
+      "disposition": "Final independent reviewer accepts bounded automated FUNCTIONAL_SIM; manual waveform inspection not universally mandatory and not claimed",
+      "evidence": "FINAL-REVIEW.md; continuous sampled comparisons and four checker canaries"
+    },
+    {
+      "id": "FR19-I02",
+      "severity": "INFO",
+      "status": "ACCEPTED_RISK",
+      "scope": "FUNCTIONAL_SIM only",
+      "problem": "Part speed grade and physical timing/board evidence unresolved",
+      "disposition": "Resolve before any future dependent implementation or board claim; outside current scope"
+    }
+  ],
+  "open_blocker_high": 0,
+  "member_approval": "PENDING"
+}
