@@ -47,6 +47,11 @@ filesystem extraction or payload-driven URI lookup. Classic central-directory
 limits are checked before constructing ZIP metadata. ZIP64/encryption are
 explicitly unsupported. The selected member has separate bytes/hash/CRC.
 
+Stored/DEFLATE streams are consumed to their real end under the live expansion
+limit, including true length and CRC checks. Claimed file_size cannot hide
+trailing expansion. NPY headers also reject duplicate keys before literal
+evaluation. These operations do not decode any correlation value.
+
 ## Outputs and process codes
 
 `report.json` separates producer_result, V, missing, unsupported, original_errors
@@ -107,6 +112,14 @@ evidence merely for being present. Resource rejection is RESOURCE_UNSUPPORTED,
 not truncated input or a fabricated source conflict. Earlier real conflicts
 remain. Read budgets are software resource parameters, never acoustic defaults,
 hardware cycles, service budgets or production time bounds.
+
+Unconsumed legal numeric extensions preserve their lexical tokens without
+becoming integer evidence. Consumed integer fields require actual integral
+lexical tokens in their range; float/exponent/-0 cannot pass via coercion. Native
+JSON non-finite tokens are rejected. Nested config/source-manifest groups are
+retained through exact source pointers rather than keeping multiple decoded
+trees alive. Optional Git observation records HEAD/dirty state; raw executing
+file hashes remain authoritative if Git is unavailable.
 
 The byte-cache/JSON limits are **not** an interpreter/OS/RSS hard bound. Temporary
 chunks, UTF8 decoding and Python tree overhead exist. Windows PeakWorkingSetSize

@@ -1,6 +1,7 @@
 """Authoritative offline partial-producer CLI. Exit success is not acceptance."""
 import argparse
 import ctypes
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -44,9 +45,32 @@ def peak_memory():
         return {"observation": "UNKNOWN", "reason": str(e)}
 
 
+def git_identity():
+    # Optional observation, not a dependency or substitute for raw source hashes.
+    try:
+        p = subprocess.run(["git", "-C", str(HERE), "rev-parse", "HEAD"], capture_output=True, timeout=5)
+        if p.returncode:
+            raise OSError(p.stderr.decode(errors="replace"))
+        status = subprocess.run(["git", "-C", str(HERE), "status", "--porcelain=v1", "--", str(HERE)], capture_output=True, timeout=5)
+        return {"state": "KNOWN", "value": {"head": p.stdout.decode().strip(), "package_status": status.stdout.decode(), "status_exit": str(status.returncode)}}
+    except (OSError, subprocess.SubprocessError) as e:
+        return {"state": "UNKNOWN", "reason": str(e)}
+
+
 def write_json(p, obj):
     with p.open("xb") as f:
         f.write(serialize(obj))
+
+
+def file_identity(p):
+    sha, size = hashlib.sha256(), 0
+    with p.open("rb") as f:
+        while True:
+            b = f.read(1 << 20)
+            if not b:
+                break
+            sha.update(b); size += len(b)
+    return {"sha256": sha.hexdigest(), "byte_length": str(size)}
 
 
 def main(argv=None):
@@ -96,14 +120,17 @@ def main(argv=None):
         run["stages"].append("SAVED_FIELDS_AND_LINKS_PROCESSED")
         store.verify_post()
         for name, (path, st) in control_stamps.items():
-            b, after_st = read_control(path)
+            try:
+                b, after_st = read_control(path)
+            except (OSError, Issue) as e:
+                raise Issue(4, "CONTROL_POST_UNAVAILABLE_OR_CHANGED", {"control": name, "reason": str(e)}) from e
             if binding(b) != binding(reads[name]) or after_st != st:
                 raise Issue(4, "CONTROL_POST_DRIFT", {"control": name})
         if code_identity() != before:
             raise Issue(4, "PRODUCT_CODE_DRIFT")
         run["stages"].append("POST_IDENTITIES_STABLE")
         report["input_bindings"] = {n: binding(b) for n, b in reads.items()}
-        report["tool_binding"] = {"version": __version__, "executing_source_files": before, "product_commit": "See run/source identity; no floating-main claim"}
+        report["tool_binding"] = {"version": __version__, "executing_source_files": before, "git_observation": git_identity()}
         report["peak_memory"] = peak_memory()
         originals = out / "originals"; originals.mkdir()
         for hashcode, data in store.cache.items():
@@ -113,7 +140,8 @@ def main(argv=None):
         for v in producer.views:
             b, reason = payload(v, producer)
             if b is None:
-                report["unsupported"].append({"id": "raw-" + v["ordinal"], "view_ids": [v["id"]], "rule": "RAW_REPRESENTATION_BLOCKED", "reason": reason, "source_ids": [], "evidence_refs": [], "locator": "", "details": {}})
+                axis = "unsupported" if v["processed"] else "missing"
+                report[axis].append({"id": "raw-" + v["ordinal"], "view_ids": [v["id"]], "rule": "RAW_REPRESENTATION_BLOCKED" if v["processed"] else "RAW_INPUT_NOT_OBTAINED", "reason": reason, "source_ids": [], "evidence_refs": [], "locator": "", "details": {}})
             else:
                 path = "raw/view-" + v["ordinal"] + ".json"
                 (out / path).write_bytes(b)
@@ -121,6 +149,7 @@ def main(argv=None):
         if not report["conflicts"] and report["unsupported"]:
             report["producer_result"] = "UNSUPPORTED"
         report["counts"]["unsupported"] = str(len(report["unsupported"]))
+        report["counts"]["missing"] = str(len(report["missing"]))
         exitcode = 3 if report["conflicts"] else 0
         # Report is published only after successful pre/post checks. No later
         # source decoding is performed; output bytes come from verified snapshots.
@@ -129,7 +158,7 @@ def main(argv=None):
         run["code_after"] = code_identity()
         run["peak_memory"] = peak_memory()
         write_json(out / "run.json", run)
-        outputs = {str(p.relative_to(out)).replace("\\", "/"): binding(p.read_bytes()) for p in out.rglob("*") if p.is_file()}
+        outputs = {str(p.relative_to(out)).replace("\\", "/"): file_identity(p) for p in out.rglob("*") if p.is_file()}
         write_json(out / "output-index.json", {"claim_scope": "SAVED_RESEARCH_DIAGNOSTIC", "output_state": "SEALED_REPORT", "exit": str(exitcode), "files": outputs})
         print(json.dumps({"report": str(out / "report.json"), "producer_result": report["producer_result"], "V": "NOT_RUN", "exit": exitcode}))
         return exitcode

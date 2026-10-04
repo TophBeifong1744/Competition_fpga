@@ -138,10 +138,12 @@ def _pairs(pairs):
     return result
 
 
+class UnconsumedNumber(str):
+    """Preserve lexical extensions without pretending they are an integer fact."""
+
+
 def _integer(s):
-    if not re.fullmatch(r"0|-?[1-9][0-9]{0,255}", s):
-        raise ValueError("LEGACY_INTEGER_LEXICAL_OR_DIGIT_LIMIT")
-    return int(s)
+    return int(s) if re.fullmatch(r"0|-?[1-9][0-9]{0,255}", s) else UnconsumedNumber(s)
 
 
 def _reject(s):
@@ -215,7 +217,7 @@ def bounded_json(b, control=False):
                 raise Resource("JSON_NODE_LIMIT")
         result = json.loads(s, object_pairs_hook=_pairs,
                             parse_int=_reject if control else _integer,
-                            parse_float=_reject, parse_constant=_reject)
+                            parse_float=_reject if control else UnconsumedNumber, parse_constant=_reject)
         return result
     except Resource as e:
         if control:

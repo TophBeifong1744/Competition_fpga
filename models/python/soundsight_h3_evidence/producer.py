@@ -2,7 +2,7 @@
 import json
 
 from .contracts import (Issue, Resource, ROLES, RULE_HASHES, SPEC, RAW, PROFILE,
-                        PAIRS, binding, bounded_json, known, unknown, uint)
+                        PAIRS, UnconsumedNumber, binding, bounded_json, known, unknown, uint)
 from .sources import npy_layout, zip_directory
 
 
@@ -10,6 +10,8 @@ def json_value(x):
     """New report representation, not re-encoding the identity of original bytes."""
     if type(x) is int:
         return str(x)
+    if isinstance(x, UnconsumedNumber):
+        return {"source_numeric_token": str(x), "interpreted": False}
     if type(x) is list:
         return [json_value(v) for v in x]
     if type(x) is dict:
@@ -26,9 +28,9 @@ def raw_error(source_id, locator, reason, category="UNKNOWN", status=None, posit
     if n is not None and n > 1024:
         issues.append("RAW_TEXT_1024_BYTES_EXCEEDED_USE_ORIGINAL_SOURCE")
     return {"source_id": source_id, "locator": locator, "category": category,
-            "original_status": json_value(status),
+            "original_status": known(json_value(status)) if status is not None else unknown("No status saved at this reason locator"),
             "raw_reason": known(reason) if n is not None and n <= 1024 else unknown("See complete original source bytes at locator"),
-            "reason_utf8_bytes": str(n) if n is not None else None,
+            "reason_utf8_bytes": str(n) if n is not None else unknown("Original reason is not a recorded UTF8 string"),
             "raw_reason_source": {"source_id": source_id, "locator": locator},
             "positions": json_value(positions) if positions is not None else unknown("Not recorded"),
             "typed_error_ref": unknown("Original typed namespace/code/native/Admission not supplied"),
@@ -47,6 +49,7 @@ class Producer:
         self.consumed = []
         self.roles, self.unavailable = {}, set()
         self.histories = []
+        self.support_views = []
 
     def note(self, axis, reason, sid=None, view=None, details=None, locator=""):
         target = getattr(self, axis)
@@ -78,6 +81,11 @@ class Producer:
             return None
         try:
             role = self.dispatch(sid)
+            loc = self.store.entries[sid]["location"]
+            if loc["kind"] == "ZIP_MEMBER" and self.source(loc["container_id"], view) is None:
+                self.note("missing", "MEMBER_PARENT_NOT_ADMITTED", sid, view)
+                self.unavailable.add(sid)
+                return None
             b = self.store.get(sid)
             self.roles[sid] = role
             if sid not in self.consumed:
@@ -285,6 +293,16 @@ class Producer:
         if role == "RESEARCH_CONFIG_FIELDS":
             if data.get("scope") != "RESEARCH_ONLY" or data.get("backend") != "portable_q30_frozen":
                 self.note("unsupported", "UNSUPPORTED_RESEARCH_BACKEND_OR_SCOPE", sid)
+            facts = []
+            for name in ("scope", "profile_id", "backend", "source_manifest_sha256", "table_manifest_sha256", "sample_rate_hz", "frame_length", "hop", "geometry", "activity", "tracker", "audio_fade_samples"):
+                if name not in data:
+                    self.note("missing", "MISSING_RESEARCH_CONFIG_FIELD", sid, details={"field": name})
+                elif name in ("sample_rate_hz", "frame_length", "hop", "audio_fade_samples") and (type(data[name]) is not int or not 0 <= data[name] < (1 << 64)):
+                    self.note("conflicts", "RESEARCH_CONFIG_INTEGER_TYPE", sid, details={"field": name})
+                else:
+                    value = {"source_id": sid, "locator": "/" + name, "original_source_preserved": True} if type(data[name]) in (dict, list) else json_value(data[name])
+                    facts.append({"name": name, "value": value, "locator": "/" + name, "degree": "KNOWN_SAVED_RESEARCH_NOT_PRODUCTION"})
+            self.support_views.append({"source_id": sid, "role": role, "facts": facts})
             self.histories.append({"source_id": sid, "locator": "/", "original_source_preserved": True,
                                    "native_interpretation": "NOT_RUN", "root_equivalence": "NOT_PROVEN"})
             return
@@ -301,6 +319,8 @@ class Producer:
                         self.note("conflicts", "RUN_INDEX_OUTPUT_HASH", sid, details={"index": outputs[name], "target": e["ref"]})
                     self.store.edges.append({"from": sid, "to": e["id"], "rule": "RUN_INDEX_OUTPUT_HASH", "locator": "/outputs_sha256/" + name})
         inputs, composer = data.get("inputs_sha256", {}), data.get("composer_sha256", {})
+        self.support_views.append({"source_id": sid, "role": role,
+                                   "saved_bindings": [{"name": name, "source_id": sid, "locator": "/" + name, "original_source_preserved": True} for name in ("inputs_sha256", "source_identity", "composer_sha256", "outputs_sha256") if name in data]})
         for e in self.store.entries.values():
             if e["id"] not in self.required:
                 continue
@@ -360,4 +380,5 @@ class Producer:
                 "conflicts": self.conflicts, "missing": self.missing, "unsupported": self.unsupported,
                 "original_errors": self.original_errors, "error_capacity_issues": error_capacity(self.original_errors),
                 "saved_history_refs": self.histories, "raw_payloads": [], "wire_ready": "0", "time": "UNBOUND",
+                "support_views": self.support_views,
                 "not_run": ["mathematical V", "full K/roots association", "native/lease bridge", "algorithms", "RTL/EDA/hardware"]}
