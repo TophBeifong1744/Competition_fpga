@@ -133,15 +133,21 @@ source budget; its streaming read is separately a stability check.
 ### I17-PRODUCER-T1-01 resource audit
 
 `source_audit.distinct_source_bytes` is acquisition spent, not verified-cache size.
+Each previously unverified source ID/locator consumes its actual FILE/expanded
+bytes, including when its declared hash names already cached content. It must fit
+the remaining budget before reading and is charged while reading, without refunds.
+Only an already verified ID's immutable buffer is reused without another acquisition.
 `expanded_member_bytes` includes actual emitted member bytes even when the member
 is rejected. `verified_cache_bytes` counts only complete verified content retained
-for reuse/`originals/`. The existing hash-only location verification for another
-reference to already verified content is separate `identity_check_bytes`; it cannot
-admit or return mismatching content. Post/stability rereads are `post_check_bytes`.
-These separate check counters are not primary acquisition or hardware time bounds.
+for reuse/`originals/`. Equal content at a new location may share that buffer only
+after the location's own budgeted acquisition and identity checks succeed; verified
+cache bytes may thus be smaller than acquisition spent. `identity_check_bytes` is
+retained for output compatibility and is zero: new-location authentication is not
+an exempt hash-only check. Post/stability rereads remain `post_check_bytes` and do
+not recharge primary acquisition. No counter is a hardware time bound.
 
-Each actual read record adds `acquisition`: `mode` (NEW_CONTENT or
-VERIFIED_CONTENT_LOCATION_CHECK), `state` (VERIFIED or REJECTED), `charged_bytes`,
+Each actual read record adds `acquisition`: `mode` (NEW_CONTENT),
+`state` (VERIFIED or REJECTED), `charged_bytes`,
 `complete`, and rejected `reason`. For a partial rejection, `observed` hashes/counts
 only the returned prefix, never an asserted complete object; `complete=false` and
 `post=NOT_VERIFIED` make that distinction explicit. A complete identity-rejected
@@ -158,6 +164,13 @@ an extra byte beyond the ceiling to test for overflow. Resource refusal retains
 already emitted prefix accounting, never publishes a truncated member as valid.
 Frozen tests remain read-only; author repair diagnostics are not independent
 acceptance or closure of this finding.
+
+Round2 removes the old free new-location cached-hash behavior: at a fully consumed
+budget, another unverified locator is RESOURCE_UNSUPPORTED before it is read,
+even if it would contain equal bytes. No identity conflict is invented from unread
+payloads; earlier actually observed errors remain. The old author full-budget alias
+expectation is retained in old evidence as a superseded behavior, not edited to
+hide the difference. Already verified same-ID FILE/ZIP buffer reuse is unchanged.
 
 ## Module responsibilities / review handoff
 

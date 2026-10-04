@@ -148,13 +148,12 @@ class SourceStore:
             code, reason, details, resource = self.failed[sid]
             raise Resource(reason, details) if resource else Issue(code, reason, details)
         e = self.entries[sid]
-        cached = e["ref"]["content_sha256"] in self.cache
         sha, length = hashlib.sha256(), 0
         record = {"id": sid, "ref": e["ref"], "location": e["location"],
                   "declared": {"sha256": e["ref"]["content_sha256"], "byte_length": e["byte_length"]},
                   "observed": {"sha256": sha.hexdigest(), "byte_length": "0"},
                   "post": "NOT_VERIFIED", "acquisition": {"state": "IN_PROGRESS",
-                  "mode": "VERIFIED_CONTENT_LOCATION_CHECK" if cached else "NEW_CONTENT",
+                  "mode": "NEW_CONTENT",
                   "charged_bytes": "0", "complete": False}}
 
         def acquired(b):
@@ -164,11 +163,8 @@ class SourceStore:
             length += len(b)
             sha.update(b)
             record["observed"] = {"sha256": sha.hexdigest(), "byte_length": str(length)}
-            if cached:
-                self.identity_checked += len(b)
-            else:
-                self.used += len(b)
-                record["acquisition"]["charged_bytes"] = str(length)
+            self.used += len(b)
+            record["acquisition"]["charged_bytes"] = str(length)
             if e["location"]["kind"] == "ZIP_MEMBER":
                 self.expanded += len(b)
             # Callers bound the next FILE/decompress operation before it occurs.
@@ -191,13 +187,14 @@ class SourceStore:
         e = self.entries[sid]
         loc, declared = e["location"], uint(e["byte_length"])
         key = e["ref"]["content_sha256"]
-        cached = key in self.cache
         limit = 16 * MIB if loc["kind"] == "FILE" else 8 * MIB
-        if declared > limit or self.used + (0 if cached else declared) > self.budget:
+        # A declared hash naming cached content does not authenticate this
+        # locator. Only the already verified by_id fast path avoids acquisition.
+        if declared > limit or self.used + declared > self.budget:
             raise Resource("SOURCE_READ_BUDGET", {"source_id": sid, "declared": str(declared)})
         if loc["kind"] == "FILE":
             try:
-                read, st = read_file(loc["path"], limit if cached else min(limit, self.budget - self.used), identity_only=cached, acquired=acquired)
+                read, st = read_file(loc["path"], min(limit, self.budget - self.used), acquired=acquired)
             except FileNotFoundError:
                 raise Issue(0, "MISSING_SOURCE", {"source_id": sid}) from None
             except PermissionError:
@@ -206,9 +203,9 @@ class SourceStore:
                 if "length" in err.details and int(err.details["length"]) != declared:
                     raise Issue(3, "SOURCE_DECLARED_LENGTH_CONFLICT", {"source_id": sid, "declared_length": str(declared), "observed_length": err.details["length"], "hash": "NOT_READ_RESOURCE_LIMIT"}) from err
                 raise
-            actual = read if cached else binding(read)
+            actual = binding(read)
             self.files[sid] = (loc["path"], actual, st)
-            data = self.cache[key] if cached else read
+            data = read
         else:
             parent = self.get(loc["container_id"])
             self.edges.append({"from": sid, "to": loc["container_id"], "rule": "ZIP_MEMBER_PARENT", "locator": loc["member_name"]})
