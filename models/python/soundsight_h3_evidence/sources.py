@@ -33,7 +33,7 @@ def stamp(s):
     return (s.st_dev, s.st_ino, s.st_size, s.st_mtime_ns)
 
 
-def read_file(value, ceiling, identity_only=False):
+def read_file(value, ceiling, identity_only=False, acquired=None):
     p = safe_path(value)
     before = p.lstat()
     if not stat.S_ISREG(before.st_mode):
@@ -48,11 +48,15 @@ def read_file(value, ceiling, identity_only=False):
     with os.fdopen(fd, "rb") as f:
         if stamp(os.fstat(f.fileno())) != stamp(before):
             raise Issue(4, "SOURCE_CHANGED_AT_OPEN", {"path": value})
-        while True:
-            b = f.read(min(MIB, ceiling - actual + 1))
+        # Do not acquire a +1 probe byte beyond the resource ceiling. The
+        # pre-open length bounds this read; final stamps detect growth/shrinkage.
+        while actual < before.st_size:
+            b = f.read(min(MIB, before.st_size - actual))
             if not b:
                 break
             actual += len(b)
+            if acquired is not None:
+                acquired(b)
             if actual > ceiling:
                 raise Resource("FILE_BYTE_LIMIT_DURING_READ")
             sha.update(b)
@@ -122,15 +126,68 @@ class SourceStore:
         self.entries = entries
         self.budget = min(uint(budget), 64 * MIB)
         self.used = self.expanded = 0
+        self.identity_checked = self.post_checked = 0
         self.cache = {}  # Only one copy per complete content byte identity.
         self.by_id = {}
         self.records = []
         self.files = {}
         self.edges = []
+        self.failed = {}  # A failed attempt is not a verified content cache.
+
+    def accounting(self):
+        return {"distinct_source_bytes": str(self.used),
+                "expanded_member_bytes": str(self.expanded),
+                "verified_cache_bytes": str(sum(len(b) for b in self.cache.values())),
+                "identity_check_bytes": str(self.identity_checked),
+                "post_check_bytes": str(self.post_checked)}
 
     def get(self, sid):
         if sid in self.by_id:
             return self.by_id[sid]
+        if sid in self.failed:
+            code, reason, details, resource = self.failed[sid]
+            raise Resource(reason, details) if resource else Issue(code, reason, details)
+        e = self.entries[sid]
+        cached = e["ref"]["content_sha256"] in self.cache
+        sha, length = hashlib.sha256(), 0
+        record = {"id": sid, "ref": e["ref"], "location": e["location"],
+                  "declared": {"sha256": e["ref"]["content_sha256"], "byte_length": e["byte_length"]},
+                  "observed": {"sha256": sha.hexdigest(), "byte_length": "0"},
+                  "post": "NOT_VERIFIED", "acquisition": {"state": "IN_PROGRESS",
+                  "mode": "VERIFIED_CONTENT_LOCATION_CHECK" if cached else "NEW_CONTENT",
+                  "charged_bytes": "0", "complete": False}}
+
+        def acquired(b):
+            nonlocal length
+            if record not in self.records:
+                self.records.append(record)
+            length += len(b)
+            sha.update(b)
+            record["observed"] = {"sha256": sha.hexdigest(), "byte_length": str(length)}
+            if cached:
+                self.identity_checked += len(b)
+            else:
+                self.used += len(b)
+                record["acquisition"]["charged_bytes"] = str(length)
+            if e["location"]["kind"] == "ZIP_MEMBER":
+                self.expanded += len(b)
+            # Callers bound the next FILE/decompress operation before it occurs.
+            if self.used > self.budget or self.expanded > 32 * MIB:
+                raise Issue(4, "ACQUISITION_ACCOUNTING_BOUND_VIOLATION")
+        try:
+            data = self._get(sid, acquired, record)
+        except Exception as err:
+            record["acquisition"].update(state="REJECTED", reason=getattr(err, "reason", type(err).__name__))
+            # Keep the failure identity, not a traceback retaining rejected
+            # buffers/decoder frames. A retry raises a fresh exception, no read.
+            self.failed[sid] = (getattr(err, "code", 4),
+                                getattr(err, "reason", type(err).__name__),
+                                getattr(err, "details", {}), isinstance(err, Resource))
+            raise
+        record["acquisition"].update(state="VERIFIED", complete=True)
+        return data
+
+    def _get(self, sid, acquired, record):
         e = self.entries[sid]
         loc, declared = e["location"], uint(e["byte_length"])
         key = e["ref"]["content_sha256"]
@@ -140,7 +197,7 @@ class SourceStore:
             raise Resource("SOURCE_READ_BUDGET", {"source_id": sid, "declared": str(declared)})
         if loc["kind"] == "FILE":
             try:
-                read, st = read_file(loc["path"], limit if cached else min(limit, self.budget - self.used), identity_only=cached)
+                read, st = read_file(loc["path"], limit if cached else min(limit, self.budget - self.used), identity_only=cached, acquired=acquired)
             except FileNotFoundError:
                 raise Issue(0, "MISSING_SOURCE", {"source_id": sid}) from None
             except PermissionError:
@@ -172,19 +229,18 @@ class SourceStore:
                     if self.used + m.file_size > self.budget:
                         raise Resource("SOURCE_READ_BUDGET_AFTER_PARENT")
                     ceiling = min(8 * MIB, 32 * MIB - self.expanded, self.budget - self.used)
-                    data = inflate_member(parent, m, z.start_dir, ceiling)
-                    self.expanded += len(data)
+                    data = inflate_member(parent, m, z.start_dir, ceiling, acquired=acquired)
             except (zipfile.BadZipFile, RuntimeError, NotImplementedError, EOFError) as err:
                 raise Issue(3, "ZIP_MEMBER_READ_CONFLICT", {"reason": str(err)}) from err
         if loc["kind"] != "FILE":
             actual = binding(data)
-        self.records.append({"id": sid, "ref": e["ref"], "location": loc,
-                             "declared": {"sha256": key, "byte_length": e["byte_length"]},
-                             "observed": actual, "post": "PENDING"})
+        if record not in self.records:
+            self.records.append(record)  # Complete empty files are also read sources.
+        record.update(observed=actual, post="PENDING")
+        record["acquisition"]["complete"] = True
         if actual != {"sha256": key, "byte_length": e["byte_length"]}:
-            raise Issue(3, "SOURCE_BYTE_IDENTITY", {"source_id": sid, "declared": self.records[-1]["declared"], "observed": actual})
+            raise Issue(3, "SOURCE_BYTE_IDENTITY", {"source_id": sid, "declared": record["declared"], "observed": actual})
         if key not in self.cache:
-            self.used += len(data)
             self.cache[key] = data
         self.by_id[sid] = self.cache[key]
         return self.cache[key]
@@ -192,13 +248,16 @@ class SourceStore:
     def verify_post(self):
         for sid, (path, before, st) in self.files.items():
             try:
-                after, after_st = read_file(path, 16 * MIB, identity_only=True)
+                def post_acquired(b):
+                    self.post_checked += len(b)
+                after, after_st = read_file(path, 16 * MIB, identity_only=True, acquired=post_acquired)
             except (OSError, Issue) as e:
                 raise Issue(4, "SOURCE_POST_UNAVAILABLE_OR_CHANGED", {"source_id": sid, "reason": str(e)}) from e
             if after != before or after_st != st:
                 raise Issue(4, "SOURCE_POST_DRIFT", {"source_id": sid, "pre": before, "post": after})
         for r in self.records:
-            r["post"] = "UNCHANGED"
+            if r["id"] in self.files or r["acquisition"]["state"] == "VERIFIED":
+                r["post"] = "UNCHANGED"
 
 
 class MemoryReader(io.RawIOBase):
@@ -228,7 +287,7 @@ class MemoryReader(io.RawIOBase):
         return result
 
 
-def inflate_member(parent, member, directory_start, ceiling):
+def inflate_member(parent, member, directory_start, ceiling, acquired=None):
     """Read the ENTIRE stored/deflate stream, independent of claimed file_size.
 
     ZipExtFile clamps at a claimed uncompressed size; using that alone would
@@ -258,19 +317,27 @@ def inflate_member(parent, member, directory_start, ceiling):
         nonlocal crc
         if len(output) + len(b) > ceiling:
             raise Resource("ZIP_EXPANSION_LIMIT_DURING_READ")
+        if acquired is not None and b:
+            acquired(b)
         output.extend(b)
         crc = binascii.crc32(b, crc)
     try:
         pos = start
         while pos < end:
-            chunk = parent[pos:min(end, pos + MIB)]
+            remaining = ceiling - len(output)
+            if remaining == 0:
+                raise Resource("ZIP_EXPANSION_LIMIT_DURING_READ")
+            chunk = parent[pos:min(end, pos + (min(MIB, remaining) if decoder is None else MIB))]
             pos += len(chunk)
             if decoder is None:
                 append(chunk)
                 continue
             pending = chunk
             while pending:
-                append(decoder.decompress(pending, min(MIB, ceiling - len(output) + 1)))
+                remaining = ceiling - len(output)
+                if remaining == 0:
+                    raise Resource("ZIP_EXPANSION_LIMIT_DURING_READ")
+                append(decoder.decompress(pending, min(MIB, remaining)))
                 pending = decoder.unconsumed_tail
                 if decoder.eof:
                     if pending or decoder.unused_data or pos != end:

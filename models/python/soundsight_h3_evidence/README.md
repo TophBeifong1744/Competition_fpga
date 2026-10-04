@@ -97,8 +97,11 @@ time UNBOUND, #18/Case167/previous STOP and accumulated findings are unchanged.
 ## Explicit software resource limits
 
 Per control: 1MiB/16 layers; map/views 256, registry 32, whitelist 256, supports32.
-Distinct verified source cache is bounded by read_budget_bytes and a 64MiB hard
-software cap. FILE/container16MiB; expanded member8MiB; total expanded32MiB;
+Actual new-content acquisition, including rejected/partial FILE reads and emitted
+ZIP bytes, is charged immediately against read_budget_bytes and a 64MiB hard
+software cap. Successful cache admission is separate from acquisition; an identity,
+CRC, size, stream or later read failure does not refund acquired bytes.
+FILE/container16MiB; expanded member8MiB; total expanded32MiB;
 ZIP entries4096 and central directory1MiB. Source reads/decompression use at
 most 1MiB chunks. Containers and members count separately; repeat use of the
 same admitted source does not re-read/decompress it. The NPY parser only checks
@@ -126,6 +129,35 @@ chunks, UTF8 decoding and Python tree overhead exist. Windows PeakWorkingSetSize
 is recorded where callable; otherwise UNKNOWN. A measured peak is not a proof
 of a process upper bound or WCET. Post-verification does not recharge distinct
 source budget; its streaming read is separately a stability check.
+
+### I17-PRODUCER-T1-01 resource audit
+
+`source_audit.distinct_source_bytes` is acquisition spent, not verified-cache size.
+`expanded_member_bytes` includes actual emitted member bytes even when the member
+is rejected. `verified_cache_bytes` counts only complete verified content retained
+for reuse/`originals/`. The existing hash-only location verification for another
+reference to already verified content is separate `identity_check_bytes`; it cannot
+admit or return mismatching content. Post/stability rereads are `post_check_bytes`.
+These separate check counters are not primary acquisition or hardware time bounds.
+
+Each actual read record adds `acquisition`: `mode` (NEW_CONTENT or
+VERIFIED_CONTENT_LOCATION_CHECK), `state` (VERIFIED or REJECTED), `charged_bytes`,
+`complete`, and rejected `reason`. For a partial rejection, `observed` hashes/counts
+only the returned prefix, never an asserted complete object; `complete=false` and
+`post=NOT_VERIFIED` make that distinction explicit. A complete identity-rejected
+FILE may have `post=UNCHANGED`: stability does not grant identity validity. Sources
+rejected before acquiring any bytes are listed on the affected missing/unsupported/
+conflict axis, not fabricated as read sources. A retry of a failed ID preserves the
+error without another acquisition; failure metadata is not a verified byte cache.
+Failure-only output adds `source_accounting` alongside the retained read records.
+
+The FILE reader uses the pre-open length and final stamps without a +1 byte probe.
+The inflater caps each returned output chunk at the exact remaining budget and
+stops when that limit is reached without a proven stream end; it does not generate
+an extra byte beyond the ceiling to test for overflow. Resource refusal retains
+already emitted prefix accounting, never publishes a truncated member as valid.
+Frozen tests remain read-only; author repair diagnostics are not independent
+acceptance or closure of this finding.
 
 ## Module responsibilities / review handoff
 

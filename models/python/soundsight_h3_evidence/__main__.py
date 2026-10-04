@@ -119,6 +119,7 @@ def main(argv=None):
         report = producer.run()
         run["stages"].append("SAVED_FIELDS_AND_LINKS_PROCESSED")
         store.verify_post()
+        report["source_audit"].update(store.accounting())
         for name, (path, st) in control_stamps.items():
             try:
                 b, after_st = read_control(path)
@@ -175,6 +176,7 @@ def main(argv=None):
                     p.rename(out / ("INVALID-" + name))
             failure = {"output_state": "FAILURE_ONLY", "all_other_outputs": "INVALID_DIAGNOSTIC_ONLY", "V": "NOT_RUN", "run": run,
                        "source_audit": store.records if store else [], "known_conflicts": producer.conflicts if producer else [],
+                       "source_accounting": store.accounting() if store else {},
                        "missing": producer.missing if producer else [], "unsupported": producer.unsupported if producer else [],
                        "original_errors": producer.original_errors if producer else []}
             write_json(out / "failure.json", failure)
