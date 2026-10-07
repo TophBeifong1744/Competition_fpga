@@ -1,0 +1,36 @@
+{
+  "schema": "np-hann-table-v1",
+  "task": "I17-NUMERIC-PREPROCESS-20261007",
+  "architecture_sha256": "974400be40c5f547cb0d056a45e31cc9ace37162121bc8f922c9568b12455764",
+  "source": {
+    "commit": "a14cd0766d923f00428c42ff7dc5d2eb52db0e50",
+    "path": "task-packages/PKG-B-ALG/tasks/h3-interface-review-20260918/fixed-nodes-20260921/b1b3/run02/hann-u18f17.u32le",
+    "blob": "ec63ac7d92cb0829c7d4a120495642dde588ca25",
+    "bytes": 4096,
+    "sha256": "51a05f855181f1774c3373c83085fd5a2792f5db932d66b1f3dc768e8ec6a2f2"
+  },
+  "source_encoding": "1024 unsigned U32 little-endian, U18F17",
+  "product": {
+    "path": "hann-u18f17.mem",
+    "bytes": 6144,
+    "sha256": "487c7f988ab00fc0428dc3fbe1705e933eac96ef4f54519727bf9fb0d11dc1bf",
+    "encoding": "ASCII/UTF-8 without BOM; LF",
+    "format": "1024 lines, each five lowercase hex digits and LF",
+    "index_order": "line i+1 holds coefficient for sample index i, i=0..1023",
+    "value_min": 0,
+    "value_max": 131072
+  },
+  "conversion": {
+    "script": "codex_out/i17-numeric-preprocess-product-20261007/convert_hann.py",
+    "script_sha256": "fafda3e6dc79a3816fd83af1185bcf2333b6af7ae5bcd234c17f9acc0814b59b",
+    "operation": "unpack <1024I; encode each exact integer as 05x plus LF; verify reverse packing",
+    "runtime_floating_point_generation": false
+  },
+  "runtime": {
+    "consumer": "pcm4_numeric_preprocess.sv",
+    "parameter": "HANN_FILE",
+    "path_policy": "Different path must select these exact manifest-bound bytes; verify SHA256 before compile/run.",
+    "missing_or_short": "ROM defaults to out-of-range sentinel; consumed invalid coefficients abort with error COEFFICIENT.",
+    "in_range_substitution": "Not detected by hardware range check; byte identity is an integration preflight requirement."
+  }
+}
