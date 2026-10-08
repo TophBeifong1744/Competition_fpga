@@ -1,0 +1,9 @@
+# Relative to repository root. ss_fft29 official simulation sources/libraries
+# must be generated with generate_simulation.tcl and its exported compile order.
+project/rtl/algorithm/window/pcm4_window_consumer.sv
+project/rtl/algorithm/window/caller/pcm4_window_caller.sv
+project/rtl/algorithm/preprocess/pcm4_numeric_preprocess.sv
+project/rtl/algorithm/fixed4/fixed4_leaf.sv
+project/rtl/algorithm/fft_forward/fft29_official.sv
+project/rtl/algorithm/fft_forward/pcm4_forward_fft_fixed4.sv
+project/rtl/algorithm/fft_forward/pcm4_forward_fft_entry.sv
