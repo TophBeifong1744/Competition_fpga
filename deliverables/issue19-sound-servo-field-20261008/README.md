@@ -1,10 +1,18 @@
+## v3 增量更正（2026-10-08）
+
+按用户明确要求排除010，保留011/012/013。每目录三次是同一固定方向的重复采集；曾短暂回忆为每目录依次−90/0/+90的说法已撤回，不采用其误差统计。实际名义方位最终确认011=0、012=−90、013=+90。
+
+本包原始RAW/events/旧bit/原生日志字节保持；旧89f6fed交付历史不覆盖。本次仅修正选择、实际方位标注和分析，并保留auto-04六段。未重新运行算法、采录或板测。2026-10-08单独时序修复已在本机生成新bit、内部STA通过，但用户决定本轮声源算法任务跳过该新bit上板回归；本包build仍是产生现场数据时的旧候选，不能把新内部时序结果倒填到本包。原旧bit时序失败记录如实保留。
+
+三个固定方向各三次支持有限粗略方向诊断，不能签连续无间断采集、长期角度上界、机械到位或完整产品验收。误差单位为度，不写未定义基准的10%。
+
 # 四麦声源方向 → 水平舵机：上板诊断交付（2026-10-08）
 
 本包保留手动触发的断续测试和自动重复触发的现场测试。它是可复核的上板诊断记录，**不是连续 48 kHz 采集、实时跟踪、准确角度测量或时序验收通过**。
 
 ## 内容
 
-- `manual/`：四个完整手动测试目录（`sound-servo-boardband-new-010` 至 `-013`），每目录背景 1 段、前景 3 段、原始 `events.jsonl`。共 12 段前景，均有 `target_accepted`。
+- `manual/`：三个完整手动测试目录（`sound-servo-boardband-new-011` 至 `-013`），每目录背景 1 段、前景 3 段、原始 `events.jsonl`。共 9 段前景，均有 `target_accepted`。
 - `auto/sound-servo-auto-04/`：背景 1 段、自动前景 6 段和原始 `events.jsonl`。4 次下发水平目标，2 次未下发新目标；全部 6 段 `capture_*.raw` 均已保存。
 - `cycle-results.csv`：从各目录原始 `events.jsonl` 提取的逐轮决策；算法角和目标角来自原始事件，未用实测声源角代填。
 - `build/`：用户 Vivado 2025.2 工程生成的 bit、布线后时序/DRC 报告及综合/实现原生日志。
@@ -16,7 +24,7 @@
 
 - 用户确认自动测试实际声源布置依次为：第 **1–2** 轮约 **−45°**、第 **3–5** 轮约 **5°**、第 **6** 轮约 **45°**；并特别更正第 **3、5** 轮都是 5°。用户现场观察舵机大致按 −45°→5°→45° 同向转动。没有独立量具测得的机械最终停位，不能用协议 ACK 代替到位证明。
 - 自动第 1、4、5、6 轮输出的算法角分别约 −44.46°、6.15°、3.10°、44.72°；目标分别为 136°、186°、183°、225°。第 2、3 轮为 `GEOMETRY_REJECT`，活动门已打开、数值未报错、每轮五个有效麦对，但几何残差超过算法门限，故保留上次舵机目标。原始捕获没有丢失。
-- 手动测试的算法角/目标角见 `cycle-results.csv`。当时每个目录的声源真实角度、舵机实际停位没有同步标注；不能据此宣称角度精度。
+- 手动测试的算法角/目标角见 `cycle-results.csv`。用户2026-10-08补充确认：011每次固定0°、012每次固定−90°、013每次固定+90°，每组重复三次。该实际方位是事后确认的名义摆放，不是同步量具测量。9次算法方位最大观测绝对误差6.04°、MAE3.57°、RMSE4.06°。详见analysis/；没有机械停位测量，不推导舵机实际位置精度。
 - 本候选每轮只采 2048 组四路 PCM（约 42.7 ms），然后通过 115200 baud 串口上传并由电脑计算。自动模式省去逐轮回车，但两轮之间没有持续采样，属于重复突发采集。
 - 用户使用的硬件候选为 Zynq `xc7z020clg400-1`、水平 T15、垂直 W16；本次垂直目标固定 130°。电脑使用 COM3、`--zero 180 --polarity 1 --channel-order 0,1,2,3 --confirm-candidate-square`。40 mm 方形为算法候选模型，不代表实物几何已精测。
 
@@ -24,12 +32,13 @@
 
 `build/sound_servo_burst_top.bit` 为 D 盘 Vivado 工程 `D:/vavido_project/i19_sound_servo` 2026-10-07 23:46 生成的文件；本包 SHA-256 见 `SHA256SUMS.csv`。bit 生成成功、用户取得板上串口/舵机观察，但未独立记录 Hardware Manager 所加载 bit 的 SHA-256。
 
-**布线后时序未达标**：时序报告给出 WNS = −2.221 ns、TNS = −6.593 ns、5 个 setup 失败终点；其中 3 个为 61.44 MHz `out2` 到 50 MHz `sys_clk` 的 `capture_clipped` 路径，最差 −2.221 ns，另 2 个在 `sys_clk` 内。原生实现日志明确报告 `Timing constraints are not met`。这些报告必须与 bit 一起交付，不能将板上有限观察升级为工程验收 PASS。后续需单独分析/修复该跨时钟状态传递并重新构建、复查时序。
+**布线后时序未达标**：时序报告给出 WNS = −2.221 ns、TNS = −6.593 ns、5 个 setup 失败终点；其中 3 个为 61.44 MHz `out2` 到 50 MHz `sys_clk` 的 `capture_clipped` 路径，最差 −2.221 ns，另 2 个在 `sys_clk` 内。原生实现日志明确报告 `Timing constraints are not met`。这些报告必须与 bit 一起交付，不能将板上有限观察升级为工程验收 PASS。该问题已在2026-10-08另一候选中修复并通过内部STA；用户跳过新候选上板回归。此处仅记录现场数据所用旧候选的历史状态。
 
 ## 文件来源
 
-- 原始手动/自动测试：本地仓库 `codex_out/sound-servo-boardband-new-010` 至 `-013`、`codex_out/sound-servo-auto-04`。
+- 原始手动/自动测试：本地仓库 `codex_out/sound-servo-boardband-new-011` 至 `-013`、`codex_out/sound-servo-auto-04`。
 - bit/报告：`D:/vavido_project/i19_sound_servo/i19_sound_servo.runs/impl_1`；综合日志：同工程 `synth_1/runme.log`。
 - 电脑脚本：`software/servo_follow/follow_burst.py`；测试 WAV：`codex_out/i19-sound-servo-burst-20261007/real-audio-diagnosis/broadband_direction_test_25s.wav`。
 
 本包保留原始 `events.jsonl` 和 RAW，`cycle-results.csv` 只作阅读索引；如两者不一致，以原始数据为准。
+

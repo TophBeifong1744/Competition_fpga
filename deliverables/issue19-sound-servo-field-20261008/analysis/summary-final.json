@@ -1,0 +1,55 @@
+{
+  "mapping_basis": "User explicitly agreed to 011=0,012=-90,013=+90 on 2026-10-08; actual angles are retrospective nominal placements, not measured mechanically",
+  "mapping": {
+    "013": 90,
+    "012": -90,
+    "011": 0
+  },
+  "maximum_abs_error_deg": 6.0390625,
+  "results": [
+    {
+      "folder": "sound-servo-boardband-new-011",
+      "actual_assumed_deg": 0.0,
+      "n": 3,
+      "outputs": "-1.28125, -0.8515625, -1.37890625",
+      "mean_algorithm_deg": -1.1705729166666667,
+      "output_range_deg": 0.52734375,
+      "mean_signed_error_deg": -1.1705729166666667,
+      "minimum_abs_error_deg": 0.8515625,
+      "maximum_abs_error_deg": 1.37890625,
+      "mean_abs_error_deg": 1.1705729166666667
+    },
+    {
+      "folder": "sound-servo-boardband-new-012",
+      "actual_assumed_deg": -90.0,
+      "n": 3,
+      "outputs": "-83.9609375, -84.72265625, -84.359375",
+      "mean_algorithm_deg": -84.34765625,
+      "output_range_deg": 0.76171875,
+      "mean_signed_error_deg": 5.65234375,
+      "minimum_abs_error_deg": 5.27734375,
+      "maximum_abs_error_deg": 6.0390625,
+      "mean_abs_error_deg": 5.65234375
+    },
+    {
+      "folder": "sound-servo-boardband-new-013",
+      "actual_assumed_deg": 90.0,
+      "n": 3,
+      "outputs": "86.98828125, 86.609375, 84.75",
+      "mean_algorithm_deg": 86.11588541666667,
+      "output_range_deg": 2.23828125,
+      "mean_signed_error_deg": -3.8841145833333335,
+      "minimum_abs_error_deg": 3.01171875,
+      "maximum_abs_error_deg": 5.25,
+      "mean_abs_error_deg": 3.8841145833333335
+    }
+  ],
+  "rmse_deg": 4.06249394864667,
+  "units_note": "Use absolute angular error in degrees; relative percentage is undefined at actual 0 degrees",
+  "status": "USER_CONFIRMED_POSITION_MAPPING",
+  "excluded": [
+    "010"
+  ],
+  "sample_count": 9,
+  "mae_deg": 3.56901041666667
+}
