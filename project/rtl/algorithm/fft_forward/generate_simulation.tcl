@@ -5,6 +5,7 @@ if {[version -short] ne "2025.2"} { error "Vivado 2025.2 required; no implicit u
 set output_root [file normalize [lindex $argv 0]]
 if {[file exists $output_root]} { error "refusing existing output directory" }
 file mkdir $output_root
+file mkdir [file join $output_root ip]
 create_project -in_memory -part xc7z020clg400-2
 create_ip -name xfft -vendor xilinx.com -library ip -version 9.1 -module_name ss_fft29 -dir [file join $output_root ip]
 set fft [get_ips ss_fft29]

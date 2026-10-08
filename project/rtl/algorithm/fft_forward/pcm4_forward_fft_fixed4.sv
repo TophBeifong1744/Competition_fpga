@@ -89,10 +89,11 @@ module pcm4_forward_fft_fixed4 (
     logic np_source_fire, np_report_fire, np_abort_fire, clear_fire;
     logic source_bad, report_bad, abort_bad, ip_bad, leaf_bad;
     logic kill_now, external_kill;
-    wire [7:0] cancel_union_now=accumulated_cancel_causes |
+    wire [7:0] reliable_causes_now=
         (cancel_now ? cancel_causes : 8'b0) |
         {3'b0,(source_bad||report_bad||abort_bad||ip_bad||leaf_bad),
          np_abort_valid,clear_fire,1'b0,cancel_now};
+    wire [7:0] cancel_union_now=accumulated_cancel_causes | reliable_causes_now;
     logic [7:0] fault_now;
     wire cfg_valid, cfg_ready, ip_s_valid, ip_s_ready, ip_s_last;
     wire ip_m_valid, ip_m_ready, ip_m_last;
@@ -123,14 +124,16 @@ module pcm4_forward_fft_fixed4 (
                      (leaf_in_n < 10'd513);
     wire leaf_input_fire=leaf_s_valid && leaf_s_ready;
     wire leaf_output_fire=leaf_m_valid && m_ready;
-    // Persistent manager cancellation lasts through the leaf's actual snapshot.
-    // Once snapshotted it must cease asserting kill to permit true retirement.
-    wire leaf_cancel=leaf_active && !leaf_cancelled &&
-                     (transaction_cancelled || kill_now);
+    // FF-PROTO-02: history alone permits retirement after save, but a current
+    // reliable kill (including held/repeated kill) still reaches a saved leaf.
+    wire leaf_cancel=leaf_active &&
+                     (kill_now || (transaction_cancelled && !leaf_cancelled));
+    wire [34:0] leaf_cause_now={leaf_cancel ? {24'b0,cancel_union_now} : 32'b0,
+                              leaf_protocol_bits,leaf_cancel};
     wire leaf_ack=(state==LEAF_SAVE) && leaf_active && leaf_cancelled &&
                   leaf_quiescent && !leaf_m_valid && !leaf_saved;
     wire leaf_retire=(state==LEAF_RETIRE) && leaf_active && leaf_quiescent &&
-                     !leaf_m_valid && (!leaf_cancelled || leaf_saved);
+                     !leaf_m_valid && (!leaf_cancelled || leaf_saved) && !kill_now;
     wire leaf_retire_safe=!ip_obligation && np_closed && !leaf_s_valid &&
                           !leaf_m_valid && leaf_quiescent;
     wire leaf_retire_fire=leaf_retire && leaf_retire_safe && !leaf_cancel &&
@@ -376,7 +379,6 @@ module pcm4_forward_fft_fixed4 (
                     fixed4_input_counts[instance_id*10+:10]<=leaf_in_n+10'd1;
                 end
                 if (leaf_ack) begin
-                    fixed4_cancel_causes_record[instance_id*35+:35]<=leaf_terminal_causes;
                     fixed4_terminal_n_record[instance_id*10+:10]<=leaf_terminal_n;
                     fixed4_terminal_p_record[instance_id*10+:10]<=leaf_terminal_p;
                     fixed4_cancelled_unsent_record[instance_id*10+:10]<=leaf_cancelled_unsent;
@@ -385,6 +387,14 @@ module pcm4_forward_fft_fixed4 (
                     fixed4_terminal_s_record[instance_id]<=leaf_terminal_s_transfer;
                     fixed4_cancel_saved[instance_id]<=1;
                 end
+                // Initial N/P/T/identity remain untouched; the cause field is
+                // the old leaf's documented monotonic late-cause audit union.
+                // Include E before the leaf's registered union becomes visible,
+                // and persist it before any later real retirement clears it.
+                if (leaf_active && leaf_cancelled && (leaf_saved || leaf_ack))
+                    fixed4_cancel_causes_record[instance_id*35+:35]<=
+                        fixed4_cancel_causes_record[instance_id*35+:35] |
+                        leaf_terminal_causes | leaf_cause_now;
                 if (leaf_retire_fire) fixed4_retire_accepted[instance_id]<=1;
                 if (leaf_output_fire) begin
                     leaf_out_n<=leaf_out_n+10'd1;
@@ -416,7 +426,7 @@ module pcm4_forward_fft_fixed4 (
                         abort_payload<={unit_state,hardware_started,physically_retired,
                             source_received,fft_in_n,fft_out_n,leaf_in_n,leaf_out_n,
                             instance_id,(first_error_code!=0 ? first_error_code : fault_now),
-                            cancel_causes,{np_source_fire,cfg_fire,ip_in_fire,ip_out_fire,
+                            reliable_causes_now,{np_source_fire,cfg_fire,ip_in_fire,ip_out_fire,
                                            leaf_input_fire,leaf_output_fire},
                             !np_closed,ip_obligation,leaf_active};
                     end

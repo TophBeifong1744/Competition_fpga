@@ -64,8 +64,12 @@ It has normal pipeline/stall behavior and physical cancel-edge history.
 Fixed4 normal retirement requires actual `data_done`, no old output/input offer,
 local quiescence, NP closed and real FFT obligation absent. Cancellation instead
 requires the leaf's actual terminal snapshot, its saved ACK on a separate edge,
-then true retire acceptance on a later edge. Cancellation input is released once
-the persistent terminal exists, allowing retirement without resetting the leaf.
+then true retire acceptance on a later edge. Historical sticky transaction
+cancellation alone stops driving leaf cancel after the persistent leaf terminal
+exists. A current reliable kill still drives leaf cancel even if cancelled/saved,
+and prevents a retire request/acceptance on that edge. A held/repeated kill blocks
+retirement until it releases; a new distinct cause additionally extends the
+cause audit. Neither case creates another terminal or resamples its N/P/T.
 `fixed4_retire_accepted` is derived from these real leaf predicates. No constant
 retire_safe, runtime reset or synthetic done is used. The full raw cancel
 snapshot is copied before retiring the leaf clears its own registers.
@@ -114,6 +118,11 @@ An FFT/fixed4 overflow alone is a numeric failure, not transaction cancellation.
 The unchanged fixed4 leaf receives the manager's union of prior and **current-E**
 causes, so its first cancellation snapshot includes the actual cause at E rather
 than only the previous edge's accumulated register.
+The first management ABORT cause field uses the **actual qualified E cause set**:
+explicit supplied bits contribute only while cancel_now is true; clear, NP abort
+and current local faults contribute their mapped bits. Idle external cause values
+do not contribute. Later causes accumulate in separate frame/leaf audit fields;
+they never rewrite this first immutable ABORT or its original counts/identity.
 
 ## Reporting and indexed fields
 
@@ -134,12 +143,21 @@ Eight-lane fields use instance0 low (Gate0..3, DOA0..3):
 | fft_status_raw / fft_status_seen | 8 / 1 | First actual status and accepted-status presence |
 | fft_event_seen | 7 | OR of frame_started, unexpected_last, missing_last, status_halt, input_halt, output_halt, overflow |
 | fixed4_contexts | 64 | Allocated unique nonzero context, zero if not begun |
-| fixed4_cancel_causes_record | 35 | Original saved leaf terminal causes |
+| fixed4_cancel_causes_record | 35 | Initial saved leaf causes plus monotonic later cause audit; updated before actual retirement |
 | fixed4_terminal_n_record / p_record | 10 | Original leaf strict-before-E generated/transferred counts |
 | fixed4_cancelled_unsent_record | 10 | Original leaf cancellation conservation term |
 | fixed4_terminal_t_bin_record | 10 | Original leaf E physical output bin |
 | fixed4_terminal_t_record / s_record | 1 | Original E output/input physical transfer facts |
 | fixed4_cancel_saved / retire_accepted | 1 | Actual manager terminal-save ACK / derived actual retire acceptance |
+
+After initial leaf-save ACK, `fixed4_cancel_causes_record` continues ORing the
+leaf's documented cause union and reliable current-E causes, including a kill
+on a would-be retire edge. Its saved N/P/T/S/bin fields remain the immutable
+first leaf snapshot. Before real retirement removes the leaf-local state, the
+manager already holds any added causes. Saved=1 confirms the initial record
+was copied; it does not freeze the separately accumulating cause audit or imply
+retirement. Repeated same cause adds no bit; a held kill cannot retire; with no
+current kill, historical cancellation alone permits the existing later retire.
 
 `source_report_record/source_abort_record` retain the unmodified original NP
 wire layouts; `source_*_seen` distinguishes presence from initialized zero.
@@ -164,7 +182,7 @@ The180-bit abort payload is MSB-first:
 | current leaf_out_n | 37:28 |
 | current instance_id | 27:25 |
 | first local error (or local fault at E if none earlier) | 24:17 |
-| supplied cancel_causes at E | 16:9 |
+| Actual reliable E cause set (qualified supplied bits plus mapped current causes) | 16:9 |
 | E transfers: NP source, config, FFT input, FFT output, leaf input, leaf output | 8:3 |
 | NP not yet closed / pre-E IP obligation / pre-E leaf active | 2:0 |
 

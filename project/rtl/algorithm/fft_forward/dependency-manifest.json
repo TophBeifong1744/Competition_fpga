@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "scope": "FF-1.0 source-list closure only; no transfer of A product authority",
+  "external_sources": [
+    {
+      "id": "A_SOURCE_CANCEL_OBSERVER",
+      "module": "pcm4_source_cancel_observer",
+      "file_name": "pcm4_source_cancel_observer.v",
+      "sha256": "1b78b3043901c1a722b652465adf9a7e299e13e1eb53a444e45c13af1ee37e55",
+      "bytes": 8944,
+      "frozen_collection_sha256": "37570aacdca37d9a804ad421c18af1552f5c55a521e58904daed32ca70845f3b",
+      "provenance": "Original A i17-source-cancel-integration-20261007 frozen delivery, used unchanged by parent NP/caller execution",
+      "original_delivery_member": "codex_out/i17-source-cancel-integration-20261007/rtl/pcm4_source_cancel_observer.v",
+      "resolution": "Integrator must supply the actual frozen source file, verify exact raw bytes and SHA256, then insert that resolved path in the compile source list before project/rtl/algorithm/window/caller/pcm4_window_caller.sv. Missing or different bytes reject launch.",
+      "input_identity_receipt": "i17-numeric-preprocess-product-20261007/A-DEPENDENCY-INPUTS.json",
+      "receipt_snapshot_member": "inputs/a-frozen-six-source/pcm4_source_cancel_observer.v",
+      "consumer": "project/rtl/algorithm/window/caller/pcm4_window_caller.sv",
+      "source_is_external": true,
+      "repository_path": null,
+      "replacement_or_stub_allowed": false
+    }
+  ]
+}

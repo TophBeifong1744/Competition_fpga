@@ -1,5 +1,8 @@
 # Relative to repository root. ss_fft29 official simulation sources/libraries
 # must be generated with generate_simulation.tcl and its exported compile order.
+# Required external A source: resolve dependency-manifest.json's immutable
+# pcm4_source_cancel_observer.v, verify byte count/SHA256, and insert the actual
+# resolved file before pcm4_window_caller.sv. No guessed repository path or stub.
 project/rtl/algorithm/window/pcm4_window_consumer.sv
 project/rtl/algorithm/window/caller/pcm4_window_caller.sv
 project/rtl/algorithm/preprocess/pcm4_numeric_preprocess.sv
