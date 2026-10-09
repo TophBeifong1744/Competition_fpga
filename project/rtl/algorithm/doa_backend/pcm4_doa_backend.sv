@@ -130,6 +130,8 @@ module pcm4_doa_backend (
     logic abort_consumed,report_consumed;
     wire external_kill=(cancel_now || stop_now) && busy && cancel_identity==active_identity;
     wire source_kill=s_abort_valid && busy && s_abort_identity==active_identity;
+    // A foreign physical ACK revokes current-edge eligibility, not reliable cancellation.
+    wire foreign_abort_ack_now=s_abort_valid && s_abort_ready && s_abort_identity!=active_identity;
     wire kill_now=external_kill || source_kill;
     wire [7:0] reliable_causes=(external_kill ? cancel_causes | (stop_now ? 8'h02 : 8'h01) : 8'h00) |
       (source_kill ? 8'h04 : 8'h00);
@@ -155,7 +157,8 @@ module pcm4_doa_backend (
       frontend_cancel_request=external_kill || (begin_valid && begin_ready && begin_external_kill);
       report_valid=(state==REPORT && !report_consumed && !kill_now);
       angle_delivery_eligible=report_valid && angle_numerical_valid &&
-        report_gate_evidence_valid && report_gate_qualified && !killed && first_error_code==0;
+        report_gate_evidence_valid && report_gate_qualified && !killed &&
+        !foreign_abort_ack_now && first_error_code==0;
       ip_config_data=24'h0AAAAA; ip_config_valid=(state==CONFIG);
       ip_obligation=pair_hardware_started[pair_id] && !pair_physically_retired[pair_id];
       ip_input_valid=(state==RUN_IP && input_count<1024);

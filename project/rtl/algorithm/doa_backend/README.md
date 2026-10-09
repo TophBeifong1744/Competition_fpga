@@ -73,6 +73,17 @@ ACK and retained `frontend_abort_*` fields. A reliable offered ABORT for the
 active tuple suppresses qualification immediately, before its slot ACK.
 Cancelled frontend short output is not relabeled as SOURCE_ORDER.
 
+M's current PR47 connection decision (SHADOW-TEMP-001) also requires an
+actual foreign ABORT ACK (`s_abort_valid && s_abort_ready` with a mismatched
+full identity) to suppress `angle_delivery_eligible` on that same E edge.
+A physical diagnostic report ACK may still occur with eligibility0. The actual
+foreign identity and180-bit payload are retained; an empty first-error slot
+records ERR_ID, while an existing first error remains unchanged. This foreign
+ACK alone creates no reliable cancellation or cancellation cause. An unaccepted
+foreign offer or idle offer creates no such ACK; the native adapter's idle
+reservation behavior is unchanged. Earlier accepted history remains intact,
+and any started official IP obligation continues to drain physically.
+
 ## Mathematical chain
 
 Serial pairs:01,02,03,12,13,23. Square-array baseline deltas respectively
