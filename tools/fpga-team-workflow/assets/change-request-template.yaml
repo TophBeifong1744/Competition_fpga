@@ -7,7 +7,7 @@ problem: 复核对同一稳定证据重复执行完整仿真
 reproducer_ref: null
 requested_behavior: 先核对假设和证据身份，再选择最小有价值的补测
 protected_invariants:
-  - 保留真实成员独立批准
+  - 保留合格非作者成员批准（可依项目政策采用指定AI代理）
   - 不弱化上游功能验收和技术终审
   - 不复用已被错误假设污染的接受结论
 scope:

@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a reproducible packaging, installation, or workflow defect
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Codex, PowerShell, OS, and package versions; omit secrets/private paths.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Minimal steps, command, expected result, actual result, and sanitized evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety and evidence impact
+      description: Does this affect single-writer, CDC/RDC, STA, electrical safety, or sign-off?

@@ -60,7 +60,12 @@ workspace:
   board_resource_ref: null
 
 collaboration:
+  # 新项目须确认代理归属与授权；示例未自动启用。
   default_human_approvals: 1
+  approval_policy:
+    mode: human_only
+    designated_ai_by_member: {}
+    required_non_author_approvals: 1
   merge_method: squash
   task_source: github_issue
   review_source: github_pr_or_issue

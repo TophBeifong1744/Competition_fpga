@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fault-case.schema.json",
+  "title": "Private FPGA fault case",
+  "type": "object",
+  "required": ["case_id", "status", "source_document", "confidentiality", "vendor", "tool", "subsystem", "normalized_error_signature", "symptom", "trigger", "root_cause", "diagnostic_path", "failed_attempts", "repair_principle", "verification", "board_confirmation", "applicability", "counterexamples", "keywords", "evidence_hashes"],
+  "properties": {
+    "case_id": {"type": "string", "minLength": 1},
+    "status": {"enum": ["IMPORTED", "ROOT_CAUSE_CONFIRMED", "FIX_VERIFIED", "BOARD_CONFIRMED", "REUSABLE", "REJECTED"]},
+    "source_document": {"type": "string", "minLength": 1},
+    "confidentiality": {"enum": ["PRIVATE", "SANITIZED"]},
+    "vendor": {"type": "string"},
+    "tool": {"type": "object"},
+    "subsystem": {"type": "string"},
+    "normalized_error_signature": {"type": "string"},
+    "symptom": {"type": "string"},
+    "trigger": {"type": "string"},
+    "root_cause": {"type": "string"},
+    "diagnostic_path": {"type": "array", "items": {"type": "string"}},
+    "failed_attempts": {"type": "array", "items": {"type": "string"}},
+    "repair_principle": {"type": "string"},
+    "verification": {"type": "array", "items": {"type": "string"}},
+    "board_confirmation": {"type": ["string", "null"]},
+    "applicability": {"type": "array", "items": {"type": "string"}},
+    "counterexamples": {"type": "array", "items": {"type": "string"}},
+    "keywords": {"type": "array", "items": {"type": "string"}},
+    "evidence_hashes": {"type": "array", "items": {"type": "string"}}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"const": "REUSABLE"}}},
+      "then": {
+        "required": ["independent_review"],
+        "properties": {
+          "root_cause": {"minLength": 1},
+          "repair_principle": {"minLength": 1},
+          "verification": {"minItems": 1},
+          "applicability": {"minItems": 1},
+          "counterexamples": {"minItems": 1},
+          "evidence_hashes": {"minItems": 1},
+          "board_confirmation": {"type": "string", "minLength": 1, "anyOf": [{"pattern": "^NOT_APPLICABLE:.+"}, {"pattern": "^(?!NOT_APPLICABLE:).+"}]},
+          "independent_review": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  ],
+  "additionalProperties": true
+}

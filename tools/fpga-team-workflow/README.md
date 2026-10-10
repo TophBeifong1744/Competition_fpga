@@ -1,14 +1,26 @@
-# fpga-team-workflow 0.1.0
+# fpga-team-workflow 0.1.8 (本地候选)
 
 根据用户提供的生成指导 v1.2.0 实现的多人 FPGA 协作外层。工程依赖固定为
-`run-fpga-workflow 0.4.0 @ e40fd8000b526b72ba80373127bf5fd6e5f8dc28`。
+本地适配 `run-fpga-workflow 0.4.1`，原始上游为0.4.0 @ e40fd8000b526b72ba80373127bf5fd6e5f8dc28；详见内层ADAPTATION.json。
 两者实际共同使用，外层没有复制工程角色。源码就是本目录，可整目录分发。
+
+0.1.7 增量：[文件、路径与读取防错](references/execution-accuracy.md)。真实路径取值、允许写入范围、修改前断言和收尾差异检查；不把未读内容当作事实，不误修产品、不顺手移动/删除。版本切换避开在途任务，不新增逐动作审批或全量重测。
+
+0.1.1 增量：[Notion 单一主协调写入规则](references/notion-coordination.md)。项目入口由项目配置提供；CLI 不自动同步任务或更改账号权限。旧测试报告保留原日期，不能当作本版本的新成员批准。
+
+0.1.2 增量：成果优先、阶段内连续实施与整批复核，删除重复收件/审查门槛；详见 [主规则](SKILL.md#成果优先与相称流程)。按本项目入口同步，成员在安全断点安装，不打断现有任务或替其他成员授权。
+
+0.1.3 增量：用户授权的尽早短时上板路线，保留重大风险核心检查，登记延期软件测试，允许据实核对厂商原件而不等待辅助工具完美适配；短测通过与完整验收分开。
+
+0.1.4 增量：项目可启用指定AI代表成员批准，无需真人逐项确认；保留非作者资格、准确版本/范围和原结论，登记为AI代理批准。示例项目默认不代替用户启用或指定代理。
 
 ## 本包能做什么
 
+0.1.5/0.1.6 增量：整个项目跨成员交接明确、直接、整批推进；一次给齐当前输入、集中非作者复核、问题回原责任人，不增加中转审批、不重复派工。适用于设计、代码、测试、数据、集成和发布，数据归属只是一个例子。详见 [跨成员交接](SKILL.md#跨成员交接明确快速整批推进)。成员角色和任务入口逐项目配置。
+
 - status/plan、work、review、integrate、maintain 的按需规则与中文交接模板。
 - 源码/生成物检查、旧布局映射、完整输入快照、保守工作区计划和执行。
-- 证据身份/活动/反例检查、交付准入的机械检查；不会生成真实成员批准。
+- 证据身份/活动/反例检查、交付准入的机械检查；只核机械条件；成员或指定AI的批准须有可核实的原结论。
 - 项目策略自动推荐具体模型和 effort、阶段差异、能力过期/不可用、角色覆盖检查。
 - 维护提案、准确基线的候选改动、包验证、安装预览、事务备份/恢复/回退。
 
@@ -59,13 +71,14 @@ python -B scripts/skill_maintenance.py install --plan "$planPath" --execute --au
 
 ## 上游依赖：完整安装，禁止只拷贝 SKILL.md
 
-从[固定提交](https://github.com/prasetyarobert205-jpg/codex-fpga-engineering-workflow/tree/e40fd8000b526b72ba80373127bf5fd6e5f8dc28)
-取得完整上游包。阅读其安装脚本后按原生入口验证/预览/安装，不对移动 main 自动更新：
+本候选必须使用完整ZIP内与外层并列的`run-fpga-workflow/`本地适配0.4.1目录。
+[固定上游提交](https://github.com/prasetyarobert205-jpg/codex-fpga-engineering-workflow/tree/e40fd8000b526b72ba80373127bf5fd6e5f8dc28)仅用于核对来源，直接下载的官方0.4.0不是本候选的配套依赖。
+阅读随包安装脚本后按原生入口验证/预览/安装，不对移动main自动更新：
 
 ```powershell
 pwsh -NoProfile -File scripts/validate-package.ps1
 pwsh -NoProfile -File scripts/install.ps1 -Scope User -WhatIf
-# 上面命令在上游包目录执行。获得该上游安装授权后再执行不带 -WhatIf 的安装。
+# 上面命令在随ZIP提供的本地适配run-fpga-workflow目录执行。安装有不同文件时先核备份计划；安装授权不由本说明产生。
 pwsh -NoProfile -File scripts/verify-install.ps1 -Scope User
 ```
 
@@ -75,10 +88,16 @@ pwsh -NoProfile -File scripts/verify-install.ps1 -Scope User
 python -B scripts/team_workflow.py upstream inspect --skill "$env:USERPROFILE/.agents/skills/run-fpga-workflow" --agents "$env:USERPROFILE/.codex/agents"
 ```
 
-它用固定上游包的 40 个文件 SHA-256 核对内容和 13 角色；字节不一致会报告差异，
+它用当前锁定本地适配包的 41 个文件 SHA-256 核对内容和 13 角色；字节不一致会报告差异，
 不静默把 CRLF 差异或本地修改当成已验证兼容。角色/工具当前已加载仍需实际任务验证。
 上游一些参考提及其源码仓库 scripts；这些脚本未由上游安装器部署进 Skill 目录。
-需要此类辅助脚本时从同一固定提交保留的源码包取用，不能声称安装目录内存在它们。
+需要此类辅助脚本时从随ZIP提供的同一完整本地适配源码目录取用，不能声称安装目录内存在它们。
+
+## 0.1.8 人机协作候选
+
+Codex默认承担授权范围内工程修改、自测修复和简短中文注释；关键取舍列选项供人选择。人工操作前交实际检查、准确入口与截图/原报告保存点。ILA按具体判据核原始导出，限定通过和必要非作者接受后推进总工程接入。内层已同步做本地适配，不能与未适配官方0.4.0混用。
+
+本包尚未发布/安装，不覆盖当前工程或成员电脑。先核候选与原授权，再在安全断点采用；当前只读任务仍只读。
 
 ## 项目接入与日常用法
 

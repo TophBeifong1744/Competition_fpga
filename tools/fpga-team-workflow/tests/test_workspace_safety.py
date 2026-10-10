@@ -176,4 +176,4 @@ class UpstreamTests(unittest.TestCase):
         import tempfile
         with tempfile.TemporaryDirectory() as d:
             r=upstream_check(Path(d)/'skill',Path(d)/'agents')
-            self.assertEqual(r['status'],'BLOCKED');self.assertEqual(len(r['missing']),40)
+            self.assertEqual(r['status'],'BLOCKED');self.assertEqual(len(r['missing']),len(read(PKG/'assets/upstream-lock.json')['files']))

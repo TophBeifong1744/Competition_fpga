@@ -1,0 +1,8 @@
+interface:
+  display_name: "FPGA Engineering Workflow"
+  short_description: "Live-contract FPGA engineering with official IP and evidence"
+  default_prompt: "Use $run-fpga-workflow. Normalize stable project identity and the latest task delta, select one writer mode and claim stage, preserve native project/par and simulation/work toolflows, isolate codex_out diagnostics, and require independent sign-off."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+policy:
+  allow_implicit_invocation: true

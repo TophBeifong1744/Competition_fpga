@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "verification-plan.schema.json",
+  "title": "FPGA verification plan",
+  "type": "object",
+  "required": ["schema_version", "run_id", "snapshot_id", "traceability", "model_independence", "negative_canaries", "uncovered_requirements"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "run_id": {"type": "string"},
+    "snapshot_id": {"type": "string"},
+    "traceability": {"type": "array", "items": {"type": "object", "required": ["requirement", "test", "checker"]}},
+    "model_independence": {"type": "array", "items": {"type": "object", "required": ["model", "source", "shares_dut_logic"]}},
+    "negative_canaries": {"type": "array", "items": {"type": "object", "required": ["checker", "fault", "expected_detection"]}},
+    "uncovered_requirements": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

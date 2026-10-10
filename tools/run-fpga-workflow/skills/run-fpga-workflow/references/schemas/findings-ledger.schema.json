@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "findings-ledger.schema.json",
+  "title": "FPGA findings ledger",
+  "type": "object",
+  "required": ["schema_version", "run_id", "snapshot_id", "repair_round", "no_progress_rounds", "findings"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "run_id": {"type": "string"},
+    "snapshot_id": {"type": "string"},
+    "repair_round": {"type": "integer", "minimum": 0, "maximum": 3},
+    "no_progress_rounds": {"type": "integer", "minimum": 0, "maximum": 2},
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "source_role", "severity", "status", "owner", "evidence", "required_fix", "required_rechecks"],
+        "properties": {
+          "severity": {"enum": ["BLOCKER", "HIGH", "MEDIUM", "LOW"]},
+          "status": {"enum": ["OPEN", "FIXED_PENDING_REVIEW", "VERIFIED_CLOSED", "DUPLICATE", "DISPUTED", "NOT_APPLICABLE", "ACCEPTED_RISK"]}
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

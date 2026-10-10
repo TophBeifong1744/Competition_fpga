@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "simulation-evidence.schema.json",
+  "title": "FPGA simulation evidence",
+  "type": "object",
+  "required": ["schema_version", "run_id", "snapshot_id", "evidence_profile", "classification", "compile_exit_code", "elaboration_exit_code", "run_exit_code", "tests_discovered", "tests_executed", "scoreboard_drained", "comparisons", "negative_canaries", "proof_packet"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "run_id": {"type": "string", "minLength": 1},
+    "snapshot_id": {"type": "string", "minLength": 1},
+    "evidence_profile": {"enum": ["DIAGNOSTIC_SMOKE", "FUNCTIONAL_ACCEPTANCE"]},
+    "classification": {"enum": ["DUT_FAIL", "TESTBENCH_FAIL", "REFERENCE_MODEL_FAIL", "ASSERTION_FAIL", "SCRIPT_PATH_FAIL", "COMPILE_ELAB_FAIL", "TOOL_ENV_FAIL", "VENDOR_LIBRARY_FAIL", "TIMEOUT_HANG", "INCONCLUSIVE", "SIMULATION_PASS"]},
+    "compile_exit_code": {"type": "integer"},
+    "elaboration_exit_code": {"type": "integer"},
+    "run_exit_code": {"type": "integer"},
+    "tests_discovered": {"type": "integer", "minimum": 0},
+    "tests_executed": {"type": "integer", "minimum": 0},
+    "scoreboard_drained": {"type": "boolean"},
+    "comparisons": {"type": "array", "items": {"type": "object", "required": ["tag", "accepted_cycle", "expected_cycle", "observed_cycle", "result"], "properties": {"tag": {"type": "string", "minLength": 1}, "accepted_cycle": {"type": "integer", "minimum": 0}, "expected_cycle": {"type": "integer", "minimum": 0}, "observed_cycle": {"type": "integer", "minimum": 0}, "result": {"type": "string", "minLength": 1}}}},
+    "negative_canaries": {"type": "array", "items": {"type": "object", "required": ["fault", "detected"], "properties": {"fault": {"type": "string", "minLength": 1}, "detected": {"type": "boolean"}}}},
+    "first_failure": {"type": ["object", "null"]},
+    "proof_packet": {"type": "array", "items": {"type": "string", "minLength": 1}}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"classification": {"const": "SIMULATION_PASS"}}},
+      "then": {
+        "properties": {
+          "evidence_profile": {"const": "FUNCTIONAL_ACCEPTANCE"},
+          "compile_exit_code": {"const": 0},
+          "elaboration_exit_code": {"const": 0},
+          "run_exit_code": {"const": 0},
+          "tests_discovered": {"minimum": 1},
+          "tests_executed": {"minimum": 1},
+          "scoreboard_drained": {"const": true},
+          "comparisons": {"minItems": 1},
+          "negative_canaries": {"minItems": 1, "items": {"properties": {"detected": {"const": true}}}},
+          "proof_packet": {"minItems": 1}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "evidence_profile": {"const": "FUNCTIONAL_ACCEPTANCE"},
+          "classification": {"not": {"const": "SIMULATION_PASS"}}
+        },
+        "required": ["evidence_profile", "classification"]
+      },
+      "then": {
+        "required": ["first_failure"],
+        "properties": {"first_failure": {"type": "object", "minProperties": 1}}
+      }
+    }
+  ],
+  "additionalProperties": true
+}

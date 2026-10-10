@@ -1,0 +1,41 @@
+{
+  "name": "codex-fpga-engineering-workflow",
+  "version": "0.4.1",
+  "description": "Local human-assisted adaptation of upstream 0.4.0; see ADAPTATION.json. Evidence-driven multi-agent FPGA and SoC FPGA engineering workflow for Codex.",
+  "author": {
+    "name": "prasetyarobert205-jpg",
+    "url": "https://github.com/prasetyarobert205-jpg"
+  },
+  "homepage": "https://github.com/prasetyarobert205-jpg/codex-fpga-engineering-workflow",
+  "repository": "https://github.com/prasetyarobert205-jpg/codex-fpga-engineering-workflow",
+  "license": "MIT",
+  "keywords": [
+    "fpga",
+    "rtl",
+    "verification",
+    "cdc",
+    "sta",
+    "codex",
+    "multi-agent"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "FPGA Engineering Workflow",
+    "shortDescription": "Multi-role FPGA design, verification, timing, and review.",
+    "longDescription": "A single-writer, evidence-driven Codex workflow for FPGA/SoC FPGA architecture, live project/task contracts, official IP integration, cycle-accurate verification, CDC/RDC, STA, physical QoR, three-vendor toolflows, board planning, and independent sign-off.",
+    "developerName": "prasetyarobert205-jpg",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Analyze",
+      "Write",
+      "Verify",
+      "Review"
+    ],
+    "defaultPrompt": [
+      "Run the FPGA workflow for this task and preserve existing project evidence.",
+      "Review this FPGA change for CDC, timing, interfaces, and verification gaps.",
+      "Plan a minimal, verifiable RTL implementation with independent sign-off."
+    ],
+    "brandColor": "#2457C5"
+  }
+}

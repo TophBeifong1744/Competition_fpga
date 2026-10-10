@@ -1,0 +1,26 @@
+name: Feature request
+description: Propose an evidence-backed workflow improvement
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Engineering problem
+      description: Describe the gap, scope, and why current roles cannot handle it.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and counterexamples
+      description: Provide sanitized sources, independent cases, risks, and validation method.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Boundaries
+      options:
+        - label: I did not include secrets, proprietary RTL, customer data, or project-specific electrical facts.
+          required: true

@@ -24,6 +24,9 @@ def upstream_check(skill, agents):
         elif file_hash(p) != expected: changed.append(key)
     return result('BLOCKED' if missing or changed else 'OK',
                   dependency_version=lock['version'], source_commit=lock['source_commit'],
+                  dependency_kind=lock.get('distribution_kind','upstream'),
+                  patch_id=lock.get('patch_id'), upstream_version=lock.get('upstream_version',lock['version']),
+                  source_commit_role=lock.get('source_commit_role','source'),
                   files_checked=len(lock['files']), roles_expected=13, missing=missing, changed=changed,
                   client_loaded='UNKNOWN', technical_acceptance='NOT_RUN')
 
@@ -413,7 +416,7 @@ def delivery_gate(facts):
     return result('BLOCKED' if blockers else 'INCONCLUSIVE', mechanics_eligible=not blockers,
                   blockers=blockers, qualified_reviewers=sorted(set(qualified)),
                   approval_authenticity='GITHUB_EVENTS_READ' if authentic else 'UNVERIFIED_IMPORTED_FACTS',
-                  delivery_approved=False, reason='Local facts never manufacture human approval; verify acceptance scope at authoritative GitHub record',
+                  delivery_approved=False, reason='Local facts never manufacture approval; verify member or designated-AI decision and scope at the authoritative record',
                   should_close_issue=not blockers and facts.get('full_definition_done') is True and authentic)
 
 def cleanup_plan(root, inventory, config):

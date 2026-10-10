@@ -2,18 +2,25 @@
   "schema_version": 1,
   "outer_skill": {
     "name": "fpga-team-workflow",
-    "release": "0.1.0",
+    "release": "0.1.8",
     "source_commit": null,
-    "source_kind": "user-provided-local-package",
-    "content_sha256": "b226438c46b1c4b56f49d4e2c6f0d486235f8b152d9023442f04dfb7651a2f12",
+    "source_kind": "user-authorized-local-workflow-update",
+    "content_sha256": "60204d1fec6164d90f57b8ce46ad2c7a73fb8414b613ead4862990f52001514a",
     "distribution_ref": "tools/fpga-team-workflow",
     "manifest_ref": "tools/fpga-team-workflow/package-manifest.json"
   },
   "engineering_skill": {
     "name": "run-fpga-workflow",
     "repository": "prasetyarobert205-jpg/codex-fpga-engineering-workflow",
-    "version": "0.4.0",
-    "source_commit": "e40fd8000b526b72ba80373127bf5fd6e5f8dc28"
+    "version": "0.4.1",
+    "source_commit": "e40fd8000b526b72ba80373127bf5fd6e5f8dc28",
+    "upstream_version": "0.4.0",
+    "source_commit_role": "upstream_baseline",
+    "distribution_kind": "local_adaptation_candidate",
+    "patch_id": "SS-HUMAN-20261010-1",
+    "distribution_ref": "tools/run-fpga-workflow",
+    "provenance_ref": "tools/run-fpga-workflow/ADAPTATION.json",
+    "managed_content_sha256": "64eb3ad37451ef6fa7dbe8034d5607a33d62fa1cddf29ed82b9a9c505ce50cc7"
   },
   "bridge": {
     "schema_version": 1,

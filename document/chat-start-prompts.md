@@ -1,5 +1,9 @@
 # 迁移后建立哪些聊天
 
+## 2026-10-01 增量规则（优先于下方历史启动建议）
+
+A 侧 M/E/X/R 已初始化，保留当前进展，不重复创建或初始化。只有 M 主协调写 Notion；E/X/R 和其他专项对话只读，在原对话回报结果、准确候选、证据及写权释放。M 核对后统一派发、更新状态、登记复核和上传附件；返修需具体说明，修改后重新交审，复核通过且适用成员决定已取得、完成定义满足才标完成。入口从当前项目 `team-workflow.yaml:collaboration.notion` 读取，新项目单独配置。在途 E 继续原授权任务；本通知不扩大工程或 Git 授权。没有真实跨聊天投递回执时，不声称其他对话已收到。以下日期性首轮任务保留为历史，不作为当前派工。
+
 保留当前聊天作**项目协调**；每位成员在自己的Codex项目新建**执行、复核两个聊天**即可，全队6个成员任务，不强制四层聊天。A建“SoundSight｜A 执行”和“SoundSight｜A 复核”；B/C各自建对应两个。长工程上下文或真实并行才另开工程专项，写入归属不重叠。外包仍用执行聊天和Issue，不另复制工程。
 
 这是创建建议，本轮未创建聊天、未向已删除聊天发消息。GitHub已指派不代表接单。
@@ -8,9 +12,9 @@
 
 ```text
 本项目是SoundSight / TophBeifong1744/Competition_fpga。使用 $fpga-team-workflow。
-核对本机外层0.1.0和锁定内层run-fpga-workflow 0.4.0，读取当前main的AGENTS.md、team-workflow.yaml、workflow-lock.yaml、document/team-workflow.md及指定Issue。
+核对本机外层与当前 workflow-lock.yaml 的版本一致，及锁定的配套内层（当前为本地适配0.4.1，来源官方0.4.0），读取当前main的AGENTS.md、team-workflow.yaml、workflow-lock.yaml、document/team-workflow.md及指定Issue。
 安全fetch并保留未提交/未跟踪/ignored材料；不切换或reset脏共享目录，不因新聊天复制完整工程。只读本Issue及必要合同、准确SHA与证据，复用已完成成果。
-核对本人owner/reviewer、完成定义、允许路径和授权。用现有CLI推荐模型，实际未知写UNKNOWN，不改全局设置。工程按锁定内层Skill和真实入口；A机one/Vivado/Vitis仍由拓芙选择工程并亲自操作。作者和AI自检不等于另一真实成员批准。
+核对本人owner/reviewer、完成定义、允许路径和授权。用现有CLI推荐模型，实际未知写UNKNOWN，不改全局设置。工程按锁定内层Skill和真实入口；Codex默认按任务授权实现、自测修复并写简短中文用途注释，关键方案列选项由人选择，人在关键节点操作Vivado/Vitis并保存证据。ILA限定判据满足、必要非作者接收与集成授权齐备后接入总工程。实物操作仍由现场获授权人员执行，作者自检不能替代合格非作者批准。
 先报告事实、第一项可执行动作和真实阻断，在授权内持续完成。任务状态写同一Issue/PR，不再多写一套md台账。
 ```
 

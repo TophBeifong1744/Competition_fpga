@@ -1,0 +1,33 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate package
+        shell: pwsh
+        run: ./scripts/validate-package.ps1
+      - name: Smoke-test formal project scaffold
+        shell: pwsh
+        run: |
+          $fixture = Join-Path $env:RUNNER_TEMP 'fpga-scaffold-fixture'
+          ./scripts/new-fpga-project.ps1 -Destination $fixture -ProjectName fixture -TopModule top -Vendor XILINX
+          [IO.File]::WriteAllText((Join-Path $fixture 'project/par/fixture.xpr'), 'fixture')
+          [IO.File]::WriteAllText((Join-Path $fixture 'project/rtl/top.sv'), 'module top(input logic clk); endmodule')
+          $detection = ./scripts/detect-vendor.ps1 -ProjectRoot $fixture
+          $lists = ./scripts/update-filelists.ps1 -ProjectRoot $fixture -Vendor XILINX
+          if ($detection.status -ne 'DETECTED' -or $detection.vendor -ne 'XILINX') { throw 'Vendor detection smoke test failed.' }
+          if ($lists.product_source_count -ne 1) { throw 'File-list smoke test failed.' }
+          $projectScript = Join-Path $fixture 'project/script'
+          foreach ($requiredEntry in @('run.bat', 'setting.bat', 'src_list.txt')) {
+            if (-not (Test-Path (Join-Path $projectScript $requiredEntry))) { throw "Required build entry was not generated: $requiredEntry" }
+          }
+          if (@(Get-ChildItem $projectScript -Filter 'build_*.ps1').Count -ne 0) { throw 'Deprecated PowerShell build adapters were generated.' }

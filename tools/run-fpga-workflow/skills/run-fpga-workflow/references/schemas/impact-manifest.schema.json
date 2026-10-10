@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "impact-manifest.schema.json",
+  "title": "FPGA impact manifest",
+  "type": "object",
+  "required": ["schema_version", "run_id", "snapshot_id", "primary_clock_domain", "entry_boundary", "exit_boundary", "affected_units", "forward_path", "reverse_backpressure", "sidebands", "partition_status"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "run_id": {"type": "string"},
+    "snapshot_id": {"type": "string"},
+    "primary_clock_domain": {"type": "string"},
+    "entry_boundary": {"type": "string"},
+    "exit_boundary": {"type": "string"},
+    "affected_units": {"type": "array", "items": {"type": "string"}},
+    "forward_path": {"type": "array", "items": {"type": "string"}},
+    "reverse_backpressure": {"type": "array", "items": {"type": "string"}},
+    "sidebands": {"type": "array", "items": {"type": "string"}},
+    "shared_state": {"type": "array", "items": {"type": "string"}},
+    "relevant_tests": {"type": "array", "items": {"type": "string"}},
+    "partition_status": {"enum": ["BOUNDED", "NEEDS_PARTITION"]},
+    "partition_reason": {"type": "string"}
+  },
+  "additionalProperties": true
+}

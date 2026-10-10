@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cycle-contract.schema.json",
+  "title": "FPGA cycle contract",
+  "type": "object",
+  "required": ["schema_version", "run_id", "snapshot_id", "clock_domain", "input_acceptance", "output_completion", "latency", "throughput", "alignment", "reset_behavior", "stall_behavior", "error_behavior"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "run_id": {"type": "string"},
+    "snapshot_id": {"type": "string"},
+    "clock_domain": {"type": "string"},
+    "input_acceptance": {"type": "string"},
+    "output_completion": {"type": "string"},
+    "latency": {"type": "object", "required": ["kind"], "properties": {"kind": {"enum": ["FIXED", "BOUNDED", "VARIABLE", "UNKNOWN"]}}},
+    "throughput": {"type": "string"},
+    "alignment": {"type": "array", "items": {"type": "string"}},
+    "reset_behavior": {"type": "string"},
+    "stall_behavior": {"type": "string"},
+    "flush_abort_behavior": {"type": "string"},
+    "error_behavior": {"type": "string"}
+  },
+  "additionalProperties": true
+}

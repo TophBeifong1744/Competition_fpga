@@ -1,0 +1,34 @@
+# __PROJECT_NAME__
+
+Standard FPGA project scaffold for **__VENDOR__ / __TOOL__ __TOOL_VERSION__**. Stable identity lives in `AGENTS.md`; each request supplies a live task delta. Project-specific clocks, resets, interfaces, constraints, and acceptance evidence must be recorded before implementation or sign-off.
+
+## One-click entry points
+
+- `project/script/run.bat`: invokes the confirmed native build adapter; no argument defaults to a compile/synthesis checkpoint.
+- `simulation/script/run.bat`: invokes the confirmed native simulator adapter; no argument defaults to GUI and `batch` supports automation.
+- `linter/script/run.bat`: invokes a configured real lint tool or fails closed.
+
+The visible script roots are deliberately small. `project/script` contains `run.bat`, `setting.bat`, `src_list.txt`, and one confirmed vendor Tcl/CLI flow. `simulation/script` contains exactly `run.bat`, `setting.txt`, `src_list.txt`, and `vsim.do`. Generated exports, `modelsim.ini`, `.Xil`, libraries, logs, and waves belong under `simulation/work`. Desktop runtime does not require Codex-bundled PowerShell.
+
+The scaffolded `run.bat` and `vsim.do` intentionally fail closed until the exact tool command, project marker, simulator, vendor libraries, and official IP recipe are confirmed. Keep the selected vendor Tcl/CLI beside the build BAT and put generated simulator exports under `simulation/work`. A missing tool, library, source, case, or target remains `UNVERIFIED`; it is not silently replaced.
+
+Formal vendor project state, databases, logs, and reports belong under `project/par`. Formal ModelSim/Questa export, local work libraries, logs, and waves belong under `simulation/work`. Codex experiments and review packets belong under `codex_out`. Release candidates are promoted explicitly to `release/output/` after project-defined review.
+
+The confirmed native adapter must create one real launcher directly at `project/par/__PROJECT_NAME__.xpr`, `project/par/__PROJECT_NAME__.pds`, or `project/par/__PROJECT_NAME__.al`. An extra `project/par/vivado_project/`, `project/par/build/`, or random project container is not part of the normalized layout. The scaffold does not fabricate the launcher before the target recipe is known.
+
+The adapter stores only a tool root or vendor environment, adds required command directories to the current BAT process PATH, verifies canonical command names, and invokes them by name. Do not embed machine-specific absolute executable paths or modify the user/system PATH.
+
+## Project structure
+
+```text
+document/
+project/{rtl,sdc,par,script}/
+simulation/{tb/case,script,work}/
+linter/script/
+release/output/
+codex_out/
+```
+
+Optional `project/ip`, `linter/lint_bb`, and `release/golden` directories are created only when requested by the scaffold command.
+
+These canonical names are fixed for generated projects. Do not create numbered standard directories such as `project2`, `par2`, or `script2`.

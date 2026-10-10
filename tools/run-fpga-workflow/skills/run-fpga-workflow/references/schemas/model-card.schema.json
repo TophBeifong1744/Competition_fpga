@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "model-card.schema.json",
+  "title": "FPGA simulation Model Card",
+  "type": "object",
+  "required": ["schema_version", "model_name", "model_version", "sha256", "identity", "authoritative_sources", "signal_mapping", "timing_reset_error_semantics", "abstractions", "unsupported_behavior", "applicability_limits", "conformance_tests", "shares_dut_logic", "author", "independent_reviewer"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "model_name": {"type": "string"},
+    "model_version": {"type": "string"},
+    "sha256": {"type": "string"},
+    "identity": {"type": "string"},
+    "authoritative_sources": {"type": "array", "items": {"type": "object", "required": ["title", "revision", "location"]}},
+    "signal_mapping": {"type": "object"},
+    "timing_reset_error_semantics": {"type": "object"},
+    "abstractions": {"type": "array", "items": {"type": "string"}},
+    "unsupported_behavior": {"type": "array", "items": {"type": "string"}},
+    "applicability_limits": {"type": "array", "items": {"type": "string"}},
+    "conformance_tests": {"type": "array", "items": {"type": "string"}},
+    "shares_dut_logic": {"type": "boolean"},
+    "author": {"type": "string"},
+    "independent_reviewer": {"type": "string"}
+  },
+  "additionalProperties": true
+}

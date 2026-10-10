@@ -272,7 +272,7 @@ def main():
     elif args.action=='recover': out=recover(args.transaction,execute,args.authorization_ref)
     else:
         out=result('NEEDS_USER_ACTION',action='publish',verification=verify_package(args.source),
-                   remote_published=False,requirements=['Real non-author approval','Repository/tag and publication authorization'],
+                   remote_published=False,requirements=['Qualified non-author member or designated-AI approval under project policy','Repository/tag and publication authorization'],
                    artifacts=['VERSION','package-manifest.json','CHANGELOG.md','COMPATIBILITY.md'],
                    next_action='Use authorized GitHub tool/human to publish exact candidate; record returned URL/commit, never synthesize success')
     return emit(out,args.out)
