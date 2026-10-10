@@ -1,0 +1,7 @@
+# Compile generated managed ss_ifft25 VHDL and exact official libraries first.
+# Then compile these SystemVerilog sources in this order.
+project/rtl/algorithm/doa_backend/doa_math_pkg.sv
+project/rtl/algorithm/doa_backend/pcm4_doa_backend.sv
+project/rtl/algorithm/doa_backend/pcm4_doa_native_entry.sv
+project/rtl/algorithm/doa_backend/ifft25_official.sv
+project/rtl/algorithm/doa_backend/pcm4_doa_official_entry.sv
