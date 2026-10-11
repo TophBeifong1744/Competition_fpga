@@ -1,0 +1,290 @@
+
+*** Running vivado
+    with args -log i17_vio_board_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source i17_vio_board_top.tcl -notrace
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Oct 11 19:07:30 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source i17_vio_board_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 539.582 ; gain = 220.441
+Command: link_design -top i17_vio_board_top -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint 'd:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.gen/sources_1/ip/i17_board_ila/i17_board_ila.dcp' for cell 'u_ila'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.gen/sources_1/ip/i17_board_vio/i17_board_vio.dcp' for cell 'u_vio'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.gen/sources_1/ip/ss_ifft25/ss_ifft25.dcp' for cell 'u_core/backend/ifft/core'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.gen/sources_1/ip/ss_fft29/ss_fft29.dcp' for cell 'u_core/source/forward_window/u_forward/backend/fft/core'
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1139.664 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 12886 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 5 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: u_ila UUID: c30a8330-47ba-5203-8dbc-7e3e3214d902 
+INFO: [Chipscope 16-324] Core: u_vio UUID: 407d14e8-1cc9-58ef-8c2e-354d7bf170fd 
+Parsing XDC File [d:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.gen/sources_1/ip/i17_board_vio/i17_board_vio.xdc] for cell 'u_vio'
+Finished Parsing XDC File [d:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.gen/sources_1/ip/i17_board_vio/i17_board_vio.xdc] for cell 'u_vio'
+Parsing XDC File [d:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.gen/sources_1/ip/i17_board_ila/ila_v6_2/constraints/ila_impl.xdc] for cell 'u_ila/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.gen/sources_1/ip/i17_board_ila/ila_v6_2/constraints/ila_impl.xdc:31]
+Finished Parsing XDC File [d:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.gen/sources_1/ip/i17_board_ila/ila_v6_2/constraints/ila_impl.xdc] for cell 'u_ila/inst'
+Parsing XDC File [d:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.gen/sources_1/ip/i17_board_ila/ila_v6_2/constraints/ila.xdc] for cell 'u_ila/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.gen/sources_1/ip/i17_board_ila/ila_v6_2/constraints/ila.xdc:108]
+Finished Parsing XDC File [d:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.gen/sources_1/ip/i17_board_ila/ila_v6_2/constraints/ila.xdc] for cell 'u_ila/inst'
+Parsing XDC File [D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/constrs_1/imports/board-prep/i17_vio_cdc_post_synth.xdc]
+Finished Parsing XDC File [D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/constrs_1/imports/board-prep/i17_vio_cdc_post_synth.xdc]
+Parsing XDC File [D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/constrs_1/imports/board-prep/i17_vio_pins.xdc]
+Finished Parsing XDC File [D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/constrs_1/imports/board-prep/i17_vio_pins.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 2 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 1378.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2857 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 156 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 204 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 556 instances
+  RAM32X1S => RAM32X1S (RAMS32): 102 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 1820 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 19 instances
+
+15 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1378.902 ; gain = 798.953
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1381.500 ; gain = 2.598
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+Ending Cache Timing Information Task | Checksum: 203e7714c
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 2087.863 ; gain = 706.363
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+
+Phase 1.1.1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = da47c6bd1e7a1104.
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.209 . Memory (MB): peak = 2571.820 ; gain = 0.000
+get_clocks: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2575.898 ; gain = 4.078
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.205 . Memory (MB): peak = 2575.898 ; gain = 0.000
+Phase 1.1.1 Generate And Synthesize Debug Cores | Checksum: 1e86ce64b
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:42 . Memory (MB): peak = 2575.898 ; gain = 23.055
+Phase 1.1 Core Generation And Design Setup | Checksum: 1e86ce64b
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:42 . Memory (MB): peak = 2575.898 ; gain = 23.055
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1e86ce64b
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 2575.898 ; gain = 23.055
+Phase 1 Initialization | Checksum: 1e86ce64b
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 2575.898 ; gain = 23.055
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 1e86ce64b
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 2575.898 ; gain = 23.055
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 1e86ce64b
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 2575.898 ; gain = 23.055
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 1e86ce64b
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 2575.898 ; gain = 23.055
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1e86ce64b
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 2575.898 ; gain = 23.055
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 99 inverters resulting in an inversion of 493 pins
+INFO: [Opt 31-138] Pushed 26 inverter(s) to 44 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 13ec1d3c1
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 2575.898 ; gain = 23.055
+Retarget | Checksum: 13ec1d3c1
+INFO: [Opt 31-389] Phase Retarget created 985 cells and removed 1249 cells
+INFO: [Opt 31-1021] In phase Retarget, 469 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 14444002b
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:57 . Memory (MB): peak = 2575.898 ; gain = 23.055
+Constant propagation | Checksum: 14444002b
+INFO: [Opt 31-389] Phase Constant propagation created 891 cells and removed 2671 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 458 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.228 . Memory (MB): peak = 2575.898 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.153 . Memory (MB): peak = 2575.898 ; gain = 0.000
+Phase 5 Sweep | Checksum: 1a859aeae
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:01:04 . Memory (MB): peak = 2575.898 ; gain = 23.055
+Sweep | Checksum: 1a859aeae
+INFO: [Opt 31-389] Phase Sweep created 3 cells and removed 2477 cells
+INFO: [Opt 31-1021] In phase Sweep, 3250 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-129] Inserted BUFG to drive high-fanout reset|set|enable net. BUFG cell: u_core/source/forward_window/u_forward/backend/fixed4/rp_reg[2]_BUFG_inst, Net: u_core/source/forward_window/u_forward/backend/fixed4/rp_reg[2]
+Phase 6 BUFG optimization | Checksum: 1557323b5
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:01:06 . Memory (MB): peak = 2575.898 ; gain = 23.055
+BUFG optimization | Checksum: 1557323b5
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1557323b5
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:01:07 . Memory (MB): peak = 2575.898 ; gain = 23.055
+Shift Register Optimization | Checksum: 1557323b5
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+INFO: [Opt 31-1566] Pulled 1 inverters resulting in an inversion of 4 pins
+Phase 8 Post Processing Netlist | Checksum: 1513615aa
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:01:08 . Memory (MB): peak = 2575.898 ; gain = 23.055
+Post Processing Netlist | Checksum: 1513615aa
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 457 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 291e5fdae
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:01:16 . Memory (MB): peak = 2575.898 ; gain = 23.055
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.368 . Memory (MB): peak = 2575.898 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 291e5fdae
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:01:16 . Memory (MB): peak = 2575.898 ; gain = 23.055
+Phase 9 Finalization | Checksum: 291e5fdae
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:01:16 . Memory (MB): peak = 2575.898 ; gain = 23.055
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             985  |            1249  |                                            469  |
+|  Constant propagation         |             891  |            2671  |                                            458  |
+|  Sweep                        |               3  |            2477  |                                           3250  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               1  |                                            457  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 291e5fdae
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:01:16 . Memory (MB): peak = 2575.898 ; gain = 23.055
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Pwropt 34-322] Received HACOOException
+WARNING: [Pwropt 34-321] HACOOException: Too many TFIs and TFOs in design, exiting pwropt. You can change this limit with the param pwropt.maxFaninFanoutToNetRatio
+INFO: [Pwropt 34-232] Skipping BRAM gating because all BRAMs are in high frequency (i.e. period < 3.12 ns) clock domains.
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 64 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+Ending Power Optimization Task | Checksum: 291e5fdae
+
+Time (s): cpu = 00:02:33 ; elapsed = 00:02:02 . Memory (MB): peak = 3423.543 ; gain = 847.645
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 291e5fdae
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 3423.543 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.108 . Memory (MB): peak = 3423.543 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+57 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:04:02 ; elapsed = 00:03:41 . Memory (MB): peak = 3423.543 ; gain = 2044.641
+INFO: [Vivado 12-24828] Executing command : report_drc -file i17_vio_board_top_drc_opted.rpt -pb i17_vio_board_top_drc_opted.pb -rpx i17_vio_board_top_drc_opted.rpx
+Command: report_drc -file i17_vio_board_top_drc_opted.rpt -pb i17_vio_board_top_drc_opted.pb -rpx i17_vio_board_top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.runs/impl_1/i17_vio_board_top_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 3423.543 ; gain = 0.000
+generate_parallel_reports: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 3423.543 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3423.543 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3423.543 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.272 . Memory (MB): peak = 3423.543 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3423.543 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3423.543 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 3423.543 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.300 . Memory (MB): peak = 3423.543 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.500 . Memory (MB): peak = 3423.543 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.runs/impl_1/i17_vio_board_top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 3423.543 ; gain = 0.000
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC UTLZ-1] Resource utilization: LUT as Logic over-utilized in Top Level Design (This design requires more LUT as Logic cells than are available in the target device. This design requires 68625 of such cell types but only 53200 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device. Please set tcl parameter "drc.disableLUTOverUtilError" to 1 to change this error to warning.)
+INFO: [Vivado_Tcl 4-198] DRC finished with 1 Errors, 42 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-23] Error(s) found during DRC. Placer not run.
+72 Infos, 3 Warnings, 0 Critical Warnings and 2 Errors encountered.
+place_design failed
+place_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 3423.543 ; gain = 0.000
+ERROR: [Common 17-39] 'place_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 19:12:59 2026...
