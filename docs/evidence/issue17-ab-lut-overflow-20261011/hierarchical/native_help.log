@@ -1,0 +1,948 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Oct 11 21:41:58 2026
+# Process ID         : 52508
+# Current directory  : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-hierarchical-utilization-20261011
+# Command line       : vivado.exe -mode batch -source native_help.tcl -log native_help.log -journal native_help.jou
+# Log file           : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-hierarchical-utilization-20261011/native_help.log
+# Journal file       : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-hierarchical-utilization-20261011\native_help.jou
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 8820 MB
+# Total Virtual      : 42850 MB
+# Available Virtual  : 7000 MB
+#-----------------------------------------------------------
+source native_help.tcl
+# puts "VERSION=[version -short]"
+VERSION=2025.2
+# puts [help open_checkpoint]
+open_checkpoint
+
+Description: 
+Open a design checkpoint in a new project
+
+Syntax: 
+open_checkpoint  [-part <arg>] [-ignore_timing] [-quiet] [-verbose] <file>
+
+Usage: 
+  Name              Description
+  -----------------------------
+  [-part]           Override the checkpoint part. Note that this may cause 
+                    errors if the checkpoint contains xdef.
+  [-ignore_timing]  reload a checkpoint without the timing constraints. Will 
+                    not work if '-time' option given.
+  [-quiet]          Ignore command errors
+  [-verbose]        Suspend message limits during command execution
+  <file>            Design checkpoint file
+
+Categories: 
+Project
+
+Description:
+
+  Open a design checkpoint file (DCP), create a new in-memory project and
+  initialize a design immediately in the new project with the contents of the
+  checkpoint. This command can be used to open a top-level design checkpoint,
+  or the checkpoint created for an out-of-context module.
+
+  When opening a checkpoint, there is no need to create a project first. The
+  open_checkpoint command reads the design data into memory, opening the
+  design in Non-Project Mode. Refer to the Vivado Design Suite User Guide:
+  Design Flows Overview (UG892) for more information on Project Mode and
+  Non-Project Mode.
+
+  Note: When multiple design checkpoints are open in the AMD Vivado tool, you
+  must use the current_project command to switch between the open designs.
+  You can use current_design to check which checkpoint is the active design.
+
+Arguments:
+
+  -part <arg> - (Optional) Specify a target part for the imported checkpoint
+  design. This option lets you change the speed grade of the part used by the
+  design checkpoint file, or change early availability parts for production
+  parts of the same device and package.
+
+  Important: The use of -part is limited in terms of the range of parts that
+  can be used, and can result in an error when opening the checkpoint if an
+  incompatible part is specified.
+
+  -ignore_timing - (Optional) Open the checkpoint without the timing
+  constraints to make opening the checkpoint quicker.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <file> - (Required) The path and filename of the checkpoint file.
+
+  Note: If the path is not specified as part of the file name, the tool will
+  search for the specified file in the current working directory and then in
+  the directory from which the tool was launched.
+
+Examples:
+
+  The following example opens the specified checkpoint file, and specifies
+  the target part for the design:
+
+    open_checkpoint C:/Data/state1/checkpoint.dcp -part xc7k325tffg900-2
+
+  Note: If the specified part is not compatible with the device and package
+  used by the specified checkpoint, the command will return an error.
+
+See Also:
+
+   *  current_design
+   *  current_project
+   *  read_checkpoint
+   *  write_checkpoint
+
+# open_checkpoint {D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.runs/synth_1/i17_vio_board_top.dcp}
+Command: open_checkpoint D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.runs/synth_1/i17_vio_board_top.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 334.445 ; gain = 5.070
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1023.887 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 12255 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 4 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.446 . Memory (MB): peak = 1243.305 ; gain = 25.102
+CRITICAL WARNING: [Project 1-558] Could not resolve non-primitive black box cell 'i17_board_ila' instantiated as 'u_ila'.
+CRITICAL WARNING: [Project 1-558] Could not resolve non-primitive black box cell 'i17_board_vio' instantiated as 'u_vio'.
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ss_fft29' instantiated as 'u_core/source/forward_window/u_forward/backend/fft/core' [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/forward_window_adapter.sv:16]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ss_ifft25' instantiated as 'u_core/backend/ifft/core' [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/pcm4_doa_native_entry.sv:14]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1243.305 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2701 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 204 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 556 instances
+  RAM32X1S => RAM32X1S (RAMS32): 102 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 1820 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 19 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2025.2 (64-bit) build 6299465
+open_checkpoint: Time (s): cpu = 00:00:46 ; elapsed = 00:00:45 . Memory (MB): peak = 1245.949 ; gain = 924.043
+# foreach cmd {report_utilization get_cells get_property list_property close_design} {
+#     puts "HELP_BEGIN=$cmd"
+#     puts [help $cmd]
+#     puts "HELP_END=$cmd"
+# }
+HELP_BEGIN=report_utilization
+report_utilization
+
+Description: 
+Compute utilization of device and display report
+
+Syntax: 
+report_utilization  [-file <arg>] [-append] [-pblocks <args>]
+                    [-evaluate_pblock] [-exclude_child_pblocks]
+                    [-exclude_non_assigned] [-cells <args>] [-return_string]
+                    [-slr] [-packthru] [-name <arg>] [-no_primitives]
+                    [-omit_locs] [-hierarchical] [-spreadsheet_file <arg>]
+                    [-spreadsheet_table <arg>] [-spreadsheet_depth <arg>]
+                    [-hierarchical_depth <arg>] [-hierarchical_percentages]
+                    [-hierarchical_min_primitive_count <arg>] [-quiet]
+                    [-verbose]
+
+Returns: 
+Report
+
+Usage: 
+  Name                                 Description
+  ------------------------------------------------
+  [-file]                              Filename to output results to. (send 
+                                       output to console if -file is not 
+                                       used)
+  [-append]                            Append the results to file, don't 
+                                       overwrite the results file
+  [-pblocks]                           Report utilization of given pblock
+  [-evaluate_pblock]                   Report utilization with demand as 
+                                       specified cells and supply as 
+                                       specified pblock area
+  [-exclude_child_pblocks]             Report utilization with out child 
+                                       pblocks
+  [-exclude_non_assigned]              Pblock utilization with out 
+                                       Non-assigned Cells
+  [-cells]                             Report utilization of given list of 
+                                       cells
+  [-return_string]                     Return report as string
+  [-slr]                               SLR wise utilization of resources
+  [-packthru]                          Reports LUTs used exclusively as 
+                                       pack-thru
+  [-name]                              Output the results to GUI panel with 
+                                       this name
+  [-no_primitives]                     Removes "Primitives Section" from 
+                                       report_utilization o/p.
+  [-omit_locs]                         Removes "Loced" column from 
+                                       report_utilization o/p.
+  [-hierarchical]                      Generates text-based hierarchical 
+                                       report.
+  [-spreadsheet_file]                  Specify file for exporting utilization
+                                       tables as spreadsheets. This feature 
+                                       is available only in GUI mode.
+  [-spreadsheet_table]                 Choose a particular utilization table 
+                                       to export as spreadsheet file. 
+                                       Default: Hierarchy
+  [-spreadsheet_depth]                 Specifies the depth level for 
+                                       spreadsheet.
+                                       Default: 8
+  [-hierarchical_depth]                Specifies the depth level for textual 
+                                       hierarchical report
+                                       Default: 0
+  [-hierarchical_percentages]          Report percentages in textual 
+                                       hierarchical report
+  [-hierarchical_min_primitive_count]  Specifies the minimum count of 
+                                       primitives in a hierarchy to be 
+                                       displayed in hierarichal report.
+                                       Default: 50
+  [-quiet]                             Ignore command errors
+  [-verbose]                           Suspend message limits during command 
+                                       execution
+
+Categories: 
+Report
+
+Description:
+
+  Report resource usage on the target part by the current synthesized or
+  implemented design. If you do not specify the -file, -return_string, or
+  -name arguments, the report generates in the standard output.
+
+  Tip: Although, the command reports resource usage early in the design
+  process, the report is more accurate as the design progresses from
+  synthesis through implementation.
+
+  This command returns the requested information, or returns an error if it
+  fails. When this command runs in hierarchical mode, either with
+  -hierarchical or -name, it reports resource utilization for each hierarchy
+  in the design that meets the -hierarchical_min_primitive_count threshold.
+
+Arguments:
+
+  -append - (Optional) Append the output of the command to the specified file
+  rather than overwriting it.
+
+  Note: The -append option can only be used with the -file option.
+
+  -cells <arg> - (Optional) Report the resources utilized by one or more
+  hierarchical cells in the current design.
+
+  -evaluate_pblock <arg> - (Optional) Performs a what-if analysis on the
+  specified -pblocks and the specified -cells. This option reports the
+  utilization of the Pblocks populated by the specified cells. Percentages of
+  utilization represent the ratio of the assigned cells to the available
+  resources. This option requires both -pblocks and -cells.
+
+  -exclude_child_pblocks - (Optional) Report utilization of the specified
+  -pblocks excluding any nested Pblocks. This reduces the utilization of the
+  region as it does not account for assigned cells to a Pblock through a
+  nested Pblock.
+
+  -exclude_non_assigned - (Optional) Exclude non-assigned cells from the
+  Utilization report when the -pblocks option is specified. This decreases
+  the utilization of the Pblock region as it does not account for utilized
+  cells and not assigned to the specified Pblocks.
+
+  -file <arg> - (Optional) Write the report into the specified file. If you
+  do not specify the -append option, it overwrites the existing file.
+
+  Note: If you do not specify a path, the tool writes into the current 
+  working directory.
+
+  -hierarchical - (Optional) Reports the utilization of the device
+  categorized as per the design hierarchy. This impacts report generated to a
+  file. The report is hierarchical regardless when run inside the Vivado IDE.
+
+  -hierarchical_depth <arg> - (Optional) Specifies the depth of the hierarchy
+  to report when reporting utilization according to the hierarchy. If the
+  default depth is 0, it means that -hierarchical option reports full design
+  hierarchy.
+
+  -hierarchical_min_primitive_count <arg> - (Optional) Specifies the minimum 
+  number of cells required in order to report a hierarchy when the report is 
+  generated in hierarchical mode. Specifying -name or -hierarchical options 
+  triggers hierarchical mode. Using value zero reports all hierarchies. A 
+  higher level cell count is sum total of the lower level leaf cell counts 
+  and the number of leaf cells in the current hierarchy. Default value is 50.
+
+  -hierarchical_percentages - (Optional) Specifies that utilization data in
+  the hierarchical report is reported as percentages.
+
+  -slr - (Optional) Reports the utilization for each separate SLR in devices
+  having SLRs.
+
+  -name <arg> - (Optional) Specifies the name of the results to output to the
+  GUI.
+
+  -no_primitives - (Optional) Remove the Primitives section from the report.
+  The Primitives section reports the number and type of logic primitives used
+  on the device.
+
+  -omit_locs - (Optional) Omit the Fixed column from the report. The Fixed
+  column reports the quantity of fixed logic elements, or manually places
+  onto the device.
+
+  -pblocks <arg> - (Optional) Report the resources utilized by a Pblock.
+
+  Note: -pblocks can not be used with the -name option.
+
+  -packthru - (Optional) Reports LUTs used for route through purposes. This
+  appears in the utilization report as "LUTs used exclusively as
+  route-thrus".
+
+  -return_string - (Optional) Directs the output to a Tcl string rather than
+  to the standard output. A variable definition captures the Tcl string,
+  parses, or processes as required.
+
+  Note: This argument cannot be used with the -file option.
+
+  -spreadsheet_file <arg> - (Optional) Export utilization tables to the
+  specified XLSX format spreadsheet. The ability to export a spreadsheet file
+  is only available when the -name option is also specified and the report is
+  generated in the GUI.
+
+  Tip: Ensure to specify the .xlsx suffix for the specified file, as it is
+  not automatically assigned. If you do not specify a path, the tool writes
+  into the current working directory.
+
+  -spreadsheet_table <arg> - (Optional) Specify a utilization table to export
+  to the spreadsheet file. The default is to export the Hierarchy table for
+  the whole design. This option requires the use of -spreadsheet_file.
+
+  It also exports other tables and specific resources. This process requires
+  you to build the argument -spreadsheet_file switch by specifying the table
+  name and then a hyphen followed the resource.
+
+   *  Table Name - Resource Name: Adds multiple resources
+
+   *  Table Name - Resource Name - Resource Name: Identify the names of the
+      tables and the resources in the report
+
+      Warning: Ensure that the text matches precisely and is case sensitive.
+
+      Note: The existing command works differently for different stages in
+      the design flow or when porting projects to new families. Verify the
+      command when targeting a new family or design stage.
+
+  Some example table names are:
+
+   *  Hierarchy
+
+   *  Slice Logic Distribution
+
+   *  Slice Logic Distribution - LUT as Memory
+
+   *  Netlist Logic
+
+   *  Netlist Logic - Registers
+
+  -spreadsheet_depth <arg> - (Optional) Specifies the hierarchical depth,
+  starting from the top-level of the design, to export to the spreadsheet
+  file. The default value is 8. This options requires the use of
+  -spreadsheet_file.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+Examples:
+
+  The following example reports a hierarchical report and writes it to
+  util_hier.rpt file:
+
+    report_utilization -hierarchical -file util_hier.rpt
+
+  The following example generates a hierarchical report showing all
+  hierarchies regardless of whether they meet the minimum primitive count
+  threshold and writes it to util_hier2.rpt file:
+
+    report_utilization -hierarchical -hierarchical_min_primitive_count 0 -file \
+    util_hier2.rpt
+
+  The following example reports the resources used by a Pblock and write the
+  results to the specified file:
+
+    report_utilization -pblocks [get_pblocks <pblockName>] -file \
+    ./pblocks_util.txt
+
+  This example reports the whole design utilization for named report in the
+  GUI, but exports the "Clocking - BUFGCTRL" table to the specified
+  spreadsheet file:
+
+    report_utilization -name utilization_1 -spreadsheet_file util_table.xlsx \
+    -spreadsheet_table "Clocking - BUFGCTRL"
+
+  The following example reports the resources utilized by each Pblock in the
+  design, appending the report for each Pblock to a single specified file:
+
+    foreach x [get_pblocks] {
+      puts "Reporting Pblock: $x ----------------------------------"
+      report_utilization -append -file C:/Data/pblocks_util.txt -pblocks $x
+    }
+
+See Also:
+
+   *  delete_utilization_results
+
+HELP_END=report_utilization
+HELP_BEGIN=get_cells
+get_cells
+
+Description: 
+Get a list of cells in the current design
+
+Syntax: 
+get_cells  [-hsc <arg>] [-hierarchical] [-regexp] [-nocase] [-filter <arg>]
+           [-of_objects <args>] [-match_style <arg>] [-leaf]
+           [-include_replicated_objects] [-quiet] [-verbose] [<patterns>]
+
+Returns: 
+list of cell objects
+
+Usage: 
+  Name                           Description
+  ------------------------------------------
+  [-hsc]                         Hierarchy separator
+                                 Default: /
+  [-hierarchical]                Search level-by-level in current instance
+  [-regexp]                      Patterns are full regular expressions
+  [-nocase]                      Perform case-insensitive matching (valid 
+                                 only when -regexp specified)
+  [-filter]                      Filter list with expression
+  [-of_objects]                  Get cells of these pins, timing paths, nets,
+                                 bels, clock regions, sites, or drc 
+                                 violations
+  [-match_style]                 Style of pattern matching
+                                 Default: sdc
+                                 Values: ucf, sdc
+  [-leaf]                        Replace hierarchical cells with leaf cells.
+  [-include_replicated_objects]  Include replicated objects when searching 
+                                 for patterns. This option is valid only when
+                                 patterns is specified.
+  [-quiet]                       Ignore command errors
+  [-verbose]                     Suspend message limits during command 
+                                 execution
+  [<patterns>]                   Match cell names against patterns
+                                 Default: *
+
+Categories: 
+SDC, XDC, Object
+
+Description:
+
+  Gets a list of cell objects in the current design that match a specified
+  search pattern. The default command returns a list of all cells in the
+  current_instance of the open design, as specified by the current_instance
+  command.
+
+  You can use the -hierarchical option to extract cells from the hierarchy of
+  the current design.
+
+  The get_cells command also includes an option to get all replicated cells
+  that are added to a design during physical optimization, or
+  phys_opt_design. The use of the -include_replicated_objects option returns
+  the replicated cells of an object when the original cell is returned. You
+  can use this option to ensure that constraints or properties that are
+  applied to a cell are also applied to its replicated cells.
+
+  Note: To improve memory and performance, the get_* commands return a
+  container list of a single type of objects (e.g. cells, nets, pins, or
+  ports). You can add new objects to the list (using lappend for instance),
+  but you can only add the same type of object that is currently in the list.
+  Adding a different type of object, or string, to the list is not permitted
+  and will result in a Tcl error.
+
+Arguments:
+
+  -hsc <arg> - (Optional) Set the hierarchy separator. The default hierarchy
+  separator is `/`.
+
+  -hierarchical - (Optional) Get cells from all levels of the design
+  hierarchy starting from the level of the current_instance, or from the top
+  of the current design. Without this argument, the command will only get
+  cells from the current_instance of the design hierarchy. When using
+  -hierarchical, the search pattern should not contain a hierarchy separator
+  because the search pattern is applied at each level of the hierarchy, not
+  to the full hierarchical cell name. For instance, searching for U1/*
+  searches each level of the hierarchy for instances with U1/ in the name.
+  This may not return the intended results. This is illustrated in the
+  examples below.
+
+  Note: When used with -regexp, the specified search string is matched
+  against the full hierarchical name, and the U1/* search pattern will work
+  as intended.
+
+  -regexp - (Optional) Specifies that the search <patterns> are written as
+  regular expressions. Both search <patterns> and -filter expressions must be
+  written as regular expressions when this argument is used. AMD regular
+  expression Tcl commands are always anchored to the start of the search
+  string. You can add ".*" to the beginning or end of a search string to
+  widen the search to include a substring. See
+  http://perldoc.perl.org/perlre.html for help with regular expression
+  syntax.
+
+  Note: The Tcl built-in command regexp is not anchored, and works as a
+  standard Tcl command. For more information refer to
+  http://www.tcl.tk/man/tcl8.5/TclCmd/regexp.htm.
+
+  -nocase - (Optional) Perform case-insensitive matching when a pattern has
+  been specified. This argument applies to the use of -regexp only.
+
+  -filter <args> - (Optional) Filter the results list with the specified
+  expression. The -filter argument filters the list of objects returned by
+  get_cells based on property values on the cells. You can find the
+  properties on an object with the report_property or list_property commands.
+  In the case of the "cell" object, "IS_PARTITION", "IS_PRIMITIVE" and
+  "IS_LOC_FIXED" are some of the properties that can be used to filter
+  results.
+
+  The filter search pattern should be quoted to avoid having to escape
+  special characters that may be found in net, pin, or cell names, or other
+  properties. String matching is case-sensitive and is always anchored to the
+  start and to the end of the search string. The wildcard "*" character can
+  be used at the beginning or at the end of a search string to widen the
+  search to include a substring of the property value.
+
+  Note: The filter returns an object if a specified property exists on the
+  object, and the specified pattern matches the property value on the object.
+  In the case of the "*" wildcard character, this will match a property with
+  a defined value of "".
+
+  For string comparison, the specific operators that can be used in filter
+  expressions are "equal" (==), "not-equal" (!=), "match" (=~), and
+  "not-match" (!~). Numeric comparison operators <, >, <=, and >= can also be
+  used. Multiple filter expressions can be joined by AND and OR (&& and ||).
+  The following gets input pins that do NOT contain the "RESET" substring
+  within their name:
+
+    get_pins * -filter {DIRECTION == IN && NAME !~ "*RESET*"} 
+    
+
+  Boolean (bool) type properties can be directly evaluated in filter
+  expressions as true or not true:
+
+    -filter {IS_PRIMITIVE && !IS_LOC_FIXED} 
+    
+
+  -of_objects <arg> - (Optional) Get the cells connected to the specified
+  pins, timing paths, nets, bels, clock regions, sites or DRC violation
+  objects.
+
+  Note: The -of_objects option requires objects to be specified using the
+  get_* commands, such as get_cells or get_pins, rather than specifying
+  objects by name. In addition, -of_objects cannot be used with a search
+  <pattern>.
+
+  -match_style - (Optional) Indicates that the search pattern matches UCF
+  constraints or SDC constraints. The default is SDC.
+
+  -leaf - (Optional) Replace the hierarchical cells by all the primitive cells
+  underneath.
+
+  -include_replicated_objects - (Optional) Include cells that have been added
+  through replication during optimizations. This option is valid only when
+  specified with <patterns>, and returns replicated cell instances that match
+  the pattern. As a default, the get_cells command does not return replicated
+  cells.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <patterns> - (Optional) Match cells against the specified patterns. The
+  default pattern is the wildcard `*` which gets a list of all cells in the
+  project. More than one pattern can be specified to find multiple cells
+  based on different search criteria.
+
+  Note: You must enclose multiple search patterns in braces, {}, or quotes,
+  "", to present the list as a single element.
+
+Examples:
+
+  The following example uses regular expression to return cells in the BFT
+  example design that match the filter expressions for NAME and REF_NAME. In
+  the first command the NAME is specified in the search pattern, while the
+  second command filters on the NAME property. These commands return the same
+  results:
+
+    get_cells -regexp -filter { REF_NAME =~ FD.* } .*validFor.*  
+    get_cells -regexp -filter { NAME =~ .*validFor.* && REF_NAME =~ FD.* } 
+    
+
+  The following example searches all levels of the hierarchy for cells
+  beginning with cpu, or fft, and joins each cell returned with the newline
+  character to put it on a separate line:
+
+    join [get_cells -hier {cpu* fft*}] \n 
+    
+
+  This example gets a list of properties and property values attached to the
+  second object of the list returned by get_cells:
+
+    report_property [lindex [get_cells] 1] 
+    
+
+  Note: If there are no cells matching the pattern you will get a warning.
+
+  This example prints a list of the library cells instantiated into the
+  design at all levels of the hierarchy, sorting the list for unique names so
+  that each cell is only printed one time:
+
+    foreach cell [lsort -unique [get_property LIB_CELL [get_cells -hier \  
+    -filter {IS_PRIMITIVE==1}]]] {puts $cell} 
+    
+
+  The following example demonstrates the effect of -hierarchical searches,
+  without and with -regexp:
+
+    get_cells -hierarchical *mmcm*  
+       mmcm_replicator_inst_1  
+       mmcm_replicator_inst_1/mmcm_stage[0].mmcm_channel[0].mmcm  
+    get_cells -hierarchical -regexp .*mmcm.*  
+       mmcm_replicator_inst_1  
+       mmcm_replicator_inst_1/mmcm_stage[0].mmcm_channel[0].mmcm  
+       mmcm_replicator_inst_1/mmcm_stage[0].mmcm_channel[0].mmcm/GND  
+       mmcm_replicator_inst_1/mmcm_stage[0].mmcm_channel[0].mmcm/MMCM_Base 
+    
+
+  Note: The last two cells (GND and MMCM_Base) were not returned in the first
+  example (without -regexp) because the cell names do not match the search
+  pattern, as it is applied to each level of the hierarchy.
+
+  The following example runs the report_drc command on the current design,
+  and returns any cells associated with DRC violations:
+
+    report_drc -name drc_1  
+    get_cells -of_objects [get_drc_violations] 
+    
+
+See Also:
+
+   *  current_instance
+   *  get_drc_vioations
+   *  get_lib_cells
+   *  get_nets
+   *  get_pins
+   *  list_property
+   *  phys_opt_design
+   *  report_drc
+   *  report_property
+
+HELP_END=get_cells
+HELP_BEGIN=get_property
+get_property
+
+Description: 
+Get properties of object
+
+Syntax: 
+get_property  [-min] [-max] [-quiet] [-verbose] <name> <object>
+
+Returns: 
+property value
+
+Usage: 
+  Name        Description
+  -----------------------
+  [-min]      Return only the minimum value
+  [-max]      Return only the maximum value
+  [-quiet]    Ignore command errors
+  [-verbose]  Suspend message limits during command execution
+  <name>      Name of property whose value is to be retrieved
+  <object>    Object to query for properties
+
+Categories: 
+Object, PropertyAndParameter, XDC
+
+Description:
+
+  Gets the current value of the named property from the specified object or
+  objects. If multiple objects are specified, a list of values is returned.
+
+  If the property is not currently assigned to the object, or is assigned
+  without a value, then the get_property command returns nothing, or the null
+  string. If multiple objects are queried, the null string is added to the
+  list of values returned.
+
+  If multiple objects are passed to the get_property command, you can use the
+  -min or -max options to return the smallest or greatest value of the
+  property specified by name. This feature can be useful when setting timing
+  constraints.
+
+  Note: For numeric properties, the min/max determination is based on numeric
+  values. For all other properties, the determination is based on string
+  sorting.
+
+  This command returns a value, or list of values, or returns an error if it
+  fails.
+
+Arguments:
+
+  -min - (Optional) When multiple <objects> are specified, this option
+  examines the values of the property specified by <name>, and returns the
+  smallest value from the list of objects. Numeric properties are sorted by
+  value. All other properties are sorted as strings.
+
+  -max - (Optional) When multiple <objects> are specified, this option
+  examines the values of the property specified by <name>, and returns the
+  largest value from the list of objects. Numeric properties are sorted by
+  value. All other properties are sorted as strings.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <name> - (Required) The name of the property to be returned. The name is
+  not case sensitive.
+
+  <objects> - (Required) One or more objects to examine for the specified
+  property.
+
+Examples:
+
+  The following example gets the NAME property from the specified cell:
+
+    get_property NAME [lindex [get_cells] 3] 
+    
+
+  The following example returns the smallest PERIOD property from the
+  specified clock objects:
+
+    get_property -min PERIOD [get_clocks] 
+    
+
+  This example demonstrates the string based sorting of the SITE property for
+  the specified ports:
+
+    get_property SITE [get_ports]  
+    IOB_X1Y75 IOB_X1Y76 IOB_X1Y98 IOB_X1Y125 IOB_X0Y94 IOB_X1Y95 IOB_X1Y96  
+    IOB_X1Y93 IOB_X1Y94  
+     
+    get_property -min SITE [get_ports]  
+    IOB_X0Y94  
+     
+    get_property -max SITE [get_ports]  
+    IOB_X1Y98 
+    
+
+  Note: While IOB_X1Y125 is the largest site value on the port objects, the
+  property value IOB_X1Y98 is returned because of the sorting of the property
+  values as strings.
+
+See Also:
+
+   *  create_property
+   *  get_cells
+   *  get_ports
+   *  list_property
+   *  list_property_value
+   *  report_property
+   *  reset_property
+   *  set_property
+
+HELP_END=get_property
+HELP_BEGIN=list_property
+list_property
+
+Description: 
+List properties of object
+
+Syntax: 
+list_property  [-class <arg>] [-regexp] [-quiet] [-verbose] [<object>]
+               [<pattern>]
+
+Returns: 
+list of property names
+
+Usage: 
+  Name         Description
+  ------------------------
+  [-class]     Object type to query for properties. Ignored if object is 
+               specified.
+  [-regexp]    Pattern is treated as a regular expression
+  [-quiet]     Ignore command errors
+  [-verbose]   Suspend message limits during command execution
+  [<object>]   Object to query for properties
+  [<pattern>]  Pattern to match properties against
+               Default: *
+
+Categories: 
+Object, PropertyAndParameter
+
+Description:
+
+  Gets a list of all properties on a specified object or class.
+
+  Note: report_property also returns a list of properties on an object or
+  class of objects, but also reports the property type and property value.
+
+Arguments:
+
+  -class <arg> - (Optional) Return the properties of the specified class
+  instead of a specific object. The class argument is case sensitive, and
+  most class names are lower case.
+
+  Note: -class cannot be used together with an <object>.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <object> - (Optional) A single object on which to report properties.
+
+  Note: If you specify multiple objects you will get an error.
+
+  <pattern> - (Optional) Match the available properties on the <object> or
+  -class against the specified search pattern. The <pattern> applies to the
+  property name, and only properties matching the specified pattern will be
+  reported. The default pattern is the wildcard `*` which returns a list of
+  all properties on the specified object.
+
+  Note: The search pattern is case sensitive, and most properties are UPPER
+  case.
+
+Examples:
+
+  The following example returns all properties of the specified CELL object:
+
+    list_property [get_cells cpuEngine] 
+    
+
+  The following example returns the properties matching the specified search
+  pattern from the BEL class of objects:
+
+    list_property -class bel *NUM* 
+    
+
+See Also:
+
+   *  create_property
+   *  get_cells
+   *  get_property
+   *  list_property_value
+   *  report_property
+   *  reset_property
+   *  set_property
+
+HELP_END=list_property
+HELP_BEGIN=close_design
+close_design
+
+Description: 
+Close the current design
+
+Syntax: 
+close_design  [-quiet] [-verbose]
+
+Usage: 
+  Name        Description
+  -----------------------
+  [-quiet]    Ignore command errors
+  [-verbose]  Suspend message limits during command execution
+
+Categories: 
+Project
+
+Description:
+
+  Closes the currently active design. If the design has been modified, you
+  will not be prompted to save the design prior to closing. You will need to
+  run save_design or save_design_as to save any changes made to the design
+  before using the close_design command.
+
+Arguments:
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+Examples:
+
+  The following example closes the current design:
+
+    close_design
+
+  Note: If multiple designs are open, you can specify the current design with
+  the current_design command prior to using close_design.
+
+  The following example sets the current design, then closes it:
+
+    current_design rtl_1
+    close_design
+
+  current_design sets rtl_1 as the active design, then the close_design
+  command closes it.
+
+See Also:
+
+   *  current_design
+
+HELP_END=close_design
+# close_design
+# exit 0
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 21:42:50 2026...

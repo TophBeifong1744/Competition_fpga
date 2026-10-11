@@ -1,0 +1,149 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Oct 11 21:44:19 2026
+# Process ID         : 52632
+# Current directory  : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-hierarchical-utilization-20261011
+# Command line       : vivado.exe -mode batch -source export_reports.tcl -log export_reports.log -journal export_reports.jou
+# Log file           : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-hierarchical-utilization-20261011/export_reports.log
+# Journal file       : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-hierarchical-utilization-20261011\export_reports.jou
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 8820 MB
+# Total Virtual      : 42850 MB
+# Available Virtual  : 7152 MB
+#-----------------------------------------------------------
+source export_reports.tcl
+# set out [file dirname [file normalize [info script]]]
+# if {[version -short] ne "2025.2"} {error "Unexpected Vivado version"}
+# foreach {stage checkpoint} {
+#     synth {D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.runs/synth_1/i17_vio_board_top.dcp}
+#     opt {D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.runs/impl_1/i17_vio_board_top_opt.dcp}
+# } {
+#     puts "REPORT_STAGE_BEGIN=$stage INPUT=$checkpoint"
+#     open_checkpoint $checkpoint
+#     if {[get_property PART [current_design]] ne "xc7z020clg400-1"} {error "Unexpected checkpoint part"}
+#     # depth=0和min_count=0保留全部层级；数字为厂商利用率报告原值�?
+#     report_utilization -hierarchical -hierarchical_depth 0 -hierarchical_min_primitive_count 0 -file [file join $out "${stage}_utilization_hierarchical.rpt"]
+#     report_utilization -file [file join $out "${stage}_utilization_total.rpt"]
+#     set fh [open [file join $out "${stage}_blackboxes.tsv"] w]
+#     puts $fh "instance\treference"
+#     set blackboxes [get_cells -hierarchical -filter {IS_BLACKBOX == 1}]
+#     foreach cell $blackboxes {puts $fh "[get_property NAME $cell]\t[get_property REF_NAME $cell]"}
+#     close $fh
+#     puts "BLACKBOX_COUNT=$stage [llength $blackboxes]"
+#     # 叶原�?按直接父�?径和REF_NAME汇总；原�??数量不是打包后LUT站点数量�?
+#     set counts [dict create]
+#     set leafs [get_cells -hierarchical -filter {IS_PRIMITIVE == 1}]
+#     set properties [list_property [lindex $leafs 0]]
+#     set has_parent [expr {[lsearch -exact $properties PARENT] >= 0}]
+#     foreach cell $leafs {
+#         set name [get_property NAME $cell]
+#         set ref [get_property REF_NAME $cell]
+#         if {$has_parent} {
+#             set parent [get_property PARENT $cell]
+#             if {$parent eq ""} {set parent "."}
+#         } else {
+#             set slash [string last / $name]
+#             if {$slash < 0} {set parent "."} else {set parent [string range $name 0 [expr {$slash-1}]]}
+#         }
+#         dict incr counts [list $parent $ref]
+#     }
+#     set fh [open [file join $out "${stage}_primitive_counts_by_parent.tsv"] w]
+#     puts $fh "parent\tprimitive_ref\tcount"
+#     foreach key [lsort [dict keys $counts]] {
+#         puts $fh "[lindex $key 0]\t[lindex $key 1]\t[dict get $counts $key]"
+#     }
+#     close $fh
+#     puts "PRIMITIVE_COUNT=$stage [llength $leafs] PARENT_PROPERTY_AVAILABLE=$has_parent"
+#     close_design
+#     puts "REPORT_STAGE_COMPLETE=$stage"
+# }
+REPORT_STAGE_BEGIN=synth INPUT=D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.runs/synth_1/i17_vio_board_top.dcp
+Command: open_checkpoint D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.runs/synth_1/i17_vio_board_top.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 332.711 ; gain = 2.805
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1024.199 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 12255 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 5 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.447 . Memory (MB): peak = 1243.266 ; gain = 24.406
+CRITICAL WARNING: [Project 1-558] Could not resolve non-primitive black box cell 'i17_board_ila' instantiated as 'u_ila'.
+CRITICAL WARNING: [Project 1-558] Could not resolve non-primitive black box cell 'i17_board_vio' instantiated as 'u_vio'.
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ss_fft29' instantiated as 'u_core/source/forward_window/u_forward/backend/fft/core' [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/forward_window_adapter.sv:16]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ss_ifft25' instantiated as 'u_core/backend/ifft/core' [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/pcm4_doa_native_entry.sv:14]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1243.266 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2701 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 204 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 556 instances
+  RAM32X1S => RAM32X1S (RAMS32): 102 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 1820 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 19 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2025.2 (64-bit) build 6299465
+open_checkpoint: Time (s): cpu = 00:00:46 ; elapsed = 00:00:45 . Memory (MB): peak = 1243.363 ; gain = 923.570
+BLACKBOX_COUNT=synth 4
+PRIMITIVE_COUNT=synth 162880 PARENT_PROPERTY_AVAILABLE=1
+REPORT_STAGE_COMPLETE=synth
+REPORT_STAGE_BEGIN=opt INPUT=D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.runs/impl_1/i17_vio_board_top_opt.dcp
+Command: open_checkpoint D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.runs/impl_1/i17_vio_board_top_opt.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1243.363 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1243.363 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 12528 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 6 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.487 . Memory (MB): peak = 1358.211 ; gain = 26.211
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2215.227 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2215.227 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2215.227 ; gain = 0.000
+Read placeStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2215.227 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2215.227 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2215.227 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 2215.227 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 2215.227 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 2215.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2863 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 156 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 204 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 562 instances
+  RAM32X1S => RAM32X1S (RAMS32): 102 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 1820 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 19 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2025.2 (64-bit) build 6299465
+open_checkpoint: Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 2215.227 ; gain = 971.863
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {IS_BLACKBOX == 1}'.
+BLACKBOX_COUNT=opt 0
+PRIMITIVE_COUNT=opt 174443 PARENT_PROPERTY_AVAILABLE=1
+REPORT_STAGE_COMPLETE=opt
+# puts "EXISTING_CHECKPOINT_REPORTS_COMPLETE"
+EXISTING_CHECKPOINT_REPORTS_COMPLETE
+# exit 0
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 21:48:58 2026...

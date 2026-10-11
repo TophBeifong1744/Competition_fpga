@@ -1,0 +1,134 @@
+{
+  "mode": "ANALYZE",
+  "primary_writer_mode": "BUILD_FLOW diagnostics only",
+  "profile": "DIAGNOSTIC_SMOKE",
+  "claim": "Existing-checkpoint resource-report export only",
+  "tool": "Vivado 2025.2 SW6299465 IP6300035 SharedData6298862",
+  "cwd": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-hierarchical-utilization-20261011",
+  "commands": [
+    {
+      "command": "if([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture.ToString() -ne 'X64'){throw 'Unsupported actual OS architecture'}; $env:PROCESSOR_ARCHITECTURE='AMD64'; $env:COMPUTERNAME=[Environment]::MachineName; $env:PATH='C:\\AMDDesignTools\\2025.2\\Vivado\\bin;'+$env:PATH; vivado -mode batch -source native_help.tcl -log native_help.log -journal native_help.jou",
+      "exit_code": 0
+    },
+    {
+      "command": "if([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture.ToString() -ne 'X64'){throw 'Unsupported actual OS architecture'}; $env:PROCESSOR_ARCHITECTURE='AMD64'; $env:COMPUTERNAME=[Environment]::MachineName; $env:PATH='C:\\AMDDesignTools\\2025.2\\Vivado\\bin;'+$env:PATH; vivado -mode batch -source export_reports.tcl -log export_reports.log -journal export_reports.jou",
+      "exit_code": 0
+    },
+    {
+      "command": "python package_reports.py",
+      "exit_code": 0
+    }
+  ],
+  "input_manifest_sha256": "648adc20b8c1a3de3e0b4bc4e8ea4dad54264d9f82c81699ff482938ec0400cc",
+  "unchanged_protected_inputs_count": 50,
+  "all_input_bytes_and_mtimes_unchanged": true,
+  "outputs": [
+    {
+      "path": "native_help.tcl",
+      "bytes": 449,
+      "sha256": "91c7011b6d11222f28a3a1032dc34349cf08c79b41cf1111210c51f5fed32b0c"
+    },
+    {
+      "path": "native_help.log",
+      "bytes": 38405,
+      "sha256": "9a7ae33190bbcd28cec3cdd675aee5bc4cef9e4f75497430a3686fe4eb14d5b6"
+    },
+    {
+      "path": "native_help.jou",
+      "bytes": 1322,
+      "sha256": "03846d31561a99832ea3d550efd0ab8151172696ea24f8cebca7146df3802a46"
+    },
+    {
+      "path": "export_reports.tcl",
+      "bytes": 2614,
+      "sha256": "db4b8e7fd9202d59831f3cbf0c40a199a47edfa3accdaa206d937004fda1646c"
+    },
+    {
+      "path": "export_reports.log",
+      "bytes": 9832,
+      "sha256": "023b307194fc51b5070cc4784576523d8e4fcb6c7dc6247b5560645fdb809efb"
+    },
+    {
+      "path": "export_reports.jou",
+      "bytes": 1340,
+      "sha256": "3c5b668160ced7cf9e217d2db54488b82329d5649d12dcdc8cb098af8a477348"
+    },
+    {
+      "path": "processes-before-export.json",
+      "bytes": 220,
+      "sha256": "313de5cf90f38e88ca7924fbb86346ae372df499a6bc60c3e2843563456d5420"
+    },
+    {
+      "path": "input-manifest.json",
+      "bytes": 19868,
+      "sha256": "648adc20b8c1a3de3e0b4bc4e8ea4dad54264d9f82c81699ff482938ec0400cc"
+    },
+    {
+      "path": "package_reports.py",
+      "bytes": 6195,
+      "sha256": "af2772055f22c28ffb6c6ab896f278e0b87ae53dad81824e3fab3969e6f9137d"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 14706,
+      "sha256": "6aaf13bc278dc6f8663c4119a29be229780a9053ddd646f4c8c12549519746c4"
+    },
+    {
+      "path": "synth_utilization_hierarchical.rpt",
+      "bytes": 12068,
+      "sha256": "02c3c068b31dd886e8a875226f87dbe389e1a1b2b8269c2b5f786abe2b990480"
+    },
+    {
+      "path": "synth_utilization_hierarchical.json",
+      "bytes": 27672,
+      "sha256": "50813fdad129482b0fab6b95697415f5385980e59f30206b698e1bb08bae9ffe"
+    },
+    {
+      "path": "synth_utilization_total.rpt",
+      "bytes": 9681,
+      "sha256": "33a5247ea5aa8d8779f968d486767604b41ff604b86a9f2dbe14424e8a970b2e"
+    },
+    {
+      "path": "synth_blackboxes.tsv",
+      "bytes": 164,
+      "sha256": "3fbe99ed24cee52dcec94348cf7d3b20964ddd491062beaf4d4f606fb96cfb37"
+    },
+    {
+      "path": "synth_primitive_counts_by_parent.tsv",
+      "bytes": 295395,
+      "sha256": "0b64dc7cfb8c5ea5ad848f913873d4227e9dd6f4bc8137c90008896dc6128ced"
+    },
+    {
+      "path": "opt_utilization_hierarchical.rpt",
+      "bytes": 248670,
+      "sha256": "f672dfcaa842f3050a74a1e50aa07e37b2ecf99eb19475505aa185c08ddecad3"
+    },
+    {
+      "path": "opt_utilization_hierarchical.json",
+      "bytes": 497086,
+      "sha256": "3d9f9488c4216d2b37e520d0682d2611dec853295eda52a12cae7be3a797e559"
+    },
+    {
+      "path": "opt_utilization_total.rpt",
+      "bytes": 10038,
+      "sha256": "dbf635dcc9803b4d044a09051bae787ea20fe5815d9dc30c7d1175db5ed34af5"
+    },
+    {
+      "path": "opt_blackboxes.tsv",
+      "bytes": 20,
+      "sha256": "945993e45d3fe1fb86fa200592b078a3abd72dfbfe345008e3e4d223e9e1003a"
+    },
+    {
+      "path": "opt_primitive_counts_by_parent.tsv",
+      "bytes": 684361,
+      "sha256": "57976631a99e84db29833748469f783e62558b952eaf844aec727c026d47b17a"
+    }
+  ],
+  "limits": [
+    "Synth DCP has four unresolved IP black boxes; its totals exclude those IPs",
+    "Opt DCP is existing post-opt/pre-place checkpoint, not routed; it is the complete linked-resource baseline",
+    "Native spreadsheet export is GUI-only in installed help, so no GUI was launched: native full text plus exact-value JSON and primitive TSV were exported",
+    "Primitive counts are not packed LUT-site counts; use native utilization for LUT resource totals",
+    "No synthesis, optimization, placement, routing, source/constraint/project changes, checkpoint writes, or IP regeneration performed"
+  ]
+}

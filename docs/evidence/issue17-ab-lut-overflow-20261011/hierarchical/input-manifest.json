@@ -1,0 +1,365 @@
+{
+  "task": "Existing checkpoint hierarchical utilization export",
+  "mode": "ANALYZE",
+  "writer_mode": "BUILD_FLOW diagnostic scripts only",
+  "profile": "DIAGNOSTIC_SMOKE",
+  "tool": "Vivado 2025.2",
+  "inputs": [
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.runs/synth_1/i17_vio_board_top.dcp",
+      "bytes": 64102834,
+      "mtime_ns": 1791716810400407500,
+      "mtime_utc": "2026-10-11T11:06:50.400408+00:00",
+      "sha256": "d19d159f151f9fc707d494c9364305f691aa9b10553dddc41b3c866a00379330"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.runs/impl_1/i17_vio_board_top_opt.dcp",
+      "bytes": 28010163,
+      "mtime_ns": 1791717172942463400,
+      "mtime_utc": "2026-10-11T11:12:52.942463+00:00",
+      "sha256": "80cff1cac27b09b1a583d3689316eb465ce30240aac5369321b498c8f14f8d05"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.xpr",
+      "bytes": 45363,
+      "mtime_ns": 1791717173308827100,
+      "mtime_utc": "2026-10-11T11:12:53.308827+00:00",
+      "sha256": "cfecdd811640b4cb1ea5e0ed26dc000c7ea3cdf2db9abd5307ced3b458e42433"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.runs/synth_1/runme.log",
+      "bytes": 239820,
+      "mtime_ns": 1791716812325169400,
+      "mtime_utc": "2026-10-11T11:06:52.325169+00:00",
+      "sha256": "3cd8377c67d2414676304183d12b61246842fd56e13dbf5c752bc443827611af"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.runs/impl_1/runme.log",
+      "bytes": 20188,
+      "mtime_ns": 1791717179621161600,
+      "mtime_utc": "2026-10-11T11:12:59.621162+00:00",
+      "sha256": "7fc7129a03f0ed9b452619b5aef1bc57734e25773d86ce1344dedec8cb6da632"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/constrs_1/imports/board-prep/i17_vio_cdc_post_synth.xdc",
+      "bytes": 1209,
+      "mtime_ns": 1791684164000000000,
+      "mtime_utc": "2026-10-11T02:02:44+00:00",
+      "sha256": "bc073c0b5c9b348d72abc4ea3326c2b5a4fff3a40f00ba6d8766909c67bb2161"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/constrs_1/imports/board-prep/i17_vio_pins.xdc",
+      "bytes": 1749,
+      "mtime_ns": 1791684164000000000,
+      "mtime_utc": "2026-10-11T02:02:44+00:00",
+      "sha256": "af62827fc01933e0ccd86fe5f50a2d02efe63de8501c8d8b7b4e94566092d1a5"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/board-prep/rtl/four_mic_live_loop.sv",
+      "bytes": 27161,
+      "mtime_ns": 1791713702792443400,
+      "mtime_utc": "2026-10-11T10:15:02.792444+00:00",
+      "sha256": "9bc628effa2f1c02e4e5a9da7a3f4ea285f03a74438886876ef83ceebddaf2e1"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_pwm_gate.sv",
+      "bytes": 633,
+      "mtime_ns": 1791628854000000000,
+      "mtime_utc": "2026-10-10T10:40:54+00:00",
+      "sha256": "9efdfdecdcc8ce27e2881a5c3647173f2656bcbbbaba85f6422c15e2f56b8e25"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_vio_board_top.sv",
+      "bytes": 20724,
+      "mtime_ns": 1791629095000000000,
+      "mtime_utc": "2026-10-10T10:44:55+00:00",
+      "sha256": "cfe7db7e9989c1f9e36e413de8a39fd76d87002dbbb0e30b438bca019c20264a"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_vio_control.sv",
+      "bytes": 8493,
+      "mtime_ns": 1791631171000000000,
+      "mtime_utc": "2026-10-10T11:19:31+00:00",
+      "sha256": "9f7bc21add0fc4166c678882d5584ef318e97ba4c5238cb05fa71b29b9574802"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_vio_evidence.sv",
+      "bytes": 13957,
+      "mtime_ns": 1791629236000000000,
+      "mtime_utc": "2026-10-10T10:47:16+00:00",
+      "sha256": "d6b7096d55bdcc44ff275bdad2b208c25092ad6e9668aff4edcd83dcac76fc6a"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/board-prep/rtl/motor_drive.v",
+      "bytes": 6429,
+      "mtime_ns": 1791627250000000000,
+      "mtime_utc": "2026-10-10T10:14:10+00:00",
+      "sha256": "5c1a62f19ed0f25c06f22e521df90161dcbe2f835e2bc2dfaaf1b37ff7b41aa9"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/backend/doa_math_pkg.sv",
+      "bytes": 13187,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "9f6ee318008b25a10ee503eb754cc74f9d505ca3024ccf868196920eae8a425b"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/backend/doa_math_serial.sv",
+      "bytes": 4545,
+      "mtime_ns": 1791713702809708600,
+      "mtime_utc": "2026-10-11T10:15:02.809709+00:00",
+      "sha256": "f660e70c72cc95f03ea192f4fbc0e4c6d8e7dc59c6e8677108a16a7d762d38bf"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/backend/doa_phat_serial.sv",
+      "bytes": 3214,
+      "mtime_ns": 1791713702811880600,
+      "mtime_utc": "2026-10-11T10:15:02.811881+00:00",
+      "sha256": "1f69ad27094a18cb03f906b8a2da4c6dca0b537db4bf340f6a82a04618525483"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/backend/ifft25_official.sv",
+      "bytes": 1700,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "954e0b69a8153ab4556cbf53600eb44f4e04fc1f5c80ad088e784ea9b5f75fe9"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/backend/pcm4_doa_backend.sv",
+      "bytes": 36958,
+      "mtime_ns": 1791713702813973800,
+      "mtime_utc": "2026-10-11T10:15:02.813974+00:00",
+      "sha256": "f55fb1ec1030d179a836978b7de72b25e09ce8ff5eacbcfe4275d95b3b987d9a"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/backend/pcm4_doa_native_entry.sv",
+      "bytes": 7965,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "1c72103ff91c75b29771d9e99a699f03bd05ded55788e0da0d271a3921af93ef"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/backend/pcm4_doa_official_entry.sv",
+      "bytes": 8112,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "4ee1243c5dbebb81e393ede6645164456c13627aa7f947c0bc72564d43d6b64b"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/diag_evidence_store.sv",
+      "bytes": 9748,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "92f3a4fb653f20527937a11608541f6e04122a41c86c6733fd48f2c0487217c5"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/diag_record_bank.sv",
+      "bytes": 1691,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "1fcee6a5d075cf38b5be8df7a51265b0d6b8b351667428032b11d071bbfa62d0"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/fft29_official.sv",
+      "bytes": 1818,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "4d8da1ae958771d47ea7149c9413f5dd56cd1c660d0e39b12c7800844ab84506"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/fixed4_leaf.sv",
+      "bytes": 10021,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "1f2a47956b34872f2625fcb262166eee73d88044c84415c8dedb0e3258254efa"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/forward_window_adapter.sv",
+      "bytes": 34253,
+      "mtime_ns": 1791713702744152400,
+      "mtime_utc": "2026-10-11T10:15:02.744152+00:00",
+      "sha256": "bd423d66193b70f3c531e99a3e1c37354ecdf18b635501f46e0c092e0b416645"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/forward_window_manager.sv",
+      "bytes": 12428,
+      "mtime_ns": 1791713702758178500,
+      "mtime_utc": "2026-10-11T10:15:02.758178+00:00",
+      "sha256": "eca442e10ff5e0e67733b9edf2859d586ea41cfa27f9f3d3091eea13b2e518dc"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/four_mic_top_forward.v",
+      "bytes": 15751,
+      "mtime_ns": 1791713702728735800,
+      "mtime_utc": "2026-10-11T10:15:02.728736+00:00",
+      "sha256": "7022e35065836be69c09a48b49206904ad4d48319c59825397579ec03e0caca8"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_c1_lifecycle.v",
+      "bytes": 14996,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "8ada08532041486b95b41eca1c3026028b82d07463c2dfe8ff299e5edfcb8665"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_c1_packet_framer.v",
+      "bytes": 22361,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "ce01d9a88fd3552a1e751e0efd82669be3a2cbab0fd0e9f81a9c3b36de06e396"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_continuous_axis.v",
+      "bytes": 4645,
+      "mtime_ns": 1791713702711677800,
+      "mtime_utc": "2026-10-11T10:15:02.711678+00:00",
+      "sha256": "71409453d79bd0fd0490960cfb2fa2163f9893c1cefefe6990c74e27d768042e"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_forward_fft_entry.sv",
+      "bytes": 12252,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "b15446dca03eee051977ace3234563002d4175a809ec41dcd084b7259d6b486a"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_forward_fft_fixed4.sv",
+      "bytes": 30983,
+      "mtime_ns": 1791713702714025900,
+      "mtime_utc": "2026-10-11T10:15:02.714026+00:00",
+      "sha256": "45af1072575484dded0de73ee1d3ccab67acf889792089aa73adbfcb77ab12c7"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_live_window_handoff.v",
+      "bytes": 5488,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "8c8e0655a4b7c147cabb79d891a3e4af7530b5e8b1fbb7654ae24458435d1443"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_numeric_preprocess.sv",
+      "bytes": 33374,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "9eb9b471d562408a5126c51d410959ef6085af6a6d51bd54eff77adfdf11cdf6"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_overlap_framer_bram.v",
+      "bytes": 8465,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "389c8792fc73f2aee798564c6ea30a71eedb7dea8c4fa9ad88d86da0b8f2e52e"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_source_cancel_observer.v",
+      "bytes": 9133,
+      "mtime_ns": 1791713702774048500,
+      "mtime_utc": "2026-10-11T10:15:02.774049+00:00",
+      "sha256": "2d5ade680c14c6d31777f470c18fa98432772111b256ae092778bb0c4e45cf7f"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_window_caller.sv",
+      "bytes": 37596,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "e98c5a4eb5fc4e2f47ae9bb09041c56ffb6244f9115ebe5703ee67afc85f6b77"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_window_caller_entry.v",
+      "bytes": 14374,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "c0082c3de7b4b25351f30ec815dcf09bee4ab2d04b97a10db7f8d4c398397c78"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_window_consumer.sv",
+      "bytes": 14053,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "9a3b56c14c7ee0a6b499143bc00afd792a30c15894949c43d53fb8f708fb3943"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pdm_cic3.v",
+      "bytes": 1153,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "a80c176053688662cd8bb47f98edcadeb9b758d514365724fd8b6ffd2120573d"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/servo/angle_command_gate.sv",
+      "bytes": 8362,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "ff7a6ebd08182032c0da34baa8b89a5cd6c324f4cfffbd621ae50c0096dc5b7e"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/servo/runtime_servo_slice.sv",
+      "bytes": 3616,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "65db004dc6a0360f557fb65342198f0eb0c277c89126f09cfea7a7b0ccb2bb38"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/product/diag_single_source_v1.sv",
+      "bytes": 3121,
+      "mtime_ns": 1791713702790162800,
+      "mtime_utc": "2026-10-11T10:15:02.790163+00:00",
+      "sha256": "7165a7310b142dee0fc5608b346ae04aad16f9bf69a4accd22a4e2109fcf808a"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/product/signed_angle_map.sv",
+      "bytes": 1902,
+      "mtime_ns": 1791619847000000000,
+      "mtime_utc": "2026-10-10T08:10:47+00:00",
+      "sha256": "4355c1486300d7d5f5677a9619327c86db7da45edba915a5eb3f65e59132be38"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/imports/servo/sound_servo_clock.sv",
+      "bytes": 1344,
+      "mtime_ns": 1791702439000000000,
+      "mtime_utc": "2026-10-11T07:07:19+00:00",
+      "sha256": "a625b9d64142451c2ec87af60dd3b04566b76e8b7b457486053b61ff6453302a"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/ip/i17_board_ila/i17_board_ila.xci",
+      "bytes": 691703,
+      "mtime_ns": 1791681602613004500,
+      "mtime_utc": "2026-10-11T01:20:02.613004+00:00",
+      "sha256": "10443ae8e2d2b5fd8a07ba9ad6b33f704e16c1336b9882d736931407ae5d62f1"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/ip/i17_board_vio/i17_board_vio.xci",
+      "bytes": 187051,
+      "mtime_ns": 1791680482174472800,
+      "mtime_utc": "2026-10-11T01:01:22.174473+00:00",
+      "sha256": "b43c21b34def32483621891398bfb6f6c1638f36046be5c4a80ffa68d5d638a7"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/ip/ss_fft29/ss_fft29.xci",
+      "bytes": 28593,
+      "mtime_ns": 1791625108339551400,
+      "mtime_utc": "2026-10-10T09:38:28.339551+00:00",
+      "sha256": "5ff4d1ce3ffec2bc66a239b84e13c3897d85a529587b683eaa93d62ab62bd898"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/ip/ss_ifft25/ss_ifft25.xci",
+      "bytes": 28597,
+      "mtime_ns": 1791625113706802400,
+      "mtime_utc": "2026-10-10T09:38:33.706802+00:00",
+      "sha256": "409e53617738b76ee82f2d1b05eee2a33d1eb01e2dea53ea639089527affcfe0"
+    },
+    {
+      "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/utils_1/imports/synth_1/i17_vio_board_top.dcp",
+      "bytes": 262398960,
+      "mtime_ns": 1791714570711163400,
+      "mtime_utc": "2026-10-11T10:29:30.711163+00:00",
+      "sha256": "9caa5cff6ca73c089e943f5fa8496ac8643db41a78edb966bf4f77891e163fd9"
+    }
+  ],
+  "active_process_snapshot": "Only known GUI vivado.exe PID4256; no synth/implementation worker observed",
+  "scope": "open_checkpoint and report/get only; no open_project or build/optimization command",
+  "input_stage": {
+    "synth": "synth_1/i17_vio_board_top.dcp; may retain IP black boxes",
+    "opt": "impl_1/i17_vio_board_top_opt.dcp; existing post-opt checkpoint"
+  }
+}

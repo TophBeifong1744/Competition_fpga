@@ -1,0 +1,95 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Sun Oct 11 21:45:10 2026
+| Host         : DESKTOP-3FNSCB5 running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 0 -hierarchical_min_primitive_count 0 -file C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-hierarchical-utilization-20261011/synth_utilization_hierarchical.rpt
+| Design       : i17_vio_board_top
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------------+----------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+|           Instance          |              Module              | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP Blocks |
++-----------------------------+----------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+| i17_vio_board_top           |                            (top) |      77456 |      66996 |   10460 |    0 | 56470 |     41 |      9 |         66 |
+|   (i17_vio_board_top)       |                            (top) |        124 |        124 |       0 |    0 |     0 |      0 |      0 |          0 |
+|   u_clock                   |                sound_servo_clock |          3 |          3 |       0 |    0 |     6 |      0 |      0 |          0 |
+|   u_control                 |                  i17_vio_control |        210 |        210 |       0 |    0 |  1042 |      0 |      0 |          0 |
+|     (u_control)             |                  i17_vio_control |         28 |         28 |       0 |    0 |  1042 |      0 |      0 |          0 |
+|     check_pending           |                 signed_angle_map |        182 |        182 |       0 |    0 |     0 |      0 |      0 |          0 |
+|   u_core                    |               four_mic_live_loop |      56059 |      45687 |   10372 |    0 | 44907 |     41 |      9 |         65 |
+|     (u_core)                |               four_mic_live_loop |          0 |          0 |       0 |    0 |     1 |      0 |      0 |          0 |
+|     backend                 |          pcm4_doa_official_entry |      21477 |      19671 |    1806 |    0 | 13713 |      4 |      4 |         62 |
+|       ifft                  |                  ifft25_official |          5 |          5 |       0 |    0 |     0 |      0 |      0 |          0 |
+|         (ifft)              |                  ifft25_official |          5 |          5 |       0 |    0 |     0 |      0 |      0 |          0 |
+|         core                |                        ss_ifft25 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |          0 |
+|       native                |            pcm4_doa_native_entry |      21472 |      19666 |    1806 |    0 | 13713 |      4 |      4 |         62 |
+|         backend             |                 pcm4_doa_backend |      21472 |      19666 |    1806 |    0 | 13713 |      4 |      4 |         62 |
+|           (backend)         |                 pcm4_doa_backend |      10450 |       8644 |    1806 |    0 |  9563 |      4 |      4 |         62 |
+|           backend_math      |                  doa_math_serial |       3971 |       3971 |       0 |    0 |   973 |      0 |      0 |          0 |
+|           phat_math         |                  doa_phat_serial |       7051 |       7051 |       0 |    0 |  3177 |      0 |      0 |          0 |
+|             (phat_math)     |                  doa_phat_serial |        743 |        743 |       0 |    0 |  1321 |      0 |      0 |          0 |
+|             math            |                doa_math_serial_5 |       6308 |       6308 |       0 |    0 |  1856 |      0 |      0 |          0 |
+|     configured_servo.servo  |              runtime_servo_slice |        379 |        379 |       0 |    0 |   315 |      0 |      0 |          1 |
+|       u_gate                |               angle_command_gate |        206 |        206 |       0 |    0 |   256 |      0 |      0 |          0 |
+|       u_motor               |                      motor_drive |        173 |        173 |       0 |    0 |    59 |      0 |      0 |          1 |
+|     provider                |            diag_single_source_v1 |       1163 |       1163 |       0 |    0 |   808 |      0 |      0 |          0 |
+|     source                  |             four_mic_top_forward |      33072 |      24506 |    8566 |    0 | 30070 |     37 |      5 |          2 |
+|       (source)              |             four_mic_top_forward |          7 |          7 |       0 |    0 |    91 |      0 |      0 |          0 |
+|       capture               |             pcm4_continuous_axis |        227 |        227 |       0 |    0 |   280 |      5 |      1 |          0 |
+|       channels[0].filter    |                         pdm_cic3 |        343 |        343 |       0 |    0 |   220 |      0 |      0 |          0 |
+|       channels[1].filter    |                       pdm_cic3_1 |        344 |        344 |       0 |    0 |   220 |      0 |      0 |          0 |
+|       channels[2].filter    |                       pdm_cic3_2 |        344 |        344 |       0 |    0 |   220 |      0 |      0 |          0 |
+|       channels[3].filter    |                       pdm_cic3_3 |        343 |        343 |       0 |    0 |   220 |      0 |      0 |          0 |
+|       forward_window        |           forward_window_adapter |      31464 |      22898 |    8566 |    0 | 28819 |     32 |      4 |          2 |
+|         (forward_window)    |           forward_window_adapter |          3 |          3 |       0 |    0 |  1247 |      0 |      0 |          0 |
+|         u_entry             |         pcm4_window_caller_entry |       6588 |       6588 |       0 |    0 | 12027 |     25 |      2 |          0 |
+|           u_caller          |               pcm4_window_caller |       4036 |       4036 |       0 |    0 | 10302 |     12 |      0 |          0 |
+|             (u_caller)      |               pcm4_window_caller |       1347 |       1347 |       0 |    0 |  7551 |      0 |      0 |          0 |
+|             u_consumer      |             pcm4_window_consumer |       2490 |       2490 |       0 |    0 |  2516 |     12 |      0 |          0 |
+|             u_observer      |      pcm4_source_cancel_observer |        199 |        199 |       0 |    0 |   235 |      0 |      0 |          0 |
+|           u_handoff         |         pcm4_live_window_handoff |       2552 |       2552 |       0 |    0 |  1725 |     13 |      2 |          0 |
+|             (u_handoff)     |         pcm4_live_window_handoff |        201 |        201 |       0 |    0 |     0 |      0 |      0 |          0 |
+|             u_lifecycle     |                pcm4_c1_lifecycle |       2353 |       2353 |       0 |    0 |  1725 |     13 |      2 |          0 |
+|               (u_lifecycle) |                pcm4_c1_lifecycle |         95 |         95 |       0 |    0 |   202 |      0 |      0 |          0 |
+|               u_parent      |            pcm4_c1_packet_framer |       1978 |       1978 |       0 |    0 |  1243 |      8 |      1 |          0 |
+|                 (u_parent)  |            pcm4_c1_packet_framer |        354 |        354 |       0 |    0 |   699 |      3 |      0 |          0 |
+|                 u_framer    |         pcm4_overlap_framer_bram |       1624 |       1624 |       0 |    0 |   544 |      5 |      1 |          0 |
+|               u_source      |           pcm4_continuous_axis_4 |        280 |        280 |       0 |    0 |   280 |      5 |      1 |          0 |
+|         u_forward           |           pcm4_forward_fft_entry |      16752 |      11954 |    4798 |    0 | 13418 |      7 |      2 |          2 |
+|           (u_forward)       |           pcm4_forward_fft_entry |         13 |         13 |       0 |    0 |     0 |      0 |      0 |          0 |
+|           backend           |          pcm4_forward_fft_fixed4 |       5850 |       5148 |     702 |    0 |  7096 |      7 |      1 |          0 |
+|             (backend)       |          pcm4_forward_fft_fixed4 |       3305 |       2603 |     702 |    0 |  6826 |      7 |      1 |          0 |
+|             fft             |                   fft29_official |        223 |        223 |       0 |    0 |     0 |      0 |      0 |          0 |
+|               (fft)         |                   fft29_official |        223 |        223 |       0 |    0 |     0 |      0 |      0 |          0 |
+|               core          |                         ss_fft29 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |          0 |
+|             fixed4          |                      fixed4_leaf |       2322 |       2322 |       0 |    0 |   270 |      0 |      0 |          0 |
+|           np                |          pcm4_numeric_preprocess |      10889 |       6793 |    4096 |    0 |  6322 |      0 |      1 |          2 |
+|         u_manager           |           forward_window_manager |        262 |        262 |       0 |    0 |   493 |      0 |      0 |          0 |
+|         u_store             |              diag_evidence_store |       7863 |       4095 |    3768 |    0 |  1634 |      0 |      0 |          0 |
+|           (u_store)         |              diag_evidence_store |        687 |        687 |       0 |    0 |  1533 |      0 |      0 |          0 |
+|           b0                |                 diag_record_bank |       1941 |        397 |    1544 |    0 |    19 |      0 |      0 |          0 |
+|           b1                | diag_record_bank__parameterized0 |       2653 |       1777 |     876 |    0 |    36 |      0 |      0 |          0 |
+|           b2                | diag_record_bank__parameterized1 |       1183 |        387 |     796 |    0 |    32 |      0 |      0 |          0 |
+|           b3                | diag_record_bank__parameterized2 |       1388 |        836 |     552 |    0 |    10 |      0 |      0 |          0 |
+|           b4                | diag_record_bank__parameterized3 |         12 |         12 |       0 |    0 |     4 |      0 |      0 |          0 |
+|   u_evidence                |                 i17_vio_evidence |      20856 |      20768 |      88 |    0 | 10462 |      0 |      0 |          0 |
+|   u_horizontal_gate         |                     i17_pwm_gate |          1 |          1 |       0 |    0 |     1 |      0 |      0 |          0 |
+|   u_ila                     |                    i17_board_ila |          0 |          0 |       0 |    0 |     0 |      0 |      0 |          0 |
+|   u_vertical                |      motor_drive__parameterized0 |        202 |        202 |       0 |    0 |    51 |      0 |      0 |          1 |
+|   u_vertical_gate           |                   i17_pwm_gate_0 |          1 |          1 |       0 |    0 |     1 |      0 |      0 |          0 |
+|   u_vio                     |                    i17_board_vio |          0 |          0 |       0 |    0 |     0 |      0 |      0 |          0 |
++-----------------------------+----------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+
+
