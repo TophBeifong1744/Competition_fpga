@@ -1,0 +1,63 @@
+{
+  "job": "canary_data",
+  "cwd": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\board-verification\\runs\\canary_data",
+  "seed": 17010,
+  "claim_stage": "FUNCTIONAL_SIM",
+  "scope": "Controller/storage/gate only; no core algorithm claim",
+  "sources": {
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\board-verification\\tb_evidence.sv": "8d3cd7a87c73b815d3d3226a3da4ea0e7d28de320cbd4ab909c66fd0f4f67417",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\rtl\\i17_vio_evidence.sv": "d6b7096d55bdcc44ff275bdad2b208c25092ad6e9668aff4edcd83dcac76fc6a"
+  },
+  "contract_sha256": "4c6d5f001f171076a3d091cd3599c923b08f5451322813200a21316bba2d19ff",
+  "product_snapshot_sha256": "83b51ee051a54f8b1acf7574c0b062237cacd39d91fcfade11fc6fdf94c5f47e",
+  "commands": [
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvlog.exe",
+        "--sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\board-verification\\tb_evidence.sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\rtl\\i17_vio_evidence.sv"
+      ],
+      "exit": 0,
+      "elapsed_s": 0.562
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xelab.exe",
+        "work.tb_evidence",
+        "--snapshot",
+        "test",
+        "--debug",
+        "off"
+      ],
+      "exit": 0,
+      "elapsed_s": 1.516
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xsim.exe",
+        "test",
+        "--runall",
+        "--onerror",
+        "quit",
+        "--onfinish",
+        "quit",
+        "--sv_seed",
+        "17010",
+        "--testplusarg",
+        "CANARY_DATA"
+      ],
+      "exit": 0,
+      "elapsed_s": 2.406
+    }
+  ],
+  "verdict": "EXPECTED_CANARY_REJECTION",
+  "log_hashes": {
+    "xelab-stdout.log": "826f2e81b2a6e07f98343e27cbbc04542273317565288a2bb2c2ae8491552fa0",
+    "xelab.log": "44bb7a435cb704b7c8f278a2ba7517694c67c2ff9c480e0210c5d30a1b28e9cd",
+    "xsim-stdout.log": "a3c98d7251d945074cfd27be12ab6a31c107d247aeb23823873e403c0487da6e",
+    "xsim.log": "5e372dd15af8dc8fd2537fc585897b837dc1c00eb2aecf64ac8d413b85d69e66",
+    "xvlog-stdout.log": "d6d3a53466dc8d44b323af105458b3adb451e69c315d3efd2f6f3f0a232e8f73",
+    "xvlog.log": "2c70299f9d0c956462b1e466793ee5145ee81cb4fb40902d80d491b1a0450023"
+  }
+}

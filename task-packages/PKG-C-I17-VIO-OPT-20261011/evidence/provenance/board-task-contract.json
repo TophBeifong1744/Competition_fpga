@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-10",
+  "mode": "FULL",
+  "authority": "User selected same-clock 61.44 MHz PWM and Vivado VIO board controls",
+  "architecture_owner": "/root/c_board_entry_arch",
+  "product_owner": "/root/vio_board_writer",
+  "verification_owner": "/root/c_pwm_fractional_verify",
+  "scope": "Bounded one-window board control, truthful evidence storage and export, physical PWM isolation; frozen source/algorithm remains read-only",
+  "target": "xc7z020clg400-1",
+  "tool": "Vivado/XSim 2025.2",
+  "clock": {"board_hz": 50000000, "intermediate_hz": 96000000, "logic_hz": 61440000},
+  "ports": ["sys_clk", "mic_data[3:0]", "mic_clock[3:0]", "pwm_horizontal", "pwm_vertical"],
+  "claim_boundary": "Controller/storage/gating functional simulation is not full algorithm or official-IP simulation, timing closure or board acceptance",
+  "controls": {
+    "method": "Four VIO output probes: control32, context160, mapping96, read_select32",
+    "action_bits": {"0": "COMMIT toggle", "1": "START toggle", "2": "STOP level default 1", "3": "WARM_RECOVER toggle", "4": "READ toggle", "5": "FETCH toggle", "6": "DUMP toggle", "7": "RELEASE toggle", "8": "ABORT_READ toggle"},
+    "reset": "Capture VIO action baseline first; retained toggles are not new commands",
+    "priority": "STOP suppresses new motion/START, even same edge. Conflicting non-STOP actions reject without queuing",
+    "atomicity": "COMMIT snapshots context and map fields; READ/FETCH/DUMP snapshot read selection",
+    "observe": "Default observe=1,mapping_present=0,motion_permission=0; no fabricated mechanical limits, no arm or physical PWM",
+    "run": "Exactly one explicit START authorization per actual window; no autonomous rearm"
+  },
+  "start_contract": [
+    "COMMIT validates fields and uses actual diag_config_valid/ready handshake",
+    "START waits real diag_frontend_ready before start rising edge then diag_start; no fixed-delay ready assumption",
+    "Actual frontend warmup is 4096 samples at 48 kHz; controller unit test models readiness signal, not fake audio or FFT",
+    "Block FFT data/status permit during identity binding and motion arm, but allow required fault/STOP draining",
+    "First sampled new ff_busy contains stable source identity; early abort/terminal/M-offer rejects late qualification",
+    "identity={token64,generation64,context165,frame_first432}; fields are actual source outputs",
+    "expected_context={2'd1,1'b1,boot64,1'b1,epoch64,1'b1,sid32}",
+    "Motion mode arm LOW then HIGH, wait true current_qualified before permit",
+    "Observe mode no arm/map and no wait for qualification; still process raw numeric chain",
+    "No watchdog extension; existing 23-bit watchdog is about 136.53 ms"
+  ],
+  "stop_recovery": [
+    "STOP revokes new command/arm and lowers source start but does not cold-reset or erase evidence",
+    "Report and ABORT capture/ACK and IP/source draining continue after STOP",
+    "Warm recovery uses actual diag_reset request; wait true idle/config_ready/quiet/no obligation and AXIS drained",
+    "Next START requires explicit record export/release and new COMMIT/START, never automatic success on timeout"
+  ],
+  "storage": {
+    "report": "Separate full slot: identity725, terminal6626, frontend ABORT seen/identity725/payload180, policy64, numeric/mapping/eligibility, command and aligned next-edge servo observation, sequence/time",
+    "backend_abort": "Independent slot; simultaneous report and ABORT must both be retained",
+    "report_timing": "Capture handshake pre-edge facts; associate following registered accept/reject with same report identity",
+    "backpressure": "Ready only with real slot capacity; no overwrite and no ready based on motor accept",
+    "diagnostic": "64x32 bits; accepted words1..63. Preserve partial errors",
+    "fetch": "Select snapshot, validate sequence/ordered word/words/last, store data before exact ACK; at least one low ACK cycle between words",
+    "invalid_fetch": "No false ACK/pop or bank clearing on malformed sequence/word/count/last. Explicit read-abort aborts snapshot only",
+    "dump": "Frozen complete data emitted as 32-bit stream with type/word/count/sequence/valid/last; terminal208,identity23,abort6,diag up to63 words",
+    "release": "DUMP may repeat without mutation. Only explicit permitted RELEASE frees selected complete stored record"
+  },
+  "physical_pwm": {
+    "default": "Physical outputs LOW after cold reset even though internal core generates reset pulses",
+    "open": "Only legal explicit motion config; each gate opens while internal PWM LOW, never mid high pulse",
+    "stop": "STOP retains already-open gate and old PWM target; it is NOT a PWM-off/emergency-power control",
+    "cold_reset": "Immediately disables physical output",
+    "horizontal": "Internal max360/reset180",
+    "vertical": "Internal max220/fixed130",
+    "mechanical": "Actual allowed bounds and reset clearance UNKNOWN; do not guess them"
+  },
+  "acceptance": [
+    "Warmup and one-shot toggle handling including reset baseline and simultaneous actions",
+    "Real identity binding, context mismatch and early terminal rejection, arm before permits",
+    "Observe no arm/motion while accepting numeric results",
+    "STOP+START and STOP+report same-edge behavior; no stale authorization after recovery",
+    "Separate report/abort slots, full backpressure, aligned delayed servo observation",
+    "Random fetch stalls, sequence/count/order/last errors, partial abort and no destructive ACK",
+    "Exact all-word dump/read for terminal208,identity23,abort6,diag63, repeated dump and restricted release",
+    "PWM default low, low-phase opening, cold reset and STOP retaining opened output",
+    "Independent input/expected event scoreboard with meaningful isolated negative canaries"
+  ],
+  "native_full_build": "User executes GUI integration and official IP generation/build. Agent does not modify D project or program board."
+}

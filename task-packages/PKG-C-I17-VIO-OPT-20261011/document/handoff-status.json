@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-11",
+  "mode": "RELEASE_PACKAGING",
+  "claim": "SOURCE_OPTIMIZATION_HANDOFF_ONLY",
+  "parent_31_aggregate": "ad35f1978867fe3cbd565cc68250d9b0521ca04235673ec2fd6cab8173a7c407",
+  "B_commit": "31c5c7bbcc9c70a943372898e9101beaac2ce9e3",
+  "newer_A_aggregate_NOT_APPLIED": "784d0e79880dcb5a0f7bfa259337c896ec62c607d5ea55af72e47d3d54186f34",
+  "last_native_stage": "Timing Optimization",
+  "findings": [
+    {
+      "id": "C-SYNTH-SLOW-001",
+      "status": "CONFIRMED_STRUCTURE_STRONGLY_SUPPORTED_CAUSE",
+      "description": "192-bit arithmetic helpers include 96-step combinational trial-square sqrt, division/remainder and dynamic shift through general division. FSM serializes bins but not the internal combinational arithmetic.",
+      "source": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\backend\\doa_math_pkg.sv",
+      "source_lines": [
+        3,
+        4,
+        16,
+        22,
+        327,
+        334,
+        340
+      ],
+      "native_dsp_preliminary_rows": 3884,
+      "native_dsp_mapping_accepted": 220,
+      "native_dsp_mapping_rejected_gt220": 3658,
+      "limits": "Counts are inference/mapping records, not final resource utilization. Generated GB/q2 names cannot be uniquely mapped to individual source expressions."
+    },
+    {
+      "id": "C-SYNTH-SLOW-002",
+      "status": "CONFIRMED_STRUCTURE_AND_INFERENCE",
+      "description": "Large synchronous-write/asynchronous-read memories infer RAM64M distributed RAM. No evidence of board-level accidental depth/instance multiplication.",
+      "sources": [
+        {
+          "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\pcm4_forward_fft_fixed4.sv",
+          "lines": [
+            82,
+            164,
+            325
+          ],
+          "shape": "8192x58"
+        },
+        {
+          "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\pcm4_continuous_axis.v",
+          "lines": [
+            18,
+            19,
+            39,
+            64
+          ],
+          "shape": "2 separate 1024x256 instances"
+        }
+      ],
+      "limits": "Preliminary RAM reports are not final device utilization."
+    },
+    {
+      "id": "C-SYNTH-SLOW-003",
+      "status": "VIO_NOT_PRIMARY_EVIDENCE_TARGET",
+      "description": "Official VIO and ILA are OOC: 81s and 157s. Main reads their generated stubs; it does not re-synthesize the official internal RTL. C-added control/result storage and observation still add area and may preserve logic.",
+      "limits": "No ablation comparison or per-cone runtime profile. Do not claim zero contribution from C additions."
+    },
+    {
+      "id": "C-STA-LOOP-001",
+      "status": "CONFIRMED_STRUCTURAL_LOOP_FUNCTIONAL_REACHABILITY_NOT_SIGNED",
+      "warning": "[Synth 8-326] inferred exception to break timing loop: set_false_path -through u_core/u_calleri_2/a_stop_valid",
+      "captured_log_line": 49219,
+      "source_chain": [
+        "pcm4_window_caller.sv:346 a_stop_valid=stop_req_valid",
+        "forward_window_adapter.sv:583 manager.stop_valid drives stop_req_valid",
+        "forward_window_manager.sv:75,91 source_fault includes local_cancel and gates stop_valid",
+        "forward_window_adapter.sv:592 local_cancel_now OR pending_cancel feeds local_cancel",
+        "pcm4_window_caller.sv:432 a_stop_valid feeds observer.stop_valid",
+        "pcm4_source_cancel_observer.v:65-67 stop_fire feeds unexpected_close; :88-90 feeds local_cancel_now"
+      ],
+      "functional_boundary": "Lifecycle closing and stop_ready appear mutually exclusive in legal states (pcm4_c1_lifecycle.v:132-144); therefore this is not proof of an actually sensitizable oscillation or deadlock. No formal/SIM/STA proof performed.",
+      "runtime_attribution": "Duration attributable to loop resolution is unknown. Do not claim it alone explains the synthesis runtime.",
+      "recommendation": "Remove or prove/refactor structural stop/cancel feedback while preserving cancellation semantics; do not treat the automatically inferred false-path as timing sign-off.",
+      "aliases": [
+        "C-SYNTH-LOOP-004"
+      ],
+      "severity": "HIGH",
+      "origin": "Unchanged A frozen parent RTL; C VIO wrapper drives diag_stop but did not create this internal loop.",
+      "independent_review": "Read-only fpga_cdc_timing_reviewer confirms structural loop and legal-state mutual-exclusion boundary; no netlist/formal/board sign-off."
+    }
+  ],
+  "new_compile": "NOT RUN",
+  "new_simulation": "NOT RUN",
+  "new_synthesis": "NOT RUN",
+  "implementation": "NOT RUN",
+  "timing_acceptance": "UNVERIFIED",
+  "bitstream": "NOT GENERATED",
+  "board_test": "NOT RUN",
+  "power": "NOT APPLICABLE",
+  "historical_run_started": "2026-10-11T10:49:20+08:00",
+  "historical_raw_log_last_update": "2026-10-11T11:29:04+08:00",
+  "historical_later_observation": {
+    "time": "2026-10-11T13:01:00+08:00",
+    "elapsed_minutes_approx": 132,
+    "basis": "Coordinator live observation recorded in current conversation; not a new raw-log completion marker",
+    "process_cpu_active": true,
+    "synthesis_complete": false
+  },
+  "latest_native_snapshot": {
+    "captured_at": "2026-10-11T14:47:48.502507+08:00",
+    "journal_run_started": "2026-10-11T13:03:28+08:00",
+    "journal_process_id": 6948,
+    "status": "Last native text is Timing Optimization; no synthesis-complete marker in captured log",
+    "main_multithreading": "maximum of 2 processes per native log",
+    "files": {
+      "runme.log": {
+        "sha256": "309d7c58bd47348d001c5493fd8523ab5ff3d2bffb6df6e1e61f3ea9d8e63567",
+        "bytes": 2037161,
+        "mtime_utc": "2026-10-11T05:36:00.408645+00:00"
+      },
+      "vivado.jou": {
+        "sha256": "bf71b00cba63d471158f7f1784c18bbaa56db351d1c8f44a363777bea5193bb6",
+        "bytes": 1335,
+        "mtime_utc": "2026-10-11T05:03:34.599899+00:00"
+      },
+      "native-synthesis.REFERENCE_ONLY.tcl.txt": {
+        "sha256": "e33abeca07f01ec05902569e00bfc681980dbde7f591bee618abafd69c0f62a4",
+        "bytes": 12334,
+        "mtime_utc": "2026-10-11T05:03:25.737733+00:00"
+      }
+    },
+    "native_source_hashes_match_packaged_36_RTL": true,
+    "runtime_estimate": "UNKNOWN"
+  }
+}

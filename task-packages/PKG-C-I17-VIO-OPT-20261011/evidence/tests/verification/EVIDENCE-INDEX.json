@@ -1,0 +1,326 @@
+{
+  "date": "2026-10-10",
+  "scope": "PWM only",
+  "claim_stage": "FUNCTIONAL_SIM",
+  "status": "CHECKERS_COMPLETE_PENDING_INDEPENDENT_REVIEW",
+  "seed": 17010,
+  "product_sha256": {
+    "four_mic_live_loop.sv": "21d4decb91e0850d2e7634f4dd1dcd212552e500151b1ec79d564d1bd9f101e4",
+    "motor_drive.v": "5c1a62f19ed0f25c06f22e521df90161dcbe2f835e2bc2dfaaf1b37ff7b41aa9"
+  },
+  "nominal_run": "runs\\nominal-attempt5",
+  "runs": [
+    {
+      "path": "runs\\canary_miter\\run.json",
+      "job": "canary_miter",
+      "verdict": "EXPECTED_REJECTION_OBSERVED",
+      "exits": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "path": "runs\\canary_model\\run.json",
+      "job": "canary_model",
+      "verdict": "EXPECTED_REJECTION_OBSERVED",
+      "exits": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "path": "runs\\canary_reset\\run.json",
+      "job": "canary_reset",
+      "verdict": "EXPECTED_REJECTION_OBSERVED",
+      "exits": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "path": "runs\\invalid_clock\\run.json",
+      "job": "invalid_clock",
+      "verdict": "EXPECTED_REJECTION_OBSERVED",
+      "exits": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "path": "runs\\invalid_max0\\run.json",
+      "job": "invalid_max0",
+      "verdict": "EXPECTED_REJECTION_OBSERVED",
+      "exits": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "path": "runs\\invalid_max512\\run.json",
+      "job": "invalid_max512",
+      "verdict": "EXPECTED_REJECTION_OBSERVED",
+      "exits": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "path": "runs\\invalid_reset_high\\run.json",
+      "job": "invalid_reset_high",
+      "verdict": "EXPECTED_REJECTION_OBSERVED",
+      "exits": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "path": "runs\\invalid_reset_neg\\run.json",
+      "job": "invalid_reset_neg",
+      "verdict": "EXPECTED_REJECTION_OBSERVED",
+      "exits": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "path": "runs\\nominal\\run.json",
+      "job": "nominal",
+      "verdict": "COMPILE_ELAB_FAIL",
+      "exits": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "runs\\nominal-attempt2\\run.json",
+      "job": "nominal",
+      "verdict": "INCONCLUSIVE",
+      "exits": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "path": "runs\\nominal-attempt3\\run.json",
+      "job": "nominal",
+      "verdict": "INCONCLUSIVE",
+      "exits": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "path": "runs\\nominal-attempt4\\run.json",
+      "job": "nominal",
+      "verdict": "INCONCLUSIVE",
+      "exits": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "path": "runs\\nominal-attempt5\\run.json",
+      "job": "nominal",
+      "verdict": "CHECKERS_COMPLETE_PENDING_INDEPENDENT_REVIEW",
+      "exits": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "clock61440000_period_observed_cycles": 1228800,
+  "clock61440000_pulses": [
+    {
+      "start_cycle": 4,
+      "width_us": 1500,
+      "observed_high_cycles": 92160
+    },
+    {
+      "start_cycle": 1228804,
+      "width_us": 2500,
+      "observed_high_cycles": 153600
+    },
+    {
+      "start_cycle": 2457604,
+      "width_us": 506,
+      "observed_high_cycles": 31089
+    },
+    {
+      "start_cycle": 3686404,
+      "width_us": 2500,
+      "observed_high_cycles": 153600
+    },
+    {
+      "start_cycle": 4915204,
+      "width_us": 500,
+      "observed_high_cycles": 30720
+    },
+    {
+      "start_cycle": 6144004,
+      "width_us": 1500,
+      "observed_high_cycles": 92160
+    },
+    {
+      "start_cycle": 7372804,
+      "width_us": 500,
+      "observed_high_cycles": 30720
+    },
+    {
+      "start_cycle": 8601604,
+      "width_us": 2194,
+      "observed_high_cycles": 134800
+    }
+  ],
+  "gaps": [
+    "full top/IP compile and simulation NOT RUN",
+    "STA/CDC/board NOT RUN",
+    "desktop BAT entry not verified",
+    "bounded vectors, not exhaustive proof"
+  ],
+  "environment_history": "nominal through nominal-attempt4 are TOOL_ENV_FAIL (missing native runtime environment); retained. Compile stage exits prevent later stages. No product repair was needed.",
+  "files": {
+    "MODEL-CARD.md": "a01fad5a47052b79e42c2f658085d1d6cbab8eed2c395468d93d7ebf0711e775",
+    "RESULTS.md": "cee2e9e8d7cd3d796c1be2d050d5e2d0283ead986423c8062def1c2853b4f709",
+    "run_checks.py": "ed9cae6fa4b999011334fb076bed4703533e337ff11cc9ab1edc542a06338399",
+    "summarize.py": "b458a7b2b1d6cb1e12cd62f99100ad9cac8d24b551bc041bef7464e81dc999ee",
+    "tb_invalid.sv": "7118888227396b2c28e450512dc5f5e9c135e5e7ac7fe6c1a90a6efd3a0747f3",
+    "tb_pwm.sv": "74530bee8573dbf16089082fcd2c71c3fa742b95301164097a0704b4777247af",
+    "TRACEABILITY.md": "f75f29a443387779197eb1ed7bfa4f5eb3f060d8fed3cbc40f31e6f997849464",
+    "runs\\canary_miter\\edges_0.csv": "c5ddc289b2f0ee82e75108002a641a97f19a18c78d5b35cb525a4b003e469978",
+    "runs\\canary_miter\\edges_1.csv": "e53e3c3a6894e46500508ce2e069d8cc974e307afe28df4f8a23109bba1bc2f8",
+    "runs\\canary_miter\\edges_2.csv": "5dba6db898bbfaf6a5319f81a3de810115170b54910afda61a24671bf386c4fa",
+    "runs\\canary_miter\\edges_3.csv": "1e026a743f99aa4f345647d26a38b8f394cce0739cdfcd7b1d20a09d0335e947",
+    "runs\\canary_miter\\edges_4.csv": "9618e1cfb21ef9ff3e99f2a05f33037d9f8d3087a03ac8c1d3583405084e5936",
+    "runs\\canary_miter\\edges_5.csv": "5cf035d98a763c9290f118990a28d986106c808166f682b3253eb7ce9249517c",
+    "runs\\canary_miter\\environment.json": "4eb719ef9e6ccc21dd9dde2cdb98e36e611fabe61975f638f0326c403ebb1910",
+    "runs\\canary_miter\\run.json": "2e0afab59f4670e1ef3ed5bd96cb224b8667414822473e3367ca4b51a67845cf",
+    "runs\\canary_miter\\xelab-stdout.log": "7008263078ed9d3971c53da403728bfadea721829f4bf986d8c069fdadad1e56",
+    "runs\\canary_miter\\xelab.log": "b363bb0e96031badebc80955c8316e00ff323a9e727d54bdf6bc2d7258415bd4",
+    "runs\\canary_miter\\xsim-stdout.log": "e0fdfdb3d10422bf339b63809fbfaad0d7efcee71a329854de01a9db627c8dfd",
+    "runs\\canary_miter\\xsim.log": "bc9e9ef15e7b73d9ad0245b8b94576faa710be614ffcaa463941c9a35308bda9",
+    "runs\\canary_miter\\xvlog-stdout.log": "dc0d34d1c5b96654f9fd41eaaa829572d4b800befe6f4f6b57376fea61e610eb",
+    "runs\\canary_miter\\xvlog.log": "66494a39fa1ba16bb898cd488ea554b7294a2928c127a7b0389000d9b1628369",
+    "runs\\canary_model\\edges_0.csv": "c5ddc289b2f0ee82e75108002a641a97f19a18c78d5b35cb525a4b003e469978",
+    "runs\\canary_model\\edges_1.csv": "e53e3c3a6894e46500508ce2e069d8cc974e307afe28df4f8a23109bba1bc2f8",
+    "runs\\canary_model\\edges_2.csv": "5dba6db898bbfaf6a5319f81a3de810115170b54910afda61a24671bf386c4fa",
+    "runs\\canary_model\\edges_3.csv": "1e026a743f99aa4f345647d26a38b8f394cce0739cdfcd7b1d20a09d0335e947",
+    "runs\\canary_model\\edges_4.csv": "9618e1cfb21ef9ff3e99f2a05f33037d9f8d3087a03ac8c1d3583405084e5936",
+    "runs\\canary_model\\edges_5.csv": "5cf035d98a763c9290f118990a28d986106c808166f682b3253eb7ce9249517c",
+    "runs\\canary_model\\environment.json": "91ed67722b32af8b4254634651b607fc71436476d14371b27c72a44712e083d3",
+    "runs\\canary_model\\run.json": "f090340546ab60e26e3e66978b18a04c43badb8f26761085b7b30408e08d27a1",
+    "runs\\canary_model\\xelab-stdout.log": "7008263078ed9d3971c53da403728bfadea721829f4bf986d8c069fdadad1e56",
+    "runs\\canary_model\\xelab.log": "b363bb0e96031badebc80955c8316e00ff323a9e727d54bdf6bc2d7258415bd4",
+    "runs\\canary_model\\xsim-stdout.log": "18528051099bc08373c40810c0f3bc9a6a479b3c3d2213fc6e3df1df5988e455",
+    "runs\\canary_model\\xsim.log": "d529f858224cf70f570e10bd2fe610fb015624ba8bc183b8b43ad4f08e2106ac",
+    "runs\\canary_model\\xvlog-stdout.log": "3f8a404ea4cd25fe5a1a9e75b7242debebc79a44da973f7a26e926866e6ae727",
+    "runs\\canary_model\\xvlog.log": "0f5f8fa3f91d0ac586e973c75c723a82221cc33e3a3e695bc4efb48e9efca909",
+    "runs\\canary_reset\\edges_0.csv": "818fab173f84c54502b284edfe8ebf6cf90b8519a71c2783468e21668d30828f",
+    "runs\\canary_reset\\edges_1.csv": "5a5a39ec1be8e4c77bbd65efe02e99d4ad8d7e8c17afc316de392322a2bcd8bb",
+    "runs\\canary_reset\\edges_2.csv": "82ce7e306c087d15a7feb9d0ae60be65036b7ed288ff79182ba171f5c4068fe3",
+    "runs\\canary_reset\\edges_3.csv": "a1c45a35202954c5ab4c19a08a8be295976903a90f308c5855d96bdbdf832f24",
+    "runs\\canary_reset\\edges_4.csv": "d7ca9e11458f7f1b411646ff34d7ae15f0b79c6c8ea91c93f5d8f98e0db1f76e",
+    "runs\\canary_reset\\edges_5.csv": "dd394651a8b62554b5ea3527c05fc74572509b87fc90b92ab9caec42a4eeeb63",
+    "runs\\canary_reset\\environment.json": "ab748996493e59c15e8592e1d54032286f7e2c1f0bbf28c510c8701d5347ddb1",
+    "runs\\canary_reset\\run.json": "5fc2e901a14e23ff0faa2133080425f13f00f41d5f55479af66150af494427f4",
+    "runs\\canary_reset\\xelab-stdout.log": "7008263078ed9d3971c53da403728bfadea721829f4bf986d8c069fdadad1e56",
+    "runs\\canary_reset\\xelab.log": "b363bb0e96031badebc80955c8316e00ff323a9e727d54bdf6bc2d7258415bd4",
+    "runs\\canary_reset\\xsim-stdout.log": "c449e27b39b27e3b66875702b362f4c580315d60a446da14f06fc1448c744c45",
+    "runs\\canary_reset\\xsim.log": "d702e696dda080f21ee52f160d89347079f840c900b59f8704a30b42ae2a5422",
+    "runs\\canary_reset\\xvlog-stdout.log": "6c96321dea1e170eebc27c224b1825575afac1736c969f7b8aed9819f231ccbe",
+    "runs\\canary_reset\\xvlog.log": "86e43d84e3ae63fe50652daf1887fd389517ddef0f7aefbeb2284af1d5b7a41e",
+    "runs\\invalid_clock\\environment.json": "99bb740f1f1acbfd42968acd08168b22cb03a575f829cdc53cb73ca01784b8c1",
+    "runs\\invalid_clock\\run.json": "b05d76147005f5dddae1670d8545f0868dffbd4e277eaeb4120a16fcd302b1cf",
+    "runs\\invalid_clock\\xelab-stdout.log": "fdd588bfa67688a388f17cb12a61bcb4b9e1d15bce0ec7e887640190a9374f1d",
+    "runs\\invalid_clock\\xelab.log": "39368fbfb3e22be27de0a7852cb702cc1a37a77c0c5cad4c3a57e17e2ff73781",
+    "runs\\invalid_clock\\xsim-stdout.log": "d4a8fd6bb97ab617f8947051526b7049e24ed86312e155cc6301b9a1d7b248ff",
+    "runs\\invalid_clock\\xsim.log": "e651fe3b6de047706de21355fee19d819e5afc677167ab609030acbc7d55d22d",
+    "runs\\invalid_clock\\xvlog-stdout.log": "f942ecda8d509f457bee7ccc1126c861ead9f317256a75e75481002bac5d76a0",
+    "runs\\invalid_clock\\xvlog.log": "1a71357a52c692c2758ffe1efead740bcca4b3a6b454f19eb5fead50cb22fff3",
+    "runs\\invalid_max0\\environment.json": "6aa7dca32ef6600b019e695eb6985bbdb72d4b9bdca051155519548c500ae282",
+    "runs\\invalid_max0\\run.json": "f4eb1b53b8683154be104c9e09813d3128605099535af2d2bd01906dabb19ad3",
+    "runs\\invalid_max0\\xelab-stdout.log": "9d7049ded2813167a1050be43045a5c66832fc1022792f547106cb5823a4ce34",
+    "runs\\invalid_max0\\xelab.log": "0efbf00388533df9e6cfcc469396fb2d96437e699cf860b627784a75e338462d",
+    "runs\\invalid_max0\\xsim-stdout.log": "54f04a415fe8e4bbcbf60d37d92dda8f118dd1a6887cd314087d121559cd635a",
+    "runs\\invalid_max0\\xsim.log": "745968bb704a5bd715fb34effbf8ca5c9ff246c30d9ecab0c52f7206c5d254fe",
+    "runs\\invalid_max0\\xvlog-stdout.log": "dcd9f44e729719a3c1816665dff3d13e8055832d4f6e0e277ef963262a90ce27",
+    "runs\\invalid_max0\\xvlog.log": "166b9bc8cccf24c03281e00f631d51c0bf304d85ab90aca844db1b2614c1b2dc",
+    "runs\\invalid_max512\\environment.json": "3130e7a950a4e558365b7a3ae9080b5048ce67ac9882b954ae51014ae65787f1",
+    "runs\\invalid_max512\\run.json": "2b153ad2010cf8077f06db6d2ed0485eb7e5aa40fa5b35048bdfca7605199d21",
+    "runs\\invalid_max512\\xelab-stdout.log": "9d5d07c4486fd2873d65bbb52b5958bd3c4884818f1d7f7277b30914e3bd9e80",
+    "runs\\invalid_max512\\xelab.log": "f52fea0a04fc115d29385a609156b3fbb2da34dc72310e83cdd94d18efbc4a70",
+    "runs\\invalid_max512\\xsim-stdout.log": "a9b15718440c5814363001a791269c10eb32c3e2ba576d2a9e27c700b05d02be",
+    "runs\\invalid_max512\\xsim.log": "7c6eae11ca6caadb7f8086980cc8942fba433bdabc43e9d3232dcb076bfeb0f5",
+    "runs\\invalid_max512\\xvlog-stdout.log": "a2ad832937a573a8982d2468ef63c224f5fce9c0190e2d8eb89dbc6e5417768f",
+    "runs\\invalid_max512\\xvlog.log": "9dd119f8586218aeb99c722b875ab9b4cde6d554e5be8d939c240313697ed302",
+    "runs\\invalid_reset_high\\environment.json": "5ee856d6f6f3672e34333d432fd1cfd25f9bbbf907f93ff880fd94a9bcb10d93",
+    "runs\\invalid_reset_high\\run.json": "4d80b4e59b23776a4a366ffb1c86f73c02b884e3a827e793bb299d5e6006c865",
+    "runs\\invalid_reset_high\\xelab-stdout.log": "9beca9878529bc0b6cae2ce1439105a2621801abee2ef98880038136b830c4dd",
+    "runs\\invalid_reset_high\\xelab.log": "60813a62ce6c5cee38c9352ce9806272215559e186b14ff99d889ae95bec2f7c",
+    "runs\\invalid_reset_high\\xsim-stdout.log": "48f74fc29380545564fcd1a2acee5b49dbf1a8f5cee085e9adfad250c48956f1",
+    "runs\\invalid_reset_high\\xsim.log": "f1e107091798e0f7cdc2b5168435c1342e3bced01ab0a85e213e1bc3284949f1",
+    "runs\\invalid_reset_high\\xvlog-stdout.log": "6cad5f9c1d7e9f2b9c236c73ad561d36ddaf551bf3ac643580f47a53ff9c96ce",
+    "runs\\invalid_reset_high\\xvlog.log": "25e477cd50ac69324fe3b1a2c5192b67b1d7e815517819300062537a5eae898e",
+    "runs\\invalid_reset_neg\\environment.json": "a282afe6141d80349d6120d7b8ac36a53bb7ea18c965bb09f8e59e927bbf1a70",
+    "runs\\invalid_reset_neg\\run.json": "cb06d0e954df0c0b87e2438beb5ca4735cab933a12012a6ce2ab7fe4afa25356",
+    "runs\\invalid_reset_neg\\xelab-stdout.log": "33ece0ca6536a62c878053caa904f3f1f690ac0d17ab451b8e8dca784b338ee3",
+    "runs\\invalid_reset_neg\\xelab.log": "530a7a31b2473d2b880e3f74a999f77afe8fb0542acd764132d1676566f74fec",
+    "runs\\invalid_reset_neg\\xsim-stdout.log": "baff74c7e0ee8d8e710478cd01e26c0cfb4b8389b30eacf7c2853bda1997ac60",
+    "runs\\invalid_reset_neg\\xsim.log": "738f7d0ccb828d859ea7f941a84bcfddf70c51255e7b074367a7e2302e5f5bc0",
+    "runs\\invalid_reset_neg\\xvlog-stdout.log": "0424255f11cdbc9345eb4c71db52dd405464205c242fe27044467750435c7ee9",
+    "runs\\invalid_reset_neg\\xvlog.log": "8b0fbca57637fc94acaf132c345b1cd2287197cf66f7e3aa71c4bfac30b39bd2",
+    "runs\\nominal\\environment.json": "8f1e978a3f8b5da5d3c0234e685598c4d8f88258d8bae3271d59d4a53bb1cfa2",
+    "runs\\nominal\\run.json": "bd886ee9ce864a912cf8cd4984aed90b8fc4f6d76a56ebcef06f7b91ac031777",
+    "runs\\nominal\\xelab-stdout.log": "1b433b56bfec1cbfe2ca8a0956804b19868c0aef038dafffb578807a1910fb8c",
+    "runs\\nominal\\xelab.log": "e99d13a7ae35bdab12c803ea35531bd6baa16a5775ff07ce346a811935c8e08c",
+    "runs\\nominal\\xvlog-stdout.log": "9e78148647ec8d2a9d41db11bfb2a8fe106c595db130c06cb7b8d66663fd9389",
+    "runs\\nominal\\xvlog.log": "2da9be8029f809008b1028964989963c5cba5455b04fa01b15e04fe323ed94f5",
+    "runs\\nominal-attempt2\\environment.json": "b1b180eccb31cb2b5d57fb84a61788a8c3b7d1817d9277edafecaee03210ad7d",
+    "runs\\nominal-attempt2\\run.json": "b7aa5e64955a4148557e868b3ab5a8232ac11d2e32ea09953718da92397c0eb9",
+    "runs\\nominal-attempt2\\xelab-stdout.log": "7008263078ed9d3971c53da403728bfadea721829f4bf986d8c069fdadad1e56",
+    "runs\\nominal-attempt2\\xelab.log": "b363bb0e96031badebc80955c8316e00ff323a9e727d54bdf6bc2d7258415bd4",
+    "runs\\nominal-attempt2\\xsim-stdout.log": "10a4fae51cadf965100ab9ae8dae3920e0ef085bda122a3f9afd4041fc271140",
+    "runs\\nominal-attempt2\\xvlog-stdout.log": "d1dbd29dbbb66bb8b3ac4b4454604c94b98d0d9d25a8c9cbbae3bd7bb5ba9a4f",
+    "runs\\nominal-attempt2\\xvlog.log": "d951cc20a98a3a58f4a833a81ee8b7f60efe3f521a4710ba6bd698c227ff0110",
+    "runs\\nominal-attempt3\\environment.json": "eb9baa95bb0e797de7e1375344c7d9904a911d4b8e093f1081b2de690d710a56",
+    "runs\\nominal-attempt3\\run.json": "853f124b76597bfac04ca0d994e0216dae0f5d3f61009f5d9048cf4e73bdef4e",
+    "runs\\nominal-attempt3\\xelab-stdout.log": "7008263078ed9d3971c53da403728bfadea721829f4bf986d8c069fdadad1e56",
+    "runs\\nominal-attempt3\\xelab.log": "b363bb0e96031badebc80955c8316e00ff323a9e727d54bdf6bc2d7258415bd4",
+    "runs\\nominal-attempt3\\xsim-stdout.log": "6b3e52e3be08fa2e1669351723c832e3706e68fe5b9e55c278b1a06c3ff005ed",
+    "runs\\nominal-attempt3\\xvlog-stdout.log": "aceb64b13d44e3e1fe0f6f9bc2dc22519831c77f1995da0299283792dbb263ea",
+    "runs\\nominal-attempt3\\xvlog.log": "37d517ba60de037440fd1e902a106f9d32ecb5fa4f9de8b13b44699be9e95f39",
+    "runs\\nominal-attempt4\\environment.json": "f6e75de5a2159f8ab22cc7fb6a7a10c55183fc9c799bf95e474f80c3dfd4123c",
+    "runs\\nominal-attempt4\\run.json": "318540642deb13ae83fddc61d3edc53bfa719a701b1e74181d6d524ca038f538",
+    "runs\\nominal-attempt4\\xelab-stdout.log": "7008263078ed9d3971c53da403728bfadea721829f4bf986d8c069fdadad1e56",
+    "runs\\nominal-attempt4\\xelab.log": "b363bb0e96031badebc80955c8316e00ff323a9e727d54bdf6bc2d7258415bd4",
+    "runs\\nominal-attempt4\\xsim-stdout.log": "748f4e373adc70c108071575042f3605bfba797c803e3456596e8a17eed0a2f9",
+    "runs\\nominal-attempt4\\xsim.log": "255069738e96d82b07d27334303535bfc557621df5f1d3162c81b9c1fa32bf46",
+    "runs\\nominal-attempt4\\xvlog-stdout.log": "6df4a8b78f58380e85d77fc83d06ddc295d4718459f5c5649405e4fea4eed2ae",
+    "runs\\nominal-attempt4\\xvlog.log": "0611a35c1eef01747afd2854fcc6e794ed6a0e3a305c3129cdd7fca40fcaec4b",
+    "runs\\nominal-attempt5\\edges_0.csv": "4d08f8a276be37c90a967059b8938e011d6b9b3bdbe297de4141364ba705ccd5",
+    "runs\\nominal-attempt5\\edges_1.csv": "6810da1fdf7e86fe455cdbf2133afaffb45a090261e89ac16d25b6a5163bf8c7",
+    "runs\\nominal-attempt5\\edges_2.csv": "9393bad07f1479265e6d624dbc9d5dddc2c275200c194e5b6e306a20b114cda0",
+    "runs\\nominal-attempt5\\edges_3.csv": "3ad9d4f8ea6209bc900af9035cd8e0c1e15b3d126d41cdfb3b9dd6435dd34360",
+    "runs\\nominal-attempt5\\edges_4.csv": "2decd7ec171b9e90837f893c8deef844675edacd7b360aec50ba2fbe639f065c",
+    "runs\\nominal-attempt5\\edges_5.csv": "2ecb79b8c5925b32056796e5143dfd634518bd85c0cfe48aa7dcdac3d43354e4",
+    "runs\\nominal-attempt5\\environment.json": "64813c4cc3b6d3264c514781d9c231c7e6abc43355bb737b47396456b129095a",
+    "runs\\nominal-attempt5\\run.json": "f1f9bc6c3a0559a92997834de59ed0fc4cf3247762fa833f18c90b8176b1a4a0",
+    "runs\\nominal-attempt5\\xelab-stdout.log": "7008263078ed9d3971c53da403728bfadea721829f4bf986d8c069fdadad1e56",
+    "runs\\nominal-attempt5\\xelab.log": "b363bb0e96031badebc80955c8316e00ff323a9e727d54bdf6bc2d7258415bd4",
+    "runs\\nominal-attempt5\\xsim-stdout.log": "ea54a7b795856621e9d6fc02fd6d944da6351a9c7f4dc45a4f883b35a3904ac6",
+    "runs\\nominal-attempt5\\xsim.log": "0ce4ed43809253cc4a73041b744348d5683bce7fdbe7845c5b103e3ce4c1d7f4",
+    "runs\\nominal-attempt5\\xvlog-stdout.log": "f9812a36cffe71c017796c93a868f444f5bd738f5709f207af78589ed6939219",
+    "runs\\nominal-attempt5\\xvlog.log": "4fb81aaddd639dc57c1aac718330537a806d0533d0be34ebd43dfc4945625fc8"
+  }
+}

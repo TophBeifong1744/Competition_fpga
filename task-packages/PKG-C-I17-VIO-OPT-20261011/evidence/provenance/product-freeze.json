@@ -1,0 +1,356 @@
+{
+  "task": "I17-LIVE-LOOP-NEXT-20261010",
+  "primary_mode": "RTL_IMPLEMENTATION",
+  "status": "STATIC_IDENTITY_FROZEN_PENDING_VERIFICATION",
+  "parent_source_aggregate_sha256": "3a65534231510995246bac291ea3adf77bd6ddc3287604b5a8d6df4c7747c0ff",
+  "parent_freeze_sha256": "ef0ccac790f9abba36d4a67d3242ad4ec7efa170b2b825e2567c7dfeaba90d99",
+  "new_backend_commit": "31c5c7bbcc9c70a943372898e9101beaac2ce9e3",
+  "new_backend_state": "B_PENDING_R2_DEVELOPMENT_INPUT",
+  "source_count": 31,
+  "source_aggregate_sha256": "ad35f1978867fe3cbd565cc68250d9b0521ca04235673ec2fd6cab8173a7c407",
+  "aggregate_algorithm": "SHA256 UTF8 concatenation in inherited SOURCES order: path + NUL + lowercase file SHA256 + LF",
+  "sources": [
+    {
+      "path": "inputs/backend/doa_math_pkg.sv",
+      "sha256": "9f6ee318008b25a10ee503eb754cc74f9d505ca3024ccf868196920eae8a425b"
+    },
+    {
+      "path": "inputs/backend/pcm4_doa_backend.sv",
+      "sha256": "773740841e9fb4ea0c5d0f78e14f2a39a22fdcbf8bac02cf99ce53b60134376a"
+    },
+    {
+      "path": "inputs/backend/pcm4_doa_native_entry.sv",
+      "sha256": "1c72103ff91c75b29771d9e99a699f03bd05ded55788e0da0d271a3921af93ef"
+    },
+    {
+      "path": "inputs/backend/ifft25_official.sv",
+      "sha256": "954e0b69a8153ab4556cbf53600eb44f4e04fc1f5c80ad088e784ea9b5f75fe9"
+    },
+    {
+      "path": "inputs/backend/pcm4_doa_official_entry.sv",
+      "sha256": "4ee1243c5dbebb81e393ede6645164456c13627aa7f947c0bc72564d43d6b64b"
+    },
+    {
+      "path": "inputs/parent/rtl/diag_evidence_store.sv",
+      "sha256": "92f3a4fb653f20527937a11608541f6e04122a41c86c6733fd48f2c0487217c5"
+    },
+    {
+      "path": "inputs/parent/rtl/diag_record_bank.sv",
+      "sha256": "1fcee6a5d075cf38b5be8df7a51265b0d6b8b351667428032b11d071bbfa62d0"
+    },
+    {
+      "path": "inputs/parent/rtl/fft29_official.sv",
+      "sha256": "4d8da1ae958771d47ea7149c9413f5dd56cd1c660d0e39b12c7800844ab84506"
+    },
+    {
+      "path": "inputs/parent/rtl/fixed4_leaf.sv",
+      "sha256": "1f2a47956b34872f2625fcb262166eee73d88044c84415c8dedb0e3258254efa"
+    },
+    {
+      "path": "inputs/parent/rtl/forward_window_adapter.sv",
+      "sha256": "34a8acb10da5e15fd828de5120562c15c94ae767de0267fd07a4d056abf3f3e6"
+    },
+    {
+      "path": "inputs/parent/rtl/forward_window_manager.sv",
+      "sha256": "31ed3ba5ed64faa83a0713bb49a9a7d9f116162df39f81f7ee1180fe1f38b9b6"
+    },
+    {
+      "path": "inputs/parent/rtl/four_mic_top_forward.v",
+      "sha256": "61227e0fcb4c0bfaf5cbbef5ebc80c50d6dd508ad004195c235fe1299804458f"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_c1_lifecycle.v",
+      "sha256": "8ada08532041486b95b41eca1c3026028b82d07463c2dfe8ff299e5edfcb8665"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_c1_packet_framer.v",
+      "sha256": "ce01d9a88fd3552a1e751e0efd82669be3a2cbab0fd0e9f81a9c3b36de06e396"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_continuous_axis.v",
+      "sha256": "06772cd7bb97ca2a6a69099d22a294c1d3994cb2496787d44ee0d79664a85a06"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_forward_fft_entry.sv",
+      "sha256": "b15446dca03eee051977ace3234563002d4175a809ec41dcd084b7259d6b486a"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_forward_fft_fixed4.sv",
+      "sha256": "0c8e402320a90a5d72c858952f9461bc869ecb91a4f96b5b7375db90c5d8c587"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_live_window_handoff.v",
+      "sha256": "8c8e0655a4b7c147cabb79d891a3e4af7530b5e8b1fbb7654ae24458435d1443"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_numeric_preprocess.sv",
+      "sha256": "9eb9b471d562408a5126c51d410959ef6085af6a6d51bd54eff77adfdf11cdf6"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_overlap_framer_bram.v",
+      "sha256": "389c8792fc73f2aee798564c6ea30a71eedb7dea8c4fa9ad88d86da0b8f2e52e"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_source_cancel_observer.v",
+      "sha256": "1b78b3043901c1a722b652465adf9a7e299e13e1eb53a444e45c13af1ee37e55"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_window_caller.sv",
+      "sha256": "e98c5a4eb5fc4e2f47ae9bb09041c56ffb6244f9115ebe5703ee67afc85f6b77"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_window_caller_entry.v",
+      "sha256": "c0082c3de7b4b25351f30ec815dcf09bee4ab2d04b97a10db7f8d4c398397c78"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_window_consumer.sv",
+      "sha256": "9a3b56c14c7ee0a6b499143bc00afd792a30c15894949c43d53fb8f708fb3943"
+    },
+    {
+      "path": "inputs/parent/rtl/pdm_cic3.v",
+      "sha256": "a80c176053688662cd8bb47f98edcadeb9b758d514365724fd8b6ffd2120573d"
+    },
+    {
+      "path": "inputs/servo/angle_command_gate.sv",
+      "sha256": "ff7a6ebd08182032c0da34baa8b89a5cd6c324f4cfffbd621ae50c0096dc5b7e"
+    },
+    {
+      "path": "inputs/servo/motor_drive.v",
+      "sha256": "1b47f4c9c7223ba5d8e16bcdd178d2012ca219b8650937b2f4b040af1e0e5294"
+    },
+    {
+      "path": "inputs/servo/runtime_servo_slice.sv",
+      "sha256": "65db004dc6a0360f557fb65342198f0eb0c277c89126f09cfea7a7b0ccb2bb38"
+    },
+    {
+      "path": "product/diag_single_source_v1.sv",
+      "sha256": "005405c818577e15fb0b8e2023c89d3dd87b9cc826eea3f80c3b6ea2ec0c6865"
+    },
+    {
+      "path": "product/signed_angle_map.sv",
+      "sha256": "4355c1486300d7d5f5677a9619327c86db7da45edba915a5eb3f65e59132be38"
+    },
+    {
+      "path": "product/four_mic_live_loop.sv",
+      "sha256": "c3ba1869ba1c559e5ba273779ab7f410f3e8f5c03e19ebcca86bb77eed10edc2"
+    }
+  ],
+  "input_sha256": [
+    {
+      "path": "inputs/parent/rtl/pcm4_c1_lifecycle.v",
+      "sha256": "8ada08532041486b95b41eca1c3026028b82d07463c2dfe8ff299e5edfcb8665"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_c1_packet_framer.v",
+      "sha256": "ce01d9a88fd3552a1e751e0efd82669be3a2cbab0fd0e9f81a9c3b36de06e396"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_continuous_axis.v",
+      "sha256": "06772cd7bb97ca2a6a69099d22a294c1d3994cb2496787d44ee0d79664a85a06"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_live_window_handoff.v",
+      "sha256": "8c8e0655a4b7c147cabb79d891a3e4af7530b5e8b1fbb7654ae24458435d1443"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_overlap_framer_bram.v",
+      "sha256": "389c8792fc73f2aee798564c6ea30a71eedb7dea8c4fa9ad88d86da0b8f2e52e"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_window_caller_entry.v",
+      "sha256": "c0082c3de7b4b25351f30ec815dcf09bee4ab2d04b97a10db7f8d4c398397c78"
+    },
+    {
+      "path": "inputs/parent/rtl/pdm_cic3.v",
+      "sha256": "a80c176053688662cd8bb47f98edcadeb9b758d514365724fd8b6ffd2120573d"
+    },
+    {
+      "path": "inputs/parent/rtl/diag_evidence_store.sv",
+      "sha256": "92f3a4fb653f20527937a11608541f6e04122a41c86c6733fd48f2c0487217c5"
+    },
+    {
+      "path": "inputs/parent/rtl/diag_record_bank.sv",
+      "sha256": "1fcee6a5d075cf38b5be8df7a51265b0d6b8b351667428032b11d071bbfa62d0"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_source_cancel_observer.v",
+      "sha256": "1b78b3043901c1a722b652465adf9a7e299e13e1eb53a444e45c13af1ee37e55"
+    },
+    {
+      "path": "inputs/parent/rtl/fft29_official.sv",
+      "sha256": "4d8da1ae958771d47ea7149c9413f5dd56cd1c660d0e39b12c7800844ab84506"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_forward_fft_entry.sv",
+      "sha256": "b15446dca03eee051977ace3234563002d4175a809ec41dcd084b7259d6b486a"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_forward_fft_fixed4.sv",
+      "sha256": "0c8e402320a90a5d72c858952f9461bc869ecb91a4f96b5b7375db90c5d8c587"
+    },
+    {
+      "path": "inputs/parent/rtl/fixed4_leaf.sv",
+      "sha256": "1f2a47956b34872f2625fcb262166eee73d88044c84415c8dedb0e3258254efa"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_numeric_preprocess.sv",
+      "sha256": "9eb9b471d562408a5126c51d410959ef6085af6a6d51bd54eff77adfdf11cdf6"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_window_caller.sv",
+      "sha256": "e98c5a4eb5fc4e2f47ae9bb09041c56ffb6244f9115ebe5703ee67afc85f6b77"
+    },
+    {
+      "path": "inputs/parent/rtl/pcm4_window_consumer.sv",
+      "sha256": "9a3b56c14c7ee0a6b499143bc00afd792a30c15894949c43d53fb8f708fb3943"
+    },
+    {
+      "path": "inputs/parent/rtl/forward_window_adapter.sv",
+      "sha256": "34a8acb10da5e15fd828de5120562c15c94ae767de0267fd07a4d056abf3f3e6"
+    },
+    {
+      "path": "inputs/parent/rtl/forward_window_manager.sv",
+      "sha256": "31ed3ba5ed64faa83a0713bb49a9a7d9f116162df39f81f7ee1180fe1f38b9b6"
+    },
+    {
+      "path": "inputs/parent/rtl/four_mic_top_forward.v",
+      "sha256": "61227e0fcb4c0bfaf5cbbef5ebc80c50d6dd508ad004195c235fe1299804458f"
+    },
+    {
+      "path": "inputs/parent/inputs/a_numeric/inputs/b_np/hann-u18f17.mem",
+      "sha256": "487c7f988ab00fc0428dc3fbe1705e933eac96ef4f54519727bf9fb0d11dc1bf"
+    },
+    {
+      "path": "inputs/official/ss_ifft25.vhd",
+      "sha256": "727a26612af2d22c1d75c5abcf20dfeebd0d9c8654e7645225a7a4875cc9d8a6"
+    },
+    {
+      "path": "inputs/official/ss_ifft25.xci",
+      "sha256": "07d35380ca0d462d5ba7f8ea1950122c5ab554916bed54c7569a073f05a9b68f"
+    },
+    {
+      "path": "inputs/official/xsim.ini",
+      "sha256": "d37b052b59559404f45a1be19bd97d2608db07cefa4f4391b5f13cdb14dfecdd"
+    },
+    {
+      "path": "inputs/backend/doa_math_pkg.sv",
+      "sha256": "9f6ee318008b25a10ee503eb754cc74f9d505ca3024ccf868196920eae8a425b"
+    },
+    {
+      "path": "inputs/backend/generate_simulation.tcl",
+      "sha256": "2f7a3a1d23e780f75100766069cdf404de4c98c1e839bc46897266287f361901"
+    },
+    {
+      "path": "inputs/backend/ifft25_official.sv",
+      "sha256": "954e0b69a8153ab4556cbf53600eb44f4e04fc1f5c80ad088e784ea9b5f75fe9"
+    },
+    {
+      "path": "inputs/backend/math-manifest.json",
+      "sha256": "074d823d8caa29b67a793a817b3de7d6a44ae190f9e986c27ce6f305577285e8"
+    },
+    {
+      "path": "inputs/backend/official-ip.json",
+      "sha256": "c2029fe7843d7831edfd45af29e9091ab8336a293e046efb27b6059448176c44"
+    },
+    {
+      "path": "inputs/backend/pcm4_doa_backend.sv",
+      "sha256": "773740841e9fb4ea0c5d0f78e14f2a39a22fdcbf8bac02cf99ce53b60134376a"
+    },
+    {
+      "path": "inputs/backend/pcm4_doa_native_entry.sv",
+      "sha256": "1c72103ff91c75b29771d9e99a699f03bd05ded55788e0da0d271a3921af93ef"
+    },
+    {
+      "path": "inputs/backend/pcm4_doa_official_entry.sv",
+      "sha256": "4ee1243c5dbebb81e393ede6645164456c13627aa7f947c0bc72564d43d6b64b"
+    },
+    {
+      "path": "inputs/backend/README.md",
+      "sha256": "6fe1534812aaefc4ca74de5e70ec03e9f461010305016d55b6f582a483626226"
+    },
+    {
+      "path": "inputs/backend/SOURCES.txt",
+      "sha256": "e1d99bd5c912024ae3e35f706b0cd35f0a2f3e11a61674861ee2724445e7355b"
+    },
+    {
+      "path": "inputs/servo/runtime_servo_slice.sv",
+      "sha256": "65db004dc6a0360f557fb65342198f0eb0c277c89126f09cfea7a7b0ccb2bb38"
+    },
+    {
+      "path": "inputs/servo/angle_command_gate.sv",
+      "sha256": "ff7a6ebd08182032c0da34baa8b89a5cd6c324f4cfffbd621ae50c0096dc5b7e"
+    },
+    {
+      "path": "inputs/servo/motor_drive.v",
+      "sha256": "1b47f4c9c7223ba5d8e16bcdd178d2012ca219b8650937b2f4b040af1e0e5294"
+    },
+    {
+      "path": "inputs/official/ss_fft29.vhd",
+      "sha256": "1fb34639c3abbe3d15eb9848c2b6a287ebc6119ca32c7a700b3c1f2a1c3ab10a"
+    },
+    {
+      "path": "product/diag_single_source_v1.sv",
+      "sha256": "005405c818577e15fb0b8e2023c89d3dd87b9cc826eea3f80c3b6ea2ec0c6865"
+    },
+    {
+      "path": "product/signed_angle_map.sv",
+      "sha256": "4355c1486300d7d5f5677a9619327c86db7da45edba915a5eb3f65e59132be38"
+    },
+    {
+      "path": "product/four_mic_live_loop.sv",
+      "sha256": "c3ba1869ba1c559e5ba273779ab7f410f3e8f5c03e19ebcca86bb77eed10edc2"
+    }
+  ],
+  "control_sha256": {
+    "TASK-CONTRACT.md": "5f7473fda38677f51c4528f08b18f93946a6f24c1c710cacb34f67486476480e",
+    "cycle-contract.json": "818b902b918078a22353e8ad84b5ed7ad59f0f959927e5fd1b453db622a1a58a",
+    "impact-manifest.json": "a4f8d79b764d6b303cf4dedfb249fae24f29fd0c8e9ce04353f004bc9d83875d",
+    "INPUT-INDEX.json": "6913e12d97730a7125a5a4ff2c5aabbec6458314ebaa2804a1def85857a91ad0",
+    "ARCHITECT-CONTRACT.md": "256e7164dbe0bb6916ef8d6a6e7c3ef3ac777ef45427c65ad799b17edddc9642",
+    "WORKFLOW-CHECK.json": "26e9db7b2f6bb709ea27e6e9a6020c0f20797b70f632df8f73638508a6d280eb"
+  },
+  "product_script_sha256": {
+    "freeze_product.py": "dc562299d797c0f896ec970d248d6b7696e8c68f53b5093eec0cc0022b9d2821"
+  },
+  "support_artifacts": {
+    "SOURCES.txt": "b98195a0e6fc002b1bfbc4470d2910b924ec0af4fefc738a607d23f43c59db5f",
+    "PARENT-TO-NEXT.diff": "3eb2019f22e6291ea7e92ee072ac2537d24a09662159c050221d3dfeb5fb1d0b",
+    "PARENT-UNCHANGED.json": "406d6de58fa9fcf3ea82ce4884a56615229935a1208dcbc8b3e9b847b348952c",
+    "B-INPUT-COMPARISON.json": "d73bd72487a6b203e744735c42c14dc447965c4fe0f719b42f2db9334d786aae",
+    "SOURCE-IMPACT.md": "3bb26eadd5b79349c83239280212fb2c501aa88f89aaddae66991bbbb1a6bc28",
+    "STATIC-COMMANDS.json": "115dc7d398391e0b6dbbe9c7cf5c3c83c31abe3671cd60603614382147957c70"
+  },
+  "repair": {
+    "finding_ids": [
+      "I17-LIVE-GATE-01",
+      "I17-LIVE-GATE-02"
+    ],
+    "attempt": 1,
+    "pre_repair_checkpoint": "product/checkpoints/I17-LIVE-GATE-01-pre-repair-v1/CHECKPOINT.json",
+    "root_causes": [
+      "UNBOUND context accepted by provider arm",
+      "diag_reset warm request omitted from provider current-edge veto"
+    ],
+    "cycle_delta": "UNBOUND context or diag_reset veto arm/current qualification on same edge; valid DECLARED tuple timing unchanged"
+  },
+  "this_batch_repair_attempts": 0,
+  "official_vhdl": [
+    "inputs/official/ss_fft29.vhd",
+    "inputs/official/ss_ifft25.vhd"
+  ],
+  "official_config": "inputs/official/ss_ifft25.xci",
+  "hann_rom": "inputs/parent/inputs/a_numeric/inputs/b_np/hann-u18f17.mem",
+  "parent_ready_owner": "B official entry only",
+  "parent_ports": 146,
+  "compile": "NOT_RUN",
+  "simulation": "NOT_RUN",
+  "synthesis": "NOT_RUN",
+  "implementation": "NOT_RUN",
+  "timing": "NOT_RUN",
+  "board": "NOT_RUN",
+  "power": "NOT_APPLICABLE",
+  "actual_model": "UNKNOWN",
+  "author_acceptance": false,
+  "non_author_acceptance": "PENDING",
+  "created_utc": "2026-10-10T01:25:32.113753+00:00"
+}

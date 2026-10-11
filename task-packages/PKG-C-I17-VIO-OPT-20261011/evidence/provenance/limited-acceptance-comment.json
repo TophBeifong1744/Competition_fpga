@@ -1,0 +1,12 @@
+{
+  "original_receipt_sha256": "1623448284d5aa061ab724e5586c404f24c246d597e3aca25c7599198b62a7d6",
+  "source": "Original local receipt; read-only copied comment body, not new instruction/approval",
+  "comments": [
+    {
+      "id": 6092885523,
+      "html_url": "https://github.com/TophBeifong1744/Competition_fpga/issues/14#issuecomment-6092885523",
+      "body": "## A/M → C：完整逻辑源码/IP/ROM接入准备包已到，沿原工程任务继续\n\n@hsc119 沿 I17-I19-LIVE-LOOP-C-20261009 原整阶段任务接续，不重新派一轮资料调查，不打断在途工作。\n\n[完整C接入ZIP](https://github.com/TophBeifong1744/Competition_fpga/releases/download/b-evidence-space-trial-20261002/I17-LIVE-LOOP-NEXT-20261010-C-INCREMENT-ad35f197.zip)：747628字节/349成员，SHA256 `1f8e25a7a58b53d6070db94779abc651c7f103ee949251493d66a14e36214446`。31 RTL聚合 `ad35f1978867fe3cbd565cc68250d9b0521ca04235673ec2fd6cab8173a7c407`；B固定PR47 `31c5c7bbcc9c70a943372898e9101beaac2ce9e3` 已限定接受。M核本地和远端包SHA/大小一致。\n\n包包含准确31源、官方FFT/IFFT配置及生成入口、HANN、独立资产与整阶段 C-OPERATION-HANDOFF；便携重放NOT_RUN，仿真VHDL不等于已生成实际综合IP。现有[SHORT固件包](https://github.com/TophBeifong1744/Competition_fpga/issues/18#issuecomment-6092440671)另交，只用于原短测/留样，不是持续启停或执行器控制器。\n\n**当前可继续的原任务部分：** 对现有唯一实际工程完成源/IP/ROM清单与器件、物理top/BD、时钟/复位、约束、诊断与资格提供者、机械参数的映射和接入准备。已确认事实直接引用，不重填；只把确实缺失的接口/配置整批返回A/M。授权项目自有源码/BD脚本/配置可由C指定AI实施，官方生成产品走正式工具，不复制整套工程或手改厂商产物。物理包装不能把宽审计总线直接当板上引脚，也不能将SIM_FIXTURE或虚构机械参数用于硬件。\n\n新A/B/C组合 **FIXED_PENDING_REVIEW**，原R1增量复核已发送；目前作者证据仅FF接口级有效报告→C接受/目标变化及同拍取消。自然PDM两帧均未产生有效方向，诊断包已直接交B，不以接口注入假称完整声源→转台成功。首次实际集成运行/综合实现/板测沿原授权和准确候选接受范围接续，出现具体时序违例、电气/针脚风险即停受影响路径；不使用已知失败bit。现在无需等B数值分析才做独立工程准备。\n\n实际构建/运行由C现场人员执行，保留原生编译/IP配置/资源/STA及bit/ELF、现场时钟/机械配置，之后按原有界窗口保存身份、角度、映射、命令接受、STOP/排空与raw。数据直接B，接口或工程缺陷直接A，不以日志代真实握手。没有新现场授权，不覆盖当前run，不扩大动作范围。\n\nC原owner/reviewer与自身推进节奏不变。请在原任务返回准确工程接入结果/仍缺的具体接口和下一运行入口，集中交接，不按每个小步骤等A确认。本条发布不等于C已下载或接单。\n\n",
+      "updated_at": "2026-10-10T02:39:52Z"
+    }
+  ]
+}

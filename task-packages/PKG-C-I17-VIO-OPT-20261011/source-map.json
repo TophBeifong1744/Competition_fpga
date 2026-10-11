@@ -1,0 +1,1205 @@
+{
+  "scope": "Byte-preserved actual candidate and evidence; original paths are provenance, not portable runtime dependencies",
+  "files": [
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/doa_math_pkg.sv",
+      "package_path": "project/rtl/b_backend/doa_math_pkg.sv",
+      "sha256": "9f6ee318008b25a10ee503eb754cc74f9d505ca3024ccf868196920eae8a425b",
+      "bytes": 13187,
+      "kind": "RTL",
+      "owner": "B"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/pcm4_doa_backend.sv",
+      "package_path": "project/rtl/b_backend/pcm4_doa_backend.sv",
+      "sha256": "773740841e9fb4ea0c5d0f78e14f2a39a22fdcbf8bac02cf99ce53b60134376a",
+      "bytes": 30242,
+      "kind": "RTL",
+      "owner": "B"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/pcm4_doa_native_entry.sv",
+      "package_path": "project/rtl/b_backend/pcm4_doa_native_entry.sv",
+      "sha256": "1c72103ff91c75b29771d9e99a699f03bd05ded55788e0da0d271a3921af93ef",
+      "bytes": 7965,
+      "kind": "RTL",
+      "owner": "B"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/ifft25_official.sv",
+      "package_path": "project/rtl/b_backend/ifft25_official.sv",
+      "sha256": "954e0b69a8153ab4556cbf53600eb44f4e04fc1f5c80ad088e784ea9b5f75fe9",
+      "bytes": 1700,
+      "kind": "RTL",
+      "owner": "B"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/pcm4_doa_official_entry.sv",
+      "package_path": "project/rtl/b_backend/pcm4_doa_official_entry.sv",
+      "sha256": "4ee1243c5dbebb81e393ede6645164456c13627aa7f947c0bc72564d43d6b64b",
+      "bytes": 8112,
+      "kind": "RTL",
+      "owner": "B"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/diag_evidence_store.sv",
+      "package_path": "project/rtl/a_frontend/diag_evidence_store.sv",
+      "sha256": "92f3a4fb653f20527937a11608541f6e04122a41c86c6733fd48f2c0487217c5",
+      "bytes": 9748,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/diag_record_bank.sv",
+      "package_path": "project/rtl/a_frontend/diag_record_bank.sv",
+      "sha256": "1fcee6a5d075cf38b5be8df7a51265b0d6b8b351667428032b11d071bbfa62d0",
+      "bytes": 1691,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/fft29_official.sv",
+      "package_path": "project/rtl/a_frontend/fft29_official.sv",
+      "sha256": "4d8da1ae958771d47ea7149c9413f5dd56cd1c660d0e39b12c7800844ab84506",
+      "bytes": 1818,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/fixed4_leaf.sv",
+      "package_path": "project/rtl/a_frontend/fixed4_leaf.sv",
+      "sha256": "1f2a47956b34872f2625fcb262166eee73d88044c84415c8dedb0e3258254efa",
+      "bytes": 10021,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/forward_window_adapter.sv",
+      "package_path": "project/rtl/a_frontend/forward_window_adapter.sv",
+      "sha256": "34a8acb10da5e15fd828de5120562c15c94ae767de0267fd07a4d056abf3f3e6",
+      "bytes": 29131,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/forward_window_manager.sv",
+      "package_path": "project/rtl/a_frontend/forward_window_manager.sv",
+      "sha256": "31ed3ba5ed64faa83a0713bb49a9a7d9f116162df39f81f7ee1180fe1f38b9b6",
+      "bytes": 11931,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/four_mic_top_forward.v",
+      "package_path": "project/rtl/a_frontend/four_mic_top_forward.v",
+      "sha256": "61227e0fcb4c0bfaf5cbbef5ebc80c50d6dd508ad004195c235fe1299804458f",
+      "bytes": 15405,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_c1_lifecycle.v",
+      "package_path": "project/rtl/a_frontend/pcm4_c1_lifecycle.v",
+      "sha256": "8ada08532041486b95b41eca1c3026028b82d07463c2dfe8ff299e5edfcb8665",
+      "bytes": 14996,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_c1_packet_framer.v",
+      "package_path": "project/rtl/a_frontend/pcm4_c1_packet_framer.v",
+      "sha256": "ce01d9a88fd3552a1e751e0efd82669be3a2cbab0fd0e9f81a9c3b36de06e396",
+      "bytes": 22361,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_continuous_axis.v",
+      "package_path": "project/rtl/a_frontend/pcm4_continuous_axis.v",
+      "sha256": "06772cd7bb97ca2a6a69099d22a294c1d3994cb2496787d44ee0d79664a85a06",
+      "bytes": 3823,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_forward_fft_entry.sv",
+      "package_path": "project/rtl/a_frontend/pcm4_forward_fft_entry.sv",
+      "sha256": "b15446dca03eee051977ace3234563002d4175a809ec41dcd084b7259d6b486a",
+      "bytes": 12252,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_forward_fft_fixed4.sv",
+      "package_path": "project/rtl/a_frontend/pcm4_forward_fft_fixed4.sv",
+      "sha256": "0c8e402320a90a5d72c858952f9461bc869ecb91a4f96b5b7375db90c5d8c587",
+      "bytes": 30094,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_live_window_handoff.v",
+      "package_path": "project/rtl/a_frontend/pcm4_live_window_handoff.v",
+      "sha256": "8c8e0655a4b7c147cabb79d891a3e4af7530b5e8b1fbb7654ae24458435d1443",
+      "bytes": 5488,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_numeric_preprocess.sv",
+      "package_path": "project/rtl/a_frontend/pcm4_numeric_preprocess.sv",
+      "sha256": "9eb9b471d562408a5126c51d410959ef6085af6a6d51bd54eff77adfdf11cdf6",
+      "bytes": 33374,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_overlap_framer_bram.v",
+      "package_path": "project/rtl/a_frontend/pcm4_overlap_framer_bram.v",
+      "sha256": "389c8792fc73f2aee798564c6ea30a71eedb7dea8c4fa9ad88d86da0b8f2e52e",
+      "bytes": 8465,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_source_cancel_observer.v",
+      "package_path": "project/rtl/a_frontend/pcm4_source_cancel_observer.v",
+      "sha256": "1b78b3043901c1a722b652465adf9a7e299e13e1eb53a444e45c13af1ee37e55",
+      "bytes": 8944,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_window_caller.sv",
+      "package_path": "project/rtl/a_frontend/pcm4_window_caller.sv",
+      "sha256": "e98c5a4eb5fc4e2f47ae9bb09041c56ffb6244f9115ebe5703ee67afc85f6b77",
+      "bytes": 37596,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_window_caller_entry.v",
+      "package_path": "project/rtl/a_frontend/pcm4_window_caller_entry.v",
+      "sha256": "c0082c3de7b4b25351f30ec815dcf09bee4ab2d04b97a10db7f8d4c398397c78",
+      "bytes": 14374,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_window_consumer.sv",
+      "package_path": "project/rtl/a_frontend/pcm4_window_consumer.sv",
+      "sha256": "9a3b56c14c7ee0a6b499143bc00afd792a30c15894949c43d53fb8f708fb3943",
+      "bytes": 14053,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pdm_cic3.v",
+      "package_path": "project/rtl/a_frontend/pdm_cic3.v",
+      "sha256": "a80c176053688662cd8bb47f98edcadeb9b758d514365724fd8b6ffd2120573d",
+      "bytes": 1153,
+      "kind": "RTL",
+      "owner": "A"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/servo/angle_command_gate.sv",
+      "package_path": "project/rtl/runtime/angle_command_gate.sv",
+      "sha256": "ff7a6ebd08182032c0da34baa8b89a5cd6c324f4cfffbd621ae50c0096dc5b7e",
+      "bytes": 8362,
+      "kind": "RTL",
+      "owner": "A runtime integration / C servo gate heritage"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/motor_drive.v",
+      "package_path": "project/rtl/c_board/motor_drive.v",
+      "sha256": "5c1a62f19ed0f25c06f22e521df90161dcbe2f835e2bc2dfaaf1b37ff7b41aa9",
+      "bytes": 6429,
+      "kind": "RTL",
+      "owner": "C (four_mic_live_loop is modified A integration)"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/servo/runtime_servo_slice.sv",
+      "package_path": "project/rtl/runtime/runtime_servo_slice.sv",
+      "sha256": "65db004dc6a0360f557fb65342198f0eb0c277c89126f09cfea7a7b0ccb2bb38",
+      "bytes": 3616,
+      "kind": "RTL",
+      "owner": "A runtime integration / C servo gate heritage"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/product/diag_single_source_v1.sv",
+      "package_path": "project/rtl/integration/diag_single_source_v1.sv",
+      "sha256": "005405c818577e15fb0b8e2023c89d3dd87b9cc826eea3f80c3b6ea2ec0c6865",
+      "bytes": 2243,
+      "kind": "RTL",
+      "owner": "A/E1"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/product/signed_angle_map.sv",
+      "package_path": "project/rtl/integration/signed_angle_map.sv",
+      "sha256": "4355c1486300d7d5f5677a9619327c86db7da45edba915a5eb3f65e59132be38",
+      "bytes": 1902,
+      "kind": "RTL",
+      "owner": "A/E1"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/four_mic_live_loop.sv",
+      "package_path": "project/rtl/c_board/four_mic_live_loop.sv",
+      "sha256": "21d4decb91e0850d2e7634f4dd1dcd212552e500151b1ec79d564d1bd9f101e4",
+      "bytes": 23984,
+      "kind": "RTL",
+      "owner": "C (four_mic_live_loop is modified A integration)"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/project/rtl/servo/sound_servo_clock.sv",
+      "package_path": "project/rtl/c_board/sound_servo_clock.sv",
+      "sha256": "a625b9d64142451c2ec87af60dd3b04566b76e8b7b457486053b61ff6453302a",
+      "bytes": 1344,
+      "kind": "RTL",
+      "owner": "C (four_mic_live_loop is modified A integration)"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_vio_control.sv",
+      "package_path": "project/rtl/c_board/i17_vio_control.sv",
+      "sha256": "9f7bc21add0fc4166c678882d5584ef318e97ba4c5238cb05fa71b29b9574802",
+      "bytes": 8493,
+      "kind": "RTL",
+      "owner": "C (four_mic_live_loop is modified A integration)"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_vio_evidence.sv",
+      "package_path": "project/rtl/c_board/i17_vio_evidence.sv",
+      "sha256": "d6b7096d55bdcc44ff275bdad2b208c25092ad6e9668aff4edcd83dcac76fc6a",
+      "bytes": 13957,
+      "kind": "RTL",
+      "owner": "C (four_mic_live_loop is modified A integration)"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_pwm_gate.sv",
+      "package_path": "project/rtl/c_board/i17_pwm_gate.sv",
+      "sha256": "9efdfdecdcc8ce27e2881a5c3647173f2656bcbbbaba85f6422c15e2f56b8e25",
+      "bytes": 633,
+      "kind": "RTL",
+      "owner": "C (four_mic_live_loop is modified A integration)"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_vio_board_top.sv",
+      "package_path": "project/rtl/c_board/i17_vio_board_top.sv",
+      "sha256": "cfe7db7e9989c1f9e36e413de8a39fd76d87002dbbb0e30b438bca019c20264a",
+      "bytes": 20724,
+      "kind": "RTL",
+      "owner": "C (four_mic_live_loop is modified A integration)"
+    },
+    {
+      "source_absolute": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/ip/i17_board_ila/i17_board_ila.xci",
+      "package_path": "project/ip/reference-only/i17_board_ila/i17_board_ila.xci",
+      "sha256": "10443ae8e2d2b5fd8a07ba9ad6b33f704e16c1336b9882d736931407ae5d62f1",
+      "bytes": 691703,
+      "kind": "XCI_REFERENCE_ONLY",
+      "owner": "AMD official; configured by A/B/C"
+    },
+    {
+      "source_absolute": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/ip/i17_board_vio/i17_board_vio.xci",
+      "package_path": "project/ip/reference-only/i17_board_vio/i17_board_vio.xci",
+      "sha256": "b43c21b34def32483621891398bfb6f6c1638f36046be5c4a80ffa68d5d638a7",
+      "bytes": 187051,
+      "kind": "XCI_REFERENCE_ONLY",
+      "owner": "AMD official; configured by A/B/C"
+    },
+    {
+      "source_absolute": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/ip/ss_fft29/ss_fft29.xci",
+      "package_path": "project/ip/reference-only/ss_fft29/ss_fft29.xci",
+      "sha256": "5ff4d1ce3ffec2bc66a239b84e13c3897d85a529587b683eaa93d62ab62bd898",
+      "bytes": 28593,
+      "kind": "XCI_REFERENCE_ONLY",
+      "owner": "AMD official; configured by A/B/C"
+    },
+    {
+      "source_absolute": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.srcs/sources_1/ip/ss_ifft25/ss_ifft25.xci",
+      "package_path": "project/ip/reference-only/ss_ifft25/ss_ifft25.xci",
+      "sha256": "409e53617738b76ee82f2d1b05eee2a33d1eb01e2dea53ea639089527affcfe0",
+      "bytes": 28597,
+      "kind": "XCI_REFERENCE_ONLY",
+      "owner": "AMD official; configured by A/B/C"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/i17_vio_pins.xdc",
+      "package_path": "project/sdc/i17_vio_pins.xdc",
+      "sha256": "af62827fc01933e0ccd86fe5f50a2d02efe63de8501c8d8b7b4e94566092d1a5",
+      "bytes": 1749,
+      "kind": "XDC",
+      "owner": "C"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/i17_vio_cdc_post_synth.xdc",
+      "package_path": "project/sdc/i17_vio_cdc_post_synth.xdc",
+      "sha256": "bc073c0b5c9b348d72abc4ea3326c2b5a4fff3a40f00ba6d8766909c67bb2161",
+      "bytes": 1209,
+      "kind": "XDC",
+      "owner": "C"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/inputs/a_numeric/inputs/b_np/hann-u18f17.mem",
+      "package_path": "project/data/hann-u18f17.mem",
+      "sha256": "487c7f988ab00fc0428dc3fbe1705e933eac96ef4f54519727bf9fb0d11dc1bf",
+      "bytes": 6144,
+      "kind": "INITIALIZATION",
+      "owner": "A/B numeric input"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-synthesis-diagnosis-20261011/113300/diagnosis.json",
+      "package_path": "evidence/synthesis/diagnosis.json",
+      "sha256": "1ddbe884e43a921dd8af790262a434738f5777584cd4b126d76dd535848fca45",
+      "bytes": 18399,
+      "kind": "HISTORICAL_RAW_EVIDENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-synthesis-diagnosis-20261011/113300/main-runme.log",
+      "package_path": "evidence/synthesis/main-runme.log",
+      "sha256": "cb26d7817bd027f3d185b153bbe716863520f0a6740ad4db475b4ba74adae067",
+      "bytes": 4074216,
+      "kind": "HISTORICAL_RAW_EVIDENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-synthesis-diagnosis-20261011/113300/native-synthesis.tcl.txt",
+      "package_path": "evidence/synthesis/native-synthesis.tcl.txt",
+      "sha256": "e33abeca07f01ec05902569e00bfc681980dbde7f591bee618abafd69c0f62a4",
+      "bytes": 12334,
+      "kind": "HISTORICAL_RAW_EVIDENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-synthesis-diagnosis-20261011/113300/project.xpr.reference.xml",
+      "package_path": "evidence/synthesis/project.xpr.reference.xml",
+      "sha256": "dbbbb3d0560d0102ff11b41316df8d1b8bb7b5ed3c86211fc87226d17caf70cb",
+      "bytes": 37587,
+      "kind": "HISTORICAL_RAW_EVIDENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-synthesis-diagnosis-20261011/113300/vio-runme.log",
+      "package_path": "evidence/synthesis/vio-runme.log",
+      "sha256": "80da14809e04290ad25d4230ef9dd1f86eb2cedfd5ea705bbfba173b70e9c838",
+      "bytes": 29000,
+      "kind": "HISTORICAL_RAW_EVIDENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-synthesis-diagnosis-20261011/113300/ila-runme.log",
+      "package_path": "evidence/synthesis/ila-runme.log",
+      "sha256": "5bdbfed9e255fb833bc6335a5f3869094e299210658ff74bf8d707a9438a3ecb",
+      "bytes": 61946,
+      "kind": "HISTORICAL_RAW_EVIDENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-synthesis-diagnosis-20261011/113300/综合耗时排查.txt",
+      "package_path": "evidence/synthesis/综合耗时排查.txt",
+      "sha256": "7fa2768de474b7265ba47265c15352d2a2ca2fb1301b6f4c9dc495a9395559c8",
+      "bytes": 2233,
+      "kind": "HISTORICAL_RAW_EVIDENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.xpr",
+      "package_path": "evidence/synthesis/i17_live_loop.REFERENCE_ONLY.xml",
+      "sha256": "dbbbb3d0560d0102ff11b41316df8d1b8bb7b5ed3c86211fc87226d17caf70cb",
+      "bytes": 37587,
+      "kind": "NATIVE_PROJECT_REFERENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/product/PRODUCT-RELEASE.json",
+      "package_path": "evidence/provenance/product-release.json",
+      "sha256": "fe70e63d8d93c3af280993e85db80a91b99b322c3f8532a04a44c8d461b3fd28",
+      "bytes": 727,
+      "kind": "INHERITED_REFERENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/product/PRODUCT-FREEZE.json",
+      "package_path": "evidence/provenance/product-freeze.json",
+      "sha256": "82b2eb11ebfbfd58e390da53b1a2950fd7d165b9d0ee2f5ff5ad69d591e99070",
+      "bytes": 14090,
+      "kind": "INHERITED_REFERENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/product/B-INPUT-COMPARISON.json",
+      "package_path": "evidence/provenance/B-input-comparison.json",
+      "sha256": "d73bd72487a6b203e744735c42c14dc447965c4fe0f719b42f2db9334d786aae",
+      "bytes": 4242,
+      "kind": "INHERITED_REFERENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/product/PARENT-UNCHANGED.json",
+      "package_path": "evidence/provenance/parent-unchanged.json",
+      "sha256": "406d6de58fa9fcf3ea82ce4884a56615229935a1208dcbc8b3e9b847b348952c",
+      "bytes": 15853,
+      "kind": "INHERITED_REFERENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/README.md",
+      "package_path": "evidence/provenance/B-readme.md",
+      "sha256": "6fe1534812aaefc4ca74de5e70ec03e9f461010305016d55b6f582a483626226",
+      "bytes": 13202,
+      "kind": "INHERITED_REFERENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/official-ip.json",
+      "package_path": "evidence/provenance/B-official-ip.json",
+      "sha256": "c2029fe7843d7831edfd45af29e9091ab8336a293e046efb27b6059448176c44",
+      "bytes": 3354,
+      "kind": "INHERITED_REFERENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/math-manifest.json",
+      "package_path": "evidence/provenance/B-math-manifest.json",
+      "sha256": "074d823d8caa29b67a793a817b3de7d6a44ae190f9e986c27ce6f305577285e8",
+      "bytes": 1081,
+      "kind": "INHERITED_REFERENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/delivery/board-task-contract.json",
+      "package_path": "evidence/provenance/board-task-contract.json",
+      "sha256": "4c6d5f001f171076a3d091cd3599c923b08f5451322813200a21316bba2d19ff",
+      "bytes": 5918,
+      "kind": "INHERITED_REFERENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/delivery/板级候选独立复核回执.md",
+      "package_path": "evidence/provenance/board-review-receipt.md",
+      "sha256": "f3a5db1c72b5eb6f655052f6250d6e9208bd34721da7892ba661ab5d4c67a8db",
+      "bytes": 5038,
+      "kind": "INHERITED_REFERENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/delivery/PWM独立复核回执.md",
+      "package_path": "evidence/provenance/pwm-review-receipt.md",
+      "sha256": "d170b6cedf3caa7a864277391a6b9d5b265bc774cee9d14d56cfb9c431dded20",
+      "bytes": 1753,
+      "kind": "INHERITED_REFERENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/BOARD-INTERFACE.md",
+      "package_path": "evidence/provenance/board-interface-original.md",
+      "sha256": "62e1a456768e0fe72f391eb6f45d5e5368ff707d3345e1eee79fde589741e34a",
+      "bytes": 11280,
+      "kind": "INHERITED_REFERENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/XDC-REPAIR-3-SNAPSHOT.json",
+      "package_path": "evidence/provenance/xdc-repair3-snapshot.json",
+      "sha256": "ecded1c1b6769765838f43a2dd3054e1326f220c9a6adb3884f495107dd64a37",
+      "bytes": 2829,
+      "kind": "INHERITED_REFERENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/XDC-REPAIR-3.md",
+      "package_path": "evidence/provenance/xdc-repair3.md",
+      "sha256": "e030d251e341b9571e16ae7469836bd312ee8cbab295193a4fd6ff29d6c2f339",
+      "bytes": 2313,
+      "kind": "INHERITED_REFERENCE",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/tb_control.sv",
+      "package_path": "simulation/tb/tb_control.sv",
+      "sha256": "07b6a68fc2932d44f7ed607d17ed6aac5ddb42f408e4f8154989e2f03f2be24c",
+      "bytes": 7658,
+      "kind": "SCOPED_TEST_ASSET",
+      "owner": "C independent verification"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/tb_evidence.sv",
+      "package_path": "simulation/tb/tb_evidence.sv",
+      "sha256": "8d3cd7a87c73b815d3d3226a3da4ea0e7d28de320cbd4ab909c66fd0f4f67417",
+      "bytes": 8171,
+      "kind": "SCOPED_TEST_ASSET",
+      "owner": "C independent verification"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/tb_gate_map.sv",
+      "package_path": "simulation/tb/tb_gate_map.sv",
+      "sha256": "de4d4267e3a7970bfefc471c62de877d5b6fb01004982554e73dbcd900515537",
+      "bytes": 2502,
+      "kind": "SCOPED_TEST_ASSET",
+      "owner": "C independent verification"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/tb_pwm.sv",
+      "package_path": "simulation/tb/tb_pwm.sv",
+      "sha256": "74530bee8573dbf16089082fcd2c71c3fa742b95301164097a0704b4777247af",
+      "bytes": 5402,
+      "kind": "SCOPED_TEST_ASSET",
+      "owner": "C independent verification"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/tb_invalid.sv",
+      "package_path": "simulation/tb/tb_invalid.sv",
+      "sha256": "7118888227396b2c28e450512dc5f5e9c135e5e7ac7fe6c1a90a6efd3a0747f3",
+      "bytes": 328,
+      "kind": "SCOPED_TEST_ASSET",
+      "owner": "C independent verification"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/nominal-attempt5/motor_drive_frozen.v",
+      "package_path": "simulation/reference/motor_drive_frozen.v",
+      "sha256": "d3bfc29ef7d0f4f10a537f8b6ebf6ce8de5df28f6e9d4333bcb5121b0cc3e638",
+      "bytes": 5163,
+      "kind": "TEST_REFERENCE_ONLY",
+      "owner": "frozen prechange servo miter"
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/MODEL-CARD.md",
+      "package_path": "evidence/tests/board-verification/MODEL-CARD.md",
+      "sha256": "59679d970b95f238d770d66d0a6bcd1499ca358ae211fb4fe2fd570cb4e074d4",
+      "bytes": 3956,
+      "kind": "INHERITED_TEST_RECORD",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/TEST-SNAPSHOT-repair1.json",
+      "package_path": "evidence/tests/board-verification/TEST-SNAPSHOT-repair1.json",
+      "sha256": "b02d27a37b7616cc65b701d05f6b824d408514adce294edd71c2496f9209a38f",
+      "bytes": 2988,
+      "kind": "INHERITED_TEST_RECORD",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/REPAIR-1-RESULTS.md",
+      "package_path": "evidence/tests/board-verification/REPAIR-1-RESULTS.md",
+      "sha256": "5fd3adf026f3caa5d955602e1d85c89d4a7f521d90b6ea2a9bdad1505fb20a37",
+      "bytes": 2492,
+      "kind": "INHERITED_TEST_RECORD",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/GATE-CANARY-INDEX.json",
+      "package_path": "evidence/tests/board-verification/GATE-CANARY-INDEX.json",
+      "sha256": "77bb31a0cf8ae2238cea96735dc0e27f9f1642eb51c3f126df37b2759d2c11d4",
+      "bytes": 1415,
+      "kind": "INHERITED_TEST_RECORD",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/C-VIO-EVID-003-RESULTS.md",
+      "package_path": "evidence/tests/board-verification/C-VIO-EVID-003-RESULTS.md",
+      "sha256": "67eb5838ccf84683e8317613f7b9b2a358bda0bc744ee371a9aa2d0d55dc26c7",
+      "bytes": 1752,
+      "kind": "INHERITED_TEST_RECORD",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/control-attempt3/run.json",
+      "package_path": "evidence/tests/board-verification/runs/control-attempt3/run.json",
+      "sha256": "a6e1b6abadba254b51ad415d5cd87df70e1027d7b836fbb6dca8066925abe779",
+      "bytes": 3010,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/control-attempt3/xvlog-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/control-attempt3/xvlog-stdout.log",
+      "sha256": "91021e08fbb8c73103fbe018524b249fc9c39b0c88015cfafd330bd819524068",
+      "bytes": 754,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/control-attempt3/xelab-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/control-attempt3/xelab-stdout.log",
+      "sha256": "f43871c2244ee1b87c56d914e3099d72c1f815f823db4fa91430fc6ed0569453",
+      "bytes": 692,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/control-attempt3/xsim-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/control-attempt3/xsim-stdout.log",
+      "sha256": "37135ff206cd92d343fa4aeb98d23c6099dcf08410f105fd512b9df5a7c9c539",
+      "bytes": 9731,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/warm_race-attempt3/run.json",
+      "package_path": "evidence/tests/board-verification/runs/warm_race-attempt3/run.json",
+      "sha256": "d8887efcf24807028aa3661799567aef6f0bf089a2e95555d8e7f0b7012f1214",
+      "bytes": 3067,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/warm_race-attempt3/xvlog-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/warm_race-attempt3/xvlog-stdout.log",
+      "sha256": "91021e08fbb8c73103fbe018524b249fc9c39b0c88015cfafd330bd819524068",
+      "bytes": 754,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/warm_race-attempt3/xelab-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/warm_race-attempt3/xelab-stdout.log",
+      "sha256": "f43871c2244ee1b87c56d914e3099d72c1f815f823db4fa91430fc6ed0569453",
+      "bytes": 692,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/warm_race-attempt3/xsim-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/warm_race-attempt3/xsim-stdout.log",
+      "sha256": "3873a6b379093778ffe2d2d5780ca3e75ac9d394e873bcd0e8f2f68a13428991",
+      "bytes": 2682,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/early_finish-attempt2/run.json",
+      "package_path": "evidence/tests/board-verification/runs/early_finish-attempt2/run.json",
+      "sha256": "3f7cbfbb1037faed25b69c8362861bb78cde86a80dcd2b0ab93912390f278753",
+      "bytes": 3076,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/early_finish-attempt2/xvlog-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/early_finish-attempt2/xvlog-stdout.log",
+      "sha256": "91021e08fbb8c73103fbe018524b249fc9c39b0c88015cfafd330bd819524068",
+      "bytes": 754,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/early_finish-attempt2/xelab-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/early_finish-attempt2/xelab-stdout.log",
+      "sha256": "f43871c2244ee1b87c56d914e3099d72c1f815f823db4fa91430fc6ed0569453",
+      "bytes": 692,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/early_finish-attempt2/xsim-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/early_finish-attempt2/xsim-stdout.log",
+      "sha256": "c4e59f56d39ff35622da18ebe9f6a0aaa8d7bd4df25bb3b81bcedc4e7ec6806e",
+      "bytes": 3820,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/evidence/run.json",
+      "package_path": "evidence/tests/board-verification/runs/evidence/run.json",
+      "sha256": "7ec85f9a6555ef10db3b4e6fc87b8cef9b8ff0ed2d35b010f3de809107b494c9",
+      "bytes": 2654,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/evidence/xvlog-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/evidence/xvlog-stdout.log",
+      "sha256": "d6d3a53466dc8d44b323af105458b3adb451e69c315d3efd2f6f3f0a232e8f73",
+      "bytes": 507,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/evidence/xelab-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/evidence/xelab-stdout.log",
+      "sha256": "826f2e81b2a6e07f98343e27cbbc04542273317565288a2bb2c2ae8491552fa0",
+      "bytes": 654,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/evidence/xsim-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/evidence/xsim-stdout.log",
+      "sha256": "f884c40254c3ec7efc42d992a35d0afbb784e33c7d08d02604a3728a18c73fbb",
+      "bytes": 37452,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/gate_map-attempt2/run.json",
+      "package_path": "evidence/tests/board-verification/runs/gate_map-attempt2/run.json",
+      "sha256": "43490ee81a5e984f76fcf9879aed531ad5596e77ece34c071bf1a80be04bfbfe",
+      "bytes": 3009,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/gate_map-attempt2/xvlog-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/gate_map-attempt2/xvlog-stdout.log",
+      "sha256": "d48e791758b29f0ff4c20c91f0b658346ccabd39cd441f1ec4e1e5d5e7c90eae",
+      "bytes": 750,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/gate_map-attempt2/xelab-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/gate_map-attempt2/xelab-stdout.log",
+      "sha256": "49d309efa9c724970502a7f8b8b9c4543777f6afde832d61e471a1b2c48589ff",
+      "bytes": 691,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/gate_map-attempt2/xsim-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/gate_map-attempt2/xsim-stdout.log",
+      "sha256": "7ec5aa3e7c024e9bb03466415ff98a6c4c3f47618aea2553a0f1e90359678966",
+      "bytes": 878,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/canary_control/run.json",
+      "package_path": "evidence/tests/board-verification/runs/canary_control/run.json",
+      "sha256": "dc0309ab39baa23aea04bc7038fc7f9fa5f1a965314d81203f1d8bcd7e358ae8",
+      "bytes": 3061,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/canary_control/xvlog-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/canary_control/xvlog-stdout.log",
+      "sha256": "91021e08fbb8c73103fbe018524b249fc9c39b0c88015cfafd330bd819524068",
+      "bytes": 754,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/canary_control/xelab-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/canary_control/xelab-stdout.log",
+      "sha256": "f43871c2244ee1b87c56d914e3099d72c1f815f823db4fa91430fc6ed0569453",
+      "bytes": 692,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/canary_control/xsim-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/canary_control/xsim-stdout.log",
+      "sha256": "bb052cffee6197cecb7e6d072561e57ef909414957a3463395a354534fb95948",
+      "bytes": 1962,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/canary_data/run.json",
+      "package_path": "evidence/tests/board-verification/runs/canary_data/run.json",
+      "sha256": "fb4f5afe5cdfc676d0bb9d42b55988f7cc5d32116cf15817dd97b792c5974a94",
+      "bytes": 2703,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/canary_data/xvlog-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/canary_data/xvlog-stdout.log",
+      "sha256": "d6d3a53466dc8d44b323af105458b3adb451e69c315d3efd2f6f3f0a232e8f73",
+      "bytes": 507,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/canary_data/xelab-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/canary_data/xelab-stdout.log",
+      "sha256": "826f2e81b2a6e07f98343e27cbbc04542273317565288a2bb2c2ae8491552fa0",
+      "bytes": 654,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/canary_data/xsim-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/canary_data/xsim-stdout.log",
+      "sha256": "a3c98d7251d945074cfd27be12ab6a31c107d247aeb23823873e403c0487da6e",
+      "bytes": 4571,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/canary_gate/run.json",
+      "package_path": "evidence/tests/board-verification/runs/canary_gate/run.json",
+      "sha256": "e853dbc963f6f1534c2440c9e1d0df4b5eac25a111843d92500aa0cba1249a31",
+      "bytes": 3048,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/canary_gate/xvlog-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/canary_gate/xvlog-stdout.log",
+      "sha256": "d48e791758b29f0ff4c20c91f0b658346ccabd39cd441f1ec4e1e5d5e7c90eae",
+      "bytes": 750,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/canary_gate/xelab-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/canary_gate/xelab-stdout.log",
+      "sha256": "49d309efa9c724970502a7f8b8b9c4543777f6afde832d61e471a1b2c48589ff",
+      "bytes": 691,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/runs/canary_gate/xsim-stdout.log",
+      "package_path": "evidence/tests/board-verification/runs/canary_gate/xsim-stdout.log",
+      "sha256": "5ea5b4f7bfb78a5de60643c7ccd854793e2416819557c43ec51e6332e9eb763d",
+      "bytes": 991,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/MODEL-CARD.md",
+      "package_path": "evidence/tests/verification/MODEL-CARD.md",
+      "sha256": "a01fad5a47052b79e42c2f658085d1d6cbab8eed2c395468d93d7ebf0711e775",
+      "bytes": 3396,
+      "kind": "INHERITED_TEST_RECORD",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/EVIDENCE-INDEX.json",
+      "package_path": "evidence/tests/verification/EVIDENCE-INDEX.json",
+      "sha256": "09a4d2fb9b318eebf926b56cb1c74635b4f39c4904e6bd6defdf7aa97a3a60e8",
+      "bytes": 18759,
+      "kind": "INHERITED_TEST_RECORD",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/RESULTS.md",
+      "package_path": "evidence/tests/verification/RESULTS.md",
+      "sha256": "cee2e9e8d7cd3d796c1be2d050d5e2d0283ead986423c8062def1c2853b4f709",
+      "bytes": 3186,
+      "kind": "INHERITED_TEST_RECORD",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/TRACEABILITY.md",
+      "package_path": "evidence/tests/verification/TRACEABILITY.md",
+      "sha256": "f75f29a443387779197eb1ed7bfa4f5eb3f060d8fed3cbc40f31e6f997849464",
+      "bytes": 2270,
+      "kind": "INHERITED_TEST_RECORD",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/nominal-attempt5/run.json",
+      "package_path": "evidence/tests/verification/runs/nominal-attempt5/run.json",
+      "sha256": "f1f9bc6c3a0559a92997834de59ed0fc4cf3247762fa833f18c90b8176b1a4a0",
+      "bytes": 3134,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/nominal-attempt5/xvlog-stdout.log",
+      "package_path": "evidence/tests/verification/runs/nominal-attempt5/xvlog-stdout.log",
+      "sha256": "f9812a36cffe71c017796c93a868f444f5bd738f5709f207af78589ed6939219",
+      "bytes": 813,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/nominal-attempt5/xelab-stdout.log",
+      "package_path": "evidence/tests/verification/runs/nominal-attempt5/xelab-stdout.log",
+      "sha256": "7008263078ed9d3971c53da403728bfadea721829f4bf986d8c069fdadad1e56",
+      "bytes": 1575,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/nominal-attempt5/xsim-stdout.log",
+      "package_path": "evidence/tests/verification/runs/nominal-attempt5/xsim-stdout.log",
+      "sha256": "ea54a7b795856621e9d6fc02fd6d944da6351a9c7f4dc45a4f883b35a3904ac6",
+      "bytes": 1721,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/canary_model/run.json",
+      "package_path": "evidence/tests/verification/runs/canary_model/run.json",
+      "sha256": "f090340546ab60e26e3e66978b18a04c43badb8f26761085b7b30408e08d27a1",
+      "bytes": 3160,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/canary_model/xvlog-stdout.log",
+      "package_path": "evidence/tests/verification/runs/canary_model/xvlog-stdout.log",
+      "sha256": "3f8a404ea4cd25fe5a1a9e75b7242debebc79a44da973f7a26e926866e6ae727",
+      "bytes": 809,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/canary_model/xelab-stdout.log",
+      "package_path": "evidence/tests/verification/runs/canary_model/xelab-stdout.log",
+      "sha256": "7008263078ed9d3971c53da403728bfadea721829f4bf986d8c069fdadad1e56",
+      "bytes": 1575,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/canary_model/xsim-stdout.log",
+      "package_path": "evidence/tests/verification/runs/canary_model/xsim-stdout.log",
+      "sha256": "18528051099bc08373c40810c0f3bc9a6a479b3c3d2213fc6e3df1df5988e455",
+      "bytes": 1049,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/canary_miter/run.json",
+      "package_path": "evidence/tests/verification/runs/canary_miter/run.json",
+      "sha256": "2e0afab59f4670e1ef3ed5bd96cb224b8667414822473e3367ca4b51a67845cf",
+      "bytes": 3158,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/canary_miter/xvlog-stdout.log",
+      "package_path": "evidence/tests/verification/runs/canary_miter/xvlog-stdout.log",
+      "sha256": "dc0d34d1c5b96654f9fd41eaaa829572d4b800befe6f4f6b57376fea61e610eb",
+      "bytes": 809,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/canary_miter/xelab-stdout.log",
+      "package_path": "evidence/tests/verification/runs/canary_miter/xelab-stdout.log",
+      "sha256": "7008263078ed9d3971c53da403728bfadea721829f4bf986d8c069fdadad1e56",
+      "bytes": 1575,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/canary_miter/xsim-stdout.log",
+      "package_path": "evidence/tests/verification/runs/canary_miter/xsim-stdout.log",
+      "sha256": "e0fdfdb3d10422bf339b63809fbfaad0d7efcee71a329854de01a9db627c8dfd",
+      "bytes": 992,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/canary_reset/run.json",
+      "package_path": "evidence/tests/verification/runs/canary_reset/run.json",
+      "sha256": "5fc2e901a14e23ff0faa2133080425f13f00f41d5f55479af66150af494427f4",
+      "bytes": 3160,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/canary_reset/xvlog-stdout.log",
+      "package_path": "evidence/tests/verification/runs/canary_reset/xvlog-stdout.log",
+      "sha256": "6c96321dea1e170eebc27c224b1825575afac1736c969f7b8aed9819f231ccbe",
+      "bytes": 809,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/canary_reset/xelab-stdout.log",
+      "package_path": "evidence/tests/verification/runs/canary_reset/xelab-stdout.log",
+      "sha256": "7008263078ed9d3971c53da403728bfadea721829f4bf986d8c069fdadad1e56",
+      "bytes": 1575,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/canary_reset/xsim-stdout.log",
+      "package_path": "evidence/tests/verification/runs/canary_reset/xsim-stdout.log",
+      "sha256": "c449e27b39b27e3b66875702b362f4c580315d60a446da14f06fc1448c744c45",
+      "bytes": 1012,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_clock/run.json",
+      "package_path": "evidence/tests/verification/runs/invalid_clock/run.json",
+      "sha256": "b05d76147005f5dddae1670d8545f0868dffbd4e277eaeb4120a16fcd302b1cf",
+      "bytes": 3171,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_clock/xvlog-stdout.log",
+      "package_path": "evidence/tests/verification/runs/invalid_clock/xvlog-stdout.log",
+      "sha256": "f942ecda8d509f457bee7ccc1126c861ead9f317256a75e75481002bac5d76a0",
+      "bytes": 770,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_clock/xelab-stdout.log",
+      "package_path": "evidence/tests/verification/runs/invalid_clock/xelab-stdout.log",
+      "sha256": "fdd588bfa67688a388f17cb12a61bcb4b9e1d15bce0ec7e887640190a9374f1d",
+      "bytes": 711,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_clock/xsim-stdout.log",
+      "package_path": "evidence/tests/verification/runs/invalid_clock/xsim-stdout.log",
+      "sha256": "d4a8fd6bb97ab617f8947051526b7049e24ed86312e155cc6301b9a1d7b248ff",
+      "bytes": 964,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_max0/run.json",
+      "package_path": "evidence/tests/verification/runs/invalid_max0/run.json",
+      "sha256": "f4eb1b53b8683154be104c9e09813d3128605099535af2d2bd01906dabb19ad3",
+      "bytes": 3265,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_max0/xvlog-stdout.log",
+      "package_path": "evidence/tests/verification/runs/invalid_max0/xvlog-stdout.log",
+      "sha256": "dcd9f44e729719a3c1816665dff3d13e8055832d4f6e0e277ef963262a90ce27",
+      "bytes": 769,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_max0/xelab-stdout.log",
+      "package_path": "evidence/tests/verification/runs/invalid_max0/xelab-stdout.log",
+      "sha256": "9d7049ded2813167a1050be43045a5c66832fc1022792f547106cb5823a4ce34",
+      "bytes": 784,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_max0/xsim-stdout.log",
+      "package_path": "evidence/tests/verification/runs/invalid_max0/xsim-stdout.log",
+      "sha256": "54f04a415fe8e4bbcbf60d37d92dda8f118dd1a6887cd314087d121559cd635a",
+      "bytes": 1023,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_max512/run.json",
+      "package_path": "evidence/tests/verification/runs/invalid_max512/run.json",
+      "sha256": "2b153ad2010cf8077f06db6d2ed0485eb7e5aa40fa5b35048bdfca7605199d21",
+      "bytes": 3227,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_max512/xvlog-stdout.log",
+      "package_path": "evidence/tests/verification/runs/invalid_max512/xvlog-stdout.log",
+      "sha256": "a2ad832937a573a8982d2468ef63c224f5fce9c0190e2d8eb89dbc6e5417768f",
+      "bytes": 771,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_max512/xelab-stdout.log",
+      "package_path": "evidence/tests/verification/runs/invalid_max512/xelab-stdout.log",
+      "sha256": "9d5d07c4486fd2873d65bbb52b5958bd3c4884818f1d7f7277b30914e3bd9e80",
+      "bytes": 762,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_max512/xsim-stdout.log",
+      "package_path": "evidence/tests/verification/runs/invalid_max512/xsim-stdout.log",
+      "sha256": "a9b15718440c5814363001a791269c10eb32c3e2ba576d2a9e27c700b05d02be",
+      "bytes": 1007,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_reset_neg/run.json",
+      "package_path": "evidence/tests/verification/runs/invalid_reset_neg/run.json",
+      "sha256": "cb06d0e954df0c0b87e2438beb5ca4735cab933a12012a6ce2ab7fe4afa25356",
+      "bytes": 3240,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_reset_neg/xvlog-stdout.log",
+      "package_path": "evidence/tests/verification/runs/invalid_reset_neg/xvlog-stdout.log",
+      "sha256": "0424255f11cdbc9345eb4c71db52dd405464205c242fe27044467750435c7ee9",
+      "bytes": 774,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_reset_neg/xelab-stdout.log",
+      "package_path": "evidence/tests/verification/runs/invalid_reset_neg/xelab-stdout.log",
+      "sha256": "33ece0ca6536a62c878053caa904f3f1f690ac0d17ab451b8e8dca784b338ee3",
+      "bytes": 763,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_reset_neg/xsim-stdout.log",
+      "package_path": "evidence/tests/verification/runs/invalid_reset_neg/xsim-stdout.log",
+      "sha256": "baff74c7e0ee8d8e710478cd01e26c0cfb4b8389b30eacf7c2853bda1997ac60",
+      "bytes": 1021,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_reset_high/run.json",
+      "package_path": "evidence/tests/verification/runs/invalid_reset_high/run.json",
+      "sha256": "4d80b4e59b23776a4a366ffb1c86f73c02b884e3a827e793bb299d5e6006c865",
+      "bytes": 3243,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_reset_high/xvlog-stdout.log",
+      "package_path": "evidence/tests/verification/runs/invalid_reset_high/xvlog-stdout.log",
+      "sha256": "6cad5f9c1d7e9f2b9c236c73ad561d36ddaf551bf3ac643580f47a53ff9c96ce",
+      "bytes": 775,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_reset_high/xelab-stdout.log",
+      "package_path": "evidence/tests/verification/runs/invalid_reset_high/xelab-stdout.log",
+      "sha256": "9beca9878529bc0b6cae2ce1439105a2621801abee2ef98880038136b830c4dd",
+      "bytes": 764,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/runs/invalid_reset_high/xsim-stdout.log",
+      "package_path": "evidence/tests/verification/runs/invalid_reset_high/xsim-stdout.log",
+      "sha256": "48f74fc29380545564fcd1a2acee5b49dbf1a8f5cee085e9adfad250c48956f1",
+      "bytes": 1023,
+      "kind": "INHERITED_TEST_RAW",
+      "owner": null
+    },
+    {
+      "source_absolute": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.runs/synth_1/runme.log",
+      "package_path": "evidence/synthesis/latest-observed/runme.log",
+      "sha256": "309d7c58bd47348d001c5493fd8523ab5ff3d2bffb6df6e1e61f3ea9d8e63567",
+      "bytes": 2037161,
+      "kind": "LATEST_NATIVE_RUN_SNAPSHOT",
+      "owner": null
+    },
+    {
+      "source_absolute": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.runs/synth_1/vivado.jou",
+      "package_path": "evidence/synthesis/latest-observed/vivado.jou",
+      "sha256": "bf71b00cba63d471158f7f1784c18bbaa56db351d1c8f44a363777bea5193bb6",
+      "bytes": 1335,
+      "kind": "LATEST_NATIVE_RUN_SNAPSHOT",
+      "owner": null
+    },
+    {
+      "source_absolute": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.runs/synth_1/i17_vio_board_top.tcl",
+      "package_path": "evidence/synthesis/latest-observed/native-synthesis.REFERENCE_ONLY.tcl.txt",
+      "sha256": "e33abeca07f01ec05902569e00bfc681980dbde7f591bee618abafd69c0f62a4",
+      "bytes": 12334,
+      "kind": "LATEST_NATIVE_RUN_SNAPSHOT",
+      "owner": null
+    }
+  ]
+}

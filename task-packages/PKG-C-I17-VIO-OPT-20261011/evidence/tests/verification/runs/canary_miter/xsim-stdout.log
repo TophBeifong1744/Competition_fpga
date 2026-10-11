@@ -1,0 +1,18 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat Oct 10 18:30:04 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/pwm_snapshot/xsim_script.tcl
+# xsim {pwm_snapshot} -testplusarg CANARY_MITER -autoloadwcfg -runall -onfinish quit -onerror quit -sv_seed 17010
+Time resolution is 1 ps
+run -all
+Fatal: ASSERTION_FAIL MITER_CHECK case=0 cycle=10
+Time: 96 ns  Iteration: 0  Process: /tb_pwm/a/Always39_6  Scope: tb_pwm.a  File: C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/tb_pwm.sv Line: 69
+$finish called at time : 96 ns
+exit 0
+INFO: [Common 17-206] Exiting xsim at Sat Oct 10 18:30:06 2026...

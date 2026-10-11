@@ -1,0 +1,24 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat Oct 10 18:27:12 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/pwm_snapshot/xsim_script.tcl
+# xsim {pwm_snapshot} -autoloadwcfg -runall -onfinish quit -onerror quit -sv_seed 17010
+Time resolution is 1 ps
+run -all
+CASE_COMPLETE id=0 HZ=1000000 MAX=360 cycles=165711 rises=11 falls=11 width500=2 width1500=4 width2500=4 fractional=0
+CASE_COMPLETE id=4 HZ=1000000 MAX=1 cycles=165711 rises=11 falls=11 width500=6 width1500=0 width2500=5 fractional=0
+CASE_COMPLETE id=5 HZ=1000000 MAX=511 cycles=165711 rises=11 falls=11 width500=2 width1500=0 width2500=5 fractional=0
+CASE_COMPLETE id=1 HZ=50000000 MAX=360 cycles=8280111 rises=11 falls=11 width500=2 width1500=4 width2500=2 fractional=0
+CASE_COMPLETE id=3 HZ=61440000 MAX=360 cycles=10174575 rises=11 falls=11 width500=2 width1500=4 width2500=2 fractional=3
+CASE_COMPLETE id=2 HZ=100000000 MAX=360 cycles=16560111 rises=11 falls=11 width500=2 width1500=4 width2500=2 fractional=0
+ALL_CHECKERS_COMPLETE seed=17010 pending=0
+$finish called at time : 165601110 ns : File "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/verification/tb_pwm.sv" Line 129
+exit 0
+INFO: xsimkernel Simulation Memory Usage: 12724 KB (Peak: 12724 KB), Simulation CPU Usage: 68000 ms
+INFO: [Common 17-206] Exiting xsim at Sat Oct 10 18:28:23 2026...

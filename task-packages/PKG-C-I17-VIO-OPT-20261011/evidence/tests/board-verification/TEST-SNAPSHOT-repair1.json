@@ -1,0 +1,67 @@
+{
+  "stage": "FUNCTIONAL_SIM",
+  "status": "CHECKERS_COMPLETE_PENDING_INDEPENDENT_REVIEW",
+  "product_aggregate": "41f3696c10b4f2c88bd914dc4addea6f7c16fc2cf4c60971eae4d118d52d9d0e",
+  "product_snapshot_sha256": "83b51ee051a54f8b1acf7574c0b062237cacd39d91fcfade11fc6fdf94c5f47e",
+  "runs": [
+    {
+      "run": "early_finish-attempt2",
+      "run_json_sha256": "3f7cbfbb1037faed25b69c8362861bb78cde86a80dcd2b0ab93912390f278753",
+      "verdict": "CHECKERS_COMPLETE_PENDING_REVIEW",
+      "reuse_verified": true
+    },
+    {
+      "run": "warm_race-attempt3",
+      "run_json_sha256": "d8887efcf24807028aa3661799567aef6f0bf089a2e95555d8e7f0b7012f1214",
+      "verdict": "CHECKERS_COMPLETE_PENDING_REVIEW",
+      "reuse_verified": true
+    },
+    {
+      "run": "control-attempt3",
+      "run_json_sha256": "a6e1b6abadba254b51ad415d5cd87df70e1027d7b836fbb6dca8066925abe779",
+      "verdict": "CHECKERS_COMPLETE_PENDING_REVIEW",
+      "reuse_verified": true
+    },
+    {
+      "run": "canary_control",
+      "run_json_sha256": "dc0309ab39baa23aea04bc7038fc7f9fa5f1a965314d81203f1d8bcd7e358ae8",
+      "verdict": "EXPECTED_CANARY_REJECTION",
+      "reuse_verified": true
+    },
+    {
+      "run": "canary_data",
+      "run_json_sha256": "fb4f5afe5cdfc676d0bb9d42b55988f7cc5d32116cf15817dd97b792c5974a94",
+      "verdict": "EXPECTED_CANARY_REJECTION",
+      "reuse_verified": true
+    },
+    {
+      "run": "evidence",
+      "run_json_sha256": "7ec85f9a6555ef10db3b4e6fc87b8cef9b8ff0ed2d35b010f3de809107b494c9",
+      "verdict": "CHECKERS_COMPLETE_PENDING_REVIEW",
+      "reuse_verified": true
+    },
+    {
+      "run": "gate_map",
+      "run_json_sha256": "0715e6a2b700de06927c3cfc9167e3ad70ba5647bd5e8de3b129bc5d3fee7018",
+      "verdict": "CHECKERS_COMPLETE_PENDING_REVIEW",
+      "reuse_verified": true
+    }
+  ],
+  "test_assets": {
+    "FINDINGS.md": "1514ed514237c8505a1d6cb5ffddc9e264af4d4c68239ac15b271ee862dbe75b",
+    "freeze_repair1.py": "13f937f2338beb9e4d8bcf40c9af89201d4ff0e5c20c5965c35c273777376a51",
+    "MODEL-CARD.md": "59679d970b95f238d770d66d0a6bcd1499ca358ae211fb4fe2fd570cb4e074d4",
+    "REPAIR-1-RESULTS.md": "5fd3adf026f3caa5d955602e1d85c89d4a7f521d90b6ea2a9bdad1505fb20a37",
+    "run_board_checks.py": "08af4ffe5d1a40877be6ba8fda27756ec05defd390af4e4b39262bc37f17eeb6",
+    "tb_control-before-native-recovery-fix.txt": "980cfa8dbb8ca2a018a25b24f7a6e1c4257c1924652d965a6c3c31844f7ec040",
+    "tb_control.sv": "07b6a68fc2932d44f7ed607d17ed6aac5ddb42f408e4f8154989e2f03f2be24c",
+    "tb_evidence.sv": "8d3cd7a87c73b815d3d3226a3da4ea0e7d28de320cbd4ab909c66fd0f4f67417",
+    "tb_gate_map.sv": "bba187100c2dc8c796f28f6997b77911232c8754e5abe50ddf983082c65fd2de",
+    "TEST-SNAPSHOT.json": "79a6409a210383fa27b011ac7209bdc28e3a520cd532d1561aad832be9a5e3c2"
+  },
+  "limits": [
+    "No full core or official-IP simulation",
+    "No synthesis/STA/CDC/board signoff",
+    "Finite directed protocol schedules"
+  ]
+}

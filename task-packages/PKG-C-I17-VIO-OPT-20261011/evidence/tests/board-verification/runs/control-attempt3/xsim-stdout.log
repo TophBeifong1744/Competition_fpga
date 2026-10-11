@@ -1,0 +1,126 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat Oct 10 19:28:26 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/test/xsim_script.tcl
+# xsim {test} -autoloadwcfg -runall -onfinish quit -onerror quit -sv_seed 17010
+Time resolution is 1 ps
+run -all
+CTRL_EDGE cycle=1 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=2 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=3 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=4 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=5 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=6 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=7 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=8 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=9 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=10 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=11 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=12 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=13 state=2 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=14 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=15 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=16 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=17 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=18 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=19 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=20 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=21 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=22 state=4 cfg=1 start=1 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=23 state=5 cfg=1 start=1 diag=1 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=24 state=6 cfg=1 start=1 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=25 state=7 cfg=1 start=1 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=26 state=8 cfg=1 start=1 diag=0 arm=1 permit=0 stop=0 error=00
+CTRL_EDGE cycle=27 state=9 cfg=1 start=1 diag=0 arm=1 permit=0 stop=0 error=00
+CTRL_EDGE cycle=28 state=9 cfg=1 start=1 diag=0 arm=1 permit=0 stop=0 error=00
+CTRL_EDGE cycle=29 state=9 cfg=1 start=1 diag=0 arm=1 permit=0 stop=0 error=00
+CTRL_EDGE cycle=30 state=9 cfg=1 start=1 diag=0 arm=1 permit=0 stop=0 error=00
+CTRL_EDGE cycle=31 state=10 cfg=1 start=1 diag=0 arm=1 permit=1 stop=0 error=00
+CTRL_EDGE cycle=32 state=11 cfg=1 start=0 diag=0 arm=0 permit=1 stop=1 error=03
+CTRL_EDGE cycle=33 state=11 cfg=1 start=0 diag=0 arm=0 permit=1 stop=0 error=03
+CTRL_EDGE cycle=34 state=11 cfg=1 start=0 diag=0 arm=0 permit=1 stop=0 error=03
+CTRL_EDGE cycle=35 state=11 cfg=1 start=0 diag=0 arm=0 permit=1 stop=0 error=03
+CTRL_EDGE cycle=36 state=12 cfg=1 start=0 diag=0 arm=0 permit=1 stop=0 error=03
+CTRL_EDGE cycle=37 state=12 cfg=1 start=0 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=38 state=13 cfg=0 start=0 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=39 state=13 cfg=0 start=0 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=40 state=13 cfg=0 start=0 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=41 state=13 cfg=0 start=0 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=42 state=13 cfg=0 start=0 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=43 state=13 cfg=0 start=0 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=44 state=13 cfg=0 start=0 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=45 state=13 cfg=0 start=0 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=46 state=13 cfg=0 start=0 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=47 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=04
+CTRL_EDGE cycle=48 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=04
+CTRL_EDGE cycle=49 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=04
+CTRL_EDGE cycle=50 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=04
+CTRL_EDGE cycle=51 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=04
+CTRL_EDGE cycle=52 state=2 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=04
+CTRL_EDGE cycle=53 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=04
+CTRL_EDGE cycle=54 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=04
+CTRL_EDGE cycle=55 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=04
+CTRL_EDGE cycle=56 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=04
+CTRL_EDGE cycle=57 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=04
+CTRL_EDGE cycle=58 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=04
+CTRL_EDGE cycle=59 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=04
+CTRL_EDGE cycle=60 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=04
+CTRL_EDGE cycle=61 state=4 cfg=1 start=1 diag=0 arm=0 permit=0 stop=0 error=04
+CTRL_EDGE cycle=62 state=5 cfg=1 start=1 diag=1 arm=0 permit=0 stop=0 error=04
+CTRL_EDGE cycle=63 state=6 cfg=1 start=1 diag=0 arm=0 permit=0 stop=0 error=04
+CTRL_EDGE cycle=64 state=10 cfg=1 start=1 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=65 state=10 cfg=1 start=1 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=66 state=10 cfg=1 start=1 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=67 state=10 cfg=1 start=1 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=68 state=10 cfg=1 start=1 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=69 state=10 cfg=1 start=1 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=70 state=10 cfg=1 start=1 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=71 state=11 cfg=1 start=0 diag=0 arm=0 permit=1 stop=0 error=04
+CTRL_EDGE cycle=72 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=73 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=74 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=75 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=76 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=77 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=78 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=79 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=80 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=81 state=2 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=82 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=83 state=4 cfg=1 start=1 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=84 state=5 cfg=1 start=1 diag=1 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=85 state=6 cfg=1 start=1 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=86 state=11 cfg=1 start=0 diag=0 arm=0 permit=1 stop=1 error=22
+CTRL_EDGE cycle=87 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=88 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=89 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=90 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=91 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=92 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=93 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=94 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=95 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=96 state=2 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=97 state=3 cfg=1 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=98 state=4 cfg=1 start=1 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=99 state=5 cfg=1 start=1 diag=1 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=100 state=6 cfg=1 start=1 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=101 state=11 cfg=1 start=0 diag=0 arm=0 permit=1 stop=1 error=21
+CTRL_EDGE cycle=102 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=103 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=104 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=105 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=106 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=107 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=01
+CTRL_EDGE cycle=108 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=01
+CTRL_EDGE cycle=109 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=01
+CONTROL_COMPLETE checks=76 pending=0
+$finish called at time : 1087 ns : File "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/tb_control.sv" Line 127
+exit 0
+INFO: [Common 17-206] Exiting xsim at Sat Oct 10 19:28:28 2026...

@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-11",
+  "finding": "C-XDC-003",
+  "primary_mode": "BUILD_FLOW",
+  "files": [
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\i17_vio_pins.xdc",
+      "sha256": "af62827fc01933e0ccd86fe5f50a2d02efe63de8501c8d8b7b4e94566092d1a5"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\i17_vio_cdc_post_synth.xdc",
+      "sha256": "bc073c0b5c9b348d72abc4ea3326c2b5a4fff3a40f00ba6d8766909c67bb2161"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\BOARD-INTERFACE.md",
+      "sha256": "62e1a456768e0fe72f391eb6f45d5e5368ff707d3345e1eee79fde589741e34a"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\XDC-REPAIR-3.md",
+      "sha256": "e030d251e341b9571e16ae7469836bd312ee8cbab295193a4fd6ff29d6c2f339"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\xdc-repair3-check\\static-check.py",
+      "sha256": "207ff2f448ed0259230948962d9b46fee066b7ce00b2571bff91382478a1a59c"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\xdc-repair3-check\\static-check.log",
+      "sha256": "77d49bb774f368b9a117feade6bf8a35714287746c78cceb8a100f4368179546"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\xdc-repair3-check\\native-check.tcl",
+      "sha256": "520ec7d96d4b4c41cbe6613e8a3a9662d0e377a1a624af4c80bf47df5bf5efeb"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\xdc-repair3-check\\fixture.v",
+      "sha256": "2cbd309286a0293f6455ba3c78764ac91d9726783305a98d105c589f8b164397"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\xdc-repair3-check\\native-startup-failures.txt",
+      "sha256": "c1db4616f6615d39ed2987433e1f127182eb4b77a6f4b52e3574e93afe8ae46e"
+    }
+  ],
+  "aggregate_sha256": "2a0de3cba0f04debe9e227ee213ac1be8753ae7d25f9ea2f9f05db39095f33c6",
+  "static": "PASS",
+  "native_read_xdc": "NOT RUN - native startup failure",
+  "full_product_object_checks": "UNVERIFIED",
+  "RTL_unchanged": true,
+  "user_D_project": "NOT MODIFIED",
+  "prior_BOARD_snapshot": "xdc-repair3-check/board-snapshot-before.json",
+  "scope": "two XDC and documentation; prior import scripts no longer used"
+}

@@ -1,0 +1,30 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat Oct 10 19:28:32 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/test/xsim_script.tcl
+# xsim {test} -testplusarg CANARY_CONTROL -autoloadwcfg -runall -onfinish quit -onerror quit -sv_seed 17010
+Time resolution is 1 ps
+run -all
+CTRL_EDGE cycle=1 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=2 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=3 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=4 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=5 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=6 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=7 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=1 error=00
+CTRL_EDGE cycle=8 state=0 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=9 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=10 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=11 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+CTRL_EDGE cycle=12 state=1 cfg=0 start=0 diag=0 arm=0 permit=0 stop=0 error=00
+Fatal: CONTROL_CHECK cycle=12 atomic context snapshot
+Time: 117 ns  Iteration: 0  Process: /tb_control/check  Scope: tb_control.check  File: C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/board-verification/tb_control.sv Line: 25
+$finish called at time : 117 ns
+exit 0
+INFO: [Common 17-206] Exiting xsim at Sat Oct 10 19:28:34 2026...

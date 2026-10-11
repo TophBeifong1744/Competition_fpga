@@ -1,0 +1,28 @@
+{
+  "finding": "C-VIO-EVID-003",
+  "status": "FIXED_PENDING_INDEPENDENT_REVIEW",
+  "board_aggregate": "94ec3200c0a2e9c0ba3c4e701804a9e8decdd8ef9136edcedfa2d594cc55cefc",
+  "all_product_source_hashes_match": true,
+  "runs": [
+    {
+      "run": "gate_map-attempt2",
+      "run_json_sha256": "43490ee81a5e984f76fcf9879aed531ad5596e77ece34c071bf1a80be04bfbfe",
+      "verdict": "CHECKERS_COMPLETE_PENDING_REVIEW",
+      "native_xsim_log_sha256": "8f44ecf7e88d4f158439e7fc89267df8ec5e498a8666f42990d3cef48b76126f",
+      "stdout_sha256": "7ec5aa3e7c024e9bb03466415ff98a6c4c3f47618aea2553a0f1e90359678966"
+    },
+    {
+      "run": "canary_gate",
+      "run_json_sha256": "e853dbc963f6f1534c2440c9e1d0df4b5eac25a111843d92500aa0cba1249a31",
+      "verdict": "EXPECTED_CANARY_REJECTION",
+      "native_xsim_log_sha256": "a12c52ad45bc8db51a121d633216f92473fa9e8b7a20b3cd2f03d860d5605f8a",
+      "stdout_sha256": "5ea5b4f7bfb78a5de60643c7ccd854793e2416819557c43ec51e6332e9eb763d"
+    }
+  ],
+  "test_assets": {
+    "tb_gate_map.sv": "de4d4267e3a7970bfefc471c62de877d5b6fb01004982554e73dbcd900515537",
+    "run_board_checks.py": "e86ef5eda63237bddb517a07f5ebe9af99b59e81d16df153469a88b08b43900e",
+    "C-VIO-EVID-003-RESULTS.md": "67eb5838ccf84683e8317613f7b9b2a358bda0bc744ee371a9aa2d0d55dc26c7",
+    "freeze_gate_canary.py": "ff6ee3ae9c6032511f3555c057f2ac608436eb5c4927bfec4c84c8fbeb322ca7"
+  }
+}

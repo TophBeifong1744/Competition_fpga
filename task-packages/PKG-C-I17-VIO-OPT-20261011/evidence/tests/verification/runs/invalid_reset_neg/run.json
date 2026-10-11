@@ -1,0 +1,70 @@
+{
+  "job": "invalid_reset_neg",
+  "cwd": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\verification\\runs\\invalid_reset_neg",
+  "seed": 17010,
+  "profile": "FUNCTIONAL_ACCEPTANCE",
+  "claim_stage": "FUNCTIONAL_SIM",
+  "sources": {
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\rtl\\motor_drive.v": "5c1a62f19ed0f25c06f22e521df90161dcbe2f835e2bc2dfaaf1b37ff7b41aa9",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\verification\\runs\\invalid_reset_neg\\motor_drive_frozen.v": "d3bfc29ef7d0f4f10a537f8b6ebf6ce8de5df28f6e9d4333bcb5121b0cc3e638",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\verification\\tb_invalid.sv": "7118888227396b2c28e450512dc5f5e9c135e5e7ac7fe6c1a90a6efd3a0747f3"
+  },
+  "original_motor_sha256": "1b47f4c9c7223ba5d8e16bcdd178d2012ca219b8650937b2f4b040af1e0e5294",
+  "runner_sha256": "ed9cae6fa4b999011334fb076bed4703533e337ff11cc9ab1edc542a06338399",
+  "commands": [
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvlog.exe",
+        "--sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\rtl\\motor_drive.v",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\verification\\runs\\invalid_reset_neg\\motor_drive_frozen.v",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\verification\\tb_invalid.sv"
+      ],
+      "exit": 0,
+      "elapsed_s": 0.672,
+      "log": "xvlog-stdout.log"
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xelab.exe",
+        "work.tb_invalid",
+        "--snapshot",
+        "pwm_snapshot",
+        "--debug",
+        "off",
+        "--generic_top",
+        "HZ=61440000",
+        "--generic_top",
+        "RESET_A=-1"
+      ],
+      "exit": 0,
+      "elapsed_s": 0.969,
+      "log": "xelab-stdout.log"
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xsim.exe",
+        "pwm_snapshot",
+        "--runall",
+        "--onerror",
+        "quit",
+        "--onfinish",
+        "quit",
+        "--sv_seed",
+        "17010"
+      ],
+      "exit": 0,
+      "elapsed_s": 2.375,
+      "log": "xsim-stdout.log"
+    }
+  ],
+  "verdict": "EXPECTED_REJECTION_OBSERVED",
+  "raw_hashes": {
+    "xelab-stdout.log": "33ece0ca6536a62c878053caa904f3f1f690ac0d17ab451b8e8dca784b338ee3",
+    "xelab.log": "530a7a31b2473d2b880e3f74a999f77afe8fb0542acd764132d1676566f74fec",
+    "xsim-stdout.log": "baff74c7e0ee8d8e710478cd01e26c0cfb4b8389b30eacf7c2853bda1997ac60",
+    "xsim.log": "738f7d0ccb828d859ea7f941a84bcfddf70c51255e7b074367a7e2302e5f5bc0",
+    "xvlog-stdout.log": "0424255f11cdbc9345eb4c71db52dd405464205c242fe27044467750435c7ee9",
+    "xvlog.log": "8b0fbca57637fc94acaf132c345b1cd2287197cf66f7e3aa71c4bfac30b39bd2"
+  }
+}

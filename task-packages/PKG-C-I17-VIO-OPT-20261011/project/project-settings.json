@@ -1,0 +1,1838 @@
+{
+  "tool": "Vivado 2025.2",
+  "part": "xc7z020clg400-1",
+  "top": "i17_vio_board_top",
+  "language": "Verilog",
+  "simulator_language": "Mixed",
+  "default_library": "xil_defaultlib",
+  "xpm_libraries": [
+    "XPM_CDC",
+    "XPM_MEMORY"
+  ],
+  "native_run": "synth_1",
+  "generic": {
+    "HANN_FILE": "Set to quoted absolute path of this package/project/data/hann-u18f17.mem"
+  },
+  "synthesis_source_order": [
+    {
+      "path": "project/rtl/runtime/angle_command_gate.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/diag_evidence_store.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/diag_record_bank.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/integration/diag_single_source_v1.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/b_backend/doa_math_pkg.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/fft29_official.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/fixed4_leaf.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/forward_window_adapter.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/forward_window_manager.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/c_board/four_mic_live_loop.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/c_board/i17_pwm_gate.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/c_board/i17_vio_control.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/c_board/i17_vio_evidence.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/b_backend/ifft25_official.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/b_backend/pcm4_doa_backend.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/b_backend/pcm4_doa_native_entry.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/b_backend/pcm4_doa_official_entry.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/pcm4_forward_fft_entry.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/pcm4_forward_fft_fixed4.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/pcm4_numeric_preprocess.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/pcm4_window_caller.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/pcm4_window_consumer.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/runtime/runtime_servo_slice.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/integration/signed_angle_map.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/c_board/sound_servo_clock.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/c_board/i17_vio_board_top.sv",
+      "file_type": "SystemVerilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/four_mic_top_forward.v",
+      "file_type": "Verilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/c_board/motor_drive.v",
+      "file_type": "Verilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/pcm4_c1_lifecycle.v",
+      "file_type": "Verilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/pcm4_c1_packet_framer.v",
+      "file_type": "Verilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/pcm4_continuous_axis.v",
+      "file_type": "Verilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/pcm4_live_window_handoff.v",
+      "file_type": "Verilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/pcm4_overlap_framer_bram.v",
+      "file_type": "Verilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/pcm4_source_cancel_observer.v",
+      "file_type": "Verilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/pcm4_window_caller_entry.v",
+      "file_type": "Verilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    },
+    {
+      "path": "project/rtl/a_frontend/pdm_cic3.v",
+      "file_type": "Verilog",
+      "library": "xil_defaultlib",
+      "used_in": [
+        "synthesis",
+        "implementation",
+        "simulation"
+      ]
+    }
+  ],
+  "xci_reference_files": [
+    "project/ip/reference-only/i17_board_ila/i17_board_ila.xci",
+    "project/ip/reference-only/i17_board_vio/i17_board_vio.xci",
+    "project/ip/reference-only/ss_fft29/ss_fft29.xci",
+    "project/ip/reference-only/ss_ifft25/ss_ifft25.xci"
+  ],
+  "constraints": [
+    {
+      "path": "project/sdc/i17_vio_pins.xdc",
+      "used_in": [
+        "synthesis",
+        "implementation"
+      ]
+    },
+    {
+      "path": "project/sdc/i17_vio_cdc_post_synth.xdc",
+      "used_in": [
+        "implementation"
+      ]
+    }
+  ],
+  "verilog_defines": [],
+  "include_dirs": [],
+  "native_filesets": [
+    {
+      "attributes": {
+        "Name": "sources_1",
+        "Type": "DesignSrcs",
+        "RelSrcDir": "$PSRCDIR/sources_1",
+        "RelGenDir": "$PGENDIR/sources_1"
+      },
+      "files": [
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/four_mic_top_forward.v",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/motor_drive.v",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_c1_lifecycle.v",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_c1_packet_framer.v",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_continuous_axis.v",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_live_window_handoff.v",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_overlap_framer_bram.v",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_source_cancel_observer.v",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_window_caller_entry.v",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pdm_cic3.v",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/servo/angle_command_gate.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/diag_evidence_store.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/diag_record_bank.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/product/diag_single_source_v1.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/doa_math_pkg.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/fft29_official.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/fixed4_leaf.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/forward_window_adapter.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/forward_window_manager.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/four_mic_live_loop.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_pwm_gate.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_vio_control.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_vio_evidence.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/ifft25_official.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/pcm4_doa_backend.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/pcm4_doa_native_entry.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/pcm4_doa_official_entry.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_forward_fft_entry.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_forward_fft_fixed4.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_numeric_preprocess.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_window_caller.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_window_consumer.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/servo/runtime_servo_slice.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/product/signed_angle_map.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/project/rtl/servo/sound_servo_clock.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_vio_board_top.sv",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "Name": "DesignMode",
+          "Val": "RTL"
+        },
+        {
+          "Name": "TopModule",
+          "Val": "i17_vio_board_top"
+        },
+        {
+          "Name": "TopAutoSet",
+          "Val": "TRUE"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "Name": "constrs_1",
+        "Type": "Constrs",
+        "RelSrcDir": "$PSRCDIR/constrs_1",
+        "RelGenDir": "$PGENDIR/constrs_1"
+      },
+      "files": [
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/i17_vio_cdc_post_synth.xdc",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            }
+          ]
+        },
+        {
+          "path": "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/i17_vio_pins.xdc",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "Name": "ConstrsType",
+          "Val": "XDC"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "Name": "sim_1",
+        "Type": "SimulationSrcs",
+        "RelSrcDir": "$PSRCDIR/sim_1",
+        "RelGenDir": "$PGENDIR/sim_1"
+      },
+      "files": [],
+      "options": [
+        {
+          "Name": "DesignMode",
+          "Val": "RTL"
+        },
+        {
+          "Name": "TopModule",
+          "Val": "i17_vio_board_top"
+        },
+        {
+          "Name": "TopLib",
+          "Val": "xil_defaultlib"
+        },
+        {
+          "Name": "TopAutoSet",
+          "Val": "TRUE"
+        },
+        {
+          "Name": "TransportPathDelay",
+          "Val": "0"
+        },
+        {
+          "Name": "TransportIntDelay",
+          "Val": "0"
+        },
+        {
+          "Name": "SelectedSimModel",
+          "Val": "rtl"
+        },
+        {
+          "Name": "PamDesignTestbench",
+          "Val": ""
+        },
+        {
+          "Name": "PamDutBypassFile",
+          "Val": "xil_dut_bypass"
+        },
+        {
+          "Name": "PamSignalDriverFile",
+          "Val": "xil_bypass_driver"
+        },
+        {
+          "Name": "PamPseudoTop",
+          "Val": "pseudo_tb"
+        },
+        {
+          "Name": "SrcSet",
+          "Val": "sources_1"
+        },
+        {
+          "Name": "CosimPdi",
+          "Val": ""
+        },
+        {
+          "Name": "CosimPlatform",
+          "Val": ""
+        },
+        {
+          "Name": "CosimElf",
+          "Val": ""
+        },
+        {
+          "Name": "CosimRootfs",
+          "Val": ""
+        },
+        {
+          "Name": "CosimSDfile",
+          "Val": ""
+        },
+        {
+          "Name": "CosimSDDir",
+          "Val": ""
+        },
+        {
+          "Name": "CosimOutDir",
+          "Val": ""
+        },
+        {
+          "Name": "CosimXsa",
+          "Val": ""
+        },
+        {
+          "Name": "CosimAIKernel",
+          "Val": ""
+        },
+        {
+          "Name": "LogicalNoCTop",
+          "Val": ""
+        },
+        {
+          "Name": "LogicalNoCTopLib",
+          "Val": ""
+        },
+        {
+          "Name": "Dmv",
+          "Val": ""
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "Name": "utils_1",
+        "Type": "Utils",
+        "RelSrcDir": "$PSRCDIR/utils_1",
+        "RelGenDir": "$PGENDIR/utils_1"
+      },
+      "files": [],
+      "options": [
+        {
+          "Name": "TopAutoSet",
+          "Val": "TRUE"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "Name": "ss_ifft25",
+        "Type": "BlockSrcs",
+        "RelSrcDir": "$PSRCDIR/ss_ifft25",
+        "RelGenDir": "$PGENDIR/ss_ifft25"
+      },
+      "files": [
+        {
+          "path": "$PSRCDIR/sources_1/ip/ss_ifft25/ss_ifft25.xci",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "Name": "TopModule",
+          "Val": "ss_ifft25"
+        },
+        {
+          "Name": "UseBlackboxStub",
+          "Val": "1"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "Name": "ss_fft29",
+        "Type": "BlockSrcs",
+        "RelSrcDir": "$PSRCDIR/ss_fft29",
+        "RelGenDir": "$PGENDIR/ss_fft29"
+      },
+      "files": [
+        {
+          "path": "$PSRCDIR/sources_1/ip/ss_fft29/ss_fft29.xci",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "Name": "TopModule",
+          "Val": "ss_fft29"
+        },
+        {
+          "Name": "UseBlackboxStub",
+          "Val": "1"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "Name": "i17_board_vio",
+        "Type": "BlockSrcs",
+        "RelSrcDir": "$PSRCDIR/i17_board_vio",
+        "RelGenDir": "$PGENDIR/i17_board_vio"
+      },
+      "files": [
+        {
+          "path": "$PSRCDIR/sources_1/ip/i17_board_vio/i17_board_vio.xci",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "Name": "TopModule",
+          "Val": "i17_board_vio"
+        },
+        {
+          "Name": "UseBlackboxStub",
+          "Val": "1"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "Name": "i17_board_ila",
+        "Type": "BlockSrcs",
+        "RelSrcDir": "$PSRCDIR/i17_board_ila",
+        "RelGenDir": "$PGENDIR/i17_board_ila"
+      },
+      "files": [
+        {
+          "path": "$PSRCDIR/sources_1/ip/i17_board_ila/i17_board_ila.xci",
+          "attributes": [
+            {
+              "Name": "UsedIn",
+              "Val": "synthesis"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "implementation"
+            },
+            {
+              "Name": "UsedIn",
+              "Val": "simulation"
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "Name": "TopModule",
+          "Val": "i17_board_ila"
+        },
+        {
+          "Name": "UseBlackboxStub",
+          "Val": "1"
+        }
+      ]
+    }
+  ],
+  "native_run_attributes": [
+    {
+      "attributes": {
+        "Id": "synth_1",
+        "Type": "Ft3:Synth",
+        "SrcSet": "sources_1",
+        "Part": "xc7z020clg400-1",
+        "ConstrsSet": "constrs_1",
+        "Description": "Vivado Synthesis Defaults",
+        "AutoIncrementalCheckpoint": "true",
+        "WriteIncrSynthDcp": "false",
+        "State": "current",
+        "Dir": "$PRUNDIR/synth_1",
+        "IncludeInArchive": "true",
+        "IsChild": "false",
+        "AutoIncrementalDir": "$PSRCDIR/utils_1/imports/synth_1",
+        "AutoRQSDir": "$PSRCDIR/utils_1/imports/synth_1",
+        "ParallelReportGen": "true"
+      },
+      "children": [
+        {
+          "tag": "Strategy",
+          "attributes": {
+            "Version": "1",
+            "Minor": "2"
+          }
+        },
+        {
+          "tag": "GeneratedRun",
+          "attributes": {
+            "Dir": "$PRUNDIR",
+            "File": "gen_run.xml"
+          }
+        },
+        {
+          "tag": "ReportStrategy",
+          "attributes": {
+            "Name": "Vivado Synthesis Default Reports",
+            "Flow": "Vivado Synthesis 2025"
+          }
+        },
+        {
+          "tag": "Report",
+          "attributes": {
+            "Name": "ROUTE_DESIGN.REPORT_METHODOLOGY",
+            "Enabled": "1"
+          }
+        },
+        {
+          "tag": "RQSFiles",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "Id": "ss_ifft25_synth_1",
+        "Type": "Ft3:Synth",
+        "SrcSet": "ss_ifft25",
+        "Part": "xc7z020clg400-1",
+        "ConstrsSet": "ss_ifft25",
+        "Description": "Vivado Synthesis Defaults",
+        "AutoIncrementalCheckpoint": "false",
+        "WriteIncrSynthDcp": "false",
+        "Dir": "$PRUNDIR/ss_ifft25_synth_1",
+        "IncludeInArchive": "true",
+        "IsChild": "false",
+        "AutoIncrementalDir": "$PSRCDIR/utils_1/imports/ss_ifft25_synth_1",
+        "AutoRQSDir": "$PSRCDIR/utils_1/imports/ss_ifft25_synth_1",
+        "ParallelReportGen": "true"
+      },
+      "children": [
+        {
+          "tag": "Strategy",
+          "attributes": {
+            "Version": "1",
+            "Minor": "2"
+          }
+        },
+        {
+          "tag": "GeneratedRun",
+          "attributes": {
+            "Dir": "$PRUNDIR",
+            "File": "gen_run.xml"
+          }
+        },
+        {
+          "tag": "ReportStrategy",
+          "attributes": {
+            "Name": "Vivado Synthesis Default Reports",
+            "Flow": "Vivado Synthesis 2025"
+          }
+        },
+        {
+          "tag": "Report",
+          "attributes": {
+            "Name": "ROUTE_DESIGN.REPORT_METHODOLOGY",
+            "Enabled": "1"
+          }
+        },
+        {
+          "tag": "RQSFiles",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "Id": "ss_fft29_synth_1",
+        "Type": "Ft3:Synth",
+        "SrcSet": "ss_fft29",
+        "Part": "xc7z020clg400-1",
+        "ConstrsSet": "ss_fft29",
+        "Description": "Vivado Synthesis Defaults",
+        "AutoIncrementalCheckpoint": "false",
+        "WriteIncrSynthDcp": "false",
+        "Dir": "$PRUNDIR/ss_fft29_synth_1",
+        "IncludeInArchive": "true",
+        "IsChild": "false",
+        "AutoIncrementalDir": "$PSRCDIR/utils_1/imports/ss_fft29_synth_1",
+        "AutoRQSDir": "$PSRCDIR/utils_1/imports/ss_fft29_synth_1",
+        "ParallelReportGen": "true"
+      },
+      "children": [
+        {
+          "tag": "Strategy",
+          "attributes": {
+            "Version": "1",
+            "Minor": "2"
+          }
+        },
+        {
+          "tag": "GeneratedRun",
+          "attributes": {
+            "Dir": "$PRUNDIR",
+            "File": "gen_run.xml"
+          }
+        },
+        {
+          "tag": "ReportStrategy",
+          "attributes": {
+            "Name": "Vivado Synthesis Default Reports",
+            "Flow": "Vivado Synthesis 2025"
+          }
+        },
+        {
+          "tag": "Report",
+          "attributes": {
+            "Name": "ROUTE_DESIGN.REPORT_METHODOLOGY",
+            "Enabled": "1"
+          }
+        },
+        {
+          "tag": "RQSFiles",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "Id": "i17_board_vio_synth_1",
+        "Type": "Ft3:Synth",
+        "SrcSet": "i17_board_vio",
+        "Part": "xc7z020clg400-1",
+        "ConstrsSet": "i17_board_vio",
+        "Description": "Vivado Synthesis Defaults",
+        "AutoIncrementalCheckpoint": "false",
+        "WriteIncrSynthDcp": "false",
+        "Dir": "$PRUNDIR/i17_board_vio_synth_1",
+        "IncludeInArchive": "true",
+        "IsChild": "false",
+        "AutoIncrementalDir": "$PSRCDIR/utils_1/imports/i17_board_vio_synth_1",
+        "AutoRQSDir": "$PSRCDIR/utils_1/imports/i17_board_vio_synth_1",
+        "ParallelReportGen": "true"
+      },
+      "children": [
+        {
+          "tag": "Strategy",
+          "attributes": {
+            "Version": "1",
+            "Minor": "2"
+          }
+        },
+        {
+          "tag": "GeneratedRun",
+          "attributes": {
+            "Dir": "$PRUNDIR",
+            "File": "gen_run.xml"
+          }
+        },
+        {
+          "tag": "ReportStrategy",
+          "attributes": {
+            "Name": "Vivado Synthesis Default Reports",
+            "Flow": "Vivado Synthesis 2025"
+          }
+        },
+        {
+          "tag": "Report",
+          "attributes": {
+            "Name": "ROUTE_DESIGN.REPORT_METHODOLOGY",
+            "Enabled": "1"
+          }
+        },
+        {
+          "tag": "RQSFiles",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "Id": "i17_board_ila_synth_1",
+        "Type": "Ft3:Synth",
+        "SrcSet": "i17_board_ila",
+        "Part": "xc7z020clg400-1",
+        "ConstrsSet": "i17_board_ila",
+        "Description": "Vivado Synthesis Defaults",
+        "AutoIncrementalCheckpoint": "false",
+        "WriteIncrSynthDcp": "false",
+        "Dir": "$PRUNDIR/i17_board_ila_synth_1",
+        "IncludeInArchive": "true",
+        "IsChild": "false",
+        "AutoIncrementalDir": "$PSRCDIR/utils_1/imports/i17_board_ila_synth_1",
+        "AutoRQSDir": "$PSRCDIR/utils_1/imports/i17_board_ila_synth_1",
+        "ParallelReportGen": "true"
+      },
+      "children": [
+        {
+          "tag": "Strategy",
+          "attributes": {
+            "Version": "1",
+            "Minor": "2"
+          }
+        },
+        {
+          "tag": "GeneratedRun",
+          "attributes": {
+            "Dir": "$PRUNDIR",
+            "File": "gen_run.xml"
+          }
+        },
+        {
+          "tag": "ReportStrategy",
+          "attributes": {
+            "Name": "Vivado Synthesis Default Reports",
+            "Flow": "Vivado Synthesis 2025"
+          }
+        },
+        {
+          "tag": "Report",
+          "attributes": {
+            "Name": "ROUTE_DESIGN.REPORT_METHODOLOGY",
+            "Enabled": "1"
+          }
+        },
+        {
+          "tag": "RQSFiles",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "Id": "impl_1",
+        "Type": "Ft2:EntireDesign",
+        "Part": "xc7z020clg400-1",
+        "ConstrsSet": "constrs_1",
+        "Description": "Default settings for Implementation.",
+        "AutoIncrementalCheckpoint": "false",
+        "WriteIncrSynthDcp": "false",
+        "State": "current",
+        "SynthRun": "synth_1",
+        "IncludeInArchive": "true",
+        "IsChild": "false",
+        "GenFullBitstream": "true",
+        "AutoIncrementalDir": "$PSRCDIR/utils_1/imports/impl_1",
+        "AutoRQSDir": "$PSRCDIR/utils_1/imports/impl_1",
+        "ParallelReportGen": "true"
+      },
+      "children": [
+        {
+          "tag": "Strategy",
+          "attributes": {
+            "Version": "1",
+            "Minor": "2"
+          }
+        },
+        {
+          "tag": "ReportStrategy",
+          "attributes": {
+            "Name": "Vivado Implementation Default Reports",
+            "Flow": "Vivado Implementation 2025"
+          }
+        },
+        {
+          "tag": "Report",
+          "attributes": {
+            "Name": "ROUTE_DESIGN.REPORT_METHODOLOGY",
+            "Enabled": "1"
+          }
+        },
+        {
+          "tag": "RQSFiles",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "Id": "ss_ifft25_impl_1",
+        "Type": "Ft2:EntireDesign",
+        "Part": "xc7z020clg400-1",
+        "ConstrsSet": "ss_ifft25",
+        "Description": "Default settings for Implementation.",
+        "AutoIncrementalCheckpoint": "false",
+        "WriteIncrSynthDcp": "false",
+        "SynthRun": "ss_ifft25_synth_1",
+        "IncludeInArchive": "false",
+        "IsChild": "false",
+        "GenFullBitstream": "true",
+        "AutoIncrementalDir": "$PSRCDIR/utils_1/imports/ss_ifft25_impl_1",
+        "AutoRQSDir": "$PSRCDIR/utils_1/imports/ss_ifft25_impl_1",
+        "ParallelReportGen": "true"
+      },
+      "children": [
+        {
+          "tag": "Strategy",
+          "attributes": {
+            "Version": "1",
+            "Minor": "2"
+          }
+        },
+        {
+          "tag": "ReportStrategy",
+          "attributes": {
+            "Name": "Vivado Implementation Default Reports",
+            "Flow": "Vivado Implementation 2025"
+          }
+        },
+        {
+          "tag": "Report",
+          "attributes": {
+            "Name": "ROUTE_DESIGN.REPORT_METHODOLOGY",
+            "Enabled": "1"
+          }
+        },
+        {
+          "tag": "RQSFiles",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "Id": "ss_fft29_impl_1",
+        "Type": "Ft2:EntireDesign",
+        "Part": "xc7z020clg400-1",
+        "ConstrsSet": "ss_fft29",
+        "Description": "Default settings for Implementation.",
+        "AutoIncrementalCheckpoint": "false",
+        "WriteIncrSynthDcp": "false",
+        "SynthRun": "ss_fft29_synth_1",
+        "IncludeInArchive": "false",
+        "IsChild": "false",
+        "GenFullBitstream": "true",
+        "AutoIncrementalDir": "$PSRCDIR/utils_1/imports/ss_fft29_impl_1",
+        "AutoRQSDir": "$PSRCDIR/utils_1/imports/ss_fft29_impl_1",
+        "ParallelReportGen": "true"
+      },
+      "children": [
+        {
+          "tag": "Strategy",
+          "attributes": {
+            "Version": "1",
+            "Minor": "2"
+          }
+        },
+        {
+          "tag": "ReportStrategy",
+          "attributes": {
+            "Name": "Vivado Implementation Default Reports",
+            "Flow": "Vivado Implementation 2025"
+          }
+        },
+        {
+          "tag": "Report",
+          "attributes": {
+            "Name": "ROUTE_DESIGN.REPORT_METHODOLOGY",
+            "Enabled": "1"
+          }
+        },
+        {
+          "tag": "RQSFiles",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "Id": "i17_board_vio_impl_1",
+        "Type": "Ft2:EntireDesign",
+        "Part": "xc7z020clg400-1",
+        "ConstrsSet": "i17_board_vio",
+        "Description": "Default settings for Implementation.",
+        "AutoIncrementalCheckpoint": "false",
+        "WriteIncrSynthDcp": "false",
+        "SynthRun": "i17_board_vio_synth_1",
+        "IncludeInArchive": "false",
+        "IsChild": "false",
+        "GenFullBitstream": "true",
+        "AutoIncrementalDir": "$PSRCDIR/utils_1/imports/i17_board_vio_impl_1",
+        "AutoRQSDir": "$PSRCDIR/utils_1/imports/i17_board_vio_impl_1",
+        "ParallelReportGen": "true"
+      },
+      "children": [
+        {
+          "tag": "Strategy",
+          "attributes": {
+            "Version": "1",
+            "Minor": "2"
+          }
+        },
+        {
+          "tag": "ReportStrategy",
+          "attributes": {
+            "Name": "Vivado Implementation Default Reports",
+            "Flow": "Vivado Implementation 2025"
+          }
+        },
+        {
+          "tag": "Report",
+          "attributes": {
+            "Name": "ROUTE_DESIGN.REPORT_METHODOLOGY",
+            "Enabled": "1"
+          }
+        },
+        {
+          "tag": "RQSFiles",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "Id": "i17_board_ila_impl_1",
+        "Type": "Ft2:EntireDesign",
+        "Part": "xc7z020clg400-1",
+        "ConstrsSet": "i17_board_ila",
+        "Description": "Default settings for Implementation.",
+        "AutoIncrementalCheckpoint": "false",
+        "WriteIncrSynthDcp": "false",
+        "SynthRun": "i17_board_ila_synth_1",
+        "IncludeInArchive": "false",
+        "IsChild": "false",
+        "GenFullBitstream": "true",
+        "AutoIncrementalDir": "$PSRCDIR/utils_1/imports/i17_board_ila_impl_1",
+        "AutoRQSDir": "$PSRCDIR/utils_1/imports/i17_board_ila_impl_1",
+        "ParallelReportGen": "true"
+      },
+      "children": [
+        {
+          "tag": "Strategy",
+          "attributes": {
+            "Version": "1",
+            "Minor": "2"
+          }
+        },
+        {
+          "tag": "ReportStrategy",
+          "attributes": {
+            "Name": "Vivado Implementation Default Reports",
+            "Flow": "Vivado Implementation 2025"
+          }
+        },
+        {
+          "tag": "Report",
+          "attributes": {
+            "Name": "ROUTE_DESIGN.REPORT_METHODOLOGY",
+            "Enabled": "1"
+          }
+        },
+        {
+          "tag": "RQSFiles",
+          "attributes": {}
+        }
+      ]
+    }
+  ],
+  "portable_project_elaboration": "NOT RUN",
+  "native_read_commands_reference": "evidence/synthesis/native-synthesis.tcl.txt"
+}

@@ -1,0 +1,65 @@
+{
+  "job": "canary_gate",
+  "cwd": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\board-verification\\runs\\canary_gate",
+  "seed": 17010,
+  "claim_stage": "FUNCTIONAL_SIM",
+  "scope": "Controller/storage/gate only; no core algorithm claim",
+  "sources": {
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\board-verification\\tb_gate_map.sv": "de4d4267e3a7970bfefc471c62de877d5b6fb01004982554e73dbcd900515537",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\rtl\\i17_pwm_gate.sv": "9efdfdecdcc8ce27e2881a5c3647173f2656bcbbbaba85f6422c15e2f56b8e25",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\product\\signed_angle_map.sv": "4355c1486300d7d5f5677a9619327c86db7da45edba915a5eb3f65e59132be38"
+  },
+  "contract_sha256": "4c6d5f001f171076a3d091cd3599c923b08f5451322813200a21316bba2d19ff",
+  "product_snapshot_sha256": "3c0a049b173b9e6f90d81cc1cee9292e616a0f3e38c2a01c6b747c9c9c5c49a5",
+  "commands": [
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvlog.exe",
+        "--sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\board-verification\\tb_gate_map.sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\rtl\\i17_pwm_gate.sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\product\\signed_angle_map.sv"
+      ],
+      "exit": 0,
+      "elapsed_s": 0.562
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xelab.exe",
+        "work.tb_gate_map",
+        "--snapshot",
+        "test",
+        "--debug",
+        "off"
+      ],
+      "exit": 0,
+      "elapsed_s": 1.25
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xsim.exe",
+        "test",
+        "--runall",
+        "--onerror",
+        "quit",
+        "--onfinish",
+        "quit",
+        "--sv_seed",
+        "17010",
+        "--testplusarg",
+        "CANARY_GATE"
+      ],
+      "exit": 0,
+      "elapsed_s": 2.438
+    }
+  ],
+  "verdict": "EXPECTED_CANARY_REJECTION",
+  "log_hashes": {
+    "xelab-stdout.log": "49d309efa9c724970502a7f8b8b9c4543777f6afde832d61e471a1b2c48589ff",
+    "xelab.log": "c11df72e6a88a043ce19fdea4c0d58e2dc411346e97d94bdb90eff50c605c855",
+    "xsim-stdout.log": "5ea5b4f7bfb78a5de60643c7ccd854793e2416819557c43ec51e6332e9eb763d",
+    "xsim.log": "a12c52ad45bc8db51a121d633216f92473fa9e8b7a20b3cd2f03d860d5605f8a",
+    "xvlog-stdout.log": "d48e791758b29f0ff4c20c91f0b658346ccabd39cd441f1ec4e1e5d5e7c90eae",
+    "xvlog.log": "82fcfe8d1eefcfa0d764fc63ad27d7962d675b919bf177b957bc8c6e1435d7a0"
+  }
+}

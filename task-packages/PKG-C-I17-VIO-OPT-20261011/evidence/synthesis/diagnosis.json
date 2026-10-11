@@ -1,0 +1,315 @@
+{
+  "captured_at": "2026-10-11T11:33:00.024902+08:00",
+  "mode": "ANALYZE",
+  "claim": "Read-only synthesis runtime diagnosis; not synthesis completion/resource fit/timing sign-off",
+  "project": "D:\\vavido_project\\i17_live_loop\\project\\par\\i17_live_loop\\i17_live_loop.xpr",
+  "top": "i17_vio_board_top",
+  "part": "xc7z020clg400-1",
+  "tool": "Vivado 2025.2",
+  "last_session": "2026-10-11T10:49:20+08:00",
+  "latest_tail": [
+    "---------------------------------------------------------------------------------",
+    "---------------------------------------------------------------------------------",
+    "Finished Applying XDC Timing Constraints : Time (s): cpu = 00:23:32 ; elapsed = 00:24:07 . Memory (MB): peak = 3779.016 ; gain = 2960.348",
+    "---------------------------------------------------------------------------------",
+    "---------------------------------------------------------------------------------",
+    "Start Timing Optimization",
+    "---------------------------------------------------------------------------------",
+    "WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through u_core/u_calleri_2/a_stop_valid'"
+  ],
+  "stage_seconds_cumulative": {
+    "rtl_elaboration": 20,
+    "rtl_optimization_phase_2": 134,
+    "cross_boundary_area_optimization": 1291,
+    "applying_xdc_end": 1447
+  },
+  "stage_difference_seconds": {
+    "rtl_optimization_2_to_area_done": 1157,
+    "area_done_to_xdc_done_including_resource_reports": 156
+  },
+  "findings": [
+    {
+      "id": "C-SYNTH-SLOW-001",
+      "status": "CONFIRMED_STRUCTURE_STRONGLY_SUPPORTED_CAUSE",
+      "description": "192-bit arithmetic helpers include 96-step combinational trial-square sqrt, division/remainder and dynamic shift through general division. FSM serializes bins but not the internal combinational arithmetic.",
+      "source": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\backend\\doa_math_pkg.sv",
+      "source_lines": [
+        3,
+        4,
+        16,
+        22,
+        327,
+        334,
+        340
+      ],
+      "native_dsp_preliminary_rows": 3884,
+      "native_dsp_mapping_accepted": 220,
+      "native_dsp_mapping_rejected_gt220": 3658,
+      "limits": "Counts are inference/mapping records, not final resource utilization. Generated GB/q2 names cannot be uniquely mapped to individual source expressions."
+    },
+    {
+      "id": "C-SYNTH-SLOW-002",
+      "status": "CONFIRMED_STRUCTURE_AND_INFERENCE",
+      "description": "Large synchronous-write/asynchronous-read memories infer RAM64M distributed RAM. No evidence of board-level accidental depth/instance multiplication.",
+      "sources": [
+        {
+          "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\pcm4_forward_fft_fixed4.sv",
+          "lines": [
+            82,
+            164,
+            325
+          ],
+          "shape": "8192x58"
+        },
+        {
+          "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\pcm4_continuous_axis.v",
+          "lines": [
+            18,
+            19,
+            39,
+            64
+          ],
+          "shape": "2 separate 1024x256 instances"
+        }
+      ],
+      "limits": "Preliminary RAM reports are not final device utilization."
+    },
+    {
+      "id": "C-SYNTH-SLOW-003",
+      "status": "VIO_NOT_PRIMARY_EVIDENCE_TARGET",
+      "description": "Official VIO and ILA are OOC: 81s and 157s. Main reads their generated stubs; it does not re-synthesize the official internal RTL. C-added control/result storage and observation still add area and may preserve logic.",
+      "limits": "No ablation comparison or per-cone runtime profile. Do not claim zero contribution from C additions."
+    },
+    {
+      "id": "C-STA-LOOP-001",
+      "status": "CONFIRMED_STRUCTURAL_LOOP_FUNCTIONAL_REACHABILITY_NOT_SIGNED",
+      "warning": "[Synth 8-326] inferred exception to break timing loop: set_false_path -through u_core/u_calleri_2/a_stop_valid",
+      "captured_log_line": 49219,
+      "source_chain": [
+        "pcm4_window_caller.sv:346 a_stop_valid=stop_req_valid",
+        "forward_window_adapter.sv:583 manager.stop_valid drives stop_req_valid",
+        "forward_window_manager.sv:75,91 source_fault includes local_cancel and gates stop_valid",
+        "forward_window_adapter.sv:592 local_cancel_now OR pending_cancel feeds local_cancel",
+        "pcm4_window_caller.sv:432 a_stop_valid feeds observer.stop_valid",
+        "pcm4_source_cancel_observer.v:65-67 stop_fire feeds unexpected_close; :88-90 feeds local_cancel_now"
+      ],
+      "functional_boundary": "Lifecycle closing and stop_ready appear mutually exclusive in legal states (pcm4_c1_lifecycle.v:132-144); therefore this is not proof of an actually sensitizable oscillation or deadlock. No formal/SIM/STA proof performed.",
+      "runtime_attribution": "Duration attributable to loop resolution is unknown. Do not claim it alone explains the synthesis runtime.",
+      "recommendation": "Remove or prove/refactor structural stop/cancel feedback while preserving cancellation semantics; do not treat the automatically inferred false-path as timing sign-off.",
+      "aliases": [
+        "C-SYNTH-LOOP-004"
+      ],
+      "severity": "HIGH",
+      "origin": "Unchanged A frozen parent RTL; C VIO wrapper drives diag_stop but did not create this internal loop.",
+      "independent_review": "Read-only fpga_cdc_timing_reviewer confirms structural loop and legal-state mutual-exclusion boundary; no netlist/formal/board sign-off."
+    }
+  ],
+  "host_sample": {
+    "main_pid": 32052,
+    "cpu_seconds_delta_in_12s": 11.88,
+    "main_private_gib": 4.87,
+    "main_working_set_gib": 3.53,
+    "physical_total_gib": 31.692,
+    "physical_available_gib": 7.411,
+    "memory_load_percent": 76,
+    "commit_headroom_gib": 1.453,
+    "limits": "Point sample; no paging-rate measurement. CPU activity and no allocation-failure log do not prove bounded completion. Low commit headroom may add pressure but is not proven primary cause."
+  },
+  "constraints": {
+    "main_input_clock_ns": 20.0,
+    "native_main_reads": "in-context official IP XDC and i17_vio_pins.xdc",
+    "cdc_file": "implementation only",
+    "global_false_path_added": false,
+    "limits": "No full STA or clock report yet; no observed erroneous 100MHz OOC clock injected into main."
+  },
+  "source_identity": [
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\backend\\doa_math_pkg.sv",
+      "sha256": "9f6ee318008b25a10ee503eb754cc74f9d505ca3024ccf868196920eae8a425b"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\backend\\pcm4_doa_backend.sv",
+      "sha256": "773740841e9fb4ea0c5d0f78e14f2a39a22fdcbf8bac02cf99ce53b60134376a"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\backend\\pcm4_doa_native_entry.sv",
+      "sha256": "1c72103ff91c75b29771d9e99a699f03bd05ded55788e0da0d271a3921af93ef"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\backend\\ifft25_official.sv",
+      "sha256": "954e0b69a8153ab4556cbf53600eb44f4e04fc1f5c80ad088e784ea9b5f75fe9"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\backend\\pcm4_doa_official_entry.sv",
+      "sha256": "4ee1243c5dbebb81e393ede6645164456c13627aa7f947c0bc72564d43d6b64b"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\diag_evidence_store.sv",
+      "sha256": "92f3a4fb653f20527937a11608541f6e04122a41c86c6733fd48f2c0487217c5"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\diag_record_bank.sv",
+      "sha256": "1fcee6a5d075cf38b5be8df7a51265b0d6b8b351667428032b11d071bbfa62d0"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\fft29_official.sv",
+      "sha256": "4d8da1ae958771d47ea7149c9413f5dd56cd1c660d0e39b12c7800844ab84506"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\fixed4_leaf.sv",
+      "sha256": "1f2a47956b34872f2625fcb262166eee73d88044c84415c8dedb0e3258254efa"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\forward_window_adapter.sv",
+      "sha256": "34a8acb10da5e15fd828de5120562c15c94ae767de0267fd07a4d056abf3f3e6"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\forward_window_manager.sv",
+      "sha256": "31ed3ba5ed64faa83a0713bb49a9a7d9f116162df39f81f7ee1180fe1f38b9b6"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\four_mic_top_forward.v",
+      "sha256": "61227e0fcb4c0bfaf5cbbef5ebc80c50d6dd508ad004195c235fe1299804458f"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\pcm4_c1_lifecycle.v",
+      "sha256": "8ada08532041486b95b41eca1c3026028b82d07463c2dfe8ff299e5edfcb8665"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\pcm4_c1_packet_framer.v",
+      "sha256": "ce01d9a88fd3552a1e751e0efd82669be3a2cbab0fd0e9f81a9c3b36de06e396"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\pcm4_continuous_axis.v",
+      "sha256": "06772cd7bb97ca2a6a69099d22a294c1d3994cb2496787d44ee0d79664a85a06"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\pcm4_forward_fft_entry.sv",
+      "sha256": "b15446dca03eee051977ace3234563002d4175a809ec41dcd084b7259d6b486a"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\pcm4_forward_fft_fixed4.sv",
+      "sha256": "0c8e402320a90a5d72c858952f9461bc869ecb91a4f96b5b7375db90c5d8c587"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\pcm4_live_window_handoff.v",
+      "sha256": "8c8e0655a4b7c147cabb79d891a3e4af7530b5e8b1fbb7654ae24458435d1443"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\pcm4_numeric_preprocess.sv",
+      "sha256": "9eb9b471d562408a5126c51d410959ef6085af6a6d51bd54eff77adfdf11cdf6"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\pcm4_overlap_framer_bram.v",
+      "sha256": "389c8792fc73f2aee798564c6ea30a71eedb7dea8c4fa9ad88d86da0b8f2e52e"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\pcm4_source_cancel_observer.v",
+      "sha256": "1b78b3043901c1a722b652465adf9a7e299e13e1eb53a444e45c13af1ee37e55"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\pcm4_window_caller.sv",
+      "sha256": "e98c5a4eb5fc4e2f47ae9bb09041c56ffb6244f9115ebe5703ee67afc85f6b77"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\pcm4_window_caller_entry.v",
+      "sha256": "c0082c3de7b4b25351f30ec815dcf09bee4ab2d04b97a10db7f8d4c398397c78"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\pcm4_window_consumer.sv",
+      "sha256": "9a3b56c14c7ee0a6b499143bc00afd792a30c15894949c43d53fb8f708fb3943"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\parent\\rtl\\pdm_cic3.v",
+      "sha256": "a80c176053688662cd8bb47f98edcadeb9b758d514365724fd8b6ffd2120573d"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\servo\\angle_command_gate.sv",
+      "sha256": "ff7a6ebd08182032c0da34baa8b89a5cd6c324f4cfffbd621ae50c0096dc5b7e"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\rtl\\motor_drive.v",
+      "sha256": "5c1a62f19ed0f25c06f22e521df90161dcbe2f835e2bc2dfaaf1b37ff7b41aa9"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\inputs\\servo\\runtime_servo_slice.sv",
+      "sha256": "65db004dc6a0360f557fb65342198f0eb0c277c89126f09cfea7a7b0ccb2bb38"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\product\\diag_single_source_v1.sv",
+      "sha256": "005405c818577e15fb0b8e2023c89d3dd87b9cc826eea3f80c3b6ea2ec0c6865"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\inputs\\product\\signed_angle_map.sv",
+      "sha256": "4355c1486300d7d5f5677a9619327c86db7da45edba915a5eb3f65e59132be38"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\rtl\\four_mic_live_loop.sv",
+      "sha256": "21d4decb91e0850d2e7634f4dd1dcd212552e500151b1ec79d564d1bd9f101e4"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\project\\rtl\\servo\\sound_servo_clock.sv",
+      "sha256": "a625b9d64142451c2ec87af60dd3b04566b76e8b7b457486053b61ff6453302a"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\rtl\\i17_vio_control.sv",
+      "sha256": "9f7bc21add0fc4166c678882d5584ef318e97ba4c5238cb05fa71b29b9574802"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\rtl\\i17_vio_evidence.sv",
+      "sha256": "d6b7096d55bdcc44ff275bdad2b208c25092ad6e9668aff4edcd83dcac76fc6a"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\rtl\\i17_pwm_gate.sv",
+      "sha256": "9efdfdecdcc8ce27e2881a5c3647173f2656bcbbbaba85f6422c15e2f56b8e25"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-i19-live-loop-c-20261010\\board-prep\\rtl\\i17_vio_board_top.sv",
+      "sha256": "cfe7db7e9989c1f9e36e413de8a39fd76d87002dbbb0e30b438bca019c20264a"
+    }
+  ],
+  "native_evidence": [
+    {
+      "original": "D:\\vavido_project\\i17_live_loop\\project\\par\\i17_live_loop\\i17_live_loop.runs\\synth_1\\runme.log",
+      "captured_file": "main-runme.log",
+      "bytes": 4074216,
+      "sha256": "cb26d7817bd027f3d185b153bbe716863520f0a6740ad4db475b4ba74adae067"
+    },
+    {
+      "original": "D:\\vavido_project\\i17_live_loop\\project\\par\\i17_live_loop\\i17_live_loop.runs\\synth_1\\i17_vio_board_top.tcl",
+      "captured_file": "native-synthesis.tcl.txt",
+      "bytes": 12334,
+      "sha256": "e33abeca07f01ec05902569e00bfc681980dbde7f591bee618abafd69c0f62a4"
+    },
+    {
+      "original": "D:\\vavido_project\\i17_live_loop\\project\\par\\i17_live_loop\\i17_live_loop.xpr",
+      "captured_file": "project.xpr.reference.xml",
+      "bytes": 37587,
+      "sha256": "dbbbb3d0560d0102ff11b41316df8d1b8bb7b5ed3c86211fc87226d17caf70cb"
+    },
+    {
+      "original": "D:\\vavido_project\\i17_live_loop\\project\\par\\i17_live_loop\\i17_live_loop.runs\\i17_board_vio_synth_1\\runme.log",
+      "captured_file": "vio-runme.log",
+      "bytes": 29000,
+      "sha256": "80da14809e04290ad25d4230ef9dd1f86eb2cedfd5ea705bbfba173b70e9c838"
+    },
+    {
+      "original": "D:\\vavido_project\\i17_live_loop\\project\\par\\i17_live_loop\\i17_live_loop.runs\\i17_board_ila_synth_1\\runme.log",
+      "captured_file": "ila-runme.log",
+      "bytes": 61946,
+      "sha256": "5bdbfed9e255fb833bc6335a5f3869094e299210658ff74bf8d707a9438a3ecb"
+    }
+  ],
+  "next_steps": [
+    "Address/prove the reported stop/cancel structural timing loop; do not add a hand-written broad false path to hide it.",
+    "Prefer a budgeted multi-cycle/shared arithmetic architecture for sqrt/div/normalization, preserving numerical rounding and valid/error semantics; latency/throughput/cancel contract must be chosen before change.",
+    "For large buffers, use synchronous-read BRAM structure with correct prefetch/valid/backpressure alignment; do not merely force ram_style.",
+    "Retain current run for final utilization if desired; do not blindly repeat synthesis or remove VIO as presumed fix."
+  ],
+  "not_performed": [
+    "No product RTL/XDC/IP/project modification",
+    "No new Vivado invocation or stop/restart",
+    "No synthesis acceptance or final resource/timing verdict",
+    "No external team publication"
+  ]
+}

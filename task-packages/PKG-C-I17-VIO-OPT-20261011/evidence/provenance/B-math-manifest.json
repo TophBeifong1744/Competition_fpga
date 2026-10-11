@@ -1,0 +1,23 @@
+{
+  "schema": "soundsight-doa-math-binding-v1",
+  "r2_sha256": "30a9a550d4303d464dc2e56d8b2ce38774b49c1d8e313bc70efbc0c4b06c5924",
+  "phat_source": {
+    "commit": "ad30bda694abc946db045192385ebdf1b8e1a956",
+    "path": "task-packages/PKG-B-ALG/tasks/phat-fixed-03/phat_model.py",
+    "sha256": "84eaa9691f62aba7164e3172aa94b2e361cb99672647477d98f8b3f3889f3144"
+  },
+  "reciprocal": {
+    "entries": 256,
+    "format": "unsigned F30 case ROM ascending index",
+    "formula": "RNE((2^30)*512/(513+2*k))",
+    "u32le_sha256": "e5dacb7272fa649d097ffca48582b52e92e4e61b5ecb486aa539eb149e5d286b"
+  },
+  "atan": {
+    "entries": 24,
+    "format": "signed degree Q16 ascending iteration case ROM",
+    "source_file": "cordic-atan-q16-i32le.bin",
+    "source_sha256": "c2842f0188edffcf6a33b62cfc681c34c7bc83b7f363ca2eac85cc4c00a1d09d"
+  },
+  "implementation": "new synthesizable hardware transcription, old Python sources remain sole old research authority",
+  "cost_timing": "UNVERIFIED; wide combinational integral divisions and sqrt, no measured service bound"
+}

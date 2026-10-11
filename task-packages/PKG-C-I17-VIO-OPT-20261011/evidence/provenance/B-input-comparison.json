@@ -1,0 +1,90 @@
+{
+  "new_commit": "31c5c7bbcc9c70a943372898e9101beaac2ce9e3",
+  "context": "父 source-executed 与新 source-git；两 JSON 仅 CRLF/LF，保留父字节",
+  "files": [
+    {
+      "name": "README.md",
+      "parent_sha256": "088fd8010f58ee7c7d2627a15bf96e85683bcec6dc15836d1380118bc87bc64f",
+      "new_git_sha256": "6fe1534812aaefc4ca74de5e70ec03e9f461010305016d55b6f582a483626226",
+      "binding_sha256": "6fe1534812aaefc4ca74de5e70ec03e9f461010305016d55b6f582a483626226",
+      "raw_byte_equal": false,
+      "binding": "new Git original bytes"
+    },
+    {
+      "name": "SOURCES.txt",
+      "parent_sha256": "e1d99bd5c912024ae3e35f706b0cd35f0a2f3e11a61674861ee2724445e7355b",
+      "new_git_sha256": "e1d99bd5c912024ae3e35f706b0cd35f0a2f3e11a61674861ee2724445e7355b",
+      "binding_sha256": "e1d99bd5c912024ae3e35f706b0cd35f0a2f3e11a61674861ee2724445e7355b",
+      "raw_byte_equal": true,
+      "binding": "parent original bytes"
+    },
+    {
+      "name": "doa_math_pkg.sv",
+      "parent_sha256": "9f6ee318008b25a10ee503eb754cc74f9d505ca3024ccf868196920eae8a425b",
+      "new_git_sha256": "9f6ee318008b25a10ee503eb754cc74f9d505ca3024ccf868196920eae8a425b",
+      "binding_sha256": "9f6ee318008b25a10ee503eb754cc74f9d505ca3024ccf868196920eae8a425b",
+      "raw_byte_equal": true,
+      "binding": "parent original bytes"
+    },
+    {
+      "name": "generate_simulation.tcl",
+      "parent_sha256": "2f7a3a1d23e780f75100766069cdf404de4c98c1e839bc46897266287f361901",
+      "new_git_sha256": "2f7a3a1d23e780f75100766069cdf404de4c98c1e839bc46897266287f361901",
+      "binding_sha256": "2f7a3a1d23e780f75100766069cdf404de4c98c1e839bc46897266287f361901",
+      "raw_byte_equal": true,
+      "binding": "parent original bytes"
+    },
+    {
+      "name": "ifft25_official.sv",
+      "parent_sha256": "954e0b69a8153ab4556cbf53600eb44f4e04fc1f5c80ad088e784ea9b5f75fe9",
+      "new_git_sha256": "954e0b69a8153ab4556cbf53600eb44f4e04fc1f5c80ad088e784ea9b5f75fe9",
+      "binding_sha256": "954e0b69a8153ab4556cbf53600eb44f4e04fc1f5c80ad088e784ea9b5f75fe9",
+      "raw_byte_equal": true,
+      "binding": "parent original bytes"
+    },
+    {
+      "name": "math-manifest.json",
+      "parent_sha256": "074d823d8caa29b67a793a817b3de7d6a44ae190f9e986c27ce6f305577285e8",
+      "new_git_sha256": "f7830fe58b4878f89a9d284b53ffd815dbcceed153cd604584b5eaf8811ec708",
+      "binding_sha256": "074d823d8caa29b67a793a817b3de7d6a44ae190f9e986c27ce6f305577285e8",
+      "raw_byte_equal": false,
+      "binding": "parent original bytes",
+      "parsed_equal": true,
+      "crlf_lf_only": true
+    },
+    {
+      "name": "official-ip.json",
+      "parent_sha256": "c2029fe7843d7831edfd45af29e9091ab8336a293e046efb27b6059448176c44",
+      "new_git_sha256": "3ce62ca03de6c502b3e3849b2af053e1db29fd6ca10fbd2e0bd9ff6df5c555da",
+      "binding_sha256": "c2029fe7843d7831edfd45af29e9091ab8336a293e046efb27b6059448176c44",
+      "raw_byte_equal": false,
+      "binding": "parent original bytes",
+      "parsed_equal": true,
+      "crlf_lf_only": true
+    },
+    {
+      "name": "pcm4_doa_backend.sv",
+      "parent_sha256": "56af43ad518143e440a8db5c3a6408d0269da2ebf8a2617cdbb5153179863873",
+      "new_git_sha256": "773740841e9fb4ea0c5d0f78e14f2a39a22fdcbf8bac02cf99ce53b60134376a",
+      "binding_sha256": "773740841e9fb4ea0c5d0f78e14f2a39a22fdcbf8bac02cf99ce53b60134376a",
+      "raw_byte_equal": false,
+      "binding": "new Git original bytes"
+    },
+    {
+      "name": "pcm4_doa_native_entry.sv",
+      "parent_sha256": "1c72103ff91c75b29771d9e99a699f03bd05ded55788e0da0d271a3921af93ef",
+      "new_git_sha256": "1c72103ff91c75b29771d9e99a699f03bd05ded55788e0da0d271a3921af93ef",
+      "binding_sha256": "1c72103ff91c75b29771d9e99a699f03bd05ded55788e0da0d271a3921af93ef",
+      "raw_byte_equal": true,
+      "binding": "parent original bytes"
+    },
+    {
+      "name": "pcm4_doa_official_entry.sv",
+      "parent_sha256": "4ee1243c5dbebb81e393ede6645164456c13627aa7f947c0bc72564d43d6b64b",
+      "new_git_sha256": "4ee1243c5dbebb81e393ede6645164456c13627aa7f947c0bc72564d43d6b64b",
+      "binding_sha256": "4ee1243c5dbebb81e393ede6645164456c13627aa7f947c0bc72564d43d6b64b",
+      "raw_byte_equal": true,
+      "binding": "parent original bytes"
+    }
+  ]
+}
