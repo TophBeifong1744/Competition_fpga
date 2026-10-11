@@ -1,0 +1,14 @@
+{
+  "task": "C-EVID-LUT-001",
+  "reviewed_snapshot": "D native i17_vio_evidence.sv SHA256 d6b7096d55bdcc44ff275bdad2b208c25092ad6e9668aff4edcd83dcac76fc6a; opt DCP 80cff1cac27b09b1a583d3689316eb465ce30240aac5369321b498c8f14f8d05",
+  "authorization": "User requested fixing the C evidence resource problem; root delegated the bounded combination-only word_for optimization.",
+  "mode": "QUICK",
+  "primary_mode": "RTL_IMPLEMENTATION",
+  "product_path": "project/rtl/c_board/i17_vio_evidence.sv",
+  "scope": "Replace only the 6656-bit record-kind mux followed by variable word slice with per-record bounded 32-bit selection followed by kind selection.",
+  "immutable": ["ports and widths", "all records and LSW-first order", "partial-word zero padding", "invalid kind/index results including four-state condition behavior", "diag_mem index0..63 regardless of captured_words", "VIO return edge", "ILA word/meta/magic/cycle alignment", "registers and state machines", "ready/valid/release/STOP/reset semantics", "all A/B sources", "D native project and sources", "old packages and untracked user work"],
+  "cycle_contract_delta": "NONE",
+  "clock_reset_cdc": "Existing single clk/rst_n only; no new state or crossing",
+  "validation_sequence": ["Freeze candidate source and exact non-word_for equality", "Sequential author self-tests: existing tb_evidence and independent exhaustive word/index/padding checker, with old-function differential as secondary evidence", "Isolated single-module old/new Vivado synthesis resource comparison; no whole-design rebuild"],
+  "limits": ["Author self-tests do not replace independent review", "No D project integration in this batch", "No whole-design synthesis/implementation or board actions", "No register/pipeline/storage redesign if narrow repair is insufficient"]
+}

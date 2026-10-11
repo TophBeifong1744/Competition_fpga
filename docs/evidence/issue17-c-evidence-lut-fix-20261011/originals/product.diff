@@ -1,0 +1,52 @@
+--- reviewed_D_baseline/i17_vio_evidence.sv
++++ project/rtl/c_board/i17_vio_evidence.sv
+@@ -103,26 +103,34 @@
+         else if(kind==7 || kind==8) seq_for=backend_seq;
+         else seq_for=report_seq;
+     endfunction
++    // 先在各记录内选32位，再按类型选择，避免先构造6656位宽的类型多路器。
+     function automatic [31:0] word_for(input [3:0] kind,input [7:0] index);
+-        reg [6655:0] padded;
++        reg [255:0] config_words;
++        reg [735:0] identity_words, abort_identity_words, backend_identity_words;
++        reg [6655:0] terminal_words;
++        reg [191:0] abort_payload_words;
+         begin
+-            padded=0;
++            config_words={report_map,report_context};
++            identity_words={11'd0,report_identity};
++            abort_identity_words={11'd0,report_abort_identity};
++            backend_identity_words={11'd0,backend_identity};
++            terminal_words={30'd0,report_terminal};
++            abort_payload_words={12'd0,report_abort_payload};
++            word_for=32'd0;
++            // 每个if保留未知/越界index返回0；diag读取不以captured_words截短。
+             case(kind)
+-                0: padded[255:0]={report_map,report_context};
+-                1: padded[511:0]=report_header;
+-                2: padded[724:0]=report_identity;
+-                3: padded[6625:0]=report_terminal;
+-                4: padded[179:0]=report_abort_payload;
+-                5: begin end
+-                6: padded[724:0]=report_abort_identity;
+-                7: padded[724:0]=backend_identity;
+-                8: padded[191:0]=backend_header;
+-                9: padded[127:0]=live_snapshot;
++                0: if(index<8) word_for=config_words[index[2:0]*32+:32];
++                1: if(index<16) word_for=report_header[index[3:0]*32+:32];
++                2: if(index<23) word_for=identity_words[index[4:0]*32+:32];
++                3: if(index<208) word_for=terminal_words[index*32+:32];
++                4: if(index<6) word_for=abort_payload_words[index[2:0]*32+:32];
++                5: if(index<64) word_for=diag_mem[index[5:0]];
++                6: if(index<23) word_for=abort_identity_words[index[4:0]*32+:32];
++                7: if(index<23) word_for=backend_identity_words[index[4:0]*32+:32];
++                8: if(index<6) word_for=backend_header[index[2:0]*32+:32];
++                9: if(index<4) word_for=live_snapshot[index[1:0]*32+:32];
+                 default: begin end
+             endcase
+-            if(kind==5 && index<64) word_for=diag_mem[index[5:0]];
+-            else if(index<208) word_for=padded[index*32+:32];
+-            else word_for=0;
+         end
+     endfunction
+     // meta: seq[63:0], type[67:64], word[75:68], words[83:76], valid84,

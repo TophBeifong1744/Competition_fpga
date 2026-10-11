@@ -1,0 +1,52 @@
+{
+  "candidate_sha256": "135271131d893eba2b8e22a7b596c78292de4050a69855f131b5fe5a582fdfd6",
+  "case": "words",
+  "tool": "Vivado XSim 2025.2",
+  "seed": 17010,
+  "sources": {
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\project\\rtl\\c_board\\i17_vio_evidence.sv": "135271131d893eba2b8e22a7b596c78292de4050a69855f131b5fe5a582fdfd6",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-lut-fix-20261011\\selftest\\i17_vio_evidence_before.sv": "58fb8f8e923fa02e2099187e823617dc8606e3403b594684ae3322f750f61e32",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-lut-fix-20261011\\selftest\\tb_words.sv": "077f78c00d0ae06fecf1e1fe1d0b51535c91f926fc2c68140a02a7704be3d5f5"
+  },
+  "commands": [
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvlog.exe",
+        "--sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\project\\rtl\\c_board\\i17_vio_evidence.sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-lut-fix-20261011\\selftest\\i17_vio_evidence_before.sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-lut-fix-20261011\\selftest\\tb_words.sv"
+      ],
+      "exit": 0,
+      "elapsed_s": 0.826
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xelab.exe",
+        "work.tb_words",
+        "--snapshot",
+        "test",
+        "--debug",
+        "off"
+      ],
+      "exit": 0,
+      "elapsed_s": 3.174
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xsim.exe",
+        "test",
+        "--runall",
+        "--onerror",
+        "quit",
+        "--onfinish",
+        "quit",
+        "--sv_seed",
+        "17010"
+      ],
+      "exit": 0,
+      "elapsed_s": 3.648
+    }
+  ],
+  "status": "AUTHOR_CHECKS_COMPLETE_PENDING_REVIEW"
+}

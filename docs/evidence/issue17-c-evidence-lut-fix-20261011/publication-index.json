@@ -1,0 +1,305 @@
+{
+  "scope": "C-EVID-LUT-001 accepted RTL plus explanatory publication and selected original evidence; no EDA rerun",
+  "status": "PREPARED_FOR_PUBLICATION_INCREMENT_REVIEW_NOT_COMMITTED",
+  "source_sha256": "135271131d893eba2b8e22a7b596c78292de4050a69855f131b5fe5a582fdfd6",
+  "review": "Independent AI technical PASS WITH CONDITIONS; no A/B member signature",
+  "open_findings": [
+    "C-IMPL-LUT-001",
+    "C-AB-CTRL-001"
+  ],
+  "low_followup": "C-EVID-LUT-SH-001",
+  "original_copies": 50,
+  "self_index_note": "This index is excluded from its own entries; its SHA256 is recorded in the publication handoff.",
+  "files": [
+    {
+      "path": "project/rtl/c_board/i17_vio_evidence.sv",
+      "bytes": 14771,
+      "sha256": "135271131d893eba2b8e22a7b596c78292de4050a69855f131b5fe5a582fdfd6"
+    },
+    {
+      "path": "project/rtl/c_board/.gitattributes",
+      "bytes": 95,
+      "sha256": "730793ae556535bc27c5757d641fc9bbd0c8873520c0e2eed02334a77d2cce1e"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/.gitattributes",
+      "bytes": 92,
+      "sha256": "2f744c1936d1ea8894d3338d43815ec4a13593481561273a46994cfdf8b25eb4"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/.gitignore",
+      "bytes": 179,
+      "sha256": "4f8da4e19f24f0aaa41cc9fd6e35dc39bdcfb5f6c018de254109597ae4bd1356"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/original-copy-manifest.json",
+      "bytes": 17197,
+      "sha256": "b542a2c2893c6e013c5ada6d72f212a4d6c030993c3102d1fa5b78b021afe98f"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/diagnostic_clock.xdc",
+      "bytes": 207,
+      "sha256": "a6d23feb8fbed2d8ba7765cc27f4187ccd02e88bf1e19e7bc5b217bc96aec05f"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/diagnostic_synth.jou",
+      "bytes": 1684,
+      "sha256": "2395994fd7afe489982ffa217e32d03e08b708c1f330b7cc415df5df58c6c77c"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/diagnostic_synth.log",
+      "bytes": 42618,
+      "sha256": "266bd7843ed4d11b6208e8cc8353612c5c9fb240a94a7ee4c48eb1ca97d48f51"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/diagnostic_synth.tcl",
+      "bytes": 1732,
+      "sha256": "6ab0e779661e1345397ac6c5b2fdfd667afe539bd1a77b69c161dd7379af8628"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/file-index.json",
+      "bytes": 10915,
+      "sha256": "6abc100747b0eb63ab817a2147fbd0a31863ec5a78ab576233d5403d8a7e827d"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/inputs/i17_vio_evidence_before.sv",
+      "bytes": 13957,
+      "sha256": "d6b7096d55bdcc44ff275bdad2b208c25092ad6e9668aff4edcd83dcac76fc6a"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/inputs/tb_evidence.sv",
+      "bytes": 8171,
+      "sha256": "8d3cd7a87c73b815d3d3226a3da4ea0e7d28de320cbd4ab909c66fd0f4f67417"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/integration/after.json",
+      "bytes": 33787,
+      "sha256": "c8adece7b7d8367b0b6d2854f1b73d68c5697e3e9333c0535106b119951f8d5e"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/integration/before.json",
+      "bytes": 33787,
+      "sha256": "b30d2d68be0ffd9edc84342069583427da8796f7cc050cd0626718bd0caa8af5"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/integration/command-record.json",
+      "bytes": 410,
+      "sha256": "3f12bd12e4ca6d0655bb12825dab0ae3db3ded5db59fe78f2de69f1292afcb2b"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/integration/integration-receipt.json",
+      "bytes": 1974,
+      "sha256": "4c1ce453facc4623c95d666f099b622be1c2f66e90528c9318067f41f3dccdca"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/integration/process-after.json",
+      "bytes": 265,
+      "sha256": "5d8749931b980e548d4e153c392cbd11bfdb420b35bf188c76a644ca102e5b8b"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/integration/process-before.json",
+      "bytes": 265,
+      "sha256": "5d8749931b980e548d4e153c392cbd11bfdb420b35bf188c76a644ca102e5b8b"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/integration/\u64cd\u4f5c\u8bf4\u660e.md",
+      "bytes": 1676,
+      "sha256": "029f6b5369aeb513db15833a2216fd0ce291d9bb13a87f1b0d3b94ec1b0fc0a8"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/native_help.log",
+      "bytes": 29344,
+      "sha256": "1df9094dbccd90fa1630114baf0c4bd262c622114e64157e8fffa19d945a9553"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/native_help.tcl",
+      "bytes": 349,
+      "sha256": "cdb2462d35950b58d0f228f7674ad0870ed2e1a687612f850dda12de087e269e"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/prepare_selftests.py",
+      "bytes": 7796,
+      "sha256": "dea5bcdac49c5a9ae5f5917f4a91b521db280d0548065465013a36acdfacb427"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/product-freeze.json",
+      "bytes": 544,
+      "sha256": "f56cfe7686d05a19d6d177b6eaa474b8f159d3c5d2fa66d007adcb07b0180076"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/product.diff",
+      "bytes": 2816,
+      "sha256": "c5edc028cdbca81b509144dcc60b78b6c2b95690022d84f9aa6db95c0445c34e"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/run-manifest.json",
+      "bytes": 9901,
+      "sha256": "38d77c4060188d6fe4481ef499f284c0ee6571cf685ea7b04fb0d4f0ee1b4e76"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/run_selftests.py",
+      "bytes": 3048,
+      "sha256": "491e559541e999ac2bd0cb3b89d8799ecc38655c1861f78445888e17b0799fd0"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/selftest/i17_vio_evidence_before.sv",
+      "bytes": 14228,
+      "sha256": "58fb8f8e923fa02e2099187e823617dc8606e3403b594684ae3322f750f61e32"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/selftest/tb_evidence.sv",
+      "bytes": 12647,
+      "sha256": "507de271b897f3f13eb364d547678e4748d16a8c0d125eceb873a43f88545553"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/selftest/tb_words.sv",
+      "bytes": 3344,
+      "sha256": "077f78c00d0ae06fecf1e1fe1d0b51535c91f926fc2c68140a02a7704be3d5f5"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_canary/run.json",
+      "bytes": 2054,
+      "sha256": "3ded1ce9172b246ae142935cff6223aa9b64ec72b4c589763784a6e01fce6b44"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_canary/xelab-stdout.log",
+      "bytes": 702,
+      "sha256": "aa5cd36baa14ed03911789e803e97d8fd1b2f9f8f9e3bdcce56c274361e9dc43"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_canary/xsim-stdout.log",
+      "bytes": 4551,
+      "sha256": "999a3d2d29a6a3c07757825c0b5b06b325a8fe47edfd465e1f0b9fb8d3fc5e9c"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_canary/xsim.jou",
+      "bytes": 1304,
+      "sha256": "e6fcd26af100a0171b532850a43e1431a98f4491a19a0be2532d36bdf41c23f1"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_canary/xsim.log",
+      "bytes": 5247,
+      "sha256": "13cb114954cc51cdbc123db6b8431425d8ee79569a4ab6dfea751abfd57bc0bf"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_canary/xvlog-stdout.log",
+      "bytes": 713,
+      "sha256": "bc06e9aa57ab616280eb87290f07314d0830219b5e5238345345b3f8513cca0b"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_evidence/run.json",
+      "bytes": 2019,
+      "sha256": "2cdf04a14418d324d86f83601a402344e84d85c62e48e3e730972219c414671f"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_evidence/xelab-stdout.log",
+      "bytes": 702,
+      "sha256": "aa5cd36baa14ed03911789e803e97d8fd1b2f9f8f9e3bdcce56c274361e9dc43"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_evidence/xsim-stdout.log",
+      "bytes": 37819,
+      "sha256": "bdd4ee214eecd2a191f1dbd6f5ecf78b0dd0086ceebdc61f42bd99200a68899e"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_evidence/xsim.jou",
+      "bytes": 1310,
+      "sha256": "04e5607ea8b54f7c821c814149b384f4a75e92e7bdb1c5a3447339e4192c476c"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_evidence/xsim.log",
+      "bytes": 37299,
+      "sha256": "d8b9b968ee87b95ef950b045b0b49be12064bc250bdeaed4ca7809d533281554"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_evidence/xvlog-stdout.log",
+      "bytes": 713,
+      "sha256": "bc06e9aa57ab616280eb87290f07314d0830219b5e5238345345b3f8513cca0b"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_words/run.json",
+      "bytes": 2007,
+      "sha256": "045b8c483dbd944943648a4468ee6387633b4f799bf3adb4880dcca32cfb69f9"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_words/xelab-stdout.log",
+      "bytes": 1080,
+      "sha256": "deed944721d9908d03593a5f06ca9b4244f4c5606e5d554a33b6371b865862db"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_words/xsim-stdout.log",
+      "bytes": 900,
+      "sha256": "cdaeca0faa7fe25f8fd648d844ded3116f3446f56b476b9308a0550575b025da"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_words/xsim.jou",
+      "bytes": 1301,
+      "sha256": "2e1b760498324a8110832d91aa8ed8fdf450369c02e516648e7e2896039b476c"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_words/xsim.log",
+      "bytes": 1723,
+      "sha256": "f7c36f0394ce413c7aa6342956c77f516ce4ee7e74604f39d9e1e019126ca7ec"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/sim_words/xvlog-stdout.log",
+      "bytes": 707,
+      "sha256": "232cd605435be521f6ac3361ad1e7eee19087f138287c616151bef9e65156821"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/synth_after/hierarchy.rpt",
+      "bytes": 1571,
+      "sha256": "14a383ae0c3823532f014f73e7d635740299179b8f626846a4271b283f4a5d5a"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/synth_after/primitive-counts.tsv",
+      "bytes": 159,
+      "sha256": "1b4b983e831ff5d46751bdbbe970be687b601f237e7690ea68d28b7bfeacf55d"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/synth_after/utilization.rpt",
+      "bytes": 8496,
+      "sha256": "9f870a2fcea8ccb5168a4926026c14272ab4fb4c68bc9159c1a9918512498858"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/synth_before/hierarchy.rpt",
+      "bytes": 1571,
+      "sha256": "bd9af00fc1560f242a932a55ef7f091b0feb29dd95368acd5989975f935dde11"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/synth_before/primitive-counts.tsv",
+      "bytes": 162,
+      "sha256": "53f25d6e7e86e3651ed7bb34e44cdf047a94ac52a0d5505f5a47ed9c61eaea7e"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/synth_before/utilization.rpt",
+      "bytes": 8496,
+      "sha256": "f87301d45872448a6c8e0f97cdba2657c4a76fb288e5a0fb723aed663bffdc91"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/task-contract.json",
+      "bytes": 1806,
+      "sha256": "b2a7538434205b51890ec5d5f412a8ca994cc37a0d646d7a02d7cd36ecfe0b22"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/originals/WRITER-REPORT.md",
+      "bytes": 3811,
+      "sha256": "2046b81c35035a7305b344ad896871ff4bec04ef61354811a5260c366c2d8cc5"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/README.md",
+      "bytes": 4243,
+      "sha256": "eebd07f5fc2f6fd580f233484d30fbc5b9a7b870855a3f1e95cb2ad902e832a7"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/REPRODUCE.md",
+      "bytes": 3433,
+      "sha256": "01a594e7ea76eaaba8255fb4257c29261b075fb15c9c1dc41c3b4f897baf7a93"
+    },
+    {
+      "path": "docs/evidence/issue17-c-evidence-lut-fix-20261011/review.md",
+      "bytes": 3406,
+      "sha256": "82c851f901d749ad3521e9f29df1ae20c8cc07e73f2fd5728b3e3ac36216e4fe"
+    }
+  ]
+}

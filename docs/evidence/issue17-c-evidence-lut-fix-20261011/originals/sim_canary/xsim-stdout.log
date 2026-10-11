@@ -1,0 +1,82 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Oct 11 22:29:58 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/test/xsim_script.tcl
+# xsim {test} -testplusarg CANARY_DATA -autoloadwcfg -runall -onfinish quit -onerror quit -sv_seed 17010
+Time resolution is 1 ps
+run -all
+DUMP_WORD cycle=9 type=0 seq=0 word=0 data=12345678
+DUMP_WORD cycle=10 type=0 seq=0 word=1 data=ddeeff00
+DUMP_WORD cycle=11 type=0 seq=0 word=2 data=99aabbcc
+DUMP_WORD cycle=12 type=0 seq=0 word=3 data=55667788
+DUMP_WORD cycle=13 type=0 seq=0 word=4 data=11223344
+DUMP_WORD cycle=14 type=0 seq=0 word=5 data=76543210
+DUMP_WORD cycle=15 type=0 seq=0 word=6 data=89abcdef
+DUMP_WORD cycle=16 type=0 seq=0 word=7 data=c1234567
+DUMP_WORD cycle=19 type=1 seq=0 word=0 data=00000003
+DUMP_WORD cycle=20 type=1 seq=0 word=1 data=00000000
+DUMP_WORD cycle=21 type=1 seq=0 word=2 data=76543210
+DUMP_WORD cycle=22 type=1 seq=0 word=3 data=af125698
+DUMP_WORD cycle=23 type=1 seq=0 word=4 data=3a1fd300
+DUMP_WORD cycle=24 type=1 seq=0 word=5 data=001fcd34
+DUMP_WORD cycle=25 type=1 seq=0 word=6 data=13579abc
+DUMP_WORD cycle=26 type=1 seq=0 word=7 data=00000000
+DUMP_WORD cycle=27 type=1 seq=0 word=8 data=0012050a
+DUMP_WORD cycle=28 type=1 seq=0 word=9 data=00000000
+DUMP_WORD cycle=29 type=1 seq=0 word=10 data=00000000
+DUMP_WORD cycle=30 type=1 seq=0 word=11 data=00000000
+DUMP_WORD cycle=31 type=1 seq=0 word=12 data=00000000
+DUMP_WORD cycle=32 type=1 seq=0 word=13 data=00000000
+DUMP_WORD cycle=33 type=1 seq=0 word=14 data=00000000
+DUMP_WORD cycle=34 type=1 seq=0 word=15 data=00000000
+DUMP_WORD cycle=37 type=2 seq=0 word=0 data=10204081
+DUMP_WORD cycle=38 type=2 seq=0 word=1 data=81020408
+DUMP_WORD cycle=39 type=2 seq=0 word=2 data=08102040
+DUMP_WORD cycle=40 type=2 seq=0 word=3 data=40810204
+DUMP_WORD cycle=41 type=2 seq=0 word=4 data=04081020
+DUMP_WORD cycle=42 type=2 seq=0 word=5 data=20408102
+DUMP_WORD cycle=43 type=2 seq=0 word=6 data=02040810
+DUMP_WORD cycle=44 type=2 seq=0 word=7 data=10204081
+DUMP_WORD cycle=45 type=2 seq=0 word=8 data=81020408
+DUMP_WORD cycle=46 type=2 seq=0 word=9 data=08102040
+DUMP_WORD cycle=47 type=2 seq=0 word=10 data=40810204
+DUMP_WORD cycle=48 type=2 seq=0 word=11 data=04081020
+DUMP_WORD cycle=49 type=2 seq=0 word=12 data=20408102
+DUMP_WORD cycle=50 type=2 seq=0 word=13 data=02040810
+DUMP_WORD cycle=51 type=2 seq=0 word=14 data=10204081
+DUMP_WORD cycle=52 type=2 seq=0 word=15 data=81020408
+DUMP_WORD cycle=53 type=2 seq=0 word=16 data=08102040
+DUMP_WORD cycle=54 type=2 seq=0 word=17 data=40810204
+DUMP_WORD cycle=55 type=2 seq=0 word=18 data=04081020
+DUMP_WORD cycle=56 type=2 seq=0 word=19 data=20408102
+DUMP_WORD cycle=57 type=2 seq=0 word=20 data=02040810
+DUMP_WORD cycle=58 type=2 seq=0 word=21 data=10204081
+DUMP_WORD cycle=59 type=2 seq=0 word=22 data=00020408
+DUMP_WORD cycle=62 type=3 seq=0 word=0 data=20410809
+DUMP_WORD cycle=63 type=3 seq=0 word=1 data=00801402
+DUMP_WORD cycle=64 type=3 seq=0 word=2 data=41022014
+DUMP_WORD cycle=65 type=3 seq=0 word=3 data=03004808
+DUMP_WORD cycle=66 type=3 seq=0 word=4 data=84048030
+DUMP_WORD cycle=67 type=3 seq=0 word=5 data=0a011020
+DUMP_WORD cycle=68 type=3 seq=0 word=6 data=100a0040
+DUMP_WORD cycle=69 type=3 seq=0 word=7 data=24042081
+DUMP_WORD cycle=70 type=3 seq=0 word=8 data=40180180
+DUMP_WORD cycle=71 type=3 seq=0 word=9 data=88104202
+DUMP_WORD cycle=72 type=3 seq=0 word=10 data=00200500
+DUMP_WORD cycle=73 type=3 seq=0 word=11 data=10408805
+DUMP_WORD cycle=74 type=3 seq=0 word=12 data=00c01202
+DUMP_WORD cycle=75 type=3 seq=0 word=13 data=2101200c
+DUMP_WORD cycle=76 type=3 seq=0 word=14 data=02804408
+DUMP_WORD cycle=77 type=3 seq=0 word=15 data=44028010
+DUMP_WORD cycle=78 type=3 seq=0 word=16 data=09010820
+Fatal: DATA_CHECK cycle=79 DUMP content kind=3 word=17 exp=90060060 got=90060160
+Time: 787 ns  Iteration: 0  Process: /tb_evidence/check  Scope: tb_evidence.check  File: C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-lut-fix-20261011/selftest/tb_evidence.sv Line: 63
+$finish called at time : 787 ns
+exit 0
+INFO: [Common 17-206] Exiting xsim at Sun Oct 11 22:30:00 2026...
