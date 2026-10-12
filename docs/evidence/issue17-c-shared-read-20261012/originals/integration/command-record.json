@@ -1,0 +1,22 @@
+{
+  "primary_mode": "RELEASE_PACKAGING",
+  "command": "$ErrorActionPreference='Stop'; & '.\\codex_out\\i17-evidence-shared-read-20261012\\integration\\apply-reviewed-source.ps1'",
+  "cwd": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga",
+  "script_sha256": "bc9a164a96de945a9d9fd78bd77123e32cfd96c23a47238b252b8193190b1c8b",
+  "attempts": [
+    {
+      "attempt": 1,
+      "exit": 1,
+      "classification": "SCRIPT_RUNTIME_FAIL",
+      "reason": "Copied historical script encountered StrictMode Name access on empty/null process list; stopped before backup/inventory/native write. Native source rechecked unchanged 135271.",
+      "raw_error": "Where-Object: apply-reviewed-source.ps1:23 The property 'Name' cannot be found on this object. Verify that the property exists."
+    },
+    {
+      "attempt": 2,
+      "exit": 0,
+      "repair": "Only added null guard and explicit empty array handling in diagnostic integration script. Product/test/expectations unchanged."
+    }
+  ],
+  "native_eda_started": false,
+  "receipt_sha256": "e9c212b8d4c317e4b59a3ff536ec79f2eced30ab2e579dc7675a469e413591a4"
+}

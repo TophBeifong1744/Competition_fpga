@@ -1,0 +1,71 @@
+{
+  "candidate_sha256": "a3cc8415a9d6875f94433319f71c0b861a3cc0c705a408d10af49863941e1fef",
+  "case": "evidence",
+  "tool": "Vivado XSim 2025.2",
+  "seed": 17010,
+  "cwd": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-shared-read-20261012\\sim_evidence",
+  "sources": {
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\project\\rtl\\c_board\\i17_vio_evidence.sv": "a3cc8415a9d6875f94433319f71c0b861a3cc0c705a408d10af49863941e1fef",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-shared-read-20261012\\selftest\\i17_vio_evidence_before.sv": "58fb8f8e923fa02e2099187e823617dc8606e3403b594684ae3322f750f61e32",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-shared-read-20261012\\selftest\\tb_evidence.sv": "507de271b897f3f13eb364d547678e4748d16a8c0d125eceb873a43f88545553"
+  },
+  "runner_sha256": "ab082810fbfecff63ce456fae3028220e7a9e575101e5a39b35d059265fd250c",
+  "environment_recipe_sha256": "b36c77ce1d1a75bc4ab2ad6344dd6bc65c904272df45e1ca4d11478f7a5d9314",
+  "commands": [
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvlog.exe",
+        "--sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\project\\rtl\\c_board\\i17_vio_evidence.sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-shared-read-20261012\\selftest\\i17_vio_evidence_before.sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-shared-read-20261012\\selftest\\tb_evidence.sv"
+      ],
+      "exit": 0,
+      "elapsed_s": 1.519,
+      "log": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-shared-read-20261012\\sim_evidence\\xvlog-stdout.log"
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xelab.exe",
+        "work.tb_evidence",
+        "--snapshot",
+        "test",
+        "--debug",
+        "off"
+      ],
+      "exit": 0,
+      "elapsed_s": 3.321,
+      "log": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-shared-read-20261012\\sim_evidence\\xelab-stdout.log"
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xsim.exe",
+        "test",
+        "--runall",
+        "--onerror",
+        "quit",
+        "--onfinish",
+        "quit",
+        "--sv_seed",
+        "17010"
+      ],
+      "exit": 0,
+      "elapsed_s": 5.465,
+      "log": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-shared-read-20261012\\sim_evidence\\xsim-stdout.log"
+    }
+  ],
+  "status": "AUTHOR_CHECKS_COMPLETE_PENDING_REVIEW",
+  "completion_lines": [
+    "PUBLIC_READ_COMPLETE reads=6656 miter_cycles=7772",
+    "EVIDENCE_COMPLETE checks=29178 pending=0"
+  ],
+  "fatals": [],
+  "log_hashes": {
+    "xelab-stdout.log": "aa5cd36baa14ed03911789e803e97d8fd1b2f9f8f9e3bdcce56c274361e9dc43",
+    "xelab.log": "17268e5b95c3b0ae3c0e862002a451028456ad84d43dc0801058c5a3c3f068a3",
+    "xsim-stdout.log": "5c969758e112018d81e9eebc865fe4e840792915d75d9a5de947bf244ee444a6",
+    "xsim.log": "887abd5c3a89b397b3d63470d99d15f5d8c6f06615e9be21e46fe2cdb0c41b38",
+    "xvlog-stdout.log": "017ed86599c8bc0e5bc7894298d84db5b0aff57105dfd4d6004df866d735f717",
+    "xvlog.log": "dea891dbbf98cc02e37a255901a0132e94aaf1dd68c409e38d93bf7206663e9c"
+  }
+}

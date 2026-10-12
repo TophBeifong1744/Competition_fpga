@@ -1,0 +1,42 @@
+{
+  "task": "C-EVID-SHARED-001",
+  "mode": "QUICK",
+  "primary_mode": "RTL_IMPLEMENTATION",
+  "authorization": "C requested own-logic optimization; coordinator approved shared READ/DUMP combination only",
+  "target": "xc7z020clg400-1",
+  "tool": "Vivado/XSim 2025.2",
+  "baseline_sha256": "135271131d893eba2b8e22a7b596c78292de4050a69855f131b5fe5a582fdfd6",
+  "product_sha256": "a3cc8415a9d6875f94433319f71c0b861a3cc0c705a408d10af49863941e1fef",
+  "product_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\project\\rtl\\c_board\\i17_vio_evidence.sv",
+  "scope": [
+    "project/rtl/c_board/i17_vio_evidence.sv",
+    "codex_out/i17-evidence-shared-read-20261012"
+  ],
+  "immutable": [
+    "function signatures and bodies byte-for-byte",
+    "19 public outputs and clock edges",
+    "all original sequential statements except 4 function consumers",
+    "live type9 READ bypass",
+    "procedural if(dumping) 4-state semantics",
+    "record capacity/precision/order",
+    "STOP/reset/error/handshake behavior",
+    "all A/B and other C sources, native D project"
+  ],
+  "checks": {
+    "function_text_identical": true,
+    "sequential_structure_identical_except_four_consumers": true
+  },
+  "evidence_plan": [
+    "unchanged legacy 6656 READ/19-output miter TB rerun with strict first-failure canary",
+    "new 19-output cycle miter against exact 135271 baseline and independent busy/DUMP/reset/state-sensitivity expectations",
+    "new checker negative canary"
+  ],
+  "not_run": [
+    "synthesis",
+    "implementation",
+    "board"
+  ],
+  "power": "NOT APPLICABLE",
+  "acceptance": "AUTHOR_SELFTEST_PENDING_QUALIFIED_NONAUTHOR_REVIEW",
+  "head": "f3859c9a021050895c43fbc339c5bb9d0e66cfa5"
+}

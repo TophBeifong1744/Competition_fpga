@@ -1,0 +1,437 @@
+{
+  "schema_version": 1,
+  "scope": "C i17_vio_evidence shared READ/DUMP exact candidate and selected text evidence only",
+  "review": "PASS_WITH_SCOPE; see review.md; not A/B member approval",
+  "candidate": {
+    "path": "project/rtl/c_board/i17_vio_evidence.sv",
+    "sha256": "a3cc8415a9d6875f94433319f71c0b861a3cc0c705a408d10af49863941e1fef"
+  },
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 92,
+      "sha256": "2f744c1936d1ea8894d3338d43815ec4a13593481561273a46994cfdf8b25eb4"
+    },
+    {
+      "path": "original-copy-manifest.json",
+      "bytes": 26001,
+      "sha256": "0ea956329bd7965a902ce5afa64f903343673cbc2aae69036b5a641f773c1f94"
+    },
+    {
+      "path": "originals/baseline/i17_vio_evidence.sv",
+      "bytes": 14771,
+      "sha256": "135271131d893eba2b8e22a7b596c78292de4050a69855f131b5fe5a582fdfd6"
+    },
+    {
+      "path": "originals/candidate/i17_vio_evidence.sv",
+      "bytes": 15238,
+      "sha256": "a3cc8415a9d6875f94433319f71c0b861a3cc0c705a408d10af49863941e1fef"
+    },
+    {
+      "path": "originals/diagnostic_clock.xdc",
+      "bytes": 207,
+      "sha256": "a6d23feb8fbed2d8ba7765cc27f4187ccd02e88bf1e19e7bc5b217bc96aec05f"
+    },
+    {
+      "path": "originals/diagnostic_synth-attempt3.jou",
+      "bytes": 1377,
+      "sha256": "7e424b2e94b03d0d73a55293556ab3d50b7eaffd226bde0c6b9a74b00fe44511"
+    },
+    {
+      "path": "originals/diagnostic_synth-attempt3.log",
+      "bytes": 3956,
+      "sha256": "3b268913a8070b0fb5ee3d59ea9aa28456f63f8bc80a04ae4ecef20b8b6b5fec"
+    },
+    {
+      "path": "originals/diagnostic_synth-attempt4.jou",
+      "bytes": 1377,
+      "sha256": "16940cb154a2b8edc1b99429023c9866a84a3b3ecaf33481ec48162a681fcb04"
+    },
+    {
+      "path": "originals/diagnostic_synth-attempt4.log",
+      "bytes": 65121,
+      "sha256": "864fbd89eb2f07b50194c059d56b562fbf5d0ed75ed409ab2516b4137a475e6a"
+    },
+    {
+      "path": "originals/diagnostic_synth.tcl",
+      "bytes": 1913,
+      "sha256": "712d3658909f1b893b58f9c542d8b4b651cbd1734d0c713be5a2810dc8e13296"
+    },
+    {
+      "path": "originals/integration/after.json",
+      "bytes": 131585,
+      "sha256": "12ae6a36ed449d8e9a329cb37000bb8957bf308c0b745caf617354e1e310b356"
+    },
+    {
+      "path": "originals/integration/apply-reviewed-source.ps1",
+      "bytes": 6735,
+      "sha256": "bc9a164a96de945a9d9fd78bd77123e32cfd96c23a47238b252b8193190b1c8b"
+    },
+    {
+      "path": "originals/integration/backup/i17_live_loop.xpr",
+      "bytes": 45363,
+      "sha256": "cfecdd811640b4cb1ea5e0ed26dc000c7ea3cdf2db9abd5307ced3b458e42433"
+    },
+    {
+      "path": "originals/integration/backup/i17_vio_evidence.sv",
+      "bytes": 14771,
+      "sha256": "135271131d893eba2b8e22a7b596c78292de4050a69855f131b5fe5a582fdfd6"
+    },
+    {
+      "path": "originals/integration/backup-manifest.json",
+      "bytes": 205,
+      "sha256": "f59f4942b01e5c58ad353886c9d92b3c7159867b1985303cbc971d997b253949"
+    },
+    {
+      "path": "originals/integration/before.json",
+      "bytes": 131585,
+      "sha256": "4bed0a248002760bc9d75d0033271867b7b9a87f8c6d25f27c5179042c5859a5"
+    },
+    {
+      "path": "originals/integration/command-record.json",
+      "bytes": 1129,
+      "sha256": "233023c7c95c6cf4bc3ae37683ba05fd49c678cb6f9e590c800675e6332e3247"
+    },
+    {
+      "path": "originals/integration/integration-receipt.json",
+      "bytes": 1901,
+      "sha256": "e9c212b8d4c317e4b59a3ff536ec79f2eced30ab2e579dc7675a469e413591a4"
+    },
+    {
+      "path": "originals/integration/process-after.json",
+      "bytes": 4,
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+    },
+    {
+      "path": "originals/integration/process-before.json",
+      "bytes": 4,
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+    },
+    {
+      "path": "originals/product-freeze.json",
+      "bytes": 1740,
+      "sha256": "dc4609ccd0d8db8ef7e2493e7855ed6926949aa8167178ab054a58a50f85610d"
+    },
+    {
+      "path": "originals/product.diff",
+      "bytes": 2424,
+      "sha256": "96b1a331dccc21c7db59b447b19dae98106fe96240e063139a44e7ae5d2a8406"
+    },
+    {
+      "path": "originals/run_selftests.py",
+      "bytes": 4665,
+      "sha256": "ab082810fbfecff63ce456fae3028220e7a9e575101e5a39b35d059265fd250c"
+    },
+    {
+      "path": "originals/runner_environment.py",
+      "bytes": 686,
+      "sha256": "b36c77ce1d1a75bc4ab2ad6344dd6bc65c904272df45e1ca4d11478f7a5d9314"
+    },
+    {
+      "path": "originals/selftest/i17_vio_evidence_baseline.sv",
+      "bytes": 15052,
+      "sha256": "df7a7fd3cde8e9e030e981e5359e9eaad248a4db1fffd2bf69c0d9adaac4f418"
+    },
+    {
+      "path": "originals/selftest/i17_vio_evidence_before.sv",
+      "bytes": 14228,
+      "sha256": "58fb8f8e923fa02e2099187e823617dc8606e3403b594684ae3322f750f61e32"
+    },
+    {
+      "path": "originals/selftest/tb_evidence.sv",
+      "bytes": 12647,
+      "sha256": "507de271b897f3f13eb364d547678e4748d16a8c0d125eceb873a43f88545553"
+    },
+    {
+      "path": "originals/selftest/tb_shared_read.sv",
+      "bytes": 12277,
+      "sha256": "a0742726a1ec3b4951617332c9b307e0f64dfdfec2daac55a3f4963e7b3f63c8"
+    },
+    {
+      "path": "originals/selftest-summary.json",
+      "bytes": 18995,
+      "sha256": "6655b7e5763ece47614463f543a41d13e801d60c6ca524b62743f3fe214bb44b"
+    },
+    {
+      "path": "originals/sim_evidence/run.json",
+      "bytes": 3509,
+      "sha256": "63d4bbe121558fb85627f15cfe88ea5056782fe3c955fefb73c1ad0ca527e4f7"
+    },
+    {
+      "path": "originals/sim_evidence/xelab-stdout.log",
+      "bytes": 702,
+      "sha256": "aa5cd36baa14ed03911789e803e97d8fd1b2f9f8f9e3bdcce56c274361e9dc43"
+    },
+    {
+      "path": "originals/sim_evidence/xelab.log",
+      "bytes": 672,
+      "sha256": "17268e5b95c3b0ae3c0e862002a451028456ad84d43dc0801058c5a3c3f068a3"
+    },
+    {
+      "path": "originals/sim_evidence/xsim-stdout.log",
+      "bytes": 37823,
+      "sha256": "5c969758e112018d81e9eebc865fe4e840792915d75d9a5de947bf244ee444a6"
+    },
+    {
+      "path": "originals/sim_evidence/xsim.jou",
+      "bytes": 1323,
+      "sha256": "dc39327e2b42fe5dbb8652d29ffc44d14ebc6531ae8d92879b69dec882540652"
+    },
+    {
+      "path": "originals/sim_evidence/xsim.log",
+      "bytes": 37316,
+      "sha256": "887abd5c3a89b397b3d63470d99d15f5d8c6f06615e9be21e46fe2cdb0c41b38"
+    },
+    {
+      "path": "originals/sim_evidence/xvlog-stdout.log",
+      "bytes": 721,
+      "sha256": "017ed86599c8bc0e5bc7894298d84db5b0aff57105dfd4d6004df866d735f717"
+    },
+    {
+      "path": "originals/sim_evidence/xvlog.log",
+      "bytes": 709,
+      "sha256": "dea891dbbf98cc02e37a255901a0132e94aaf1dd68c409e38d93bf7206663e9c"
+    },
+    {
+      "path": "originals/sim_legacy_canary/run.json",
+      "bytes": 3794,
+      "sha256": "a49600e633f07472f707f9b947c5c1c5786e7e29b7c75eb3a75e7f501ce3172c"
+    },
+    {
+      "path": "originals/sim_legacy_canary/xelab-stdout.log",
+      "bytes": 702,
+      "sha256": "aa5cd36baa14ed03911789e803e97d8fd1b2f9f8f9e3bdcce56c274361e9dc43"
+    },
+    {
+      "path": "originals/sim_legacy_canary/xelab.log",
+      "bytes": 672,
+      "sha256": "17268e5b95c3b0ae3c0e862002a451028456ad84d43dc0801058c5a3c3f068a3"
+    },
+    {
+      "path": "originals/sim_legacy_canary/xsim-stdout.log",
+      "bytes": 4555,
+      "sha256": "7c6b139105cd4862680c2cbe1c7906b10fbc3f27fa0bee2dfe476829b6c1224b"
+    },
+    {
+      "path": "originals/sim_legacy_canary/xsim.jou",
+      "bytes": 1338,
+      "sha256": "eb6957798acd62e4652b6e52e173cb5943a445e274bfc5b8eead99ab7aad1f61"
+    },
+    {
+      "path": "originals/sim_legacy_canary/xsim.log",
+      "bytes": 5285,
+      "sha256": "480755341ac591312e23ec4d5d41f18526563cb90873832a15321d9396a28840"
+    },
+    {
+      "path": "originals/sim_legacy_canary/xvlog-stdout.log",
+      "bytes": 721,
+      "sha256": "017ed86599c8bc0e5bc7894298d84db5b0aff57105dfd4d6004df866d735f717"
+    },
+    {
+      "path": "originals/sim_legacy_canary/xvlog.log",
+      "bytes": 709,
+      "sha256": "dea891dbbf98cc02e37a255901a0132e94aaf1dd68c409e38d93bf7206663e9c"
+    },
+    {
+      "path": "originals/sim_miter_canary/run.json",
+      "bytes": 3665,
+      "sha256": "198f6f701ec9d6188a1c99a98a2730b25395b21e9a63b5c9554e3f02477590d3"
+    },
+    {
+      "path": "originals/sim_miter_canary/xelab-stdout.log",
+      "bytes": 710,
+      "sha256": "dad9c0d5e3401a936fbc01537c50b2ade11a8c7b4a2966c5fcb3b2178f67b435"
+    },
+    {
+      "path": "originals/sim_miter_canary/xelab.log",
+      "bytes": 680,
+      "sha256": "acfdfe34f114420f3bba7b4da28a2d430cd7e307db4a7c3526251b30583719a5"
+    },
+    {
+      "path": "originals/sim_miter_canary/xsim-stdout.log",
+      "bytes": 2349,
+      "sha256": "57bf9c64fc663725f4197266d6c90629c0e39cb8d5373801760ab33dbcb1cbf4"
+    },
+    {
+      "path": "originals/sim_miter_canary/xsim.jou",
+      "bytes": 1335,
+      "sha256": "11f47b2d24d0d5653aa99c8ab9c82ea04013e8a1a27c5d2ffd5ac12a616b37bd"
+    },
+    {
+      "path": "originals/sim_miter_canary/xsim.log",
+      "bytes": 3178,
+      "sha256": "8154e9156a42543b15d1c3732e912f2166775a08c0b85bf7562cb7afd224d32e"
+    },
+    {
+      "path": "originals/sim_miter_canary/xvlog-stdout.log",
+      "bytes": 731,
+      "sha256": "c9dc4c8f769a5509a040a163a72cb670e1728179f83961e5501e5414d88754ae"
+    },
+    {
+      "path": "originals/sim_miter_canary/xvlog.log",
+      "bytes": 719,
+      "sha256": "b4976ada3770aa8fe1aac4c4abb318f15da6c1fc698b58a31cbbe433fa18dfa3"
+    },
+    {
+      "path": "originals/sim_shared/run.json",
+      "bytes": 3507,
+      "sha256": "ccde6d7465af4428b569e2fa8361c90ed74122147f6a00433fd1fe464858fa41"
+    },
+    {
+      "path": "originals/sim_shared/xelab-stdout.log",
+      "bytes": 710,
+      "sha256": "dad9c0d5e3401a936fbc01537c50b2ade11a8c7b4a2966c5fcb3b2178f67b435"
+    },
+    {
+      "path": "originals/sim_shared/xelab.log",
+      "bytes": 680,
+      "sha256": "acfdfe34f114420f3bba7b4da28a2d430cd7e307db4a7c3526251b30583719a5"
+    },
+    {
+      "path": "originals/sim_shared/xsim-stdout.log",
+      "bytes": 2284,
+      "sha256": "7d3953a3200543ed86a70b2a3dbfb2ba85034fb57a99ce20ff30465cad9c4f59"
+    },
+    {
+      "path": "originals/sim_shared/xsim.jou",
+      "bytes": 1316,
+      "sha256": "53670e04b0464417d5e8e216b14e9bfe8bb7f6cfa081474e276453b859a512fd"
+    },
+    {
+      "path": "originals/sim_shared/xsim.log",
+      "bytes": 3096,
+      "sha256": "0de60fbca3f477eafaf648a7c6f3cbff9a2a0fa6607b6a48cfc07bf515a7fbd0"
+    },
+    {
+      "path": "originals/sim_shared/xvlog-stdout.log",
+      "bytes": 731,
+      "sha256": "c9dc4c8f769a5509a040a163a72cb670e1728179f83961e5501e5414d88754ae"
+    },
+    {
+      "path": "originals/sim_shared/xvlog.log",
+      "bytes": 719,
+      "sha256": "b4976ada3770aa8fe1aac4c4abb318f15da6c1fc698b58a31cbbe433fa18dfa3"
+    },
+    {
+      "path": "originals/sim_shared_canary/run.json",
+      "bytes": 3776,
+      "sha256": "dcdd4e7e8ba5d477009d95d97839153873dd1899807b73dedfa70c44cdf1414e"
+    },
+    {
+      "path": "originals/sim_shared_canary/xelab-stdout.log",
+      "bytes": 710,
+      "sha256": "dad9c0d5e3401a936fbc01537c50b2ade11a8c7b4a2966c5fcb3b2178f67b435"
+    },
+    {
+      "path": "originals/sim_shared_canary/xelab.log",
+      "bytes": 680,
+      "sha256": "acfdfe34f114420f3bba7b4da28a2d430cd7e307db4a7c3526251b30583719a5"
+    },
+    {
+      "path": "originals/sim_shared_canary/xsim-stdout.log",
+      "bytes": 1012,
+      "sha256": "c19c678a093b731a42db023e8be19138c6c435854a822092c1aa946fc086fff1"
+    },
+    {
+      "path": "originals/sim_shared_canary/xsim.jou",
+      "bytes": 1337,
+      "sha256": "b203cbfb30af6db43ed2408ba86712de44f3df00b0b0b2d6f3244f0121d5d611"
+    },
+    {
+      "path": "originals/sim_shared_canary/xsim.log",
+      "bytes": 1869,
+      "sha256": "487b12d3d4f83104cb7218ee113df045f225c3e98fd0c5e3f03109948785a544"
+    },
+    {
+      "path": "originals/sim_shared_canary/xvlog-stdout.log",
+      "bytes": 731,
+      "sha256": "c9dc4c8f769a5509a040a163a72cb670e1728179f83961e5501e5414d88754ae"
+    },
+    {
+      "path": "originals/sim_shared_canary/xvlog.log",
+      "bytes": 719,
+      "sha256": "b4976ada3770aa8fe1aac4c4abb318f15da6c1fc698b58a31cbbe433fa18dfa3"
+    },
+    {
+      "path": "originals/synth_after/hierarchy.rpt",
+      "bytes": 1571,
+      "sha256": "4e6b1091fc02326bd6637931cc2d1340e4402d526ab97311da04b73c1a49d61c"
+    },
+    {
+      "path": "originals/synth_after/primitive-counts.tsv",
+      "bytes": 158,
+      "sha256": "5c4f7799cf78b9a05b8e2a7bc90df398da01b6680e32a436ec790c6acfc71f3d"
+    },
+    {
+      "path": "originals/synth_after/synthesis_timing.rpt",
+      "bytes": 22797,
+      "sha256": "076dd3c5337848c21c374e24bed781fe13fd5e0f06273aad68986e95947e1007"
+    },
+    {
+      "path": "originals/synth_after/utilization.rpt",
+      "bytes": 8496,
+      "sha256": "d617a387139b05e156dde845f1db50a679d19f9b3403e9036b30795deaa29784"
+    },
+    {
+      "path": "originals/synth_before/hierarchy.rpt",
+      "bytes": 1571,
+      "sha256": "d78e5a31279930a2e6170a421da034b26878b646860d29a42741ec9462fd02c3"
+    },
+    {
+      "path": "originals/synth_before/primitive-counts.tsv",
+      "bytes": 159,
+      "sha256": "1b4b983e831ff5d46751bdbbe970be687b601f237e7690ea68d28b7bfeacf55d"
+    },
+    {
+      "path": "originals/synth_before/synthesis_timing.rpt",
+      "bytes": 22415,
+      "sha256": "6a974095a2b09babd55596526d3ee51647a2313f69e5152fd194f5c9792d4198"
+    },
+    {
+      "path": "originals/synth_before/utilization.rpt",
+      "bytes": 8496,
+      "sha256": "cdaab1c3f052d0c030755832c9bcf260aa25be8db7d1f7ea17fea1f46849aa72"
+    },
+    {
+      "path": "originals/synthesis-result.json",
+      "bytes": 2859,
+      "sha256": "33d65b997a525e4653a0cfa64ca4fafca29886ca7ce6aeaa29ecd705ac91b1f7"
+    },
+    {
+      "path": "originals/synthesis-run.json",
+      "bytes": 12210,
+      "sha256": "b7cb140da7e4941a7d473d9909e6b185a02d7d038596ee21bb5265e1543dcacc"
+    },
+    {
+      "path": "originals/task-contract.json",
+      "bytes": 1740,
+      "sha256": "dc4609ccd0d8db8ef7e2493e7855ed6926949aa8167178ab054a58a50f85610d"
+    },
+    {
+      "path": "originals/verification-freeze.json",
+      "bytes": 5438,
+      "sha256": "ac2298ddad9a34e3970ca98d9c1087e2526589b7b72bc38506e044c074b0fa28"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5602,
+      "sha256": "591ed0f4fb3639266ffb063c79a9c2b785f1b29ffa078437c7a1f327eff43f9f"
+    },
+    {
+      "path": "review.md",
+      "bytes": 2578,
+      "sha256": "a6d086ed1b0c5a7759784be7ada3226afb948bc649c5a0e67986767b87a4756b"
+    }
+  ],
+  "self_hash_excluded": true,
+  "original_copy_manifest_sha256": "0ea956329bd7965a902ce5afa64f903343673cbc2aae69036b5a641f773c1f94",
+  "integration_receipt_sha256": "e9c212b8d4c317e4b59a3ff536ec79f2eced30ab2e579dc7675a469e413591a4",
+  "excluded": [
+    "vendor caches",
+    "WDB",
+    "PB",
+    "DCP",
+    "complete project ZIP"
+  ],
+  "git_action": "Prepared only; no git commit or push by product writer"
+}

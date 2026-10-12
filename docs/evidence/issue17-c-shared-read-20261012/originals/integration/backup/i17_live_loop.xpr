@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2025.2 (64-bit)                              -->
+<!--                                                                         -->
+<!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
+<!-- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.   -->
+
+<Project Product="Vivado" Version="7" Minor="71" Path="D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="37ef5dc31e314d70bbaf0551a384f291"/>
+    <Option Name="Part" Val="xc7z020clg400-1"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="CompiledLibDirXSim" Val=""/>
+    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirXcelium" Val="$PCACHEDIR/compile_simlib/xcelium"/>
+    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
+    <Option Name="SimulatorInstallDirModelSim" Val=""/>
+    <Option Name="SimulatorInstallDirQuesta" Val=""/>
+    <Option Name="SimulatorInstallDirXcelium" Val=""/>
+    <Option Name="SimulatorInstallDirVCS" Val=""/>
+    <Option Name="SimulatorInstallDirRiviera" Val=""/>
+    <Option Name="SimulatorInstallDirActiveHdl" Val=""/>
+    <Option Name="SimulatorGccInstallDirModelSim" Val=""/>
+    <Option Name="SimulatorGccInstallDirQuesta" Val=""/>
+    <Option Name="SimulatorGccInstallDirXcelium" Val=""/>
+    <Option Name="SimulatorGccInstallDirVCS" Val=""/>
+    <Option Name="SimulatorGccInstallDirRiviera" Val=""/>
+    <Option Name="SimulatorGccInstallDirActiveHdl" Val=""/>
+    <Option Name="SimulatorVersionXsim" Val="2025.2"/>
+    <Option Name="SimulatorVersionModelSim" Val="2025.2"/>
+    <Option Name="SimulatorVersionQuesta" Val="2025.2"/>
+    <Option Name="SimulatorVersionXcelium" Val="25.03.002"/>
+    <Option Name="SimulatorVersionVCS" Val="X-2025.06"/>
+    <Option Name="SimulatorVersionRiviera" Val="2024.10"/>
+    <Option Name="SimulatorVersionActiveHdl" Val="15.0"/>
+    <Option Name="SimulatorGccVersionXsim" Val="9.3.0"/>
+    <Option Name="SimulatorGccVersionModelSim" Val="7.4.0"/>
+    <Option Name="SimulatorGccVersionQuesta" Val="7.4.0"/>
+    <Option Name="SimulatorGccVersionXcelium" Val="9.3.0"/>
+    <Option Name="SimulatorGccVersionVCS" Val="9.2.0"/>
+    <Option Name="SimulatorGccVersionRiviera" Val="9.3.0"/>
+    <Option Name="SimulatorGccVersionActiveHdl" Val="9.3.0"/>
+    <Option Name="BoardPart" Val=""/>
+    <Option Name="ActiveSimSet" Val="sim_1"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
+    <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
+    <Option Name="IPCachePermission" Val="read"/>
+    <Option Name="IPCachePermission" Val="write"/>
+    <Option Name="EnableCoreContainer" Val="FALSE"/>
+    <Option Name="EnableResourceEstimation" Val="FALSE"/>
+    <Option Name="SimCompileState" Val="TRUE"/>
+    <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
+    <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
+    <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
+    <Option Name="EnableBDX" Val="FALSE"/>
+    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTModelSimLaunchSim" Val="0"/>
+    <Option Name="WTQuestaLaunchSim" Val="0"/>
+    <Option Name="WTIesLaunchSim" Val="0"/>
+    <Option Name="WTVcsLaunchSim" Val="0"/>
+    <Option Name="WTRivieraLaunchSim" Val="0"/>
+    <Option Name="WTActivehdlLaunchSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="0"/>
+    <Option Name="WTModelSimExportSim" Val="0"/>
+    <Option Name="WTQuestaExportSim" Val="0"/>
+    <Option Name="WTIesExportSim" Val="0"/>
+    <Option Name="WTVcsExportSim" Val="0"/>
+    <Option Name="WTRivieraExportSim" Val="0"/>
+    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
+    <Option Name="XSimRadix" Val="hex"/>
+    <Option Name="XSimTimeUnit" Val="ns"/>
+    <Option Name="XSimArrayDisplayLimit" Val="1024"/>
+    <Option Name="XSimTraceLimit" Val="65536"/>
+    <Option Name="SimTypes" Val="rtl"/>
+    <Option Name="SimTypes" Val="bfm"/>
+    <Option Name="SimTypes" Val="tlm"/>
+    <Option Name="SimTypes" Val="tlm_dpi"/>
+    <Option Name="MEMEnableMemoryMapGeneration" Val="TRUE"/>
+    <Option Name="DcpsUptoDate" Val="TRUE"/>
+    <Option Name="UseInlineHdlIP" Val="TRUE"/>
+    <Option Name="LocalIPRepoLeafDirName" Val="ip_repo"/>
+  </Configuration>
+  <FileSets Version="1" Minor="32">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/four_mic_top_forward.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/four_mic_top_forward.v"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/board-prep/rtl/motor_drive.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/motor_drive.v"/>
+          <Attr Name="ImportTime" Val="1791627250"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_c1_lifecycle.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_c1_lifecycle.v"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_c1_packet_framer.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_c1_packet_framer.v"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_continuous_axis.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_continuous_axis.v"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_live_window_handoff.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_live_window_handoff.v"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_overlap_framer_bram.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_overlap_framer_bram.v"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_source_cancel_observer.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_source_cancel_observer.v"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_window_caller_entry.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_window_caller_entry.v"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pdm_cic3.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pdm_cic3.v"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/servo/angle_command_gate.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/servo/angle_command_gate.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/diag_evidence_store.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/diag_evidence_store.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/diag_record_bank.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/diag_record_bank.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/product/diag_single_source_v1.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/product/diag_single_source_v1.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/backend/doa_math_pkg.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/doa_math_pkg.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/backend/doa_math_serial.sv">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/backend/doa_phat_serial.sv">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/fft29_official.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/fft29_official.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/fixed4_leaf.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/fixed4_leaf.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/forward_window_adapter.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/forward_window_adapter.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/forward_window_manager.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/forward_window_manager.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/board-prep/rtl/four_mic_live_loop.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/four_mic_live_loop.sv"/>
+          <Attr Name="ImportTime" Val="1791627251"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_pwm_gate.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_pwm_gate.sv"/>
+          <Attr Name="ImportTime" Val="1791628854"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_vio_control.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_vio_control.sv"/>
+          <Attr Name="ImportTime" Val="1791631171"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_vio_evidence.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_vio_evidence.sv"/>
+          <Attr Name="ImportTime" Val="1791629236"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/backend/ifft25_official.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/ifft25_official.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/backend/pcm4_doa_backend.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/pcm4_doa_backend.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/backend/pcm4_doa_native_entry.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/pcm4_doa_native_entry.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/backend/pcm4_doa_official_entry.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/backend/pcm4_doa_official_entry.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_forward_fft_entry.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_forward_fft_entry.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_forward_fft_fixed4.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_forward_fft_fixed4.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_numeric_preprocess.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_numeric_preprocess.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_window_caller.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_window_caller.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_window_consumer.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/rtl/pcm4_window_consumer.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/inputs/servo/runtime_servo_slice.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/servo/runtime_servo_slice.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/inputs/product/signed_angle_map.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/product/signed_angle_map.sv"/>
+          <Attr Name="ImportTime" Val="1791619847"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/servo/sound_servo_clock.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/project/rtl/servo/sound_servo_clock.sv"/>
+          <Attr Name="ImportTime" Val="1791702439"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_vio_board_top.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/rtl/i17_vio_board_top.sv"/>
+          <Attr Name="ImportTime" Val="1791629095"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="i17_vio_board_top"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Generic Name="HANN_FILE" Val="&quot;C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/inputs/a_numeric/inputs/b_np/hann-u18f17.mem&quot;"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/imports/board-prep/i17_vio_cdc_post_synth.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/i17_vio_cdc_post_synth.xdc"/>
+          <Attr Name="ImportTime" Val="1791684164"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/imports/board-prep/i17_vio_pins.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/board-prep/i17_vio_pins.xdc"/>
+          <Attr Name="ImportTime" Val="1791684164"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
+      <Filter Type="Srcs"/>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="i17_vio_board_top"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SelectedSimModel" Val="rtl"/>
+        <Option Name="PamDesignTestbench" Val=""/>
+        <Option Name="PamDutBypassFile" Val="xil_dut_bypass"/>
+        <Option Name="PamSignalDriverFile" Val="xil_bypass_driver"/>
+        <Option Name="PamPseudoTop" Val="pseudo_tb"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="CosimPdi" Val=""/>
+        <Option Name="CosimPlatform" Val=""/>
+        <Option Name="CosimElf" Val=""/>
+        <Option Name="CosimRootfs" Val=""/>
+        <Option Name="CosimSDfile" Val=""/>
+        <Option Name="CosimSDDir" Val=""/>
+        <Option Name="CosimOutDir" Val=""/>
+        <Option Name="CosimXsa" Val=""/>
+        <Option Name="CosimAIKernel" Val=""/>
+        <Option Name="LogicalNoCTop" Val=""/>
+        <Option Name="LogicalNoCTopLib" Val=""/>
+        <Option Name="Dmv" Val=""/>
+      </Config>
+    </FileSet>
+    <FileSet Name="utils_1" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+      <Filter Type="Utils"/>
+      <File Path="$PSRCDIR/utils_1/imports/synth_1/i17_vio_board_top.dcp">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedInSteps" Val="synth_1"/>
+          <Attr Name="AutoDcp" Val="1"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ss_ifft25" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ss_ifft25" RelGenDir="$PGENDIR/ss_ifft25">
+      <File Path="$PSRCDIR/sources_1/ip/ss_ifft25/ss_ifft25.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="ss_ifft25"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+        <Generic Name="HANN_FILE" Val="&quot;C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/inputs/a_numeric/inputs/b_np/hann-u18f17.mem&quot;"/>
+        <Generic Name="SERVO_CONFIGURED" Val="0"/>
+        <Generic Name="SIM_FIXTURE" Val="0"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ss_fft29" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ss_fft29" RelGenDir="$PGENDIR/ss_fft29">
+      <File Path="$PSRCDIR/sources_1/ip/ss_fft29/ss_fft29.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="ss_fft29"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+        <Generic Name="HANN_FILE" Val="&quot;C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/inputs/a_numeric/inputs/b_np/hann-u18f17.mem&quot;"/>
+        <Generic Name="SERVO_CONFIGURED" Val="0"/>
+        <Generic Name="SIM_FIXTURE" Val="0"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="i17_board_vio" Type="BlockSrcs" RelSrcDir="$PSRCDIR/i17_board_vio" RelGenDir="$PGENDIR/i17_board_vio">
+      <File Path="$PSRCDIR/sources_1/ip/i17_board_vio/i17_board_vio.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="i17_board_vio"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+        <Generic Name="HANN_FILE" Val="&quot;C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/inputs/a_numeric/inputs/b_np/hann-u18f17.mem&quot;"/>
+        <Generic Name="SERVO_CONFIGURED" Val="0"/>
+        <Generic Name="SIM_FIXTURE" Val="0"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="i17_board_ila" Type="BlockSrcs" RelSrcDir="$PSRCDIR/i17_board_ila" RelGenDir="$PGENDIR/i17_board_ila">
+      <File Path="$PSRCDIR/sources_1/ip/i17_board_ila/i17_board_ila.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="i17_board_ila"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+        <Generic Name="HANN_FILE" Val="&quot;C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-i19-live-loop-c-20261010/inputs/inputs/parent/inputs/a_numeric/inputs/b_np/hann-u18f17.mem&quot;"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="Questa">
+      <Option Name="Description" Val="Questa Advanced Simulator"/>
+    </Simulator>
+    <Simulator Name="Riviera">
+      <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="22">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" IncrementalCheckpoint="$PSRCDIR/utils_1/imports/synth_1/i17_vio_board_top.dcp" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2025"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="ss_ifft25_synth_1" Type="Ft3:Synth" SrcSet="ss_ifft25" Part="xc7z020clg400-1" ConstrsSet="ss_ifft25" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ss_ifft25_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ss_ifft25_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/ss_ifft25_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2025"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="ss_fft29_synth_1" Type="Ft3:Synth" SrcSet="ss_fft29" Part="xc7z020clg400-1" ConstrsSet="ss_fft29" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ss_fft29_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ss_fft29_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/ss_fft29_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2025"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="i17_board_vio_synth_1" Type="Ft3:Synth" SrcSet="i17_board_vio" Part="xc7z020clg400-1" ConstrsSet="i17_board_vio" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/i17_board_vio_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/i17_board_vio_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/i17_board_vio_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2025"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="i17_board_ila_synth_1" Type="Ft3:Synth" SrcSet="i17_board_ila" Part="xc7z020clg400-1" ConstrsSet="i17_board_ila" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/i17_board_ila_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/i17_board_ila_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/i17_board_ila_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2025"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1" LaunchOptions="-jobs 16 " AutoRQSDir="$PSRCDIR/utils_1/imports/impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2025"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="ss_ifft25_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="ss_ifft25" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ss_ifft25_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ss_ifft25_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/ss_ifft25_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2025"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="ss_fft29_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="ss_fft29" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ss_fft29_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ss_fft29_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/ss_fft29_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2025"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="i17_board_vio_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="i17_board_vio" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="i17_board_vio_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/i17_board_vio_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/i17_board_vio_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2025"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="i17_board_ila_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="i17_board_ila" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="i17_board_ila_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/i17_board_ila_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/i17_board_ila_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2025"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+  </Runs>
+  <Board/>
+  <DashboardSummary Version="1" Minor="0">
+    <Dashboards>
+      <Dashboard Name="default_dashboard">
+        <Gadgets>
+          <Gadget Name="drc_1" Type="drc" Version="1" Row="2" Column="0">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_drc_0 "/>
+          </Gadget>
+          <Gadget Name="methodology_1" Type="methodology" Version="1" Row="2" Column="1">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_methodology_0 "/>
+          </Gadget>
+          <Gadget Name="power_1" Type="power" Version="1" Row="1" Column="0">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_power_0 "/>
+          </Gadget>
+          <Gadget Name="timing_1" Type="timing" Version="1" Row="0" Column="1">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_timing_summary_0 "/>
+          </Gadget>
+          <Gadget Name="utilization_1" Type="utilization" Version="1" Row="0" Column="0">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="synth_1#synth_1_synth_report_utilization_0 "/>
+            <GadgetParam Name="RUN.STEP" Type="string" Value="synth_design"/>
+            <GadgetParam Name="RUN.TYPE" Type="string" Value="synthesis"/>
+          </Gadget>
+          <Gadget Name="utilization_2" Type="utilization" Version="1" Row="1" Column="1">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_place_report_utilization_0 "/>
+          </Gadget>
+        </Gadgets>
+      </Dashboard>
+      <CurrentDashboard>default_dashboard</CurrentDashboard>
+    </Dashboards>
+  </DashboardSummary>
+</Project>

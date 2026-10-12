@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Oct 12 19:02:53 2026
+# Process ID         : 25636
+# Current directory  : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012
+# Command line       : vivado.exe -mode batch -source diagnostic_synth.tcl -log diagnostic_synth-attempt3.log -journal diagnostic_synth-attempt3.jou
+# Log file           : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_synth-attempt3.log
+# Journal file       : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012\diagnostic_synth-attempt3.jou
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36176 MB
+# Available Virtual  : 21897 MB
+#-----------------------------------------------------------
+CRITICAL WARNING: [Common 17-1297] User repo 'C:/Users/hsc/AppData/Roaming/Xilinx/Vivado/2025.2/XilinxTclStore' catalog file is corrupted. XilinxTclStore has been reverted to the installation area and Tcl Store changes will not be saved. To use local Tcl Store, please run tclapp::reset_tclstore and reinstall the apps.
+source diagnostic_synth.tcl
+# set root [file dirname [file normalize [info script]]]
+# set candidate [file normalize [file join $root ../../project/rtl/c_board/i17_vio_evidence.sv]]
+# set baseline [file join $root baseline/i17_vio_evidence.sv]
+# puts [version]
+Vivado v2025.2 (64-bit)
+SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+Tool Version Limit: 2025.11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+
+# foreach label {before after} source [list $baseline $candidate] {
+#     set folder [file join $root synth_$label]
+#     if {[file exists $folder]} {error "Refuse to overwrite diagnostic $folder"}
+#     file mkdir $folder
+#     cd $folder
+#     create_project -in_memory -part xc7z020clg400-1
+#     read_verilog -sv $source
+#     read_xdc [file join $root diagnostic_clock.xdc]
+#     synth_design -top i17_vio_evidence -part xc7z020clg400-1 -mode out_of_context -flatten_hierarchy rebuilt
+#     report_utilization -file utilization.rpt
+#     # 合成网表时延仅作组合深度诊断，不代表布局布线或完整I/O约束的STA�?
+#     report_timing_summary -file synthesis_timing.rpt
+#     report_utilization -hierarchical -hierarchical_depth 0 -hierarchical_min_primitive_count 0 -file hierarchy.rpt
+#     set counts [dict create]
+#     foreach cell [get_cells -hierarchical -filter {IS_PRIMITIVE}] {
+#         dict incr counts [get_property REF_NAME $cell]
+#     }
+#     set stream [open primitive-counts.tsv w]
+#     puts $stream "primitive\tcount"
+#     foreach key [lsort [dict keys $counts]] {puts $stream "$key\t[dict get $counts $key]"}
+#     close $stream
+#     puts "SINGLE_MODULE_DIAGNOSTIC_COMPLETE $label source=$source"
+#     close_project
+# }
+can't create directory "C:/Users/hsc/fpga_clone": permission denied
+    while executing
+"file mkdir $folder"
+    ("foreach" body line 4)
+    invoked from within
+"foreach label {before after} source [list $baseline $candidate] {
+    set folder [file join $root synth_$label]
+    if {[file exists $folder]} {error ..."
+    (file "diagnostic_synth.tcl" line 9)
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 12 19:03:00 2026...

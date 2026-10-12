@@ -1,0 +1,214 @@
+{
+  "primary_mode": "BUILD_FLOW",
+  "status": "OOC_SYNTHESIS_RESOURCE_DIAGNOSTIC_COMPLETE_PENDING_REVIEW",
+  "baseline_sha256": "135271131d893eba2b8e22a7b596c78292de4050a69855f131b5fe5a582fdfd6",
+  "candidate_sha256": "a3cc8415a9d6875f94433319f71c0b861a3cc0c705a408d10af49863941e1fef",
+  "script_sha256": "712d3658909f1b893b58f9c542d8b4b651cbd1734d0c713be5a2810dc8e13296",
+  "clock_sha256": "a6d23feb8fbed2d8ba7765cc27f4187ccd02e88bf1e19e7bc5b217bc96aec05f",
+  "target": "xc7z020clg400-1",
+  "tool": "Vivado 2025.2",
+  "run_scope": "one baseline then one candidate, synth_design -mode out_of_context -flatten_hierarchy rebuilt; no opt/place/route",
+  "clock_period_ns": 16.276041667,
+  "native_project_modified": false,
+  "power": "NOT APPLICABLE",
+  "attempts": [
+    {
+      "attempt": 1,
+      "sandbox": "default",
+      "process_environment": "confirmed tool root/bin PATH, missing PROCESSOR_ARCHITECTURE",
+      "exit": 1,
+      "class": "TOOL_ENV_FAIL",
+      "output": "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\vivado.bat\n",
+      "tcl_started": false
+    },
+    {
+      "attempt": 2,
+      "sandbox": "require_escalated",
+      "process_environment": "same missing PROCESSOR_ARCHITECTURE",
+      "exit": 1,
+      "class": "TOOL_ENV_FAIL",
+      "output": "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\vivado.bat\n",
+      "tcl_started": false
+    },
+    {
+      "attempt": 3,
+      "sandbox": "default",
+      "process_environment": "tool root/bin PATH plus PROCESSOR_ARCHITECTURE=AMD64",
+      "exit": 1,
+      "class": "SCRIPT_PATH_FAIL",
+      "log": "diagnostic_synth-attempt3.log",
+      "detail": "Restricted Tcl file normalize removed Desktop and mkdir denied C:/Users/hsc/fpga_clone before create_project or synth_design",
+      "tcl_started": true,
+      "synthesis_started": false
+    },
+    {
+      "attempt": 4,
+      "sandbox": "require_escalated",
+      "process_environment": "tool root/bin PATH plus PROCESSOR_ARCHITECTURE=AMD64",
+      "status": "COMPLETED",
+      "log": "diagnostic_synth-attempt4.log",
+      "tcl_started": true,
+      "exit": 0,
+      "baseline_syntheses": 1,
+      "candidate_syntheses": 1
+    }
+  ],
+  "canonical_command": "vivado -mode batch -source diagnostic_synth.tcl -log diagnostic_synth-attempt4.log -journal diagnostic_synth-attempt4.jou",
+  "cwd": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-shared-read-20261012",
+  "actual_version": "Vivado 2025.2 SW 6299465 IP 6300035 SharedData 6298862",
+  "input_hashes_start": {
+    "baseline": "135271131d893eba2b8e22a7b596c78292de4050a69855f131b5fe5a582fdfd6",
+    "candidate": "a3cc8415a9d6875f94433319f71c0b861a3cc0c705a408d10af49863941e1fef",
+    "script": "712d3658909f1b893b58f9c542d8b4b651cbd1734d0c713be5a2810dc8e13296",
+    "clock": "a6d23feb8fbed2d8ba7765cc27f4187ccd02e88bf1e19e7bc5b217bc96aec05f"
+  },
+  "input_hashes_end": {
+    "baseline": "135271131d893eba2b8e22a7b596c78292de4050a69855f131b5fe5a582fdfd6",
+    "candidate": "a3cc8415a9d6875f94433319f71c0b861a3cc0c705a408d10af49863941e1fef",
+    "script": "712d3658909f1b893b58f9c542d8b4b651cbd1734d0c713be5a2810dc8e13296",
+    "clock": "a6d23feb8fbed2d8ba7765cc27f4187ccd02e88bf1e19e7bc5b217bc96aec05f"
+  },
+  "inputs_unchanged_through_run": true,
+  "resources": {
+    "before": {
+      "Slice LUTs*": 6634,
+      "LUT as Logic": 6546,
+      "LUT as Memory": 88,
+      "Slice Registers": 10509,
+      "Register as Latch": 0,
+      "F7 Muxes": 2271,
+      "F8 Muxes": 750,
+      "Block RAM Tile": 0,
+      "DSPs": 0
+    },
+    "after": {
+      "Slice LUTs*": 3684,
+      "LUT as Logic": 3640,
+      "LUT as Memory": 44,
+      "Slice Registers": 10451,
+      "Register as Latch": 0,
+      "F7 Muxes": 1260,
+      "F8 Muxes": 416,
+      "Block RAM Tile": 0,
+      "DSPs": 0
+    },
+    "delta_after_minus_before": {
+      "Slice LUTs*": -2950,
+      "LUT as Logic": -2906,
+      "LUT as Memory": -44,
+      "Slice Registers": -58,
+      "Register as Latch": 0,
+      "F7 Muxes": -1011,
+      "F8 Muxes": -334,
+      "Block RAM Tile": 0,
+      "DSPs": 0
+    },
+    "logic_lut_reduction_percent": 44.394,
+    "total_lut_reduction_percent": 44.468
+  },
+  "resource_targets_met": true,
+  "synthesis_timing_diagnostic": {
+    "scope": "SYNTHESIZED ONLY; not implementation/STA acceptance; HD.CLK_SRC absent and IO delays unconstrained",
+    "reports": {
+      "before": {
+        "wns_ns": 8.674,
+        "tns_ns": 0.0,
+        "whs_ns": 0.256,
+        "ths_ns": 0.0,
+        "setup_critical_path": [
+          "  Source:                 next_seq_reg[3]/C",
+          "  Destination:            next_seq_reg[61]/D",
+          "  Data Path Delay:        7.595ns  (logic 5.289ns (69.638%)  route 2.306ns (30.362%))",
+          "  Logic Levels:           26  (CARRY4=22 LUT3=1 LUT4=2 LUT6=1)"
+        ],
+        "no_input_delay": 8938,
+        "no_output_delay": 481
+      },
+      "after": {
+        "wns_ns": 8.216,
+        "tns_ns": 0.0,
+        "whs_ns": 0.25,
+        "ths_ns": 0.0,
+        "setup_critical_path": [
+          "  Source:                 next_seq_reg[3]/C",
+          "  Destination:            next_seq_reg[0]/D",
+          "  Data Path Delay:        8.053ns  (logic 5.509ns (68.409%)  route 2.544ns (31.591%))",
+          "  Logic Levels:           28  (CARRY4=23 LUT2=1 LUT3=1 LUT4=1 LUT6=2)"
+        ],
+        "no_input_delay": 8938,
+        "no_output_delay": 481
+      }
+    },
+    "wns_delta_ns": -0.458
+  },
+  "native_process_exit": 0,
+  "native_runtime_records": [
+    "synth_design: Time (s): cpu = 00:02:36 ; elapsed = 00:02:59 . Memory (MB): peak = 2152.137 ; gain = 1608.289",
+    "synth_design: Time (s): cpu = 00:01:37 ; elapsed = 00:01:59 . Memory (MB): peak = 2152.137 ; gain = 0.000"
+  ],
+  "native_start_line": "# Start of session at: Mon Oct 12 19:04:07 2026",
+  "native_end_line": "INFO: [Common 17-206] Exiting Vivado at Mon Oct 12 19:09:53 2026...",
+  "warnings": {
+    "count": 30,
+    "by_code": {
+      "Synth 8-6014": 2,
+      "Vivado 12-2489": 4,
+      "Synth 8-3917": 20,
+      "Netlist 29-101": 2,
+      "Timing 38-242": 2
+    },
+    "lines": [
+      "WARNING: [Synth 8-6014] Unused sequential element dump_seq_reg was removed.  [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/baseline/i17_vio_evidence.sv:153]",
+      "WARNING: [Vivado 12-2489] -period contains time 16.276042 which will be rounded to 16.276 to ensure it is an integer multiple of 1 picosecond [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_clock.xdc:3]",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence has port error_code[7] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence has port error_code[6] driven by constant 0",
+      "WARNING: [Netlist 29-101] Netlist 'i17_vio_evidence' is not ideal for floorplanning, since the cellview 'i17_vio_evidence' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.",
+      "WARNING: [Vivado 12-2489] -period contains time 16.276042 which will be rounded to 16.276 to ensure it is an integer multiple of 1 picosecond [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_clock.xdc:3]",
+      "WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port \"clk\" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew",
+      "WARNING: [Synth 8-6014] Unused sequential element dump_seq_reg was removed.  [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/project/rtl/c_board/i17_vio_evidence.sv:168]",
+      "WARNING: [Vivado 12-2489] -period contains time 16.276042 which will be rounded to 16.276 to ensure it is an integer multiple of 1 picosecond [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_clock.xdc:3]",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence has port error_code[7] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence has port error_code[6] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port P[4] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port P[3] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port P[2] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port P[1] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port P[0] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O25[4] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O25[3] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O25[2] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O25[1] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O25[0] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O26[8] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O26[4] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O26[3] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O26[2] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O26[1] driven by constant 0",
+      "WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O26[0] driven by constant 0",
+      "WARNING: [Netlist 29-101] Netlist 'i17_vio_evidence' is not ideal for floorplanning, since the cellview 'i17_vio_evidence' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.",
+      "WARNING: [Vivado 12-2489] -period contains time 16.276042 which will be rounded to 16.276 to ensure it is an integer multiple of 1 picosecond [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_clock.xdc:3]",
+      "WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port \"clk\" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew"
+    ],
+    "new_candidate_only": "16 Synth 8-3917 constant-output warnings on generated __GB15 P/O25/O26 ports; no latches or black-box primitives inferred"
+  },
+  "not_run": [
+    "whole-project synthesis/fit",
+    "opt/place/route",
+    "implementation timing/STA acceptance",
+    "board/ILA hardware"
+  ],
+  "artifact_sha256": {
+    "diagnostic_synth-attempt3.log": "3b268913a8070b0fb5ee3d59ea9aa28456f63f8bc80a04ae4ecef20b8b6b5fec",
+    "diagnostic_synth-attempt4.log": "864fbd89eb2f07b50194c059d56b562fbf5d0ed75ed409ab2516b4137a475e6a",
+    "diagnostic_synth-attempt3.jou": "7e424b2e94b03d0d73a55293556ab3d50b7eaffd226bde0c6b9a74b00fe44511",
+    "diagnostic_synth-attempt4.jou": "16940cb154a2b8edc1b99429023c9866a84a3b3ecaf33481ec48162a681fcb04",
+    "synth_after\\hierarchy.rpt": "4e6b1091fc02326bd6637931cc2d1340e4402d526ab97311da04b73c1a49d61c",
+    "synth_after\\synthesis_timing.rpt": "076dd3c5337848c21c374e24bed781fe13fd5e0f06273aad68986e95947e1007",
+    "synth_after\\utilization.rpt": "d617a387139b05e156dde845f1db50a679d19f9b3403e9036b30795deaa29784",
+    "synth_before\\hierarchy.rpt": "d78e5a31279930a2e6170a421da034b26878b646860d29a42741ec9462fd02c3",
+    "synth_before\\synthesis_timing.rpt": "6a974095a2b09babd55596526d3ee51647a2313f69e5152fd194f5c9792d4198",
+    "synth_before\\utilization.rpt": "cdaab1c3f052d0c030755832c9bcf260aa25be8db7d1f7ea17fea1f46849aa72",
+    "synth_after\\primitive-counts.tsv": "5c4f7799cf78b9a05b8e2a7bc90df398da01b6680e32a436ec790c6acfc71f3d",
+    "synth_before\\primitive-counts.tsv": "1b4b983e831ff5d46751bdbbe970be687b601f237e7690ea68d28b7bfeacf55d"
+  }
+}

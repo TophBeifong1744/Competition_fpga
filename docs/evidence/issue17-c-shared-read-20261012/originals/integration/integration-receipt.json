@@ -1,0 +1,31 @@
+{
+  "finding": "C-EVID-SHARED-001",
+  "primary_mode": "RELEASE_PACKAGING",
+  "operation": "Accepted exact-byte single-file integration, no build",
+  "review": "Independent PASS_WITH_SCOPE by /root/c_mux_review; bounded simulation and same-condition OOC resource improvement only; not A/B member approval",
+  "copy_utc": "2026-10-12T14:19:57.7794682Z",
+  "xpr": "D:\\vavido_project\\i17_live_loop\\project\\par\\i17_live_loop\\i17_live_loop.xpr",
+  "target": "D:\\vavido_project\\i17_live_loop\\project\\par\\i17_live_loop\\i17_live_loop.srcs\\sources_1\\imports\\i17-i19-live-loop-c-20261010\\board-prep\\rtl\\i17_vio_evidence.sv",
+  "source": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\project\\rtl\\c_board\\i17_vio_evidence.sv",
+  "before_sha256": "135271131d893eba2b8e22a7b596c78292de4050a69855f131b5fe5a582fdfd6",
+  "after_sha256": "a3cc8415a9d6875f94433319f71c0b861a3cc0c705a408d10af49863941e1fef",
+  "protected_inventory_count": 421,
+  "changed_paths": [
+    "D:\\vavido_project\\i17_live_loop\\project\\par\\i17_live_loop\\i17_live_loop.srcs\\sources_1\\imports\\i17-i19-live-loop-c-20261010\\board-prep\\rtl\\i17_vio_evidence.sv"
+  ],
+  "every_other_inventory_hash_and_mtime_unchanged": true,
+  "xpr_sha256": "cfecdd811640b4cb1ea5e0ed26dc000c7ea3cdf2db9abd5307ced3b458e42433",
+  "backup_source_sha256": "135271131d893eba2b8e22a7b596c78292de4050a69855f131b5fe5a582fdfd6",
+  "original_test_manifest_sha256": "ac2298ddad9a34e3970ca98d9c1087e2526589b7b72bc38506e044c074b0fa28",
+  "open_findings": [
+    "C-IMPL-LUT-001",
+    "C-AB-CTRL-001"
+  ],
+  "low_followup": "C-EVID-SHARED-REV-001",
+  "info_scope_limit": "C-META-SH-001",
+  "eda_started": false,
+  "board_action": false,
+  "xpr_modified": false,
+  "native_runs_modified": false,
+  "source_registration": "Existing XPR already references this same native file; no registration/topology change."
+}

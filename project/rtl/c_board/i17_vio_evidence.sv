@@ -144,6 +144,21 @@ module i17_vio_evidence (
             m[89:87]=(kind==5 ? diag_bank : 3'd0); m[97:90]=error_code; meta_for=m;
         end
     endfunction
+    // READ与DUMP互斥消费，共享记录字和meta选择；不增加寄存级。
+    reg [3:0] shared_type;
+    reg [7:0] shared_word;
+    reg [31:0] shared_read_data;
+    reg [127:0] shared_read_meta;
+    always_comb begin
+        shared_type=selected_type;
+        shared_word=selected_word;
+        if(dumping) begin
+            shared_type=dump_type;
+            shared_word=dump_word;
+        end
+        shared_read_data=word_for(shared_type,shared_word);
+        shared_read_meta=meta_for(shared_type,shared_word);
+    end
     always @(posedge clk) begin
         if(!rst_n) begin
             report_full<=0; abort_full<=0; diag_full<=0; diag_partial<=0; report_pending<=0;
@@ -217,8 +232,8 @@ module i17_vio_evidence (
                 default: begin end
             endcase
             if(dumping) begin
-                ila_sample[31:0]<=word_for(dump_type,dump_word);
-                ila_sample[159:32]<=meta_for(dump_type,dump_word);
+                ila_sample[31:0]<=shared_read_data;
+                ila_sample[159:32]<=shared_read_meta;
                 ila_sample[223:160]<=cycle; ila_sample[255:224]<=32'h49313744;
                 if(dump_word==dump_words-1) begin
                     dumping<=0;
@@ -234,8 +249,8 @@ module i17_vio_evidence (
                 end else if(busy || !select_legal) error_code<=8'h33;
                 else if(action[0]) begin
                     if(selected_type==9 && selected_word<4) read_data<=live_status[selected_word*32+:32];
-                    else read_data<=word_for(selected_type,selected_word);
-                    read_meta<=meta_for(selected_type,selected_word);
+                    else read_data<=shared_read_data;
+                    read_meta<=shared_read_meta;
                     if(!valid_for(selected_type) || selected_word>=words_for(selected_type)) error_code<=8'h34;
                 end else if(action[1]) begin
                     if(selected_type!=5 || diag_full || diag_partial || selected_bank>4 || export_valid) error_code<=8'h35;

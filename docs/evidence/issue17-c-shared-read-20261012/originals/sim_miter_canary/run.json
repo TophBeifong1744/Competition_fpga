@@ -1,0 +1,74 @@
+{
+  "candidate_sha256": "a3cc8415a9d6875f94433319f71c0b861a3cc0c705a408d10af49863941e1fef",
+  "case": "miter_canary",
+  "tool": "Vivado XSim 2025.2",
+  "seed": 17010,
+  "cwd": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-shared-read-20261012\\sim_miter_canary",
+  "sources": {
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\project\\rtl\\c_board\\i17_vio_evidence.sv": "a3cc8415a9d6875f94433319f71c0b861a3cc0c705a408d10af49863941e1fef",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-shared-read-20261012\\selftest\\i17_vio_evidence_baseline.sv": "df7a7fd3cde8e9e030e981e5359e9eaad248a4db1fffd2bf69c0d9adaac4f418",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-shared-read-20261012\\selftest\\tb_shared_read.sv": "a0742726a1ec3b4951617332c9b307e0f64dfdfec2daac55a3f4963e7b3f63c8"
+  },
+  "runner_sha256": "ab082810fbfecff63ce456fae3028220e7a9e575101e5a39b35d059265fd250c",
+  "environment_recipe_sha256": "b36c77ce1d1a75bc4ab2ad6344dd6bc65c904272df45e1ca4d11478f7a5d9314",
+  "commands": [
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvlog.exe",
+        "--sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\project\\rtl\\c_board\\i17_vio_evidence.sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-shared-read-20261012\\selftest\\i17_vio_evidence_baseline.sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-shared-read-20261012\\selftest\\tb_shared_read.sv"
+      ],
+      "exit": 0,
+      "elapsed_s": 0.668,
+      "log": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-shared-read-20261012\\sim_miter_canary\\xvlog-stdout.log"
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xelab.exe",
+        "work.tb_shared_read",
+        "--snapshot",
+        "test",
+        "--debug",
+        "off"
+      ],
+      "exit": 0,
+      "elapsed_s": 2.322,
+      "log": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-shared-read-20261012\\sim_miter_canary\\xelab-stdout.log"
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xsim.exe",
+        "test",
+        "--runall",
+        "--onerror",
+        "quit",
+        "--onfinish",
+        "quit",
+        "--sv_seed",
+        "17010",
+        "--testplusarg",
+        "CANARY_MITER"
+      ],
+      "exit": 0,
+      "elapsed_s": 2.414,
+      "log": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-evidence-shared-read-20261012\\sim_miter_canary\\xsim-stdout.log"
+    }
+  ],
+  "status": "EXPECTED_CANARY_REJECTION",
+  "expected_first_failure": "all19 mismatch",
+  "observed_first_failure": "Fatal: SHARED_MITER cycle=195 all19 mismatch\r",
+  "completion_marker_absent": true,
+  "fatals": [
+    "Fatal: SHARED_MITER cycle=195 all19 mismatch\r"
+  ],
+  "log_hashes": {
+    "xelab-stdout.log": "dad9c0d5e3401a936fbc01537c50b2ade11a8c7b4a2966c5fcb3b2178f67b435",
+    "xelab.log": "acfdfe34f114420f3bba7b4da28a2d430cd7e307db4a7c3526251b30583719a5",
+    "xsim-stdout.log": "57bf9c64fc663725f4197266d6c90629c0e39cb8d5373801760ab33dbcb1cbf4",
+    "xsim.log": "8154e9156a42543b15d1c3732e912f2166775a08c0b85bf7562cb7afd224d32e",
+    "xvlog-stdout.log": "c9dc4c8f769a5509a040a163a72cb670e1728179f83961e5501e5414d88754ae",
+    "xvlog.log": "b4976ada3770aa8fe1aac4c4abb318f15da6c1fc698b58a31cbbe433fa18dfa3"
+  }
+}

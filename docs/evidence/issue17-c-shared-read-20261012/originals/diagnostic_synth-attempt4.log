@@ -1,0 +1,860 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Oct 12 19:04:07 2026
+# Process ID         : 12148
+# Current directory  : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012
+# Command line       : vivado.exe -mode batch -source diagnostic_synth.tcl -log diagnostic_synth-attempt4.log -journal diagnostic_synth-attempt4.jou
+# Log file           : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_synth-attempt4.log
+# Journal file       : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012\diagnostic_synth-attempt4.jou
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36176 MB
+# Available Virtual  : 21797 MB
+#-----------------------------------------------------------
+source diagnostic_synth.tcl
+# set root [file dirname [file normalize [info script]]]
+# set candidate [file normalize [file join $root ../../project/rtl/c_board/i17_vio_evidence.sv]]
+# set baseline [file join $root baseline/i17_vio_evidence.sv]
+# puts [version]
+Vivado v2025.2 (64-bit)
+SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+Tool Version Limit: 2025.11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+
+# foreach label {before after} source [list $baseline $candidate] {
+#     set folder [file join $root synth_$label]
+#     if {[file exists $folder]} {error "Refuse to overwrite diagnostic $folder"}
+#     file mkdir $folder
+#     cd $folder
+#     create_project -in_memory -part xc7z020clg400-1
+#     read_verilog -sv $source
+#     read_xdc [file join $root diagnostic_clock.xdc]
+#     synth_design -top i17_vio_evidence -part xc7z020clg400-1 -mode out_of_context -flatten_hierarchy rebuilt
+#     report_utilization -file utilization.rpt
+#     # 合成网表时延仅作组合深度诊断，不代表布局布线或完整I/O约束的STA�?
+#     report_timing_summary -file synthesis_timing.rpt
+#     report_utilization -hierarchical -hierarchical_depth 0 -hierarchical_min_primitive_count 0 -file hierarchy.rpt
+#     set counts [dict create]
+#     foreach cell [get_cells -hierarchical -filter {IS_PRIMITIVE}] {
+#         dict incr counts [get_property REF_NAME $cell]
+#     }
+#     set stream [open primitive-counts.tsv w]
+#     puts $stream "primitive\tcount"
+#     foreach key [lsort [dict keys $counts]] {puts $stream "$key\t[dict get $counts $key]"}
+#     close $stream
+#     puts "SINGLE_MODULE_DIAGNOSTIC_COMPLETE $label source=$source"
+#     close_project
+# }
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 543.848 ; gain = 221.465
+Command: synth_design -top i17_vio_evidence -part xc7z020clg400-1 -mode out_of_context -flatten_hierarchy rebuilt
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26944
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1316.832 ; gain = 540.172
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'i17_vio_evidence' [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/baseline/i17_vio_evidence.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'i17_vio_evidence' (0#1) [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/baseline/i17_vio_evidence.sv:4]
+WARNING: [Synth 8-6014] Unused sequential element dump_seq_reg was removed.  [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/baseline/i17_vio_evidence.sv:153]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1462.191 ; gain = 685.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1462.191 ; gain = 685.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1462.191 ; gain = 685.531
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.216 . Memory (MB): peak = 1462.191 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_clock.xdc]
+WARNING: [Vivado 12-2489] -period contains time 16.276042 which will be rounded to 16.276 to ensure it is an integer multiple of 1 picosecond [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_clock.xdc:3]
+Finished Parsing XDC File [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_clock.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1545.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.215 . Memory (MB): peak = 1545.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1545.316 ; gain = 768.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1545.316 ; gain = 768.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1545.316 ; gain = 768.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1545.316 ; gain = 768.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   65 Bit       Adders := 1     
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 6     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
++---Registers : 
+	              725 Bit    Registers := 3     
+	              512 Bit    Registers := 1     
+	              256 Bit    Registers := 1     
+	              192 Bit    Registers := 1     
+	              180 Bit    Registers := 1     
+	              160 Bit    Registers := 1     
+	              128 Bit    Registers := 2     
+	               96 Bit    Registers := 1     
+	               64 Bit    Registers := 5     
+	               32 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---RAMs : 
+	               2K Bit	(64 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input  512 Bit        Muxes := 2     
+	   2 Input  256 Bit        Muxes := 2     
+	   3 Input  192 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 5     
+	   3 Input  128 Bit        Muxes := 1     
+	   3 Input   64 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 5     
+	  11 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 23    
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 8     
+	  11 Input    8 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 6     
+	   2 Input    7 Bit        Muxes := 1     
+	   8 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 12    
+	   2 Input    3 Bit        Muxes := 5     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 60    
+	   6 Input    1 Bit        Muxes := 10    
+	   4 Input    1 Bit        Muxes := 8     
+	   5 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design i17_vio_evidence has port error_code[7] driven by constant 0
+WARNING: [Synth 8-3917] design i17_vio_evidence has port error_code[6] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1919.688 ; gain = 1143.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------+--------------+-----------+----------------------+--------------+
+|Module Name      | RTL Object   | Inference | Size (Depth x Width) | Primitives   | 
++-----------------+--------------+-----------+----------------------+--------------+
+|i17_vio_evidence | diag_mem_reg | Implied   | 64 x 32              | RAM64M x 22  | 
++-----------------+--------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 1919.688 ; gain = 1143.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:12 ; elapsed = 00:02:18 . Memory (MB): peak = 2152.137 ; gain = 1375.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-----------------+--------------+-----------+----------------------+--------------+
+|Module Name      | RTL Object   | Inference | Size (Depth x Width) | Primitives   | 
++-----------------+--------------+-----------+----------------------+--------------+
+|i17_vio_evidence | diag_mem_reg | Implied   | 64 x 32              | RAM64M x 22  | 
++-----------------+--------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:19 ; elapsed = 00:02:26 . Memory (MB): peak = 2152.137 ; gain = 1375.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:25 ; elapsed = 00:02:32 . Memory (MB): peak = 2152.137 ; gain = 1375.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:25 ; elapsed = 00:02:32 . Memory (MB): peak = 2152.137 ; gain = 1375.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:26 ; elapsed = 00:02:33 . Memory (MB): peak = 2152.137 ; gain = 1375.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:26 ; elapsed = 00:02:33 . Memory (MB): peak = 2152.137 ; gain = 1375.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:26 ; elapsed = 00:02:33 . Memory (MB): peak = 2152.137 ; gain = 1375.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:26 ; elapsed = 00:02:33 . Memory (MB): peak = 2152.137 ; gain = 1375.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    62|
+|2     |LUT1   |    23|
+|3     |LUT2   |   127|
+|4     |LUT3   |    66|
+|5     |LUT4   |   142|
+|6     |LUT5   |   397|
+|7     |LUT6   |  5887|
+|8     |MUXF7  |  2271|
+|9     |MUXF8  |   750|
+|10    |RAM64M |    22|
+|11    |FDRE   | 10509|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:26 ; elapsed = 00:02:33 . Memory (MB): peak = 2152.137 ; gain = 1375.477
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:10 ; elapsed = 00:02:28 . Memory (MB): peak = 2152.137 ; gain = 1292.352
+Synthesis Optimization Complete : Time (s): cpu = 00:02:26 ; elapsed = 00:02:33 . Memory (MB): peak = 2152.137 ; gain = 1375.477
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.242 . Memory (MB): peak = 2152.137 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3105 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'i17_vio_evidence' is not ideal for floorplanning, since the cellview 'i17_vio_evidence' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_clock.xdc]
+WARNING: [Vivado 12-2489] -period contains time 16.276042 which will be rounded to 16.276 to ensure it is an integer multiple of 1 picosecond [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_clock.xdc:3]
+Finished Parsing XDC File [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_clock.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2152.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 22 instances
+
+Synth Design complete | Checksum: 48f7f05e
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:36 ; elapsed = 00:02:59 . Memory (MB): peak = 2152.137 ; gain = 1608.289
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 2152.137 ; gain = 0.000
+SINGLE_MODULE_DIAGNOSTIC_COMPLETE before source=C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/baseline/i17_vio_evidence.sv
+Command: synth_design -top i17_vio_evidence -part xc7z020clg400-1 -mode out_of_context -flatten_hierarchy rebuilt
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'i17_vio_evidence' [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/project/rtl/c_board/i17_vio_evidence.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'i17_vio_evidence' (0#1) [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/project/rtl/c_board/i17_vio_evidence.sv:4]
+WARNING: [Synth 8-6014] Unused sequential element dump_seq_reg was removed.  [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/project/rtl/c_board/i17_vio_evidence.sv:168]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.215 . Memory (MB): peak = 2152.137 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_clock.xdc]
+WARNING: [Vivado 12-2489] -period contains time 16.276042 which will be rounded to 16.276 to ensure it is an integer multiple of 1 picosecond [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_clock.xdc:3]
+Finished Parsing XDC File [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_clock.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2152.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.219 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   65 Bit       Adders := 1     
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 5     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
++---Registers : 
+	             6626 Bit    Registers := 1     
+	              725 Bit    Registers := 3     
+	              512 Bit    Registers := 1     
+	              256 Bit    Registers := 1     
+	              192 Bit    Registers := 1     
+	              180 Bit    Registers := 1     
+	              160 Bit    Registers := 1     
+	              128 Bit    Registers := 2     
+	               96 Bit    Registers := 1     
+	               64 Bit    Registers := 5     
+	               32 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---RAMs : 
+	               2K Bit	(64 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input  512 Bit        Muxes := 2     
+	   2 Input  256 Bit        Muxes := 2     
+	   3 Input  192 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 2     
+	   3 Input   64 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 13    
+	   4 Input   32 Bit        Muxes := 4     
+	  11 Input   32 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 8     
+	   2 Input    8 Bit        Muxes := 7     
+	  11 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 1     
+	   8 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 12    
+	   2 Input    4 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 60    
+	   4 Input    1 Bit        Muxes := 8     
+	   3 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 10    
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design i17_vio_evidence has port error_code[7] driven by constant 0
+WARNING: [Synth 8-3917] design i17_vio_evidence has port error_code[6] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'read_meta_reg[96]' (FDRE) to 'read_meta_reg[97]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[97] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[98] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[99] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[100] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[101] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[102] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[103] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[104] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[105] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[106] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[107] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[108] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[109] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[110] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[111] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[112] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[113] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[114] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[115] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[116] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[117] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[118] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[119] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[120] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[121] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[122] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[123] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\read_meta_reg[127] )
+INFO: [Synth 8-3886] merging instance 'report_header_reg[480]' (FDRE) to 'report_header_reg[448]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[448]' (FDRE) to 'report_header_reg[416]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[416]' (FDRE) to 'report_header_reg[384]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[384]' (FDRE) to 'report_header_reg[352]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[352]' (FDRE) to 'report_header_reg[320]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[320]' (FDRE) to 'report_header_reg[288]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[288]' (FDRE) to 'report_header_reg[481]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[481]' (FDRE) to 'report_header_reg[449]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[449]' (FDRE) to 'report_header_reg[417]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[417]' (FDRE) to 'report_header_reg[385]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[385]' (FDRE) to 'report_header_reg[353]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[353]' (FDRE) to 'report_header_reg[321]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[321]' (FDRE) to 'report_header_reg[289]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[289]' (FDRE) to 'report_header_reg[482]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[482]' (FDRE) to 'report_header_reg[450]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[450]' (FDRE) to 'report_header_reg[418]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[418]' (FDRE) to 'report_header_reg[386]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[386]' (FDRE) to 'report_header_reg[354]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[354]' (FDRE) to 'report_header_reg[322]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[322]' (FDRE) to 'report_header_reg[290]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[290]' (FDRE) to 'report_header_reg[483]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[483]' (FDRE) to 'report_header_reg[451]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[451]' (FDRE) to 'report_header_reg[419]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[419]' (FDRE) to 'report_header_reg[387]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[387]' (FDRE) to 'report_header_reg[355]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[355]' (FDRE) to 'report_header_reg[323]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[323]' (FDRE) to 'report_header_reg[291]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[291]' (FDRE) to 'report_header_reg[484]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[484]' (FDRE) to 'report_header_reg[452]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[452]' (FDRE) to 'report_header_reg[420]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[420]' (FDRE) to 'report_header_reg[388]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[388]' (FDRE) to 'report_header_reg[356]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[356]' (FDRE) to 'report_header_reg[324]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[324]' (FDRE) to 'report_header_reg[292]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[292]' (FDRE) to 'report_header_reg[485]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[485]' (FDRE) to 'report_header_reg[453]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[453]' (FDRE) to 'report_header_reg[421]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[421]' (FDRE) to 'report_header_reg[389]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[389]' (FDRE) to 'report_header_reg[357]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[357]' (FDRE) to 'report_header_reg[325]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[325]' (FDRE) to 'report_header_reg[293]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[293]' (FDRE) to 'report_header_reg[486]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[486]' (FDRE) to 'report_header_reg[454]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[454]' (FDRE) to 'report_header_reg[422]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[422]' (FDRE) to 'report_header_reg[390]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[390]' (FDRE) to 'report_header_reg[358]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[358]' (FDRE) to 'report_header_reg[326]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[326]' (FDRE) to 'report_header_reg[294]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[294]' (FDRE) to 'report_header_reg[487]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[487]' (FDRE) to 'report_header_reg[455]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[455]' (FDRE) to 'report_header_reg[423]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[423]' (FDRE) to 'report_header_reg[391]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[391]' (FDRE) to 'report_header_reg[359]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[359]' (FDRE) to 'report_header_reg[327]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[327]' (FDRE) to 'report_header_reg[295]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[295]' (FDRE) to 'report_header_reg[488]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[488]' (FDRE) to 'report_header_reg[456]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[456]' (FDRE) to 'report_header_reg[424]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[424]' (FDRE) to 'report_header_reg[392]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[392]' (FDRE) to 'report_header_reg[360]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[360]' (FDRE) to 'report_header_reg[328]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[328]' (FDRE) to 'report_header_reg[296]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[296]' (FDRE) to 'report_header_reg[489]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[489]' (FDRE) to 'report_header_reg[457]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[457]' (FDRE) to 'report_header_reg[425]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[425]' (FDRE) to 'report_header_reg[393]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[393]' (FDRE) to 'report_header_reg[361]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[361]' (FDRE) to 'report_header_reg[329]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[329]' (FDRE) to 'report_header_reg[297]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[297]' (FDRE) to 'report_header_reg[490]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[490]' (FDRE) to 'report_header_reg[458]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[458]' (FDRE) to 'report_header_reg[426]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[426]' (FDRE) to 'report_header_reg[394]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[394]' (FDRE) to 'report_header_reg[362]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[362]' (FDRE) to 'report_header_reg[330]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[330]' (FDRE) to 'report_header_reg[298]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[298]' (FDRE) to 'report_header_reg[491]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[491]' (FDRE) to 'report_header_reg[459]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[459]' (FDRE) to 'report_header_reg[427]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[427]' (FDRE) to 'report_header_reg[395]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[395]' (FDRE) to 'report_header_reg[363]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[363]' (FDRE) to 'report_header_reg[331]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[331]' (FDRE) to 'report_header_reg[299]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[299]' (FDRE) to 'report_header_reg[492]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[492]' (FDRE) to 'report_header_reg[460]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[460]' (FDRE) to 'report_header_reg[428]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[428]' (FDRE) to 'report_header_reg[396]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[396]' (FDRE) to 'report_header_reg[364]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[364]' (FDRE) to 'report_header_reg[332]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[332]' (FDRE) to 'report_header_reg[300]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[300]' (FDRE) to 'report_header_reg[493]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[493]' (FDRE) to 'report_header_reg[461]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[461]' (FDRE) to 'report_header_reg[429]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[429]' (FDRE) to 'report_header_reg[397]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[397]' (FDRE) to 'report_header_reg[365]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[365]' (FDRE) to 'report_header_reg[333]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[333]' (FDRE) to 'report_header_reg[301]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[301]' (FDRE) to 'report_header_reg[494]'
+INFO: [Synth 8-3886] merging instance 'report_header_reg[494]' (FDRE) to 'report_header_reg[462]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\report_header_reg[191] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\live_snapshot_reg[127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\backend_header_reg[143] )
+WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port P[4] driven by constant 0
+WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port P[3] driven by constant 0
+WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port P[2] driven by constant 0
+WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port P[1] driven by constant 0
+WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port P[0] driven by constant 0
+WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O25[4] driven by constant 0
+WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O25[3] driven by constant 0
+WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O25[2] driven by constant 0
+WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O25[1] driven by constant 0
+WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O25[0] driven by constant 0
+WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O26[8] driven by constant 0
+WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O26[4] driven by constant 0
+WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O26[3] driven by constant 0
+WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O26[2] driven by constant 0
+WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O26[1] driven by constant 0
+WARNING: [Synth 8-3917] design i17_vio_evidence__GB15 has port O26[0] driven by constant 0
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[128] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[129] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[130] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[131] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[132] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[133] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[134] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[135] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[136] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[137] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[138] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[139] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[140] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[141] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[142] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[143] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[144] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[145] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[146] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[147] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[148] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[149] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[150] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[151] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[152] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[153] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[154] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[155] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[156] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[157] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[158] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[159] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[224] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[225] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[227] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[228] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[229] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ila_sample_reg[231] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:21 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------+--------------+-----------+----------------------+--------------+
+|Module Name            | RTL Object   | Inference | Size (Depth x Width) | Primitives   | 
++-----------------------+--------------+-----------+----------------------+--------------+
+|i17_vio_evidence__GB14 | diag_mem_reg | Implied   | 64 x 32              | RAM64M x 11  | 
++-----------------------+--------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:29 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:38 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-----------------------+--------------+-----------+----------------------+--------------+
+|Module Name            | RTL Object   | Inference | Size (Depth x Width) | Primitives   | 
++-----------------------+--------------+-----------+----------------------+--------------+
+|i17_vio_evidence__GB14 | diag_mem_reg | Implied   | 64 x 32              | RAM64M x 11  | 
++-----------------------+--------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:24 ; elapsed = 00:01:43 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:49 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:49 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:01:50 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:01:50 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:31 ; elapsed = 00:01:50 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:31 ; elapsed = 00:01:50 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    59|
+|2     |LUT1   |     3|
+|3     |LUT2   |   306|
+|4     |LUT3   |   124|
+|5     |LUT4   |    84|
+|6     |LUT5   |   460|
+|7     |LUT6   |  2816|
+|8     |MUXF7  |  1260|
+|9     |MUXF8  |   416|
+|10    |RAM64M |    11|
+|11    |FDRE   | 10451|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:31 ; elapsed = 00:01:50 . Memory (MB): peak = 2152.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:16 ; elapsed = 00:01:46 . Memory (MB): peak = 2152.137 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:01:51 . Memory (MB): peak = 2152.137 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.219 . Memory (MB): peak = 2152.137 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1746 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'i17_vio_evidence' is not ideal for floorplanning, since the cellview 'i17_vio_evidence' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_clock.xdc]
+WARNING: [Vivado 12-2489] -period contains time 16.276042 which will be rounded to 16.276 to ensure it is an integer multiple of 1 picosecond [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_clock.xdc:3]
+Finished Parsing XDC File [C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/diagnostic_clock.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2152.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 11 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 11 instances
+
+Synth Design complete | Checksum: 42395911
+INFO: [Common 17-83] Releasing license: Synthesis
+216 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:37 ; elapsed = 00:01:59 . Memory (MB): peak = 2152.137 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2152.137 ; gain = 0.000
+SINGLE_MODULE_DIAGNOSTIC_COMPLETE after source=C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/project/rtl/c_board/i17_vio_evidence.sv
+# exit 0
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 12 19:09:53 2026...

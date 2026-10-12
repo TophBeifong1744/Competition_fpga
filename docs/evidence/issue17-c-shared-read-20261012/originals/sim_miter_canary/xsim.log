@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Oct 12 18:54:41 2026
+# Process ID         : 23132
+# Current directory  : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/sim_miter_canary
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/test/xsim_script.tcl}
+# Log file           : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/sim_miter_canary/xsim.log
+# Journal file       : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/sim_miter_canary\xsim.jou
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36176 MB
+# Available Virtual  : 21910 MB
+#-----------------------------------------------------------
+source xsim.dir/test/xsim_script.tcl
+# xsim {test} -testplusarg CANARY_MITER -autoloadwcfg -runall -onfinish quit -onerror quit -sv_seed 17010
+Time resolution is 1 ps
+run -all
+SHARED_DUMP cycle=10 sample_cycle=9 type=0 word=0 data=d0e0f001 meta=00000000d01080000000000000000000
+SHARED_DUMP cycle=11 sample_cycle=10 type=0 word=1 data=90a0b0c0 meta=00000000cc1080100000000000000000
+SHARED_DUMP cycle=12 sample_cycle=11 type=0 word=2 data=50607080 meta=00000000cc1080200000000000000000
+SHARED_DUMP cycle=13 sample_cycle=12 type=0 word=3 data=10203040 meta=00000000c81080300000000000000000
+SHARED_DUMP cycle=14 sample_cycle=13 type=0 word=4 data=89abcdef meta=00000000c81080400000000000000000
+SHARED_DUMP cycle=15 sample_cycle=14 type=0 word=5 data=01234567 meta=00000000cc1080500000000000000000
+SHARED_DUMP cycle=16 sample_cycle=15 type=0 word=6 data=76543210 meta=00000000cc1080600000000000000000
+SHARED_DUMP cycle=17 sample_cycle=16 type=0 word=7 data=fedcba98 meta=00000000cc3080700000000000000000
+SHARED_DUMP cycle=21 sample_cycle=20 type=9 word=0 data=00000003 meta=00000000c81040090000000000000000
+SHARED_DUMP cycle=22 sample_cycle=21 type=9 word=1 data=00000000 meta=00000000c81040190000000000000000
+SHARED_DUMP cycle=23 sample_cycle=22 type=9 word=2 data=13579abc meta=00000000c81040290000000000000000
+SHARED_DUMP cycle=24 sample_cycle=23 type=9 word=3 data=3212050a meta=00000000c83040390000000000000000
+SHARED_DUMP cycle=27 sample_cycle=26 type=0 word=0 data=d0e0f001 meta=00000000c81080000000000000000000
+Fatal: SHARED_MITER cycle=195 all19 mismatch
+Time: 1950 ns  Iteration: 0  Process: /tb_shared_read/Always57_5  Scope: tb_shared_read  File: C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-evidence-shared-read-20261012/selftest/tb_shared_read.sv Line: 60
+$finish called at time : 1950 ns
+exit 0
+INFO: [Common 17-206] Exiting xsim at Mon Oct 12 18:54:43 2026...

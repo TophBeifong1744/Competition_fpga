@@ -1,0 +1,88 @@
+{
+  "candidate_sha256": "a3cc8415a9d6875f94433319f71c0b861a3cc0c705a408d10af49863941e1fef",
+  "baseline_sha256": "135271131d893eba2b8e22a7b596c78292de4050a69855f131b5fe5a582fdfd6",
+  "primary_mode": "BUILD_FLOW",
+  "status": "OOC_SYNTHESIS_RESOURCE_DIAGNOSTIC_COMPLETE_PENDING_REVIEW",
+  "resources": {
+    "before": {
+      "Slice LUTs*": 6634,
+      "LUT as Logic": 6546,
+      "LUT as Memory": 88,
+      "Slice Registers": 10509,
+      "Register as Latch": 0,
+      "F7 Muxes": 2271,
+      "F8 Muxes": 750,
+      "Block RAM Tile": 0,
+      "DSPs": 0
+    },
+    "after": {
+      "Slice LUTs*": 3684,
+      "LUT as Logic": 3640,
+      "LUT as Memory": 44,
+      "Slice Registers": 10451,
+      "Register as Latch": 0,
+      "F7 Muxes": 1260,
+      "F8 Muxes": 416,
+      "Block RAM Tile": 0,
+      "DSPs": 0
+    },
+    "delta_after_minus_before": {
+      "Slice LUTs*": -2950,
+      "LUT as Logic": -2906,
+      "LUT as Memory": -44,
+      "Slice Registers": -58,
+      "Register as Latch": 0,
+      "F7 Muxes": -1011,
+      "F8 Muxes": -334,
+      "Block RAM Tile": 0,
+      "DSPs": 0
+    },
+    "logic_lut_reduction_percent": 44.394,
+    "total_lut_reduction_percent": 44.468
+  },
+  "process_exit": 0,
+  "resource_targets_met": true,
+  "timing": {
+    "scope": "SYNTHESIZED ONLY; not implementation/STA acceptance; HD.CLK_SRC absent and IO delays unconstrained",
+    "reports": {
+      "before": {
+        "wns_ns": 8.674,
+        "tns_ns": 0.0,
+        "whs_ns": 0.256,
+        "ths_ns": 0.0,
+        "setup_critical_path": [
+          "  Source:                 next_seq_reg[3]/C",
+          "  Destination:            next_seq_reg[61]/D",
+          "  Data Path Delay:        7.595ns  (logic 5.289ns (69.638%)  route 2.306ns (30.362%))",
+          "  Logic Levels:           26  (CARRY4=22 LUT3=1 LUT4=2 LUT6=1)"
+        ],
+        "no_input_delay": 8938,
+        "no_output_delay": 481
+      },
+      "after": {
+        "wns_ns": 8.216,
+        "tns_ns": 0.0,
+        "whs_ns": 0.25,
+        "ths_ns": 0.0,
+        "setup_critical_path": [
+          "  Source:                 next_seq_reg[3]/C",
+          "  Destination:            next_seq_reg[0]/D",
+          "  Data Path Delay:        8.053ns  (logic 5.509ns (68.409%)  route 2.544ns (31.591%))",
+          "  Logic Levels:           28  (CARRY4=23 LUT2=1 LUT3=1 LUT4=1 LUT6=2)"
+        ],
+        "no_input_delay": 8938,
+        "no_output_delay": 481
+      }
+    },
+    "wns_delta_ns": -0.458
+  },
+  "not_run": [
+    "whole-project synthesis/fit",
+    "opt/place/route",
+    "implementation timing/STA acceptance",
+    "board/ILA hardware"
+  ],
+  "power": "NOT APPLICABLE",
+  "run_manifest": "synthesis-run.json",
+  "run_manifest_sha256": "b7cb140da7e4941a7d473d9909e6b185a02d7d038596ee21bb5265e1543dcacc"
+}
