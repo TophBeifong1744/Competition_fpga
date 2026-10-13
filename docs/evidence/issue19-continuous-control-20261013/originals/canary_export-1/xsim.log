@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Oct 13 17:15:12 2026
+# Process ID         : 40224
+# Current directory  : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-continuous-control-20261013/runs/canary_export-1
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/test/xsim_script.tcl}
+# Log file           : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-continuous-control-20261013/runs/canary_export-1/xsim.log
+# Journal file       : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-continuous-control-20261013/runs/canary_export-1\xsim.jou
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36176 MB
+# Available Virtual  : 16424 MB
+#-----------------------------------------------------------
+source xsim.dir/test/xsim_script.tcl
+# xsim {test} -testplusarg CANARY -autoloadwcfg -runall -onfinish quit -onerror quit -sv_seed 1744
+Time resolution is 1 ps
+run -all
+Fatal: EXPORT_CHECK payload canary
+Time: 1135 ns  Iteration: 0  Process: /tb_i17_diag_consumer/Always29_8  Scope: tb_i17_diag_consumer  File: C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-continuous-control-20261013/runs/canary_export-1/sources/tb_i17_diag_consumer.sv Line: 40
+$finish called at time : 1135 ns
+exit 0
+INFO: [Common 17-206] Exiting xsim at Tue Oct 13 17:15:14 2026...

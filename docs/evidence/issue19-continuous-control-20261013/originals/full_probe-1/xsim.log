@@ -1,0 +1,288 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Oct 13 18:28:01 2026
+# Process ID         : 24804
+# Current directory  : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-continuous-control-20261013/runs/full_probe-1
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/test/xsim_script.tcl}
+# Log file           : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-continuous-control-20261013/runs/full_probe-1/xsim.log
+# Journal file       : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-continuous-control-20261013/runs/full_probe-1\xsim.jou
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36176 MB
+# Available Virtual  : 13528 MB
+#-----------------------------------------------------------
+source xsim.dir/test/xsim_script.tcl
+# xsim {test} -testplusarg FULL_PROBE -autoloadwcfg -runall -onfinish quit -onerror quit -sv_seed 1744
+Time resolution is 1 ps
+run -all
+Note:   - SCALING_SCH: in_ptr = 1, out_ptr = 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_top/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - C_CHANNELS  = 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_top/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - field_width = 20
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_top/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:   - Copying SCALE_SCH from 20 downto 1 to 20 downto 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_top/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:   - SCALING_SCH: in_ptr = 1, out_ptr = 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_top/dut/u_core/source/forward_window/u_forward/backend/fft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - C_CHANNELS  = 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_top/dut/u_core/source/forward_window/u_forward/backend/fft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - field_width = 20
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_top/dut/u_core/source/forward_window/u_forward/backend/fft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:   - Copying SCALE_SCH from 20 downto 1 to 20 downto 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_top/dut/u_core/source/forward_window/u_forward/backend/fft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:   - SCALING_SCH: in_ptr = 1, out_ptr = 1
+Time: 0 ps  Iteration: 1  Process: /tb_i17_continuous_top/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - C_CHANNELS  = 1
+Time: 0 ps  Iteration: 1  Process: /tb_i17_continuous_top/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - field_width = 20
+Time: 0 ps  Iteration: 1  Process: /tb_i17_continuous_top/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:   - Copying SCALE_SCH from 20 downto 1 to 20 downto 1
+Time: 0 ps  Iteration: 1  Process: /tb_i17_continuous_top/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+TOP_INITIAL cycle=1 state=0 manager=0 fault=0
+TOP_INITIAL cycle=2 state=0 manager=0 fault=0
+TOP_INITIAL cycle=3 state=0 manager=0 fault=0
+TOP_INITIAL cycle=4 state=0 manager=0 fault=0
+TOP_INITIAL cycle=5 state=0 manager=0 fault=0
+TOP_INITIAL cycle=6 state=0 manager=0 fault=0
+TOP_INITIAL cycle=7 state=1 manager=0 fault=0
+TOP_INITIAL cycle=8 state=2 manager=0 fault=0
+TOP_INITIAL cycle=9 state=3 manager=0 fault=0
+TOP_INITIAL cycle=10 state=4 manager=0 fault=0
+TOP_INITIAL cycle=11 state=5 manager=0 fault=0
+TOP_INITIAL cycle=12 state=5 manager=1 fault=0
+TOP_INITIAL cycle=13 state=5 manager=2 fault=0
+TOP_INITIAL cycle=14 state=5 manager=2 fault=0
+TOP_INITIAL cycle=15 state=5 manager=2 fault=0
+TOP_INITIAL cycle=16 state=5 manager=2 fault=0
+TOP_INITIAL cycle=17 state=5 manager=2 fault=0
+TOP_INITIAL cycle=18 state=5 manager=2 fault=0
+TOP_INITIAL cycle=19 state=5 manager=2 fault=0
+TOP_PROGRESS cycle=500000 state=5 manager=2 reports=0 accepts=0 fault=0
+PROBE cycle=1000000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+TOP_PROGRESS cycle=1000000 state=5 manager=2 reports=0 accepts=0 fault=0
+PROBE cycle=1001000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1002000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1003000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1004000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1005000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1006000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1007000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1008000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1009000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1010000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1011000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1012000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1013000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1014000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1015000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1016000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1017000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1018000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1019000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1020000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1021000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1022000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1023000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1024000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1025000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1026000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1027000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1028000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1029000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1030000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1031000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1032000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1033000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1034000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1035000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1036000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1037000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1038000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1039000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1040000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1041000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1042000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1043000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1044000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1045000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1046000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1047000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1048000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1049000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1050000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1051000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1052000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1053000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1054000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1055000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1056000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1057000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1058000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1059000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1060000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1061000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1062000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1063000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1064000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1065000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1066000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1067000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1068000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1069000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1070000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1071000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1072000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1073000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1074000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1075000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1076000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1077000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1078000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1079000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1080000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1081000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1082000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1083000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1084000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1085000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1086000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1087000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1088000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1089000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1090000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1091000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1092000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1093000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1094000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1095000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1096000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1097000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1098000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1099000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1100000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1101000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1102000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1103000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1104000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1105000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1106000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1107000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1108000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1109000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1110000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1111000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1112000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1113000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1114000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1115000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1116000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1117000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1118000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1119000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1120000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1121000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1122000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1123000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1124000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1125000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1126000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1127000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1128000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1129000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1130000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1131000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1132000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1133000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1134000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1135000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1136000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1137000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1138000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1139000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1140000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1141000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1142000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1143000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1144000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1145000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1146000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1147000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1148000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1149000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1150000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1151000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1152000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1153000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1154000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1155000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1156000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1157000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1158000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1159000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1160000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1161000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1162000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1163000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1164000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1165000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1166000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1167000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1168000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1169000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1170000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1171000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1172000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1173000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1174000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1175000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1176000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1177000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1178000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1179000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1180000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1181000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1182000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1183000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1184000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1185000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1186000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1187000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1188000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1189000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1190000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1191000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1192000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1193000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1194000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1195000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1196000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1197000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1198000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1199000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1200000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1201000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1202000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1203000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1204000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1205000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1206000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1207000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1208000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1209000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1210000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1211000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1212000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1213000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1214000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0
+PROBE cycle=1215000 ff=0 npbusy=0 ffvalid=0 doa=0 halt=0 fault=0

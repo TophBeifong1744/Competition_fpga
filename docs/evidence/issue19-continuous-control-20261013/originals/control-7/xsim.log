@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Oct 13 18:33:38 2026
+# Process ID         : 29784
+# Current directory  : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-continuous-control-20261013/runs/control-7
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/test/xsim_script.tcl}
+# Log file           : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-continuous-control-20261013/runs/control-7/xsim.log
+# Journal file       : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-continuous-control-20261013/runs/control-7\xsim.jou
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36176 MB
+# Available Virtual  : 13184 MB
+#-----------------------------------------------------------
+source xsim.dir/test/xsim_script.tcl
+# xsim {test} -autoloadwcfg -runall -onfinish quit -onerror quit -sv_seed 1744
+Time resolution is 1 ps
+run -all
+CONTROL_COMPLETE checks=171 reports=1
+$finish called at time : 10806 ns : File "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-continuous-control-20261013/runs/control-7/sources/tb_i17_continuous_control.sv" Line 103
+exit 0
+INFO: [Common 17-206] Exiting xsim at Tue Oct 13 18:33:40 2026...

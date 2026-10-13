@@ -1,0 +1,17 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Oct 13 18:03:00 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/test/xsim_script.tcl
+# xsim {test} -autoloadwcfg -runall -onfinish quit -onerror quit -sv_seed 1744
+Time resolution is 1 ps
+run -all
+WATCHDOG_COMPLETE continuous_cycles=1000 limit=32 incomplete_traffic_rejected=1
+$finish called at time : 10470 ns : File "C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-continuous-control-20261013/runs/watchdog-2/sources/tb_i17_progress_watchdog.sv" Line 31
+exit 0
+INFO: [Common 17-206] Exiting xsim at Tue Oct 13 18:03:02 2026...
