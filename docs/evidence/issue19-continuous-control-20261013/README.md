@@ -57,11 +57,21 @@ python simulation/run_i17_continuous.py control export watchdog canary_export
 python simulation/run_i17_continuous.py full_probe
 python simulation/run_i17_continuous.py full_stop
 python simulation/run_i17_continuous.py full_stall
+python simulation/run_i17_continuous.py full_first
+python simulation/run_i17_continuous.py full_noise
 ```
 
 默认工具 `C:/AMDDesignTools/2025.2/Vivado`，可通过本进程 `I17_VIVADO_ROOT` 指向同版正式安装。每次独立输出到 `codex_out/i17-continuous-control-20261013/runs/<case>-<attempt>/`，含冻结源、run.json、xvhdl/xvlog/xelab/xsim 原生日志、全链 events.csv。runner 查 Fatal 和完成标记，exit0不能掩盖失败；canary 必须实际拒绝错误 payload。`full_probe` 只定位时钟/首窗口进度，不代表连续链通过。展开使用至多32个作业、至少半机目标；XSim 运行阶段实际串行，不能靠无效任务填满全机。
 
 默认4096样本 warmup 未在完整链短测中验证；完整链 TB 用0隔离该等待，控制器有单独等待测试。合成 PDM 只提供自然链路刺激，无声学方向真值；不能据此验收角度精度、现场跟随或响应最大值。
+
+静态预算：既有 PDM/CIC 在停止采集时仍逐20拍取bit、64bit出PCM，warmup不受RUN门控。4096样本名义等待为5,242,880系统周期（85.333 ms），计入启动相位仍小于最大8,388,608周期期限；这是RTL设计预算，未替代默认warmup的整链实测/仿真。较小合法deadline仍可能因配置/等待/处理时间不足而安全超时。
+
+`full_first` 保存首报告资格及完整6626位前端原件，用于定位不合格结果；它仍有资格断言，发生 Fatal 时必须记 SIM_FAIL。三角波刺激在1,706,188周期产生的真实报告为 numeric=0、eligible=0；B首错=0、前端协议/数值错误=0、映射/来源/租约资格均为1。不能跳过数值资格让转台动作，不能把该运行记连续驱动通过。
+
+`full_noise` 只从 mic_data 输入确定宽带 PDM，检查三个自然报告、至少两个实际转台命令、自动记录消费、一般在途窗口 STOP、保持 STOP、warm 恢复及新 SID=4 首报告。各路 PDM 密度序列有5个PCM周期的目标偏移，独立累加器的初始相位使其不构成“PCM严格移位5点”的数值真值。没有内部 force 或资格旁路，全部产品源、正式 FFT/IFFT 与期限不因换测试刺激而改动。这一有限范围不能替代9M周期整链耐久、活动 FFT/IFFT 中 STOP、默认 warmup 或实板跟随验收。
+
+本候选 `full_noise-1` 实际通过：5,481,560周期，5报告/4条实际转台命令/1个ABORT，完整标记 `CONTINUOUS_NOISE_STOP_COMPLETE`，无Fatal。SID3前三报告在1,967,053、2,601,050、3,234,636周期合格；STOP路径在3,521,092周期产生ABORT，同identity的3,521,101周期报告eligible=0，不驱动。warm后5,481,560周期的SID4新报告eligible=1。合格报告raw Q8=0、映射180度；这证明命令路径，不证明实际机械转动或声学真值。完整CSV、观察解析及原件哈希随包保存。
 
 ## A 接入、构建与现场保存点
 
@@ -70,4 +80,6 @@ python simulation/run_i17_continuous.py full_stall
 3. 由 A 人操作首次集成综合/实现，保存准确源组合、全板及层级资源、预算差异、DRC/CDC/约束覆盖和 routed setup/hold 原件，以及匹配 bit/LTX/HWH。新控制估算约500 FF以内、consumer约80 FF以内，无新增DSP/BRAM；这是局部估算，不能从旧超容量结果相减推全板可放下。
 4. 必要时序与实物安全条件满足后，由 C 现场执行非VIO启动、持续跟随、在途 STOP、保持 STOP、显式恢复并新SID重启及超时故障。保存原控制输入/状态、ILA、转台观察、方向与音频原件，数据直接交B。下载/复位/接线/供电/执行器动作未由本批自动执行。
 
-准确验证结果见 `validation.json`，问题累计见 `repair-ledger.md`，独立判断见 `review.md`。没有完整链完成标记、匹配必要实现报告与实测时，状态必须保留 UNVERIFIED；A接入/验收记录另行绑定实际候选。
+准确验证摘要见 `validation-summary.md`，完整阶段见 `validation.json`，问题累计见 `repair-ledger.md`，独立判断见 `review.md`。没有完整链完成标记、匹配必要实现报告与实测时，状态必须保留 UNVERIFIED；A接入/验收记录另行绑定实际候选。
+
+C本机冻结交接包：`python simulation/package_i17_continuous.py`；它核对本机原工程前像、原件及白名单，每个ZIP条目读回SHA256核验，输出到 `deliverables/i17-continuous-control-20261013-<七源ID前12位>-<包内容ID前8位>.zip` 与 `.sha256`。此生成命令依赖C本机实际前像，仅用于C交接；A按随包前像patch在原工程接合。

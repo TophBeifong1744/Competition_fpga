@@ -43,8 +43,8 @@ def run(case):
         top='tb_i17_diag_consumer'
     elif case=='watchdog':
         sources=[ROOT/'project/rtl/a_frontend/forward_window_manager.sv'];top='tb_i17_progress_watchdog'
-    elif case in ('full','full_stop','full_stall','full_probe'):
-        top='tb_i17_continuous_top'
+    elif case in ('full','full_stop','full_stall','full_probe','full_first','full_noise'):
+        top={'full_first':'tb_i17_continuous_first','full_noise':'tb_i17_continuous_noise'}.get(case,'tb_i17_continuous_top')
         sources=sorted((REF/'rtl').glob('*'),key=lambda p:(p.name!='doa_math_pkg.sv',p.name))
         sources += [ROOT/p for p in json.loads((EVIDENCE/'candidate-files.json').read_text())['rtl']]
         (folder/'xsim.ini').write_bytes((REF/'xsim.ini').read_bytes())
@@ -88,7 +88,7 @@ def run(case):
         if case in ('full_stop','full_stall','full_probe'):args+=['--testplusarg',case.upper()]
         good,log=stage('xsim',args)
         expected={'control':'CONTROL_COMPLETE','export':'EXPORT_COMPLETE','watchdog':'WATCHDOG_COMPLETE',
-            'full':'CONTINUOUS_TOP_COMPLETE','full_stop':'CONTINUOUS_STOP_COMPLETE','full_stall':'CONTINUOUS_STALL_COMPLETE','full_probe':'PROBE_COMPLETE'}
+            'full':'CONTINUOUS_TOP_COMPLETE','full_stop':'CONTINUOUS_STOP_COMPLETE','full_stall':'CONTINUOUS_STALL_COMPLETE','full_probe':'PROBE_COMPLETE','full_first':'CONTINUOUS_FIRST_COMPLETE','full_noise':'CONTINUOUS_NOISE_STOP_COMPLETE'}
         if case=='canary_export':
             manifest['verdict']='EXPECTED_CHECKER_REJECTION' if not good and 'EXPORT_CHECK payload canary' in log and 'EXPORT_COMPLETE' not in log else 'CANARY_FAIL'
         else:manifest['verdict']='FUNCTIONAL_SIM_PASS' if good and expected[case] in log else 'SIM_FAIL'
@@ -101,5 +101,5 @@ def run(case):
 
 if __name__=='__main__':
     for case in sys.argv[1:] or ['control','export','watchdog','canary_export']:
-        if case not in ('control','export','watchdog','canary_export','full','full_stop','full_stall','full_probe'):raise SystemExit('unknown case')
+        if case not in ('control','export','watchdog','canary_export','full','full_stop','full_stall','full_probe','full_first','full_noise'):raise SystemExit('unknown case')
         if not run(case):raise SystemExit(1)
