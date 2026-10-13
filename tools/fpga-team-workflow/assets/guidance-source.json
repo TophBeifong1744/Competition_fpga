@@ -5,6 +5,40 @@
   "sources": [
     {
       "path": "document/project-development-flow.md",
+      "sha256": "eb95ba4a56d77740bef205ba241a7d45d276f532ca01a4c6778b182329bfb10c"
+    },
+    {
+      "path": "document/team-tasks.md",
+      "sha256": "fe7defb5451f296a6246c9023fcf6d082a54bff1c20d607d8635d01d09bd20db"
+    },
+    {
+      "path": "document/team-workflow.md",
+      "sha256": "5f95c032c343f8f2cc6757acf91a06e0b913858c2a840e2f463c7c74d11dc2ef"
+    },
+    {
+      "path": "document/git-workflow.md",
+      "sha256": "06b88b0ca5290ace6d9b93d5cd59dbf431300e99a474b5babb564bacd51d0098"
+    },
+    {
+      "path": "document/report-materials-guide.md",
+      "sha256": "09fad839ca0152fe3c98d096e454f2980399dac4c0799e08f0cbd7d8dc770dbc"
+    },
+    {
+      "path": "document/module-development-flow.md",
+      "sha256": "8899b579762fbc51f526cdf05c4edc3b2bab8cdf122514dcb2486aff5c9a5987"
+    },
+    {
+      "path": "document/templates/module-work-package.md",
+      "sha256": "b07445fda0b14e3644323d3bc6db7191dd77fd1545b2170233adf4ea6c49f0a0"
+    }
+  ],
+  "upstream_engineering_version": "0.4.0",
+  "local_patch": "SYSTEM-FIRST-20261013",
+  "headcount": "UNSPECIFIED",
+  "source_kind": "User supplied preparation copies, checked against their original file inventory. derived_activation_snapshots are intermediate adapted project documents, not the supplied originals.",
+  "derived_activation_snapshots": [
+    {
+      "path": "document/project-development-flow.md",
       "sha256": "4ff6f9cb4032801e7bab2037fdfabdd8fd12ff91b5e338614597d44a360d441e"
     },
     {
@@ -27,9 +61,5 @@
       "path": "document/module-development-flow.md",
       "sha256": "bf6a95d0a0d6bc1a08968c5fb269167cae848ab22ce3fa729fe5a903fdf5b308"
     }
-  ],
-  "upstream_engineering_version": "0.4.0",
-  "local_patch": "SYSTEM-FIRST-20261013",
-  "headcount": "UNSPECIFIED",
-  "source_kind": "User supplied preparation snapshot; hashes identify source documents before activation, not the generated active copies"
+  ]
 }

@@ -1,3 +1,7 @@
+## 0.3.1 — 2026-10-13
+
+Correct guidance-source provenance: distinguish original supplied copies from intermediate activated project documents. No engineering policy, runtime scripts, models or role changes.
+
 ## 0.3.0 — 2026-10-13
 
 System-first S1–S6; outcome-based staffing independent of headcount; shared budgets and integrated results; context-independent major reviews; direct board cadence; minimal-purpose retention; governed file/branch cleanup.
