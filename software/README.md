@@ -1,5 +1,7 @@
 # PS 软件
 
+2026-10-13 平台补件：已从历史 XSA 提取 PS7/HWH/DDR/MIO/时钟复位/GP/HP/DMA 配置和原件身份，见[平台与PS配置材料](../docs/evidence/issue18-pynq-materials-20261013/ps-platform/README.md)。旧方向测试已确认在电脑 Python 运行，声音采集在 Vitis；PYNQ 镜像与当前 Overlay 仍未验证。
+
 2026-10-13：本项目比赛交付须用 PYNQ on Zynq，旧 standalone 保留诊断来源。C 的[七组接入材料](../docs/evidence/issue18-pynq-materials-20261013/README.md)与[控制合同摘要](../docs/evidence/issue18-pynq-materials-20261013/control-handoff.md)供 B 沿原 #18 接续；当前现场仍经 JTAG 加载，镜像/CPU桥/匹配Overlay/真实PYNQ运行尚未验证。B 原方案的软件落点为 `software/pynq/soundsight_ps/`；本批只整理材料，尚未创建驱动树或安装环境。下文备用后端说明不授权自动切换比赛平台。
 
 2026-09-23：本目录从 ps/ 迁入说明文档；没有迁入或改写实际固件。当前主线是 Vitis standalone、simple S2MM-only，PYNQ 未实板准入；下文保留 PYNQ 后端规划，不能读作已接通。A/B/C 按 Issue 同等承担工程和合格非作者复核，保留 [H1/H2/H3](../document/three-handoff-workflow.md)，当前事实见[工程身份](../document/project-identity.md)。

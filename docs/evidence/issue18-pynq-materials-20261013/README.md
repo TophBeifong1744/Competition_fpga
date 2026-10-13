@@ -12,7 +12,7 @@
 | 器件配置 | 用户确认 `-1`，与当前 live-loop XPR 的 `xc7z020clg400-1` 一致，Vivado 2025.2；旧采录工程为 `xc7z020clg400-2` | 采用本轮 `-1` 确认，保留旧 `-2` 历史配置差异；未新增芯片照片核验或修改任何工程，旧 `-2` 报告不能自动用于当前 `-1` 候选 |
 | 当前运行方式 | 用户本轮确认：**仍用 Vivado/Vitis 经 JTAG 加载** | 当前已加载 bit/ELF 身份未知；此回答不证明 SD 卡是否装有其他系统 |
 | 镜像 / 运行时 | 当前 Linux/PYNQ 镜像名称、来源/hash、kernel、device-tree、Python/PYNQ/NumPy、驱动和 allocator 版本均 UNKNOWN | 没有实际 PYNQ 启动、Overlay 加载、MMIO 或 DMA 运行记录；不能选用任意 PYNQ-Z2 镜像 |
-| 旧方向测试 | 用户补述：测 −90°、0°、90°，计算误差均在 5°以内 | USER_REPORTED；该补述未绑定原日志、候选、次数、角度坐标/误差统计口径。保存结论，不推算平均值、置信区间，也不升级为持续跟随/PYNQ验收 |
+| 旧方向测试 | 用户补述：在电脑 Python 测 −90°、0°、90°，计算误差均在 5°以内；声音采集在 Vitis | USER_REPORTED；电脑计算证据，不是板端角度/PYNQ证据；该补述未绑定原日志、候选、次数、角度坐标/误差统计口径。保存结论，不推算平均值、置信区间，也不升级为持续跟随/PYNQ验收 |
 
 板卡资料见 [板级审计](../../../hardware/m0-board-interface-audit.md)、[照片索引](../../../hardware/evidence/board-2026-09-07/README.md)和 [工程身份](../../../document/project-identity.md)。无需用户重复提供已有型号；现场未确认的字段保留未知。本人原答见 [user-report.json](user-report.json)，结构化状态见 [facts.json](facts.json)。
 
@@ -21,8 +21,8 @@
 | 组 | 本批可交的准确材料 | 尚缺 / 下一责任 |
 |---|---|---|
 | M01 板与镜像 | 上表实物标识、本轮 `-1` 确认、旧 `-2` 历史配置差异及 JTAG 事实；照片与来源索引 | 按用户确认的 `-1` 与准确构建绑定；C 提供实际镜像事实，B 根据匹配板级支持确定部署，不把 Windows/Vitis 版本当板端系统版本 |
-| M02 匹配工件 | 旧 C1 bit/XSA/init 的准确身份与旧 PCM/SHORT 原件入口；任务1七源、验证和包身份 | A 在原工程接合并给同构建 bit/HWH/manifest、适用 XSA/LTX/DTBO及必要全板资源/DRC/CDC/routed setup/hold；已读工程记录中新组合综合异常，尚未提供本控制候选的新合格报告。旧 C1 工件不能加载成新连续控制 Overlay |
-| M03 PS/AXI/DMA | 旧 C1 合同和 B 原方案中绑定的历史 HWH 参数；C 本机 XPR 的只读声明见 [native-project-observation.json](native-project-observation.json) | C 保存的 XPR 顶层仍 `i17_vio_board_top`，声明中未发现 BD/PS7/DMA/GPIO CPU 通路。此范围不代表 A 机当前完整工程；A 给实际 PS7/GP/HP、MODULE 路径、地址/range、时钟复位和 DMA 参数。当前 MMIO 地址/中断映射 **UNBOUND** |
+| M02 匹配工件 | 旧 C1 bit/XSA/init 的准确身份与旧 PCM/SHORT 原件入口；[XSA/HWH/PS 参数提取](ps-platform/README.md)；任务1七源、验证和包身份 | A 在原工程接合并给同构建 bit/HWH/manifest、适用 XSA/LTX/DTBO及必要全板资源/DRC/CDC/routed setup/hold；原综合异常按历史保留；A 后续前置组合的综合资源报告不等于本控制候选的同构建实现/时序验收。旧 C1 工件不能加载成新连续控制 Overlay |
+| M03 PS/AXI/DMA | 旧 C1 合同、[原 HWH 的937项PS7参数与连线](ps-platform/ps-config.json)、旧BSP的11项一致性比对；C 本机 XPR 的只读声明见 [native-project-observation.json](native-project-observation.json) | C 保存的 XPR 顶层仍 `i17_vio_board_top`，声明中未发现 BD/PS7/DMA/GPIO CPU 通路。此范围不代表 A 机当前完整工程；A 给实际 PS7/GP/HP、MODULE 路径、地址/range、时钟复位和 DMA 参数。当前 MMIO 地址/中断映射 **UNBOUND** |
 | M04 控制/结果 | [control-handoff.md](control-handoff.md)：任务1非 VIO CONFIG/RUN/STOP/RECOVER、上下文、映射、期限、事件、诊断握手与错误终态；对应准确 RTL/原说明 | 这是同域核心合同，尚无 CPU 桥/寄存器 ABI。A/C 集中选择并接合跨域命令、原子快照、结果缓存及 ACK/独占控制；B 沿已选择通路封装软件，不能自造地址或用轮询漏读单拍结果 |
 | M05 allocator/cache/退休 | 旧 C1 两槽所有权及 cache 原则；旧实测原件可以引用；B 已列异常保留/退休要求 | 当前 Linux allocator、物理窗口、cache/barrier、actual_length、abort/quiescence及进程退出保护均 UNKNOWN。旧裸机固定 DDR 保留区不能直接用于 Linux |
 | M06 原记录/抓取 | 旧 `ss-four-record-0.1` 32B/组、250组/8000B/包、完整包 STOP、原 ID/clip 格式和真实 PCM 原件；任务1五 bank 诊断逐字流 | **任务1新 top 未向外暴露原 PCM AXIS**，内部该口 ready=1，只用于排空；没有证据证明新 top 已向旧 S2MM 送 PCM。A/C 明确并接合当前抓取点与导出通路，B 绑定格式；五 bank 诊断不是旧 PCM 包，也没有现成 DMA TLAST ABI |
@@ -40,6 +40,10 @@
 6. **#22**：B 已绑定 `beceee335d5c6d0ce96a2150f4a2ad107854e3a9` 的 receive-only 静态入口与有限接受范围；不运行主树旧 full-loopback 入口来补造 MM2S。mock 核心和拒绝硬件的 probe 不因本资料成为板端驱动。
 
 旧 bit `b15991bc0f8595970361be553b542e334dbb7dca268c01864ecd80fcffbbffaf`、XSA `b84e93631132a3838cc9dadc1ce9037f2685d4d10de0b1655c76291663a8f60b`、init `a158fcc7d723b21003864159006e781ffaf5e8df24ec9b1d9279f9d14ff3ee5e` 仅绑定历史 C1；XSA 内 HWH 不自动成为当前可加载 Overlay 的匹配 HWH。
+
+## 平台配置补充
+
+已从现有历史采集工作区找到 XSA 及内嵌顶层 HWH，保存原件身份、937项PS7参数、MIO/DDR、GP/HP、DMA地址与连线、时钟复位及旧BSP比对。详见 [平台与PS配置材料](ps-platform/README.md)。当前 C 保存的 live-loop 目录仍未找到 XSA/HWH/BD；旧 `-2` 的 GPIO/DMA 地址不能当成新 `-1` 控制 ABI。实际镜像及板端运行时仍 UNKNOWN。
 
 ## 下一接续与完成范围
 

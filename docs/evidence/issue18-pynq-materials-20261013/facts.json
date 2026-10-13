@@ -46,7 +46,9 @@
       "current_dtbo": null,
       "same_candidate_physical_reports": null,
       "historical_C1_reference_only": true,
-      "A_integration_of_control_candidate": "NOT_VERIFIED"
+      "A_integration_of_control_candidate": "NOT_VERIFIED",
+      "historical_platform_materials": "ps-platform/README.md",
+      "historical_xsa_sha256": "b84e93631132a3838cc9dadc1ce9037f2685d4d10de0b1655c76291663a8f60b"
     },
     "M03": {
       "status": "CURRENT_CPU_PATH_UNBOUND",
@@ -57,7 +59,10 @@
       "current_dma_ip": null,
       "current_dma_parameters": null,
       "current_irq_mapping": null,
-      "current_PS_clock_reset_contract": null
+      "current_PS_clock_reset_contract": null,
+      "historical_ps_config": "ps-platform/ps-config.json",
+      "historical_ps_config_level": "ORIGINAL_HWH_CONFIG_NOT_PHYSICAL_MEASUREMENT",
+      "historical_BSP_metadata_matches": 11
     },
     "M04": {
       "status": "SAME_DOMAIN_CONTROL_CONTRACT_AVAILABLE_CPU_ADAPTER_UNBOUND",
@@ -134,7 +139,12 @@
     "error_report": "计算误差在5度以内",
     "evidence_level": "USER_REPORTED",
     "source": "user-report.json",
-    "original_binding": null
+    "original_binding": null,
+    "execution_location": "PC",
+    "execution_software": "Python",
+    "is_board_angle_test": false,
+    "is_pynq_runtime_evidence": false,
+    "acquisition_report": "Sound acquisition in Vitis; exact binding to this angle computation is unknown"
   },
   "not_run": [
     "old tests",

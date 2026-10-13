@@ -1,5 +1,7 @@
 # PYNQ 集成与控制面指南
 
+2026-10-13 平台补件：已从历史 XSA 提取 PS7/HWH/DDR/MIO/时钟复位/GP/HP/DMA 配置和原件身份，见[平台与PS配置材料](../docs/evidence/issue18-pynq-materials-20261013/ps-platform/README.md)。旧方向测试已确认在电脑 Python 运行，声音采集在 Vitis；PYNQ 镜像与当前 Overlay 仍未验证。
+
 2026-10-13 项目接续：比赛要求 **PYNQ on Zynq**，旧文中的备用后端仅保留历史工程边界，不能自动替换比赛交付。当前现场仍经 Vivado/Vitis JTAG 加载，PYNQ 接入 NOT_VERIFIED。C 已按 B 的 M01～M07 请求整理[实际接入材料与未知项](../docs/evidence/issue18-pynq-materials-20261013/README.md)，包括板卡资料、-1/-2 part差异、旧原件及任务1同域控制候选；尚无当前 CPU ABI/匹配 Overlay/板端镜像验证。后文早期状态以该补件和原 #18 最新记录为准，不要求重跑旧测试。
 
 2026-09-23：按 [fpga-team-workflow 协作约定](team-workflow.md)执行，V1 总验收改为 **2026-10-07**；任务及状态以 GitHub Issue/PR 为准，见[日历](project-plan.md)与[任务入口](work-packages.md)。A/B/C 均可承担工程开发和独立复核；旧聊天已删除。本文技术合同保留，历史证据不自动批准后续版本。

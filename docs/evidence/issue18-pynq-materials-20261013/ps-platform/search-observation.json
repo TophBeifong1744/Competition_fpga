@@ -1,0 +1,56 @@
+{
+  "observed_at_utc": "2026-10-13T15:13:53.438223+00:00",
+  "scope": "TARGETED_READ_ONLY_LOCAL_ARTIFACT_SEARCH",
+  "current_live_loop": {
+    "root": "D:\\vavido_project\\i17_live_loop",
+    "inventory_command": "rg --files --hidden --no-ignore <root>",
+    "inventory_files": 411,
+    "candidate_artifact_extensions": [
+      ".xsa",
+      ".hwh",
+      ".bd"
+    ],
+    "init_bsp_names": [
+      "ps7_init.c",
+      "ps7_init.h",
+      "ps7_init.tcl",
+      "xparameters.h"
+    ],
+    "matches": [],
+    "xpr": {
+      "path": "D:\\vavido_project\\i17_live_loop\\project\\par\\i17_live_loop\\i17_live_loop.xpr",
+      "bytes": 45363,
+      "sha256": "cfecdd811640b4cb1ea5e0ed26dc000c7ea3cdf2db9abd5307ced3b458e42433"
+    },
+    "xpr_unchanged_since_prior_observation": true
+  },
+  "historical_capture_workspace": "C:\\Users\\hsc\\Documents\\Codex\\2026-09-20\\wo-m\\outputs\\vitis-capture-import",
+  "loose_init_originals": [
+    {
+      "path": "C:\\Users\\hsc\\Documents\\Codex\\2026-09-20\\wo-m\\outputs\\vitis-capture-import\\files\\ps7_init.c",
+      "bytes": 360536,
+      "sha256": "968f15f513b8b1206dcd9f16bf82e28b5d221153d88b0e94344238e3525d4c22",
+      "matches_xsa_member": true
+    },
+    {
+      "path": "C:\\Users\\hsc\\Documents\\Codex\\2026-09-20\\wo-m\\outputs\\vitis-capture-import\\files\\ps7_init.h",
+      "bytes": 3794,
+      "sha256": "faf3015921570085a5e4b3ffa6079acb92b47ec79f337a1df4ce0472150c61c8",
+      "matches_xsa_member": true
+    },
+    {
+      "path": "C:\\Users\\hsc\\Documents\\Codex\\2026-09-20\\wo-m\\outputs\\vitis-capture-import\\files\\ps7_init.tcl",
+      "bytes": 27896,
+      "sha256": "a158fcc7d723b21003864159006e781ffaf5e8df24ec9b1d9279f9d14ff3ee5e",
+      "matches_xsa_member": true
+    }
+  ],
+  "limits": [
+    "Only specified live-loop/capture workspace and existing repository evidence were searched",
+    "Not a scan of all drives or A current machine",
+    "No engineering or original input was modified"
+  ],
+  "EDA_run": false,
+  "board_run": false,
+  "old_tests_rerun": false
+}

@@ -28,6 +28,22 @@
         "完整part字符串沿既有live-loop配置补全；未新增芯片照片或板上读回",
         "旧-2配置及报告仍按历史组合保留"
       ]
+    },
+    {
+      "exact_answer": "上一次测试是在python，声音采集才是在vitis",
+      "interpretation": "用户区分 Python 角度计算与 Vitis 声音采集",
+      "limits": [
+        "未绑定具体音频原件、代码版本或运行日志",
+        "不证明 PYNQ、持续跟随、STOP/重启或新候选板测"
+      ]
+    },
+    {
+      "exact_answer": "电脑上的 Python",
+      "interpretation": "旧 -90/0/90 角度计算在电脑 Python 运行；不是开发板 PYNQ/Jupyter",
+      "limits": [
+        "未绑定具体音频原件、代码版本或运行日志",
+        "不证明 PYNQ、持续跟随、STOP/重启或新候选板测"
+      ]
     }
   ]
 }
