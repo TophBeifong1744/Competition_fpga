@@ -1,3 +1,27 @@
+## 0.5.0 — 2026-10-13
+
+System-first S1–S6; outcome-based staffing independent of headcount; shared budgets and integrated results; context-independent major reviews; direct board cadence; minimal-purpose retention; governed file/branch cleanup.
+
+## 0.4.7 — 2026-10-11
+
+Plan interface joins, ILA and first/subsequent board checkpoints at dispatch; batch small fixes and retain direct board validation for board-discovered fault repairs.
+
+## 0.4.6 — 2026-10-11
+
+Board-discovered faults: skip simulation after repair and prioritize affected on-board validation; retain build, timing and safety checks.
+
+## 0.4.5 — 2026-10-10
+
+Integration-first delivery and capability-aware half/full-host CPU utilization; active runs remain unchanged.
+
+# Local adaptation 0.4.4 — 2026-10-10
+
+Simplified active workflow and profiles: direct delivery/integration/testing and merge-or-repair; major-module independent judgment; complete engineering ZIP. Historical entries below are not additional active gates. CLI/schema/13 roles unchanged.
+
+<!-- Current local adaptation 0.4.3 / SS-PROJECT-ZIP-20261010-3: Vivado/Vitis milestone ZIP and major-module review. Earlier version notes below are historical. -->
+
+<!-- Local adaptation 0.4.2; patch SS-STAGE-20261010-2. Whole-stage execution supersedes intermediate review cadence below; upstream remains 0.4.0. -->
+
 # Changelog
 
 ## 0.4.1 - 2026-10-10 (local adaptation candidate)

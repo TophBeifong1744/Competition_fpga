@@ -1,4 +1,38 @@
+## 0.3.0 — 2026-10-13
+
+System-first S1–S6; outcome-based staffing independent of headcount; shared budgets and integrated results; context-independent major reviews; direct board cadence; minimal-purpose retention; governed file/branch cleanup.
+
+## 0.2.3 — 2026-10-11
+
+Plan interface joins, ILA and first/subsequent board checkpoints at dispatch; batch small fixes and retain direct board validation for board-discovered fault repairs.
+
+## 0.2.2 — 2026-10-11
+
+Board-discovered faults: skip simulation after repair and prioritize affected on-board validation; retain build, timing and safety checks.
+
+## 0.2.1 — 2026-10-10
+
+Integration-first delivery and capability-aware half/full-host CPU utilization; active runs remain unchanged.
+
 # 变更记录
+
+## 0.2.0 — 2026-10-10
+
+- 重写精简主规则、协作/复核/工作区/人工/维护参考和任务模板，删除逐项门禁及重复报告链，不再层层追加例外。
+- 采用直接交付、接入、测试、正确合并否则返修；大模块集中判断，Vivado/Vitis完整工程ZIP。
+- 内层本地0.4.4同步简化，CLI/schema/13角色/原验收及重大风险边界不变。历史版本下列仅作变更记录，不作现行指令。
+
+## 0.1.10 — 2026-10-10
+
+- Vivado/Vitis阶段整体完成后交完整可搬移工程ZIP，收拢必要依赖；版本差异不作为预设门禁。
+- 取消普通小改动独立复核，集中到重要模块/整机阶段；实际重大风险检查保留。
+- 配套内层本地0.4.3，上游/CLI/schema/13角色/模型不变，原0.1.9包保留历史。
+
+## 0.1.9 — 2026-10-10
+
+- 用户决定默认实现、集成、必要验证、已授权实测及分析组成完整阶段；中间交付不逐项审批，最终集中非作者复核。
+- 去除内外层每小模块交审前置冲突；保留关键风险检查、真实权限、原验收和停止规则。
+- 内层本地适配0.4.2，上游仍0.4.0；CLI/schema/13角色/模型未改。分发与安装、聊天实际加载分别记录。
 
 ## 0.1.8 - 2026-10-10 (local candidate)
 

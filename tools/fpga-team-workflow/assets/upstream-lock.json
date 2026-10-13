@@ -1,15 +1,18 @@
 {
   "schema_version": 1,
-  "version": "0.4.1",
+  "version": "0.5.0",
   "repository": "prasetyarobert205-jpg/codex-fpga-engineering-workflow",
   "source_commit": "e40fd8000b526b72ba80373127bf5fd6e5f8dc28",
   "files": {
+    "skill/SKILL.md": "e5b7d0a7930b59c2b4d0040dff05503ed42a3e56ad2fedf95692ac7df4847bc6",
     "skill/agents/openai.yaml": "7bd66cffffb67425ea41f24ffe403d3da2a72f39a11b6a1da39a8ee602cf8304",
     "skill/assets/icon.svg": "d4c395029e7baba2c4e0ab15fe4374bffe6459e6ff9ae848092fd4e90fad610b",
+    "skill/references/human-checkpoints-and-ila.md": "a653d4849c71bfbc6dad67ac829986f45726f45dce8a8f235aa3b49e35c961e9",
     "skill/references/improvement-evidence.md": "529b47719d5544f01a7bcc1a814eb57db76d094aace8636314eab548a4349059",
     "skill/references/improvement-policy.md": "6ad6117b61afabbda9ca199b3e437b47199c98b316429ffd46f00531a2b21656",
     "skill/references/ip-integration.md": "ef2f2062e68ca1c241bef7ee7877a569ce0d597d4ada4abf5590118bd12098f0",
     "skill/references/model-card.md": "81b5deb298d8fc13c21d2296781ac958a1b702273bec1c5f9f023d1765dbff28",
+    "skill/references/module-development.md": "870dc75ff5434a2445db2e296a973bb20b5d37407d16b0825dafa592b7cb17e1",
     "skill/references/physical-implementation.md": "265999eb1065c45987df30795a28df2500fcc696d871d0cf8bbd850b5facf4e5",
     "skill/references/private-fault-library.md": "dadb511b6146ff67c782831d1d5798a91ca57809884af5e1fbbd301c4953073c",
     "skill/references/project-identity-and-task-delta.md": "a5b61328fdc3c264fff787fa3b84f9922e5e421dcc006f1a83560e8a847a743d",
@@ -26,11 +29,11 @@
     "skill/references/schemas/task-contract.schema.json": "f9c8951d74aa3b8273e0c7915a9d0a7444d205adab6ed38f458939c5440eea48",
     "skill/references/schemas/verification-plan.schema.json": "6f8683921c9ec5082a41b949cae624d2134198383ed9018199a98d40909bce98",
     "skill/references/shadow-rollout.md": "27a6e4930e0d4dbb9af57b05289446bec573057f52440871f7357b814dd3e70e",
-    "skill/references/task-profiles.md": "7733aad4499c3cf129b1d5c439cc3f42f5db33d754095d921ac054c8fec52374",
+    "skill/references/system-development.md": "c188f7d85f202dcea643cc054f63451188b0dccaf9e64363cbea44693dd09b16",
+    "skill/references/task-profiles.md": "ed67489d3a426b924f011e88631697e8d33814694c2af098ed3a1cf01c292677",
     "skill/references/temporal-evidence.md": "430eb57d52b37e66d33ed9f13f83ccfcdaf92b4ce24755ddda6b48053b8f295b",
     "skill/references/vendor-adapters.md": "ba75dfa76da151822a0cbfffc7d929d8807b65b1f5e9945450218a5c08839453",
-    "skill/references/workflow-artifacts.md": "4d70cefc591363244cd25ac9196ecbaeed7c6274b9d96a838295477ae2df3a47",
-    "skill/SKILL.md": "c6a64a062bcf1a549d7d281a5d2cea7b14dfe8f62d9511668f58e3d6771efe33",
+    "skill/references/workflow-artifacts.md": "97c81e35ca215edf257c4b92e8017c5e62a3f7b7d8a79733fb6fb07a0ae95fcc",
     "agents/embedded_engineer.toml": "9c5ac8974f0effbf89c7370d79c7b2b4c8b94ebdcf74fca84f73582ef4ccccb8",
     "agents/fpga_architect.toml": "fa71814eeef8eb28d732afb540734beb1f5bd220e16afa75684a2080de9b4eca",
     "agents/fpga_board_validation_engineer.toml": "e4b99f56426f0ad054c51af9dc0a8113c4ca19690ef5edb70e6c54edc4be827e",
@@ -43,11 +46,10 @@
     "agents/hardware_datasheet.toml": "e7f42b1257e61afb10ceb70568243e261d25cdda5110d9c1f63dd2be74a16122",
     "agents/independent_reviewer.toml": "13818032364512969c1ebd6535070437328fdf787a17e3bcb1d536ec6dd827aa",
     "agents/system_architect.toml": "df148583fa95272e3167f1024feee2a5bccb19a495308e97487439256a8c6443",
-    "agents/verification_engineer.toml": "348c761b75f6204b0f3575f35245a22e64003672ead2482ea3562257ee737a77",
-    "skill/references/human-checkpoints-and-ila.md": "501d3ba3727cc4221ccb614ae8ee20178087eeb02bdc16ccf0c769c1d1ccc8fb"
+    "agents/verification_engineer.toml": "348c761b75f6204b0f3575f35245a22e64003672ead2482ea3562257ee737a77"
   },
   "upstream_version": "0.4.0",
   "distribution_kind": "local_adaptation_candidate",
-  "patch_id": "SS-HUMAN-20261010-1",
+  "patch_id": "SYSTEM-FIRST-20261013",
   "source_commit_role": "upstream_baseline"
 }
