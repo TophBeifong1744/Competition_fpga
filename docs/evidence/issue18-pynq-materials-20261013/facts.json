@@ -15,11 +15,11 @@
       "core_marking": "CF7010B/7020B",
       "device_family": "XC7Z020",
       "board_source": "historical photographed markings 2026-09-07",
-      "physical_full_part": null,
+      "physical_full_part": "xc7z020clg400-1",
       "physical_core_revision": null,
       "historical_capture_project_part": "xc7z020clg400-2",
       "saved_live_loop_project_part": "xc7z020clg400-1",
-      "part_discrepancy_status": "UNRESOLVED",
+      "part_discrepancy_status": "USER_CONFIRMED_MINUS_1_MATCHES_CURRENT_CONFIG_OLD_MINUS_2_RETAINED_AS_HISTORY",
       "current_loading_method": "Vivado/Vitis JTAG",
       "loading_method_level": "USER_REPORTED",
       "current_loaded_artifact_identity": null,
@@ -31,7 +31,10 @@
       "pynq": null,
       "numpy": null,
       "dma_driver": null,
-      "allocator": null
+      "allocator": null,
+      "physical_full_part_level": "USER_REPORTED",
+      "part_confirmation_scope": "User answered -1 to prior speed-grade question; full string uses existing live-loop part, not a new photograph or device readback",
+      "speed_grade_reported": "-1"
     },
     "M02": {
       "status": "CURRENT_ARTIFACTS_NOT_PROVIDED",

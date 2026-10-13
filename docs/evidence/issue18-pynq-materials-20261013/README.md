@@ -8,8 +8,8 @@
 
 | 项目 | 已有记录 / 本轮补述 | 限制 |
 |---|---|---|
-| 板卡 | 正点原子领航者，标签 `ATK-DF7010P_7020P`；底板 V3.9；核心板正面 `CF7010B/7020B`；芯片族 `XC7Z020` | 2026-09-07 实物照片记录；核心板完整订货型号、背面修订及实物速度等级未闭环 |
-| 器件配置 | 旧采录工程 `xc7z020clg400-2`；C 当前 live-loop XPR `xc7z020clg400-1`，Vivado 2025.2 | 两者是工程配置；A/C 下一次加载前核实实物及匹配配置，不能由文件反推实物速度等级 |
+| 板卡 | 正点原子领航者，标签 `ATK-DF7010P_7020P`；底板 V3.9；核心板正面 `CF7010B/7020B`；芯片族 `XC7Z020` | 2026-09-07 实物照片记录；核心板完整订货型号、背面修订仍未知。用户本轮确认速度等级 `-1`，按 USER_REPORTED 保存 |
+| 器件配置 | 用户确认 `-1`，与当前 live-loop XPR 的 `xc7z020clg400-1` 一致，Vivado 2025.2；旧采录工程为 `xc7z020clg400-2` | 采用本轮 `-1` 确认，保留旧 `-2` 历史配置差异；未新增芯片照片核验或修改任何工程，旧 `-2` 报告不能自动用于当前 `-1` 候选 |
 | 当前运行方式 | 用户本轮确认：**仍用 Vivado/Vitis 经 JTAG 加载** | 当前已加载 bit/ELF 身份未知；此回答不证明 SD 卡是否装有其他系统 |
 | 镜像 / 运行时 | 当前 Linux/PYNQ 镜像名称、来源/hash、kernel、device-tree、Python/PYNQ/NumPy、驱动和 allocator 版本均 UNKNOWN | 没有实际 PYNQ 启动、Overlay 加载、MMIO 或 DMA 运行记录；不能选用任意 PYNQ-Z2 镜像 |
 | 旧方向测试 | 用户补述：测 −90°、0°、90°，计算误差均在 5°以内 | USER_REPORTED；该补述未绑定原日志、候选、次数、角度坐标/误差统计口径。保存结论，不推算平均值、置信区间，也不升级为持续跟随/PYNQ验收 |
@@ -20,7 +20,7 @@
 
 | 组 | 本批可交的准确材料 | 尚缺 / 下一责任 |
 |---|---|---|
-| M01 板与镜像 | 上表实物标识、旧/新 part 差异、本轮 JTAG 事实；照片与来源索引 | A/C 核 full part；C 提供实际镜像事实，B 根据匹配板级支持确定部署，不把 Windows/Vitis 版本当板端系统版本 |
+| M01 板与镜像 | 上表实物标识、本轮 `-1` 确认、旧 `-2` 历史配置差异及 JTAG 事实；照片与来源索引 | 按用户确认的 `-1` 与准确构建绑定；C 提供实际镜像事实，B 根据匹配板级支持确定部署，不把 Windows/Vitis 版本当板端系统版本 |
 | M02 匹配工件 | 旧 C1 bit/XSA/init 的准确身份与旧 PCM/SHORT 原件入口；任务1七源、验证和包身份 | A 在原工程接合并给同构建 bit/HWH/manifest、适用 XSA/LTX/DTBO及必要全板资源/DRC/CDC/routed setup/hold；已读工程记录中新组合综合异常，尚未提供本控制候选的新合格报告。旧 C1 工件不能加载成新连续控制 Overlay |
 | M03 PS/AXI/DMA | 旧 C1 合同和 B 原方案中绑定的历史 HWH 参数；C 本机 XPR 的只读声明见 [native-project-observation.json](native-project-observation.json) | C 保存的 XPR 顶层仍 `i17_vio_board_top`，声明中未发现 BD/PS7/DMA/GPIO CPU 通路。此范围不代表 A 机当前完整工程；A 给实际 PS7/GP/HP、MODULE 路径、地址/range、时钟复位和 DMA 参数。当前 MMIO 地址/中断映射 **UNBOUND** |
 | M04 控制/结果 | [control-handoff.md](control-handoff.md)：任务1非 VIO CONFIG/RUN/STOP/RECOVER、上下文、映射、期限、事件、诊断握手与错误终态；对应准确 RTL/原说明 | 这是同域核心合同，尚无 CPU 桥/寄存器 ABI。A/C 集中选择并接合跨域命令、原子快照、结果缓存及 ACK/独占控制；B 沿已选择通路封装软件，不能自造地址或用轮询漏读单拍结果 |
@@ -45,6 +45,8 @@
 
 A 继续在 `F:/AMD/p/i17_live_loop/i17_live_loop.xpr` 给准确 PL 组合和实际 CPU 接合，不搭第三工程；C 现场入口仍为 `D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.xpr`。任务1新增 core 已供接合，但本资料不选择新的公共 AXI ABI、DMA 架构、镜像或 part。B 可以立即沿既有授权完成离线合同/格式/所有权/缺件拒绝及软件组织；真实 API/地址绑定依赖 M01～M05，持续抓取依赖 M06～M07。
 
-当前最小剩余集中输入：**匹配板级镜像事实；实物 full part 与 -1/-2 解释；A 同构建工件/必要报告；当前 CPU 控制、结果缓存、原 PCM 导出及实际 DMA/cache/恢复合同**。这些缺件不要求重跑旧角度、旧矩阵或重新采集已有 raw。用户可直接补未知现场事实；新镜像选择和实际安装由对应后续任务处理。
+当前最小剩余集中输入：**匹配板级镜像事实；按本轮 `-1` 确认绑定的 A 同构建工件/必要报告；当前 CPU 控制、结果缓存、原 PCM 导出及实际 DMA/cache/恢复合同**。这些缺件不要求重跑旧角度、旧矩阵或重新采集已有 raw。用户可直接补未知现场事实；新镜像选择和实际安装由对应后续任务处理。
+
+“镜像”指可供开发板启动的系统安装映像，常见交付是写入 SD 卡的 `.img`；“板端系统”指运行在 Zynq ARM/PS 上的 Linux、内核和 device-tree；“驱动信息”指 PYNQ/Python 使用的 DMA、缓冲分配及外设访问软件版本与来源。它们属于板上软件环境，电脑上的 Vivado/Vitis 2025.2 和 PL 的 `.bit` 不能提供这些版本。用户目前确认的是 JTAG 加载；当前材料尚无实际镜像/板端运行时记录，保留未知即可，不要求为填写材料先安装或运行 PYNQ。参考 [PYNQ 官方入门](https://pynq.readthedocs.io/en/latest/getting_started.html)。
 
 比赛要求 PYNQ on Zynq，以 2026-10-13 用户决定为准；旧指南中的备用后端描述只保留历史工程边界，不能自动把比赛交付切回 standalone。任务2材料整理已完成；#18 整体、B 实现、PYNQ 准入及任务3现场联调保持原状态。资料校验仅为来源/哈希/引用核对，见 [validation.json](validation.json)。

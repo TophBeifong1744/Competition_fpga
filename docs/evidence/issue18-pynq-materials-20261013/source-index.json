@@ -233,5 +233,19 @@
   ],
   "native_project_source": "native-project-observation.json",
   "user_source": "user-report.json",
-  "limits": "reference identity checks only; no new runtime or board claim"
+  "limits": "reference identity checks only; no new runtime or board claim",
+  "explanatory_official_references": [
+    {
+      "url": "https://pynq.readthedocs.io/en/latest/getting_started.html",
+      "scope": "platform-dependent image/install entry"
+    },
+    {
+      "url": "https://pynq.readthedocs.io/en/latest/pynq_libraries.html",
+      "scope": "Linux and PS/PL software libraries"
+    },
+    {
+      "url": "https://pynq.readthedocs.io/en/latest/overlay_design_methodology/overlay_design.html",
+      "scope": "bitstream/HWH versus boot image"
+    }
+  ]
 }

@@ -2,7 +2,7 @@
   "reported_date": "2026-10-13",
   "actor": "C/hsc119",
   "evidence_level": "USER_REPORTED",
-  "source": "current Codex chat: task2 asynchronous answers",
+  "source": "current Codex chat: task2 answers and subsequent user clarification",
   "reports": [
     {
       "exact_answer": "旧测试就是测了-90、0、90三个角度，计算误差在5度以内，办卡型号什么的在资料了吗有",
@@ -19,6 +19,14 @@
       "limits": [
         "当前已加载bit/ELF身份未知",
         "不据此推断SD卡不存在或未装任何Linux系统"
+      ]
+    },
+    {
+      "exact_answer": "-1\n实际 PYNQ 镜像及版本、板端系统和驱动信息是什么",
+      "interpretation": "用户确认速度等级-1；询问镜像/板端系统/驱动的含义，不构成具体镜像或软件版本输入",
+      "limits": [
+        "完整part字符串沿既有live-loop配置补全；未新增芯片照片或板上读回",
+        "旧-2配置及报告仍按历史组合保留"
       ]
     }
   ]
