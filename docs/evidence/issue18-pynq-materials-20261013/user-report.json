@@ -1,0 +1,25 @@
+{
+  "reported_date": "2026-10-13",
+  "actor": "C/hsc119",
+  "evidence_level": "USER_REPORTED",
+  "source": "current Codex chat: task2 asynchronous answers",
+  "reports": [
+    {
+      "exact_answer": "旧测试就是测了-90、0、90三个角度，计算误差在5度以内，办卡型号什么的在资料了吗有",
+      "interpretation": "旧方向测试三个角度 -90/0/90 deg；用户称计算误差在5度以内；请求从资料查板卡",
+      "limits": [
+        "未提供准确候选/原日志绑定",
+        "未提供采集日期、次数和误差统计定义",
+        "不证明连续跟随、STOP/重启、PYNQ或新控制候选"
+      ]
+    },
+    {
+      "exact_answer": "仍用 Vivado/Vitis 经 JTAG 加载",
+      "interpretation": "当前运行方式是 Vivado/Vitis JTAG；没有实际PYNQ运行记录",
+      "limits": [
+        "当前已加载bit/ELF身份未知",
+        "不据此推断SD卡不存在或未装任何Linux系统"
+      ]
+    }
+  ]
+}
