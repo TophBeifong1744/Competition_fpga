@@ -2,7 +2,7 @@
 
 2026-09-23 已迁移至 [fpga-team-workflow](document/team-workflow.md)。A/B/C 对等承担工程职责，任务与批准以 [GitHub Issues](https://github.com/TophBeifong1744/Competition_fpga/issues) / PR 为准；正式 V1 总验收 **2026-10-07**，此前检查为 9/25、9/29、10/3。
 
-入口：[当前进展快照](document/current-status.md) · [验收日历](document/project-plan.md) · [三人分工](document/team-tasks.md) · [新聊天启动提示](document/chat-start-prompts.md) · [迁移与清理记录](docs/maintenance/workflow-migration-20260923.md)。
+入口：[当前进展快照](document/current-status.md) · [验收日历](document/project-plan.md) · [总体任务分配](document/team-tasks.md) · [新聊天启动提示](document/chat-start-prompts.md) · [迁移与清理记录](docs/maintenance/workflow-migration-20260923.md)。
 
 嵌入式比赛作品
 
@@ -10,17 +10,17 @@
 
 SoundSight 面向 AMD FPGA 自主设计比赛，目标是在 Zynq-7020 平台上完成四路同步声音采集、可靠声源方向估计（DOA）与自动指向的 Delay-and-Sum 波束形成，输出增强后的目标方向音频并展示方向、置信度和运行状态。C 并行完成舵机/转台与摄像头驱动及实物效果；声学跟踪闭环仍须通过可信方向、坐标和安全控制验证，机械移动不替代声学收益。
 
-当前A FFT29新增覆盖、C板实录及B reference25算法诊断均已获限定独立批准并入main，阶段进展检查通过；正式M1、完整H3、二维定位精度/音频收益和整机实板仍未通过。C001～003基础模块已接入[rtl](project/rtl/README.md)、[tb](simulation/tb/README.md)及[统一仿真入口](simulation/README.md)，原六组回归通过，不等于整机接通。本阶段新增材料仅获研究/诊断批准，保留可运行任务包，不强搬生产主链，见[本次归位与收尾](deliverables/phase-2026-09-14/CLOSEOUT.md)。最新入口：[文档目录](document/README.md)、[当前状态](document/current-status.md)、[工作包台账](document/work-packages.md)、[六麦独立材料包](deliverables/six-mic-acoustic-review-v1/README.md)。旧文档集中于[历史备份](archive/README.md)。
+当前工程状态和下一责任入口见[主线入口](document/current-status.md)及[原Issue](https://github.com/TophBeifong1744/Competition_fpga/issues)。项目按S1～S6从系统目标和组合预算推进；2026-10-13处于S4资源/构建收敛，完整V1验收仍未通过。旧阶段材料保留原适用范围。
 
 版本范围：2026-10-07 的 V1 用四麦先验收二维水平声源方向及音频改善；三维方向（方位角、俯仰角和单位向量，不含距离/位置）列为 V2。V2 六麦为首选候选、非共面四麦为低成本备选、八麦暂缓；当前已形成六麦指南和首轮软件基线，不扩大首版交付范围，不提前增加采集通道或采购。六麦须经过声学/资源评审和扩展采集准入，不能直接继承四麦验收结论。评估、阶段门与三人分工见[三维方向升级计划](document/three-dimensional-doa-plan.md)。
 
-最新授权范围：麦克风沿用既定选择；仅执行六麦声学评审与离线软件模拟，不新增四麦模拟或四/六麦对比。第一轮2700帧合成浮点结果、波束图、同组六路数据的音频对照及失败边界见[六麦软件预评审](document/six-mic-acoustic-software-review.md)；不代表3D-G0整体或板测通过。
+历史六麦研究授权范围（不表示当前四麦主线已完成）：麦克风沿用既定选择；仅执行六麦声学评审与离线软件模拟，不新增四麦模拟或四/六麦对比。第一轮2700帧合成浮点结果、波束图、同组六路数据的音频对照及失败边界见[六麦软件预评审](document/six-mic-acoustic-software-review.md)；不代表3D-G0整体或板测通过。
 
 ### 设计原则
 
 - 实时主数据路径放在 PL：采集、预处理、GCC-PHAT、TDOA/DOA、波束形成与流式输出。
 - PYNQ 作为首选 PS 开发、验证和演示控制层，承担参数配置、状态读取、UI/通信、日志和非实时管理；核心 FPGA 算法不依赖 Python 运行时。
-- 团队工程版本固定为 Vivado `2025.2`；“版本已决定”不等于“工程已复现”，必须另外保存版本输出、脚本重建、仿真、综合、实现、资源、时序和板测证据。
+- 当前已用工程版本记录为 Vivado `2025.2`；“版本已决定”不等于“工程已复现”，必须另外保存版本输出、脚本重建、仿真、综合、实现、资源、时序和板测证据。
 - 先完成四路同步采集最小闭环，再逐步加入定位和波束形成，避免在硬件基础未验证时堆功能。
 - MATLAB 模型、RTL 和板上结果使用同一组测试向量与定点格式，逐级做位精确比对。
 - 项目优先证明“可靠定位”和“可验证的音频改善”；错误方向必须能拒绝，音频收益必须绑定可复现的场景条件。
@@ -124,7 +124,7 @@ PYNQ 是首选控制层实现，但 AXI4-Lite 寄存器、AXI DMA 数据格式�
 | M6 PYNQ/PS、UI 与整机 | 完整源码、PYNQ 首选控制程序、构建/运行脚本、报告、AI 可见协作记录和发布包 | 纯英文路径提交包可从零构建、部署、运行并复现实测结果 |
 | M7 可选自动跟踪转台 | 明确载荷后的执行机构、位置反馈、跟踪控制与安全保护 | 核心声学系统不依赖转台且转动不会破坏采集与定位 |
 
-详细里程碑与任务依赖见 [路线图](document/roadmap.md) 和 [团队任务分解](document/team-tasks.md)。
+详细里程碑见 [路线图](document/roadmap.md)；通用任务结构、依赖和责任分配见 [总体任务分配指导](document/team-tasks.md)，具体承担者及实时状态以原Issue/PR为准。
 
 ## 关键指标（目标值）
 

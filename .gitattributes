@@ -20,3 +20,6 @@
 
 # Preserve native XSim evidence logs, including tool-emitted trailing spaces.
 /docs/evidence/issue19-servo-v2-20260928/** -text -whitespace
+
+# Preserve the locally adapted engineering Skill and its lock byte identity.
+/tools/run-fpga-workflow/** -text -whitespace

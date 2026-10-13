@@ -130,7 +130,12 @@ foreach ($file in $allTextFiles) {
     if ($content -match $privatePattern) { Add-CheckError "Possible private/absolute path or customer marker: $($file.FullName)" }
     if ($content -match $printSpecificPattern) { Add-CheckError "Industrial-print-specific wording remains: $($file.FullName)" }
     $relativePublicPath = [IO.Path]::GetRelativePath($root, $file.FullName) -replace '\\','/'
-    $isChineseDoc = $relativePublicPath -eq 'README.zh-CN.md' -or $relativePublicPath.StartsWith('docs/zh-CN/', [StringComparison]::Ordinal)
+    $localizedGuides = @(
+        'skills/run-fpga-workflow/references/system-development.md',
+        'skills/run-fpga-workflow/references/module-development.md',
+        'skills/run-fpga-workflow/references/human-checkpoints-and-ila.md'
+    )
+    $isChineseDoc = $relativePublicPath -eq 'README.zh-CN.md' -or $relativePublicPath.StartsWith('docs/zh-CN/', [StringComparison]::Ordinal) -or $relativePublicPath -in $localizedGuides
     if ($content -match $cjkPattern -and -not $isChineseDoc) { Add-CheckError "CJK Unified Ideograph remains outside localized documentation: $($file.FullName)" }
     if ($content -match $deletedReferencePattern) { Add-CheckError "Reference to a removed localized document remains: $($file.FullName)" }
 }

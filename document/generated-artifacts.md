@@ -1,14 +1,11 @@
-# 文件与工作区保留规则
+# 文件分层与受控清理
 
-采用 fpga-team-workflow：一个成员默认一个活动checkout；分支不等于新工程副本。只有独立复现或真实并行写入才新增最小worktree，完成后按证据检查退出。
+活动维护源：project/rtl、simulation/tb、models、software、data/fixtures及实际工程的必要IP/BD/XDC/初始化/描述。每份活动源一个权威入口；不强搬当前厂商工程，也不把旧task-packages当新活动工程。
 
-- Issue #26 的实体迁移已通过 B 限定复核，经 PR #27 合入：活动源码/入口位于 project/rtl、simulation/tb、simulation、software、models、data/fixtures；skill 与外部原生 one 不迁移。后续产品只维护一份权威源，任务包仅保留交付索引、配置和必需冻结证据。准确映射与发布边界见[实体迁移](layout-migration.md)。
-- 旧 task-packages/、deliverables/、archive/ 的冻结源码/失败日志为历史证据，不全量删重，不当新活动源码。代码接入必须有准确范围的真实成员批准与新入口验证。
-- .xpr、.srcs、.bd、.xci、.mem/.coe、锁定IP的DCP及bit/XSA/ELF/HWH不能按后缀当缓存。
-- 原录音、旧错误素材、失败日志和唯一测量保留；临时目录名、Git忽略、已合并都不是删除依据。
-- 清理先dry-run：解析确切路径、检查junction/链接、写入与EDA占用、Git未提交/未跟踪/忽略文件；每个删项须能从固定Git对象或已校验归档恢复。只删此次项目由工具创建且证实闲置的副本；不扫整个C/E盘。
-- 清理目录前先保护独有文件。已批准且入main的干净worktree可以删除；待审分支、未归档独有数据和外部原生工程保留。远端短分支删除与本地证据清理分别判断。
-- 历史 .gitignore 有通配二进制/日志规则，不能以status干净断言材料已保存；本批发布必须检查ignored材料，不靠增加忽略项掩盖未提交成果。
-- codex_out/ 和 .local/ 是忽略的本机诊断/私有区域；忽略不授权删除。正式工程仍为 existing/UNVERIFIED，不能把诊断输出当 project/par 的正式工程或 simulation/work 的 ModelSim 证据。
+历史合同/冻结证据：docs、archive、deliverables、task-packages按原路径保留必要材料和链接。原始样本、尚未接入或待审候选、不可重取波形和量化依据不得按重复/旧/大/ignored删除。
 
-本轮实查和清理去向见[迁移记录](../docs/maintenance/workflow-migration-20260923.md)。
+运行输出：codex_out、simulation/work和真实厂商run。失败以总结为主，仍需诊断/难重取/定量复核才留最小充分原件；已结清无用途缓存无需永久存档。WCFG是显示配置，不等于大型WDB；.xpr/.bd/.xci/.mem、必需DCP/bit/XSA/ELF/HWH不按后缀归缓存。
+
+清理顺序：只读盘点→逐对象核绝对路径和reparse/link→确认无占用、独有成果、开放PR/未结诊断/报告引用依赖→确认所需摘要/实际文件可取→执行准确对象→核残留和引用。失效worktree注册可在保存提交定位后prune，不删除对应分支/提交。远端短分支只在准确成果已保存、无开放PR/在途用途且删除权限明确时删除；旧Release资产先核引用，不批量删除。
+
+本次清理实录见原#23及codex_out/m-workflow-overhaul-20261013/CLEANUP-RESULT.json。此路径是操作证据，不是任务状态数据库。扫描不到、进程权限拒绝或用途不明即保留并列具体待核项，不以此阻断无关清理。

@@ -10,7 +10,16 @@
       "document/three-handoff-workflow.md"
     ],
     "tool_baseline": "Vivado 2025.2",
-    "final_acceptance_date": "2026-10-07"
+    "final_acceptance_date": "2026-10-07",
+    "development_flow_ref": "document/project-development-flow.md",
+    "application_constraints": {
+      "v1_channels": 4,
+      "direction": "2D",
+      "ps_platform": "PYNQ on Zynq",
+      "basis": "user confirmation 2026-10-13; project application only",
+      "pynq_integration_status": "NOT_VERIFIED",
+      "dates_are_targets_not_acceptance": true
+    }
   },
   "layout": {
     "schema_version": 1,
@@ -42,8 +51,9 @@
       "simulation": null
     },
     "entry_refs": {
-      "build": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/current_build/build_current.py",
-      "simulation": "simulation/run_regression.ps1"
+      "simulation": "simulation/run_regression.ps1",
+      "historical_build": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/current_build/build_current.py",
+      "build": null
     },
     "runtime_roots": {
       "formal_build": null,
@@ -56,7 +66,22 @@
       "simulation/modules.json"
     ],
     "adapter_status": "UNVERIFIED",
-    "adapter_evidence_ref": null
+    "adapter_evidence_ref": null,
+    "actual_engineering_entries": [
+      {
+        "member": "A",
+        "path": "F:/AMD/p/i17_live_loop/i17_live_loop.xpr",
+        "purpose": "existing integration compute copy",
+        "verified": "path/source/read-only logs 2026-10-13",
+        "run_state": "latest synthesis log EXCEPTION_ACCESS_VIOLATION; new resource unknown"
+      },
+      {
+        "member": "C",
+        "path": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.xpr",
+        "purpose": "field integration project",
+        "verified": "C commit 1ca1bad integration receipt; not locally opened"
+      }
+    ]
   },
   "members": [
     {
@@ -97,62 +122,7 @@
       "capability_basis": "user 2026-09-23 peer responsibility; not blanket qualification approval"
     }
   ],
-  "ownership": [
-    {
-      "paths": [
-        "project/rtl/acquisition",
-        "software",
-        "project/add_sources.tcl"
-      ],
-      "owner": "A",
-      "review_candidates": [
-        "B",
-        "C"
-      ]
-    },
-    {
-      "paths": [
-        "models"
-      ],
-      "owner": "B",
-      "review_candidates": [
-        "A",
-        "C"
-      ]
-    },
-    {
-      "paths": [
-        "project/rtl/servo",
-        "simulation/tb/servo",
-        "task-packages/PKG-SERVO-PWM"
-      ],
-      "owner": "C",
-      "review_candidates": [
-        "A",
-        "B"
-      ]
-    },
-    {
-      "paths": [
-        "skill"
-      ],
-      "owner": "A",
-      "review_candidates": [
-        "B",
-        "C"
-      ]
-    },
-    {
-      "paths": [
-        "document"
-      ],
-      "owner": "A",
-      "review_candidates": [
-        "B",
-        "C"
-      ]
-    }
-  ],
+  "ownership": [],
   "workspace": {
     "default_strategy": "reuse",
     "sparse_checkout": "when_dependency_closed",
@@ -175,14 +145,58 @@
     "board_resource_ref": "document/project-identity.md"
   },
   "collaboration": {
-    "default_human_approvals": 1,
+    "default_human_approvals": 0,
     "merge_method": "squash",
     "task_source": "github_issue",
     "review_source": "github_pr_or_issue",
     "stage_source": "github_milestone",
     "branch_pattern": "codex/<issue>-<slug>",
     "max_active_implementation_per_member": 1,
-    "author_cannot_self_approve": true
+    "author_cannot_self_approve": true,
+    "notion": {
+      "enabled": true,
+      "entry_url": "https://app.notion.com/p/3ebe0fabe93581c2b226f6ec5f9d92bf",
+      "coordinator_by_member": {
+        "A": "M",
+        "B": "B 主流程"
+      },
+      "other_chats_access": "read_only",
+      "completion_policy": "reviewed_scope_and_member_decision",
+      "mode": "historical_retained"
+    },
+    "approval_policy": {
+      "mode": "member_or_designated_ai",
+      "effective_date": "2026-10-06",
+      "authority": "A user explicit instruction in M",
+      "required_non_author_approvals": 1,
+      "author_self_check_counts_as_author_approval": true,
+      "author_self_check_replaces_non_author_review": false,
+      "designated_ai_by_member": {
+        "A": {
+          "coordinator": "M | 主流程",
+          "reviewers": "本批指定、归属可核实且未参与相应贡献的非作者审查上下文",
+          "execution": "按任务实际指定，不由旧聊天名单推定"
+        },
+        "B": {
+          "coordinator": "B 主流程",
+          "reviewers": "B派单中指定且归属可核实的AI"
+        },
+        "C": {
+          "coordinator": "C 主流程",
+          "reviewers": "C派单中指定且归属可核实的AI"
+        }
+      },
+      "record_decision_as": "MEMBER_AI_PROXY_APPROVAL",
+      "scope_bound": true,
+      "no_historical_personal_signature_backfill": true
+    },
+    "space": {
+      "enabled": true,
+      "entry_url": "https://chatgpt.com/space/page_6abf298ae050819186f2ef4f4422abfc",
+      "task_page_17": "https://chatgpt.com/space/page_99abe2d8487081918aeefd497a658dc9",
+      "purpose": "execution view of original GitHub tasks",
+      "write_policy": "each member coordinator; A execution/review contexts read-only"
+    }
   },
   "model_policy": {
     "schema_version": 1,
@@ -256,5 +270,67 @@
     "default_action": "propose",
     "automatic_install": false,
     "distribution_ref": "tools/fpga-team-workflow/README.md"
-  }
+  },
+  "staffing": {
+    "mode": "outcome_first",
+    "headcount": "UNSPECIFIED",
+    "known_members_are_not_fixed_roles": true,
+    "assignment_source": "original GitHub Issue",
+    "availability_source": "actual acknowledgement/occupation",
+    "role_slots": [
+      "system_result",
+      "model_numeric",
+      "platform_control",
+      "integration_build",
+      "field_operation",
+      "data_analysis",
+      "independent_review",
+      "release_materials"
+    ],
+    "unassigned_policy": "WAITING_FOR_ASSIGNEE, no invented acceptance",
+    "transition": "safe_checkpoint_no_hot_swap"
+  },
+  "responsibility_routing": [
+    {
+      "outcome": "system configuration, PL combination/build and whole-board budgets",
+      "issue": 17,
+      "accountable": "A",
+      "execution": "A / assigned E; human Vivado actions",
+      "next": "C field; B numerical analysis"
+    },
+    {
+      "outcome": "numeric backend/model plus PS application/PYNQ route",
+      "issues": [
+        17,
+        18
+      ],
+      "accountable": "B",
+      "execution": "B own chosen contexts",
+      "next": "A hardware interface / C board"
+    },
+    {
+      "outcome": "continuous control, watchdog integration, servo/field acquisition",
+      "issues": [
+        14,
+        19,
+        15
+      ],
+      "accountable": "C",
+      "execution": "C own chosen contexts",
+      "next": "A combined build / B field data analysis"
+    },
+    {
+      "outcome": "existing evidence and approved skill publication closeout",
+      "issues": [
+        13,
+        16,
+        21,
+        22,
+        23
+      ],
+      "accountable": "A",
+      "execution": "assigned material/validation context",
+      "next": "qualified non-author for uncovered scope only"
+    }
+  ]
 }
