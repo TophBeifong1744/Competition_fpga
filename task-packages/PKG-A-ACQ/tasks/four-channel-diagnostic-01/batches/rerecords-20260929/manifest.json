@@ -1,0 +1,50 @@
+{
+  "schema_version": "c15-rerecord-1",
+  "issue": 15,
+  "delivery_date": "2026-09-29",
+  "capture_clock": "UNKNOWN; filesystem mtime is not acquisition time",
+  "base_commit_before_increment": "a3b783c082b5af2b4d92d3497d69e59ffa9f94fb",
+  "claim": "DIAGNOSTIC_ONLY_PENDING_INDEPENDENT_B_REVIEW",
+  "playback_reference_sha256": "ce28c5576eea620d8f358c0799bf8029cdc41bdeae8dcf95a02967d3bace6838",
+  "records": [
+    {
+      "id": "indoor-az000-r1-new",
+      "new_raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/indoor-az000-r1-new/raw.bin",
+      "new_raw_sha256": "d087b3b4425b2b9362827ce54abd579e33e7eaa68d3dce177e1498d5e7c1b3b0",
+      "new_raw_bytes": 9224000,
+      "new_log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/indoor-az000-r1-new/serial.log",
+      "new_log_sha256": "165d00e7e14930e3b53cc7e42379cfe469dd3924424fad7af70e2414941ae271",
+      "old_capture_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az000_r1",
+      "old_raw_sha256": "fa1f3e13c054645f2b39e324ab4c4b824f89a8aa9561a51063373e76b18ede01",
+      "old_log_sha256": "9f3011bb2b35d65a445f11ac4abf2899e9953071019479351c65d17c45d3c96b"
+    },
+    {
+      "id": "indoor-az045-r1-new",
+      "new_raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/indoor-az045-r1-new/raw.bin",
+      "new_raw_sha256": "fcce740be30f3a071db92d21a559fcd726f4d3b58f2ca60fa56d2071180747e7",
+      "new_raw_bytes": 9224000,
+      "new_log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/indoor-az045-r1-new/serial.log",
+      "new_log_sha256": "c49aaa5a113e8a9cad75c79abeca90ae236ee5e47af79a8e8a9c11c1a9d70276",
+      "old_capture_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az045_r1",
+      "old_raw_sha256": "3640fb40d99d15dbdfdcbc9badf10e5a48277e2ebfbf7a0dd079df64f357389d",
+      "old_log_sha256": "ab8e734b2d19008eea445260b10be95e52c15e373ebd409957de3007d2b3df47"
+    },
+    {
+      "id": "outdoor-az045-r1-new",
+      "new_raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/outdoor-az045-r1-new/raw.bin",
+      "new_raw_sha256": "0b65b02ffd99efda9619025a0931fa54d4c15d773c9d03bbcca10c601913a9e9",
+      "new_raw_bytes": 9224000,
+      "new_log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/outdoor-az045-r1-new/serial.log",
+      "new_log_sha256": "afd3df71899e370be5f4a1e4dace89b671f1ebbe3d5cc825110c92cae530838b",
+      "old_capture_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az045_r1_otd",
+      "old_raw_sha256": "c2bff92a5e93b1e508f4f10e0bc5e057d12781a72d2a101b2a0ed6fc4d2abc91",
+      "old_log_sha256": "69bd29e77f7fed9726a4c1479b75e52fa67d5e1a2dda25b216c6822587b91789"
+    }
+  ],
+  "operator_confirmation": {
+    "source": "C/hsc119 reply in this task on 2026-09-29",
+    "status": "USER_REPORTED",
+    "statement": "The actual playback file, phone and volume, array/source placement, and board-loaded program were the same as the corresponding earlier indoor/outdoor batches.",
+    "limits": "No contemporaneous playback-byte readback, position double-readings or board-loaded artifact readback supplied."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "date": "2026-09-28",
+  "actor": "E engineering assistant for C/hsc119",
+  "claim": "offline source-copy, export, format and marker diagnostics; no board operation or independent member approval",
+  "source_folder_label": "sound_otd",
+  "commands": {
+    "exporter_template": "python -B task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/export_four.py <source .bin> measured-direction-outdoor-01/captures/<ID> --acquisition-id <ID> --config-version four-channel-continuous-s1-6s-raw-20260917-v1 --source-kind hardware-audio --provenance <batch-specific C source statement> --capture-point <S1 chain>",
+    "h1_reader_template": "python -B task-packages/PKG-B-ALG/payload/model/python/h1_reader.py measured-direction-outdoor-01/captures/<ID>",
+    "offline_verifier": "python -B task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/verify_batch.py --batch-root task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01 --out task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/evidence/offline-current.json"
+  },
+  "tool_versions": {
+    "python": "3.13.5",
+    "numpy": "2.3.2"
+  },
+  "source_code_sha256": {
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/export_four.py": "e89c82945367ef3e06113d9c18edbb3276e1ba658b2594e3f79e28a960422526",
+    "task-packages/PKG-B-ALG/payload/model/python/h1_reader.py": "104d15e41cc186b8622df8b0ce52b0aae9b06085eab5e0b982a4b0053c9b2fa9",
+    "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/verify_batch.py": "a7501045f5d76d2937dbf473a7ccc053b1bf017a943ecba9a324dc8035f41886"
+  },
+  "captures": [
+    {
+      "capture_id": "bg_od_otd",
+      "delivery_acquisition_id": "c15_outdoor01_bg_od_otd",
+      "source_raw_basename": "bg_od_otd.bin",
+      "source_serial_basename": "bg_od_otd.log",
+      "copy_sha256_match": true,
+      "exported_raw_sha256": "d1256d3f822032d1012baa9a057adca263ab75c04c7554e152fd2a30a1fe28bb",
+      "samples_csv_sha256": "2b9100234d47be09277c288deaf2d36041fe00300f30e59d1fed7136ee7e8761",
+      "metadata_sha256": "fa61b3aa857efa938a721f956c6bf175d3494c996d7c2cc1c7bf068d1974122a",
+      "h1_reader_status": "PASS_FORMAT_ONLY",
+      "h1_reader_exit_code": 0,
+      "h1_reader_stdout": "evidence/h1-reader-current/bg_od_otd.json",
+      "s1_result": "evidence/offline-current.json",
+      "listening_wav_readback_exact": true
+    },
+    {
+      "capture_id": "az000_r1_otd",
+      "delivery_acquisition_id": "c15_outdoor01_az000_r1_otd",
+      "source_raw_basename": "az000_r1_otd.bin",
+      "source_serial_basename": "az000_r1_otd.log",
+      "copy_sha256_match": true,
+      "exported_raw_sha256": "58373c72d0d4db777651d94225b60e92f04eff5fdc05f70a490ba17ed7897efd",
+      "samples_csv_sha256": "bcd423ab588e968504788d121e47cc222a94484a75451e443286d307ad947605",
+      "metadata_sha256": "8e469f33f7eb07c6a16b67b506833218d28e330ba258071bb1ac39579495517e",
+      "h1_reader_status": "PASS_FORMAT_ONLY",
+      "h1_reader_exit_code": 0,
+      "h1_reader_stdout": "evidence/h1-reader-current/az000_r1_otd.json",
+      "s1_result": "evidence/offline-current.json",
+      "listening_wav_readback_exact": true
+    },
+    {
+      "capture_id": "az000_r2_otd",
+      "delivery_acquisition_id": "c15_outdoor01_az000_r2_otd",
+      "source_raw_basename": "az000_r2_otd.bin",
+      "source_serial_basename": "az000_r2_otd.log",
+      "copy_sha256_match": true,
+      "exported_raw_sha256": "5eda0a7f2c31876a5dbe47d4ded22619937d58fddbc357365537bdffe382a297",
+      "samples_csv_sha256": "a2a3677f954968cd3990d487badb19c19ea49f1b2f9713b1b0dfdf7e73478fa7",
+      "metadata_sha256": "c5e3b1c72f381fbaf334423a99d1fd648b129c4035117875bfbaf7a7b7713925",
+      "h1_reader_status": "PASS_FORMAT_ONLY",
+      "h1_reader_exit_code": 0,
+      "h1_reader_stdout": "evidence/h1-reader-current/az000_r2_otd.json",
+      "s1_result": "evidence/offline-current.json",
+      "listening_wav_readback_exact": true
+    },
+    {
+      "capture_id": "az045_r1_otd",
+      "delivery_acquisition_id": "c15_outdoor01_az045_r1_otd",
+      "source_raw_basename": "az045_r1_otd.bin",
+      "source_serial_basename": "az045_r1_otd.log",
+      "copy_sha256_match": true,
+      "exported_raw_sha256": "c2bff92a5e93b1e508f4f10e0bc5e057d12781a72d2a101b2a0ed6fc4d2abc91",
+      "samples_csv_sha256": "c3dea06cb4ffd5edb17a59e8650ee2304beb0e760f92baa9c4dbd72661b79506",
+      "metadata_sha256": "5665dab9aa1a969e2be726665ea971a26104dc320fa233da0221648b441b0d58",
+      "h1_reader_status": "PASS_FORMAT_ONLY",
+      "h1_reader_exit_code": 0,
+      "h1_reader_stdout": "evidence/h1-reader-current/az045_r1_otd.json",
+      "s1_result": "evidence/offline-current.json",
+      "listening_wav_readback_exact": true
+    },
+    {
+      "capture_id": "az045_r2_otd",
+      "delivery_acquisition_id": "c15_outdoor01_az045_r2_otd",
+      "source_raw_basename": "az045_r2_otd.bin",
+      "source_serial_basename": "az045_r2_otd.log",
+      "copy_sha256_match": true,
+      "exported_raw_sha256": "75a3b3b4d4f43cf44b8f9bd1c66a8861bcf85c79de02ea044a9c1c152dd0aaba",
+      "samples_csv_sha256": "8381e0c89c526d01f97a4938ec80b080c211f48576e38f5ac4dab6078750d371",
+      "metadata_sha256": "89143118c0ad1353f60780cac3a6eaebaa55948815a1deda880ed5ae5636e3f6",
+      "h1_reader_status": "PASS_FORMAT_ONLY",
+      "h1_reader_exit_code": 0,
+      "h1_reader_stdout": "evidence/h1-reader-current/az045_r2_otd.json",
+      "s1_result": "evidence/offline-current.json",
+      "listening_wav_readback_exact": true
+    },
+    {
+      "capture_id": "azm045_r1_otd",
+      "delivery_acquisition_id": "c15_outdoor01_azm045_r1_otd",
+      "source_raw_basename": "azm045_r1_otd.bin",
+      "source_serial_basename": "azm045_r1_otd.log",
+      "copy_sha256_match": true,
+      "exported_raw_sha256": "8ce4aac05725a54162aecb94d006692753a9dc226be229e4c1e6f0d7600f5485",
+      "samples_csv_sha256": "5d00518b555cd7d73cf081f9d463f8b4f5d60214bd76b95df3eb21abcc357473",
+      "metadata_sha256": "7f288a482d44edd8cde6ec1931136eab47b2c4ef13babea8632d0e624c81b009",
+      "h1_reader_status": "PASS_FORMAT_ONLY",
+      "h1_reader_exit_code": 0,
+      "h1_reader_stdout": "evidence/h1-reader-current/azm045_r1_otd.json",
+      "s1_result": "evidence/offline-current.json",
+      "listening_wav_readback_exact": true
+    },
+    {
+      "capture_id": "azm045_r2_otd",
+      "delivery_acquisition_id": "c15_outdoor01_azm045_r2_otd",
+      "source_raw_basename": "azm045_r2_otd.bin",
+      "source_serial_basename": "azm045_r2_otd.log",
+      "copy_sha256_match": true,
+      "exported_raw_sha256": "716ed95a7380f57354308598c826a4313b7c9dc85b34720c34476f24f884f7fc",
+      "samples_csv_sha256": "56657b675c91440d50e9f3748740119311e78a03aca1978d6e9d55b91fe8fdbc",
+      "metadata_sha256": "4f7d9693672db85174e7bfef2741d9f328e8fb07a4058b1a266518ff29325932",
+      "h1_reader_status": "PASS_FORMAT_ONLY",
+      "h1_reader_exit_code": 0,
+      "h1_reader_stdout": "evidence/h1-reader-current/azm045_r2_otd.json",
+      "s1_result": "evidence/offline-current.json",
+      "listening_wav_readback_exact": true
+    },
+    {
+      "capture_id": "bg_post_otd",
+      "delivery_acquisition_id": "c15_outdoor01_bg_post_otd",
+      "source_raw_basename": "bg_post_otd.bin",
+      "source_serial_basename": "bg_post_otd.log",
+      "copy_sha256_match": true,
+      "exported_raw_sha256": "da8e5f83406e3f551365ad26cbd11b06b396a8163c9c66f5cded9206571295f8",
+      "samples_csv_sha256": "957d27dcc92e9aadcb68392cab4809b17adab7efe10287b82cddb761ef685cd7",
+      "metadata_sha256": "4dfb73e24c8c2a253cdca83aed5a4896f6515d5122cfb238f52cad96211b028a",
+      "h1_reader_status": "PASS_FORMAT_ONLY",
+      "h1_reader_exit_code": 0,
+      "h1_reader_stdout": "evidence/h1-reader-current/bg_post_otd.json",
+      "s1_result": "evidence/offline-current.json",
+      "listening_wav_readback_exact": true
+    }
+  ],
+  "limitations": [
+    "Actual Run entry and host bit/ELF at capture not independently bound",
+    "Human listening not performed by assistant",
+    "Marker alignment is provisional",
+    "Operator position report is after the fact"
+  ]
+}

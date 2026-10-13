@@ -1,0 +1,38 @@
+{
+  "formula": "round-to-nearest-ties-to-even(PCM24 * 12 / 256)",
+  "gain": 12,
+  "sample_rate_hz": 48000,
+  "output": "signed16 mono",
+  "common_all_channels_and_recordings": true,
+  "extra_clipping": 0,
+  "per_segment_normalization": false,
+  "agc": false,
+  "wav_readback_exact": true,
+  "human_listening": "NOT_RUN",
+  "channels": [
+    {
+      "channel": "mic0",
+      "file": "mic0.wav",
+      "min": -8433,
+      "max": 8373
+    },
+    {
+      "channel": "mic1",
+      "file": "mic1.wav",
+      "min": -7830,
+      "max": 7827
+    },
+    {
+      "channel": "mic2",
+      "file": "mic2.wav",
+      "min": -6387,
+      "max": 6771
+    },
+    {
+      "channel": "mic3",
+      "file": "mic3.wav",
+      "min": -7173,
+      "max": 6762
+    }
+  ]
+}

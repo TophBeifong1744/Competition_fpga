@@ -1,0 +1,1180 @@
+{
+  "schema_version": 1,
+  "task": "C-PR36-SOURCE-ADDENDUM-20260929",
+  "addendum_date": "2026-09-29",
+  "candidate_commit": "afa513e44bec8cbb51ad42ab6bc8ac04b4de4185",
+  "branch": "codex/15-c-recording-evidence",
+  "status": "C_STATEMENT_CONFIRMED_SOURCE_REVIEW_PENDING",
+  "writers": "X performed bounded read-only discovery; M wrote this addendum/index and copied logs; no independent human acceptance claimed",
+  "C_exact_reply": "跟以前一个操作和配置；后面的复位指的是什么",
+  "C_final_wording_confirmation": "CONFIRMED / USER_REPORTED",
+  "A_mapping_statement": "User forwarded A/M statement dated 2026-09-29: 我能确认沿用原映射，加载记录另补; coverage explicitly all 19 runs; USER_REPORTED, not independently contacted",
+  "citations": {
+    "B_acceptance": "https://github.com/TophBeifong1744/Competition_fpga/pull/36#issuecomment-5889066762",
+    "A_X_missing": "https://github.com/TophBeifong1744/Competition_fpga/pull/36#issuecomment-5890133925",
+    "old_capture_date": "https://github.com/TophBeifong1744/Competition_fpga/issues/15#issuecomment-5808875877",
+    "contract": "https://github.com/TophBeifong1744/Competition_fpga/issues/15"
+  },
+  "runs": [
+    {
+      "id": "bg_od",
+      "group": "measured-direction-indoor-01",
+      "date": "2026-09-22 (USER_REPORTED via B comment)",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/bg_od/raw.bin",
+      "raw_expected": "6737038669998e0797acf7f030134ef1af639d54d19df27cbac69ef01f56adfc",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/bg_od/serial.log",
+      "log_expected": "aee61db57b54df09d592eba2e9198556b90ddbfcfede85482e58a47ff2177949",
+      "metadata_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/bg_od/metadata.json",
+      "entry": "vitis-capture-import_app_hw_1 (C retrospective statement)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/bg_od/raw.bin",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-indoor-01\\captures\\bg_od\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "6737038669998e0797acf7f030134ef1af639d54d19df27cbac69ef01f56adfc",
+          "candidate_blob_oid": "0941ab18453c11f42a1b3acbde656c4a0802b56e",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/bg_od/serial.log",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-indoor-01\\captures\\bg_od\\serial.log",
+          "bytes": 2533,
+          "sha256": "aee61db57b54df09d592eba2e9198556b90ddbfcfede85482e58a47ff2177949",
+          "candidate_blob_oid": "2ff2dc7692bc63051cfab329654d803cdaf26ded",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "az000_r1",
+      "group": "measured-direction-indoor-01",
+      "date": "2026-09-22 (USER_REPORTED via B comment)",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az000_r1/raw.bin",
+      "raw_expected": "fa1f3e13c054645f2b39e324ab4c4b824f89a8aa9561a51063373e76b18ede01",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az000_r1/serial.log",
+      "log_expected": "9f3011bb2b35d65a445f11ac4abf2899e9953071019479351c65d17c45d3c96b",
+      "metadata_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az000_r1/metadata.json",
+      "entry": "vitis-capture-import_app_hw_1 (C retrospective statement)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az000_r1/raw.bin",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-indoor-01\\captures\\az000_r1\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "fa1f3e13c054645f2b39e324ab4c4b824f89a8aa9561a51063373e76b18ede01",
+          "candidate_blob_oid": "588f624b4e5c2f020d9e62b01c0d80c1bfff490d",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az000_r1/serial.log",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-indoor-01\\captures\\az000_r1\\serial.log",
+          "bytes": 2506,
+          "sha256": "9f3011bb2b35d65a445f11ac4abf2899e9953071019479351c65d17c45d3c96b",
+          "candidate_blob_oid": "25594c1a7e36f446007ffa16274ef3b622fe2978",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "az000_r2",
+      "group": "measured-direction-indoor-01",
+      "date": "2026-09-22 (USER_REPORTED via B comment)",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az000_r2/raw.bin",
+      "raw_expected": "1dbdebdeb62b9549a973246e3192771e3ba50b22445beb2de0f0d8fdf8e5ffc8",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az000_r2/serial.log",
+      "log_expected": "81544fab3e3d852db64acb4eae3b0d0ce8a70faa4f2c2018ee690a0c08c62d9e",
+      "metadata_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az000_r2/metadata.json",
+      "entry": "vitis-capture-import_app_hw_1 (C retrospective statement)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az000_r2/raw.bin",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-indoor-01\\captures\\az000_r2\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "1dbdebdeb62b9549a973246e3192771e3ba50b22445beb2de0f0d8fdf8e5ffc8",
+          "candidate_blob_oid": "10c92368db528a759a508be648ce77f3eda0129c",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az000_r2/serial.log",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-indoor-01\\captures\\az000_r2\\serial.log",
+          "bytes": 2506,
+          "sha256": "81544fab3e3d852db64acb4eae3b0d0ce8a70faa4f2c2018ee690a0c08c62d9e",
+          "candidate_blob_oid": "c295b7f62a1d9e86270cf67a1cebeecacb216169",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "azm045_r1",
+      "group": "measured-direction-indoor-01",
+      "date": "2026-09-22 (USER_REPORTED via B comment)",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/azm045_r1/raw.bin",
+      "raw_expected": "9eb1b4180eb51c5bfbfb485ae7f62c80977d98d3a8d4f2fd0cae2100fead5375",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/azm045_r1/serial.log",
+      "log_expected": "0008adacfdabd9b72d7c50371ecc68bd9281d43aff29d31a9b13573b167d4608",
+      "metadata_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/azm045_r1/metadata.json",
+      "entry": "vitis-capture-import_app_hw_1 (C retrospective statement)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/azm045_r1/raw.bin",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-indoor-01\\captures\\azm045_r1\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "9eb1b4180eb51c5bfbfb485ae7f62c80977d98d3a8d4f2fd0cae2100fead5375",
+          "candidate_blob_oid": "ca000854a9d95abd386d2c15cc56c91ae8ef078e",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/azm045_r1/serial.log",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-indoor-01\\captures\\azm045_r1\\serial.log",
+          "bytes": 2510,
+          "sha256": "0008adacfdabd9b72d7c50371ecc68bd9281d43aff29d31a9b13573b167d4608",
+          "candidate_blob_oid": "736d746160655998e6b62b2b63a309fe5a924718",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "azm045_r2",
+      "group": "measured-direction-indoor-01",
+      "date": "2026-09-22 (USER_REPORTED via B comment)",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/azm045_r2/raw.bin",
+      "raw_expected": "ed971ad77ccd1aa18c6279286dc4399f5ae587e02ed5f9f95ef6c2fea311cdb6",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/azm045_r2/serial.log",
+      "log_expected": "c78865952f1de81463b4a9b07ae17a0a4f74b6787f65c4e940c7521849187508",
+      "metadata_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/azm045_r2/metadata.json",
+      "entry": "vitis-capture-import_app_hw_1 (C retrospective statement)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/azm045_r2/raw.bin",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-indoor-01\\captures\\azm045_r2\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "ed971ad77ccd1aa18c6279286dc4399f5ae587e02ed5f9f95ef6c2fea311cdb6",
+          "candidate_blob_oid": "8563bd1f2178d2b95174b658f142c0e39e37504c",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/azm045_r2/serial.log",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-indoor-01\\captures\\azm045_r2\\serial.log",
+          "bytes": 2510,
+          "sha256": "c78865952f1de81463b4a9b07ae17a0a4f74b6787f65c4e940c7521849187508",
+          "candidate_blob_oid": "3b717228c4fbb5c7f8b659dae96c137875c31987",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "az045_r1",
+      "group": "measured-direction-indoor-01",
+      "date": "2026-09-22 (USER_REPORTED via B comment)",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az045_r1/raw.bin",
+      "raw_expected": "3640fb40d99d15dbdfdcbc9badf10e5a48277e2ebfbf7a0dd079df64f357389d",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az045_r1/serial.log",
+      "log_expected": "ab8e734b2d19008eea445260b10be95e52c15e373ebd409957de3007d2b3df47",
+      "metadata_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az045_r1/metadata.json",
+      "entry": "vitis-capture-import_app_hw_1 (C retrospective statement)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az045_r1/raw.bin",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-indoor-01\\captures\\az045_r1\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "3640fb40d99d15dbdfdcbc9badf10e5a48277e2ebfbf7a0dd079df64f357389d",
+          "candidate_blob_oid": "949b7c3f4b0fdfb17985de8e8b29802f2ed3c6f6",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az045_r1/serial.log",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-indoor-01\\captures\\az045_r1\\serial.log",
+          "bytes": 2510,
+          "sha256": "ab8e734b2d19008eea445260b10be95e52c15e373ebd409957de3007d2b3df47",
+          "candidate_blob_oid": "30f72f25bc6ebe647a6ce65c8e3f799698a69bc0",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "az045_r2",
+      "group": "measured-direction-indoor-01",
+      "date": "2026-09-22 (USER_REPORTED via B comment)",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az045_r2/raw.bin",
+      "raw_expected": "016586c38701b2c1e423028228be7ec513a6cf1a5eb48cfc0c1118cf0a10f4c2",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az045_r2/serial.log",
+      "log_expected": "2cd4e55e1769d8859d5403aec8b365d51e77f5b4f40b6dc4f43c0e7b807d73d6",
+      "metadata_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az045_r2/metadata.json",
+      "entry": "vitis-capture-import_app_hw_1 (C retrospective statement)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az045_r2/raw.bin",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-indoor-01\\captures\\az045_r2\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "016586c38701b2c1e423028228be7ec513a6cf1a5eb48cfc0c1118cf0a10f4c2",
+          "candidate_blob_oid": "6bd0d4dfedbe6b5774cc8aaf5d8c0bb20b1f022b",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az045_r2/serial.log",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-indoor-01\\captures\\az045_r2\\serial.log",
+          "bytes": 2510,
+          "sha256": "2cd4e55e1769d8859d5403aec8b365d51e77f5b4f40b6dc4f43c0e7b807d73d6",
+          "candidate_blob_oid": "61606d5b27b431127d8f285e3be8352c4782679a",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "bg_post",
+      "group": "measured-direction-indoor-01",
+      "date": "2026-09-22 (USER_REPORTED via B comment)",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/bg_post/raw.bin",
+      "raw_expected": "96630e0ac5d70949f2e8f23ef28618066288356b55075f3706eca06c66eed749",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/bg_post/serial.log",
+      "log_expected": "445cbf43915f37cc10cdb309b3495bcd862e8503954fc0cc28197ddbd9038be7",
+      "metadata_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/bg_post/metadata.json",
+      "entry": "vitis-capture-import_app_hw_1 (C retrospective statement)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/bg_post/raw.bin",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-indoor-01\\captures\\bg_post\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "96630e0ac5d70949f2e8f23ef28618066288356b55075f3706eca06c66eed749",
+          "candidate_blob_oid": "6151eb237f5579401c907c45f7396c7508218329",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/bg_post/serial.log",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-indoor-01\\captures\\bg_post\\serial.log",
+          "bytes": 2506,
+          "sha256": "445cbf43915f37cc10cdb309b3495bcd862e8503954fc0cc28197ddbd9038be7",
+          "candidate_blob_oid": "d99694020ac3d58264c94eff4f0f7c24a363aad6",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "bg_od_otd",
+      "group": "measured-direction-outdoor-01",
+      "date": "2026-09-22 (USER_REPORTED via B comment)",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/bg_od_otd/raw.bin",
+      "raw_expected": "d1256d3f822032d1012baa9a057adca263ab75c04c7554e152fd2a30a1fe28bb",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/bg_od_otd/serial.log",
+      "log_expected": "b142946c2381f3f7d30263047df2e661cd5261fc9834195b25b6b64dddc0ec98",
+      "metadata_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/bg_od_otd/metadata.json",
+      "entry": "vitis-capture-import_app_hw_1 (C retrospective statement)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/bg_od_otd/raw.bin",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-outdoor-01\\captures\\bg_od_otd\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "d1256d3f822032d1012baa9a057adca263ab75c04c7554e152fd2a30a1fe28bb",
+          "candidate_blob_oid": "bc29921ffef465ba9dc36b71581d282e68050153",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/bg_od_otd/serial.log",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-outdoor-01\\captures\\bg_od_otd\\serial.log",
+          "bytes": 2502,
+          "sha256": "b142946c2381f3f7d30263047df2e661cd5261fc9834195b25b6b64dddc0ec98",
+          "candidate_blob_oid": "bc9320616b456dd4a6ee7ca05073afc3610ffd9e",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "az000_r1_otd",
+      "group": "measured-direction-outdoor-01",
+      "date": "2026-09-22 (USER_REPORTED via B comment)",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az000_r1_otd/raw.bin",
+      "raw_expected": "58373c72d0d4db777651d94225b60e92f04eff5fdc05f70a490ba17ed7897efd",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az000_r1_otd/serial.log",
+      "log_expected": "b3035cc37d4c4bdf0f93a31aed5685a1c95be173d54a9f221bcfcdd645314bae",
+      "metadata_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az000_r1_otd/metadata.json",
+      "entry": "vitis-capture-import_app_hw_1 (C retrospective statement)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az000_r1_otd/raw.bin",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-outdoor-01\\captures\\az000_r1_otd\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "58373c72d0d4db777651d94225b60e92f04eff5fdc05f70a490ba17ed7897efd",
+          "candidate_blob_oid": "b2fb1077ebd5dad5b711889666beb8fe0f9a69d3",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az000_r1_otd/serial.log",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-outdoor-01\\captures\\az000_r1_otd\\serial.log",
+          "bytes": 2510,
+          "sha256": "b3035cc37d4c4bdf0f93a31aed5685a1c95be173d54a9f221bcfcdd645314bae",
+          "candidate_blob_oid": "0cffacecdd850df31c481f3ae9f04920090eb6f8",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "az000_r2_otd",
+      "group": "measured-direction-outdoor-01",
+      "date": "2026-09-22 (USER_REPORTED via B comment)",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az000_r2_otd/raw.bin",
+      "raw_expected": "5eda0a7f2c31876a5dbe47d4ded22619937d58fddbc357365537bdffe382a297",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az000_r2_otd/serial.log",
+      "log_expected": "106d5e7b1a514393fff12f6d4e1d70e976cf3abb6902eab6c366182982c1c2a2",
+      "metadata_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az000_r2_otd/metadata.json",
+      "entry": "vitis-capture-import_app_hw_1 (C retrospective statement)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az000_r2_otd/raw.bin",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-outdoor-01\\captures\\az000_r2_otd\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "5eda0a7f2c31876a5dbe47d4ded22619937d58fddbc357365537bdffe382a297",
+          "candidate_blob_oid": "0ad492d324e52c4dfe47862068f40f83abc67f3d",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az000_r2_otd/serial.log",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-outdoor-01\\captures\\az000_r2_otd\\serial.log",
+          "bytes": 2510,
+          "sha256": "106d5e7b1a514393fff12f6d4e1d70e976cf3abb6902eab6c366182982c1c2a2",
+          "candidate_blob_oid": "8d1d83f5e06ad6dd0aa3afc39ae79aa8e6e86cc8",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "az045_r1_otd",
+      "group": "measured-direction-outdoor-01",
+      "date": "2026-09-22 (USER_REPORTED via B comment)",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az045_r1_otd/raw.bin",
+      "raw_expected": "c2bff92a5e93b1e508f4f10e0bc5e057d12781a72d2a101b2a0ed6fc4d2abc91",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az045_r1_otd/serial.log",
+      "log_expected": "69bd29e77f7fed9726a4c1479b75e52fa67d5e1a2dda25b216c6822587b91789",
+      "metadata_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az045_r1_otd/metadata.json",
+      "entry": "vitis-capture-import_app_hw_1 (C retrospective statement)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az045_r1_otd/raw.bin",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-outdoor-01\\captures\\az045_r1_otd\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "c2bff92a5e93b1e508f4f10e0bc5e057d12781a72d2a101b2a0ed6fc4d2abc91",
+          "candidate_blob_oid": "709814e552d3c4484f865e0e86f5ae6abdd5a2a9",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az045_r1_otd/serial.log",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-outdoor-01\\captures\\az045_r1_otd\\serial.log",
+          "bytes": 2510,
+          "sha256": "69bd29e77f7fed9726a4c1479b75e52fa67d5e1a2dda25b216c6822587b91789",
+          "candidate_blob_oid": "f9ea783aac856df732493ef6e478609e3aad4cb6",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "az045_r2_otd",
+      "group": "measured-direction-outdoor-01",
+      "date": "2026-09-22 (USER_REPORTED via B comment)",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az045_r2_otd/raw.bin",
+      "raw_expected": "75a3b3b4d4f43cf44b8f9bd1c66a8861bcf85c79de02ea044a9c1c152dd0aaba",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az045_r2_otd/serial.log",
+      "log_expected": "f9e4b5ba8ac9d819493f3c0f486709331e87a339dd9e994418d9f910eceef0af",
+      "metadata_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az045_r2_otd/metadata.json",
+      "entry": "vitis-capture-import_app_hw_1 (C retrospective statement)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az045_r2_otd/raw.bin",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-outdoor-01\\captures\\az045_r2_otd\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "75a3b3b4d4f43cf44b8f9bd1c66a8861bcf85c79de02ea044a9c1c152dd0aaba",
+          "candidate_blob_oid": "77b6abc36db4afdebbbd0e4f6f6ab6529e2c10a1",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az045_r2_otd/serial.log",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-outdoor-01\\captures\\az045_r2_otd\\serial.log",
+          "bytes": 2510,
+          "sha256": "f9e4b5ba8ac9d819493f3c0f486709331e87a339dd9e994418d9f910eceef0af",
+          "candidate_blob_oid": "7e2f5e4e99a36dfc9435ccde29ee319caaf7a826",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "azm045_r1_otd",
+      "group": "measured-direction-outdoor-01",
+      "date": "2026-09-22 (USER_REPORTED via B comment)",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/azm045_r1_otd/raw.bin",
+      "raw_expected": "8ce4aac05725a54162aecb94d006692753a9dc226be229e4c1e6f0d7600f5485",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/azm045_r1_otd/serial.log",
+      "log_expected": "9e33bf89a00ff66b7a340efae61e6bb265e33b75e341c05c62e5df0dd320883e",
+      "metadata_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/azm045_r1_otd/metadata.json",
+      "entry": "vitis-capture-import_app_hw_1 (C retrospective statement)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/azm045_r1_otd/raw.bin",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-outdoor-01\\captures\\azm045_r1_otd\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "8ce4aac05725a54162aecb94d006692753a9dc226be229e4c1e6f0d7600f5485",
+          "candidate_blob_oid": "4f30ed727aae4d29e24aa7e2fa6182955961d325",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/azm045_r1_otd/serial.log",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-outdoor-01\\captures\\azm045_r1_otd\\serial.log",
+          "bytes": 2510,
+          "sha256": "9e33bf89a00ff66b7a340efae61e6bb265e33b75e341c05c62e5df0dd320883e",
+          "candidate_blob_oid": "5b6ebc844edfa810c9ff888bb8871ac8f1cd38bb",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "azm045_r2_otd",
+      "group": "measured-direction-outdoor-01",
+      "date": "2026-09-22 (USER_REPORTED via B comment)",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/azm045_r2_otd/raw.bin",
+      "raw_expected": "716ed95a7380f57354308598c826a4313b7c9dc85b34720c34476f24f884f7fc",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/azm045_r2_otd/serial.log",
+      "log_expected": "95d94e54cacdf5d67b092ecfccfff63b12166aa8e7c2850b16fb63e8ba701952",
+      "metadata_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/azm045_r2_otd/metadata.json",
+      "entry": "vitis-capture-import_app_hw_1 (C retrospective statement)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/azm045_r2_otd/raw.bin",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-outdoor-01\\captures\\azm045_r2_otd\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "716ed95a7380f57354308598c826a4313b7c9dc85b34720c34476f24f884f7fc",
+          "candidate_blob_oid": "5d305a736f6fe732b1c0df2bd7d8b6a0815ccc25",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/azm045_r2_otd/serial.log",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-outdoor-01\\captures\\azm045_r2_otd\\serial.log",
+          "bytes": 2510,
+          "sha256": "95d94e54cacdf5d67b092ecfccfff63b12166aa8e7c2850b16fb63e8ba701952",
+          "candidate_blob_oid": "89566d8380eed6f2efc2ded7afd960335a8b46a0",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "bg_post_otd",
+      "group": "measured-direction-outdoor-01",
+      "date": "2026-09-22 (USER_REPORTED via B comment)",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/bg_post_otd/raw.bin",
+      "raw_expected": "da8e5f83406e3f551365ad26cbd11b06b396a8163c9c66f5cded9206571295f8",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/bg_post_otd/serial.log",
+      "log_expected": "b8a8d3b6e3f44b9069def8cac9af20d3ae14ced44fc66be5cff2239dfe5d805b",
+      "metadata_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/bg_post_otd/metadata.json",
+      "entry": "vitis-capture-import_app_hw_1 (C retrospective statement)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/bg_post_otd/raw.bin",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-outdoor-01\\captures\\bg_post_otd\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "da8e5f83406e3f551365ad26cbd11b06b396a8163c9c66f5cded9206571295f8",
+          "candidate_blob_oid": "8f5660fcf06692b9ce608198a721560456830367",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/bg_post_otd/serial.log",
+          "local_path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\measured-direction-outdoor-01\\captures\\bg_post_otd\\serial.log",
+          "bytes": 2502,
+          "sha256": "b8a8d3b6e3f44b9069def8cac9af20d3ae14ced44fc66be5cff2239dfe5d805b",
+          "candidate_blob_oid": "3326a22cc19d83b0efbea7a5e4bd65e9f5333d56",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "indoor-az000-r1-new",
+      "group": "rerecords-20260929",
+      "date": "UNKNOWN",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/indoor-az000-r1-new/raw.bin",
+      "raw_expected": "d087b3b4425b2b9362827ce54abd579e33e7eaa68d3dce177e1498d5e7c1b3b0",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/indoor-az000-r1-new/serial.log",
+      "log_expected": "165d00e7e14930e3b53cc7e42379cfe469dd3924424fad7af70e2414941ae271",
+      "old_capture_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az000_r1",
+      "entry": "same previous operation/configuration (C 2026-09-29 USER_REPORTED)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/indoor-az000-r1-new/raw.bin",
+          "local_path": "C:\\Users\\hsc\\.codex\\worktrees\\issue15-rerecord\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\rerecords-20260929\\inputs\\indoor-az000-r1-new\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "d087b3b4425b2b9362827ce54abd579e33e7eaa68d3dce177e1498d5e7c1b3b0",
+          "candidate_blob_oid": "17b1f9ca768fa325a2220049c7ca0d82fa4ff4c1",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/indoor-az000-r1-new/serial.log",
+          "local_path": "C:\\Users\\hsc\\.codex\\worktrees\\issue15-rerecord\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\rerecords-20260929\\inputs\\indoor-az000-r1-new\\serial.log",
+          "bytes": 2510,
+          "sha256": "165d00e7e14930e3b53cc7e42379cfe469dd3924424fad7af70e2414941ae271",
+          "candidate_blob_oid": "fe797d70ea91b4735c421d938334aa2159ee49d0",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "indoor-az045-r1-new",
+      "group": "rerecords-20260929",
+      "date": "UNKNOWN",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/indoor-az045-r1-new/raw.bin",
+      "raw_expected": "fcce740be30f3a071db92d21a559fcd726f4d3b58f2ca60fa56d2071180747e7",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/indoor-az045-r1-new/serial.log",
+      "log_expected": "c49aaa5a113e8a9cad75c79abeca90ae236ee5e47af79a8e8a9c11c1a9d70276",
+      "old_capture_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-indoor-01/captures/az045_r1",
+      "entry": "same previous operation/configuration (C 2026-09-29 USER_REPORTED)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/indoor-az045-r1-new/raw.bin",
+          "local_path": "C:\\Users\\hsc\\.codex\\worktrees\\issue15-rerecord\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\rerecords-20260929\\inputs\\indoor-az045-r1-new\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "fcce740be30f3a071db92d21a559fcd726f4d3b58f2ca60fa56d2071180747e7",
+          "candidate_blob_oid": "03fc4d504060aac04dd3fec9a61006159745e6e5",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/indoor-az045-r1-new/serial.log",
+          "local_path": "C:\\Users\\hsc\\.codex\\worktrees\\issue15-rerecord\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\rerecords-20260929\\inputs\\indoor-az045-r1-new\\serial.log",
+          "bytes": 2510,
+          "sha256": "c49aaa5a113e8a9cad75c79abeca90ae236ee5e47af79a8e8a9c11c1a9d70276",
+          "candidate_blob_oid": "1da2b8e69d83fdc05900fbb0972e366e9ea1adee",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    },
+    {
+      "id": "outdoor-az045-r1-new",
+      "group": "rerecords-20260929",
+      "date": "UNKNOWN",
+      "raw_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/outdoor-az045-r1-new/raw.bin",
+      "raw_expected": "0b65b02ffd99efda9619025a0931fa54d4c15d773c9d03bbcca10c601913a9e9",
+      "log_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/outdoor-az045-r1-new/serial.log",
+      "log_expected": "afd3df71899e370be5f4a1e4dace89b671f1ebbe3d5cc825110c92cae530838b",
+      "old_capture_path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/measured-direction-outdoor-01/captures/az045_r1_otd",
+      "entry": "same previous operation/configuration (C 2026-09-29 USER_REPORTED)",
+      "mapping": "A_USER_REPORTED_CONTINUITY",
+      "load_binding": "UNKNOWN",
+      "historical_load_authorization": "UNKNOWN",
+      "files": [
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/outdoor-az045-r1-new/raw.bin",
+          "local_path": "C:\\Users\\hsc\\.codex\\worktrees\\issue15-rerecord\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\rerecords-20260929\\inputs\\outdoor-az045-r1-new\\raw.bin",
+          "bytes": 9224000,
+          "sha256": "0b65b02ffd99efda9619025a0931fa54d4c15d773c9d03bbcca10c601913a9e9",
+          "candidate_blob_oid": "ae319af3bb82cb2219973c376f8a8f4520493e9c",
+          "match": true
+        },
+        {
+          "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/rerecords-20260929/inputs/outdoor-az045-r1-new/serial.log",
+          "local_path": "C:\\Users\\hsc\\.codex\\worktrees\\issue15-rerecord\\Competition_fpga\\task-packages\\PKG-A-ACQ\\tasks\\four-channel-diagnostic-01\\batches\\rerecords-20260929\\inputs\\outdoor-az045-r1-new\\serial.log",
+          "bytes": 2512,
+          "sha256": "afd3df71899e370be5f4a1e4dace89b671f1ebbe3d5cc825110c92cae530838b",
+          "candidate_blob_oid": "354cf0a58443e95f2940b76be0e334547ebfb4a1",
+          "match": true
+        }
+      ],
+      "reset_during_capture": "NO_RESET / USER_REPORTED by C on 2026-09-29",
+      "automatic_reset_at_launch_binding": "UNKNOWN"
+    }
+  ],
+  "history": [
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/source/c_adapter_mapping.json",
+      "sha256": "7227c33e1945daff14d4fe5a42d273980062656e33e510312e64839aeb097ff5",
+      "bytes": 1780,
+      "candidate_blob_oid": "168660ea2bf9aecdcf15176aa29ee091eb5c99de",
+      "reference_commit": "11053af5ab15b7593d418cfdc4bf615d549d5e66",
+      "reference_identity_check": "M read GitHub fixed-ref contents API on 2026-09-29; remote blob OID matches candidate; reference commit is not in local object store"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/GEOMETRY.md",
+      "sha256": "fdfe2b60ebed19c1ffbfca421d1964d91c564338949148b1bb6a56496904b8f7",
+      "bytes": 2541,
+      "candidate_blob_oid": "e4e50e44a275d806b94d7a7be4b1b63a8569bf12",
+      "reference_commit": "11053af5ab15b7593d418cfdc4bf615d549d5e66",
+      "reference_identity_check": "M read GitHub fixed-ref contents API on 2026-09-29; remote blob OID matches candidate; reference commit is not in local object store"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/operator-record.json",
+      "sha256": "0a133a4f7c3085ac85733377c0322e11314a3d1ab9370217c456b8960aa60b11",
+      "bytes": 3012,
+      "candidate_blob_oid": "0489fcaa49b7b7bcab90b8f93395d72ca0c0c301",
+      "reference_commit": "11053af5ab15b7593d418cfdc4bf615d549d5e66",
+      "reference_identity_check": "M read GitHub fixed-ref contents API on 2026-09-29; remote blob OID matches candidate; reference commit is not in local object store"
+    },
+    {
+      "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/batches/c-adapter-first-20260913/HANDOFF.md",
+      "sha256": "1985fa4942c7370f8da582af76f84dce605b940dd4cb100e5546b643f85ab90b",
+      "bytes": 4645,
+      "candidate_blob_oid": "fbe5167c10e106048bc17e9ef8cdf911cb93628d",
+      "reference_commit": "11053af5ab15b7593d418cfdc4bf615d549d5e66",
+      "reference_identity_check": "M read GitHub fixed-ref contents API on 2026-09-29; remote blob OID matches candidate; reference commit is not in local object store"
+    }
+  ],
+  "host_artifacts": [
+    {
+      "path": "files/four_mic_endurance.elf",
+      "bytes": 308168,
+      "sha256": "4b7823bdefa3776a910a3359b5851fa52c6f4ce89432cc3ee0072dee52ca06a6",
+      "level": "CURRENT_HOST_FILE_IDENTITY_NOT_CAPTURE_TIME_HASH"
+    },
+    {
+      "path": "_ide/system_continuous_20260915/system_continuous_20260915.bit",
+      "bytes": 4045690,
+      "sha256": "b15991bc0f8595970361be553b542e334dbb7dca268c01864ecd80fcffbbffaf",
+      "level": "CURRENT_HOST_FILE_IDENTITY_NOT_CAPTURE_TIME_HASH"
+    },
+    {
+      "path": "files/system_continuous_20260915.xsa",
+      "bytes": 612051,
+      "sha256": "b84e93631132a3838cc9dadc1ce9037f2685d4d10de0b1655c76291663a8f60b",
+      "level": "CURRENT_HOST_FILE_IDENTITY_NOT_CAPTURE_TIME_HASH"
+    },
+    {
+      "path": "_ide/system_continuous_20260915/ps7_init.tcl",
+      "bytes": 27896,
+      "sha256": "a158fcc7d723b21003864159006e781ffaf5e8df24ec9b1d9279f9d14ff3ee5e",
+      "level": "CURRENT_HOST_FILE_IDENTITY_NOT_CAPTURE_TIME_HASH"
+    }
+  ],
+  "log_snapshots": [
+    {
+      "path": "ide.log",
+      "source_path": "C:\\Users\\hsc\\Documents\\Codex\\2026-09-20\\wo-m\\outputs\\vitis-capture-import\\_ide\\logs\\ide.log",
+      "bytes": 104718,
+      "sha256": "41c4bf68fa41c05212aae1165f6d9d68104a0bb3707b1bbac9fa44588d19f02c"
+    },
+    {
+      "path": "vitis.log",
+      "source_path": "C:\\Users\\hsc\\Documents\\Codex\\2026-09-20\\wo-m\\outputs\\vitis-capture-import\\_ide\\logs\\vitis.log",
+      "bytes": 99301,
+      "sha256": "bc69be1cc89d1cd75680c615e31c1f72f213cf3bd732b1ce3999cd507eb5f76b"
+    }
+  ],
+  "launch_groups": [
+    {
+      "date": "2026-09-22",
+      "count": 12,
+      "config_line_numbers": [
+        2,
+        8,
+        14,
+        20,
+        26,
+        32,
+        38,
+        44,
+        50,
+        56,
+        62,
+        68
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "count": 27,
+      "config_line_numbers": [
+        72,
+        78,
+        84,
+        90,
+        96,
+        102,
+        108,
+        114,
+        120,
+        126,
+        132,
+        138,
+        144,
+        150,
+        156,
+        162,
+        166,
+        172,
+        178,
+        184,
+        190,
+        196,
+        202,
+        208,
+        214,
+        220,
+        226
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "count": 9,
+      "config_line_numbers": [
+        232,
+        238,
+        244,
+        250,
+        256,
+        262,
+        268,
+        274,
+        280
+      ]
+    }
+  ],
+  "launch_records": [
+    {
+      "line": 2,
+      "log_datetime": "2026-09-22 16:58:55",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 8,
+      "log_datetime": "2026-09-22 17:21:57",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 14,
+      "log_datetime": "2026-09-22 17:30:16",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 20,
+      "log_datetime": "2026-09-22 17:31:45",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 26,
+      "log_datetime": "2026-09-22 17:36:36",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 32,
+      "log_datetime": "2026-09-22 17:37:11",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 38,
+      "log_datetime": "2026-09-22 17:41:24",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 44,
+      "log_datetime": "2026-09-22 17:43:50",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 50,
+      "log_datetime": "2026-09-22 17:46:08",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 56,
+      "log_datetime": "2026-09-22 17:48:53",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 62,
+      "log_datetime": "2026-09-22 17:51:49",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 68,
+      "log_datetime": "2026-09-22 17:54:32",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 72,
+      "log_datetime": "2026-09-23 17:09:51",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 78,
+      "log_datetime": "2026-09-23 17:10:46",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 84,
+      "log_datetime": "2026-09-23 17:13:26",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 90,
+      "log_datetime": "2026-09-23 17:16:19",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 96,
+      "log_datetime": "2026-09-23 17:17:00",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 102,
+      "log_datetime": "2026-09-23 17:19:31",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 108,
+      "log_datetime": "2026-09-23 17:20:02",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 114,
+      "log_datetime": "2026-09-23 17:20:34",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 120,
+      "log_datetime": "2026-09-23 17:21:06",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 126,
+      "log_datetime": "2026-09-23 17:23:20",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 132,
+      "log_datetime": "2026-09-23 17:25:31",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 138,
+      "log_datetime": "2026-09-23 17:29:25",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 144,
+      "log_datetime": "2026-09-23 17:29:59",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 150,
+      "log_datetime": "2026-09-23 17:31:51",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 156,
+      "log_datetime": "2026-09-23 17:33:49",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 162,
+      "log_datetime": "2026-09-23 17:36:56",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 166,
+      "log_datetime": "2026-09-23 17:49:53",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 172,
+      "log_datetime": "2026-09-23 17:50:39",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 178,
+      "log_datetime": "2026-09-23 17:51:35",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 184,
+      "log_datetime": "2026-09-23 17:52:06",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 190,
+      "log_datetime": "2026-09-23 17:54:40",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 196,
+      "log_datetime": "2026-09-23 17:57:33",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 202,
+      "log_datetime": "2026-09-23 18:00:03",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 208,
+      "log_datetime": "2026-09-23 18:02:05",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 214,
+      "log_datetime": "2026-09-23 18:04:10",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 220,
+      "log_datetime": "2026-09-23 18:06:28",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 226,
+      "log_datetime": "2026-09-23 18:08:53",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 232,
+      "log_datetime": "2026-09-29 09:45:48",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 238,
+      "log_datetime": "2026-09-29 09:54:50",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 244,
+      "log_datetime": "2026-09-29 09:55:26",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 250,
+      "log_datetime": "2026-09-29 09:55:57",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 256,
+      "log_datetime": "2026-09-29 10:04:49",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 262,
+      "log_datetime": "2026-09-29 10:36:21",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 268,
+      "log_datetime": "2026-09-29 10:36:54",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 274,
+      "log_datetime": "2026-09-29 10:37:26",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    },
+    {
+      "line": 280,
+      "log_datetime": "2026-09-29 10:38:02",
+      "timezone": "NOT_EXPLICIT_IN_LOG",
+      "configuration_id": "L1"
+    }
+  ],
+  "download_examples": [
+    {
+      "line": 67,
+      "kind": "device_configured_message",
+      "text": "16:58:53 INFO  : Device configured successfully with \"C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit\""
+    },
+    {
+      "line": 76,
+      "kind": "elf_download_command",
+      "text": "16:58:55 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf"
+    },
+    {
+      "line": 87,
+      "kind": "device_configured_message",
+      "text": "17:21:52 INFO  : Device configured successfully with \"C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/_ide/system_continuous_20260915/system_continuous_20260915.bit\""
+    },
+    {
+      "line": 96,
+      "kind": "elf_download_command",
+      "text": "17:21:56 INFO  : dow C:/Users/hsc/Documents/Codex/2026-09-20/wo-m/outputs/vitis-capture-import/files/four_mic_endurance.elf"
+    }
+  ],
+  "protection": {
+    "original_directory_files": {
+      ".gitattributes": "48747480eddba024928d03be9bf83dc579e5515768647507a767e8187a85c9ab",
+      "launch.json": "060366a4faab009515a3c6faf20c170ed739183b5efd8f98e0a38175c6417590",
+      "README.md": "c6746852290a66c17bfe59c3b4c6fdc06000e6a7700bda969a40108e7cf28865",
+      "vitis-launch-elf-summary.png": "7b5ad772416a2fa0437b908507d59d16a3fae1a6b6d947b5ab45a2f6a9d6a3ec",
+      "vitis-launch-processor.png": "984b6cc105d8c2c6e1e876c00ef426fca1aac87114ee58ff5ad701a85d37fdbb",
+      "vitis-launch-top.png": "6e453af263df93c954916bb51bbb4dd7e94de4584332111236ce4eca07971905"
+    },
+    "original_raw_log_files_checked": 38,
+    "all_candidate_blob_and_manifest_matches": true,
+    "post_write_check": "38 raw/log files and 6 original directory files unchanged; copied log bytes equal originals"
+  },
+  "limits": [
+    "No run ID to launch mapping",
+    "No capture-time artifact hashes/preflight or device readback",
+    "No recovered A historical authorization for the 19 runs",
+    "New-run capture date/time UNKNOWN",
+    "No acoustic/EDA/hardware execution; B scope reused, not rerun"
+  ],
+  "addendum_sha256": "2ed5bf510026416a82e79884a35a6f0e8e5ef073713a0d7dcc272e45c60e0b2b",
+  "distinct_launch_configurations": [
+    {
+      "id": "L1",
+      "fields": {
+        "name": "vitis-capture-import_app_hw_1",
+        "mode": "run",
+        "resetSystem": true,
+        "programDevice": true,
+        "bitstreamFile": "${workspaceFolder}\\_ide\\system_continuous_20260915\\system_continuous_20260915.bit",
+        "xsaPath": "${workspaceFolder}\\files\\system_continuous_20260915.xsa",
+        "downloadElf": [
+          {
+            "core": "ps7_cortexa9_0",
+            "resetProcessor": false,
+            "elfFile": "C:\\Users\\hsc\\Documents\\Codex\\2026-09-20\\wo-m\\outputs\\vitis-capture-import\\files\\four_mic_endurance.elf",
+            "stopAtEntry": false,
+            "isSelfRelocatingApp": false,
+            "relativeAddress": ""
+          }
+        ],
+        "zynqInitialization": {
+          "isFsbl": false,
+          "usingFSBL": {
+            "initWithFSBL": true,
+            "fsblExitSymbol": "FsblHandoffJtagExit"
+          },
+          "usingPs7Init": {
+            "runPs7Init": true,
+            "runPs7PostInit": true,
+            "ps7InitTclFile": "${workspaceFolder}\\_ide\\system_continuous_20260915\\ps7_init.tcl"
+          }
+        }
+      }
+    }
+  ],
+  "C_confirmation_reply": "确认，采集的时候没复位，不用复位",
+  "C_confirmation_date": "2026-09-29",
+  "C_confirmed_operation": "原16段与新增3段沿用以前的操作和配置",
+  "reset_scope_note": "C reports no reset during capture. Launch snapshots have resetSystem=true. Automatic reset at launch and per-record chronology remain UNKNOWN; no logs or historical approvals are rewritten."
+}
