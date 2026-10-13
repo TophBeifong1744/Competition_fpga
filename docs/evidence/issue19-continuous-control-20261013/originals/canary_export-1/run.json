@@ -1,0 +1,71 @@
+{
+  "case": "canary_export",
+  "scope": "RTL bounded control evidence; not STA/board/PYNQ acceptance",
+  "tool": "Vivado XSim 2025.2",
+  "cwd": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\canary_export-1",
+  "sources": {
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\project\\rtl\\c_board\\i17_diag_consumer.sv": "91681690a3633d5df311e8b19c9d47bef4c87246f5a4a70387e0a2021231d9c3",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\docs\\evidence\\issue19-continuous-control-20261013\\reference\\rtl\\diag_record_bank.sv": "1fcee6a5d075cf38b5be8df7a51265b0d6b8b351667428032b11d071bbfa62d0",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\docs\\evidence\\issue19-continuous-control-20261013\\reference\\rtl\\diag_evidence_store.sv": "92f3a4fb653f20527937a11608541f6e04122a41c86c6733fd48f2c0487217c5",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\simulation\\tb\\c_board\\tb_i17_diag_consumer.sv": "1e92597e1745536bd300a4e9796e3740030db9d9428a768f9aa6ad7cb9fcf8e3"
+  },
+  "stages": [
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvlog.exe",
+        "--sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\canary_export-1\\sources\\i17_diag_consumer.sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\canary_export-1\\sources\\diag_record_bank.sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\canary_export-1\\sources\\diag_evidence_store.sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\canary_export-1\\sources\\tb_i17_diag_consumer.sv"
+      ],
+      "exit": 0,
+      "fatal": false,
+      "elapsed_s": 0.735
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xelab.exe",
+        "work.tb_i17_diag_consumer",
+        "--debug",
+        "off",
+        "--relax",
+        "--mt",
+        "2",
+        "-s",
+        "test"
+      ],
+      "exit": 0,
+      "fatal": false,
+      "elapsed_s": 2.14
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xsim.exe",
+        "test",
+        "--runall",
+        "--onerror",
+        "quit",
+        "--onfinish",
+        "quit",
+        "--sv_seed",
+        "1744",
+        "--testplusarg",
+        "CANARY"
+      ],
+      "exit": 0,
+      "fatal": true,
+      "elapsed_s": 2.438
+    }
+  ],
+  "verdict": "EXPECTED_CHECKER_REJECTION",
+  "logs": {
+    "xelab-stdout.log": "ef5740803138d2baae17beb4b7806ad739e988444f7876b09ace93db95b08a73",
+    "xelab.log": "f259aeb48e6a32d84c488058a9615f0c75d718340c62d19395d78f065bcf795c",
+    "xsim-stdout.log": "2299e82dd85ce7a9057687c3da84b7369994b361c4058b3f40fcb3e2500a6a57",
+    "xsim.log": "8b6fa61a9d73db7b1a9d346aa559735610ab8009d190d0d57bae5ba33d31591e",
+    "xvlog-stdout.log": "6e237014869cc1bf3a7321378dbb06373c5c2b50ac56a4a2486e611a1976aca5",
+    "xvlog.log": "4e9cf59eeac935cdaa1a9f7ee036a892a200939ebd96f8ac0eae8d6310e5fd10"
+  },
+  "unchanged": true
+}

@@ -1,0 +1,37 @@
+--- native/forward_window_adapter.sv
++++ project/rtl/a_frontend/forward_window_adapter.sv
+@@ -1,7 +1,7 @@
+ `timescale 1ns/1ps
+ // TEST_ONLY same-clock forward join. Original caller owns the sole window lease.
+ module forward_window_adapter #(
+-    parameter integer SOURCE_DEPTH=64, OTHER_DEPTH=8, WATCHDOG_BITS=23,
++    parameter integer SOURCE_DEPTH=64, OTHER_DEPTH=8, WATCHDOG_BITS=23, CONTINUOUS_WATCHDOG=0,
+     parameter HANN_FILE="inputs/a_numeric/inputs/b_np/hann-u18f17.mem"
+ )(
+     input wire clk, input wire cold_rst_n,
+@@ -105,6 +105,7 @@
+     output wire diag_export_last,
+     output wire [31:0] diag_bank_counts,
+     output wire [7:0] diag_manager_state,
++    output wire diag_current_fault,
+     output wire [31:0] diag_local_error,
+     output wire [63:0] diag_cycle, diag_capture_seq,
+     output wire diag_m_valid, output wire [431:0] diag_m_payload,
+@@ -608,7 +609,7 @@
+         .export_word(diag_export_word),.export_words(diag_export_words),.export_last(diag_export_last),
+         .error_pulse(store_error),.error_code(store_error_code),.allocator_exhausted(allocator_exhausted)
+     );
+-    forward_window_manager #(.WATCHDOG_BITS(WATCHDOG_BITS)) u_manager (
++    forward_window_manager #(.WATCHDOG_BITS(WATCHDOG_BITS),.CONTINUOUS_WATCHDOG(CONTINUOUS_WATCHDOG)) u_manager (
+         .clk(clk),.cold_rst_n(cold_rst_n),
+         .config_valid(diag_config_valid),.config_ready(diag_config_ready),
+         .config_boot_valid(diag_boot_valid),.config_boot(diag_boot),
+@@ -639,7 +640,7 @@
+         .halt_reader(halt_reader),.config_present(config_present),.terminal_seen(terminal_seen),
+         .state(diag_manager_state),.frame_count(frame_count),
+         .actual_start_count(start_count),.actual_stop_count(stop_count),.m_count(row_count),.terminal_count(terminal_count),
+-        .error_valid(local_error_valid),.error_code(local_error_code)
++        .error_valid(local_error_valid),.error_code(local_error_code),.current_fault(diag_current_fault)
+     );
+     assign diag_m_valid=m_valid;
+     assign diag_m_payload=m_payload;

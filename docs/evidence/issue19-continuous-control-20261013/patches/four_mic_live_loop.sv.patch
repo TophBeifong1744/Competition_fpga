@@ -1,0 +1,37 @@
+--- native/four_mic_live_loop.sv
++++ project/rtl/c_board/four_mic_live_loop.sv
+@@ -6,7 +6,7 @@
+ module four_mic_live_loop #(
+     parameter WARMUP_SAMPLES=4096, TOTAL_SAMPLES=32000,
+     parameter SAMPLES_PER_PACKET=250, FIFO_LOG2=10,
+-    parameter DIAG_SOURCE_DEPTH=64, DIAG_OTHER_DEPTH=8, DIAG_WATCHDOG_BITS=23,
++    parameter DIAG_SOURCE_DEPTH=64, DIAG_OTHER_DEPTH=8, DIAG_WATCHDOG_BITS=23, CONTINUOUS_WATCHDOG=0,
+     parameter HANN_FILE="inputs/parent/inputs/a_numeric/inputs/b_np/hann-u18f17.mem",
+     parameter SERVO_CONFIGURED=0, SIM_FIXTURE=0,
+     parameter integer SERVO_CLK_FREQ_HZ=0,
+@@ -151,6 +151,7 @@
+     output wire diag_export_last,
+     output wire [31:0] diag_bank_counts,
+     output wire [7:0] diag_manager_state,
++    output wire diag_current_fault,
+     output wire [31:0] diag_local_error,
+     output wire [63:0] diag_cycle, diag_capture_seq,
+     input wire arm_request, fault_now, servo_enable,
+@@ -284,7 +285,7 @@
+         .WARMUP_SAMPLES(WARMUP_SAMPLES),.TOTAL_SAMPLES(TOTAL_SAMPLES),
+         .SAMPLES_PER_PACKET(SAMPLES_PER_PACKET),.FIFO_LOG2(FIFO_LOG2),
+         .DIAG_SOURCE_DEPTH(DIAG_SOURCE_DEPTH),.DIAG_OTHER_DEPTH(DIAG_OTHER_DEPTH),
+-        .DIAG_WATCHDOG_BITS(DIAG_WATCHDOG_BITS),.HANN_FILE(HANN_FILE)
++        .DIAG_WATCHDOG_BITS(DIAG_WATCHDOG_BITS),.CONTINUOUS_WATCHDOG(CONTINUOUS_WATCHDOG),.HANN_FILE(HANN_FILE)
+     ) source (
+         .aclk(aclk),
+         .aresetn(aresetn),
+@@ -431,7 +432,7 @@
+         .diag_export_words(diag_export_words),
+         .diag_export_last(diag_export_last),
+         .diag_bank_counts(diag_bank_counts),
+-        .diag_manager_state(diag_manager_state),
++        .diag_manager_state(diag_manager_state),.diag_current_fault(diag_current_fault),
+         .diag_local_error(diag_local_error),
+         .diag_cycle(diag_cycle),
+         .diag_capture_seq(diag_capture_seq)

@@ -1,0 +1,586 @@
+{
+  "status": "CONTROL_UNIT_PASS_FULL_CHAIN_UNVERIFIED",
+  "checks": [
+    {
+      "run": "control-7",
+      "verdict": "FUNCTIONAL_SIM_PASS",
+      "source_matches_current": true,
+      "scope": "RTL bounded control evidence; not STA/board/PYNQ acceptance",
+      "stages": [
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvlog.exe",
+            "--sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\control-7\\sources\\i17_continuous_control.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\control-7\\sources\\signed_angle_map.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\control-7\\sources\\tb_i17_continuous_control.sv"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "wall_timeout": false,
+          "elapsed_s": 0.594
+        },
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xelab.exe",
+            "work.tb_i17_continuous_control",
+            "--debug",
+            "off",
+            "--relax",
+            "--mt",
+            "8",
+            "-s",
+            "test"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "wall_timeout": false,
+          "elapsed_s": 2.422
+        },
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xsim.exe",
+            "test",
+            "--runall",
+            "--maxdeltaid",
+            "10000",
+            "--onerror",
+            "quit",
+            "--onfinish",
+            "quit",
+            "--sv_seed",
+            "1744"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "wall_timeout": false,
+          "elapsed_s": 2.375
+        }
+      ]
+    },
+    {
+      "run": "export-1",
+      "verdict": "FUNCTIONAL_SIM_PASS",
+      "source_matches_current": true,
+      "scope": "RTL bounded control evidence; not STA/board/PYNQ acceptance",
+      "stages": [
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvlog.exe",
+            "--sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\export-1\\sources\\i17_diag_consumer.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\export-1\\sources\\diag_record_bank.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\export-1\\sources\\diag_evidence_store.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\export-1\\sources\\tb_i17_diag_consumer.sv"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "elapsed_s": 0.765
+        },
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xelab.exe",
+            "work.tb_i17_diag_consumer",
+            "--debug",
+            "off",
+            "--relax",
+            "--mt",
+            "2",
+            "-s",
+            "test"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "elapsed_s": 2.297
+        },
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xsim.exe",
+            "test",
+            "--runall",
+            "--onerror",
+            "quit",
+            "--onfinish",
+            "quit",
+            "--sv_seed",
+            "1744"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "elapsed_s": 2.407
+        }
+      ]
+    },
+    {
+      "run": "watchdog-2",
+      "verdict": "FUNCTIONAL_SIM_PASS",
+      "source_matches_current": true,
+      "scope": "RTL bounded control evidence; not STA/board/PYNQ acceptance",
+      "stages": [
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvlog.exe",
+            "--sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\watchdog-2\\sources\\forward_window_manager.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\watchdog-2\\sources\\tb_i17_progress_watchdog.sv"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "elapsed_s": 0.593
+        },
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xelab.exe",
+            "work.tb_i17_progress_watchdog",
+            "--debug",
+            "off",
+            "--relax",
+            "--mt",
+            "2",
+            "-s",
+            "test"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "elapsed_s": 1.844
+        },
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xsim.exe",
+            "test",
+            "--runall",
+            "--onerror",
+            "quit",
+            "--onfinish",
+            "quit",
+            "--sv_seed",
+            "1744"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "elapsed_s": 2.406
+        }
+      ]
+    },
+    {
+      "run": "canary_export-1",
+      "verdict": "EXPECTED_CHECKER_REJECTION",
+      "source_matches_current": true,
+      "scope": "RTL bounded control evidence; not STA/board/PYNQ acceptance",
+      "stages": [
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvlog.exe",
+            "--sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\canary_export-1\\sources\\i17_diag_consumer.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\canary_export-1\\sources\\diag_record_bank.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\canary_export-1\\sources\\diag_evidence_store.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\canary_export-1\\sources\\tb_i17_diag_consumer.sv"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "elapsed_s": 0.735
+        },
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xelab.exe",
+            "work.tb_i17_diag_consumer",
+            "--debug",
+            "off",
+            "--relax",
+            "--mt",
+            "2",
+            "-s",
+            "test"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "elapsed_s": 2.14
+        },
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xsim.exe",
+            "test",
+            "--runall",
+            "--onerror",
+            "quit",
+            "--onfinish",
+            "quit",
+            "--sv_seed",
+            "1744",
+            "--testplusarg",
+            "CANARY"
+          ],
+          "exit": 0,
+          "fatal": true,
+          "elapsed_s": 2.438
+        }
+      ]
+    },
+    {
+      "run": "full_probe-1",
+      "verdict": "SIM_FAIL",
+      "source_matches_current": false,
+      "scope": "RTL bounded control evidence; not STA/board/PYNQ acceptance",
+      "stages": [
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvhdl.exe",
+            "--relax",
+            "-prj",
+            "official.prj"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "wall_timeout": false,
+          "elapsed_s": 0.812
+        },
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvlog.exe",
+            "--sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\doa_math_pkg.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\angle_command_gate.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\diag_evidence_store.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\diag_record_bank.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\diag_single_source_v1.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\doa_math_serial.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\doa_phat_serial.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\fft29_official.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\fixed4_leaf.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\i17_pwm_gate.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\ifft25_official.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\motor_drive.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\pcm4_c1_lifecycle.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\pcm4_c1_packet_framer.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\pcm4_continuous_axis.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\pcm4_doa_backend.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\pcm4_doa_native_entry.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\pcm4_doa_official_entry.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\pcm4_forward_fft_entry.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\pcm4_forward_fft_fixed4.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\pcm4_live_window_handoff.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\pcm4_numeric_preprocess.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\pcm4_overlap_framer_bram.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\pcm4_source_cancel_observer.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\pcm4_window_caller.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\pcm4_window_caller_entry.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\pcm4_window_consumer.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\pdm_cic3.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\runtime_servo_slice.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\signed_angle_map.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\i17_continuous_control.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\i17_diag_consumer.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\i17_continuous_top.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\four_mic_live_loop.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\four_mic_top_forward.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\forward_window_adapter.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\forward_window_manager.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_probe-1\\sources\\tb_i17_continuous_top.sv"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "wall_timeout": false,
+          "elapsed_s": 1.516
+        },
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xelab.exe",
+            "work.tb_i17_continuous_top",
+            "--debug",
+            "off",
+            "--relax",
+            "--mt",
+            "8",
+            "-L",
+            "xil_defaultlib",
+            "-L",
+            "xbip_utils_v3_0_15",
+            "-L",
+            "axi_utils_v2_0_11",
+            "-L",
+            "c_reg_fd_v12_0_11",
+            "-L",
+            "xbip_dsp48_wrapper_v3_0_7",
+            "-L",
+            "xbip_pipe_v3_0_11",
+            "-L",
+            "c_addsub_v12_0_21",
+            "-L",
+            "c_shift_ram_v12_0_20",
+            "-L",
+            "mult_gen_v12_0_24",
+            "-L",
+            "floating_point_v7_1_21",
+            "-L",
+            "cmpy_v6_0_27",
+            "-L",
+            "xfft_v9_1_15",
+            "-L",
+            "secureip",
+            "-L",
+            "xpm",
+            "-s",
+            "test"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "wall_timeout": false,
+          "elapsed_s": 31.328
+        },
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xsim.exe",
+            "test",
+            "--runall",
+            "--maxdeltaid",
+            "10000",
+            "--onerror",
+            "quit",
+            "--onfinish",
+            "quit",
+            "--sv_seed",
+            "1744",
+            "--testplusarg",
+            "FULL_PROBE"
+          ],
+          "exit": 1,
+          "fatal": true,
+          "wall_timeout": true,
+          "elapsed_s": 600.312
+        }
+      ]
+    },
+    {
+      "run": "full_stop-5",
+      "verdict": "RUNNING",
+      "source_matches_current": true,
+      "scope": "RTL bounded control evidence; not STA/board/PYNQ acceptance",
+      "stages": [
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvhdl.exe",
+            "--relax",
+            "-prj",
+            "official.prj"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "wall_timeout": false,
+          "elapsed_s": 0.797
+        },
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvlog.exe",
+            "--sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\doa_math_pkg.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\angle_command_gate.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\diag_evidence_store.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\diag_record_bank.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\diag_single_source_v1.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\doa_math_serial.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\doa_phat_serial.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\fft29_official.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\fixed4_leaf.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\i17_pwm_gate.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\ifft25_official.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\motor_drive.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\pcm4_c1_lifecycle.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\pcm4_c1_packet_framer.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\pcm4_continuous_axis.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\pcm4_doa_backend.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\pcm4_doa_native_entry.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\pcm4_doa_official_entry.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\pcm4_forward_fft_entry.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\pcm4_forward_fft_fixed4.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\pcm4_live_window_handoff.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\pcm4_numeric_preprocess.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\pcm4_overlap_framer_bram.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\pcm4_source_cancel_observer.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\pcm4_window_caller.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\pcm4_window_caller_entry.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\pcm4_window_consumer.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\pdm_cic3.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\runtime_servo_slice.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\signed_angle_map.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\i17_continuous_control.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\i17_diag_consumer.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\i17_continuous_top.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\four_mic_live_loop.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\four_mic_top_forward.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\forward_window_adapter.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\forward_window_manager.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stop-5\\sources\\tb_i17_continuous_top.sv"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "wall_timeout": false,
+          "elapsed_s": 1.359
+        },
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xelab.exe",
+            "work.tb_i17_continuous_top",
+            "--debug",
+            "off",
+            "--relax",
+            "--mt",
+            "8",
+            "-L",
+            "xil_defaultlib",
+            "-L",
+            "xbip_utils_v3_0_15",
+            "-L",
+            "axi_utils_v2_0_11",
+            "-L",
+            "c_reg_fd_v12_0_11",
+            "-L",
+            "xbip_dsp48_wrapper_v3_0_7",
+            "-L",
+            "xbip_pipe_v3_0_11",
+            "-L",
+            "c_addsub_v12_0_21",
+            "-L",
+            "c_shift_ram_v12_0_20",
+            "-L",
+            "mult_gen_v12_0_24",
+            "-L",
+            "floating_point_v7_1_21",
+            "-L",
+            "cmpy_v6_0_27",
+            "-L",
+            "xfft_v9_1_15",
+            "-L",
+            "secureip",
+            "-L",
+            "xpm",
+            "-s",
+            "test"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "wall_timeout": false,
+          "elapsed_s": 33.328
+        }
+      ]
+    },
+    {
+      "run": "full_stall-1",
+      "verdict": "RUNNING",
+      "source_matches_current": true,
+      "scope": "RTL bounded control evidence; not STA/board/PYNQ acceptance",
+      "stages": [
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvhdl.exe",
+            "--relax",
+            "-prj",
+            "official.prj"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "wall_timeout": false,
+          "elapsed_s": 0.75
+        },
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvlog.exe",
+            "--sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\doa_math_pkg.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\angle_command_gate.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\diag_evidence_store.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\diag_record_bank.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\diag_single_source_v1.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\doa_math_serial.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\doa_phat_serial.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\fft29_official.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\fixed4_leaf.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\i17_pwm_gate.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\ifft25_official.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\motor_drive.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\pcm4_c1_lifecycle.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\pcm4_c1_packet_framer.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\pcm4_continuous_axis.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\pcm4_doa_backend.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\pcm4_doa_native_entry.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\pcm4_doa_official_entry.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\pcm4_forward_fft_entry.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\pcm4_forward_fft_fixed4.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\pcm4_live_window_handoff.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\pcm4_numeric_preprocess.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\pcm4_overlap_framer_bram.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\pcm4_source_cancel_observer.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\pcm4_window_caller.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\pcm4_window_caller_entry.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\pcm4_window_consumer.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\pdm_cic3.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\runtime_servo_slice.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\signed_angle_map.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\i17_continuous_control.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\i17_diag_consumer.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\i17_continuous_top.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\four_mic_live_loop.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\four_mic_top_forward.v",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\forward_window_adapter.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\forward_window_manager.sv",
+            "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\full_stall-1\\sources\\tb_i17_continuous_top.sv"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "wall_timeout": false,
+          "elapsed_s": 1.453
+        },
+        {
+          "argv": [
+            "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xelab.exe",
+            "work.tb_i17_continuous_top",
+            "--debug",
+            "off",
+            "--relax",
+            "--mt",
+            "8",
+            "-L",
+            "xil_defaultlib",
+            "-L",
+            "xbip_utils_v3_0_15",
+            "-L",
+            "axi_utils_v2_0_11",
+            "-L",
+            "c_reg_fd_v12_0_11",
+            "-L",
+            "xbip_dsp48_wrapper_v3_0_7",
+            "-L",
+            "xbip_pipe_v3_0_11",
+            "-L",
+            "c_addsub_v12_0_21",
+            "-L",
+            "c_shift_ram_v12_0_20",
+            "-L",
+            "mult_gen_v12_0_24",
+            "-L",
+            "floating_point_v7_1_21",
+            "-L",
+            "cmpy_v6_0_27",
+            "-L",
+            "xfft_v9_1_15",
+            "-L",
+            "secureip",
+            "-L",
+            "xpm",
+            "-s",
+            "test"
+          ],
+          "exit": 0,
+          "fatal": false,
+          "wall_timeout": false,
+          "elapsed_s": 34.219
+        }
+      ]
+    }
+  ],
+  "default_warmup": "UNVERIFIED",
+  "physical_resources_sta_cdc": "NOT_RUN",
+  "board_follow_stop_restart": "NOT_RUN",
+  "pynq": "UNVERIFIED",
+  "a_integrated": "UNVERIFIED"
+}
