@@ -54,6 +54,24 @@
         "镜像、Linux/Python/PYNQ及驱动版本仍UNKNOWN",
         "没有启动、刷卡、复位或板端查询"
       ]
+    },
+    {
+      "reported_date": "2026-10-14",
+      "exact_answer": "电脑 Python 声源方向联调那次",
+      "interpretation": "用户指认此次复位补述对应电脑Python/PL串口声源舵机联调，非Vitis采集或SSCOM手动舵机短测",
+      "limits": [
+        "仅限被指认的历史PC Python联调",
+        "不能证明新PYNQ工程复位、DDR/DMA缓存、写入或排空完成"
+      ]
+    },
+    {
+      "reported_date": "2026-10-14",
+      "exact_answer": "没有按过复位键，没有重新上电，我还要确认什么",
+      "interpretation": "用户确认上述联调过程中未按复位键、未重新上电；记录为现场陈述",
+      "limits": [
+        "仅限被指认的历史PC Python联调",
+        "不能证明新PYNQ工程复位、DDR/DMA缓存、写入或排空完成"
+      ]
     }
   ]
 }
