@@ -10,11 +10,14 @@
 |---|---|---|
 | 板卡 | 正点原子领航者，标签 `ATK-DF7010P_7020P`；底板 V3.9；核心板正面 `CF7010B/7020B`；芯片族 `XC7Z020` | 2026-09-07 实物照片记录；核心板完整订货型号、背面修订仍未知。用户本轮确认速度等级 `-1`，按 USER_REPORTED 保存 |
 | 器件配置 | 用户确认 `-1`，与当前 live-loop XPR 的 `xc7z020clg400-1` 一致，Vivado 2025.2；旧采录工程为 `xc7z020clg400-2` | 采用本轮 `-1` 确认，保留旧 `-2` 历史配置差异；未新增芯片照片核验或修改任何工程，旧 `-2` 报告不能自动用于当前 `-1` 候选 |
-| 当前运行方式 | 用户本轮确认：**仍用 Vivado/Vitis 经 JTAG 加载** | 当前已加载 bit/ELF 身份未知；此回答不证明 SD 卡是否装有其他系统 |
+| 当前运行方式 | 用户本轮确认：**仍用 Vivado/Vitis 经 JTAG 加载** | 当前已加载 bit/ELF 身份未知；2026-10-14 用户补述“板子没插sd卡”，按 USER_REPORTED 保存；历史装卡/安装及其他启动存储仍未知 |
 | 镜像 / 运行时 | 当前 Linux/PYNQ 镜像名称、来源/hash、kernel、device-tree、Python/PYNQ/NumPy、驱动和 allocator 版本均 UNKNOWN | 没有实际 PYNQ 启动、Overlay 加载、MMIO 或 DMA 运行记录；不能选用任意 PYNQ-Z2 镜像 |
 | 旧方向测试 | 用户补述：在电脑 Python 测 −90°、0°、90°，计算误差均在 5°以内；声音采集在 Vitis | USER_REPORTED；电脑计算证据，不是板端角度/PYNQ证据；该补述未绑定原日志、候选、次数、角度坐标/误差统计口径。保存结论，不推算平均值、置信区间，也不升级为持续跟随/PYNQ验收 |
 
 板卡资料见 [板级审计](../../../hardware/m0-board-interface-audit.md)、[照片索引](../../../hardware/evidence/board-2026-09-07/README.md)和 [工程身份](../../../document/project-identity.md)。无需用户重复提供已有型号；现场未确认的字段保留未知。本人原答见 [user-report.json](user-report.json)，结构化状态见 [facts.json](facts.json)。
+
+
+2026-10-14 现场补述：用户确认**当前板上没有插 SD 卡**。当前没有已确认可供查询的 SD 启动 Linux/PYNQ 环境，镜像及板端版本仍 UNKNOWN；不根据这一点断言历史从未安装或其他存储没有系统。本次仅记录事实，未刷卡、启动或查询板端。驱动缓存和写入完成判据待当前平台及 A/B 实际接口绑定，不复用旧裸机行为作为证明。
 
 ## 对 B 七组请求的集中回应
 

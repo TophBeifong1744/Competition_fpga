@@ -2,6 +2,9 @@
 
 2026-10-13；只读原件、解包和元数据比对，未运行旧测试、EDA、初始化脚本或板卡。旧角度结果为**电脑 Python** 计算；声音采集由 **Vitis** 完成。这两项均不构成 PYNQ 运行证据，原日志/候选绑定仍未知。
 
+
+2026-10-14 用户确认“板子没插sd卡”（USER_REPORTED）。该事实说明当前没有已确认的SD启动PYNQ环境可供查询；历史安装及其他启动存储仍未知，实际镜像/运行时继续 UNKNOWN。此补述没有触发任何板上操作。
+
 ## 原件和适用范围
 
 在既有 Vitis 采集工作区找到 `files/system_continuous_20260915.xsa`，其 SHA256 为 `b84e93631132a3838cc9dadc1ce9037f2685d4d10de0b1655c76291663a8f60b`。该原件也已保存于[固定基线的历史采集目录](https://github.com/TophBeifong1744/Competition_fpga/blob/995fe0a802b572353c45a3669714c1292fe0fa52/task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/board-run-20260915-02/runtime/system_continuous_20260915.xsa)。其 13 个成员的尺寸、SHA256、CRC 和提取包身份见 [source-manifest.json](source-manifest.json)。生成器为 Vivado 2025.2，顶层为 `system_wrapper`，器件为历史配置 `xc7z020clg400-2`；当前用户确认和 C 保存的 live-loop 工程为 `xc7z020clg400-1`。历史参数不能替代当前器件的实现/时序结果。
