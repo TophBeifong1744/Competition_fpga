@@ -117,6 +117,15 @@ module pcm4_doa_backend (
     logic signed [49:0] product_arbr,product_aibi,product_aibr,product_arbi;
     logic signed [50:0] cross_re_exact,cross_im_exact;
     logic signed [101:0] cross_re_square,cross_im_square;
+    // 跨谱分四级寄存：乘积、加减、平方、求和；bin/配对/复数载荷同步延迟。
+    logic signed [49:0] product_arbr_q,product_aibi_q,product_aibr_q,product_arbi_q;
+    logic signed [50:0] cross_re_q,cross_im_q;
+    logic signed [101:0] cross_re_square_q,cross_im_square_q;
+    logic signed [50:0] square_re_q,square_im_q,sum_re_q,sum_im_q;
+    logic [102:0] cross_sum_q;
+    logic [6:0] product_bin_q,value_bin_q,square_bin_q,sum_bin_q;
+    logic [2:0] product_pair_q,value_pair_q,square_pair_q,sum_pair_q;
+    logic product_valid,value_valid,square_valid,sum_valid,cross_commit;
     logic signed [39:0] ls_syy_bx,ls_sxy_by,ls_sxx_by,ls_sxy_bx;
     logic signed [40:0] ls_num_x,ls_num_y;
     logic signed [45:0] ux_square,uy_square;
@@ -191,11 +200,14 @@ module pcm4_doa_backend (
     wire s_id_ok={s_token,s_generation,s_context,s_frame_first}==active_identity;
     integer i,j,a_ch,b_ch,addr_a,addr_b,next_half_index,scan_index,left_index,right_index;
     integer dx,dy,bits,norm_shift,det;
-    wide_t ar,ai,br,bi,cr,ci,square,delta,den,numerator,tau;
+    wide_t ar,ai,br,bi,delta,den,numerator,tau;
     logic signed [31:0] residue;
     wide_t solve_x,solve_y,predicted,norm,normal_square,angle_rounded,margin;
     logic [51:0] normalized;
     logic front_ok;
+    // 只在当前配对计算窗口提交；取消同拍阻断写缓存与最大值更新。
+    assign cross_commit=cold_rst_n && !killed && (state==CROSS || state==NORMALIZE) &&
+      sum_valid && sum_pair_q==pair_id;
     // NORMALIZE的PHAT与四种后处理状态互斥，共用同一原192位服务。
     doa_math_shared backend_math(.clk(clk),.cold_rst_n(cold_rst_n),.cancel(killed),
       .phat_start(phat_alu_start),.phat_ready(phat_alu_ready),.phat_operation(phat_alu_op),
@@ -249,12 +261,10 @@ module pcm4_doa_backend (
       product_aibi=$signed(spectrum_a[24:0])*$signed(spectrum_b[24:0]);
       product_aibr=$signed(spectrum_a[24:0])*$signed(spectrum_b[49:25]);
       product_arbi=$signed(spectrum_a[49:25])*$signed(spectrum_b[24:0]);
-      cross_re_exact={product_arbr[49],product_arbr}+{product_aibi[49],product_aibi};
-      cross_im_exact={product_aibr[49],product_aibr}-{product_arbi[49],product_arbi};
-      cr=wide_t'(cross_re_exact);ci=wide_t'(cross_im_exact);
-      cross_re_square=cross_re_exact*cross_re_exact;
-      cross_im_square=cross_im_exact*cross_im_exact;
-      square={89'd0,1'b0,cross_re_square}+{89'd0,1'b0,cross_im_square};
+      cross_re_exact={product_arbr_q[49],product_arbr_q}+{product_aibi_q[49],product_aibi_q};
+      cross_im_exact={product_aibr_q[49],product_aibr_q}-{product_arbi_q[49],product_arbi_q};
+      cross_re_square=cross_re_q*cross_re_q;
+      cross_im_square=cross_im_q*cross_im_q;
       normal_square={89'd0,cross_read[204:102]};
       normalized=phat_result;
       // correlation槽0..18对应原自然序位置1015..1023,0..9。
@@ -357,8 +367,8 @@ module pcm4_doa_backend (
         spectrum_read[0]<=spectrum0[k];spectrum_read[1]<=spectrum1[k];
         spectrum_read[2]<=spectrum2[k];spectrum_read[3]<=spectrum3[k];
       end
-      if(cold_rst_n && !killed && state==CROSS && cross_phase)
-        cross_work[k-7]<={square[102:0],cr[50:0],ci[50:0]};
+      if(cross_commit)
+        cross_work[sum_bin_q]<={cross_sum_q,sum_re_q,sum_im_q};
       if(cold_rst_n && !killed && state==NORMALIZE && normal_phase==0 && k>=7 && k<=85)
         cross_read<=cross_work[k-7];
       // 全部1024点仍交付官方IP，工作集以外显式补零；取消后的真实drain继续。
@@ -367,6 +377,38 @@ module pcm4_doa_backend (
         if(input_count<1023 && next_half_index>=7 && next_half_index<=85)
           ip_half_data<=phat_half[next_half_index-7];
         else ip_half_data<=0;
+      end
+    end
+    // 保留原每两拍读bin；尾部提交落在NORMALIZE跳过0..6的空拍内。
+    // 数据寄存器不清零，valid在冷复位/取消/事务或配对离开窗口时全部失效。
+    always_ff @(posedge clk) begin
+      if(!cold_rst_n || killed || (state!=CROSS && state!=NORMALIZE)) begin
+        product_valid<=0;value_valid<=0;square_valid<=0;sum_valid<=0;
+      end else begin
+        product_valid<=state==CROSS && cross_phase;
+        value_valid<=product_valid;
+        square_valid<=value_valid;
+        sum_valid<=square_valid;
+        if(state==CROSS && cross_phase) begin
+          product_arbr_q<=product_arbr;product_aibi_q<=product_aibi;
+          product_aibr_q<=product_aibr;product_arbi_q<=product_arbi;
+          product_bin_q<=7'(k-7);product_pair_q<=pair_id;
+        end
+        if(product_valid) begin
+          cross_re_q<=cross_re_exact;cross_im_q<=cross_im_exact;
+          value_bin_q<=product_bin_q;value_pair_q<=product_pair_q;
+        end
+        if(value_valid) begin
+          cross_re_square_q<=cross_re_square;cross_im_square_q<=cross_im_square;
+          square_re_q<=cross_re_q;square_im_q<=cross_im_q;
+          square_bin_q<=value_bin_q;square_pair_q<=value_pair_q;
+        end
+        if(square_valid) begin
+          // S102平方非负；先扩成U103再相加，不截进位、不改原精度。
+          cross_sum_q<={1'b0,cross_re_square_q}+{1'b0,cross_im_square_q};
+          sum_re_q<=square_re_q;sum_im_q<=square_im_q;
+          sum_bin_q<=square_bin_q;sum_pair_q<=square_pair_q;
+        end
       end
     end
     always_ff @(posedge clk) begin
@@ -393,6 +435,7 @@ module pcm4_doa_backend (
         cx<=0;cy<=0;ca<=0;coffset<=0;iteration<=0;
         for(j=0;j<6;j=j+1) taus[j]<=0;
       end else begin
+        if(cross_commit && cross_sum_q>maximum_square) maximum_square<=cross_sum_q;
         if(s_abort_valid && s_abort_ready) begin
           frontend_abort_seen<=1; frontend_abort_record<=s_abort_data;
           frontend_abort_identity_record<=s_abort_identity;
@@ -480,7 +523,6 @@ module pcm4_doa_backend (
             if(killed) begin pair_state[pair_id*4+:4]<=CANCELLED;pair_physically_retired[pair_id]<=1;state<=NEXT_PAIR;cross_phase<=0;end
             else if(!cross_phase) cross_phase<=1;
             else begin
-              if(square>$unsigned(maximum_square)) maximum_square<=square[102:0];
               cross_phase<=0;
               if(k==85) begin k<=0;normal_phase<=0;state<=NORMALIZE;end
               else k<=k+1;
