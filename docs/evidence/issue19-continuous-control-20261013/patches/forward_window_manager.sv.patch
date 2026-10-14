@@ -1,0 +1,50 @@
+--- native/forward_window_manager.sv
++++ project/rtl/a_frontend/forward_window_manager.sv
+@@ -2,7 +2,7 @@
+ // TEST_ONLY control namespace. Cold reset only uses external aresetn.
+ // diag_reset is an explicit warm request, never a cold reset shortcut.
+ module forward_window_manager #(
+-    parameter integer WATCHDOG_BITS=23
++    parameter integer WATCHDOG_BITS=23, CONTINUOUS_WATCHDOG=0
+ )(
+     input wire clk, input wire cold_rst_n,
+     input wire config_valid, output wire config_ready,
+@@ -38,7 +38,8 @@
+     output wire [31:0] frame_count,
+     output wire [63:0] actual_start_count, actual_stop_count,
+     output wire [63:0] m_count, terminal_count,
+-    output wire error_valid, output wire [7:0] error_code
++    output wire error_valid, output wire [7:0] error_code,
++    output wire current_fault
+ );
+     localparam [7:0] IDLE=0, START_OFFER=1, RUN=2, STOP_OFFER=3,
+         DRAIN=4, NORMAL_HOLD=5, PREPARE_OFFER=6, WAIT_RESET=7,
+@@ -69,13 +70,17 @@
+         !source_status[6] && !source_status[7];
+     wire normal_finished=terminal_q && source_drained && !session_active &&
+         ff_quiet && normal_source_quiet;
+-    wire watchdog_timeout=watchdog_active_q && (&watchdog_q) && !normal_finished;
++    // 连续模式仅由真实完整源帧刷新进展期限；后端完成另由C控制器限时。
++    wire frame_progress=CONTINUOUS_WATCHDOG && state_q==RUN && m_fire && m_last;
++    wire watchdog_timeout=watchdog_active_q && (&watchdog_q) && !normal_finished && !frame_progress;
+     wire local_fault=bank_full || allocator_exhausted || store_error || watchdog_timeout;
+     // Current forward abort is session control; full original reasons stay in forward records.
+     wire session_abort=(ff_abort && !(ff_stop_cancel_normal === 1'b1)) ||
+         ff_abort_q || (ff_late_error === 1'b1);
+     assign ff_session_aborted=ff_abort_q;
+     wire source_fault=fault_latched || local_cancel || caller_error;
++    // 原生当前故障单向上送；不把由外部fault产生的halt/晚错再组合反馈给控制器。
++    assign current_fault=local_fault || fault_latched || caller_error;
+     // Hard failures can retain obligations indefinitely. No forced reset.
+     // Warm cancellation must not wait for FFT/report ready or normal_finished.
+     assign halt_reader=halt_q || local_fault || source_fault || session_abort ||
+@@ -136,7 +141,8 @@
+             if(actual_start_fire) begin
+                 if(starts_q!=64'hffffffffffffffff) starts_q<=starts_q+64'd1;
+                 frames_q<=0; terminal_q<=0; watchdog_q<=0; watchdog_active_q<=1;
+-            end else if(watchdog_active_q && !(&watchdog_q)) watchdog_q<=watchdog_q+1'b1;
++            end else if(frame_progress) watchdog_q<=0;
++            else if(watchdog_active_q && !(&watchdog_q)) watchdog_q<=watchdog_q+1'b1;
+             if(actual_stop_fire && stops_q!=64'hffffffffffffffff) stops_q<=stops_q+64'd1;
+             if(normal_finished || reset_executed) watchdog_active_q<=0;
+             if((ff_abort && !(ff_stop_cancel_normal === 1'b1)) || (ff_late_error === 1'b1)) ff_abort_q<=1;

@@ -1,0 +1,65 @@
+{
+  "case": "watchdog",
+  "scope": "RTL bounded control evidence; not STA/board/PYNQ acceptance",
+  "tool": "Vivado XSim 2025.2",
+  "cwd": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\watchdog-2",
+  "sources": {
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\project\\rtl\\a_frontend\\forward_window_manager.sv": "6e25365ecca1dbb0cd7f8fa35c45ae9b3d37bc1803561389762dca0d63e9f2e3",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\simulation\\tb\\c_board\\tb_i17_progress_watchdog.sv": "f7c108a38b8bc055dcd1849f8d9aac33d43bfefc59a9081660b5a030e0fdecda"
+  },
+  "stages": [
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvlog.exe",
+        "--sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\watchdog-2\\sources\\forward_window_manager.sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\watchdog-2\\sources\\tb_i17_progress_watchdog.sv"
+      ],
+      "exit": 0,
+      "fatal": false,
+      "elapsed_s": 0.593
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xelab.exe",
+        "work.tb_i17_progress_watchdog",
+        "--debug",
+        "off",
+        "--relax",
+        "--mt",
+        "2",
+        "-s",
+        "test"
+      ],
+      "exit": 0,
+      "fatal": false,
+      "elapsed_s": 1.844
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xsim.exe",
+        "test",
+        "--runall",
+        "--onerror",
+        "quit",
+        "--onfinish",
+        "quit",
+        "--sv_seed",
+        "1744"
+      ],
+      "exit": 0,
+      "fatal": false,
+      "elapsed_s": 2.406
+    }
+  ],
+  "verdict": "FUNCTIONAL_SIM_PASS",
+  "logs": {
+    "xelab-stdout.log": "fa4c6e463756ab350b19d778cf2986f122992a08d113d26fe230eb26340f5ae0",
+    "xelab.log": "2db95726cbf8344cb343bb6392b761375dfb4780fbe98ad98e652664664e4af1",
+    "xsim-stdout.log": "94ef69ed40427d8cbd71c9966809d780a1342a6ca34bae08501956cad078887b",
+    "xsim.log": "9def2cb75c641dc74349ffe3965ec9cedac7a0d8c7a8ab0df0ddee6d219e695a",
+    "xvlog-stdout.log": "d6afc075b83b466c0143cedc78cd54442e887a888b8a5f9c1716480c139f385a",
+    "xvlog.log": "92a8439b7d68d63e28a308ff365afb52361cca32fda3560b8ad6e2bb15a2d62e"
+  },
+  "unchanged": true
+}

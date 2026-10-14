@@ -1,0 +1,37 @@
+--- native/four_mic_top_forward.v
++++ project/rtl/a_frontend/four_mic_top_forward.v
+@@ -5,7 +5,7 @@
+ module four_mic_top_forward #(
+     parameter WARMUP_SAMPLES=4096, TOTAL_SAMPLES=32000,
+     parameter SAMPLES_PER_PACKET=250, FIFO_LOG2=10,
+-    parameter DIAG_SOURCE_DEPTH=64, DIAG_OTHER_DEPTH=8, DIAG_WATCHDOG_BITS=23,
++    parameter DIAG_SOURCE_DEPTH=64, DIAG_OTHER_DEPTH=8, DIAG_WATCHDOG_BITS=23, CONTINUOUS_WATCHDOG=0,
+     parameter HANN_FILE="inputs/a_numeric/inputs/b_np/hann-u18f17.mem"
+ )(
+     (* X_INTERFACE_PARAMETER="ASSOCIATED_BUSIF m_axis,ASSOCIATED_RESET aresetn,FREQ_HZ 61440000" *)
+@@ -152,6 +152,7 @@
+     output wire diag_export_last,
+     output wire [31:0] diag_bank_counts,
+     output wire [7:0] diag_manager_state,
++    output wire diag_current_fault,
+     output wire [31:0] diag_local_error,
+     output wire [63:0] diag_cycle, diag_capture_seq
+ );
+@@ -193,7 +194,7 @@
+     assign diag_frontend_id = id;
+ 
+     forward_window_adapter #(.SOURCE_DEPTH(DIAG_SOURCE_DEPTH),.OTHER_DEPTH(DIAG_OTHER_DEPTH),
+-        .WATCHDOG_BITS(DIAG_WATCHDOG_BITS),.HANN_FILE(HANN_FILE)) forward_window (
++        .WATCHDOG_BITS(DIAG_WATCHDOG_BITS),.CONTINUOUS_WATCHDOG(CONTINUOUS_WATCHDOG),.HANN_FILE(HANN_FILE)) forward_window (
+         .clk(aclk),
+         .cold_rst_n(aresetn),
+         .ff_cancel_now(ff_cancel_now),
+@@ -307,7 +308,7 @@
+         .diag_export_words(diag_export_words),
+         .diag_export_last(diag_export_last),
+         .diag_bank_counts(diag_bank_counts),
+-        .diag_manager_state(diag_manager_state),
++        .diag_manager_state(diag_manager_state),.diag_current_fault(diag_current_fault),
+         .diag_local_error(diag_local_error),
+         .diag_cycle(diag_cycle),
+         .diag_capture_seq(diag_capture_seq),

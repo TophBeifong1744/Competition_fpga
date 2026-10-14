@@ -1,0 +1,72 @@
+{
+  "case": "control",
+  "scope": "RTL bounded control evidence; not STA/board/PYNQ acceptance",
+  "tool": "Vivado XSim 2025.2",
+  "cwd": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\control-7",
+  "sources": {
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\project\\rtl\\c_board\\i17_continuous_control.sv": "8b0b6863a658b8c482568baae20d22795cb9a17fa7e3962844c439a9b68acb47",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\docs\\evidence\\issue19-continuous-control-20261013\\reference\\rtl\\signed_angle_map.sv": "4355c1486300d7d5f5677a9619327c86db7da45edba915a5eb3f65e59132be38",
+    "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\simulation\\tb\\c_board\\tb_i17_continuous_control.sv": "2fe3d1ae39e5a591a50dde9ba5b11d2a8d8cb5e6d0b9ee9d1b6e20f1d854ff55"
+  },
+  "stages": [
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xvlog.exe",
+        "--sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\control-7\\sources\\i17_continuous_control.sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\control-7\\sources\\signed_angle_map.sv",
+        "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i17-continuous-control-20261013\\runs\\control-7\\sources\\tb_i17_continuous_control.sv"
+      ],
+      "exit": 0,
+      "fatal": false,
+      "wall_timeout": false,
+      "elapsed_s": 0.594
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xelab.exe",
+        "work.tb_i17_continuous_control",
+        "--debug",
+        "off",
+        "--relax",
+        "--mt",
+        "8",
+        "-s",
+        "test"
+      ],
+      "exit": 0,
+      "fatal": false,
+      "wall_timeout": false,
+      "elapsed_s": 2.422
+    },
+    {
+      "argv": [
+        "C:\\AMDDesignTools\\2025.2\\Vivado\\bin\\unwrapped\\win64.o\\xsim.exe",
+        "test",
+        "--runall",
+        "--maxdeltaid",
+        "10000",
+        "--onerror",
+        "quit",
+        "--onfinish",
+        "quit",
+        "--sv_seed",
+        "1744"
+      ],
+      "exit": 0,
+      "fatal": false,
+      "wall_timeout": false,
+      "elapsed_s": 2.375
+    }
+  ],
+  "verdict": "FUNCTIONAL_SIM_PASS",
+  "logs": {
+    "xelab-stdout.log": "78b26b007f21eafb67ffe319d126d7521967d1bc3163434bbab20276d37239d0",
+    "xelab.log": "edbf38d7c1e7b32fb48e44164389c2b1e24dafdca9f67d09a106df6276192570",
+    "xsim-stdout.log": "1a070d2f1e3662dbc77045eb70ef2dcb5dc2c2ee86d5b3d8536a9b0c3e99edde",
+    "xsim.log": "25481f33e8946c9a02e1506e5315fa356b3c15ad8c5db0619f8d24d7975bd39a",
+    "xvlog-stdout.log": "79d7aa466da65145a4603ed6fc9411c8b392dfaf204dd4626fc12dbb3ec0728d",
+    "xvlog.log": "ead90769fcefc811c095e7f0cc6855ee5b6ce9fe9756affbba62ddd1752e44ee"
+  },
+  "unchanged": true
+}

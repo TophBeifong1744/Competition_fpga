@@ -23,3 +23,21 @@
 
 # Preserve the locally adapted engineering Skill and its lock byte identity.
 /tools/run-fpga-workflow/** -text -whitespace
+
+# Exact continuous-control increment and native XSim evidence retain SHA256 bytes.
+/docs/evidence/issue19-continuous-control-20261013/** -text -whitespace
+/project/rtl/c_board/i17_continuous_control.sv -text
+/project/rtl/c_board/i17_continuous_top.sv -text
+/project/rtl/c_board/i17_diag_consumer.sv -text
+/project/rtl/c_board/four_mic_live_loop.sv -text
+/project/rtl/a_frontend/four_mic_top_forward.v -text
+/project/rtl/a_frontend/forward_window_adapter.sv -text
+/project/rtl/a_frontend/forward_window_manager.sv -text
+/simulation/tb/c_board/tb_i17_continuous_control.sv -text
+/simulation/tb/c_board/tb_i17_continuous_top.sv -text
+/simulation/tb/c_board/tb_i17_continuous_first.sv -text
+/simulation/tb/c_board/tb_i17_continuous_noise.sv -text
+/simulation/tb/c_board/tb_i17_diag_consumer.sv -text
+/simulation/tb/c_board/tb_i17_progress_watchdog.sv -text
+/simulation/run_i17_continuous.py -text
+/simulation/package_i17_continuous.py -text

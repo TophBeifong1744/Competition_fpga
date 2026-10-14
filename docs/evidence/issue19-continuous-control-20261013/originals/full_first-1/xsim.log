@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Oct 13 19:05:36 2026
+# Process ID         : 28244
+# Current directory  : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-continuous-control-20261013/runs/full_first-1
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/test/xsim_script.tcl}
+# Log file           : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-continuous-control-20261013/runs/full_first-1/xsim.log
+# Journal file       : C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-continuous-control-20261013/runs/full_first-1\xsim.jou
+# Running On         : DESKTOP-3FNSCB5
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7435H                              
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34029 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36176 MB
+# Available Virtual  : 13331 MB
+#-----------------------------------------------------------
+source xsim.dir/test/xsim_script.tcl
+# xsim {test} -autoloadwcfg -runall -onfinish quit -onerror quit -sv_seed 1744
+Time resolution is 1 ps
+run -all
+Note:   - SCALING_SCH: in_ptr = 1, out_ptr = 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_first/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - C_CHANNELS  = 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_first/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - field_width = 20
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_first/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:   - Copying SCALE_SCH from 20 downto 1 to 20 downto 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_first/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:   - SCALING_SCH: in_ptr = 1, out_ptr = 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_first/dut/u_core/source/forward_window/u_forward/backend/fft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - C_CHANNELS  = 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_first/dut/u_core/source/forward_window/u_forward/backend/fft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - field_width = 20
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_first/dut/u_core/source/forward_window/u_forward/backend/fft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:   - Copying SCALE_SCH from 20 downto 1 to 20 downto 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_first/dut/u_core/source/forward_window/u_forward/backend/fft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:   - SCALING_SCH: in_ptr = 1, out_ptr = 1
+Time: 0 ps  Iteration: 1  Process: /tb_i17_continuous_first/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - C_CHANNELS  = 1
+Time: 0 ps  Iteration: 1  Process: /tb_i17_continuous_first/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - field_width = 20
+Time: 0 ps  Iteration: 1  Process: /tb_i17_continuous_first/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:   - Copying SCALE_SCH from 20 downto 1 to 20 downto 1
+Time: 0 ps  Iteration: 1  Process: /tb_i17_continuous_first/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+TOP_INITIAL cycle=1 state=0 manager=0 fault=0
+TOP_INITIAL cycle=2 state=0 manager=0 fault=0
+TOP_INITIAL cycle=3 state=0 manager=0 fault=0
+TOP_INITIAL cycle=4 state=0 manager=0 fault=0
+TOP_INITIAL cycle=5 state=0 manager=0 fault=0
+TOP_INITIAL cycle=6 state=0 manager=0 fault=0
+TOP_INITIAL cycle=7 state=1 manager=0 fault=0
+TOP_INITIAL cycle=8 state=2 manager=0 fault=0
+TOP_INITIAL cycle=9 state=3 manager=0 fault=0
+TOP_INITIAL cycle=10 state=4 manager=0 fault=0
+TOP_INITIAL cycle=11 state=5 manager=0 fault=0
+TOP_INITIAL cycle=12 state=5 manager=1 fault=0
+TOP_INITIAL cycle=13 state=5 manager=2 fault=0
+TOP_INITIAL cycle=14 state=5 manager=2 fault=0
+TOP_INITIAL cycle=15 state=5 manager=2 fault=0
+TOP_INITIAL cycle=16 state=5 manager=2 fault=0
+TOP_INITIAL cycle=17 state=5 manager=2 fault=0
+TOP_INITIAL cycle=18 state=5 manager=2 fault=0
+TOP_INITIAL cycle=19 state=5 manager=2 fault=0
+TOP_PROGRESS cycle=500000 state=5 manager=2 reports=0 accepts=0 fault=0
+TOP_PROGRESS cycle=1000000 state=5 manager=2 reports=0 accepts=0 fault=0
+TOP_PROGRESS cycle=1500000 state=5 manager=2 reports=0 accepts=0 fault=0
+FIRST_DETAIL cycle=1706188 angle=0 eligible=0 b_error=0 numeric=0 map=1 gate_evidence=1 gate_qualified=1 current_qualified=1 lease=1 report_current=1 ff_error=0 ff_protocol=0 ff_numeric=0
+FIRST_FRONTEND record=0000000000000000400000000000000058000000000000000c000000000000000a00000007fff43381ffeb5f81ffeb5f81fff433800000000000000000000000006000000000000000000000000000000000000000000000001ffc2222222222222223ffffffff0020040080100200400801002004008010020040080100c0300c0300c0300c0300c0300c0300c0300c0300c0300c0300c0300c020000000000000001fe040810204081020000000000000010000000000000000e000000000000000c000000000000000a0000000000000008000000000000000600000000000000040000000000000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001ff000000000000000000000001000000000000000160000000000000003000000000000000280000001fffd0ce07ffad7e07ffad7e07ffd0ce000000000000000000000000018000000000000000000000000000000000000000000000007ff124924924893765894bc4094bc4093765c00801002004008010020000000200000002000000020040080020000000000000120000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002
+Fatal: FIRST_CHECK actual result is not eligible
+Time: 27769989130 ps  Iteration: 0  Process: /tb_i17_continuous_first/Always38_66  Scope: tb_i17_continuous_first  File: C:/Users/hsc/Desktop/fpga_clone/Competition_fpga/codex_out/i17-continuous-control-20261013/runs/full_first-1/sources/tb_i17_continuous_first.sv Line: 48
+$finish called at time : 27769989130 ps
+exit 0
+INFO: xsimkernel Simulation Memory Usage: 33720 KB (Peak: 33720 KB), Simulation CPU Usage: 1257671 ms
+INFO: [Common 17-206] Exiting xsim at Tue Oct 13 19:26:54 2026...

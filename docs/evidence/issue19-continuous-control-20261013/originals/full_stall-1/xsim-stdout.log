@@ -1,0 +1,61 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Oct 13 18:47:12 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/test/xsim_script.tcl
+# xsim {test} -testplusarg FULL_STALL -autoloadwcfg -runall -onfinish quit -onerror quit -sv_seed 1744
+Time resolution is 1 ps
+run -all
+Note:   - SCALING_SCH: in_ptr = 1, out_ptr = 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_top/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - C_CHANNELS  = 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_top/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - field_width = 20
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_top/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:   - Copying SCALE_SCH from 20 downto 1 to 20 downto 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_top/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:   - SCALING_SCH: in_ptr = 1, out_ptr = 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_top/dut/u_core/source/forward_window/u_forward/backend/fft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - C_CHANNELS  = 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_top/dut/u_core/source/forward_window/u_forward/backend/fft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - field_width = 20
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_top/dut/u_core/source/forward_window/u_forward/backend/fft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:   - Copying SCALE_SCH from 20 downto 1 to 20 downto 1
+Time: 0 ps  Iteration: 0  Process: /tb_i17_continuous_top/dut/u_core/source/forward_window/u_forward/backend/fft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:   - SCALING_SCH: in_ptr = 1, out_ptr = 1
+Time: 0 ps  Iteration: 1  Process: /tb_i17_continuous_top/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - C_CHANNELS  = 1
+Time: 0 ps  Iteration: 1  Process: /tb_i17_continuous_top/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:     - field_width = 20
+Time: 0 ps  Iteration: 1  Process: /tb_i17_continuous_top/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+Note:   - Copying SCALE_SCH from 20 downto 1 to 20 downto 1
+Time: 0 ps  Iteration: 1  Process: /tb_i17_continuous_top/dut/u_core/backend/ifft/core/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__94240  File: C:\AMDDesignTools\2025.2\Vivado/data/ip/xilinx/xfft_v9_1/hdl/xfft_v9_1_vh_rfs.vhd
+TOP_INITIAL cycle=1 state=0 manager=0 fault=0
+TOP_INITIAL cycle=2 state=0 manager=0 fault=0
+TOP_INITIAL cycle=3 state=0 manager=0 fault=0
+TOP_INITIAL cycle=4 state=0 manager=0 fault=0
+TOP_INITIAL cycle=5 state=0 manager=0 fault=0
+TOP_INITIAL cycle=6 state=0 manager=0 fault=0
+TOP_INITIAL cycle=7 state=1 manager=0 fault=0
+TOP_INITIAL cycle=8 state=2 manager=0 fault=0
+TOP_INITIAL cycle=9 state=3 manager=0 fault=0
+TOP_INITIAL cycle=10 state=4 manager=0 fault=0
+TOP_INITIAL cycle=11 state=5 manager=0 fault=0
+TOP_INITIAL cycle=12 state=5 manager=1 fault=0
+TOP_INITIAL cycle=13 state=5 manager=2 fault=0
+TOP_INITIAL cycle=14 state=5 manager=2 fault=0
+TOP_INITIAL cycle=15 state=5 manager=2 fault=0
+TOP_INITIAL cycle=16 state=5 manager=2 fault=0
+TOP_INITIAL cycle=17 state=5 manager=2 fault=0
+TOP_INITIAL cycle=18 state=5 manager=2 fault=0
+TOP_INITIAL cycle=19 state=5 manager=2 fault=0
+TOP_PROGRESS cycle=500000 state=5 manager=2 reports=0 accepts=0 fault=0
+TOP_PROGRESS cycle=1000000 state=5 manager=2 reports=0 accepts=0 fault=0
+TOP_PROGRESS cycle=1500000 state=5 manager=2 reports=0 accepts=0 fault=0
+TOP_REPORT cycle=1706188 angle=0 eligible=0
+TOP_PROGRESS cycle=2000000 state=5 manager=2 reports=1 accepts=0 fault=0
