@@ -2,7 +2,7 @@
 from dataclasses import dataclass
 import hashlib
 import json
-from pathlib import Path
+from pathlib import Path, PureWindowsPath
 
 
 class ProtocolError(Exception):
@@ -69,13 +69,16 @@ def inside(root, relative):
     root = Path(root).resolve(strict=True)
     require(root.is_dir(), "artifact root is not a directory")
     rel = Path(text(relative, "artifact path"))
-    require(not rel.is_absolute() and ".." not in rel.parts, "unsafe relative path")
+    windows_rel = PureWindowsPath(relative)
+    require(not (rel.drive or rel.root or rel.anchor or
+                 windows_rel.drive or windows_rel.root or windows_rel.anchor) and
+            ".." not in rel.parts and ".." not in windows_rel.parts, "unsafe relative path")
     candidate = root / rel
-    # 中文用途：逐级拒绝链接，再核绝对根边界，避免工件越界。
-    cursor = candidate
-    while cursor != root:
+    # 中文用途：拒绝盘符/根锚后按有限相对段检查链接，避免parent停在自身而循环。
+    cursor = root
+    for part in rel.parts:
+        cursor = cursor / part
         require(not cursor.is_symlink(), "symlink input forbidden")
-        cursor = cursor.parent
     resolved = candidate.resolve(strict=True)
     require(resolved.is_relative_to(root) and resolved.is_file(), "artifact outside root/file")
     return resolved

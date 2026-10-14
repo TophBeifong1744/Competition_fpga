@@ -3,7 +3,7 @@ from dataclasses import dataclass
 import json
 import threading
 import uuid
-from .contracts import Identity, ProtocolError, require, keys, integer, boolean
+from .contracts import Identity, ProtocolError, require, keys, integer, boolean, text
 from .records import decode_raw, native_record
 from .dma_rx import TestTransport
 
@@ -97,7 +97,14 @@ class Session:
         return reply
 
     def _fresh(self, reply, identity):
-        require(isinstance(reply, dict) and reply.get("identity") == identity.as_dict(), "stale/foreign identity")
+        require(isinstance(reply, dict), "observation object required")
+        observed = reply.get("identity")
+        # 中文用途：先核原生身份字段与uint64类型，拒绝bool/float弱相等后才判新鲜。
+        keys(observed, ("boot", "session", "epoch", "generation", "transaction"))
+        text(observed["session"], "identity.session")
+        for name in ("boot", "epoch", "generation", "transaction"):
+            integer(observed[name], "identity." + name, 0, (1 << 64) - 1)
+        require(observed == identity.as_dict(), "stale/foreign identity")
         sequence = integer(reply.get("sample_sequence"), "sample_sequence", 0)
         require(sequence > self.sample_sequence, "duplicate/stale status sequence")
         self.sample_sequence = sequence
