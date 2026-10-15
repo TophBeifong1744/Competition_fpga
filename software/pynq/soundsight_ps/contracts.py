@@ -80,7 +80,12 @@ def inside(root, relative):
         cursor = cursor / part
         require(not cursor.is_symlink(), "symlink input forbidden")
     resolved = candidate.resolve(strict=True)
-    require(resolved.is_relative_to(root) and resolved.is_file(), "artifact outside root/file")
+    # 中文用途：用Python 3.8路径API保持解析后的根边界拒绝。
+    try:
+        resolved.relative_to(root)
+    except ValueError:
+        raise ProtocolError("artifact outside root/file") from None
+    require(resolved.is_file(), "artifact outside root/file")
     return resolved
 
 
