@@ -1,0 +1,22 @@
+{
+  "schema": "soundsight.turntable.prototype.sources.v1",
+  "parent_commit": "b529fed84bde1d5d5d6326e0d8870416c738657a",
+  "primary_mode": "RTL_IMPLEMENTATION",
+  "entry": "i17_turntable_prototype",
+  "real_result_entry": "i17_turntable_result_slice",
+  "new_rtl": [
+    "project/rtl/c_board/i17_turntable_known_source.sv",
+    "project/rtl/c_board/i17_turntable_pwm_guard.sv",
+    "project/rtl/c_board/i17_turntable_result_slice.sv",
+    "project/rtl/c_board/i17_turntable_prototype.sv"
+  ],
+  "unchanged_dependencies": [
+    "task-packages/PKG-C-I17-VIO-OPT-20261011/project/rtl/integration/signed_angle_map.sv",
+    "task-packages/PKG-C-I17-VIO-OPT-20261011/project/rtl/runtime/angle_command_gate.sv",
+    "task-packages/PKG-C-I17-VIO-OPT-20261011/project/rtl/runtime/runtime_servo_slice.sv",
+    "task-packages/PKG-C-I17-VIO-OPT-20261011/project/rtl/c_board/motor_drive.v"
+  ],
+  "public_stop_mapping": "UNSELECTED_A_DECISION_REQUIRED",
+  "mechanical_approval": "UNKNOWN_BLOCK_MOTION",
+  "build_and_physical_evidence": "NOT_RUN"
+}
