@@ -166,6 +166,9 @@ static void stop(struct psb_bridge *b, enum psb_control control) {
 enum psb_rc psb_dispatch(struct psb_bridge *b, const struct psb_batch *batch) {
  if (!b || !batch || (batch->count && !batch->items) || batch->count>PSB_RESULTS || batch->control<PSB_NO_CONTROL || batch->control>PSB_CONTROL_RESET) return PSB_REJECT;
  bool rejected=false, invalid_batch=false;
+ const bool protocol_eligible=b->active && !b->failed;
+ bool protocol_seen=false, protocol_audit_overflow=false;
+ struct psb_event last_protocol={0};
  bool touched[PSB_RESULTS]={false};
  uint32_t terminal=batch->fatal ? PSB_EXTERNAL_FATAL : 0;
  /* First pass: all error causes, before ANY commit; scan also after STOP. */
@@ -177,6 +180,15 @@ enum psb_rc psb_dispatch(struct psb_bridge *b, const struct psb_batch *batch) {
   }
   struct psb_result *r=c->token.slot<PSB_RESULTS ? &b->result[c->token.slot] : NULL;
   bool known=r && same(c->token,r->token) && r->owner!=PSB_FREE;
+  if (protocol_eligible && !c->error && !known) {
+   struct psb_event e={0}; e.kind=PSB_TOKEN_PROTOCOL_ERROR;
+   e.reasons=PSB_TOKEN_PROTOCOL; e.session=b->session; e.row=b->rows;
+   e.transaction=c->token; e.fatal=true;
+   terminal|=PSB_TOKEN_PROTOCOL; rejected=true; protocol_seen=true;
+   last_protocol=e;
+   record(b,e);
+   continue;
+  }
   if (c->error) {
    struct psb_event e={0}; e.kind=PSB_LATE_ERROR; e.session=b->session; e.row=b->rows; e.id=b->previous;
    e.transaction=c->token; e.have_transaction_desc=known;
@@ -188,8 +200,18 @@ enum psb_rc psb_dispatch(struct psb_bridge *b, const struct psb_batch *batch) {
   }
   if (!known) rejected=true;
  }
- if (terminal) global_fault(b,terminal);
- if (batch->control!=PSB_NO_CONTROL) stop(b,batch->control);
+ if (terminal) {
+  if (protocol_seen && b->audit_count==PSB_AUDIT) protocol_audit_overflow=true;
+  global_fault(b,terminal);
+ }
+ if (batch->control!=PSB_NO_CONTROL) {
+  if (protocol_seen && b->audit_count==PSB_AUDIT) protocol_audit_overflow=true;
+  stop(b,batch->control);
+ }
+ if (protocol_audit_overflow) {
+  last_protocol.reasons|=PSB_AUDIT_FULL;
+  b->last_event=last_protocol;
+ }
  if (b->failed) return PSB_FAULT;
  if (!b->active) return (rejected || batch->control==PSB_NO_CONTROL) ? PSB_REJECT : PSB_OK;
  /* Validate/aggregate ALL fragments before making any result consumable.
