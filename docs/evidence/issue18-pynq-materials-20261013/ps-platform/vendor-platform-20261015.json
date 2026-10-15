@@ -1,0 +1,1108 @@
+{
+  "schema": "soundsight.vendor-pynq-static-audit.v1",
+  "date": "2026-10-15",
+  "scope": "OFFLINE_ARCHIVES_AND_IMAGE_NOT_BOARD_RUNTIME",
+  "status": "RECEIVED_INTEGRITY_OK_BOOT_ADAPTATION_REQUIRED_FOR_USER_REPORTED_MINUS1",
+  "archives": [
+    {
+      "archive": "ZYNQ_7020_PYNQ.zip",
+      "bytes": 680414199,
+      "sha256": "cbe2a09fdf2efaa262463b20c3fe745dd2536ccefb3d93a397ca7660de85676b",
+      "member_count": 17381,
+      "uncompressed_bytes": 1826816986,
+      "path_safety": "PASS",
+      "zip_crc": "PASS",
+      "image": null
+    },
+    {
+      "archive": "ZYNQ-7020-2.7.0.zip",
+      "bytes": 1869237643,
+      "sha256": "40a1d904e2e2809bc173d0a3aaac40e57ace3c5cef533b4be11e87ddfb71dfe8",
+      "member_count": 1,
+      "uncompressed_bytes": 8090591232,
+      "path_safety": "PASS",
+      "zip_crc": "PASS",
+      "image": {
+        "path": "codex_out/vendor-pynq-7020/ZYNQ-7020-2.7.0.img",
+        "bytes": 8090591232,
+        "sha256": "a9a486753b8aa61239c745b258311b795d665f69cca0e9ee12a1127e51eb107a",
+        "zip_crc": "PASS"
+      }
+    }
+  ],
+  "vendor_reference_files": [
+    {
+      "path": "vendor-project/base/base.xpr",
+      "bytes": 11052,
+      "sha256": "0ac3622ee304124606b26de99b4d89260bc4e5ebf7ecc70353255a31060c1330",
+      "origin": "ZYNQ_7020_PYNQ.zip:base/base.xpr"
+    },
+    {
+      "path": "vendor-project/base/base.srcs/sources_1/bd/base/base.bd",
+      "bytes": 362710,
+      "sha256": "4571517d2d50053383170f9427401de886a7e9d18c5b7486e11e0d7d8696040e",
+      "origin": "ZYNQ_7020_PYNQ.zip:base/base.srcs/sources_1/bd/base/base.bd"
+    },
+    {
+      "path": "vendor-project/base/base.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0.xci",
+      "bytes": 427354,
+      "sha256": "ec232b918adbf192c8ffcf6ae815ab06be18d9c2656c0eb2670fb12c1df3c91e",
+      "origin": "ZYNQ_7020_PYNQ.zip:base/base.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0.xci"
+    },
+    {
+      "path": "vendor-project/base/ready_to_test/base.hwh",
+      "bytes": 1877647,
+      "sha256": "16d8b66e492216fc78d766a85843b18a4f23b602a24699a59c96e34ccd5278b0",
+      "origin": "ZYNQ_7020_PYNQ.zip:base/ready_to_test/base.hwh"
+    },
+    {
+      "path": "vendor-project/base/ready_to_test/system.xsa",
+      "bytes": 1211675,
+      "sha256": "531285670822624a07d02240fbe29a7af3f2e750591b2711f561ad8f9a2f2baf",
+      "origin": "ZYNQ_7020_PYNQ.zip:base/ready_to_test/system.xsa"
+    },
+    {
+      "path": "vendor-project/base/ready_to_test/base.xdc",
+      "bytes": 4513,
+      "sha256": "5e3b29115ae2709fa1719dbc6e70086948308f71684a502c1b59b969793a6303",
+      "origin": "ZYNQ_7020_PYNQ.zip:base/ready_to_test/base.xdc"
+    },
+    {
+      "path": "vendor-xsa/ps7_init.c",
+      "bytes": 548189,
+      "sha256": "b7559559dd45a4e7c8d43b27e495271c5d4d8323e3031986b8d034179b4a9880",
+      "origin": "system.xsa:ps7_init.c"
+    },
+    {
+      "path": "vendor-xsa/ps7_init.h",
+      "bytes": 3799,
+      "sha256": "9e9217be36f2b45f9134931b468bf2323e4bb3a18662c4911913939da27e64b3",
+      "origin": "system.xsa:ps7_init.h"
+    },
+    {
+      "path": "vendor-xsa/ps7_init.tcl",
+      "bytes": 36362,
+      "sha256": "7660c82d1a6139a470b2b1627b0ebd6af15021f8ccb477022775c983695ea270",
+      "origin": "system.xsa:ps7_init.tcl"
+    },
+    {
+      "path": "vendor-xsa/xsa.json",
+      "bytes": 2209,
+      "sha256": "931fe633d47e0ee64d47fb37d25fd5bd48c939342ff3825d13b6a92aea22e58a",
+      "origin": "system.xsa:xsa.json"
+    },
+    {
+      "path": "vendor-xsa/xsa.xml",
+      "bytes": 1144,
+      "sha256": "848020a092af15d4178a2a047d55f488cff59fa722498e6398f0708918a7c87c",
+      "origin": "system.xsa:xsa.xml"
+    },
+    {
+      "path": "vendor-xsa/sysdef.xml",
+      "bytes": 3513,
+      "sha256": "0c1d2a552810df64dc0ced6f674266a3c7e9a9f752b4bc5e2641a6c6c41471d5",
+      "origin": "system.xsa:sysdef.xml"
+    },
+    {
+      "path": "image/boot/BOOT.BIN",
+      "bytes": 860396,
+      "sha256": "b27be32e9b1548a503f570d072a1d1fc0ac5556c5ec69d103d431e9a9a050be6",
+      "origin": "ZYNQ-7020-2.7.0.img:boot/BOOT.BIN"
+    },
+    {
+      "path": "image/boot/BOOT.PY",
+      "bytes": 516,
+      "sha256": "4610f107db6bc253199988e95f423fb606b6c0d7e6c6dcf2c67f78a14381d5a8",
+      "origin": "ZYNQ-7020-2.7.0.img:boot/BOOT.PY"
+    },
+    {
+      "path": "image/boot/BOOT.SCR",
+      "bytes": 1636,
+      "sha256": "b51fef8848d129caee8c355f825878e638e7013d2ca0353748fc8397a47bc0b9",
+      "origin": "ZYNQ-7020-2.7.0.img:boot/BOOT.SCR"
+    },
+    {
+      "path": "image/boot/IMAGE.UB",
+      "bytes": 5892560,
+      "sha256": "b502ca462cb57a43834c5cd0756ac38c6a28d6760cf27e942ea97dacd36c91f1",
+      "origin": "ZYNQ-7020-2.7.0.img:boot/IMAGE.UB"
+    },
+    {
+      "path": "image/boot/REVISION",
+      "bytes": 87,
+      "sha256": "42d3a4acf330edbe4f73efaacb591676d7b8c557d998d7e2fa5151f8d3982d4a",
+      "origin": "ZYNQ-7020-2.7.0.img:boot/REVISION"
+    },
+    {
+      "path": "image/rootfs/usr/lib/os-release",
+      "bytes": 327,
+      "sha256": "4b97bf6f9c01f2ca6d0ab3f21cbe091d8de1f0c7848ab87285ce6a7c24ca8ed5",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/lib/os-release"
+    },
+    {
+      "path": "image/rootfs/etc/lsb-release",
+      "bytes": 122,
+      "sha256": "0102db75d21271d8f18fe4e66b254f7189e6d0406ba70baa5f32c744edf98635",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/etc/lsb-release"
+    },
+    {
+      "path": "image/rootfs/boot/REVISION",
+      "bytes": 87,
+      "sha256": "42d3a4acf330edbe4f73efaacb591676d7b8c557d998d7e2fa5151f8d3982d4a",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/boot/REVISION"
+    },
+    {
+      "path": "image/rootfs/etc/network/interfaces",
+      "bytes": 142,
+      "sha256": "6075eef5dd2e64b6c0d53ddc95f10c55af10a6a5f8782d1496c13a4c055dd5e6",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/etc/network/interfaces"
+    },
+    {
+      "path": "image/rootfs/etc/environment",
+      "bytes": 276,
+      "sha256": "05fd5d60f3740118235a3f2309c2d9190e8328e3fa606b0d1105c2173535ecc0",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/etc/environment"
+    },
+    {
+      "path": "image/rootfs/etc/profile.d/pynq_venv.sh",
+      "bytes": 47,
+      "sha256": "efffbb3e1f1c7e5cfffcdab5619ba5c3d29b45506816db175b05f84eeffdbac4",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/etc/profile.d/pynq_venv.sh"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_latex_envs-1.4.6.dist-info/METADATA",
+      "bytes": 7047,
+      "sha256": "cb86ece88501d7c062a50948bf1b450a23322832058eaf7f692ee8fb0fd5f93e",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_latex_envs-1.4.6.dist-info/METADATA"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyterlab_server-2.5.2.dist-info/METADATA",
+      "bytes": 2465,
+      "sha256": "cdeed251a624c98080855b4397fb39b9fd233974ca9f8b0abb1138b52abf1851",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyterlab_server-2.5.2.dist-info/METADATA"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyterplot-0.0.3.dist-info/METADATA",
+      "bytes": 4714,
+      "sha256": "2489decac349969b715ba9320c48ac398cd1d8bfa847f9fe77fe93897de6b9e1",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyterplot-0.0.3.dist-info/METADATA"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_nbextensions_configurator-0.4.1.dist-info/METADATA",
+      "bytes": 1731,
+      "sha256": "b2e02abfef749e3712501920bce2e254a005e4196bfa2b391a292f6b700dfd16",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_nbextensions_configurator-0.4.1.dist-info/METADATA"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_client-6.1.12.dist-info/METADATA",
+      "bytes": 4287,
+      "sha256": "71c97a63ffa9e46f479cd510b656b2e59ca721027d5587fed1a6ea147dbca8cb",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_client-6.1.12.dist-info/METADATA"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_console-6.4.0.dist-info/METADATA",
+      "bytes": 951,
+      "sha256": "62028991347a314f016db449889ad1e693355863303e0b605462bcb9224e1446",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_console-6.4.0.dist-info/METADATA"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/numpy-1.20.3.dist-info/METADATA",
+      "bytes": 2043,
+      "sha256": "4554e1cfc9678fc5f3717700c97236601f6eb99e425fa97d530fa08ff2542540",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/numpy-1.20.3.dist-info/METADATA"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_contrib_nbextensions-0.5.1.dist-info/METADATA",
+      "bytes": 2307,
+      "sha256": "03606c78c73dfdbd00a32ee06df91da2b49fa378bb994271708e2b26f0f99325",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_contrib_nbextensions-0.5.1.dist-info/METADATA"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_core-4.7.1.dist-info/METADATA",
+      "bytes": 759,
+      "sha256": "4bc08c5cb7696ea7beacbca304783813b258889edce33bf74b1bba1a51069801",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_core-4.7.1.dist-info/METADATA"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_contrib_core-0.3.3.dist-info/METADATA",
+      "bytes": 1423,
+      "sha256": "7efcb306290de42f6212dccc62449574a6d66c2453ad609ff41752bce8837a3b",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_contrib_core-0.3.3.dist-info/METADATA"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyterlab-3.0.16.dist-info/METADATA",
+      "bytes": 10895,
+      "sha256": "d85b0341e40166d548f3f9b172896958483d09f61b6d3eb2512b7ae17f707713",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyterlab-3.0.16.dist-info/METADATA"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_server-1.8.0.dist-info/METADATA",
+      "bytes": 4120,
+      "sha256": "ec012c0abd4b58d47ff82c387cce0d8dea7fefca02fc559d31d8172d41aba053",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_server-1.8.0.dist-info/METADATA"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyterlab_pygments-0.1.2.dist-info/METADATA",
+      "bytes": 329,
+      "sha256": "950306a15d64bf0f420d6fa26e5445fdb5a2272bf03b15d91a61be56d9969753",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyterlab_pygments-0.1.2.dist-info/METADATA"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyterlab_widgets-1.0.0.dist-info/METADATA",
+      "bytes": 3478,
+      "sha256": "5de128bb5f602753709e09aa2f354841cd2dbfab18760afb5993f9bccba85e5f",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyterlab_widgets-1.0.0.dist-info/METADATA"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/pynq-2.7.0.dist-info/METADATA",
+      "bytes": 4762,
+      "sha256": "75e34511e555963c3daf9982d62dd924e1d5ed6ba74b10c38fd9708092992d78",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/pynq-2.7.0.dist-info/METADATA"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/pynq-2.7.0.dist-info/direct_url.json",
+      "bytes": 82,
+      "sha256": "52833e4e520a90d7277c21c09d922731c451730da29d68246f7f2acc5a3dc3bf",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/pynq-2.7.0.dist-info/direct_url.json"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter-1.0.0.dist-info/METADATA",
+      "bytes": 995,
+      "sha256": "579415fa7a062aa5ee60372caba9b64db5352020efae88849f45aca0dc5f7bab",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter-1.0.0.dist-info/METADATA"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_highlight_selected_word-0.2.0.dist-info/METADATA",
+      "bytes": 730,
+      "sha256": "da8a8c47f5162ce583bab17720786633026429873c35853226b5492c30ec945a",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/jupyter_highlight_selected_word-0.2.0.dist-info/METADATA"
+    },
+    {
+      "path": "image/rootfs/etc/network/interfaces.d/eth0",
+      "bytes": 112,
+      "sha256": "6715629218df4e29e6d9b787b31c3d03c015aeb865368a711b99c7b5c75b401a",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/etc/network/interfaces.d/eth0"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/pynq/buffer.py",
+      "bytes": 5850,
+      "sha256": "42c51463b8c02ebcb24f5f2d92252d83fd265bed4f877c9054cebe758c71b62f",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/pynq/buffer.py"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/pynq/lib/dma.py",
+      "bytes": 25817,
+      "sha256": "fa15df8b4efe88c1b3d59bb59af160ffb9da2d52f6255afe3897054e3d0673a1",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/pynq/lib/dma.py"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/pynq/pl_server/embedded_device.py",
+      "bytes": 19096,
+      "sha256": "6fcb30f9b2734849ce24a11024c4605738c6e6d7eb9e7991a41665dc6d33ccb4",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/pynq/pl_server/embedded_device.py"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/pynq/pl_server/xrt_device.py",
+      "bytes": 21201,
+      "sha256": "a91d2efd3cc230d7e88f49ca97e2e4cad9c3885074d1736a08da1014f7df21f8",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/pynq/pl_server/xrt_device.py"
+    },
+    {
+      "path": "image/rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/pynq/mmio.py",
+      "bytes": 7628,
+      "sha256": "efa81e702e376e637b83c5bca51cba9cd552c982d7046cefa7fc8e8031707fb2",
+      "origin": "ZYNQ-7020-2.7.0.img:rootfs/usr/local/share/pynq-venv/lib/python3.8/site-packages/pynq/mmio.py"
+    },
+    {
+      "path": "image/boot/system.dtb",
+      "bytes": 19432,
+      "sha256": "fccff7706a23c8b46a5ecc7e131f02ec92fb35fa065596230e219f2241456d55",
+      "origin": "ZYNQ-7020-2.7.0.img:boot/system.dtb"
+    },
+    {
+      "path": "historical-one/system.hwh",
+      "bytes": 324018,
+      "sha256": "c6a59ff6aaef5e77968085a6612fd6f057752a7583de9333225e297752a303dc",
+      "origin": "repository one/system_c_adapter.xsa:system.hwh"
+    },
+    {
+      "path": "historical-one/ps7_init.tcl",
+      "bytes": 27896,
+      "sha256": "a158fcc7d723b21003864159006e781ffaf5e8df24ec9b1d9279f9d14ff3ee5e",
+      "origin": "repository one/system_c_adapter.xsa:ps7_init.tcl"
+    }
+  ],
+  "vendor_project": {
+    "tool": "Vivado 2020.2",
+    "part": "xc7z020clg400-2",
+    "ps_instance": {
+      "CONFIGURABLE": "TRUE",
+      "COREREVISION": "6",
+      "FULLNAME": "/ps7_0",
+      "HWVERSION": "5.5",
+      "INSTANCE": "ps7_0",
+      "IPTYPE": "PERIPHERAL",
+      "IS_ENABLE": "1",
+      "IS_PL": "FALSE",
+      "MODTYPE": "processing_system7",
+      "VLNV": "xilinx.com:ip:processing_system7:5.5"
+    },
+    "hwh_equals_xsa_embedded_hwh": true,
+    "xci_params_equal_hwh_count": 878,
+    "ps_parameters": {
+      "PCW_DDR_RAM_BASEADDR": "0x00100000",
+      "PCW_DDR_RAM_HIGHADDR": "0x3FFFFFFF",
+      "PCW_UART0_BASEADDR": "0xE0000000",
+      "PCW_UART0_HIGHADDR": "0xE0000FFF",
+      "PCW_ENET0_BASEADDR": "0xE000B000",
+      "PCW_ENET0_HIGHADDR": "0xE000BFFF",
+      "PCW_USB0_BASEADDR": "0xE0102000",
+      "PCW_USB0_HIGHADDR": "0xE0102fff",
+      "PCW_UIPARAM_DDR_FREQ_MHZ": "533.333333",
+      "PCW_UIPARAM_DDR_BANK_ADDR_COUNT": "3",
+      "PCW_UIPARAM_DDR_ROW_ADDR_COUNT": "15",
+      "PCW_UIPARAM_DDR_COL_ADDR_COUNT": "10",
+      "PCW_UIPARAM_DDR_CL": "7",
+      "PCW_UIPARAM_DDR_CWL": "6",
+      "PCW_UIPARAM_DDR_T_RCD": "7",
+      "PCW_UIPARAM_DDR_T_RP": "7",
+      "PCW_UIPARAM_DDR_T_RC": "48.91",
+      "PCW_UIPARAM_DDR_T_RAS_MIN": "35.0",
+      "PCW_UIPARAM_DDR_T_FAW": "40.0",
+      "PCW_UIPARAM_DDR_AL": "0",
+      "PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0": "0.0",
+      "PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1": "0.0",
+      "PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2": "0.0",
+      "PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3": "0.0",
+      "PCW_UIPARAM_DDR_BOARD_DELAY0": "0.25",
+      "PCW_UIPARAM_DDR_BOARD_DELAY1": "0.25",
+      "PCW_UIPARAM_DDR_BOARD_DELAY2": "0.25",
+      "PCW_UIPARAM_DDR_BOARD_DELAY3": "0.25",
+      "PCW_UIPARAM_DDR_DQS_0_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_DQS_1_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_DQS_2_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_DQS_3_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_DQ_0_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_DQ_1_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_DQ_2_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_DQ_3_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_CLOCK_0_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_CLOCK_1_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_CLOCK_2_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_CLOCK_3_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_DQS_0_PACKAGE_LENGTH": "105.056",
+      "PCW_UIPARAM_DDR_DQS_1_PACKAGE_LENGTH": "66.904",
+      "PCW_UIPARAM_DDR_DQS_2_PACKAGE_LENGTH": "89.1715",
+      "PCW_UIPARAM_DDR_DQS_3_PACKAGE_LENGTH": "113.63",
+      "PCW_UIPARAM_DDR_DQ_0_PACKAGE_LENGTH": "98.503",
+      "PCW_UIPARAM_DDR_DQ_1_PACKAGE_LENGTH": "68.5855",
+      "PCW_UIPARAM_DDR_DQ_2_PACKAGE_LENGTH": "90.295",
+      "PCW_UIPARAM_DDR_DQ_3_PACKAGE_LENGTH": "103.977",
+      "PCW_UIPARAM_DDR_CLOCK_0_PACKAGE_LENGTH": "80.4535",
+      "PCW_UIPARAM_DDR_CLOCK_1_PACKAGE_LENGTH": "80.4535",
+      "PCW_UIPARAM_DDR_CLOCK_2_PACKAGE_LENGTH": "80.4535",
+      "PCW_UIPARAM_DDR_CLOCK_3_PACKAGE_LENGTH": "80.4535",
+      "PCW_UIPARAM_DDR_DQS_0_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_DQS_1_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_DQS_2_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_DQS_3_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_DQ_0_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_DQ_1_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_DQ_2_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_DQ_3_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_CLOCK_0_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_CLOCK_1_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_CLOCK_2_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_CLOCK_3_PROPOGATION_DELAY": "160",
+      "PCW_CRYSTAL_PERIPHERAL_FREQMHZ": "33.333333",
+      "PCW_APU_PERIPHERAL_FREQMHZ": "767",
+      "PCW_USB0_PERIPHERAL_FREQMHZ": "60",
+      "PCW_ACT_APU_PERIPHERAL_FREQMHZ": "766.666687",
+      "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": "100.000000",
+      "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": "142.857132",
+      "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": "11.904762",
+      "PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ": "200.000000",
+      "PCW_DDR_PERIPHERAL_DIVISOR0": "2",
+      "PCW_ENET0_PERIPHERAL_DIVISOR0": "8",
+      "PCW_ENET0_PERIPHERAL_DIVISOR1": "1",
+      "PCW_ARMPLL_CTRL_FBDIV": "46",
+      "PCW_IOPLL_CTRL_FBDIV": "30",
+      "PCW_DDRPLL_CTRL_FBDIV": "32",
+      "PCW_IO_IO_PLL_FREQMHZ": "1000.000",
+      "PCW_DDR_DDR_PLL_FREQMHZ": "1066.667",
+      "PCW_USE_M_AXI_GP0": "1",
+      "PCW_USE_M_AXI_GP1": "0",
+      "PCW_USE_S_AXI_GP0": "1",
+      "PCW_USE_S_AXI_GP1": "0",
+      "PCW_USE_S_AXI_HP0": "1",
+      "PCW_USE_S_AXI_HP1": "0",
+      "PCW_USE_S_AXI_HP2": "0",
+      "PCW_USE_S_AXI_HP3": "0",
+      "PCW_UART0_BAUD_RATE": "115200",
+      "PCW_S_AXI_HP0_DATA_WIDTH": "64",
+      "PCW_EN_CLK0_PORT": "1",
+      "PCW_EN_CLK1_PORT": "1",
+      "PCW_EN_CLK2_PORT": "1",
+      "PCW_EN_CLK3_PORT": "1",
+      "PCW_EN_CLKTRIG0_PORT": "0",
+      "PCW_EN_CLKTRIG1_PORT": "0",
+      "PCW_EN_CLKTRIG2_PORT": "0",
+      "PCW_EN_CLKTRIG3_PORT": "0",
+      "PCW_PRESET_BANK0_VOLTAGE": "LVCMOS 3.3V",
+      "PCW_PRESET_BANK1_VOLTAGE": "LVCMOS 1.8V",
+      "PCW_UIPARAM_DDR_ENABLE": "1",
+      "PCW_UIPARAM_DDR_ADV_ENABLE": "0",
+      "PCW_UIPARAM_DDR_MEMORY_TYPE": "DDR 3",
+      "PCW_UIPARAM_DDR_ECC": "Disabled",
+      "PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
+      "PCW_UIPARAM_DDR_BL": "8",
+      "PCW_UIPARAM_DDR_HIGH_TEMP": "Normal (0-85)",
+      "PCW_UIPARAM_DDR_PARTNO": "MT41J256M16 RE-125",
+      "PCW_UIPARAM_DDR_DRAM_WIDTH": "16 Bits",
+      "PCW_UIPARAM_DDR_DEVICE_CAPACITY": "4096 MBits",
+      "PCW_UIPARAM_DDR_SPEED_BIN": "DDR3_1066F",
+      "PCW_UIPARAM_DDR_TRAIN_WRITE_LEVEL": "1",
+      "PCW_UIPARAM_DDR_TRAIN_READ_GATE": "1",
+      "PCW_UIPARAM_DDR_TRAIN_DATA_EYE": "1",
+      "PCW_UIPARAM_DDR_CLOCK_STOP_EN": "0",
+      "PCW_UIPARAM_DDR_USE_INTERNAL_VREF": "0",
+      "PCW_DDR_PRIORITY_WRITEPORT_0": "<Select>",
+      "PCW_DDR_PRIORITY_WRITEPORT_1": "<Select>",
+      "PCW_DDR_PRIORITY_WRITEPORT_2": "<Select>",
+      "PCW_DDR_PRIORITY_WRITEPORT_3": "<Select>",
+      "PCW_DDR_PRIORITY_READPORT_0": "<Select>",
+      "PCW_DDR_PRIORITY_READPORT_1": "<Select>",
+      "PCW_DDR_PRIORITY_READPORT_2": "<Select>",
+      "PCW_DDR_PRIORITY_READPORT_3": "<Select>",
+      "PCW_DDR_PORT0_HPR_ENABLE": "0",
+      "PCW_DDR_PORT1_HPR_ENABLE": "0",
+      "PCW_DDR_PORT2_HPR_ENABLE": "0",
+      "PCW_DDR_PORT3_HPR_ENABLE": "0",
+      "PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+      "PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+      "PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+      "PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+      "PCW_ENET0_PERIPHERAL_ENABLE": "1",
+      "PCW_ENET0_ENET0_IO": "MIO 16 .. 27",
+      "PCW_ENET0_GRP_MDIO_ENABLE": "1",
+      "PCW_ENET0_GRP_MDIO_IO": "MIO 52 .. 53",
+      "PCW_ENET0_RESET_ENABLE": "0",
+      "PCW_ENET0_RESET_IO": "<Select>",
+      "PCW_SD0_PERIPHERAL_ENABLE": "1",
+      "PCW_SD0_SD0_IO": "MIO 40 .. 45",
+      "PCW_SD0_GRP_CD_ENABLE": "1",
+      "PCW_SD0_GRP_CD_IO": "MIO 10",
+      "PCW_SD0_GRP_WP_ENABLE": "0",
+      "PCW_SD0_GRP_WP_IO": "<Select>",
+      "PCW_SD0_GRP_POW_ENABLE": "0",
+      "PCW_SD0_GRP_POW_IO": "<Select>",
+      "PCW_SD1_PERIPHERAL_ENABLE": "1",
+      "PCW_SD1_SD1_IO": "MIO 46 .. 51",
+      "PCW_SD1_GRP_CD_ENABLE": "0",
+      "PCW_SD1_GRP_CD_IO": "<Select>",
+      "PCW_SD1_GRP_WP_ENABLE": "0",
+      "PCW_SD1_GRP_WP_IO": "<Select>",
+      "PCW_SD1_GRP_POW_ENABLE": "0",
+      "PCW_SD1_GRP_POW_IO": "<Select>",
+      "PCW_UART0_PERIPHERAL_ENABLE": "1",
+      "PCW_UART0_UART0_IO": "MIO 14 .. 15",
+      "PCW_UART0_GRP_FULL_ENABLE": "0",
+      "PCW_UART0_GRP_FULL_IO": "<Select>",
+      "PCW_USB0_PERIPHERAL_ENABLE": "1",
+      "PCW_USB0_USB0_IO": "MIO 28 .. 39",
+      "PCW_USB0_RESET_ENABLE": "1",
+      "PCW_USB0_RESET_IO": "MIO 9",
+      "PCW_ENET0_PERIPHERAL_FREQMHZ": "1000 Mbps",
+      "PCW_DDR_PERIPHERAL_CLKSRC": "DDR PLL",
+      "PCW_FCLK0_PERIPHERAL_CLKSRC": "IO PLL",
+      "PCW_ENET0_PERIPHERAL_CLKSRC": "IO PLL"
+    },
+    "historical_differences": {
+      "PCW_APU_PERIPHERAL_FREQMHZ": {
+        "vendor": "767",
+        "historical": "666.666666"
+      },
+      "PCW_ACT_APU_PERIPHERAL_FREQMHZ": {
+        "vendor": "766.666687",
+        "historical": "666.666687"
+      },
+      "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
+        "vendor": "142.857132",
+        "historical": "10.000000"
+      },
+      "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
+        "vendor": "11.904762",
+        "historical": "10.000000"
+      },
+      "PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ": {
+        "vendor": "200.000000",
+        "historical": "10.000000"
+      },
+      "PCW_ENET0_PERIPHERAL_DIVISOR0": {
+        "vendor": "8",
+        "historical": "1"
+      },
+      "PCW_ARMPLL_CTRL_FBDIV": {
+        "vendor": "46",
+        "historical": "40"
+      },
+      "PCW_IOPLL_CTRL_FBDIV": {
+        "vendor": "30",
+        "historical": "54"
+      },
+      "PCW_IO_IO_PLL_FREQMHZ": {
+        "vendor": "1000.000",
+        "historical": "1800.000"
+      },
+      "PCW_USE_S_AXI_GP0": {
+        "vendor": "1",
+        "historical": "0"
+      },
+      "PCW_S_AXI_HP0_DATA_WIDTH": {
+        "vendor": "64",
+        "historical": "32"
+      },
+      "PCW_EN_CLK1_PORT": {
+        "vendor": "1",
+        "historical": "0"
+      },
+      "PCW_EN_CLK2_PORT": {
+        "vendor": "1",
+        "historical": "0"
+      },
+      "PCW_EN_CLK3_PORT": {
+        "vendor": "1",
+        "historical": "0"
+      },
+      "PCW_ENET0_PERIPHERAL_ENABLE": {
+        "vendor": "1",
+        "historical": "0"
+      },
+      "PCW_ENET0_ENET0_IO": {
+        "vendor": "MIO 16 .. 27",
+        "historical": "<Select>"
+      },
+      "PCW_ENET0_GRP_MDIO_ENABLE": {
+        "vendor": "1",
+        "historical": "0"
+      },
+      "PCW_ENET0_GRP_MDIO_IO": {
+        "vendor": "MIO 52 .. 53",
+        "historical": "<Select>"
+      },
+      "PCW_SD0_PERIPHERAL_ENABLE": {
+        "vendor": "1",
+        "historical": "0"
+      },
+      "PCW_SD0_SD0_IO": {
+        "vendor": "MIO 40 .. 45",
+        "historical": "<Select>"
+      },
+      "PCW_SD0_GRP_CD_ENABLE": {
+        "vendor": "1",
+        "historical": "0"
+      },
+      "PCW_SD0_GRP_CD_IO": {
+        "vendor": "MIO 10",
+        "historical": "<Select>"
+      },
+      "PCW_SD1_PERIPHERAL_ENABLE": {
+        "vendor": "1",
+        "historical": "0"
+      },
+      "PCW_SD1_SD1_IO": {
+        "vendor": "MIO 46 .. 51",
+        "historical": "<Select>"
+      },
+      "PCW_USB0_PERIPHERAL_ENABLE": {
+        "vendor": "1",
+        "historical": "0"
+      },
+      "PCW_USB0_USB0_IO": {
+        "vendor": "MIO 28 .. 39",
+        "historical": "<Select>"
+      },
+      "PCW_USB0_RESET_ENABLE": {
+        "vendor": "1",
+        "historical": "0"
+      },
+      "PCW_USB0_RESET_IO": {
+        "vendor": "MIO 9",
+        "historical": "<Select>"
+      }
+    },
+    "ddr_all_equal_historical": true,
+    "full_bsp_or_image_build_recipe_in_project_zip": "NOT_PRESENT"
+  },
+  "image": {
+    "offline_os": "PynqLinux 2.7 Austin based on Ubuntu 20.04",
+    "offline_pynq_package": "2.7.0",
+    "offline_numpy_package": "1.20.3",
+    "offline_python_dpkg": {
+      "python3": {
+        "Version": "3.8.2-0ubuntu2",
+        "Status": "install ok installed",
+        "Architecture": "armhf"
+      },
+      "python3-pip": {
+        "Version": "20.0.2-5ubuntu1",
+        "Status": "install ok installed",
+        "Architecture": "all"
+      },
+      "python3.8": {
+        "Version": "3.8.2-1ubuntu1",
+        "Status": "install ok installed",
+        "Architecture": "armhf"
+      }
+    },
+    "kernel_binary_version": "Linux version 5.4.0-xilinx-v2020.2 (oe-user@oe-host) (gcc version 9.2.0 (GCC)) #1 SMP PREEMPT Wed Aug 27 07:20:50 UTC 2025",
+    "module_directory": "5.4.0-xilinx-v2020.2",
+    "uboot_strings": [
+      "U-Boot 2020.01",
+      "U-Boot 2020.01 (Aug 27 2025 - 08:06:35 +0000)"
+    ],
+    "revision_text": "Release 2025_08_27 59515a9\nBoard 2025_08_27 59515a9 https://github.com/Xilinx/PYNQ.git\n",
+    "partitions": [
+      {
+        "number": 1,
+        "type": "0xc",
+        "start_sector": 8,
+        "sectors": 266240
+      },
+      {
+        "number": 2,
+        "type": "0x83",
+        "start_sector": 268288,
+        "sectors": 15533648
+      }
+    ],
+    "fit_hash_checks": [
+      {
+        "node": "/images/kernel@0",
+        "algorithm": "sha1",
+        "expected": "874207704e79fecd86dcf8ded501aeac79a19627",
+        "actual": "874207704e79fecd86dcf8ded501aeac79a19627",
+        "match": true
+      },
+      {
+        "node": "/images/fdt@0",
+        "algorithm": "sha1",
+        "expected": "7f9256e7f82ea6890df7875b9a671cbdd0bcfa20",
+        "actual": "7f9256e7f82ea6890df7875b9a671cbdd0bcfa20",
+        "match": true
+      }
+    ],
+    "dt_cpu0": {
+      "compatible": [
+        "arm,cortex-a9"
+      ],
+      "device_type": [
+        "cpu"
+      ],
+      "reg": [
+        "0x0"
+      ],
+      "clocks": [
+        "0x1",
+        "0x3"
+      ],
+      "clock-latency": [
+        "0x3e8"
+      ],
+      "cpu0-supply": [
+        "0x2"
+      ],
+      "operating-points": [
+        "0xbb2ca",
+        "0xf4240",
+        "0x5d965",
+        "0xf4240"
+      ],
+      "phandle": [
+        "0xf"
+      ]
+    },
+    "dt_memory": {
+      "device_type": [
+        "memory"
+      ],
+      "reg": [
+        "0x0",
+        "0x40000000"
+      ]
+    },
+    "dt_chosen": {
+      "bootargs": [
+        "root=/dev/mmcblk0p2 rw earlyprintk rootfstype=ext4 rootwait devtmpfs.mount=1 uio_pdrv_genirq.of_id=\"generic-uio\" clk_ignore_unused"
+      ],
+      "stdout-path": [
+        "serial0:115200n8"
+      ],
+      "pynq_board": [
+        "None"
+      ]
+    },
+    "dt_enet0": {
+      "compatible": [
+        "cdns,zynq-gem",
+        "cdns,gem"
+      ],
+      "reg": [
+        "0xe000b000",
+        "0x1000"
+      ],
+      "status": [
+        "okay"
+      ],
+      "interrupts": [
+        "0x0",
+        "0x16",
+        "0x4"
+      ],
+      "clocks": [
+        "0x1",
+        "0x1e",
+        "0x1",
+        "0x1e",
+        "0x1",
+        "0xd"
+      ],
+      "clock-names": [
+        "pclk",
+        "hclk",
+        "tx_clk"
+      ],
+      "#address-cells": [
+        "0x1"
+      ],
+      "#size-cells": [
+        "0x0"
+      ],
+      "phy-mode": [
+        "rgmii-id"
+      ],
+      "xlnx,ptp-enet-clock": [
+        "0x79dbbf3"
+      ],
+      "local-mac-address": "000a35002201",
+      "phandle": [
+        "0x26"
+      ]
+    },
+    "boot_clock_table_matches": [
+      {
+        "meaning": "ARM_PLL_FDIV46",
+        "words_hex": [
+          "0x33",
+          "0xf8000100",
+          "0x7f000",
+          "0x2e000"
+        ],
+        "boot_bin_offsets": [
+          "0x10f1c",
+          "0x117b8",
+          "0x12068"
+        ]
+      },
+      {
+        "meaning": "ARM_CLK_DIV2_SRC0",
+        "words_hex": [
+          "0x33",
+          "0xf8000120",
+          "0x1f003f30",
+          "0x1f000200"
+        ],
+        "boot_bin_offsets": [
+          "0x10f78",
+          "0x11814",
+          "0x120c4"
+        ]
+      },
+      {
+        "meaning": "ARM_RATIO_621",
+        "words_hex": [
+          "0x33",
+          "0xf80001c4",
+          "0x1",
+          "0x1"
+        ],
+        "boot_bin_offsets": [
+          "0x11140",
+          "0x119d8",
+          "0x12288"
+        ]
+      }
+    ],
+    "board_runtime": "NOT_RUN",
+    "fsbl_full_build_equivalence_to_base": "UNPROVEN",
+    "fsbl_header": {
+      "offset": "0x1700",
+      "length": "0x18008",
+      "end": "0x19708",
+      "encryption_field": "0x0",
+      "stored_checksum": "0xfc164530",
+      "computed_checksum": "0xfc164530",
+      "range_sha256": "94542e329303b52f5d57ba31fd691f911cc9c49e4a62228848041feef2cde3b8",
+      "all_nine_patterns_within_fsbl": true,
+      "independent_full_pll_arrays_matched": {
+        "bytes_each": 384,
+        "offsets": [
+          "0x10f00",
+          "0x1179c",
+          "0x1204c"
+        ]
+      }
+    }
+  },
+  "clock_assessment": {
+    "part_basis": "USER_REPORTED_MINUS1_AND_LOCAL_LIVE_LOOP_XPR",
+    "required_part": "xc7z020clg400-1",
+    "official_ds187": "https://docs.amd.com/api/khub/documents/uaBd8Qxmf_K1~~tiVnOxrw/content",
+    "tables": {
+      "cpu": "p15 Table17",
+      "ddr": "p15 Table18",
+      "ps_pll": "p16 Table21"
+    },
+    "minus1_cpu_621_max_mhz": 667,
+    "minus1_ps_pll_max_mhz": 1600,
+    "minus1_ddr3_max_mbps": 1066,
+    "vendor_cpu_clock_mhz": 766.666667,
+    "vendor_arm_pll_fdiv": 46,
+    "vendor_arm_clk_divisor": 2,
+    "vendor_arm_621": true,
+    "image_cpu_opp_khz": [
+      766666,
+      383333
+    ],
+    "boot_bin_contains_matching_init_tables": true,
+    "inference": "FSBL range contains matching 766.7MHz init tables and DT has 766666kHz OPP; static evidence, not execution/control-flow proof or actual frequency readback",
+    "required_action": "regenerate a -1 compatible boot chain incl FSBL and DT/FIT OPP in original assigned A/B integration; no hex patch or boot-then-downclock",
+    "recommended_existing_compatible_cpu_mhz": 666.666667,
+    "historical_io_pll_mhz": 1800,
+    "historical_ps_full_copy_allowed": false
+  },
+  "local_live_loop": {
+    "xpr": "D:/vavido_project/i17_live_loop/project/par/i17_live_loop/i17_live_loop.xpr",
+    "tool": "Vivado 2025.2",
+    "part": "xc7z020clg400-1",
+    "top": "i17_vio_board_top",
+    "registered_bd_xsa_hwh": 0,
+    "ps_or_ddr_ports_present": false,
+    "clock": "U18 50MHz -> MMCM96MHz -> MMCM61.44MHz",
+    "modified": false
+  },
+  "integration_snapshot": {
+    "main_remote_sha": "85045c0f2dcd904a31efafdd6875a3e65c705a08",
+    "pr65_parent": "7cfd180fdec0924a5383e216f55ca7341133055f",
+    "bridge": "I18-CPU-BRIDGE-R02-JOIN-002 / MODEL-E2-R02_UNCHANGED",
+    "bridge_source_acceptance": "https://github.com/TophBeifong1744/Competition_fpga/issues/18#issuecomment-6182845366",
+    "a_continuation": "https://github.com/TophBeifong1744/Competition_fpga/issues/18#issuecomment-6182799968",
+    "b_offline_driver_commit": "12b2dcbc44da93dc5b5dcf227d81cca1fc90f556",
+    "real_adapter_abi": "UNBOUND",
+    "matching_overlay": "NOT_RECEIVED",
+    "cache_retirement_board_validation": "NOT_RUN",
+    "b_offline_pr66_state": "MERGED_OFFLINE_SCOPE_ONLY"
+  },
+  "actions": {
+    "crc_check": true,
+    "image_extract": true,
+    "image_readonly_filesystem_parse": true,
+    "image_boot": false,
+    "vivado_vitis": false,
+    "board_program_or_reset": false,
+    "driver_or_bridge_modification": false
+  },
+  "historical_one": {
+    "source_identity": [
+      {
+        "repository_path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/one/one.xpr",
+        "bytes": 18849,
+        "sha256": "53d2a067b89dc4b1842d04d4e9fc76bf4af225d3136242407543cc9480c323d3"
+      },
+      {
+        "repository_path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/one/system.bd",
+        "bytes": 50466,
+        "sha256": "0be89e6da3f914e4eb914e92c79f8fb774942723db5bf4cb02e123169dfcb181"
+      },
+      {
+        "repository_path": "task-packages/PKG-A-ACQ/deliveries/dupont-diagnostic-20260911/payload/build-snapshot/one/system_c_adapter.xsa",
+        "bytes": 609171,
+        "sha256": "71e7bf6d4fcb769582e5485660515b8f615b2027aa2ff18c1f8d3f67f9457baa"
+      }
+    ],
+    "tool": "Vivado 2025.2",
+    "part": "xc7z020clg400-2",
+    "top": "system_wrapper",
+    "origin_claim": "available repository build-snapshot; not proven to be remembered C-RTL-004/submission project",
+    "c004_history_checked": "6443e50",
+    "ps_subset": {
+      "PCW_DDR_RAM_BASEADDR": "0x00100000",
+      "PCW_DDR_RAM_HIGHADDR": "0x3FFFFFFF",
+      "PCW_UART0_BASEADDR": "0xE0000000",
+      "PCW_UART0_HIGHADDR": "0xE0000FFF",
+      "PCW_ENET0_BASEADDR": "0xE000B000",
+      "PCW_ENET0_HIGHADDR": "0xE000BFFF",
+      "PCW_USB0_BASEADDR": "0xE0102000",
+      "PCW_USB0_HIGHADDR": "0xE0102fff",
+      "PCW_UIPARAM_DDR_FREQ_MHZ": "533.333333",
+      "PCW_UIPARAM_DDR_BANK_ADDR_COUNT": "3",
+      "PCW_UIPARAM_DDR_ROW_ADDR_COUNT": "15",
+      "PCW_UIPARAM_DDR_COL_ADDR_COUNT": "10",
+      "PCW_UIPARAM_DDR_CL": "7",
+      "PCW_UIPARAM_DDR_CWL": "6",
+      "PCW_UIPARAM_DDR_T_RCD": "7",
+      "PCW_UIPARAM_DDR_T_RP": "7",
+      "PCW_UIPARAM_DDR_T_RC": "48.91",
+      "PCW_UIPARAM_DDR_T_RAS_MIN": "35.0",
+      "PCW_UIPARAM_DDR_T_FAW": "40.0",
+      "PCW_UIPARAM_DDR_AL": "0",
+      "PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0": "0.0",
+      "PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1": "0.0",
+      "PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2": "0.0",
+      "PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3": "0.0",
+      "PCW_UIPARAM_DDR_BOARD_DELAY0": "0.25",
+      "PCW_UIPARAM_DDR_BOARD_DELAY1": "0.25",
+      "PCW_UIPARAM_DDR_BOARD_DELAY2": "0.25",
+      "PCW_UIPARAM_DDR_BOARD_DELAY3": "0.25",
+      "PCW_UIPARAM_DDR_DQS_0_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_DQS_1_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_DQS_2_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_DQS_3_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_DQ_0_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_DQ_1_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_DQ_2_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_DQ_3_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_CLOCK_0_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_CLOCK_1_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_CLOCK_2_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_CLOCK_3_LENGTH_MM": "0",
+      "PCW_UIPARAM_DDR_DQS_0_PACKAGE_LENGTH": "105.056",
+      "PCW_UIPARAM_DDR_DQS_1_PACKAGE_LENGTH": "66.904",
+      "PCW_UIPARAM_DDR_DQS_2_PACKAGE_LENGTH": "89.1715",
+      "PCW_UIPARAM_DDR_DQS_3_PACKAGE_LENGTH": "113.63",
+      "PCW_UIPARAM_DDR_DQ_0_PACKAGE_LENGTH": "98.503",
+      "PCW_UIPARAM_DDR_DQ_1_PACKAGE_LENGTH": "68.5855",
+      "PCW_UIPARAM_DDR_DQ_2_PACKAGE_LENGTH": "90.295",
+      "PCW_UIPARAM_DDR_DQ_3_PACKAGE_LENGTH": "103.977",
+      "PCW_UIPARAM_DDR_CLOCK_0_PACKAGE_LENGTH": "80.4535",
+      "PCW_UIPARAM_DDR_CLOCK_1_PACKAGE_LENGTH": "80.4535",
+      "PCW_UIPARAM_DDR_CLOCK_2_PACKAGE_LENGTH": "80.4535",
+      "PCW_UIPARAM_DDR_CLOCK_3_PACKAGE_LENGTH": "80.4535",
+      "PCW_UIPARAM_DDR_DQS_0_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_DQS_1_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_DQS_2_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_DQS_3_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_DQ_0_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_DQ_1_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_DQ_2_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_DQ_3_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_CLOCK_0_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_CLOCK_1_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_CLOCK_2_PROPOGATION_DELAY": "160",
+      "PCW_UIPARAM_DDR_CLOCK_3_PROPOGATION_DELAY": "160",
+      "PCW_CRYSTAL_PERIPHERAL_FREQMHZ": "33.333333",
+      "PCW_APU_PERIPHERAL_FREQMHZ": "666.666666",
+      "PCW_USB0_PERIPHERAL_FREQMHZ": "60",
+      "PCW_ACT_APU_PERIPHERAL_FREQMHZ": "666.666687",
+      "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": "100.000000",
+      "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": "10.000000",
+      "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": "10.000000",
+      "PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ": "10.000000",
+      "PCW_DDR_PERIPHERAL_DIVISOR0": "2",
+      "PCW_ENET0_PERIPHERAL_DIVISOR0": "1",
+      "PCW_ENET0_PERIPHERAL_DIVISOR1": "1",
+      "PCW_ARMPLL_CTRL_FBDIV": "40",
+      "PCW_IOPLL_CTRL_FBDIV": "54",
+      "PCW_DDRPLL_CTRL_FBDIV": "32",
+      "PCW_IO_IO_PLL_FREQMHZ": "1800.000",
+      "PCW_DDR_DDR_PLL_FREQMHZ": "1066.667",
+      "PCW_USE_M_AXI_GP0": "1",
+      "PCW_USE_M_AXI_GP1": "0",
+      "PCW_USE_S_AXI_GP0": "0",
+      "PCW_USE_S_AXI_GP1": "0",
+      "PCW_USE_S_AXI_HP0": "1",
+      "PCW_USE_S_AXI_HP1": "0",
+      "PCW_USE_S_AXI_HP2": "0",
+      "PCW_USE_S_AXI_HP3": "0",
+      "PCW_UART0_BAUD_RATE": "115200",
+      "PCW_S_AXI_HP0_DATA_WIDTH": "32",
+      "PCW_EN_CLK0_PORT": "1",
+      "PCW_EN_CLK1_PORT": "0",
+      "PCW_EN_CLK2_PORT": "0",
+      "PCW_EN_CLK3_PORT": "0",
+      "PCW_EN_CLKTRIG0_PORT": "0",
+      "PCW_EN_CLKTRIG1_PORT": "0",
+      "PCW_EN_CLKTRIG2_PORT": "0",
+      "PCW_EN_CLKTRIG3_PORT": "0",
+      "PCW_PRESET_BANK0_VOLTAGE": "LVCMOS 3.3V",
+      "PCW_PRESET_BANK1_VOLTAGE": "LVCMOS 1.8V",
+      "PCW_UIPARAM_DDR_ENABLE": "1",
+      "PCW_UIPARAM_DDR_ADV_ENABLE": "0",
+      "PCW_UIPARAM_DDR_MEMORY_TYPE": "DDR 3",
+      "PCW_UIPARAM_DDR_ECC": "Disabled",
+      "PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
+      "PCW_UIPARAM_DDR_BL": "8",
+      "PCW_UIPARAM_DDR_HIGH_TEMP": "Normal (0-85)",
+      "PCW_UIPARAM_DDR_PARTNO": "MT41J256M16 RE-125",
+      "PCW_UIPARAM_DDR_DRAM_WIDTH": "16 Bits",
+      "PCW_UIPARAM_DDR_DEVICE_CAPACITY": "4096 MBits",
+      "PCW_UIPARAM_DDR_SPEED_BIN": "DDR3_1066F",
+      "PCW_UIPARAM_DDR_TRAIN_WRITE_LEVEL": "1",
+      "PCW_UIPARAM_DDR_TRAIN_READ_GATE": "1",
+      "PCW_UIPARAM_DDR_TRAIN_DATA_EYE": "1",
+      "PCW_UIPARAM_DDR_CLOCK_STOP_EN": "0",
+      "PCW_UIPARAM_DDR_USE_INTERNAL_VREF": "0",
+      "PCW_DDR_PRIORITY_WRITEPORT_0": "<Select>",
+      "PCW_DDR_PRIORITY_WRITEPORT_1": "<Select>",
+      "PCW_DDR_PRIORITY_WRITEPORT_2": "<Select>",
+      "PCW_DDR_PRIORITY_WRITEPORT_3": "<Select>",
+      "PCW_DDR_PRIORITY_READPORT_0": "<Select>",
+      "PCW_DDR_PRIORITY_READPORT_1": "<Select>",
+      "PCW_DDR_PRIORITY_READPORT_2": "<Select>",
+      "PCW_DDR_PRIORITY_READPORT_3": "<Select>",
+      "PCW_DDR_PORT0_HPR_ENABLE": "0",
+      "PCW_DDR_PORT1_HPR_ENABLE": "0",
+      "PCW_DDR_PORT2_HPR_ENABLE": "0",
+      "PCW_DDR_PORT3_HPR_ENABLE": "0",
+      "PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+      "PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+      "PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+      "PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+      "PCW_ENET0_PERIPHERAL_ENABLE": "0",
+      "PCW_ENET0_ENET0_IO": "<Select>",
+      "PCW_ENET0_GRP_MDIO_ENABLE": "0",
+      "PCW_ENET0_GRP_MDIO_IO": "<Select>",
+      "PCW_ENET0_RESET_ENABLE": "0",
+      "PCW_ENET0_RESET_IO": "<Select>",
+      "PCW_SD0_PERIPHERAL_ENABLE": "0",
+      "PCW_SD0_SD0_IO": "<Select>",
+      "PCW_SD0_GRP_CD_ENABLE": "0",
+      "PCW_SD0_GRP_CD_IO": "<Select>",
+      "PCW_SD0_GRP_WP_ENABLE": "0",
+      "PCW_SD0_GRP_WP_IO": "<Select>",
+      "PCW_SD0_GRP_POW_ENABLE": "0",
+      "PCW_SD0_GRP_POW_IO": "<Select>",
+      "PCW_SD1_PERIPHERAL_ENABLE": "0",
+      "PCW_SD1_SD1_IO": "<Select>",
+      "PCW_SD1_GRP_CD_ENABLE": "0",
+      "PCW_SD1_GRP_CD_IO": "<Select>",
+      "PCW_SD1_GRP_WP_ENABLE": "0",
+      "PCW_SD1_GRP_WP_IO": "<Select>",
+      "PCW_SD1_GRP_POW_ENABLE": "0",
+      "PCW_SD1_GRP_POW_IO": "<Select>",
+      "PCW_UART0_PERIPHERAL_ENABLE": "1",
+      "PCW_UART0_UART0_IO": "MIO 14 .. 15",
+      "PCW_UART0_GRP_FULL_ENABLE": "0",
+      "PCW_UART0_GRP_FULL_IO": "<Select>",
+      "PCW_USB0_PERIPHERAL_ENABLE": "0",
+      "PCW_USB0_USB0_IO": "<Select>",
+      "PCW_USB0_RESET_ENABLE": "0",
+      "PCW_USB0_RESET_IO": "<Select>",
+      "PCW_ENET0_PERIPHERAL_FREQMHZ": "1000 Mbps",
+      "PCW_DDR_PERIPHERAL_CLKSRC": "DDR PLL",
+      "PCW_FCLK0_PERIPHERAL_CLKSRC": "IO PLL",
+      "PCW_ENET0_PERIPHERAL_CLKSRC": "IO PLL"
+    },
+    "reuse": "DDR UART CPU666.7 configuration reference; SD/ENET disabled and IO PLL1800 require adaptation to current -1"
+  }
+}

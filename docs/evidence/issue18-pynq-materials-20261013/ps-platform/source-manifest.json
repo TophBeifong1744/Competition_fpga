@@ -1,0 +1,208 @@
+{
+  "scope": "METADATA_IDENTITY_CHECKS_ONLY_NO_OLD_TEST_RERUN",
+  "inputs": [
+    {
+      "path": "C:\\Users\\hsc\\Documents\\Codex\\2026-09-20\\wo-m\\outputs\\vitis-capture-import\\files\\system_continuous_20260915.xsa",
+      "bytes": 612051,
+      "sha256": "b84e93631132a3838cc9dadc1ce9037f2685d4d10de0b1655c76291663a8f60b"
+    },
+    {
+      "path": "C:\\Users\\hsc\\Desktop\\fpga_clone\\Competition_fpga\\codex_out\\i18-short-real-delivery-20261006\\package\\bsp\\include\\xparameters.h",
+      "bytes": 11449,
+      "sha256": "7c212413cdbc30bc330d20c2d7a006cf2052dcdad9ed936fc01490c66daf3337"
+    }
+  ],
+  "xsa_members": [
+    {
+      "name": "ps7_init.c",
+      "bytes": 360536,
+      "sha256": "968f15f513b8b1206dcd9f16bf82e28b5d221153d88b0e94344238e3525d4c22",
+      "crc32": "976215c3"
+    },
+    {
+      "name": "ps7_init.h",
+      "bytes": 3794,
+      "sha256": "faf3015921570085a5e4b3ffa6079acb92b47ec79f337a1df4ce0472150c61c8",
+      "crc32": "a0a6739e"
+    },
+    {
+      "name": "ps7_init.html",
+      "bytes": 2070375,
+      "sha256": "5cebe1ff7fde37a5568541980f9d94f91c2bbdf1c15d0d01c9842fed86dab0c0",
+      "crc32": "a20c27ca"
+    },
+    {
+      "name": "ps7_init.tcl",
+      "bytes": 27896,
+      "sha256": "a158fcc7d723b21003864159006e781ffaf5e8df24ec9b1d9279f9d14ff3ee5e",
+      "crc32": "1c04314e"
+    },
+    {
+      "name": "ps7_init_gpl.c",
+      "bytes": 361153,
+      "sha256": "7155475b3c998489537b90d8f085b81a20827303113092d9a6ba187837eb8b43",
+      "crc32": "194c3d3e"
+    },
+    {
+      "name": "ps7_init_gpl.h",
+      "bytes": 4412,
+      "sha256": "1ef2b7bcc92a07c3f8e74d4472bc17520bd4d0076f547335fd11fe5829232d3a",
+      "crc32": "60396022"
+    },
+    {
+      "name": "sysdef.xml",
+      "bytes": 1566,
+      "sha256": "3a68f42dcde38b09ede507ebf1f7a91e7c7c8ea2ff581f681c69cabc9b97498f",
+      "crc32": "e04c8b77"
+    },
+    {
+      "name": "system.bda",
+      "bytes": 7935,
+      "sha256": "3255e5e5e7d3aa8a828ad0c786ef16b1f820d893e9a75b284f22db1c96d8b0c5",
+      "crc32": "ca11438a"
+    },
+    {
+      "name": "system.hwh",
+      "bytes": 323926,
+      "sha256": "892fbe060f0d3455245a463ef45b5d04a915f12eaac90c1a30a749ab1bc62eb6",
+      "crc32": "24b55843"
+    },
+    {
+      "name": "system_axi_smc_1.hwh",
+      "bytes": 925071,
+      "sha256": "bff0352cb050a3c0dfb2a97215a20c95a271376389cb63c7f64b744664cca830",
+      "crc32": "9476d980"
+    },
+    {
+      "name": "system_continuous_20260915.bit",
+      "bytes": 4045690,
+      "sha256": "b15991bc0f8595970361be553b542e334dbb7dca268c01864ecd80fcffbbffaf",
+      "crc32": "7ec88f52"
+    },
+    {
+      "name": "xsa.json",
+      "bytes": 2210,
+      "sha256": "3c6099d69dd7dd9585ffbad55a5594c5a142d498bc37c2b38d17f5a2a07063e4",
+      "crc32": "db1308be"
+    },
+    {
+      "name": "xsa.xml",
+      "bytes": 1110,
+      "sha256": "e7f274f22ccb61cc010e7fa8b808d7653cdc928b763872167609d30950247d9b",
+      "crc32": "d73c01e4"
+    }
+  ],
+  "crc_checked": true,
+  "sources_unchanged": true,
+  "bsp_hwh_checks": [
+    {
+      "macro": "XPAR_AXI_DMA_0_BASEADDR",
+      "bsp": "0x40400000",
+      "hwh_parameter": "C_BASEADDR",
+      "hwh": "0x40400000",
+      "matches": true
+    },
+    {
+      "macro": "XPAR_AXI_DMA_0_HIGHADDR",
+      "bsp": "0x4040ffff",
+      "hwh_parameter": "C_HIGHADDR",
+      "hwh": "0x4040FFFF",
+      "matches": true
+    },
+    {
+      "macro": "XPAR_AXI_DMA_0_INCLUDE_MM2S",
+      "bsp": "0x0",
+      "hwh_parameter": "C_INCLUDE_MM2S",
+      "hwh": "0",
+      "matches": true
+    },
+    {
+      "macro": "XPAR_AXI_DMA_0_INCLUDE_S2MM",
+      "bsp": "0x1",
+      "hwh_parameter": "C_INCLUDE_S2MM",
+      "hwh": "1",
+      "matches": true
+    },
+    {
+      "macro": "XPAR_AXI_DMA_0_INCLUDE_S2MM_DRE",
+      "bsp": "0x0",
+      "hwh_parameter": "C_INCLUDE_S2MM_DRE",
+      "hwh": "0",
+      "matches": true
+    },
+    {
+      "macro": "XPAR_AXI_DMA_0_S2MM_DATA_WIDTH",
+      "bsp": "0x40",
+      "hwh_parameter": "C_M_AXI_S2MM_DATA_WIDTH",
+      "hwh": "64",
+      "matches": true
+    },
+    {
+      "macro": "XPAR_AXI_DMA_0_SG_LENGTH_WIDTH",
+      "bsp": "0xe",
+      "hwh_parameter": "C_SG_LENGTH_WIDTH",
+      "hwh": "14",
+      "matches": true
+    },
+    {
+      "macro": "XPAR_AXI_GPIO_0_BASEADDR",
+      "bsp": "0x41200000",
+      "hwh_parameter": "C_BASEADDR",
+      "hwh": "0x41200000",
+      "matches": true
+    },
+    {
+      "macro": "XPAR_AXI_GPIO_0_HIGHADDR",
+      "bsp": "0x4120ffff",
+      "hwh_parameter": "C_HIGHADDR",
+      "hwh": "0x4120FFFF",
+      "matches": true
+    },
+    {
+      "macro": "XPAR_AXI_GPIO_0_IS_DUAL",
+      "bsp": "0x1",
+      "hwh_parameter": "C_IS_DUAL",
+      "hwh": "1",
+      "matches": true
+    },
+    {
+      "macro": "XPAR_AXI_GPIO_0_INTERRUPT_PRESENT",
+      "bsp": "0x0",
+      "hwh_parameter": "C_INTERRUPT_PRESENT",
+      "hwh": "0",
+      "matches": true
+    }
+  ],
+  "reference_package": {
+    "file": "historical-ps-reference.zip",
+    "bytes": 123067,
+    "sha256": "dcd9c84369658dc30f4f8a31a0038762a08cf6201b63ef892f00db54d6fd33fd",
+    "members": [
+      "system.hwh",
+      "system_axi_smc_1.hwh",
+      "ps7_init.tcl",
+      "ps7_init.c",
+      "ps7_init.h",
+      "sysdef.xml",
+      "system.bda",
+      "xsa.json",
+      "xsa.xml"
+    ],
+    "byte_exact": true,
+    "deployable_overlay": false
+  },
+  "not_run": [
+    "EDA",
+    "ps7_init execution",
+    "old tests",
+    "board access",
+    "PYNQ runtime"
+  ],
+  "fixed_git_original": {
+    "commit": "995fe0a802b572353c45a3669714c1292fe0fa52",
+    "path": "task-packages/PKG-A-ACQ/tasks/four-channel-diagnostic-01/continuous-prototype-01/board-run-20260915-02/runtime/system_continuous_20260915.xsa",
+    "bytes": 612051,
+    "sha256": "b84e93631132a3838cc9dadc1ce9037f2685d4d10de0b1655c76291663a8f60b",
+    "matches_local_xsa": true
+  }
+}

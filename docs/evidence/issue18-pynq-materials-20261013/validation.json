@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-13T14:27:51.975182+00:00",
+  "status": "PASS",
+  "scope": "DOCUMENT_SOURCE_IDENTITY_AND_REFERENCE_CHECK_ONLY",
+  "fixed_git_sources_checked": 17,
+  "B_documents_downloaded_and_hash_checked": 4,
+  "complete_issue18_comments": 131,
+  "local_markdown_links_checked": true,
+  "groups_present": [
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06",
+    "M07"
+  ],
+  "errors": [],
+  "tests_rerun": false,
+  "EDA_run": false,
+  "board_run": false,
+  "PYNQ_run": false,
+  "system_acceptance": "NOT_CLAIMED",
+  "addendum": {
+    "checked_at_utc": "2026-10-13T14:36:07.250860+00:00",
+    "scope": "USER_REPORT_AND_DOCUMENT_UPDATE_ONLY",
+    "speed_grade_reported": "-1",
+    "old_minus_2_record_retained": true,
+    "image_and_runtime_remain_unknown": true,
+    "runtime_tests_rerun": false
+  },
+  "platform_addendum": {
+    "checked_at_utc": "2026-10-13T15:13:53.438223+00:00",
+    "scope": "ORIGINAL_ARCHIVE_AND_METADATA_CHECKS_ONLY",
+    "xsa_matches_fixed_git": true,
+    "xsa_members_crc_checked": 13,
+    "ps7_parameters_extracted": 937,
+    "bsp_hwh_fields_matching": 11,
+    "reference_zip_original_bytes_match": true,
+    "native_xpr_and_historical_inputs_unchanged": true,
+    "local_markdown_links_checked": true,
+    "old_angle_evidence_location": "PC Python",
+    "acquisition_report": "Vitis",
+    "errors": [],
+    "old_tests_rerun": false,
+    "EDA_run": false,
+    "board_run": false,
+    "PYNQ_run": false
+  },
+  "sd_card_addendum": {
+    "reported_date": "2026-10-14",
+    "checked_at_utc": "2026-10-14T14:26:44.444116+00:00",
+    "scope": "USER_DECLARATION_AND_DOCUMENT_CONSISTENCY_ONLY",
+    "sd_card_inserted": false,
+    "image_and_runtime_remain_unknown": true,
+    "other_boot_storage_unknown": true,
+    "board_query_run": false,
+    "old_tests_rerun": false,
+    "image_install_run": false
+  },
+  "python_operation_addendum": {
+    "checked_at_utc": "2026-10-14T15:34:03.828141+00:00",
+    "scope": "REFERENCED_THREAD_EXISTING_RECORDS_AND_USER_STATEMENT_ONLY",
+    "manual_reset_button": false,
+    "power_cycle": false,
+    "statement_level": "USER_REPORTED",
+    "existing_source_files_hashed": 5,
+    "PYNQ_current_facts_not_inferred": true,
+    "board_actions": false,
+    "old_tests_rerun": false
+  },
+  "board_ddr_mio_addendum": {
+    "checked_at_utc": "2026-10-14T15:41:54.716215+00:00",
+    "reported_date": "2026-10-14",
+    "scope": "EXISTING_DOCUMENTS_PHOTOS_HWH_AND_USER_FACTS_ONLY",
+    "checks": {
+      "source_hashes_verified": true,
+      "DDR_geometry_arithmetic_verified": true,
+      "schematic_pages_visually_inspected": [
+        "core p4",
+        "core p8",
+        "baseboard p2",
+        "baseboard p6"
+      ],
+      "render_font_warnings": "Poppler Symbol/ArialUnicode fallback; relevant Latin pin/net/component values visually readable",
+      "configuration_or_original_sources_modified": false,
+      "old_tests_rerun": false,
+      "EDA_run": false,
+      "board_run": false,
+      "init_executed": false,
+      "image_install_run": false,
+      "system_acceptance": "NOT_CLAIMED"
+    },
+    "applicability_status": "PARTIAL_STATIC_MATCH_PHYSICAL_REVISION_AND_DDR_PROFILE_EQUIVALENCE_UNVERIFIED"
+  }
+}

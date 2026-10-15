@@ -1,0 +1,77 @@
+{
+  "reported_date": "2026-10-14",
+  "scope": "IDENTIFIED_HISTORICAL_PC_PYTHON_SERVO_BOARD_TEST_ONLY",
+  "thread": "codex://threads/01a0d227-35c4-78e2-a020-35335bcbf0ea",
+  "thread_title": "M｜主流程",
+  "user_identification": "电脑 Python 声源方向联调那次",
+  "user_reset_statement": "没有按过复位键，没有重新上电，我还要确认什么",
+  "manual_reset_button_during_test": false,
+  "power_cycle_during_test": false,
+  "reset_statement_level": "USER_REPORTED",
+  "flow": [
+    "Vivado build/program sound_servo_burst_top bit",
+    "PL UART to PC COM3",
+    "PC PowerShell follow_burst.py",
+    "quiet background then prompted foreground captures",
+    "PL finite PCM capture -> serial -> PC Python DOA -> serial target -> PL PWM"
+  ],
+  "vitis_or_PS_application_used_in_this_test": false,
+  "is_pynq_runtime_evidence": false,
+  "is_PS_DDR_DMA_cache_evidence": false,
+  "is_continuous_PL_DOA_evidence": false,
+  "manual_prompt_thread_turn": "01a1162b-ce92-76e0-b513-93f1201392fa",
+  "user_mapping_confirmation_thread_turn": "01a116c5-39b0-7a20-81be-55e0f114d568",
+  "auto_followup_thread_turn": "01a116f2-7c76-77b1-a0ff-428a551cba65",
+  "reset_distinctions": [
+    "PC serial reset_input_buffer is not a board reset",
+    "Per-round ARM/new nonce is not whole-board reset",
+    "Power-on/bit configuration and clock-lock initialization remain distinct from manual reset during test",
+    "Vitis Reset Entire System from separate acquisition workflow is not applicable here"
+  ],
+  "end_cleanup_observation": {
+    "events": [
+      "stop_attempt",
+      "stop_sent"
+    ],
+    "confirmation": "NOT_RECEIVED",
+    "meaning": "HOLD_TARGET_PWM_NOT_BRAKE; successful host serial write is not hardware stop/drain or mechanical arrival confirmation"
+  },
+  "source_files": [
+    {
+      "path": "codex_out/sound-servo-handoff-20261008/README.md",
+      "bytes": 4162,
+      "sha256": "12ff8fa3a0296877efc558b5b9b95a6849b28cf55d18b36b56c6b26032bc1dad",
+      "scope": "EXISTING_LOCAL_HISTORICAL_RECORD_READ_ONLY"
+    },
+    {
+      "path": "codex_out/sound-servo-handoff-20261008/host/README.md",
+      "bytes": 7263,
+      "sha256": "24e5f6b5269e5ef254a108d68cd6cf23d795ca3b1d3d08b844eb84d603e3a456",
+      "scope": "EXISTING_LOCAL_HISTORICAL_RECORD_READ_ONLY"
+    },
+    {
+      "path": "codex_out/sound-servo-handoff-20261008/host/follow_burst.py",
+      "bytes": 11285,
+      "sha256": "dfb05879a507d7c5f5f2ae4cabacfd91ea6178675d03e8033fb979013fda3146",
+      "scope": "EXISTING_LOCAL_HISTORICAL_RECORD_READ_ONLY"
+    },
+    {
+      "path": "codex_out/sound-servo-handoff-20261008/manual/sound-servo-boardband-new-011/events.jsonl",
+      "bytes": 116381,
+      "sha256": "7c5ffb0c9f225749aa00a62b2d7f6532d447498fddad10e86311c9fd59e113b4",
+      "scope": "EXISTING_LOCAL_HISTORICAL_RECORD_READ_ONLY"
+    },
+    {
+      "path": "codex_out/sound-servo-handoff-20261008/auto/sound-servo-auto-04/events.jsonl",
+      "bytes": 202351,
+      "sha256": "257a435b27bee527c484f5818185279af53e86f6503d829b4473d790800d8005",
+      "scope": "EXISTING_LOCAL_HISTORICAL_RECORD_READ_ONLY"
+    }
+  ],
+  "limits": [
+    "Saved host script was collected after manual runs and includes later auto mode; not a per-run source freeze",
+    "This identifies the operation flow, not exact historical per-run loaded bit readback",
+    "User earlier angle-error claim and archived numerical results retain their respective scope; no new precision claim",
+    "No board actions, tests, image installation or driver query performed"
+  ]
+}

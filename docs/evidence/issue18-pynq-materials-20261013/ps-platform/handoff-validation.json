@@ -1,0 +1,63 @@
+{
+  "schema": "soundsight.pynq-handoff-validation.v1",
+  "date": "2026-10-15",
+  "scope": "AUTHOR_DOCUMENT_SOURCE_CHECK_ONLY",
+  "payload": [
+    {
+      "path": "docs/evidence/issue18-pynq-materials-20261013/README.md",
+      "sha256_lf": "57a679fd80f60631911b625be39b57a379d674f19fb0ceace5aa6f9c7a039678"
+    },
+    {
+      "path": "docs/evidence/issue18-pynq-materials-20261013/ps-platform/README.md",
+      "sha256_lf": "f6b0a558fabcdb13ffe0eb73a9fd03d8d3b92a46d362cc2a73236ac928152590"
+    },
+    {
+      "path": "docs/evidence/issue18-pynq-materials-20261013/ps-platform/board-ddr-mio-audit.md",
+      "sha256_lf": "ce372683a2f2766d2f0d05046da3d39fc0cc2a951e75577052200684f8316b8d"
+    },
+    {
+      "path": "docs/evidence/issue18-pynq-materials-20261013/ps-platform/platform-preparation-20261015.json",
+      "sha256_lf": "f14a8e34f1c2df9459e0af086b3724dc410e4db2da8292f897592628a611de36"
+    },
+    {
+      "path": "docs/evidence/issue18-pynq-materials-20261013/ps-platform/pynq-platform-next.md",
+      "sha256_lf": "4ef670beb7ff2b4500244e238629f01ba6d8debb50a6ef0a9c8eca5b0275b6b3"
+    },
+    {
+      "path": "docs/evidence/issue18-pynq-materials-20261013/ps-platform/vendor-platform-audit.md",
+      "sha256_lf": "f076763288b9ac874f74c0f5aaec9175bc3976c9b21f9c3b4ba0903a74d235ee"
+    },
+    {
+      "path": "docs/evidence/issue18-pynq-materials-20261013/ps-platform/vendor-platform-20261015.json",
+      "sha256_lf": "19e98e18abbc33b0fe1c905b561a80227a574bea7c4e8bee389aba1df851d86d"
+    },
+    {
+      "path": "docs/evidence/issue18-pynq-materials-20261013/ps-platform/HANDOFF-20261015.md",
+      "sha256_lf": "8039be7e55d9c2584343d1e767393500a76bc6fb3e2f77246634d31e9108523b"
+    },
+    {
+      "path": "docs/evidence/issue18-pynq-materials-20261013/ps-platform/vendor-one-ps-parameters.json",
+      "sha256_lf": "b945d18e58c77124f711dd8d93ed7abc60fce71fb378a44b1ad46d5234884636"
+    }
+  ],
+  "relative_links_checked": 42,
+  "json_and_ps_parameter_consistency": "PASS",
+  "vendor_parameter_count": 937,
+  "one_parameter_count": 937,
+  "parameter_difference_count": 308,
+  "archive_image_hashes": "PASS_RECHECKED_THIS_RESUME",
+  "zip_crc": "REUSED_PREVIOUS_PASS_UNCHANGED_ARCHIVE_HASHES",
+  "reference_files_hash_checked": 50,
+  "historical_one_files_hash_checked": 3,
+  "collector_source_readme_hashes": "UNCHANGED_EXISTING_SCOPED_REVIEW_REUSED",
+  "shared_HEAD_index_tracked_diffs": "UNCHANGED",
+  "independent_engineering_approval": "NOT_ASSERTED_DOCUMENT_ONLY",
+  "EDA": "NOT_RUN",
+  "board_boot_overlay_cache_recovery": "NOT_RUN",
+  "reference_raw_files_location": "codex_out/i18-vendor-inspection-20261015/reference-package; original ZIP paths/hashes in vendor-platform-20261015.json",
+  "limitations": [
+    "No rebuilt minus1 boot release",
+    "No matching current Overlay/real adapter",
+    "No board runtime or full-system acceptance"
+  ]
+}

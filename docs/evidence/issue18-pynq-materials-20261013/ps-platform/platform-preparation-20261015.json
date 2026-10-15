@@ -1,0 +1,141 @@
+{
+  "schema": "soundsight.c.pynq-platform-preparation.v1",
+  "date": "2026-10-15",
+  "scope": "OFFLINE_ARCHIVE_IMAGE_AND_SOURCE_AUDIT_NOT_BOARD_RUNTIME",
+  "issue": "https://github.com/TophBeifong1744/Competition_fpga/issues/18",
+  "pull_request": "https://github.com/TophBeifong1744/Competition_fpga/pull/65",
+  "board": {
+    "known_family": "ALIENTEK Navigator XC7Z020",
+    "baseboard_marking": "V3.9",
+    "coreboard_exact_pcb_revision": "UNKNOWN",
+    "vendor_product_generation_match": "UNVERIFIED"
+  },
+  "user_ddr_confirmation": {
+    "basis": "USER_REPORTED_WITH_SCREENSHOT",
+    "statement": "ddr我们配置的是这个",
+    "attachment_basename": "f17dd9192521e4fa4366b9b27f71f2d4.png",
+    "attachment_sha256": "f4b3acd285cbf1a495427ebdb10dd4ef70c734109a5036c8ade2b9aebe1af77e",
+    "memory_type_visible": "DDR 3",
+    "selected_part": "MT41J256M16 RE-125",
+    "same_as_historical_xsa_profile": true,
+    "other_parameters_visible": false,
+    "compatibility_with_actual_ddr_and_pcb": "UNVERIFIED",
+    "configuration_changed": false
+  },
+  "vendor_material_observation": {
+    "method": "USER_DOWNLOADED_ARCHIVES_AND_READ_ONLY_IMAGE_INSPECTION",
+    "official_index": "https://github.com/alientek-openedv/Products/blob/master/zdyz_docs/boards/fpga/zdyz_linhanz%28V2%29.rst",
+    "share_url": "https://pan.baidu.com/s/1vXxmhg_mZm_OVg4xQeiCVQ",
+    "public_extraction_code": "zdyz",
+    "directory": "正点原子领航者(V2)ZYNQ开发板资料盘(A盘)/4_Source_Code/5_PYNQ_Design",
+    "entries": [
+      {
+        "path": "ZYNQ_7020_PYNQ.zip",
+        "display_size": "648.9M",
+        "display_modified_time": "2026-09-11 12:18",
+        "bytes": 680414199,
+        "sha256": "cbe2a09fdf2efaa262463b20c3fe745dd2536ccefb3d93a397ca7660de85676b",
+        "downloaded": true
+      },
+      {
+        "path": "IMG/ZYNQ-7020-2.7.0.zip",
+        "display_size": "1.74G",
+        "display_modified_time": "2026-09-11 12:18",
+        "version_in_archive_name": "2.7.0",
+        "runtime_version": "NOT_RUN",
+        "bytes": 1869237643,
+        "sha256": "40a1d904e2e2809bc173d0a3aaac40e57ace3c5cef533b4be11e87ddfb71dfe8",
+        "downloaded": true,
+        "offline_image_version": "PYNQ 2.7.0 / Linux 5.4.0-xilinx-v2020.2"
+      }
+    ],
+    "download_blocker": null,
+    "selected_route": "VENDOR_7020_PYNQ_2_7_CANDIDATE_REQUIRES_MINUS1_BOOT_ADAPTATION",
+    "frozen_boot_image": false,
+    "verified_boot": false,
+    "bsp_version": "FULL_BUILD_BSP_NOT_PRESENT",
+    "vendor_build_tool_version": "Vivado 2020.2",
+    "detailed_audit": "vendor-platform-20261015.json"
+  },
+  "new_board_evidence": {
+    "sd_cd_mio": 10,
+    "sd_cd_basis": "V3.9_U9_PIN9_R30_SD_CD_J2_91_TO_V2.5_X3_91_PS_MIO10",
+    "sd_wp": "NO_CONTACT_IN_REFERENCED_SCHEMATIC",
+    "ps_phy_in_core_v2_5_schematic": "YT8521SC_CA",
+    "ps_phy_reset_net": "PS_POR_B",
+    "phy_address_derived_from_schematic": 7,
+    "phy_address_on_actual_board": "UNVERIFIED",
+    "phy_rxdly_strap_derived": "HIGH_2NS_PER_MANUFACTURER_DATASHEET",
+    "actual_driver_phy_delay_settings": "UNVERIFIED"
+  },
+  "runtime_collector": {
+    "script": "tools/pynq_platform/collect_runtime.py",
+    "script_sha256": "65c642c94bdae2d79a590974592469484919277a879c2812341495d0f67f7201",
+    "readme": "tools/pynq_platform/README.md",
+    "readme_sha256": "1dd91f1d8d31c96b96bc757356efbadf48088c8cd0440304566c85224696593a",
+    "independent_review": "PASS_WITH_LIMITATIONS_METADATA_ONLY",
+    "review_record": "runtime-collector-review.md",
+    "host_interpreter": "Python 3.13.5 Windows",
+    "python_3_8": "AST_GRAMMAR_ONLY_NOT_RUNTIME_TESTED",
+    "unc_negative_tests": "9_MOCK_CASES_PLUS_MUTATION_DETECTED",
+    "board_linux_run": "NOT_RUN"
+  },
+  "current_integration": {
+    "a_cpu_bridge_exists": true,
+    "a_candidate": "I18-CPU-BRIDGE-R02-JOIN-002 / MODEL-E2-R02_UNCHANGED",
+    "b_review_status": "VERIFIED_CLOSED_SOURCE_SCOPE_NOT_RTL_EXECUTION",
+    "review_url": "https://github.com/TophBeifong1744/Competition_fpga/issues/18#issuecomment-6182845366",
+    "continuation_url": "https://github.com/TophBeifong1744/Competition_fpga/issues/18#issuecomment-6182799968",
+    "overlay_bit_hwh_pair_received": false,
+    "current_driver_abi_binding": "UNBOUND",
+    "cache_and_retirement_validation": "NOT_RUN",
+    "stop_reset_recovery_validation": "NOT_RUN",
+    "b_offline_pr66_state": "MERGED_OFFLINE_SCOPE_ONLY",
+    "b_offline_candidate": "12b2dcbc44da93dc5b5dcf227d81cca1fc90f556"
+  },
+  "actions_performed": {
+    "historical_test_rerun": false,
+    "vivado_or_vitis_run": false,
+    "new_project_created": false,
+    "board_programming": false,
+    "sd_flash": false,
+    "board_power_or_reset": false,
+    "actuator_motion": false
+  },
+  "previous_snapshot": "7cfd180fdec0924a5383e216f55ca7341133055f:docs/evidence/issue18-pynq-materials-20261013/ps-platform/platform-preparation-20261015.json",
+  "clock_adaptation": {
+    "part_basis": "USER_REPORTED_MINUS1_AND_LOCAL_LIVE_LOOP_XPR",
+    "required_part": "xc7z020clg400-1",
+    "official_ds187": "https://docs.amd.com/api/khub/documents/uaBd8Qxmf_K1~~tiVnOxrw/content",
+    "tables": {
+      "cpu": "p15 Table17",
+      "ddr": "p15 Table18",
+      "ps_pll": "p16 Table21"
+    },
+    "minus1_cpu_621_max_mhz": 667,
+    "minus1_ps_pll_max_mhz": 1600,
+    "minus1_ddr3_max_mbps": 1066,
+    "vendor_cpu_clock_mhz": 766.666667,
+    "vendor_arm_pll_fdiv": 46,
+    "vendor_arm_clk_divisor": 2,
+    "vendor_arm_621": true,
+    "image_cpu_opp_khz": [
+      766666,
+      383333
+    ],
+    "boot_bin_contains_matching_init_tables": true,
+    "inference": "FSBL range contains matching 766.7MHz init tables and DT has 766666kHz OPP; static evidence, not execution/control-flow proof or actual frequency readback",
+    "required_action": "regenerate a -1 compatible boot chain incl FSBL and DT/FIT OPP in original assigned A/B integration; no hex patch or boot-then-downclock",
+    "recommended_existing_compatible_cpu_mhz": 666.666667,
+    "historical_io_pll_mhz": 1800,
+    "historical_ps_full_copy_allowed": false
+  },
+  "runtime_versions": {
+    "evidence": "OFFLINE_IMAGE_ONLY",
+    "pynq": "2.7.0",
+    "numpy": "1.20.3",
+    "python": "3.8.2-1ubuntu1 armhf",
+    "kernel": "5.4.0-xilinx-v2020.2",
+    "board_run": "NOT_RUN"
+  }
+}
