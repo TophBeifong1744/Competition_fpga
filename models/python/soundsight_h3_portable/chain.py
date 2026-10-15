@@ -478,12 +478,30 @@ def run_causal_interval(pcm, config, schedule, manual_angle_q8, bindings):
                              "later_interval_end_reason": edge_reason if edge is not None and edge > take else None,
                              "prior_binding_retracted": False,
                              "diagnostic_invalid_reasons": stage["detail"].get("invalid_reasons", [])})
-    if stop is not None and (fatal is None or stop < fatal):
+    eof_stop_audit = None
+    if stop == first + count + 8:
+        # The schedule accepts this closed endpoint, but the renderer's emit
+        # domain is half-open. Retain the end event without inventing a sample
+        # or changing a prior frame's binding/take history. Fatal still wins.
+        effective = fatal is None or stop < fatal
+        eof_stop_audit = {
+            "identity": {"boot": schedule["boot_id"], "session": schedule["session_id"],
+                         "interval": schedule["interval_id"], "generation": schedule["generation"]},
+            "time_basis": "SYNTHETIC_TIME", "at": stop, "reason": "STOP_AT_EOF",
+            "effective": effective,
+            "superseded_by": None if effective else {"reason": "FATAL", "at": fatal},
+            "renderer_control_emitted": False,
+            "termination_frames": [item["identity"]["frame"] for item in work],
+        }
+    elif stop is not None and (fatal is None or stop < fatal):
         controls.append({"emit": stop - first, "state": "STOP"})
     audio = render_three_lanes(x, manual_angle_q8, controls, bindings,
                                fatal_emit=None if fatal is None else fatal - first)
-    return {"claim": "PORTABLE_RESEARCH_CONFIG_ONLY", "time_basis": "SYNTHETIC_TIME",
-            "first_sample_id": first, "planned_frames": planned, "frames": rows,
-            "events": events, "stages": stages, "audio": audio,
-            "terminations": terminations, "observations": observations,
-            "status": "ABORTED" if fatal is not None else "COMPLETED"}
+    result = {"claim": "PORTABLE_RESEARCH_CONFIG_ONLY", "time_basis": "SYNTHETIC_TIME",
+              "first_sample_id": first, "planned_frames": planned, "frames": rows,
+              "events": events, "stages": stages, "audio": audio,
+              "terminations": terminations, "observations": observations,
+              "status": "ABORTED" if fatal is not None else "COMPLETED"}
+    if eof_stop_audit is not None:
+        result["eof_stop_audit"] = eof_stop_audit
+    return result
