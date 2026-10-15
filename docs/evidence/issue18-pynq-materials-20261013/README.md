@@ -1,6 +1,6 @@
 # C 给 B 的 PYNQ 接入材料（任务2 / #18）
 
-**2026-10-15 接续：** 已进入厂商官方资料盘，找到 7020 的 `ZYNQ-7020-2.7.0.zip` 镜像候选和 `ZYNQ_7020_PYNQ.zip` 工程包；文件体仍待下载核验。用户截图确认当前 DDR 预设为 `MT41J256M16 RE-125`。已补 SD_CD=MIO10、PS PHY 连线依据，以及经独立复核的运行元数据采集工具。当前 A 已有 CPU 桥候选并沿 R02 返修，不能再把以下历史“尚无CPU桥”描述泛化为项目最新状态。见 [当前平台接续与简明操作](ps-platform/pynq-platform-next.md)及[工具复核](ps-platform/runtime-collector-review.md)。本轮没有刷卡、EDA或板测，匹配 Overlay/驱动和缓存恢复验收仍未完成。
+**2026-10-15 当前接续：** 两个厂商ZIP已收到，CRC结果复用并重新核对ZIP/IMG及参考原件SHA256。已确认离线镜像为PYNQ2.7.0、NumPy1.20.3、Python3.8、Linux5.4.0-xilinx-v2020.2；厂商PS与历史one均使用已确认DDR预设。厂商FSBL含约766.7MHz配置，须先适配当前 `xc7z020clg400-1`；旧one的1800MHz IO PLL也不能整套照抄。当前A桥JOIN-002已获B源级限定接受，PR66已按离线软件范围合入；均不代表板端通过。详见[厂商核验](ps-platform/vendor-platform-audit.md)、[明确接续与验收缺项](ps-platform/HANDOFF-20261015.md)及[现场操作单](ps-platform/pynq-platform-next.md)。以下注明日期的旧记录保留历史适用范围。
 
 2026-10-13。本批完成已有接口、控制协议、工程记录及现场补述的集中整理；没有重跑旧测试、启动 EDA、加载板卡或安装镜像。PYNQ 接入状态仍为 **NOT_VERIFIED**。本材料回应 [B 的七组缺件请求](https://github.com/TophBeifong1744/Competition_fpga/issues/18#issuecomment-6139186501)，不替代 B 已交的接合方案，也不宣称 B 已读取或接单。
 

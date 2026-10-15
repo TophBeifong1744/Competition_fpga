@@ -1,7 +1,7 @@
 {
   "schema": "soundsight.c.pynq-platform-preparation.v1",
   "date": "2026-10-15",
-  "scope": "SOURCE_RESEARCH_AND_HOST_TOOL_ONLY",
+  "scope": "OFFLINE_ARCHIVE_IMAGE_AND_SOURCE_AUDIT_NOT_BOARD_RUNTIME",
   "issue": "https://github.com/TophBeifong1744/Competition_fpga/issues/18",
   "pull_request": "https://github.com/TophBeifong1744/Competition_fpga/pull/65",
   "board": {
@@ -23,7 +23,7 @@
     "configuration_changed": false
   },
   "vendor_material_observation": {
-    "method": "READ_ONLY_BROWSER_VISIBLE_DIRECTORY",
+    "method": "USER_DOWNLOADED_ARCHIVES_AND_READ_ONLY_IMAGE_INSPECTION",
     "official_index": "https://github.com/alientek-openedv/Products/blob/master/zdyz_docs/boards/fpga/zdyz_linhanz%28V2%29.rst",
     "share_url": "https://pan.baidu.com/s/1vXxmhg_mZm_OVg4xQeiCVQ",
     "public_extraction_code": "zdyz",
@@ -33,27 +33,29 @@
         "path": "ZYNQ_7020_PYNQ.zip",
         "display_size": "648.9M",
         "display_modified_time": "2026-09-11 12:18",
-        "bytes": null,
-        "sha256": null,
-        "downloaded": false
+        "bytes": 680414199,
+        "sha256": "cbe2a09fdf2efaa262463b20c3fe745dd2536ccefb3d93a397ca7660de85676b",
+        "downloaded": true
       },
       {
         "path": "IMG/ZYNQ-7020-2.7.0.zip",
         "display_size": "1.74G",
         "display_modified_time": "2026-09-11 12:18",
         "version_in_archive_name": "2.7.0",
-        "runtime_version": "UNKNOWN",
-        "bytes": null,
-        "sha256": null,
-        "downloaded": false
+        "runtime_version": "NOT_RUN",
+        "bytes": 1869237643,
+        "sha256": "40a1d904e2e2809bc173d0a3aaac40e57ace3c5cef533b4be11e87ddfb71dfe8",
+        "downloaded": true,
+        "offline_image_version": "PYNQ 2.7.0 / Linux 5.4.0-xilinx-v2020.2"
       }
     ],
-    "download_blocker": "BAIDU_LOGIN_DIALOG_AFTER_FILE_CLICK",
-    "selected_route": "VENDOR_7020_IMAGE_AND_PROJECT_FIRST_CANDIDATE_FOR_INSPECTION",
+    "download_blocker": null,
+    "selected_route": "VENDOR_7020_PYNQ_2_7_CANDIDATE_REQUIRES_MINUS1_BOOT_ADAPTATION",
     "frozen_boot_image": false,
     "verified_boot": false,
-    "bsp_version": "UNKNOWN",
-    "vendor_build_tool_version": "UNKNOWN"
+    "bsp_version": "FULL_BUILD_BSP_NOT_PRESENT",
+    "vendor_build_tool_version": "Vivado 2020.2",
+    "detailed_audit": "vendor-platform-20261015.json"
   },
   "new_board_evidence": {
     "sd_cd_mio": 10,
@@ -80,14 +82,16 @@
   },
   "current_integration": {
     "a_cpu_bridge_exists": true,
-    "a_candidate": "JOIN-001 MODEL-E2-R02",
-    "b_review_status": "NEEDS_FIX",
-    "review_url": "https://github.com/TophBeifong1744/Competition_fpga/issues/18#issuecomment-6171563506",
-    "continuation_url": "https://github.com/TophBeifong1744/Competition_fpga/issues/18#issuecomment-6171752654",
+    "a_candidate": "I18-CPU-BRIDGE-R02-JOIN-002 / MODEL-E2-R02_UNCHANGED",
+    "b_review_status": "VERIFIED_CLOSED_SOURCE_SCOPE_NOT_RTL_EXECUTION",
+    "review_url": "https://github.com/TophBeifong1744/Competition_fpga/issues/18#issuecomment-6182845366",
+    "continuation_url": "https://github.com/TophBeifong1744/Competition_fpga/issues/18#issuecomment-6182799968",
     "overlay_bit_hwh_pair_received": false,
     "current_driver_abi_binding": "UNBOUND",
     "cache_and_retirement_validation": "NOT_RUN",
-    "stop_reset_recovery_validation": "NOT_RUN"
+    "stop_reset_recovery_validation": "NOT_RUN",
+    "b_offline_pr66_state": "MERGED_OFFLINE_SCOPE_ONLY",
+    "b_offline_candidate": "12b2dcbc44da93dc5b5dcf227d81cca1fc90f556"
   },
   "actions_performed": {
     "historical_test_rerun": false,
@@ -97,5 +101,41 @@
     "sd_flash": false,
     "board_power_or_reset": false,
     "actuator_motion": false
+  },
+  "previous_snapshot": "7cfd180fdec0924a5383e216f55ca7341133055f:docs/evidence/issue18-pynq-materials-20261013/ps-platform/platform-preparation-20261015.json",
+  "clock_adaptation": {
+    "part_basis": "USER_REPORTED_MINUS1_AND_LOCAL_LIVE_LOOP_XPR",
+    "required_part": "xc7z020clg400-1",
+    "official_ds187": "https://docs.amd.com/api/khub/documents/uaBd8Qxmf_K1~~tiVnOxrw/content",
+    "tables": {
+      "cpu": "p15 Table17",
+      "ddr": "p15 Table18",
+      "ps_pll": "p16 Table21"
+    },
+    "minus1_cpu_621_max_mhz": 667,
+    "minus1_ps_pll_max_mhz": 1600,
+    "minus1_ddr3_max_mbps": 1066,
+    "vendor_cpu_clock_mhz": 766.666667,
+    "vendor_arm_pll_fdiv": 46,
+    "vendor_arm_clk_divisor": 2,
+    "vendor_arm_621": true,
+    "image_cpu_opp_khz": [
+      766666,
+      383333
+    ],
+    "boot_bin_contains_matching_init_tables": true,
+    "inference": "FSBL range contains matching 766.7MHz init tables and DT has 766666kHz OPP; static evidence, not execution/control-flow proof or actual frequency readback",
+    "required_action": "regenerate a -1 compatible boot chain incl FSBL and DT/FIT OPP in original assigned A/B integration; no hex patch or boot-then-downclock",
+    "recommended_existing_compatible_cpu_mhz": 666.666667,
+    "historical_io_pll_mhz": 1800,
+    "historical_ps_full_copy_allowed": false
+  },
+  "runtime_versions": {
+    "evidence": "OFFLINE_IMAGE_ONLY",
+    "pynq": "2.7.0",
+    "numpy": "1.20.3",
+    "python": "3.8.2-1ubuntu1 armhf",
+    "kernel": "5.4.0-xilinx-v2020.2",
+    "board_run": "NOT_RUN"
   }
 }
