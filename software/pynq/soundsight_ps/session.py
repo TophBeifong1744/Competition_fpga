@@ -3,6 +3,7 @@ from dataclasses import dataclass
 import json
 import threading
 import uuid
+from typing import Optional
 from .contracts import Identity, ProtocolError, require, keys, integer, boolean, text
 from .records import decode_raw, native_record
 from .dma_rx import TestTransport
@@ -19,8 +20,9 @@ class Slot:
     address: int
     capacity: int
     state: str = "FREE"
-    identity: Identity | None = None
-    armed_tick: int | None = None
+    # 中文用途：使用Python 3.8支持的可空注解，保留字段默认值。
+    identity: Optional[Identity] = None
+    armed_tick: Optional[int] = None
     archived: bool = False
     released: bool = False
 

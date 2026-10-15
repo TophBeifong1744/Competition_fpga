@@ -1,6 +1,6 @@
 # SoundSight PS offline core 0.1.0
 
-本包是可调用的标准库离线软件核心。Python 3.10+，从仓库 `software/pynq` 运行 `python -m soundsight_ps`，无需安装、PYTHONPATH 或 PYNQ/NumPy。真实 CPU 地址、适配器、镜像、cache/allocator/abort 合同仍为 UNBOUND；`hardware` 始终拒绝，不调用 Overlay、MMIO、下载、复位或运动。
+本包是可调用的标准库离线软件核心。Python 3.8+，从仓库 `software/pynq` 运行 `python -m soundsight_ps`，无需安装、PYTHONPATH 或 PYNQ/NumPy。真实 CPU 地址、适配器、镜像、cache/allocator/abort 合同仍为 UNBOUND；`hardware` 始终拒绝，不调用 Overlay、MMIO、下载、复位或运动。
 
 本包没有算法、生产时限默认值或板型默认值，也没有修改 #22 mock-only 核心或 probe。其 simple S2MM、noDRE 按 memory 宽度对齐、异常保留所有权和授权 abort 原则作为独立软件规则复用。独立测试由后续串行批次执行；源码作者仅允许 import smoke，不把测试脚本输出作为硬件证据。
 
